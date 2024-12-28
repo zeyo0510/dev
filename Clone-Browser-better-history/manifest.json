@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "assets/icons/icon16.png",
+         "48": "assets/icons/icon48.png"
+      }
+   },
+   "author": "Zinlab \u003Csebastian@Zinlab>",
+   "background": {
+      "service_worker": "js/background.js"
+   },
+   "chrome_url_overrides": {
+      "history": "history/index.html"
+   },
+   "default_locale": "en",
+   "description": "__MSG_manifest_description__",
+   "icons": {
+      "128": "assets/icons/icon128.png",
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArQPEnUrLquUukvNuLDZEfCfPdEh71BYOd6C79DT/0g9UAOgVb75qq0tfPXxFGCl92rBhWFKPRso62Gwo5ZKqN1oYOCFcEgvTREV2FOvmAuU4elA2LRDQ6/ZUjipN3wNsysg7enAJ5eWZiwml4dGhyqvgLRHi3RTnFdll2aKcQzR9IqA3i0Q9zhrCM15bxzrY6okKGZSLmIE2MrfTsF3KvCy8++uQSUGUwJmkwn3FhaeDUZKWbtKKwiupKfDZOdM4Zxc22zOvkBC71O/+PSPS2bD8qE6gD6szuToTnN/0gKSyTyMlesM3nhtqgOhgjTZNyDMas2QYS+dR33q4cz/TyQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "offline_enabled": true,
+   "permissions": [ "favicon", "tabs", "storage", "contextMenus", "history", "sessions", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.0.2",
+   "web_accessible_resources": [ {
+      "extension_ids": [ "*" ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/*", "_favicon/*" ]
+   } ]
+}

@@ -1,0 +1,191 @@
+{
+   "about": {
+      "message": "about"
+   },
+   "activity": {
+      "message": "activity"
+   },
+   "appName": {
+      "message": "Better History"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "clearHistory": {
+      "message": "clear history"
+   },
+   "clearingHistory": {
+      "message": "Clearing history"
+   },
+   "contact": {
+      "message": "contact"
+   },
+   "current": {
+      "message": "From This Site"
+   },
+   "darkMode": {
+      "message": "Dark mode"
+   },
+   "default": {
+      "message": "Default"
+   },
+   "delete": {
+      "message": "delete"
+   },
+   "deleteAll": {
+      "message": "Delete all visits from"
+   },
+   "deleteMsg": {
+      "message": "Delete all search results?"
+   },
+   "delete_url": {
+      "message": "Delete this URL from history"
+   },
+   "devices": {
+      "message": "devices"
+   },
+   "enable_popup": {
+      "message": "Enable popup"
+   },
+   "export": {
+      "message": "Export"
+   },
+   "feedback": {
+      "message": "Feedback / Bug"
+   },
+   "history": {
+      "message": "history"
+   },
+   "hourFormat": {
+      "message": "Hour Format"
+   },
+   "hours": {
+      "message": "Hours"
+   },
+   "infinityScroll": {
+      "message": "Enable infinity scroll"
+   },
+   "interfaceStyle": {
+      "message": "Interface Style"
+   },
+   "large": {
+      "message": "Large"
+   },
+   "lightMode": {
+      "message": "Light Mode"
+   },
+   "manifest_browser_action_title": {
+      "message": "Browse history"
+   },
+   "manifest_description": {
+      "message": "A better look at your browsing history. The best searching, the sharpest interface, and the most useful filters - for your history."
+   },
+   "medium": {
+      "message": "Medium"
+   },
+   "moreFromSite": {
+      "message": "more from site"
+   },
+   "noDevices": {
+      "message": "No active device sessions found."
+   },
+   "noVisits": {
+      "message": "Sorry, no visits found."
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "openAllTabs": {
+      "message": "Open all Tabs"
+   },
+   "openTab": {
+      "message": "Open in new tab"
+   },
+   "otherOptions": {
+      "message": "Other options"
+   },
+   "recent": {
+      "message": "Recent Visits"
+   },
+   "results": {
+      "message": "Results"
+   },
+   "rightTitle": {
+      "message": "right click options"
+   },
+   "search": {
+      "message": "search"
+   },
+   "searchDeeper": {
+      "message": "Search deeper"
+   },
+   "searchDomainTitle": {
+      "message": "Search by domain"
+   },
+   "searchEngine": {
+      "message": "search engine"
+   },
+   "searchMsg": {
+      "message": "Pssst... try searching for something"
+   },
+   "searchPlaceholder": {
+      "message": "Search title or url"
+   },
+   "searchTextTitle": {
+      "message": "Search by text selection"
+   },
+   "searchTips": {
+      "message": "search tips"
+   },
+   "searchTipsMsg1": {
+      "message": "Regular expression searching is now supported!"
+   },
+   "searchTipsMsg2": {
+      "message": "For example, try searching for"
+   },
+   "searchTipsMsg3": {
+      "message": "Search for visits and downloads"
+   },
+   "searchTipsMsg4": {
+      "message": "Searching will automatically look for visits, by page title and url, and downloads, by filename and url."
+   },
+   "searchTipsMsg5": {
+      "message": "Your last 10,000 visits are used for a fast, initial search. To search deeper, visit the bottom of the last page of results and click the Search deeper button."
+   },
+   "search_history": {
+      "message": "Search in history"
+   },
+   "searching": {
+      "message": "Searching"
+   },
+   "selectDateFormat": {
+      "message": "Select a date format"
+   },
+   "settings": {
+      "message": "settings"
+   },
+   "showAllHistory": {
+      "message": "Show all history"
+   },
+   "small": {
+      "message": "Small"
+   },
+   "today": {
+      "message": "Today"
+   },
+   "toolbarIcon": {
+      "message": "Toolbar button icon"
+   },
+   "typedCount": {
+      "message": "Typed {{times}} times in address bar"
+   },
+   "visitCount": {
+      "message": "Link visited {{times}} times"
+   },
+   "visits_domain": {
+      "message": "Visits to {{d}}"
+   },
+   "yesterday": {
+      "message": "Yesterday"
+   }
+}
