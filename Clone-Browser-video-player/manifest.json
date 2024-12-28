@@ -1,0 +1,54 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "worker.js"
+   },
+   "commands": {
+      "_execute_action": {
+         "description": "Press the action button"
+      }
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "file_handlers": [ {
+      "accept": {
+         "video/3gpp": [ ".3gp" ],
+         "video/avi": [ ".avi" ],
+         "video/dvd": [ ".vob" ],
+         "video/mp4": [ ".mp4" ],
+         "video/mpeg": [ ".mpg" ],
+         "video/ogg": [ ".ogv" ],
+         "video/quicktime": [ ".mov" ],
+         "video/webm": [ ".webm" ],
+         "video/x-flv": [ ".flv" ],
+         "video/x-matroska": [ ".mkv" ],
+         "video/x-ms-wmv": [ ".wmv" ]
+      },
+      "action": "/data/player/index.html",
+      "launch_type": "single-client",
+      "name": "Open with MediaPlayer"
+   } ],
+   "homepage_url": "https://add0n.com/video-player.html",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png",
+      "19": "data/icons/19.png",
+      "256": "data/icons/256.png",
+      "32": "data/icons/32.png",
+      "38": "data/icons/38.png",
+      "48": "data/icons/48.png",
+      "512": "data/icons/512.png",
+      "64": "data/icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApVZKeT13qetsODqIGRsJ0scg5a4zJpIUFhoshKuOSpF2ntTKbhSV4x6fgeIPmunmjsIa4hjizWE43Ogd0QIDhvwceylqg6+2dTZLjGxNOLuWW3cdvoKJ0atvcQVR+Kk7de4+X5oqs0Giuei3qkKSxjpIsIoqUcC6AY4oWTOGnGzxWhnhnH6zNUJAr4MUDG8xJZpTwi0BnpG8bw/umMtynyU0j1qpTYcRDMBUq3x0k6aSQg0sUDSKWEqK+rXIWBBgeINmje8eRZeAQOkpqSZ9pTTn0sy5zQGzfHaNHwAFu8wFygUpBnpPBEnokhUjwtlX/6V5vPIOZTgHGa0T8VECHQIDAQAB",
+   "manifest_version": 3,
+   "name": "Video Player",
+   "offline_enabled": true,
+   "permissions": [ "storage", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.4"
+}
