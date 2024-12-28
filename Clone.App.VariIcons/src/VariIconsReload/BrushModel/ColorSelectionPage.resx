@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="scrAlpha.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="scrAlpha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 365</value>
+  </data>
+  <data name="scrAlpha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 16</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="scrAlpha.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.Name" xml:space="preserve">
+    <value>scrAlpha</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.Type" xml:space="preserve">
+    <value>ControlsEx.ValueControls.HValueScrollBar, ControlsEx, Version=1.0.4013.39652, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cPlane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cPlane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="cPlane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 259</value>
+  </data>
+  <data name="cPlane.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cPlane.Text" xml:space="preserve">
+    <value>colorSelectionPlane1</value>
+  </data>
+  <data name="&gt;&gt;cPlane.Name" xml:space="preserve">
+    <value>cPlane</value>
+  </data>
+  <data name="&gt;&gt;cPlane.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.ColorModels.Selection.ColorSelectionPlane, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cPlane.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cPlane.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cFader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="cFader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 2</value>
+  </data>
+  <data name="cFader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 259</value>
+  </data>
+  <data name="cFader.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cFader.Text" xml:space="preserve">
+    <value>colorFader1</value>
+  </data>
+  <data name="&gt;&gt;cFader.Name" xml:space="preserve">
+    <value>cFader</value>
+  </data>
+  <data name="&gt;&gt;cFader.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.ColorModels.Selection.ColorSelectionFader, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cFader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cFader.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbtn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="cbtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="cbtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 333</value>
+  </data>
+  <data name="cbtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 32</value>
+  </data>
+  <data name="cbtn.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbtn.Name" xml:space="preserve">
+    <value>cbtn</value>
+  </data>
+  <data name="&gt;&gt;cbtn.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.ColorButton, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbtn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="colorDialogEx1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="palStd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="palStd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 261</value>
+  </data>
+  <data name="palStd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 36</value>
+  </data>
+  <data name="palStd.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="palStd.Text" xml:space="preserve">
+    <value>swatches2</value>
+  </data>
+  <data name="&gt;&gt;palStd.Name" xml:space="preserve">
+    <value>palStd</value>
+  </data>
+  <data name="&gt;&gt;palStd.Type" xml:space="preserve">
+    <value>VariIconsReload.BrushModel.Swatches, VariIconsReload, Version=3.9.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;palStd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;palStd.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="ctxMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>150, 17</value>
+  </metadata>
+  <data name="mnuLock.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAASNJREFUOE/lUy1P
+        BDEQvR8A3P0BzpEsCffhQHCAIUFt9w+wtef6E4q7oLpy3daBoxJHJXLkyZHIStww0w3n7swaEppM+vHm
+        vXkzSUejAYuIBrCZ+scEXPdRcXjnI9o2oNl0XtuukiYPYXkIkuADIGDitojSN1H4RDIbj8Z2zT5MaZsL
+        sEAM+JWIk+NxUcL8oQb3GtG/AzGZQkTZ0+m8x6wLUd5vlAlZoPExlz46K3Fxq5cMQnbCIaYAieI20Umh
+        GmXcUlqU+8X1Y8oCtn0LsGXL7KA0DjgBJkVFk+JuF7P7Gn8x9xIjF6Xple4dmOeuEtXAloGVI/f/1AZa
+        lQbV2jb7sPG56mcgSxtX8VC8kGarGqeX2o8XfcIhbCfwnw9DfpRwfwAuDwYXgjDLbQAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="mnuLock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="mnuLock.Text" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="mnuClear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAATpJREFUOE+Vk7uR
+        gzAQhhU6VOhwQ4cbEm5IqBKuBJdACZRACZRACS6BEtyB7lv54HjIN2fP/MOg3f/bh0zIOYfUJkUTMn//
+        RCXZWvsys4yeQNJfgJSSkH9fcl4AK4BRmwLJQLojRG4aiRmxJ4/hCBAPOuSnk0ylEUVPBBytTSWmjfaq
+        Ws5dp3lJum8ggzWmqC9m1d472XZXXRjJih4+EqanC+N4NFc7WOiYDGWqO2QW2Vd+O8JrZhWqPRxQ5JCb
+        zrXbOY2AoZiRm8Z4FQ5kdBBn6/VVO8BArjyQV57kKnH5cebb911IdYmMHEkaMPnSZqRLYoFcYuTI4X0V
+        QCDRrrfp6txQ+TMxnszg1i7WHcRr7AhkQBPmXZtbEAvtyVu7WwEYNVxCH0Iwnqfqu7bDb/yjL+9f1/jJ
+        p+y53wEpOdcfOx0hAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="mnuClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="mnuClear.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ctxMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 70</value>
+  </data>
+  <data name="&gt;&gt;ctxMenu.Name" xml:space="preserve">
+    <value>ctxMenu</value>
+  </data>
+  <data name="&gt;&gt;ctxMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="palHistory.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="palHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 297</value>
+  </data>
+  <data name="palHistory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 36</value>
+  </data>
+  <data name="palHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="palHistory.Text" xml:space="preserve">
+    <value>swatches1</value>
+  </data>
+  <data name="&gt;&gt;palHistory.Name" xml:space="preserve">
+    <value>palHistory</value>
+  </data>
+  <data name="&gt;&gt;palHistory.Type" xml:space="preserve">
+    <value>VariIconsReload.BrushModel.Swatches, VariIconsReload, Version=3.9.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;palHistory.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;palHistory.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 383</value>
+  </data>
+  <data name="&gt;&gt;colorDialogEx1.Name" xml:space="preserve">
+    <value>colorDialogEx1</value>
+  </data>
+  <data name="&gt;&gt;colorDialogEx1.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.ColorDialogEx, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mnuLock.Name" xml:space="preserve">
+    <value>mnuLock</value>
+  </data>
+  <data name="&gt;&gt;mnuLock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuClear.Name" xml:space="preserve">
+    <value>mnuClear</value>
+  </data>
+  <data name="&gt;&gt;mnuClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ColorSelectionPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DockingFrames.UserFramePage, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

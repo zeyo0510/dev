@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariIconsReload", "VariIconsReload\VariIconsReload.csproj", "{6C3C181C-1036-4C77-ABCE-1B4393434075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariIconsSDK", "VariIconsSDK\VariIconsSDK.csproj", "{4F07E4A4-91E5-4207-95F9-62A884C67342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariIcons", "VariIcons\VariIcons.csproj", "{38AD61DF-B82A-4D25-BB7A-617832BDC45C}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C3C181C-1036-4C77-ABCE-1B4393434075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C3C181C-1036-4C77-ABCE-1B4393434075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C3C181C-1036-4C77-ABCE-1B4393434075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C3C181C-1036-4C77-ABCE-1B4393434075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F07E4A4-91E5-4207-95F9-62A884C67342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F07E4A4-91E5-4207-95F9-62A884C67342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F07E4A4-91E5-4207-95F9-62A884C67342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F07E4A4-91E5-4207-95F9-62A884C67342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AD61DF-B82A-4D25-BB7A-617832BDC45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AD61DF-B82A-4D25-BB7A-617832BDC45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AD61DF-B82A-4D25-BB7A-617832BDC45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AD61DF-B82A-4D25-BB7A-617832BDC45C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

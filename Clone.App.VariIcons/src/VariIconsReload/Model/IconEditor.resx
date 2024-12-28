@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="vDisplayList1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="vDisplayList1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="vDisplayList1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 372</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="vDisplayList1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="vDisplayList1.Text" xml:space="preserve">
+    <value>{0} x {1} {2}bpp</value>
+  </data>
+  <data name="&gt;&gt;vDisplayList1.Name" xml:space="preserve">
+    <value>vDisplayList1</value>
+  </data>
+  <data name="&gt;&gt;vDisplayList1.Type" xml:space="preserve">
+    <value>ControlsEx.ListControls.VDisplayList, ControlsEx, Version=1.0.4023.3955, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;vDisplayList1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;vDisplayList1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolBar2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="toolBar2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 398</value>
+  </data>
+  <data name="toolBar2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="toolBar2.Text" xml:space="preserve">
+    <value>toolBar2</value>
+  </data>
+  <data name="tbOpenImage.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAXBJREFUOE+9kyFT
+        xDAUhPsTKpFx2EpkB3WHgEhkZWUVnCOy7iIRiGCgMwgiT0aejERWIvMPlveSXKcFbpgzZGZn0jb77b7M
+        XVH8x7ppt53SBqo3oP0bP5+U22w0ZLt9YtN1uz1nGEP4fWEH/UDCd72/6udjKWyWLUMTAKM3CMFGIRjg
+        08AajWOQgzkB6GAg09zMAHx0MPTNPKokraBZfYdFswhgQ05OZkVqftUPAKdEQJazGqzpToyicXKL3CS2
+        6XMbrhdGHQHjng7TnWCkBsdEo/F4fpC4a9cvxQQgCJvdjgDx0GwET3svgb1E2NUYTYX79oq0viy4TqCZ
+        F+k+A6KRxEZXR3OwFVQrUjqvCPCpunc5fWaES6lsDEMF35doViKl8+LL8G42e06cUrNxNAJel8v0BOji
+        j8ZbuhhdTHK0d5RmVZLZCOhOLNMPAK0aqA2pk+gaiea2hlzVqC8qVJVAJQTEWYmyLCFIJ/2R/jr8BbWo
+        54+XOkO5AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tbOpenImage.Command.Shortcut" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Strg+Umschalttaste+O</value>
+  </data>
+  <data name="tbOpenImage.Command.Text" xml:space="preserve">
+    <value>Open and add to list...</value>
+  </data>
+  <data name="tbPasteImage.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAYlJREFUOE+1ky9T
+        AzEQxe8j9CP0I1QiI5GRlVEMionEkUHVEXlyZR2RlZEnIysjKyNxj7cXDsp/wbAzb3Ki7/d2N+kw/Efl
+        FKBKEvAod1c/ZjzuH3zaRyyS6NBOMqseI/y1Qdx5KsznJ6AaW0sA1ZpARj+fu/sblCkgeIvgNmiZ4MMa
+        3lm860gBalbFnaOJwFNkekCdHNJo4bYGEtYocYDffgTIAhDE4Jiosmz9RUz0BETfAe7SvO9AFoDOXZle
+        PIqs3jTym8ZF5mLzATCGvrTK88j5i+U0K0ThSGNCiNRO4IPA3UY4H78AaPKRS5pozlyYAmh+rSeuqDXU
+        U4O9DrAuvEEkajI1mW4+rFBlmJO1JOWufUapBNCcpwJjXYfo/erci7nthw5g2zhLLseGXCrs1s9mc2lh
+        DBeqj6NNFJO19UpAGXldnFnbPu9A95Jy6fuhzGZNQFBzv6Jz6cJ05iU5T3U2p0PXK0Cfst6/vjBnDazZ
+        zGTdts68pH11zh18V7pt/cFv+vOf+RnhEfjrUoFWOAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="tbPasteImage.Command.Shortcut" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Strg+Umschalttaste+V</value>
+  </data>
+  <data name="tbPasteImage.Command.Text" xml:space="preserve">
+    <value>Paste as new Image...</value>
+  </data>
+  <data name="tbSaveImage.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAW9JREFUOE+tU6F2
+        AjEQ5BP6CXzCSWQkMhIZiWsk8iQyEhmJjERG4nqyMrIysm47s3dw4Upr2n1vHu9dMrMzu2G1+o9KlyqK
+        NOFcJUbgVCSECccifQ8cBvGEH+Tem8ScBZfl16qfInaXxe2S4rvAsf4oQHKtVYzN0nUOQo1AhGU6oMVn
+        dSOXjyqdTYhRxNo4O2BeCngcLKslD+8Q2CbN/yiAYakADtpakvNQZG2iuP1CgJOmAA9u9Yycr0VeNhBw
+        Wew2zBECVpQvglVCxEGdFzBtHRgy0zY738k8awU4vJQgAMTIdVbpsZFx70WjebjTziBbiD4K4GGk80y2
+        O4+LDZxHvL4hQ8D0cwS+rLYzyXgk0hkjnPxQqrhDj67sTHJcCMBiPOEdTLYpQLI/BCkgc/++D/hGYhx/
+        N60D5NPcyLzmwDqDgWZFzoPkK9dmlajAJsxGXY71un8Lbs8BJX0gd2DSHJYCmdl1BBy2An/5R38B7lU7
+        S+WMVCoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tbSaveImage.Command.Shortcut" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Strg+Umschalttaste+S</value>
+  </data>
+  <data name="tbSaveImage.Command.Text" xml:space="preserve">
+    <value>Save Current Image...</value>
+  </data>
+  <data name="tbResize.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAJBJREFUOE9jYKAj
+        CADaBcJkgzYFCYX/ZOsGamxTEFfYSokBAUAD8og1oA1kIxRvAtLYMEi+ApeBMA0gP2PDMM1O+AygKMBA
+        LkA3ABSFpsSGAVYDBPBEI8j0KGhCAdmCbACID5Jvw2cALJGAAgekGNmAAJBGGKbEC8TqBasDuQDkGrIB
+        3kRCjKmgFIYzkSAbAAD1SS4Ke0UtKgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="tbResize.Command.Text" xml:space="preserve">
+    <value>Resize Image</value>
+  </data>
+  <data name="&gt;&gt;toolBar2.Name" xml:space="preserve">
+    <value>toolBar2</value>
+  </data>
+  <data name="&gt;&gt;toolBar2.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBar, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBar2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;toolBar2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="toolBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="toolBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="toolBar1.Text" xml:space="preserve">
+    <value>toolBar1</value>
+  </data>
+  <data name="tbAdd.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhPY2AYviCj79J/EI5su/SfLF+CNC/Y8f+/V8FhygywTlxKvAEwZ4PohIYL/yds+PDf
+        IGLBf+vIpf+tE7f898rYjN8wmLNBTgdpbljx4X/BjAf/Ezou/A+ouAA0ZAl+A0ABBvIzyNkgm0GaDQIW
+        /NfxmgrHRAcoyBCQzTpe04gPA2TTrTO2gJ1NtgFeBVvAXiHbAKL9OvQVAgClbnQQaGJD9AAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tbAdd.Command.Text" xml:space="preserve">
+    <value>toolBarDropDownButton1</value>
+  </data>
+  <data name="tbAdd16x16b32.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhPY2AYviCj79J/EI5su/SfLF+CNC/Y8f+/V8FhygywTlxKvAEwZ4PohIYL/yds+PDf
+        IGLBf+vIpf+tE7f898rYjN8wmLNBTgdpbljx4X/BjAf/Ezou/A+ouAA0ZAl+A0ABBvIzyNkgm0GaDQIW
+        /NfxmgrHRAcoyBCQzTpe04gPA2TTrTO2gJ1NtgFeBVvAXiHbAKL9OvQVAgClbnQQaGJD9AAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tbAdd16x16b32.Command.Text" xml:space="preserve">
+    <value>16x16 32bpp TrueColor</value>
+  </data>
+  <data name="tbAdd32x32b32.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhPY2AYviCj79J/EI5su/SfLF+CNC/Y8f+/V8FhygywTlxKvAEwZ4PohIYL/yds+PDf
+        IGLBf+vIpf+tE7f898rYjN8wmLNBTgdpbljx4X/BjAf/Ezou/A+ouAA0ZAl+A0ABBvIzyNkgm0GaDQIW
+        /NfxmgrHRAcoyBCQzTpe04gPA2TTrTO2gJ1NtgFeBVvAXiHbAKL9OvQVAgClbnQQaGJD9AAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tbAdd32x32b32.Command.Text" xml:space="preserve">
+    <value>32x32 32bpp TrueColor</value>
+  </data>
+  <data name="tbAdd48x48b32.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhPY2AYviCj79J/EI5su/SfLF+CNC/Y8f+/V8FhygywTlxKvAEwZ4PohIYL/yds+PDf
+        IGLBf+vIpf+tE7f898rYjN8wmLNBTgdpbljx4X/BjAf/Ezou/A+ouAA0ZAl+A0ABBvIzyNkgm0GaDQIW
+        /NfxmgrHRAcoyBCQzTpe04gPA2TTrTO2gJ1NtgFeBVvAXiHbAKL9OvQVAgClbnQQaGJD9AAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tbAdd48x48b32.Command.Text" xml:space="preserve">
+    <value>48x48 32bpp TrueColor</value>
+  </data>
+  <data name="tbOtherFormats.Command.Text" xml:space="preserve">
+    <value>Other Formats</value>
+  </data>
+  <data name="tb16x16b8.Command.Text" xml:space="preserve">
+    <value>16x16 256 Colors</value>
+  </data>
+  <data name="tb32x32b8.Command.Text" xml:space="preserve">
+    <value>32x32 256 Colors</value>
+  </data>
+  <data name="tb48x48b8.Command.Text" xml:space="preserve">
+    <value>48x48 256 Colors</value>
+  </data>
+  <data name="tb16x16b4.Command.Text" xml:space="preserve">
+    <value>16x16 16 Colors</value>
+  </data>
+  <data name="tb32x32b4.Command.Text" xml:space="preserve">
+    <value>32x32 16 Colors</value>
+  </data>
+  <data name="tb48x48b4.Command.Text" xml:space="preserve">
+    <value>48x48 16 Colors</value>
+  </data>
+  <data name="tb16x16b2.Command.Text" xml:space="preserve">
+    <value>16x16 4 Colors</value>
+  </data>
+  <data name="tb32x32b2.Command.Text" xml:space="preserve">
+    <value>32x32 4 Colors</value>
+  </data>
+  <data name="tb48x48b2.Command.Text" xml:space="preserve">
+    <value>48x48 4 Colors</value>
+  </data>
+  <data name="tb16x16b1.Command.Text" xml:space="preserve">
+    <value>16x16 2 Colors</value>
+  </data>
+  <data name="tb32x32b1.Command.Text" xml:space="preserve">
+    <value>32x32 2 Colors</value>
+  </data>
+  <data name="tb48x48b1.Command.Text" xml:space="preserve">
+    <value>48x48 2 Colors</value>
+  </data>
+  <data name="tbCustomFormat.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhPY2AYviCj79J/EI5su/SfLF+CNC/Y8f+/V8FhygywTlxKvAEwZ4PohIYL/yds+PDf
+        IGLBf+vIpf+tE7f898rYjN8wmLNBTgdpbljx4X/BjAf/Ezou/A+ouAA0ZAl+A0ABBvIzyNkgm0GaDQIW
+        /NfxmgrHRAcoyBCQzTpe04gPA2TTrTO2gJ1NtgFeBVvAXiHbAKL9OvQVAgClbnQQaGJD9AAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tbCustomFormat.Command.Text" xml:space="preserve">
+    <value>Custom Format...</value>
+  </data>
+  <data name="tbRemove.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhP7dIhEoMwEAXQfySOwBEiKyORkZXISiSyR4isjKxEVnKCQhJIgvolFZ2qItqZGnbm
+        yf07s7tYlgUprWJCDAkhRIQ5Yp7Cy+RneDfBWQ87rgaH8W4xrLAH/HgHqu351PSUp46y7iiyo6FQhmWl
+        +fEKudHcSH0lmwtZa1KdSdmSoiGLw0ZAnljmSe8qw0JmejvgP4+Evb7ewANhLPOo/ZGSQQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tbRemove.Command.Text" xml:space="preserve">
+    <value>toolBarButton2</value>
+  </data>
+  <data name="tbUp.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAJ5JREFUOE9jYBi+
+        wCFjfVvBjAf/QTTJvgRrXvDh/4ID//8bRCwgzRBkzRM2/P+f0PHgv0EAkYbAnA2yGaS5YAHQgAkf/jtU
+        XCDOELCfC4CKMy6ADUiY8QGMDSI2/FcAukLBY8J/osIjoOEB2P9gA4BeAGkmSiNMEciAhhUQzQFA5yt4
+        kGEAWHPDBaCXDhDvdGQXgEIe5GcYJskLI0wxAIYnhiTqzqIyAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tbUp.Command.Text" xml:space="preserve">
+    <value>toolBarButton3</value>
+  </data>
+  <data name="tbDown.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAKRJREFUOE/dkKER
+        wzAMRTNSRsgIgoGGgYaGRr1Aw0LDshoWeoSMoBGywa/knq+9Ets0vhOy9N6Xpumaz8YT9s6wgWH2o9TQ
+        pjocMxBeUgkgmwcBYlaAfwAmnFi2NAbQyF7MJoh9F4DpBPzuXu3kGTPFAmkmWbbnjVyWA8oRo9oZ5A4Z
+        zB+I/DePqU3zmqBmcjw2XOkVUsxrp/k/2hfSEbu517Ub3j9aiJNYbPisAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tbDown.Command.Text" xml:space="preserve">
+    <value>toolBarButton4</value>
+  </data>
+  <data name="&gt;&gt;toolBar1.Name" xml:space="preserve">
+    <value>toolBar1</value>
+  </data>
+  <data name="&gt;&gt;toolBar1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBar, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBar1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;toolBar1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 424</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 424</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 424</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_zoombar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="_zoombar.Text" xml:space="preserve">
+    <value>myZoomBar1</value>
+  </data>
+  <data name="lblCursorPosition.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblCursorPosition.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABd0RVh0U29mdHdh
+        cmUAUGFpbnQuTkVUIHYyLjYljphEAAABRklEQVQ4T2NgQAX/0fgkcwfGAJCtMAxyMjp/AdQfuGgUb1LH
+        C5sO3fh/98k7OL796M3/S7ee/e+du/ldQm5dq4iYpCCu0AW7YMOBa//RwZevP/7PXL77f2HT9I8ljVM6
+        8EbP6t0XMQz4/PX7/5LWOf/NvFLAGJcB4IBatvU0hgH//v3/f+/xq/+zV+797x1bhj+sFm44hmHA799/
+        /7/7+P3/jkOX/nvhMQDsgtmrD6AY8Bdo/edvP/8/ffX5/5b9F/AaAPbatKW7UAz48fPP/1fvv/2/8+j9
+        /w17zhF2weRF2+EG/Pn79/+Hzz/+P3z+8f/l26//r9lxhrALYAb8Azr9249f/1+8+fL/xoO3/09def5/
+        BTCACYYByIBPX779P3Tq2v+9x6/833bwItjpK7ed/j971X7iXBCb2wRWiA1b+abDoxEAf/dVb4IXIfcA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="lblCursorPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="lblCursorPosition.Text" xml:space="preserve">
+    <value>0; 0</value>
+  </data>
+  <data name="lblCursorPosition.ToolTipText" xml:space="preserve">
+    <value>Cursor Location</value>
+  </data>
+  <data name="lblSelectionSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblSelectionSize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAU1JREFUOE9j+P//
+        PwM2zMAAEsaUA4kDsQdIDswmwwADmCFEGQBVDLIOO6a5C9AtIDoMcLkMi4GYfoMpCoxIKrl0+8X/q/de
+        gfGl28//r9197n9W1YQV0nKK4uCYwGeTf3hiyY+fv0HRCQeb9p79P2v5zr+lrbNXoRiALd59Q+JKvv9A
+        NeDM5bv/I7Ka/juF5YPTCdwF2AzwCowu+fbjF4oLfvz68//slYdgQwga4O4XUfLt+0+4AX/+/vv//tOP
+        /xdvPiPOABfv0JKvSAZ8/f7r/5OXn/+fvPQIYQA0XmHJE0zDAtbZM7jk67cfYBf8/vP3/+v33/7fevju
+        /4HT91AM8EBLpuCMAsIwA/7++/f/09ef/x8+//j//I2X/3ccuYXqBVDuQk5hyAY8ef7mf/es9Rg4JL0e
+        EojYMgnMADklNVMZVcNSCUVdrBikDgBfDYKnqRtYWQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="lblSelectionSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="lblSelectionSize.Text" xml:space="preserve">
+    <value>0; 0</value>
+  </data>
+  <data name="lblSelectionSize.ToolTipText" xml:space="preserve">
+    <value>Selection Size</value>
+  </data>
+  <data name="tbsep1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="tbsep2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="tbAutozoom.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAVBJREFUOE+tkyFT
+        AzEQhftP4B+Qf0BcT57EkRkQHRCEU5UnEKCIPIGIrFxZGVmZQVVGVkbWPXavlMnRu84ww5vZuZj37dtN
+        bjb7D1FIOK0IWkd4ilBz83K2j5in5FcBqjLnIRTiJMAxIGw4xTmIRJ2S83Qwf9foKH4MsM/cOcB5j9Y5
+        OC5dG4wDeFEDsZnWHD0EpF3uyxPBWDsFCAO/dBbzUXkPpAxOQ2hs83GSQjZdSmJLV5GYMx/TDv1VN8/N
+        aQrZ9ADQHQClOW5ljIi7h/sRAEcrRTyv7EBiS+fAZooZdtnKCJ/+/eltMIbMViql1G/drxjEb0Q6i7m+
+        qUHOgDqLAWQA6GfOiNsI1zmYheUyMGx2ViN5DWwMvCsgR4B8p6p9dbC1QmwVUqeRqYZd1Id9/H5t5csr
+        z7qqYRgSlhqmUridXz3++We+VhdLrS5/zF8SiBkTUjr1kAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="tbAutozoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="tbAutozoom.ToolTipText" xml:space="preserve">
+    <value>Toogle AutoZoom</value>
+  </data>
+  <data name="tbGrid.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADNSURBVDhPrZOxEYMwDEUZySN4BJcpXaZ0SUmZMmXKjJARGCEjZBOiH9uSHCMu4eDuH4Y7/f8k
+        xDAceaXba6l++hyvT34fJjl32W2RmMWLNpjZjA1QqBXpGakfUTGE5DDNSxizfHqsG1XXFltSUWyODcls
+        YGD7tNFCj024BdsXbKD7c1ZH8gv2auE/2GayTFuw87RJBdnR3cWi071vAf1WGvTMZ9UvDMyv0BioaWts
+        F43kdknyoqDwG9sRelVHopfESkWx2YJekl0Ge/7sN0r98ml1J0/qAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tbGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="tbGrid.ToolTipText" xml:space="preserve">
+    <value>Gridlines</value>
+  </data>
+  <data name="tbsep3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <metadata name="statusControls.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="cbFore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="cbFore.ToolTipText" xml:space="preserve">
+    <value>Fore color of edit control</value>
+  </data>
+  <data name="cbBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="cbBack.ToolTipText" xml:space="preserve">
+    <value>Back color of edit control</value>
+  </data>
+  <data name="sep3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="layerView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layerView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="layerView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 424</value>
+  </data>
+  <data name="layerView1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="layerView1.Text" xml:space="preserve">
+    <value>layerView1</value>
+  </data>
+  <data name="&gt;&gt;layerView1.Name" xml:space="preserve">
+    <value>layerView1</value>
+  </data>
+  <data name="&gt;&gt;layerView1.Type" xml:space="preserve">
+    <value>VariIconsReload.Components.LayerView, VariIconsReload, Version=3.9.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;layerView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layerView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>632, 424</value>
+  </data>
+  <data name="&gt;&gt;tbOpenImage.Name" xml:space="preserve">
+    <value>tbOpenImage</value>
+  </data>
+  <data name="&gt;&gt;tbOpenImage.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbPasteImage.Name" xml:space="preserve">
+    <value>tbPasteImage</value>
+  </data>
+  <data name="&gt;&gt;tbPasteImage.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbSaveImage.Name" xml:space="preserve">
+    <value>tbSaveImage</value>
+  </data>
+  <data name="&gt;&gt;tbSaveImage.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace2.Name" xml:space="preserve">
+    <value>toolBarSpace2</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace2.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSpace, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbResize.Name" xml:space="preserve">
+    <value>tbResize</value>
+  </data>
+  <data name="&gt;&gt;tbResize.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbAdd.Name" xml:space="preserve">
+    <value>tbAdd</value>
+  </data>
+  <data name="&gt;&gt;tbAdd.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSplitButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbAdd16x16b32.Name" xml:space="preserve">
+    <value>tbAdd16x16b32</value>
+  </data>
+  <data name="&gt;&gt;tbAdd16x16b32.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbAdd32x32b32.Name" xml:space="preserve">
+    <value>tbAdd32x32b32</value>
+  </data>
+  <data name="&gt;&gt;tbAdd32x32b32.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbAdd48x48b32.Name" xml:space="preserve">
+    <value>tbAdd48x48b32</value>
+  </data>
+  <data name="&gt;&gt;tbAdd48x48b32.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sep1.Name" xml:space="preserve">
+    <value>sep1</value>
+  </data>
+  <data name="&gt;&gt;sep1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSeparator, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbOtherFormats.Name" xml:space="preserve">
+    <value>tbOtherFormats</value>
+  </data>
+  <data name="&gt;&gt;tbOtherFormats.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarDropDownButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b8.Name" xml:space="preserve">
+    <value>tb16x16b8</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b8.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b8.Name" xml:space="preserve">
+    <value>tb32x32b8</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b8.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b8.Name" xml:space="preserve">
+    <value>tb48x48b8</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b8.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator1.Name" xml:space="preserve">
+    <value>toolBarSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSeparator, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b4.Name" xml:space="preserve">
+    <value>tb16x16b4</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b4.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b4.Name" xml:space="preserve">
+    <value>tb32x32b4</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b4.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b4.Name" xml:space="preserve">
+    <value>tb48x48b4</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b4.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator2.Name" xml:space="preserve">
+    <value>toolBarSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator2.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSeparator, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b2.Name" xml:space="preserve">
+    <value>tb16x16b2</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b2.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b2.Name" xml:space="preserve">
+    <value>tb32x32b2</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b2.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b2.Name" xml:space="preserve">
+    <value>tb48x48b2</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b2.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator3.Name" xml:space="preserve">
+    <value>toolBarSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator3.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSeparator, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b1.Name" xml:space="preserve">
+    <value>tb16x16b1</value>
+  </data>
+  <data name="&gt;&gt;tb16x16b1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b1.Name" xml:space="preserve">
+    <value>tb32x32b1</value>
+  </data>
+  <data name="&gt;&gt;tb32x32b1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b1.Name" xml:space="preserve">
+    <value>tb48x48b1</value>
+  </data>
+  <data name="&gt;&gt;tb48x48b1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbCustomFormat.Name" xml:space="preserve">
+    <value>tbCustomFormat</value>
+  </data>
+  <data name="&gt;&gt;tbCustomFormat.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbRemove.Name" xml:space="preserve">
+    <value>tbRemove</value>
+  </data>
+  <data name="&gt;&gt;tbRemove.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace1.Name" xml:space="preserve">
+    <value>toolBarSpace1</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSpace, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbUp.Name" xml:space="preserve">
+    <value>tbUp</value>
+  </data>
+  <data name="&gt;&gt;tbUp.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbDown.Name" xml:space="preserve">
+    <value>tbDown</value>
+  </data>
+  <data name="&gt;&gt;tbDown.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.4023.25856, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_zoombar.Name" xml:space="preserve">
+    <value>_zoombar</value>
+  </data>
+  <data name="&gt;&gt;_zoombar.Type" xml:space="preserve">
+    <value>ControlsEx.ZoomBar, ControlsEx, Version=1.0.4023.3955, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblCursorPosition.Name" xml:space="preserve">
+    <value>lblCursorPosition</value>
+  </data>
+  <data name="&gt;&gt;lblCursorPosition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSelectionSize.Name" xml:space="preserve">
+    <value>lblSelectionSize</value>
+  </data>
+  <data name="&gt;&gt;lblSelectionSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbsep1.Name" xml:space="preserve">
+    <value>tbsep1</value>
+  </data>
+  <data name="&gt;&gt;tbsep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbsep2.Name" xml:space="preserve">
+    <value>tbsep2</value>
+  </data>
+  <data name="&gt;&gt;tbsep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbAutozoom.Name" xml:space="preserve">
+    <value>tbAutozoom</value>
+  </data>
+  <data name="&gt;&gt;tbAutozoom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbGrid.Name" xml:space="preserve">
+    <value>tbGrid</value>
+  </data>
+  <data name="&gt;&gt;tbGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbsep3.Name" xml:space="preserve">
+    <value>tbsep3</value>
+  </data>
+  <data name="&gt;&gt;tbsep3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusControls.Name" xml:space="preserve">
+    <value>statusControls</value>
+  </data>
+  <data name="&gt;&gt;statusControls.Type" xml:space="preserve">
+    <value>VariIconsSDK.UI.StripControlContainer, VariIconsSDK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbFore.Name" xml:space="preserve">
+    <value>cbFore</value>
+  </data>
+  <data name="&gt;&gt;cbFore.Type" xml:space="preserve">
+    <value>VariIconsReload.Components.ToolStripColorButton, VariIconsReload, Version=3.9.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cbBack.Name" xml:space="preserve">
+    <value>cbBack</value>
+  </data>
+  <data name="&gt;&gt;cbBack.Type" xml:space="preserve">
+    <value>VariIconsReload.Components.ToolStripColorButton, VariIconsReload, Version=3.9.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sep3.Name" xml:space="preserve">
+    <value>sep3</value>
+  </data>
+  <data name="&gt;&gt;sep3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>IconEditor</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>VariIconsSDK.UI.EditorTab, VariIconsSDK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

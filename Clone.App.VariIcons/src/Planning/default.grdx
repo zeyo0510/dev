@@ -1,0 +1,20 @@
+<Collection>
+  <Gradient GammaCorrected="False" Title="">
+    <ColorPoint Position="0" Focus="0.5" Color="41.24, 21.26, 1.93" />
+    <ColorPoint Position="1" Focus="0.23076923076923078" Color="11.093450553768523, 4.8807131205090286, 38.387591771344312" />
+    <AlphaPoint Position="0" Focus="0.5" Alpha="1" />
+    <AlphaPoint Position="1" Focus="0.81118881118881114" Alpha="0.20392156862745098" />
+  </Gradient>
+  <Gradient GammaCorrected="False" Title="">
+    <ColorPoint Position="0.36363636363636365" Focus="0.5" Color="41.24, 21.26, 1.93" />
+    <ColorPoint Position="1" Focus="0.23076923076923078" Color="11.093450553768523, 4.8807131205090286, 38.387591771344312" />
+    <AlphaPoint Position="0" Focus="0.5" Alpha="1" />
+    <AlphaPoint Position="1" Focus="0.81118881118881114" Alpha="0.20392156862745098" />
+  </Gradient>
+  <Gradient GammaCorrected="False" Title="">
+    <ColorPoint Position="0" Focus="0.5" Color="41.24, 21.26, 1.93" />
+    <ColorPoint Position="0.53846153846153844" Focus="0.23076923076923078" Color="11.093450553768523, 4.8807131205090286, 38.387591771344312" />
+    <AlphaPoint Position="0" Focus="0.5" Alpha="1" />
+    <AlphaPoint Position="1" Focus="0.81118881118881114" Alpha="0.20392156862745098" />
+  </Gradient>
+</Collection>

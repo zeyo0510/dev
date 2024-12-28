@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="scrAlpha.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="scrAlpha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="scrAlpha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 78</value>
+  </data>
+  <data name="scrAlpha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="scrAlpha.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="scrAlpha.Text" xml:space="preserve">
+    <value>valueScrollBar1</value>
+  </data>
+  <data name="scrAlpha.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.Name" xml:space="preserve">
+    <value>scrAlpha</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.Type" xml:space="preserve">
+    <value>WindowsControls.ValueScrollBar, WindowsControls, Version=2.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;scrAlpha.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="grpPreview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="brushTransform1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="brushTransform1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 21</value>
+  </data>
+  <data name="brushTransform1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 75</value>
+  </data>
+  <data name="brushTransform1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="brushTransform1.Text" xml:space="preserve">
+    <value>brushTransform1</value>
+  </data>
+  <data name="&gt;&gt;brushTransform1.Name" xml:space="preserve">
+    <value>brushTransform1</value>
+  </data>
+  <data name="&gt;&gt;brushTransform1.Type" xml:space="preserve">
+    <value>VariIconsReload.BrushModel.BrushTransform, VariIconsReload, Version=3.9.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;brushTransform1.Parent" xml:space="preserve">
+    <value>grpPreview</value>
+  </data>
+  <data name="&gt;&gt;brushTransform1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 110</value>
+  </data>
+  <data name="grpPreview.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="grpPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 104</value>
+  </data>
+  <data name="grpPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="grpPreview.Text" xml:space="preserve">
+    <value>Transform</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.Name" xml:space="preserve">
+    <value>grpPreview</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="toolBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="toolBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolBar.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="toolBar.Text" xml:space="preserve">
+    <value>toolBar1</value>
+  </data>
+  <data name="drpGradientType.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAFuSURBVDhPrc1JUM9hGAfwTkJX642EE6FOVLaZkK2DtTAU
+        lWWEyjJkX0bWcsiegz2dsp9s5SbL1dYxck8XPv+Z18w7DS71m/nM8z7vO9/vLympj75fev7odv5BOx94
+        zVOauMY5jrEr/ncc7vTwlfe08oR7NFDHUXayqWfBTxff+cI7WnhMYwjXmkfYwUZWxQVdlm98DuFX5iPu
+        cpWzHGY7G1hJflzQYfnEW17ykDtc4QyHQni9uYKFzIwLPlraeMEDbnOZ0xykijIKWcAMMuOCN5bnIXzL
+        vMQpDlBJKQXMZzoZjI0Lnlnuc5OLnGQ/FZSwnHlMYxJjGB4XNFtucIET7GMb60J4rjmViYxmGClxwXXL
+        +RDea25lLcvIIyeE08yhDIzDiXM9NVSzhWKWModsJjCKIQzoGU7sx9kTwkXmEmaTRTqpDKb/38KJu92U
+        s4bFzGIK4xnJIJL/FU7cb2Y1i8hlMuMYEcL9/hfu1dtvd9hZUxLhju0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="drpGradientType.Command.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tbGradientLinear.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAFuSURBVDhPrc1JUM9hGAfwTkJX642EE6FOVLaZkK2DtTAU
+        lWWEyjJkX0bWcsiegz2dsp9s5SbL1dYxck8XPv+Z18w7DS71m/nM8z7vO9/vLympj75fev7odv5BOx94
+        zVOauMY5jrEr/ncc7vTwlfe08oR7NFDHUXayqWfBTxff+cI7WnhMYwjXmkfYwUZWxQVdlm98DuFX5iPu
+        cpWzHGY7G1hJflzQYfnEW17ykDtc4QyHQni9uYKFzIwLPlraeMEDbnOZ0xykijIKWcAMMuOCN5bnIXzL
+        vMQpDlBJKQXMZzoZjI0Lnlnuc5OLnGQ/FZSwnHlMYxJjGB4XNFtucIET7GMb60J4rjmViYxmGClxwXXL
+        +RDea25lLcvIIyeE08yhDIzDiXM9NVSzhWKWModsJjCKIQzoGU7sx9kTwkXmEmaTRTqpDKb/38KJu92U
+        s4bFzGIK4xnJIJL/FU7cb2Y1i8hlMuMYEcL9/hfu1dtvd9hZUxLhju0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tbGradientLinear.Command.Text" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="tbGradientRadial.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAFDSURBVDhPrdORU4VREAXwJ0nyJEmSJEmSJEmS5EmSPEmC
+        JEmSJEmSJEmSJ0kSJ08eJ0l/Suc3s/fO96YnNe3MmW9n7+45u3vvNxr9k32E5z14DZ6Dx+AhuC/wn4JZ
+        8BYsgs+htuKXSlJ0E1wNcF0xZwQIIekmQOGuis7znQanBf5FnclBopNuAq34LP5JcBQcFvhiznSmE+N0
+        M6O2KUtUuBvsBNvlH+Q7qRy5Ou6GEbNWqSneDNYLG0WG2FhyiXbTvhmpU6KqeGgI9yvnMl+iKwkkbQVr
+        vyXAqr1VHSBD6kzOjw7M465t+TjYqwKzj8sXcyZHrsfWzUZvi5mCRRrFMoEv1tTtbOkavUKMrkd7bsNC
+        KQJfzBkhgksPqT1lJBJck1vxLkChtikr9nLnQbf2M7X/wU4kIwO+WHvCir+GBH/2vwGNF1J/i27NvQAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="tbGradientRadial.Command.Text" xml:space="preserve">
+    <value>Radial</value>
+  </data>
+  <data name="tbGradientAngled.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAFcSURBVDhPrdI/KIVRGMfxi0lSlGRAV8ifASVFugMDKUVG
+        ZBADioFShMUVEhkMykBMYsVASQwohTAgJAwkKSUlvk89r56LF4O3Pj3nee85v3POvdfj+aenl5wedKAV
+        TahDJSpQggLkIRsZSLd799NISDfa0YJ6VKEcRfAhRxenUZNswDDNoIZ0UdvQgGqUoRC5yEQqEhFvA8Zo
+        RjEEPzrRjBqU6u5Z1BR4EYsYGzBBMw4JGkEf5Cq1KIbcOxlxujCKGmkDZmimMQkJk6ABNCIfCYhGBMIR
+        hlAbMEczD6mOWcZTOjGEGqyCqI6PjAVGi1jCMtawg3u82Z3cxit8sIp1bGEfF3jRgF9DNpi4qbseUM9w
+        h1cT8GPINhN3cYhTXOPx02IJcA3Z08Un1Evc4sklQK745TnijSyWe9/gAc8uAXIK+XkDnmO6c1zp7nJ8
+        +wU6x7c14H/w3an+9O4dBwdlZZEM8vUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tbGradientAngled.Command.Text" xml:space="preserve">
+    <value>Angled</value>
+  </data>
+  <data name="tbForm.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AAAJmSURBVDhPpVJLTxNRFOYnSSwWXenGtMSFO7dYigsWJkLA
+        jW0BxRcStUIIsS2WKtrWB0+ZtrRQS1NM1KqhpS2J0fDoPGhNTNBEHp/n3BltXDOZk3vvmXvO9zhTV3fY
+        ZyCooj8s405QQ39Ij75xBY4xGZ0eBW2DW7Dd3cC5m2Wc7d7CaccGTnat40T7NwhsLg6kgEepfYwmD/Aw
+        vodhaRfumT3cntjFtfBvOJ79wmX/Djo8P9E2sgP70A/U27NGg6AiUG+FiUlIxfUnMq54VVwcLuvIfZs4
+        Q6inOtfR2P4F5o5NHL/0FUdsab1BYOottpW8iKpcorUAReNzAZpqhFKivZErr4m8yWrXG/hepukyF+bx
+        XSlCVVZFscsbwVWvROscejwR9HpjcHhfo6KuobiyCFOTTW8wEkpQUQ73fBJ67ofRdcMvGnb7otjHAfiF
+        vqMmUWjyKvK5JBqsRgOWUFEJWS4KZF1OCU6PJAqcIuZFQyex2lZzWPmUgMly/n8JTJ+LNdZIKEIzXRZn
+        XinH31lC9l0EjdbWmoRKmQsKqJSL4gIzYTSXJwoXIbMfzITPGrF7n4mQBMPEoXFKUvEAGdTrfm54kBeU
+        hXzDA966RiVUiUVmaRr1VkOCOzD7j5oYG4+M/HD65sQEdHRi44sJBiw1tTgJs8Uw8cFYRMyfZVRpGqy9
+        KrOZBWPV/42/OfZhPv6iNsZB/wwUQi7m0yh8foNcdgEfs3F8WJawnJnFUmoSycQrLESCiElPIU09xvSE
+        vzZGZsAz5eCfg805ZmlGQ1OryDFVzpktF3DU2kzut4izydKiT+Gwzx/WdI1bRwsHcgAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="tbForm.Command.Text" xml:space="preserve">
+    <value>Full Gradient Editor</value>
+  </data>
+  <data name="tbReverse.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAABgSURBVDhPY2AYBTQJgQSgqfOxmAwSA8nhBHVAmY9AfBuI
+        FbCoAomB5EBqQGpRwD8g7z+JGKQHDmyArJNA/BOIr+NxJUgOpAakFqQHA4CcCfLrfixyIDGQHEjNKBhU
+        IQAAmzgdaeU1d0wAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tbReverse.Command.Text" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Name" xml:space="preserve">
+    <value>toolBar</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBar, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolBar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnRemoveStop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnRemoveStop.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnRemoveStop.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhP7dIhEoMwEAXQfySOwBEiKyORkZXISiSyR4isjKxEVnKCQhJIgvolFZ2qItqZGnbm
+        yf07s7tYlgUprWJCDAkhRIQ5Yp7Cy+RneDfBWQ87rgaH8W4xrLAH/HgHqu351PSUp46y7iiyo6FQhmWl
+        +fEKudHcSH0lmwtZa1KdSdmSoiGLw0ZAnljmSe8qw0JmejvgP4+Evb7ewANhLPOo/ZGSQQAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="btnRemoveStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRemoveStop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 78</value>
+  </data>
+  <data name="btnRemoveStop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="btnRemoveStop.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveStop.Name" xml:space="preserve">
+    <value>btnRemoveStop</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveStop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveStop.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bottomBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="bottomBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 376</value>
+  </data>
+  <data name="bottomBar.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="bottomBar.Text" xml:space="preserve">
+    <value>toolBar1</value>
+  </data>
+  <data name="tbAdd.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACeSURBVDhPY2AYviCj79J/EI5su/SfLF+CNC/Y8f+/V8FhygywTlxKvAEwZ4PohIYL/yds+PDf
+        IGLBf+vIpf+tE7f898rYjN8wmLNBTgdpbljx4X/BjAf/Ezou/A+ouAA0ZAl+A0ABBvIzyNkgm0GaDQIW
+        /NfxmgrHRAcoyBCQzTpe04gPA2TTrTO2gJ1NtgFeBVvAXiHbAKL9OvQVAgClbnQQaGJD9AAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="tbAdd.Command.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="drpMoreOptions.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAFNJREFUOE9jYKAG
+        UDAotC/oOPAfRJNlHkhzQMeD/woWDf+RDACx8WGEUpDNIM1ku4AsZ1NV02ggUiE4QYGYULGA/HQA0hxQ
+        AErKBRSkRKDmoZkSAf3VRnqn4jvJAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="drpMoreOptions.Command.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="tbClearPresets.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAATpJREFUOE+Vk7uR
+        gzAQhhU6VOhwQ4cbEm5IqBKuBJdACZRACZRACS6BEtyB7lv54HjIN2fP/MOg3f/bh0zIOYfUJkUTMn//
+        RCXZWvsys4yeQNJfgJSSkH9fcl4AK4BRmwLJQLojRG4aiRmxJ4/hCBAPOuSnk0ylEUVPBBytTSWmjfaq
+        Ws5dp3lJum8ggzWmqC9m1d472XZXXRjJih4+EqanC+N4NFc7WOiYDGWqO2QW2Vd+O8JrZhWqPRxQ5JCb
+        zrXbOY2AoZiRm8Z4FQ5kdBBn6/VVO8BArjyQV57kKnH5cebb911IdYmMHEkaMPnSZqRLYoFcYuTI4X0V
+        QCDRrrfp6txQ+TMxnszg1i7WHcRr7AhkQBPmXZtbEAvtyVu7WwEYNVxCH0Iwnqfqu7bDb/yjL+9f1/jJ
+        p+y53wEpOdcfOx0hAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tbClearPresets.Command.Text" xml:space="preserve">
+    <value>Clear Presets</value>
+  </data>
+  <data name="tbOpenPresets.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAXBJREFUOE+9kyFT
+        xDAUhPsTKpFx2EpkB3WHgEhkZWUVnCOy7iIRiGCgMwgiT0aejERWIvMPlveSXKcFbpgzZGZn0jb77b7M
+        XVH8x7ppt53SBqo3oP0bP5+U22w0ZLt9YtN1uz1nGEP4fWEH/UDCd72/6udjKWyWLUMTAKM3CMFGIRjg
+        08AajWOQgzkB6GAg09zMAHx0MPTNPKokraBZfYdFswhgQ05OZkVqftUPAKdEQJazGqzpToyicXKL3CS2
+        6XMbrhdGHQHjng7TnWCkBsdEo/F4fpC4a9cvxQQgCJvdjgDx0GwET3svgb1E2NUYTYX79oq0viy4TqCZ
+        F+k+A6KRxEZXR3OwFVQrUjqvCPCpunc5fWaES6lsDEMF35doViKl8+LL8G42e06cUrNxNAJel8v0BOji
+        j8ZbuhhdTHK0d5RmVZLZCOhOLNMPAK0aqA2pk+gaiea2hlzVqC8qVJVAJQTEWYmyLCFIJ/2R/jr8BbWo
+        54+XOkO5AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tbOpenPresets.Command.Text" xml:space="preserve">
+    <value>Open Presets...</value>
+  </data>
+  <data name="tbSavePresets.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAW9JREFUOE+tU6F2
+        AjEQ5BP6CXzCSWQkMhIZiWsk8iQyEhmJjERG4nqyMrIysm47s3dw4Upr2n1vHu9dMrMzu2G1+o9KlyqK
+        NOFcJUbgVCSECccifQ8cBvGEH+Tem8ScBZfl16qfInaXxe2S4rvAsf4oQHKtVYzN0nUOQo1AhGU6oMVn
+        dSOXjyqdTYhRxNo4O2BeCngcLKslD+8Q2CbN/yiAYakADtpakvNQZG2iuP1CgJOmAA9u9Yycr0VeNhBw
+        Wew2zBECVpQvglVCxEGdFzBtHRgy0zY738k8awU4vJQgAMTIdVbpsZFx70WjebjTziBbiD4K4GGk80y2
+        O4+LDZxHvL4hQ8D0cwS+rLYzyXgk0hkjnPxQqrhDj67sTHJcCMBiPOEdTLYpQLI/BCkgc/++D/hGYhx/
+        N60D5NPcyLzmwDqDgWZFzoPkK9dmlajAJsxGXY71un8Lbs8BJX0gd2DSHJYCmdl1BBy2An/5R38B7lU7
+        S+WMVCoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="tbSavePresets.Command.Text" xml:space="preserve">
+    <value>Save Presets...</value>
+  </data>
+  <data name="tbCopyCode.Command.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAOBJREFUOE+tUy0O
+        wjAY3ZE4AhLJETjCjoBEViInkZWTn0RWIiuRlbiP95qOrFu7jKRNXtIme39fu65rsYbR6Q8W+wjJ8cB5
+        hsyX5OUKH9UVgqrzQY/ni24K1Mj+DYEXBfqFACJPy4qLzpa1Uh2D6GYQpYA8vR5OywRJoOYcEB3JI2xZ
+        QNZ9kYJDI5nu1ztgrFopJigIgDh3Znxin0Aix97Y05nob3sSVJy3E7Ar7519saerSZ0nZ7o7VhhLM0jD
+        KnWenEl2HoPdEuAjEXzFu+awMoBIclWAj+MftPgH22h8AcOKLbFo/A2gAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tbCopyCode.Command.Text" xml:space="preserve">
+    <value>Copy Code</value>
+  </data>
+  <data name="&gt;&gt;bottomBar.Name" xml:space="preserve">
+    <value>bottomBar</value>
+  </data>
+  <data name="&gt;&gt;bottomBar.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBar, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bottomBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bottomBar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="sDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="sDialog.Filter" xml:space="preserve">
+    <value>Gradients (*.grdx)|*.grdx</value>
+  </data>
+  <metadata name="oDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>111, 17</value>
+  </metadata>
+  <data name="oDialog.Filter" xml:space="preserve">
+    <value>Gradients (*.grdx)|*.grdx</value>
+  </data>
+  <data name="grdList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="ctxMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>298, 17</value>
+  </metadata>
+  <data name="deletePresetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 22</value>
+  </data>
+  <data name="deletePresetToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete Preset</value>
+  </data>
+  <data name="ctxMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 26</value>
+  </data>
+  <data name="&gt;&gt;ctxMenu.Name" xml:space="preserve">
+    <value>ctxMenu</value>
+  </data>
+  <data name="&gt;&gt;ctxMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grdList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 214</value>
+  </data>
+  <data name="grdList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 8</value>
+  </data>
+  <data name="grdList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 8, 8</value>
+  </data>
+  <data name="grdList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 156</value>
+  </data>
+  <data name="grdList.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="grdList.Text" xml:space="preserve">
+    <value>Presets</value>
+  </data>
+  <data name="&gt;&gt;grdList.Name" xml:space="preserve">
+    <value>grdList</value>
+  </data>
+  <data name="&gt;&gt;grdList.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.Gradients.GradientListBox, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;grdList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grdList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="grdEdit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="grdEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 30</value>
+  </data>
+  <data name="grdEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="grdEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 40</value>
+  </data>
+  <data name="grdEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="grdEdit.Text" xml:space="preserve">
+    <value>gradientEdit1</value>
+  </data>
+  <data name="&gt;&gt;grdEdit.Name" xml:space="preserve">
+    <value>grdEdit</value>
+  </data>
+  <data name="&gt;&gt;grdEdit.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.Gradients.GradientEdit, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;grdEdit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grdEdit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="cDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>205, 17</value>
+  </metadata>
+  <data name="btnColor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnColor.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnColor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="btnColor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 78</value>
+  </data>
+  <data name="btnColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 24</value>
+  </data>
+  <data name="btnColor.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;btnColor.Name" xml:space="preserve">
+    <value>btnColor</value>
+  </data>
+  <data name="&gt;&gt;btnColor.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.ColorButton, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnColor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 402</value>
+  </data>
+  <data name="&gt;&gt;drpGradientType.Name" xml:space="preserve">
+    <value>drpGradientType</value>
+  </data>
+  <data name="&gt;&gt;drpGradientType.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarDropDownButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbGradientLinear.Name" xml:space="preserve">
+    <value>tbGradientLinear</value>
+  </data>
+  <data name="&gt;&gt;tbGradientLinear.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbGradientRadial.Name" xml:space="preserve">
+    <value>tbGradientRadial</value>
+  </data>
+  <data name="&gt;&gt;tbGradientRadial.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbGradientAngled.Name" xml:space="preserve">
+    <value>tbGradientAngled</value>
+  </data>
+  <data name="&gt;&gt;tbGradientAngled.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace1.Name" xml:space="preserve">
+    <value>toolBarSpace1</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSpace, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbForm.Name" xml:space="preserve">
+    <value>tbForm</value>
+  </data>
+  <data name="&gt;&gt;tbForm.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbReverse.Name" xml:space="preserve">
+    <value>tbReverse</value>
+  </data>
+  <data name="&gt;&gt;tbReverse.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbAdd.Name" xml:space="preserve">
+    <value>tbAdd</value>
+  </data>
+  <data name="&gt;&gt;tbAdd.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace2.Name" xml:space="preserve">
+    <value>toolBarSpace2</value>
+  </data>
+  <data name="&gt;&gt;toolBarSpace2.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSpace, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;drpMoreOptions.Name" xml:space="preserve">
+    <value>drpMoreOptions</value>
+  </data>
+  <data name="&gt;&gt;drpMoreOptions.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarDropDownButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbClearPresets.Name" xml:space="preserve">
+    <value>tbClearPresets</value>
+  </data>
+  <data name="&gt;&gt;tbClearPresets.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbOpenPresets.Name" xml:space="preserve">
+    <value>tbOpenPresets</value>
+  </data>
+  <data name="&gt;&gt;tbOpenPresets.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbSavePresets.Name" xml:space="preserve">
+    <value>tbSavePresets</value>
+  </data>
+  <data name="&gt;&gt;tbSavePresets.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator1.Name" xml:space="preserve">
+    <value>toolBarSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolBarSeparator1.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarSeparator, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbCopyCode.Name" xml:space="preserve">
+    <value>tbCopyCode</value>
+  </data>
+  <data name="&gt;&gt;tbCopyCode.Type" xml:space="preserve">
+    <value>DockingFrames.ToolBarButton, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sDialog.Name" xml:space="preserve">
+    <value>sDialog</value>
+  </data>
+  <data name="&gt;&gt;sDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oDialog.Name" xml:space="preserve">
+    <value>oDialog</value>
+  </data>
+  <data name="&gt;&gt;oDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deletePresetToolStripMenuItem.Name" xml:space="preserve">
+    <value>deletePresetToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;deletePresetToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDialog.Name" xml:space="preserve">
+    <value>cDialog</value>
+  </data>
+  <data name="&gt;&gt;cDialog.Type" xml:space="preserve">
+    <value>DrawingEx.ColorManagement.ColorDialogEx, DrawingEx, Version=1.0.4014.40559, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GradientSelectionPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DockingFrames.UserFramePage, DockingFrames, Version=1.0.3999.43033, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

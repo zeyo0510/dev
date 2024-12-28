@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<script type="text/javascript">
+		var curr="lblintro";
+		function changesite(obj,dest)
+		{	
+			parent.changesite(dest);
+			document.getElementById(curr).style.backgroundColor="#3399ff";
+			document.getElementById(obj ).style.backgroundColor="#ffffff";
+			curr=obj;
+		}
+		</script>
+		<style type="text/css">
+			.div
+			{
+			LEFT: 0px;
+			WIDTH: 128px;
+			CURSOR: hand;
+			PADDING-TOP: 4px;
+			FONT-FAMILY: 'Arial';
+			font-size:12;
+			POSITION: absolute;
+			HEIGHT: 24px;
+			BACKGROUND-COLOR: "#3399ff";
+			} 
+		</style>
+	</head>
+	<body bgColor="#3399ff" rightMargin="0" leftMargin="0" ms_positioning="GridLayout">
+		<DIV class="div" onclick="changesite('lblintro','00_intro.htm');" id="lblintro" align="center" style="TOP: 8px; BACKGROUND-COLOR: #ffffff" title="lblintro">
+			Intro
+		</DIV>
+		<DIV class="div" onclick="changesite('lblfarbe','02_farbe.htm');" id="lblfarbe" align="center" style="TOP: 40px;" title="lblfarbe">
+			Farben
+		</DIV>
+		<DIV class="div" onclick="changesite('lblverlauf','01_verlauf.htm');" id="lblverlauf" align="center"
+			style="TOP: 72px;" title="lblverlauf">
+			Farbverl&auml;ufe
+		</DIV>
+		<DIV class="div" onclick="changesite('lblwerk','03_werkzeuge.htm');" id="lblwerk" align="center"
+			style="TOP: 104px;" title="lblwerk">
+			Werkzeuge
+		</DIV>
+		<DIV class="div" onclick="changesite('lblsym','04_standart.htm');" id="lblsym" align="center" style="TOP: 136px;" title="lblsym">
+			Symbolleiste
+		</DIV>
+		<DIV class="div" onclick="changesite('lbleff','05_effekte.htm');" id="lbleff" align="center" style="TOP: 168px;" title="lbleff">
+			Effekte
+		</DIV>
+		<DIV class="div" onclick="changesite('lbledit','06_editctl.htm');" id="lbledit" align="center" style="TOP: 200px;" title="lbledit">
+			Editcontrol
+		</DIV>
+		<DIV class="div" onclick="changesite('lblstatus','07_statusbar.htm');" id="lblstatus" align="center"
+			style="TOP: 232px;" title="lblstatus">
+			Statusbar
+		</DIV>
+		<DIV class="div" onclick="changesite('lblabout','08_about.htm');" id="lblabout" align="center" style="TOP: 264px;" title="lblabout">
+			&Uuml;ber
+		</DIV>
+	</body>
+</html>

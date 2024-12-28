@@ -1,0 +1,14 @@
+TODO:
+
+-make selection tool act as a mask
+	heavy changes: tool+content type, history on mask
+-add selection action buttons for draw, replace, collapse
+-add line styles
+-implement shadow effect
+-add curves effect
+-add path tool
+-implement reverse gradient
+-add transparent color choosing to frame export
+layerview:
+	suspend update on layers
+	layer#onclientmousemove
