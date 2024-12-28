@@ -1,0 +1,1310 @@
+{
+   "json_end": {
+      "message": "json_end"
+   },
+   "manifest_description": {
+      "message": "ಒಂದು ಅನುಕೂಲಕರ ಕ್ಯಾಲೆಂಡರ್ ಮತ್ತು ಗಡಿಯಾರ ವಿಜೆಟ್."
+   },
+   "manifest_name": {
+      "message": "ಕ್ಯಾಲೆಂಡರ್ ಗಡಿಯಾರ"
+   },
+   "tz_Abidjan": {
+      "message": "abidjan"
+   },
+   "tz_Accra": {
+      "message": "ಅಕ್ರಾ"
+   },
+   "tz_Adak": {
+      "message": "ಗಿರುವ"
+   },
+   "tz_Addis_Ababa": {
+      "message": "ಅಡಿಸ್ ಅಬಾಬ"
+   },
+   "tz_Adelaide": {
+      "message": "ಅಡಿಲೇಡ್"
+   },
+   "tz_Aden": {
+      "message": "ಆಡೆನ್"
+   },
+   "tz_Africa": {
+      "message": "ಆಫ್ರಿಕಾ"
+   },
+   "tz_Algiers": {
+      "message": "ಅಲ್ಜೀರ್ಸ್"
+   },
+   "tz_Almaty": {
+      "message": "ಆಲ್ಮಟಿ"
+   },
+   "tz_America": {
+      "message": "ಅಮೆರಿಕ"
+   },
+   "tz_Amman": {
+      "message": "ಅಮ್ಮನ್"
+   },
+   "tz_Amsterdam": {
+      "message": "ಆಂಸ್ಟರ್ಡ್ಯಾಮ್"
+   },
+   "tz_Anadyr": {
+      "message": "ಅನಡೈರ್"
+   },
+   "tz_Anchorage": {
+      "message": "ಲಂಗರಿಳಿಸುವಿಕೆ"
+   },
+   "tz_Andorra": {
+      "message": "ಅಂಡೋರಾ"
+   },
+   "tz_Anguilla": {
+      "message": "ಆಂಗುಯಿಲ್ಲಾ"
+   },
+   "tz_Antananarivo": {
+      "message": ", Antananarivo"
+   },
+   "tz_Antarctica": {
+      "message": "ಅಂಟಾರ್ಟಿಕಾ"
+   },
+   "tz_Antigua": {
+      "message": "ಆಂಟಿಗುವಾ"
+   },
+   "tz_Apia": {
+      "message": "ಅಪಿಯಾ"
+   },
+   "tz_Aqtau": {
+      "message": "ಅಕ್ತಾವ್"
+   },
+   "tz_Aqtobe": {
+      "message": "ಅಕ್ಟೋಬೆ"
+   },
+   "tz_Araguaina": {
+      "message": "ಅರಾಗುಯಾನಾ"
+   },
+   "tz_Arctic": {
+      "message": "ಆರ್ಕ್ಟಿಕ್"
+   },
+   "tz_Argentina___Buenos_Aires": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಬ್ಯೂನಸ್"
+   },
+   "tz_Argentina___Catamarca": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / Catamarca"
+   },
+   "tz_Argentina___Cordoba": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಕಾರ್ಡೊಬ"
+   },
+   "tz_Argentina___Jujuy": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಜುಜುಯ್"
+   },
+   "tz_Argentina___La_Rioja": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / La Rioja"
+   },
+   "tz_Argentina___Mendoza": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಮೆಂಡೋಜ"
+   },
+   "tz_Argentina___Rio_Gallegos": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ರಿಯೊ GALLEGOS"
+   },
+   "tz_Argentina___Salta": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಜಿಗಿ"
+   },
+   "tz_Argentina___San_Juan": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಸ್ಯಾನ್ ಜುವಾನ್"
+   },
+   "tz_Argentina___San_Luis": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಸ್ಯಾನ್ ಲೂಯಿಸ್"
+   },
+   "tz_Argentina___Tucuman": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / ಟುಕುಮನ್"
+   },
+   "tz_Argentina___Ushuaia": {
+      "message": "ಅರ್ಜೆಂಟೀನಾ / Ushuaia"
+   },
+   "tz_Aruba": {
+      "message": "ಅರುಬಾ"
+   },
+   "tz_Ashgabat": {
+      "message": "ಅಶ್ಗಾಬಾತ್"
+   },
+   "tz_Asia": {
+      "message": "ಏಷ್ಯಾ"
+   },
+   "tz_Asmara": {
+      "message": "ಎರೀಟ್ರಿಯ"
+   },
+   "tz_Asuncion": {
+      "message": "ಅಸೂನ್ಸಿಯಾನ್"
+   },
+   "tz_Athens": {
+      "message": "ಅಥೆನ್ಸ್"
+   },
+   "tz_Atikokan": {
+      "message": "Atikokan"
+   },
+   "tz_Atlantic": {
+      "message": "ಅಟ್ಲಾಂಟಿಕ್"
+   },
+   "tz_Auckland": {
+      "message": "ಆಕ್ಲೆಂಡ್"
+   },
+   "tz_Australia": {
+      "message": "ಆಸ್ಟ್ರೇಲಿಯಾ"
+   },
+   "tz_Azores": {
+      "message": "ಅಝೋರಿಸ್"
+   },
+   "tz_Baghdad": {
+      "message": "ಬಾಗ್ದಾದ್"
+   },
+   "tz_Bahia": {
+      "message": "ಬಹಿಯಾ"
+   },
+   "tz_Bahia_Banderas": {
+      "message": "ಬಹಿಯಾ ಬಂಡರಾಸ್"
+   },
+   "tz_Bahrain": {
+      "message": "ಬಹ್ರೇನ್"
+   },
+   "tz_Baku": {
+      "message": "ಬಾಕು"
+   },
+   "tz_Bamako": {
+      "message": "ಬಮಾಕೊ"
+   },
+   "tz_Bangkok": {
+      "message": "ಬ್ಯಾಂಕಾಕ್"
+   },
+   "tz_Bangui": {
+      "message": "ಬಾಂಗಿ"
+   },
+   "tz_Banjul": {
+      "message": "ಬಂಜುಲ್"
+   },
+   "tz_Barbados": {
+      "message": "ಬಾರ್ಬಡೋಸ್"
+   },
+   "tz_Beirut": {
+      "message": "ಬೈರುತ್"
+   },
+   "tz_Belem": {
+      "message": "ಬೇಲಂ"
+   },
+   "tz_Belgrade": {
+      "message": "ಬೆಲ್ಗ್ರೇಡ್"
+   },
+   "tz_Belize": {
+      "message": "ಬೆಲೀಜ್"
+   },
+   "tz_Berlin": {
+      "message": "ಬರ್ಲಿನ್"
+   },
+   "tz_Bermuda": {
+      "message": "ಚಡ್ಡಿ"
+   },
+   "tz_Bishkek": {
+      "message": "ಬಿಶ್ಕೆಕ್"
+   },
+   "tz_Bissau": {
+      "message": "ಬಿಸ್ಸಾವ್"
+   },
+   "tz_Blanc__Sablon": {
+      "message": "ಬ್ಲಾಂಕ್-Sablon"
+   },
+   "tz_Blantyre": {
+      "message": "ಬ್ಲಾಂಟೈರ್"
+   },
+   "tz_Boa_Vista": {
+      "message": "ಬೋವವೀಸ್ತಾ"
+   },
+   "tz_Bogota": {
+      "message": "ಬೊಗೋಟ"
+   },
+   "tz_Boise": {
+      "message": "ಡ"
+   },
+   "tz_Bratislava": {
+      "message": "ಬ್ರಾಟಿಸ್ಲಾವಾ"
+   },
+   "tz_Brazzaville": {
+      "message": "Brazzaville"
+   },
+   "tz_Brisbane": {
+      "message": "ಬ್ರಿಸ್ಬೇನ್"
+   },
+   "tz_Broken_Hill": {
+      "message": "ಬ್ರೋಕನ್ ಹಿಲ್"
+   },
+   "tz_Brunei": {
+      "message": "ಬ್ರುನೈ"
+   },
+   "tz_Brussels": {
+      "message": "ಬ್ರಸೆಲ್ಸ್"
+   },
+   "tz_Bucharest": {
+      "message": "ಬುಕಾರೆಸ್ಟ್"
+   },
+   "tz_Budapest": {
+      "message": "ಬುಡಾಪೆಸ್ಟ್"
+   },
+   "tz_Bujumbura": {
+      "message": "ಬುಜುಂಬುರಾ"
+   },
+   "tz_Busingen": {
+      "message": "ಬುಸಿಂಗೆನ್"
+   },
+   "tz_Cairo": {
+      "message": "ಕೈರೋ"
+   },
+   "tz_Cambridge_Bay": {
+      "message": "ಕೇಂಬ್ರಿಡ್ಜ್ ಬೇ"
+   },
+   "tz_Campo_Grande": {
+      "message": "ಕ್ಯಾಂಪೊ ಗ್ರಾಂಡೆ"
+   },
+   "tz_Canary": {
+      "message": "ಕನೇರಿ ದ್ವೀಪಗಳ"
+   },
+   "tz_Cancun": {
+      "message": "Cancun"
+   },
+   "tz_Cape_Verde": {
+      "message": "ಕೇಪ್ ವರ್ಡೆ"
+   },
+   "tz_Caracas": {
+      "message": "ಕ್ಯಾರಕಾಸ್"
+   },
+   "tz_Casablanca": {
+      "message": "ಕಾಸಾಬ್ಲಾಂಕಾ"
+   },
+   "tz_Casey": {
+      "message": "ಕೇಸಿ"
+   },
+   "tz_Cayenne": {
+      "message": "ಮೆಣಸಿನ ಪುಡಿ"
+   },
+   "tz_Cayman": {
+      "message": "ಕೇಮನ್ ಕುಲದ ಮೊಸಳೆ"
+   },
+   "tz_Ceuta": {
+      "message": "ಸ್ಯೂಟ"
+   },
+   "tz_Chagos": {
+      "message": "ಚಾಗೊಸ್"
+   },
+   "tz_Chatham": {
+      "message": "ಚಾತಮ್"
+   },
+   "tz_Chicago": {
+      "message": "ಚಿಕಾಗೊ"
+   },
+   "tz_Chihuahua": {
+      "message": "ನುಣುಪು ಕೂದಲಿನ ನಾಯಿಜಾತಿ"
+   },
+   "tz_Chisinau": {
+      "message": "ಚಿಸಿನಾವ್"
+   },
+   "tz_Choibalsan": {
+      "message": "ಚೊಯ್ಬಾಲ್ಸನ್"
+   },
+   "tz_Chongqing": {
+      "message": "ಚಾಂಗಿಂಗ್"
+   },
+   "tz_Christmas": {
+      "message": "ಕ್ರಿಸ್ಮಸ್"
+   },
+   "tz_Chuuk": {
+      "message": "Chuuk"
+   },
+   "tz_Cocos": {
+      "message": "ಕೊಕೊಸ್"
+   },
+   "tz_Colombo": {
+      "message": "ಕೊಲಂಬೊ"
+   },
+   "tz_Comoro": {
+      "message": "ಕೊಮೋರೊ"
+   },
+   "tz_Conakry": {
+      "message": "Conakry"
+   },
+   "tz_Copenhagen": {
+      "message": "ಕೋಪನ್ ಹ್ಯಾಗನ್"
+   },
+   "tz_Costa_Rica": {
+      "message": "ಕೋಸ್ಟಾ ರಿಕಾ"
+   },
+   "tz_Creston": {
+      "message": "ಕ್ರೆಸ್ಟಾನ್"
+   },
+   "tz_Cuiaba": {
+      "message": "ಕ್ಯೂಇಬಾ"
+   },
+   "tz_Curacao": {
+      "message": "ಕೊಲಂಬಿಯ"
+   },
+   "tz_Currie": {
+      "message": "ಕ್ಯೂರಿ"
+   },
+   "tz_Dakar": {
+      "message": "ಡಾಕರ್"
+   },
+   "tz_Damascus": {
+      "message": "ಡಮಾಸ್ಕಸ್"
+   },
+   "tz_Danmarkshavn": {
+      "message": "ಡೆನ್ಮಾರ್ಕ್ಶಾವನ್"
+   },
+   "tz_Dar_es_Salaam": {
+      "message": "Dar es Salaam"
+   },
+   "tz_Darwin": {
+      "message": "ಡಾರ್ವಿನ್"
+   },
+   "tz_Davis": {
+      "message": "ಡೇವಿಸ್"
+   },
+   "tz_Dawson": {
+      "message": "ಡಾಸನ್"
+   },
+   "tz_Dawson_Creek": {
+      "message": "ಡಾಸನ್ ಕ್ರೀಕ್"
+   },
+   "tz_Denver": {
+      "message": "ಡೆನ್ವರ್"
+   },
+   "tz_Detroit": {
+      "message": "ಡೆಟ್ರಾಯಿಟ್"
+   },
+   "tz_Dhaka": {
+      "message": "ಢಾಕಾ"
+   },
+   "tz_Dili": {
+      "message": "ದಿಲಿ"
+   },
+   "tz_Djibouti": {
+      "message": "ಜಿಬೌಟಿ"
+   },
+   "tz_Dominica": {
+      "message": "ಡೊಮಿನಿಕಾ"
+   },
+   "tz_Douala": {
+      "message": "ಕ್ಯಾಮರೂನ್"
+   },
+   "tz_Dubai": {
+      "message": "ದುಬೈ"
+   },
+   "tz_Dublin": {
+      "message": "ಡಬ್ಲಿನ್"
+   },
+   "tz_DumontDUrville": {
+      "message": "DumontDUrville"
+   },
+   "tz_Dushanbe": {
+      "message": "ದುಶಾಂಬೆ"
+   },
+   "tz_Easter": {
+      "message": "ಈಸ್ಟರ್"
+   },
+   "tz_Edmonton": {
+      "message": "ಎಡ್ಮಂಟನ್"
+   },
+   "tz_Efate": {
+      "message": "ಇಫೇಟ್"
+   },
+   "tz_Eirunepe": {
+      "message": "Eirunepe"
+   },
+   "tz_El_Aaiun": {
+      "message": "ಎಲ್ ಔನ್"
+   },
+   "tz_El_Salvador": {
+      "message": "ಎಲ್ ಸಾಲ್ವಡಾರ್"
+   },
+   "tz_Enderbury": {
+      "message": "ಎಂಡರ್ಬರಿ"
+   },
+   "tz_Eucla": {
+      "message": "Eucla"
+   },
+   "tz_Europe": {
+      "message": "ಯುರೋಪ್"
+   },
+   "tz_Fakaofo": {
+      "message": "ಫಕೋಫೋ"
+   },
+   "tz_Faroe": {
+      "message": "ಫ್ಯಾರೋ"
+   },
+   "tz_Fiji": {
+      "message": "ಫಿಜಿ"
+   },
+   "tz_Fortaleza": {
+      "message": "ಫೊರ್ಟಲೆಜಾ"
+   },
+   "tz_Freetown": {
+      "message": "ಫ್ರೀಟೌನ್"
+   },
+   "tz_Funafuti": {
+      "message": "ಫುನಾಫುಟಿ"
+   },
+   "tz_Gaborone": {
+      "message": "ಗಾಬರೋನ್"
+   },
+   "tz_Galapagos": {
+      "message": "ಗ್ಯಾಲಪಗೋಸ್"
+   },
+   "tz_Gambier": {
+      "message": "ಗಾಂಬಿಯರ್"
+   },
+   "tz_Gaza": {
+      "message": "ಗಾಜಾ"
+   },
+   "tz_Gibraltar": {
+      "message": "ಗಿಬ್ರಾಲ್ಟರ್"
+   },
+   "tz_Glace_Bay": {
+      "message": "ಗ್ಲೇಸ್ ಬೇ"
+   },
+   "tz_Godthab": {
+      "message": "ಗೋಡ್ಥಾಬ್"
+   },
+   "tz_Goose_Bay": {
+      "message": "ಗೂಸ್ ಬೇ"
+   },
+   "tz_Grand_Turk": {
+      "message": "ಗ್ರ್ಯಾಂಡ್ ಟರ್ಕ್"
+   },
+   "tz_Grenada": {
+      "message": "ಗ್ರೆನಡಾ"
+   },
+   "tz_Guadalcanal": {
+      "message": "ಗ್ವಾಡಲ್ಕೆನಾಲ್"
+   },
+   "tz_Guadeloupe": {
+      "message": "ಗುಡೆಲೋಪ್"
+   },
+   "tz_Guam": {
+      "message": "ಗುವಾಮ್"
+   },
+   "tz_Guatemala": {
+      "message": "ಗ್ವಾಟೆಮಾಲಾ"
+   },
+   "tz_Guayaquil": {
+      "message": "ಗುಯಾಕ್ವಿಲ್"
+   },
+   "tz_Guernsey": {
+      "message": "ಗುರ್ನಸಿ"
+   },
+   "tz_Guyana": {
+      "message": "ಗಯಾನಾ"
+   },
+   "tz_Halifax": {
+      "message": "ಹ್ಯಾಲಿಫ್ಯಾಕ್ಸ್"
+   },
+   "tz_Harare": {
+      "message": "ಹರಾರೆ"
+   },
+   "tz_Harbin": {
+      "message": "ಹರ್ಬಿನ್"
+   },
+   "tz_Havana": {
+      "message": "ಹವಾನಾ"
+   },
+   "tz_Hebron": {
+      "message": "ಹೆಬ್ರಾನ್"
+   },
+   "tz_Helsinki": {
+      "message": "ಹೆಲ್ಸಿಂಕಿ"
+   },
+   "tz_Hermosillo": {
+      "message": "ಹೆರ್ಮೋಸಿಲ್ಲೋ"
+   },
+   "tz_Ho_Chi_Minh": {
+      "message": "ಹೊ ಚಿ ಮಿನ್ಹ್"
+   },
+   "tz_Hobart": {
+      "message": "ಹೋಬಾರ್ಟ್"
+   },
+   "tz_Hong_Kong": {
+      "message": "ಹಾಂಗ್ ಕಾಂಗ್"
+   },
+   "tz_Honolulu": {
+      "message": "ಹೊನೊಲುಲು"
+   },
+   "tz_Hovd": {
+      "message": "ಹೋವ್ಡ್"
+   },
+   "tz_Indian": {
+      "message": "ಭಾರತೀಯ"
+   },
+   "tz_Indiana___Indianapolis": {
+      "message": "ಇಂಡಿಯಾನಾ / ಇಂಡಿಯಾನಾಪೊಲಿಸ್"
+   },
+   "tz_Indiana___Knox": {
+      "message": "ಇಂಡಿಯಾನಾ / ನಾಕ್ಸ್"
+   },
+   "tz_Indiana___Marengo": {
+      "message": "ಇಂಡಿಯಾನಾ /, MARENGO"
+   },
+   "tz_Indiana___Petersburg": {
+      "message": "ಇಂಡಿಯಾನಾ / ಪೀಟರ್ಸ್ಬರ್ಗ್"
+   },
+   "tz_Indiana___Tell_City": {
+      "message": "ಇಂಡಿಯಾನಾ / ಸಿಟಿ ತಿಳಿಸಿ"
+   },
+   "tz_Indiana___Vevay": {
+      "message": "ಇಂಡಿಯಾನಾ / VEVAY"
+   },
+   "tz_Indiana___Vincennes": {
+      "message": "ಇಂಡಿಯಾನಾ / ವಿನ್ಸೆನ್ನಿಸ್"
+   },
+   "tz_Indiana___Winamac": {
+      "message": "ಇಂಡಿಯಾನಾ / WINAMAC"
+   },
+   "tz_Inuvik": {
+      "message": "Inuvik"
+   },
+   "tz_Iqaluit": {
+      "message": "ಇಖಾಲುಯತ್ೞ"
+   },
+   "tz_Irkutsk": {
+      "message": "ಇರ್ಕುಟ್ಸ್ಕ್"
+   },
+   "tz_Isle_of_Man": {
+      "message": "ಐಲ್ ಆಫ್ ಮ್ಯಾನ್"
+   },
+   "tz_Istanbul": {
+      "message": "ಇಸ್ತಾಂಬುಲ್"
+   },
+   "tz_Jakarta": {
+      "message": "ಜಕಾರ್ತಾ"
+   },
+   "tz_Jamaica": {
+      "message": "ಜಮೈಕಾ"
+   },
+   "tz_Jayapura": {
+      "message": "ಜಯಪುರ"
+   },
+   "tz_Jersey": {
+      "message": "ಬಿಗಿಗವಚ"
+   },
+   "tz_Jerusalem": {
+      "message": "ಕತ್ತೆ"
+   },
+   "tz_Johannesburg": {
+      "message": "ಜೋಹಾನ್ಸ್ಬರ್ಗ್"
+   },
+   "tz_Johnston": {
+      "message": "ಜಾನ್ಸ್ಟನ್"
+   },
+   "tz_Juba": {
+      "message": "ಜುಬಾ"
+   },
+   "tz_Juneau": {
+      "message": ": Juneau"
+   },
+   "tz_Kabul": {
+      "message": "ಕಾಬೂಲ್"
+   },
+   "tz_Kaliningrad": {
+      "message": "ಕಲಿನಿನ್ಗ್ರಾಡ್"
+   },
+   "tz_Kamchatka": {
+      "message": "ಕಾಮ್"
+   },
+   "tz_Kampala": {
+      "message": "ಕಂಪಾಲಾ"
+   },
+   "tz_Karachi": {
+      "message": "ಕರಾಚಿ"
+   },
+   "tz_Kashgar": {
+      "message": "ಕಶ್ಗರ್"
+   },
+   "tz_Kathmandu": {
+      "message": "ಕಠ್ಮಂಡುವಿನಿಂದ"
+   },
+   "tz_Kentucky___Louisville": {
+      "message": "ಕೆಂಟುಕಿ / ಲೂಯಿಸ್ವಿಲ್ಲೆ"
+   },
+   "tz_Kentucky___Monticello": {
+      "message": "ಕೆಂಟುಕಿ / ಮೊಂಟಿಚೆಲ್ಲೋ"
+   },
+   "tz_Kerguelen": {
+      "message": "ಕೆರ್ಗ್ಯುಲೆನ್"
+   },
+   "tz_Khandyga": {
+      "message": "Khandyga"
+   },
+   "tz_Khartoum": {
+      "message": "Khartoum"
+   },
+   "tz_Kiev": {
+      "message": "ಕೀವ್"
+   },
+   "tz_Kigali": {
+      "message": "ಕಿಗಾಲಿ"
+   },
+   "tz_Kinshasa": {
+      "message": "ಕಿನ್ಶಾಸಾ"
+   },
+   "tz_Kiritimati": {
+      "message": "ಕಿರಿಸ್ಮಸ್"
+   },
+   "tz_Kolkata": {
+      "message": "ಕೋಲ್ಕತಾ"
+   },
+   "tz_Kosrae": {
+      "message": "ಕೋಸ್ರೆ"
+   },
+   "tz_Kralendijk": {
+      "message": "Kralendijk"
+   },
+   "tz_Krasnoyarsk": {
+      "message": "ಕ್ರಸ್"
+   },
+   "tz_Kuala_Lumpur": {
+      "message": "ಕೌಲಾಲಂಪುರ್"
+   },
+   "tz_Kuching": {
+      "message": "ಕುಚಿಂಗ್"
+   },
+   "tz_Kuwait": {
+      "message": "ಕುವೈತ್"
+   },
+   "tz_Kwajalein": {
+      "message": "ಕ್ವಾಜಲೇನ್"
+   },
+   "tz_La_Paz": {
+      "message": "ಲಾ ಪಾಜ್"
+   },
+   "tz_Lagos": {
+      "message": "ಲಾಗೋಸ್"
+   },
+   "tz_Libreville": {
+      "message": "ಲಿಬರ್ವಿಲ್ಲೆ"
+   },
+   "tz_Lima": {
+      "message": "ಲಿಮಾ"
+   },
+   "tz_Lindeman": {
+      "message": "ಲಿಂಡೆಮ್ಯಾನ್"
+   },
+   "tz_Lisbon": {
+      "message": "ಲಿಸ್ಬನ್"
+   },
+   "tz_Ljubljana": {
+      "message": "ಲ್ಜುಬ್ಲಿಜಾನಾ"
+   },
+   "tz_Local_Time": {
+      "message": "ಸ್ಥಳೀಯ ಸಮಯ"
+   },
+   "tz_Lome": {
+      "message": "ಲೋಮ್"
+   },
+   "tz_London": {
+      "message": "ಲಂಡನ್ (ನಗರ)"
+   },
+   "tz_Longyearbyen": {
+      "message": "ಲೊಂಗ್ಯೀರ್ಬ್ಯೇನ್"
+   },
+   "tz_Lord_Howe": {
+      "message": "ಲಾರ್ಡ್ ಹೊವೆ"
+   },
+   "tz_Los_Angeles": {
+      "message": "ಲಾಸ್ ಏಂಜಲೀಸ್"
+   },
+   "tz_Lower_Princes": {
+      "message": "ಲೋವರ್ ಪ್ರಿನ್ಸಸ್"
+   },
+   "tz_Luanda": {
+      "message": "Luanda"
+   },
+   "tz_Lubumbashi": {
+      "message": "lubumbashi"
+   },
+   "tz_Lusaka": {
+      "message": "ಲುಸಾಕಾ"
+   },
+   "tz_Luxembourg": {
+      "message": "ಲಕ್ಸೆಂಬರ್ಗ್"
+   },
+   "tz_Macau": {
+      "message": "ಮಕಾವು"
+   },
+   "tz_Maceio": {
+      "message": "ಮೆಸೀಯೊ"
+   },
+   "tz_Macquarie": {
+      "message": "ಮ್ಯಾಕ್ಕ್ವಾರೀ"
+   },
+   "tz_Madeira": {
+      "message": "ಅಟ್ಲಾಂಟಿಕ್ ದ್ವೀಪವೊಂದರಲ್ಲಿ ತಯಾರಾಗುವ ಮದ್ಯ"
+   },
+   "tz_Madrid": {
+      "message": "ಮ್ಯಾಡ್ರಿಡ್"
+   },
+   "tz_Magadan": {
+      "message": "ಮಗದನ್"
+   },
+   "tz_Mahe": {
+      "message": "ಮಾಹೆ"
+   },
+   "tz_Majuro": {
+      "message": "ಮಜುರೊ"
+   },
+   "tz_Makassar": {
+      "message": "ಮಕಾಸ್ಸರ್"
+   },
+   "tz_Malabo": {
+      "message": "ಮಲಾಬೊ"
+   },
+   "tz_Maldives": {
+      "message": "ಮಾಲ್ಡೀವ್ಸ್"
+   },
+   "tz_Malta": {
+      "message": "ಮಾಲ್ಟಾ"
+   },
+   "tz_Managua": {
+      "message": "Managua"
+   },
+   "tz_Manaus": {
+      "message": "ಮನಾಸ್"
+   },
+   "tz_Manila": {
+      "message": "ಮನಿಲಾ"
+   },
+   "tz_Maputo": {
+      "message": "Maputo"
+   },
+   "tz_Mariehamn": {
+      "message": "Mariehamn"
+   },
+   "tz_Marigot": {
+      "message": "Marigot"
+   },
+   "tz_Marquesas": {
+      "message": "ಮಾರ್ಕ್ವೆಸಾಸ್"
+   },
+   "tz_Martinique": {
+      "message": "ಮಾರ್ಟಿನಿಕ್"
+   },
+   "tz_Maseru": {
+      "message": "ಮಸೇರು"
+   },
+   "tz_Matamoros": {
+      "message": "Matamoros"
+   },
+   "tz_Mauritius": {
+      "message": "ಮಾರಿಷಸ್"
+   },
+   "tz_Mawson": {
+      "message": "ಮಾವ್ಸನ್"
+   },
+   "tz_Mayotte": {
+      "message": "ಮಯೊಟ್ಟೆ"
+   },
+   "tz_Mazatlan": {
+      "message": "ಮಜಾಟ್ಲಾನ್"
+   },
+   "tz_Mbabane": {
+      "message": "ಎಂಬಾಬನೆ"
+   },
+   "tz_McMurdo": {
+      "message": "ಮ್ಯಾಕ್ಮುರ್ಡೋ"
+   },
+   "tz_Melbourne": {
+      "message": "ಮೆಲ್ಬರ್ನ್"
+   },
+   "tz_Menominee": {
+      "message": "Menominee"
+   },
+   "tz_Merida": {
+      "message": "ಆಂಡೆಯನ್"
+   },
+   "tz_Metlakatla": {
+      "message": "Metlakatla"
+   },
+   "tz_Mexico_City": {
+      "message": "ಮೆಕ್ಸಿಕೋ ಸಿಟಿ"
+   },
+   "tz_Midway": {
+      "message": "ನಡುದಾರಿಯಲ್ಲಿ"
+   },
+   "tz_Minsk": {
+      "message": "ಮಿನ್ಸ್ಕ್"
+   },
+   "tz_Miquelon": {
+      "message": "ಮಿಕೆಲಾನ್"
+   },
+   "tz_Mogadishu": {
+      "message": "ಮೊಗಾದಿಶು"
+   },
+   "tz_Monaco": {
+      "message": "ಮೊನಾಕೊ"
+   },
+   "tz_Moncton": {
+      "message": "ಮಾಂಕ್ಟನ್ನ"
+   },
+   "tz_Monrovia": {
+      "message": "ಲೈಬೀರಿಯ"
+   },
+   "tz_Monterrey": {
+      "message": "ಮಾಂಟೆರ್ರಿ"
+   },
+   "tz_Montevideo": {
+      "message": "ಮಾಂಟೆವಿಡಿಯೊ"
+   },
+   "tz_Montserrat": {
+      "message": "ಮೋಂಟ್ಸೆರೆಟ್"
+   },
+   "tz_Moscow": {
+      "message": "ಮಾಸ್ಕೋ"
+   },
+   "tz_Muscat": {
+      "message": "ಮಸ್ಕತ್"
+   },
+   "tz_Nairobi": {
+      "message": "ನೈರೋಬಿ"
+   },
+   "tz_Nassau": {
+      "message": ": Nassau"
+   },
+   "tz_Nauru": {
+      "message": "ನೌರು"
+   },
+   "tz_Ndjamena": {
+      "message": "ಡ್ಜಮೇನಾ"
+   },
+   "tz_New_York": {
+      "message": "ನ್ಯೂಯಾರ್ಕ್"
+   },
+   "tz_Niamey": {
+      "message": "ನಿಯಾಮೆ"
+   },
+   "tz_Nicosia": {
+      "message": "ನಿಕೋಸಿಯಾ"
+   },
+   "tz_Nipigon": {
+      "message": "Nipigon"
+   },
+   "tz_Niue": {
+      "message": "ನಿಯು"
+   },
+   "tz_Nome": {
+      "message": "ನಮ್"
+   },
+   "tz_Norfolk": {
+      "message": "ನಾರ್ಫೋಕ್"
+   },
+   "tz_Noronha": {
+      "message": "ನೊರೊನ್ಹಾ"
+   },
+   "tz_North_Dakota___Beulah": {
+      "message": "ಉತ್ತರ ಡಕೋಟ / ಬ್ಯುಲಾಹ್"
+   },
+   "tz_North_Dakota___Center": {
+      "message": "ಉತ್ತರ ಡಕೋಟ / ಸೆಂಟರ್"
+   },
+   "tz_North_Dakota___New_Salem": {
+      "message": "ಉತ್ತರ ಡಕೋಟ / ಹೊಸ ಸೇಲಂ"
+   },
+   "tz_Nouakchott": {
+      "message": "ನೌವಾಕ್ಚೋಟ್"
+   },
+   "tz_Noumea": {
+      "message": "ಡಾಲರ್"
+   },
+   "tz_Novokuznetsk": {
+      "message": "ನೊವೊಕುನ್ಸೆಟ್ಸ್ಕ್"
+   },
+   "tz_Novosibirsk": {
+      "message": "ನೋವೊಸಿಬಿರ್ಸ್ಕ್"
+   },
+   "tz_Ojinaga": {
+      "message": "Ojinaga"
+   },
+   "tz_Omsk": {
+      "message": "ಒಮ್ಸ್ಕ್"
+   },
+   "tz_Oral": {
+      "message": "ಮೌಖಿಕ"
+   },
+   "tz_Oslo": {
+      "message": "ಓಸ್ಲೋ"
+   },
+   "tz_Ouagadougou": {
+      "message": "ಔಗಾಡೋಗು"
+   },
+   "tz_Pacific": {
+      "message": "ಶಾಂತಿಯುತ"
+   },
+   "tz_Pago_Pago": {
+      "message": "PAGO PAGO"
+   },
+   "tz_Palau": {
+      "message": "ಪಲಾವು"
+   },
+   "tz_Palmer": {
+      "message": "ತಾಳೆ ಗರಿ ಹಿಡಿದುಕೊಂಡು ತೀರ್ಥಯಾತ್ರೆ ಮಾಡುವ ಭಿಕ್ಷು (ಕ್ರೈಸ್ತರ ನಂಬಿಕೆಯಂತೆ)"
+   },
+   "tz_Panama": {
+      "message": "ಮಧ್ಯ ಅಮೆರಿಕದ ಪನಾಮಾ ನಗರ"
+   },
+   "tz_Pangnirtung": {
+      "message": "Pangnirtung"
+   },
+   "tz_Paramaribo": {
+      "message": "ಪರಮಾರಿಬೋ"
+   },
+   "tz_Paris": {
+      "message": "ಪ್ಯಾರಿಸ್"
+   },
+   "tz_Perth": {
+      "message": "ಪರ್ತ್"
+   },
+   "tz_Phnom_Penh": {
+      "message": "ನೋಮ್ ಪೆನ್"
+   },
+   "tz_Phoenix": {
+      "message": "ಅನುಪಮ ವಸ್ತು"
+   },
+   "tz_Pitcairn": {
+      "message": "ಪಿಟ್ಕೈರ್ನ್"
+   },
+   "tz_Podgorica": {
+      "message": "ಪಡ್ಗೊರಿಕ"
+   },
+   "tz_Pohnpei": {
+      "message": "ದರ"
+   },
+   "tz_Pontianak": {
+      "message": "ಪೊಂಟಿಯಾನಕ್"
+   },
+   "tz_Port_Moresby": {
+      "message": "ಪೋರ್ಟ್ ಮೋರ್ಸ್ಬೆ"
+   },
+   "tz_Port__au__Prince": {
+      "message": "ಪೋರ್ಟ್ ಔ ಪ್ರಿನ್ಸ್"
+   },
+   "tz_Port_of_Spain": {
+      "message": "ಪೋರ್ಟ್ ಆಫ್ ಸ್ಪೇನ್"
+   },
+   "tz_Porto_Velho": {
+      "message": "ಪೋರ್ಟೊ ವೆಲ್ಹೋ"
+   },
+   "tz_Porto__Novo": {
+      "message": "ಪೋರ್ಟೊ-ನೋವೋ"
+   },
+   "tz_Prague": {
+      "message": "ಪ್ರೇಗ್"
+   },
+   "tz_Puerto_Rico": {
+      "message": "ಪೋರ್ಟೊ ರಿಕೊ"
+   },
+   "tz_Pyongyang": {
+      "message": "ಪ್ಯೊಂಗ್ಯಾಂಗ್"
+   },
+   "tz_Qatar": {
+      "message": "ಕತಾರ್"
+   },
+   "tz_Qyzylorda": {
+      "message": "Qyzylorda"
+   },
+   "tz_Rainy_River": {
+      "message": "ಮಳೆಯ ನದಿ"
+   },
+   "tz_Rangoon": {
+      "message": "ರಂಗೂನ್"
+   },
+   "tz_Rankin_Inlet": {
+      "message": "ರಾಂಕಿನ್ ಖಾರಿ"
+   },
+   "tz_Rarotonga": {
+      "message": "ರರೋಟೋಂಗಾ"
+   },
+   "tz_Recife": {
+      "message": "ರೆಸಿಫೆ"
+   },
+   "tz_Regina": {
+      "message": "ಆಳುತ್ತಿರುವ ರಾಣಿ"
+   },
+   "tz_Resolute": {
+      "message": "ದೃಢನಿಶ್ಚಯದ"
+   },
+   "tz_Reunion": {
+      "message": "ರಿಯೂನಿಯನ್"
+   },
+   "tz_Reykjavik": {
+      "message": "ರೈಕ್ಜಾವಿಕ್"
+   },
+   "tz_Riga": {
+      "message": "ರಿಗಾ"
+   },
+   "tz_Rio_Branco": {
+      "message": "ರಿಯೋ ಬ್ರ್ಯಾಂಕೊ"
+   },
+   "tz_Riyadh": {
+      "message": "ರಿಯಾದ್"
+   },
+   "tz_Rome": {
+      "message": "ರೋಮ್"
+   },
+   "tz_Rothera": {
+      "message": "ರೊಥೇರಾ"
+   },
+   "tz_Saipan": {
+      "message": "SAIPAN"
+   },
+   "tz_Sakhalin": {
+      "message": "ಸಖಾಲಿನ್"
+   },
+   "tz_Samara": {
+      "message": "ಮೇನಾ ಗಿಡ"
+   },
+   "tz_Samarkand": {
+      "message": "ಸಮರ್ಕಂಡ್"
+   },
+   "tz_San_Marino": {
+      "message": "ಸ್ಯಾನ್ ಮರಿನೋ"
+   },
+   "tz_Santa_Isabel": {
+      "message": "ಸಾಂಟಾ ಇಸಾಬೆಲ್"
+   },
+   "tz_Santarem": {
+      "message": ", Santarem"
+   },
+   "tz_Santiago": {
+      "message": "ಸ್ಯಾಂಟಿಯಾಗೊ"
+   },
+   "tz_Santo_Domingo": {
+      "message": "ಸ್ಯಾಂಟೋ ಡೊಮಿಂಗೊ"
+   },
+   "tz_Sao_Paulo": {
+      "message": "ಸಾವ್ ಪಾಲೊ"
+   },
+   "tz_Sao_Tome": {
+      "message": "ಸಾವೋ ಟೋಮ್"
+   },
+   "tz_Sarajevo": {
+      "message": "ಸರೊಜೆವೊ"
+   },
+   "tz_Scoresbysund": {
+      "message": "ಸ್ಕೋರ್ಸಬಿಸಂದ್"
+   },
+   "tz_Seoul": {
+      "message": "ಸಿಯೋಲ್"
+   },
+   "tz_Shanghai": {
+      "message": "ಕವಣೆ (ಯಂತ್ರ)"
+   },
+   "tz_Simferopol": {
+      "message": "ಸಿಮ್ಫೆರೋಪೋಲ್"
+   },
+   "tz_Singapore": {
+      "message": "ಸಿಂಗಾಪುರ"
+   },
+   "tz_Sitka": {
+      "message": "ಎತ್ತರವಾದ ಸ್ಪ್ರೂಸ್ ಮರ"
+   },
+   "tz_Skopje": {
+      "message": "ಸ್ಕೋಪ್ಜೆಯ"
+   },
+   "tz_Sofia": {
+      "message": "ಸೋಫಿಯಾ"
+   },
+   "tz_South_Georgia": {
+      "message": "ದಕ್ಷಿಣ ಜಾರ್ಜಿಯಾ"
+   },
+   "tz_St_Barthelemy": {
+      "message": "ಸೇಂಟ್ ಬಾರ್ಥೆಲೇಮಿ"
+   },
+   "tz_St_Helena": {
+      "message": "ಸೇಂಟ್ ಹೆಲೀನಾ"
+   },
+   "tz_St_Johns": {
+      "message": "ಸೇಂಟ್ ಜಾನ್ಸ್"
+   },
+   "tz_St_Kitts": {
+      "message": "ಸೇಂಟ್ ಕಿಟ್ಸ್"
+   },
+   "tz_St_Lucia": {
+      "message": "ಸೇಂಟ್ ಲೂಸಿಯಾ"
+   },
+   "tz_St_Thomas": {
+      "message": "ಸೇಂಟ್ ಥಾಮಸ್"
+   },
+   "tz_St_Vincent": {
+      "message": "ಸೇಂಟ್ ವಿನ್ಸೆಂಟ್"
+   },
+   "tz_Stanley": {
+      "message": "ಸ್ಟಾನ್ಲಿ"
+   },
+   "tz_Stockholm": {
+      "message": "ಸ್ಟಾಕ್ಹೋಮ್"
+   },
+   "tz_Swift_Current": {
+      "message": "ಸ್ವಿಫ್ಟ್ ಪ್ರಸ್ತುತ"
+   },
+   "tz_Sydney": {
+      "message": "ಸಿಡ್ನಿ"
+   },
+   "tz_Syowa": {
+      "message": "ಸ್ಯೋವಾ"
+   },
+   "tz_Tahiti": {
+      "message": "ಟಹೀಟಿ"
+   },
+   "tz_Taipei": {
+      "message": "ತೈಪೆ"
+   },
+   "tz_Tallinn": {
+      "message": "ಟ್ಯಾಲಿನ್"
+   },
+   "tz_Tarawa": {
+      "message": "ತರಾವಾ"
+   },
+   "tz_Tashkent": {
+      "message": "ತಾಷ್ಕೆಂಟ್"
+   },
+   "tz_Tbilisi": {
+      "message": "ತ್ಬಿಲಿಸಿ"
+   },
+   "tz_Tegucigalpa": {
+      "message": "ತೆಗುಸಿಗಲ್ಪಾ"
+   },
+   "tz_Tehran": {
+      "message": "ಟೆಹ್ರಾನ್"
+   },
+   "tz_Thimphu": {
+      "message": "ಥಿಂಪು"
+   },
+   "tz_Thule": {
+      "message": "ಥುಲ್"
+   },
+   "tz_Thunder_Bay": {
+      "message": "ಥಂಡರ್ ಬೇ"
+   },
+   "tz_Tijuana": {
+      "message": "ಟಿಜುವಾನಾ"
+   },
+   "tz_Tirane": {
+      "message": "ಟಿರಾನೆ"
+   },
+   "tz_Tokyo": {
+      "message": "ಟೋಕಿಯೋ"
+   },
+   "tz_Tongatapu": {
+      "message": "ಟೊಂಗಾಟಾಪು"
+   },
+   "tz_Toronto": {
+      "message": "ಟೊರೊಂಟೊ"
+   },
+   "tz_Tortola": {
+      "message": "ಟಾರ್ಟೊಲಾ"
+   },
+   "tz_Tripoli": {
+      "message": "ಟ್ರಿಪೊಲಿ"
+   },
+   "tz_Troll": {
+      "message": "ರಾಕ್ಷಸನು"
+   },
+   "tz_Tunis": {
+      "message": "ಟುನೀಸ್"
+   },
+   "tz_Ulaanbaatar": {
+      "message": "ಉಲಾನ್ಬಾತರ್"
+   },
+   "tz_Urumqi": {
+      "message": "Urumqi"
+   },
+   "tz_Ust__Nera": {
+      "message": "Ust-ನೆರಾ"
+   },
+   "tz_Uzhgorod": {
+      "message": "Uzhgorod"
+   },
+   "tz_Vaduz": {
+      "message": "ವಡಝ್"
+   },
+   "tz_Vancouver": {
+      "message": "ವ್ಯಾಂಕೋವರ್"
+   },
+   "tz_Vatican": {
+      "message": "ಪೋಪ್ ಪ್ರಭುತ್ವ"
+   },
+   "tz_Vienna": {
+      "message": "ವಿಯೆನ್ನಾ"
+   },
+   "tz_Vientiane": {
+      "message": "ವಿಯೆಂಟಿಯಾನ್"
+   },
+   "tz_Vilnius": {
+      "message": "ವಿಲ್ನಿಯಸ್"
+   },
+   "tz_Vladivostok": {
+      "message": "ವ್ಲಾಡಿವೋಸ್ಟಾಕ್"
+   },
+   "tz_Volgograd": {
+      "message": "ವೋಲ್ಗೊಗ್ರಾಡ್"
+   },
+   "tz_Vostok": {
+      "message": "ವೊಸ್ಟೋಕ್"
+   },
+   "tz_Wake": {
+      "message": "ವೇಕ್"
+   },
+   "tz_Wallis": {
+      "message": "ವಾಲ್ಲಿಸ್"
+   },
+   "tz_Warsaw": {
+      "message": "ವಾರ್ಸಾ"
+   },
+   "tz_Whitehorse": {
+      "message": "ವೈಟ್ಹಾರ್ಸ್"
+   },
+   "tz_Windhoek": {
+      "message": "Windhoek"
+   },
+   "tz_Winnipeg": {
+      "message": "ವಿನ್ನಿಪೇಗ್"
+   },
+   "tz_Yakutat": {
+      "message": "ಯಾಕುಟ್ಯಾಟ್"
+   },
+   "tz_Yakutsk": {
+      "message": "ಯಕುಟ್ಸ್ಕ್"
+   },
+   "tz_Yekaterinburg": {
+      "message": "ಎಕಟೆರಿನ್ಬರ್ಗ್"
+   },
+   "tz_Yellowknife": {
+      "message": "ಯೆಲ್ಲೊನೈಫ್"
+   },
+   "tz_Yerevan": {
+      "message": "ಯೆರೆವಾನ್"
+   },
+   "tz_Zagreb": {
+      "message": "ಝಾಗ್ರೆಬ್"
+   },
+   "tz_Zaporozhye": {
+      "message": "Zaporozhye"
+   },
+   "tz_Zurich": {
+      "message": "ಜ್ಯೂರಿಚ್"
+   },
+   "ui_addTimezone": {
+      "message": "ಸೇರಿಸು"
+   },
+   "ui_alwaysOnTop": {
+      "message": "ಯಾವಾಗಲೂ ಮೇಲ್ಗಡೆಯಲ್ಲಿ"
+   },
+   "ui_autoHide": {
+      "message": "ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಡಗಿಸು"
+   },
+   "ui_extraTimezones": {
+      "message": "ಹೆಚ್ಚುವರಿ ವಲಯಗಳನ್ನು"
+   },
+   "ui_hour24": {
+      "message": "24-ಗಂಟೆಗಳ ಗಡಿಯಾರವನ್ನು"
+   },
+   "ui_weekStartSunday": {
+      "message": "ವಾರ ಭಾನುವಾರ ಆರಂಭವಾಗುತ್ತದೆ"
+   }
+}

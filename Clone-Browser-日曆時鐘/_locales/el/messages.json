@@ -1,0 +1,1310 @@
+{
+   "json_end": {
+      "message": "json_end"
+   },
+   "manifest_description": {
+      "message": "Μια βολική ημερολόγιο και ρολόι widget."
+   },
+   "manifest_name": {
+      "message": "Ημερολόγιο Ρολόι"
+   },
+   "tz_Abidjan": {
+      "message": "Αμπιτζάν"
+   },
+   "tz_Accra": {
+      "message": "Άκρα"
+   },
+   "tz_Adak": {
+      "message": "Adak"
+   },
+   "tz_Addis_Ababa": {
+      "message": "Αντίς Αμπέμπα"
+   },
+   "tz_Adelaide": {
+      "message": "Αδελαΐδα"
+   },
+   "tz_Aden": {
+      "message": "Άντεν"
+   },
+   "tz_Africa": {
+      "message": "Αφρική"
+   },
+   "tz_Algiers": {
+      "message": "Αλγέρι"
+   },
+   "tz_Almaty": {
+      "message": "Αλμάτι"
+   },
+   "tz_America": {
+      "message": "Αμερική"
+   },
+   "tz_Amman": {
+      "message": "Αμάν"
+   },
+   "tz_Amsterdam": {
+      "message": "Άμστερνταμ"
+   },
+   "tz_Anadyr": {
+      "message": "Anadyr"
+   },
+   "tz_Anchorage": {
+      "message": "αγκυροβόλιο"
+   },
+   "tz_Andorra": {
+      "message": "Ανδόρα"
+   },
+   "tz_Anguilla": {
+      "message": "Ανγκουίλα"
+   },
+   "tz_Antananarivo": {
+      "message": "Ανταναναρίβο"
+   },
+   "tz_Antarctica": {
+      "message": "Ανταρκτική"
+   },
+   "tz_Antigua": {
+      "message": "Αντίγκουα"
+   },
+   "tz_Apia": {
+      "message": "Απία"
+   },
+   "tz_Aqtau": {
+      "message": "Ακτάου"
+   },
+   "tz_Aqtobe": {
+      "message": "Aqtobe"
+   },
+   "tz_Araguaina": {
+      "message": "Αραγουένα"
+   },
+   "tz_Arctic": {
+      "message": "αρκτικός"
+   },
+   "tz_Argentina___Buenos_Aires": {
+      "message": "Αργεντινή / Μπουένος Άιρες"
+   },
+   "tz_Argentina___Catamarca": {
+      "message": "Αργεντινή / Catamarca"
+   },
+   "tz_Argentina___Cordoba": {
+      "message": "Αργεντινή / Cordoba"
+   },
+   "tz_Argentina___Jujuy": {
+      "message": "Αργεντινή / Jujuy"
+   },
+   "tz_Argentina___La_Rioja": {
+      "message": "Αργεντινή / La Rioja"
+   },
+   "tz_Argentina___Mendoza": {
+      "message": "Αργεντινή / Mendoza"
+   },
+   "tz_Argentina___Rio_Gallegos": {
+      "message": "Αργεντινή / Rio Gallegos"
+   },
+   "tz_Argentina___Salta": {
+      "message": "Αργεντινή / Salta"
+   },
+   "tz_Argentina___San_Juan": {
+      "message": "Αργεντινή / San Juan"
+   },
+   "tz_Argentina___San_Luis": {
+      "message": "Αργεντινή / San Luis"
+   },
+   "tz_Argentina___Tucuman": {
+      "message": "Αργεντινή / Tucuman"
+   },
+   "tz_Argentina___Ushuaia": {
+      "message": "Αργεντινή / Ushuaia"
+   },
+   "tz_Aruba": {
+      "message": "Αρούμπα"
+   },
+   "tz_Ashgabat": {
+      "message": "Ασγκαμπάτ"
+   },
+   "tz_Asia": {
+      "message": "Ασία"
+   },
+   "tz_Asmara": {
+      "message": "Ασμάρα"
+   },
+   "tz_Asuncion": {
+      "message": "Asuncion"
+   },
+   "tz_Athens": {
+      "message": "Αθήνα"
+   },
+   "tz_Atikokan": {
+      "message": "Atikokan"
+   },
+   "tz_Atlantic": {
+      "message": "Atlantic"
+   },
+   "tz_Auckland": {
+      "message": "Auckland"
+   },
+   "tz_Australia": {
+      "message": "Αυστραλία"
+   },
+   "tz_Azores": {
+      "message": "Αζόρες"
+   },
+   "tz_Baghdad": {
+      "message": "Βαγδάτη"
+   },
+   "tz_Bahia": {
+      "message": "Bahia"
+   },
+   "tz_Bahia_Banderas": {
+      "message": "Bahia Banderas"
+   },
+   "tz_Bahrain": {
+      "message": "Μπαχρέιν"
+   },
+   "tz_Baku": {
+      "message": "Μπακού"
+   },
+   "tz_Bamako": {
+      "message": "Μπαμάκο"
+   },
+   "tz_Bangkok": {
+      "message": "Μπανγκόκ"
+   },
+   "tz_Bangui": {
+      "message": "Μπανγκούι"
+   },
+   "tz_Banjul": {
+      "message": "Μπανζούλ"
+   },
+   "tz_Barbados": {
+      "message": "Μπαρμπάντος"
+   },
+   "tz_Beirut": {
+      "message": "Βηρυτός"
+   },
+   "tz_Belem": {
+      "message": "Belem"
+   },
+   "tz_Belgrade": {
+      "message": "Βελιγράδι"
+   },
+   "tz_Belize": {
+      "message": "Μπελίζ"
+   },
+   "tz_Berlin": {
+      "message": "Βερολίνο"
+   },
+   "tz_Bermuda": {
+      "message": "Βερμούδα"
+   },
+   "tz_Bishkek": {
+      "message": "Μπισκέκ"
+   },
+   "tz_Bissau": {
+      "message": "Μπισάου"
+   },
+   "tz_Blanc__Sablon": {
+      "message": "Blanc-Sablon"
+   },
+   "tz_Blantyre": {
+      "message": "Blantyre"
+   },
+   "tz_Boa_Vista": {
+      "message": "Μπόα Βίστα"
+   },
+   "tz_Bogota": {
+      "message": "Μπογκοτά"
+   },
+   "tz_Boise": {
+      "message": "Boise"
+   },
+   "tz_Bratislava": {
+      "message": "Μπρατισλάβα"
+   },
+   "tz_Brazzaville": {
+      "message": "Μπραζαβίλ"
+   },
+   "tz_Brisbane": {
+      "message": "Brisbane"
+   },
+   "tz_Broken_Hill": {
+      "message": "Μπρόκεν Χιλ"
+   },
+   "tz_Brunei": {
+      "message": "Μπρουνέι"
+   },
+   "tz_Brussels": {
+      "message": "Βρυξέλλες"
+   },
+   "tz_Bucharest": {
+      "message": "Βουκουρέστι"
+   },
+   "tz_Budapest": {
+      "message": "Βουδαπέστη"
+   },
+   "tz_Bujumbura": {
+      "message": "Μπουζουμπούρα"
+   },
+   "tz_Busingen": {
+      "message": "Busingen"
+   },
+   "tz_Cairo": {
+      "message": "Κάιρο"
+   },
+   "tz_Cambridge_Bay": {
+      "message": "Cambridge Bay"
+   },
+   "tz_Campo_Grande": {
+      "message": "Campo Grande"
+   },
+   "tz_Canary": {
+      "message": "καναρίνι"
+   },
+   "tz_Cancun": {
+      "message": "Κανκούν"
+   },
+   "tz_Cape_Verde": {
+      "message": "Πράσινο Ακρωτήριο"
+   },
+   "tz_Caracas": {
+      "message": "Καράκας"
+   },
+   "tz_Casablanca": {
+      "message": "Casablanca"
+   },
+   "tz_Casey": {
+      "message": "Casey"
+   },
+   "tz_Cayenne": {
+      "message": "κόκκινο πιπέρι"
+   },
+   "tz_Cayman": {
+      "message": "είδος κροκοδείλου της Νότιας Αμερικής"
+   },
+   "tz_Ceuta": {
+      "message": "Θέουτα"
+   },
+   "tz_Chagos": {
+      "message": "Τσάγκος"
+   },
+   "tz_Chatham": {
+      "message": "Chatham"
+   },
+   "tz_Chicago": {
+      "message": "Σικάγο"
+   },
+   "tz_Chihuahua": {
+      "message": "Τσιουάουα"
+   },
+   "tz_Chisinau": {
+      "message": "Chisinau"
+   },
+   "tz_Choibalsan": {
+      "message": "Choibalsan"
+   },
+   "tz_Chongqing": {
+      "message": "Chongqing"
+   },
+   "tz_Christmas": {
+      "message": "Χριστούγεννα"
+   },
+   "tz_Chuuk": {
+      "message": "Τσούουκ"
+   },
+   "tz_Cocos": {
+      "message": "cocos"
+   },
+   "tz_Colombo": {
+      "message": "Colombo"
+   },
+   "tz_Comoro": {
+      "message": "Κομόρες"
+   },
+   "tz_Conakry": {
+      "message": "Κόνακρι"
+   },
+   "tz_Copenhagen": {
+      "message": "Κοπεγχάγη"
+   },
+   "tz_Costa_Rica": {
+      "message": "Κόστα Ρίκα"
+   },
+   "tz_Creston": {
+      "message": "Creston"
+   },
+   "tz_Cuiaba": {
+      "message": "Cuiaba"
+   },
+   "tz_Curacao": {
+      "message": "κουράσω"
+   },
+   "tz_Currie": {
+      "message": "Currie"
+   },
+   "tz_Dakar": {
+      "message": "Dakar"
+   },
+   "tz_Damascus": {
+      "message": "Δαμάσκο"
+   },
+   "tz_Danmarkshavn": {
+      "message": "Danmarkshavn"
+   },
+   "tz_Dar_es_Salaam": {
+      "message": "Dar es Salaam"
+   },
+   "tz_Darwin": {
+      "message": "Darwin"
+   },
+   "tz_Davis": {
+      "message": "Davis"
+   },
+   "tz_Dawson": {
+      "message": "Dawson"
+   },
+   "tz_Dawson_Creek": {
+      "message": "Dawson Creek"
+   },
+   "tz_Denver": {
+      "message": "Ντένβερ"
+   },
+   "tz_Detroit": {
+      "message": "Ντιτρόιτ"
+   },
+   "tz_Dhaka": {
+      "message": "Ντάκα"
+   },
+   "tz_Dili": {
+      "message": "Ντίλι"
+   },
+   "tz_Djibouti": {
+      "message": "Τζιμπουτί"
+   },
+   "tz_Dominica": {
+      "message": "Ντομίνικα"
+   },
+   "tz_Douala": {
+      "message": "Douala"
+   },
+   "tz_Dubai": {
+      "message": "Ντουμπάι"
+   },
+   "tz_Dublin": {
+      "message": "Δουβλίνο"
+   },
+   "tz_DumontDUrville": {
+      "message": "DumontDUrville"
+   },
+   "tz_Dushanbe": {
+      "message": "Ντουσαμπέ"
+   },
+   "tz_Easter": {
+      "message": "Πάσχα"
+   },
+   "tz_Edmonton": {
+      "message": "Έντμοντον"
+   },
+   "tz_Efate": {
+      "message": "Efate"
+   },
+   "tz_Eirunepe": {
+      "message": "Eirunepe"
+   },
+   "tz_El_Aaiun": {
+      "message": "Ελ Αγιούν"
+   },
+   "tz_El_Salvador": {
+      "message": "Ελ Σαλβαδόρ"
+   },
+   "tz_Enderbury": {
+      "message": "Enderbury"
+   },
+   "tz_Eucla": {
+      "message": "Eucla"
+   },
+   "tz_Europe": {
+      "message": "Ευρώπη"
+   },
+   "tz_Fakaofo": {
+      "message": "Fakaofo"
+   },
+   "tz_Faroe": {
+      "message": "Φερόε"
+   },
+   "tz_Fiji": {
+      "message": "Φίτζι"
+   },
+   "tz_Fortaleza": {
+      "message": "Fortaleza"
+   },
+   "tz_Freetown": {
+      "message": "Freetown"
+   },
+   "tz_Funafuti": {
+      "message": "Φουναφούτι"
+   },
+   "tz_Gaborone": {
+      "message": "Γκαμπορόνε"
+   },
+   "tz_Galapagos": {
+      "message": "Γκαλαπάγκος"
+   },
+   "tz_Gambier": {
+      "message": "Gambier"
+   },
+   "tz_Gaza": {
+      "message": "Γάζα"
+   },
+   "tz_Gibraltar": {
+      "message": "Γιβραλτάρ"
+   },
+   "tz_Glace_Bay": {
+      "message": "Glace Bay"
+   },
+   "tz_Godthab": {
+      "message": "Godthab"
+   },
+   "tz_Goose_Bay": {
+      "message": "Goose Bay"
+   },
+   "tz_Grand_Turk": {
+      "message": "grand Turk"
+   },
+   "tz_Grenada": {
+      "message": "Γρενάδα"
+   },
+   "tz_Guadalcanal": {
+      "message": "Γκουανταλκανάλ"
+   },
+   "tz_Guadeloupe": {
+      "message": "Γουαδελούπη"
+   },
+   "tz_Guam": {
+      "message": "Γκουάμ"
+   },
+   "tz_Guatemala": {
+      "message": "Γουατεμάλα"
+   },
+   "tz_Guayaquil": {
+      "message": "Guayaquil"
+   },
+   "tz_Guernsey": {
+      "message": "Guernsey"
+   },
+   "tz_Guyana": {
+      "message": "Γουιάνα"
+   },
+   "tz_Halifax": {
+      "message": "Χάλιφαξ"
+   },
+   "tz_Harare": {
+      "message": "Χαράρε"
+   },
+   "tz_Harbin": {
+      "message": "Harbin"
+   },
+   "tz_Havana": {
+      "message": "Αβάνα"
+   },
+   "tz_Hebron": {
+      "message": "Hebron"
+   },
+   "tz_Helsinki": {
+      "message": "Ελσίνκι"
+   },
+   "tz_Hermosillo": {
+      "message": "Hermosillo"
+   },
+   "tz_Ho_Chi_Minh": {
+      "message": "Ho Chi Minh"
+   },
+   "tz_Hobart": {
+      "message": "Χόμπαρτ"
+   },
+   "tz_Hong_Kong": {
+      "message": "Χονγκ Κονγκ"
+   },
+   "tz_Honolulu": {
+      "message": "Χονολουλού"
+   },
+   "tz_Hovd": {
+      "message": "Χοβντ"
+   },
+   "tz_Indian": {
+      "message": "Ινδός"
+   },
+   "tz_Indiana___Indianapolis": {
+      "message": "Indiana / Indianapolis"
+   },
+   "tz_Indiana___Knox": {
+      "message": "Indiana / Knox"
+   },
+   "tz_Indiana___Marengo": {
+      "message": "Indiana / Marengo"
+   },
+   "tz_Indiana___Petersburg": {
+      "message": "Indiana / Πετρούπολη"
+   },
+   "tz_Indiana___Tell_City": {
+      "message": "Indiana / Tell City"
+   },
+   "tz_Indiana___Vevay": {
+      "message": "Indiana / Vevay"
+   },
+   "tz_Indiana___Vincennes": {
+      "message": "Indiana / Vincennes"
+   },
+   "tz_Indiana___Winamac": {
+      "message": "Indiana / Winamac"
+   },
+   "tz_Inuvik": {
+      "message": "Inuvik"
+   },
+   "tz_Iqaluit": {
+      "message": "Iqaluit"
+   },
+   "tz_Irkutsk": {
+      "message": "Ιρκούτσκ"
+   },
+   "tz_Isle_of_Man": {
+      "message": "Isle of Man"
+   },
+   "tz_Istanbul": {
+      "message": "Κωνσταντινούπολη"
+   },
+   "tz_Jakarta": {
+      "message": "Τζακάρτα"
+   },
+   "tz_Jamaica": {
+      "message": "Ιαμαϊκή"
+   },
+   "tz_Jayapura": {
+      "message": "Γιαπούρα"
+   },
+   "tz_Jersey": {
+      "message": "φανέλα"
+   },
+   "tz_Jerusalem": {
+      "message": "Ιερουσαλήμ"
+   },
+   "tz_Johannesburg": {
+      "message": "Γιοχάνεσμπουργκ"
+   },
+   "tz_Johnston": {
+      "message": "Johnston"
+   },
+   "tz_Juba": {
+      "message": "Juba"
+   },
+   "tz_Juneau": {
+      "message": "Τζούνο"
+   },
+   "tz_Kabul": {
+      "message": "Καμπούλ"
+   },
+   "tz_Kaliningrad": {
+      "message": "Καλίνινγκραντ"
+   },
+   "tz_Kamchatka": {
+      "message": "Kamchatka"
+   },
+   "tz_Kampala": {
+      "message": "Καμπάλα"
+   },
+   "tz_Karachi": {
+      "message": "Καράτσι"
+   },
+   "tz_Kashgar": {
+      "message": "Kashgar"
+   },
+   "tz_Kathmandu": {
+      "message": "Κατμαντού"
+   },
+   "tz_Kentucky___Louisville": {
+      "message": "Kentucky / Louisville"
+   },
+   "tz_Kentucky___Monticello": {
+      "message": "Kentucky / Monticello"
+   },
+   "tz_Kerguelen": {
+      "message": "Κεργελέν"
+   },
+   "tz_Khandyga": {
+      "message": "Khandyga"
+   },
+   "tz_Khartoum": {
+      "message": "Χαρτούμ"
+   },
+   "tz_Kiev": {
+      "message": "Κίεβο"
+   },
+   "tz_Kigali": {
+      "message": "Κιγκάλι"
+   },
+   "tz_Kinshasa": {
+      "message": "Κινσάσα"
+   },
+   "tz_Kiritimati": {
+      "message": "Κιριτιμάτι"
+   },
+   "tz_Kolkata": {
+      "message": "Καλκούτα"
+   },
+   "tz_Kosrae": {
+      "message": "Κόσρα"
+   },
+   "tz_Kralendijk": {
+      "message": "Kralendijk"
+   },
+   "tz_Krasnoyarsk": {
+      "message": "Κρασνογιάρσκ"
+   },
+   "tz_Kuala_Lumpur": {
+      "message": "Κουάλα Λουμπούρ"
+   },
+   "tz_Kuching": {
+      "message": "Kuching"
+   },
+   "tz_Kuwait": {
+      "message": "Κουβέιτ"
+   },
+   "tz_Kwajalein": {
+      "message": "Κουαγιαλέιν"
+   },
+   "tz_La_Paz": {
+      "message": "Λα Παζ"
+   },
+   "tz_Lagos": {
+      "message": "Lagos"
+   },
+   "tz_Libreville": {
+      "message": "Λιμπρεβίλ"
+   },
+   "tz_Lima": {
+      "message": "είδος φασιολού"
+   },
+   "tz_Lindeman": {
+      "message": "Lindeman"
+   },
+   "tz_Lisbon": {
+      "message": "Λισαβόνα"
+   },
+   "tz_Ljubljana": {
+      "message": "Λιουμπλιάνα"
+   },
+   "tz_Local_Time": {
+      "message": "Τοπική ώρα"
+   },
+   "tz_Lome": {
+      "message": "Λομέ"
+   },
+   "tz_London": {
+      "message": "Λονδίνο"
+   },
+   "tz_Longyearbyen": {
+      "message": "Longyearbyen"
+   },
+   "tz_Lord_Howe": {
+      "message": "Lord Howe"
+   },
+   "tz_Los_Angeles": {
+      "message": "Λος Άντζελες"
+   },
+   "tz_Lower_Princes": {
+      "message": "Κάτω Princes"
+   },
+   "tz_Luanda": {
+      "message": "Λουάντα"
+   },
+   "tz_Lubumbashi": {
+      "message": "Λουμπουμπάσι"
+   },
+   "tz_Lusaka": {
+      "message": "Λουσάκα"
+   },
+   "tz_Luxembourg": {
+      "message": "Λουξεμβούργο"
+   },
+   "tz_Macau": {
+      "message": "Μακάο"
+   },
+   "tz_Maceio": {
+      "message": "Maceio"
+   },
+   "tz_Macquarie": {
+      "message": "Macquarie"
+   },
+   "tz_Madeira": {
+      "message": "Μαδέρα"
+   },
+   "tz_Madrid": {
+      "message": "Μαδρίτη"
+   },
+   "tz_Magadan": {
+      "message": "Μαγκαντάν"
+   },
+   "tz_Mahe": {
+      "message": "Mahe"
+   },
+   "tz_Majuro": {
+      "message": "Μαγιούρο"
+   },
+   "tz_Makassar": {
+      "message": "Makassar"
+   },
+   "tz_Malabo": {
+      "message": "Μαλάμπο"
+   },
+   "tz_Maldives": {
+      "message": "Μαλδίβες"
+   },
+   "tz_Malta": {
+      "message": "Μάλτα"
+   },
+   "tz_Managua": {
+      "message": "Μανάγουα"
+   },
+   "tz_Manaus": {
+      "message": "Manaus"
+   },
+   "tz_Manila": {
+      "message": "Μανίλα"
+   },
+   "tz_Maputo": {
+      "message": "Μαπούτο"
+   },
+   "tz_Mariehamn": {
+      "message": "Μάριεχαμν"
+   },
+   "tz_Marigot": {
+      "message": "Marigot"
+   },
+   "tz_Marquesas": {
+      "message": "Marquesas"
+   },
+   "tz_Martinique": {
+      "message": "Μαρτινίκα"
+   },
+   "tz_Maseru": {
+      "message": "Maseru"
+   },
+   "tz_Matamoros": {
+      "message": "Matamoros"
+   },
+   "tz_Mauritius": {
+      "message": "Μαυρίκιος"
+   },
+   "tz_Mawson": {
+      "message": "Mawson"
+   },
+   "tz_Mayotte": {
+      "message": "Μαγιότ"
+   },
+   "tz_Mazatlan": {
+      "message": "Μαζατλάν"
+   },
+   "tz_Mbabane": {
+      "message": "μπΑμπάνΕ"
+   },
+   "tz_McMurdo": {
+      "message": "McMurdo"
+   },
+   "tz_Melbourne": {
+      "message": "Μελβούρνη"
+   },
+   "tz_Menominee": {
+      "message": "μΕνόμινι"
+   },
+   "tz_Merida": {
+      "message": "Merida"
+   },
+   "tz_Metlakatla": {
+      "message": "Μετλακάτλα"
+   },
+   "tz_Mexico_City": {
+      "message": "Πόλη του Μεξικού"
+   },
+   "tz_Midway": {
+      "message": "Midway"
+   },
+   "tz_Minsk": {
+      "message": "Μινσκ"
+   },
+   "tz_Miquelon": {
+      "message": "Μικελόν"
+   },
+   "tz_Mogadishu": {
+      "message": "Μογκαντίσου"
+   },
+   "tz_Monaco": {
+      "message": "Μονακό"
+   },
+   "tz_Moncton": {
+      "message": "Μόνκτον"
+   },
+   "tz_Monrovia": {
+      "message": "Μονρόβια"
+   },
+   "tz_Monterrey": {
+      "message": "Μοντερέι"
+   },
+   "tz_Montevideo": {
+      "message": "Μοντεβιδέο"
+   },
+   "tz_Montserrat": {
+      "message": "Montserrat"
+   },
+   "tz_Moscow": {
+      "message": "Μόσχα"
+   },
+   "tz_Muscat": {
+      "message": "μοσχοστάφυλο"
+   },
+   "tz_Nairobi": {
+      "message": "Ναϊρόμπι"
+   },
+   "tz_Nassau": {
+      "message": "Nassau"
+   },
+   "tz_Nauru": {
+      "message": "Ναουρού"
+   },
+   "tz_Ndjamena": {
+      "message": "Ντζαμένα"
+   },
+   "tz_New_York": {
+      "message": "νέα Υόρκη"
+   },
+   "tz_Niamey": {
+      "message": "Νιαμέι"
+   },
+   "tz_Nicosia": {
+      "message": "Λευκωσία"
+   },
+   "tz_Nipigon": {
+      "message": "Nipigon"
+   },
+   "tz_Niue": {
+      "message": "Νιούε"
+   },
+   "tz_Nome": {
+      "message": "Nome"
+   },
+   "tz_Norfolk": {
+      "message": "Norfolk"
+   },
+   "tz_Noronha": {
+      "message": "Noronha"
+   },
+   "tz_North_Dakota___Beulah": {
+      "message": "Βόρεια Ντακότα / Beulah"
+   },
+   "tz_North_Dakota___Center": {
+      "message": "Βόρεια Ντακότα / Κέντρο"
+   },
+   "tz_North_Dakota___New_Salem": {
+      "message": "Βόρεια Ντακότα / New Salem"
+   },
+   "tz_Nouakchott": {
+      "message": "Nouakchott"
+   },
+   "tz_Noumea": {
+      "message": "Νουμέα"
+   },
+   "tz_Novokuznetsk": {
+      "message": "Novokuznetsk"
+   },
+   "tz_Novosibirsk": {
+      "message": "Νοβοσιμπίρσκ"
+   },
+   "tz_Ojinaga": {
+      "message": "Ojinaga"
+   },
+   "tz_Omsk": {
+      "message": "Omsk"
+   },
+   "tz_Oral": {
+      "message": "από το στόμα"
+   },
+   "tz_Oslo": {
+      "message": "Όσλο"
+   },
+   "tz_Ouagadougou": {
+      "message": "Ουαγκαντούγκου"
+   },
+   "tz_Pacific": {
+      "message": "ειρηνικός"
+   },
+   "tz_Pago_Pago": {
+      "message": "Πάγκο Πάγκο"
+   },
+   "tz_Palau": {
+      "message": "Palau"
+   },
+   "tz_Palmer": {
+      "message": "προσκυνητής"
+   },
+   "tz_Panama": {
+      "message": "Παναμάς"
+   },
+   "tz_Pangnirtung": {
+      "message": "Πανγκνίρτουνγκ"
+   },
+   "tz_Paramaribo": {
+      "message": "Παραμαρίμπο"
+   },
+   "tz_Paris": {
+      "message": "Παρίσι"
+   },
+   "tz_Perth": {
+      "message": "Περθ"
+   },
+   "tz_Phnom_Penh": {
+      "message": "Πνομ Πενχ"
+   },
+   "tz_Phoenix": {
+      "message": "Φοίνιξ"
+   },
+   "tz_Pitcairn": {
+      "message": "Pitcairn"
+   },
+   "tz_Podgorica": {
+      "message": "Ποντγκόριτσα"
+   },
+   "tz_Pohnpei": {
+      "message": "Pohnpei"
+   },
+   "tz_Pontianak": {
+      "message": "Pontianak"
+   },
+   "tz_Port_Moresby": {
+      "message": "Πορτ Μόρεσμπι"
+   },
+   "tz_Port__au__Prince": {
+      "message": "Port-au-Prince"
+   },
+   "tz_Port_of_Spain": {
+      "message": "Port of Spain"
+   },
+   "tz_Porto_Velho": {
+      "message": "Πόρτο Βέλο"
+   },
+   "tz_Porto__Novo": {
+      "message": "Πόρτο Νόβο"
+   },
+   "tz_Prague": {
+      "message": "Πράγα"
+   },
+   "tz_Puerto_Rico": {
+      "message": "Πουέρτο Ρίκο"
+   },
+   "tz_Pyongyang": {
+      "message": "Pyongyang"
+   },
+   "tz_Qatar": {
+      "message": "Κατάρ"
+   },
+   "tz_Qyzylorda": {
+      "message": "Qyzylorda"
+   },
+   "tz_Rainy_River": {
+      "message": "Rainy River"
+   },
+   "tz_Rangoon": {
+      "message": "Ρανγκούν"
+   },
+   "tz_Rankin_Inlet": {
+      "message": "Rankin Inlet"
+   },
+   "tz_Rarotonga": {
+      "message": "Ραροτόνγκα"
+   },
+   "tz_Recife": {
+      "message": "Ρεσίφε"
+   },
+   "tz_Regina": {
+      "message": "βασίλισσα"
+   },
+   "tz_Resolute": {
+      "message": "αποφασιστικός"
+   },
+   "tz_Reunion": {
+      "message": "Reunion"
+   },
+   "tz_Reykjavik": {
+      "message": "Ρέικιαβικ"
+   },
+   "tz_Riga": {
+      "message": "Ρίγα"
+   },
+   "tz_Rio_Branco": {
+      "message": "Rio Branco"
+   },
+   "tz_Riyadh": {
+      "message": "Ριάντ"
+   },
+   "tz_Rome": {
+      "message": "Ρώμη"
+   },
+   "tz_Rothera": {
+      "message": "Rothera"
+   },
+   "tz_Saipan": {
+      "message": "Σαϊπάν"
+   },
+   "tz_Sakhalin": {
+      "message": "Sakhalin"
+   },
+   "tz_Samara": {
+      "message": "Σαμαρά"
+   },
+   "tz_Samarkand": {
+      "message": "Σαμαρκάνδη"
+   },
+   "tz_San_Marino": {
+      "message": "Σαν Μαρίνο"
+   },
+   "tz_Santa_Isabel": {
+      "message": "Santa Isabel"
+   },
+   "tz_Santarem": {
+      "message": "Santarem"
+   },
+   "tz_Santiago": {
+      "message": "Santiago"
+   },
+   "tz_Santo_Domingo": {
+      "message": "Santo Domingo"
+   },
+   "tz_Sao_Paulo": {
+      "message": "Σάο Πάολο"
+   },
+   "tz_Sao_Tome": {
+      "message": "Sao Tome"
+   },
+   "tz_Sarajevo": {
+      "message": "Σαράγεβο"
+   },
+   "tz_Scoresbysund": {
+      "message": "Scoresbysund"
+   },
+   "tz_Seoul": {
+      "message": "Σεούλ"
+   },
+   "tz_Shanghai": {
+      "message": "Σαγκάη"
+   },
+   "tz_Simferopol": {
+      "message": "Simferopol"
+   },
+   "tz_Singapore": {
+      "message": "Σιγκαπούρη"
+   },
+   "tz_Sitka": {
+      "message": "Sitka"
+   },
+   "tz_Skopje": {
+      "message": "Σκόπια"
+   },
+   "tz_Sofia": {
+      "message": "Σοφία"
+   },
+   "tz_South_Georgia": {
+      "message": "νότια Γεωργία"
+   },
+   "tz_St_Barthelemy": {
+      "message": "St Barthelemy"
+   },
+   "tz_St_Helena": {
+      "message": "Αγία Ελένη"
+   },
+   "tz_St_Johns": {
+      "message": "St Johns"
+   },
+   "tz_St_Kitts": {
+      "message": "Σεντ Κιτς"
+   },
+   "tz_St_Lucia": {
+      "message": "St Lucia"
+   },
+   "tz_St_Thomas": {
+      "message": "St Thomas"
+   },
+   "tz_St_Vincent": {
+      "message": "St Vincent"
+   },
+   "tz_Stanley": {
+      "message": "Stanley"
+   },
+   "tz_Stockholm": {
+      "message": "Στοκχόλμη"
+   },
+   "tz_Swift_Current": {
+      "message": "Swift Current"
+   },
+   "tz_Sydney": {
+      "message": "Σίδνεϊ"
+   },
+   "tz_Syowa": {
+      "message": "Σύοβα"
+   },
+   "tz_Tahiti": {
+      "message": "Ταϊτή"
+   },
+   "tz_Taipei": {
+      "message": "Ταϊπέι"
+   },
+   "tz_Tallinn": {
+      "message": "Ταλίν"
+   },
+   "tz_Tarawa": {
+      "message": "Ταράβα"
+   },
+   "tz_Tashkent": {
+      "message": "Τασκένδη"
+   },
+   "tz_Tbilisi": {
+      "message": "Τιφλίδα"
+   },
+   "tz_Tegucigalpa": {
+      "message": "Tegucigalpa"
+   },
+   "tz_Tehran": {
+      "message": "Τεχεράνη"
+   },
+   "tz_Thimphu": {
+      "message": "Τιμπού"
+   },
+   "tz_Thule": {
+      "message": "Thule"
+   },
+   "tz_Thunder_Bay": {
+      "message": "Θάντερ Μπέι"
+   },
+   "tz_Tijuana": {
+      "message": "Τιχουάνα"
+   },
+   "tz_Tirane": {
+      "message": "Τίρανα"
+   },
+   "tz_Tokyo": {
+      "message": "Τόκιο"
+   },
+   "tz_Tongatapu": {
+      "message": "Tongatapu"
+   },
+   "tz_Toronto": {
+      "message": "Τορόντο"
+   },
+   "tz_Tortola": {
+      "message": "Tortola"
+   },
+   "tz_Tripoli": {
+      "message": "Τρίπολη"
+   },
+   "tz_Troll": {
+      "message": "γίγας"
+   },
+   "tz_Tunis": {
+      "message": "Τύνιδα"
+   },
+   "tz_Ulaanbaatar": {
+      "message": "Ουλάν Μπατόρ"
+   },
+   "tz_Urumqi": {
+      "message": "Ουρούμκι"
+   },
+   "tz_Ust__Nera": {
+      "message": "Ουστ-Nera"
+   },
+   "tz_Uzhgorod": {
+      "message": "Uzhgorod"
+   },
+   "tz_Vaduz": {
+      "message": "Vaduz"
+   },
+   "tz_Vancouver": {
+      "message": "Βανκούβερ"
+   },
+   "tz_Vatican": {
+      "message": "Βατικανό"
+   },
+   "tz_Vienna": {
+      "message": "Βιέννη"
+   },
+   "tz_Vientiane": {
+      "message": "Vientiane"
+   },
+   "tz_Vilnius": {
+      "message": "Βίλνιους"
+   },
+   "tz_Vladivostok": {
+      "message": "Βλαδιβοστόκ"
+   },
+   "tz_Volgograd": {
+      "message": "Volgograd"
+   },
+   "tz_Vostok": {
+      "message": "Vostok"
+   },
+   "tz_Wake": {
+      "message": "wake"
+   },
+   "tz_Wallis": {
+      "message": "Wallis"
+   },
+   "tz_Warsaw": {
+      "message": "Βαρσοβία"
+   },
+   "tz_Whitehorse": {
+      "message": "Whitehorse"
+   },
+   "tz_Windhoek": {
+      "message": "Βίντχουκ"
+   },
+   "tz_Winnipeg": {
+      "message": "Γουίνιπεγκ"
+   },
+   "tz_Yakutat": {
+      "message": "Γιακούτατ"
+   },
+   "tz_Yakutsk": {
+      "message": "Γιακούτσκ"
+   },
+   "tz_Yekaterinburg": {
+      "message": "Αικατερινούπολη"
+   },
+   "tz_Yellowknife": {
+      "message": "Yellowknife"
+   },
+   "tz_Yerevan": {
+      "message": "Ερεβάν"
+   },
+   "tz_Zagreb": {
+      "message": "Ζάγκρεμπ"
+   },
+   "tz_Zaporozhye": {
+      "message": "Ζαπορόζιε"
+   },
+   "tz_Zurich": {
+      "message": "Ζυρίχη"
+   },
+   "ui_addTimezone": {
+      "message": "Προσθήκη"
+   },
+   "ui_alwaysOnTop": {
+      "message": "Πάντα στην κορυφή"
+   },
+   "ui_autoHide": {
+      "message": "Απόκρυψη αυτόματα"
+   },
+   "ui_extraTimezones": {
+      "message": "Extra ζώνες ώρας"
+   },
+   "ui_hour24": {
+      "message": "24-ωρο"
+   },
+   "ui_weekStartSunday": {
+      "message": "Εβδομάδα ξεκινάει την Κυριακή"
+   }
+}

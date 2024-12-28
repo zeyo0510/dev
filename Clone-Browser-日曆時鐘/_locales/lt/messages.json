@@ -1,0 +1,1310 @@
+{
+   "json_end": {
+      "message": "json_end"
+   },
+   "manifest_description": {
+      "message": "Patogus kalendorius, laikrodis valdikliui."
+   },
+   "manifest_name": {
+      "message": "Kalendorius Laikrodis"
+   },
+   "tz_Abidjan": {
+      "message": "Abidžanas"
+   },
+   "tz_Accra": {
+      "message": "Akra"
+   },
+   "tz_Adak": {
+      "message": "Adak"
+   },
+   "tz_Addis_Ababa": {
+      "message": "Adis Abeba"
+   },
+   "tz_Adelaide": {
+      "message": "Adelaidė"
+   },
+   "tz_Aden": {
+      "message": "Aden"
+   },
+   "tz_Africa": {
+      "message": "Afrika"
+   },
+   "tz_Algiers": {
+      "message": "Alžyras"
+   },
+   "tz_Almaty": {
+      "message": "Almata"
+   },
+   "tz_America": {
+      "message": "Amerika"
+   },
+   "tz_Amman": {
+      "message": "Amanas"
+   },
+   "tz_Amsterdam": {
+      "message": "Amsterdamas"
+   },
+   "tz_Anadyr": {
+      "message": "Anadyrė"
+   },
+   "tz_Anchorage": {
+      "message": "standus įtvirtinimas"
+   },
+   "tz_Andorra": {
+      "message": "Andora"
+   },
+   "tz_Anguilla": {
+      "message": "Angilija"
+   },
+   "tz_Antananarivo": {
+      "message": "Antananarivas"
+   },
+   "tz_Antarctica": {
+      "message": "Antarktida"
+   },
+   "tz_Antigua": {
+      "message": "Antigva"
+   },
+   "tz_Apia": {
+      "message": "Apija"
+   },
+   "tz_Aqtau": {
+      "message": "Aktau"
+   },
+   "tz_Aqtobe": {
+      "message": "Aktobė"
+   },
+   "tz_Araguaina": {
+      "message": "Aragvaina"
+   },
+   "tz_Arctic": {
+      "message": "arktinis"
+   },
+   "tz_Argentina___Buenos_Aires": {
+      "message": "Argentina / Buenos Airės"
+   },
+   "tz_Argentina___Catamarca": {
+      "message": "Argentina / Katamarka"
+   },
+   "tz_Argentina___Cordoba": {
+      "message": "Argentina / Cordoba"
+   },
+   "tz_Argentina___Jujuy": {
+      "message": "Argentina / Jujuy"
+   },
+   "tz_Argentina___La_Rioja": {
+      "message": "Argentina / La Riocha"
+   },
+   "tz_Argentina___Mendoza": {
+      "message": "Argentina / Mendoza"
+   },
+   "tz_Argentina___Rio_Gallegos": {
+      "message": "Argentina / Rio Gallegos"
+   },
+   "tz_Argentina___Salta": {
+      "message": "Argentina / Salta"
+   },
+   "tz_Argentina___San_Juan": {
+      "message": "Argentina / San Juan"
+   },
+   "tz_Argentina___San_Luis": {
+      "message": "Argentina / San Luis"
+   },
+   "tz_Argentina___Tucuman": {
+      "message": "Argentina / Tucuman"
+   },
+   "tz_Argentina___Ushuaia": {
+      "message": "Argentina / Ushuaia"
+   },
+   "tz_Aruba": {
+      "message": "Aruba"
+   },
+   "tz_Ashgabat": {
+      "message": "Ašchabadas"
+   },
+   "tz_Asia": {
+      "message": "Azija"
+   },
+   "tz_Asmara": {
+      "message": "Asmara"
+   },
+   "tz_Asuncion": {
+      "message": "Asunsjonas"
+   },
+   "tz_Athens": {
+      "message": "Atėnai"
+   },
+   "tz_Atikokan": {
+      "message": "Atikokan"
+   },
+   "tz_Atlantic": {
+      "message": "Atlanto"
+   },
+   "tz_Auckland": {
+      "message": "Oklandas"
+   },
+   "tz_Australia": {
+      "message": "Australija"
+   },
+   "tz_Azores": {
+      "message": "Azorai"
+   },
+   "tz_Baghdad": {
+      "message": "Bagdadas"
+   },
+   "tz_Bahia": {
+      "message": "Bahia"
+   },
+   "tz_Bahia_Banderas": {
+      "message": "Bahia Banderas"
+   },
+   "tz_Bahrain": {
+      "message": "Bahreinas"
+   },
+   "tz_Baku": {
+      "message": "Baku"
+   },
+   "tz_Bamako": {
+      "message": "Bamakas"
+   },
+   "tz_Bangkok": {
+      "message": "Bankokas"
+   },
+   "tz_Bangui": {
+      "message": "Bangis"
+   },
+   "tz_Banjul": {
+      "message": "Bandžulis"
+   },
+   "tz_Barbados": {
+      "message": "Barbadosas"
+   },
+   "tz_Beirut": {
+      "message": "Beirutas"
+   },
+   "tz_Belem": {
+      "message": "Belemas"
+   },
+   "tz_Belgrade": {
+      "message": "Belgradas"
+   },
+   "tz_Belize": {
+      "message": "Belizas"
+   },
+   "tz_Berlin": {
+      "message": "Berlynas"
+   },
+   "tz_Bermuda": {
+      "message": "Bermudų salos"
+   },
+   "tz_Bishkek": {
+      "message": "Biškekas"
+   },
+   "tz_Bissau": {
+      "message": "Gvinėja"
+   },
+   "tz_Blanc__Sablon": {
+      "message": "Blanc-Sablon"
+   },
+   "tz_Blantyre": {
+      "message": "Blantyras"
+   },
+   "tz_Boa_Vista": {
+      "message": "Boa Vista"
+   },
+   "tz_Bogota": {
+      "message": "Bogota"
+   },
+   "tz_Boise": {
+      "message": "Boise"
+   },
+   "tz_Bratislava": {
+      "message": "Bratislava"
+   },
+   "tz_Brazzaville": {
+      "message": "Brazavilis"
+   },
+   "tz_Brisbane": {
+      "message": "Brisbenas"
+   },
+   "tz_Broken_Hill": {
+      "message": "Brokenhila"
+   },
+   "tz_Brunei": {
+      "message": "Brunėjus"
+   },
+   "tz_Brussels": {
+      "message": "Briuselis"
+   },
+   "tz_Bucharest": {
+      "message": "Bukareštas"
+   },
+   "tz_Budapest": {
+      "message": "Budapeštas"
+   },
+   "tz_Bujumbura": {
+      "message": "Bujumbura"
+   },
+   "tz_Busingen": {
+      "message": "Büsingeno"
+   },
+   "tz_Cairo": {
+      "message": "Kairas"
+   },
+   "tz_Cambridge_Bay": {
+      "message": "Cambridge Bay"
+   },
+   "tz_Campo_Grande": {
+      "message": "Kampo Grandė"
+   },
+   "tz_Canary": {
+      "message": "kanarėlė"
+   },
+   "tz_Cancun": {
+      "message": "Kankunas"
+   },
+   "tz_Cape_Verde": {
+      "message": "Žaliasis Kyšulys"
+   },
+   "tz_Caracas": {
+      "message": "Karakasas"
+   },
+   "tz_Casablanca": {
+      "message": "Kasablanka"
+   },
+   "tz_Casey": {
+      "message": "Casey"
+   },
+   "tz_Cayenne": {
+      "message": "Cayenne"
+   },
+   "tz_Cayman": {
+      "message": "Kaimanų"
+   },
+   "tz_Ceuta": {
+      "message": "Seuta"
+   },
+   "tz_Chagos": {
+      "message": "Čagosas"
+   },
+   "tz_Chatham": {
+      "message": "Chatham"
+   },
+   "tz_Chicago": {
+      "message": "Čikagoje"
+   },
+   "tz_Chihuahua": {
+      "message": "Čihuahua"
+   },
+   "tz_Chisinau": {
+      "message": "Kišiniovas"
+   },
+   "tz_Choibalsan": {
+      "message": "Čoibalsanas"
+   },
+   "tz_Chongqing": {
+      "message": "Čongčingas"
+   },
+   "tz_Christmas": {
+      "message": "Kalėdos"
+   },
+   "tz_Chuuk": {
+      "message": "Chuuk"
+   },
+   "tz_Cocos": {
+      "message": "Kokosų"
+   },
+   "tz_Colombo": {
+      "message": "Kolombas"
+   },
+   "tz_Comoro": {
+      "message": "Komorai"
+   },
+   "tz_Conakry": {
+      "message": "Konakris"
+   },
+   "tz_Copenhagen": {
+      "message": "Kopenhaga"
+   },
+   "tz_Costa_Rica": {
+      "message": "Kosta Rika"
+   },
+   "tz_Creston": {
+      "message": "Creston"
+   },
+   "tz_Cuiaba": {
+      "message": "Cuiaba"
+   },
+   "tz_Curacao": {
+      "message": "Kiurasao"
+   },
+   "tz_Currie": {
+      "message": "Currie"
+   },
+   "tz_Dakar": {
+      "message": "Dakaras"
+   },
+   "tz_Damascus": {
+      "message": "Damaskas"
+   },
+   "tz_Danmarkshavn": {
+      "message": "Danmarkshavnas"
+   },
+   "tz_Dar_es_Salaam": {
+      "message": "Dar es Salaam"
+   },
+   "tz_Darwin": {
+      "message": "Darvinas"
+   },
+   "tz_Davis": {
+      "message": "Davis"
+   },
+   "tz_Dawson": {
+      "message": "Dawson"
+   },
+   "tz_Dawson_Creek": {
+      "message": "Dawson Creek"
+   },
+   "tz_Denver": {
+      "message": "Denverio"
+   },
+   "tz_Detroit": {
+      "message": "Detroite"
+   },
+   "tz_Dhaka": {
+      "message": "Daka"
+   },
+   "tz_Dili": {
+      "message": "Dilis"
+   },
+   "tz_Djibouti": {
+      "message": "Džibutis"
+   },
+   "tz_Dominica": {
+      "message": "Dominika"
+   },
+   "tz_Douala": {
+      "message": "Douala"
+   },
+   "tz_Dubai": {
+      "message": "Dubajus"
+   },
+   "tz_Dublin": {
+      "message": "Dublinas"
+   },
+   "tz_DumontDUrville": {
+      "message": "DumontDUrville"
+   },
+   "tz_Dushanbe": {
+      "message": "Dušanbė"
+   },
+   "tz_Easter": {
+      "message": "Velykos"
+   },
+   "tz_Edmonton": {
+      "message": "Edmontonas"
+   },
+   "tz_Efate": {
+      "message": "Efatas"
+   },
+   "tz_Eirunepe": {
+      "message": "Eirunepe"
+   },
+   "tz_El_Aaiun": {
+      "message": "Ajūna"
+   },
+   "tz_El_Salvador": {
+      "message": "Salvadoras"
+   },
+   "tz_Enderbury": {
+      "message": "Enderburis"
+   },
+   "tz_Eucla": {
+      "message": "Eucla"
+   },
+   "tz_Europe": {
+      "message": "Europa"
+   },
+   "tz_Fakaofo": {
+      "message": "Fakaofas"
+   },
+   "tz_Faroe": {
+      "message": "Farerų"
+   },
+   "tz_Fiji": {
+      "message": "Fidžis"
+   },
+   "tz_Fortaleza": {
+      "message": "Fortaleza"
+   },
+   "tz_Freetown": {
+      "message": "freetown"
+   },
+   "tz_Funafuti": {
+      "message": "Funafutis"
+   },
+   "tz_Gaborone": {
+      "message": "Gaboronas"
+   },
+   "tz_Galapagos": {
+      "message": "Galapagų"
+   },
+   "tz_Gambier": {
+      "message": "Gambijė"
+   },
+   "tz_Gaza": {
+      "message": "Gazos"
+   },
+   "tz_Gibraltar": {
+      "message": "Gibraltaras"
+   },
+   "tz_Glace_Bay": {
+      "message": "Glace Bay"
+   },
+   "tz_Godthab": {
+      "message": "Nukas"
+   },
+   "tz_Goose_Bay": {
+      "message": "goose Bay"
+   },
+   "tz_Grand_Turk": {
+      "message": "Grand Turk"
+   },
+   "tz_Grenada": {
+      "message": "Grenada"
+   },
+   "tz_Guadalcanal": {
+      "message": "Gvadalkanalas"
+   },
+   "tz_Guadeloupe": {
+      "message": "Gvadelupa"
+   },
+   "tz_Guam": {
+      "message": "Guamas"
+   },
+   "tz_Guatemala": {
+      "message": "Gvatemala"
+   },
+   "tz_Guayaquil": {
+      "message": "Gvajakilis"
+   },
+   "tz_Guernsey": {
+      "message": "Gernsis"
+   },
+   "tz_Guyana": {
+      "message": "Gajana"
+   },
+   "tz_Halifax": {
+      "message": "Halifaksas"
+   },
+   "tz_Harare": {
+      "message": "Hararė"
+   },
+   "tz_Harbin": {
+      "message": "Harbinas"
+   },
+   "tz_Havana": {
+      "message": "Havana"
+   },
+   "tz_Hebron": {
+      "message": "Hebroną"
+   },
+   "tz_Helsinki": {
+      "message": "Helsinkis"
+   },
+   "tz_Hermosillo": {
+      "message": "Hermosilas"
+   },
+   "tz_Ho_Chi_Minh": {
+      "message": "Ho Chi Minh"
+   },
+   "tz_Hobart": {
+      "message": "Hobartas"
+   },
+   "tz_Hong_Kong": {
+      "message": "Honkongas"
+   },
+   "tz_Honolulu": {
+      "message": "Honolulu"
+   },
+   "tz_Hovd": {
+      "message": "Kobdas"
+   },
+   "tz_Indian": {
+      "message": "Indijos"
+   },
+   "tz_Indiana___Indianapolis": {
+      "message": "Indiana / Indianapolis"
+   },
+   "tz_Indiana___Knox": {
+      "message": "Indiana / Knox"
+   },
+   "tz_Indiana___Marengo": {
+      "message": "Indiana / Marengo"
+   },
+   "tz_Indiana___Petersburg": {
+      "message": "Indiana / Petersburg"
+   },
+   "tz_Indiana___Tell_City": {
+      "message": "Indiana / Tell City"
+   },
+   "tz_Indiana___Vevay": {
+      "message": "Indiana / Vevay"
+   },
+   "tz_Indiana___Vincennes": {
+      "message": "Indiana / Vincennes"
+   },
+   "tz_Indiana___Winamac": {
+      "message": "Indiana / Winamac"
+   },
+   "tz_Inuvik": {
+      "message": "Inuvik"
+   },
+   "tz_Iqaluit": {
+      "message": "Ikaluitas"
+   },
+   "tz_Irkutsk": {
+      "message": "Alytaus"
+   },
+   "tz_Isle_of_Man": {
+      "message": "Isle of Man"
+   },
+   "tz_Istanbul": {
+      "message": "Stambulas"
+   },
+   "tz_Jakarta": {
+      "message": "Džakarta"
+   },
+   "tz_Jamaica": {
+      "message": "Jamaika"
+   },
+   "tz_Jayapura": {
+      "message": "Džaipura"
+   },
+   "tz_Jersey": {
+      "message": "Džersis"
+   },
+   "tz_Jerusalem": {
+      "message": "Jeruzalė"
+   },
+   "tz_Johannesburg": {
+      "message": "Johanesburgas"
+   },
+   "tz_Johnston": {
+      "message": "Johnston"
+   },
+   "tz_Juba": {
+      "message": "Juba"
+   },
+   "tz_Juneau": {
+      "message": "Juneau"
+   },
+   "tz_Kabul": {
+      "message": "Kabulas"
+   },
+   "tz_Kaliningrad": {
+      "message": "Kaliningradas"
+   },
+   "tz_Kamchatka": {
+      "message": "Kamčiatka"
+   },
+   "tz_Kampala": {
+      "message": "Kampala"
+   },
+   "tz_Karachi": {
+      "message": "Telšiai"
+   },
+   "tz_Kashgar": {
+      "message": "Kašgaras"
+   },
+   "tz_Kathmandu": {
+      "message": "Katmandu"
+   },
+   "tz_Kentucky___Louisville": {
+      "message": "Kentucky / Louisville"
+   },
+   "tz_Kentucky___Monticello": {
+      "message": "Kentucky / Monticello"
+   },
+   "tz_Kerguelen": {
+      "message": "Kerguelenas"
+   },
+   "tz_Khandyga": {
+      "message": "Khandyga"
+   },
+   "tz_Khartoum": {
+      "message": "Chartumas"
+   },
+   "tz_Kiev": {
+      "message": "Kijevas"
+   },
+   "tz_Kigali": {
+      "message": "Kigalis"
+   },
+   "tz_Kinshasa": {
+      "message": "Kinšasa"
+   },
+   "tz_Kiritimati": {
+      "message": "Kiritimatis"
+   },
+   "tz_Kolkata": {
+      "message": "Kolkata"
+   },
+   "tz_Kosrae": {
+      "message": "Kosraje"
+   },
+   "tz_Kralendijk": {
+      "message": "Kralendijk"
+   },
+   "tz_Krasnoyarsk": {
+      "message": "Krasnojarskas"
+   },
+   "tz_Kuala_Lumpur": {
+      "message": "Kvala Lumpūras"
+   },
+   "tz_Kuching": {
+      "message": "Kučingas"
+   },
+   "tz_Kuwait": {
+      "message": "Kuveitas"
+   },
+   "tz_Kwajalein": {
+      "message": "Kwajalein"
+   },
+   "tz_La_Paz": {
+      "message": "La Pasas"
+   },
+   "tz_Lagos": {
+      "message": "Lagosas"
+   },
+   "tz_Libreville": {
+      "message": "Librevilis"
+   },
+   "tz_Lima": {
+      "message": "Lima"
+   },
+   "tz_Lindeman": {
+      "message": "Lindeman"
+   },
+   "tz_Lisbon": {
+      "message": "Lisabona"
+   },
+   "tz_Ljubljana": {
+      "message": "Liubliana"
+   },
+   "tz_Local_Time": {
+      "message": "Vietinis laikas"
+   },
+   "tz_Lome": {
+      "message": "Lomė"
+   },
+   "tz_London": {
+      "message": "Londonas"
+   },
+   "tz_Longyearbyen": {
+      "message": "Longjyras"
+   },
+   "tz_Lord_Howe": {
+      "message": "lord Howe"
+   },
+   "tz_Los_Angeles": {
+      "message": "Los Andželas"
+   },
+   "tz_Lower_Princes": {
+      "message": "mažesnės Princai"
+   },
+   "tz_Luanda": {
+      "message": "Luanda"
+   },
+   "tz_Lubumbashi": {
+      "message": "Lubumbašis"
+   },
+   "tz_Lusaka": {
+      "message": "Lusaka"
+   },
+   "tz_Luxembourg": {
+      "message": "Liuksemburgas"
+   },
+   "tz_Macau": {
+      "message": "Makao"
+   },
+   "tz_Maceio": {
+      "message": "Maceio"
+   },
+   "tz_Macquarie": {
+      "message": "Macquarie"
+   },
+   "tz_Madeira": {
+      "message": "Madera"
+   },
+   "tz_Madrid": {
+      "message": "Madridas"
+   },
+   "tz_Magadan": {
+      "message": "Magadanas"
+   },
+   "tz_Mahe": {
+      "message": "Mahe"
+   },
+   "tz_Majuro": {
+      "message": "Madžiuras"
+   },
+   "tz_Makassar": {
+      "message": "Makassar"
+   },
+   "tz_Malabo": {
+      "message": "Malabo"
+   },
+   "tz_Maldives": {
+      "message": "Maldyvai"
+   },
+   "tz_Malta": {
+      "message": "Malta"
+   },
+   "tz_Managua": {
+      "message": "Managva"
+   },
+   "tz_Manaus": {
+      "message": "Manausas"
+   },
+   "tz_Manila": {
+      "message": "Manila"
+   },
+   "tz_Maputo": {
+      "message": "Maputu"
+   },
+   "tz_Mariehamn": {
+      "message": "Marihamnas"
+   },
+   "tz_Marigot": {
+      "message": "Marigot"
+   },
+   "tz_Marquesas": {
+      "message": "Markizų"
+   },
+   "tz_Martinique": {
+      "message": "Martinika"
+   },
+   "tz_Maseru": {
+      "message": "Maseru"
+   },
+   "tz_Matamoros": {
+      "message": "Matamoros"
+   },
+   "tz_Mauritius": {
+      "message": "Mauricijus"
+   },
+   "tz_Mawson": {
+      "message": "Mosonas"
+   },
+   "tz_Mayotte": {
+      "message": "Mayotte"
+   },
+   "tz_Mazatlan": {
+      "message": "Mazatlanas"
+   },
+   "tz_Mbabane": {
+      "message": "Mbabanė"
+   },
+   "tz_McMurdo": {
+      "message": "McMurdo"
+   },
+   "tz_Melbourne": {
+      "message": "Melburnas"
+   },
+   "tz_Menominee": {
+      "message": "Menominee"
+   },
+   "tz_Merida": {
+      "message": "Merida"
+   },
+   "tz_Metlakatla": {
+      "message": "Metlakatla"
+   },
+   "tz_Mexico_City": {
+      "message": "Meksikas"
+   },
+   "tz_Midway": {
+      "message": "pusiaukelėje"
+   },
+   "tz_Minsk": {
+      "message": "Minskas"
+   },
+   "tz_Miquelon": {
+      "message": "Mikelonas"
+   },
+   "tz_Mogadishu": {
+      "message": "Mogadišas"
+   },
+   "tz_Monaco": {
+      "message": "Monakas"
+   },
+   "tz_Moncton": {
+      "message": "Moncton"
+   },
+   "tz_Monrovia": {
+      "message": "Monrovija"
+   },
+   "tz_Monterrey": {
+      "message": "Monterėjus"
+   },
+   "tz_Montevideo": {
+      "message": "Montevidėjas"
+   },
+   "tz_Montserrat": {
+      "message": "Montseratas"
+   },
+   "tz_Moscow": {
+      "message": "Maskva"
+   },
+   "tz_Muscat": {
+      "message": "muskatas"
+   },
+   "tz_Nairobi": {
+      "message": "Nairobis"
+   },
+   "tz_Nassau": {
+      "message": "Nasau"
+   },
+   "tz_Nauru": {
+      "message": "Nauru"
+   },
+   "tz_Ndjamena": {
+      "message": "Ndjamena"
+   },
+   "tz_New_York": {
+      "message": "Niujorkas"
+   },
+   "tz_Niamey": {
+      "message": "Niamėjus"
+   },
+   "tz_Nicosia": {
+      "message": "Nikosija"
+   },
+   "tz_Nipigon": {
+      "message": "Nipigono"
+   },
+   "tz_Niue": {
+      "message": "Niue salos"
+   },
+   "tz_Nome": {
+      "message": "nome"
+   },
+   "tz_Norfolk": {
+      "message": "Norfolk"
+   },
+   "tz_Noronha": {
+      "message": "Noronha"
+   },
+   "tz_North_Dakota___Beulah": {
+      "message": "Šiaurės Dakota / Beulah"
+   },
+   "tz_North_Dakota___Center": {
+      "message": "Šiaurės Dakota / centras"
+   },
+   "tz_North_Dakota___New_Salem": {
+      "message": "Šiaurės Dakota / New Salem"
+   },
+   "tz_Nouakchott": {
+      "message": "Nuakšotas"
+   },
+   "tz_Noumea": {
+      "message": "Noumea"
+   },
+   "tz_Novokuznetsk": {
+      "message": "Novokuznetsk"
+   },
+   "tz_Novosibirsk": {
+      "message": "Novosibirskas"
+   },
+   "tz_Ojinaga": {
+      "message": "Ojinaga"
+   },
+   "tz_Omsk": {
+      "message": "Omskas"
+   },
+   "tz_Oral": {
+      "message": "oralinis"
+   },
+   "tz_Oslo": {
+      "message": "Oslas"
+   },
+   "tz_Ouagadougou": {
+      "message": "Uagadugu"
+   },
+   "tz_Pacific": {
+      "message": "Ramiojo vandenyno"
+   },
+   "tz_Pago_Pago": {
+      "message": "Pago Pago"
+   },
+   "tz_Palau": {
+      "message": "Palau"
+   },
+   "tz_Palmer": {
+      "message": "maldininkas"
+   },
+   "tz_Panama": {
+      "message": "Panama"
+   },
+   "tz_Pangnirtung": {
+      "message": "Pangnirtung"
+   },
+   "tz_Paramaribo": {
+      "message": "Paramaribo"
+   },
+   "tz_Paris": {
+      "message": "Paryžius"
+   },
+   "tz_Perth": {
+      "message": "Pertas"
+   },
+   "tz_Phnom_Penh": {
+      "message": "Pnompenis"
+   },
+   "tz_Phoenix": {
+      "message": "phoenix"
+   },
+   "tz_Pitcairn": {
+      "message": "Pitkerno"
+   },
+   "tz_Podgorica": {
+      "message": "Podgoricoje"
+   },
+   "tz_Pohnpei": {
+      "message": "Pohnpei"
+   },
+   "tz_Pontianak": {
+      "message": "Pontianak"
+   },
+   "tz_Port_Moresby": {
+      "message": "Port Morsbis"
+   },
+   "tz_Port__au__Prince": {
+      "message": "Port o Prensas"
+   },
+   "tz_Port_of_Spain": {
+      "message": "Port of Spain"
+   },
+   "tz_Porto_Velho": {
+      "message": "Porto Velho"
+   },
+   "tz_Porto__Novo": {
+      "message": "Porto Novas"
+   },
+   "tz_Prague": {
+      "message": "Praha"
+   },
+   "tz_Puerto_Rico": {
+      "message": "Puerto Rikas"
+   },
+   "tz_Pyongyang": {
+      "message": "Pchenjanas"
+   },
+   "tz_Qatar": {
+      "message": "Kataras"
+   },
+   "tz_Qyzylorda": {
+      "message": "Qyzylorda"
+   },
+   "tz_Rainy_River": {
+      "message": "Rainy River"
+   },
+   "tz_Rangoon": {
+      "message": "Rangūnas"
+   },
+   "tz_Rankin_Inlet": {
+      "message": "Rankin Inlet"
+   },
+   "tz_Rarotonga": {
+      "message": "Rarotonga"
+   },
+   "tz_Recife": {
+      "message": "Resifė"
+   },
+   "tz_Regina": {
+      "message": "Regina"
+   },
+   "tz_Resolute": {
+      "message": "ryžtingas"
+   },
+   "tz_Reunion": {
+      "message": "susitikimas"
+   },
+   "tz_Reykjavik": {
+      "message": "Reikjavikas"
+   },
+   "tz_Riga": {
+      "message": "Ryga"
+   },
+   "tz_Rio_Branco": {
+      "message": "Rio Branco"
+   },
+   "tz_Riyadh": {
+      "message": "Rijadas"
+   },
+   "tz_Rome": {
+      "message": "Roma"
+   },
+   "tz_Rothera": {
+      "message": "Rotera"
+   },
+   "tz_Saipan": {
+      "message": "Saipanas"
+   },
+   "tz_Sakhalin": {
+      "message": "Sachalino"
+   },
+   "tz_Samara": {
+      "message": "samara"
+   },
+   "tz_Samarkand": {
+      "message": "Samarkandas"
+   },
+   "tz_San_Marino": {
+      "message": "San Marinas"
+   },
+   "tz_Santa_Isabel": {
+      "message": "Santa Isabel"
+   },
+   "tz_Santarem": {
+      "message": "Santarém"
+   },
+   "tz_Santiago": {
+      "message": "Santjagas"
+   },
+   "tz_Santo_Domingo": {
+      "message": "Santo Domingas"
+   },
+   "tz_Sao_Paulo": {
+      "message": "San Paulas"
+   },
+   "tz_Sao_Tome": {
+      "message": "San Tomė"
+   },
+   "tz_Sarajevo": {
+      "message": "Sarajevas"
+   },
+   "tz_Scoresbysund": {
+      "message": "Skoresbisundas"
+   },
+   "tz_Seoul": {
+      "message": "Seulas"
+   },
+   "tz_Shanghai": {
+      "message": "Šanchajus"
+   },
+   "tz_Simferopol": {
+      "message": "Simferopolis"
+   },
+   "tz_Singapore": {
+      "message": "Singapūras"
+   },
+   "tz_Sitka": {
+      "message": "sitka"
+   },
+   "tz_Skopje": {
+      "message": "Skopjė"
+   },
+   "tz_Sofia": {
+      "message": "Sofija"
+   },
+   "tz_South_Georgia": {
+      "message": "Pietų Džordžija"
+   },
+   "tz_St_Barthelemy": {
+      "message": "St Baltramiejaus sala"
+   },
+   "tz_St_Helena": {
+      "message": "Elenos"
+   },
+   "tz_St_Johns": {
+      "message": "St Johns"
+   },
+   "tz_St_Kitts": {
+      "message": "Sent Kitsas"
+   },
+   "tz_St_Lucia": {
+      "message": "Sent Lusija"
+   },
+   "tz_St_Thomas": {
+      "message": "St Thomas"
+   },
+   "tz_St_Vincent": {
+      "message": "Sent Vinsentas"
+   },
+   "tz_Stanley": {
+      "message": "Stanley"
+   },
+   "tz_Stockholm": {
+      "message": "Stokholmas"
+   },
+   "tz_Swift_Current": {
+      "message": "Swift Current"
+   },
+   "tz_Sydney": {
+      "message": "Sidnėjus"
+   },
+   "tz_Syowa": {
+      "message": "Siova"
+   },
+   "tz_Tahiti": {
+      "message": "Taitis"
+   },
+   "tz_Taipei": {
+      "message": "Taipėjus"
+   },
+   "tz_Tallinn": {
+      "message": "Talinas"
+   },
+   "tz_Tarawa": {
+      "message": "Tarava"
+   },
+   "tz_Tashkent": {
+      "message": "Taškentas"
+   },
+   "tz_Tbilisi": {
+      "message": "Tbilisis"
+   },
+   "tz_Tegucigalpa": {
+      "message": "Tegusigalpa"
+   },
+   "tz_Tehran": {
+      "message": "Teheranas"
+   },
+   "tz_Thimphu": {
+      "message": "Timpu"
+   },
+   "tz_Thule": {
+      "message": "\"Thule\""
+   },
+   "tz_Thunder_Bay": {
+      "message": "Thunder Bay"
+   },
+   "tz_Tijuana": {
+      "message": "Tijuana"
+   },
+   "tz_Tirane": {
+      "message": "Tirana"
+   },
+   "tz_Tokyo": {
+      "message": "Tokijas"
+   },
+   "tz_Tongatapu": {
+      "message": "Tongatapu"
+   },
+   "tz_Toronto": {
+      "message": "Torontas"
+   },
+   "tz_Tortola": {
+      "message": "Tortola"
+   },
+   "tz_Tripoli": {
+      "message": "Tripolis"
+   },
+   "tz_Troll": {
+      "message": "trolis"
+   },
+   "tz_Tunis": {
+      "message": "Tunisas"
+   },
+   "tz_Ulaanbaatar": {
+      "message": "Ulan Batoras"
+   },
+   "tz_Urumqi": {
+      "message": "Urumqi"
+   },
+   "tz_Ust__Nera": {
+      "message": "Ust Nera"
+   },
+   "tz_Uzhgorod": {
+      "message": "Užhorodas"
+   },
+   "tz_Vaduz": {
+      "message": "Vaduz"
+   },
+   "tz_Vancouver": {
+      "message": "Vankuveris"
+   },
+   "tz_Vatican": {
+      "message": "Vatikanas"
+   },
+   "tz_Vienna": {
+      "message": "Viena"
+   },
+   "tz_Vientiane": {
+      "message": "Vientianas"
+   },
+   "tz_Vilnius": {
+      "message": "Vilnius"
+   },
+   "tz_Vladivostok": {
+      "message": "Vladivostokas"
+   },
+   "tz_Volgograd": {
+      "message": "Volgogradas"
+   },
+   "tz_Vostok": {
+      "message": "Rytai"
+   },
+   "tz_Wake": {
+      "message": "wake"
+   },
+   "tz_Wallis": {
+      "message": "Volis"
+   },
+   "tz_Warsaw": {
+      "message": "Varšuva"
+   },
+   "tz_Whitehorse": {
+      "message": "Vaithorsas"
+   },
+   "tz_Windhoek": {
+      "message": "Windhoek"
+   },
+   "tz_Winnipeg": {
+      "message": "Vinipegas"
+   },
+   "tz_Yakutat": {
+      "message": "YAKUTAT"
+   },
+   "tz_Yakutsk": {
+      "message": "Jakutskas"
+   },
+   "tz_Yekaterinburg": {
+      "message": "Jekaterinburgas"
+   },
+   "tz_Yellowknife": {
+      "message": "Jelounaifas"
+   },
+   "tz_Yerevan": {
+      "message": "Jerevanas"
+   },
+   "tz_Zagreb": {
+      "message": "Zagrebas"
+   },
+   "tz_Zaporozhye": {
+      "message": "Zaporožė"
+   },
+   "tz_Zurich": {
+      "message": "Ciurichas"
+   },
+   "ui_addTimezone": {
+      "message": "papildyti"
+   },
+   "ui_alwaysOnTop": {
+      "message": "Visada viršuje"
+   },
+   "ui_autoHide": {
+      "message": "Slėpti automatiškai"
+   },
+   "ui_extraTimezones": {
+      "message": "Papildomos laiko juostos"
+   },
+   "ui_hour24": {
+      "message": "24 valandų laikrodis"
+   },
+   "ui_weekStartSunday": {
+      "message": "Savaitė prasideda sekmadienį"
+   }
+}

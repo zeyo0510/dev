@@ -1,0 +1,1310 @@
+{
+   "json_end": {
+      "message": "json_end"
+   },
+   "manifest_description": {
+      "message": "تقويم وساعة القطعة مريحة."
+   },
+   "manifest_name": {
+      "message": "التقويم على مدار الساعة"
+   },
+   "tz_Abidjan": {
+      "message": "أبيدجان"
+   },
+   "tz_Accra": {
+      "message": "أكرا"
+   },
+   "tz_Adak": {
+      "message": "أداك"
+   },
+   "tz_Addis_Ababa": {
+      "message": "أديس أبابا"
+   },
+   "tz_Adelaide": {
+      "message": "اديلايد"
+   },
+   "tz_Aden": {
+      "message": "عدن"
+   },
+   "tz_Africa": {
+      "message": "أفريقيا"
+   },
+   "tz_Algiers": {
+      "message": "الجزائر"
+   },
+   "tz_Almaty": {
+      "message": "ألماتي"
+   },
+   "tz_America": {
+      "message": "أمريكا"
+   },
+   "tz_Amman": {
+      "message": "عمان"
+   },
+   "tz_Amsterdam": {
+      "message": "أمستردام"
+   },
+   "tz_Anadyr": {
+      "message": "أنادير"
+   },
+   "tz_Anchorage": {
+      "message": "مرسى"
+   },
+   "tz_Andorra": {
+      "message": "أندورا"
+   },
+   "tz_Anguilla": {
+      "message": "أنغيلا"
+   },
+   "tz_Antananarivo": {
+      "message": "أنتاناناريفو"
+   },
+   "tz_Antarctica": {
+      "message": "القارة القطبية الجنوبية"
+   },
+   "tz_Antigua": {
+      "message": "أنتيغوا"
+   },
+   "tz_Apia": {
+      "message": "آبيا"
+   },
+   "tz_Aqtau": {
+      "message": "أكتا"
+   },
+   "tz_Aqtobe": {
+      "message": "أكتوب"
+   },
+   "tz_Araguaina": {
+      "message": "أراغواينا"
+   },
+   "tz_Arctic": {
+      "message": "قطبي شمالي"
+   },
+   "tz_Argentina___Buenos_Aires": {
+      "message": "الأرجنتين / بوينس آيرس"
+   },
+   "tz_Argentina___Catamarca": {
+      "message": "الأرجنتين / كاتاماركا"
+   },
+   "tz_Argentina___Cordoba": {
+      "message": "الأرجنتين / قرطبة"
+   },
+   "tz_Argentina___Jujuy": {
+      "message": "الأرجنتين / خوخوي"
+   },
+   "tz_Argentina___La_Rioja": {
+      "message": "الأرجنتين / لا ريوخا"
+   },
+   "tz_Argentina___Mendoza": {
+      "message": "الأرجنتين / مندوزا"
+   },
+   "tz_Argentina___Rio_Gallegos": {
+      "message": "الأرجنتين / ريو غاليغوس"
+   },
+   "tz_Argentina___Salta": {
+      "message": "الأرجنتين / سالتا"
+   },
+   "tz_Argentina___San_Juan": {
+      "message": "الأرجنتين / سان خوان"
+   },
+   "tz_Argentina___San_Luis": {
+      "message": "الأرجنتين / سان لويس"
+   },
+   "tz_Argentina___Tucuman": {
+      "message": "الأرجنتين / توكومان"
+   },
+   "tz_Argentina___Ushuaia": {
+      "message": "الأرجنتين / أوشوايا"
+   },
+   "tz_Aruba": {
+      "message": "أروبا"
+   },
+   "tz_Ashgabat": {
+      "message": "عشق آباد"
+   },
+   "tz_Asia": {
+      "message": "آسيا"
+   },
+   "tz_Asmara": {
+      "message": "أسمرة"
+   },
+   "tz_Asuncion": {
+      "message": "أسونسيون"
+   },
+   "tz_Athens": {
+      "message": "أثينا"
+   },
+   "tz_Atikokan": {
+      "message": "Atikokan"
+   },
+   "tz_Atlantic": {
+      "message": "الأطلسي"
+   },
+   "tz_Auckland": {
+      "message": "أوكلاند"
+   },
+   "tz_Australia": {
+      "message": "أستراليا"
+   },
+   "tz_Azores": {
+      "message": "جزر الأزور"
+   },
+   "tz_Baghdad": {
+      "message": "بغداد"
+   },
+   "tz_Bahia": {
+      "message": "باهيا"
+   },
+   "tz_Bahia_Banderas": {
+      "message": "باهيا بانديراس"
+   },
+   "tz_Bahrain": {
+      "message": "البحرين"
+   },
+   "tz_Baku": {
+      "message": "باكو"
+   },
+   "tz_Bamako": {
+      "message": "باماكو"
+   },
+   "tz_Bangkok": {
+      "message": "بانكوك"
+   },
+   "tz_Bangui": {
+      "message": "بانغي"
+   },
+   "tz_Banjul": {
+      "message": "بانجول"
+   },
+   "tz_Barbados": {
+      "message": "بربادوس"
+   },
+   "tz_Beirut": {
+      "message": "بيروت"
+   },
+   "tz_Belem": {
+      "message": "بيليم"
+   },
+   "tz_Belgrade": {
+      "message": "بلغراد"
+   },
+   "tz_Belize": {
+      "message": "بليز"
+   },
+   "tz_Berlin": {
+      "message": "البرلينية"
+   },
+   "tz_Bermuda": {
+      "message": "برمودا"
+   },
+   "tz_Bishkek": {
+      "message": "بيشكيك"
+   },
+   "tz_Bissau": {
+      "message": "بيساو"
+   },
+   "tz_Blanc__Sablon": {
+      "message": "بلان-سابلون"
+   },
+   "tz_Blantyre": {
+      "message": "بلانتير"
+   },
+   "tz_Boa_Vista": {
+      "message": "بوا فيستا"
+   },
+   "tz_Bogota": {
+      "message": "بوغوتا"
+   },
+   "tz_Boise": {
+      "message": "بويز"
+   },
+   "tz_Bratislava": {
+      "message": "براتيسلافا"
+   },
+   "tz_Brazzaville": {
+      "message": "برازافيل"
+   },
+   "tz_Brisbane": {
+      "message": "بريسبان"
+   },
+   "tz_Broken_Hill": {
+      "message": "بروكن هيل"
+   },
+   "tz_Brunei": {
+      "message": "بروناي"
+   },
+   "tz_Brussels": {
+      "message": "بروكسل"
+   },
+   "tz_Bucharest": {
+      "message": "بوخارست"
+   },
+   "tz_Budapest": {
+      "message": "بودابست"
+   },
+   "tz_Bujumbura": {
+      "message": "بوجمبورا"
+   },
+   "tz_Busingen": {
+      "message": "Busingen"
+   },
+   "tz_Cairo": {
+      "message": "القاهرة"
+   },
+   "tz_Cambridge_Bay": {
+      "message": "كامبردج باي"
+   },
+   "tz_Campo_Grande": {
+      "message": "كامبو غراندي"
+   },
+   "tz_Canary": {
+      "message": "كناري"
+   },
+   "tz_Cancun": {
+      "message": "كانكون"
+   },
+   "tz_Cape_Verde": {
+      "message": "الرأس الأخضر"
+   },
+   "tz_Caracas": {
+      "message": "كراكاس"
+   },
+   "tz_Casablanca": {
+      "message": "الدار البيضاء"
+   },
+   "tz_Casey": {
+      "message": "كيسي"
+   },
+   "tz_Cayenne": {
+      "message": "حريف"
+   },
+   "tz_Cayman": {
+      "message": "كايمان"
+   },
+   "tz_Ceuta": {
+      "message": "سبتة"
+   },
+   "tz_Chagos": {
+      "message": "تشاغوس"
+   },
+   "tz_Chatham": {
+      "message": "تشاتام"
+   },
+   "tz_Chicago": {
+      "message": "شيكاغو"
+   },
+   "tz_Chihuahua": {
+      "message": "تشيهواهوا"
+   },
+   "tz_Chisinau": {
+      "message": "كيشيناو"
+   },
+   "tz_Choibalsan": {
+      "message": "شويبالسان"
+   },
+   "tz_Chongqing": {
+      "message": "تشونغتشينغ"
+   },
+   "tz_Christmas": {
+      "message": "عيد ميلاد"
+   },
+   "tz_Chuuk": {
+      "message": "شوك"
+   },
+   "tz_Cocos": {
+      "message": "كوكوس"
+   },
+   "tz_Colombo": {
+      "message": "كولومبو"
+   },
+   "tz_Comoro": {
+      "message": "جزر القمر"
+   },
+   "tz_Conakry": {
+      "message": "كوناكري"
+   },
+   "tz_Copenhagen": {
+      "message": "كوبنهاغن"
+   },
+   "tz_Costa_Rica": {
+      "message": "كوستاريكا"
+   },
+   "tz_Creston": {
+      "message": "كريستون"
+   },
+   "tz_Cuiaba": {
+      "message": "كويابا"
+   },
+   "tz_Curacao": {
+      "message": "كوراكاو"
+   },
+   "tz_Currie": {
+      "message": "كوري"
+   },
+   "tz_Dakar": {
+      "message": "داكار"
+   },
+   "tz_Damascus": {
+      "message": "دمشق"
+   },
+   "tz_Danmarkshavn": {
+      "message": "دانماركشافن"
+   },
+   "tz_Dar_es_Salaam": {
+      "message": "دار السلام"
+   },
+   "tz_Darwin": {
+      "message": "داروين"
+   },
+   "tz_Davis": {
+      "message": "ديفيس"
+   },
+   "tz_Dawson": {
+      "message": "داوسون"
+   },
+   "tz_Dawson_Creek": {
+      "message": "داوسون كريك"
+   },
+   "tz_Denver": {
+      "message": "دنفر"
+   },
+   "tz_Detroit": {
+      "message": "ديترويت"
+   },
+   "tz_Dhaka": {
+      "message": "دكا"
+   },
+   "tz_Dili": {
+      "message": "ديلي"
+   },
+   "tz_Djibouti": {
+      "message": "جيبوتي"
+   },
+   "tz_Dominica": {
+      "message": "دومينيكا"
+   },
+   "tz_Douala": {
+      "message": "دوالا"
+   },
+   "tz_Dubai": {
+      "message": "دبي"
+   },
+   "tz_Dublin": {
+      "message": "دبلن"
+   },
+   "tz_DumontDUrville": {
+      "message": "DumontDUrville"
+   },
+   "tz_Dushanbe": {
+      "message": "دوشنبه"
+   },
+   "tz_Easter": {
+      "message": "عيد الفصح"
+   },
+   "tz_Edmonton": {
+      "message": "ادمونتون"
+   },
+   "tz_Efate": {
+      "message": "إيفات"
+   },
+   "tz_Eirunepe": {
+      "message": "من Eirunepe"
+   },
+   "tz_El_Aaiun": {
+      "message": "العيون"
+   },
+   "tz_El_Salvador": {
+      "message": "السلفادور"
+   },
+   "tz_Enderbury": {
+      "message": "اندربوري"
+   },
+   "tz_Eucla": {
+      "message": "Eucla"
+   },
+   "tz_Europe": {
+      "message": "أوروبا"
+   },
+   "tz_Fakaofo": {
+      "message": "فاكاأوفو"
+   },
+   "tz_Faroe": {
+      "message": "فارو"
+   },
+   "tz_Fiji": {
+      "message": "فيجي"
+   },
+   "tz_Fortaleza": {
+      "message": "فورتاليزا"
+   },
+   "tz_Freetown": {
+      "message": "فريتاون"
+   },
+   "tz_Funafuti": {
+      "message": "فونافوتي"
+   },
+   "tz_Gaborone": {
+      "message": "غابورون"
+   },
+   "tz_Galapagos": {
+      "message": "غالاباغوس"
+   },
+   "tz_Gambier": {
+      "message": "جامبير"
+   },
+   "tz_Gaza": {
+      "message": "غزة"
+   },
+   "tz_Gibraltar": {
+      "message": "جبل طارق"
+   },
+   "tz_Glace_Bay": {
+      "message": "مثلج خليج"
+   },
+   "tz_Godthab": {
+      "message": "غادتاب"
+   },
+   "tz_Goose_Bay": {
+      "message": "ذكر الأوز"
+   },
+   "tz_Grand_Turk": {
+      "message": "غراند تورك"
+   },
+   "tz_Grenada": {
+      "message": "غرينادا"
+   },
+   "tz_Guadalcanal": {
+      "message": "القنال"
+   },
+   "tz_Guadeloupe": {
+      "message": "غوادلوب"
+   },
+   "tz_Guam": {
+      "message": "غوام"
+   },
+   "tz_Guatemala": {
+      "message": "غواتيمالا"
+   },
+   "tz_Guayaquil": {
+      "message": "غواياكيل"
+   },
+   "tz_Guernsey": {
+      "message": "غيرنسي"
+   },
+   "tz_Guyana": {
+      "message": "غيانا"
+   },
+   "tz_Halifax": {
+      "message": "هاليفاكس"
+   },
+   "tz_Harare": {
+      "message": "هراري"
+   },
+   "tz_Harbin": {
+      "message": "هاربين"
+   },
+   "tz_Havana": {
+      "message": "هافانا"
+   },
+   "tz_Hebron": {
+      "message": "الخليل"
+   },
+   "tz_Helsinki": {
+      "message": "هلسنكي"
+   },
+   "tz_Hermosillo": {
+      "message": "هيرموسيلو"
+   },
+   "tz_Ho_Chi_Minh": {
+      "message": "هوشي منه"
+   },
+   "tz_Hobart": {
+      "message": "هوبارت"
+   },
+   "tz_Hong_Kong": {
+      "message": "هونغ كونغ"
+   },
+   "tz_Honolulu": {
+      "message": "هونولولو"
+   },
+   "tz_Hovd": {
+      "message": "هوود"
+   },
+   "tz_Indian": {
+      "message": "هندي"
+   },
+   "tz_Indiana___Indianapolis": {
+      "message": "إنديانا / إنديانابوليس"
+   },
+   "tz_Indiana___Knox": {
+      "message": "إنديانا / نوكس"
+   },
+   "tz_Indiana___Marengo": {
+      "message": "إنديانا / مارينغو"
+   },
+   "tz_Indiana___Petersburg": {
+      "message": "إنديانا / بطرسبرغ"
+   },
+   "tz_Indiana___Tell_City": {
+      "message": "إنديانا / أخبر سيتي"
+   },
+   "tz_Indiana___Vevay": {
+      "message": "إنديانا / Vevay"
+   },
+   "tz_Indiana___Vincennes": {
+      "message": "إنديانا / فينسين"
+   },
+   "tz_Indiana___Winamac": {
+      "message": "إنديانا / Winamac"
+   },
+   "tz_Inuvik": {
+      "message": "إنوفيك"
+   },
+   "tz_Iqaluit": {
+      "message": "إيكالويت"
+   },
+   "tz_Irkutsk": {
+      "message": "إركوتسك"
+   },
+   "tz_Isle_of_Man": {
+      "message": "جزيرة آيل أوف مان"
+   },
+   "tz_Istanbul": {
+      "message": "اسطنبول"
+   },
+   "tz_Jakarta": {
+      "message": "جاكرتا"
+   },
+   "tz_Jamaica": {
+      "message": "جامايكا"
+   },
+   "tz_Jayapura": {
+      "message": "جايابورا"
+   },
+   "tz_Jersey": {
+      "message": "جيرسي"
+   },
+   "tz_Jerusalem": {
+      "message": "القدس"
+   },
+   "tz_Johannesburg": {
+      "message": "جوهانسبرج"
+   },
+   "tz_Johnston": {
+      "message": "جونستون"
+   },
+   "tz_Juba": {
+      "message": "جوبا"
+   },
+   "tz_Juneau": {
+      "message": "جونو"
+   },
+   "tz_Kabul": {
+      "message": "كابول"
+   },
+   "tz_Kaliningrad": {
+      "message": "كالينينغراد"
+   },
+   "tz_Kamchatka": {
+      "message": "كامتشاتكا"
+   },
+   "tz_Kampala": {
+      "message": "كمبالا"
+   },
+   "tz_Karachi": {
+      "message": "كراتشي"
+   },
+   "tz_Kashgar": {
+      "message": "كاشغر"
+   },
+   "tz_Kathmandu": {
+      "message": "كاتماندو"
+   },
+   "tz_Kentucky___Louisville": {
+      "message": "كنتاكي / لويزفيل"
+   },
+   "tz_Kentucky___Monticello": {
+      "message": "كنتاكي / مونتايسلو"
+   },
+   "tz_Kerguelen": {
+      "message": "كيرغولن"
+   },
+   "tz_Khandyga": {
+      "message": "Khandyga"
+   },
+   "tz_Khartoum": {
+      "message": "الخرطوم"
+   },
+   "tz_Kiev": {
+      "message": "كييف"
+   },
+   "tz_Kigali": {
+      "message": "كيغالي"
+   },
+   "tz_Kinshasa": {
+      "message": "كينشاسا"
+   },
+   "tz_Kiritimati": {
+      "message": "كيريتيماتي"
+   },
+   "tz_Kolkata": {
+      "message": "كولكاتا"
+   },
+   "tz_Kosrae": {
+      "message": "كوسراي"
+   },
+   "tz_Kralendijk": {
+      "message": "كرالنديك"
+   },
+   "tz_Krasnoyarsk": {
+      "message": "كراسنويارسك"
+   },
+   "tz_Kuala_Lumpur": {
+      "message": "كوالا لمبور"
+   },
+   "tz_Kuching": {
+      "message": "كوتشينغ"
+   },
+   "tz_Kuwait": {
+      "message": "الكويت"
+   },
+   "tz_Kwajalein": {
+      "message": "كواجالين"
+   },
+   "tz_La_Paz": {
+      "message": "لاباز"
+   },
+   "tz_Lagos": {
+      "message": "لاغوس"
+   },
+   "tz_Libreville": {
+      "message": "ليبرفيل"
+   },
+   "tz_Lima": {
+      "message": "ليما"
+   },
+   "tz_Lindeman": {
+      "message": "يندمان"
+   },
+   "tz_Lisbon": {
+      "message": "لشبونة"
+   },
+   "tz_Ljubljana": {
+      "message": "ليوبليانا"
+   },
+   "tz_Local_Time": {
+      "message": "الوقت المحلي"
+   },
+   "tz_Lome": {
+      "message": "لومي"
+   },
+   "tz_London": {
+      "message": "لندن"
+   },
+   "tz_Longyearbyen": {
+      "message": "ونغياربين"
+   },
+   "tz_Lord_Howe": {
+      "message": "ورد هاو"
+   },
+   "tz_Los_Angeles": {
+      "message": "لوس انجليس"
+   },
+   "tz_Lower_Princes": {
+      "message": "الأمراء أقل"
+   },
+   "tz_Luanda": {
+      "message": "لواندا"
+   },
+   "tz_Lubumbashi": {
+      "message": "لوبومباشي"
+   },
+   "tz_Lusaka": {
+      "message": "لوساكا"
+   },
+   "tz_Luxembourg": {
+      "message": "لوكسمبورغ"
+   },
+   "tz_Macau": {
+      "message": "ماكاو"
+   },
+   "tz_Maceio": {
+      "message": "ماسيو"
+   },
+   "tz_Macquarie": {
+      "message": "ماكواري"
+   },
+   "tz_Madeira": {
+      "message": "الماديرا"
+   },
+   "tz_Madrid": {
+      "message": "مدريد"
+   },
+   "tz_Magadan": {
+      "message": "ماغادان"
+   },
+   "tz_Mahe": {
+      "message": "ماهي"
+   },
+   "tz_Majuro": {
+      "message": "ماجورو"
+   },
+   "tz_Makassar": {
+      "message": "ماكاسار"
+   },
+   "tz_Malabo": {
+      "message": "مالابو"
+   },
+   "tz_Maldives": {
+      "message": "جزر المالديف"
+   },
+   "tz_Malta": {
+      "message": "مالطا"
+   },
+   "tz_Managua": {
+      "message": "ماناغوا"
+   },
+   "tz_Manaus": {
+      "message": "ماناوس"
+   },
+   "tz_Manila": {
+      "message": "مانيلا"
+   },
+   "tz_Maputo": {
+      "message": "مابوتو"
+   },
+   "tz_Mariehamn": {
+      "message": "ماريهامن"
+   },
+   "tz_Marigot": {
+      "message": "ماريجوت"
+   },
+   "tz_Marquesas": {
+      "message": "الماركيز"
+   },
+   "tz_Martinique": {
+      "message": "مارتينيك"
+   },
+   "tz_Maseru": {
+      "message": "ماسيرو"
+   },
+   "tz_Matamoros": {
+      "message": "ماتاموروس"
+   },
+   "tz_Mauritius": {
+      "message": "موريشيوس"
+   },
+   "tz_Mawson": {
+      "message": "موسن"
+   },
+   "tz_Mayotte": {
+      "message": "مايوت"
+   },
+   "tz_Mazatlan": {
+      "message": "مازاتلان"
+   },
+   "tz_Mbabane": {
+      "message": "مبابان"
+   },
+   "tz_McMurdo": {
+      "message": "ماكموردو"
+   },
+   "tz_Melbourne": {
+      "message": "ملبورن"
+   },
+   "tz_Menominee": {
+      "message": "مينوميني"
+   },
+   "tz_Merida": {
+      "message": "ميريدا"
+   },
+   "tz_Metlakatla": {
+      "message": "Metlakatla"
+   },
+   "tz_Mexico_City": {
+      "message": "مكسيكو سيتي"
+   },
+   "tz_Midway": {
+      "message": "في منتصف الطريق"
+   },
+   "tz_Minsk": {
+      "message": "مينسك"
+   },
+   "tz_Miquelon": {
+      "message": "ميكلون"
+   },
+   "tz_Mogadishu": {
+      "message": "مقديشو"
+   },
+   "tz_Monaco": {
+      "message": "موناكو"
+   },
+   "tz_Moncton": {
+      "message": "مونكتون"
+   },
+   "tz_Monrovia": {
+      "message": "مونروفيا"
+   },
+   "tz_Monterrey": {
+      "message": "مونتيري"
+   },
+   "tz_Montevideo": {
+      "message": "مونتيفيديو"
+   },
+   "tz_Montserrat": {
+      "message": "مونتسيرات"
+   },
+   "tz_Moscow": {
+      "message": "موسكو"
+   },
+   "tz_Muscat": {
+      "message": "المسكات عنب طيب الشذا"
+   },
+   "tz_Nairobi": {
+      "message": "نيروبي"
+   },
+   "tz_Nassau": {
+      "message": "ناسو"
+   },
+   "tz_Nauru": {
+      "message": "ناورو"
+   },
+   "tz_Ndjamena": {
+      "message": "نجامينا"
+   },
+   "tz_New_York": {
+      "message": "نيويورك"
+   },
+   "tz_Niamey": {
+      "message": "نيامي"
+   },
+   "tz_Nicosia": {
+      "message": "نيقوسيا"
+   },
+   "tz_Nipigon": {
+      "message": "نيبجون"
+   },
+   "tz_Niue": {
+      "message": "نيوي"
+   },
+   "tz_Nome": {
+      "message": "نومي"
+   },
+   "tz_Norfolk": {
+      "message": "نورفولك"
+   },
+   "tz_Noronha": {
+      "message": "نورونها"
+   },
+   "tz_North_Dakota___Beulah": {
+      "message": "داكوتا الشمالية / بيولاه"
+   },
+   "tz_North_Dakota___Center": {
+      "message": "داكوتا الشمالية / مركز"
+   },
+   "tz_North_Dakota___New_Salem": {
+      "message": "داكوتا الشمالية / جديد سالم"
+   },
+   "tz_Nouakchott": {
+      "message": "نواكشوط"
+   },
+   "tz_Noumea": {
+      "message": "نوميا"
+   },
+   "tz_Novokuznetsk": {
+      "message": "نوفوكوزنتسك"
+   },
+   "tz_Novosibirsk": {
+      "message": "نوفوسيبيرسك"
+   },
+   "tz_Ojinaga": {
+      "message": "Ojinaga"
+   },
+   "tz_Omsk": {
+      "message": "أومسك"
+   },
+   "tz_Oral": {
+      "message": "شفهي"
+   },
+   "tz_Oslo": {
+      "message": "أوسلو"
+   },
+   "tz_Ouagadougou": {
+      "message": "واغادوغو"
+   },
+   "tz_Pacific": {
+      "message": "مسالم"
+   },
+   "tz_Pago_Pago": {
+      "message": "باجو باجو"
+   },
+   "tz_Palau": {
+      "message": "بالاو"
+   },
+   "tz_Palmer": {
+      "message": "مسعف"
+   },
+   "tz_Panama": {
+      "message": "بناما"
+   },
+   "tz_Pangnirtung": {
+      "message": "بانجنيرتونج"
+   },
+   "tz_Paramaribo": {
+      "message": "باراماريبو"
+   },
+   "tz_Paris": {
+      "message": "باريس"
+   },
+   "tz_Perth": {
+      "message": "بيرث"
+   },
+   "tz_Phnom_Penh": {
+      "message": "بنوم بنه"
+   },
+   "tz_Phoenix": {
+      "message": "عنقاء"
+   },
+   "tz_Pitcairn": {
+      "message": "بيتكيرن"
+   },
+   "tz_Podgorica": {
+      "message": "بودغوريتشا"
+   },
+   "tz_Pohnpei": {
+      "message": "بوهنباي"
+   },
+   "tz_Pontianak": {
+      "message": "بونتياناك"
+   },
+   "tz_Port_Moresby": {
+      "message": "ميناء مورسبي"
+   },
+   "tz_Port__au__Prince": {
+      "message": "بورت أو برنس"
+   },
+   "tz_Port_of_Spain": {
+      "message": "بورت أوف سبين"
+   },
+   "tz_Porto_Velho": {
+      "message": "بورتو فيلهو"
+   },
+   "tz_Porto__Novo": {
+      "message": "بورتو نوفو"
+   },
+   "tz_Prague": {
+      "message": "براغ"
+   },
+   "tz_Puerto_Rico": {
+      "message": "بورتوريكو"
+   },
+   "tz_Pyongyang": {
+      "message": "بيونغ يانغ"
+   },
+   "tz_Qatar": {
+      "message": "قطر"
+   },
+   "tz_Qyzylorda": {
+      "message": "Qyzylorda"
+   },
+   "tz_Rainy_River": {
+      "message": "نهر الأمطار"
+   },
+   "tz_Rangoon": {
+      "message": "رانغون"
+   },
+   "tz_Rankin_Inlet": {
+      "message": "رانكين مدخل"
+   },
+   "tz_Rarotonga": {
+      "message": "راروتونجا"
+   },
+   "tz_Recife": {
+      "message": "ريسيفي"
+   },
+   "tz_Regina": {
+      "message": "ريجينا"
+   },
+   "tz_Resolute": {
+      "message": "حازم"
+   },
+   "tz_Reunion": {
+      "message": "جمع شمل"
+   },
+   "tz_Reykjavik": {
+      "message": "ريكيافيك"
+   },
+   "tz_Riga": {
+      "message": "ريغا"
+   },
+   "tz_Rio_Branco": {
+      "message": "ريو برانكو"
+   },
+   "tz_Riyadh": {
+      "message": "الرياض"
+   },
+   "tz_Rome": {
+      "message": "روما"
+   },
+   "tz_Rothera": {
+      "message": "روثيرا"
+   },
+   "tz_Saipan": {
+      "message": "سايبان"
+   },
+   "tz_Sakhalin": {
+      "message": "سخالين"
+   },
+   "tz_Samara": {
+      "message": "الثمرة الجناحية"
+   },
+   "tz_Samarkand": {
+      "message": "سمرقند"
+   },
+   "tz_San_Marino": {
+      "message": "سان مارينو"
+   },
+   "tz_Santa_Isabel": {
+      "message": "سانتا إيزابيل"
+   },
+   "tz_Santarem": {
+      "message": "سانتاريم"
+   },
+   "tz_Santiago": {
+      "message": "سانتياغو"
+   },
+   "tz_Santo_Domingo": {
+      "message": "سانتو دومينغو"
+   },
+   "tz_Sao_Paulo": {
+      "message": "ساو باولو"
+   },
+   "tz_Sao_Tome": {
+      "message": "ساو تومي"
+   },
+   "tz_Sarajevo": {
+      "message": "سراييفو"
+   },
+   "tz_Scoresbysund": {
+      "message": "سكورسبيسوند"
+   },
+   "tz_Seoul": {
+      "message": "سيول"
+   },
+   "tz_Shanghai": {
+      "message": "شنغهاي"
+   },
+   "tz_Simferopol": {
+      "message": "سيمفيروبول"
+   },
+   "tz_Singapore": {
+      "message": "سنغافورة"
+   },
+   "tz_Sitka": {
+      "message": "سيتكا"
+   },
+   "tz_Skopje": {
+      "message": "سكوبي"
+   },
+   "tz_Sofia": {
+      "message": "صوفيا"
+   },
+   "tz_South_Georgia": {
+      "message": "جنوب جورجيا"
+   },
+   "tz_St_Barthelemy": {
+      "message": "سانت بارتيليمي"
+   },
+   "tz_St_Helena": {
+      "message": "سانت هيلينا"
+   },
+   "tz_St_Johns": {
+      "message": "سانت جونز"
+   },
+   "tz_St_Kitts": {
+      "message": "سانت كيتس"
+   },
+   "tz_St_Lucia": {
+      "message": "سانت لوسيا"
+   },
+   "tz_St_Thomas": {
+      "message": "سانت توماس"
+   },
+   "tz_St_Vincent": {
+      "message": "سانت فنسنت"
+   },
+   "tz_Stanley": {
+      "message": "ستانلي"
+   },
+   "tz_Stockholm": {
+      "message": "ستوكهولم"
+   },
+   "tz_Swift_Current": {
+      "message": "سويفت كرنت"
+   },
+   "tz_Sydney": {
+      "message": "سيدني"
+   },
+   "tz_Syowa": {
+      "message": "سيووا"
+   },
+   "tz_Tahiti": {
+      "message": "تاهيتي"
+   },
+   "tz_Taipei": {
+      "message": "تايبيه"
+   },
+   "tz_Tallinn": {
+      "message": "تالين"
+   },
+   "tz_Tarawa": {
+      "message": "تاراوا"
+   },
+   "tz_Tashkent": {
+      "message": "طشقند"
+   },
+   "tz_Tbilisi": {
+      "message": "تبليسي"
+   },
+   "tz_Tegucigalpa": {
+      "message": "تيغوسيغالبا"
+   },
+   "tz_Tehran": {
+      "message": "طهران"
+   },
+   "tz_Thimphu": {
+      "message": "تيمفو"
+   },
+   "tz_Thule": {
+      "message": "ثول"
+   },
+   "tz_Thunder_Bay": {
+      "message": "الرعد خليج"
+   },
+   "tz_Tijuana": {
+      "message": "تيخوانا"
+   },
+   "tz_Tirane": {
+      "message": "تيرانا"
+   },
+   "tz_Tokyo": {
+      "message": "طوكيو"
+   },
+   "tz_Tongatapu": {
+      "message": "تونغاتابو"
+   },
+   "tz_Toronto": {
+      "message": "تورونتو"
+   },
+   "tz_Tortola": {
+      "message": "تورتولا"
+   },
+   "tz_Tripoli": {
+      "message": "طرابلس"
+   },
+   "tz_Troll": {
+      "message": "القزم"
+   },
+   "tz_Tunis": {
+      "message": "تونس"
+   },
+   "tz_Ulaanbaatar": {
+      "message": "أولان باتور"
+   },
+   "tz_Urumqi": {
+      "message": "اورومتشى"
+   },
+   "tz_Ust__Nera": {
+      "message": "أوست نيرا-"
+   },
+   "tz_Uzhgorod": {
+      "message": "أوزجورود"
+   },
+   "tz_Vaduz": {
+      "message": "فادوز"
+   },
+   "tz_Vancouver": {
+      "message": "فانكوفر"
+   },
+   "tz_Vatican": {
+      "message": "الفاتيكان"
+   },
+   "tz_Vienna": {
+      "message": "فيينا"
+   },
+   "tz_Vientiane": {
+      "message": "فينتيان"
+   },
+   "tz_Vilnius": {
+      "message": "فيلنيوس"
+   },
+   "tz_Vladivostok": {
+      "message": "فلاديفوستوك"
+   },
+   "tz_Volgograd": {
+      "message": "فولغوغراد"
+   },
+   "tz_Vostok": {
+      "message": "فوستوك"
+   },
+   "tz_Wake": {
+      "message": "بعد"
+   },
+   "tz_Wallis": {
+      "message": "اليس"
+   },
+   "tz_Warsaw": {
+      "message": "وارسو"
+   },
+   "tz_Whitehorse": {
+      "message": "وايت هورس"
+   },
+   "tz_Windhoek": {
+      "message": "ويندهوك"
+   },
+   "tz_Winnipeg": {
+      "message": "وينيبيغ"
+   },
+   "tz_Yakutat": {
+      "message": "ياكوتات"
+   },
+   "tz_Yakutsk": {
+      "message": "ياكوتسك"
+   },
+   "tz_Yekaterinburg": {
+      "message": "ايكاترينبرج"
+   },
+   "tz_Yellowknife": {
+      "message": "يلونايف"
+   },
+   "tz_Yerevan": {
+      "message": "يريفان"
+   },
+   "tz_Zagreb": {
+      "message": "زغرب"
+   },
+   "tz_Zaporozhye": {
+      "message": "زابوروجي"
+   },
+   "tz_Zurich": {
+      "message": "زيوريخ"
+   },
+   "ui_addTimezone": {
+      "message": "إضافة"
+   },
+   "ui_alwaysOnTop": {
+      "message": "دائما في القمة"
+   },
+   "ui_autoHide": {
+      "message": "إخفاء تلقائيا"
+   },
+   "ui_extraTimezones": {
+      "message": "المناطق الزمنية اضافية"
+   },
+   "ui_hour24": {
+      "message": "على مدار الساعة على مدار 24 ساعة"
+   },
+   "ui_weekStartSunday": {
+      "message": "يبدأ الاسبوع يوم الاحد"
+   }
+}

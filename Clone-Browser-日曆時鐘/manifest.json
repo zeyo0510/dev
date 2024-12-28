@@ -1,0 +1,19 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "common/icon-128.png"
+      },
+      "default_popup": "common/main.html"
+   },
+   "default_locale": "en",
+   "description": "__MSG_manifest_description__",
+   "icons": {
+      "128": "common/icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm0Wp+ygOL8TUYlFeiZW1zZTOFbcLrt3RH8AP1bDlhpnJmzgGDCSiyGkT7vT/oSpdYbciHtQ4XgUMiW4UC47GE5ZB7smSAxqOSxe6pPoVPiJGNPJ6vNgWCjvURhXSwup9HAi/Wm4cVfoPzIl+7EfMD4O6Ss8HnjrXvyG02vbvBY658Lyuo+AXNoxUcX1ziPJlpsoQ4H8l8i/ED909t+LSNMxkkP3bDgi8fe6Ht6gSv88i8XVbqZG7hk3Kbxz0cGaNzubNFYpTcXoJtMQ5AmW0NnIeD3jqIfy/MFMT9aNlY5tSxNO3C7/K+6n0f7z/jng8PqLF27hIUJzFKps6UxSlbQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_manifest_name__",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.12"
+}
