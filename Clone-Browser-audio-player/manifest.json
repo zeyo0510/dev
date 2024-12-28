@@ -1,0 +1,63 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "worker.js"
+   },
+   "commands": {
+      "_execute_action": {
+      }
+   },
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+   },
+   "description": "FFmpeg-based audio player that supports a wide range of audio codecs",
+   "file_handlers": [ {
+      "accept": {
+         "application/x-shockwave-flash": [ ".swf" ],
+         "audio/aac": [ ".aac" ],
+         "audio/flac": [ ".flac" ],
+         "audio/midi": [ ".mid" ],
+         "audio/mp4": [ ".m4a" ],
+         "audio/mpeg": [ ".mp3" ],
+         "audio/ogg": [ ".ogg" ],
+         "audio/pcm": [ ".pcm" ],
+         "audio/voc": [ ".voc" ],
+         "audio/wav": [ ".wav" ],
+         "audio/x-matroska": [ ".mka" ],
+         "audio/x-ms-wma": [ ".wma" ],
+         "video/3gpp": [ ".3gp" ],
+         "video/avi": [ ".avi" ],
+         "video/dvd": [ ".vob" ],
+         "video/mp4": [ ".mp4" ],
+         "video/mpeg": [ ".mpg" ],
+         "video/ogg": [ ".ogv" ],
+         "video/quicktime": [ ".mov" ],
+         "video/webm": [ ".webm" ],
+         "video/x-flv": [ ".flv" ],
+         "video/x-matroska": [ ".mkv" ],
+         "video/x-ms-wmv": [ ".wmv" ]
+      },
+      "action": "/data/player/index.html",
+      "launch_type": "single-client",
+      "name": "Open with MediaPlayer"
+   } ],
+   "homepage_url": "https://webextension.org/listing/audio-player.html",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "/data/icons/128.png",
+      "16": "/data/icons/16.png",
+      "256": "/data/icons/256.png",
+      "32": "/data/icons/32.png",
+      "48": "/data/icons/48.png",
+      "512": "/data/icons/512.png",
+      "64": "/data/icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmCNlHDOEw25QqDowLsEjM8XUBu7lWwAIpHvWKSSTxuuW1KHzg4P+iwYuYURt+MaeMD+9YkxN9s4ko117r/Nh9vmO6BoEOShZ+WzuEQMph1ZbGqJMj/qf8bMU5Bggxa9EzaTv8hUqbMYV98yagJrNCR074mLqdREnBVjYvEupj8pgwFs8S4Mjc6a7a8dj5WjkplJLh+h9jEiJ3lwkQICK+4xqq31QkWiXyRkOU64IDUbd84CxHzFbkQ0P7cJAIWpXFc7YueEEhv1FSTFgqm/b2jzfmKhitD9XIGdamG+E9I3uNSApsZCduLb10Rv9dO6Cg+zSCtSpPJ1C5BKUbjWC9wIDAQAB",
+   "manifest_version": 3,
+   "name": "Audio Player",
+   "offline_enabled": true,
+   "permissions": [ "storage", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.7"
+}
