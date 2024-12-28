@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon32.png"
+   },
+   "content_scripts": [ {
+      "css": [ "nyan.css" ],
+      "matches": [ "*://*.youtube.com/*" ]
+   } ],
+   "description": "Nyan Cat Progress Bar for YouTube™! Nyan nyan nyan nyan nyan!",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIvxxFLClR39wnP7kL85FpbP0umEAmAat74dRGv2QtlFduQRlgfKnODWRFKQW+S36L1g4HBlm33H4urS9FhCMfQ6QS3JDPByn5+381F0/Wj2FIHS9CO8W/SlAIUygvmGlYHckI0//zRY7jUe1lWYPAI+N4IFyrvHBIwkuurvVbnwIDAQAB",
+   "manifest_version": 2,
+   "name": "Nyan Cat Progress Bar for YouTube™",
+   "short_name": "NyanCat 4 YT",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.18",
+   "web_accessible_resources": [ "nyanimated.gif" ]
+}
