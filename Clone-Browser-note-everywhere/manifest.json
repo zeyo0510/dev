@@ -1,0 +1,23 @@
+{
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlN5Ghg/jG0fuiycmBcygecg1M2G7Aa35rveVMAW3NC17xeYD07rqeuFotdNe0j67DBAnb18m5Akdt1cliYRGAjK0EllM93L9pcui7KBtXV9JZLAZLFheGnGJyyfRHQvQhnAuYCRDg0Fhaanc3fupwOLQACYBVRp036ZVM32rklfa+KYAZwKbySpEzP7v5UydjVEBSXz415zCU+3qWxgAswmKP8hEPeiFM6FhJ19Q+5NqCtUBs2+MJ78ihB5cogCLi5O9GYnWf6Y4N+WWIjU5AES/dm69ZKfxVWs1m6anO0Eio+eouvlK2RHJ/i0YbIbTHez3DCh38n2ZeK6VGn6QUwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "options_page": "memos.html",
+   "permissions": [ "tabs", "contextMenus", "storage", "scripting" ],
+   "short_name": "__MSG_appShortName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.4.1"
+}

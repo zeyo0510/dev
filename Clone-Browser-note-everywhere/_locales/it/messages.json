@@ -1,0 +1,273 @@
+{
+   "add_note_msg": {
+      "message": "aggiungi nota"
+   },
+   "appDescription": {
+      "description": "The description of the application",
+      "message": "Si tratta di un'applicazione intuitiva per le note."
+   },
+   "appName": {
+      "description": "The name of the application",
+      "message": "Nota ovunque"
+   },
+   "appShortName": {
+      "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name.",
+      "message": "Note ovunque"
+   },
+   "app_name": {
+      "message": "Note ovunque"
+   },
+   "browserActionTitle": {
+      "description": "The title of the browser action button",
+      "message": "Nota ovunque"
+   },
+   "cancel_msg": {
+      "message": "Annulla"
+   },
+   "cannot_show_note_msg": {
+      "message": "I promemoria non possono essere visualizzati in questa pagina."
+   },
+   "close_msg": {
+      "message": "Chiudere"
+   },
+   "color_explain_msg": {
+      "message": "Modifica il colore della nota."
+   },
+   "color_msg": {
+      "message": "Colore"
+   },
+   "confirm_remove_next_note_msg": {
+      "message": "Sei sicuro di voler cancellare?"
+   },
+   "confirm_remove_note_msg": {
+      "message": "Sei sicuro di voler cancellare?"
+   },
+   "copied_msg": {
+      "message": "Copiato"
+   },
+   "copy_explain_msg": {
+      "message": "Copia il testo di una nota negli appunti."
+   },
+   "copy_msg": {
+      "message": "Copiare"
+   },
+   "created_at_msg": {
+      "message": "Creata"
+   },
+   "created_at_sort_option": {
+      "message": "Creato"
+   },
+   "csv_download_msg": {
+      "message": "Scaricare CSV"
+   },
+   "default_color_msg": {
+      "message": "Colore predefinito"
+   },
+   "delete_explain_msg": {
+      "message": "Elimina una nota."
+   },
+   "delete_msg": {
+      "message": "Cancellare"
+   },
+   "detail_msg": {
+      "message": "Dettagli"
+   },
+   "discard_close_msg": {
+      "message": "Scartare le modifiche e chiudere"
+   },
+   "do_copy_msg": {
+      "message": "Copia negli Appunti"
+   },
+   "edit_explain_msg": {
+      "message": "Passare una nota in modalità di modifica. (o fare doppio clic per modificare)."
+   },
+   "edit_msg": {
+      "message": "Modifica"
+   },
+   "export_msg": {
+      "message": "Esportazione"
+   },
+   "failed_load_page_msg": {
+      "message": "Questa pagina non è stata caricata."
+   },
+   "go_to_this_page": {
+      "message": "Vai a questa pagina"
+   },
+   "how_to_use_header_msg": {
+      "message": "Utilizzo"
+   },
+   "how_to_use_page_link_msg": {
+      "message": "Come utilizzare"
+   },
+   "input_description_placeholder": {
+      "message": "Inserire una nota"
+   },
+   "link_edit_note_msg": {
+      "message": "Se il link non è corretto, le note potrebbero non essere visualizzate correttamente."
+   },
+   "make_note_button_msg": {
+      "message": "creare una nota"
+   },
+   "maker_msg": {
+      "message": "Sviluppatore"
+   },
+   "maximize_msg": {
+      "message": "Massimizza"
+   },
+   "menu_button_msg": {
+      "message": "pagina elenco note"
+   },
+   "minimize_msg": {
+      "message": "Ridurre al minimo"
+   },
+   "new_note_description_msg": {
+      "message": "Fare doppio clic per modificare"
+   },
+   "new_note_title_msg": {
+      "message": "Nuova nota"
+   },
+   "no_note_created_msg": {
+      "message": "aggiungi nota"
+   },
+   "no_note_created_option_msg": {
+      "message": "o fare clic con il pulsante destro del mouse su \"Aggiungi nota\"."
+   },
+   "no_note_msg": {
+      "message": "Non c'è nessuna nota."
+   },
+   "note": {
+      "message": "Nota"
+   },
+   "note_header_msg": {
+      "message": "Memo"
+   },
+   "note_unavailable_msg": {
+      "message": "In questa pagina non è possibile creare una nota."
+   },
+   "open_explain_msg": {
+      "message": "Riduce a icona una nota."
+   },
+   "open_msg": {
+      "message": "Riduci a icona"
+   },
+   "open_select_option_no_msg": {
+      "message": "spento"
+   },
+   "open_select_option_yes_msg": {
+      "message": "acceso"
+   },
+   "pin_explain_msg": {
+      "message": "L'appuntatura di una nota seguirà lo scorrimento."
+   },
+   "pin_msg": {
+      "message": "Pin"
+   },
+   "pin_select_option_fixed_msg": {
+      "message": "spento"
+   },
+   "pin_select_option_unfixed_msg": {
+      "message": "acceso"
+   },
+   "pinned_msg": {
+      "message": "Perno"
+   },
+   "please_reload_msg": {
+      "message": "Ricaricare la pagina."
+   },
+   "position_msg": {
+      "message": "Posizione"
+   },
+   "remove_pinned_msg": {
+      "message": "rimuovere il perno"
+   },
+   "reset_position_msg": {
+      "message": "ripristina posizione"
+   },
+   "save_error_msg": {
+      "message": "Non è stato possibile salvare."
+   },
+   "save_error_msg_2": {
+      "message": "Riprovare."
+   },
+   "save_error_word_maximum_msg": {
+      "message": "Ridurre il numero di caratteri e riprovare."
+   },
+   "save_msg": {
+      "message": "Salva"
+   },
+   "search_query_msg": {
+      "message": "ricerca"
+   },
+   "setting_about_this_app": {
+      "message": "Informazioni su Note ovunque"
+   },
+   "setting_about_this_app_created_by": {
+      "message": "Creato da"
+   },
+   "setting_button_msg": {
+      "message": "impostazioni"
+   },
+   "settings_header_msg": {
+      "message": "Impostazione"
+   },
+   "show_all_note_msg": {
+      "message": "Tutte le note"
+   },
+   "size_height_msg": {
+      "message": "altezza"
+   },
+   "size_msg": {
+      "message": "Dimensione"
+   },
+   "size_width_msg": {
+      "message": "larghezza"
+   },
+   "switch_pin_msg": {
+      "message": "Interruttore Pin"
+   },
+   "text_download_msg": {
+      "message": "Scarica txt"
+   },
+   "this_page_note_list_msg": {
+      "message": "Elenco dei memo di questa pagina"
+   },
+   "title_sort_option": {
+      "message": "Titolo"
+   },
+   "updated_at_msg": {
+      "message": "Aggiornare"
+   },
+   "updated_at_sort_option": {
+      "message": "Aggiornamento"
+   },
+   "usage01": {
+      "message": "Si consiglia di correggere i pop-up."
+   },
+   "usage02": {
+      "message": "Aprire il pop-up e fare clic sul pulsante \"+\" per creare una nota."
+   },
+   "usage02_2": {
+      "message": "È possibile creare una nota anche dal menu del tasto destro del mouse sullo schermo."
+   },
+   "usage03": {
+      "message": "Fare doppio clic per modificare il titolo e i dettagli."
+   },
+   "usage04": {
+      "message": "Spostare trascinando il mouse. È anche possibile ridimensionare."
+   },
+   "usage05": {
+      "message": "Dal popup è possibile visualizzare le note create nella pagina aperta."
+   },
+   "usage06": {
+      "message": "Pagina dei promemoria"
+   },
+   "usage06_2": {
+      "message": "mostra le note create fino a quel momento."
+   },
+   "usage07": {
+      "message": " Le note hanno varie funzioni."
+   },
+   "welcome_msg": {
+      "message": "Benvenuti a Note Everywhere!"
+   }
+}

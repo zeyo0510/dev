@@ -1,0 +1,273 @@
+{
+   "add_note_msg": {
+      "message": "ajouter une note"
+   },
+   "appDescription": {
+      "description": "The description of the application",
+      "message": "Il s'agit d'une application de prise de notes intuitive."
+   },
+   "appName": {
+      "description": "The name of the application",
+      "message": "Note Everywhere"
+   },
+   "appShortName": {
+      "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name.",
+      "message": "Note Everywhere"
+   },
+   "app_name": {
+      "message": "Note Everywhere"
+   },
+   "browserActionTitle": {
+      "description": "The title of the browser action button",
+      "message": "Note Everywhere"
+   },
+   "cancel_msg": {
+      "message": "Annuler"
+   },
+   "cannot_show_note_msg": {
+      "message": "Les mémos ne peuvent pas être affichés sur cette page."
+   },
+   "close_msg": {
+      "message": "Fermer"
+   },
+   "color_explain_msg": {
+      "message": "Modifie la couleur de la note."
+   },
+   "color_msg": {
+      "message": "Couleur"
+   },
+   "confirm_remove_next_note_msg": {
+      "message": "Êtes-vous sûr de vouloir supprimer ?"
+   },
+   "confirm_remove_note_msg": {
+      "message": "Êtes-vous sûr de vouloir supprimer ?"
+   },
+   "copied_msg": {
+      "message": "Copié"
+   },
+   "copy_explain_msg": {
+      "message": "Copie le texte d'une note dans le presse-papiers."
+   },
+   "copy_msg": {
+      "message": "Copier"
+   },
+   "created_at_msg": {
+      "message": "Créée"
+   },
+   "created_at_sort_option": {
+      "message": "Créé"
+   },
+   "csv_download_msg": {
+      "message": "Téléchargement CSV"
+   },
+   "default_color_msg": {
+      "message": "Couleur par défaut"
+   },
+   "delete_explain_msg": {
+      "message": "Supprime une note."
+   },
+   "delete_msg": {
+      "message": "Supprimer"
+   },
+   "detail_msg": {
+      "message": "Détails"
+   },
+   "discard_close_msg": {
+      "message": "Annuler les modifications et fermer"
+   },
+   "do_copy_msg": {
+      "message": "Copier dans le presse-papiers"
+   },
+   "edit_explain_msg": {
+      "message": "Passer une note en mode édition. (ou double-clic pour éditer)."
+   },
+   "edit_msg": {
+      "message": "Modifier"
+   },
+   "export_msg": {
+      "message": "Exporter"
+   },
+   "failed_load_page_msg": {
+      "message": "Cette page n'a pas pu être chargée."
+   },
+   "go_to_this_page": {
+      "message": "Aller à cette page"
+   },
+   "how_to_use_header_msg": {
+      "message": "Utilisation"
+   },
+   "how_to_use_page_link_msg": {
+      "message": "Comment utiliser les"
+   },
+   "input_description_placeholder": {
+      "message": "Saisir une note"
+   },
+   "link_edit_note_msg": {
+      "message": "Si le lien n'est pas correct, il se peut que les Notes ne s'affichent pas correctement."
+   },
+   "make_note_button_msg": {
+      "message": "créer une note"
+   },
+   "maker_msg": {
+      "message": "Développeur"
+   },
+   "maximize_msg": {
+      "message": "Maximiser"
+   },
+   "menu_button_msg": {
+      "message": "page de la liste des notes"
+   },
+   "minimize_msg": {
+      "message": "Minimiser"
+   },
+   "new_note_description_msg": {
+      "message": "Double-cliquer pour modifier"
+   },
+   "new_note_title_msg": {
+      "message": "Nouvelle note"
+   },
+   "no_note_created_msg": {
+      "message": "ajouter une note"
+   },
+   "no_note_created_option_msg": {
+      "message": "ou clic droit et \"ajouter une note\""
+   },
+   "no_note_msg": {
+      "message": "Il n'y a pas de note."
+   },
+   "note": {
+      "message": "Note"
+   },
+   "note_header_msg": {
+      "message": "Mémos"
+   },
+   "note_unavailable_msg": {
+      "message": "Il n'est pas possible de créer une note sur cette page."
+   },
+   "open_explain_msg": {
+      "message": "Réduire une note."
+   },
+   "open_msg": {
+      "message": "Réduire"
+   },
+   "open_select_option_no_msg": {
+      "message": "désactivé"
+   },
+   "open_select_option_yes_msg": {
+      "message": "activé"
+   },
+   "pin_explain_msg": {
+      "message": "L'épinglage d'une note suit le défilement."
+   },
+   "pin_msg": {
+      "message": "Broche"
+   },
+   "pin_select_option_fixed_msg": {
+      "message": "éteint"
+   },
+   "pin_select_option_unfixed_msg": {
+      "message": "on"
+   },
+   "pinned_msg": {
+      "message": "Goupille"
+   },
+   "please_reload_msg": {
+      "message": "Recharger la page."
+   },
+   "position_msg": {
+      "message": "Position"
+   },
+   "remove_pinned_msg": {
+      "message": "enlever la goupille"
+   },
+   "reset_position_msg": {
+      "message": "réinitialiser la position"
+   },
+   "save_error_msg": {
+      "message": "L'enregistrement a échoué."
+   },
+   "save_error_msg_2": {
+      "message": "Veuillez réessayer."
+   },
+   "save_error_word_maximum_msg": {
+      "message": "Veuillez réduire le nombre de caractères et réessayer."
+   },
+   "save_msg": {
+      "message": "Sauvegarder"
+   },
+   "search_query_msg": {
+      "message": "recherche"
+   },
+   "setting_about_this_app": {
+      "message": "À propos de Note Everywhere"
+   },
+   "setting_about_this_app_created_by": {
+      "message": "Créé par"
+   },
+   "setting_button_msg": {
+      "message": "paramètres"
+   },
+   "settings_header_msg": {
+      "message": "Paramètres"
+   },
+   "show_all_note_msg": {
+      "message": "Toutes les notes"
+   },
+   "size_height_msg": {
+      "message": "hauteur"
+   },
+   "size_msg": {
+      "message": "Taille"
+   },
+   "size_width_msg": {
+      "message": "largeur"
+   },
+   "switch_pin_msg": {
+      "message": "Broche de commutation"
+   },
+   "text_download_msg": {
+      "message": "txt Télécharger"
+   },
+   "this_page_note_list_msg": {
+      "message": "Liste des mémos de cette page"
+   },
+   "title_sort_option": {
+      "message": "Titre"
+   },
+   "updated_at_msg": {
+      "message": "Mise à jour"
+   },
+   "updated_at_sort_option": {
+      "message": "Mise à jour"
+   },
+   "usage01": {
+      "message": "Il est recommandé de corriger les fenêtres pop-up."
+   },
+   "usage02": {
+      "message": "Ouvrez la fenêtre contextuelle et cliquez sur le bouton \"+\" pour créer une note."
+   },
+   "usage02_2": {
+      "message": "Vous pouvez également créer une note à partir du menu contextuel de l'écran."
+   },
+   "usage03": {
+      "message": "Double-cliquez pour modifier le titre et les détails."
+   },
+   "usage04": {
+      "message": "Déplacez la note en la faisant glisser avec la souris. Vous pouvez également redimensionner."
+   },
+   "usage05": {
+      "message": "Dans la fenêtre contextuelle, vous pouvez afficher les notes créées sur la page ouverte."
+   },
+   "usage06": {
+      "message": "Page Mémos"
+   },
+   "usage06_2": {
+      "message": "affiche les notes que vous avez prises jusqu'à présent."
+   },
+   "usage07": {
+      "message": " La note a plusieurs fonctions."
+   },
+   "welcome_msg": {
+      "message": "Bienvenue à Note Everywhere !"
+   }
+}

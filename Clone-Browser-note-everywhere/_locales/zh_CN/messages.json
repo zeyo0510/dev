@@ -1,0 +1,273 @@
+{
+   "add_note_msg": {
+      "message": "添加笔记"
+   },
+   "appDescription": {
+      "description": "The description of the application",
+      "message": "这是一个直观的笔记应用程序。"
+   },
+   "appName": {
+      "description": "The name of the application",
+      "message": "笔记无处不在"
+   },
+   "appShortName": {
+      "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name.",
+      "message": "无处不在的笔记"
+   },
+   "app_name": {
+      "message": "笔记无处不在"
+   },
+   "browserActionTitle": {
+      "description": "The title of the browser action button",
+      "message": "无处不在的笔记"
+   },
+   "cancel_msg": {
+      "message": "取消"
+   },
+   "cannot_show_note_msg": {
+      "message": "备忘录不能在此页面显示。"
+   },
+   "close_msg": {
+      "message": "关闭"
+   },
+   "color_explain_msg": {
+      "message": "编辑注解的颜色。"
+   },
+   "color_msg": {
+      "message": "颜色"
+   },
+   "confirm_remove_next_note_msg": {
+      "message": "你确定你要删除吗？"
+   },
+   "confirm_remove_note_msg": {
+      "message": "你确定你要删除吗？"
+   },
+   "copied_msg": {
+      "message": "复制的"
+   },
+   "copy_explain_msg": {
+      "message": "复制一个注释的文本到剪贴板。"
+   },
+   "copy_msg": {
+      "message": "复制"
+   },
+   "created_at_msg": {
+      "message": "创建"
+   },
+   "created_at_sort_option": {
+      "message": "创建"
+   },
+   "csv_download_msg": {
+      "message": "CSV下载"
+   },
+   "default_color_msg": {
+      "message": "默认颜色"
+   },
+   "delete_explain_msg": {
+      "message": "删除一个注解。"
+   },
+   "delete_msg": {
+      "message": "删除"
+   },
+   "detail_msg": {
+      "message": "详细信息"
+   },
+   "discard_close_msg": {
+      "message": "放弃更改并关闭"
+   },
+   "do_copy_msg": {
+      "message": "复制到剪贴板"
+   },
+   "edit_explain_msg": {
+      "message": "将一个笔记切换到编辑模式。(或双击来编辑)。"
+   },
+   "edit_msg": {
+      "message": "编辑"
+   },
+   "export_msg": {
+      "message": "导出"
+   },
+   "failed_load_page_msg": {
+      "message": "本页未能加载。"
+   },
+   "go_to_this_page": {
+      "message": "转到此页面"
+   },
+   "how_to_use_header_msg": {
+      "message": "使用方法"
+   },
+   "how_to_use_page_link_msg": {
+      "message": "如何使用"
+   },
+   "input_description_placeholder": {
+      "message": "输入一个注释"
+   },
+   "link_edit_note_msg": {
+      "message": "如果链接不正确，注释可能无法正常显示。"
+   },
+   "make_note_button_msg": {
+      "message": "做笔记"
+   },
+   "maker_msg": {
+      "message": "开发者"
+   },
+   "maximize_msg": {
+      "message": "最大化"
+   },
+   "menu_button_msg": {
+      "message": "备忘录列表页"
+   },
+   "minimize_msg": {
+      "message": "最小化"
+   },
+   "new_note_description_msg": {
+      "message": "双击来编辑"
+   },
+   "new_note_title_msg": {
+      "message": "新注解"
+   },
+   "no_note_created_msg": {
+      "message": "添加备忘"
+   },
+   "no_note_created_option_msg": {
+      "message": "或右键单击并 \"添加备忘\""
+   },
+   "no_note_msg": {
+      "message": "没有笔记。"
+   },
+   "note": {
+      "message": "笔记"
+   },
+   "note_header_msg": {
+      "message": "备忘录"
+   },
+   "note_unavailable_msg": {
+      "message": "在这个页面上不能创建备忘。"
+   },
+   "open_explain_msg": {
+      "message": "最小化一个注解。"
+   },
+   "open_msg": {
+      "message": "最小化"
+   },
+   "open_select_option_no_msg": {
+      "message": "关闭"
+   },
+   "open_select_option_yes_msg": {
+      "message": "开"
+   },
+   "pin_explain_msg": {
+      "message": "钉住一个笔记会跟随滚动。"
+   },
+   "pin_msg": {
+      "message": "引脚"
+   },
+   "pin_select_option_fixed_msg": {
+      "message": "关闭"
+   },
+   "pin_select_option_unfixed_msg": {
+      "message": "开"
+   },
+   "pinned_msg": {
+      "message": "引脚"
+   },
+   "please_reload_msg": {
+      "message": "重新加载该页面。"
+   },
+   "position_msg": {
+      "message": "位置"
+   },
+   "remove_pinned_msg": {
+      "message": "移除销钉"
+   },
+   "reset_position_msg": {
+      "message": "重置位置"
+   },
+   "save_error_msg": {
+      "message": "保存失败。"
+   },
+   "save_error_msg_2": {
+      "message": "请再试一次。"
+   },
+   "save_error_word_maximum_msg": {
+      "message": "请减少字符数并重试。"
+   },
+   "save_msg": {
+      "message": "保存"
+   },
+   "search_query_msg": {
+      "message": "搜索"
+   },
+   "setting_about_this_app": {
+      "message": "关于Note Everywhere"
+   },
+   "setting_about_this_app_created_by": {
+      "message": "创建者"
+   },
+   "setting_button_msg": {
+      "message": "设置"
+   },
+   "settings_header_msg": {
+      "message": "设置"
+   },
+   "show_all_note_msg": {
+      "message": "所有备忘录"
+   },
+   "size_height_msg": {
+      "message": "高度"
+   },
+   "size_msg": {
+      "message": "尺寸"
+   },
+   "size_width_msg": {
+      "message": "宽度"
+   },
+   "switch_pin_msg": {
+      "message": "开关针"
+   },
+   "text_download_msg": {
+      "message": "下载txt下载"
+   },
+   "this_page_note_list_msg": {
+      "message": "本页的备忘录列表"
+   },
+   "title_sort_option": {
+      "message": "标题"
+   },
+   "updated_at_msg": {
+      "message": "更新"
+   },
+   "updated_at_sort_option": {
+      "message": "更新"
+   },
+   "usage01": {
+      "message": "建议修复弹出式窗口。"
+   },
+   "usage02": {
+      "message": "打开弹出窗口，点击 \"+\"按钮来创建一个笔记。"
+   },
+   "usage02_2": {
+      "message": "你也可以从屏幕上的右键菜单中创建一个备忘录。"
+   },
+   "usage03": {
+      "message": "双击来编辑标题和细节。"
+   },
+   "usage04": {
+      "message": "通过鼠标拖动移动。你也可以调整大小。"
+   },
+   "usage05": {
+      "message": "从弹出窗口，你可以查看在打开的页面上创建的笔记。"
+   },
+   "usage06": {
+      "message": "备忘录页面"
+   },
+   "usage06_2": {
+      "message": "显示你到现在为止做的笔记。"
+   },
+   "usage07": {
+      "message": " 笔记有各种功能。"
+   },
+   "welcome_msg": {
+      "message": "欢迎来到Note Everywhere!"
+   }
+}
