@@ -1,0 +1,231 @@
+Release notes
+
+=========================================================
+1.0.7.2
+
+- Fix for XInput Left/Right Triggers.
+
+=========================================================
+1.0.7.1
+
+- Fix for "Internal Joystick" (dynamic Axis Settings).
+
+=========================================================
+1.0.7.0
+
+- Added a transparent window (in context menu of notify icon in tray).
+- Added new API "Hook (dll injector)" for keyboard / mouse.
+- Fixed error in the "LLHook" API for the mouse.
+
+=========================================================
+1.0.6.9
+
+- Fixed UI error (AutoReset) in the "Timer" module.
+
+=========================================================
+1.0.6.8
+
+- Optimized "On / Off bind" code.
+- Optimized "hot profile change" code.
+
+=========================================================
+1.0.6.7
+
+- Significantly reduced the amount of synchronization code to eliminate possible deadlocks (hungs).
+
+=========================================================
+1.0.6.6
+
+- Removed the limitation of the range of values ​​of the X and Y axes of the mouse.
+
+=========================================================
+1.0.6.5
+
+- Added the ellipse area for the "Internal Joystick" axes.
+- Added the ability to dynamically change the maximum speed of the "Internal Joystick" axes.
+
+=========================================================
+1.0.6.4
+
+- Reworked the autodetect axes DirectInput devices (more robust).
+- Reworked the device name (id) definition (more robust).
+- Fixed the errors in AxisToAxis binds.
+- Reworked the code design of "Sensitivity / DeadZone / AntiDeadZone / NeutralPosition" unit.
+- Added the new parameter for internal joystick - max axis speed.
+
+
+=========================================================
+1.0.6.3
+
+- Fixed the error occurred during autodetecting axes DirectInput devices.
+
+
+=========================================================
+1.0.6.2
+
+- Fixed a bugs in the calculator module.
+
+
+=========================================================
+1.0.6.1
+
+- Fixed a bugs in the control settings form.
+- Fixed a bugs in the internal joystick module.
+- Now the current settings (and the log file) are saved to the Profiles folder (now this folder does not require administrative rights).
+- When you delete a program, virtual devices are deleted.
+- The Joy distribution was removed from the installation for a compact installer (the "Install" button was replaced by the "Download" button).
+
+
+=========================================================
+1.0.6.0
+
+Reworked almost all the code. Previous program settings are not compatible. It is recommended to remove the old version before installing the new one.
+
+- New options for network joystick.
+- New options for force feedback DirectInput / vJoy.
+- New options for the internal device "Program" (profile change, dynamic disable / enable bindings).
+- Added internal device "Internal joystick." Internal joystick - provides joystick type devices. Mainly used as an adapter between devices. Internal joystick supports dynamic axial sensitivity, dead zones, anti-dead zones.
+- New features in managing keyboard / mouse locks.
+- Added keyboard / mouse lock in RawInput.
+- The device "Boolean Device" reworked in the device "Calculator" with new additional options.
+- Many changes in the user interface.
+- Device settings and controls are now stored in one file.
+
+
+=========================================================
+1.0.5.1
+
+Improvements
+- Implemented vJoy Force Feedback Support.
+- Implemented vXbox Vibration Support.
+- Implemented DirectInput Force Feedback Support (experimental).
+- Implemented XInput (with vibration support).
+
+
+Changes
+- DirectInput Axis Detecting: show only exist axes.
+- Little optimization in startup of modules vKeyboard / vMouse.
+- Reworked the mouse axis auto detecting method.
+ 
+
+Fixed
+- Corrected some incorrect functions of vJoy DPov.
+- Fixed vKeyboard / vMouse error the doubled output event.
+
+
+Known issues
+- Ramp Force don't work (error in SlimDX module), current workaround is effect convert (example: ramp force >> constant force).
+
+
+=========================================================
+1.0.5.0
+
+Important notes
+- Major update. Reworked almost entire code. Previous program settings and binds is incompatible.
+
+
+Improvements
+- New input/output device: Boolean Device.
+- New output device: vKeyboard (Virtual Keyboard).
+- New output device: vMouse (Virtual Mouse).
+
+
+Changes
+- Reworked button/axis/pov algorithms.
+- Reworked "Binds editor" form.
+- Reworked "Quick Mode" and transfer it into binds editor form.
+- Reworked "Options" form.
+- Updated vGenInterface.dll, vJoyInterface.dll.
+
+
+Fixed
+- Replaced some incorrect files of ScpVBus.
+
+
+=========================================================
+1.0.4.0
+
+Improvements
+- New input/output device type: NetJoy (Network Joystick). Support TCP (slow, robust) and UDP (fast, unreliable).
+
+Changes
+- Handled only the DirectInput devices in current user controls - increase performance for DirectInput devices.
+- Excluded dll library JoyInterface.dll (version 2.0.2) from installer - now installer have only two options: x86, x64.
+
+
+=========================================================
+1.0.3.0
+
+Improvements
+- New input device type: Joystick (SlimDX: DirectInput).
+- Command line
+	Command list:
+	/vxbox1                     - plug in vXbox Device #1
+	/vxbox2                     - plug in vXbox Device #2
+	/vxbox3                     - plug in vXbox Device #3
+	/vxbox4                     - plug in vXbox Device #4
+	/minimized                  - minimized main form
+	/loadcontrols <FileName>    - load controls from custom file (in folder "Binds")
+	/loadoptions <FileName>     - load options from custom file (in Root folder)
+	/installbus                 - install virtual bus for vXbox Devices
+	/removebus                  - remove virtual bus
+	/capture                    - begin input capture
+	Command order is needed. Most commands don't work after /capture command.
+- Included vJoyInterface.dll v2.1.8.
+- Included vGenInterface.dll v1.0.0.5 (rework vXbox buttons values).
+- New output program action - "Application Close".
+
+
+=========================================================
+1.0.2.6
+New input device "Program" with events: Capture On, Capture Off; New input devices "non-HID" for keyboard and mouse (Raw Input).
+
+
+=========================================================
+1.0.2.5
+Rework keyboard event "Press", add new keyboard event "Hold" (old functions event "Press"); Add new system for easy and quick create binds - "Quick Mode"; Minor UI improvements.
+
+
+=========================================================
+1.0.2.4
+New capture type for mouse: Raw Input; Rework anti dead zones; UI improvement: Edit Bind Control, added function for input - auto detect.
+
+
+=========================================================
+1.0.2.3
+New functions for vJoy/vXbox axis: Special Set, Special Increase/Decrease; Rework mouse axis events: Increase/Decrease; Add anti dead zones for vJoy/vXbox; Minor UI improvements; Changed some example binds.
+
+
+=========================================================
+1.0.2.2
+New function for vJoy/vXbox axis: Set+Increase/Decrease; New mouse settings: sensitivity and dead zones.
+
+
+=========================================================
+1.0.2.1
+New functions for mouse axis - Axis release; minor bugs fix; UI improvements (binds view, options).
+
+
+=========================================================
+1.0.2.0
+Major Update: New output device - vXbox (Virtual Xbox 360 Gamepad); Renamed program name - Virtual Controller; UI improvements (binds view - add new function: replace device; Config renamed to Options); vJoyInterfaceWarp.dll no need now, program direct use vJoyInterface.dll; Minor bugs fix.
+
+
+=========================================================
+1.0.1.3 
+Minor bugs fix, UI improvements (binds view), raw keyboard device identification change from handle to hash of device name, add support keyboard buttons: Left/Right shift, ctrl, alt.
+
+
+=========================================================
+1.0.1.2
+Minor bugs fix, UI improvements, example binds.
+
+
+=========================================================
+1.0.1.1
+Add mouse input, bugs fix, UI improvements.
+
+
+=========================================================
+1.0.0.0
+First release.
