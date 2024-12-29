@@ -1,0 +1,1538 @@
+{
+   "appDesc": {
+      "message": "সম্পূর্ণ পৃষ্ঠার স্ক্রিনশট ক্যাপচার করুন। স্ক্রিনশট সম্পাদনা এবং সংরক্ষণ করুন। স্ক্রিনকাস্ট রেকর্ড করুন - আপনার স্ক্রিন থেকে ভিডিও রেকর্ড করুন। কীভাবে করতে হয় তার গাইড রেকর্ড করুন।"
+   },
+   "appName": {
+      "message": "Nimble capture"
+   },
+   "appNameMini": {
+      "message": "Nimble capture"
+   },
+   "btnAccessMic": {
+      "message": "মাইক্রোফোন এবং ক্যামেরায় অ্যাক্সেস"
+   },
+   "btnAndroidVersion": {
+      "message": "Android সংস্করণ"
+   },
+   "btnBlankScreen": {
+      "message": "খালি স্ক্রিন"
+   },
+   "btnBrowserWindow": {
+      "message": "ডেস্কটপ স্ক্রিনশট"
+   },
+   "btnCancel": {
+      "message": "বাতিল করুন"
+   },
+   "btnCaptureFragment": {
+      "message": "অংশ ক্যাপচার করুন"
+   },
+   "btnCaptureFragmentScroll": {
+      "message": "স্ক্রোলযোগ্য অংশ ক্যাপচার করুন"
+   },
+   "btnCaptureVideo": {
+      "message": "ভিডিও রেকর্ড করুন"
+   },
+   "btnConnectSlack": {
+      "message": "Slack সংযোগ করুন"
+   },
+   "btnDelayedScreen": {
+      "message": "বিলম্বিত স্ক্রিন"
+   },
+   "btnDesktop": {
+      "message": "ডেস্কটপ থেকে ক্যাপচার করুন"
+   },
+   "btnEnableCopy": {
+      "message": "ক্লিপবোর্ডে কপি করুন"
+   },
+   "btnEntirePage": {
+      "message": "সম্পূর্ণ পৃষ্ঠা"
+   },
+   "btnGetStarted": {
+      "message": "শুরু করুন"
+   },
+   "btnGoPremium": {
+      "message": "Nimbus for Business-এ আপগ্রেড করুন"
+   },
+   "btnInjectGmailMain": {
+      "message": "ভিডিও বা স্ক্রিনশট সন্নিবেশ করুন"
+   },
+   "btnInjectGmailScreencast": {
+      "message": "একটি নতুন ভিডিও রেকর্ড করুন"
+   },
+   "btnInjectGmailScreenshot": {
+      "message": "একটি নতুন স্ক্রিনশট তৈরি করুন"
+   },
+   "btnLearnMore": {
+      "message": "আরও জানুন"
+   },
+   "btnManual": {
+      "message": "ম্যানুয়াল"
+   },
+   "btnOkGotIt": {
+      "message": "ঠিক আছে, বুঝেছি"
+   },
+   "btnReadyVideo": {
+      "message": "আমি ভিডিও রেকর্ড করতে প্রস্তুত"
+   },
+   "btnSelectedArea": {
+      "message": "নির্বাচিত এলাকা"
+   },
+   "btnSelectedScroll": {
+      "message": "নির্বাচন এবং স্ক্রোল"
+   },
+   "btnSignupUpToViewUpload": {
+      "message": "আপলোড দেখতে সাইন আপ করুন"
+   },
+   "btnVisiblePage": {
+      "message": "পৃষ্ঠার দৃশ্যমান অংশ"
+   },
+   "cropBtnCancel": {
+      "message": "বাতিল করুন"
+   },
+   "cropBtnCopy": {
+      "message": "ক্লিপবোর্ডে কপি করুন"
+   },
+   "cropBtnEdit": {
+      "message": "সম্পাদনা করুন"
+   },
+   "cropBtnNimbus": {
+      "message": "Nimbus-এ পাঠান"
+   },
+   "cropBtnSave": {
+      "message": "সংরক্ষণ করুন"
+   },
+   "cropBtnSavePdf": {
+      "message": "PDF হিসেবে সংরক্ষণ করুন"
+   },
+   "disable": {
+      "message": "নিষ্ক্রিয় করুন"
+   },
+   "editBtnBack": {
+      "message": "পিছনে"
+   },
+   "editBtnCopy": {
+      "message": "ক্লিপবোর্ডে কপি করুন"
+   },
+   "editBtnDiscard": {
+      "message": "বাতিল করুন"
+   },
+   "editBtnDone": {
+      "message": "সম্পন্ন"
+   },
+   "editBtnDrive": {
+      "message": "Google Drive"
+   },
+   "editBtnDropbox": {
+      "message": "Dropbox"
+   },
+   "editBtnNimbusScreen": {
+      "message": "স্ক্রিনশট আপলোড করুন"
+   },
+   "editBtnNimbusVideo": {
+      "message": "ভিডিও আপলোড করুন"
+   },
+   "editBtnPrint": {
+      "message": "মুদ্রণ করুন"
+   },
+   "editBtnQuickShare": {
+      "message": "দ্রুত শেয়ার করুন"
+   },
+   "editBtnQuickShare2": {
+      "message": "ফোল্ডারে আপলোড করুন"
+   },
+   "editBtnSave": {
+      "message": "ছবি হিসেবে সংরক্ষণ করুন"
+   },
+   "editBtnSavePDF": {
+      "message": "PDF হিসেবে সংরক্ষণ করুন"
+   },
+   "editBtnSaveVideo": {
+      "message": "ভিডিও সংরক্ষণ করুন"
+   },
+   "editBtnSlack": {
+      "message": "Slack"
+   },
+   "editBtnYoutube": {
+      "message": "Youtube"
+   },
+   "editVideoTitle": {
+      "message": "ভিডিও সম্পাদক"
+   },
+   "gDriveBtnDone": {
+      "message": "সম্পন্ন"
+   },
+   "gDriveLabel": {
+      "message": "স্ক্রিনশট সংরক্ষণ করতে চান এমন ফোল্ডার নির্বাচন করুন"
+   },
+   "gDriveLabelFolders": {
+      "message": "স্ক্রিনশট সংরক্ষিত হবে"
+   },
+   "gDriveLogout": {
+      "message": "লগআউট"
+   },
+   "gDriveLogoutFrom": {
+      "message": "থেকে লগআউট করুন"
+   },
+   "gDriveMainFolder": {
+      "message": "এটি মূল ফোল্ডার"
+   },
+   "gDriveNoItems": {
+      "message": "কোনো আইটেম নেই"
+   },
+   "gDriveNotAuthorized": {
+      "message": "আপনি আপনার অ্যাকাউন্টে লগ ইন করেননি"
+   },
+   "gDriveSendTo": {
+      "message": "পাঠান"
+   },
+   "gDriveTitle": {
+      "message": "Google Drive-এ পাঠান"
+   },
+   "gDriveUploadPrivate": {
+      "message": "ব্যক্তিগত হিসাবে আপলোড করুন"
+   },
+   "hotKeys": {
+      "message": "হটকী"
+   },
+   "labelCaptureHelper": {
+      "message": "স্ন্যাপ করতে একটি স্ক্রিন নির্বাচন করুন!"
+   },
+   "labelCnameFree": {
+      "message": "আপনার লিঙ্ক কাস্টমাইজ করুন"
+   },
+   "labelDropImage": {
+      "message": "এখানে ছবি ড্রপ করুন"
+   },
+   "labelFileChangeShare": {
+      "message": "যদি চেকবক্সটি সক্রিয় থাকে, তাহলে একটি পাবলিক লিঙ্ক তৈরি হবে না।"
+   },
+   "labelInsertScreencast": {
+      "message": "ভিডিও দেখুন"
+   },
+   "labelInsertScreenshot": {
+      "message": "স্ক্রিনশট খুলুন"
+   },
+   "labelPreviewLoading": {
+      "message": "লোড হচ্ছে..."
+   },
+   "labelPreviewLoadingVideo": {
+      "message": "ভিডিও প্রক্রিয়াকরণ হচ্ছে - অনুগ্রহ করে অপেক্ষা করুন..."
+   },
+   "labelRedactorLoading": {
+      "message": "লোড হচ্ছে... অনুগ্রহ করে অপেক্ষা করুন..."
+   },
+   "newReleaseText": {
+      "message": "\u003Cli>নতুন ডিজাইন;\u003C/li>\u003Cli>উপাদানগুলি সম্পাদনা করা থেকে প্রতিরোধ করার জন্য একটি লক;\u003C/li>\u003Cli>বিলম্বিত স্ক্রিনশট;\u003C/li>\u003Cli>অপ্রয়োজনীয় অংশ সরিয়ে মূল মেনু কাস্টমাইজ করার সুযোগ;\u003C/li>\u003Cli>প্রয়োজনীয় আকৃতির পাশে ইচ্ছাকৃতভাবে সংখ্যা যোগ করার সুযোগ;\u003C/li>\u003Cli>Ctrl+Enter হটকী ব্যবহার করে সম্পাদক থেকে দ্রুত Nimbus/Slack-এ পাঠানোর সুযোগ;\u003C/li>\u003Cli>অন্যান্য কিছু বাগ ঠিক করা হয়েছে;\u003C/li>"
+   },
+   "newReleaseTitle": {
+      "message": "Nimble Screenshot-এর নতুন সংস্করণে স্বাগতম"
+   },
+   "nimbusAccessAnyTimes": {
+      "message": "যে কোনো সময় এবং যে কোনো ডিভাইস থেকে স্ক্রিনশট এবং স্ক্রিনকাস্ট অ্যাক্সেস করুন;"
+   },
+   "nimbusAccount": {
+      "message": "Fusebase অ্যাকাউন্ট"
+   },
+   "nimbusBad": {
+      "message": "খারাপ"
+   },
+   "nimbusBannedDeviceDestruction": {
+      "message": "এই ডিভাইসটি আপনার দ্বারা নিষিদ্ধ করা হয়েছে।"
+   },
+   "nimbusBeBetter": {
+      "message": "আরও ভালো হতে পারে"
+   },
+   "nimbusBtnAuthFacebook": {
+      "message": "Facebook ব্যবহার করে"
+   },
+   "nimbusBtnAuthGoogle": {
+      "message": "Google ব্যবহার করে"
+   },
+   "nimbusBtnLogin": {
+      "message": "FuseBase-এ সাইন ইন করুন"
+   },
+   "nimbusBtnRemind": {
+      "message": "পাসওয়ার্ড ভুলে গেছেন?"
+   },
+   "nimbusBtnSignup": {
+      "message": "অ্যাকাউন্ট তৈরি করুন"
+   },
+   "nimbusCaptureUpgradePremium": {
+      "message": "Nimble capture Business-এর সাথে\u003Cbr>আরও বৈশিষ্ট্য"
+   },
+   "nimbusCaptureUpgradePro": {
+      "message": "Nimble capture Pro-এর সাথে\u003Cbr>আরও বৈশিষ্ট্য"
+   },
+   "nimbusChannels": {
+      "message": "চ্যানেল"
+   },
+   "nimbusComment": {
+      "message": "মন্তব্য"
+   },
+   "nimbusCommentPlaceholder": {
+      "message": "আপনার স্ক্রিনশটে মন্তব্য করুন"
+   },
+   "nimbusCreateAccount": {
+      "message": "বিনামূল্যে অ্যাকাউন্ট তৈরি করুন"
+   },
+   "nimbusDid": {
+      "message": "করেছি"
+   },
+   "nimbusEducationDiscounts": {
+      "message": "শিক্ষার জন্য ছাড়"
+   },
+   "nimbusEnter": {
+      "message": "FuseBase-এ সাইন ইন করুন (পূর্বে Nimbus)"
+   },
+   "nimbusEnvironmentInfo": {
+      "message": "সিস্টেম এবং পৃষ্ঠা সম্পর্কে তথ্য যোগ করুন"
+   },
+   "nimbusFragmentScrollTitle": {
+      "message": "এই মোডের সাহায্যে, আপনি পৃষ্ঠার মধ্যে স্ক্রোলিং সহ পৃথক অংশগুলির স্ক্রিনশট নিতে পারেন। উদাহরণস্বরূপ, এটি একটি চ্যাট উইন্ডো, একটি পরিষেবা নিয়ন্ত্রণ প্যানেল বা Jira-তে একটি কাজের উইন্ডো হতে পারে। আমাদের অ্যাপ স্বয়ংক্রিয়ভাবে এই ধরনের এলাকাগুলি সনাক্ত করবে, যখন আপনি প্রয়োজনীয়টি নির্বাচন করতে পারবেন।"
+   },
+   "nimbusGoPro": {
+      "message": "Nimbus Pro-তে আপগ্রেড করুন"
+   },
+   "nimbusGood": {
+      "message": "ভালো!"
+   },
+   "nimbusHelp": {
+      "message": "সাহায্য"
+   },
+   "nimbusIncreaseLimit": {
+      "message": "সীমা বাড়ান"
+   },
+   "nimbusInfoAgent": {
+      "message": "ব্যবহারকারীর এজেন্ট"
+   },
+   "nimbusInfoBrowser": {
+      "message": "ব্যবহারকারীর ব্রাউজার"
+   },
+   "nimbusInfoPage": {
+      "message": "ওয়েব পৃষ্ঠা"
+   },
+   "nimbusInfoPlatform": {
+      "message": "ব্যবহারকারীর প্ল্যাটফর্ম"
+   },
+   "nimbusInfoScreen": {
+      "message": "স্ক্রিন রেজোলিউশন"
+   },
+   "nimbusIsBusiness": {
+      "message": "আমার Nimbus Business আছে"
+   },
+   "nimbusIsPro": {
+      "message": "আমার Nimbus Pro আছে"
+   },
+   "nimbusLabelEmail": {
+      "message": "ইমেইল"
+   },
+   "nimbusLabelPassword": {
+      "message": "পাসওয়ার্ড"
+   },
+   "nimbusLabelPasswordAndInfo": {
+      "message": "পাসওয়ার্ড (ন্যূনতম ৮ প্রতীক)"
+   },
+   "nimbusLabelRetypePass": {
+      "message": "পাসওয়ার্ড পুনরায় টাইপ করুন"
+   },
+   "nimbusLimitDescription": {
+      "message": "আপনি Nimbus Pro-তে স্যুইচ করে আপনার মাসিক ডেটা সীমা ১ GB পর্যন্ত বাড়াতে পারেন।"
+   },
+   "nimbusLimitDeviceDestruction": {
+      "message": "আপনি যদি দুটির বেশি ডিভাইসে Nimble capture ব্যবহার করতে চান, তাহলে আপনাকে আপনার প্ল্যান আপগ্রেড করতে হবে।"
+   },
+   "nimbusLimitDeviceTitle": {
+      "message": "আপনার Nimble capture অ্যাকাউন্ট ইতিমধ্যে সর্বাধিক সংখ্যক ডিভাইসে ব্যবহৃত হচ্ছে।"
+   },
+   "nimbusLimitOf": {
+      "message": "এর মধ্যে"
+   },
+   "nimbusLimitSpace": {
+      "message": "আপনি এই ফাইলটি আপলোড করতে পারবেন না কারণ আপনি প্রায় আপনার মাসিক ১০০ MB ডেটা সীমায় পৌঁছে গেছেন।"
+   },
+   "nimbusLimitUsage": {
+      "message": "ব্যবহার:"
+   },
+   "nimbusLimitVideo": {
+      "message": "এই ভিডিওটি খুব বড়! কিন্তু এটি হারিয়ে যায়নি..."
+   },
+   "nimbusLimitVideoDestruction": {
+      "message": "Nimbus Pro-এর জন্য সর্বোচ্চ ফাইল আকার = ১GB। ফাইলের সীমা বাড়াতে অনুগ্রহ করে \u003Cb>team@nimbusweb.co\u003C/b>-তে লিখুন।"
+   },
+   "nimbusLimitVideoDestructionFree": {
+      "message": "বিনামূল্যে অ্যাকাউন্টের জন্য সর্বোচ্চ ফাইল আকার = ১০MB। ফাইলের সীমা বাড়াতে Nimbus Pro-তে আপগ্রেড করুন।"
+   },
+   "nimbusLimitVideoDestructionOrgFree": {
+      "message": "ফাইলটি বিনামূল্যে অ্যাকাউন্টের জন্য সর্বোচ্চ অনুমোদিত আকার (১০ MB) অতিক্রম করেছে। আরও বিস্তারিত জানতে কর্মস্থানের মালিকের সাথে যোগাযোগ করুন।"
+   },
+   "nimbusLimitVideoDestructionOrgLimit": {
+      "message": "মাসিক ট্রাফিক সীমা (১০০MB) পৌঁছে গেছে বলে ফাইলটি FuseBase-এ সংরক্ষিত হবে না। আপনার সীমা বাড়াতে প্রিমিয়াম প্ল্যানে আপগ্রেড করুন।"
+   },
+   "nimbusLimitVideoDestructionOrgPremium": {
+      "message": "ফাইলটি অ্যাকাউন্টের জন্য সর্বোচ্চ অনুমোদিত আকার (১GB) অতিক্রম করেছে। আরও বিস্তারিত জানতে কর্মস্থানের মালিকের সাথে যোগাযোগ করুন।"
+   },
+   "nimbusLimitVideoDestructionStreamMonth": {
+      "message": "বিনামূল্যে প্ল্যানে, আপনি প্রতি মাসে ৬০টির বেশি ভিডিও রেকর্ড করতে পারবেন না। সীমাবদ্ধতা সরাতে Nimbus Pro প্ল্যানে যান।"
+   },
+   "nimbusLimitVideoDestructionStreamTime": {
+      "message": "গুরুত্বপূর্ণ! বিনামূল্যে প্ল্যানে, আপনি সর্বোচ্চ ৫ মিনিট পর্যন্ত ভিডিও রেকর্ড করতে পারবেন। দীর্ঘ ভিডিও রেকর্ড করতে Nimbus Pro-তে আপগ্রেড করুন।"
+   },
+   "nimbusLimitVideoDurationDestruction": {
+      "message": "আপনার ৭-দিনের ট্রায়াল শুরু হয়েছে। আপনি এখন আকারের সীমা ছাড়াই ভিডিও রেকর্ড করতে পারেন। ট্রায়াল শেষ হওয়ার পরে, আপনি সর্বোচ্চ ৫ মিনিটের ভিডিও রেকর্ড করতে পারবেন। অসীম রেকর্ডিং সক্রিয় করতে Nimbus Pro-তে আপগ্রেড করুন।"
+   },
+   "nimbusLimitVideoFree": {
+      "message": "এই ভিডিওটি খুব বড়! কিন্তু এটি হারিয়ে যায়নি..."
+   },
+   "nimbusLimitVideoOrgFree": {
+      "message": "এই ভিডিওটি খুব বড়! কিন্তু এটি হারিয়ে যায়নি..."
+   },
+   "nimbusLimitVideoOrgLimit": {
+      "message": "এই ভিডিওটি খুব বড়! কিন্তু এটি হারিয়ে যায়নি..."
+   },
+   "nimbusLimitVideoOrgPremium": {
+      "message": "এই ভিডিওটি খুব বড়! কিন্তু এটি হারিয়ে যায়নি..."
+   },
+   "nimbusLimitVideoStreamMonth": {
+      "message": "আপনি আর রেকর্ড করতে পারবেন না..."
+   },
+   "nimbusLimitVideoStreamTime": {
+      "message": "আপনি আর রেকর্ড করতে পারবেন না..."
+   },
+   "nimbusLogin": {
+      "message": "লগইন"
+   },
+   "nimbusLogout": {
+      "message": "FuseBase থেকে লগআউট করুন"
+   },
+   "nimbusManageDevices": {
+      "message": "ডিভাইস পরিচালনা করুন"
+   },
+   "nimbusNoThanks": {
+      "message": "না, ধন্যবাদ"
+   },
+   "nimbusNotAccount": {
+      "message": "আমার কোনো অ্যাকাউন্ট নেই"
+   },
+   "nimbusNoteName": {
+      "message": "পৃষ্ঠার নাম"
+   },
+   "nimbusOr": {
+      "message": "অথবা"
+   },
+   "nimbusOrganizeUploadFolders": {
+      "message": "আপনার আপলোডগুলিকে ফোল্ডার, সাবফোল্ডার এবং ট্যাগ দ্বারা সংগঠিত করুন;"
+   },
+   "nimbusPlaceholderEmail": {
+      "message": "ইমেইল"
+   },
+   "nimbusPlaceholderEnterText": {
+      "message": "পাঠ্য লিখুন"
+   },
+   "nimbusPlaceholderPassword": {
+      "message": "পাসওয়ার্ড"
+   },
+   "nimbusPrivate": {
+      "message": "ব্যক্তিগত"
+   },
+   "nimbusPrivateMessage": {
+      "message": "ব্যক্তিগত বার্তা"
+   },
+   "nimbusProAddWaterMark": {
+      "message": "ব্র্যান্ডিংয়ের জন্য আপনার ওয়াটারমার্ক যোগ করুন"
+   },
+   "nimbusProConvertGIF": {
+      "message": "ভিডিওকে GIF-এ রূপান্তর করুন"
+   },
+   "nimbusProConvertMP4": {
+      "message": "ভিডিওকে MP4-এ রূপান্তর করুন"
+   },
+   "nimbusProCropVideo": {
+      "message": "আপনার ভিডিও ক্রপ করুন"
+   },
+   "nimbusProScreenshotLimit": {
+      "message": "অসীম স্ক্রিনশট"
+   },
+   "nimbusProSendDropbox": {
+      "message": "Dropbox-এ ছবি এবং ভিডিও পাঠান"
+   },
+   "nimbusProSendGoogleDrive": {
+      "message": "Google Drive-এ ছবি এবং ভিডিও আপলোড করুন"
+   },
+   "nimbusProSendGoogleDrive2": {
+      "message": "পাবলিক বা প্রাইভেট লিঙ্ক হিসাবে Google Drive-এ আপলোড করুন"
+   },
+   "nimbusProSendGoogleDriveFirefox": {
+      "message": "Google Drive-এ ছবি আপলোড করুন"
+   },
+   "nimbusProSendYoutube": {
+      "message": "Youtube-এ ভিডিও পাঠান"
+   },
+   "nimbusProSupport": {
+      "message": "অগ্রাধিকার সহায়তা"
+   },
+   "nimbusProTrimVideo": {
+      "message": "আপনার ভিডিও ট্রিম করুন"
+   },
+   "nimbusProVideoLimit": {
+      "message": "অসীম রেকর্ডিং"
+   },
+   "nimbusRate": {
+      "message": "Nimble Screenshot পছন্দ হয়েছে? এটিকে রেটিং দিন!"
+   },
+   "nimbusRateUs": {
+      "message": "আমাদের রেটিং দিন"
+   },
+   "nimbusRegistration": {
+      "message": "নিবন্ধন"
+   },
+   "nimbusRemindPass": {
+      "message": "পাসওয়ার্ড মনে করিয়ে দিন"
+   },
+   "nimbusSaveScreencast": {
+      "message": "স্ক্রিনকাস্ট সংরক্ষণ করুন"
+   },
+   "nimbusSaveScreenshot": {
+      "message": "স্ক্রিনশট সংরক্ষণ করুন"
+   },
+   "nimbusSearch": {
+      "message": "অনুসন্ধান"
+   },
+   "nimbusSelectChannel": {
+      "message": "চ্যানেল নির্বাচন করুন"
+   },
+   "nimbusSelectFolder": {
+      "message": "ফোল্ডার"
+   },
+   "nimbusSelectOrganization": {
+      "message": "সংগঠন"
+   },
+   "nimbusSelectWorkspace": {
+      "message": "কর্মস্থান"
+   },
+   "nimbusSend": {
+      "message": "Nimble-এ পাঠান"
+   },
+   "nimbusShareFriends": {
+      "message": "বন্ধু এবং সহকর্মীদের কাছে স্ক্রিনশট এবং স্ক্রিনকাস্ট পাঠান;"
+   },
+   "nimbusSlackAccount": {
+      "message": "Slack অ্যাকাউন্ট"
+   },
+   "nimbusSlackHidePanel": {
+      "message": "Slack প্যানেল লুকান"
+   },
+   "nimbusSlackLogout": {
+      "message": "Slack থেকে লগআউট করুন"
+   },
+   "nimbusSlackSend": {
+      "message": "Slack-এ পাঠান"
+   },
+   "nimbusSlackWelcome": {
+      "message": "পড়তে একটু সময় নিন:"
+   },
+   "nimbusSlackWelcome2": {
+      "message": "Nimble Screenshot চ্যাট রুমে বার্তাগুলিতে অ্যাক্সেস পাবে না। আপনার সব কথোপকথন গোপনীয় থাকবে। Nimble Screenshot শুধুমাত্র Slack-এ স্ক্রিনশট আপলোড করতে পারে"
+   },
+   "nimbusSlackWelcome3": {
+      "message": "আপনার কোনো প্রশ্ন থাকলে, অনুগ্রহ করে ইমেইলে লিখুন"
+   },
+   "nimbusStreamDestruction": {
+      "message": "স্ট্রিমিং/তাৎক্ষণিক মোড ব্যবহার করতে, আপনার একটি FuseBase অ্যাকাউন্ট থাকা প্রয়োজন।"
+   },
+   "nimbusStreamStartDestruction": {
+      "message": "ভিডিও রেকর্ড করতে Nimble capture-কে আপনার মাইক্রোফোন এবং ক্যামেরা অ্যাক্সেস করতে হবে যা একবারের অনুমতি।"
+   },
+   "nimbusStreamStartTitle": {
+      "message": "নিবন্ধন করার জন্য ধন্যবাদ।\u003Cbr>রেকর্ডিং শুরু করতে, কেবল তাৎক্ষণিক রেকর্ড শুরু করুন-এ ক্লিক করুন।"
+   },
+   "nimbusStreamTitle": {
+      "message": "স্ট্রিমিং/তাৎক্ষণিক মোডে স্ক্রিন রেকর্ডার ব্যবহার করার প্রধান সুবিধা হল গতি। আপনি রেকর্ডিং বন্ধ করার মুহূর্তে, ভিডিওটি ইতিমধ্যে সার্ভারে থাকে এবং আপনাকে আপলোড সম্পূর্ণ হওয়ার জন্য অপেক্ষা করতে হয় না।"
+   },
+   "nimbusSupportMenu": {
+      "message": "সহায়তা"
+   },
+   "nimbusSupportMenu1": {
+      "message": "গাইড এবং FAQ"
+   },
+   "nimbusSupportMenu2": {
+      "message": "সহায়তার সাথে যোগাযোগ করুন"
+   },
+   "nimbusThanksYou": {
+      "message": "তথ্যের জন্য ধন্যবাদ"
+   },
+   "nimbusUpgradePro": {
+      "message": "কেন Nimbus Pro আরও ভালো"
+   },
+   "nimbusViewUploads": {
+      "message": "আমার FuseBase দেখুন"
+   },
+   "nimbusViewUploadsToDropbox": {
+      "message": "Dropbox-এ ফাইল খুলুন"
+   },
+   "nimbusYoutubeSend": {
+      "message": "Youtube-এ প্রকাশ করুন"
+   },
+   "notificationCopy": {
+      "message": "ছবি ক্লিপবোর্ডে কপি করা হয়েছে।"
+   },
+   "notificationCrop": {
+      "message": "টেনে পৃষ্ঠা ক্যাপচার করুন (প্রস্থান করতে Esc চাপুন)"
+   },
+   "notificationDesktopDrawingTools": {
+      "message": "ডেস্কটপ রেকর্ডিং মোডে অঙ্কন সরঞ্জাম উপলব্ধ নয়। পরিবর্তে ট্যাব রেকর্ড ব্যবহার করুন।"
+   },
+   "notificationDesktopTabSound": {
+      "message": "ডেস্কটপ রেকর্ডিং মোডে সিস্টেম সাউন্ড উপলব্ধ নয়। পরিবর্তে ট্যাব রেকর্ড ব্যবহার করুন।"
+   },
+   "notificationDesktopVideoCamera": {
+      "message": "ডেস্কটপ রেকর্ডিং মোডে ভিডিও ক্যামেরা উপলব্ধ নয়। পরিবর্তে ট্যাব রেকর্ড ব্যবহার করুন।"
+   },
+   "notificationEmailFail": {
+      "message": "এই ইমেইল ইতিমধ্যে নিবন্ধিত।"
+   },
+   "notificationEmailIncorrect": {
+      "message": "ভুল ইমেইল। অনুগ্রহ করে আবার চেষ্টা করুন।"
+   },
+   "notificationErrorActiveTab": {
+      "message": "Nimble capture রেকর্ডিং শুরু করতে পারে না যখন এটি প্রারম্ভিকীকরণ হচ্ছে। এক্সটেনশন সক্রিয় করতে আপনাকে প্যানেলে Nimble capture আইকনে ক্লিক করতে হবে।"
+   },
+   "notificationErrorChromeTab": {
+      "message": "অভ্যন্তরীণ Chrome পৃষ্ঠা বা অ্যাপের পৃষ্ঠার রেকর্ডিং বর্তমানে সমর্থিত নয়।"
+   },
+   "notificationImageCopied": {
+      "message": "কপি করা হয়েছে"
+   },
+   "notificationImageNotCopied": {
+      "message": "কপি করতে ব্যর্থ হয়েছে"
+   },
+   "notificationInsertInfo": {
+      "message": "আপনি শুধুমাত্র ছবি সন্নিবেশ করতে পারেন।"
+   },
+   "notificationLoginFail": {
+      "message": "ভুল লগইন বা পাসওয়ার্ড। অনুগ্রহ করে আবার চেষ্টা করুন"
+   },
+   "notificationNetworkError": {
+      "message": "সার্ভার বা আপনার ইন্টারনেট সংযোগে সমস্যা। অনুগ্রহ করে আবার চেষ্টা করুন।"
+   },
+   "notificationReachedLimit": {
+      "message": "আপনি আপনার মাসিক ট্রাফিক সীমা (১০০ MB) পৌঁছে গেছেন। চালিয়ে যেতে, আপনাকে Nimbus Pro কিনতে হবে।"
+   },
+   "notificationRegisterFail": {
+      "message": "নিবন্ধন ব্যর্থ হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
+   },
+   "notificationRestoreSent": {
+      "message": "পুনরুদ্ধার নির্দেশাবলী আপনার ই-মেইলে পাঠানো হয়েছে।"
+   },
+   "notificationUploaded": {
+      "message": "আপলোড সম্পন্ন হয়েছে।"
+   },
+   "notificationUrlCopied": {
+      "message": "URL ক্লিপবোর্ডে কপি করা হয়েছে"
+   },
+   "notificationWrong": {
+      "message": "কিছু ভুল হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
+   },
+   "onlyForChrome": {
+      "message": "শুধুমাত্র Chrome-এর জন্য"
+   },
+   "onlyForFirefox": {
+      "message": "শুধুমাত্র Chrome-এর জন্য"
+   },
+   "optionLabelEnableWatermark": {
+      "message": "আপনার ওয়াটারমার্ক যোগ করুন"
+   },
+   "optionLabelEnableWatermarkTimer": {
+      "message": "ভিডিওতে ওয়াটারমার্ক লুকান এর পরে"
+   },
+   "optionLabelWatermarkFont": {
+      "message": "ফন্ট"
+   },
+   "optionLabelWatermarkFontColor": {
+      "message": "রঙ"
+   },
+   "optionLabelWatermarkFontSize": {
+      "message": "আকার"
+   },
+   "optionLabelWatermarkImage": {
+      "message": "ছবি"
+   },
+   "optionLabelWatermarkSelectFile": {
+      "message": "ফাইল নির্বাচন করুন"
+   },
+   "optionLabelWatermarkSelectPosition": {
+      "message": "আপনার ওয়াটারমার্কের অবস্থান নির্বাচন করুন"
+   },
+   "optionLabelWatermarkSize": {
+      "message": "ওয়াটারমার্কের আকার:"
+   },
+   "optionLabelWatermarkSizeLarge": {
+      "message": "বড়"
+   },
+   "optionLabelWatermarkSizeSmall": {
+      "message": "ছোট"
+   },
+   "optionLabelWatermarkText": {
+      "message": "পাঠ্য"
+   },
+   "optionLabelWatermarkTimer1": {
+      "message": "1 সেকেন্ড"
+   },
+   "optionLabelWatermarkTimer10": {
+      "message": "10 সেকেন্ড"
+   },
+   "optionLabelWatermarkTimer30": {
+      "message": "30 সেকেন্ড"
+   },
+   "optionLabelWatermarkTimer5": {
+      "message": "5 সেকেন্ড"
+   },
+   "optionLabelWatermarkTimer60": {
+      "message": "1 মিনিট"
+   },
+   "optionLabelWatermarkTransparent": {
+      "message": "ওয়াটারমার্ক স্বচ্ছতা:"
+   },
+   "optionLabelWatermarkTransparentLarge": {
+      "message": "বড়"
+   },
+   "optionLabelWatermarkTransparentSmall": {
+      "message": "স্বচ্ছতা নেই"
+   },
+   "optionSelectGithubSend": {
+      "message": "Github-এর মাধ্যমে সংরক্ষণ করুন"
+   },
+   "optionSelectGithubSendNimbus": {
+      "message": "Github-এ পাঠানোর পরে Nimbus-এ পাঠান"
+   },
+   "optionSelectSendDone": {
+      "message": "আপলোড উইন্ডো খুলুন"
+   },
+   "optionSelectSendDoneVideo": {
+      "message": "আপলোড/রূপান্তর পৃষ্ঠা খুলুন"
+   },
+   "optionSelectSendDownload": {
+      "message": "Google/Slack/Dropbox-এ পাঠান"
+   },
+   "optionSelectSendDropbox": {
+      "message": "Dropbox-এ পাঠান"
+   },
+   "optionSelectSendEdit": {
+      "message": "সম্পাদনা করুন"
+   },
+   "optionSelectSendGoogle": {
+      "message": "Google-এ পাঠান"
+   },
+   "optionSelectSendNimbus": {
+      "message": "Nimbus-এ পাঠান"
+   },
+   "optionSelectSendQuick": {
+      "message": "দ্রুত আপলোড"
+   },
+   "optionSelectSendSave": {
+      "message": "ডাউনলোড করুন"
+   },
+   "optionSelectSendYoutube": {
+      "message": "Youtube-এ পাঠান"
+   },
+   "optionsCaptureSettings": {
+      "message": "স্ক্রিনশট সেটিংস"
+   },
+   "optionsGeneral": {
+      "message": "সাধারণ"
+   },
+   "optionsLabelAfterClicking": {
+      "message": "আইকনে ক্লিক করার পরে"
+   },
+   "optionsLabelAnalyticsEnable": {
+      "message": "নিম্বাসে বেনামী ব্যবহারের পরিসংখ্যান পাঠান"
+   },
+   "optionsLabelAndThen": {
+      "message": "এবং তারপর"
+   },
+   "optionsLabelAutoShortUrl": {
+      "message": "আপলোডের পরে স্বয়ংক্রিয়ভাবে URL সংক্ষিপ্ত করুন"
+   },
+   "optionsLabelCanUse": {
+      "message": "উপলব্ধ পদবিন্যাস:"
+   },
+   "optionsLabelDelayedScreenshotTime": {
+      "message": "বিলম্বিত স্ক্রিনশটের সময় (সেকেন্ড)"
+   },
+   "optionsLabelDepthScreenshot": {
+      "message": "রঙের গভীরতা ফিল্টার (1 - নিষ্ক্রিয়)"
+   },
+   "optionsLabelDesktopVideo": {
+      "message": "ডেস্কটপ রেকর্ডিং শুরু করুন"
+   },
+   "optionsLabelFilenameTemplateScreencast": {
+      "message": "স্ক্রিনকাস্টের ফাইল নামের প্যাটার্ন"
+   },
+   "optionsLabelFilenameTemplateScreenshot": {
+      "message": "স্ক্রিনশটের ফাইল নামের প্যাটার্ন"
+   },
+   "optionsLabelHideFixedElements": {
+      "message": "স্থির উপাদানগুলি লুকান"
+   },
+   "optionsLabelImageFormat": {
+      "message": "বিন্যাস"
+   },
+   "optionsLabelImageQuality": {
+      "message": "গুণমান"
+   },
+   "optionsLabelInjectGmailScreenshot": {
+      "message": "Gmail-এ Nimbus দেখান"
+   },
+   "optionsLabelKeepOriginalResolution": {
+      "message": "মূল রেজোলিউশন রাখুন (Retina-এর জন্য)"
+   },
+   "optionsLabelLoadToNS": {
+      "message": "Nimbus/Slack-এ পাঠান"
+   },
+   "optionsLabelPauseVideo": {
+      "message": "ভিডিও রেকর্ডিং বিরতি/পুনরারম্ভ করুন"
+   },
+   "optionsLabelQuickCaptureEnable": {
+      "message": "দ্রুত স্ক্রিনশট সক্রিয় করুন (মেনু না খুলে)"
+   },
+   "optionsLabelQuickVideoCaptureEnable": {
+      "message": "দ্রুত রেকর্ডিং সক্রিয় করুন (ভিডিও রেকর্ড মেনু সর্বদা প্রথমে দেখানো হবে)"
+   },
+   "optionsLabelQuickVideoCaptureGithubEnable": {
+      "message": "Github-এ Nimbus দেখান"
+   },
+   "optionsLabelSaveAs": {
+      "message": "'সংরক্ষণ করুন এভাবে' ডায়ালগ বক্স প্রদর্শন করুন"
+   },
+   "optionsLabelSaveCropPosition": {
+      "message": "নির্বাচিত এলাকার অবস্থান সংরক্ষণ করুন"
+   },
+   "optionsLabelShowContentMenu": {
+      "message": "প্রসঙ্গ মেনুতে দেখান"
+   },
+   "optionsLabelShowInfoPrint": {
+      "message": "মুদ্রণে URL/তারিখ প্রদর্শন করুন"
+   },
+   "optionsLabelShowNewButton": {
+      "message": "অ্যাপ আপডেটের পরে 'নতুন' দেখান"
+   },
+   "optionsLabelStopVideo": {
+      "message": "ভিডিও রেকর্ডিং বন্ধ করুন"
+   },
+   "optionsLabelStreamMenuEnable": {
+      "message": "তাৎক্ষণিক রেকর্ড সক্রিয় করুন"
+   },
+   "optionsLabelTabVideo": {
+      "message": "ট্যাব/পৃষ্ঠা রেকর্ডিং শুরু করুন"
+   },
+   "optionsLabelTimeScrollEntirePage": {
+      "message": "পৃষ্ঠা স্ক্রোলিং বিলম্ব সময় (মিলিসেকেন্ড)"
+   },
+   "optionsLabelVideoStorageLimit": {
+      "message": "ডিস্কে জায়গা না থাকলে ভিডিও রেকর্ডিং বন্ধ করুন"
+   },
+   "optionsLabelWantCapture": {
+      "message": "স্ক্রিনশট তৈরি করুন"
+   },
+   "optionsLabelWantVideoCapture": {
+      "message": "রেকর্ড করুন"
+   },
+   "optionsMainMenu": {
+      "message": "প্রধান মেনু সেটিংস"
+   },
+   "optionsOtherSettings": {
+      "message": "অন্যান্য"
+   },
+   "optionsSettingImage": {
+      "message": "ছবি সেটিংস"
+   },
+   "optionsSettingsSave": {
+      "message": "সেটিংস সংরক্ষণ করুন"
+   },
+   "optionsShortcutSettings": {
+      "message": "হটকী সেটিংস"
+   },
+   "optionsTitle": {
+      "message": "সেটিংস"
+   },
+   "optionsVideo": {
+      "message": "ভিডিও"
+   },
+   "optionsVideoCaptureGithub": {
+      "message": "Github"
+   },
+   "optionsVideoCaptureSettings": {
+      "message": "স্ক্রিনকাস্ট সেটিংস"
+   },
+   "optionsWatermark": {
+      "message": "ওয়াটারমার্ক"
+   },
+   "panelActions": {
+      "message": "ক্রিয়াকলাপ"
+   },
+   "panelAlfaChanel": {
+      "message": "স্বচ্ছতা পরিবর্তন করতে স্লাইডার সরান"
+   },
+   "panelCancel": {
+      "message": "বাতিল করুন"
+   },
+   "panelChange": {
+      "message": "পরিবর্তন করুন"
+   },
+   "panelHeight": {
+      "message": "উচ্চতা"
+   },
+   "panelParameters": {
+      "message": "প্যারামিটার"
+   },
+   "panelProportional": {
+      "message": "আনুপাতিক"
+   },
+   "panelShadow": {
+      "message": "ছায়া"
+   },
+   "panelSize": {
+      "message": "আকার"
+   },
+   "panelTools": {
+      "message": "অঙ্কন সরঞ্জাম"
+   },
+   "panelWidth": {
+      "message": "প্রস্থ"
+   },
+   "popupAccessMic": {
+      "message": "শুরু করার জন্য, আপনাকে আপনার মাইক্রোফোনে অ্যাক্সেসের অনুমতি দিতে হবে"
+   },
+   "popupActionMessageCrop": {
+      "message": "মাউস বোতাম ধরে রেখে, পছন্দসই অংশটি নির্বাচন করুন। এরপর, এটি সংরক্ষণ করুন বা সম্পাদকে পাঠান।"
+   },
+   "popupActionMessageFragmentScroll": {
+      "message": "পছন্দসই অংশটি নির্বাচন করুন এবং এটিতে ক্লিক করুন। এরপর, এটি সংরক্ষণ করুন বা সম্পাদকে পাঠান।"
+   },
+   "popupAfterCapture": {
+      "message": "ক্যাপচারের পরে কার্য"
+   },
+   "popupAutoDeleteDrawing": {
+      "message": "স্বয়ংক্রিয় অঙ্কন মুছে ফেলুন"
+   },
+   "popupAutoDeleteDrawingDescription": {
+      "message": "আপনি একটি সময়কাল নির্দিষ্ট করতে পারেন যার পরে ভিডিও রেকর্ড করার সময় আঁকা চিত্রগুলি মুছে ফেলা হবে"
+   },
+   "popupAutomationCancelButton": {
+      "message": "বন্ধ করুন"
+   },
+   "popupAutomationGuideError": {
+      "message": "দুঃখিত, রেকর্ডিং সার্ভার বর্তমানে অনুপলব্ধ।"
+   },
+   "popupAutomationHideButton": {
+      "message": "লুকান"
+   },
+   "popupAutomationStorageLimit": {
+      "message": "ডিস্কে শুধুমাত্র একটি ছোট পরিমাণ খালি জায়গা আছে। আমরা স্থিতিশীল ভিডিও রেকর্ডিংয়ের গ্যারান্টি দিই না। অনুগ্রহ করে আপনার ডিস্ক স্পেস খালি করুন এবং রেকর্ডিং চালিয়ে যান-এ ক্লিক করুন। যদি আপনি রেকর্ডিং শেষ করতে চান তবে বন্ধ করুন-এ ক্লিক করুন।"
+   },
+   "popupAutomationStreamError": {
+      "message": "দুঃখিত, রেকর্ডিং সার্ভার বর্তমানে অনুপলব্ধ। অনুগ্রহ করে পরে আবার চেষ্টা করুন অথবা স্থানীয় রেকর্ডিং ব্যবহার করুন।"
+   },
+   "popupAutomationUpload": {
+      "message": "একটু ধৈর্য ধরুন ... আপলোড হচ্ছে ..."
+   },
+   "popupAutomationUploadStream": {
+      "message": "একটু ধৈর্য ধরুন... আমরা আপনার স্ট্রিম ভিডিওকে Nimbus-এ প্রক্রিয়া করছি।"
+   },
+   "popupAutomationWelcome": {
+      "message": "আমরা আনন্দের সাথে ঘোষণা করছি যে আমরা Github টিকেটে সরাসরি ভিডিও রেকর্ড এবং সন্নিবেশ করার জন্য একটি নতুন বৈশিষ্ট্য যোগ করেছি।"
+   },
+   "popupAutomationWelcomeButton": {
+      "message": "সক্রিয় করুন"
+   },
+   "popupBitrateAudioLabel": {
+      "message": "অডিও বিটরেট"
+   },
+   "popupBitrateVideoLabel": {
+      "message": "ভিডিও বিটরেট"
+   },
+   "popupBtnBack": {
+      "message": "পিছনে"
+   },
+   "popupBtnCameraRecord": {
+      "message": "শুধুমাত্র ওয়েবক্যাম"
+   },
+   "popupBtnDesktopRecord": {
+      "message": "ডেস্কটপ"
+   },
+   "popupBtnResetVideoSetting": {
+      "message": "সেটিংস রিসেট করুন"
+   },
+   "popupBtnStartRecord": {
+      "message": "রেকর্ড শুরু করুন"
+   },
+   "popupBtnStartStream": {
+      "message": "তাৎক্ষণিক রেকর্ড শুরু করুন"
+   },
+   "popupBtnStopPause": {
+      "message": "বিরতি"
+   },
+   "popupBtnStopRecord": {
+      "message": "রেকর্ডিং বন্ধ করুন"
+   },
+   "popupBtnStopResume": {
+      "message": "পুনরায় শুরু করুন"
+   },
+   "popupBtnTabRecord": {
+      "message": "ট্যাব"
+   },
+   "popupBtnUploadOptionHide": {
+      "message": "স্ট্রিম অপশন লুকান"
+   },
+   "popupBtnUploadOptionShow": {
+      "message": "স্ট্রিম অপশন দেখান"
+   },
+   "popupButtonAdvertising": {
+      "message": "Nimbus Clipper - সবকিছু ক্লিপ করুন!"
+   },
+   "popupCapturingProgress": {
+      "message": "ক্যাপচার করা হচ্ছে..."
+   },
+   "popupCnameFreeDesc": {
+      "message": "আপনার শেয়ারগুলিতে আপনার কাস্টম ডোমেন (CNAME) যোগ করুন। এর উপরে, আপনি পারেন:"
+   },
+   "popupCnameFreeDescList1": {
+      "message": "আপনার স্ক্রিনশট এবং ভিডিওতে ফাইল, লিঙ্ক এবং আরও যোগ করুন"
+   },
+   "popupCnameFreeDescList2": {
+      "message": "ওয়ার্কস্পেস এবং ফোল্ডার দিয়ে আপনার আপলোডগুলি সংগঠিত করুন"
+   },
+   "popupCnameFreeDescList3": {
+      "message": "আপনার দল এবং ক্লায়েন্টদের জন্য উইকি তৈরি করুন"
+   },
+   "popupCnameFreeDescList4": {
+      "message": "পাসওয়ার্ড দিয়ে আপনার শেয়ার করা পৃষ্ঠাগুলি সুরক্ষিত করুন (ঐচ্ছিক)"
+   },
+   "popupCnameFreeDescList5": {
+      "message": "আমাদের হোয়াইট-লেবেল সমাধান দিয়ে আপনার ব্র্যান্ড প্রচার করুন"
+   },
+   "popupCnameFreeDescList6": {
+      "message": "আপনার প্রিয় মার্কেটিং এবং বিশ্লেষণ টুল সংযুক্ত করুন"
+   },
+   "popupCnameFreeTitle": {
+      "message": "আজই আপনার ১৪-দিনের বিনামূল্যে ট্রায়াল শুরু করুন"
+   },
+   "popupErrorLocalFileMessage": {
+      "message": "অনুগ্রহ করে আপনার Chrome এক্সটেনশন সেটিংসে যান এবং \u003Cstrong>'ফাইল URL-এ অ্যাক্সেসের অনুমতি দিন'\u003C/strong> সক্রিয় করুন, যাতে এক্সটেনশনটি এই পৃষ্ঠায় অ্যাক্সেস করতে পারে।"
+   },
+   "popupErrorLocalFileTitle": {
+      "message": "ফাইল অ্যাক্সেস প্রয়োজন"
+   },
+   "popupFrameRateLabel": {
+      "message": "ফ্রেম ফ্রিকোয়েন্সি"
+   },
+   "popupLabelAnalyticsEnable": {
+      "message": "যদি সক্রিয় থাকে, পণ্যের কার্যকারিতা ব্যবহারের বেনামী পরিসংখ্যান Nimbus-এ পাঠানো হয়।"
+   },
+   "popupLabelCountdown": {
+      "message": "কাউন্টডাউন"
+   },
+   "popupLabelCursorAnimate": {
+      "message": "অ্যানিমেটেড কার্সার"
+   },
+   "popupLabelPrivateUpload": {
+      "message": "ব্যক্তিগত আপলোড"
+   },
+   "popupLabelQuickVideoCaptureEnable": {
+      "message": "যদি বৈশিষ্ট্যটি সক্রিয় থাকে, আপনি দুটি মাউস ক্লিকে একটি ভিডিও রেকর্ড এবং সংরক্ষণ করতে পারেন প্রথমটি রেকর্ডিং শুরু করার জন্য, এবং দ্বিতীয়টি বন্ধ করে ভিডিও সংরক্ষণ করার জন্য। এটা সত্যিই সহজ!"
+   },
+   "popupLabelQuickVideoCaptureGithubEnable": {
+      "message": "Github-এ ভিডিও রেকর্ড করা খুবই সহজ! প্রথম ক্লিকে, আপনি পৃষ্ঠা রেকর্ড করা শুরু করেন, এবং দ্বিতীয় ক্লিকে, আপনি এটি সরাসরি Github টিকেটে যোগ করেন!"
+   },
+   "popupLabelRecordCamera": {
+      "message": "ওয়েবক্যাম রেকর্ড করুন"
+   },
+   "popupLabelRecordMic": {
+      "message": "মাইক শব্দ রেকর্ড করুন"
+   },
+   "popupLabelRecordTab": {
+      "message": "ট্যাব শব্দ রেকর্ড করুন"
+   },
+   "popupLabelSelectWorkspace": {
+      "message": "ওয়ার্কস্পেস নির্বাচন করুন"
+   },
+   "popupLabelSetting": {
+      "message": "সেটিং"
+   },
+   "popupLabelShowDrawingTools": {
+      "message": "অঙ্কন টুল দেখান"
+   },
+   "popupLabelVideoAnimationCursor": {
+      "message": "ক্লিক অ্যানিমেশন"
+   },
+   "popupLabelVideoSetting": {
+      "message": "ভিডিও সেটিংস"
+   },
+   "popupLabelVideoStorageLimit": {
+      "message": "যদি ডিস্কে 500 MB-এর কম খালি জায়গা থাকে তবে ভিডিও রেকর্ডিং বন্ধ হয়ে যায়। Chromebook-এর জন্য সুপারিশকৃত।"
+   },
+   "popupMyNotes": {
+      "message": "আমার আপলোডগুলি"
+   },
+   "popupOpenExtensions": {
+      "message": "এক্সটেনশন সেটিংস"
+   },
+   "popupReadManual": {
+      "message": "এছাড়াও, আপনি অ্যাপ্লিকেশন ব্যবহারের নির্দেশাবলী পড়তে পারেন"
+   },
+   "popupRecordAudioCoreLabel": {
+      "message": "অডিও রেকর্ড"
+   },
+   "popupRecordCoreAdvancedLabel": {
+      "message": "উন্নত"
+   },
+   "popupRecordCoreDefaultLabel": {
+      "message": "ডিফল্ট আউটপুট"
+   },
+   "popupRecordTitle": {
+      "message": "ভিডিও রেকর্ড হচ্ছে"
+   },
+   "popupRecordTypeTitle": {
+      "message": "আপনি কী রেকর্ড করতে চান"
+   },
+   "popupRecordVideoCoreLabel": {
+      "message": "ভিডিও রেকর্ড"
+   },
+   "popupRecordWantTitle": {
+      "message": "আপনি কীভাবে রেকর্ড করতে চান"
+   },
+   "popupSec": {
+      "message": "সেকেন্ড"
+   },
+   "popupSelectMicLabel": {
+      "message": "মাইক্রোফোন"
+   },
+   "popupSelectWebCamLabel": {
+      "message": "ওয়েবক্যাম"
+   },
+   "popupSizeAutoDescription": {
+      "message": "(বর্তমান রেজোলিউশন)"
+   },
+   "popupSizeAutoLabel": {
+      "message": "স্বয়ংক্রিয়"
+   },
+   "popupTextTrialScreenshot": {
+      "message": "সম্পূর্ণ পৃষ্ঠা বা পৃষ্ঠার অংশের স্ক্রিনশট নেওয়ার জন্য আপনার ট্রায়াল শুরু হয়েছে। ট্রায়াল শেষ হওয়ার পরে, আপনি বিনামূল্যে অ্যাকাউন্টে পূর্ণ পৃষ্ঠা বা নির্বাচিত এবং স্ক্রোল মোডে স্ক্রিনশট নিতে পারবেন না। অসীম স্ক্রিনশটের জন্য Nimbus Pro-তে আপগ্রেড করুন।"
+   },
+   "popupTitle": {
+      "message": "Nimble capture"
+   },
+   "popupVideoEditorCrop": {
+      "message": "আপনি যে অঞ্চলটি ক্রপ করতে চান তা নির্বাচন করুন এবং টিক চিহ্নে ক্লিক করুন।"
+   },
+   "popupVideoEditorTrim": {
+      "message": "নীল মার্কার ব্যবহার করে, ভিডিওর যে অংশটি ট্রিম করতে হবে তা নির্বাচন করুন এবং নির্বাচিত অংশ সরান-এ ক্লিক করুন।"
+   },
+   "popupVideoEditorTrimNoSelect": {
+      "message": "ট্রিম করার জন্য কিছু নির্বাচন করা হয়নি।"
+   },
+   "popupVideoEditorWelcomeDescription": {
+      "message": "এখানে, আপনি সহজেই আপনার ভিডিওগুলি ক্রপ এবং ট্রিম করতে পারেন। সম্পাদকের সাথে কাজ করার জন্য \u003Ca href='https://nimblecapture.com/help' target='_blank'>ব্যবহারকারী গাইড পড়ুন\u003C/a>।"
+   },
+   "popupVideoEditorWelcomeTitle": {
+      "message": "ভিডিও সম্পাদকে স্বাগতম!"
+   },
+   "popupVideoErrorConvert": {
+      "message": "একটি ত্রুটি ঘটেছে। অনুগ্রহ করে আবার চেষ্টা করুন।"
+   },
+   "popupVideoGifNotSupport": {
+      "message": "GIF ফাইলের জন্য এই কার্যটি সমর্থিত নয়।"
+   },
+   "popupVideoLimitMessage": {
+      "message": "\u003Cb>প্রতি ভিডিওতে 5 মিনিটের সীমা।\u003C/b> অসীমিত রেকর্ডিং এবং অন্যান্য প্রিমিয়াম বৈশিষ্ট্যের জন্য আপগ্রেড করুন।"
+   },
+   "popupVideoQualityTitle": {
+      "message": "ভিডিও এবং অডিও গুণমান"
+   },
+   "popupVideoReEncoding": {
+      "message": "ভিডিও পুনরায় এনকোডিং সক্রিয় করুন"
+   },
+   "popupVideoReEncodingTitle": {
+      "message": "এই অপশনটি টাইমলাইনের দৈর্ঘ্য সামঞ্জস্য করে। যদি আপনি এই অপশনটি বন্ধ করেন, তবে ভিডিও প্রক্রিয়াকরণ (যখন আপনি রেকর্ডিং বন্ধ করেন) ধীর কম্পিউটারের জন্য অনেক দ্রুত হবে কিন্তু কিছু ক্ষেত্রে টাইমলাইন স্ক্রোল কাজ করবে না। (ধীর কম্পিউটার বা Chrome বুকের জন্য সুপারিশকৃত)"
+   },
+   "popupVideoTitle": {
+      "message": "ভিডিও রেকর্ড করুন"
+   },
+   "popupWelcomeVideo": {
+      "message": "ভিডিও রেকর্ডিংয়ে স্বাগতম"
+   },
+   "popupYoutubeChannel": {
+      "message": "আপনার একটি Youtube চ্যানেল প্রয়োজন"
+   },
+   "popupYoutubeChannelCreates": {
+      "message": "Youtube-এ রেকর্ড করা ভিডিও আপলোড করতে, আপনাকে একটি Youtube চ্যানেল তৈরি করতে হবে।"
+   },
+   "previewReload": {
+      "message": "পৃষ্ঠা রিফ্রেশ করুন"
+   },
+   "rateNotShow": {
+      "message": "আর দেখাবেন না"
+   },
+   "rateRate": {
+      "message": "Nimble capture রেট করুন"
+   },
+   "rateText": {
+      "message": "Nimble capture পছন্দ হয়েছে?\u003Cbr>অনুগ্রহ করে আপনার পর্যালোচনা লিখুন! ধন্যবাদ।"
+   },
+   "tooltipArrowCurve": {
+      "message": "বাঁকা তীর"
+   },
+   "tooltipArrowDouble": {
+      "message": "দ্বৈত তীর"
+   },
+   "tooltipArrowLine": {
+      "message": "তীর রেখা"
+   },
+   "tooltipBlur": {
+      "message": "অস্পষ্ট এলাকা"
+   },
+   "tooltipBtnQuickShare": {
+      "message": "Nimble-এ পাঠান"
+   },
+   "tooltipChangeZoom": {
+      "message": "জুম পরিবর্তন করুন"
+   },
+   "tooltipCircle": {
+      "message": "বৃত্ত"
+   },
+   "tooltipColorAndSizeShadow": {
+      "message": "ছায়ার রঙ এবং আকার"
+   },
+   "tooltipColorFull": {
+      "message": "পূর্ণ রঙ"
+   },
+   "tooltipColorLineAndText": {
+      "message": "রেখা এবং পাঠ্যের রঙ"
+   },
+   "tooltipCopy": {
+      "message": "ক্লিপবোর্ডে কপি করুন"
+   },
+   "tooltipCrop": {
+      "message": "ক্রপ করুন"
+   },
+   "tooltipEditBtnBack": {
+      "message": "পিছনে"
+   },
+   "tooltipEditBtnDrive": {
+      "message": "Google Drive-এ পাঠান"
+   },
+   "tooltipEditBtnDropbox": {
+      "message": "Dropbox-এ পাঠান"
+   },
+   "tooltipEditBtnNimbus": {
+      "message": "Nimbus-এ পাঠান"
+   },
+   "tooltipEditBtnSlack": {
+      "message": "Slack-এ পাঠান"
+   },
+   "tooltipEditBtnYoutube": {
+      "message": "Youtube-এ প্রকাশ করুন"
+   },
+   "tooltipEllipse": {
+      "message": "উপবৃত্ত"
+   },
+   "tooltipFontAndSize": {
+      "message": "ফন্ট এবং আকার"
+   },
+   "tooltipFormula": {
+      "message": "সূত্র সন্নিবেশ করুন"
+   },
+   "tooltipLine": {
+      "message": "রেখা"
+   },
+   "tooltipLineCurve": {
+      "message": "বাঁকা রেখা"
+   },
+   "tooltipLineDotted": {
+      "message": "বিন্দুযুক্ত রেখা"
+   },
+   "tooltipLineWidth": {
+      "message": "রেখার প্রস্থ"
+   },
+   "tooltipLock": {
+      "message": "আকৃতি লক করুন"
+   },
+   "tooltipMakeScreenshot": {
+      "message": "স্ক্রিনশট তৈরি করুন"
+   },
+   "tooltipMarker": {
+      "message": "মার্কার"
+   },
+   "tooltipNoteText": {
+      "message": "পৃষ্ঠার পাঠ্য"
+   },
+   "tooltipNumber": {
+      "message": "সংখ্যাযুক্ত মার্কার"
+   },
+   "tooltipNumbers": {
+      "message": "স্বয়ংক্রিয় সংখ্যাকরণ"
+   },
+   "tooltipOpenFile": {
+      "message": "ছবি সন্নিবেশ করুন"
+   },
+   "tooltipOptions": {
+      "message": "সেটিংস"
+   },
+   "tooltipOptionsWatermark": {
+      "message": "ওয়াটারমার্ক সেটিংস"
+   },
+   "tooltipPassInfo": {
+      "message": "পাসওয়ার্ড কমপক্ষে ৮টি প্রতীক হতে হবে"
+   },
+   "tooltipPassMatch": {
+      "message": "পাসওয়ার্ড মিলছে না"
+   },
+   "tooltipPen": {
+      "message": "কলম"
+   },
+   "tooltipRedo": {
+      "message": "পুনরায় করুন"
+   },
+   "tooltipResize": {
+      "message": "আকার পরিবর্তন করুন"
+   },
+   "tooltipRounded": {
+      "message": "গোলাকার"
+   },
+   "tooltipShortUrl": {
+      "message": "সংক্ষিপ্ত URL"
+   },
+   "tooltipSquare": {
+      "message": "বর্গক্ষেত্র"
+   },
+   "tooltipText": {
+      "message": "পাঠ্য"
+   },
+   "tooltipTextArrow": {
+      "message": "পাঠ্য তীর"
+   },
+   "tooltipTrim": {
+      "message": "ট্রিম করুন"
+   },
+   "tooltipUndo": {
+      "message": "পূর্বাবস্থায় ফিরুন"
+   },
+   "tooltipUndoAll": {
+      "message": "সব পূর্বাবস্থায় ফিরুন"
+   },
+   "tooltipUploadTo": {
+      "message": "আপলোড করুন"
+   },
+   "tooltipVideoEditor": {
+      "message": "ক্রপ/ট্রিম"
+   },
+   "tooltipWrongEmail": {
+      "message": "ভুল ইমেইল"
+   },
+   "tooltipZoomMinus": {
+      "message": "জুম -"
+   },
+   "tooltipZoomPlus": {
+      "message": "জুম +"
+   },
+   "tooltipclassroomSend": {
+      "message": "Google Classroom-এ পাঠান"
+   },
+   "videoCanvas": {
+      "message": "খালি পৃষ্ঠা"
+   },
+   "videoConvert": {
+      "message": "রূপান্তর করুন"
+   },
+   "videoConvertFrameRate": {
+      "message": "ফ্রেম রেট"
+   },
+   "videoConvertInfo": {
+      "message": "আপনার ভিডিওকে MP4 বা GIF ফরম্যাটে রূপান্তর করতে কিছু সময় লাগতে পারে। রূপান্তর শেষ হওয়ার সাথে সাথেই আপনি আপনার ভিডিও সংরক্ষণ করতে পারবেন।"
+   },
+   "videoConvertOpen": {
+      "message": "MP4 বা Gif-এ রূপান্তর করুন"
+   },
+   "videoConvertSize": {
+      "message": "আকার"
+   },
+   "videoConvertSizeOptimal": {
+      "message": "সর্বোত্তম আকার"
+   },
+   "videoEditor": {
+      "message": "ভিডিও সম্পাদক"
+   },
+   "videoEditorTimeline": {
+      "message": "টাইমলাইন জুম"
+   },
+   "videoEditorTrimApply": {
+      "message": "নির্বাচিত অংশ সরান"
+   },
+   "videoEditorTrimCancel": {
+      "message": "বাতিল করুন"
+   },
+   "videoPanelAnimatedCursor": {
+      "message": "অ্যানিমেটেড কার্সর - Alt+L"
+   },
+   "videoPanelArrow": {
+      "message": "তীর - Alt+A"
+   },
+   "videoPanelBlur": {
+      "message": "ঝাপসা - Alt+B"
+   },
+   "videoPanelCamera": {
+      "message": "ওয়েবক্যাম চালু/বন্ধ করুন"
+   },
+   "videoPanelCheckmark": {
+      "message": "টিক চিহ্ন - Alt+C"
+   },
+   "videoPanelClear": {
+      "message": "মুছুন - Alt+N"
+   },
+   "videoPanelClearAll": {
+      "message": "সব মুছুন - Alt+U"
+   },
+   "videoPanelFocusMouse": {
+      "message": "মাউস ফোকাস - Alt+G"
+   },
+   "videoPanelHideShowPanel": {
+      "message": "প্যানেল লুকান/দেখান - Alt+V"
+   },
+   "videoPanelMark": {
+      "message": "চিহ্নিত করুন - Alt+M"
+   },
+   "videoPanelPen": {
+      "message": "কলম - Alt+P"
+   },
+   "videoPanelQuestion": {
+      "message": "প্রশ্ন - Alt+Q"
+   },
+   "videoPanelSimpleCursor": {
+      "message": "সাধারণ কার্সর - Alt+S"
+   },
+   "videoPanelSquare": {
+      "message": "বর্গক্ষেত্র - Alt+R"
+   },
+   "watermarkLimit": {
+      "message": "ওয়াটারমার্কের সর্বোচ্চ আকার - ১ mb"
+   },
+   "watermarkUnsupported": {
+      "message": "অসমর্থিত ফাইল ফরম্যাট"
+   },
+   "welcomeAddOtherContent": {
+      "message": "আপনার আপলোডে অন্যান্য বিষয়বস্তু যোগ করুন"
+   },
+   "welcomeClickNextReady": {
+      "message": "আপনি প্রস্তুত হলে পরবর্তী-তে ক্লিক করুন।"
+   },
+   "welcomeCompletedAllSteps": {
+      "message": "আপনি সব ধাপ সম্পন্ন করেছেন। এখন আপনি আপনার প্রথম ভিডিও রেকর্ড করতে পারেন!"
+   },
+   "welcomeEditVideo": {
+      "message": "ভিডিও সম্পাদনা করুন এবং বোতাম যোগ করুন"
+   },
+   "welcomeForSolutions": {
+      "message": "আমাদের সব সমাধানের জন্য"
+   },
+   "welcomeGetAccessAll": {
+      "message": "* সব Nimbus অ্যাপে অ্যাক্সেস পান"
+   },
+   "welcomeGetQuickLinks": {
+      "message": "আপনার ডোমেন সহ শেয়ার করার জন্য দ্রুত লিঙ্ক পান"
+   },
+   "welcomeHereYouGo": {
+      "message": "এই যে!"
+   },
+   "welcomeInformationManagement": {
+      "message": "সহযোগিতা এবং তথ্য ব্যবস্থাপনা"
+   },
+   "welcomeMakeScreenshot": {
+      "message": "একটি স্ক্রিনশট তৈরি করুন"
+   },
+   "welcomeMuchMoreCome": {
+      "message": "আরও অনেক কিছু আসছে। যুক্ত থাকুন!"
+   },
+   "welcomeNeedYourVideo": {
+      "message": "আপনার ভিডিও ক্যাপচার অর্ডার এবং স্ক্রিনশট টুল হাতের কাছে প্রস্তুত রাখতে চান?"
+   },
+   "welcomeNext": {
+      "message": "পরবর্তী"
+   },
+   "welcomeNimbusCapturePromo": {
+      "message": "প্রতিদিনের ব্যবহারের জন্য ভিডিও ক্যাপচার অর্ডার এবং স্ক্রিনশট সমাধান"
+   },
+   "welcomeNimbusClarityPromo": {
+      "message": "অ্যাসিঙ্ক্রোনাস মেসেজিং-এর জন্য ভিডিও ও অডিও ক্যাপচার অর্ডার (+Windows ডেস্কটপ অ্যাপ)"
+   },
+   "welcomeNimbusClipperPromo": {
+      "message": "ওয়েব থেকে শুধুমাত্র প্রাসঙ্গিক তথ্য সংরক্ষণ করুন: নির্বাচন করুন, সংরক্ষণ করুন, শেয়ার করুন"
+   },
+   "welcomeNimbusNotePromo": {
+      "message": "তথ্য পরিচালনা এবং শেয়ার করার জন্য আপনার ডিজিটাল সদর দপ্তর"
+   },
+   "welcomeOneAccount": {
+      "message": "একটি Nimbus অ্যাকাউন্ট"
+   },
+   "welcomePageTitle": {
+      "message": "Nimble Screenshot এ স্বাগতম"
+   },
+   "welcomePinExtension": {
+      "message": "এক্সটেনশন পিন করুন"
+   },
+   "welcomePleaseClickIcon": {
+      "message": "অনুগ্রহ করে জিগস আইকনে ক্লিক করুন, তালিকায় Nimbus খুঁজুন এবং পিন-এ ক্লিক করুন। আমাদের ডানদিকের ছোট GIF আপনাকে সাহায্য করবে।"
+   },
+   "welcomePleaseCreateAccount": {
+      "message": "অনুগ্রহ করে একটি অ্যাকাউন্ট তৈরি করুন:"
+   },
+   "welcomeProtectYourQuick": {
+      "message": "পাসওয়ার্ড দিয়ে আপনার দ্রুত লিঙ্কগুলি সুরক্ষিত করুন"
+   },
+   "welcomeReadyStart": {
+      "message": "শুরু করতে প্রস্তুত?"
+   },
+   "welcomeRecordVideo": {
+      "message": "একটি ভিডিও রেকর্ড করুন"
+   },
+   "welcomeSaveVideosScreenshots": {
+      "message": "আপনার ভিডিও এবং স্ক্রিনশট সংরক্ষণ করুন"
+   },
+   "welcomeSettleLess": {
+      "message": "কম মেনে নিন **"
+   },
+   "welcomeStayCaptureOnly": {
+      "message": "** শুধুমাত্র Nimble capture-এর সাথে থাকুন"
+   },
+   "welcomeStreamlineYour": {
+      "message": "আপনার স্ট্রিমলাইন করুন"
+   },
+   "welcomeThankYouChoosing": {
+      "message": "Nimble capture নির্বাচন করার জন্য ধন্যবাদ!"
+   },
+   "welcomeWantFreeUpgrade": {
+      "message": "আমি একটি বিনামূল্যে আপগ্রেড চাই*"
+   },
+   "welcomeWellDone": {
+      "message": "চমৎকার!"
+   },
+   "youtubeCreate": {
+      "message": "তৈরি করুন"
+   },
+   "youtubeName": {
+      "message": "নাম"
+   },
+   "youtubeNoPlaylist": {
+      "message": "প্লেলিস্ট ছাড়া"
+   },
+   "youtubePlaylist": {
+      "message": "প্লেলিস্ট"
+   },
+   "youtubePrivate": {
+      "message": "ব্যক্তিগত"
+   },
+   "youtubePublic": {
+      "message": "পাবলিক"
+   },
+   "youtubeUnlisted": {
+      "message": "তালিকাবহির্ভূত"
+   }
+}

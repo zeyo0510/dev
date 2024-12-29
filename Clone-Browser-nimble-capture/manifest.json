@@ -1,0 +1,73 @@
+{
+   "action": {
+      "default_popup": "menu.html"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "commands": {
+      "pause_video": {
+         "description": "Pause video recording",
+         "suggested_key": {
+            "default": "Ctrl+Shift+0",
+            "mac": "Command+Shift+0"
+         }
+      },
+      "start_desktop_video": {
+         "description": "Start recording desktop",
+         "suggested_key": {
+            "default": "Ctrl+Shift+8",
+            "mac": "Command+Shift+8"
+         }
+      },
+      "start_tab_video": {
+         "description": "Start recording tab/page",
+         "suggested_key": {
+            "default": "Ctrl+Shift+7",
+            "mac": "Command+Shift+7"
+         }
+      },
+      "stop_video": {
+         "description": "Stop video recording",
+         "suggested_key": {
+            "default": "Ctrl+Shift+9",
+            "mac": "Command+Shift+9"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "css": [ "assets/nsc-crop.css", "assets/nsc-cropper.css", "assets/nsc-fragment.css", "assets/nsc-video-panel.css", "assets/timer.css", "assets/flex.css", "assets/popup.css", "assets/global.css", "assets/fixStyle.css" ],
+      "js": [ "content-script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/icons/128x128.png",
+      "16": "assets/icons/16x16.png",
+      "32": "assets/icons/32x32.png",
+      "48": "assets/icons/48x48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCE2FIgHdWkDJH0H3Idf+PaGQcCsuKkw1BpBXVjfVKprO9xu3LiZM8/4NVUAOGBktLe3NiBFurwNLsLMTO7WsknokwWvm15Z4wM6YGFuUta39/y07CDKq49OaAoui0RrN8ogf6gjcAQW3fDfO4a24vqSoYk3ypWX5ZjD/+egMUvIQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "oauth2": {
+      "client_id": "330587763390.apps.googleusercontent.com",
+      "scopes": [ "openid email https://www.googleapis.com/auth/drive.readonly.metadata https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtubepartner" ]
+   },
+   "options_page": "options.html",
+   "permissions": [ "alarms", "webRequest", "declarativeNetRequest", "scripting", "downloads", "tabs", "activeTab", "storage", "unlimitedStorage", "contextMenus", "desktopCapture", "tabCapture", "clipboardWrite", "identity", "system.display", "tabCapture", "offscreen" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "12.0.1",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "displayMedia.html", "content-script.js", "ffmpeg/*", "images/*", "assets/*", "fonts/*" ]
+   } ]
+}

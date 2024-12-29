@@ -1,0 +1,1538 @@
+{
+   "appDesc": {
+      "message": "Captura captures de pantalla de TOTA la pàgina. Edita i desa captures de pantalla. Enregistra screencasts - enregistra vídeo de la teva pantalla. Enregistra guies pas a pas."
+   },
+   "appName": {
+      "message": "Nimble capture"
+   },
+   "appNameMini": {
+      "message": "Nimble capture"
+   },
+   "btnAccessMic": {
+      "message": "Accés al micròfon i càmera"
+   },
+   "btnAndroidVersion": {
+      "message": "Versió Android"
+   },
+   "btnBlankScreen": {
+      "message": "Pantalla en blanc"
+   },
+   "btnBrowserWindow": {
+      "message": "Captura d'escriptori"
+   },
+   "btnCancel": {
+      "message": "Cancel·la"
+   },
+   "btnCaptureFragment": {
+      "message": "Captura fragment"
+   },
+   "btnCaptureFragmentScroll": {
+      "message": "Captura fragment desplaçable"
+   },
+   "btnCaptureVideo": {
+      "message": "Enregistra vídeo"
+   },
+   "btnConnectSlack": {
+      "message": "Connecta Slack"
+   },
+   "btnDelayedScreen": {
+      "message": "Captura amb retard"
+   },
+   "btnDesktop": {
+      "message": "Captura des de l'escriptori"
+   },
+   "btnEnableCopy": {
+      "message": "Copia al porta-retalls"
+   },
+   "btnEntirePage": {
+      "message": "Pàgina sencera"
+   },
+   "btnGetStarted": {
+      "message": "Comença"
+   },
+   "btnGoPremium": {
+      "message": "Canvia a Nimbus per a Empreses"
+   },
+   "btnInjectGmailMain": {
+      "message": "Insereix vídeo o captura de pantalla"
+   },
+   "btnInjectGmailScreencast": {
+      "message": "Grava un nou vídeo"
+   },
+   "btnInjectGmailScreenshot": {
+      "message": "Fes una nova captura de pantalla"
+   },
+   "btnLearnMore": {
+      "message": "Més informació"
+   },
+   "btnManual": {
+      "message": "Manual"
+   },
+   "btnOkGotIt": {
+      "message": "D'acord, entès"
+   },
+   "btnReadyVideo": {
+      "message": "Estic llest per enregistrar vídeo"
+   },
+   "btnSelectedArea": {
+      "message": "Àrea seleccionada"
+   },
+   "btnSelectedScroll": {
+      "message": "Selecciona i desplaça"
+   },
+   "btnSignupUpToViewUpload": {
+      "message": "Registra't per veure les càrregues"
+   },
+   "btnVisiblePage": {
+      "message": "Part visible de la pàgina"
+   },
+   "cropBtnCancel": {
+      "message": "Cancel·la"
+   },
+   "cropBtnCopy": {
+      "message": "Copia al porta-retalls"
+   },
+   "cropBtnEdit": {
+      "message": "Edita"
+   },
+   "cropBtnNimbus": {
+      "message": "Envia a Nimbus"
+   },
+   "cropBtnSave": {
+      "message": "Desa"
+   },
+   "cropBtnSavePdf": {
+      "message": "Desa com a PDF"
+   },
+   "disable": {
+      "message": "Desactiva"
+   },
+   "editBtnBack": {
+      "message": "Enrere"
+   },
+   "editBtnCopy": {
+      "message": "Copia al porta-retalls"
+   },
+   "editBtnDiscard": {
+      "message": "Descarta"
+   },
+   "editBtnDone": {
+      "message": "Fet"
+   },
+   "editBtnDrive": {
+      "message": "Google Drive"
+   },
+   "editBtnDropbox": {
+      "message": "Dropbox"
+   },
+   "editBtnNimbusScreen": {
+      "message": "Carrega la captura de pantalla"
+   },
+   "editBtnNimbusVideo": {
+      "message": "Carrega el vídeo"
+   },
+   "editBtnPrint": {
+      "message": "Imprimeix"
+   },
+   "editBtnQuickShare": {
+      "message": "Compartició ràpida"
+   },
+   "editBtnQuickShare2": {
+      "message": "Carrega a la carpeta"
+   },
+   "editBtnSave": {
+      "message": "Desa com a imatge"
+   },
+   "editBtnSavePDF": {
+      "message": "Desa com a PDF"
+   },
+   "editBtnSaveVideo": {
+      "message": "Desa el vídeo"
+   },
+   "editBtnSlack": {
+      "message": "Slack"
+   },
+   "editBtnYoutube": {
+      "message": "Youtube"
+   },
+   "editVideoTitle": {
+      "message": "Editor de vídeo"
+   },
+   "gDriveBtnDone": {
+      "message": "Fet"
+   },
+   "gDriveLabel": {
+      "message": "Selecciona la carpeta on vols desar la captura de pantalla"
+   },
+   "gDriveLabelFolders": {
+      "message": "La captura de pantalla es desarà"
+   },
+   "gDriveLogout": {
+      "message": "Tanca la sessió"
+   },
+   "gDriveLogoutFrom": {
+      "message": "Tanca la sessió des de"
+   },
+   "gDriveMainFolder": {
+      "message": "Aquesta és la carpeta principal"
+   },
+   "gDriveNoItems": {
+      "message": "Sense elements"
+   },
+   "gDriveNotAuthorized": {
+      "message": "No has iniciat sessió al teu compte"
+   },
+   "gDriveSendTo": {
+      "message": "Envia a"
+   },
+   "gDriveTitle": {
+      "message": "Envia a Google Drive"
+   },
+   "gDriveUploadPrivate": {
+      "message": "Puja com a privat"
+   },
+   "hotKeys": {
+      "message": "Dreceres de teclat"
+   },
+   "labelCaptureHelper": {
+      "message": "Selecciona una de les pantalles per capturar!"
+   },
+   "labelCnameFree": {
+      "message": "Personalitza el teu enllaç"
+   },
+   "labelDropImage": {
+      "message": "deixa anar la imatge aquí"
+   },
+   "labelFileChangeShare": {
+      "message": "Si l'opció està activada, no es crearà un enllaç públic."
+   },
+   "labelInsertScreencast": {
+      "message": "Mira el vídeo"
+   },
+   "labelInsertScreenshot": {
+      "message": "Obre la captura de pantalla"
+   },
+   "labelPreviewLoading": {
+      "message": "Carregant..."
+   },
+   "labelPreviewLoadingVideo": {
+      "message": "Processant vídeo - si us plau, espereu..."
+   },
+   "labelRedactorLoading": {
+      "message": "Carregant... si us plau, espereu..."
+   },
+   "newReleaseText": {
+      "message": "\u003Cli>Nou disseny;\u003C/li>\u003Cli>Un bloqueig que impedeix editar elements;\u003C/li>\u003Cli>Retard de la captura de pantalla;\u003C/li>\u003Cli>Possibilitat de personalitzar el menú principal eliminant el que no és necessari;\u003C/li>\u003Cli>Possibilitat d'afegir deliberadament números al costat de les formes necessàries;\u003C/li>\u003Cli>Possibilitat d'enviar ràpidament a Nimbus/Slack des de l'editor utilitzant la combinació de tecles Ctrl+Enter;\u003C/li>\u003Cli>Corregits alguns altres errors;\u003C/li>"
+   },
+   "newReleaseTitle": {
+      "message": "Benvingut a la nova versió de Nimble Screenshot"
+   },
+   "nimbusAccessAnyTimes": {
+      "message": "Accediu a les captures de pantalla i screencasts en qualsevol moment i des de qualsevol dispositiu;"
+   },
+   "nimbusAccount": {
+      "message": "Compte de Fusebase"
+   },
+   "nimbusBad": {
+      "message": "Dolent"
+   },
+   "nimbusBannedDeviceDestruction": {
+      "message": "Aquest dispositiu va ser prohibit per tu."
+   },
+   "nimbusBeBetter": {
+      "message": "Millora"
+   },
+   "nimbusBtnAuthFacebook": {
+      "message": "Utilitzant Facebook"
+   },
+   "nimbusBtnAuthGoogle": {
+      "message": "Utilitzant Google"
+   },
+   "nimbusBtnLogin": {
+      "message": "Inicia sessió a FuseBase"
+   },
+   "nimbusBtnRemind": {
+      "message": "Has oblidat la teva contrasenya?"
+   },
+   "nimbusBtnSignup": {
+      "message": "Crea un compte"
+   },
+   "nimbusCaptureUpgradePremium": {
+      "message": "Més funcions amb\u003Cbr>Nimble capture Business"
+   },
+   "nimbusCaptureUpgradePro": {
+      "message": "Més funcions amb\u003Cbr>Nimble capture Pro"
+   },
+   "nimbusChannels": {
+      "message": "Canals"
+   },
+   "nimbusComment": {
+      "message": "Comentari"
+   },
+   "nimbusCommentPlaceholder": {
+      "message": "Comenta la teva captura de pantalla"
+   },
+   "nimbusCreateAccount": {
+      "message": "Crea un compte gratuït"
+   },
+   "nimbusDid": {
+      "message": "Fet"
+   },
+   "nimbusEducationDiscounts": {
+      "message": "Descomptes per a l'educació"
+   },
+   "nimbusEnter": {
+      "message": "Inicia sessió a FuseBase (anteriorment Nimbus)"
+   },
+   "nimbusEnvironmentInfo": {
+      "message": "Afegeix informació sobre el sistema i la pàgina"
+   },
+   "nimbusFragmentScrollTitle": {
+      "message": "Amb aquest mode, podeu fer una captura de pantalla de fragments separats amb desplaçament a la pàgina. Per exemple, podria ser una finestra de xat, un panell de control de servei o una finestra de tasques a Jira. La nostra aplicació detectarà automàticament aquestes àrees, en aquest moment podreu seleccionar la que necessiteu."
+   },
+   "nimbusGoPro": {
+      "message": "Canvia a Nimbus Pro"
+   },
+   "nimbusGood": {
+      "message": "Bé!"
+   },
+   "nimbusHelp": {
+      "message": "Ajuda"
+   },
+   "nimbusIncreaseLimit": {
+      "message": "Augmenta el límit"
+   },
+   "nimbusInfoAgent": {
+      "message": "Agent d'usuari"
+   },
+   "nimbusInfoBrowser": {
+      "message": "Navegador de l'usuari"
+   },
+   "nimbusInfoPage": {
+      "message": "Pàgina web"
+   },
+   "nimbusInfoPlatform": {
+      "message": "Plataforma de l'usuari"
+   },
+   "nimbusInfoScreen": {
+      "message": "Resolució de la pantalla"
+   },
+   "nimbusIsBusiness": {
+      "message": "Tinc Nimbus Business"
+   },
+   "nimbusIsPro": {
+      "message": "Tinc Nimbus Pro"
+   },
+   "nimbusLabelEmail": {
+      "message": "Correu electrònic"
+   },
+   "nimbusLabelPassword": {
+      "message": "Contrasenya"
+   },
+   "nimbusLabelPasswordAndInfo": {
+      "message": "Contrasenya (mín. 8 símbols)"
+   },
+   "nimbusLabelRetypePass": {
+      "message": "Torna a escriure la contrasenya"
+   },
+   "nimbusLimitDescription": {
+      "message": "Pots canviar a Nimbus Pro per augmentar el teu límit de dades mensual a 1 GB."
+   },
+   "nimbusLimitDeviceDestruction": {
+      "message": "Si voleu utilitzar Nimble capture en més de dos dispositius, necessitareu actualitzar el vostre pla."
+   },
+   "nimbusLimitDeviceTitle": {
+      "message": "El vostre compte de Nimble capture ja s'està utilitzant al màxim nombre de dispositius."
+   },
+   "nimbusLimitOf": {
+      "message": "de"
+   },
+   "nimbusLimitSpace": {
+      "message": "No pots pujar aquest fitxer perquè has gairebé arribat al teu límit de dades mensual de 100 MB."
+   },
+   "nimbusLimitUsage": {
+      "message": "Ús:"
+   },
+   "nimbusLimitVideo": {
+      "message": "Aquest vídeo és massa gran! Però no s'ha perdut..."
+   },
+   "nimbusLimitVideoDestruction": {
+      "message": "Mida màxima de fitxer per a Nimbus Pro = 1GB Si us plau, escriu a \u003Cb>team@nimbusweb.co\u003C/b> per augmentar el límit de fitxer."
+   },
+   "nimbusLimitVideoDestructionFree": {
+      "message": "Mida màxima de fitxer per a comptes gratuïts = 10MB Canvia a Nimbus Pro per augmentar el límit de fitxer."
+   },
+   "nimbusLimitVideoDestructionOrgFree": {
+      "message": "El fitxer supera la mida màxima permesa per a un compte gratuït (10 MB). Contacta amb el propietari de l'espai de treball per a més detalls."
+   },
+   "nimbusLimitVideoDestructionOrgLimit": {
+      "message": "El fitxer no es guardarà a FuseBase perquè s'ha arribat al límit de trànsit mensual (100MB). Canvia a un pla premium per augmentar el teu límit."
+   },
+   "nimbusLimitVideoDestructionOrgPremium": {
+      "message": "El fitxer supera la mida màxima permesa per a un compte (1GB). Contacta amb el propietari de l'espai de treball per a més detalls."
+   },
+   "nimbusLimitVideoDestructionStreamMonth": {
+      "message": "En el pla gratuït, pots enregistrar com a màxim 60 vídeos al mes. Canvia al pla Nimbus Pro per eliminar la restricció."
+   },
+   "nimbusLimitVideoDestructionStreamTime": {
+      "message": "Important! En el pla gratuït, pots enregistrar un vídeo de fins a 5 minuts de durada. Canvia a Nimbus Pro per enregistrar vídeos més llargs."
+   },
+   "nimbusLimitVideoDurationDestruction": {
+      "message": "La teva prova de 7 dies ha començat. Ara pots enregistrar vídeos sense límit de mida. Després de la prova, podràs enregistrar vídeos amb una durada de no més de 5 minuts. Canvia a Nimbus Pro per activar la gravació il·limitada."
+   },
+   "nimbusLimitVideoFree": {
+      "message": "Aquest vídeo és massa gran! Però no s'ha perdut..."
+   },
+   "nimbusLimitVideoOrgFree": {
+      "message": "Aquest vídeo és massa gran! Però no s'ha perdut..."
+   },
+   "nimbusLimitVideoOrgLimit": {
+      "message": "Aquest vídeo és massa gran! Però no s'ha perdut..."
+   },
+   "nimbusLimitVideoOrgPremium": {
+      "message": "Aquest vídeo és massa gran! Però no s'ha perdut..."
+   },
+   "nimbusLimitVideoStreamMonth": {
+      "message": "Ja no pots enregistrar ..."
+   },
+   "nimbusLimitVideoStreamTime": {
+      "message": "Ja no pots enregistrar ..."
+   },
+   "nimbusLogin": {
+      "message": "Inicia la sessió"
+   },
+   "nimbusLogout": {
+      "message": "Tanca la sessió a FuseBase"
+   },
+   "nimbusManageDevices": {
+      "message": "Gestiona dispositius"
+   },
+   "nimbusNoThanks": {
+      "message": "No, gràcies"
+   },
+   "nimbusNotAccount": {
+      "message": "No tinc un compte"
+   },
+   "nimbusNoteName": {
+      "message": "Nom de la pàgina"
+   },
+   "nimbusOr": {
+      "message": "o"
+   },
+   "nimbusOrganizeUploadFolders": {
+      "message": "Organitzeu les vostres càrregues per carpetes, subcarpetes i etiquetes;"
+   },
+   "nimbusPlaceholderEmail": {
+      "message": "Correu electrònic"
+   },
+   "nimbusPlaceholderEnterText": {
+      "message": "Escriu el text"
+   },
+   "nimbusPlaceholderPassword": {
+      "message": "Contrasenya"
+   },
+   "nimbusPrivate": {
+      "message": "Privat"
+   },
+   "nimbusPrivateMessage": {
+      "message": "Missatge privat"
+   },
+   "nimbusProAddWaterMark": {
+      "message": "Afegeix la teva marca d'aigua per a la marca"
+   },
+   "nimbusProConvertGIF": {
+      "message": "Converteix vídeo a GIF"
+   },
+   "nimbusProConvertMP4": {
+      "message": "Converteix vídeo a MP4"
+   },
+   "nimbusProCropVideo": {
+      "message": "Retalla el teu vídeo"
+   },
+   "nimbusProScreenshotLimit": {
+      "message": "Captures de pantalla il·limitades"
+   },
+   "nimbusProSendDropbox": {
+      "message": "Envia imatges i vídeos a Dropbox"
+   },
+   "nimbusProSendGoogleDrive": {
+      "message": "Puja imatges i vídeos a Google Drive"
+   },
+   "nimbusProSendGoogleDrive2": {
+      "message": "Puja com a enllaç públic o privat a Google Drive"
+   },
+   "nimbusProSendGoogleDriveFirefox": {
+      "message": "Puja imatges a Google Drive"
+   },
+   "nimbusProSendYoutube": {
+      "message": "Envia vídeo a Youtube"
+   },
+   "nimbusProSupport": {
+      "message": "Suport prioritari"
+   },
+   "nimbusProTrimVideo": {
+      "message": "Retalla el teu vídeo"
+   },
+   "nimbusProVideoLimit": {
+      "message": "Gravacions il·limitades"
+   },
+   "nimbusRate": {
+      "message": "T'agrada Nimble Screenshot? Dona-li una puntuació!"
+   },
+   "nimbusRateUs": {
+      "message": "Valora'ns"
+   },
+   "nimbusRegistration": {
+      "message": "Registre"
+   },
+   "nimbusRemindPass": {
+      "message": "Recorda la contrasenya"
+   },
+   "nimbusSaveScreencast": {
+      "message": "Desa el screencast"
+   },
+   "nimbusSaveScreenshot": {
+      "message": "Desa la captura de pantalla"
+   },
+   "nimbusSearch": {
+      "message": "Cerca"
+   },
+   "nimbusSelectChannel": {
+      "message": "Selecciona el canal"
+   },
+   "nimbusSelectFolder": {
+      "message": "Carpeta"
+   },
+   "nimbusSelectOrganization": {
+      "message": "Organització"
+   },
+   "nimbusSelectWorkspace": {
+      "message": "Espai de treball"
+   },
+   "nimbusSend": {
+      "message": "Envia a Nimble"
+   },
+   "nimbusShareFriends": {
+      "message": "Envieu captures de pantalla i screencasts a amics i companys;"
+   },
+   "nimbusSlackAccount": {
+      "message": "Compte de Slack"
+   },
+   "nimbusSlackHidePanel": {
+      "message": "Amaga el panell de Slack"
+   },
+   "nimbusSlackLogout": {
+      "message": "Tanca la sessió a Slack"
+   },
+   "nimbusSlackSend": {
+      "message": "Envia a Slack"
+   },
+   "nimbusSlackWelcome": {
+      "message": "Dedica un moment a llegir:"
+   },
+   "nimbusSlackWelcome2": {
+      "message": "Nimble Screenshot no tindrà accés als missatges a les sales de xat. Totes les teves converses romandran privades. Nimble Screenshot només pot carregar captures de pantalla a Slack"
+   },
+   "nimbusSlackWelcome3": {
+      "message": "Si tens alguna pregunta, si us plau, escriu un correu electrònic"
+   },
+   "nimbusStreamDestruction": {
+      "message": "Per utilitzar el mode de transmissió/instantani, necessiteu tenir un compte de FuseBase."
+   },
+   "nimbusStreamStartDestruction": {
+      "message": "Nimble capture necessitarà accés al vostre micròfon i càmera per enregistrar vídeo que és un permís d'una sola vegada."
+   },
+   "nimbusStreamStartTitle": {
+      "message": "Gràcies per registrar-vos.\u003Cbr>Per començar a gravar, feu clic a Inicia la gravació instantània."
+   },
+   "nimbusStreamTitle": {
+      "message": "La velocitat és l'avantatge principal de l'ús d'un enregistrament de pantalla en mode de transmissió/instantani. En el moment en què atureu la gravació, el vídeo ja està al servidor i no cal esperar que s'acabi la càrrega."
+   },
+   "nimbusSupportMenu": {
+      "message": "Suport"
+   },
+   "nimbusSupportMenu1": {
+      "message": "Guies i Preguntes Freqüents"
+   },
+   "nimbusSupportMenu2": {
+      "message": "Contacta amb el suport"
+   },
+   "nimbusThanksYou": {
+      "message": "Gràcies per la informació"
+   },
+   "nimbusUpgradePro": {
+      "message": "Per què Nimbus Pro és millor"
+   },
+   "nimbusViewUploads": {
+      "message": "Mostra les meves càrregues a FuseBase"
+   },
+   "nimbusViewUploadsToDropbox": {
+      "message": "Obre el fitxer a Dropbox"
+   },
+   "nimbusYoutubeSend": {
+      "message": "Publica a Youtube"
+   },
+   "notificationCopy": {
+      "message": "La imatge s'ha copiat al porta-retalls."
+   },
+   "notificationCrop": {
+      "message": "Arrossega i captura la pàgina (prem Esc per sortir)"
+   },
+   "notificationDesktopDrawingTools": {
+      "message": "Les eines de dibuix no estan disponibles en el mode d'enregistrament de l'escriptori. Utilitza l'enregistrament de la pestanya en lloc de l'enregistrament de l'escriptori."
+   },
+   "notificationDesktopTabSound": {
+      "message": "El so del sistema no està disponible en el mode d'enregistrament de l'escriptori. Utilitza l'enregistrament de la pestanya en lloc de l'enregistrament de l'escriptori."
+   },
+   "notificationDesktopVideoCamera": {
+      "message": "La càmera de vídeo no està disponible en el mode d'enregistrament de l'escriptori. Utilitza l'enregistrament de la pestanya en lloc de l'enregistrament de l'escriptori."
+   },
+   "notificationEmailFail": {
+      "message": "Aquest correu electrònic ja està registrat."
+   },
+   "notificationEmailIncorrect": {
+      "message": "Correu electrònic incorrect. Si us plau, torna-ho a provar."
+   },
+   "notificationErrorActiveTab": {
+      "message": "Nimble capture no pot iniciar la gravació mentre s'està inicialitzant. Per activar l'extensió, has de fer clic a la icona de Nimble capture al panell."
+   },
+   "notificationErrorChromeTab": {
+      "message": "Actualment no s'admet la gravació de les pàgines internes de Chrome o les pàgines de les aplicacions."
+   },
+   "notificationImageCopied": {
+      "message": "Copiat"
+   },
+   "notificationImageNotCopied": {
+      "message": "No s'ha pogut copiar"
+   },
+   "notificationInsertInfo": {
+      "message": "Només pots inserir imatges."
+   },
+   "notificationLoginFail": {
+      "message": "Inici de sessió o contrasenya incorrectes. Si us plau, torna-ho a provar."
+   },
+   "notificationNetworkError": {
+      "message": "Problema amb el servidor o la teva connexió a Internet. Si us plau, torna-ho a provar."
+   },
+   "notificationReachedLimit": {
+      "message": "Has arribat al teu límit de trànsit mensual (100 MB). Per continuar, has de comprar Nimbus Pro."
+   },
+   "notificationRegisterFail": {
+      "message": "Error en el registre. Si us plau, torna-ho a provar."
+   },
+   "notificationRestoreSent": {
+      "message": "Les instruccions de restauració s'han enviat al teu correu electrònic."
+   },
+   "notificationUploaded": {
+      "message": "La càrrega ha finalitzat."
+   },
+   "notificationUrlCopied": {
+      "message": "La URL s'ha copiat al porta-retalls."
+   },
+   "notificationWrong": {
+      "message": "Alguna cosa ha anat malament. Si us plau, torna-ho a provar."
+   },
+   "onlyForChrome": {
+      "message": "Només per a Chrome"
+   },
+   "onlyForFirefox": {
+      "message": "Només per a Firefox"
+   },
+   "optionLabelEnableWatermark": {
+      "message": "Afegeix la teva marca d'aigua"
+   },
+   "optionLabelEnableWatermarkTimer": {
+      "message": "Amaga la marca d'aigua al vídeo després de"
+   },
+   "optionLabelWatermarkFont": {
+      "message": "Font"
+   },
+   "optionLabelWatermarkFontColor": {
+      "message": "Color"
+   },
+   "optionLabelWatermarkFontSize": {
+      "message": "Mida"
+   },
+   "optionLabelWatermarkImage": {
+      "message": "Imatge"
+   },
+   "optionLabelWatermarkSelectFile": {
+      "message": "Selecciona fitxer"
+   },
+   "optionLabelWatermarkSelectPosition": {
+      "message": "Selecciona la posició de la teva marca d'aigua"
+   },
+   "optionLabelWatermarkSize": {
+      "message": "Mida de la marca d'aigua:"
+   },
+   "optionLabelWatermarkSizeLarge": {
+      "message": "Gran"
+   },
+   "optionLabelWatermarkSizeSmall": {
+      "message": "Petita"
+   },
+   "optionLabelWatermarkText": {
+      "message": "Text"
+   },
+   "optionLabelWatermarkTimer1": {
+      "message": "1 seg"
+   },
+   "optionLabelWatermarkTimer10": {
+      "message": "10 seg"
+   },
+   "optionLabelWatermarkTimer30": {
+      "message": "30 seg"
+   },
+   "optionLabelWatermarkTimer5": {
+      "message": "5 seg"
+   },
+   "optionLabelWatermarkTimer60": {
+      "message": "1 min"
+   },
+   "optionLabelWatermarkTransparent": {
+      "message": "Transparència de la marca d'aigua:"
+   },
+   "optionLabelWatermarkTransparentLarge": {
+      "message": "Gran"
+   },
+   "optionLabelWatermarkTransparentSmall": {
+      "message": "Sense transparència"
+   },
+   "optionSelectGithubSend": {
+      "message": "Desa via Github"
+   },
+   "optionSelectGithubSendNimbus": {
+      "message": "Envia a Nimbus després de Github"
+   },
+   "optionSelectSendDone": {
+      "message": "Obre la finestra de pujada"
+   },
+   "optionSelectSendDoneVideo": {
+      "message": "Obre la pàgina de pujada/conversió"
+   },
+   "optionSelectSendDownload": {
+      "message": "Envia a Google/Slack/Dropbox"
+   },
+   "optionSelectSendDropbox": {
+      "message": "Envia a Dropbox"
+   },
+   "optionSelectSendEdit": {
+      "message": "Edita"
+   },
+   "optionSelectSendGoogle": {
+      "message": "Envia a Google"
+   },
+   "optionSelectSendNimbus": {
+      "message": "Envia a Nimbus"
+   },
+   "optionSelectSendQuick": {
+      "message": "Pujada ràpida"
+   },
+   "optionSelectSendSave": {
+      "message": "Descarrega"
+   },
+   "optionSelectSendYoutube": {
+      "message": "Envia a Youtube"
+   },
+   "optionsCaptureSettings": {
+      "message": "Configuració de captura de pantalla"
+   },
+   "optionsGeneral": {
+      "message": "General"
+   },
+   "optionsLabelAfterClicking": {
+      "message": "Després de fer clic a la icona"
+   },
+   "optionsLabelAnalyticsEnable": {
+      "message": "Envia estadístiques d'ús anònimes a Nimbus"
+   },
+   "optionsLabelAndThen": {
+      "message": "i després"
+   },
+   "optionsLabelAutoShortUrl": {
+      "message": "Escurça automàticament l'URL després de pujar"
+   },
+   "optionsLabelCanUse": {
+      "message": "Designacions disponibles:"
+   },
+   "optionsLabelDelayedScreenshotTime": {
+      "message": "Temps de retard per a captures de pantalla (segons)"
+   },
+   "optionsLabelDepthScreenshot": {
+      "message": "Filtre de profunditat de color (1 - desactivat)"
+   },
+   "optionsLabelDesktopVideo": {
+      "message": "Inicia l'enregistrament d'escriptori"
+   },
+   "optionsLabelFilenameTemplateScreencast": {
+      "message": "Patró de nom de fitxer per a captures de vídeo"
+   },
+   "optionsLabelFilenameTemplateScreenshot": {
+      "message": "Patró de nom de fitxer per a captures de pantalla"
+   },
+   "optionsLabelHideFixedElements": {
+      "message": "Amaga els elements fixos"
+   },
+   "optionsLabelImageFormat": {
+      "message": "Format"
+   },
+   "optionsLabelImageQuality": {
+      "message": "Qualitat"
+   },
+   "optionsLabelInjectGmailScreenshot": {
+      "message": "Mostra Nimbus a Gmail"
+   },
+   "optionsLabelKeepOriginalResolution": {
+      "message": "Mantén la resolució original (per a Retina)"
+   },
+   "optionsLabelLoadToNS": {
+      "message": "Envia a Nimbus/Slack"
+   },
+   "optionsLabelPauseVideo": {
+      "message": "Pausa/reprèn l'enregistrament de vídeo"
+   },
+   "optionsLabelQuickCaptureEnable": {
+      "message": "Activa la captura ràpida de pantalla (sense obrir el menú)"
+   },
+   "optionsLabelQuickVideoCaptureEnable": {
+      "message": "Activa l'enregistrament ràpid (el menú d'enregistrament de vídeo es mostrarà sempre primer)"
+   },
+   "optionsLabelQuickVideoCaptureGithubEnable": {
+      "message": "Mostra Nimbus a Github"
+   },
+   "optionsLabelSaveAs": {
+      "message": "Mostra el quadre de diàleg 'Desa com'"
+   },
+   "optionsLabelSaveCropPosition": {
+      "message": "Desa la posició de l'àrea seleccionada"
+   },
+   "optionsLabelShowContentMenu": {
+      "message": "Mostra al menú contextual"
+   },
+   "optionsLabelShowInfoPrint": {
+      "message": "Mostra URL/data en la impressió"
+   },
+   "optionsLabelShowNewButton": {
+      "message": "Mostra 'Nou' després de l'actualització de l'aplicació"
+   },
+   "optionsLabelStopVideo": {
+      "message": "Atura l'enregistrament de vídeo"
+   },
+   "optionsLabelStreamMenuEnable": {
+      "message": "Activa l'enregistrament instantani"
+   },
+   "optionsLabelTabVideo": {
+      "message": "Inicia l'enregistrament de pestanya/pàgina"
+   },
+   "optionsLabelTimeScrollEntirePage": {
+      "message": "Temps de retard per al desplaçament de pàgina (ms)"
+   },
+   "optionsLabelVideoStorageLimit": {
+      "message": "Atura l'enregistrament de vídeo si no hi ha espai al disc"
+   },
+   "optionsLabelWantCapture": {
+      "message": "fes una captura de pantalla"
+   },
+   "optionsLabelWantVideoCapture": {
+      "message": "enregistra"
+   },
+   "optionsMainMenu": {
+      "message": "Configuració del menú principal"
+   },
+   "optionsOtherSettings": {
+      "message": "Altres"
+   },
+   "optionsSettingImage": {
+      "message": "Configuració d'imatge"
+   },
+   "optionsSettingsSave": {
+      "message": "Desa la configuració"
+   },
+   "optionsShortcutSettings": {
+      "message": "Configuració de dreceres"
+   },
+   "optionsTitle": {
+      "message": "Configuració"
+   },
+   "optionsVideo": {
+      "message": "Vídeo"
+   },
+   "optionsVideoCaptureGithub": {
+      "message": "Github"
+   },
+   "optionsVideoCaptureSettings": {
+      "message": "Configuració de captura de vídeo"
+   },
+   "optionsWatermark": {
+      "message": "Marca d'aigua"
+   },
+   "panelActions": {
+      "message": "Accions"
+   },
+   "panelAlfaChanel": {
+      "message": "Mou el control lliscant per canviar l'opacitat"
+   },
+   "panelCancel": {
+      "message": "Cancel·la"
+   },
+   "panelChange": {
+      "message": "Canvia"
+   },
+   "panelHeight": {
+      "message": "Alçada"
+   },
+   "panelParameters": {
+      "message": "Paràmetres"
+   },
+   "panelProportional": {
+      "message": "Proporcional"
+   },
+   "panelShadow": {
+      "message": "Ombra"
+   },
+   "panelSize": {
+      "message": "Mida"
+   },
+   "panelTools": {
+      "message": "Eines de dibuix"
+   },
+   "panelWidth": {
+      "message": "Amplada"
+   },
+   "popupAccessMic": {
+      "message": "Per començar, has de permetre l'accés al teu micròfon"
+   },
+   "popupActionMessageCrop": {
+      "message": "Mantenint premut el botó del ratolí, selecciona el fragment desitjat. A continuació, desa'l o envia'l a l'editor."
+   },
+   "popupActionMessageFragmentScroll": {
+      "message": "Selecciona el fragment desitjat i fes-hi clic. A continuació, desa'l o envia'l a l'editor."
+   },
+   "popupAfterCapture": {
+      "message": "Acció després de la captura"
+   },
+   "popupAutoDeleteDrawing": {
+      "message": "Esborrat automàtic de dibuixos"
+   },
+   "popupAutoDeleteDrawingDescription": {
+      "message": "Pots especificar un període de temps després del qual les figures dibuixades s'esborraran mentre s'enregistra un vídeo"
+   },
+   "popupAutomationCancelButton": {
+      "message": "Atura"
+   },
+   "popupAutomationGuideError": {
+      "message": "Ho sentim, el servidor d'enregistrament no està disponible actualment."
+   },
+   "popupAutomationHideButton": {
+      "message": "Amaga"
+   },
+   "popupAutomationStorageLimit": {
+      "message": "Només queda una petita quantitat d'espai lliure al disc. No garantim un enregistrament de vídeo estable. Si us plau, allibera espai al disc i fes clic a Continua l'enregistrament. Fes clic a Atura si vols finalitzar l'enregistrament."
+   },
+   "popupAutomationStreamError": {
+      "message": "Ho sentim, el servidor d'enregistrament no està disponible actualment. Si us plau, torna-ho a provar més tard o utilitza un enregistrament local."
+   },
+   "popupAutomationUpload": {
+      "message": "Una mica de paciència... S'està pujant..."
+   },
+   "popupAutomationUploadStream": {
+      "message": "Una mica de paciència... Estem processant el teu vídeo en directe a Nimbus."
+   },
+   "popupAutomationWelcome": {
+      "message": "Ens complau anunciar que hem afegit una nova funció per enregistrar i inserir vídeos directament als tiquets de Github."
+   },
+   "popupAutomationWelcomeButton": {
+      "message": "Activa"
+   },
+   "popupBitrateAudioLabel": {
+      "message": "Taxa de bits d'àudio"
+   },
+   "popupBitrateVideoLabel": {
+      "message": "Taxa de bits de vídeo"
+   },
+   "popupBtnBack": {
+      "message": "enrere"
+   },
+   "popupBtnCameraRecord": {
+      "message": "Només càmera web"
+   },
+   "popupBtnDesktopRecord": {
+      "message": "Escriptori"
+   },
+   "popupBtnResetVideoSetting": {
+      "message": "Restableix la configuració"
+   },
+   "popupBtnStartRecord": {
+      "message": "Inicia l'enregistrament"
+   },
+   "popupBtnStartStream": {
+      "message": "Inicia l'enregistrament instantani"
+   },
+   "popupBtnStopPause": {
+      "message": "Pausa"
+   },
+   "popupBtnStopRecord": {
+      "message": "Atura l'enregistrament"
+   },
+   "popupBtnStopResume": {
+      "message": "Reprèn"
+   },
+   "popupBtnTabRecord": {
+      "message": "Pestanya"
+   },
+   "popupBtnUploadOptionHide": {
+      "message": "Amaga opcions de transmissió"
+   },
+   "popupBtnUploadOptionShow": {
+      "message": "Mostra opcions de transmissió"
+   },
+   "popupButtonAdvertising": {
+      "message": "Nimbus Clipper - Retalla-ho tot!"
+   },
+   "popupCapturingProgress": {
+      "message": "Capturant..."
+   },
+   "popupCnameFreeDesc": {
+      "message": "Afegeix el teu domini personalitzat (CNAME) a les teves comparticions. A més, pots:"
+   },
+   "popupCnameFreeDescList1": {
+      "message": "Adjunta fitxers, enllaços i més a les teves captures de pantalla i vídeo"
+   },
+   "popupCnameFreeDescList2": {
+      "message": "Organitza les teves càrregues amb espais de treball i carpetes"
+   },
+   "popupCnameFreeDescList3": {
+      "message": "Crea wikis per als teus equips i clients"
+   },
+   "popupCnameFreeDescList4": {
+      "message": "Protegeix les teves pàgines compartides amb contrasenyes (opcional)"
+   },
+   "popupCnameFreeDescList5": {
+      "message": "Promou la teva marca amb la nostra solució White-label"
+   },
+   "popupCnameFreeDescList6": {
+      "message": "Connecta les teves eines de màrqueting i analítica favorites"
+   },
+   "popupCnameFreeTitle": {
+      "message": "Comença avui la teva prova gratuïta de 14 dies"
+   },
+   "popupErrorLocalFileMessage": {
+      "message": "Si us plau, ves a la configuració de l'extensió de Chrome i activa \u003Cstrong>'Permet l'accés a les URL de fitxers'\u003C/strong>, perquè l'extensió pugui accedir a aquesta pàgina."
+   },
+   "popupErrorLocalFileTitle": {
+      "message": "Cal accés als fitxers"
+   },
+   "popupFrameRateLabel": {
+      "message": "Freqüència de fotogrames"
+   },
+   "popupLabelAnalyticsEnable": {
+      "message": "Si està actiu, s'envien estadístiques anònimes sobre l'ús de la funcionalitat del producte a Nimbus."
+   },
+   "popupLabelCountdown": {
+      "message": "Compte enrere"
+   },
+   "popupLabelCursorAnimate": {
+      "message": "Cursor animat"
+   },
+   "popupLabelPrivateUpload": {
+      "message": "Pujada privada"
+   },
+   "popupLabelQuickVideoCaptureEnable": {
+      "message": "Si la funció està activa, pots enregistrar i desar un vídeo amb dos clics del ratolí: el primer per iniciar l'enregistrament i el segon per aturar i desar el vídeo. És realment senzill!"
+   },
+   "popupLabelQuickVideoCaptureGithubEnable": {
+      "message": "Enregistrar un vídeo a Github és molt senzill! Amb el primer clic, comences a enregistrar la pàgina, i amb el segon, l'afegeixes directament al tiquet de Github!"
+   },
+   "popupLabelRecordCamera": {
+      "message": "Enregistra càmera web"
+   },
+   "popupLabelRecordMic": {
+      "message": "Enregistra so del micròfon"
+   },
+   "popupLabelRecordTab": {
+      "message": "Enregistra so de la pestanya"
+   },
+   "popupLabelSelectWorkspace": {
+      "message": "Selecciona l'espai de treball"
+   },
+   "popupLabelSetting": {
+      "message": "Configuració"
+   },
+   "popupLabelShowDrawingTools": {
+      "message": "Mostra eines de dibuix"
+   },
+   "popupLabelVideoAnimationCursor": {
+      "message": "Animació de clic"
+   },
+   "popupLabelVideoSetting": {
+      "message": "Configuració de vídeo"
+   },
+   "popupLabelVideoStorageLimit": {
+      "message": "L'enregistrament de vídeo s'atura si hi ha menys de 500 MB d'espai lliure al disc. Recomanat per a Chromebook."
+   },
+   "popupMyNotes": {
+      "message": "Les meves pujades"
+   },
+   "popupOpenExtensions": {
+      "message": "Configuració de l'extensió"
+   },
+   "popupReadManual": {
+      "message": "També pots llegir les instruccions per utilitzar l'aplicació"
+   },
+   "popupRecordAudioCoreLabel": {
+      "message": "Enregistrament d'àudio"
+   },
+   "popupRecordCoreAdvancedLabel": {
+      "message": "Avançat"
+   },
+   "popupRecordCoreDefaultLabel": {
+      "message": "Sortida per defecte"
+   },
+   "popupRecordTitle": {
+      "message": "S'està enregistrant el vídeo"
+   },
+   "popupRecordTypeTitle": {
+      "message": "Què vols enregistrar"
+   },
+   "popupRecordVideoCoreLabel": {
+      "message": "Enregistrament de vídeo"
+   },
+   "popupRecordWantTitle": {
+      "message": "Com vols enregistrar"
+   },
+   "popupSec": {
+      "message": "seg."
+   },
+   "popupSelectMicLabel": {
+      "message": "Micròfon"
+   },
+   "popupSelectWebCamLabel": {
+      "message": "Càmera web"
+   },
+   "popupSizeAutoDescription": {
+      "message": "(resolució actual)"
+   },
+   "popupSizeAutoLabel": {
+      "message": "Auto"
+   },
+   "popupTextTrialScreenshot": {
+      "message": "La teva prova per fer captures de pantalla de tota la pàgina o fragments de pàgina ha començat. Després que acabi la prova, no podràs fer una captura de pantalla en mode de pàgina completa o seleccionada i desplaçament en un compte gratuït. Actualitza a Nimbus Pro per a captures de pantalla il·limitades."
+   },
+   "popupTitle": {
+      "message": "Nimble capture"
+   },
+   "popupVideoEditorCrop": {
+      "message": "Selecciona la regió que vols retallar i fes clic a la marca de verificació."
+   },
+   "popupVideoEditorTrim": {
+      "message": "Utilitzant els marcadors blaus, selecciona una part del vídeo que necessita ser retallada i fes clic a Elimina seleccionat."
+   },
+   "popupVideoEditorTrimNoSelect": {
+      "message": "No s'ha seleccionat res per retallar."
+   },
+   "popupVideoEditorWelcomeDescription": {
+      "message": "Aquí pots retallar i ajustar fàcilment els teus vídeos. \u003Ca href='https://nimblecapture.com/help' target='_blank'>Llegeix la guia d'usuari\u003C/a> per aprendre com treballar amb l'editor."
+   },
+   "popupVideoEditorWelcomeTitle": {
+      "message": "Benvingut a l'editor de vídeo!"
+   },
+   "popupVideoErrorConvert": {
+      "message": "S'ha produït un error. Si us plau, torna-ho a provar."
+   },
+   "popupVideoGifNotSupport": {
+      "message": "Aquesta acció no és compatible amb fitxers GIF."
+   },
+   "popupVideoLimitMessage": {
+      "message": "\u003Cb>Límit de 5 minuts per vídeo.\u003C/b> Actualitza per obtenir enregistrament il·limitat i altres funcions premium."
+   },
+   "popupVideoQualityTitle": {
+      "message": "Qualitat de vídeo i àudio"
+   },
+   "popupVideoReEncoding": {
+      "message": "Activa la recodificació de vídeo"
+   },
+   "popupVideoReEncodingTitle": {
+      "message": "Aquesta opció ajusta la durada de la línia de temps. Si desactives aquesta opció, el processament del vídeo (quan atures l'enregistrament) serà molt més ràpid per a ordinadors lents, però en alguns casos, el desplaçament de la línia de temps no funcionarà. (Recomanat per a ordinadors lents o Chromebooks)"
+   },
+   "popupVideoTitle": {
+      "message": "Enregistra vídeo"
+   },
+   "popupWelcomeVideo": {
+      "message": "Benvingut a l'enregistrament de vídeo"
+   },
+   "popupYoutubeChannel": {
+      "message": "Necessites un canal de Youtube"
+   },
+   "popupYoutubeChannelCreates": {
+      "message": "Per pujar vídeos enregistrats a Youtube, hauràs de crear un canal de Youtube."
+   },
+   "previewReload": {
+      "message": "Refresca la pàgina"
+   },
+   "rateNotShow": {
+      "message": "No ho tornis a mostrar"
+   },
+   "rateRate": {
+      "message": "Valora Nimble capture"
+   },
+   "rateText": {
+      "message": "T'agrada Nimble capture?\u003Cbr>Si us plau, escriu la teva opinió! Gràcies."
+   },
+   "tooltipArrowCurve": {
+      "message": "Corba de fletxa"
+   },
+   "tooltipArrowDouble": {
+      "message": "Doble fletxa"
+   },
+   "tooltipArrowLine": {
+      "message": "Línia de fletxa"
+   },
+   "tooltipBlur": {
+      "message": "Àrea borrosa"
+   },
+   "tooltipBtnQuickShare": {
+      "message": "Envia a Nimble"
+   },
+   "tooltipChangeZoom": {
+      "message": "Canvia el zoom"
+   },
+   "tooltipCircle": {
+      "message": "Cercle"
+   },
+   "tooltipColorAndSizeShadow": {
+      "message": "Color i mida de l'ombra"
+   },
+   "tooltipColorFull": {
+      "message": "Color de farcit"
+   },
+   "tooltipColorLineAndText": {
+      "message": "Color de línia i text"
+   },
+   "tooltipCopy": {
+      "message": "Copia al porta-retalls"
+   },
+   "tooltipCrop": {
+      "message": "Retalla"
+   },
+   "tooltipEditBtnBack": {
+      "message": "Enrere"
+   },
+   "tooltipEditBtnDrive": {
+      "message": "Envia a Google Drive"
+   },
+   "tooltipEditBtnDropbox": {
+      "message": "Envia a Dropbox"
+   },
+   "tooltipEditBtnNimbus": {
+      "message": "Envia a Nimbus"
+   },
+   "tooltipEditBtnSlack": {
+      "message": "Envia a Slack"
+   },
+   "tooltipEditBtnYoutube": {
+      "message": "Publica a Youtube"
+   },
+   "tooltipEllipse": {
+      "message": "El·lipse"
+   },
+   "tooltipFontAndSize": {
+      "message": "Font i mida"
+   },
+   "tooltipFormula": {
+      "message": "Insereix fórmula"
+   },
+   "tooltipLine": {
+      "message": "Línia"
+   },
+   "tooltipLineCurve": {
+      "message": "Corba de línia"
+   },
+   "tooltipLineDotted": {
+      "message": "Línia puntejada"
+   },
+   "tooltipLineWidth": {
+      "message": "Amplada de línia"
+   },
+   "tooltipLock": {
+      "message": "Bloqueja les figures"
+   },
+   "tooltipMakeScreenshot": {
+      "message": "Fes una captura de pantalla"
+   },
+   "tooltipMarker": {
+      "message": "Marcador"
+   },
+   "tooltipNoteText": {
+      "message": "Text de pàgina"
+   },
+   "tooltipNumber": {
+      "message": "Marcadors numerats"
+   },
+   "tooltipNumbers": {
+      "message": "Numeració automàtica"
+   },
+   "tooltipOpenFile": {
+      "message": "Insereix imatge"
+   },
+   "tooltipOptions": {
+      "message": "Configuració"
+   },
+   "tooltipOptionsWatermark": {
+      "message": "Configuració de marca d'aigua"
+   },
+   "tooltipPassInfo": {
+      "message": "La contrasenya ha de tenir com a mínim 8 símbols"
+   },
+   "tooltipPassMatch": {
+      "message": "Les contrasenyes no coincideixen"
+   },
+   "tooltipPen": {
+      "message": "Llapis"
+   },
+   "tooltipRedo": {
+      "message": "Refés"
+   },
+   "tooltipResize": {
+      "message": "Redimensiona"
+   },
+   "tooltipRounded": {
+      "message": "Arrodonit"
+   },
+   "tooltipShortUrl": {
+      "message": "URL curta"
+   },
+   "tooltipSquare": {
+      "message": "Quadrat"
+   },
+   "tooltipText": {
+      "message": "Text"
+   },
+   "tooltipTextArrow": {
+      "message": "Text de fletxa"
+   },
+   "tooltipTrim": {
+      "message": "Retalla"
+   },
+   "tooltipUndo": {
+      "message": "Desfés"
+   },
+   "tooltipUndoAll": {
+      "message": "Desfés-ho tot"
+   },
+   "tooltipUploadTo": {
+      "message": "Puja a"
+   },
+   "tooltipVideoEditor": {
+      "message": "Retalla/Retalla"
+   },
+   "tooltipWrongEmail": {
+      "message": "Correu electrònic incorrecte"
+   },
+   "tooltipZoomMinus": {
+      "message": "Zoom -"
+   },
+   "tooltipZoomPlus": {
+      "message": "Zoom +"
+   },
+   "tooltipclassroomSend": {
+      "message": "Envia a Google Classroom"
+   },
+   "videoCanvas": {
+      "message": "Pàgina en blanc"
+   },
+   "videoConvert": {
+      "message": "Converteix"
+   },
+   "videoConvertFrameRate": {
+      "message": "Velocitat de fotogrames"
+   },
+   "videoConvertInfo": {
+      "message": "Pot trigar una estona a convertir el teu vídeo al format MP4 o GIF. Podràs guardar el teu vídeo tan aviat com acabi la conversió."
+   },
+   "videoConvertOpen": {
+      "message": "Converteix a MP4 o Gif"
+   },
+   "videoConvertSize": {
+      "message": "Mida"
+   },
+   "videoConvertSizeOptimal": {
+      "message": "Mida òptima"
+   },
+   "videoEditor": {
+      "message": "Editor de vídeo"
+   },
+   "videoEditorTimeline": {
+      "message": "Zoom de la línia de temps"
+   },
+   "videoEditorTrimApply": {
+      "message": "Elimina seleccionat"
+   },
+   "videoEditorTrimCancel": {
+      "message": "Cancel·la"
+   },
+   "videoPanelAnimatedCursor": {
+      "message": "Cursor animat - Alt+L"
+   },
+   "videoPanelArrow": {
+      "message": "Fletxa - Alt+A"
+   },
+   "videoPanelBlur": {
+      "message": "Desenfoca - Alt+B"
+   },
+   "videoPanelCamera": {
+      "message": "Activa/desactiva la càmera web"
+   },
+   "videoPanelCheckmark": {
+      "message": "Marca de verificació - Alt+C"
+   },
+   "videoPanelClear": {
+      "message": "Neteja - Alt+N"
+   },
+   "videoPanelClearAll": {
+      "message": "Neteja-ho tot - Alt+U"
+   },
+   "videoPanelFocusMouse": {
+      "message": "Centra el ratolí - Alt+G"
+   },
+   "videoPanelHideShowPanel": {
+      "message": "Amaga/Mostra el panell - Alt+V"
+   },
+   "videoPanelMark": {
+      "message": "Marca - Alt+M"
+   },
+   "videoPanelPen": {
+      "message": "Llapis - Alt+P"
+   },
+   "videoPanelQuestion": {
+      "message": "Pregunta - Alt+Q"
+   },
+   "videoPanelSimpleCursor": {
+      "message": "Cursor simple - Alt+S"
+   },
+   "videoPanelSquare": {
+      "message": "Quadrat - Alt+R"
+   },
+   "watermarkLimit": {
+      "message": "Mida màxima de la marca d'aigua -1 mb"
+   },
+   "watermarkUnsupported": {
+      "message": "Format de fitxer no suportat"
+   },
+   "welcomeAddOtherContent": {
+      "message": "Afegeix un altre contingut a les teves càrregues"
+   },
+   "welcomeClickNextReady": {
+      "message": "Feu clic a Següent una vegada que estigueu llest."
+   },
+   "welcomeCompletedAllSteps": {
+      "message": "Heu completat tots els passos. Ara podeu gravar el vostre primer vídeo!"
+   },
+   "welcomeEditVideo": {
+      "message": "Edita el vídeo i afegeix botons"
+   },
+   "welcomeForSolutions": {
+      "message": "per totes les nostres solucions"
+   },
+   "welcomeGetAccessAll": {
+      "message": "* Obtén accés a totes les aplicacions Nimbus"
+   },
+   "welcomeGetQuickLinks": {
+      "message": "Obtén enllaços ràpids per compartir amb el teu domini"
+   },
+   "welcomeHereYouGo": {
+      "message": "Aquí tens!"
+   },
+   "welcomeInformationManagement": {
+      "message": "col·laboració i gestió d'informació"
+   },
+   "welcomeMakeScreenshot": {
+      "message": "Fes una captura de pantalla"
+   },
+   "welcomeMuchMoreCome": {
+      "message": "Molt més per venir. Estigueu atents!"
+   },
+   "welcomeNeedYourVideo": {
+      "message": "Necessites que la teva comanda de captura de vídeo i la eina de captura de pantalla estiguin a punt?"
+   },
+   "welcomeNext": {
+      "message": "Següent"
+   },
+   "welcomeNimbusCapturePromo": {
+      "message": "Solució de captura de vídeo i captura de pantalla per a l'ús diari"
+   },
+   "welcomeNimbusClarityPromo": {
+      "message": "Ordre de captura de vídeo i àudio per a missatgeria asincrònica (+aplicació d'escriptori per a Windows)"
+   },
+   "welcomeNimbusClipperPromo": {
+      "message": "Desa només la informació rellevant de la web: selecciona, desa, comparteix"
+   },
+   "welcomeNimbusNotePromo": {
+      "message": "La seu digital per gestionar i compartir informació"
+   },
+   "welcomeOneAccount": {
+      "message": "Un compte Nimbus"
+   },
+   "welcomePageTitle": {
+      "message": "Benvingut a Nimble Screenshot"
+   },
+   "welcomePinExtension": {
+      "message": "Enganxa l'extensió"
+   },
+   "welcomePleaseClickIcon": {
+      "message": "Si us plau, feu clic a l'icona del trencaclosques, trobeu Nimbus a la llista i feu clic a Enganxa. El nostre GIF curt a la dreta us ajudarà."
+   },
+   "welcomePleaseCreateAccount": {
+      "message": "Si us plau, crea un compte per a:"
+   },
+   "welcomeProtectYourQuick": {
+      "message": "Protegeix els teus enllaços ràpids amb contrasenyes"
+   },
+   "welcomeReadyStart": {
+      "message": "Estàs llest per començar?"
+   },
+   "welcomeRecordVideo": {
+      "message": "Grava un vídeo"
+   },
+   "welcomeSaveVideosScreenshots": {
+      "message": "Desa els teus vídeos i captures de pantalla"
+   },
+   "welcomeSettleLess": {
+      "message": "Contenta't amb menys**"
+   },
+   "welcomeStayCaptureOnly": {
+      "message": "** Queda't només amb la captura Nimble"
+   },
+   "welcomeStreamlineYour": {
+      "message": "Optimitza la teva"
+   },
+   "welcomeThankYouChoosing": {
+      "message": "Gràcies per triar Nimble capture!"
+   },
+   "welcomeWantFreeUpgrade": {
+      "message": "Vull una actualització gratuïta*"
+   },
+   "welcomeWellDone": {
+      "message": "Molt bé!"
+   },
+   "youtubeCreate": {
+      "message": "Crea"
+   },
+   "youtubeName": {
+      "message": "Nom"
+   },
+   "youtubeNoPlaylist": {
+      "message": "Sense llista de reproducció"
+   },
+   "youtubePlaylist": {
+      "message": "Llista de reproducció"
+   },
+   "youtubePrivate": {
+      "message": "Privat"
+   },
+   "youtubePublic": {
+      "message": "Públic"
+   },
+   "youtubeUnlisted": {
+      "message": "No llistat"
+   }
+}

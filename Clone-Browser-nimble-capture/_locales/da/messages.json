@@ -1,0 +1,1538 @@
+{
+   "appDesc": {
+      "message": "Capture fuld side screenshots. Rediger og gem screenshots. Optag skærmbilleder - optag video fra din skærm. Optag hvordan-man-guides."
+   },
+   "appName": {
+      "message": "Nimble capture"
+   },
+   "appNameMini": {
+      "message": "Nimble capture"
+   },
+   "btnAccessMic": {
+      "message": "Adgang til mikrofon og kamera"
+   },
+   "btnAndroidVersion": {
+      "message": "Android Version"
+   },
+   "btnBlankScreen": {
+      "message": "Tom skærm"
+   },
+   "btnBrowserWindow": {
+      "message": "Skærmbillede af skrivebord"
+   },
+   "btnCancel": {
+      "message": "Annuller"
+   },
+   "btnCaptureFragment": {
+      "message": "Capture fragment"
+   },
+   "btnCaptureFragmentScroll": {
+      "message": "Capture scrollbart fragment"
+   },
+   "btnCaptureVideo": {
+      "message": "Optag video"
+   },
+   "btnConnectSlack": {
+      "message": "Tilknyt Slack"
+   },
+   "btnDelayedScreen": {
+      "message": "Forsinket skærm"
+   },
+   "btnDesktop": {
+      "message": "Capture fra skrivebord"
+   },
+   "btnEnableCopy": {
+      "message": "Kopier til udklipsholder"
+   },
+   "btnEntirePage": {
+      "message": "Hele siden"
+   },
+   "btnGetStarted": {
+      "message": "Kom i gang"
+   },
+   "btnGoPremium": {
+      "message": "Opgrader til Nimbus for Business"
+   },
+   "btnInjectGmailMain": {
+      "message": "Indsæt video eller skærmbillede"
+   },
+   "btnInjectGmailScreencast": {
+      "message": "Optag en ny video"
+   },
+   "btnInjectGmailScreenshot": {
+      "message": "Lav et nyt skærmbillede"
+   },
+   "btnLearnMore": {
+      "message": "Lær mere"
+   },
+   "btnManual": {
+      "message": "Manual"
+   },
+   "btnOkGotIt": {
+      "message": "Ok, forstået"
+   },
+   "btnReadyVideo": {
+      "message": "Jeg er klar til at optage video"
+   },
+   "btnSelectedArea": {
+      "message": "Valgt område"
+   },
+   "btnSelectedScroll": {
+      "message": "Vælg & Scroll"
+   },
+   "btnSignupUpToViewUpload": {
+      "message": "Tilmeld dig for at se uploads"
+   },
+   "btnVisiblePage": {
+      "message": "Synlig del af side"
+   },
+   "cropBtnCancel": {
+      "message": "Annuller"
+   },
+   "cropBtnCopy": {
+      "message": "Kopier til udklipsholder"
+   },
+   "cropBtnEdit": {
+      "message": "Rediger"
+   },
+   "cropBtnNimbus": {
+      "message": "Send til Nimbus"
+   },
+   "cropBtnSave": {
+      "message": "Gem"
+   },
+   "cropBtnSavePdf": {
+      "message": "Gem som PDF"
+   },
+   "disable": {
+      "message": "Deaktiver"
+   },
+   "editBtnBack": {
+      "message": "Tilbage"
+   },
+   "editBtnCopy": {
+      "message": "Kopier til udklipsholder"
+   },
+   "editBtnDiscard": {
+      "message": "Kassér"
+   },
+   "editBtnDone": {
+      "message": "Færdig"
+   },
+   "editBtnDrive": {
+      "message": "Google Drive"
+   },
+   "editBtnDropbox": {
+      "message": "Dropbox"
+   },
+   "editBtnNimbusScreen": {
+      "message": "Upload skærmbillede"
+   },
+   "editBtnNimbusVideo": {
+      "message": "Upload video"
+   },
+   "editBtnPrint": {
+      "message": "Udskriv"
+   },
+   "editBtnQuickShare": {
+      "message": "Hurtig deling"
+   },
+   "editBtnQuickShare2": {
+      "message": "Upload til mappen"
+   },
+   "editBtnSave": {
+      "message": "Gem som billede"
+   },
+   "editBtnSavePDF": {
+      "message": "Gem som PDF"
+   },
+   "editBtnSaveVideo": {
+      "message": "Gem video"
+   },
+   "editBtnSlack": {
+      "message": "Slack"
+   },
+   "editBtnYoutube": {
+      "message": "Youtube"
+   },
+   "editVideoTitle": {
+      "message": "Videoredigering"
+   },
+   "gDriveBtnDone": {
+      "message": "Færdig"
+   },
+   "gDriveLabel": {
+      "message": "Vælg den mappe, du vil gemme skærmbilledet i"
+   },
+   "gDriveLabelFolders": {
+      "message": "Skærmbilledet vil blive gemt"
+   },
+   "gDriveLogout": {
+      "message": "Log ud"
+   },
+   "gDriveLogoutFrom": {
+      "message": "Log ud fra"
+   },
+   "gDriveMainFolder": {
+      "message": "Dette er hovedmappen"
+   },
+   "gDriveNoItems": {
+      "message": "Ingen emner"
+   },
+   "gDriveNotAuthorized": {
+      "message": "Du er ikke logget ind på din konto"
+   },
+   "gDriveSendTo": {
+      "message": "Send til"
+   },
+   "gDriveTitle": {
+      "message": "Send til Google Drive"
+   },
+   "gDriveUploadPrivate": {
+      "message": "Upload som privat"
+   },
+   "hotKeys": {
+      "message": "Genvejstaster"
+   },
+   "labelCaptureHelper": {
+      "message": "Vælg en af skærmene at Snap!"
+   },
+   "labelCnameFree": {
+      "message": "Tilpas dit link"
+   },
+   "labelDropImage": {
+      "message": "slip billede her"
+   },
+   "labelFileChangeShare": {
+      "message": "Hvis afkrydsningsfeltet er aktiveret, oprettes der ikke et offentligt link."
+   },
+   "labelInsertScreencast": {
+      "message": "Se video"
+   },
+   "labelInsertScreenshot": {
+      "message": "Åbn skærmbillede"
+   },
+   "labelPreviewLoading": {
+      "message": "Indlæser..."
+   },
+   "labelPreviewLoadingVideo": {
+      "message": "Behandler video - vent venligst..."
+   },
+   "labelRedactorLoading": {
+      "message": "Indlæser... vent venligst..."
+   },
+   "newReleaseText": {
+      "message": "\u003Cli>Nyt design;\u003C/li>\u003Cli>En lås, der forhindrer redigering af elementer;\u003C/li>\u003Cli>Forsinket skærmbillede;\u003C/li>\u003Cli>Mulighed for at tilpasse hovedmenuen ved at fjerne det unødvendige;\u003C/li>\u003Cli>Mulighed for bevidst at tilføje numre ved siden af de nødvendige former;\u003C/li>\u003Cli>Mulighed for hurtigt at sende til Nimbus/Slack fra redigeringsvinduet ved hjælp af Ctrl+Enter genvejstasten;\u003C/li>\u003Cli>Fast nogle andre fejl;\u003C/li>"
+   },
+   "newReleaseTitle": {
+      "message": "Velkommen til ny version af Nimble Screenshot"
+   },
+   "nimbusAccessAnyTimes": {
+      "message": "Få adgang til skærmbilleder og skærmoptagelser når som helst og fra enhver enhed;"
+   },
+   "nimbusAccount": {
+      "message": "Fusebase-konto"
+   },
+   "nimbusBad": {
+      "message": "Dårlig"
+   },
+   "nimbusBannedDeviceDestruction": {
+      "message": "Denne enhed blev forbudt af dig."
+   },
+   "nimbusBeBetter": {
+      "message": "Vær bedre"
+   },
+   "nimbusBtnAuthFacebook": {
+      "message": "Brug Facebook"
+   },
+   "nimbusBtnAuthGoogle": {
+      "message": "Brug Google"
+   },
+   "nimbusBtnLogin": {
+      "message": "Log ind på FuseBase"
+   },
+   "nimbusBtnRemind": {
+      "message": "Glemt din adgangskode?"
+   },
+   "nimbusBtnSignup": {
+      "message": "Opret konto"
+   },
+   "nimbusCaptureUpgradePremium": {
+      "message": "Flere funktioner med\u003Cbr>Nimble capture Business"
+   },
+   "nimbusCaptureUpgradePro": {
+      "message": "Flere funktioner med\u003Cbr>Nimble capture Pro"
+   },
+   "nimbusChannels": {
+      "message": "Kanaler"
+   },
+   "nimbusComment": {
+      "message": "Kommentar"
+   },
+   "nimbusCommentPlaceholder": {
+      "message": "Kommenter dit skærmbillede"
+   },
+   "nimbusCreateAccount": {
+      "message": "Opret gratis konto"
+   },
+   "nimbusDid": {
+      "message": "Gjorde"
+   },
+   "nimbusEducationDiscounts": {
+      "message": "Rabatter til uddannelse"
+   },
+   "nimbusEnter": {
+      "message": "Log ind på FuseBase (tidligere Nimbus)"
+   },
+   "nimbusEnvironmentInfo": {
+      "message": "Tilføj information om system og side"
+   },
+   "nimbusFragmentScrollTitle": {
+      "message": "Med denne tilstand kan du tage et skærmbillede af separate fragmenter med side-rulning. Det kunne f.eks. være et chatvindue, en servicekontrolpanel eller et opgavevindue i Jira. Vores app vil automatisk registrere sådanne områder, på hvilket tidspunkt du vil kunne vælge det, du har brug for."
+   },
+   "nimbusGoPro": {
+      "message": "Opgrader til Nimbus Pro"
+   },
+   "nimbusGood": {
+      "message": "Godt!"
+   },
+   "nimbusHelp": {
+      "message": "Hjælp"
+   },
+   "nimbusIncreaseLimit": {
+      "message": "Øg grænsen"
+   },
+   "nimbusInfoAgent": {
+      "message": "Brugeragent"
+   },
+   "nimbusInfoBrowser": {
+      "message": "Brugerbrowser"
+   },
+   "nimbusInfoPage": {
+      "message": "Websted"
+   },
+   "nimbusInfoPlatform": {
+      "message": "Brugerplatform"
+   },
+   "nimbusInfoScreen": {
+      "message": "Skærmopløsning"
+   },
+   "nimbusIsBusiness": {
+      "message": "Jeg har Nimbus Business"
+   },
+   "nimbusIsPro": {
+      "message": "Jeg har Nimbus Pro"
+   },
+   "nimbusLabelEmail": {
+      "message": "E-mail"
+   },
+   "nimbusLabelPassword": {
+      "message": "Adgangskode"
+   },
+   "nimbusLabelPasswordAndInfo": {
+      "message": "Adgangskode (min. 8 tegn)"
+   },
+   "nimbusLabelRetypePass": {
+      "message": "Gentag adgangskode"
+   },
+   "nimbusLimitDescription": {
+      "message": "Du kan skifte til Nimbus Pro for at øge din månedlige datagrænse til 1 GB."
+   },
+   "nimbusLimitDeviceDestruction": {
+      "message": "Hvis du vil bruge Nimble capture på mere end to enheder, skal du opgradere din plan."
+   },
+   "nimbusLimitDeviceTitle": {
+      "message": "Din Nimble capture-konto bruges allerede på det maksimale antal enheder."
+   },
+   "nimbusLimitOf": {
+      "message": "af"
+   },
+   "nimbusLimitSpace": {
+      "message": "Du kan ikke uploade denne fil, fordi du næsten har nået din månedlige datagrænse på 100 MB."
+   },
+   "nimbusLimitUsage": {
+      "message": "Brug:"
+   },
+   "nimbusLimitVideo": {
+      "message": "Denne video er for stor! Men den er ikke tabt..."
+   },
+   "nimbusLimitVideoDestruction": {
+      "message": "Maks. filstørrelse for Nimbus Pro = 1GB. Skriv til \u003Cb>team@nimbusweb.co\u003C/b> for at hæve filgrænsen."
+   },
+   "nimbusLimitVideoDestructionFree": {
+      "message": "Maks. filstørrelse for gratis konti = 10MB. Opgrader til Nimbus Pro for at hæve filgrænsen."
+   },
+   "nimbusLimitVideoDestructionOrgFree": {
+      "message": "Filen overskrider den maksimalt tilladte størrelse for en gratis konto (10 MB). Kontakt arbejdsområdets ejer for flere detaljer."
+   },
+   "nimbusLimitVideoDestructionOrgLimit": {
+      "message": "Filen vil ikke blive gemt på FuseBase, fordi den månedlige trafikgrænse (100MB) er nået. Opgrader til en premium-plan for at øge din grænse."
+   },
+   "nimbusLimitVideoDestructionOrgPremium": {
+      "message": "Filen overskrider den maksimalt tilladte størrelse for en konto (1GB). Kontakt arbejdsområdets ejer for flere detaljer."
+   },
+   "nimbusLimitVideoDestructionStreamMonth": {
+      "message": "I den gratis plan kan du optage højst 60 videoer om måneden. Gå til Nimbus Pro-planen for at fjerne begrænsningen."
+   },
+   "nimbusLimitVideoDestructionStreamTime": {
+      "message": "Vigtigt! I den gratis plan kan du optage en video med en varighed på højst 5 minutter. Opgrader til Nimbus Pro for at optage længere videoer."
+   },
+   "nimbusLimitVideoDurationDestruction": {
+      "message": "Din 7-dages prøveperiode er startet. Du kan nu optage video uden en størrelsesbegrænsning. Efter prøveperioden kan du optage video med en varighed på højst 5 minutter. Opgrader til Nimbus Pro for at aktivere ubegrænset optagelse."
+   },
+   "nimbusLimitVideoFree": {
+      "message": "Denne video er for stor! Men den er ikke tabt..."
+   },
+   "nimbusLimitVideoOrgFree": {
+      "message": "Denne video er for stor! Men den er ikke tabt..."
+   },
+   "nimbusLimitVideoOrgLimit": {
+      "message": "Denne video er for stor! Men den er ikke tabt..."
+   },
+   "nimbusLimitVideoOrgPremium": {
+      "message": "Denne video er for stor! Men den er ikke tabt..."
+   },
+   "nimbusLimitVideoStreamMonth": {
+      "message": "Du kan ikke længere optage ..."
+   },
+   "nimbusLimitVideoStreamTime": {
+      "message": "Du kan ikke længere optage ..."
+   },
+   "nimbusLogin": {
+      "message": "Log ind"
+   },
+   "nimbusLogout": {
+      "message": "Log ud fra FuseBase"
+   },
+   "nimbusManageDevices": {
+      "message": "Administrer enheder"
+   },
+   "nimbusNoThanks": {
+      "message": "Nej tak"
+   },
+   "nimbusNotAccount": {
+      "message": "Jeg har ikke en konto"
+   },
+   "nimbusNoteName": {
+      "message": "Sidenavn"
+   },
+   "nimbusOr": {
+      "message": "eller"
+   },
+   "nimbusOrganizeUploadFolders": {
+      "message": "Organiser dine uploads efter mapper, undermapper og tags;"
+   },
+   "nimbusPlaceholderEmail": {
+      "message": "E-mail"
+   },
+   "nimbusPlaceholderEnterText": {
+      "message": "Indtast teksten"
+   },
+   "nimbusPlaceholderPassword": {
+      "message": "Adgangskode"
+   },
+   "nimbusPrivate": {
+      "message": "Privat"
+   },
+   "nimbusPrivateMessage": {
+      "message": "Privat besked"
+   },
+   "nimbusProAddWaterMark": {
+      "message": "Tilføj dit vandmærke til branding"
+   },
+   "nimbusProConvertGIF": {
+      "message": "Konverter video til GIF"
+   },
+   "nimbusProConvertMP4": {
+      "message": "Konverter video til MP4"
+   },
+   "nimbusProCropVideo": {
+      "message": "Beskær din video"
+   },
+   "nimbusProScreenshotLimit": {
+      "message": "Ubegrænsede skærmbilleder"
+   },
+   "nimbusProSendDropbox": {
+      "message": "Send billeder og videoer til Dropbox"
+   },
+   "nimbusProSendGoogleDrive": {
+      "message": "Upload billeder og videoer til Google Drive"
+   },
+   "nimbusProSendGoogleDrive2": {
+      "message": "Upload som offentlig eller privat link til Google Drive"
+   },
+   "nimbusProSendGoogleDriveFirefox": {
+      "message": "Upload billeder til Google Drive"
+   },
+   "nimbusProSendYoutube": {
+      "message": "Send video til Youtube"
+   },
+   "nimbusProSupport": {
+      "message": "Prioriteret support"
+   },
+   "nimbusProTrimVideo": {
+      "message": "Trim din video"
+   },
+   "nimbusProVideoLimit": {
+      "message": "Ubegrænset optagelser"
+   },
+   "nimbusRate": {
+      "message": "Kan lide Nimble Screenshot? Giv det en vurdering!"
+   },
+   "nimbusRateUs": {
+      "message": "Bedøm os"
+   },
+   "nimbusRegistration": {
+      "message": "Registrering"
+   },
+   "nimbusRemindPass": {
+      "message": "Glemt adgangskode"
+   },
+   "nimbusSaveScreencast": {
+      "message": "Gem skærmoptagelse"
+   },
+   "nimbusSaveScreenshot": {
+      "message": "Gem skærmbillede"
+   },
+   "nimbusSearch": {
+      "message": "Søg"
+   },
+   "nimbusSelectChannel": {
+      "message": "Vælg kanal"
+   },
+   "nimbusSelectFolder": {
+      "message": "Mappe"
+   },
+   "nimbusSelectOrganization": {
+      "message": "Organisation"
+   },
+   "nimbusSelectWorkspace": {
+      "message": "Arbejdsområde"
+   },
+   "nimbusSend": {
+      "message": "Send til Nimble"
+   },
+   "nimbusShareFriends": {
+      "message": "Send skærmbilleder og skærmoptagelser til venner og kolleger;"
+   },
+   "nimbusSlackAccount": {
+      "message": "Slack-konto"
+   },
+   "nimbusSlackHidePanel": {
+      "message": "Skjul Slack-panel"
+   },
+   "nimbusSlackLogout": {
+      "message": "Log ud af Slack"
+   },
+   "nimbusSlackSend": {
+      "message": "Send til Slack"
+   },
+   "nimbusSlackWelcome": {
+      "message": "Tag et øjeblik til at læse:"
+   },
+   "nimbusSlackWelcome2": {
+      "message": "Nimble Screenshot vil ikke have adgang til beskederne i chatrummene. Alle dine samtaler vil forblive private. Nimble Screenshot kan kun uploade skærmbilleder i Slack"
+   },
+   "nimbusSlackWelcome3": {
+      "message": "Hvis du har spørgsmål, bedes du skrive på e-mail"
+   },
+   "nimbusStreamDestruction": {
+      "message": "For at bruge streaming/øjeblikkelig tilstand, skal du have en FuseBase-konto."
+   },
+   "nimbusStreamStartDestruction": {
+      "message": "Nimble capture vil have brug for adgang til din mikrofon og kamera for at optage video, der er en gang tilladelse."
+   },
+   "nimbusStreamStartTitle": {
+      "message": "Tak for din registrering.\u003Cbr>For at starte optagelsen skal du bare klikke på Start Instant Record."
+   },
+   "nimbusStreamTitle": {
+      "message": "Hastighed er den største fordel ved at bruge en skærmoptager i streaming/øjeblikkelig tilstand. I det øjeblik du stopper optagelsen, er videoen allerede på serveren, og du behøver ikke at vente på, at uploadet er færdigt."
+   },
+   "nimbusSupportMenu": {
+      "message": "Support"
+   },
+   "nimbusSupportMenu1": {
+      "message": "Guider og FAQ"
+   },
+   "nimbusSupportMenu2": {
+      "message": "Kontakt support"
+   },
+   "nimbusThanksYou": {
+      "message": "Tak for informationen"
+   },
+   "nimbusUpgradePro": {
+      "message": "Hvorfor Nimbus Pro er bedre"
+   },
+   "nimbusViewUploads": {
+      "message": "Se mine FuseBase"
+   },
+   "nimbusViewUploadsToDropbox": {
+      "message": "Åbn fil i Dropbox"
+   },
+   "nimbusYoutubeSend": {
+      "message": "Offentliggør på Youtube"
+   },
+   "notificationCopy": {
+      "message": "Billedet er blevet kopieret til udklipsholderen."
+   },
+   "notificationCrop": {
+      "message": "Træk og fang side (Tryk Esc for at afslutte)"
+   },
+   "notificationDesktopDrawingTools": {
+      "message": "Tegneværktøjer er ikke tilgængelige i Desktop-optagelsestilstand. Brug Tab Record i stedet."
+   },
+   "notificationDesktopTabSound": {
+      "message": "Systemlyd er ikke tilgængelig i Desktop-optagelsestilstand. Brug Tab Record i stedet."
+   },
+   "notificationDesktopVideoCamera": {
+      "message": "Videokamera er ikke tilgængeligt i Desktop-optagelsestilstand. Brug Tab Record i stedet."
+   },
+   "notificationEmailFail": {
+      "message": "Denne email er allerede registreret."
+   },
+   "notificationEmailIncorrect": {
+      "message": "Forkert email. Prøv venligst igen."
+   },
+   "notificationErrorActiveTab": {
+      "message": "Nimble capture kan ikke starte optagelsen, mens den bliver initialiseret. For at aktivere udvidelsen skal du klikke på Nimble capture-ikonet på panelet."
+   },
+   "notificationErrorChromeTab": {
+      "message": "Optagelse af de interne Chrome-sider eller app-sider understøttes i øjeblikket ikke."
+   },
+   "notificationImageCopied": {
+      "message": "Kopieret"
+   },
+   "notificationImageNotCopied": {
+      "message": "Kunne ikke kopiere"
+   },
+   "notificationInsertInfo": {
+      "message": "Du kan kun indsætte billede."
+   },
+   "notificationLoginFail": {
+      "message": "Forkert login eller adgangskode. Prøv venligst igen"
+   },
+   "notificationNetworkError": {
+      "message": "Problem med server eller din internetforbindelse. Prøv venligst igen."
+   },
+   "notificationReachedLimit": {
+      "message": "Du har nået din månedlige trafikgrænse (100 MB). For at fortsætte skal du købe Nimbus Pro."
+   },
+   "notificationRegisterFail": {
+      "message": "Registrering mislykkedes. Prøv venligst igen."
+   },
+   "notificationRestoreSent": {
+      "message": "Instruktioner til gendannelse er blevet sendt til din e-mail."
+   },
+   "notificationUploaded": {
+      "message": "Upload er fuldført."
+   },
+   "notificationUrlCopied": {
+      "message": "URL'en er blevet kopieret til udklipsholderen"
+   },
+   "notificationWrong": {
+      "message": "Noget gik galt. Prøv venligst igen."
+   },
+   "onlyForChrome": {
+      "message": "Kun for Chrome"
+   },
+   "onlyForFirefox": {
+      "message": "Kun for Firefox"
+   },
+   "optionLabelEnableWatermark": {
+      "message": "Tilføj dit vandmærke"
+   },
+   "optionLabelEnableWatermarkTimer": {
+      "message": "Skjul vandmærket på videoen efter"
+   },
+   "optionLabelWatermarkFont": {
+      "message": "Skrifttype"
+   },
+   "optionLabelWatermarkFontColor": {
+      "message": "Farve"
+   },
+   "optionLabelWatermarkFontSize": {
+      "message": "Størrelse"
+   },
+   "optionLabelWatermarkImage": {
+      "message": "Billede"
+   },
+   "optionLabelWatermarkSelectFile": {
+      "message": "Vælg fil"
+   },
+   "optionLabelWatermarkSelectPosition": {
+      "message": "Vælg positionen for dit vandmærke"
+   },
+   "optionLabelWatermarkSize": {
+      "message": "Vandmærkestørrelse:"
+   },
+   "optionLabelWatermarkSizeLarge": {
+      "message": "Stor"
+   },
+   "optionLabelWatermarkSizeSmall": {
+      "message": "Lille"
+   },
+   "optionLabelWatermarkText": {
+      "message": "Tekst"
+   },
+   "optionLabelWatermarkTimer1": {
+      "message": "1 sek"
+   },
+   "optionLabelWatermarkTimer10": {
+      "message": "10 sek"
+   },
+   "optionLabelWatermarkTimer30": {
+      "message": "30 sek"
+   },
+   "optionLabelWatermarkTimer5": {
+      "message": "5 sek"
+   },
+   "optionLabelWatermarkTimer60": {
+      "message": "1 min"
+   },
+   "optionLabelWatermarkTransparent": {
+      "message": "Vandmærketransparens:"
+   },
+   "optionLabelWatermarkTransparentLarge": {
+      "message": "Stor"
+   },
+   "optionLabelWatermarkTransparentSmall": {
+      "message": "Ingen gennemsigtighed"
+   },
+   "optionSelectGithubSend": {
+      "message": "Gem via Github"
+   },
+   "optionSelectGithubSendNimbus": {
+      "message": "Send til Nimbus efter i Github"
+   },
+   "optionSelectSendDone": {
+      "message": "Åbn uploadingsvindue"
+   },
+   "optionSelectSendDoneVideo": {
+      "message": "Åbn upload/konverteringsside"
+   },
+   "optionSelectSendDownload": {
+      "message": "Send til Google/Slack/Dropbox"
+   },
+   "optionSelectSendDropbox": {
+      "message": "Send til Dropbox"
+   },
+   "optionSelectSendEdit": {
+      "message": "Rediger"
+   },
+   "optionSelectSendGoogle": {
+      "message": "Send til Google"
+   },
+   "optionSelectSendNimbus": {
+      "message": "Send til Nimbus"
+   },
+   "optionSelectSendQuick": {
+      "message": "Hurtig upload"
+   },
+   "optionSelectSendSave": {
+      "message": "Download"
+   },
+   "optionSelectSendYoutube": {
+      "message": "Send til Youtube"
+   },
+   "optionsCaptureSettings": {
+      "message": "Skærmbilledindstillinger"
+   },
+   "optionsGeneral": {
+      "message": "Generelt"
+   },
+   "optionsLabelAfterClicking": {
+      "message": "Efter at have klikket på ikonet"
+   },
+   "optionsLabelAnalyticsEnable": {
+      "message": "Send anonym brugsstatistik til Nimbus"
+   },
+   "optionsLabelAndThen": {
+      "message": "og derefter"
+   },
+   "optionsLabelAutoShortUrl": {
+      "message": "Auto-forkort url efter upload"
+   },
+   "optionsLabelCanUse": {
+      "message": "Tilgængelige betegnelser:"
+   },
+   "optionsLabelDelayedScreenshotTime": {
+      "message": "Forsinket skærmbillede tid (sek)"
+   },
+   "optionsLabelDepthScreenshot": {
+      "message": "Farvedybdefilter (1 - deaktiveret)"
+   },
+   "optionsLabelDesktopVideo": {
+      "message": "Start optagelse af skrivebord"
+   },
+   "optionsLabelFilenameTemplateScreencast": {
+      "message": "Filnavnsmønster skærmoptagelse"
+   },
+   "optionsLabelFilenameTemplateScreenshot": {
+      "message": "Filnavnsmønster skærmbillede"
+   },
+   "optionsLabelHideFixedElements": {
+      "message": "Skjul de faste elementer"
+   },
+   "optionsLabelImageFormat": {
+      "message": "Format"
+   },
+   "optionsLabelImageQuality": {
+      "message": "Kvalitet"
+   },
+   "optionsLabelInjectGmailScreenshot": {
+      "message": "Vis Nimbus i Gmail"
+   },
+   "optionsLabelKeepOriginalResolution": {
+      "message": "Behold original opløsning (for Retina)"
+   },
+   "optionsLabelLoadToNS": {
+      "message": "Send til Nimbus/Slack"
+   },
+   "optionsLabelPauseVideo": {
+      "message": "Pause/genoptag videooptagelse"
+   },
+   "optionsLabelQuickCaptureEnable": {
+      "message": "Aktiver hurtigt skærmbillede (uden at åbne menuen)"
+   },
+   "optionsLabelQuickVideoCaptureEnable": {
+      "message": "Aktiver hurtig optagelse (optag video menuen vises altid først)"
+   },
+   "optionsLabelQuickVideoCaptureGithubEnable": {
+      "message": "Vis Nimbus i Github"
+   },
+   "optionsLabelSaveAs": {
+      "message": "Vis 'Gem som' dialogboks"
+   },
+   "optionsLabelSaveCropPosition": {
+      "message": "Gem positionen for det valgte område"
+   },
+   "optionsLabelShowContentMenu": {
+      "message": "Vis i kontekstmenu"
+   },
+   "optionsLabelShowInfoPrint": {
+      "message": "Vis URL/dato i udskrivning"
+   },
+   "optionsLabelShowNewButton": {
+      "message": "Vis 'Ny' efter app-opdatering"
+   },
+   "optionsLabelStopVideo": {
+      "message": "Stop videooptagelse"
+   },
+   "optionsLabelStreamMenuEnable": {
+      "message": "Aktiver øjeblikkelig optagelse"
+   },
+   "optionsLabelTabVideo": {
+      "message": "Start optagelse af faneblad/side"
+   },
+   "optionsLabelTimeScrollEntirePage": {
+      "message": "Side rulning forsinkelsestid (ms)"
+   },
+   "optionsLabelVideoStorageLimit": {
+      "message": "Stop videooptagelse, hvis der ikke er plads på disken"
+   },
+   "optionsLabelWantCapture": {
+      "message": "Lav et skærmbillede"
+   },
+   "optionsLabelWantVideoCapture": {
+      "message": "Optag"
+   },
+   "optionsMainMenu": {
+      "message": "Hovedmenuindstillinger"
+   },
+   "optionsOtherSettings": {
+      "message": "Andre"
+   },
+   "optionsSettingImage": {
+      "message": "Billedeindstillinger"
+   },
+   "optionsSettingsSave": {
+      "message": "Gem indstillinger"
+   },
+   "optionsShortcutSettings": {
+      "message": "Genvejsindstillinger"
+   },
+   "optionsTitle": {
+      "message": "Indstillinger"
+   },
+   "optionsVideo": {
+      "message": "Video"
+   },
+   "optionsVideoCaptureGithub": {
+      "message": "Github"
+   },
+   "optionsVideoCaptureSettings": {
+      "message": "Skærmoptagelsesindstillinger"
+   },
+   "optionsWatermark": {
+      "message": "Vandmærke"
+   },
+   "panelActions": {
+      "message": "Handlinger"
+   },
+   "panelAlfaChanel": {
+      "message": "Flyt skyderen for at ændre gennemsigtighed"
+   },
+   "panelCancel": {
+      "message": "Annuller"
+   },
+   "panelChange": {
+      "message": "Skift"
+   },
+   "panelHeight": {
+      "message": "Højde"
+   },
+   "panelParameters": {
+      "message": "Parametre"
+   },
+   "panelProportional": {
+      "message": "Proportional"
+   },
+   "panelShadow": {
+      "message": "Skygge"
+   },
+   "panelSize": {
+      "message": "Størrelse"
+   },
+   "panelTools": {
+      "message": "Tegneværktøjer"
+   },
+   "panelWidth": {
+      "message": "Bredde"
+   },
+   "popupAccessMic": {
+      "message": "For at starte skal du give adgang til din mikrofon"
+   },
+   "popupActionMessageCrop": {
+      "message": "Hvis du holder musen nede, vælger du det ønskede fragment. Næste, gem det eller send det til editoren."
+   },
+   "popupActionMessageFragmentScroll": {
+      "message": "Vælg det ønskede fragment og klik på det. Næste, gem det eller send det til editoren."
+   },
+   "popupAfterCapture": {
+      "message": "Handling efter capture"
+   },
+   "popupAutoDeleteDrawing": {
+      "message": "Auto slet tegning"
+   },
+   "popupAutoDeleteDrawingDescription": {
+      "message": "Du kan specificere en tidsperiode, efter hvilken de tegnede figurer vil blive slettet, mens der optages video"
+   },
+   "popupAutomationCancelButton": {
+      "message": "Stop"
+   },
+   "popupAutomationGuideError": {
+      "message": "Undskyld, serveren for optagelse er i øjeblikket utilgængelig."
+   },
+   "popupAutomationHideButton": {
+      "message": "Skjul"
+   },
+   "popupAutomationStorageLimit": {
+      "message": "Der er kun en lille mængde fri plads på disken. Vi garanterer ikke en stabil videooptagelse. Frigør venligst din diskplads og klik på 'Fortsæt med optagelse'. Klik på 'Stop' hvis du vil afslutte optagelsen."
+   },
+   "popupAutomationStreamError": {
+      "message": "Undskyld, serveren for optagelse er i øjeblikket utilgængelig. Prøv igen senere eller brug en lokal optagelse."
+   },
+   "popupAutomationUpload": {
+      "message": "Lidt tålmodighed... Uploader..."
+   },
+   "popupAutomationUploadStream": {
+      "message": "Lidt tålmodighed... Vi bearbejter din streamvideo til Nimbus."
+   },
+   "popupAutomationWelcome": {
+      "message": "Vi er glade for at meddele, at vi har tilføjet en ny funktion til at optage og indsætte videoer direkte i Github-tickets."
+   },
+   "popupAutomationWelcomeButton": {
+      "message": "Aktiver"
+   },
+   "popupBitrateAudioLabel": {
+      "message": "Lydbitrater"
+   },
+   "popupBitrateVideoLabel": {
+      "message": "Videobitrater"
+   },
+   "popupBtnBack": {
+      "message": "tilbage"
+   },
+   "popupBtnCameraRecord": {
+      "message": "Webkamera kun"
+   },
+   "popupBtnDesktopRecord": {
+      "message": "Skrivebord"
+   },
+   "popupBtnResetVideoSetting": {
+      "message": "Nulstil indstillinger"
+   },
+   "popupBtnStartRecord": {
+      "message": "Start optagelse"
+   },
+   "popupBtnStartStream": {
+      "message": "Start øjeblikkelig optagelse"
+   },
+   "popupBtnStopPause": {
+      "message": "Pause"
+   },
+   "popupBtnStopRecord": {
+      "message": "Stop optagelse"
+   },
+   "popupBtnStopResume": {
+      "message": "Fortsæt"
+   },
+   "popupBtnTabRecord": {
+      "message": "Fane"
+   },
+   "popupBtnUploadOptionHide": {
+      "message": "Skjul streammuligheder"
+   },
+   "popupBtnUploadOptionShow": {
+      "message": "Vis streammuligheder"
+   },
+   "popupButtonAdvertising": {
+      "message": "Nimbus Clipper - Clip alt!"
+   },
+   "popupCapturingProgress": {
+      "message": "Capturing..."
+   },
+   "popupCnameFreeDesc": {
+      "message": "Tilføj dit brugerdefinerede domæne (CNAME) til dine delinger. Derudover kan du:"
+   },
+   "popupCnameFreeDescList1": {
+      "message": "Vedhæft filer, links og mere til dine skærmbilleder og videoer"
+   },
+   "popupCnameFreeDescList2": {
+      "message": "Organiser dine uploads med arbejdsområder og mapper"
+   },
+   "popupCnameFreeDescList3": {
+      "message": "Opret wikier til dine teams og klienter"
+   },
+   "popupCnameFreeDescList4": {
+      "message": "Sikre dine delte sider med adgangskoder (valgfrit)"
+   },
+   "popupCnameFreeDescList5": {
+      "message": "Promover dit brand med vores White-label løsning"
+   },
+   "popupCnameFreeDescList6": {
+      "message": "Tilslut dine foretrukne marketing- og analyseværktøjer"
+   },
+   "popupCnameFreeTitle": {
+      "message": "Start din gratis 14-dages prøveperiode i dag"
+   },
+   "popupErrorLocalFileMessage": {
+      "message": "Gå til dine Chrome-udvidelsesindstillinger og aktiver \u003Cstrong>'Tillad adgang til fil-URL'er'\u003C/strong>, så udvidelsen kan få adgang til denne side."
+   },
+   "popupErrorLocalFileTitle": {
+      "message": "Adgang til lokal fil nødvendig"
+   },
+   "popupFrameRateLabel": {
+      "message": "Billedfrekvens"
+   },
+   "popupLabelAnalyticsEnable": {
+      "message": "Hvis aktiv, sendes anonyme statistikker om brugen af produktfunktioner til Nimbus."
+   },
+   "popupLabelCountdown": {
+      "message": "Tælling ned"
+   },
+   "popupLabelCursorAnimate": {
+      "message": "Animeret cursor"
+   },
+   "popupLabelPrivateUpload": {
+      "message": "Privat upload"
+   },
+   "popupLabelQuickVideoCaptureEnable": {
+      "message": "Hvis funktionen er aktiv, kan du optage og gemme en video med to musklik. Den første til at starte optagelsen, og den anden til at stoppe og gemme videoen. Det er virkelig simpelt!"
+   },
+   "popupLabelQuickVideoCaptureGithubEnable": {
+      "message": "Optagelse af video i Github er meget simpel! Med det første klik begynder du med at optage siden, og med det andet tilføjer du den direkte til Github-ticket!"
+   },
+   "popupLabelRecordCamera": {
+      "message": "Optag webkamera"
+   },
+   "popupLabelRecordMic": {
+      "message": "Optag mikrofonlyd"
+   },
+   "popupLabelRecordTab": {
+      "message": "Optag fane lyd"
+   },
+   "popupLabelSelectWorkspace": {
+      "message": "Vælg arbejdsområde"
+   },
+   "popupLabelSetting": {
+      "message": "Indstilling"
+   },
+   "popupLabelShowDrawingTools": {
+      "message": "Vis tegneværktøjer"
+   },
+   "popupLabelVideoAnimationCursor": {
+      "message": "Klik animation"
+   },
+   "popupLabelVideoSetting": {
+      "message": "Videoindstillinger"
+   },
+   "popupLabelVideoStorageLimit": {
+      "message": "Videooptagelsen stoppes, hvis der er mindre end 500 MB fri plads på disken. Anbefales for Chromebook."
+   },
+   "popupMyNotes": {
+      "message": "Mine uploads"
+   },
+   "popupOpenExtensions": {
+      "message": "Udvidelsesindstillinger"
+   },
+   "popupReadManual": {
+      "message": "Du kan også læse instruktionerne for at bruge programmet"
+   },
+   "popupRecordAudioCoreLabel": {
+      "message": "Lydoptagelse"
+   },
+   "popupRecordCoreAdvancedLabel": {
+      "message": "Avanceret"
+   },
+   "popupRecordCoreDefaultLabel": {
+      "message": "Standardoutput"
+   },
+   "popupRecordTitle": {
+      "message": "Video optages"
+   },
+   "popupRecordTypeTitle": {
+      "message": "Hvad vil du optage"
+   },
+   "popupRecordVideoCoreLabel": {
+      "message": "Videooptagelse"
+   },
+   "popupRecordWantTitle": {
+      "message": "Hvordan vil du optage"
+   },
+   "popupSec": {
+      "message": "sek."
+   },
+   "popupSelectMicLabel": {
+      "message": "Mikrofon"
+   },
+   "popupSelectWebCamLabel": {
+      "message": "Webkamera"
+   },
+   "popupSizeAutoDescription": {
+      "message": "(nuværende opløsning)"
+   },
+   "popupSizeAutoLabel": {
+      "message": "Auto"
+   },
+   "popupTextTrialScreenshot": {
+      "message": "Din prøveperiode for at tage skærmbilleder af hele siden eller sidefragmenter er startet. Efter prøveperioden kan du ikke tage et skærmbillede i Fuld side eller Valgt og rul tilstand i en gratis konto. Opgrader til Nimbus Pro for ubegrænsede skærmbilleder."
+   },
+   "popupTitle": {
+      "message": "Nimble capture"
+   },
+   "popupVideoEditorCrop": {
+      "message": "Vælg det ønskede fragment og klik på checkmark."
+   },
+   "popupVideoEditorTrim": {
+      "message": "Brug de blå markører til at vælge en del af videoen, der skal beskæres, og klik på 'Fjern valgt'."
+   },
+   "popupVideoEditorTrimNoSelect": {
+      "message": "Intet valgt til at beskære."
+   },
+   "popupVideoEditorWelcomeDescription": {
+      "message": "Her kan du nemt beskære og trimme dine videoer. \u003Ca href='https://nimblecapture.com/help' target='_blank'>Læs brugervejledningen\u003C/a> for at lære, hvordan du arbejder med editoren."
+   },
+   "popupVideoEditorWelcomeTitle": {
+      "message": "Velkommen til videoeditoren!"
+   },
+   "popupVideoErrorConvert": {
+      "message": "En fejl opstod. Prøv igen."
+   },
+   "popupVideoGifNotSupport": {
+      "message": "Denne handling er ikke understøttet for GIF-filer."
+   },
+   "popupVideoLimitMessage": {
+      "message": "\u003Cb>5 minutters begrænsning per video.\u003C/b> Opgrader for ubegrænset optagelse og andre premiumfunktioner."
+   },
+   "popupVideoQualityTitle": {
+      "message": "Video- og lydkvalitet"
+   },
+   "popupVideoReEncoding": {
+      "message": "Aktiver videoomkodning"
+   },
+   "popupVideoReEncodingTitle": {
+      "message": "Dette valg justerer tidsplanlængden. Hvis du slår dette valg fra, vil videoafviklingen (når du stopper optagelsen) være meget hurtigere for langsomme computere, men i nogle tilfælde vil tidslinjescroll ikke fungere. (Anbefales for langsomme computere eller Chrome Books)"
+   },
+   "popupVideoTitle": {
+      "message": "Optag video"
+   },
+   "popupWelcomeVideo": {
+      "message": "Velkommen til videooptagelsen"
+   },
+   "popupYoutubeChannel": {
+      "message": "Du skal have en Youtube-kanal"
+   },
+   "popupYoutubeChannelCreates": {
+      "message": "For at uploade optagede videoer til Youtube skal du oprette en Youtube-kanal."
+   },
+   "previewReload": {
+      "message": "Opdater side"
+   },
+   "rateNotShow": {
+      "message": "Vis ikke igen"
+   },
+   "rateRate": {
+      "message": "Bedøm Nimble capture"
+   },
+   "rateText": {
+      "message": "Kan du lide Nimble capture?\u003Cbr>Skriv venligst din anmeldelse! Tak."
+   },
+   "tooltipArrowCurve": {
+      "message": "Pil kurve"
+   },
+   "tooltipArrowDouble": {
+      "message": "Dobbelt pil"
+   },
+   "tooltipArrowLine": {
+      "message": "Pil linje"
+   },
+   "tooltipBlur": {
+      "message": "Slør område"
+   },
+   "tooltipBtnQuickShare": {
+      "message": " Send til Nimble"
+   },
+   "tooltipChangeZoom": {
+      "message": "Ændre zoom"
+   },
+   "tooltipCircle": {
+      "message": "Cirkel"
+   },
+   "tooltipColorAndSizeShadow": {
+      "message": "Skyggefarve og størrelse"
+   },
+   "tooltipColorFull": {
+      "message": "Fuld farve"
+   },
+   "tooltipColorLineAndText": {
+      "message": "Farve linje og tekst"
+   },
+   "tooltipCopy": {
+      "message": "Kopier til udklipsholder"
+   },
+   "tooltipCrop": {
+      "message": "Beskær"
+   },
+   "tooltipEditBtnBack": {
+      "message": "Tilbage"
+   },
+   "tooltipEditBtnDrive": {
+      "message": "Send til Google Drive"
+   },
+   "tooltipEditBtnDropbox": {
+      "message": "Send til Dropbox"
+   },
+   "tooltipEditBtnNimbus": {
+      "message": "Send til Nimbus"
+   },
+   "tooltipEditBtnSlack": {
+      "message": "Send til Slack"
+   },
+   "tooltipEditBtnYoutube": {
+      "message": "Offentliggør på Youtube"
+   },
+   "tooltipEllipse": {
+      "message": "Ellipse"
+   },
+   "tooltipFontAndSize": {
+      "message": "Skrifttype og størrelse"
+   },
+   "tooltipFormula": {
+      "message": "Indsæt formel"
+   },
+   "tooltipLine": {
+      "message": "Linje"
+   },
+   "tooltipLineCurve": {
+      "message": "Linje kurve"
+   },
+   "tooltipLineDotted": {
+      "message": "Linje prikket"
+   },
+   "tooltipLineWidth": {
+      "message": "Linjebredde"
+   },
+   "tooltipLock": {
+      "message": "Lås figurer"
+   },
+   "tooltipMakeScreenshot": {
+      "message": "Lav skærmbillede"
+   },
+   "tooltipMarker": {
+      "message": "Marker"
+   },
+   "tooltipNoteText": {
+      "message": "Sidetekst"
+   },
+   "tooltipNumber": {
+      "message": "Nummererede markører"
+   },
+   "tooltipNumbers": {
+      "message": "Auto nummerering"
+   },
+   "tooltipOpenFile": {
+      "message": "Indsæt billede"
+   },
+   "tooltipOptions": {
+      "message": "Indstillinger"
+   },
+   "tooltipOptionsWatermark": {
+      "message": "Vandmærkeindstillinger"
+   },
+   "tooltipPassInfo": {
+      "message": "Adgangskoden skal være mindst 8 tegn"
+   },
+   "tooltipPassMatch": {
+      "message": "Adgangskoderne stemmer ikke overens"
+   },
+   "tooltipPen": {
+      "message": "Pen"
+   },
+   "tooltipRedo": {
+      "message": "Gentag"
+   },
+   "tooltipResize": {
+      "message": "Ændre størrelse"
+   },
+   "tooltipRounded": {
+      "message": "Afrundet"
+   },
+   "tooltipShortUrl": {
+      "message": "Kort url"
+   },
+   "tooltipSquare": {
+      "message": "Firkant"
+   },
+   "tooltipText": {
+      "message": "Tekst"
+   },
+   "tooltipTextArrow": {
+      "message": "Tekst pil"
+   },
+   "tooltipTrim": {
+      "message": "Trim"
+   },
+   "tooltipUndo": {
+      "message": "Fortryd"
+   },
+   "tooltipUndoAll": {
+      "message": "Fortryd alt"
+   },
+   "tooltipUploadTo": {
+      "message": "Upload til"
+   },
+   "tooltipVideoEditor": {
+      "message": "Beskær/Klip"
+   },
+   "tooltipWrongEmail": {
+      "message": "Forkert email"
+   },
+   "tooltipZoomMinus": {
+      "message": "Zoom -"
+   },
+   "tooltipZoomPlus": {
+      "message": "Zoom +"
+   },
+   "tooltipclassroomSend": {
+      "message": "Send til Google Classroom"
+   },
+   "videoCanvas": {
+      "message": "Blank side"
+   },
+   "videoConvert": {
+      "message": "Konverter"
+   },
+   "videoConvertFrameRate": {
+      "message": "Billedhastighed"
+   },
+   "videoConvertInfo": {
+      "message": "Det kan tage lidt tid at konvertere din video til MP4- eller GIF-format. Du vil kunne gemme din video, så snart konverteringen er færdig."
+   },
+   "videoConvertOpen": {
+      "message": "Konverter til MP4 eller Gif"
+   },
+   "videoConvertSize": {
+      "message": "Størrelse"
+   },
+   "videoConvertSizeOptimal": {
+      "message": "Optimal størrelse"
+   },
+   "videoEditor": {
+      "message": "Videoredigeringsværktøj"
+   },
+   "videoEditorTimeline": {
+      "message": "Tidslinje zoom"
+   },
+   "videoEditorTrimApply": {
+      "message": "Fjern valgte"
+   },
+   "videoEditorTrimCancel": {
+      "message": "Annuller"
+   },
+   "videoPanelAnimatedCursor": {
+      "message": "Animeret markør - Alt+L"
+   },
+   "videoPanelArrow": {
+      "message": "Pil - Alt+A"
+   },
+   "videoPanelBlur": {
+      "message": "Slør - Alt+B"
+   },
+   "videoPanelCamera": {
+      "message": "Tænd/sluk webcam"
+   },
+   "videoPanelCheckmark": {
+      "message": "Tjekmark - Alt+C"
+   },
+   "videoPanelClear": {
+      "message": "Ryd - Alt+N"
+   },
+   "videoPanelClearAll": {
+      "message": "Ryd alt - Alt+U"
+   },
+   "videoPanelFocusMouse": {
+      "message": "Fokuser musen - Alt+G"
+   },
+   "videoPanelHideShowPanel": {
+      "message": "Skjul/vis panel - Alt+V"
+   },
+   "videoPanelMark": {
+      "message": "Mark - Alt+M"
+   },
+   "videoPanelPen": {
+      "message": "Pen - Alt+P"
+   },
+   "videoPanelQuestion": {
+      "message": "Spørgsmål - Alt+Q"
+   },
+   "videoPanelSimpleCursor": {
+      "message": "Simpel markør - Alt+S"
+   },
+   "videoPanelSquare": {
+      "message": "Firkant - Alt+R"
+   },
+   "watermarkLimit": {
+      "message": "Maks. størrelse af vandmærke -1 mb"
+   },
+   "watermarkUnsupported": {
+      "message": "Ikke-understøttet filformat"
+   },
+   "welcomeAddOtherContent": {
+      "message": "Tilføj andet indhold til dine uploads"
+   },
+   "welcomeClickNextReady": {
+      "message": "Klik på Næste, når du er klar."
+   },
+   "welcomeCompletedAllSteps": {
+      "message": "Du har gennemført alle trin. Nu kan du optage din første video nu!"
+   },
+   "welcomeEditVideo": {
+      "message": "Rediger video og tilføj knapper"
+   },
+   "welcomeForSolutions": {
+      "message": "til alle vores løsninger"
+   },
+   "welcomeGetAccessAll": {
+      "message": "* Få adgang til alle Nimbus-apps"
+   },
+   "welcomeGetQuickLinks": {
+      "message": "Få hurtige links til deling med dit domæne"
+   },
+   "welcomeHereYouGo": {
+      "message": "Her har du det!"
+   },
+   "welcomeInformationManagement": {
+      "message": "samarbejde og informationsstyring"
+   },
+   "welcomeMakeScreenshot": {
+      "message": "Lav et skærmbillede"
+   },
+   "welcomeMuchMoreCome": {
+      "message": "Meget mere at komme. Bliv hængende!"
+   },
+   "welcomeNeedYourVideo": {
+      "message": "Skal din videooptagelsesordre og skærmbilledværktøj være klar ved hånden?"
+   },
+   "welcomeNext": {
+      "message": "Næste"
+   },
+   "welcomeNimbusCapturePromo": {
+      "message": "Videooptagelsesordre og skærmbilledløsning til daglig brug"
+   },
+   "welcomeNimbusClarityPromo": {
+      "message": "Video- og lydoptagelsesordre til asynkron beskedføring (+Windows Desktop app)"
+   },
+   "welcomeNimbusClipperPromo": {
+      "message": "Gem kun relevant information fra nettet: vælg, gem, del"
+   },
+   "welcomeNimbusNotePromo": {
+      "message": "Dit digitale hovedkvarter til at administrere og dele information"
+   },
+   "welcomeOneAccount": {
+      "message": "En Nimbus-konto"
+   },
+   "welcomePageTitle": {
+      "message": "Nimble Screenshot Velkommen"
+   },
+   "welcomePinExtension": {
+      "message": "Fastgør udvidelsen"
+   },
+   "welcomePleaseClickIcon": {
+      "message": "Klik på puslespilsikonet, find Nimbus på listen og klik på Fastgør. Vores korte GIF til højre vil hjælpe dig."
+   },
+   "welcomePleaseCreateAccount": {
+      "message": "Opret venligst en konto for at:"
+   },
+   "welcomeProtectYourQuick": {
+      "message": "Beskyt dine hurtige links med adgangskoder"
+   },
+   "welcomeReadyStart": {
+      "message": "Klar til at starte?"
+   },
+   "welcomeRecordVideo": {
+      "message": "Optag en video"
+   },
+   "welcomeSaveVideosScreenshots": {
+      "message": "Gem dine videoer og skærmbilleder"
+   },
+   "welcomeSettleLess": {
+      "message": "Nøjes med mindre **"
+   },
+   "welcomeStayCaptureOnly": {
+      "message": "** Bliv kun med Nimble capture"
+   },
+   "welcomeStreamlineYour": {
+      "message": "Strømline din"
+   },
+   "welcomeThankYouChoosing": {
+      "message": "Tak for at du valgte Nimble capture!"
+   },
+   "welcomeWantFreeUpgrade": {
+      "message": "Jeg vil have en gratis opgradering*"
+   },
+   "welcomeWellDone": {
+      "message": "Godt klaret!"
+   },
+   "youtubeCreate": {
+      "message": "Opret"
+   },
+   "youtubeName": {
+      "message": "Navn"
+   },
+   "youtubeNoPlaylist": {
+      "message": "Uden afspilningsliste"
+   },
+   "youtubePlaylist": {
+      "message": "Afspilningsliste"
+   },
+   "youtubePrivate": {
+      "message": "Privat"
+   },
+   "youtubePublic": {
+      "message": "Offentlig"
+   },
+   "youtubeUnlisted": {
+      "message": "Ikke opført"
+   }
+}
