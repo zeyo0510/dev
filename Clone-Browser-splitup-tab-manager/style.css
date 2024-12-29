@@ -1,0 +1,263 @@
+html,body {
+  margin: 0;
+  width: 400px;
+  background-color: whitesmoke !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.toolset {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search{
+  border-radius: 9em !important;
+  border-style: hidden !important;
+}
+
+.search:focus{
+  outline-style:none !important;
+  box-shadow:none !important;
+  border-color:transparent !important;
+}
+
+
+input[type="search"]::-webkit-input-placeholder {
+  color: #d2d2d2;
+}
+.dark {
+  background-image: none !important;
+  background-color: rgb(46, 41, 41) !important;
+}
+.darkish {
+  background-color: #484141 !important;
+}
+.inner-addon { 
+  position: relative; 
+  width: 10em;
+}
+
+#i-search {
+position: absolute;
+padding: 6px;
+pointer-events: none;
+}
+/* align icon */
+#i-search { left:  0px;}
+
+/* add padding  */
+.left-addon input  { 
+padding-left:  32px;
+padding-bottom: 0em; 
+padding-top: 0em;
+}
+.savelocally, .trashlocally {
+margin-bottom: 0%;
+margin-top: 1%;
+margin-right: 3%;
+}
+ul{
+  list-style: none;
+}
+.listMain {
+  box-shadow: 0px 0px 9px #d8d8d8;
+  background-color: white
+}
+.cclose{
+  background: transparent;
+  color: red;
+  border:0;
+  outline: 0;
+  font-size: 1em !important;
+  display: none;
+}
+
+.cclose:hover {
+color: lightcoral;
+}
+
+.trashLocalTab{
+  background: transparent;
+  color: red;
+  border:0;
+  outline: 0;
+  font-size: 1em !important;
+  display: none;
+}
+
+.trashLocalTab:hover {
+color: lightcoral;
+}
+
+li:hover .cclose{
+  display: inline;
+}
+
+li:hover .trashLocalTab{
+  display: inline;
+}
+
+li:hover{
+ cursor: pointer;
+}
+
+img{
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  margin-bottom: -0.3em;
+  vertical-align: initial !important;
+}
+
+.audio{
+  margin-left: -1.4em;
+}
+
+#list{
+  padding-left: 1.8em;
+}
+
+.navbar-brand {
+margin-right: 0 !important;
+
+}
+
+#exportTabs{
+width: 1.3em;
+height: 1.3em;
+margin-left: 0em;
+}
+#separate{
+width: 1.3em;
+height: 1.3em;
+margin-left: -7em;
+}
+#cbList,#cbListSaved{
+  /* z-index: 2000; */
+  position: relative;
+  padding-top: 5em;
+  margin-right: -1em;
+  padding-bottom: 0.5em;
+}
+.container{
+  padding-left: 0px !important;
+}
+
+.item{
+  font-size: 14px;
+}
+
+.navbar{
+  background-image:url('img/YellowStripe.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.session-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+/* pinchers animation */
+/* @keyframes spin {
+from {transform:rotate(0deg);}
+to {transform:rotate(-2deg);}
+}
+@keyframes spinPinch2 {
+from {transform:rotate(0deg);}
+to {transform:rotate(4deg);}
+}
+
+.splitUpBt:hover .pinch1 {
+animation: spin 1s infinite cubic-bezier(0.3, 0.76, 0.53, 0.92);
+transform-origin: 90% 50%;
+}
+
+.splitUpBt:hover .pinch2 {
+animation: spinPinch2 1s infinite cubic-bezier(0.3, 0.76, 0.53, 0.92);
+transform-origin: 90% 50%;
+} */
+
+.splitUpBt {
+  cursor:pointer
+}
+
+[draggable] {
+user-select: none;
+}
+
+.listItem.over {
+border-top: 2px solid #fdc80f;
+}
+
+.bottomContainer{
+margin-top: 1em;
+}
+
+/* collapsible item */
+
+.bmc-button img {
+  height: 34px !important;
+  width: 35px !important;
+  margin-bottom: 1px !important;
+  box-shadow: none !important;
+  border: none !important;
+  vertical-align: middle !important;
+}
+
+.bmc-button {
+  padding: 7px 15px 7px 10px !important;
+  line-height: 35px !important;
+  height: 51px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  color: #000000 !important;
+  background-color: #FFDD00 !important;
+  border-radius: 5px !important;
+  border: 1px solid transparent !important;
+  padding: 7px 15px 7px 10px !important;
+  font-size: 28px !important;
+  letter-spacing: 0.6px !important;
+  box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+  -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+  margin: 0 auto !important;
+  font-family: 'Cookie', cursive !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.bmc-button:hover,
+.bmc-button:active,
+.bmc-button:focus {
+  -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+  text-decoration: none !important;
+  box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+  opacity: 0.85 !important;
+  color: #000000 !important;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #fdc80f;
+  color: #444;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #fdc90fa8;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsibleContent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

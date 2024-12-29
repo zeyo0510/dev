@@ -1,0 +1,26 @@
+{
+   "browser_action": {
+      "default_icon": "SplitLogo.png",
+      "default_popup": "popup.html",
+      "default_title": "SplitUp!"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "description": "Activate extension"
+      },
+      "split-up": {
+         "description": "Split to separate window!"
+      }
+   },
+   "description": "Have FUN organizing & saving your tabs & windows with the ultimate Tab Manager.",
+   "icons": {
+      "128": "SplitLogo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvSnX+k4QARSVavGS8PhH0cgC/OBrTB4hyHKVyEz+cxzW52jsHtrt1hpAvejdWGCGcKwzdd+M+iiHWxLSbQ+H91NyB9gKWao1hkPz6rdxcaT5WSHiHMxuGW8gGPJ7fkz3EWoqyQwpdv37bblETYZm2eNN8XTIUSm8iOYANnkoHc6lRhDppFTOtdBJkz4VqgPOaiPapKjg+iHbpSFCc99vckfuuO1i5C/8QkJIYIozmmJFP725atXL9UN3CjpLXEadSSzs3pTRjOTkM+FvJl+wG71aDGZwlfHbBzzFz/9lDkCn6R8H1tJIVWrBnPKWUYrwAPsXQhODWi03zJywzAUicwIDAQAB",
+   "manifest_version": 2,
+   "name": "SplitUp! - Tab manager",
+   "permissions": [ "tabs", "storage" ],
+   "short_name": "SplitUp!",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.8"
+}
