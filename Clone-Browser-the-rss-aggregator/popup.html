@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		body {margin:0;cursor:default;font-family:"Segoe UI","Arial Narrow",sans-serif;font-size:12px;}
+		div,a,a:visited {border:1px transparent solid;white-space:nowrap;padding:0 20px;
+			background-repeat:no-repeat;background-position:left center;line-height:18px;}
+		a {display:block;color:black;text-decoration:none;}
+		a.focus {border-color:#1676FF;background-color:#46A9FF;color:white;}
+		a.def-icon {background-image:url(16x16.png);}
+		a.add {background-image:url(add.png);}
+		div.separator {height:0;border:0;border-top:1px solid #A0A0A0;border-bottom:1px solid white;
+			margin:4px 0 3px 20px;}
+		div[disabled], a[disabled] {color:gray;border-color:transparent;background:none;}
+		#manageFeeds {display:none;}
+	</style>
+	<script src="lingua.js"></script>
+	<script src="jquery-2.0.3.min.js"></script>
+	<script src="popup.js"></script>
+</head>
+<body><a id="readFeeds" class="def-icon">Read Feeds</a><!--a id="manageFeeds">Manage Feeds...</a--><div class="separator"></div><div id="noFeeds" disabled="disabled">No feeds</div><div class="separator"></div><div id="noSubs" disabled="disabled">No subscriptions</div></body>
+</html>

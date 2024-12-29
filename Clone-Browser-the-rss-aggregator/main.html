@@ -1,0 +1,2106 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>-</title>
+	<link id="favicon" type="image/x-icon" rel="shortcut icon" href="16x16.png">
+	<link rel="stylesheet" href="widgets.css">
+	<style>
+		html, body {
+			height: 100%;
+			overflow: hidden;
+		}
+
+		body {
+			margin: 0;
+			visibility: hidden;
+		}
+
+		table#main-table {
+			width: 100%;
+			height: 100%;
+			border-collapse: collapse;
+		}
+
+		table#main-table td {
+			background: white;
+			padding: 0;
+		}
+
+		tr.top-panel > td > div {
+			height: 33px;
+			background-color: #EDEFF6;
+			background-image: url(hotlist-divider.png), url(toolbar.png);
+			background-position: right bottom, bottom;
+			background-repeat: no-repeat, repeat-x;
+		}
+
+		tr.top-panel > td:last-child > div {
+			background: url(toolbar.png) bottom repeat-x #EDEFF6;
+		}
+
+		tr.top-panel > td > div {
+			overflow: hidden;
+			position: relative;
+		}
+
+		table#main-table tr.top-panel {
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		tr#middle > td {
+			height: 100%;
+		}
+
+		tr#middle > td > div {
+			height: 100%;
+		}
+
+		tr#middle > td > div {
+			border-right: solid 1px #969AA2;
+		}
+
+		tr#middle > td:last-child > div {
+			border: 0;
+		}
+
+		span.toolbar-button {
+			display: inline-block;
+			width: 32px;
+			height: 26px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+		span.toolbar-button:hover {
+			background-position: -32px 0;
+		}
+
+		span.toolbar-button:active {
+			background-position: -64px 0;
+		}
+
+		span.toolbar-button.disabled:hover, span.toolbar-button.disabled:active {
+			background-position: 0 0;
+		}
+
+		span.reload-button {
+			background-image: url(reload2.png);
+			top: 5px;
+		}
+
+		span.config-button {
+			background-image: url(config2.png);
+			top: 5px;
+			left: 40px;
+		}
+
+		span.add-url-button {
+			background-image: url(add2.png);
+			top: 5px;
+			left: 40px;
+		}
+
+		/* 76px */
+		span.read-button {
+			background-image: url(read2.png);
+			top: 5px;
+			left: 4px;
+		}
+
+		span.read-button.selected {
+			background-image: url(read_selected2.png);
+			top: 5px;
+			left: 4px;
+		}
+
+		span.delete-button {
+			background-image: url(delete2.png);
+			top: 5px;
+			left: 40px;
+		}
+
+		span#reload-feed {
+			left: 150px;
+		}
+
+		span#reload-all {
+			left: 4px;
+		}
+
+		span.toolbar-button.disabled {
+			opacity: 0.4
+		}
+
+		div#item-window {
+			background-image: url(no_mail.png), url(mail_window.png);
+			background-repeat: no-repeat, repeat;
+			background-position: center, left top;
+			position: relative;
+		}
+
+		div#item-window > div {
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			display: none;
+		}
+
+		div#item-window div#article-header {
+			heightz: 132px;
+			border-bottom: 1px solid #DADCE0;
+			background: white;
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
+
+		div#item-window div#article {
+			bottom: 0;
+			overflow: auto;
+			position: absolute;
+			top: 133px;
+			background: white;
+			padding: 32px;
+			left: 0;
+			right: 0;
+		}
+
+		td#feeds-td {
+			width: 1px;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		td#feeds-td > div {
+			width: 333px;
+		}
+
+		td#feed-td {
+			width: 1px;
+			user-select: none;
+			-webkit-user-select: none;
+			position: relative;
+		}
+
+		td#feed-td > div {
+			width: 270px;
+		}
+
+		td#feed-td > div, td#feeds-td > div {
+			overflow-y: auto;
+			position: relative;
+			height: 100%;
+		}
+
+		div#feed-div, div#feeds-div {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+		}
+
+		div#feeds-div {
+			height: auto;
+			position: relative;
+		}
+
+		/*div#feed-div {visibility:hidden;}*/
+
+		td#feeds-td > div, div#feeds-div, div#feeds-div div.feed {
+			background: #F2F3F3;
+		}
+
+		div#feeds-div {
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 12px;
+		}
+
+		div#feeds-div > div {
+			cursor: pointer;
+			line-height: 20px;
+			position: relative;
+			margin: 0 1px;
+		}
+
+		div#feeds-div > div.hlight {
+			color: firebrick;
+			background: #fff;
+		}
+
+		div#feeds-div .feed-group.hlight {
+			color: firebrick;
+		}
+
+		div#feeds-div .feed.selected {
+			background: #94C6F7;
+			color: white;
+		}
+
+		div#feeds-div .feed.selected > div {
+			text-shadow: 0 0 6px black;
+		}
+
+		div#feeds-div .feed:hover {
+			text-decoration: underline;
+		}
+
+		div#feeds-div > div {
+			position: relative
+		}
+
+		div#feeds-div .feed:active {
+			background: #3399FF;
+			color: black;
+		}
+
+		div#feeds-div .feed:active > div {
+			text-shadow: 0 0 6px white;
+		}
+
+		div#feeds-div .feed > div {
+			white-space: nowrap;
+			overflow: hidden;
+			padding: 0 35px 0 18px;
+			text-overflow: ellipsis;
+			background-position: left center;
+			background-repeat: no-repeat;
+			margin-left: 12px;
+		}
+
+		div#feeds-div .feed > div {
+			background-image: url(16x16.png)
+		}
+
+		/*div#feeds-div .feed.loading>div {background-image:url(loading.gif) !important;}
+		div#feeds-div .feed.selected.loading>div {background-image:url(loading-blue.gif) !important;}*/
+
+		div#feeds-div .feed.zero-update {
+			opacity: 0.5
+		}
+
+		div#feeds-div .feed > div {
+			position: relative;
+		}
+
+		div#feeds-div .feed.loading > div {
+			background-image: none !important;
+		}
+
+		div#feeds-div .feed.loading > div:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 2px;
+			height: 16px;
+			width: 16px;
+			background: url(reloading.png) no-repeat center;
+			-webkit-animation: rotate 0.8s linear infinite;
+		}
+
+		@-webkit-keyframes rotate {
+			from {
+				-webkit-transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+			}
+		}
+
+		div#feeds-div .feed > span, div#feeds-div .feed-group > span {
+			position: absolute;
+			right: 4px;
+			top: 2px;
+			background: rgba(255, 255, 255, 0.4);
+			line-height: 16px;
+			color: #626973;
+			padding: 0 4px;
+			border-radius: 3px;
+		}
+
+		div#feeds-div .feed.has-unread {
+			font-weight: bold;
+		}
+
+		div#feeds-div span {
+			font-weight: normal;
+		}
+
+		div#feed-div {
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 12px;
+		}
+
+		div#feed-div .day-panel {
+			font-weight: bold;
+			background: url(day_panel.png) repeat-x bottom;
+			height: 21px;
+			line-height: 21px;
+			text-align: center;
+			cursor: default;
+			text-transform: uppercase;
+		}
+
+		div#feed-div .item {
+			border-bottom: 1px solid #DADCE0;
+			padding: 4px 0;
+			color: #0059B3;
+			cursor: default;
+			position: relative;
+		}
+
+		div#feed-div .item div {
+			font-weight: bold;
+			line-height: 18px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding-left: 20px;
+		}
+
+		div#feed-div .item .author {
+			background: url(bullet_unseen.png) no-repeat left center;
+			padding-right: 55px;
+			color: #91BEEA;
+		}
+
+		div#feed-div .item .date {
+			position: absolute;
+			right: 6px;
+			bottom: 4px;
+			font-weight: normal;
+			background: white;
+			padding-left: 2px;
+		}
+
+		div#feed-div .item .date {
+			padding-right: 0px;
+			background: url(16x16.png) no-repeat 999px center;
+		}
+
+		div#feed-div.show_icons .item .date {
+			padding-right: 20px;
+			background: url(16x16.png) no-repeat right center;
+		}
+
+		div#feed-div .item.seen {
+			color: black;
+		}
+
+		div#feed-div .item.seen .author {
+			color: #999;
+			background-image: url(bullet_unread.png);
+		}
+
+		/*color:#464646;*/
+		div#feed-div .item.read div {
+			color: black;
+			font-weight: normal;
+		}
+
+		div#feed-div .item.read .author {
+			color: #464646;
+			background-image: url(bullet_read.png);
+		}
+
+		div#feed-div .item.pinned .author {
+			color: #464646;
+			background-image: url(bullet_pinned.png);
+		}
+
+		div#feed-div .item.read .date {
+			color: gray;
+		}
+
+		div#feed-div .item.selected, div#feed-div .item.selected .date,
+		div#feed-div .item.selected .author, div#feed-div .item.selected .title {
+			background-color: #3399FF;
+			color: white;
+		}
+
+		div#feed-div .item.selected .author {
+			color: #BFDFFF;
+		}
+
+		div#feed-div .item.deleted .title {
+			background: url(bullet_deleted.png) no-repeat left center;
+		}
+
+		div#feed-div .item {
+			height: 36px;
+			overflow: hidden;
+		}
+
+		div.splitter {
+			position: fixed;
+			width: 7px;
+			height: 100%;
+			top: 0;
+			cursorz: ew-resize;
+			cursor: col-resize;
+		}
+
+		div#splitter1 {
+			left: 329px;
+		}
+
+		/*333-4*/
+		div#splitter2 {
+			left: 599px;
+		}
+
+		/*333+270-4*/
+		div#splitter3 {
+			height: 7px;
+			width: 100%;
+			left: 329px;
+			top: 203px;
+			cursor: row-resize;
+			display: none;
+		}
+
+		/*174+33-4 (td+td-4)*/
+
+		div#item-window div#article-header h1 {
+			color: #48494C;
+			font-size: 1.5em;
+			line-height: 1.5em;
+			margin: 18px 0;
+			font-weight: 700;
+		}
+
+		div#item-window div#article-header {
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			padding: 0 30px;
+			white-spacez: nowrap;
+			overflow: hidden;
+			padding-bottom: 10px;
+		}
+
+		div#item-window div#article-header #author, div#item-window div#article-header #date {
+			font-size: 12px;
+			color: #909399;
+			positionz: absolute;
+			paddingz: 0 30px;
+		}
+
+		div#item-window div#article-header #author {
+			left: 0;
+		}
+
+		div#item-window div#article-header #date {
+			right: 0;
+			float: right;
+		}
+
+		div#item-window div#article-header #pin {
+			display: inline-block;
+			position: relative;
+			right: -5px;
+			width: 16px;
+			height: 16px;
+			background: url(pinned.png);
+			cursor: pointer;
+			float: right;
+			background-repeat: no-repeat;
+		}
+
+		div#item-window div#article-header #pin:hover {
+			background-position: -16px 0px;
+		}
+
+		div#item-window div#article-header #pin.pinned {
+			background-position: -32px 0px;
+		}
+
+		div#item-window div#article-header #pin:active {
+			right: -6px;
+			top: 1px;
+		}
+
+		div#item-window div#article {
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 15px;
+		}
+
+		div#item-window div#article a.external-link {
+			color: #808080;
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 14px;
+			text-decoration: none;
+			padding-left: 14px;
+			padding-right: 10px;
+			white-space: nowrap;
+			background: url(external_hyperlink.png) left center no-repeat;
+			float: left;
+		}
+
+		div#item-window div#article a.external-link:hover {
+			text-decoration: underline;
+		}
+
+		div#item-window:before {
+			content: "";
+			text-align: center;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			line-height: 100%;
+			top: 50%;
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+			color: #858A99;
+		}
+
+		div#item-window div#article a.donwload-link {
+			position: absolute;
+			top: 0;
+			margin: 10px 0;
+		}
+
+		div#item-window.hasCount {
+			background: url(mail_window.png) left top repeat;
+		}
+
+		div#item-window div#article {
+			word-break: break-word;
+		}
+
+		div#item-window div#article img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		/*div#item-window div#article table img {max-width:none;}*/
+		div#item-window div#article * {
+			max-width: 100%;
+		}
+
+		.win {
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			background: #F0F0F0;
+			border-radius: 5px;
+			z-index: 1;
+			padding: 5px;
+			box-shadow: black 0 0 5px;
+			border: 1px solid black;
+			min-width: 200px;
+			min-heightz: 100px;;
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			cursor: default;
+		}
+
+		.win td {
+			background: #F0F0F0
+		}
+
+		.win [readonly] {
+			color: #555;
+			borderz: 1px solid gray;
+		}
+
+		.win .title {
+			font-size: 18px;
+			border-bottom: 1px solid gray;
+			position: relative;
+			top: -5px;
+			background: transparent url(feeds.png) no-repeat left center;
+			padding-left: 20px;
+		}
+
+		.win .content {
+			position: relative;
+		}
+
+		.win .content, .win .content input, .win input, .win option, .win select {
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 12px;
+		}
+
+		.win .buttons {
+			position: relative;
+			border-top: 1px solid gray;
+			text-align: right;
+			margin-top: 5px;
+			clear: both;
+			padding-top: 5px;
+		}
+
+		input[type="button"] {
+			height: 25px;
+			width: 90px;
+		}
+
+		.hider {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.6);
+			z-index: 1;
+		}
+
+		.win .resizer {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 15px;
+			height: 15px;
+			background: url(resize.png);
+			background-position: -2px -2px;
+			cursor: nw-resize;
+		}
+
+		.table-prop td:first-child {
+			width: 70px;
+		}
+
+		.table-prop td {
+			padding: 0 10px;
+		}
+
+		.table-prop input:not([type=checkbox]), .table-prop select {
+			width: 320px;
+		}
+
+		/* .table-prop input {padding:0 3px;} */
+		.table-prop .checkbox {
+			padding-left: 25px;
+		}
+
+		.flist, .butlist {
+			border-right: 1px solid gray;
+		}
+
+		.flist div {
+			height: 20px;
+			line-height: 20px;
+			padding: 0 2px 0 20px;
+			background: no-repeat 2px center;
+			border: 1px solid transparent;
+			max-width: 300px;
+			white-space: nowrap;
+			overflow: hidden;
+			position: relative;
+			background-image: url(16x16.png);
+		}
+
+		.flist div:hover {
+			background-color: white;
+		}
+
+		.flist div input {
+			vertical-align: middle;
+			position: relative;
+			top: -2px;
+		}
+
+		.flist div.selected {
+			border: 1px solid black;
+			color: red;
+			background-color: white;
+		}
+
+		.general {
+			max-heightz: 50px;
+		}
+
+		.general td {
+			vertical-align: top;
+			padding: 0 5px;
+		}
+
+		.flist {
+			width: 150px;
+		}
+
+		.butlist input {
+			height: 25px;
+			width: 90px;
+			margin-bottom: 10px;
+		}
+
+		#feedback {
+			position: absolute;
+			right: 10px;
+			top: 8px;
+			font-family: 'Open Sans', arial, "​sans-serif";
+			font-size: 13px;
+			color: #262626;
+			text-decoration: none;
+			padding-left: 24px;
+			white-space: nowrap;
+		}
+
+		#feedback {
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+
+		#feedback {
+			background-image: url(feedback.png)
+		}
+
+		#feedback:hover {
+			background-image: url(feedback_hover.png)
+		}
+
+		/*tmp*/
+		#feedback {
+			color: grey;
+			background: none !important;
+			padding: 0;
+		}
+
+		#feedback:hover {
+			color: black;
+		}
+
+		/*tmp*/
+
+		/*
+		.win label,.win label input {position:relative;}
+		.win .table-prop label {margin-left:10px;}
+		.win label {top:-2px;}
+		.win label input[type=checkbox] {width:auto;top:2px;}
+		*/
+
+		.menu {
+			position: fixed;
+			left: 100px;
+			top: 100px;
+			margin: 0;
+			cursor: default;
+			background: #F0F0F0;
+			max-height: 100%;
+			overflow: auto;
+			box-shadow: 2px 2px 5px #888888;
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 12px;
+			border: 1px solid #A0A0A0;
+			padding: 2px;
+			z-index: 999;
+		}
+
+		.menu div {
+			border: 1px transparent solid;
+			white-space: nowrap;
+			padding: 0 10px 0 24px;
+			position: relative;
+			overflow: hidden;
+			background-repeat: no-repeat;
+			background-position: 4px center;
+			line-height: 18px;
+		}
+
+		.menu div:hover {
+			border-color: #1676FF;
+			background-color: #46A9FF;
+			color: white;
+		}
+
+		.menu div.separator {
+			height: 0;
+			border: 0;
+			border-top: 1px solid #A0A0A0;
+			border-bottom: 1px solid white;
+			margin: 4px 0 3px 20px;
+		}
+
+		.menu div[disabled] {
+			color: gray;
+			border-color: transparent;
+			background-color: transparent;
+		}
+
+		.menu .reload {
+			background-image: url(reload.png);
+		}
+
+		.menu .delete {
+			background-image: url(delete.png);
+		}
+
+		.menu .properties {
+			background-image: url(properties.png);
+		}
+
+		.menu .mark-as-read {
+			background-image: url(read_selected.png);
+		}
+
+		.menu .mark-as-unread {
+			background-image: url(read.png);
+		}
+
+		.menu .opml {
+			background-image: url(opera.png);
+		}
+
+		.menu .tra {
+			background-image: url(icon_16.png);
+		}
+
+		/*.menu div[disabled] {background-image:none;}*/
+
+		.menu div.nest {
+			background-image: url(left.png);
+		}
+
+		.menu.rightie div {
+			padding-right: 16px;
+		}
+
+		.menu.rightie div.nest {
+			background-image: url(right.png);
+			background-position: right center;
+		}
+
+		.menu.rightie .group.nest {
+			background-image: url(right.png), url(folder.png);
+			background-position: right center, 4px center;
+		}
+
+		.menu.rightie .nest#updating-menu {
+			background-image: url(right.png), url(reload.png);
+			background-position: right center, 4px center;
+		}
+
+		.menu#real-select-layout div {
+			float: left;
+			width: 72px;
+			height: 62px;
+			border-radius: 5px;
+			background-position: center;
+			background-repeat: no-repeat;
+			padding: 0;
+		}
+
+		.menu#real-select-layout #layout-sidebyside {
+			background-image: url(layout_mail_sidebyside.png)
+		}
+
+		.menu#real-select-layout #layout-vertical {
+			background-image: url(layout_mail_vertical.png)
+		}
+
+		.menu#real-select-layout #layout-list {
+			background-image: url(layout_mail_list.png)
+		}
+
+		.menu#real-select-layout #layout-sidebyside.selected {
+			background-image: url(layout_mail_sidebyside_selected.png)
+		}
+
+		.menu#real-select-layout #layout-vertical.selected {
+			background-image: url(layout_mail_vertical_selected.png)
+		}
+
+		.menu#real-select-layout #layout-list.selected {
+			background-image: url(layout_mail_list_selected.png)
+		}
+
+		#feedMenu, #itemMenu, #sortMenu {
+			display: none;
+		}
+
+		/*.hidden {display:none;}*/
+
+		.win a {
+			text-decoration: underline;
+			cursor: pointer;
+			color: rgb(85, 26, 139);
+			font-size: smaller;
+		}
+
+		.win a:hover {
+			color: red
+		}
+
+		#a-advanced-options {
+			position: absolute;
+			left: 4px;
+			top: 4px;
+		}
+
+		.advanced-options {
+			padding-bottom: 20px;
+		}
+
+		.advanced-options p {
+			color: red;
+			text-align: center;
+		}
+
+		.select-add-lang ul {
+			float: left;
+			list-style: none;
+			padding: 0;
+		}
+
+		.select-add-lang li {
+			font-family: 'Open Sans', arial, sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			color: #333;
+			height: 24px;
+			line-height: 24px;
+			cursor: pointer;
+			padding: 0 10px;
+		}
+
+		.select-add-lang li div {
+			border-top: 1px solid rgb(221, 221, 221);
+			margin: 0 10px;
+		}
+
+		.select-add-lang li:first-child div {
+			border-color: transparent;
+		}
+
+		.select-add-lang li:hover {
+			background: #4d7bd6;
+			color: white;
+		}
+
+		.select-add-lang li:hover div {
+			border-color: transparent;
+		}
+
+		.select-add-lang li:active {
+			position: relative;
+			left: 1px;
+			top: 1px;
+		}
+
+		div#item-window:before {
+			content: attr(seld);
+			text-shadow: 0 1px 0 white;
+		}
+
+		.item {
+			display: none;
+		}
+
+		.showAll .item {
+			display: block;
+		}
+
+		/*.item.disabled {display:none;}*/
+		/*.item.deleted {display:none;}*/
+		.showDeleted .item {
+			display: none;
+		}
+
+		.showDeleted .item.deleted {
+			display: block;
+		}
+
+		.showPinned .item.pinned {
+			display: block;
+		}
+
+		.showSearch .item.found {
+			display: block;
+		}
+
+		tr#middle td#feeds-td {
+			padding-bottom: 31px;
+		}
+
+		tr#middle > td #view-buttons {
+			overflow: hidden;
+			height: 31px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #EDEFF6 url(toolbar3.png) repeat-x;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		.view-button {
+			height: 26px;
+			width: 33.33%;
+			top: 5px;
+			position: relative;
+			display: inline-block;
+			background-repeat: no-repeat, no-repeat;
+			border-width: 0 5px;
+			border-style: solid;
+			border-color: transparent;
+			box-sizing: border-box;
+			background-clip: padding-box;
+			background-position: left, right;
+		}
+
+		.view-button:before {
+			content: "";
+			position: absolute;
+			left: 5px;
+			right: 5px;
+			top: 0;
+			bottom: 0;
+		}
+
+		.view-button:hover {
+			background-image: url(view-hover-left.png), url(view-hover-right.png);
+		}
+
+		.view-button:hover:before {
+			background: url(view-hover-middle.png) repeat-x;
+		}
+
+		.view-button.pressed, .view-button:active {
+			background-image: url(view-active-left.png), url(view-active-right.png);
+		}
+
+		.view-button.pressed:before, .view-button:active:before {
+			background: url(view-active-middle.png) repeat-x;
+		}
+
+		.view-button.disabled, .view-button.disabled:before {
+			background-image: none;
+		}
+
+		.view-button:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		tr#middle > td #view-buttons #view-all:after {
+			background-image: url(feed.png);
+		}
+
+		tr#middle > td #view-buttons #view-deleted:after {
+			background-image: url(delete.png);
+		}
+
+		tr#middle > td #view-buttons #view-pinned:after {
+			background-image: url(pintab.png);
+		}
+
+		.view-button.disabled {
+			opacity: 0.4;
+		}
+
+		#main-table .top-panel #search {
+			position: absolute;
+			left: 4px;
+			top: 7px;
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 12px;
+			border-radius: 4px;
+			border: 1px solid #8B8F99;
+			padding: 2px 16px 2px 26px;
+			width: 145px;
+			background: white url(search.png) no-repeat 4px center;
+			box-shadow: inset 0px 1px 2px #ddd, 0px 1px 2px #fff;
+			outline: none;
+			margin: 0;
+			min-height: initial;
+		}
+
+		#main-table .top-panel #search::-webkit-input-placeholder {
+			color: #6D6D6D;
+		}
+
+		#main-table .top-panel #search-closer {
+			position: absolute;
+			left: 128px;
+			top: 7px;
+			display: inline-block;
+			width: 21px;
+			height: 21px;
+			background: url(close.png) no-repeat;
+			cursor: pointer;
+		}
+
+		#main-table .top-panel #search-closer:hover {
+			background-position: -21px 0;
+		}
+
+		#main-table .top-panel #search-closer:active {
+			left: 129px;
+			top: 8px;
+		}
+
+		#main-table .top-panel #search-closer {
+			display: none;
+		}
+
+		.group-box {
+			border: 1px solid #BCC3C6;
+			margin-top: 5px;
+			margin-bottom: 15px;
+			position: relative;
+			padding: 10px;
+			border-radius: 3px;
+		}
+
+		.group-box:after {
+			content: attr(seld);
+			position: absolute;
+			top: -8px;
+			left: 10px;
+			background: #F0F0F0;
+			padding: 0 2px;
+		}
+
+		.notifications .sound-properties {
+			margin-left: 10px;
+			border-left: 1px solid lightgrey;
+			padding-left: 10px;
+		}
+
+		.sound-properties .play_sound {
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			background: white url(play.png) no-repeat center;
+			border: 1px solid grey;
+			margin: 2px;
+			vertical-align: top;
+			cursor: pointer;
+			border-radius: 3px;
+			box-shadow: 0 0 1px 1px white;
+			position: relative;
+			top: 1px;
+		}
+
+		.sound-properties .play_sound:hover {
+			box-shadow: 0 0 1px 0px lightgrey;
+		}
+
+		.sound-properties .play_sound:active {
+			border-color: grey;
+			box-shadow: inset 0 0 1px 1px lightgrey;
+		}
+
+		.win {
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		.sound-properties .change-volume {
+			width: 100px;
+			height: 21px;
+			background: url(perc.png) no-repeat center;
+			position: relative;
+		}
+
+		.sound-properties .vol-hand {
+			position: absolute;
+			left: 10px;
+			top: 3px;
+			width: 10px;
+			height: 18px;
+			background: url(vol_hand.png);
+		}
+
+		.sound-properties .vol-hand:hover {
+			background-position: -10px 0;
+		}
+
+		.sound-properties .vol-hand:active, .sound-properties .vol-hand.active {
+			background-position: -20px 0;
+		}
+
+		.sound-properties .select-sound option.users {
+			color: red;
+		}
+
+		div#feed-div .item {
+			width: 100%;
+			position: absolute;
+		}
+
+		div#feed-div .day-panel {
+			width: 100%;
+			position: absolute;
+			display: none;
+		}
+
+		div#upper-feed-div {
+			overflow-x: hidden;
+		}
+
+		div#feeds-div div.feed-group {
+			background: url(group_panel.png) repeat-x top;
+			text-decoration: none;
+			height: 24px;
+			line-height: 24px;
+			padding-left: 10px;
+			cursor: default;
+			margin: 0;
+			border-top: 1px solid #DADCE0;
+			display: none;
+		}
+
+		div#feeds-div div.feed-group div {
+			background: none;
+			margin: 0;
+			padding-left: 0;
+		}
+
+		div#feeds-div div.feed-group span {
+			display: none;
+			background: #EEEFF5;
+			box-shadow: 0 0 0 1px #E2E2E7 inset;
+			color: #415166;
+			top: 3px;
+			height: auto;
+			line-height: 15px;
+		}
+
+		div#feeds-div div.feed-group:active {
+			background-position: bottom;
+		}
+
+		div#feeds-div div.feed-group.collapsed span {
+			display: inline;
+		}
+
+		div#feeds-div div.feed-group.has-selected {
+			color: blue;
+		}
+
+		div#feeds-div div.wrapper {
+			overflow: hidden;
+		}
+
+		div#feeds-div div.wrapper div.feed {
+			position: relative;
+		}
+
+		div#feeds-div div.feed.disabled {
+			display: none;
+		}
+
+		span#sort-items {
+			width: 54px;
+			right: 0;
+			position: absolute;
+		}
+
+		span#sort-items:after {
+			background-image: url(sort.png);
+		}
+
+		.top-panel #general-settings {
+			position: fixed;
+		}
+
+		span#general-settings {
+			width: 54px;
+			right: 0;
+			position: absolute;
+		}
+
+		span#general-settings:after {
+			background-image: url(conf.png);
+		}
+
+		span#undelete-button {
+			width: 42px;
+			left: 71px;
+		}
+
+		span#undelete-button:after {
+			background-image: url(undelete.png);
+		}
+
+		.menu .checked {
+			background-image: url(check.png)
+		}
+
+		table.rss-table-header {
+			display: none;
+			width: 100%;
+			border-width: 0 0 1px;
+			border-bottom-style: solid;
+			border-bottom-color: rgb(251, 251, 251);
+			border-spacing: 0;
+		}
+
+		table.rss-table-header td:last-child {
+			width: 100%;
+			text-align: right;
+		}
+
+		table.rss-table-header td {
+			position: relative;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #FFF #E5E6E7 #D5D5D5 #FFF;
+			height: 21px;
+			overflow: hidden;
+			font-family: "Segoe UI", "Tahoma", sans-serif;
+			font-size: 12px;
+			padding: 0;
+		}
+
+		table.rss-table-header td > div {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			padding: 0 5px;
+			line-height: 21px;
+			cursor: default;
+			box-sizing: border-box;
+		}
+
+		table.rss-table-header td:before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 8px;
+			background: #fff;
+			border-width: 1px 1px 0;
+			border-style: solid;
+			border-color: #FFF;
+			top: 0;
+			left: 0;
+		}
+
+		table.rss-table-header td:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 13px;
+			background: #F5F6F8;
+			top: 8px;
+			border-width: 0 1px;
+			border-style: solid;
+			border-color: #000 #FCFDFD #000 #F5F6F8;
+			left: 0;
+		}
+
+		table.rss-table-header td.selected {
+			border-color: #F2F9FC #96D9F9 #96D9F9 #96D9F9;
+		}
+
+		table.rss-table-header td.selected:before {
+			border-color: #F2F9FC #F2F9FC #000 #F2F9FC;
+			background: #F2F9FC;
+		}
+
+		table.rss-table-header td.selected:after {
+			border-color: #000 #DFF0F8;
+			background: #DFF0F8;
+		}
+
+		table.rss-table-header td:hover {
+			border-color: #E3F7FF #69BBE3 #93C9E3 #69BBE3;
+		}
+
+		table.rss-table-header td:hover:before {
+			border-color: #E3F7FF #E3F7FF #000 #E3F7FF;
+			background: #E3F7FF;
+		}
+
+		table.rss-table-header td:hover:after {
+			border-color: #000 #BBEBFE;
+			background: #BBEBFE;
+		}
+
+		table.rss-table-header td:active {
+			border-color: #86A3B2 #5091AF #93C9E3 #4F8FAE;
+		}
+
+		table.rss-table-header td:active:before {
+			border-color: #AACEE1 #A2CBE0 #000 #A2CBE0;
+			background: #BCE4F9;
+		}
+
+		table.rss-table-header td:active:after {
+			border-color: #000 #70B9DE;
+			background: #8BD1F6;
+		}
+
+		table.rss-table-header td.selected > div {
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAALElEQVR4nGNgQAX/kTlMaBL3gHgbTIAZTeImEF8DYj0gPsaMReIFED8EYk4AKSQNeeKP+IQAAAAASUVORK5CYII=);
+			background-position: 50% 0px;
+			background-repeat: no-repeat no-repeat;
+		}
+
+		table.rss-table-header td.selected.desc > div {
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAMklEQVR4nGNkYGD4D8T3gPgmEF8D4hdA/BAkxgIkGKEK0MFqZA5IwV0g3oZFIVwBHAAAYA0Ldbyw1ZIAAAAASUVORK5CYII=);
+		}
+
+		.win table.rss-table-header {
+			display: table;
+		}
+
+		body.vertical-layout #feed-td, body.vertical-layout #upper-feed-div, body.list-layout #feed-td, body.list-layout #upper-feed-div {
+			width: 100% !important;
+		}
+
+		body.vertical-layout #splitter2, body.list-layout #splitter2 {
+			display: none;
+		}
+
+		body.vertical-layout #feed-td, body.list-layout #feed-td {
+			height: auto;
+		}
+
+		body.vertical-layout #upper-feed-div {
+			height: 150px;
+		}
+
+		body.vertical-layout #item-window, #n-panel-452 {
+			height: 100%;
+		}
+
+		body.list-layout #feed-td {
+			position: relative;
+			vertical-align: top;
+		}
+
+		body.list-layout #feed-td #upper-feed-div {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			height: auto;
+		}
+
+		body.vertical-layout .top-panel #sort-items, body.list-layout .top-panel #sort-items {
+			display: none;
+			right: 45px;
+		}
+
+		body.vertical-layout #feed-div .item, body.list-layout #feed-div .item {
+			height: 18px;
+			padding: 1px 0;
+		}
+
+		body.vertical-layout #feed-div .item > div, body.list-layout #feed-div .item > div {
+			position: absolute;
+			box-sizing: border-box;
+			padding-rightz: 10px;
+		}
+
+		body.vertical-layout #feed-div .item .author, body.list-layout #feed-div .item .author {
+			width: 25%;
+		}
+
+		body.vertical-layout #feed-div .item .title, body.list-layout #feed-div .item .title {
+			left: 25%;
+			width: 60%;
+		}
+
+		body.vertical-layout #feed-div .item .date, body.list-layout #feed-div .item .date {
+			right: 0;
+			bottom: auto;
+		}
+
+		body.vertical-layout #upper-feed-div, body.list-layout #upper-feed-div {
+			padding-top: 24px;
+			height: 0;
+		}
+
+		body.vertical-layout #feed-div, body.list-layout #feed-div {
+			height: 0;
+		}
+
+		#n-panel-451 {
+			border-top: 1px solid #8B9298;
+		}
+
+		body.vertical-layout #items-header, body.list-layout #items-header {
+			display: table;
+			position: absolute;
+			z-index: 1;
+		}
+
+		body.vertical-layout #splitter3 {
+			display: block;
+		}
+
+		body.col-resizing * {
+			cursor: col-resize !important;
+		}
+
+		body.row-resizing * {
+			cursor: row-resize !important;
+		}
+
+		body.nw-resizing * {
+			cursor: nw-resize !important;
+		}
+
+		body.showGroups div#feeds-div div.feed-group {
+			display: block;
+		}
+
+		#remover-for-file {
+			position: absolute;
+			right: -21px;
+			top: -1px;
+			width: 21px;
+			height: 21px;
+			background: url(close.png) no-repeat;
+			cursor: pointer;
+		}
+
+		#remover-for-file:hover {
+			background-position: -21px 0;
+		}
+
+		#remover-for-file:active {
+			right: -22px;
+			top: 0px;
+		}
+
+		#remover-for-file {
+			display: none;
+		}
+
+		.menu #remover-for-file {
+			display: inline-block;
+		}
+
+		.menu .melody-user-file {
+			padding-right: 5px;
+			margin-right: 21px;
+			overflow: visible;
+		}
+
+		.win .content .feeds-list .rss-table-header {
+			z-index: 1;
+			position: absolute;
+		}
+
+		.feeds-list-inner {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			background: white;
+			overflow: auto;
+			padding-top: 24px;
+		}
+
+		.feeds-list-inner > div {
+			height: 18px;
+			border-bottom: 1px solid #DADCE0;
+			overflow: hidden;
+		}
+
+		.feeds-list-inner > div > div {
+			position: absolute;
+			line-height: 19px;
+			padding: 0 5px;
+			box-sizing: border-box;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		.feeds-list-inner table {
+			width: 100%;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+
+		.feeds-list-inner table td {
+			border: 1px solid #DADCE0;
+			white-space: nowrap;
+			padding: 2px 4px;
+			background: none;
+			line-height: 16px;
+		}
+
+		.feeds-list-inner table tr {
+			background: #F0F0F0;
+		}
+
+		.feeds-list-inner table tr:nth-child(even) {
+			background: white;
+		}
+
+		.feeds-list-inner table tr:hover td {
+			color: red;
+		}
+
+		.feeds-list-inner table tr.selected:hover td {
+			color: pink;
+		}
+
+		.feeds-list-inner table tr.selected {
+			background: #39F;
+			color: #fff;
+		}
+
+		.win #login, .win #pass {
+			padding: 2px 16px 2px 26px;;
+			border: 1px solid #8B8F99;
+			outline: none;
+			box-shadow: inset 0px 1px 2px #DDD, 0px 1px 2px #FFF;
+			border-radius: 4px;
+		}
+
+		.win #login {
+			background: white url(login.png) no-repeat 4px center;
+		}
+
+		.win #pass {
+			background: white url(pass.png) no-repeat 4px center;
+		}
+
+		body.dark-theme {
+			-webkit-filter: invert(1);
+		}
+
+		body.dark-theme > .hider {
+			-webkit-filter: invert(1);
+			background: rgba(0, 0, 0, 0.7);
+		}
+
+		body.dark-theme #item-window #article img, body.dark-theme #item-window #article object,
+		body.dark-theme #item-window #article iframe {
+			-webkit-filter: invert(1);
+		}
+
+		.about-window {
+			padding: 10px;
+			text-align: center;
+		}
+
+		.about-container {
+			-webkit-box-align: center;
+			display: -webkit-box;
+			border-bottom: 1px solid #ddd;
+			margin: 10px 0;
+			padding-bottom: 10px;
+		}
+
+		.about-container img {
+			width: 32px;
+			height: 32px;
+		}
+
+		.product-description {
+			-webkit-margin-start: 10px;
+			position: relative;
+			text-align: left;
+		}
+
+		.product-description h2 {
+			font-size: 1.3em;
+			margin-bottom: 0.4em;
+			-webkit-user-select: none;
+			font-weight: normal;
+			line-height: 1;
+		}
+
+		.chrome-store, .send-feedback {
+			-webkit-padding-start: 26px !important;
+			position: relative;
+		}
+
+		.chrome-store:after {
+			content: "";
+			background: url(chrome_web_store.png) no-repeat center;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			left: 4px;
+		}
+
+		.send-feedback:after {
+			content: "";
+			background: url(feedback.png) no-repeat center;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			left: 4px;
+		}
+
+		.win .dev-toggle {
+			position: absolute;
+			bottom: -4px;
+			font-size: 12px;
+			left: 4px;
+		}
+
+		.win .full-window-button {
+			width: 42px;
+			height: 26px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: none;
+		}
+
+		.win .full-window-button:after {
+			background-image: url(fullscreen.png);
+		}
+
+		.win.full-window {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			left: 0 !important;
+			top: 0 !important;
+			border: 0;
+			border-radius: 0;
+		}
+
+		.win.full-window .resizer {
+			display: none;
+		}
+
+		.win.full-window .content {
+			width: 100% !important;
+		}
+
+		.menu#genSetMenu #manage-feeds {
+			background-image: url(config.png);
+		}
+
+		.menu#genSetMenu #about-menu {
+			background-image: url(prop.png);
+		}
+
+		.menu#genSetMenu #donate-menu {
+			background-image: url(donate2.png);
+		}
+
+		#item-window #article-header h1 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		#item-window #article-header h1 a:hover {
+			text-decoration: underline;
+		}
+
+		#item-window #article-header h1 a:active {
+			position: relative;
+			top: 1px;
+			left: 1px;
+		}
+
+
+	</style>
+	<script src="lingua.js"></script>
+	<script src="jquery-2.0.3.min.js"></script>
+	<script src="beautify-html.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+<table id="main-table">
+	<tr class="top-panel">
+		<td>
+			<div><span id="reload-all" class="disabled reload-button toolbar-button"></span><span style="display:none;"
+																								  class="config-button toolbar-button"
+																								  title="General Settings"></span><span
+					id="add-url" class="add-url-button toolbar-button" title="Add Feed"></span></div>
+		</td>
+		<td>
+			<div><input placeholder="Search articles" id="search"/><span id="search-closer"></span><span
+					id="reload-feed" class="disabled reload-button toolbar-button"></span><span style="display:none;"
+																								class="disabled config-button toolbar-button"></span><span
+					id="sort-items" class="view-button"></span></div>
+		</td>
+		<td>
+			<div><span class="disabled read-button toolbar-button"></span><span
+					class="disabled delete-button toolbar-button"></span><span class="view-button" id="undelete-button"
+																			   style="display:none;"></span><span
+					id="general-settings" class="view-button"></span></div>
+		</td>
+	</tr>
+	<tr id="middle">
+		<td id="feeds-td">
+			<div>
+				<div id="feeds-div"></div>
+			</div>
+			<div id="view-buttons"><span class="view-button" id="view-all"></span><span class="view-button"
+																						id="view-deleted"></span><span
+					class="view-button" id="view-pinned"></span></div>
+		</td>
+		<td id="feed-td">
+			<table id="items-header" class="rss-table-header">
+				<tr>
+					<td style="width:25%">
+						<div>From</div>
+					</td>
+					<td style="width:60%">
+						<div>Subject</div>
+					</td>
+					<td>
+						<div>Published</div>
+					</td>
+				</tr>
+			</table>
+			<div id="upper-feed-div">
+				<div id="feed-div"></div>
+			</div>
+		</td>
+		<td>
+			<div id="item-window">
+				<div>
+					<div id="article-header"><h1></h1><span id="author"></span><span id="pin"></span><span
+							id="date"></span></div>
+					<div id="article"></div>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+<div class="splitter" id="splitter1"></div>
+<div class="splitter" id="splitter2"></div>
+<div class="splitter" id="splitter3"></div>
+<div id="winfak" style="display:none;">
+	<div class="hider"></div>
+	<div class="win">
+		<div class="title">&nbsp;</div>
+		<div class="full-window-button view-button"></div>
+		<div class="content">&nbsp;</div>
+		<div class="buttons"><input class="ok_button" type="button" value="OK"/><input class="cancel_button"
+																					   type="button"
+																					   value="Cancel"/><input
+				class="close_button chrome_button" type="button" value="Close"/></div>
+	</div>
+</div>
+<div id="windows" style="display:none;">
+	<div class="settings">
+		<table class="table-prop">
+			<tr>
+				<td class="p-name-td">Name</td>
+				<td><input class="p-name"/></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+					<div class="checkbox
+"><label><input type="checkbox" class="p-givename"/><span class="p-givename-span">Get name from feed</span></label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="p-address-td">Address</td>
+				<td><input class="p-address" readonly/></td>
+			</tr>
+			<tr>
+				<td class="p-update-td">Update</td>
+				<td><select>
+					<option value="0">Never</option>
+					<option value="5">Every 5 minutes</option>
+					<option value="15">Every 15 minutes</option>
+					<option value="30">Every 30 minutes</option>
+					<option value="60">Every hour</option>
+					<option value="120">Every 2 hours</option>
+					<option value="180" selected>Every 3 hours</option>
+					<option value="300">Every 5 hours</option>
+					<option value="600">Every 10 hours</option>
+					<option value="1440">Every 24 hours</option>
+					<option value="10080">Every week</option>
+				</select></td>
+			</tr>
+		</table>
+	</div>
+	<div class="general">
+		<table>
+			<tr>
+				<td class="flist">&nbsp;</td>
+				<td class="butlist"><input class="add" type="button" value="Add..."/><br/><input class="edit"
+																								 type="button"
+																								 value="Edit..."/><br/><input
+						class="delete" type="button" value="Delete"/><br/><br/><input class="import" type="button"
+																					  value="Import..." disabled/><input
+						class="fileinput" type="file" style="display:none;"/><br/><input class="export" type="button"
+																						 value="Export..." disabled/>
+				</td>
+				<td>
+					<div class="group-box" seld="Language"><select class="change_language">
+						<option value="default">Default</option>
+					</select><br/><a class="add_translation">Add Language</a></div>
+					<div class="group-box notifications" seld="Notifications"><label><input type="checkbox"
+																							class="show-popup"/><span>Show popup window</span></label><br/><label><input
+							type="checkbox" class="play-sound"/><span>Play sound</span></label>
+						<div class="sound-properties"><select class="select-sound"></select><span
+								class="play_sound"></span><input class="add-sound" type="button" value="..."/>
+							<div class="change-volume">
+								<div class="vol-hand"></div>
+							</div>
+						</div>
+					</div>
+					<div class="group-box" seld="Interface"><label><input type="checkbox"
+																		  class="show-milestones"/><span>Show time's milestones</span></label>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="advanced-options"><p>Use with caution!</p><input type="button" class="reload-icons"
+																 value="Reload Icons"/><input type="button"
+																							  class="reload-icons-aggressively"
+																							  value="Reload Icons Aggressively"/><br/><input
+			type="button" class="export-data" value="Export Data"/><input type="button"
+																		  class="export-data-with-articles"
+																		  value="Export Data With Articles"/><br/><input
+			type="button" class="delete-all-feeds" value="Delete All Feeds"/><br/><input type="button"
+																						 class="open-file-storage"
+																						 disabled="disabled"
+																						 value="Open File Storage"/><input
+			type="button" class="clear-file-storage" disabled="disabled" value="Clear File Storage"/></div>
+	<div class="select-add-lang"></div>
+	<div class="feeds-list">
+		<table class="rss-table-header">
+			<tr></tr>
+		</table>
+		<div class="feeds-list-inner">
+			<table></table>
+		</div>
+	</div>
+	<div class="about-window">
+		<div class="about-container">
+			<img src="icon_128.png"/>
+			<div class="product-description">
+				<h2>The RSS Aggregator</h2>
+				<span>RIP Opera</span>
+				<span style="position:absolute;right:0;">v1.0</span>
+			</div>
+		</div>
+		<button class="chrome-button chrome-store">Visit Website</button>
+		<button class="chrome-button send-feedback">Send Feedback</button>
+		<br/>
+		<div class="checkbox dev-toggle">
+			<label>
+				<input class="toggle-dev-on" type="checkbox">
+				<span>Developer mode</span>
+			</label>
+		</div>
+	</div>
+</div>
+<div class="menu" id="feedMenu">
+	<div class="reload">Update</div>
+	<div class="separator"></div>
+	<div class="mark-all-read">Mark All As Read</div>
+	<div class="delete">Delete</div>
+	<div class="separator"></div>
+	<div class="properties">Properties...</div>
+</div>
+<div class="menu" id="itemMenu">
+	<div class="select-all">Select All</div>
+	<div class="separator"></div>
+	<div class="mark-as-read">Mark as Read</div>
+	<div class="mark-as-unread">Mark as Unread</div>
+	<div class="separator"></div>
+	<div class="delete">Delete</div>
+	<div class="undelete">Undelete</div>
+</div>
+<div id="sortMenu" class="menu">
+	<div class="checked" id="bytime">published</div>
+	<div id="byauth">author</div>
+	<div id="bysubj">subject</div>
+	<div id="byadded">added</div>
+	<div id="bydeleted">added</div>
+	<div class="separator"></div>
+	<div class="checked" id="byasc">ascending</div>
+	<div id="bydesc">descending</div>
+</div>
+<div id="genSetMenu" class="menu">
+	<div id="manage-feeds">manage feeds</div>
+	<div class="separator"></div>
+	<div class="nest" id="select-layout">layout</div>
+	<div class="nest" id="select-groups">grouping</div>
+	<div id="select-theme" class="nest">theme</div>
+	<div class="nest" id="select-language">language</div>
+	<div class="nest" id="select-notifications">notifications</div>
+	<div class="separator"></div>
+	<div id="menu-history" class="nest">history</div>
+	<div id="menu-import" class="nest">import</div>
+	<div id="menu-export" class="nest">export</div>
+	<div class="separator"></div>
+	<div id="advanced-menu" class="nest" style="display:none;">advanced</div>
+	<div id="about-menu">about</div>
+	<div class="separator"></div>
+	<div id="donate-menu">donate</div>
+</div>
+<div class="menu" id="real-select-layout">
+	<div id="layout-sidebyside"></div>
+	<div id="layout-vertical"></div>
+	<div id="layout-list"></div>
+</div>
+<div class="menu" id="real-select-groups">
+	<div id="group-feeds">feeds</div>
+	<div id="group-items">messages</div>
+</div>
+<div class="menu" id="real-select-language"></div>
+<div class="menu" id="real-select-notifications">
+	<div id="notify-show-popup">system tray</div>
+	<div class="separator"></div>
+	<div id="notify-play-sound">play sound</div>
+	<div id="notify-sound-tone" class="nest">tone</div>
+	<div id="notify-sound-volume" class="nest">volume</div>
+</div>
+<div class="menu" id="notify-melody"></div>
+<div id="notify-volume" class="menu">
+	<div>0%</div>
+	<div>25%</div>
+	<div>50%</div>
+	<div>75%</div>
+	<div>100%</div>
+</div>
+<span id="remover-for-file"></span>
+<div id="feed-or-feeds-menu" class="menu rightie">
+	<div class="nest group">group</div>
+	<div id="updating-menu" class="nest">update</div>
+	<div class="separator"></div>
+	<div class="delete">delete</div>
+	<div class="separator"></div>
+	<div class="properties">properties</div>
+</div>
+<div id="real-updating-menu" class="menu"></div>
+<div id="real-group-menu" class="menu"></div>
+<div id="real-select-theme" class="menu">
+	<div id="bright-theme">bright</div>
+	<div id="dark-theme">dark</div>
+</div>
+<div id="real-menu-history" class="menu"></div>
+<div id="real-menu-import-export" class="menu">
+	<div class="opml" title="feeds list">OPML</div>
+	<div class="tra" title="all data and settings">TRA</div>
+</div>
+<div id="menu-advanced" class="menu">
+	<div id="special-feed">Special Feed</div>
+	<div class="separator"></div>
+	<div id="reload-icons">Reload Icons</div>
+	<div id="reload-icons-2">Reload Icons 2</div>
+	<div class="separator"></div>
+	<div id="open-storage">Open Storage</div>
+	<div id="clean-storage">Clean Storage</div>
+	<div class="separator"></div>
+	<div id="lock-positions">Lock Positions</div>
+	<div id="remove-all-feeds">Remove All Feeds</div>
+	<div class="separator"></div>
+	<div id="reset-sizes">Reset Sizes</div>
+	<div id="restart-ext">Restart</div>
+</div>
+<form id="donate-form" style="display: none" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="B87KNFBRTYF62">
+</form>
+
+</body>
+</html>

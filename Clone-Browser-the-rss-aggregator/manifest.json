@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "lingua.js", "jquery-2.0.3.min.js", "base64.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "blacknwhite.png",
+      "default_popup": "popup.html",
+      "name": "RSS"
+   },
+   "content_scripts": [ {
+      "js": [ "doc_start.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "RIP Opera",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYiUt3L9CYJJj/oO4NPo39QGt1lNHQtVTZuBArU+kMgi0K+hOMDRB6u6ebPYu9q8TVEEs9XQ/LAZXNOkZkhsel+N8z/6J4kxW+cPFcOYGJwIaoQ/Y36khnDeHF8eGD+gydwdkTVOGahyZIwUGYC3JCHv/Q7WM8JPBKA9cR9+21TQIDAQAB",
+   "manifest_version": 2,
+   "name": "The RSS Aggregator",
+   "permissions": [ "tabs", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*", "storage", "unlimitedStorage", "management", "notifications" ],
+   "short_name": "Smarter RSS",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.3",
+   "web_accessible_resources": [ "subscribe.html", "loading-bar.gif", "16x16.png" ]
+}

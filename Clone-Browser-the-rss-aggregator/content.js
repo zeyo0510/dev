@@ -1,0 +1,1 @@
+!function(){for(var e,t=document.evaluate('//*[local-name()="link"][contains(@rel, "alternate")] [contains(@type, "rss") or contains(@type, "atom") or contains(@type, "rdf")]',document,null,0,null),n={};e=t.iterateNext();)n[e.href]=(e.title||"").trim();chrome.runtime.sendMessage({feeds:n})}();
