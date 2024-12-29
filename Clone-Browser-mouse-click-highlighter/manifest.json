@@ -1,0 +1,27 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "highlight.js", "onOffToggle.js" ]
+   },
+   "browser_action": {
+      "default_icon": "off.png"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "jquery/jquery-3.1.0.min.js", "highlight.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "This is an offline Google Chrome extention. This is extension will highlight your mouse cursor and your mouse clicks.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoZdK/KKvSy5i0DuRQzZrVY7AGvMvSGt10jKctLRdm6tl/gGIrwYM8b2riHP/2j/IF1vlm6Xfkx5TqocHw9Dq6sO7O29l7cvvT2wP5afbyddFZHnhQCJNToqNPt/QxjeyCDGZNyocTF53cZMbUhX107Z7xICUhykIQXQr1DNKc6ycUyqcySDJLT7MbaBISNCIlaj3LMaYSiCIRi6AbpYw9UIyy73ItSBgKmNEradxmkyfPXWwkl2Q/aRvvjuuWLtHpVpKBqcBaaKlVxT1JJpIO7JeIp4YMjKs43zZ6vipPg1axj9fMC5C/khoiO1a9ogf1cDgotbPPRlnfVW2Ht0O1wIDAQAB",
+   "manifest_version": 2,
+   "name": "Mouse Click Highlighter (mClick)",
+   "options_page": "userOptions.html",
+   "permissions": [ "\u003Call_urls>", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.4.6.4"
+}
