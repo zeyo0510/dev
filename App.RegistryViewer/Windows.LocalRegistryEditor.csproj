@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{0741FF69-9D12-4FDD-8507-27093CF75C39}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Windows.LocalRegistryEditor</RootNamespace>
+    <AssemblyName>Windows.LocalRegistryEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Be.Windows.Forms.HexBox">
+      <HintPath>D:\Git\Windows.LocalRegistryEditor\Resources\Be.Windows.Forms.HexBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MDC.Collections\EventDictionary.cs" />
+    <Compile Include="MDC.Collections\ItemEventArgs.cs" />
+    <Compile Include="MDC.RegViewer.Comparers\Comparer.cs" />
+    <Compile Include="MDC.RegViewer.Comparers\RegexComparer.cs" />
+    <Compile Include="MDC.RegViewer.Comparers\StringComparer.cs" />
+    <Compile Include="MDC.RegViewer.Editors\BinaryEditor.cs" />
+    <Compile Include="MDC.RegViewer.Editors\DWordEditor.cs" />
+    <Compile Include="MDC.RegViewer.Editors\MultiStringEditor.cs" />
+    <Compile Include="MDC.RegViewer.Editors\StringEditor.cs" />
+    <Compile Include="MDC.RegViewer.Editors\ValueEditor.cs" />
+    <Compile Include="MDC.RegViewer.Export\ExportProvider.cs" />
+    <Compile Include="MDC.RegViewer.Export\NativeExportProvider.cs" />
+    <Compile Include="MDC.RegViewer.Export\RegExporter.cs" />
+    <Compile Include="MDC.RegViewer.Export\RegExportFormat.cs" />
+    <Compile Include="MDC.RegViewer.Export\TextExportProvider.cs" />
+    <Compile Include="MDC.RegViewer.Export\XmlExportProvider.cs" />
+    <Compile Include="MDC.RegViewer.Properties\Resources.cs" />
+    <Compile Include="MDC.RegViewer.Properties\Settings.cs" />
+    <Compile Include="MDC.RegViewer.Registry\Extensions.cs" />
+    <Compile Include="MDC.RegViewer.Registry\MatchFoundEventArgs.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegExplorer.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegKey.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegSearchArgs.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegSearcher.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegSearchLookAt.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegSearchMatch.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegUtility.cs" />
+    <Compile Include="MDC.RegViewer.Registry\RegValue.cs" />
+    <Compile Include="MDC.RegViewer.Registry\SearchCompleteEventArgs.cs" />
+    <Compile Include="MDC.RegViewer\AboutBox.cs" />
+    <Compile Include="MDC.RegViewer\AddToFavoritesDialog.cs" />
+    <Compile Include="MDC.RegViewer\BusyCursor.cs" />
+    <Compile Include="MDC.RegViewer\ExportDialog.cs" />
+    <Compile Include="MDC.RegViewer\JumpToKeyDialog.cs" />
+    <Compile Include="MDC.RegViewer\MainForm.cs" />
+    <Compile Include="MDC.RegViewer\Program.cs" />
+    <Compile Include="MDC.RegViewer\RemoveFavoritesDialog.cs" />
+    <Compile Include="MDC.RegViewer\UIUtility.cs" />
+    <Compile Include="MDC.UI.Controls\AboutCtrl.cs" />
+    <Compile Include="MDC.UI.Controls\ListView2.cs" />
+    <Compile Include="MDC.UI.Controls\NumericTextBox.cs" />
+    <Compile Include="MDC.Utility\ShellUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MDC.RegViewer.Editors\BinaryEditor.resx">
+      <DependentUpon>BinaryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDC.RegViewer.Editors\DWordEditor.resx">
+      <DependentUpon>DWordEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDC.RegViewer.Editors\MultiStringEditor.resx">
+      <DependentUpon>MultiStringEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDC.RegViewer.Editors\StringEditor.resx">
+      <DependentUpon>StringEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDC.RegViewer.Editors\ValueEditor.resx">
+      <DependentUpon>ValueEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDC.RegViewer.Properties.Resources.resx" />
+    <EmbeddedResource Include="MDC.RegViewer\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDC.UI.Controls\AboutCtrl.resx">
+      <DependentUpon>AboutCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MDC.Collections" />
+    <Folder Include="MDC.RegViewer" />
+    <Folder Include="MDC.RegViewer.Comparers" />
+    <Folder Include="MDC.RegViewer.Editors" />
+    <Folder Include="MDC.RegViewer.Export" />
+    <Folder Include="MDC.RegViewer.Properties" />
+    <Folder Include="MDC.RegViewer.Registry" />
+    <Folder Include="MDC.UI.Controls" />
+    <Folder Include="MDC.Utility" />
+    <Folder Include="Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.ico" />
+    <None Include="Resources\ascii.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Be.Windows.Forms.HexBox.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Be.Windows.Forms.HexBox.LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\binary.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\computer.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\fold_close.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\fold_open.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
