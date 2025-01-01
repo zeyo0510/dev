@@ -8,7 +8,7 @@ $files | ForEach-Object {
     $code  = $_.Code
     $name  = $_.Name
     ##################################################
-    Write-Host "Install VSCode Extension: $name"
+    Write-Host "Installing VSCode Extension: $name"
     ##################################################
     code --install-extension $code --force
   }
