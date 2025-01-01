@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AD1F2A4-BC29-43D6-A1E0-2D2E66E31E9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SunPEView</RootNamespace>
+    <AssemblyName>SunPEView</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\SunPeView2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\AbstractFiller.cs" />
+    <Compile Include="ContentVisualizer\ContentDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\DebugDirFiller.cs" />
+    <Compile Include="ContentVisualizer\DebugTableFiller.cs" />
+    <Compile Include="ContentVisualizer\DosHeaderFiller.cs" />
+    <Compile Include="ContentVisualizer\DotnetTableFiller.cs" />
+    <Compile Include="ContentVisualizer\ExceptionTableFiller.cs" />
+    <Compile Include="ContentVisualizer\ExportedFunctionsTableFiller.cs" />
+    <Compile Include="ContentVisualizer\ExportTableFiller.cs" />
+    <Compile Include="ContentVisualizer\GeneralFileInfoFiller.cs" />
+    <Compile Include="ContentVisualizer\ImportFiller.cs" />
+    <Compile Include="ContentVisualizer\ImportTableFiller.cs" />
+    <Compile Include="ContentVisualizer\Interfaces\IContentFiller.cs" />
+    <Compile Include="ContentVisualizer\Interfaces\IContentVisualizer.cs" />
+    <Compile Include="ContentVisualizer\PeFileHeaderFiller.cs" />
+    <Compile Include="ContentVisualizer\PeHeaderFiller.cs" />
+    <Compile Include="ContentVisualizer\PeOptionalHeaderFiller.cs" />
+    <Compile Include="ContentVisualizer\DataDirectoryTableFiller.cs" />
+    <Compile Include="ContentVisualizer\RelocationEntryFiller.cs" />
+    <Compile Include="ContentVisualizer\RelocationTableFiller.cs" />
+    <Compile Include="ContentVisualizer\ResourceDataEntryFiller.cs" />
+    <Compile Include="ContentVisualizer\ResourceEntryFiller.cs" />
+    <Compile Include="ContentVisualizer\ResourceTableFiller.cs" />
+    <Compile Include="ContentVisualizer\SectionFiller.cs" />
+    <Compile Include="ContentVisualizer\SectionTableFiller.cs" />
+    <Compile Include="ContentVisualizer\StandardResourceId\ResCursorGroupEntryDirFiller.cs" />
+    <Compile Include="ContentVisualizer\StandardResourceId\ResIconGroupEntryDirFiller.cs" />
+    <Compile Include="ContentVisualizer\TLSTableFiller.cs" />
+    <Compile Include="ContentVisualizer\Windows\BitmapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\BitmapForm.Designer.cs">
+      <DependentUpon>BitmapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\CursorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\CursorForm.Designer.cs">
+      <DependentUpon>CursorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericEnumFlagsDisplayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericEnumFlagsDisplayWindow.Designer.cs">
+      <DependentUpon>GenericEnumFlagsDisplayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\HtmlPageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\HtmlPageWindow.Designer.cs">
+      <DependentUpon>HtmlPageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\IconForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\IconForm.Designer.cs">
+      <DependentUpon>IconForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericByteArrayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericByteArrayWindow.Designer.cs">
+      <DependentUpon>GenericByteArrayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericEnumDisplayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericEnumDisplayWindow.Designer.cs">
+      <DependentUpon>GenericEnumDisplayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericStringWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentVisualizer\Windows\GenericStringWindow.Designer.cs">
+      <DependentUpon>GenericStringWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.FileAddressConversion.Designer.cs" />
+    <Compile Include="Form1.HDBCalc.Designer.cs" />
+    <Compile Include="Form1.TreeHandler.Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuiLogger.cs" />
+    <Compile Include="PEModel\BinaryFile.cs" />
+    <Compile Include="PEModel\Exceptions\AddressOutOfRange.cs" />
+    <Compile Include="PEModel\Exceptions\PEModelAccessException.cs" />
+    <Compile Include="PEModel\Exceptions\PEModelException.cs" />
+    <Compile Include="PEModel\FileDataHandler.cs" />
+    <Compile Include="PEModel\FileLocationCalculator.cs" />
+    <Compile Include="PEModel\IFileAccess.cs" />
+    <Compile Include="PEModel\PEFile.cs" />
+    <Compile Include="PEModel\PEFormat\AbstractPeDescriptor.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\DebugDirectory\PeDebugDirectoryTable.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\PeExceptionTable.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\PeTLSDirectoryTable.cs" />
+    <Compile Include="PEModel\PEFormat\DotNet\PeDotNetDirectory.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\Dotnet\EDotnetHeaderFlags.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\ECharacteristics.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\EDataDirectory.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\EDebugType.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\EDllCharacteristics.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\EnumBitFlagsGeneric.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\ExportDirectoryTable\PeExportDirectoryTable.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\ExportDirectoryTable\PeExportFunction.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\ImportDirectoryTable\PeImageOriginalThunkData.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\ImportDirectoryTable\PeImportFirstThunkData.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\ESectionCharacteristics.cs" />
+    <Compile Include="PEModel\PEFormat\PeDataDirectory.cs" />
+    <Compile Include="PEModel\PEFormat\DosHeader.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\ESubsystem.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\EMachine.cs" />
+    <Compile Include="PEModel\PEFormat\Enums\EOptionalHeaderMagic.cs" />
+    <Compile Include="PEModel\PEFormat\PeDataDirectoryTable.cs" />
+    <Compile Include="PEModel\PEFormat\PeElem.cs" />
+    <Compile Include="PEModel\PEFormat\IPeElem.cs" />
+    <Compile Include="PEModel\PEFormat\PeFileHeader.cs" />
+    <Compile Include="PEModel\PEFormat\PeHeader.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\ImportDirectoryTable\PeImportDescriptor.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\ImportDirectoryTable\PeImportDirectoryTable.cs" />
+    <Compile Include="PEModel\PEFormat\PeOptionalHeader.cs" />
+    <Compile Include="PEModel\PEFormat\PeRegion.cs" />
+    <Compile Include="PEModel\PEFormat\DataDirectories\PeRelocationTable.cs" />
+    <Compile Include="PEModel\PEFormat\PeSectionHeader.cs" />
+    <Compile Include="PEModel\PEFormat\PeSectionHeaderTable.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\PeResourceDataEntry.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\PeResourceDirectoryEntry.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\PeResourceDirectoryTable.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\PeResourceStandardIdentifier.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\IPeStandardResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeBitmapResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeConfigFileResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeCursorGroupResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeCursorResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeHtmlPageResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeIconGroupResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeIconResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeStringTableResource.cs" />
+    <Compile Include="PEModel\PEFormat\Resources\StandardId\PeVersionInfoResource.cs" />
+    <Compile Include="PEModel\PELogger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringUtil.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\BitmapForm.resx">
+      <DependentUpon>BitmapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\CursorForm.resx">
+      <DependentUpon>CursorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\GenericEnumFlagsDisplayWindow.resx">
+      <DependentUpon>GenericEnumFlagsDisplayWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\HtmlPageWindow.resx">
+      <DependentUpon>HtmlPageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\IconForm.resx">
+      <DependentUpon>IconForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\GenericByteArrayWindow.resx">
+      <DependentUpon>GenericByteArrayWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\GenericEnumDisplayWindow.resx">
+      <DependentUpon>GenericEnumDisplayWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentVisualizer\Windows\GenericStringWindow.resx">
+      <DependentUpon>GenericStringWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HexEditBox\HexEditBox.csproj">
+      <Project>{7B8DD12E-8EA7-4233-B12F-5A8E7BD73F6E}</Project>
+      <Name>HexEditBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PEFileTreeView\PEFileTreeView.csproj">
+      <Project>{6D1CFAF8-AC0F-42F2-A5BF-D0B8E4E7F4C3}</Project>
+      <Name>PEFileTreeView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SunPeView2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainIconLarge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Reload.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
