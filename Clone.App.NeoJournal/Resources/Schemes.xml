@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schemes>
+	<Scheme Name="Ocean Blue" Author="AlphaGremlin">
+		<ToolStrip>
+			<Colour Name="ButtonSelectedHighlight" Value="CDC4C0"/>
+			<Colour Name="ButtonSelectedHighlightBorder" Value="553828"/>
+			<Colour Name="ButtonPressedHighlight" Value="A89A92"/>
+			<Colour Name="ButtonPressedHighlightBorder" Value="553828"/>
+			<Colour Name="ButtonCheckedHighlight" Value="CDC4C0"/>
+			<Colour Name="ButtonCheckedHighlightBorder" Value="553828"/>
+			<Colour Name="ButtonPressedBorder" Value="553828"/>
+			<Colour Name="ButtonSelectedBorder" Value="553828"/>
+			<Colour Name="ButtonCheckedGradientBegin" Value="000000"/>
+			<Colour Name="ButtonCheckedGradientMiddle" Value="000000"/>
+			<Colour Name="ButtonCheckedGradientEnd" Value="000000"/>
+			<Colour Name="ButtonSelectedGradientBegin" Value="80C0FF"/>
+			<Colour Name="ButtonSelectedGradientMiddle" Value="80C0FF"/>
+			<Colour Name="ButtonSelectedGradientEnd" Value="80C0FF"/>
+			<Colour Name="ButtonPressedGradientBegin" Value="AA9C94"/>
+			<Colour Name="ButtonPressedGradientMiddle" Value="AA9C94"/>
+			<Colour Name="ButtonPressedGradientEnd" Value="AA9C94"/>
+			<Colour Name="CheckBackground" Value="553828"/>
+			<Colour Name="CheckSelectedBackground" Value="AA9C94"/>
+			<Colour Name="CheckPressedBackground" Value="AA9C94"/>
+			<Colour Name="GripDark" Value="004080"/>
+			<Colour Name="GripLight" Value="80C0FF"/>
+			<Colour Name="ImageMarginGradientBegin" Value="C0FFFF"/>
+			<Colour Name="ImageMarginGradientMiddle" Value="C0F0FF"/>
+			<Colour Name="ImageMarginGradientEnd" Value="C0E0FF"/>
+			<Colour Name="ImageMarginRevealedGradientBegin" Value="F9F7F5"/>
+			<Colour Name="ImageMarginRevealedGradientMiddle" Value="F4F1EE"/>
+			<Colour Name="ImageMarginRevealedGradientEnd" Value="F1EDE9"/>
+			<Colour Name="MenuStripGradientBegin" Value="40A0FF"/>
+			<Colour Name="MenuStripGradientEnd" Value="60B0FF"/>
+			<Colour Name="MenuItemSelected" Value="FFFFFF"/>
+			<Colour Name="MenuItemBorder" Value="553828"/>
+			<Colour Name="MenuBorder" Value="AFA9A2"/>
+			<Colour Name="MenuItemSelectedGradientBegin" Value="80C0FF"/>
+			<Colour Name="MenuItemSelectedGradientEnd" Value="80C0FF"/>
+			<Colour Name="MenuItemPressedGradientBegin" Value="C0E0FF"/>
+			<Colour Name="MenuItemPressedGradientMiddle" Value="C0E0FF"/>
+			<Colour Name="MenuItemPressedGradientEnd" Value="C0E0FF"/>
+			<Colour Name="RaftingContainerGradientBegin" Value="EFEBE7"/>
+			<Colour Name="RaftingContainerGradientEnd" Value="FCFBFA"/>
+			<Colour Name="SeparatorDark" Value="004080"/>
+			<Colour Name="SeparatorLight" Value="80C0FF"/>
+			<Colour Name="StatusStripGradientBegin" Value="EFEBE7"/>
+			<Colour Name="StatusStripGradientEnd" Value="FCFBFA"/>
+			<Colour Name="ToolStripBorder" Value="50A8FF"/>
+			<Colour Name="ToolStripDropDownBackground" Value="C0E0FF"/>
+			<Colour Name="ToolStripGradientBegin" Value="40A0FF"/>
+			<Colour Name="ToolStripGradientMiddle" Value="50A8FF"/>
+			<Colour Name="ToolStripGradientEnd" Value="60B0FF"/>
+			<Colour Name="ToolStripContentPanelGradientBegin" Value="EFEBE7"/>
+			<Colour Name="ToolStripContentPanelGradientEnd" Value="FCFBFA"/>
+			<Colour Name="ToolStripPanelGradientBegin" Value="40A0FF"/>
+			<Colour Name="ToolStripPanelGradientEnd" Value="60B0FF"/>
+			<Colour Name="OverflowButtonGradientBegin" Value="F4F1EE"/>
+			<Colour Name="OverflowButtonGradientMiddle" Value="F1EDE9"/>
+			<Colour Name="OverflowButtonGradientEnd" Value="DBD3CB"/>
+		</ToolStrip>
+		<Docking>
+			<Colour Name="CaptionActiveStart" Value="BC794F"/>
+			<Colour Name="CaptionActiveEnd" Value="BC794F"/>
+			<Colour Name="CaptionActiveText" Value="FFFFFF"/>
+			<Colour Name="CaptionInactiveStart" Value="EFEBE7"/>
+			<Colour Name="CaptionInactiveEnd" Value="EFEBE7"/>
+			<Colour Name="CaptionInactiveBorder" Value="D4D0C8"/>
+			<Colour Name="CaptionInactiveText" Value="535250"/>
+			<Colour Name="ButtonActiveBorder" Value="BC794F"/>
+			<Colour Name="ButtonInactiveBorder" Value="BC794F"/>
+			<Colour Name="ButtonOverStart" Value="BC794F"/>
+			<Colour Name="ButtonOverEnd" Value="BC794F"/>
+			<Colour Name="TopStripBackStart" Value="004080"/>
+			<Colour Name="TopStripBackEnd" Value="004080"/>
+			<Colour Name="TopStripActiveStart" Value="40A0FF"/>
+			<Colour Name="TopStripActiveEnd" Value="40A0FF"/>
+			<Colour Name="TopStripInactiveStart" Value="FFFFFF"/>
+			<Colour Name="TopStripInactiveEnd" Value="FFFFFF"/>
+			<Colour Name="TopStripTextActive" Value="000000"/>
+			<Colour Name="TopStripTextInactive" Value="B5B3AC"/>
+			<Colour Name="TopStripOutline" Value="D4D0C8"/>
+			<Colour Name="TabStripBackStart" Value="FFFFFF"/>
+			<Colour Name="TabStripBackEnd" Value="FFFFFF"/>
+			<Colour Name="TabStripActiveStart" Value="FFFFFF"/>
+			<Colour Name="TabStripActiveEnd" Value="FFFFFF"/>
+			<Colour Name="TabStripInactiveStart" Value="FFFFFF"/>
+			<Colour Name="TabStripInactiveEnd" Value="FFFFFF"/>
+			<Colour Name="TabStripTextActive" Value="000000"/>
+			<Colour Name="TabStripTextInactive" Value="B5B3AC"/>
+			<Colour Name="TabStripSeperator" Value="D4D0C8"/>
+		</Docking>
+	</Scheme>
+</Schemes>

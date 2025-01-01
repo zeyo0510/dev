@@ -1,0 +1,19 @@
+NeoJournal Credits
+
+icsharpcode.net for SharpDevelop, without which this program would not be possible, nor have its very cool icons. Also for #ZipLib, which provides zip processing for OpenDocument files
+http://www.icsharpcode.net/
+
+Weifen Luo for his DockPanel Suite, which provides the docking interface
+http://sourceforge.net/projects/dockpanelsuite
+
+The Mono Project for their implementation of the SHA512, sadly lacking on the PocketPC
+http://www.mono-project.com/
+
+Danilo Corallo for the DockPanel Skin, which makes NeoJournal look as good as it does
+http://www.codeproject.com/vb/net/DockPanelSkin.asp
+
+The team at TortoiseSVN, for saving me hours of work
+http://www.tortoisesvn.org
+
+Paul Welter for his NetSpell library
+http://sourceforge.net/projects/netspell/

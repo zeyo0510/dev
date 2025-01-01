@@ -1,0 +1,168 @@
+27/September/2007 -> 1.0.2826 (Beta 3)
+- Added the ability to change the default font
+- Added a new Chapter journal item, for organising items in a hierarchical manner
+- Added a new menu item and keyboard shortcut to lock your Journal
+- Added some new default Views to the Journal Browser
+  * Notebook displays all your active notes in a quick, simple manner
+  * Chapters allow you to group your thoughts and related items together in one place
+- Added Star and Personal flags to the sheet editor
+- Added support for editing tasks and events to the sheet editor
+- Added double-clicking to the Category list in Quick Contents
+- Added the name of the open Journal to the Notification Icon
+- Added printing functionality
+  * Print Preview window lets you see what it'll look like when it goes to the printer
+  * Ability to print Entries, Tasks, Events and Notes. Chapters will come later
+- Added previewing of image attachments
+- Added spell checking through the NetSpell library
+- Added category icon images and item properties when restoring a Journal
+- Changed the Recent and Starred views to those updated recently, rather than created
+# Changed the layout of the Journal Setup dialog:
+  * Added a new Appearance tab
+  * Added initial interface for editing views (not functional yet)
+- Changed the layout of the seperate item edit windows to use the editor interface
+- Changed introduction text
+- Changed auto-open to delay showing the main journal window
+- Fixed crash with Category browser when creating new categories at the end of the list
+- Fixed attachments and notes appearing in the Journal Browser incorrectly
+- Fixed the Apply button not being enabled sometimes in the NeoJournal Options window
+- Fixed a few bugs with category promotion/demotion
+- Fixed crash with Items that are open whilst creating a backup
+- Fixed overlap with the Exit and Align Centre keyboard shortcuts
+- Fixed password being left in the 'Journal Locked' box
+- Fixed text being cut off in the Item Properites categories tab
+- Fixed crash when starring an unsaved item
+- Fixed right-clicking on the Category list in Quick Contents
+- Fixed background corruption when resizing a SheetEditor displaying a Note
+- Fixed calendar not moving to 2+ columns
+- Fixed exception window not showing a scrollbar
+- Fixed search button not changing the displayed items when restoring a Journal
+- Fixed focus problem when opening NeoJournal from the tray icon
+- Fixed crash when using minimise on close and exiting NeoJournal
+
+Internal Changes:
+- Added a new NotePicker search filter
+- Added some checks to prevent corruption when attempting to write a block that is too big
+- Added a few checks to allow you to open a slightly corrupted Journal in read-only in order to recover it
+- Added support for output toolbar label controls to the Gui Library
+- Added support for input toolbar text controls to the Gui Library
+- Added a little more error handling to the Gui Widget binding code
+- Changed the TypePicker to be able to filter out items of a given type
+- Changed the RichTextControlEx class to support printing
+- Changed resource management utility classes to be in the Utility Library
+- Changed language definition settings to be stored seperately in Language.xml under the Resources folder
+- Changed a lot of the underlying GUI code, removed messy global variables
+
+2/March/2007 -> 1.0.2617 (Beta 2)
+- Fixed ListView drawing bugs
+- Fixed missing text for the "Save Note?" message box
+- Fixed installer manifest being damaged
+
+1/March/2007 -> 1.0.2616 (Beta 2)
+- Added drag-drop for categories. Simply drag a category from the quick contents to your open entry, or onto the entries list to add it to that category
+- Added drag-drop for items. Simply drag items from the list onto the categories tree to add them to that Category
+- Added some standard keyboard shortcuts
+- Added the missing right-click text menu on the Journal Browser
+- Added the ability to right-click category links at the bottom to remove them
+- Added the majority of the funcionality in the Journal Setup and NeoJournal Options windows
+- Added an Item Properties window
+- Added privacy mode. By flagging Items or Categories as 'personal', you can hide any items with the personal flag on, or contained in a category with the personal flag.
+- Added some more advanced text editing capabilities, including:
+  * Drop-down font and size selection
+  * New 'Text Formatting' dialog box
+  * Bullets, numbering, etc
+  * Highlighting formatting buttons
+  * Applying changes doesn't wipe all your other formatting anymore
+  * Find in Text
+- Added the Full Search form (no advanced searching yet)
+- Added Previous and Next window commands, and the window list
+- Added the ability to reorder and sort categories
+- Changed the Edit menu clipboard code, should be more reliable now
+- Changed lots of little things in the Gui
+- Changed the preview "Fast Editing" time period to include the previous day
+- Changed the view code to share controls, should decrease memory usage and flicker
+- Removed the old Item Categories window. This has been superceded by Item Properties
+- Removed a few superfluous settings from the configuration windows
+- Fixed the "Edit" link not opening the item in editing mode
+- Fixed the Location field in Events not being saved
+- Fixed double-editing rename bug in the Category Browser window
+- Fixed a crash when extracting attachments
+- Fixed backup files not being closed correctly when cancelling a restore
+- Fixed backup files not saving the original path they came from
+- Fixed a lot of crashes when using multiple text formatting styles
+- Fixed a bug causing attachments to be restored incorrectly
+
+Internal Changes:
+- Added support for keyboard shortcuts
+- Added support for backup configurations
+- Added support for formatting in the rich-text converter
+- Added support for custom views in a Journal
+- Added format version checking, and a version attribute in the Cover
+- Added an Item size property
+- Added a lot of new search pickers
+- Added a "diary" calendar searching system
+- Added support for repeated events and tasks
+- Added support for importing embedded attachments from iCal
+- Changed the Outlook-style edit/preview box to a UserControl
+- Changed BaseView to a UserControl rather than a Form
+- Changed a lot of the context-selection code
+- Changed a few Debug logging events to Trace logging
+- Changed a lot of the underlying widget handling code
+- Changed a lot of little things as part of a code cleanup from FxCop
+- Changed some of the Xml parsing code to clean it up a little
+- Changed a lot of the GuiBuilder code, general cleanup and enhancement
+- Changed the installer version system, as well as some restructuring to make releases easier
+- Changed the Xml serialisation code to a standard class in the Utility assembly
+- Removed the orphan Win32 skin code 
+- Fixed a bug causing an incomplete compressed block to be read
+- Fixed a bug causing handles to not be freed, resulting in ghost table entries
+
+19/January/2007 -> 1.0.2575 (Beta 1.2)
+- Added most of the functionality in the Options window
+- Fixed the crash when creating a Journal
+Internal Changes:
+- Changed Xml formats to use Html-style RRGGBB Colours, decreasing the data size
+
+17/January/2007 -> 1.0.2573 (Beta 1.1)
+- Added license and credits to the Installer
+- Added categories to the bottom preview bar
+- Added a location box to Events
+- Added a notification about too many results for a search
+- Added icons for Backup and Restore
+- Added icon and text for the custom image button
+- Added backup and restoration functionality
+- Added the 'Starred' and 'Incomplete Tasks' views
+- Added a notification when opening a read-only Journal
+- Changed the category trees to show expanded by default
+- Changed the installer to show a more friendly message when you don't have .Net 2.0
+- Changed the Journal and Entry icons
+- Changed the appearance of the buttons in the dock panels
+- Changed the Quick Contents to display items in child categories too
+- Fixed the drop-down list so child categories show up
+- Fixed new categories not being updated when changed
+- Fixed categories being duplicated and/or having missing icons in the 'Item Categories' form
+- Fixed notes/attachments not being properly deleted
+- Fixed windows not being closed when their item is deleted
+- Fixed searches including child categories
+- Fixed missing seperator line on the default view
+- Fixed a crash when searching for similar items
+- Fixed a lot of bugs in the iCalender filter
+- Fixed failures when opening the Journal resulting in the file staying open
+- Fixed the colouring on auto-hide panes and the top tab strip
+- Fixed exceptions when opening a read-only Journal
+Internal Changes:
+- Added control and language inheritance into the GuiBuilder
+- Added a 'Created' date to the Journal
+- Added restoration info about a backup
+- Added loading and saving a search in Xml
+- Added support for empty attachments
+- Changed Journal copying to write each item individually instead of block copy
+- Changed the category treeview/combo and info flowpanel into individual classes
+- Changed the 'Change Password' form to do its magic in the Manager module
+- Changed ReplaceFrom to support static types
+- Changed a few little things with the format filters for later
+
+02/January/2007 -> 1.0.2558 (Beta 1)
+- First Public Release
+
+21/March/2006
+- Project Created
