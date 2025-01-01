@@ -5,16 +5,15 @@ $files | ForEach-Object {
   $data = Get-Content -Path $file -Raw
   $json = $data | ConvertFrom-Json
   $json | ForEach-Object {
-    $name = $_.Name
-    $path = $_.Path
+    $code  = $_.Code
+    $name  = $_.Name
     ##################################################
-    Write-Host "Installing $name($path)"
+    Write-Host "Install VSCode Extension: $name"
     ##################################################
-    Set-ItemProperty  -Path  "HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" `
-                      -Name  $name                                                      `
-                      -Type  "String"                                                   `
-                      -Value $path
+    code --install-extension $code --force
   }
 }
 ##################################################
 Write-Host "OK"
+##################################################
+pause

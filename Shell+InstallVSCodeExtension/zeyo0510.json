@@ -1,0 +1,8 @@
+[
+  { "Code": "GitHub.github-vscode-theme"            , "Name": "GitHub Theme"                                              },
+  { "Code": "hediet.vscode-drawio"                  , "Name": "Draw.io Integration"                                       },
+  { "Code": "miguelsolorio.fluent-icons"            , "Name": "Fluent Icons"                                              },
+  { "Code": "PKief.material-icon-theme"             , "Name": "Material Icon Theme"                                       },
+  { "Code": "ritwickdey.LiveServer"                 , "Name": "Live Server"                                               },
+  { "Code": "MS-CEINTL.vscode-language-pack-zh-hant", "Name": "Chinese (Traditional) Language Pack for Visual Studio Code"}
+]
