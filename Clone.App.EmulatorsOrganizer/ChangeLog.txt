@@ -1,0 +1,218 @@
+========================================================================================================================================= 
+Change log for version 6.9.7674.37873
+Built at 4 Jan, 2021  21:02
+
+Improved: 
+* updates copyright and link information.
+========================================================================================================================================= 
+Change log for version 6.9.747.395
+Built at 23 June, 2020  13:41
+
+Added:
+* database format "Emulation Station XML (*.xml)", import and export ability.
+* new options in the database importer.
+
+Improved: 
+* database importer window.
+* database format "CSV (*.csv)", new options added for importing database files.
+
+Fixed:
+* Moving emulator in emulator browser.
+* Category information was not working in import-database function.
+
+Removed:
+* Getting information from TheGameDB (api has changed and requires to much time to implement, maybe this will be done in later versions of EO).
+========================================================================================================================================= 
+Change log for version 6.8.500
+
+Added:
+* Ability to export selected roms into Hyperlist XML database format file.
+* Ability to export selected rom names into a text file.
+* Ability to export and import EO playlist into/from file.
+* Csv database format (.csv), ability to import and export.
+* Mame Genre / Category database format (*.ini), ability to import.
+* Ability to use Mame Hyperlist database format in "Add Mame Console" wizard.
+* Hyperlist and No-intro database formats now able to import region info from database files.
+* Ability to import categories from databases, new option added in the database import dialog, allows to add category information into roms if available.
+* The database import engine can now generate filters for region, if region data is imported from database.
+* Ability to export categories into some database formats (Hyperlist and CSV)
+* Mode options in the Send To dialog (i.e. ability to send related files only)
+
+Improved: 
+* Adobe Reader control replaced with web browser, no need to install Adobe Reader anymore to show pdf files (i.e. rom manuals and console manual)
+* Now mouse-double-click can be used to force refresh tabs for selected console/rom when there are no tab shown in the tabs browser.
+* Added "Remove these specified symbols .." options in the Detect window (when detecting snaps, covers... for example).
+* Improved detect feature generally with optimal default options.
+* Improved detect from TheGameDB.net, added ability to get "Clear Logo" images.
+* Hyperlist XML database import.
+* Get data from MobyGames now include more options, it also able now to include categories for roms.
+* Thumbnail view optimized, now EO display thumbnails faster.
+
+Fixed:
+* No-Intro database fails sometimes to read new versions of the database files.
+* Bug when EO loads roms and user switches to Categories tab, EO crashes sometimes due to threads conflicts.
+* Out of memory exception, thrown when viewing large images in Thumbnails view.
+
+Removed:
+* Detect game info from The Game DB feature is disabled temporary in this version. Working on updating the api handler.
+
+========================================================================================================================================= 
+Change log for version 6.7.916
+
+Improved: 
+* Now mouse-double-click can be used to force refresh tabs for selected console/rom when there are no tab shown in the tabs browser.
+* Added "Remove these specified symbols .." options in the Detect window (when decting snaps, covers... for example).
+* Improved detect feature generally with optimal default options.
+* Improved detect from TheGameDB.net, added ability to get "Clear Logo" images.
+
+Fixed:
+* Bug after detecting info from TheGameDB.net the tabs not get visible until used enable them manually from properties.
+* Bug in detect info from TheGameDB.net, was crashes sometimes. 
+* Bug in detect info from TheGameDB.net, was naming images wrongfully.
+* Bug: sometimes EO crashes due to threads conflicts.
+========================================================================================================================================= 
+Change log for version 6.7.150
+
+Fixed:
+* Fixed a bug when deleting roms, saving profile, closing EO then opening that profile, the roms get back like never deleted.
+========================================================================================================================================= 
+Change log for version 6.7.129
+
+New in this version: 
+* Added the ability to copy settings from an element to another (console to console, playlist to playlist ...etc)
+* Added the ability to add links for a console (in the console status)
+* Added the ability to detect and load information from The Game DB for more than one selected rom.
+
+Removed:
+* Removed the ability to search google for images for an image tab for Copyrights purposes.
+
+Fixed:
+* Fixed a bug in the roms list view sometimes when attempting to select roms using SHIFT key.
+* Fixed a bug with the info tabs, when end-user right click on the text area and the context menu is hidden, the context menu never appears.
+* Fixed a bug with emulators browser, no emulator is listed.
+* Fixed a bug in "Detect Games Info From The Games DB" form when you disable some tabs (disabel include for some tabs).
+
+========================================================================================================================================= 
+Change log for version 6.6.25
+
+New in this version: 
+* Added the ability to import and export Excel Datasheet (rom data as .xlsx files) as a database for a console.
+* Added the ability to import and export ratings (review/scores tab) as Excel Datasheet (rom data as .xlsx files) for a console.
+* Added ability to add the "Description" element as Info Tab when using Get data from MobyGames for this game feature.
+* Added ability to download more data for a game using "Get data from TheGameDB for this game" feature.
+* Added ability to add rom data info elements as categories for selected roms.
+* Added ability to set game all scores (in scores tab) to 100 or 0 easily via new buttons on the tab.
+
+Removed:
+* Removed the ability to search google for images for an image tab for Copyrights purposes.
+
+Fixed:
+* Fixed a bug in the roms list view sometimes when attempting to select roms using SHIFT key.
+* Fixed a bug with the info tabs, when end-user right click on the text area and the context menu is hidden, the context menu never appears.
+* Fixed a bug with emulators browser, no emulator is listed.
+* Fixed a bug in "Detect Games Info From The Games DB" form when you disable some tabs (disabel include for some tabs).
+
+========================================================================================================================================= 
+Change log for version 6.5.11
+
+New in this version: 
+* EO optimized for loading and saving profile, saving/loading progress is faster than ever.
+* EO optimized for memory usage, now it only load the roms that used instead of loading everyting of the profile ... low memory resource usage.
+* Added roms list thumbnail tooltip, can be configured via settings in the visual and behaviour section.
+* Added rom command-lines; commandlines that can be used when launching a rom without emulator and thus the rom can be treated as executable instead of just-a-file.
+
+Fixed:
+* Bug when the rom file is AI path and contain more than one ")" !
+* Issue when renaming big size files.
+* Some bugs in the roms list view.
+* The roms list view wasn't remember the latest selected thumbnail mode in the thumbnails view mode.
+* After renaming a rom, the new name wasn't show in the roms list when the view mdoe is thumbnails.
+* Rom info tab didn't update time play counters after playing a rom.
+* Parent and children doesn't work when adding roms via add roms (no folder scan) method
+
+Improved:
+* Improved the code for loading roms, now process is faster than ever and the performance increased with rom browsing.
+* Improved import database file for console wizard, optimized to avoid "Out Of Memory" exceptions.
+* Improved NesCard DB for nes, now it add more information about board and mapper for games.
+* Improved the roms list view control, now it show tooltips in the thumbnails view mode.
+* Improved roms sort process.
+
+========================================================================================================================================= 
+Change log for version 6.4.350
+
+New in this version: 
+* Added ability to track roms that don't require an emulator to save play time, played times, etc. 
+* Added an option to detect and download info & images from TGDB (TheGamesDB.net).
+* Added a "Parent And Children" mode for all consoles including MAME which will display roms in a parent/clone relationship. 
+* Added the Profile Status tab (next to the Roms tab) that displays an overview of all consoles, including console icons, most played games, etc. 
+* Added the Console Status tab (next to the Roms tab) that displays an overview of the selected console and includes the ability to attach an rtf file or pdf system manual for that console
+* Added new sections in the Console Properties windows that allows extra information to be stored e.g. include a short description, attach an rtf file, or add a pdf system manual for that console
+* Added additional functionality for dynamic emulators to execute scripts instead of just launching the normal executable file. 
+* Added functionality for programs that launch before/after the emulator which now includes the ability to load scripts instead of just loading the program's executable file.
+* Added ability to override an emulator's list configuration in the launch before/after window.
+* Added a function which dictates when a program should launch before and/or after the emulator e.g. # of seconds to wait, launch instantly, wait to finish, etc.
+* Added ability to scan folder(s) for rom icons. 
+* Added ability to sort categories alpha numerically. 
+* Added an option to repeat playlist in the media tab. 
+* Added a pixilated mode for image tabs. 
+
+Fixed:
+* Fixed bug which caused EO to display names incorrectly if they had a period in them. 
+* Fixed bug which caused EO to halt operations when exporting roms to a database file. 
+* Fixed bug which occurred when extracting a rom is inside a folder from an archive. 
+
+Improved:
+* Improved code optimization which allows roms to load faster. 
+* Improved code optimization which allows roms to display faster when viewed in Thumbnails mode.
+* Improved functionality for programs that launch before/after the emulator which now includes the ability to load scripts instead of just loading the program's executable file. 
+* Improved ability in the categories browser by including a rename option. 
+
+========================================================================================================================================= 
+Change log for version 6.3.19
+
+Fixed:
+* Fixed command lines which were not case sensitive but are now. 
+
+=========================================================================================================================================
+Change log for version 6.3.17
+
+New in this version:
+* Added new categories system which includes the ability to organize categories in folders.
+* Added ability to import Catveren Database file (for categories only).
+* Added new options which include "Turbo speed" for all database file import dialogs and "Cache on disk".
+* Added new button in the Tabs section of the console properties window which will reset the layout of the tabs.
+* Added ability to hide/show the main menu, toolsbar, and status strip.
+* Added ability to hide/show the close buttons on tabs via the main menu.
+* Added ability to change main menu text color in the style editor (styles now support main menu text color).
+* Added context menu and new options to the media tab which includes hide/show player controls.
+* Added context menu and the ability to hide the toolstrip for these tabs: info text, links, manuals (pdf ebook), score/reviews, and youtube.
+* Added new options in the settings for tabs visual which allows the user to edit tab settings such as hide/show close buttons. 
+
+Fixed:
+* Fixed bug that causes errors in the tabs browser when deleting an information container.
+* Fixed rom list view was didn't save the thumbnails size settings.
+* Fixed the style's list view text color which was not applying to Thumbnails mode.
+* Fixed bug when loading a style with screen resolution  that is smaller than the PC's native resolution.
+
+========================================================================================================================================= 
+Change log for version 6.2.15
+
+New in this version:
+* New feature: AI (Archive ID) path which will list all games separately in the rom browser even if multiple roms are stored in a single compressed archive.
+* Added new feature to add MAME which simplifies the process by using guided menus.
+* Added ability to import Hyper List XML database files into a console.
+* Added new tool that can search folders for images to import into the image tabs.
+* Added ability to configure archive extraction behaviors per console.
+* Added new option in the detect window to remove symbols from file names when using the detect function.
+* Added ability to convert data info item(s) into info tab(s) using the new 'Rom Data Info(s) To Info Tab' tool.
+* Added option in rom properties window to force EO to ignore a rom path if it does not exist.
+
+Fixed:
+* Error with crc compare (in some cases) in database import with some database types.
+* Error when trying to export into No-intro database file and changing the header xml file.
+* Fixed image tabs never saving when hiding tool\status bars.
+* Fixed arrow keys not work when attempting to select roms in the roms list and the roms count is small.
+* Fixed consoles browser sometimes not showing background image that was set in the styles menu.
+
+Improved:
+* Improved management of recent profiles list in the welcome window.

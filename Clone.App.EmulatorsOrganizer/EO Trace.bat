@@ -1,0 +1,1 @@
+EmulatorsOrganizer.exe /trace /logger

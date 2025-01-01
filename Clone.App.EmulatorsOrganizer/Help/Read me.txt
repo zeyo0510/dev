@@ -1,0 +1,8 @@
+Help content was removed from release because of most of the content is out dated.
+The document ptovides the basic operations of the program. For detailed information please visit website, forums and another internet resources.
+
+Emulators Organizer page:
+https://github.com/alaahadid/Emulators-Organizer
+
+Email:
+alaahadidfreeware@gmail.com

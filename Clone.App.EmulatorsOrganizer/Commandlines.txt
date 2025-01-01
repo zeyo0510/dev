@@ -1,0 +1,12 @@
+Emulators Organizer command lines
+----------------------------------
+* First command line must be profile path, if no path included it's ok but if you add the profile
+  path anywhere else in the commandlines the program will ignore it.
+  Example (with profile): <profile path> /trace /logger...etc
+  Example (no profile): /trace /logger...etc
+
+* /logger: enable the text logger, a file will record all trace events of EO, the file will be saved
+           in the Logs folder in the program directory. This will make EO slower 'cause it will record
+           all program events.
+
+* /trace: open the trace window when the program run.
