@@ -4,7 +4,7 @@ $files | ForEach-Object {
   $file = $_.FullName
   ##################################################
   $source = $file
-  $target = "$env:APPDATA\Code\User\keybindings.json"
+  $target = "$env:APPDATA\Code\User\"
   ##################################################
   Write-Host "Copy $source to $target"
   ##################################################
