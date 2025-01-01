@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zeyo.HotkeyManager", "Zeyo.HotkeyManager.csproj", "{A3C64798-F57D-40DC-9133-79EEE7F558BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C64798-F57D-40DC-9133-79EEE7F558BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C64798-F57D-40DC-9133-79EEE7F558BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C64798-F57D-40DC-9133-79EEE7F558BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C64798-F57D-40DC-9133-79EEE7F558BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
