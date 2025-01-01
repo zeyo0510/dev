@@ -1,0 +1,10 @@
+[
+  { "key": "ctrl+alt+a"    , "command": "editor.action.sortLinesAscending"                                                 },
+  { "key": "ctrl+alt+z"    , "command": "editor.action.sortLinesDescending"                                                },
+  { "key": "ctrl+alt+oem_4", "command": "editor.action.transformToLowercase"                                               },
+  { "key": "ctrl+alt+oem_6", "command": "editor.action.transformToUppercase"                                               },
+  { "key": "ctrl+alt+up"   , "command": "editor.action.insertCursorAbove"   , "when": "editorTextFocus"                    },
+  { "key": "ctrl+alt+down" , "command": "editor.action.insertCursorBelow"   , "when": "editorTextFocus"                    },
+  { "key": "ctrl+alt+oem_5", "command": "editor.action.jumpToBracket"       , "when": "editorTextFocus"                    },
+  { "key": "ctrl+alt+oem_2", "command": "editor.action.commentLine"         , "when": "editorTextFocus && !editorReadonly" }
+]
