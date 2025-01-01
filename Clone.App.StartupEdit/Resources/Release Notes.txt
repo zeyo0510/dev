@@ -1,0 +1,106 @@
+15 April 2010, 09:50 AM Cairo Main Time
+--------------------------------------------------
+
+======================================================================================
+Starup Edit Release Notes V0.2 Beta Release
+======================================================================================
+
+Change Log
+======================================================================================
+
+1. Fixed some minor BUG in the program folw
+2. if you try to delete an entry that is has been deleted while you are deleting it, the program would crash, now it is fixed
+3. Modified the about dialoge
+4. Doing some performance enhancment
+
+======================================================================================
+Introduction
+======================================================================================
+
+What is Startup Edit
+======================================================================================
+
+Startup Edit is a small program that might come in handy when it comes to:
+
+Preventing (spyware) programs from running behind your back without your knowledge.
+Maximizing your system resources by removing unwanted programs from starting with Windows.
+Decreasing the time taken by Windows to load.
+Why is it useful
+
+This fully working program enables you to control what should and should not load automatically with Windows. This way, you eliminate viruses, worms, and spyware threats which might take advantage of this feature. It loads itself every time you start your PC and starts recording activities (loggers, spyware), or looks for anything that destroys your valuable data (viruses).
+=
+======================================================================================
+Problems solved
+======================================================================================
+
+If you:
+
+Fully understand what should and should not load with Windows
+Have the "Startup Edit" right in Your desktop
+you will no longer need many of the privacy protector software out there.
+
+======================================================================================
+Latest news
+======================================================================================
+
+Startup Edit now supports the msconfig.exe utility by reading its disabled items and givinge the user the ability to re-enable it or delete it forever!! In the near future, Startup Edit will support the plug-in technology.
+
+======================================================================================
+Background
+======================================================================================
+
+Have you ever asked yourself how programs like Yahoo! Messenger, MSN, ICQ etc.. load every time Windows starts up? Normally, when a program needs to load every time Windows starts up, it uses one of two techniques. The first technique is using the Windows Registry, which is the most common way nowadays. The second technique is using the famous Windows Startup folder. We will discuss the two techniques quickly.
+
+The first technique, using the Windows Registry: I will not discuss the Windows Registry itself. A program can write to the Registry in one of two keys: The first key, "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\" holds three sub keys (Run, RunOnce, RunOnceEx), and used when the program has to be loaded globally (in all user accounts). The second key, "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\" holds two sub keys (Run, RunOnce), and is used when the program has to be loaded locally (just in this user account).
+
+Run - Means load the program every time Windows starts.
+RunOnce - Means load the program just the next time Windows starts, and then Windows automatically deletes the entry.
+RunOnceEx - Not used except for the first time ever Windows starts (starts after the installation of Windows itself).
+The second technique uses the Startup Folder: This is the old fashioned way to load programs and it is rarely used now (Microsoft Office still uses it). This folder is found in the "Documents and Settings" folder; each user account has one folder named after his user name. There is one common startup folder found in the "All Users" folder under "Documents and Setting\All Users\Start Menu\Programs\Startup" to load a program in all user accounts.
+
+A Note: Windows NT has a feature called "services" which is an application type that runs in the background, and is similar to UNIX daemon applications. Service applications are typically client/server applications, Web Servers, database servers, and other server-based applications for users, both locally and across a network. And usually, they don't have a visible user interface, and most services start up automatically with Windows and do their job. This feature is not yet supported, but I might support it in the near future.
+
+======================================================================================
+Program features
+======================================================================================
+
+Lists all entries found in the following Registry keys:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices (Win9x)
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServicesOnce (Win9x)
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+
+Lists all entries found in the following folders:
+
+%SYSTEMDRIVE%\Documents and Settings\All Users\Start Menu\Programs\Startup
+%SYSTEMDRIVE%\Documents and Settings\YOUR_USER_NAME\Start Menu\Programs\Startup
+
+Enables you to remove any entry found in the list.
+Enables you to disable\enable any entry found in the list.
+Enables you to add\edit any entry to the list except to (Startup Folders).
+Enables you to launch and explore a folder or invoke its properties.
+
+Can differentiate between Win9x and WinNT, in general.
+
+Friendly user interface, easy to use.
+
+======================================================================================
+History
+======================================================================================
+
+3 Jan 2006: First upload.
+4 Jan 2006: A complete rewrite to the program, and I have added a new module.
+5 Jan 2006: Changed the screenshot and fixed spelling and grammar errors.
+15 Feb 2006: New version released.
+16 Feb 2006: StartUp Edit Version 0.1 alpha released.
+22 Feb 2006: StartUp Edit Version 0.2 alpha released.
+22 April 2007 : Startup Edit Version 0.1 Beta Released
+15 April 2010 : Startup Edit Version 0.2 Beta Released
+
+All Rights Reserved YFA Corp 2010
+
+
