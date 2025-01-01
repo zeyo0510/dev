@@ -1,8 +1,8 @@
 [
-  { "Name": "Fira Code Bold (TrueType)"     , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\Bold.ttf"     },
-  { "Name": "Fira Code Light (TrueType)"    , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\Light.ttf"    },
-  { "Name": "Fira Code Medium (TrueType)"   , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\Medium.ttf"   },
-  { "Name": "Fira Code Regular (TrueType)"  , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\Regular.ttf"  },
-  { "Name": "Fira Code Retina (TrueType)"   , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\Retina.ttf"   },
-  { "Name": "Fira Code SemiBold (TrueType)" , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\SemiBold.ttf" }
+  { "Name": "Fira Code Bold (TrueType)"     , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\FiraCode-Bold.ttf"     },
+  { "Name": "Fira Code Light (TrueType)"    , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\FiraCode-Light.ttf"    },
+  { "Name": "Fira Code Medium (TrueType)"   , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\FiraCode-Medium.ttf"   },
+  { "Name": "Fira Code Regular (TrueType)"  , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\FiraCode-Regular.ttf"  },
+  { "Name": "Fira Code Retina (TrueType)"   , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\FiraCode-Retina.ttf"   },
+  { "Name": "Fira Code SemiBold (TrueType)" , "Path": "D:\\Git\\Zeyo-Font-FiraCode\\FiraCode-SemiBold.ttf" }
 ]

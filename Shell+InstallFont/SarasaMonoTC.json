@@ -1,12 +1,12 @@
 [
-  { "Name": "Sarasa Mono TC Bold (TrueType)"           , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\Bold.ttf"             },
-  { "Name": "Sarasa Mono TC Bold Italic (TrueType)"    , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\BoldItalic.ttf"       },
-  { "Name": "Sarasa Mono TC Italic (TrueType)"         , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\Italic.ttf"           },
-  { "Name": "Sarasa Mono TC Light (TrueType)"          , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\Light.ttf"            },
-  { "Name": "Sarasa Mono TC Light Italic (TrueType)"   , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\LightItalic.ttf"      },
-  { "Name": "Sarasa Mono TC Regular (TrueType)"        , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\Regular.ttf"          },
-  { "Name": "Sarasa Mono TC Semibold (TrueType)"       , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SemiBold.ttf"         },
-  { "Name": "Sarasa Mono TC Semibold Italic (TrueType)", "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SemiBoldItalic.ttf"   },
-  { "Name": "Sarasa Mono TC Xlight (TrueType)"         , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\ExtraLight.ttf"       },
-  { "Name": "Sarasa Mono TC Xlight Italic (TrueType)"  , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\ExtraLightItalic.ttf" }
+  { "Name": "Sarasa Mono TC Bold (TrueType)"           , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-Bold.ttf"             },
+  { "Name": "Sarasa Mono TC Bold Italic (TrueType)"    , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-BoldItalic.ttf"       },
+  { "Name": "Sarasa Mono TC Italic (TrueType)"         , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-Italic.ttf"           },
+  { "Name": "Sarasa Mono TC Light (TrueType)"          , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-Light.ttf"            },
+  { "Name": "Sarasa Mono TC Light Italic (TrueType)"   , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-LightItalic.ttf"      },
+  { "Name": "Sarasa Mono TC Regular (TrueType)"        , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-Regular.ttf"          },
+  { "Name": "Sarasa Mono TC Semibold (TrueType)"       , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-SemiBold.ttf"         },
+  { "Name": "Sarasa Mono TC Semibold Italic (TrueType)", "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-SemiBoldItalic.ttf"   },
+  { "Name": "Sarasa Mono TC Xlight (TrueType)"         , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-ExtraLight.ttf"       },
+  { "Name": "Sarasa Mono TC Xlight Italic (TrueType)"  , "Path": "D:\\Git\\Zeyo-Font-SarasaMonoTC\\SarasaMonoTC-ExtraLightItalic.ttf" }
 ]
