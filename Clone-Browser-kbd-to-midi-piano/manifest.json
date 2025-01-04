@@ -1,0 +1,21 @@
+{
+   "action": {
+      "default_icon": "style/icons/icon128.png",
+      "default_title": "KBD2MIDI"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "An offline piano with MIDI export and audio recording functions",
+   "icons": {
+      "128": "style/icons/icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQjhOe0w4J3usSJtyn304ns0M5XN7hjPNunt7XUCkJJEfCnwJuc2h9uCCLCDNcTgqh7rntgY+v/a0BGC3naTXwreMJL2CaKVkenj8DF6IcQMFdK5OCsr0QVKq8yLI2P3gYzWPojRgw2bJhVRu0HWaY5Tp/nt8iC5y6/9CL6hQB+mvZASJu3JTJpvZdK6mPuw+gigSUKjwuJJgdvhoKeyOA6/vCe1qJMLP5CvaWBxq4QjkgOitKyoAtlFoeOViBJr26FW6MBepjJdsBY4GdWcZ3GBN+llTwWkSqsM0G14Q3VL6zmxUWO7NO7fKlg1vbbpzLEscXnZ7lqBW41td1pAnwIDAQAB",
+   "manifest_version": 3,
+   "name": "KBD To MIDI Piano",
+   "offline_enabled": true,
+   "permissions": [ "storage" ],
+   "short_name": "K2MP",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6.5"
+}
