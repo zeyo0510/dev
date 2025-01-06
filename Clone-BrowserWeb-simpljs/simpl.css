@@ -1,0 +1,940 @@
+@keyframes yellow-fade {
+  5% { background-color: yellow; }
+}
+@-webkit-keyframes yellow-fade {
+  5% { background-color: yellow; }
+}
+body {
+  margin: 0;
+  font: 13px -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-text-size-adjust: none;
+}
+#icons {
+  display: none;
+}
+svg {
+  width: 15px;
+  height: 15px;
+  vertical-align: bottom;
+  fill: currentColor;
+}
+nav svg {
+  height: 100%;
+}
+p svg {
+  color: #666;
+  height: 1.5em;
+  margin: 0 2px;
+}
+p button svg, p a svg {
+  height: 15px;
+  margin: 0;
+}
+pre, code, kbd, samp, tt, .CodeMirror, #history table {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+pre, .CodeMirror, #history table {
+  line-height: 16px;
+}
+html, body, #code, .CodeMirror {
+  height: 100%;
+}
+p {
+  line-height: 1.5;
+}
+pre {
+  margin: 0;
+}
+code {
+  padding: 0 2px;
+  border: solid 1px #e0e0e0;
+}
+nav {
+  position: fixed;
+  width: 249px;
+  height: 100%;
+  padding-right: 1px;
+  background: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+nav:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+h1 {
+  font: 500 2em -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0 0 .5em 0;
+}
+#home h1 {
+  background: url(/icon.png) left/32px no-repeat;
+  image-rendering: pixelated;
+  padding-left: 40px;
+}
+nav h2, #settings h2 {
+  margin: 0 0 1px 0;
+  padding: 2px 0 2px 10px;
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #333;
+  color: #ddd;
+}
+.home {
+  font: 500 15px/25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: url(/icon.png) 10px/16px no-repeat;
+  image-rendering: pixelated;
+  padding-left: 30px;
+  height: 25px;
+  margin-bottom: 1px;
+  position: relative;
+  cursor: default;
+}
+.show-app .home:after, .show-module .home:after,
+.show-app .user:after, .show-module .user:after {
+  display: none;
+}
+.user, .servers {
+  margin-bottom: 1px;
+  position: relative;
+}
+.user .name {
+  padding-left: 40px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  cursor: default;
+}
+.servers span {
+  background: #f7f7f7;
+  width: 30px;
+  height: 25px;
+  color: #666;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.servers select {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  border: none;
+  padding-left: 40px;
+  outline: none;
+  font: inherit;
+  background: transparent;
+}
+.servers:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 11px;
+  border-style: solid;
+  border-width: 7px 4px 0 4px;
+  border-color: #333 transparent transparent;
+  pointer-events: none;
+}
+.servers .icon-laptop, .localhost .icon-network {
+  display: none;
+}
+.localhost .icon-laptop {
+  display: inline-block;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+button {
+  margin: 0;
+  font: inherit;
+}
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  padding: 0 30px 0 10px;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+.form {
+  position: relative;
+  margin-bottom: 1px;
+}
+.form button {
+  background: #3c3;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  height: 25px;
+  margin-bottom: 1px;
+  cursor: default;
+}
+nav .name {
+  display: block;
+  position: relative;
+  height: 20px;
+  padding: 5px 0 0 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: inherit;
+}
+nav .name:active {
+  opacity: 1;
+}
+nav .name span, #dependencies .name span {
+  font-size: 90%;
+  color: #999;
+  margin-left: 10px;
+}
+nav .disabled .run, nav .disabled .stop, nav .disabled .restart {
+  display: none;
+}
+nav .icon-loading, nav .icon-error {
+  display: none;
+  float: right;
+  margin: 0 7px;
+  height: 15px;
+  color: #666;
+}
+nav .icon-link {
+  height: 15px;
+  color: #666;
+}
+nav .icon-error {
+  color: #c33;
+}
+nav .error .icon-error, nav .loading .icon-loading {
+  display: inline-block;
+}
+nav .changed .name:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 4px;
+  width: 4px;
+  background: black;
+  border-radius: 50%;
+  margin: 0 3px 4px 0;
+}
+.controls {
+  float: right;
+}
+button, .controls a {
+  display: inline-block;
+  vertical-align: top;
+  background: #f7f7f7;
+  color: #666;
+  padding: 0;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+button:hover, .controls a {
+  color: white;
+}
+button:active, a:active {
+  opacity: .7;
+}
+nav button, .controls a {
+  height: 25px;
+  width: 30px;
+}
+nav button, #actions button {
+  position: relative;
+  vertical-align: top;
+  margin-left: 1px;
+}
+#connection {
+  background: yellow;
+  padding: 3px 3px 3px 10px;
+  margin-bottom: 1px;
+  display: none;
+}
+#connection button {
+  float: right;
+  width: auto;
+  height: auto;
+  padding: 2px 4px;
+  font-size: 11px;
+  line-height: 1;
+  background: white;
+  color: black;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+#connection.info, #connection.connecting {
+  display: block;
+}
+#connection.error, #connection.fatal {
+  display: block;
+  color: white;
+}
+#connection.fatal button, #connection.connecting button {
+  display: none;
+}
+.run:hover, .restart:hover, #status.success {
+  background: #3c3;
+}
+#logout, #actions .delete:hover, #dependencies .delete:hover, .stop:hover, .revert:hover, #status.failure, #connection.error, #connection.fatal {
+  background: #c33;
+}
+#login, .code:hover, .settings:hover, .log:hover, .docs:hover, .home .settings, #status.info {
+  background: #36c;
+}
+.publish:hover {
+  background: #93c;
+}
+.toggle:hover, .show-code .toggle:hover {
+  background: #666;
+}
+.view, .view > *, .selected.loading .view, .restart, .stop, .running .run, .toggle .icon-right, .collapsed .toggle .icon-left {
+  display: none;
+}
+.code .icon-code, .settings .icon-settings, .log .icon-log, .docs .icon-info, .toggle .icon-left, .collapsed .toggle .icon-right {
+  display: inline-block;
+}
+.selected .view, .running .restart, .running .stop {
+  display: inline;
+}
+nav .selected {
+  background: #f7f7f7;
+  position: relative;
+}
+nav .selected:after, .home:after, .user:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1px;
+  background: white;
+  width: 13px;
+  height: 13px;
+  transform: translate(6px, 6px) rotate(45deg) skew(22.5deg, 22.5deg);
+  -webkit-transform: translate(6px, 6px) rotate(45deg) skew(22.5deg, 22.5deg);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  z-index: 1;
+}
+.show-code nav .selected:after, .show-code .toggle {
+  background: #f7f7f7;
+}
+nav .selected button {
+  background: #e0e0e0;
+}
+.toggle {
+  position: absolute;
+  width: 15px;
+  bottom: 50px;
+  right: 0px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  z-index: 1;
+}
+.collapsed .home, .collapsed .user, .collapsed .servers, .collapsed #connection, .collapsed nav h2, .collapsed .form, .collapsed nav li, .collapsed nav .selected:after {
+  display: none;
+}
+.collapsed nav {
+  width: 30px;
+  overflow-y: hidden;
+}
+.collapsed nav .name {
+  padding: 8px 10px 0 0;
+  width: 200px;
+  text-align: right;
+  transform: rotate(-90deg) translate(0, -210px);
+  -webkit-transform: rotate(-90deg) translate(0, -210px);
+  transform-origin: right top 0;
+  -webkit-transform-origin: right top 0;
+}
+.collapsed nav button {
+  margin-bottom: 1px;
+}
+.collapsed nav .selected {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 1px;
+  height: 100%;
+  white-space: normal;
+}
+.collapsed #main {
+  margin-left: 31px;
+}
+#main {
+  margin-left: 250px;
+  height: 100%;
+  overflow-x: auto;
+}
+#status {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 6;
+  display: none;
+  color: white;
+  padding: 3px 8px;
+}
+#auth {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .3);
+  overflow: auto;
+  z-index: 6;
+}
+#auth.visible {
+  display: block;
+}
+#auth > div {
+  width: 400px;
+  max-width: 100%;
+  background: white;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, .3);
+  margin: 50px auto 0;
+  text-align: center;
+  padding: 20px 0;
+}
+#auth iframe {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border: none;
+  margin: -20px 0;
+}
+#auth button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  color: white;
+  background: #3c3;
+}
+.CodeMirror-gutters {
+  border-right: none;
+}
+.CodeMirror-dialog input {
+  font: inherit;
+}
+.CodeMirror .current {
+  animation: yellow-fade 2s;
+  -webkit-animation: yellow-fade 2s;
+}
+#code .CodeMirror-matchingbracket,
+#code .CodeMirror-nonmatchingbracket {
+  color: black;
+  background: yellow;
+  padding: 1px 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+  border-radius: 3px;
+}
+#code .CodeMirror-nonmatchingbracket {
+  background: red;
+}
+.CodeMirror-focused .cm-matchhighlight {
+  background: rgba(215, 212, 240, .5);
+}
+.CodeMirror-foldmarker {
+  text-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3.5px 1px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  background: #666;
+  color: white;
+  font-family: inherit;
+}
+.CodeMirror-gutter-elt {
+  font-size: 13px;
+}
+.show-settings #main, .show-log #main, .show-docs #main {
+  background: transparent;
+}
+#home, #code, #settings, #log, #docs {
+  min-width: 259px;
+}
+#home {
+  margin: 0 auto;
+  padding: 8% 15px 15px;
+  max-width: 600px;
+}
+#log, #docs {
+  padding: 5px 15px;
+}
+#home p {
+  font-size: 15px;
+}
+.promo {
+  border: solid 1px #e0e0e0;
+  padding: 0 10px 3px;
+}
+.promo p {
+  margin: 5px 0;
+}
+#log .entry {
+  border-bottom: solid 1px #ececec;
+  padding: 1px 0;
+  white-space: normal;
+}
+#log .entry:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+#log .jsonv {
+  display: inline-block;
+  vertical-align: top;
+  color: black;
+}
+#log .jsonv-object.closed ul, #log .jsonv-array.closed ol {
+  display: inline;
+}
+#log .jsonv .closed li {
+  display: none;
+}
+#log .jsonv-object.closed li:first-child, #log .jsonv-array.closed li:first-child {
+  display: inline;
+  padding-left: 0;
+}
+#log .jsonv-object.closed .jsonv-object, #log .jsonv-object.closed .jsonv-array,
+#log .jsonv-array.closed .jsonv-object, #log .jsonv-array.closed .jsonv-array {
+  margin-left: 0;
+}
+#log .jsonv-object.closed .jsonv-object .jsonv-toggle, #log .jsonv-object.closed .jsonv-array .jsonv-toggle,
+#log .jsonv-array.closed .jsonv-object .jsonv-toggle, #log .jsonv-array.closed .jsonv-array .jsonv-toggle {
+  display: none;
+}
+#log .jsonv-object:after {
+  content: "}";
+}
+#log .jsonv-array:after {
+  content: "]";
+}
+#log .jsonv-object.closed li:after, #log .jsonv-array.closed li:after {
+  content: ",…";
+}
+#log .jsonv-object.closed li:last-child:after, #log .jsonv-array.closed li:last-child:after {
+  content: none;
+}
+#log .location {
+  float: right;
+  color: #999;
+  cursor: pointer;
+}
+#log .message > span {
+  white-space: pre-wrap;
+}
+#log .error, #log .warn, #docs .error {
+  color: red;
+}
+.show-code #code, .show-settings #settings, .show-log #log, .show-docs #docs {
+  display: block;
+}
+#code, #settings, #log, #docs,
+.show-loading #code, .show-loading #settings .show-loading #log, .show-loading #docs,
+.show-module #config, .show-app #home, .show-module #home {
+  display: none;
+}
+#settings section {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 25%;
+  min-height: 199px;
+  border-left: 1px solid white;
+}
+#settings #history {
+  display: block;
+  border-left: none;
+  width: auto;
+  min-height: 0;
+  padding-left: 83px;
+}
+#settings #actions {
+  padding-top: 50px;
+  text-align: center;
+}
+.show-module #settings section, #settings #config {
+  width: 50%;
+}
+#home a {
+  display: inline-block;
+  font-size: 13px;
+  text-decoration: none;
+  background: #f7f7f7;
+  color: #666;
+}
+#home a:hover {
+  color: white;
+  background: #3c3;
+}
+#home button, #home a, #actions button {
+  padding: 5px 10px;
+  margin: 0 5px 5px 0;
+}
+#home #facebook:hover {
+  background: #3b5998;
+}
+#home #twitter:hover {
+  background: #55acee;
+}
+#home #google:hover {
+  background: #d73d32;
+}
+#home button svg, #actions button svg {
+  margin-right: 8px;
+}
+#home a span {
+  margin-left: 8px;
+}
+.search {
+  position: relative;
+  margin-bottom: 5px;
+}
+.search input {
+  padding: 0 10px 0 28px;
+}
+.search .icon-search {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: #aaa;
+}
+#dependencies .module {
+  padding: 0 0 5px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#dependencies .delete {
+  margin-right: 5px;
+  line-height: .8em;
+  color: #808080;
+  text-align: center;
+  width: 1em;
+  height: 1em;
+}
+#dependencies .delete:hover {
+  color: white;
+}
+.suggest {
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+}
+.suggest button {
+  color: black;
+  background: white;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3px 0 3px 25px;
+  text-align: left;
+}
+.suggest button:hover {
+  color: black;
+  background: #def;
+}
+.suggest button:focus, .search input:focus + ul li:first-child button {
+  color: white;
+  background: #36c;
+  outline: none;
+}
+#dependencies button:focus span, #dependencies input:focus + ul li:first-child button span {
+  color: #def;
+}
+#config .jsonv {
+  padding: 4px 10px;
+  min-height: 174px;
+  overflow-x: auto;
+}
+.timeline {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+  width: 83px;
+  margin-left: -83px;
+  z-index: 1;
+}
+.timeline li {
+  padding: 10px 0 10px 12px;
+  position: relative;
+  cursor: pointer;
+  color: #999;
+}
+.timeline li:before,
+.timeline li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 50%;
+  width: 12px;
+  top: 0;
+  left: 12px;
+  background: #ddd;
+  z-index: -1;
+}
+.timeline li:first-child:before,
+.timeline li:last-child:after {
+  content: none;
+}
+.timeline li:after {
+  top: auto;
+  bottom: 0;
+}
+.timeline li span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 6px;
+  width: 6px;
+  background: #ddd;
+  margin-right: 5px;
+  border: 3px solid #ddd;
+  border-radius: 6px;
+}
+.timeline li:hover,
+.timeline li.selected {
+  color: black;
+}
+.timeline li.selected span,
+.timeline li.inner span {
+  border-color: #36c;
+  background: #36c;
+}
+.timeline li:hover span {
+  background: white;
+}
+.timeline li.first:after,
+.timeline li.inner:after,
+.timeline li.last:before,
+.timeline li.inner:before {
+  background: #36c;
+}
+#history h2 {
+  margin: 0 0 2px -83px;
+}
+#history h3 {
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #f7f7f7;
+  padding: 2px 7px;
+  margin: 0 0 2px;
+}
+#history table {
+  width: 100%;
+  white-space: pre-wrap;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 10px;
+}
+#history tbody {
+  border-bottom: 2px solid white;
+}
+#history td {
+  vertical-align: top;
+  padding: 0 7px;
+}
+#history .line {
+  width: 1%;
+  color: #999;
+  background: #f7f7f7;
+  text-align: right;
+  -webkit-user-select: none;
+}
+#history .delete {
+  background: #fdd;
+}
+#history .insert {
+  background: #dfd;
+}
+#history .delete .line {
+  background: #fcc;
+  color: #666;
+}
+#history .insert .line {
+  background: #bfb;
+  color: #666;
+}
+#history .placeholder {
+  background: #f1f8ff;
+  color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+#history .placeholder:hover,
+#history .placeholder.unchanged {
+  color: #666;
+}
+#history .placeholder .line {
+  color: white;
+  background: #def;
+  text-align: center;
+}
+#history .placeholder:hover .line {
+  background: #36c;
+}
+#history .delete span {
+  background: #faa;
+}
+#history .insert span {
+  background: #afa;
+}
+#history .unchanged tr,
+#history .unchanged.expanded .placeholder {
+  display: none;
+}
+#history .unchanged.expanded tr,
+#history .unchanged .placeholder {
+  display: table-row;
+}
+#history .unchanged {
+  color: #999;
+}
+#docs pre {
+  overflow: auto;
+  margin: 1em 0;
+  padding: 4px 10px 5px;
+  background: #f7f7f7;
+}
+#docs .docjs-spec {
+  background: transparent;
+  border: solid 1px #e0e0e0;
+}
+.docjs-type-function,
+.docjs-type-number,
+.docjs-type-boolean,
+.docjs-type-string {
+  color: #008;
+}
+.docjs-named-value > .docjs-type:before,
+.docjs-named-value > .docjs-types:before {
+  content: ": ";
+  color: black;
+  color: initial;
+}
+.docjs-args > .docjs-value > .docjs-named-value:hover,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  margin: -2px 0 -3px;
+  padding: 2px 3px 3px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+  border-radius: 3px;
+}
+.docjs-args > .docjs-value > .docjs-named-value:hover .docjs-args > .docjs-value > .docjs-named-value:hover,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover .docjs-args > .docjs-value > .docjs-named-value:hover,
+.docjs-args > .docjs-value > .docjs-named-value:hover .docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover .docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover {
+  margin: 2px 0 1px;
+}
+.docjs-args > .docjs-value > .docjs-named-value > .docjs-name,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value > .docjs-name {
+  border-bottom: dotted 1px #999;
+}
+.docjs-args > .docjs-value > .docjs-named-value:hover > .docjs-name,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover > .docjs-name {
+  border-bottom: none;
+}
+.docjs-args > .docjs-value > .docjs-named-value > .docjs-type,
+.docjs-args > .docjs-value > .docjs-named-value > .docjs-types,
+.docjs-args > .docjs-value > .docjs-named-value > .docjs-default,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value > .docjs-type,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value > .docjs-types,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value > .docjs-default {
+  display: none;
+}
+.docjs-args > .docjs-value > .docjs-named-value:hover > .docjs-type,
+.docjs-args > .docjs-value > .docjs-named-value:hover > .docjs-types,
+.docjs-args > .docjs-value > .docjs-named-value:hover > .docjs-default,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover > .docjs-type,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover > .docjs-types,
+.docjs-args > .docjs-values > .docjs-value > .docjs-named-value:hover > .docjs-default {
+  display: inline;
+}
+.docjs-default {
+  color: #066;
+}
+.docjs-default:before {
+  content: "=";
+  color: black;
+  color: initial;
+}
+.docjs-function:before {
+  content: "function";
+}
+.docjs-args, .docjs-returns {
+  color: black;
+  color: initial;
+}
+.docjs-args:before {
+  content: "(";
+}
+.docjs-args:after {
+  content: ")";
+}
+.docjs-returns:before {
+  content: " → ";
+}
+.docjs-object:before {
+  content: "{";
+}
+.docjs-object:after {
+  content: "}";
+}
+.docjs-array:before {
+  content: "[";
+}
+.docjs-array:after {
+  content: "]";
+}
+.docjs-values > span:after {
+  content: ", ";
+}
+.docjs-values > span:last-child:after {
+  content: none;
+}
+.docjs-object .docjs-value {
+  display: block;
+  padding-left: 1.2em;
+}
+.docjs-args .docjs-value,
+.docjs-array .docjs-value,
+.docjs-object .docjs-object .docjs-value {
+  display: inline;
+  padding: 0;
+}
+.docjs-types > span:after {
+  content: "|";
+  color: black;
+  color: initial;
+}
+.docjs-types > span:last-child:after {
+  content: none;
+}
