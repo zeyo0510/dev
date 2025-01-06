@@ -1,0 +1,24 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "A GUI client for local SQLite databases",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon-16.png",
+      "256": "icons/icon-256.png",
+      "32": "icons/icon-32.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvl7EdsSFoGpW8u3mlpZLJHx81csu+V1edjdVHuSjSeXhRaB/IYtW5PqIvRq4CkhyCD1xII/mY/bdhKPkayMLhIPmJJwzBXESq99A9uR+ASV2BOQUJBudK12A8iAfn99+HYEPkl4JtJDwZclnFoTGvvLcXYSb0+Wk5mBF+LBEqUB+V4DpGFBNyjyBWDbr7I99RCJgaE7kbvizFUBSgsB2fXjsB2jL5QQesPRClEno41oCyThJezlXXEZiCxFKlYEY8IdQZaV0rt0SAHI2w9vjxOC6q7GZWeWpL0giQ7/qP/d7SV2iub38LqFf9goLmsIqAdU5xbli1Aygvg1Y5ByKswIDAQAB",
+   "manifest_version": 2,
+   "name": "JAvascript based Database Editor",
+   "permissions": [ "storage", {
+      "fileSystem": [ "write" ]
+   } ],
+   "short_name": "JADE",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}
