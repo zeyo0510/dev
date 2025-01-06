@@ -1,0 +1,10 @@
+/* css instructions used exclusively by the indexFrame html file
+ it would not be possible to put it into the chrome.scss because of the webview*/
+html, body, webview {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}

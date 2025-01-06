@@ -1,0 +1,5 @@
+- Instalation Guide
+Go to Google Chrome and open the Settings menu in the top-right, choose More Tools > Extensions. 
+With the Extensions panel open you will find a Developer Mode checkbox, probably on the top-right corner, please enable it. 
+Now you will see a new button called "Load unpacked" or "Load unpacked extension", please click on it and then choose the Gravit Designer 
+folder that you unzipped earlier. Now you will see Gravit Designer in the list of extensions.

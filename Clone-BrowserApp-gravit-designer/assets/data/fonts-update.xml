@@ -1,0 +1,5 @@
+<update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
+	<versionNumber>1.0</versionNumber>
+	<url>https://app-trunk.designer.io/assets/data/fonts.air</url>
+	<description>Gravit font server</description>
+</update>

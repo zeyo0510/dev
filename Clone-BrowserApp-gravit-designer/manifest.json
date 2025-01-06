@@ -1,0 +1,29 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Gravit Designer is a full featured free vector design app right at your fingertip.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "256": "icon256.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmfE2k/sWg3sPmLusNMMWXLosAOqhmwyLP2G/vQ0OmRVV3YBVpo9thvR9KCOlLavw5c7n5HrtEbv2c7grM/mnBlGwd0XmX0m82moTgtuu5Yud59ysemsH/vshDlDrh6Gf7GufHH7Lk3FBgSHyG3Qgw888wsjTTNShILxho98aKH7XPGn/JkM7bD7te9GsPJe/tnNgx3gINHrXr5Y5i3GmVUSxd/ue0l/XZLy5pL13ZEFpkl/xxhbGHFkenQdMoyScJGCRu2M0EGyTE88H0YLLCbvs4KcAbuWwnyIcdLl8okCCFoLjJyN66jYAJxEpbPDMQsMtXTYVyRvRQhpSvEPZjQIDAQAB",
+   "manifest_version": 2,
+   "name": "Gravit Designer",
+   "permissions": [ "webview", "storage", {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   }, "browser", "clipboardRead" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.5.4",
+   "webview": {
+      "partitions": [ {
+         "accessible_resources": [ "*" ],
+         "name": "app"
+      } ]
+   }
+}
