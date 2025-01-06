@@ -1,0 +1,28 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "min.js", "app/min.js", "app/scripts/min.js", "app/scripts/LostUI/min.js" ]
+      }
+   },
+   "description": "Simple Photo Editor for Google Chrome™",
+   "file_handlers": {
+      "image": {
+         "extensions": [ "jpg", "bmp", "png", "gif" ],
+         "title": "Pengi Paint",
+         "types": [ "image/png", "image/jpeg", "image/jpg", "image/bmp", "image/gif" ]
+      }
+   },
+   "icons": {
+      "128": "icon.png",
+      "16": "icon_small.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCG6q7hbvKBwLcA8ID64iF0OSQ/kbVLw0cysaWcY/oB/ymAAXznngQA0cW3hysBX0nLkd7lQvd11XiF/sNPbC6LDDlKSYxenC7sU4viLS1lMZuZSy+xWfBHiLWJtybexSa+pnWtJPpnJwEgxhuzO/m5p5VZlA+sucpMoAy1u77zPQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "23",
+   "name": "Pengi Paint",
+   "offline_enabled": true,
+   "optional_permissions": [ "clipboardRead" ],
+   "permissions": [ "fileSystem", "fileSystem.write", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.8.21"
+}
