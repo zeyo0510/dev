@@ -1,0 +1,5 @@
+/* override default for Chrome apps */
+
+html, body {
+    overflow-y: auto;
+}
