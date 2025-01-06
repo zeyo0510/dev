@@ -1,0 +1,17 @@
+// Place fonts/{{fontName}}.ttf in your fonts/ directory and
+// add the following to your pubspec.yaml
+// flutter:
+//   fonts:
+//    - family: {{fontName}}
+//      fonts:
+//       - asset: fonts/{{fontName}}.ttf
+import 'package:flutter/widgets.dart';
+
+class {{class}} {
+  {{class}}._();
+
+  static const String _fontFamily = '{{fontName}}';
+{{glyphs
+
+  static const IconData {{glyphName}} = IconData(0x{{code}}, fontFamily: _fontFamily);}}
+}
