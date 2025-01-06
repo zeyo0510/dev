@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>ain't</title>
+<meta charset="UTF-8">
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/hk.js"></script>
+<style>
+@import url('css/main.css');
+@import url('fawe/css/font-awesome.css');
+</style>
+</head>
+<body>
+<div id="overlay">
+<div id="overlay-right"></div>
+<div id="app-splash">
+<h1>ain't | <span><strong>Rich</strong> <u>Text</u> <i>Editor</i></span></h1>
+<span>Edison Ilan &copy; 2016</span>
+</div>
+</div>
+<div id="wrapper">
+<div id="nav-wrap" class="nav-wrap">
+<div id="title-bar" class="title-bar">
+<button id="close" title="Close"><i class="fa fa-close"></i></button>
+<button id="minimize" title="Minimize"><i class="fa fa-minus"></i></button>
+<span id="size-con">
+<button id="minify" class="size-con" title="Minify / On-Top (Shift+Alt+Left) or (Shift+Alt+Right)"><i class="fa fa-unsorted fa-rotate-90"></i></button>
+<button id="tog-list"  class="size-con" title="Show/Hide entry list (Shift+Alt+M)"><i class="fa fa-trello"></i></button>
+<button id="tog-full"  class="size-con" title="Toggle Full-screen (Shift+Alt+F)"><i class="fa fa-arrows-alt"></i></button>
+<button id="tog-notepad"  class="size-con" title="Toggle Notepad/Split Screen (Shift+Alt+N)"><i class="fa fa-columns"></i></button>
+</span>
+</div><!--end title-bar-->
+<div id="cons-wrap">
+<button>&nbsp;</button>
+<div id="nav">
+<div id="app-title"><u>&aacute;</u></div>
+<button id="open" title="Open Project (Ctrl+O)"><i class="fa fa-folder-open"></i></button>
+<button id="new" title="New Project (Ctrl+N)"><i class="fa fa-file-o"></i></button>
+<span id="act-cons">
+<button id="save" title="Save As (Ctrl+Alt+S)"><i class="fa fa-floppy-o"></i></button>
+<button class="cons-div">|</button>
+<button id="add" title="Add Entry (Ctrl+Alt+A)"><i class="fa fa-plus-circle"></i></button>
+<button id="delete" title="Delete Entry (Ctrl+Alt+D)"><i class="fa fa-minus-circle"></i></button>
+<button id="rename" title="Rename Entry (Ctrl+Alt+R)"><i class="fa fa-tag"></i></button>
+<button class="cons-div">|</button>
+<button id="imex" title="Import - Export (Ctrl+Alt+I)"><i class="fa fa-exchange"></i></button>
+<button id="search-tog" title="Search (Ctrl+Alt+F)"><i class="fa fa-search"></i></button>
+<button id="wordcount" title="Word Count (Alt+W)"><i class="fa fa-coffee"></i></button>
+<button id="speak-play" title="Speak (Alt+S)"><i class="fa fa-play-circle"></i></button>
+<button class="cons-div">|</button>
+<button id="tog-page-setup" title="Page setup (Alt+P)"><i class="fa fa-gear"></i></button>
+<button id="open-print" title="Print (Ctrl+P)"><i class="fa fa-print"></i></button>
+<button id="help" title="Help (Alt+0)"><i class="fa fa-question-circle"></i></button>
+<button id="donate" title="Donate (Alt+4)"><i class="fa fa-usd"></i></button>
+</span>
+</div><!--end nav-->
+</div><!--end cons-wrap-->
+<div id="tools">
+<div id="t-buttons">
+<button id="bold" data-com="bold" data-str="null" title="Bold (Alt+B)"><i class="fa fa-bold"></i></button>
+<button id="underline" data-com="underline" data-str="null" title="Underline (Alt+U)"><i class="fa fa-underline"></i></button>
+<button id="italic" data-com="italic" data-str="null" title="Italic (Alt+I)"><i class="fa fa-italic"></i></button>
+<button id="ol" data-com="insertOrderedList" data-str="null" title="Ordered-List (Alt+O)"><i class="fa fa-list-ol"></i></button>
+<button id="ul" data-com="insertUnorderedList" data-str="null" title="Unordered-List (Alt+L)"><i class="fa fa-list-ul"></i></button>
+<button id="center" data-com="justifyCenter" data-str="null" title="Center (Alt+C)"><i class="fa fa-align-center"></i></button>
+<button id="left" data-com="justifyLeft" data-str="null" title="Left (Alt+X)"><i class="fa fa-align-left"></i></button>
+<button id="full" data-com="justifyFull" data-str="null" title="Full (Alt+F)"><i class="fa fa-align-justify"></i></button>
+<button id="right" data-com="justifyRight" data-str="null" title="Right (Alt+V)"><i class="fa fa-align-right"></i></button>
+<button id="indent" data-com="indent" data-str="null" title="Indent (Alt+>)"><i class="fa fa-indent"></i></button>
+<button id="outdent" data-com="outdent" data-str="null" title="Outdent (Alt+<)"><i class="fa fa-outdent"></i></button>
+<button id="rule" data-com="insertHTML" data-str="hr" title="Horizontal-Rule (Alt+R)"><i class="fa fa-ellipsis-h"></i></button>
+<button id="block-header" data-com="formatBlock" data-str="h1" title="Header (Alt+H)"><i class="fa fa-header"></i></button>
+<button id="block-table" data-com="insertHTML" data-str="table" title="Table (Alt+T)"><i class="fa fa-table"></i></button>
+<button id="block-date" data-com="insertHTML" data-str="timestamp" title="Date - Time (Alt+D)"><i class="fa fa-clock-o"></i></button>
+<button class="hig" data-com="backColor" data-str="#ccc" title="Highlight (Alt+N)"><i class="fa fa-sun-o"></i></button>
+<button id="remove-format" data-com="removeFormat" data-str="null" title="Remove Formatting (Alt+Z)"><i class="fa fa-eraser"></i></button>
+<button id="undo" data-com="undo" data-str="null" title="Undo (Ctrl+Z)"><i class="fa fa-mail-reply"></i></button>
+<button id="redo" data-com="redo" data-str="null" title="Redo (Ctrl+Y)"><i class="fa fa-mail-forward"></i></button>
+</div><!--end t-buttons-->
+<div id="status">
+<div id="file-name"></div>
+<div class="as-tog">autosave on</div>
+<div id="as-dis"></div>
+</div>
+</div><!--end tools-->
+</div><!--end nav-wrap-->
+<main>
+<div id="pane-1">
+<div id="margin-wrap"><div id="margin" title="Adjust margin"></div></div>
+<div id="project-list"></div>
+<div id="editor"><textarea id="notepad"></textarea><div id="rotide" contenteditable="true" unselectable="off"></div></div>
+<textarea id="html-editor"></textarea>
+<button id="tog-full-pane" title="Toggle Full-screen (Shift+Alt+F)"><i class="fa fa-arrows-alt"></i></button>
+</div><!-- pane-1 -->
+</main><!--end main-->
+</div><!-- end wrapper -->
+<div id="pop">
+<div id="pop-setup" class="dia">
+<div id="ps-options">
+<div class="select-wrap">
+<div class="select-label">Font-Size</div>
+<div class="select-con" id="font-size">
+<input type="text" class="select-in" id="input-fsize" val="14" />
+<button class="cons-div">|</button>
+<button id="set-fsize">ok</button>
+</div><!--end select-con-->
+</div><!--end select-wrap-->
+<div class="select-wrap">
+<div class="select-label">Font-Type</div>
+<div class="select-con" id="font-type">
+<input type="text" class="select-in" val="serif" readonly />
+<button class="select-drop"><i class="fa fa-caret-down"></i></button>
+<div class="select-options">
+<div class="serif">serif</div>
+<div class="sans-serif">sans-serif</div>
+<div class="monospace">monospace</div>
+<div class="verdana">verdana</div>
+<div class="tahamo">tahoma</div>
+<div class="arial-narrow">arial narrow</div>
+<div class="arial-black">arial black</div>
+<div class="garamond">garamond</div>
+<div class="georgia">georgia</div>
+<div class="times">times</div>
+</div><!--end select-options-->
+</div><!--end select-con-->
+</div><!--end select-wrap-->
+<div class="select-wrap">
+<div class="select-label">Font Color</div>
+<div class="select-con" id="ps-font-color">
+<input type="text" class="select-in" id="input-font-color" val="font color" />
+<button class="cons-div">|</button>
+<button id="set-font-color">ok</button>
+</div>
+</div><!-- end select-wrap-->
+<div class="select-wrap">
+<div class="select-label">Background Color</div>
+<div class="select-con" id="ps-bg-color">
+<input type="text" class="select-in" id="input-bg-color" val="bg color" />
+<button class="cons-div">|</button>
+<button id="set-bg-color">ok</button>
+</div>
+</div><!-- end select-wrap-->
+<div class="select-wrap">
+<button class="cons-div">|</button>
+<button id="set-reset">Reset Default</button>
+<button class="cancel-pop" title="Cancel">cancel</button>
+</div><!-- end select-wrap-->
+</div><!--end psoptions-->
+<button class="cancel-pop-x" title="Close"><i class="fa fa-close"></i></button>
+</div><!--end pop-setup-->
+<div id="pop-count" class="dia">
+<button class="cons-div">|</button>
+<div id="dis-count"></div>
+<button class="cancel-pop" title="Cancel">Cancel/OK</button>
+<button class="cancel-pop-x" title="Close"><i class="fa fa-close"></i></button>
+</div><!--end-->
+<div id="pop-delete" class="dia">
+<button class="cons-div">|</button>
+<button id="del-yes" title="Delete current entry?">yes</button>
+<button class="cancel-pop" title="Cancel">cancel</button>
+<button class="cancel-pop-x" title="Close"><i class="fa fa-close"></i></button>
+</div><!--end-->
+<div id="pop-startup" class="dia">
+<button id="su-open" title="Open project"><i class="fa fa-folder-open"></i> Open Project</button>
+<button id="su-new" title="Start new project"><i class="fa fa-file-o"></i> New Project</button>
+<button id="su-help" title="Help (Alt+0)"><i class="fa fa-question-circle"></i></button>
+<p>
+<strong>Please consider making a donation.</strong> Version 1 of this program was completed in 3 months while homeless, living in my car, coding in parking lots at 2 in the morning. This version (version 2) has been vastly improved with new/requested features and the most user-friendly, feature-rich interface available to Chromebook users. Donations for my time will also insure further updates, bug fixes, and more features.
+<br />
+If you think $5 is too much (one-time donation), you can send what you can:
+<br />
+&bull; Google Wallet - <strong>edisonayersilan@gmail.com</strong>
+<br />
+&bull; Paypal - <strong>allen.christopher.campbell@gmail.com</strong>
+<br />
+Please consider that there is a 50 cent transaction fee. Follow the links below to make a donation. Thank you.
+</p>
+<div class="don-l">
+<a href="http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7XNGCXLSCYFS" target="_blank" title="Paypal - Please Donate"><i class="fa fa-paypal"></i></a>
+</div>
+<div class="don-r"><a href="mailto:edisonayersilan@gmail.com?subject=Ain't%20Donation" target="_blank" title="Google Wallet - Please Donate"><i class="fa fa-google-wallet"></i></a></div>
+</div><!--end-->
+<div id="pop-add" class="dia">
+<input type="text" id="name-in" data-in="entry name..." />
+<button class="cons-div">|</button>
+<button id="add-name" title="Add new entry"><i class="fa fa-plus-circle"></i> add</button>
+<button class="cancel-pop" title="Cancel">cancel</button>
+<button class="cancel-pop-x" title="Close"><i class="fa fa-close"></i></button>
+</div><!--end-->
+<div id="pop-rename" class="dia">
+<input type="text" id="rename-in" data-in="rename to..." />
+<button class="cons-div">|</button>
+<button id="add-rename" title="Rename current entry">rename</button>
+<button class="cancel-pop" title="Cancel">cancel</button>
+<button class="cancel-pop-x" title="Close"><i class="fa fa-close"></i></button>
+</div><!--end-->
+<div id="pop-donate" class="dia">
+<p>
+<strong>Please consider making a donation.</strong> Version 1 of this program was completed in 3 months while homeless, living in my car, coding in parking lots at 2 in the morning. This version (version 2) has been vastly improved with new/requested features and the most user-friendly, feature-rich interface available to Chromebook users. Donations for my time will also insure further updates, bug fixes, and more features.
+<br />
+If you think $5 is too much (one-time donation), you can send what you can:
+<br />
+&bull; Google Wallet - <strong>edisonayersilan@gmail.com</strong>
+<br />
+&bull; Paypal - <strong>allen.christopher.campbell@gmail.com</strong>
+<br />
+Please consider that there is a 50 cent transaction fee. Follow the links below to make a donation. Thank you.
+</p>
+<div class="don-l">
+<a href="http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V7XNGCXLSCYFS" target="_blank" title="Paypal - Please Donate"><i class="fa fa-paypal"></i></a>
+</div>
+<div class="don-r"><a href="mailto:edisonayersilan@gmail.com?subject=Ain't%20Donation" target="_blank" title="Google Wallet - Please Donate"><i class="fa fa-google-wallet"></i></a></div>
+<button class="cancel-pop-x" title="Close"><i class="fa fa-close"></i></button>
+</div><!--end-->
+<div id="pop-imex" class="dia">
+<div id="import-data">
+<button class="cons-div">|</button>
+<button id="import-txt" data-type="txt" title="Import text as new entry"><i class="fa fa-file-text"></i> Import Text</button>
+<br clear="all">
+<button class="cons-div">|</button>
+<button id="import-html" data-type="html" title="Import Html as new entry"><i class="fa fa-file-code-o"></i> Import Html</button>
+</div>
+<div id="export-data">
+<button class="cons-div">|</button>
+<button id="export-txt" data-type="txt" title="Export current entry as text"><i class="fa fa-file-text"></i> Export Text</button>
+<br clear="all">
+<button class="cons-div">|</button>
+<button id="export-html" data-type="html" title="Export current entry as Html"><i class="fa fa-file-code-o"></i> Export Html</button>
+</div>
+<div id="export-pro-data">
+<button class="cons-div">|</button>
+<button id="export-pro-txt" data-type="pro-txt" title="Export entire project as text"><i class="fa fa-file-text"></i> Export Project - Text</button>
+<br clear="all">
+<button class="cons-div">|</button>
+<button id="export-pro-html" data-type="pro-html" title="Export entire project as Html"><i class="fa fa-file-code-o"></i> Export Project - Html</button>
+</div>
+<button class="cancel-pop-x" title="Close"><i class="fa fa-close"></i></button>
+<button class="cancel-pop" title="Cancel">cancel</button>
+</div><!--end-->
+<div id="pop-search" class="dia">
+<input type="text" id="search-in" data-in="search for..." />
+<button class="cons-div">|</button>
+<button id="search" title="Search current entry"><i class="fa fa-search"></i> Search</button>
+<button class="cons-div">|</button>
+<button id="search-next" title="Next result"><i class="fa fa-chevron-down"></i></button>
+<button class="cons-div">|</button>
+<button id="search-prev" title="Previous result"><i class="fa fa-chevron-up"></i></button>
+<br clear="all">
+<input type="text" id="replace-with" data-in="replace with..." />
+<button class="cons-div">|</button>
+<button id="s-replace" title="Replace"><i class="fa fa-arrows-v fa-rotate-45"></i> Replace</button>
+<button class="cons-div">|</button><button id="search-restore" title="Restore cursor to last position">restore</button>
+<button id="search-remove" title="Close"><i class="fa fa-close"></i></button>
+</div><!--end-->
+<div id="pop-dummy" class="dia"><input type="text" id="dummy-in" /></div>
+</div><!--end pop-->
+<textarea id="dummy"></textarea><!-- dummy -->
+<textarea id="css_temp">
+body {width: 80%;margin: 0 10%; padding: 50px 0; height: 100%; color:_fcol_; font-family:_ffam_;font-size:_fsiz_px;background:_fbac_}
+html {width: 100%;height: 100%;}
+hr {float: left; width: 100%; line-height: 100%; border: 0;border-bottom: 1px dotted _fcol_;clear: both;margin: 10px 0;}
+table * {padding: 0;}
+table {color:_fcol_;border: 1px solid _fcol_;float: none;margin: 0 auto;border-spacing: 0;border-collapse: collapse;text-align: left;background:_fbac_;padding: 0 0 50px 0}
+td {padding: 20px; border: 1px solid _fcol_;}
+th {font-size: 125%;padding: 20px; border: 1px solid _fcol_;}
+tbody {font-size: 80%;}
+tbody tr:hover {background:_fbac_;}
+td:first-child {/*font-weight: bold*/}
+th:first {}
+h1 {font-size: 200%; padding: 0;margin: 0;}
+span {padding: 4px 0;}
+</textarea>
+<div id="table-ed">
+<button id="table-ed-close"><i class="fa fa-check"></i> finished</button>
+<textarea id="table-csv"></textarea>
+</div>
+<div id="bin" contenteditable="true" unselectable="off"></div>
+<input type="text" id="current" />
+<div id="project-data"></div>
+<div id="help-win">
+<button id="close-help"><i class="fa fa-times-circle"></i> close help</button>
+<button id="print-help"><i class="fa fa-print"></i> print help</button>
+<div id="iframe"></div>
+</div><!--end help-win-->
+<iframe src="help.html" id="i-dummy"></iframe>
+<div id="print-win">
+<div id="printo"></div>
+</div><!--end print-win-->
+<div id="drag-l"></div>
+<textarea id="debug"></textarea>
+<script type="text/javascript" src="jquery/init.js"></script>
+</body>
+</html>

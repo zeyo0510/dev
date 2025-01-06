@@ -1,0 +1,25 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Rich Text Editor (RTE). Made by a writer... for writers. Made on a Chromebook... for Chromebooks.",
+   "icons": {
+      "128": "images/a128.png",
+      "16": "images/a16.png",
+      "256": "images/a256.png",
+      "32": "images/a32.png",
+      "64": "images/a64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5TiB1PyAlCWgx0b+caSSWzhlDXreo9z6wgKeY5fEEXGuT+Iz5TfDPdSO9q+mGjVkAh4LB0GoNjKAwZQM37bwO0BwSO3kifounQcxZpqtyjSHezlX8NH84GvS8xFqam0lnUz9nEcgIxpB2hos6mkCfcoRLUZk2ukHMjMQ4NkRqsWhX5RXgL+EAY+QLWevX6MRLojPdjyCBkfNoF4PL+K9pRT9p3R8F7uW85nKYrCOz3qr6SuGMbeI8wmRvYtIV2cqTIUcxLHZQ/8FsBP8jXgPod90DeZ6PS9aM4uEGn0XqaOXj5julSpMg7zhw3ZXD2q3RtAJ6IdCtQcE7urpYTO5rwIDAQAB",
+   "manifest_version": 2,
+   "name": "ain't",
+   "offline_enabled": true,
+   "permissions": [ "alwaysOnTopWindows", "storage", "tts", {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   } ],
+   "short_name": "ain't",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.4"
+}

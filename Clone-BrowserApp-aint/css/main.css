@@ -1,0 +1,804 @@
+/*
+Copyright (C) Wrong Horse Apps
+*/
+body {width: 100%;height: 100%;margin: 0;padding: 0;overflow: hidden;text-align: center}
+body * {box-sizing: border-box}
+:focus {outline: 0}
+html {width: 100%;height: 100%;}
+hr {width: 100%; height: 0; line-height: 10px; margin: 3px 0;}
+textarea {resize: none;}
+
+#wrapper {
+padding: 0;
+margin: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+button {
+border: 0;
+cursor: arrow;
+}
+
+main {
+padding: 0;
+margin: 0;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden
+}
+
+#overlay {
+position: fixed;
+width: 100%;
+height: 100%;
+opacity: .9;
+display: none;
+z-index: 101;
+overflow: visible;
+}
+
+#overlay-right {
+width: 20%;
+height: 4000px;
+position: absolute;
+right: 0;
+background: #fff;
+opacity: .9;
+}
+
+#app-splash {
+position: fixed;
+top: 50px;
+left: 50px;
+width: 340px;
+height: 340px;
+margin: 0;
+padding: 275px 0 0 0;
+font: bold 10px sans-serif;
+background: seagreen url("../images/a300.png") 50% 10px no-repeat;
+color: white;
+border-radius: 50%;
+}
+
+#app-splash h1 {
+font: bold 13px georgia;
+padding: 0;
+margin: 0;
+}
+
+#app-splash h1 span {
+font: bold 12px serif;
+padding: 0;
+margin: 0;
+}
+
+#app-splash span {
+opacity: .65;
+}
+
+#app-title {
+width: 30px;
+height: 30px;
+margin: 3px 10px 0 3px;
+float: left;
+background: url("../images/a128.png") 50% 50% no-repeat;
+background-size: 100%;
+opacity: .7;
+text-indent: -500px;
+}
+
+#nav-wrap {z-index: 99}
+.nav-wrap {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 99;
+text-align: left;
+padding: 0;
+background: #eee;
+}
+
+#title-bar {z-index: 99;}
+.title-bar {
+position: fixed;
+top: 0;
+right: 0;
+width: auto;
+height: 35px;
+font: normal 11px sans-serif;
+letter-spacing: 1px;
+z-index: 99;
+}
+
+#title-bar button {
+float: right;
+width: 31px;
+height: 31px;
+border: 0;
+margin: 2px 2px 0 0;
+background: transparent
+}
+
+#dummy, #i-dummy, #bin, #project-data, #current, #css_temp {display: none}
+
+#bin {
+white-space: pre-wrap
+}
+
+#nav {
+float: left
+}
+
+#cons-wrap button {
+height: auto;
+width: auto;
+padding: 9px;
+margin: 3px 0;
+border-radius: 3px;
+font-size: 12px;
+font-weight: normal;
+line-height: 100%;
+background: transparent
+}
+
+#nav-wrap {
+display: none;
+}
+
+#cons-wrap button.cons-div {
+width: 1px;
+margin: 6px 10px;
+padding: 3px 0;
+border-radius: 0;
+cursor: default;
+text-indent: -500px;
+overflow: hidden;
+}
+
+#as-dis {
+float: right;
+padding: 5px 10px;
+margin: 0;
+font: bold 9px sans-serif;
+text-transform: uppercase;
+}
+
+.as-tog {
+float: right;
+padding: 5px 10px;
+font: bold 9px sans-serif;
+text-transform: uppercase;
+}
+
+#file-name {
+float: right;
+padding: 5px 10px;
+margin: 0;
+font: bold 9px sans-serif;
+text-transform: uppercase
+}
+
+#status {
+float: right;
+width: 40%;
+}
+
+#pane-1 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 0;
+display: none;
+z-index: 2;
+padding-top: 0;
+}
+
+#tools {
+float: left;
+width: 100%;
+border-top: 1px solid #bbb;
+background: #dedede;
+height: auto;
+z-index: 100;
+}
+
+#tools button {
+float: left;
+width: 26px;
+height: 23px;
+margin: 3px 0;
+padding: 0;
+border: 0;
+background: transparent;
+font-size: 12px;
+font-weight: normal;
+line-height: 100%;
+}
+
+#tools button.hig:hover {color: #ddd}
+
+#project-list {
+width: 20%;
+height: 100%;
+float: right;
+overflow: auto;
+overflow-x: hidden;
+padding: 2px;
+border-left: 2px solid #dedede;
+font: normal 14px sans-serif
+}
+
+.project {
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+.p-item {
+width: 100%;
+text-align: left;
+margin: 0;
+padding: 10px;
+margin: 0 0 2px 0;
+list-style: none
+}
+
+.selected {
+text-align: left
+}
+
+#tog-full-pane {
+position: fixed;
+top: 5px;
+right: 20px;
+width: 20px;
+height: 20px;
+display: none;
+z-index: 101;
+opacity: .25;
+}
+
+#editor {
+float: left;
+width: 80%;
+height: 100%;
+padding: 50px;
+padding-bottom: 200px;
+overflow: scroll;
+overflow-x: hidden;
+line-height: 150%;
+text-align: left;
+z-index: 100;
+white-space: pre-wrap;
+cursor: text
+}
+
+#rotide {
+width: 100%
+}
+
+#notepad {
+position: fixed;
+top: 0;
+right: 0;
+width: 50%;
+height: 100%;
+padding: 50px;
+display: none;
+font: normal 14px monospace;
+line-height: 20px;
+white-space: pre-wrap;
+}
+
+#editor h1 {
+padding: 0;
+margin: 0;
+font-size: 200%;
+}
+
+#editor .fhead {
+padding: 0;
+margin: 0;
+font-size: 200%;
+}
+
+#editor span {
+padding: 4px 0;
+}
+
+#html-editor {
+float: left;
+width: 80%;
+height: 100%;
+padding: 50px;
+padding-bottom: 200px;
+overflow: scroll;
+overflow-x: hidden;
+background: #333;
+border: 1px solid #777;
+text-align: left;
+line-height: 24px;
+color: #fff;
+z-index: 100;
+display: none
+}
+
+#drag-l {
+position: absolute;
+top: 10px;
+left: 50%;
+width: 40px;
+height: 40px;
+margin: 0 0 0 -15px;
+background: #ddd;
+border-radius: 50%;
+-webkit-app-region: drag;
+z-index: 1000;
+display: none;
+}
+
+#pop {
+position: fixed;
+top: 50%;
+left: 50%;
+width: 500px;
+padding: 32px;
+margin: -150px 0 0 -250px;
+display: none;
+z-index: 101;
+text-align: left;
+opacity: .9;
+}
+
+#pop input {
+float: left;
+width: 150px;
+height: 30px;
+padding: 0 0 0 5px;
+margin: 2px 10px 2px 2px;
+font: bold 12px sans-serif;
+line-height: 12px;
+}
+
+#import-data, #export-data, #export-pro-data {
+float: left;
+width: 100%;
+}
+
+#pop button {
+float: left;
+height: auto;
+width: auto;
+height: 30px;
+padding: 10px;
+margin: 2px 0;
+border-radius: 3px;
+text-transform: uppercase;
+font: bold 10px sans-serif;
+line-height: 10px;
+background: transparent;
+}
+
+#pop button.cons-div {
+float: left;
+width: 1px;
+height: 20px;
+margin: 7px 10px;
+padding: 5px 0;
+border-radius: 0;
+cursor: default;
+text-indent: -500px;
+overflow: hidden;
+font: bold 10px sans-serif;
+line-height: 10px;
+background: #ddd;
+}
+
+#pop button:hover {background-color: #ddd}
+
+#pop #pop-startup {
+text-align: center;
+}
+
+#pop #pop-startup p, #pop p {
+float: left;
+width: 100%;
+padding: 20px;
+margin: 10px 0;
+border-bottom: 1px solid #ddd;
+border-top: 1px solid #ddd;
+text-align: justify;
+font: normal 14px sans-serif;
+}
+
+#pop #pop-startup button {
+float: none;
+}
+
+#pop button.cancel-pop-x, #pop button#search-remove {
+position: absolute;
+top: 0;
+right: 0;
+padding: 5px;
+width: 28px;
+height: 28px;
+margin: 0;
+font: normal 14px sans-serif;
+line-height: 14px;
+cursor: pointer;
+}
+
+#pop button.cancel-pop-x:hover, #pop button#search-remove:hover {
+background: transparent;
+}
+
+.cancel-pop {
+display: none;
+}
+
+#ps-options {
+float: left
+}
+
+.select-wrap {
+float: left;
+clear: left;
+width: auto;
+margin: 0;
+}
+
+.select-con {
+float: left;
+clear: left;
+}
+
+.select-label {
+float: left;
+clear: left;
+font: bold 8px "arial narrow";
+text-transform: uppercase;
+padding: 0 0 3px 0;
+letter-spacing: 1px;
+}
+
+#pop input.select-in {
+margin: 2px 10px 10px 2px;
+}
+
+#pop button.select-drop {
+width: 30px;
+height: 30px;
+margin: 2px 0 0 -40px;
+padding: 10px;
+background: transparent;
+border: 0;
+text-transform: uppercase;
+font: bold 10px sans-serif;
+line-height: 10px;
+}
+
+.select-options {
+width: 150px;
+height: 150px;
+overflow: auto;
+position: absolute;
+display: none;
+margin: 31px 0 0 2px;
+font-size: 14px;
+line-height: 14px;
+}
+
+.select-options div {
+width: 100%;
+height: auto;
+padding: 2px 5px;
+}
+
+.serif {font-family: serif}
+.sans-serif {font-family: sans-serif}
+.monospace {font-family: monospace}
+.verdana {font-family: verdana}
+.tahoma {font-family: tahoma}
+.arial-narrow {font-family: "arial narrow"}
+.arial-black {font-family: "arial black"}
+.garamond {font-family: garamond}
+.georgia {font-family: georgia}
+.times {font-family: times, "Times New Roman"}
+
+#dis-count {
+float: left;
+height: auto;
+width: auto;
+height: 30px;
+padding: 5px;
+margin: 2px 0;
+border-radius: 3px;
+text-transform: uppercase;
+font: bold 20px sans-serif;
+line-height: 20px;
+background: transparent;
+}
+
+.don-l, .don-r {
+width: 50%;
+padding: 0 5px;
+font-size: 30px
+}
+
+.don-l {float: left;text-align: right;}
+.don-r {float: right;text-align: left}
+
+#pop a:link, #pop a:visited {
+color: #666;
+}
+
+.dia {
+display: none;
+}
+
+#margin-wrap {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 80%;
+padding: 0 0 0 30%;
+margin: 0 0 0 -15px;
+height: 15px;
+z-index: 101
+}
+
+#margin {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 17px;
+height: 15px;
+z-index: 101;
+border-right: 2px dotted #dedede;
+cursor: ew-resize;
+}
+
+table * {padding: 0;}
+table {float: none;margin: 25px auto;border-spacing: 0;border-collapse: collapse;text-align: left;padding: 0}
+td {padding: 20px}
+th {font-size: 125%;padding: 20px}
+tbody {font-size: 80%;}
+
+#table-ed {
+position: fixed;
+top: 50%;
+left: 50%;
+width: 500px;
+height: 400px;
+padding: 15px;
+padding-top: 0;
+margin: -200px 0 0 -250px;
+z-index: 102;
+display: none;
+border: 1px solid #bbb;
+box-shadow: 4px 4px 16px #bbb
+}
+
+#table-csv {
+float: left;
+width: 100%;
+height: 350px;
+padding: 25px;
+}
+
+#table-ed-close {
+float: left;
+height: auto;
+width: auto;
+padding: 9px;
+margin: 3px 0;
+border-radius: 3px;
+text-transform: uppercase;
+font: bold 10px sans-serif;
+background: transparent
+}
+
+#help-win {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 40%;
+height: 100%;
+padding: 15px;
+padding-top: 0;
+display: none;
+z-index: 101;
+overflow: hidden;
+border-left: 2px solid #dedede;
+border-top: 2px solid #dedede;
+}
+
+#close-help, #print-help {
+float: left;
+height: auto;
+width: auto;
+padding: 9px;
+margin: 3px 0;
+border-radius: 3px;
+text-transform: uppercase;
+font: bold 10px sans-serif;
+background: transparent
+}
+
+#print-win {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 15px;
+padding-top: 0;
+display: none;
+z-index: 101;
+background: #fff
+}
+
+#printo {
+float: left;
+width: 100%;
+margin: 0 0;
+text-align: left;
+font: normal 14px monospace;
+line-height: 36px;
+white-space: pre-wrap;
+}
+
+#iframe {
+float: left;
+width: 100%;
+height: 100%;
+overflow: auto;
+overflow-x: hidden;
+padding: 20px;
+text-align: left;
+z-index: 100;
+font: normal 15px sans-serif;
+line-height: 24px;
+}
+
+#iframe pre {padding: 20px;}
+
+#desc {margin: 0 0 150px 0;}
+
+#desc p {font: italic 110% georgia;}
+
+#desc h1 {font-family: georgia;}
+
+#desc h4, #desc h5 {padding: 0; margin: 0}
+
+#iframe h3 {padding: 10px 0; margin: 0;}
+
+#comm {padding: 50px 75px;}
+
+#lice {margin: 100px; padding: 50px; font: italic 13px georgia;}
+
+#copy {width: 100%; padding: 100px 0 200px 0; text-align: center; font: bold 10px sans-serif; text-transform: uppercase;}
+
+#copy b {font: normal 14px georgia; text-transform: none;}
+
+#con-tab {margin: 10px 0 0 0; padding: 0; width: 100%;}
+
+#con-tab th {padding: 0; font-size: 110%;}
+
+.logo-txt {
+padding: 20px 0 0 0;
+}
+
+.logo {
+display: block;
+width: 70px;
+height: 70px;
+margin: 0 auto;
+margin-top: 5px;
+opacity: .5;
+border-radius: 50%;
+padding: 10px;
+}
+
+.aint {background: seagreen url('../images/a64.png') 15px 15px no-repeat;background-size: 40px;}
+.wha {background: red url('../images/wh-logo2.svg') 15px 15px no-repeat;background-size: 40px;}
+.chrome {background: yellow url('../images/chrome.svg') 15px 15px no-repeat;background-size: 40px;}
+
+#iframe span {
+padding: 4px 0;
+}
+
+#iframe tbody {font-size: 100%}
+
+#debug {
+position: fixed;
+top: 0;
+left: 50%;
+width: 400px;
+height: 200px;
+margin: 0;
+background: #111;
+color: #bbb;
+display: none;
+z-index: 9999;
+}
+
+body {color: #666; background: #fff}
+
+hr {border: 0;border-bottom: 1px dotted #666}
+
+main {background: #fff}
+
+#overlay {background: #fff}
+
+button {color: #666}
+
+#cons-wrap button:hover, #close-help:hover, #table-ed-close:hover {background-color: #ddd}
+
+#close-help:hover, #print-help:hover {background-color: #eee}
+
+#cons-wrap button.cons-div {background: #ccc}
+
+#as-dis {color: #555}
+
+.as-tog {border-left: 2px solid #bbb;color: #555}
+
+.as-off {color: #777}
+
+#file-name {border-left: 2px solid #bbb}
+
+#tools button:hover {color: #333}
+
+.select-options, .select-in {border: 1px solid #666;background: #fff;color: #666}
+
+.select-options div:hover {background: #ddd}
+
+seres {border: 1px solid #000}
+
+.curhi {background: #bbb;color: #000}
+
+.p-item:hover {background-color: #eee}
+
+.selected {background-color: #eee;color: #666}
+
+#tog-full-pane {color: #000;background: transparent}
+
+#editor, #notepad {color: #444; background: #fff}
+
+#notepad {border: 0; border-left: 2px solid #dedede}
+
+#pop {background: #efefef; border: 1px solid #bbb; box-shadow: 4px 4px 16px #bbb}
+
+#pop input {border: 1px solid #666;background: #fff;color: #666;}
+
+table, td, th {border: 1px solid #666}
+
+tbody tr:hover {background: #fff}
+
+#table-ed {background: #fff}
+
+#table-csv, #table-ed-close {background: #fff;color: #666}
+
+#help-win {background: #fff}
+
+#iframe {background: #fff}
+
+#con-tab td, #con-tab tr, #con-tab th, #con-tab {border: 0;}
+#con-tab tr {border-bottom: 1px dotted #666;}
+#iframe h3 {border-bottom: 1px solid #666;}
+
+#table-csv, {border: 1px solid #bbb;}
+
+::-webkit-scrollbar {width: 15px}
+::-webkit-scrollbar-track {background: #fff}
+::-webkit-scrollbar-thumb {background: #eee;border: 2px solid #fff}
+::-webkit-scrollbar-corner {background: #fff}
