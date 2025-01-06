@@ -1,0 +1,284 @@
+{
+   "0047": {
+      "message": "Zaidi"
+   },
+   "0354": {
+      "message": "Changia"
+   },
+   "0838": {
+      "message": "Kuhusu"
+   },
+   "1620": {
+      "message": "Ondoa"
+   },
+   "1978": {
+      "message": "Nimeelewa"
+   },
+   "1980": {
+      "message": "Zindua"
+   },
+   "1983": {
+      "message": "Jia za mawasiliano"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Hidrojeni"
+   },
+   "2002": {
+      "message": "Heli"
+   },
+   "2003": {
+      "message": "Lithi"
+   },
+   "2004": {
+      "message": "Berili"
+   },
+   "2005": {
+      "message": "Boroni"
+   },
+   "2006": {
+      "message": "Kaboni"
+   },
+   "2007": {
+      "message": "Nitrojeni"
+   },
+   "2008": {
+      "message": "Oksijeni"
+   },
+   "2009": {
+      "message": "Florini"
+   },
+   "2010": {
+      "message": "Neoni"
+   },
+   "2011": {
+      "message": "Natiri"
+   },
+   "2012": {
+      "message": "Magnesi"
+   },
+   "2013": {
+      "message": "Alumini"
+   },
+   "2014": {
+      "message": "Silikoni"
+   },
+   "2015": {
+      "message": "Posferi"
+   },
+   "2016": {
+      "message": "Sulfuri"
+   },
+   "2017": {
+      "message": "Chlorini"
+   },
+   "2018": {
+      "message": "Arigoni"
+   },
+   "2019": {
+      "message": "Kali"
+   },
+   "2020": {
+      "message": "Kalisi"
+   },
+   "2021": {
+      "message": "Skandi"
+   },
+   "2022": {
+      "message": "Titani"
+   },
+   "2023": {
+      "message": "Vanadi"
+   },
+   "2024": {
+      "message": "Chromi"
+   },
+   "2025": {
+      "message": "Manganisi"
+   },
+   "2026": {
+      "message": "Chuma"
+   },
+   "2027": {
+      "message": "Kobalti"
+   },
+   "2028": {
+      "message": "Nikeli"
+   },
+   "2029": {
+      "message": "Shaba"
+   },
+   "2030": {
+      "message": "Zinki"
+   },
+   "2031": {
+      "message": "Gali"
+   },
+   "2032": {
+      "message": "Gerimani"
+   },
+   "2033": {
+      "message": "Asenia"
+   },
+   "2034": {
+      "message": "Seleni"
+   },
+   "2035": {
+      "message": "Bromi"
+   },
+   "2036": {
+      "message": "Kriptoni"
+   },
+   "2037": {
+      "message": "Rubidi"
+   },
+   "2038": {
+      "message": "Stronti"
+   },
+   "2039": {
+      "message": "Ytri"
+   },
+   "2040": {
+      "message": "Zirikoni"
+   },
+   "2041": {
+      "message": "Niobi"
+   },
+   "2042": {
+      "message": "Molibdeni"
+   },
+   "2043": {
+      "message": "Tekineti"
+   },
+   "2044": {
+      "message": "Rutheni"
+   },
+   "2045": {
+      "message": "Rodi"
+   },
+   "2046": {
+      "message": "Paladi"
+   },
+   "2047": {
+      "message": "Agenti"
+   },
+   "2048": {
+      "message": "Cadimi"
+   },
+   "2049": {
+      "message": "Indi"
+   },
+   "2050": {
+      "message": "Stani"
+   },
+   "2051": {
+      "message": "Stibi"
+   },
+   "2052": {
+      "message": "Teluri"
+   },
+   "2053": {
+      "message": "Iodini"
+   },
+   "2054": {
+      "message": "Xenoni"
+   },
+   "2055": {
+      "message": "Caesi"
+   },
+   "2056": {
+      "message": "Bari"
+   },
+   "2058": {
+      "message": "Seri"
+   },
+   "2066": {
+      "message": "Disprosi"
+   },
+   "2072": {
+      "message": "Hafni"
+   },
+   "2073": {
+      "message": "Tantali"
+   },
+   "2074": {
+      "message": "Wolframi"
+   },
+   "2075": {
+      "message": "Reni"
+   },
+   "2077": {
+      "message": "Iridi"
+   },
+   "2078": {
+      "message": "Platini"
+   },
+   "2079": {
+      "message": "Dhahabu"
+   },
+   "2081": {
+      "message": "Tali"
+   },
+   "2082": {
+      "message": "Risasi"
+   },
+   "2083": {
+      "message": "Bismuthi"
+   },
+   "2084": {
+      "message": "Poloni"
+   },
+   "2085": {
+      "message": "Astatini"
+   },
+   "2086": {
+      "message": "Radoni"
+   },
+   "2087": {
+      "message": "Fransi"
+   },
+   "2088": {
+      "message": "Radi"
+   },
+   "2092": {
+      "message": "Urani"
+   },
+   "2093": {
+      "message": "Neptuni"
+   },
+   "2096": {
+      "message": "Curi"
+   },
+   "2104": {
+      "message": "Rutherfordi"
+   },
+   "2107": {
+      "message": "Bohri"
+   },
+   "2110": {
+      "message": "Darmstadti"
+   },
+   "2111": {
+      "message": "Roentgeni"
+   },
+   "2112": {
+      "message": "Ununbi"
+   },
+   "2116": {
+      "message": "Ununheksi"
+   },
+   "2543": {
+      "message": "Chapa"
+   },
+   "6522": {
+      "message": "nyeupe"
+   },
+   "6727": {
+      "message": "Sio kwa sasa"
+   },
+   "7165": {
+      "message": "Nyeupe"
+   }
+}

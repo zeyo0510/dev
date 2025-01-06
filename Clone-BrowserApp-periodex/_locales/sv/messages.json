@@ -1,0 +1,221 @@
+{
+   "0047": {
+      "message": "Mer"
+   },
+   "0354": {
+      "message": "Donera"
+   },
+   "0838": {
+      "message": "Om"
+   },
+   "1360": {
+      "message": "Dela"
+   },
+   "1620": {
+      "message": "Ta bort permanent"
+   },
+   "1978": {
+      "message": "Förstått"
+   },
+   "1980": {
+      "message": "Starta"
+   },
+   "1983": {
+      "message": "Kontakt"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Väte"
+   },
+   "2003": {
+      "message": "Litium"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Kol"
+   },
+   "2007": {
+      "message": "Kväve"
+   },
+   "2008": {
+      "message": "Syre"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Natrium"
+   },
+   "2014": {
+      "message": "Kisel"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Svavel"
+   },
+   "2017": {
+      "message": "Klor"
+   },
+   "2019": {
+      "message": "Kalium"
+   },
+   "2020": {
+      "message": "Kalcium"
+   },
+   "2021": {
+      "message": "Skandium"
+   },
+   "2022": {
+      "message": "Titan"
+   },
+   "2023": {
+      "message": "Vanadin"
+   },
+   "2024": {
+      "message": "Krom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Järn"
+   },
+   "2027": {
+      "message": "Kobolt"
+   },
+   "2029": {
+      "message": "Koppar"
+   },
+   "2030": {
+      "message": "Zink"
+   },
+   "2033": {
+      "message": "Arsenik"
+   },
+   "2034": {
+      "message": "Selen"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2040": {
+      "message": "Zirkonium"
+   },
+   "2041": {
+      "message": "Niob"
+   },
+   "2042": {
+      "message": "Molybden"
+   },
+   "2043": {
+      "message": "Teknetium"
+   },
+   "2044": {
+      "message": "Rutenium"
+   },
+   "2045": {
+      "message": "Rodium"
+   },
+   "2048": {
+      "message": "Kadmium"
+   },
+   "2050": {
+      "message": "Tenn"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Tellur"
+   },
+   "2053": {
+      "message": "Jod"
+   },
+   "2055": {
+      "message": "Cesium"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2059": {
+      "message": "Praseodym"
+   },
+   "2060": {
+      "message": "Neodym"
+   },
+   "2061": {
+      "message": "Prometium"
+   },
+   "2069": {
+      "message": "Tulium"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Volfram"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Guld"
+   },
+   "2081": {
+      "message": "Tallium"
+   },
+   "2082": {
+      "message": "Bly"
+   },
+   "2083": {
+      "message": "Vismut"
+   },
+   "2085": {
+      "message": "Astat"
+   },
+   "2089": {
+      "message": "Aktinium"
+   },
+   "2090": {
+      "message": "Torium"
+   },
+   "2091": {
+      "message": "Protaktinium"
+   },
+   "2092": {
+      "message": "Uran"
+   },
+   "2111": {
+      "message": "Röntgenium"
+   },
+   "2543": {
+      "message": "Skriv ut"
+   },
+   "6522": {
+      "message": "vit"
+   },
+   "6722": {
+      "message": "Support av Google för Chrome Apps kommer snart att upphöra. För fortsatt användning av tjänsten, bör du byta till __product_name__ webbappen nu."
+   },
+   "6723": {
+      "message": "Byt till __product_name__ webbapp"
+   },
+   "6724": {
+      "message": "Tack för att du använder __product_name__ Chrome App"
+   },
+   "6727": {
+      "message": "Inte nu"
+   },
+   "6728": {
+      "message": "Gå till __web_address__"
+   },
+   "7165": {
+      "message": "Vit"
+   }
+}

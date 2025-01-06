@@ -1,0 +1,23 @@
+{
+   "1983": {
+      "message": "Contactar"
+   },
+   "2000": {
+      "message": "Una tabla periódica de los elementos elegante."
+   },
+   "6507": {
+      "message": "Metales Alcalinotérreos"
+   },
+   "6523": {
+      "message": "evaluado"
+   },
+   "6525": {
+      "message": "calcógeno"
+   },
+   "6533": {
+      "message": "__period_number__ periodo"
+   },
+   "6726": {
+      "message": "Esta aplicación fue descontinuada en junio de 2021 ya que Google terminó el apoyo a las Chrome Apps. No se preocupe, la web app de __product_name__ tiene todas las mismas funciones y más. Para continuar utilizando __product_name__, instale la versión web app ubicada en __web_address__."
+   }
+}

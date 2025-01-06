@@ -1,0 +1,395 @@
+{
+   "0047": {
+      "message": "Daugiau"
+   },
+   "0354": {
+      "message": "Paaukoti"
+   },
+   "0838": {
+      "message": "Apie"
+   },
+   "1360": {
+      "message": "Bendrinti"
+   },
+   "1620": {
+      "message": "Atsisakyti"
+   },
+   "1978": {
+      "message": "Aišku"
+   },
+   "1980": {
+      "message": "Atidaryti"
+   },
+   "1983": {
+      "message": "Kontaktai"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Vandenilis"
+   },
+   "2002": {
+      "message": "Helis"
+   },
+   "2003": {
+      "message": "Litis"
+   },
+   "2004": {
+      "message": "Berilis"
+   },
+   "2005": {
+      "message": "Boras"
+   },
+   "2006": {
+      "message": "Anglis"
+   },
+   "2007": {
+      "message": "Azotas"
+   },
+   "2008": {
+      "message": "Deguonis"
+   },
+   "2009": {
+      "message": "Fluoras"
+   },
+   "2010": {
+      "message": "Neonas"
+   },
+   "2011": {
+      "message": "Natris"
+   },
+   "2012": {
+      "message": "Magnis"
+   },
+   "2013": {
+      "message": "Aliuminis"
+   },
+   "2014": {
+      "message": "Silicis"
+   },
+   "2015": {
+      "message": "Fosforas"
+   },
+   "2016": {
+      "message": "Siera"
+   },
+   "2017": {
+      "message": "Chloras"
+   },
+   "2018": {
+      "message": "Argonas"
+   },
+   "2019": {
+      "message": "Kalis"
+   },
+   "2020": {
+      "message": "Kalcis"
+   },
+   "2021": {
+      "message": "Skandis"
+   },
+   "2022": {
+      "message": "Titanas"
+   },
+   "2023": {
+      "message": "Vanadis"
+   },
+   "2024": {
+      "message": "Chromas"
+   },
+   "2025": {
+      "message": "Manganas"
+   },
+   "2026": {
+      "message": "Geležis"
+   },
+   "2027": {
+      "message": "Kobaltas"
+   },
+   "2028": {
+      "message": "Nikelis"
+   },
+   "2029": {
+      "message": "Varis"
+   },
+   "2030": {
+      "message": "Cinkas"
+   },
+   "2031": {
+      "message": "Galis"
+   },
+   "2032": {
+      "message": "Germanis"
+   },
+   "2033": {
+      "message": "Arsenas"
+   },
+   "2034": {
+      "message": "Selenas"
+   },
+   "2035": {
+      "message": "Bromas"
+   },
+   "2036": {
+      "message": "Kriptonas"
+   },
+   "2037": {
+      "message": "Rubidis"
+   },
+   "2038": {
+      "message": "Stroncis"
+   },
+   "2039": {
+      "message": "Itris"
+   },
+   "2040": {
+      "message": "Cirkonis"
+   },
+   "2041": {
+      "message": "Niobis"
+   },
+   "2042": {
+      "message": "Molibdenas"
+   },
+   "2043": {
+      "message": "Technecis"
+   },
+   "2044": {
+      "message": "Rutenis"
+   },
+   "2045": {
+      "message": "Rodis"
+   },
+   "2046": {
+      "message": "Paladis"
+   },
+   "2047": {
+      "message": "Sidabras"
+   },
+   "2048": {
+      "message": "Kadmis"
+   },
+   "2049": {
+      "message": "Indis"
+   },
+   "2050": {
+      "message": "Alavas"
+   },
+   "2051": {
+      "message": "Stibis"
+   },
+   "2052": {
+      "message": "Telūras"
+   },
+   "2053": {
+      "message": "Jodas"
+   },
+   "2054": {
+      "message": "Ksenonas"
+   },
+   "2055": {
+      "message": "Cezis"
+   },
+   "2056": {
+      "message": "Baris"
+   },
+   "2057": {
+      "message": "Lantanas"
+   },
+   "2058": {
+      "message": "Ceris"
+   },
+   "2059": {
+      "message": "Prazeodimis"
+   },
+   "2060": {
+      "message": "Neodimis"
+   },
+   "2061": {
+      "message": "Prometis"
+   },
+   "2062": {
+      "message": "Samaris"
+   },
+   "2063": {
+      "message": "Europis"
+   },
+   "2064": {
+      "message": "Gadolinis"
+   },
+   "2065": {
+      "message": "Terbis"
+   },
+   "2066": {
+      "message": "Disprozis"
+   },
+   "2067": {
+      "message": "Holmis"
+   },
+   "2068": {
+      "message": "Erbis"
+   },
+   "2069": {
+      "message": "Tulis"
+   },
+   "2070": {
+      "message": "Iterbis"
+   },
+   "2071": {
+      "message": "Lutecis"
+   },
+   "2072": {
+      "message": "Hafnis"
+   },
+   "2073": {
+      "message": "Tantalas"
+   },
+   "2074": {
+      "message": "Volframas"
+   },
+   "2075": {
+      "message": "Renis"
+   },
+   "2076": {
+      "message": "Osmis"
+   },
+   "2077": {
+      "message": "Iridis"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Auksas"
+   },
+   "2081": {
+      "message": "Talis"
+   },
+   "2082": {
+      "message": "Švinas"
+   },
+   "2083": {
+      "message": "Bismutas"
+   },
+   "2084": {
+      "message": "Polonis"
+   },
+   "2085": {
+      "message": "Astatis"
+   },
+   "2086": {
+      "message": "Radonas"
+   },
+   "2087": {
+      "message": "Francis"
+   },
+   "2088": {
+      "message": "Radis"
+   },
+   "2089": {
+      "message": "Aktinis"
+   },
+   "2090": {
+      "message": "Toris"
+   },
+   "2091": {
+      "message": "Protaktinis"
+   },
+   "2092": {
+      "message": "Uranas"
+   },
+   "2093": {
+      "message": "Neptūnis"
+   },
+   "2094": {
+      "message": "Plutonis"
+   },
+   "2095": {
+      "message": "Americis"
+   },
+   "2096": {
+      "message": "Kiuris"
+   },
+   "2097": {
+      "message": "Berklis"
+   },
+   "2098": {
+      "message": "Kalifornis"
+   },
+   "2099": {
+      "message": "Einšteinis"
+   },
+   "2100": {
+      "message": "Fermis"
+   },
+   "2101": {
+      "message": "Mendelevis"
+   },
+   "2102": {
+      "message": "Nobelis"
+   },
+   "2103": {
+      "message": "Laurencis"
+   },
+   "2104": {
+      "message": "Rezerfordis"
+   },
+   "2105": {
+      "message": "Dubnis"
+   },
+   "2106": {
+      "message": "Syborgis"
+   },
+   "2107": {
+      "message": "Boris"
+   },
+   "2108": {
+      "message": "Hasis"
+   },
+   "2109": {
+      "message": "Meitneris"
+   },
+   "2110": {
+      "message": "Darmštatis"
+   },
+   "2111": {
+      "message": "Rentgenis"
+   },
+   "2112": {
+      "message": "Koperniumas"
+   },
+   "2114": {
+      "message": "Flerovijus"
+   },
+   "2543": {
+      "message": "Spausdinti"
+   },
+   "6522": {
+      "message": "balta"
+   },
+   "6722": {
+      "message": "Netrukus Google nebepalaikys Chrome aplikacijų. Kad galėtumėte testi prašome pakeisti į __product_name__ aplikaciją dabar."
+   },
+   "6723": {
+      "message": "Perjunkite į __product_name__ aplikaciją."
+   },
+   "6724": {
+      "message": "Dėkojame, kad naudojatės __product_name__ Chrome aplikacija."
+   },
+   "6725": {
+      "message": "Šios aplikacijos bus nutrauktas 2021 birželį, kai Google nustos palaikyti Chrome aplikacijas. Nesijaudinkite, __product_name__ internetinė aplikacija turi visas tas pačias funkcijas ir daugiau. Jei norite pratęsti __product_name__, isirašykite tai, kaip internetinę aplikaciją adresu __web_address__."
+   },
+   "6726": {
+      "message": "Šios aplikacijos palaikymas buvo nutrauktas 2021 birželį, kai Google nustojo palaikyti Chrome aplikacijas. Nesijaudinkite, __product_name__ internetinė aplikacija turi visas tas pačias funkcijas ir daugiau. Jei norite pratęsti __product_name__, isirašykite tai, kaip internetinę aplikaciją adresu __web_address__."
+   },
+   "6727": {
+      "message": "Ne dabar"
+   },
+   "6728": {
+      "message": "Eiti į __web_address__"
+   },
+   "7165": {
+      "message": "Balta"
+   }
+}

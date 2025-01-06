@@ -1,0 +1,413 @@
+{
+   "0047": {
+      "message": "Több"
+   },
+   "0354": {
+      "message": "Adományozás"
+   },
+   "0357": {
+      "message": "Tekintse meg az adatvédelmi irányelveinket"
+   },
+   "0838": {
+      "message": "Névjegy"
+   },
+   "1360": {
+      "message": "Megosztás"
+   },
+   "1605": {
+      "message": "Segítség a fordításokhoz"
+   },
+   "1620": {
+      "message": "Elvetés"
+   },
+   "1977": {
+      "message": "Cookie-kat használunk hirdetések megjelenítésére és forgalmunk elemzésére. Webhelyünk Ön általi használatára vonatkozó információkat megosztjuk a Google AdSense és a Google Analytics szolgáltatással is. A Google egyesítheti azokat más információkkal, amelyeket Ön adott át nekik, vagy amelyeket a szolgáltatásaik Ön általi használatából gyűjtöttek össze."
+   },
+   "1978": {
+      "message": "Értem"
+   },
+   "1980": {
+      "message": "Indítás"
+   },
+   "1983": {
+      "message": "Kapcsolat"
+   },
+   "1984": {
+      "message": "Általános tulajdonságok"
+   },
+   "1987": {
+      "message": "Sűrűség"
+   },
+   "1988": {
+      "message": "Csoport"
+   },
+   "2000": {
+      "message": "Elegáns periódusos rendszer elemek"
+   },
+   "2001": {
+      "message": "Hidrogén"
+   },
+   "2002": {
+      "message": "Hélium"
+   },
+   "2003": {
+      "message": "Lítium"
+   },
+   "2004": {
+      "message": "Berillium"
+   },
+   "2005": {
+      "message": "Bór"
+   },
+   "2006": {
+      "message": "Szén"
+   },
+   "2007": {
+      "message": "Nitrogén"
+   },
+   "2008": {
+      "message": "Oxigén"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Nátrium"
+   },
+   "2012": {
+      "message": "Magnézium"
+   },
+   "2013": {
+      "message": "Alumínium"
+   },
+   "2014": {
+      "message": "Szilícium"
+   },
+   "2015": {
+      "message": "Foszfor"
+   },
+   "2016": {
+      "message": "Kén"
+   },
+   "2017": {
+      "message": "Klór"
+   },
+   "2019": {
+      "message": "Kálium"
+   },
+   "2020": {
+      "message": "Kalcium"
+   },
+   "2021": {
+      "message": "Szkandium"
+   },
+   "2022": {
+      "message": "Titán"
+   },
+   "2023": {
+      "message": "Vanádium"
+   },
+   "2024": {
+      "message": "Króm"
+   },
+   "2025": {
+      "message": "Mangán"
+   },
+   "2026": {
+      "message": "Vas"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikkel"
+   },
+   "2029": {
+      "message": "Réz"
+   },
+   "2030": {
+      "message": "Cink"
+   },
+   "2032": {
+      "message": "Germánium"
+   },
+   "2033": {
+      "message": "Arzén"
+   },
+   "2034": {
+      "message": "Szelén"
+   },
+   "2035": {
+      "message": "Bróm"
+   },
+   "2036": {
+      "message": "Kripton"
+   },
+   "2037": {
+      "message": "Rubídium"
+   },
+   "2038": {
+      "message": "Stroncium"
+   },
+   "2039": {
+      "message": "Ittrium"
+   },
+   "2040": {
+      "message": "Cirkónium"
+   },
+   "2041": {
+      "message": "Nióbium"
+   },
+   "2042": {
+      "message": "Molibdén"
+   },
+   "2043": {
+      "message": "Technécium"
+   },
+   "2044": {
+      "message": "Ruténium"
+   },
+   "2045": {
+      "message": "Ródium"
+   },
+   "2046": {
+      "message": "Palládium"
+   },
+   "2047": {
+      "message": "Ezüst"
+   },
+   "2048": {
+      "message": "Kadmium"
+   },
+   "2050": {
+      "message": "Ón"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Tellúr"
+   },
+   "2053": {
+      "message": "Jód"
+   },
+   "2055": {
+      "message": "Cézium"
+   },
+   "2056": {
+      "message": "Bárium"
+   },
+   "2057": {
+      "message": "Lantán"
+   },
+   "2058": {
+      "message": "Cérium"
+   },
+   "2059": {
+      "message": "Prazeodímium"
+   },
+   "2060": {
+      "message": "Neodímium"
+   },
+   "2061": {
+      "message": "Prométium"
+   },
+   "2062": {
+      "message": "Szamárium"
+   },
+   "2063": {
+      "message": "Európium"
+   },
+   "2064": {
+      "message": "Gadolínium"
+   },
+   "2066": {
+      "message": "Diszprózium"
+   },
+   "2069": {
+      "message": "Túlium"
+   },
+   "2070": {
+      "message": "Itterbium"
+   },
+   "2071": {
+      "message": "Lutécium"
+   },
+   "2073": {
+      "message": "Tantál"
+   },
+   "2074": {
+      "message": "Volfrám"
+   },
+   "2075": {
+      "message": "Rénium"
+   },
+   "2076": {
+      "message": "Ozmium"
+   },
+   "2077": {
+      "message": "Irídium"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Arany"
+   },
+   "2080": {
+      "message": "Higany"
+   },
+   "2081": {
+      "message": "Tallium"
+   },
+   "2082": {
+      "message": "Ólom"
+   },
+   "2083": {
+      "message": "Bizmut"
+   },
+   "2084": {
+      "message": "Polónium"
+   },
+   "2085": {
+      "message": "Asztácium"
+   },
+   "2088": {
+      "message": "Rádium"
+   },
+   "2089": {
+      "message": "Aktínium"
+   },
+   "2090": {
+      "message": "Tórium"
+   },
+   "2091": {
+      "message": "Protaktínium"
+   },
+   "2092": {
+      "message": "Urán"
+   },
+   "2093": {
+      "message": "Neptúnium"
+   },
+   "2094": {
+      "message": "Plutónium"
+   },
+   "2095": {
+      "message": "Amerícium"
+   },
+   "2096": {
+      "message": "Kűrium"
+   },
+   "2097": {
+      "message": "Berkélium"
+   },
+   "2098": {
+      "message": "Kalifornium"
+   },
+   "2101": {
+      "message": "Mendelévium"
+   },
+   "2102": {
+      "message": "Nobélium"
+   },
+   "2103": {
+      "message": "Laurencium"
+   },
+   "2104": {
+      "message": "Radzerfordium"
+   },
+   "2106": {
+      "message": "Sziborgium"
+   },
+   "2107": {
+      "message": "Borium"
+   },
+   "2108": {
+      "message": "Hasszium"
+   },
+   "2111": {
+      "message": "Röntgenium"
+   },
+   "2112": {
+      "message": "Kopernícium"
+   },
+   "2543": {
+      "message": "Nyomtatás"
+   },
+   "6383": {
+      "message": "Alkalmazás telepítése"
+   },
+   "6433": {
+      "message": "Vissza a periódusos táblázathoz"
+   },
+   "6516": {
+      "message": "Kategória"
+   },
+   "6520": {
+      "message": "ismeretlen"
+   },
+   "6521": {
+      "message": "nincs"
+   },
+   "6522": {
+      "message": "fehér"
+   },
+   "6528": {
+      "message": "További tulajdonságok"
+   },
+   "6533": {
+      "message": "periódus __period_number__"
+   },
+   "6546": {
+      "message": "Természetes izotópok"
+   },
+   "6547": {
+      "message": "Tulajdonságok"
+   },
+   "6548": {
+      "message": "Izotópok"
+   },
+   "6549": {
+      "message": "Előzmények"
+   },
+   "6551": {
+      "message": "Felfedezési előzmények"
+   },
+   "6552": {
+      "message": "Felfedező"
+   },
+   "6651": {
+      "message": "Google Tanterem"
+   },
+   "6722": {
+      "message": "A Google hamarosan megszünteti a Chrome-alkalmazások támogatását. A folyamatos használat érdekében váltson most a __product_name__ webalkalmazásra."
+   },
+   "6723": {
+      "message": "Váltson a __product_name__ webalkalmazásra"
+   },
+   "6724": {
+      "message": "Köszönjük, hogy a __product_name__ Chrome alkalmazást használja"
+   },
+   "6725": {
+      "message": "Ez az alkalmazás 2021 júniusában megszűnt, mivel a Google megszüntette a Chrome-alkalmazások támogatását. Ne aggódjon, a __product_name__ webalkalmazás ugyanazokkal a funkciókkal rendelkezik. A __product_name__ használatának folytatásához telepítse webalkalmazásként a __web_address__ címről."
+   },
+   "6726": {
+      "message": "Ez az alkalmazás 2021 júniusában megszűnt, mivel a Google megszüntette a Chrome-alkalmazások támogatását. Ne aggódjon, a __product_name__ webalkalmazás ugyanazokkal a funkciókkal rendelkezik. A __product_name__ használatának folytatásához telepítse webalkalmazásként a __web_address__ címről."
+   },
+   "6727": {
+      "message": "Most nem"
+   },
+   "6728": {
+      "message": "Ugrás ide __web_address__"
+   },
+   "6965": {
+      "message": "Segíts a fordításban"
+   },
+   "6971": {
+      "message": "Ez az alkalmazás hamarosan megszűnik, amint a Google megszünteti a Chrome-alkalmazások támogatását. Ne aggódjon, a __product_name__ webalkalmazás ugyanazokkal a funkciókkal rendelkezik. A __product_name__ használatának folytatásához frissítse a Chrome alkalmazást Progresszív webalkalmazásra."
+   },
+   "7165": {
+      "message": "Fehér"
+   }
+}

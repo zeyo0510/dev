@@ -1,0 +1,443 @@
+{
+   "0047": {
+      "message": "Več"
+   },
+   "0214": {
+      "message": "Epošta"
+   },
+   "0354": {
+      "message": "Doniraj"
+   },
+   "0838": {
+      "message": "O možnostih"
+   },
+   "1360": {
+      "message": "Skupna raba"
+   },
+   "1620": {
+      "message": "Opusti"
+   },
+   "1959": {
+      "message": "Nihonij"
+   },
+   "1960": {
+      "message": "Moskovij"
+   },
+   "1961": {
+      "message": "Tenesin"
+   },
+   "1962": {
+      "message": "Oganeson"
+   },
+   "1978": {
+      "message": "Razumem"
+   },
+   "1980": {
+      "message": "Zaženi"
+   },
+   "1983": {
+      "message": "Stik"
+   },
+   "1987": {
+      "message": "Gostota"
+   },
+   "1988": {
+      "message": "Skupina"
+   },
+   "1992": {
+      "message": "Perioda"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Vodik"
+   },
+   "2002": {
+      "message": "Helij"
+   },
+   "2003": {
+      "message": "Litij"
+   },
+   "2004": {
+      "message": "Berilij"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Ogljik"
+   },
+   "2007": {
+      "message": "Dušik"
+   },
+   "2008": {
+      "message": "Kisik"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Natrij"
+   },
+   "2012": {
+      "message": "Magnezij"
+   },
+   "2013": {
+      "message": "Aluminij"
+   },
+   "2014": {
+      "message": "Silicij"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Žveplo"
+   },
+   "2017": {
+      "message": "Klor"
+   },
+   "2019": {
+      "message": "Kalij"
+   },
+   "2020": {
+      "message": "Kalcij"
+   },
+   "2021": {
+      "message": "Skandij"
+   },
+   "2022": {
+      "message": "Titan"
+   },
+   "2023": {
+      "message": "Vanadij"
+   },
+   "2024": {
+      "message": "Krom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Železo"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikelj"
+   },
+   "2029": {
+      "message": "Baker"
+   },
+   "2030": {
+      "message": "Cink"
+   },
+   "2031": {
+      "message": "Galij"
+   },
+   "2032": {
+      "message": "Germanij"
+   },
+   "2033": {
+      "message": "Arzen"
+   },
+   "2034": {
+      "message": "Selen"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2036": {
+      "message": "Kripton"
+   },
+   "2037": {
+      "message": "Rubidij"
+   },
+   "2038": {
+      "message": "Stroncij"
+   },
+   "2039": {
+      "message": "Itrij"
+   },
+   "2040": {
+      "message": "Cirkonij"
+   },
+   "2041": {
+      "message": "Niobij"
+   },
+   "2042": {
+      "message": "Molibden"
+   },
+   "2043": {
+      "message": "Tehnecij"
+   },
+   "2044": {
+      "message": "Rutenij"
+   },
+   "2045": {
+      "message": "Rodij"
+   },
+   "2046": {
+      "message": "Paladij"
+   },
+   "2047": {
+      "message": "Srebro"
+   },
+   "2048": {
+      "message": "Kadmij"
+   },
+   "2049": {
+      "message": "Indij"
+   },
+   "2050": {
+      "message": "Kositer"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Telur"
+   },
+   "2053": {
+      "message": "Jod"
+   },
+   "2054": {
+      "message": "Ksenon"
+   },
+   "2055": {
+      "message": "Cezij"
+   },
+   "2056": {
+      "message": "Barij"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2058": {
+      "message": "Cerij"
+   },
+   "2059": {
+      "message": "Prazeodim"
+   },
+   "2060": {
+      "message": "Neodim"
+   },
+   "2061": {
+      "message": "Prometij"
+   },
+   "2062": {
+      "message": "Samarij"
+   },
+   "2063": {
+      "message": "Evropij"
+   },
+   "2064": {
+      "message": "Gadolinij"
+   },
+   "2065": {
+      "message": "Terbij"
+   },
+   "2066": {
+      "message": "Disprozij"
+   },
+   "2067": {
+      "message": "Holmij"
+   },
+   "2068": {
+      "message": "Erbij"
+   },
+   "2069": {
+      "message": "Tulij"
+   },
+   "2070": {
+      "message": "Iterbij"
+   },
+   "2071": {
+      "message": "Lutecij"
+   },
+   "2072": {
+      "message": "Hafnij"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Volfram"
+   },
+   "2075": {
+      "message": "Renij"
+   },
+   "2076": {
+      "message": "Osmij"
+   },
+   "2077": {
+      "message": "Iridij"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Zlato"
+   },
+   "2081": {
+      "message": "Talij"
+   },
+   "2082": {
+      "message": "Svinec"
+   },
+   "2083": {
+      "message": "Bizmut"
+   },
+   "2084": {
+      "message": "Polonij"
+   },
+   "2085": {
+      "message": "Astat"
+   },
+   "2087": {
+      "message": "Francij"
+   },
+   "2088": {
+      "message": "Radij"
+   },
+   "2089": {
+      "message": "Aktinij"
+   },
+   "2090": {
+      "message": "Torij"
+   },
+   "2091": {
+      "message": "Protaktinij"
+   },
+   "2092": {
+      "message": "Uran"
+   },
+   "2093": {
+      "message": "Neptunij"
+   },
+   "2094": {
+      "message": "Plutonij"
+   },
+   "2095": {
+      "message": "Americij"
+   },
+   "2096": {
+      "message": "Kirij"
+   },
+   "2097": {
+      "message": "Berkelij"
+   },
+   "2098": {
+      "message": "Kalifornij"
+   },
+   "2099": {
+      "message": "Ajnštajnij"
+   },
+   "2100": {
+      "message": "Fermij"
+   },
+   "2101": {
+      "message": "Mendelevij"
+   },
+   "2102": {
+      "message": "Nobelij"
+   },
+   "2103": {
+      "message": "Lavrencij"
+   },
+   "2104": {
+      "message": "Raderfordij"
+   },
+   "2105": {
+      "message": "Dubnij"
+   },
+   "2106": {
+      "message": "Siborgij"
+   },
+   "2107": {
+      "message": "Borij"
+   },
+   "2108": {
+      "message": "Hasij"
+   },
+   "2109": {
+      "message": "Majtnerij"
+   },
+   "2110": {
+      "message": "Darmštatij"
+   },
+   "2111": {
+      "message": "Rentgenij"
+   },
+   "2112": {
+      "message": "Kopernicij"
+   },
+   "2114": {
+      "message": "Flerovij"
+   },
+   "2116": {
+      "message": "Livermorij"
+   },
+   "2543": {
+      "message": "Natisni"
+   },
+   "6383": {
+      "message": "Namesti"
+   },
+   "6433": {
+      "message": "Nazaj na periodno tabelo"
+   },
+   "6516": {
+      "message": "Kategorija"
+   },
+   "6517": {
+      "message": "Tališče"
+   },
+   "6518": {
+      "message": "Vrelišče"
+   },
+   "6520": {
+      "message": "neznano"
+   },
+   "6521": {
+      "message": "brez"
+   },
+   "6522": {
+      "message": "bela"
+   },
+   "6530": {
+      "message": "Blok"
+   },
+   "6531": {
+      "message": "Številka CAS"
+   },
+   "6542": {
+      "message": "plin"
+   },
+   "6543": {
+      "message": "trdnina"
+   },
+   "6544": {
+      "message": "tekočina"
+   },
+   "6546": {
+      "message": "Naravni izotopi"
+   },
+   "6548": {
+      "message": "Izotopi"
+   },
+   "6549": {
+      "message": "Zgodovina"
+   },
+   "6727": {
+      "message": "Kasneje"
+   },
+   "6728": {
+      "message": "Obišči __web_address__"
+   },
+   "7165": {
+      "message": "Bela"
+   }
+}

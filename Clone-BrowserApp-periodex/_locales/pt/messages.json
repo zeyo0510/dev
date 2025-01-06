@@ -1,0 +1,581 @@
+{
+   "0047": {
+      "message": "Mais"
+   },
+   "0354": {
+      "message": "Doar"
+   },
+   "0357": {
+      "message": "Ver nossa política de privacidade"
+   },
+   "0838": {
+      "message": "Acerca de"
+   },
+   "1360": {
+      "message": "Partilhar"
+   },
+   "1605": {
+      "message": "Ajudar com traduções"
+   },
+   "1620": {
+      "message": "Ignorar"
+   },
+   "1960": {
+      "message": "Moscóvio"
+   },
+   "1961": {
+      "message": "Tenesso"
+   },
+   "1962": {
+      "message": "Oganessônio"
+   },
+   "1977": {
+      "message": "Usamos cookies para exibir anúncios e analisar o nosso tráfego. Também compartilhamos informações sobre o uso do nosso site com o Google AdSense e o Google Analytics. O Google pode combiná-lo com outras informações que você forneceu ou coletados a partir do uso de seus serviços."
+   },
+   "1978": {
+      "message": "Entendi"
+   },
+   "1980": {
+      "message": "Começar"
+   },
+   "1983": {
+      "message": "Contactar"
+   },
+   "1984": {
+      "message": "Propriedades Gerais"
+   },
+   "1985": {
+      "message": "Origem do nome"
+   },
+   "1987": {
+      "message": "Densidade"
+   },
+   "1988": {
+      "message": "Grupo"
+   },
+   "1992": {
+      "message": "Período"
+   },
+   "1993": {
+      "message": "Peso atômico padrão"
+   },
+   "2000": {
+      "message": "Elegante tabela periódica dos elementos químicos"
+   },
+   "2001": {
+      "message": "Hidrogénio"
+   },
+   "2002": {
+      "message": "Hélio"
+   },
+   "2003": {
+      "message": "Lítio"
+   },
+   "2004": {
+      "message": "Berílio"
+   },
+   "2005": {
+      "message": "Boro"
+   },
+   "2006": {
+      "message": "Carbono"
+   },
+   "2007": {
+      "message": "Azoto"
+   },
+   "2008": {
+      "message": "Oxigénio"
+   },
+   "2009": {
+      "message": "Flúor"
+   },
+   "2010": {
+      "message": "Néon"
+   },
+   "2011": {
+      "message": "Sódio"
+   },
+   "2012": {
+      "message": "Magnésio"
+   },
+   "2013": {
+      "message": "Alumínio"
+   },
+   "2014": {
+      "message": "Silício"
+   },
+   "2015": {
+      "message": "Fósforo"
+   },
+   "2016": {
+      "message": "Enxofre"
+   },
+   "2017": {
+      "message": "Cloro"
+   },
+   "2018": {
+      "message": "Argônio"
+   },
+   "2019": {
+      "message": "Potássio"
+   },
+   "2020": {
+      "message": "Cálcio"
+   },
+   "2021": {
+      "message": "Escândio"
+   },
+   "2022": {
+      "message": "Titânio"
+   },
+   "2023": {
+      "message": "Vanádio"
+   },
+   "2024": {
+      "message": "Crômio"
+   },
+   "2025": {
+      "message": "Manganês"
+   },
+   "2026": {
+      "message": "Ferro"
+   },
+   "2027": {
+      "message": "Cobalto"
+   },
+   "2028": {
+      "message": "Níquel"
+   },
+   "2029": {
+      "message": "Cobre"
+   },
+   "2030": {
+      "message": "Zinco"
+   },
+   "2031": {
+      "message": "Gálio"
+   },
+   "2032": {
+      "message": "Germânio"
+   },
+   "2033": {
+      "message": "Arsênio"
+   },
+   "2034": {
+      "message": "Selênio"
+   },
+   "2035": {
+      "message": "Bromo"
+   },
+   "2036": {
+      "message": "Criptônio"
+   },
+   "2037": {
+      "message": "Rubídio"
+   },
+   "2038": {
+      "message": "Estrôncio"
+   },
+   "2039": {
+      "message": "Ítrio"
+   },
+   "2040": {
+      "message": "Zircônio"
+   },
+   "2041": {
+      "message": "Nióbio"
+   },
+   "2042": {
+      "message": "Molibdênio"
+   },
+   "2043": {
+      "message": "Tecnécio"
+   },
+   "2044": {
+      "message": "Rutênio"
+   },
+   "2045": {
+      "message": "Ródio"
+   },
+   "2046": {
+      "message": "Paládio"
+   },
+   "2047": {
+      "message": "Prata"
+   },
+   "2048": {
+      "message": "Cádmio"
+   },
+   "2049": {
+      "message": "Índio"
+   },
+   "2050": {
+      "message": "Estanho"
+   },
+   "2051": {
+      "message": "Antimônio"
+   },
+   "2052": {
+      "message": "Telúrio"
+   },
+   "2053": {
+      "message": "Iodo"
+   },
+   "2054": {
+      "message": "Xenônio"
+   },
+   "2055": {
+      "message": "Césio"
+   },
+   "2056": {
+      "message": "Bário"
+   },
+   "2057": {
+      "message": "Lantânio"
+   },
+   "2058": {
+      "message": "Cério"
+   },
+   "2059": {
+      "message": "Praseodímio"
+   },
+   "2060": {
+      "message": "Neodímio"
+   },
+   "2061": {
+      "message": "Promécio"
+   },
+   "2062": {
+      "message": "Samário"
+   },
+   "2063": {
+      "message": "Európio"
+   },
+   "2064": {
+      "message": "Gadolínio"
+   },
+   "2065": {
+      "message": "Térbio"
+   },
+   "2066": {
+      "message": "Disprósio"
+   },
+   "2067": {
+      "message": "Hólmio"
+   },
+   "2068": {
+      "message": "Érbio"
+   },
+   "2069": {
+      "message": "Túlio"
+   },
+   "2070": {
+      "message": "Itérbio"
+   },
+   "2071": {
+      "message": "Lutécio"
+   },
+   "2072": {
+      "message": "Háfnio"
+   },
+   "2073": {
+      "message": "Tântalo"
+   },
+   "2074": {
+      "message": "Tungstênio"
+   },
+   "2075": {
+      "message": "Rênio"
+   },
+   "2076": {
+      "message": "Ósmio"
+   },
+   "2077": {
+      "message": "Irídio"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Ouro"
+   },
+   "2080": {
+      "message": "Mercúrio"
+   },
+   "2081": {
+      "message": "Tálio"
+   },
+   "2082": {
+      "message": "Chumbo"
+   },
+   "2083": {
+      "message": "Bismuto"
+   },
+   "2084": {
+      "message": "Polônio"
+   },
+   "2085": {
+      "message": "Ástato"
+   },
+   "2086": {
+      "message": "Rádon"
+   },
+   "2087": {
+      "message": "Frâncio"
+   },
+   "2088": {
+      "message": "Rádio"
+   },
+   "2089": {
+      "message": "Actínio"
+   },
+   "2090": {
+      "message": "Tório"
+   },
+   "2091": {
+      "message": "Protactínio"
+   },
+   "2092": {
+      "message": "Urânio"
+   },
+   "2093": {
+      "message": "Neptúnio"
+   },
+   "2094": {
+      "message": "Plutónio"
+   },
+   "2095": {
+      "message": "Amerício"
+   },
+   "2096": {
+      "message": "Cúrio"
+   },
+   "2097": {
+      "message": "Berquélio"
+   },
+   "2098": {
+      "message": "Califórnio"
+   },
+   "2099": {
+      "message": "Einstênio"
+   },
+   "2100": {
+      "message": "Férmio"
+   },
+   "2101": {
+      "message": "Mendelévio"
+   },
+   "2102": {
+      "message": "Nobélio"
+   },
+   "2103": {
+      "message": "Laurêncio"
+   },
+   "2104": {
+      "message": "Rutherfórdio"
+   },
+   "2105": {
+      "message": "Dúbnio"
+   },
+   "2106": {
+      "message": "Seabórgio"
+   },
+   "2107": {
+      "message": "Bóhrio"
+   },
+   "2108": {
+      "message": "Hássio"
+   },
+   "2109": {
+      "message": "Meitnério"
+   },
+   "2110": {
+      "message": "Darmstácio"
+   },
+   "2111": {
+      "message": "Roentgênio"
+   },
+   "2112": {
+      "message": "Copernício"
+   },
+   "2114": {
+      "message": "Fleróvio"
+   },
+   "2116": {
+      "message": "Livermório"
+   },
+   "2543": {
+      "message": "Imprimir"
+   },
+   "6383": {
+      "message": "Instalar aplicativo"
+   },
+   "6433": {
+      "message": "Voltar para a tabela"
+   },
+   "6506": {
+      "message": "metais alcalinos"
+   },
+   "6507": {
+      "message": "metais alcalinos terrosos"
+   },
+   "6508": {
+      "message": "metáis pós-transição"
+   },
+   "6509": {
+      "message": "metais de transição"
+   },
+   "6510": {
+      "message": "lantanídeos"
+   },
+   "6511": {
+      "message": "actinídeos"
+   },
+   "6512": {
+      "message": "metaloides"
+   },
+   "6513": {
+      "message": "não-metais"
+   },
+   "6514": {
+      "message": "halogênios"
+   },
+   "6515": {
+      "message": "gases nobres"
+   },
+   "6516": {
+      "message": "Categoria"
+   },
+   "6517": {
+      "message": "Ponto de fusão"
+   },
+   "6518": {
+      "message": "Ponto de ebulição"
+   },
+   "6519": {
+      "message": "Eletronegatividade"
+   },
+   "6520": {
+      "message": "desconhecido"
+   },
+   "6521": {
+      "message": "nenhum"
+   },
+   "6522": {
+      "message": "branco"
+   },
+   "6523": {
+      "message": "estimado"
+   },
+   "6524": {
+      "message": "predito"
+   },
+   "6525": {
+      "message": "calcogênios"
+   },
+   "6526": {
+      "message": "grupo do nitrogênio"
+   },
+   "6527": {
+      "message": "H e metais alcalinos"
+   },
+   "6528": {
+      "message": "Propriedades adicionais"
+   },
+   "6529": {
+      "message": "Eletróns por camada"
+   },
+   "6530": {
+      "message": "Bloco"
+   },
+   "6531": {
+      "message": "Números CAS"
+   },
+   "6532": {
+      "message": "Grupo __group_number__"
+   },
+   "6533": {
+      "message": "período __period_number__"
+   },
+   "6536": {
+      "message": "Configuração de elétrons"
+   },
+   "6540": {
+      "message": "Estado de oxidação"
+   },
+   "6541": {
+      "message": "extrapolado"
+   },
+   "6542": {
+      "message": "gás"
+   },
+   "6543": {
+      "message": "sólido"
+   },
+   "6544": {
+      "message": "líquido"
+   },
+   "6545": {
+      "message": "Estado no CPTP"
+   },
+   "6546": {
+      "message": "Isótopos naturais"
+   },
+   "6547": {
+      "message": "Propriedades"
+   },
+   "6548": {
+      "message": "Isótopos"
+   },
+   "6549": {
+      "message": "História"
+   },
+   "6550": {
+      "message": "civilizações antigas"
+   },
+   "6551": {
+      "message": "História de descobrimento"
+   },
+   "6552": {
+      "message": "Descoberto por"
+   },
+   "6553": {
+      "message": "Ano de descobrimento"
+   },
+   "6722": {
+      "message": "O Google irá encerrar o suporte para Apps do Chrome em breve. Para continuar usando, mude para o aplicativo __product_name__ na web."
+   },
+   "6723": {
+      "message": "Mude para o aplicativo __product_name__ na web."
+   },
+   "6724": {
+      "message": "Obrigado por usar __product_name__ pelo Chrome app"
+   },
+   "6725": {
+      "message": "Este aplicativo foi descontinuado em Junho de 2021, pois o Google acabou com o suporte a Apps no Chrome. Não se preocupe, o __product_name__ web terá todas as funcionalidades e mais. Para continuar usando __product_name__, instale como um aplicativo de navegador no __web_address__."
+   },
+   "6726": {
+      "message": "Este aplicativo foi descontinuado em Junho de 2021, pois o Google acabou com o suporte a Apps no Chrome. Não se preocupe, o __product_name__ web terá todas as funcionalidades e mais. Para continuar usando __product_name__, instale como um aplicativo de navegador no __web_address__."
+   },
+   "6727": {
+      "message": "Agora não"
+   },
+   "6728": {
+      "message": "Ir para __web_address__"
+   },
+   "6968": {
+      "message": "Atualize agora"
+   },
+   "6969": {
+      "message": "Desinstalar Aplicativo Chrome"
+   },
+   "6970": {
+      "message": "Atualize para o aplicativo da Web __product_name__"
+   },
+   "6971": {
+      "message": "Este aplicativo será descontinuado assim que o Google encerrar o suporte para aplicativos do Chrome. Não se preocupe, o aplicativo da web __product_name__ tem todos os mesmos recursos e muito mais. Para continuar usando __product_name__, atualize o Chrome App para o Progressive Web App."
+   },
+   "7165": {
+      "message": "Branco"
+   }
+}

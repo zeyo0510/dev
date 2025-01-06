@@ -1,0 +1,311 @@
+{
+   "0838": {
+      "message": "Teave"
+   },
+   "1360": {
+      "message": "Jaga"
+   },
+   "1620": {
+      "message": "Loobu"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Vesinik"
+   },
+   "2002": {
+      "message": "Heelium"
+   },
+   "2003": {
+      "message": "Liitium"
+   },
+   "2004": {
+      "message": "Berüllium"
+   },
+   "2005": {
+      "message": "Boor"
+   },
+   "2006": {
+      "message": "Süsinik"
+   },
+   "2007": {
+      "message": "Lämmastik"
+   },
+   "2008": {
+      "message": "Hapnik"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2010": {
+      "message": "Neoon"
+   },
+   "2011": {
+      "message": "Naatrium"
+   },
+   "2012": {
+      "message": "Magneesium"
+   },
+   "2013": {
+      "message": "Alumiinium"
+   },
+   "2014": {
+      "message": "Räni"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Väävel"
+   },
+   "2017": {
+      "message": "Kloor"
+   },
+   "2018": {
+      "message": "Argoon"
+   },
+   "2019": {
+      "message": "Kaalium"
+   },
+   "2020": {
+      "message": "Kaltsium"
+   },
+   "2021": {
+      "message": "Skandium"
+   },
+   "2022": {
+      "message": "Titaan"
+   },
+   "2023": {
+      "message": "Vanaadium"
+   },
+   "2024": {
+      "message": "Kroom"
+   },
+   "2025": {
+      "message": "Mangaan"
+   },
+   "2026": {
+      "message": "Raud"
+   },
+   "2027": {
+      "message": "Koobalt"
+   },
+   "2028": {
+      "message": "Nikkel"
+   },
+   "2029": {
+      "message": "Vask"
+   },
+   "2030": {
+      "message": "Tsink"
+   },
+   "2032": {
+      "message": "Germaanium"
+   },
+   "2033": {
+      "message": "Arseen"
+   },
+   "2034": {
+      "message": "Seleen"
+   },
+   "2035": {
+      "message": "Broom"
+   },
+   "2036": {
+      "message": "Krüptoon"
+   },
+   "2037": {
+      "message": "Rubiidium"
+   },
+   "2038": {
+      "message": "Strontsium"
+   },
+   "2039": {
+      "message": "Ütrium"
+   },
+   "2040": {
+      "message": "Tsirkoonium"
+   },
+   "2041": {
+      "message": "Nioobium"
+   },
+   "2042": {
+      "message": "Molübdeen"
+   },
+   "2043": {
+      "message": "Tehneetsium"
+   },
+   "2044": {
+      "message": "Ruteenium"
+   },
+   "2045": {
+      "message": "Roodium"
+   },
+   "2046": {
+      "message": "Pallaadium"
+   },
+   "2047": {
+      "message": "Hõbe"
+   },
+   "2048": {
+      "message": "Kaadmium"
+   },
+   "2050": {
+      "message": "Tina"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Telluur"
+   },
+   "2053": {
+      "message": "Jood"
+   },
+   "2054": {
+      "message": "Ksenoon"
+   },
+   "2055": {
+      "message": "Tseesium"
+   },
+   "2056": {
+      "message": "Baarium"
+   },
+   "2057": {
+      "message": "Lantaan"
+   },
+   "2058": {
+      "message": "Tseerium"
+   },
+   "2059": {
+      "message": "Praseodüüm"
+   },
+   "2060": {
+      "message": "Neodüüm"
+   },
+   "2061": {
+      "message": "Promeetium"
+   },
+   "2062": {
+      "message": "Samaarium"
+   },
+   "2063": {
+      "message": "Euroopium"
+   },
+   "2064": {
+      "message": "Gadoliinium"
+   },
+   "2066": {
+      "message": "Düsproosium"
+   },
+   "2069": {
+      "message": "Tuulium"
+   },
+   "2070": {
+      "message": "Üterbium"
+   },
+   "2071": {
+      "message": "Luteetsium"
+   },
+   "2073": {
+      "message": "Tantaal"
+   },
+   "2074": {
+      "message": "Volfram"
+   },
+   "2075": {
+      "message": "Reenium"
+   },
+   "2077": {
+      "message": "Iriidium"
+   },
+   "2078": {
+      "message": "Plaatina"
+   },
+   "2079": {
+      "message": "Kuld"
+   },
+   "2081": {
+      "message": "Tallium"
+   },
+   "2082": {
+      "message": "Plii"
+   },
+   "2083": {
+      "message": "Vismut"
+   },
+   "2084": {
+      "message": "Poloonium"
+   },
+   "2085": {
+      "message": "Astaat"
+   },
+   "2086": {
+      "message": "Radoon"
+   },
+   "2087": {
+      "message": "Frantsium"
+   },
+   "2088": {
+      "message": "Raadium"
+   },
+   "2089": {
+      "message": "Aktiinium"
+   },
+   "2090": {
+      "message": "Toorium"
+   },
+   "2091": {
+      "message": "Protaktiinium"
+   },
+   "2092": {
+      "message": "Uraan"
+   },
+   "2093": {
+      "message": "Neptuunium"
+   },
+   "2094": {
+      "message": "Plutoonium"
+   },
+   "2095": {
+      "message": "Ameriitsium"
+   },
+   "2096": {
+      "message": "Kuurium"
+   },
+   "2097": {
+      "message": "Berkeelium"
+   },
+   "2098": {
+      "message": "Kalifornium"
+   },
+   "2101": {
+      "message": "Mendeleevium"
+   },
+   "2102": {
+      "message": "Nobeelium"
+   },
+   "2103": {
+      "message": "Lavrentsium"
+   },
+   "2109": {
+      "message": "Meitneerium"
+   },
+   "2111": {
+      "message": "Röntgeenium"
+   },
+   "2112": {
+      "message": "Koperniitsium"
+   },
+   "2114": {
+      "message": "Fleroovium"
+   },
+   "2116": {
+      "message": "Livermoorium"
+   },
+   "2543": {
+      "message": "Printimine"
+   }
+}

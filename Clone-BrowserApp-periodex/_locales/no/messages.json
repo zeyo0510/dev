@@ -1,0 +1,371 @@
+{
+   "0047": {
+      "message": "Mer"
+   },
+   "0214": {
+      "message": "E-post"
+   },
+   "0354": {
+      "message": "Donér"
+   },
+   "0357": {
+      "message": "Se personvernreglene våre"
+   },
+   "0838": {
+      "message": "Info"
+   },
+   "1360": {
+      "message": "Del"
+   },
+   "1605": {
+      "message": "Hjelp med oversettelser"
+   },
+   "1620": {
+      "message": "Ignorér"
+   },
+   "1977": {
+      "message": "Vi bruker informasjonskapsler for å levere annonser og analysere trafikken vår. Vi deler også informasjon om din bruk av nettstedet vårt med Google AdSense og Google Analytics. Google kan kombinere den med annen informasjon du har gitt dem eller som de har samlet inn fra din bruk av deres tjenester."
+   },
+   "1978": {
+      "message": "Forstått"
+   },
+   "1980": {
+      "message": "Start"
+   },
+   "1983": {
+      "message": "Ta kontakt"
+   },
+   "1984": {
+      "message": "Generelle egenskaper"
+   },
+   "1985": {
+      "message": "Navnets opprinnelse"
+   },
+   "1987": {
+      "message": "Tetthet"
+   },
+   "1988": {
+      "message": "Gruppe"
+   },
+   "1992": {
+      "message": "Periode"
+   },
+   "1993": {
+      "message": "Standard atomvekt"
+   },
+   "2000": {
+      "message": "Elegant periodisk tabell med elementer"
+   },
+   "2001": {
+      "message": "Brint"
+   },
+   "2003": {
+      "message": "Litium"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Karbon"
+   },
+   "2007": {
+      "message": "Kvælstof"
+   },
+   "2008": {
+      "message": "Oksygen"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Natrium"
+   },
+   "2014": {
+      "message": "Silisium"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Svovel"
+   },
+   "2017": {
+      "message": "Klor"
+   },
+   "2019": {
+      "message": "Kalium"
+   },
+   "2020": {
+      "message": "Kalsium"
+   },
+   "2022": {
+      "message": "Titan"
+   },
+   "2024": {
+      "message": "Krom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Jern"
+   },
+   "2027": {
+      "message": "Kobolt"
+   },
+   "2028": {
+      "message": "Nikkel"
+   },
+   "2029": {
+      "message": "Kobber"
+   },
+   "2030": {
+      "message": "Sink"
+   },
+   "2033": {
+      "message": "Arsen"
+   },
+   "2034": {
+      "message": "Selen"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2040": {
+      "message": "Zirkonium"
+   },
+   "2041": {
+      "message": "Niob"
+   },
+   "2042": {
+      "message": "Molybden"
+   },
+   "2047": {
+      "message": "Sølv"
+   },
+   "2048": {
+      "message": "Kadmium"
+   },
+   "2050": {
+      "message": "Tinn"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Tellur"
+   },
+   "2053": {
+      "message": "Jod"
+   },
+   "2055": {
+      "message": "Cesium"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2059": {
+      "message": "Praseodym"
+   },
+   "2060": {
+      "message": "Neodym"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Wolfram"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Gull"
+   },
+   "2080": {
+      "message": "Kvikksølv"
+   },
+   "2082": {
+      "message": "Bly"
+   },
+   "2083": {
+      "message": "Vismut"
+   },
+   "2085": {
+      "message": "Astat"
+   },
+   "2092": {
+      "message": "Uran"
+   },
+   "2111": {
+      "message": "Røntgenium"
+   },
+   "2543": {
+      "message": "Skriv ut"
+   },
+   "6383": {
+      "message": "Installer app"
+   },
+   "6433": {
+      "message": "Tilbake til periodetabellen"
+   },
+   "6506": {
+      "message": "alkalimetaller"
+   },
+   "6507": {
+      "message": "jordalkalimetaller"
+   },
+   "6508": {
+      "message": "etterovergangsmetaller"
+   },
+   "6509": {
+      "message": "overgangsmetaller"
+   },
+   "6512": {
+      "message": "metalloider"
+   },
+   "6513": {
+      "message": "ikke-metaller"
+   },
+   "6514": {
+      "message": "halogener"
+   },
+   "6515": {
+      "message": "edle gasser"
+   },
+   "6516": {
+      "message": "Kategori"
+   },
+   "6517": {
+      "message": "Smeltepunkt"
+   },
+   "6518": {
+      "message": "Kokepunkt"
+   },
+   "6519": {
+      "message": "Elektronegativitet"
+   },
+   "6520": {
+      "message": "ukjent"
+   },
+   "6521": {
+      "message": "ingen"
+   },
+   "6522": {
+      "message": "hvit"
+   },
+   "6523": {
+      "message": "estimert"
+   },
+   "6524": {
+      "message": "spådd"
+   },
+   "6527": {
+      "message": "H og alkalimetaller"
+   },
+   "6528": {
+      "message": "Ytterligere egenskaper"
+   },
+   "6529": {
+      "message": "Elektroner per skall"
+   },
+   "6530": {
+      "message": "Blokk"
+   },
+   "6531": {
+      "message": "CAS-nummer"
+   },
+   "6532": {
+      "message": "gruppe __group_number__"
+   },
+   "6533": {
+      "message": "periode __period_number__"
+   },
+   "6534": {
+      "message": "__block_symbol__-blokk"
+   },
+   "6536": {
+      "message": "Elektronkonfigurasjon"
+   },
+   "6540": {
+      "message": "Oksidasjonstall"
+   },
+   "6541": {
+      "message": "ekstrapolert"
+   },
+   "6542": {
+      "message": "gass"
+   },
+   "6543": {
+      "message": "fast stoff"
+   },
+   "6544": {
+      "message": "væske"
+   },
+   "6545": {
+      "message": "Fase ved STP"
+   },
+   "6546": {
+      "message": "Naturlige isotoper"
+   },
+   "6547": {
+      "message": "Egenskaper"
+   },
+   "6548": {
+      "message": "Isotoper"
+   },
+   "6549": {
+      "message": "Historie"
+   },
+   "6550": {
+      "message": "gamle sivilisasjoner"
+   },
+   "6551": {
+      "message": "Oppdagelseshistorie"
+   },
+   "6552": {
+      "message": "Oppdaget av"
+   },
+   "6553": {
+      "message": "Oppdagelsesår"
+   },
+   "6722": {
+      "message": "Google slutter snart å støtte Chrome-apper. For å sikre fortsatt bruk, bytt til nettappen __product_name__ nå."
+   },
+   "6723": {
+      "message": "Bytt til nettappen __product_name__"
+   },
+   "6724": {
+      "message": "Takk for at du bruker Chrome-appen __product_name__"
+   },
+   "6725": {
+      "message": "Denne appen vil bli avviklet juni 2021 siden Google avslutter støtten for Chrome-apper. Ikke bekymre deg, nettappen __product_name__ har alle de samme funksjonene og mer. For å fortsette å bruke __product_name__, installer den som en nettapp på __web_address__."
+   },
+   "6726": {
+      "message": "Denne appen ble avviklet juni 2021 siden Google avsluttet støtten for Chrome-apper. Ikke bekymre deg, nettappen __product_name__ har alle de samme funksjonene og mer. For å fortsette å bruke __product_name__, installer den som en nettapp på __web_address__."
+   },
+   "6727": {
+      "message": "Ikke nå"
+   },
+   "6728": {
+      "message": "Gå til __web_address__"
+   },
+   "6965": {
+      "message": "Hjelp med å lokalisere"
+   },
+   "6968": {
+      "message": "Oppgrader nå"
+   },
+   "6969": {
+      "message": "Avinstaller Chrome-appen"
+   },
+   "6970": {
+      "message": "Oppgrader til nettappen __product_name__"
+   },
+   "6971": {
+      "message": "Denne appen avvikles snart når Google avvikler støtten for Chrome-apper. Ikke bekymre deg, nettappen __product_name__ har alle de samme funksjonene og mer. For å fortsette å bruke __product_name__, oppgrader Chrome-appen til PWA-appen."
+   },
+   "7165": {
+      "message": "Hvit"
+   }
+}

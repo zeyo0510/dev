@@ -1,0 +1,356 @@
+{
+   "0838": {
+      "message": "Par"
+   },
+   "1360": {
+      "message": "Kopīgot"
+   },
+   "1620": {
+      "message": "Noraidīt"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Ūdeņradis"
+   },
+   "2002": {
+      "message": "Hēlijs"
+   },
+   "2003": {
+      "message": "Litijs"
+   },
+   "2004": {
+      "message": "Berilijs"
+   },
+   "2005": {
+      "message": "Bors"
+   },
+   "2006": {
+      "message": "Ogleklis"
+   },
+   "2007": {
+      "message": "Slāpeklis"
+   },
+   "2008": {
+      "message": "Skābeklis"
+   },
+   "2009": {
+      "message": "Fluors"
+   },
+   "2010": {
+      "message": "Neons"
+   },
+   "2011": {
+      "message": "Nātrijs"
+   },
+   "2012": {
+      "message": "Magnijs"
+   },
+   "2013": {
+      "message": "Alumīnijs"
+   },
+   "2014": {
+      "message": "Silīcijs"
+   },
+   "2015": {
+      "message": "Fosfors"
+   },
+   "2016": {
+      "message": "Sērs"
+   },
+   "2017": {
+      "message": "Hlors"
+   },
+   "2018": {
+      "message": "Argons"
+   },
+   "2019": {
+      "message": "Kālijs"
+   },
+   "2020": {
+      "message": "Kalcijs"
+   },
+   "2021": {
+      "message": "Skandijs"
+   },
+   "2022": {
+      "message": "Titāns"
+   },
+   "2023": {
+      "message": "Vanādijs"
+   },
+   "2024": {
+      "message": "Hroms"
+   },
+   "2025": {
+      "message": "Mangāns"
+   },
+   "2026": {
+      "message": "Dzelzs"
+   },
+   "2027": {
+      "message": "Kobalts"
+   },
+   "2028": {
+      "message": "Niķelis"
+   },
+   "2029": {
+      "message": "Varš"
+   },
+   "2030": {
+      "message": "Cinks"
+   },
+   "2031": {
+      "message": "Gallijs"
+   },
+   "2032": {
+      "message": "Germānijs"
+   },
+   "2033": {
+      "message": "Arsēns"
+   },
+   "2034": {
+      "message": "Selēns"
+   },
+   "2035": {
+      "message": "Broms"
+   },
+   "2036": {
+      "message": "Kriptons"
+   },
+   "2037": {
+      "message": "Rubīdijs"
+   },
+   "2038": {
+      "message": "Stroncijs"
+   },
+   "2039": {
+      "message": "Itrijs"
+   },
+   "2040": {
+      "message": "Cirkonijs"
+   },
+   "2041": {
+      "message": "Niobijs"
+   },
+   "2042": {
+      "message": "Molibdēns"
+   },
+   "2043": {
+      "message": "Tehnēcijs"
+   },
+   "2044": {
+      "message": "Rutēnijs"
+   },
+   "2045": {
+      "message": "Rodijs"
+   },
+   "2046": {
+      "message": "Pallādijs"
+   },
+   "2047": {
+      "message": "Sudrabs"
+   },
+   "2048": {
+      "message": "Kadmijs"
+   },
+   "2049": {
+      "message": "Indijs"
+   },
+   "2050": {
+      "message": "Alva"
+   },
+   "2051": {
+      "message": "Antimons"
+   },
+   "2052": {
+      "message": "Telūrs"
+   },
+   "2053": {
+      "message": "Jods"
+   },
+   "2054": {
+      "message": "Ksenons"
+   },
+   "2055": {
+      "message": "Cēzijs"
+   },
+   "2056": {
+      "message": "Bārijs"
+   },
+   "2057": {
+      "message": "Lantāns"
+   },
+   "2058": {
+      "message": "Cērijs"
+   },
+   "2059": {
+      "message": "Prazeodīms"
+   },
+   "2060": {
+      "message": "Neodīms"
+   },
+   "2061": {
+      "message": "Prometijs"
+   },
+   "2062": {
+      "message": "Samārijs"
+   },
+   "2063": {
+      "message": "Eiropijs"
+   },
+   "2064": {
+      "message": "Gadolīnijs"
+   },
+   "2065": {
+      "message": "Terbijs"
+   },
+   "2066": {
+      "message": "Disprozijs"
+   },
+   "2067": {
+      "message": "Holmijs"
+   },
+   "2068": {
+      "message": "Erbijs"
+   },
+   "2069": {
+      "message": "Tūlijs"
+   },
+   "2070": {
+      "message": "Iterbijs"
+   },
+   "2071": {
+      "message": "Lutēcijs"
+   },
+   "2072": {
+      "message": "Hafnijs"
+   },
+   "2073": {
+      "message": "Tantals"
+   },
+   "2074": {
+      "message": "Volframs"
+   },
+   "2075": {
+      "message": "Rēnijs"
+   },
+   "2076": {
+      "message": "Osmijs"
+   },
+   "2077": {
+      "message": "Irīdijs"
+   },
+   "2078": {
+      "message": "Platīns"
+   },
+   "2079": {
+      "message": "Zelts"
+   },
+   "2081": {
+      "message": "Tallijs"
+   },
+   "2082": {
+      "message": "Svins"
+   },
+   "2083": {
+      "message": "Bismuts"
+   },
+   "2084": {
+      "message": "Polonijs"
+   },
+   "2085": {
+      "message": "Astats"
+   },
+   "2086": {
+      "message": "Radons"
+   },
+   "2087": {
+      "message": "Francijs"
+   },
+   "2088": {
+      "message": "Rādijs"
+   },
+   "2089": {
+      "message": "Aktīnijs"
+   },
+   "2090": {
+      "message": "Torijs"
+   },
+   "2091": {
+      "message": "Protaktīnijs"
+   },
+   "2092": {
+      "message": "Urāns"
+   },
+   "2093": {
+      "message": "Neptūnijs"
+   },
+   "2094": {
+      "message": "Plutonijs"
+   },
+   "2095": {
+      "message": "Amerīcijs"
+   },
+   "2096": {
+      "message": "Kirijs"
+   },
+   "2097": {
+      "message": "Berklijs"
+   },
+   "2098": {
+      "message": "Kalifornijs"
+   },
+   "2099": {
+      "message": "Einšteinijs"
+   },
+   "2100": {
+      "message": "Fermijs"
+   },
+   "2101": {
+      "message": "Mendeļejevijs"
+   },
+   "2102": {
+      "message": "Nobēlijs"
+   },
+   "2103": {
+      "message": "Lourensijs"
+   },
+   "2104": {
+      "message": "Rezerfordijs"
+   },
+   "2105": {
+      "message": "Dubnijs"
+   },
+   "2106": {
+      "message": "Sīborgijs"
+   },
+   "2107": {
+      "message": "Borijs"
+   },
+   "2108": {
+      "message": "Hasijs"
+   },
+   "2109": {
+      "message": "Meitnērijs"
+   },
+   "2110": {
+      "message": "Darmštatijs"
+   },
+   "2111": {
+      "message": "Rentgenijs"
+   },
+   "2112": {
+      "message": "Kopernikijs"
+   },
+   "2114": {
+      "message": "Flerovijs"
+   },
+   "2116": {
+      "message": "Livermorijs"
+   },
+   "2543": {
+      "message": "Drukāt"
+   }
+}

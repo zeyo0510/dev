@@ -1,0 +1,392 @@
+{
+   "0047": {
+      "message": "Més"
+   },
+   "0214": {
+      "message": "Correu electrònic"
+   },
+   "0354": {
+      "message": "Fer una donació"
+   },
+   "0357": {
+      "message": "Revisa la nostra política de privacitat"
+   },
+   "0838": {
+      "message": "Quant a"
+   },
+   "1360": {
+      "message": "Comparteix"
+   },
+   "1620": {
+      "message": "Omet"
+   },
+   "1959": {
+      "message": "Nihoni"
+   },
+   "1960": {
+      "message": "Moscovi"
+   },
+   "1961": {
+      "message": "Tennes"
+   },
+   "1962": {
+      "message": "Oganessó"
+   },
+   "1984": {
+      "message": "Propietats generals"
+   },
+   "1985": {
+      "message": "Etimologia"
+   },
+   "1987": {
+      "message": "Densitat"
+   },
+   "1988": {
+      "message": "Grup"
+   },
+   "1992": {
+      "message": "Període"
+   },
+   "1993": {
+      "message": "Pes atòmic estàndard"
+   },
+   "2000": {
+      "message": "Una elegant taula periòdica dels elements"
+   },
+   "2001": {
+      "message": "Hidrogen"
+   },
+   "2002": {
+      "message": "Heli"
+   },
+   "2003": {
+      "message": "Liti"
+   },
+   "2004": {
+      "message": "Beril·li"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Carboni"
+   },
+   "2008": {
+      "message": "Oxigen"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2010": {
+      "message": "Neó"
+   },
+   "2011": {
+      "message": "Sodi"
+   },
+   "2012": {
+      "message": "Magnesi"
+   },
+   "2013": {
+      "message": "Alumini"
+   },
+   "2014": {
+      "message": "Silici"
+   },
+   "2015": {
+      "message": "Fòsfor"
+   },
+   "2016": {
+      "message": "Sofre"
+   },
+   "2017": {
+      "message": "Clor"
+   },
+   "2018": {
+      "message": "Argó"
+   },
+   "2019": {
+      "message": "Potassi"
+   },
+   "2020": {
+      "message": "Calci"
+   },
+   "2021": {
+      "message": "Escandi"
+   },
+   "2022": {
+      "message": "Titani"
+   },
+   "2023": {
+      "message": "Vanadi"
+   },
+   "2024": {
+      "message": "Crom"
+   },
+   "2025": {
+      "message": "Manganès"
+   },
+   "2026": {
+      "message": "Ferro"
+   },
+   "2028": {
+      "message": "Níquel"
+   },
+   "2029": {
+      "message": "Coure"
+   },
+   "2031": {
+      "message": "Gal·li"
+   },
+   "2032": {
+      "message": "Germani"
+   },
+   "2033": {
+      "message": "Arsènic"
+   },
+   "2034": {
+      "message": "Seleni"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2036": {
+      "message": "Criptó"
+   },
+   "2037": {
+      "message": "Rubidi"
+   },
+   "2038": {
+      "message": "Estronci"
+   },
+   "2039": {
+      "message": "Itri"
+   },
+   "2040": {
+      "message": "Zirconi"
+   },
+   "2041": {
+      "message": "Niobi"
+   },
+   "2042": {
+      "message": "Molibdè"
+   },
+   "2043": {
+      "message": "Tecneci"
+   },
+   "2044": {
+      "message": "Ruteni"
+   },
+   "2045": {
+      "message": "Rodi"
+   },
+   "2046": {
+      "message": "Pal·ladi"
+   },
+   "2047": {
+      "message": "Plata"
+   },
+   "2048": {
+      "message": "Cadmi"
+   },
+   "2049": {
+      "message": "Indi"
+   },
+   "2050": {
+      "message": "Estany"
+   },
+   "2051": {
+      "message": "Antimoni"
+   },
+   "2052": {
+      "message": "Tel·luri"
+   },
+   "2053": {
+      "message": "Iode"
+   },
+   "2054": {
+      "message": "Xenó"
+   },
+   "2055": {
+      "message": "Cesi"
+   },
+   "2056": {
+      "message": "Bari"
+   },
+   "2057": {
+      "message": "Lantani"
+   },
+   "2058": {
+      "message": "Ceri"
+   },
+   "2059": {
+      "message": "Praseodimi"
+   },
+   "2060": {
+      "message": "Neodimi"
+   },
+   "2061": {
+      "message": "Prometi"
+   },
+   "2062": {
+      "message": "Samari"
+   },
+   "2063": {
+      "message": "Europi"
+   },
+   "2064": {
+      "message": "Gadolini"
+   },
+   "2065": {
+      "message": "Terbi"
+   },
+   "2066": {
+      "message": "Disprosi"
+   },
+   "2067": {
+      "message": "Holmi"
+   },
+   "2068": {
+      "message": "Erbi"
+   },
+   "2069": {
+      "message": "Tuli"
+   },
+   "2070": {
+      "message": "Iterbi"
+   },
+   "2071": {
+      "message": "Luteci"
+   },
+   "2072": {
+      "message": "Hafni"
+   },
+   "2073": {
+      "message": "Tàntal"
+   },
+   "2074": {
+      "message": "Tungstè"
+   },
+   "2075": {
+      "message": "Reni"
+   },
+   "2076": {
+      "message": "Osmi"
+   },
+   "2077": {
+      "message": "Iridi"
+   },
+   "2078": {
+      "message": "Platí"
+   },
+   "2079": {
+      "message": "Or"
+   },
+   "2081": {
+      "message": "Tal·li"
+   },
+   "2082": {
+      "message": "Plom"
+   },
+   "2083": {
+      "message": "Bismut"
+   },
+   "2084": {
+      "message": "Poloni"
+   },
+   "2085": {
+      "message": "Àstat"
+   },
+   "2086": {
+      "message": "Radó"
+   },
+   "2087": {
+      "message": "Franci"
+   },
+   "2088": {
+      "message": "Radi"
+   },
+   "2089": {
+      "message": "Actini"
+   },
+   "2090": {
+      "message": "Tori"
+   },
+   "2091": {
+      "message": "Protoactini"
+   },
+   "2092": {
+      "message": "Urani"
+   },
+   "2093": {
+      "message": "Neptuni"
+   },
+   "2094": {
+      "message": "Plutoni"
+   },
+   "2095": {
+      "message": "Americi"
+   },
+   "2096": {
+      "message": "Curi"
+   },
+   "2097": {
+      "message": "Berkeli"
+   },
+   "2098": {
+      "message": "Californi"
+   },
+   "2099": {
+      "message": "Einsteini"
+   },
+   "2100": {
+      "message": "Fermi"
+   },
+   "2101": {
+      "message": "Mendelevi"
+   },
+   "2102": {
+      "message": "Nobeli"
+   },
+   "2103": {
+      "message": "Laurenci"
+   },
+   "2104": {
+      "message": "Rutherfordi"
+   },
+   "2105": {
+      "message": "Dubni"
+   },
+   "2106": {
+      "message": "Seaborgi"
+   },
+   "2107": {
+      "message": "Bohri"
+   },
+   "2108": {
+      "message": "Hassi"
+   },
+   "2109": {
+      "message": "Meitneri"
+   },
+   "2110": {
+      "message": "Darmstadti"
+   },
+   "2111": {
+      "message": "Roentgeni"
+   },
+   "2112": {
+      "message": "Copernici"
+   },
+   "2114": {
+      "message": "Flerovi"
+   },
+   "2116": {
+      "message": "Livermori"
+   },
+   "2543": {
+      "message": "Impressió"
+   },
+   "7165": {
+      "message": "Blanc"
+   }
+}

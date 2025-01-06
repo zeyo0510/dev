@@ -1,0 +1,266 @@
+{
+   "2001": {
+      "message": "Hidrogen"
+   },
+   "2003": {
+      "message": "Litium"
+   },
+   "2004": {
+      "message": "Berillium"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Karbon"
+   },
+   "2007": {
+      "message": "Azot"
+   },
+   "2008": {
+      "message": "Oksigen"
+   },
+   "2009": {
+      "message": "Flüor"
+   },
+   "2011": {
+      "message": "Natrium"
+   },
+   "2012": {
+      "message": "Maqnezium"
+   },
+   "2013": {
+      "message": "Alüminium"
+   },
+   "2014": {
+      "message": "Silisium"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Kükürd"
+   },
+   "2017": {
+      "message": "Xlor"
+   },
+   "2018": {
+      "message": "Arqon"
+   },
+   "2019": {
+      "message": "Kalium"
+   },
+   "2020": {
+      "message": "Kalsium"
+   },
+   "2021": {
+      "message": "Skandium"
+   },
+   "2022": {
+      "message": "Titan"
+   },
+   "2024": {
+      "message": "Xrom"
+   },
+   "2025": {
+      "message": "Manqan"
+   },
+   "2026": {
+      "message": "Dəmir"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikel"
+   },
+   "2029": {
+      "message": "Mis"
+   },
+   "2030": {
+      "message": "Sink"
+   },
+   "2031": {
+      "message": "Qallium"
+   },
+   "2033": {
+      "message": "Arsen"
+   },
+   "2034": {
+      "message": "Selen"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2036": {
+      "message": "Kripton"
+   },
+   "2038": {
+      "message": "Stronsium"
+   },
+   "2039": {
+      "message": "İttrium"
+   },
+   "2040": {
+      "message": "Sirkonium"
+   },
+   "2042": {
+      "message": "Molibden"
+   },
+   "2043": {
+      "message": "Texnesium"
+   },
+   "2044": {
+      "message": "Rutenium"
+   },
+   "2045": {
+      "message": "Rodium"
+   },
+   "2047": {
+      "message": "Gümüş"
+   },
+   "2048": {
+      "message": "Kadmium"
+   },
+   "2049": {
+      "message": "İndium"
+   },
+   "2050": {
+      "message": "Qalay"
+   },
+   "2051": {
+      "message": "Stibium"
+   },
+   "2052": {
+      "message": "Tellur"
+   },
+   "2053": {
+      "message": "Yod"
+   },
+   "2054": {
+      "message": "Ksenon"
+   },
+   "2055": {
+      "message": "Sezium"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2058": {
+      "message": "Serium"
+   },
+   "2059": {
+      "message": "Prazeodim"
+   },
+   "2060": {
+      "message": "Neodim"
+   },
+   "2061": {
+      "message": "Prometium"
+   },
+   "2063": {
+      "message": "Evropium"
+   },
+   "2064": {
+      "message": "Qadolinium"
+   },
+   "2066": {
+      "message": "Disprozium"
+   },
+   "2069": {
+      "message": "Tulium"
+   },
+   "2070": {
+      "message": "İtterbium"
+   },
+   "2071": {
+      "message": "Lutesium"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Volfram"
+   },
+   "2075": {
+      "message": "Renium"
+   },
+   "2077": {
+      "message": "İridium"
+   },
+   "2078": {
+      "message": "Platin"
+   },
+   "2079": {
+      "message": "Qızıl"
+   },
+   "2080": {
+      "message": "Civə"
+   },
+   "2081": {
+      "message": "Tallium"
+   },
+   "2082": {
+      "message": "Qurğuşun"
+   },
+   "2083": {
+      "message": "Bismut"
+   },
+   "2085": {
+      "message": "Astat"
+   },
+   "2087": {
+      "message": "Fransium"
+   },
+   "2089": {
+      "message": "Aktinium"
+   },
+   "2090": {
+      "message": "Torium"
+   },
+   "2091": {
+      "message": "Protaktinium"
+   },
+   "2092": {
+      "message": "Uran"
+   },
+   "2095": {
+      "message": "Amersium"
+   },
+   "2096": {
+      "message": "Kürium"
+   },
+   "2097": {
+      "message": "Berklium"
+   },
+   "2098": {
+      "message": "Kalifornium"
+   },
+   "2099": {
+      "message": "Eynşteynium"
+   },
+   "2101": {
+      "message": "Mendeleyevum"
+   },
+   "2103": {
+      "message": "Lourensium"
+   },
+   "2104": {
+      "message": "Rezerfordium"
+   },
+   "2105": {
+      "message": "Dubinium"
+   },
+   "2106": {
+      "message": "Jollotum"
+   },
+   "2107": {
+      "message": "Borium"
+   },
+   "2108": {
+      "message": "Hanium"
+   },
+   "2112": {
+      "message": "Kopernicium"
+   }
+}

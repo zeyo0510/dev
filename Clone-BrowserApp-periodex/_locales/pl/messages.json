@@ -1,0 +1,575 @@
+{
+   "0047": {
+      "message": "Więcej"
+   },
+   "0354": {
+      "message": "Darowizna"
+   },
+   "0357": {
+      "message": "Zobacz naszą politykę prywatności"
+   },
+   "0838": {
+      "message": "Informacje"
+   },
+   "1360": {
+      "message": "Udostęnij"
+   },
+   "1605": {
+      "message": "Pomóż w tłumaczeniu"
+   },
+   "1620": {
+      "message": "Odrzuć"
+   },
+   "1959": {
+      "message": "Nihon"
+   },
+   "1960": {
+      "message": "Moskow"
+   },
+   "1961": {
+      "message": "Tenes"
+   },
+   "1962": {
+      "message": "Oganeson"
+   },
+   "1977": {
+      "message": "Używamy plików cookie do dostarczania spersonalizowanych reklam i analizowania naszego ruchu. Udostępniamy również informacje o tym, jak korzystasz z naszej witryny Google AdSense i Google Analytics. Google może łączyć je z innymi informacjami przekazanymi im przez Ciebie lub zebranymi podczas korzystania z ich usług."
+   },
+   "1978": {
+      "message": "Rozumiem"
+   },
+   "1980": {
+      "message": "Uruchom"
+   },
+   "1983": {
+      "message": "Kontakt"
+   },
+   "1984": {
+      "message": "Właściwości ogólne"
+   },
+   "1985": {
+      "message": "Pochodzenie nazwy"
+   },
+   "1987": {
+      "message": "Gęstość"
+   },
+   "1988": {
+      "message": "Grupa"
+   },
+   "1992": {
+      "message": "Okres"
+   },
+   "1993": {
+      "message": "Standardowa masa atomowa"
+   },
+   "2000": {
+      "message": "Elegancki układ okresowy pierwiastków"
+   },
+   "2001": {
+      "message": "Wodór"
+   },
+   "2002": {
+      "message": "Hel"
+   },
+   "2003": {
+      "message": "Lit"
+   },
+   "2004": {
+      "message": "Beryl"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Węgiel"
+   },
+   "2007": {
+      "message": "Azot"
+   },
+   "2008": {
+      "message": "Tlen"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Sód"
+   },
+   "2012": {
+      "message": "Magnez"
+   },
+   "2013": {
+      "message": "Glin"
+   },
+   "2014": {
+      "message": "Krzem"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Siarka"
+   },
+   "2017": {
+      "message": "Chlor"
+   },
+   "2019": {
+      "message": "Potas"
+   },
+   "2020": {
+      "message": "Wapń"
+   },
+   "2021": {
+      "message": "Skand"
+   },
+   "2022": {
+      "message": "Tytan"
+   },
+   "2023": {
+      "message": "Wanad"
+   },
+   "2024": {
+      "message": "Chrom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Żelazo"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikiel"
+   },
+   "2029": {
+      "message": "Miedź"
+   },
+   "2030": {
+      "message": "Cynk"
+   },
+   "2031": {
+      "message": "Gal"
+   },
+   "2032": {
+      "message": "German"
+   },
+   "2033": {
+      "message": "Arsen"
+   },
+   "2034": {
+      "message": "Selen"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2037": {
+      "message": "Rubid"
+   },
+   "2038": {
+      "message": "Stront"
+   },
+   "2039": {
+      "message": "Itr"
+   },
+   "2040": {
+      "message": "Cyrkon"
+   },
+   "2041": {
+      "message": "Niob"
+   },
+   "2042": {
+      "message": "Molibden"
+   },
+   "2043": {
+      "message": "Technet"
+   },
+   "2044": {
+      "message": "Ruten"
+   },
+   "2045": {
+      "message": "Rod"
+   },
+   "2046": {
+      "message": "Pallad"
+   },
+   "2047": {
+      "message": "Srebro"
+   },
+   "2048": {
+      "message": "Kadm"
+   },
+   "2049": {
+      "message": "Ind"
+   },
+   "2050": {
+      "message": "Cynk"
+   },
+   "2051": {
+      "message": "Antymon"
+   },
+   "2052": {
+      "message": "Tellur"
+   },
+   "2053": {
+      "message": "Jod"
+   },
+   "2054": {
+      "message": "Ksenon"
+   },
+   "2055": {
+      "message": "Cez"
+   },
+   "2056": {
+      "message": "Bar"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2058": {
+      "message": "Cer"
+   },
+   "2059": {
+      "message": "Prazeodym"
+   },
+   "2060": {
+      "message": "Neodym"
+   },
+   "2061": {
+      "message": "Promet"
+   },
+   "2062": {
+      "message": "Samar"
+   },
+   "2063": {
+      "message": "Europ"
+   },
+   "2064": {
+      "message": "Gadolin"
+   },
+   "2065": {
+      "message": "Terb"
+   },
+   "2066": {
+      "message": "Dysproz"
+   },
+   "2067": {
+      "message": "Holm"
+   },
+   "2068": {
+      "message": "Erb"
+   },
+   "2069": {
+      "message": "Tul"
+   },
+   "2070": {
+      "message": "Iterb"
+   },
+   "2071": {
+      "message": "Lutet"
+   },
+   "2072": {
+      "message": "Hafn"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Wolfram"
+   },
+   "2075": {
+      "message": "Ren"
+   },
+   "2076": {
+      "message": "Osm"
+   },
+   "2077": {
+      "message": "Iryd"
+   },
+   "2078": {
+      "message": "Platyna"
+   },
+   "2079": {
+      "message": "Złoto"
+   },
+   "2080": {
+      "message": "Rtęć"
+   },
+   "2081": {
+      "message": "Tal"
+   },
+   "2082": {
+      "message": "Ołów"
+   },
+   "2083": {
+      "message": "Bizmut"
+   },
+   "2084": {
+      "message": "Polon"
+   },
+   "2085": {
+      "message": "Astat"
+   },
+   "2087": {
+      "message": "Frans"
+   },
+   "2088": {
+      "message": "Radon"
+   },
+   "2089": {
+      "message": "Aktyn"
+   },
+   "2090": {
+      "message": "Tor"
+   },
+   "2091": {
+      "message": "Protaktyn"
+   },
+   "2092": {
+      "message": "Uran"
+   },
+   "2093": {
+      "message": "Neptun"
+   },
+   "2094": {
+      "message": "Pluton"
+   },
+   "2095": {
+      "message": "Ameryk"
+   },
+   "2096": {
+      "message": "Kiur"
+   },
+   "2097": {
+      "message": "Berkel"
+   },
+   "2098": {
+      "message": "Kaliforn"
+   },
+   "2099": {
+      "message": "Einstein"
+   },
+   "2100": {
+      "message": "Ferm"
+   },
+   "2101": {
+      "message": "Mendelew"
+   },
+   "2102": {
+      "message": "Nobel"
+   },
+   "2103": {
+      "message": "Lorens"
+   },
+   "2104": {
+      "message": "Rutheford"
+   },
+   "2105": {
+      "message": "Dubn"
+   },
+   "2106": {
+      "message": "Seaborg"
+   },
+   "2107": {
+      "message": "Bohr"
+   },
+   "2108": {
+      "message": "Has"
+   },
+   "2109": {
+      "message": "Maitner"
+   },
+   "2110": {
+      "message": "Darmsztadt"
+   },
+   "2111": {
+      "message": "Roentgen"
+   },
+   "2112": {
+      "message": "Kopernik"
+   },
+   "2114": {
+      "message": "Flerow"
+   },
+   "2116": {
+      "message": "Liwermor"
+   },
+   "2543": {
+      "message": "Drukuj"
+   },
+   "6383": {
+      "message": "Zainstaluj aplikację"
+   },
+   "6433": {
+      "message": "Powrót do układu okresowego pierwiastków"
+   },
+   "6506": {
+      "message": "litowce"
+   },
+   "6507": {
+      "message": "berylowce"
+   },
+   "6508": {
+      "message": "metale po przejściu"
+   },
+   "6509": {
+      "message": "metale przejściowe"
+   },
+   "6510": {
+      "message": "lantanowce"
+   },
+   "6511": {
+      "message": "aktynowce"
+   },
+   "6512": {
+      "message": "półmetale"
+   },
+   "6513": {
+      "message": "Niemetale"
+   },
+   "6514": {
+      "message": "halogeny"
+   },
+   "6515": {
+      "message": "gazy szlachetne"
+   },
+   "6516": {
+      "message": "Kategoria"
+   },
+   "6517": {
+      "message": "Punkt topnienia"
+   },
+   "6518": {
+      "message": "Punkt wrzenia"
+   },
+   "6519": {
+      "message": "Elektronegatywność"
+   },
+   "6520": {
+      "message": "nieznany"
+   },
+   "6521": {
+      "message": "żaden"
+   },
+   "6522": {
+      "message": "biały"
+   },
+   "6523": {
+      "message": "oszacowany"
+   },
+   "6524": {
+      "message": "przewidywane"
+   },
+   "6525": {
+      "message": "tlenowce"
+   },
+   "6526": {
+      "message": "azotowce"
+   },
+   "6527": {
+      "message": "H i metale alkaliczne"
+   },
+   "6528": {
+      "message": "Dodatkowe właściwości"
+   },
+   "6529": {
+      "message": "Elektrony dla powłoki"
+   },
+   "6530": {
+      "message": "Blok"
+   },
+   "6531": {
+      "message": "Numer CAS"
+   },
+   "6533": {
+      "message": "okres __period_number__"
+   },
+   "6535": {
+      "message": "n/d"
+   },
+   "6536": {
+      "message": "Konfiguracja elektronu"
+   },
+   "6540": {
+      "message": "Stopnie utlenienia"
+   },
+   "6541": {
+      "message": "ekstrapolowane"
+   },
+   "6542": {
+      "message": "gaz"
+   },
+   "6543": {
+      "message": "ciało stałe"
+   },
+   "6544": {
+      "message": "ciecz"
+   },
+   "6545": {
+      "message": "Stan skupienia w warunkach standardowych"
+   },
+   "6546": {
+      "message": "Naturalne izotopy"
+   },
+   "6547": {
+      "message": "Właściwości"
+   },
+   "6548": {
+      "message": "Izotopy"
+   },
+   "6549": {
+      "message": "Historia"
+   },
+   "6550": {
+      "message": "starożytne cywilizacje"
+   },
+   "6551": {
+      "message": "Historia odkrycia"
+   },
+   "6552": {
+      "message": "Odkryty przez"
+   },
+   "6553": {
+      "message": "Rok odkrycia"
+   },
+   "6722": {
+      "message": "Google wkrótce zakończy wsparcie dla Chrome Apps. Aby zapewnić nieprzerwane działanie aplikacji zacznij korzystać z __product_name__."
+   },
+   "6723": {
+      "message": "Zmień na aplikację __product_name__."
+   },
+   "6724": {
+      "message": "Dziękujemy za korzystanie z __product_name__"
+   },
+   "6725": {
+      "message": "Wsparcie tej aplikacji zakończy się w czerwcu 2021 ponieważ Google kończy wsparcie dla wtyczek Chrome. Lecz nie martw się, aplikacja internetowa __product_name__ ma te same funkcje, a nawet więcej. Kontynuu,j używając __product_name__, zainstaluj ją jako aplikację internetową z __web_address__."
+   },
+   "6726": {
+      "message": "Wsparcie tej aplikacji zakończyło się w czerwcu 2021 ponieważ Google zakończyło wsparcie dla wtyczek Chrome. Lecz nie martw się, aplikacja internetowa __product_name__ ma te same funkcje, a nawet więcej. Kontynuuj używając __product_name__, zainstaluj ją jako aplikację internetową z __web_address__."
+   },
+   "6727": {
+      "message": "Nie teraz"
+   },
+   "6728": {
+      "message": "Przejdź na stronę __web_address__"
+   },
+   "6965": {
+      "message": "Pomóż w lokalizacji"
+   },
+   "6968": {
+      "message": "Aktualizuj teraz"
+   },
+   "6969": {
+      "message": "Odinstaluj aplikację Chrome"
+   },
+   "6970": {
+      "message": "Aktualizuj do aplikacji sieciowej __product_name__"
+   },
+   "6971": {
+      "message": "Ta aplikacja niedługo przestanie działać, ponieważ Google kończy wsparcie dla Chrome Apps. Nie ma się co martwić, aplikacja __product_name__ ma te same funkcje, a nawet jeszcze więcej. Aby dalej używać __product_name__ zaktualizuj Chrome App do Progressive Web App."
+   },
+   "7165": {
+      "message": "Biały"
+   }
+}

@@ -1,0 +1,28 @@
+{
+   "app": {
+      "background": {
+         "page": "/views/background.html",
+         "persistent": false
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_2000__",
+   "icons": {
+      "128": "/images/icon-128.png",
+      "16": "/images/icon-16.png",
+      "256": "/images/icon-256.png",
+      "32": "/images/icon-32.png",
+      "48": "/images/icon-48.png",
+      "512": "/images/icon-512.png",
+      "96": "/images/icon-96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnSThxinTKEcyPDVlFft3xD77JpGbJ0L3Jj0Q+hoBsOjAdwv3nrTBDXMkCpkmNXwxFwrzB0RYpvpoWRFypVTWRUKzjoQcVtTJL8IIcfjdfqd8VMh3G9oJ4o4kGgk1V29A3UAA9A9nJpyqYYQIKj+QR4onThKLGdc/0b3gCAv12r70rHrNE6tY5Nd50tpW8xS5aVQBzfYR3gHhtGnTIRWevZMt0+Auji22qS1zu/EqRYbxI0MI6lEYOlEMj2GBLlcEoN/ivato6/PR+v4ZlhPDVq+LYOcnPq7u2KNYTJIU2+Ut9v9VOv11LLuT0Soqg4pku7bbrJ64nzyCDUuG/DsJnwIDAQAB",
+   "manifest_version": 2,
+   "name": "Periodex (Chrome)",
+   "offline_enabled": true,
+   "permissions": [ "storage" ],
+   "replacement_web_app": "https://periodex.co/?utm_source=cpa-prompt",
+   "short_name": "Periodex",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "6.2.16"
+}

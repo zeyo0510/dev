@@ -1,0 +1,353 @@
+{
+   "0047": {
+      "message": "Pli"
+   },
+   "1959": {
+      "message": "Nihonio"
+   },
+   "1960": {
+      "message": "Moscovio"
+   },
+   "2001": {
+      "message": "Hidrogeno"
+   },
+   "2002": {
+      "message": "Helio"
+   },
+   "2003": {
+      "message": "Litio"
+   },
+   "2004": {
+      "message": "Berilio"
+   },
+   "2005": {
+      "message": "Borio"
+   },
+   "2006": {
+      "message": "Karbono"
+   },
+   "2007": {
+      "message": "Nitrogeno"
+   },
+   "2008": {
+      "message": "Oksigeno"
+   },
+   "2009": {
+      "message": "Fluoro"
+   },
+   "2010": {
+      "message": "Neono"
+   },
+   "2011": {
+      "message": "Natrio"
+   },
+   "2012": {
+      "message": "Magnezio"
+   },
+   "2013": {
+      "message": "Aluminio"
+   },
+   "2014": {
+      "message": "Silicio"
+   },
+   "2015": {
+      "message": "Fosforo"
+   },
+   "2016": {
+      "message": "Sulfuro"
+   },
+   "2017": {
+      "message": "Kloro"
+   },
+   "2018": {
+      "message": "Argono"
+   },
+   "2019": {
+      "message": "Kalio"
+   },
+   "2020": {
+      "message": "Kalcio"
+   },
+   "2021": {
+      "message": "Skandio"
+   },
+   "2022": {
+      "message": "Titano"
+   },
+   "2023": {
+      "message": "Vanadio"
+   },
+   "2024": {
+      "message": "Kromo"
+   },
+   "2025": {
+      "message": "Mangano"
+   },
+   "2026": {
+      "message": "Fero"
+   },
+   "2027": {
+      "message": "Kobalto"
+   },
+   "2028": {
+      "message": "Nikelo"
+   },
+   "2029": {
+      "message": "Kupro"
+   },
+   "2030": {
+      "message": "Zinko"
+   },
+   "2031": {
+      "message": "Galio"
+   },
+   "2032": {
+      "message": "Germanio"
+   },
+   "2033": {
+      "message": "Arseno"
+   },
+   "2034": {
+      "message": "Seleno"
+   },
+   "2035": {
+      "message": "Bromo"
+   },
+   "2036": {
+      "message": "Kriptono"
+   },
+   "2037": {
+      "message": "Rubidio"
+   },
+   "2038": {
+      "message": "Stroncio"
+   },
+   "2039": {
+      "message": "Itrio"
+   },
+   "2040": {
+      "message": "Zirkonio"
+   },
+   "2041": {
+      "message": "Niobo"
+   },
+   "2042": {
+      "message": "Molibdeno"
+   },
+   "2043": {
+      "message": "Teknecio"
+   },
+   "2044": {
+      "message": "Rutenio"
+   },
+   "2045": {
+      "message": "Rodio"
+   },
+   "2046": {
+      "message": "Paladio"
+   },
+   "2047": {
+      "message": "Arĝento"
+   },
+   "2048": {
+      "message": "Kadmio"
+   },
+   "2049": {
+      "message": "Indio"
+   },
+   "2050": {
+      "message": "Stano"
+   },
+   "2051": {
+      "message": "Antimono"
+   },
+   "2052": {
+      "message": "Teluro"
+   },
+   "2053": {
+      "message": "Jodo"
+   },
+   "2054": {
+      "message": "Ksenono"
+   },
+   "2055": {
+      "message": "Cezio"
+   },
+   "2056": {
+      "message": "Bario"
+   },
+   "2057": {
+      "message": "Lantano"
+   },
+   "2058": {
+      "message": "Cerio"
+   },
+   "2059": {
+      "message": "Prazeodimo"
+   },
+   "2060": {
+      "message": "Neodimo"
+   },
+   "2061": {
+      "message": "Prometio"
+   },
+   "2062": {
+      "message": "Samario"
+   },
+   "2063": {
+      "message": "Eŭropio"
+   },
+   "2064": {
+      "message": "Gadolinio"
+   },
+   "2065": {
+      "message": "Terbio"
+   },
+   "2066": {
+      "message": "Disprozio"
+   },
+   "2067": {
+      "message": "Holmio"
+   },
+   "2068": {
+      "message": "Erbio"
+   },
+   "2069": {
+      "message": "Tulio"
+   },
+   "2070": {
+      "message": "Iterbio"
+   },
+   "2071": {
+      "message": "Lutecio"
+   },
+   "2072": {
+      "message": "Hafnio"
+   },
+   "2073": {
+      "message": "Tantalo"
+   },
+   "2074": {
+      "message": "Volframo"
+   },
+   "2075": {
+      "message": "Renio"
+   },
+   "2076": {
+      "message": "Osmio"
+   },
+   "2077": {
+      "message": "Iridio"
+   },
+   "2078": {
+      "message": "Plateno"
+   },
+   "2079": {
+      "message": "Oro"
+   },
+   "2080": {
+      "message": "Hidrargo"
+   },
+   "2081": {
+      "message": "Talio"
+   },
+   "2082": {
+      "message": "Plumbo"
+   },
+   "2083": {
+      "message": "Bismuto"
+   },
+   "2084": {
+      "message": "Polonio"
+   },
+   "2085": {
+      "message": "Astato"
+   },
+   "2086": {
+      "message": "Radono"
+   },
+   "2087": {
+      "message": "Francio"
+   },
+   "2088": {
+      "message": "Radiumo"
+   },
+   "2089": {
+      "message": "Aktinio"
+   },
+   "2090": {
+      "message": "Torio"
+   },
+   "2091": {
+      "message": "Protaktinio"
+   },
+   "2092": {
+      "message": "Uranio"
+   },
+   "2093": {
+      "message": "Neptunio"
+   },
+   "2094": {
+      "message": "Plutonio"
+   },
+   "2095": {
+      "message": "Americio"
+   },
+   "2096": {
+      "message": "Kuriumo"
+   },
+   "2097": {
+      "message": "Berkelio"
+   },
+   "2098": {
+      "message": "Kalifornio"
+   },
+   "2099": {
+      "message": "Ejnŝtejnio"
+   },
+   "2100": {
+      "message": "Fermio"
+   },
+   "2101": {
+      "message": "Mendelevio"
+   },
+   "2102": {
+      "message": "Nobelio"
+   },
+   "2103": {
+      "message": "Laŭrencio"
+   },
+   "2104": {
+      "message": "Ruterfordio"
+   },
+   "2105": {
+      "message": "Dubnio"
+   },
+   "2106": {
+      "message": "Seborgio"
+   },
+   "2107": {
+      "message": "Borio"
+   },
+   "2108": {
+      "message": "Hasio"
+   },
+   "2109": {
+      "message": "Mejtnerio"
+   },
+   "2110": {
+      "message": "Darmŝtatio"
+   },
+   "2111": {
+      "message": "Rentgenio"
+   },
+   "2112": {
+      "message": "Kopernicio"
+   },
+   "2114": {
+      "message": "Flerovio"
+   },
+   "2116": {
+      "message": "Livermorio"
+   }
+}

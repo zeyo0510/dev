@@ -1,0 +1,272 @@
+{
+   "0047": {
+      "message": "Lisää"
+   },
+   "0214": {
+      "message": "Sähköposti"
+   },
+   "0354": {
+      "message": "Lahjoita"
+   },
+   "0838": {
+      "message": "Tietoja asetuksista"
+   },
+   "1360": {
+      "message": "Jaa"
+   },
+   "1605": {
+      "message": "Auta käännöksissä"
+   },
+   "1620": {
+      "message": "Piilota"
+   },
+   "1978": {
+      "message": "Ymmärsin"
+   },
+   "1980": {
+      "message": "Käynnistä"
+   },
+   "1983": {
+      "message": "Yhteystiedot"
+   },
+   "1988": {
+      "message": "Ryhmä"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Vety"
+   },
+   "2003": {
+      "message": "Litium"
+   },
+   "2005": {
+      "message": "Boori"
+   },
+   "2006": {
+      "message": "Hiili"
+   },
+   "2007": {
+      "message": "Typpi"
+   },
+   "2008": {
+      "message": "Happi"
+   },
+   "2009": {
+      "message": "Fluori"
+   },
+   "2011": {
+      "message": "Natrium"
+   },
+   "2013": {
+      "message": "Alumiini"
+   },
+   "2014": {
+      "message": "Pii"
+   },
+   "2015": {
+      "message": "Fosfori"
+   },
+   "2016": {
+      "message": "Rikki"
+   },
+   "2017": {
+      "message": "Kloori"
+   },
+   "2019": {
+      "message": "Kalium"
+   },
+   "2020": {
+      "message": "Kalsium"
+   },
+   "2021": {
+      "message": "Skandium"
+   },
+   "2022": {
+      "message": "Titaani"
+   },
+   "2023": {
+      "message": "Vanadiini"
+   },
+   "2024": {
+      "message": "Kromi"
+   },
+   "2025": {
+      "message": "Mangaani"
+   },
+   "2026": {
+      "message": "Rauta"
+   },
+   "2027": {
+      "message": "Koboltti"
+   },
+   "2028": {
+      "message": "Nikkeli"
+   },
+   "2029": {
+      "message": "Kupari"
+   },
+   "2030": {
+      "message": "Sinkki"
+   },
+   "2033": {
+      "message": "Arseeni"
+   },
+   "2034": {
+      "message": "Seleeni"
+   },
+   "2035": {
+      "message": "Bromi"
+   },
+   "2040": {
+      "message": "Zirkonium"
+   },
+   "2042": {
+      "message": "Molybdeeni"
+   },
+   "2043": {
+      "message": "Teknetium"
+   },
+   "2044": {
+      "message": "Rutenium"
+   },
+   "2045": {
+      "message": "Rodium"
+   },
+   "2047": {
+      "message": "Hopea"
+   },
+   "2048": {
+      "message": "Kadmium"
+   },
+   "2050": {
+      "message": "Tina"
+   },
+   "2051": {
+      "message": "Antimoni"
+   },
+   "2052": {
+      "message": "Telluuri"
+   },
+   "2053": {
+      "message": "Jodi"
+   },
+   "2054": {
+      "message": "Ksenon"
+   },
+   "2055": {
+      "message": "Cesium"
+   },
+   "2057": {
+      "message": "Lantaani"
+   },
+   "2059": {
+      "message": "Praseodyymi"
+   },
+   "2060": {
+      "message": "Neodyymi"
+   },
+   "2061": {
+      "message": "Prometium"
+   },
+   "2069": {
+      "message": "Tulium"
+   },
+   "2073": {
+      "message": "Tantaali"
+   },
+   "2074": {
+      "message": "Volframi"
+   },
+   "2075": {
+      "message": "Renium"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Kulta"
+   },
+   "2081": {
+      "message": "Tallium"
+   },
+   "2082": {
+      "message": "Lyijy"
+   },
+   "2083": {
+      "message": "Vismutti"
+   },
+   "2085": {
+      "message": "Astatiini"
+   },
+   "2087": {
+      "message": "Frankium"
+   },
+   "2089": {
+      "message": "Aktinium"
+   },
+   "2090": {
+      "message": "Torium"
+   },
+   "2091": {
+      "message": "Protaktinium"
+   },
+   "2092": {
+      "message": "Uraani"
+   },
+   "2095": {
+      "message": "Amerikium"
+   },
+   "2098": {
+      "message": "Kalifornium"
+   },
+   "2111": {
+      "message": "Röntgenium"
+   },
+   "2112": {
+      "message": "Kopernikium"
+   },
+   "2543": {
+      "message": "Tulosta"
+   },
+   "6383": {
+      "message": "Asenna sovellus"
+   },
+   "6520": {
+      "message": "tuntematon"
+   },
+   "6521": {
+      "message": "ei mikään"
+   },
+   "6522": {
+      "message": "valkoinen"
+   },
+   "6523": {
+      "message": "oletettu"
+   },
+   "6524": {
+      "message": "ennustettu"
+   },
+   "6541": {
+      "message": "ekstrapoloitu"
+   },
+   "6542": {
+      "message": "kaasu"
+   },
+   "6543": {
+      "message": "kiinteä"
+   },
+   "6544": {
+      "message": "neste"
+   },
+   "6549": {
+      "message": "Historia"
+   },
+   "6965": {
+      "message": "Auta paikallistamisessa"
+   },
+   "7165": {
+      "message": "Valkoinen"
+   }
+}

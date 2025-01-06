@@ -1,0 +1,455 @@
+{
+   "0047": {
+      "message": "Nhiều hơn"
+   },
+   "0214": {
+      "message": "Thư điện tử"
+   },
+   "0354": {
+      "message": "Quyên góp"
+   },
+   "0357": {
+      "message": "Xem chính sách quyền riêng tư của chúng tôi"
+   },
+   "0838": {
+      "message": "Thông tin"
+   },
+   "1360": {
+      "message": "Chia sẻ"
+   },
+   "1605": {
+      "message": "Trợ giúp dịch thuật"
+   },
+   "1620": {
+      "message": "Loại bỏ"
+   },
+   "1977": {
+      "message": "Chúng tôi sử dụng cookies để quảng cáo và phân tích đường truyền. Chúng tôi cũng chia sẻ thông tin sử dụng của bạn cho Google AdSense và Google Analytics. Google có thể kết hợp chúng với các thông tin khác bạn đã cung cấp hoặc đã được thu thập từ việc sử dụng của bạn."
+   },
+   "1978": {
+      "message": "Đã hiểu"
+   },
+   "1980": {
+      "message": "Chạy"
+   },
+   "1983": {
+      "message": "Liên lạc"
+   },
+   "1985": {
+      "message": "Nguồn gốc tên"
+   },
+   "1992": {
+      "message": "Chu kỳ"
+   },
+   "2000": {
+      "message": "Một Bảng tuần hoàn các nguyên tố hóa học tinh tế"
+   },
+   "2001": {
+      "message": "Hiđrô"
+   },
+   "2002": {
+      "message": "Heli"
+   },
+   "2003": {
+      "message": "Liti"
+   },
+   "2004": {
+      "message": "Berili"
+   },
+   "2005": {
+      "message": "Bo"
+   },
+   "2006": {
+      "message": "Cacbon"
+   },
+   "2007": {
+      "message": "Nitơ"
+   },
+   "2008": {
+      "message": "Ôxy"
+   },
+   "2009": {
+      "message": "Flo"
+   },
+   "2011": {
+      "message": "Natri"
+   },
+   "2012": {
+      "message": "Magiê"
+   },
+   "2013": {
+      "message": "Nhôm"
+   },
+   "2014": {
+      "message": "Silic"
+   },
+   "2015": {
+      "message": "Phốtpho"
+   },
+   "2016": {
+      "message": "Lưu_huỳnh"
+   },
+   "2017": {
+      "message": "Clo"
+   },
+   "2019": {
+      "message": "Kali"
+   },
+   "2020": {
+      "message": "Canxi"
+   },
+   "2021": {
+      "message": "Scandi"
+   },
+   "2022": {
+      "message": "Titan"
+   },
+   "2023": {
+      "message": "Vanadi"
+   },
+   "2024": {
+      "message": "Crom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Sắt"
+   },
+   "2027": {
+      "message": "Coban"
+   },
+   "2028": {
+      "message": "Niken"
+   },
+   "2029": {
+      "message": "Đồng"
+   },
+   "2030": {
+      "message": "Kẽm"
+   },
+   "2031": {
+      "message": "Gali"
+   },
+   "2032": {
+      "message": "Gecmani"
+   },
+   "2033": {
+      "message": "Asen"
+   },
+   "2034": {
+      "message": "Selen"
+   },
+   "2035": {
+      "message": "Brôm"
+   },
+   "2037": {
+      "message": "Rubiđi"
+   },
+   "2038": {
+      "message": "Stronti"
+   },
+   "2039": {
+      "message": "Yttri"
+   },
+   "2040": {
+      "message": "Zirconi"
+   },
+   "2041": {
+      "message": "Niobi"
+   },
+   "2042": {
+      "message": "Molypden"
+   },
+   "2043": {
+      "message": "Tecneti"
+   },
+   "2044": {
+      "message": "Rutheni"
+   },
+   "2045": {
+      "message": "Rhodi"
+   },
+   "2046": {
+      "message": "Paladi"
+   },
+   "2047": {
+      "message": "Bạc"
+   },
+   "2048": {
+      "message": "Cadmi"
+   },
+   "2049": {
+      "message": "Indi"
+   },
+   "2050": {
+      "message": "Thiếc"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Telua"
+   },
+   "2053": {
+      "message": "Iốt"
+   },
+   "2055": {
+      "message": "Xêzi"
+   },
+   "2056": {
+      "message": "Bari"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2058": {
+      "message": "Xeri"
+   },
+   "2059": {
+      "message": "Praseodymi"
+   },
+   "2060": {
+      "message": "Neodymi"
+   },
+   "2061": {
+      "message": "Promethi"
+   },
+   "2062": {
+      "message": "Samari"
+   },
+   "2063": {
+      "message": "Europi"
+   },
+   "2064": {
+      "message": "Gadolini"
+   },
+   "2065": {
+      "message": "Terbi"
+   },
+   "2066": {
+      "message": "Dysprosi"
+   },
+   "2067": {
+      "message": "Holmi"
+   },
+   "2068": {
+      "message": "Erbi"
+   },
+   "2069": {
+      "message": "Thuli"
+   },
+   "2070": {
+      "message": "Ytterbi"
+   },
+   "2071": {
+      "message": "Luteti"
+   },
+   "2072": {
+      "message": "Hafni"
+   },
+   "2073": {
+      "message": "Tantali"
+   },
+   "2074": {
+      "message": "Wolfram"
+   },
+   "2075": {
+      "message": "Rheni"
+   },
+   "2076": {
+      "message": "Osmi"
+   },
+   "2077": {
+      "message": "Iridi"
+   },
+   "2078": {
+      "message": "Platin"
+   },
+   "2079": {
+      "message": "Vàng"
+   },
+   "2080": {
+      "message": "Thuỷ ngân"
+   },
+   "2081": {
+      "message": "Tali"
+   },
+   "2082": {
+      "message": "Chì"
+   },
+   "2083": {
+      "message": "Bitmut"
+   },
+   "2084": {
+      "message": "Poloni"
+   },
+   "2085": {
+      "message": "Astatin"
+   },
+   "2087": {
+      "message": "Franxi"
+   },
+   "2088": {
+      "message": "Radi"
+   },
+   "2089": {
+      "message": "Actini"
+   },
+   "2090": {
+      "message": "Thori"
+   },
+   "2091": {
+      "message": "Protactini"
+   },
+   "2092": {
+      "message": "Urani"
+   },
+   "2093": {
+      "message": "Neptuni"
+   },
+   "2094": {
+      "message": "Plutoni"
+   },
+   "2095": {
+      "message": "Americi"
+   },
+   "2096": {
+      "message": "Curi"
+   },
+   "2097": {
+      "message": "Berkeli"
+   },
+   "2098": {
+      "message": "Californi"
+   },
+   "2099": {
+      "message": "Einsteini"
+   },
+   "2100": {
+      "message": "Fermi"
+   },
+   "2101": {
+      "message": "Mendelevi"
+   },
+   "2102": {
+      "message": "Nobeli"
+   },
+   "2103": {
+      "message": "Lawrenci"
+   },
+   "2104": {
+      "message": "Rutherfordi"
+   },
+   "2105": {
+      "message": "Dubni"
+   },
+   "2106": {
+      "message": "Seaborgi"
+   },
+   "2107": {
+      "message": "Bohri"
+   },
+   "2108": {
+      "message": "Hassi"
+   },
+   "2109": {
+      "message": "Meitneri"
+   },
+   "2110": {
+      "message": "Darmstadti"
+   },
+   "2111": {
+      "message": "Roentgeni"
+   },
+   "2112": {
+      "message": "Copernixi"
+   },
+   "2114": {
+      "message": "Flerovi"
+   },
+   "2116": {
+      "message": "Livermori"
+   },
+   "2543": {
+      "message": "In"
+   },
+   "6383": {
+      "message": "Tải ứng dụng"
+   },
+   "6433": {
+      "message": "Quay lại bảng tuần hoàn các nguyên tố hóa học"
+   },
+   "6513": {
+      "message": "phi kim"
+   },
+   "6517": {
+      "message": "Điểm nóng chảy"
+   },
+   "6518": {
+      "message": "Điểm sôi"
+   },
+   "6520": {
+      "message": "không rõ"
+   },
+   "6522": {
+      "message": "trắng"
+   },
+   "6533": {
+      "message": "chu kỳ __period_number__"
+   },
+   "6542": {
+      "message": "khí"
+   },
+   "6543": {
+      "message": "rắn"
+   },
+   "6544": {
+      "message": "lỏng"
+   },
+   "6549": {
+      "message": "Lịch sử"
+   },
+   "6551": {
+      "message": "Lịch sử khám phá"
+   },
+   "6552": {
+      "message": "Khám phá bởi"
+   },
+   "6553": {
+      "message": "Năm phát hiện"
+   },
+   "6722": {
+      "message": "Google sắp tới sẽ ngừng hỗ trợ các ứng dụng của Chrome. Để tiếp tục sử dụng, hãy chuyển sang ứng dụng __same__ trên trang web."
+   },
+   "6723": {
+      "message": "Chuyển sang __same__ trên trang web"
+   },
+   "6724": {
+      "message": "Cảm ơn bạn đã sử dụng ứng dụng __same__ của Chrome"
+   },
+   "6725": {
+      "message": "Ứng dụng sẽ ngừng vào Tháng Sáu 2021 vì Google không còn hỗ trợ các ứng dụng của Chrome. Đừng lo lắng, __product_name__ trên trang web có đầy đủ các tính năng và hơn thế nữa. Để tiếp tục sử dụng __product_name__, tải xuống như một ứng dụng trang web tại __web_address__."
+   },
+   "6726": {
+      "message": "Ứng dụng này đã ngừng vào Tháng Sáu 2021 vì Google không còn hỗ trợ các ứng dụng của Chrome. Đừng lo lắng, __product_name__ trên trang web có đầy đủ các tính năng và hơn thế nữa. Để tiếp tục sử dụng __product_name__, tải xuống như một ứng dụng trang web tại __web_address__."
+   },
+   "6727": {
+      "message": "Không phải bây giờ"
+   },
+   "6728": {
+      "message": "Truy cập __web_address__"
+   },
+   "6968": {
+      "message": "Cập nhật bây giờ"
+   },
+   "6969": {
+      "message": "Gỡ cài đặt Chrome"
+   },
+   "6971": {
+      "message": "Ứng dụng này sẽ bị ngừng do Google chấm dứt hỗ trợ các ứng dụng của Chrome. Đừng lo lắng, __product_name__ trên web có tất cả các tính năng và hơn thế nữa. Để tiếp tục sử dụng __product_name__, cập nhật Ứng dụng của Chrome lên trang web ứng dụng Progressive."
+   },
+   "7165": {
+      "message": "Trắng"
+   }
+}

@@ -1,0 +1,434 @@
+{
+   "0047": {
+      "message": "Daha fazla"
+   },
+   "0214": {
+      "message": "E-posta"
+   },
+   "0354": {
+      "message": "Bağış yap"
+   },
+   "0357": {
+      "message": "Gizlilik politikamızı görüntüleyin"
+   },
+   "0838": {
+      "message": "Hakkında"
+   },
+   "1360": {
+      "message": "Paylaş"
+   },
+   "1605": {
+      "message": "Çevirilerde yardım edin"
+   },
+   "1620": {
+      "message": "Kapat"
+   },
+   "1959": {
+      "message": "Nihonyum"
+   },
+   "1960": {
+      "message": "Moskovyum"
+   },
+   "1961": {
+      "message": "Tenesin"
+   },
+   "1962": {
+      "message": "Oganeson"
+   },
+   "1978": {
+      "message": "Anladım"
+   },
+   "1980": {
+      "message": "Çalıştır"
+   },
+   "1983": {
+      "message": "İletişime Geç"
+   },
+   "1984": {
+      "message": "Genel Özellikler"
+   },
+   "1985": {
+      "message": "Kök Adı"
+   },
+   "1987": {
+      "message": "Yoğunluk"
+   },
+   "1988": {
+      "message": "Grup"
+   },
+   "1992": {
+      "message": "Periyot"
+   },
+   "1993": {
+      "message": "Standart atom ağırlığı"
+   },
+   "2000": {
+      "message": "Yeni nesil periyodik tablo"
+   },
+   "2001": {
+      "message": "Hidrojen"
+   },
+   "2002": {
+      "message": "Helyum"
+   },
+   "2003": {
+      "message": "Lityum"
+   },
+   "2004": {
+      "message": "Berilyum"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Karbon"
+   },
+   "2007": {
+      "message": "Azot"
+   },
+   "2008": {
+      "message": "Oksijen"
+   },
+   "2009": {
+      "message": "Flor"
+   },
+   "2011": {
+      "message": "Sodyum"
+   },
+   "2012": {
+      "message": "Magnezyum"
+   },
+   "2013": {
+      "message": "Alüminyum"
+   },
+   "2014": {
+      "message": "Silisyum"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Kükürt"
+   },
+   "2017": {
+      "message": "Klor"
+   },
+   "2019": {
+      "message": "Potasyum"
+   },
+   "2020": {
+      "message": "Kalsiyum"
+   },
+   "2021": {
+      "message": "Skandiyum"
+   },
+   "2022": {
+      "message": "Titanyum"
+   },
+   "2023": {
+      "message": "Vanadyum"
+   },
+   "2024": {
+      "message": "Krom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Demir"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikel"
+   },
+   "2029": {
+      "message": "Bakır"
+   },
+   "2030": {
+      "message": "Çinko"
+   },
+   "2031": {
+      "message": "Galyum"
+   },
+   "2032": {
+      "message": "Germanyum"
+   },
+   "2033": {
+      "message": "Arsenik"
+   },
+   "2034": {
+      "message": "Selenyum"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2036": {
+      "message": "Kripton"
+   },
+   "2037": {
+      "message": "Rubidyum"
+   },
+   "2038": {
+      "message": "Stronsiyum"
+   },
+   "2039": {
+      "message": "İtriyum"
+   },
+   "2040": {
+      "message": "Zirkonyum"
+   },
+   "2041": {
+      "message": "Niobyum"
+   },
+   "2042": {
+      "message": "Molibden"
+   },
+   "2043": {
+      "message": "Teknesyum"
+   },
+   "2044": {
+      "message": "Rutenyum"
+   },
+   "2045": {
+      "message": "Rodyum"
+   },
+   "2046": {
+      "message": "Paladyum"
+   },
+   "2047": {
+      "message": "Gümüş"
+   },
+   "2048": {
+      "message": "Kadmiyum"
+   },
+   "2049": {
+      "message": "İndiyum"
+   },
+   "2050": {
+      "message": "Kalay"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Tellür"
+   },
+   "2053": {
+      "message": "İyot"
+   },
+   "2054": {
+      "message": "Ksenon"
+   },
+   "2055": {
+      "message": "Sezyum"
+   },
+   "2056": {
+      "message": "Baryum"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2058": {
+      "message": "Seryum"
+   },
+   "2059": {
+      "message": "Praseodim"
+   },
+   "2060": {
+      "message": "Neodimyum"
+   },
+   "2061": {
+      "message": "Prometyum"
+   },
+   "2062": {
+      "message": "Samaryum"
+   },
+   "2063": {
+      "message": "Evropiyum"
+   },
+   "2064": {
+      "message": "Gadolinyum"
+   },
+   "2065": {
+      "message": "Terbiyum"
+   },
+   "2066": {
+      "message": "Disprozyum"
+   },
+   "2067": {
+      "message": "Holmiyum"
+   },
+   "2068": {
+      "message": "Erbiyum"
+   },
+   "2069": {
+      "message": "Tulyum"
+   },
+   "2070": {
+      "message": "İterbiyum"
+   },
+   "2071": {
+      "message": "Lutesyum"
+   },
+   "2072": {
+      "message": "Hafniyum"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Volfram"
+   },
+   "2075": {
+      "message": "Renyum"
+   },
+   "2076": {
+      "message": "Osmiyum"
+   },
+   "2077": {
+      "message": "İridyum"
+   },
+   "2078": {
+      "message": "Platin"
+   },
+   "2079": {
+      "message": "Altın"
+   },
+   "2081": {
+      "message": "Talyum"
+   },
+   "2082": {
+      "message": "Kurşun"
+   },
+   "2083": {
+      "message": "Bizmut"
+   },
+   "2084": {
+      "message": "Polonyum"
+   },
+   "2085": {
+      "message": "Astatin"
+   },
+   "2087": {
+      "message": "Fransiyum"
+   },
+   "2088": {
+      "message": "Radyum"
+   },
+   "2089": {
+      "message": "Aktinyum"
+   },
+   "2090": {
+      "message": "Toryum"
+   },
+   "2091": {
+      "message": "Protaktinyum"
+   },
+   "2092": {
+      "message": "Uranyum"
+   },
+   "2093": {
+      "message": "Neptünyum"
+   },
+   "2094": {
+      "message": "Plütonyum"
+   },
+   "2095": {
+      "message": "Amerikyum"
+   },
+   "2096": {
+      "message": "Küriyum"
+   },
+   "2097": {
+      "message": "Berkelyum"
+   },
+   "2098": {
+      "message": "Kaliforniyum"
+   },
+   "2099": {
+      "message": "Aynştaynyum"
+   },
+   "2100": {
+      "message": "Fermiyum"
+   },
+   "2101": {
+      "message": "Mendelevyum"
+   },
+   "2102": {
+      "message": "Nobelyum"
+   },
+   "2103": {
+      "message": "Lavrensiyum"
+   },
+   "2104": {
+      "message": "Rutherfordiyum"
+   },
+   "2105": {
+      "message": "Dubniyum"
+   },
+   "2106": {
+      "message": "Seaborgiyum"
+   },
+   "2107": {
+      "message": "Bohriyum"
+   },
+   "2108": {
+      "message": "Hassiyum"
+   },
+   "2109": {
+      "message": "Meitneriyum"
+   },
+   "2110": {
+      "message": "Darmstadtiyum"
+   },
+   "2111": {
+      "message": "Röntgenyum"
+   },
+   "2112": {
+      "message": "Kopernikyum"
+   },
+   "2114": {
+      "message": "Flerovyum"
+   },
+   "2116": {
+      "message": "Livermoryum"
+   },
+   "2543": {
+      "message": "Yazdır"
+   },
+   "6383": {
+      "message": "Uygulamayı yükle"
+   },
+   "6522": {
+      "message": "beyaz"
+   },
+   "6651": {
+      "message": "Google Sınıf"
+   },
+   "6722": {
+      "message": "Google Chrome Uygulamaları desteğini yakında sonlandıracak. Kullanmaya devam etmek için __product_name__ web uygulamasına geçtiğinizden emin olun."
+   },
+   "6723": {
+      "message": "__product_name__ web uygulamasına geçin"
+   },
+   "6724": {
+      "message": "__product_name__ Chrome uygulamasını kullandığınız için teşekkürler"
+   },
+   "6725": {
+      "message": "Google, Chrome Uygulamaları desteğini sona erdirdiğinden, Haziran 2021'de bu uygulama kullanımdan kaldırılacaktır. Merak etmeyin, __product_name__ web uygulaması aynı özelliklere ve daha fazlasına sahiptir. __Product_name__ kullanmaya devam etmek için, __web_address__ adresinde web uygulaması olarak yükleyin."
+   },
+   "6726": {
+      "message": "Google, Chrome Uygulamaları desteğini sonlandırdığı için Haziran 2021'de bu uygulama kullanımdan kaldırıldı. Merak etmeyin, __product_name__ web uygulaması aynı özelliklere ve daha fazlasına sahiptir. __Product_name__ kullanmaya devam etmek için, __web_address__ adresinde web uygulaması olarak yükleyin."
+   },
+   "6727": {
+      "message": "Şimdi değil"
+   },
+   "6728": {
+      "message": "__web_address__'e git"
+   },
+   "7165": {
+      "message": "Beyaz"
+   }
+}

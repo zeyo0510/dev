@@ -1,0 +1,320 @@
+{
+   "0047": {
+      "message": "Meer"
+   },
+   "0354": {
+      "message": "Doneren"
+   },
+   "0357": {
+      "message": "Zie ons privacy beleid"
+   },
+   "0838": {
+      "message": "Over"
+   },
+   "1360": {
+      "message": "Delen"
+   },
+   "1605": {
+      "message": "Draag bij aan vertalingen"
+   },
+   "1620": {
+      "message": "Sluiten"
+   },
+   "1977": {
+      "message": "We gebruiken cookies om advertenties te leveren en ons verkeer te analyseren. We delen ook informatie over uw gebruik van onze site met Google AdSense en Google Analytics. Google kan dit combineren met andere informatie die u aan hen heeft verstrekt of die zij hebben verzameld op basis van uw gebruik van hun services."
+   },
+   "1978": {
+      "message": "Bevestig"
+   },
+   "1980": {
+      "message": "Start"
+   },
+   "1984": {
+      "message": "Algemene eigenschappen"
+   },
+   "1985": {
+      "message": "Herkomst van naam"
+   },
+   "1987": {
+      "message": "Dichtheid"
+   },
+   "1988": {
+      "message": "Groep"
+   },
+   "1992": {
+      "message": "Periode"
+   },
+   "1993": {
+      "message": "Relatieve atoommassa"
+   },
+   "2000": {
+      "message": "Elegant periodiek system der elementen"
+   },
+   "2001": {
+      "message": "Waterstof"
+   },
+   "2005": {
+      "message": "Boor"
+   },
+   "2006": {
+      "message": "Koolstof"
+   },
+   "2007": {
+      "message": "Stikstof"
+   },
+   "2008": {
+      "message": "Zuurstof"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Natrium"
+   },
+   "2014": {
+      "message": "Silicium"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Zwavel"
+   },
+   "2017": {
+      "message": "Chloor"
+   },
+   "2019": {
+      "message": "Kalium"
+   },
+   "2024": {
+      "message": "Chroom"
+   },
+   "2025": {
+      "message": "Mangaan"
+   },
+   "2026": {
+      "message": "IJzer"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikkel"
+   },
+   "2029": {
+      "message": "Koper"
+   },
+   "2030": {
+      "message": "Zink"
+   },
+   "2033": {
+      "message": "Arseen"
+   },
+   "2034": {
+      "message": "Seleen"
+   },
+   "2035": {
+      "message": "Broom"
+   },
+   "2040": {
+      "message": "Zirkonium"
+   },
+   "2042": {
+      "message": "Molybdeen"
+   },
+   "2047": {
+      "message": "Zilver"
+   },
+   "2051": {
+      "message": "Antimoon"
+   },
+   "2052": {
+      "message": "Telluur"
+   },
+   "2053": {
+      "message": "Jodium"
+   },
+   "2055": {
+      "message": "Cesium"
+   },
+   "2057": {
+      "message": "Lanthaan"
+   },
+   "2073": {
+      "message": "Tantaal"
+   },
+   "2074": {
+      "message": "Wolfraam"
+   },
+   "2075": {
+      "message": "Renium"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Goud"
+   },
+   "2082": {
+      "message": "Lood"
+   },
+   "2083": {
+      "message": "Bismut"
+   },
+   "2085": {
+      "message": "Astaat"
+   },
+   "2543": {
+      "message": "Afdrukken"
+   },
+   "6383": {
+      "message": "Installeer app"
+   },
+   "6433": {
+      "message": "Terug naar het periodiek systeem"
+   },
+   "6506": {
+      "message": "alkalimetalen"
+   },
+   "6507": {
+      "message": "aardalkalimetalen"
+   },
+   "6508": {
+      "message": "hoofdgroepmetalen"
+   },
+   "6509": {
+      "message": "overgangsmetalen"
+   },
+   "6510": {
+      "message": "lanthaniden"
+   },
+   "6511": {
+      "message": "actiniden"
+   },
+   "6512": {
+      "message": "metalloïde"
+   },
+   "6513": {
+      "message": "niet-metalen"
+   },
+   "6514": {
+      "message": "halogenen"
+   },
+   "6515": {
+      "message": "edelgassen"
+   },
+   "6516": {
+      "message": "Categorie"
+   },
+   "6517": {
+      "message": "Smeltpunt"
+   },
+   "6518": {
+      "message": "Kookpunt"
+   },
+   "6519": {
+      "message": "Elektronegativiteit"
+   },
+   "6520": {
+      "message": "onbekend"
+   },
+   "6521": {
+      "message": "geen"
+   },
+   "6522": {
+      "message": "wit"
+   },
+   "6523": {
+      "message": "berekend"
+   },
+   "6524": {
+      "message": "voorspeld"
+   },
+   "6525": {
+      "message": "chalcogenen"
+   },
+   "6526": {
+      "message": "pnicogenen"
+   },
+   "6527": {
+      "message": "H en alkalimetalen"
+   },
+   "6528": {
+      "message": "Meer eigenschappen"
+   },
+   "6529": {
+      "message": "Elektronen per schil"
+   },
+   "6530": {
+      "message": "Blok"
+   },
+   "6531": {
+      "message": "CAS Nummer"
+   },
+   "6532": {
+      "message": "groep __group_number__"
+   },
+   "6533": {
+      "message": "periode __period_number__"
+   },
+   "6534": {
+      "message": "__block_symbol__-blok"
+   },
+   "6535": {
+      "message": "n.v.t."
+   },
+   "6536": {
+      "message": "Elektronenconfiguratie"
+   },
+   "6540": {
+      "message": "Oxidatietoestanden"
+   },
+   "6541": {
+      "message": "geëxtrapoleerd"
+   },
+   "6543": {
+      "message": "vaste stof"
+   },
+   "6544": {
+      "message": "vloeistof"
+   },
+   "6545": {
+      "message": "Fase bij STP"
+   },
+   "6546": {
+      "message": "Natuurlijke isotopen"
+   },
+   "6547": {
+      "message": "Eigenschappen"
+   },
+   "6548": {
+      "message": "Isotopen"
+   },
+   "6549": {
+      "message": "Geschiedenis"
+   },
+   "6550": {
+      "message": "oude beschavingen"
+   },
+   "6551": {
+      "message": "Ontdekkingsgeschiedenis"
+   },
+   "6552": {
+      "message": "Ontdekt door"
+   },
+   "6553": {
+      "message": "Ontdekkingsjaar"
+   },
+   "6727": {
+      "message": "Niet nu"
+   },
+   "6728": {
+      "message": "Ga naar __web_address__"
+   },
+   "6965": {
+      "message": "Help met vertalen"
+   },
+   "7165": {
+      "message": "Wit"
+   }
+}

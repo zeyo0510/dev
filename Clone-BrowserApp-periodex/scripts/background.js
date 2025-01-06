@@ -1,0 +1,1 @@
+"use strict";!function(){var t,e=document,n="undefined"!=typeof chrome&&chrome||{};t={bounds:{width:1200,height:710},minWidth:350,minHeight:350},n.app.runtime.onLaunched.addListener(function(){n.app.window.create("/views/app.html",t)}),n.runtime.setUninstallURL("https://periodex.co/uninstalled"),void 0!==e&&(e.body.textContent="")}();

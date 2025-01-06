@@ -1,0 +1,389 @@
+{
+   "0047": {
+      "message": "Plus"
+   },
+   "0214": {
+      "message": "Envoyer un email"
+   },
+   "0354": {
+      "message": "Faire un don"
+   },
+   "0357": {
+      "message": "Consultez notre politique de confidentialité"
+   },
+   "0838": {
+      "message": "À propos"
+   },
+   "1360": {
+      "message": "Partager"
+   },
+   "1605": {
+      "message": "Aidez-nous à traduire"
+   },
+   "1620": {
+      "message": "Ignorer"
+   },
+   "1977": {
+      "message": "Nous utilisons des cookies pour diffuser des publicités et analyser notre trafic. Nous partageons également avec Google AdSense et Google Analytics des informations sur l'utilisation que vous faites de notre site. Google peut les utiliser avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lorsque vous utilisez leurs services."
+   },
+   "1978": {
+      "message": "Compris"
+   },
+   "1980": {
+      "message": "Démarrer"
+   },
+   "1983": {
+      "message": "Contacter"
+   },
+   "1984": {
+      "message": "Propriétés générales"
+   },
+   "1985": {
+      "message": "Origine du nom"
+   },
+   "1987": {
+      "message": "Densité"
+   },
+   "1988": {
+      "message": "Groupe"
+   },
+   "1992": {
+      "message": "Période"
+   },
+   "1993": {
+      "message": "Masse atomique relative"
+   },
+   "2000": {
+      "message": "Vous pouvez accéder aux paramètres en ouvrant le menu dans Google Keep et en appuyant sur \"Personnaliser les catégories\""
+   },
+   "2001": {
+      "message": "Hydrogène"
+   },
+   "2002": {
+      "message": "Hélium"
+   },
+   "2004": {
+      "message": "Béryllium"
+   },
+   "2005": {
+      "message": "Bore"
+   },
+   "2006": {
+      "message": "Carbone"
+   },
+   "2007": {
+      "message": "Azote"
+   },
+   "2008": {
+      "message": "Oxygène"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2010": {
+      "message": "Néon"
+   },
+   "2012": {
+      "message": "Magnésium"
+   },
+   "2014": {
+      "message": "Silicium"
+   },
+   "2015": {
+      "message": "Phosphore"
+   },
+   "2016": {
+      "message": "Soufre"
+   },
+   "2017": {
+      "message": "Chlore"
+   },
+   "2022": {
+      "message": "Titane"
+   },
+   "2024": {
+      "message": "Chrome"
+   },
+   "2025": {
+      "message": "Manganèse"
+   },
+   "2026": {
+      "message": "Fer"
+   },
+   "2029": {
+      "message": "Cuivre"
+   },
+   "2034": {
+      "message": "Sélénium"
+   },
+   "2035": {
+      "message": "Brome"
+   },
+   "2042": {
+      "message": "Molybdène"
+   },
+   "2043": {
+      "message": "Technétium"
+   },
+   "2044": {
+      "message": "Ruthénium"
+   },
+   "2047": {
+      "message": "Argent"
+   },
+   "2050": {
+      "message": "Étain"
+   },
+   "2051": {
+      "message": "Antimoine"
+   },
+   "2052": {
+      "message": "Tellure"
+   },
+   "2053": {
+      "message": "Iode"
+   },
+   "2054": {
+      "message": "Xénon"
+   },
+   "2055": {
+      "message": "Césium"
+   },
+   "2056": {
+      "message": "Baryum"
+   },
+   "2057": {
+      "message": "Lanthane"
+   },
+   "2058": {
+      "message": "Cérium"
+   },
+   "2059": {
+      "message": "Praséodyme"
+   },
+   "2060": {
+      "message": "Néodyme"
+   },
+   "2061": {
+      "message": "Prométhium"
+   },
+   "2071": {
+      "message": "Lutécium"
+   },
+   "2073": {
+      "message": "Tantale"
+   },
+   "2074": {
+      "message": "Tungstène"
+   },
+   "2075": {
+      "message": "Rhénium"
+   },
+   "2078": {
+      "message": "Platine"
+   },
+   "2079": {
+      "message": "Or"
+   },
+   "2080": {
+      "message": "Mercure"
+   },
+   "2082": {
+      "message": "Plomb"
+   },
+   "2085": {
+      "message": "Astate"
+   },
+   "2095": {
+      "message": "Américium"
+   },
+   "2097": {
+      "message": "Berkélium"
+   },
+   "2101": {
+      "message": "Mendélévium"
+   },
+   "2102": {
+      "message": "Nobélium"
+   },
+   "2109": {
+      "message": "Meitnérium"
+   },
+   "2114": {
+      "message": "Flérovium"
+   },
+   "2543": {
+      "message": "Imprimer"
+   },
+   "6383": {
+      "message": "Installer l'application"
+   },
+   "6433": {
+      "message": "Retourner au tableau périodique"
+   },
+   "6506": {
+      "message": "métaux alcalin"
+   },
+   "6507": {
+      "message": "métaux alcalino-terreux"
+   },
+   "6508": {
+      "message": "métal pauvre"
+   },
+   "6509": {
+      "message": "métal de transition"
+   },
+   "6510": {
+      "message": "lanthanides"
+   },
+   "6511": {
+      "message": "actinides"
+   },
+   "6512": {
+      "message": "métalloïde"
+   },
+   "6513": {
+      "message": "non-métaux"
+   },
+   "6514": {
+      "message": "halogènes"
+   },
+   "6515": {
+      "message": "gaz nobles"
+   },
+   "6516": {
+      "message": "Catégorie"
+   },
+   "6517": {
+      "message": "Point de fusion"
+   },
+   "6518": {
+      "message": "Point d'ébullition"
+   },
+   "6519": {
+      "message": "Électronégativité"
+   },
+   "6520": {
+      "message": "inconnue"
+   },
+   "6521": {
+      "message": "aucun"
+   },
+   "6522": {
+      "message": "blanc"
+   },
+   "6523": {
+      "message": "estimé"
+   },
+   "6524": {
+      "message": "prédit"
+   },
+   "6525": {
+      "message": "chalcogènes"
+   },
+   "6526": {
+      "message": "pnictogènes"
+   },
+   "6527": {
+      "message": "H et métaux alcalin"
+   },
+   "6528": {
+      "message": "Propriétés supplémentaires"
+   },
+   "6529": {
+      "message": "Électrons par couche"
+   },
+   "6530": {
+      "message": "Bloc"
+   },
+   "6531": {
+      "message": "Numéro CAS"
+   },
+   "6532": {
+      "message": "groupe __group_number__"
+   },
+   "6533": {
+      "message": "période __period_number__"
+   },
+   "6534": {
+      "message": "__block_symbol__-bloc"
+   },
+   "6535": {
+      "message": "nd."
+   },
+   "6536": {
+      "message": "Configuration électronique"
+   },
+   "6540": {
+      "message": "Nombre d'oxydation"
+   },
+   "6541": {
+      "message": "extrapolé"
+   },
+   "6542": {
+      "message": "gaz"
+   },
+   "6543": {
+      "message": "état solide"
+   },
+   "6544": {
+      "message": "liquide"
+   },
+   "6545": {
+      "message": "Phase CNTP"
+   },
+   "6546": {
+      "message": "Isotopes naturels"
+   },
+   "6547": {
+      "message": "Propriétés"
+   },
+   "6549": {
+      "message": "Historique"
+   },
+   "6550": {
+      "message": "civilisations anciennes"
+   },
+   "6551": {
+      "message": "Histoire de la découverte"
+   },
+   "6552": {
+      "message": "Découvert par"
+   },
+   "6553": {
+      "message": "Année de découverte"
+   },
+   "6722": {
+      "message": "Google cessera bientôt tout support pour les Applis Chrome. Pour assurer une utilisation continue, passez à l'application __product_name__ en version web dès maintenant."
+   },
+   "6723": {
+      "message": "Changez pour l'appli web __product_name__"
+   },
+   "6724": {
+      "message": "Merci d'utiliser l'Appli Chrome __product_name__"
+   },
+   "6725": {
+      "message": "Cette application sera interrompue en Juin 2021 quand Google cessera tout support pour les Applis Chrome. Pas d'inquiétude, l'appli web __product_name__ a les mêmes fonctionnalités que la version Chrome et même plus. Pour continuer à utiliser __product_name__, installez l'appli version web depuis __web_address__."
+   },
+   "6726": {
+      "message": "Cette application a été interrompue en Juin 2021 quand Google a cessé tout support pour les Applis Chrome. Pas d'inquiétude, l'appli web __product_name__ a les mêmes fonctionnalités que la version Chrome et même plus. Pour continuer à utiliser __product_name__, installez l'appli version web depuis __web_address__."
+   },
+   "6727": {
+      "message": "Pas maintenant"
+   },
+   "6728": {
+      "message": "Accéder à __web_adress__"
+   },
+   "6965": {
+      "message": "Aide à la localisation"
+   },
+   "6968": {
+      "message": "Mettre à jour maintenant"
+   },
+   "6969": {
+      "message": "Désinstaller l'App Chrome"
+   },
+   "7165": {
+      "message": "Blanc"
+   }
+}

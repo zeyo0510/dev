@@ -1,0 +1,350 @@
+{
+   "0047": {
+      "message": "Mai mult"
+   },
+   "0354": {
+      "message": "Donați"
+   },
+   "0838": {
+      "message": "Despre"
+   },
+   "1360": {
+      "message": "Distribuiţi"
+   },
+   "1620": {
+      "message": "Renunțați"
+   },
+   "1978": {
+      "message": "Am înțeles"
+   },
+   "1980": {
+      "message": "Lansează"
+   },
+   "2000": {
+      "message": "Un tabel elegant al elementelor periodice"
+   },
+   "2001": {
+      "message": "Hidrogen"
+   },
+   "2002": {
+      "message": "Heliu"
+   },
+   "2003": {
+      "message": "Litiu"
+   },
+   "2004": {
+      "message": "Beriliu"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2007": {
+      "message": "Azot"
+   },
+   "2008": {
+      "message": "Oxigen"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Sodiu"
+   },
+   "2012": {
+      "message": "Magneziu"
+   },
+   "2013": {
+      "message": "Aluminiu"
+   },
+   "2014": {
+      "message": "Siliciu"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Sulf"
+   },
+   "2017": {
+      "message": "Clor"
+   },
+   "2019": {
+      "message": "Potasiu"
+   },
+   "2020": {
+      "message": "Calciu"
+   },
+   "2021": {
+      "message": "Scandiu"
+   },
+   "2022": {
+      "message": "Titan"
+   },
+   "2023": {
+      "message": "Vanadiu"
+   },
+   "2024": {
+      "message": "Crom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Fier"
+   },
+   "2028": {
+      "message": "Nichel"
+   },
+   "2029": {
+      "message": "Cupru"
+   },
+   "2031": {
+      "message": "Galiu"
+   },
+   "2032": {
+      "message": "Germaniu"
+   },
+   "2033": {
+      "message": "Arsen"
+   },
+   "2034": {
+      "message": "Seleniu"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2036": {
+      "message": "Kripton"
+   },
+   "2037": {
+      "message": "Rubidiu"
+   },
+   "2038": {
+      "message": "Stronțiu"
+   },
+   "2039": {
+      "message": "Ytriu"
+   },
+   "2040": {
+      "message": "Zirconiu"
+   },
+   "2041": {
+      "message": "Niobiu"
+   },
+   "2042": {
+      "message": "Molibden"
+   },
+   "2043": {
+      "message": "Technețiu"
+   },
+   "2044": {
+      "message": "Ruteniu"
+   },
+   "2045": {
+      "message": "Rodiu"
+   },
+   "2046": {
+      "message": "Paladiu"
+   },
+   "2047": {
+      "message": "Argint"
+   },
+   "2048": {
+      "message": "Cadmiu"
+   },
+   "2049": {
+      "message": "Indiu"
+   },
+   "2050": {
+      "message": "Staniu"
+   },
+   "2051": {
+      "message": "Stibiu"
+   },
+   "2052": {
+      "message": "Telur"
+   },
+   "2053": {
+      "message": "Iod"
+   },
+   "2055": {
+      "message": "Cesiu"
+   },
+   "2056": {
+      "message": "Bariu"
+   },
+   "2057": {
+      "message": "Lantan"
+   },
+   "2058": {
+      "message": "Ceriu"
+   },
+   "2059": {
+      "message": "Praseodim"
+   },
+   "2060": {
+      "message": "Neodim"
+   },
+   "2061": {
+      "message": "Promețiu"
+   },
+   "2062": {
+      "message": "Samariu"
+   },
+   "2063": {
+      "message": "Europiu"
+   },
+   "2064": {
+      "message": "Gadoliniu"
+   },
+   "2065": {
+      "message": "Terbiu"
+   },
+   "2066": {
+      "message": "Disprosiu"
+   },
+   "2067": {
+      "message": "Holmiu"
+   },
+   "2068": {
+      "message": "Erbiu"
+   },
+   "2069": {
+      "message": "Tuliu"
+   },
+   "2070": {
+      "message": "Yterbiu"
+   },
+   "2071": {
+      "message": "Lutețiu"
+   },
+   "2072": {
+      "message": "Hafniu"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Wolfram"
+   },
+   "2075": {
+      "message": "Reniu"
+   },
+   "2076": {
+      "message": "Osmiu"
+   },
+   "2077": {
+      "message": "Iridiu"
+   },
+   "2078": {
+      "message": "Platină"
+   },
+   "2079": {
+      "message": "Aur"
+   },
+   "2081": {
+      "message": "Taliu"
+   },
+   "2082": {
+      "message": "Plumb"
+   },
+   "2083": {
+      "message": "Bismut"
+   },
+   "2084": {
+      "message": "Poloniu"
+   },
+   "2085": {
+      "message": "Astatiniu"
+   },
+   "2087": {
+      "message": "Franciu"
+   },
+   "2088": {
+      "message": "Radiu"
+   },
+   "2089": {
+      "message": "Actiniu"
+   },
+   "2090": {
+      "message": "Thoriu"
+   },
+   "2091": {
+      "message": "Protactiniu"
+   },
+   "2092": {
+      "message": "Uraniu"
+   },
+   "2093": {
+      "message": "Neptuniu"
+   },
+   "2094": {
+      "message": "Plutoniu"
+   },
+   "2095": {
+      "message": "Americiu"
+   },
+   "2096": {
+      "message": "Curiu"
+   },
+   "2097": {
+      "message": "Berkeliu"
+   },
+   "2098": {
+      "message": "Californiu"
+   },
+   "2099": {
+      "message": "Einsteiniu"
+   },
+   "2100": {
+      "message": "Fermiu"
+   },
+   "2101": {
+      "message": "Mendeleviu"
+   },
+   "2102": {
+      "message": "Nobeliu"
+   },
+   "2103": {
+      "message": "Lawrenciu"
+   },
+   "2104": {
+      "message": "Rutherfordiu"
+   },
+   "2105": {
+      "message": "Dubniu"
+   },
+   "2106": {
+      "message": "Seaborgiu"
+   },
+   "2107": {
+      "message": "Bohriu"
+   },
+   "2108": {
+      "message": "Hassiu"
+   },
+   "2109": {
+      "message": "Meitneriu"
+   },
+   "2110": {
+      "message": "Darmstadtiu"
+   },
+   "2111": {
+      "message": "Roentgeniu"
+   },
+   "2112": {
+      "message": "Coperniciu"
+   },
+   "2114": {
+      "message": "Fleroviu"
+   },
+   "2543": {
+      "message": "Printați"
+   },
+   "6522": {
+      "message": "alb"
+   },
+   "7165": {
+      "message": "Alb"
+   }
+}

@@ -1,0 +1,452 @@
+{
+   "0047": {
+      "message": "Lebih banyak"
+   },
+   "0354": {
+      "message": "Donasi"
+   },
+   "0357": {
+      "message": "Lihat kebijakan privasi kami"
+   },
+   "0838": {
+      "message": "Tentang"
+   },
+   "1360": {
+      "message": "Bagikan"
+   },
+   "1605": {
+      "message": "Bantu terjemahan"
+   },
+   "1620": {
+      "message": "Tutup"
+   },
+   "1960": {
+      "message": "Moskovium"
+   },
+   "1961": {
+      "message": "Tenesin"
+   },
+   "1962": {
+      "message": "Oganeson"
+   },
+   "1977": {
+      "message": "Kami menggunakan cookies untuk menayangkan iklan dan menganalisis lalu lintas kami. Kami juga berbagi informasi tentang penggunaan situs kami oleh anda dengan Google AdSense dan Google Analytics. Google dapat menggabungkannya dengan informasi lain yang telah anda berikan atau yang telah dikumpulkan dari penggunaan layanan mereka."
+   },
+   "1978": {
+      "message": "Paham"
+   },
+   "1980": {
+      "message": "Luncurkan"
+   },
+   "1983": {
+      "message": "Kontak"
+   },
+   "1984": {
+      "message": "Properti umum"
+   },
+   "1985": {
+      "message": "Asal nama"
+   },
+   "1987": {
+      "message": "Kepadatan"
+   },
+   "1988": {
+      "message": "Kelompok"
+   },
+   "1992": {
+      "message": "Periode"
+   },
+   "1993": {
+      "message": "Massa atom relatif"
+   },
+   "2000": {
+      "message": "Tabel periodik yang elegan ditiap unsurnya"
+   },
+   "2001": {
+      "message": "Hidrogen"
+   },
+   "2003": {
+      "message": "Litium"
+   },
+   "2004": {
+      "message": "Berilium"
+   },
+   "2006": {
+      "message": "Karbon"
+   },
+   "2008": {
+      "message": "Oksigen"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Natrium"
+   },
+   "2014": {
+      "message": "Silikon"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Belerang"
+   },
+   "2017": {
+      "message": "Klor"
+   },
+   "2019": {
+      "message": "Kalium"
+   },
+   "2020": {
+      "message": "Kalsium"
+   },
+   "2021": {
+      "message": "Skandium"
+   },
+   "2024": {
+      "message": "Kromium"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Besi"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikel"
+   },
+   "2029": {
+      "message": "Tembaga"
+   },
+   "2030": {
+      "message": "Seng"
+   },
+   "2031": {
+      "message": "Galium"
+   },
+   "2033": {
+      "message": "Arsen"
+   },
+   "2035": {
+      "message": "Bromin"
+   },
+   "2036": {
+      "message": "Kripton"
+   },
+   "2038": {
+      "message": "Stronsium"
+   },
+   "2039": {
+      "message": "Itrium"
+   },
+   "2040": {
+      "message": "Zirkonium"
+   },
+   "2042": {
+      "message": "Molibdenum"
+   },
+   "2043": {
+      "message": "Teknesium"
+   },
+   "2044": {
+      "message": "Rutenium"
+   },
+   "2045": {
+      "message": "Rodium"
+   },
+   "2046": {
+      "message": "Paladium"
+   },
+   "2047": {
+      "message": "Perak"
+   },
+   "2048": {
+      "message": "Kadmium"
+   },
+   "2050": {
+      "message": "Timah"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Telurium"
+   },
+   "2053": {
+      "message": "Yodium"
+   },
+   "2055": {
+      "message": "Sesium"
+   },
+   "2057": {
+      "message": "Lantanum"
+   },
+   "2058": {
+      "message": "Serium"
+   },
+   "2059": {
+      "message": "Praseodimium"
+   },
+   "2060": {
+      "message": "Neodimium"
+   },
+   "2061": {
+      "message": "Prometium"
+   },
+   "2066": {
+      "message": "Disprosium"
+   },
+   "2069": {
+      "message": "Tulium"
+   },
+   "2070": {
+      "message": "Iterbium"
+   },
+   "2071": {
+      "message": "Lutesium"
+   },
+   "2074": {
+      "message": "Wolfram"
+   },
+   "2075": {
+      "message": "Renium"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Emas"
+   },
+   "2080": {
+      "message": "Raksa"
+   },
+   "2081": {
+      "message": "Talium"
+   },
+   "2082": {
+      "message": "Timbal"
+   },
+   "2083": {
+      "message": "Bismut"
+   },
+   "2085": {
+      "message": "Astatin"
+   },
+   "2087": {
+      "message": "Fransium"
+   },
+   "2089": {
+      "message": "Aktinium"
+   },
+   "2090": {
+      "message": "Torium"
+   },
+   "2091": {
+      "message": "Protaktinium"
+   },
+   "2095": {
+      "message": "Amerisium"
+   },
+   "2096": {
+      "message": "Kurium"
+   },
+   "2098": {
+      "message": "Kalifornium"
+   },
+   "2103": {
+      "message": "Lawrensium"
+   },
+   "2104": {
+      "message": "Ruterfordium"
+   },
+   "2106": {
+      "message": "Siborgium"
+   },
+   "2108": {
+      "message": "Hasium"
+   },
+   "2112": {
+      "message": "Kopernisium"
+   },
+   "2543": {
+      "message": "Cetak"
+   },
+   "6383": {
+      "message": "Pasang aplikasi"
+   },
+   "6433": {
+      "message": "Kembali ke tabel periodik"
+   },
+   "6506": {
+      "message": "logam alkali"
+   },
+   "6507": {
+      "message": "logam alkali tanah"
+   },
+   "6508": {
+      "message": "logam pasca-transisi"
+   },
+   "6509": {
+      "message": "logam transisi"
+   },
+   "6510": {
+      "message": "lantanida"
+   },
+   "6511": {
+      "message": "aktinida"
+   },
+   "6512": {
+      "message": "metaloid"
+   },
+   "6513": {
+      "message": "nonlogam"
+   },
+   "6514": {
+      "message": "halogen"
+   },
+   "6515": {
+      "message": "gas mulia"
+   },
+   "6516": {
+      "message": "Kategori"
+   },
+   "6517": {
+      "message": "Titik lebur"
+   },
+   "6518": {
+      "message": "Titik didih"
+   },
+   "6519": {
+      "message": "Keelektronegatifan"
+   },
+   "6520": {
+      "message": "tidak diketahui"
+   },
+   "6521": {
+      "message": "tidak ada"
+   },
+   "6522": {
+      "message": "putih"
+   },
+   "6523": {
+      "message": "diperkirakan"
+   },
+   "6524": {
+      "message": "diprediksi"
+   },
+   "6525": {
+      "message": "kalsogen"
+   },
+   "6526": {
+      "message": "pniktogen"
+   },
+   "6527": {
+      "message": "H dan logam alkali"
+   },
+   "6528": {
+      "message": "Properti tambahan"
+   },
+   "6529": {
+      "message": "Elektron per kulit"
+   },
+   "6530": {
+      "message": "Blok"
+   },
+   "6531": {
+      "message": "Nomor CAS"
+   },
+   "6532": {
+      "message": "kelompok __group_number__"
+   },
+   "6533": {
+      "message": "periode __period_number__"
+   },
+   "6534": {
+      "message": "__block_symbol__-blok"
+   },
+   "6536": {
+      "message": "Konfigurasi elektron"
+   },
+   "6540": {
+      "message": "Bilangan oksidasi"
+   },
+   "6541": {
+      "message": "diekstrapolasi"
+   },
+   "6543": {
+      "message": "padat"
+   },
+   "6544": {
+      "message": "cairan"
+   },
+   "6545": {
+      "message": "Fase saat STP"
+   },
+   "6546": {
+      "message": "Isotop-isotop alami"
+   },
+   "6547": {
+      "message": "Properti"
+   },
+   "6548": {
+      "message": "Isotop"
+   },
+   "6549": {
+      "message": "Sejarah"
+   },
+   "6550": {
+      "message": "peradaban kuno"
+   },
+   "6551": {
+      "message": "Riwayat penemuan"
+   },
+   "6552": {
+      "message": "Ditemukan oleh"
+   },
+   "6553": {
+      "message": "Tahun ditemukan"
+   },
+   "6722": {
+      "message": "Google akan segera mengakhiri dukungan untuk aplikasi web Chrome. Untuk memastikan keberlangsungan penggunaan, gunakan aplikasi web __product_name__ sekarang."
+   },
+   "6723": {
+      "message": "Pindah ke aplikasi web __product_name__"
+   },
+   "6724": {
+      "message": "Terima kasih telah menggunakan aplikasi web __product_name__"
+   },
+   "6725": {
+      "message": "Aplikasi ini telah dihentikan pada Juni 2021 sebagaimana Google mengakhiri dukungan pada aplikasi web Chrome. Jangan khawatir, aplikasi web __product_name__ memiliki fitur-fitur lebih dan sama. Untuk melanjutkan penggunaan __product_name__, instal sebagai aplikasi web di __web_page__."
+   },
+   "6726": {
+      "message": "Aplikasi ini telah dihentikan pada Juni 2021 sebagaimana Google mengakhiri dukungan untuk aplikasi web Chrome. Jangan khawatir, aplikasi web __product_name__ memiliki fitur-fitur lebih dan sama. Untuk melanjutkan penggunaan __product_name__, instal sebagai aplikasi web di __web_page__."
+   },
+   "6727": {
+      "message": "Tidak sekarang"
+   },
+   "6728": {
+      "message": "Menuju __web_address__"
+   },
+   "6965": {
+      "message": "Bantu lokalisasi"
+   },
+   "6968": {
+      "message": "Tingkatkan sekarang"
+   },
+   "6969": {
+      "message": "Copot Pemasangan Apl Chrome"
+   },
+   "6970": {
+      "message": "Tingkatkan ke __product_name__"
+   },
+   "6971": {
+      "message": "Aplikasi ini akan segera dihentikan setelah Google mengakhiri dukungan untuk Aplikasi Chrome. Tidak perlu khawatir, aplikasi web __product_name__ memiliki semua fitur yang sama dan lebih banyak lagi. Untuk terus menggunakan __product_name__, tingkatkan versi Aplikasi Chrome ke Aplikasi Web Progresif."
+   },
+   "7165": {
+      "message": "Putih"
+   }
+}

@@ -1,0 +1,611 @@
+{
+   "0047": {
+      "message": "More"
+   },
+   "0214": {
+      "message": "Email"
+   },
+   "0354": {
+      "message": "Donate"
+   },
+   "0357": {
+      "message": "View our privacy policy"
+   },
+   "0838": {
+      "message": "About"
+   },
+   "1360": {
+      "message": "Share"
+   },
+   "1605": {
+      "message": "Help with translations"
+   },
+   "1620": {
+      "message": "Dismiss"
+   },
+   "1959": {
+      "message": "Nihonium"
+   },
+   "1960": {
+      "message": "Moscovium"
+   },
+   "1961": {
+      "message": "Tennessine"
+   },
+   "1962": {
+      "message": "Oganesson"
+   },
+   "1977": {
+      "message": "We use cookies to deliver ads and analyse our traffic. We also share information about your use of our site with Google AdSense and Google Analytics. Google may combine it with other information you’ve provided to them or they’ve collected from your use of their services."
+   },
+   "1978": {
+      "message": "Got it"
+   },
+   "1980": {
+      "message": "Launch"
+   },
+   "1983": {
+      "message": "Contact"
+   },
+   "1984": {
+      "message": "General properties"
+   },
+   "1985": {
+      "message": "Origin of name"
+   },
+   "1987": {
+      "message": "Density"
+   },
+   "1988": {
+      "message": "Group"
+   },
+   "1992": {
+      "message": "Period"
+   },
+   "1993": {
+      "message": "Standard atomic weight"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Hydrogen"
+   },
+   "2002": {
+      "message": "Helium"
+   },
+   "2003": {
+      "message": "Lithium"
+   },
+   "2004": {
+      "message": "Beryllium"
+   },
+   "2005": {
+      "message": "Boron"
+   },
+   "2006": {
+      "message": "Carbon"
+   },
+   "2007": {
+      "message": "Nitrogen"
+   },
+   "2008": {
+      "message": "Oxygen"
+   },
+   "2009": {
+      "message": "Fluorine"
+   },
+   "2010": {
+      "message": "Neon"
+   },
+   "2011": {
+      "message": "Sodium"
+   },
+   "2012": {
+      "message": "Magnesium"
+   },
+   "2013": {
+      "message": "Aluminium"
+   },
+   "2014": {
+      "message": "Silicon"
+   },
+   "2015": {
+      "message": "Phosphorus"
+   },
+   "2016": {
+      "message": "Sulfur"
+   },
+   "2017": {
+      "message": "Chlorine"
+   },
+   "2018": {
+      "message": "Argon"
+   },
+   "2019": {
+      "message": "Potassium"
+   },
+   "2020": {
+      "message": "Calcium"
+   },
+   "2021": {
+      "message": "Scandium"
+   },
+   "2022": {
+      "message": "Titanium"
+   },
+   "2023": {
+      "message": "Vanadium"
+   },
+   "2024": {
+      "message": "Chromium"
+   },
+   "2025": {
+      "message": "Manganese"
+   },
+   "2026": {
+      "message": "Iron"
+   },
+   "2027": {
+      "message": "Cobalt"
+   },
+   "2028": {
+      "message": "Nickel"
+   },
+   "2029": {
+      "message": "Copper"
+   },
+   "2030": {
+      "message": "Zinc"
+   },
+   "2031": {
+      "message": "Gallium"
+   },
+   "2032": {
+      "message": "Germanium"
+   },
+   "2033": {
+      "message": "Arsenic"
+   },
+   "2034": {
+      "message": "Selenium"
+   },
+   "2035": {
+      "message": "Bromine"
+   },
+   "2036": {
+      "message": "Krypton"
+   },
+   "2037": {
+      "message": "Rubidium"
+   },
+   "2038": {
+      "message": "Strontium"
+   },
+   "2039": {
+      "message": "Yttrium"
+   },
+   "2040": {
+      "message": "Zirconium"
+   },
+   "2041": {
+      "message": "Niobium"
+   },
+   "2042": {
+      "message": "Molybdenum"
+   },
+   "2043": {
+      "message": "Technetium"
+   },
+   "2044": {
+      "message": "Ruthenium"
+   },
+   "2045": {
+      "message": "Rhodium"
+   },
+   "2046": {
+      "message": "Palladium"
+   },
+   "2047": {
+      "message": "Silver"
+   },
+   "2048": {
+      "message": "Cadmium"
+   },
+   "2049": {
+      "message": "Indium"
+   },
+   "2050": {
+      "message": "Tin"
+   },
+   "2051": {
+      "message": "Antimony"
+   },
+   "2052": {
+      "message": "Tellurium"
+   },
+   "2053": {
+      "message": "Iodine"
+   },
+   "2054": {
+      "message": "Xenon"
+   },
+   "2055": {
+      "message": "Caesium"
+   },
+   "2056": {
+      "message": "Barium"
+   },
+   "2057": {
+      "message": "Lanthanum"
+   },
+   "2058": {
+      "message": "Cerium"
+   },
+   "2059": {
+      "message": "Praseodymium"
+   },
+   "2060": {
+      "message": "Neodymium"
+   },
+   "2061": {
+      "message": "Promethium"
+   },
+   "2062": {
+      "message": "Samarium"
+   },
+   "2063": {
+      "message": "Europium"
+   },
+   "2064": {
+      "message": "Gadolinium"
+   },
+   "2065": {
+      "message": "Terbium"
+   },
+   "2066": {
+      "message": "Dysprosium"
+   },
+   "2067": {
+      "message": "Holmium"
+   },
+   "2068": {
+      "message": "Erbium"
+   },
+   "2069": {
+      "message": "Thulium"
+   },
+   "2070": {
+      "message": "Ytterbium"
+   },
+   "2071": {
+      "message": "Lutetium"
+   },
+   "2072": {
+      "message": "Hafnium"
+   },
+   "2073": {
+      "message": "Tantalum"
+   },
+   "2074": {
+      "message": "Tungsten"
+   },
+   "2075": {
+      "message": "Rhenium"
+   },
+   "2076": {
+      "message": "Osmium"
+   },
+   "2077": {
+      "message": "Iridium"
+   },
+   "2078": {
+      "message": "Platinum"
+   },
+   "2079": {
+      "message": "Gold"
+   },
+   "2080": {
+      "message": "Mercury"
+   },
+   "2081": {
+      "message": "Thallium"
+   },
+   "2082": {
+      "message": "Lead"
+   },
+   "2083": {
+      "message": "Bismuth"
+   },
+   "2084": {
+      "message": "Polonium"
+   },
+   "2085": {
+      "message": "Astatine"
+   },
+   "2086": {
+      "message": "Radon"
+   },
+   "2087": {
+      "message": "Francium"
+   },
+   "2088": {
+      "message": "Radium"
+   },
+   "2089": {
+      "message": "Actinium"
+   },
+   "2090": {
+      "message": "Thorium"
+   },
+   "2091": {
+      "message": "Protactinium"
+   },
+   "2092": {
+      "message": "Uranium"
+   },
+   "2093": {
+      "message": "Neptunium"
+   },
+   "2094": {
+      "message": "Plutonium"
+   },
+   "2095": {
+      "message": "Americium"
+   },
+   "2096": {
+      "message": "Curium"
+   },
+   "2097": {
+      "message": "Berkelium"
+   },
+   "2098": {
+      "message": "Californium"
+   },
+   "2099": {
+      "message": "Einsteinium"
+   },
+   "2100": {
+      "message": "Fermium"
+   },
+   "2101": {
+      "message": "Mendelevium"
+   },
+   "2102": {
+      "message": "Nobelium"
+   },
+   "2103": {
+      "message": "Lawrencium"
+   },
+   "2104": {
+      "message": "Rutherfordium"
+   },
+   "2105": {
+      "message": "Dubnium"
+   },
+   "2106": {
+      "message": "Seaborgium"
+   },
+   "2107": {
+      "message": "Bohrium"
+   },
+   "2108": {
+      "message": "Hassium"
+   },
+   "2109": {
+      "message": "Meitnerium"
+   },
+   "2110": {
+      "message": "Darmstadtium"
+   },
+   "2111": {
+      "message": "Roentgenium"
+   },
+   "2112": {
+      "message": "Copernicium"
+   },
+   "2114": {
+      "message": "Flerovium"
+   },
+   "2116": {
+      "message": "Livermorium"
+   },
+   "2543": {
+      "message": "Print"
+   },
+   "6383": {
+      "message": "Install app"
+   },
+   "6433": {
+      "message": "Back to the periodic table"
+   },
+   "6434": {
+      "message": "Facebook"
+   },
+   "6435": {
+      "message": "Twitter"
+   },
+   "6436": {
+      "message": "Messenger"
+   },
+   "6437": {
+      "message": "WhatsApp"
+   },
+   "6506": {
+      "message": "alkali metals"
+   },
+   "6507": {
+      "message": "alkaline earth metals"
+   },
+   "6508": {
+      "message": "post-transition metals"
+   },
+   "6509": {
+      "message": "transition metals"
+   },
+   "6510": {
+      "message": "lanthanoids"
+   },
+   "6511": {
+      "message": "actinoids"
+   },
+   "6512": {
+      "message": "metalloids"
+   },
+   "6513": {
+      "message": "nonmetals"
+   },
+   "6514": {
+      "message": "halogens"
+   },
+   "6515": {
+      "message": "noble gases"
+   },
+   "6516": {
+      "message": "Category"
+   },
+   "6517": {
+      "message": "Melting point"
+   },
+   "6518": {
+      "message": "Boiling point"
+   },
+   "6519": {
+      "message": "Electronegativity"
+   },
+   "6520": {
+      "message": "unknown"
+   },
+   "6521": {
+      "message": "none"
+   },
+   "6522": {
+      "message": "white"
+   },
+   "6523": {
+      "message": "estimated"
+   },
+   "6524": {
+      "message": "predicted"
+   },
+   "6525": {
+      "message": "chalcogens"
+   },
+   "6526": {
+      "message": "pnictogens"
+   },
+   "6527": {
+      "message": "H and alkali metals"
+   },
+   "6528": {
+      "message": "Additional properties"
+   },
+   "6529": {
+      "message": "Electrons per shell"
+   },
+   "6530": {
+      "message": "Block"
+   },
+   "6531": {
+      "message": "CAS Number"
+   },
+   "6532": {
+      "message": "group __group_number__"
+   },
+   "6533": {
+      "message": "period __period_number__"
+   },
+   "6534": {
+      "message": "__block_symbol__-block"
+   },
+   "6535": {
+      "message": "n/a"
+   },
+   "6536": {
+      "message": "Electron configuration"
+   },
+   "6540": {
+      "message": "Oxidation states"
+   },
+   "6541": {
+      "message": "extrapolated"
+   },
+   "6542": {
+      "message": "gas"
+   },
+   "6543": {
+      "message": "solid"
+   },
+   "6544": {
+      "message": "liquid"
+   },
+   "6545": {
+      "message": "Phase at STP"
+   },
+   "6546": {
+      "message": "Natural isotopes"
+   },
+   "6547": {
+      "message": "Properties"
+   },
+   "6548": {
+      "message": "Isotopes"
+   },
+   "6549": {
+      "message": "History"
+   },
+   "6550": {
+      "message": "ancient civilizations"
+   },
+   "6551": {
+      "message": "Discovery history"
+   },
+   "6552": {
+      "message": "Discovered by"
+   },
+   "6553": {
+      "message": "Year of discovery"
+   },
+   "6651": {
+      "message": "Google Classroom"
+   },
+   "6722": {
+      "message": "Google will end support for Chrome Apps soon. To ensure continued use, switch to the __product_name__ web app now."
+   },
+   "6723": {
+      "message": "Switch to the __product_name__ web app"
+   },
+   "6724": {
+      "message": "Thanks for using the __product_name__ Chrome App"
+   },
+   "6725": {
+      "message": "This app will be discontinued on June 2021 as Google ends support for Chrome Apps. Not to worry, the __product_name__ web app has all the same features and more. To continue using __product_name__, install it as a web app at __web_address__."
+   },
+   "6726": {
+      "message": "This app was discontinued on June 2021 as Google ended support for Chrome Apps. Not to worry, the __product_name__ web app has all the same features and more. To continue using __product_name__, install it as a web app at __web_address__."
+   },
+   "6727": {
+      "message": "Not now"
+   },
+   "6728": {
+      "message": "Go to __web_address__"
+   },
+   "6965": {
+      "message": "Help localise"
+   },
+   "6968": {
+      "message": "Upgrade now"
+   },
+   "6969": {
+      "message": "Uninstall Chrome App"
+   },
+   "6970": {
+      "message": "Upgrade to the __product_name__ web app"
+   },
+   "6971": {
+      "message": "This app will be discontinued soon as Google ends support for Chrome Apps. Not to worry, the __product_name__ web app has all the same features and more. To continue using __product_name__, upgrade the Chrome App to the Progressive Web App."
+   },
+   "7165": {
+      "message": "White"
+   }
+}

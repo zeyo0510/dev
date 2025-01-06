@@ -1,0 +1,344 @@
+{
+   "0047": {
+      "message": "Mehr"
+   },
+   "0214": {
+      "message": "E-Mail"
+   },
+   "0354": {
+      "message": "Spenden"
+   },
+   "0357": {
+      "message": "Schau dir unsere Datenschutzbestimmungen an"
+   },
+   "0838": {
+      "message": "Über"
+   },
+   "1360": {
+      "message": "Teilen"
+   },
+   "1605": {
+      "message": "Mit der Übersetzung helfen"
+   },
+   "1620": {
+      "message": "Verwerfen"
+   },
+   "1961": {
+      "message": "Tenness"
+   },
+   "1977": {
+      "message": "Wir verwenden Cookies, um Werbung anzuzeigen und unseren Traffic zu analysieren. Außerdem teilen wir Informationen über Ihre Nutzung unserer Website mit Google AdSense und Google Analytics. Google kann diese Informationen mit anderen Informationen verknüpfen, die Sie dem Unternehmen zur Verfügung gestellt haben oder die Google durch Ihre Nutzung der Dienste des Unternehmens gesammelt hat."
+   },
+   "1978": {
+      "message": "Verstanden"
+   },
+   "1980": {
+      "message": "Starten"
+   },
+   "1983": {
+      "message": "Kontakt"
+   },
+   "1984": {
+      "message": "Allgemeine Eigenschaften"
+   },
+   "1985": {
+      "message": "Namensursprung"
+   },
+   "1987": {
+      "message": "Dichte"
+   },
+   "1988": {
+      "message": "Gruppe"
+   },
+   "1992": {
+      "message": "Periode"
+   },
+   "1993": {
+      "message": "Atommasse"
+   },
+   "2000": {
+      "message": "Ein Periodensystem in elegantem Design."
+   },
+   "2001": {
+      "message": "Wasserstoff"
+   },
+   "2005": {
+      "message": "Bor"
+   },
+   "2006": {
+      "message": "Kohlenstoff"
+   },
+   "2007": {
+      "message": "Stickstoff"
+   },
+   "2008": {
+      "message": "Sauerstoff"
+   },
+   "2009": {
+      "message": "Fluor"
+   },
+   "2011": {
+      "message": "Natrium"
+   },
+   "2014": {
+      "message": "Silicium"
+   },
+   "2015": {
+      "message": "Phosphor"
+   },
+   "2016": {
+      "message": "Schwefel"
+   },
+   "2017": {
+      "message": "Chlor"
+   },
+   "2019": {
+      "message": "Kalium"
+   },
+   "2022": {
+      "message": "Titan"
+   },
+   "2024": {
+      "message": "Chrom"
+   },
+   "2025": {
+      "message": "Mangan"
+   },
+   "2026": {
+      "message": "Eisen"
+   },
+   "2029": {
+      "message": "Kupfer"
+   },
+   "2030": {
+      "message": "Zink"
+   },
+   "2033": {
+      "message": "Arsen"
+   },
+   "2034": {
+      "message": "Selen"
+   },
+   "2035": {
+      "message": "Brom"
+   },
+   "2041": {
+      "message": "Niob"
+   },
+   "2042": {
+      "message": "Molybdän"
+   },
+   "2047": {
+      "message": "Silber"
+   },
+   "2050": {
+      "message": "Zinn"
+   },
+   "2051": {
+      "message": "Antimon"
+   },
+   "2052": {
+      "message": "Tellur"
+   },
+   "2053": {
+      "message": "Iod"
+   },
+   "2057": {
+      "message": "Lanthan"
+   },
+   "2058": {
+      "message": "Cer"
+   },
+   "2059": {
+      "message": "Praseodym"
+   },
+   "2060": {
+      "message": "Neodym"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Wolfram"
+   },
+   "2078": {
+      "message": "Platin"
+   },
+   "2082": {
+      "message": "Blei"
+   },
+   "2083": {
+      "message": "Bismut"
+   },
+   "2085": {
+      "message": "Astat"
+   },
+   "2092": {
+      "message": "Uran"
+   },
+   "2543": {
+      "message": "Drucken"
+   },
+   "6383": {
+      "message": "App installieren"
+   },
+   "6433": {
+      "message": "Zurück zum Periodensystem"
+   },
+   "6506": {
+      "message": "Alkalimetalle"
+   },
+   "6507": {
+      "message": "Erdalkalimetalle"
+   },
+   "6508": {
+      "message": "Nach-Übergangsmetalle"
+   },
+   "6509": {
+      "message": "Übergangsmetalle"
+   },
+   "6510": {
+      "message": "Lanthanoide"
+   },
+   "6511": {
+      "message": "Aktinoide"
+   },
+   "6512": {
+      "message": "Halbmetalle"
+   },
+   "6513": {
+      "message": "Nichtmetalle"
+   },
+   "6514": {
+      "message": "Halogene"
+   },
+   "6515": {
+      "message": "Edelgase"
+   },
+   "6516": {
+      "message": "Kategorie"
+   },
+   "6517": {
+      "message": "Schmelzpunkt"
+   },
+   "6518": {
+      "message": "Siedepunkt"
+   },
+   "6519": {
+      "message": "Elektronegativität"
+   },
+   "6520": {
+      "message": "unbekannt"
+   },
+   "6521": {
+      "message": "keine"
+   },
+   "6522": {
+      "message": "Weiß"
+   },
+   "6523": {
+      "message": "geschätzt"
+   },
+   "6524": {
+      "message": "vorhergesagt"
+   },
+   "6525": {
+      "message": "Chalkogene"
+   },
+   "6526": {
+      "message": "Stickstoffe"
+   },
+   "6527": {
+      "message": "H und Alkalimetalle"
+   },
+   "6528": {
+      "message": "Weitere Informationen"
+   },
+   "6529": {
+      "message": "Elektronen pro Schale"
+   },
+   "6531": {
+      "message": "CAS Nummer"
+   },
+   "6532": {
+      "message": "Gruppe __group_number__"
+   },
+   "6533": {
+      "message": "Periode __period_number__"
+   },
+   "6534": {
+      "message": "__block_symbol__-Block"
+   },
+   "6536": {
+      "message": "Elektronenkonfiguration"
+   },
+   "6540": {
+      "message": "Oxidationszahl"
+   },
+   "6541": {
+      "message": "hochgerechnet"
+   },
+   "6542": {
+      "message": "gasförmig"
+   },
+   "6543": {
+      "message": "fest"
+   },
+   "6544": {
+      "message": "flüssig"
+   },
+   "6545": {
+      "message": "Zustand bei Normbedingungen"
+   },
+   "6546": {
+      "message": "natürliche Isotope"
+   },
+   "6547": {
+      "message": "Eigenschaften"
+   },
+   "6548": {
+      "message": "Isotope"
+   },
+   "6549": {
+      "message": "Geschichte"
+   },
+   "6550": {
+      "message": "alte Zivilisation"
+   },
+   "6551": {
+      "message": "Geschichte"
+   },
+   "6552": {
+      "message": "Entdeckt von"
+   },
+   "6553": {
+      "message": "Jahr der Entdeckung"
+   },
+   "6722": {
+      "message": "Google wird die Unterstützung für Chrome Apps bald einstellen. Um __product_name__ auch nach der Einstellung weiter nutzen zu können, muss zur Webapp gewechselt werden."
+   },
+   "6723": {
+      "message": "Zu der Webapp von __product_name__ wechseln"
+   },
+   "6724": {
+      "message": "Vielen Dank, dass du die Chrome App von __product_name__ nutzt!"
+   },
+   "6725": {
+      "message": "Diese App wird im Juli 2021 im Rahmen der Einstellung von Chrome Apps seitens Google eingestellt. Keine Angst, die Webapp von __product_name__ kann weiterhin genutzt werden. Die Webapp von __product_name__ kann unter __web_address__ aufgerufen werden."
+   },
+   "6726": {
+      "message": "Diese App wurde im Juli 2021 im Rahmen der Einstellung von Chrome Apps seitens Google eingestellt. Keine Angst, die Webapp von __product_name__ kann weiterhin genutzt werden. Die Webapp von __product_name__ kann unter __web_address__ aufgerufen werden."
+   },
+   "6727": {
+      "message": "Nicht jetzt"
+   },
+   "6728": {
+      "message": "Zu __web_address__ wechseln"
+   },
+   "6968": {
+      "message": "Upgrade jetzt"
+   },
+   "7165": {
+      "message": "Weiß"
+   }
+}

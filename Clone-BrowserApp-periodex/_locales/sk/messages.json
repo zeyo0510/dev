@@ -1,0 +1,287 @@
+{
+   "0838": {
+      "message": "Informácie"
+   },
+   "1360": {
+      "message": "Zdieľať"
+   },
+   "1620": {
+      "message": "Zrušiť"
+   },
+   "2000": {
+      "message": "Elegant periodic table of elements"
+   },
+   "2001": {
+      "message": "Vodík"
+   },
+   "2002": {
+      "message": "Hélium"
+   },
+   "2003": {
+      "message": "Lítium"
+   },
+   "2004": {
+      "message": "Berýlium"
+   },
+   "2005": {
+      "message": "Bór"
+   },
+   "2006": {
+      "message": "Uhlík"
+   },
+   "2007": {
+      "message": "Dusík"
+   },
+   "2008": {
+      "message": "Kyslík"
+   },
+   "2009": {
+      "message": "Fluór"
+   },
+   "2010": {
+      "message": "Neón"
+   },
+   "2011": {
+      "message": "Sodík"
+   },
+   "2012": {
+      "message": "Horčík"
+   },
+   "2013": {
+      "message": "Hliník"
+   },
+   "2014": {
+      "message": "Kremík"
+   },
+   "2015": {
+      "message": "Fosfor"
+   },
+   "2016": {
+      "message": "Síra"
+   },
+   "2017": {
+      "message": "Chlór"
+   },
+   "2018": {
+      "message": "Argón"
+   },
+   "2019": {
+      "message": "Draslík"
+   },
+   "2020": {
+      "message": "Vápnik"
+   },
+   "2021": {
+      "message": "Skandium"
+   },
+   "2022": {
+      "message": "Titán"
+   },
+   "2023": {
+      "message": "Vanád"
+   },
+   "2024": {
+      "message": "Chróm"
+   },
+   "2025": {
+      "message": "Mangán"
+   },
+   "2026": {
+      "message": "Železo"
+   },
+   "2027": {
+      "message": "Kobalt"
+   },
+   "2028": {
+      "message": "Nikel"
+   },
+   "2029": {
+      "message": "Meď"
+   },
+   "2030": {
+      "message": "Zinok"
+   },
+   "2031": {
+      "message": "Gálium"
+   },
+   "2032": {
+      "message": "Germánium"
+   },
+   "2033": {
+      "message": "Arzén"
+   },
+   "2034": {
+      "message": "Selén"
+   },
+   "2035": {
+      "message": "Bróm"
+   },
+   "2036": {
+      "message": "Kryptón"
+   },
+   "2037": {
+      "message": "Rubídium"
+   },
+   "2038": {
+      "message": "Stroncium"
+   },
+   "2039": {
+      "message": "Ytrium"
+   },
+   "2040": {
+      "message": "Zirkónium"
+   },
+   "2041": {
+      "message": "Niób"
+   },
+   "2042": {
+      "message": "Molybdén"
+   },
+   "2043": {
+      "message": "Technécium"
+   },
+   "2044": {
+      "message": "Ruténium"
+   },
+   "2045": {
+      "message": "Ródium"
+   },
+   "2046": {
+      "message": "Paládium"
+   },
+   "2047": {
+      "message": "Striebro"
+   },
+   "2048": {
+      "message": "Kadmium"
+   },
+   "2050": {
+      "message": "Cín"
+   },
+   "2051": {
+      "message": "Antimón"
+   },
+   "2052": {
+      "message": "Telúr"
+   },
+   "2053": {
+      "message": "Jód"
+   },
+   "2054": {
+      "message": "Xenón"
+   },
+   "2055": {
+      "message": "Cézium"
+   },
+   "2056": {
+      "message": "Bárium"
+   },
+   "2057": {
+      "message": "Lantán"
+   },
+   "2058": {
+      "message": "Cér"
+   },
+   "2059": {
+      "message": "Prazeodým"
+   },
+   "2060": {
+      "message": "Neodým"
+   },
+   "2061": {
+      "message": "Prométium"
+   },
+   "2062": {
+      "message": "Samárium"
+   },
+   "2063": {
+      "message": "Európium"
+   },
+   "2064": {
+      "message": "Gadolínium"
+   },
+   "2066": {
+      "message": "Dysprózium"
+   },
+   "2069": {
+      "message": "Túlium"
+   },
+   "2070": {
+      "message": "Yterbium"
+   },
+   "2071": {
+      "message": "Lutécium"
+   },
+   "2073": {
+      "message": "Tantal"
+   },
+   "2074": {
+      "message": "Volfrám"
+   },
+   "2075": {
+      "message": "Rénium"
+   },
+   "2077": {
+      "message": "Irídium"
+   },
+   "2078": {
+      "message": "Platina"
+   },
+   "2079": {
+      "message": "Zlato"
+   },
+   "2081": {
+      "message": "Tálium"
+   },
+   "2082": {
+      "message": "Olovo"
+   },
+   "2083": {
+      "message": "Bizmut"
+   },
+   "2084": {
+      "message": "Polónium"
+   },
+   "2085": {
+      "message": "Astát"
+   },
+   "2086": {
+      "message": "Radón"
+   },
+   "2088": {
+      "message": "Rádium"
+   },
+   "2089": {
+      "message": "Aktínium"
+   },
+   "2090": {
+      "message": "Tórium"
+   },
+   "2091": {
+      "message": "Protaktínium"
+   },
+   "2092": {
+      "message": "Urán"
+   },
+   "2093": {
+      "message": "Neptúnium"
+   },
+   "2094": {
+      "message": "Plutónium"
+   },
+   "2095": {
+      "message": "Amerícium"
+   },
+   "2097": {
+      "message": "Berkélium"
+   },
+   "2098": {
+      "message": "Kalifornium"
+   },
+   "2112": {
+      "message": "Kopernikium"
+   },
+   "2543": {
+      "message": "Tlačiť"
+   }
+}
