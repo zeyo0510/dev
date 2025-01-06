@@ -1,0 +1,50 @@
+<md-dialog class="modal-box">
+
+    <div class="modal-box__header modal-box__header--request">Enter required fields</div>
+
+    <div class="modal-box__content">
+        <form name="connectForm"
+              bindonce>
+
+            <md-input-container flex>
+                <label>Hostname</label>
+                <input bo-if="is_address"
+                       class="merged"
+                       ng-model="connection.address"
+                       readonly>
+                <input bo-if="!is_address"
+                       ng-model="connection.address"
+                       md-autofocus
+                       required>
+            </md-input-container>
+
+            <md-input-container flex>
+                <label>User</label>
+                <input bo-if="is_username"
+                       class="merged"
+                       ng-model="connection.username"
+                       readonly>
+                <input bo-if="!is_username"
+                       ng-model="connection.username"
+                       md-autofocus="!!is_address == true"
+                       required>
+            </md-input-container>
+
+            <div class="modal-box__actions">
+                <button class="control-button control-button--cancel"
+                        ng-click="cancel()"
+                        md-ink-ripple
+                        type="button">
+                    Cancel
+                </button>
+                <button class="control-button"
+                        ng-click="connect_to_host()"
+                        ng-disabled="connectForm.$invalid"
+                        md-ink-ripple
+                        type="submit">
+                    Confirm
+                </button>
+            </div>
+        </form>
+    </div>
+</md-dialog>

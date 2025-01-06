@@ -1,0 +1,456 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/terminal-fonts.css">
+
+</head>
+<body ng-csp ng-cloak ng-app="webshellApp">
+<!--Main Controller-->
+<div id="appInit" class="initCtrl" ng-controller="InitCtrl" ng-mousemove="mouseMove()">
+
+    <!--Update Downloaded Modal-->
+    <div ng-controller="UpdateDownloadedCtrl"
+         class="update-downloaded-panel"
+         ng-class="{'panel-visible': update_modal_visible}">
+        <span class="update-downloaded-panel__text">
+            A new version has been downloaded.
+            <span ng-click="restart()"
+                  class="update-downloaded-panel__text__restart">
+                Restart
+            </span>
+            Termius to apply the updates.
+        </span>
+        <i class="icon close"
+           ng-click="close()">
+        </i>
+    </div>
+
+    <!--Spinner-->
+    <div ng-if="spinner.isShow" ng-include="spinner.template.url"></div>
+    <!--End Spinner-->
+
+    <!--Auth Controller-->
+    <div ng-if="authorized === false" ng-controller="AuthmodalCtrl" class="auth">
+        <div class="auth-form">
+            <span class="termius-logo"></span>
+            <ng-include src="'templates/loginForm.html'"></ng-include>
+        </div>
+    </div>
+    <!--End Auth Controller-->
+
+    <div class="settings"
+         ng-if="authorized"
+         ng-show="isSettings"
+         ng-controller="SettingsCtrl">
+        <div class="settings-content"
+             ng-include="template.settings"></div>
+    </div>
+
+    <!--Tabs Controller-->
+    <div class="tabsCtrl"
+         ng-if="authorized"
+         ng-controller="TabsCtrl">
+
+        <uib-tabset active="activeTab.uid"
+                    class="tabset"
+                    ng-class="{'hide-titles' : hideTitles}">
+            <div class="tabs-left container-list">
+                <div class="preferences-panel heading-title tab left-tab-title">
+                    <i class="logo icon-logo"></i>
+                    <div class="wrap-panel-text tab-title">
+                        <div class="user-status">
+                            <h4>Termius</h4>
+                            <div ng-class="{'activeUser': isProUser}" class="circle"></div>
+                            <span ng-if="!isProUser">Logged out</span>
+                            <span ng-if="isProUser" title="{{username_str}}">{{username_str}}</span>
+                        </div>
+                    </div>
+                    <md-menu class="settings-menu"
+                             md-position-mode="{{ preferencesMenuMode }}"
+                             md-offset="{{ preferencesMenuOffset }}">
+                        <md-button ng-click="$mdMenu.open($event)">
+                            <i class="mdi mdi-chevron-down"></i>
+                        </md-button>
+                        <md-menu-content class="settings-menu__content">
+                            <!--Preferences-->
+                            <md-menu-item>
+                                <md-button class="settings-menu__content__main-item"
+                                           ng-click="openSettings()">
+                                    Preferences
+                                </md-button>
+                            </md-menu-item>
+
+                            <!--Submenu for big left panel mode-->
+                            <md-menu-item ng-repeat="settings_tab in settings_tabs"
+                                          ng-if="!hideTitles">
+                                <md-button class="settings-menu__content__secondary-item"
+                                           ng-click="openSettings($index)">
+                                    {{settings_tab.title}}
+                                </md-button>
+                            </md-menu-item>
+
+                            <!--Items for small left panel mode-->
+                            <md-menu-item ng-repeat="tab in baseTabs"
+                                          ng-if="hideTitles && tab.title != 'Terminals'">
+                                <md-button class="settings-menu__content__main-item"
+                                           ng-click="switchToBaseTab(tab.title)">
+                                    {{tab.title}}
+                                </md-button>
+                            </md-menu-item>
+
+                            <!--Login and Logout-->
+                            <md-menu-item ng-if="!isProUser">
+                                <md-button class="settings-menu__content__main-item"
+                                           ng-click="login()">
+                                    Log in
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item ng-if="isProUser">
+                                <md-button class="settings-menu__content__main-item"
+                                           ng-click="logout()">
+                                    Log out
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <!-- Base tabs -->
+                <uib-tab class="tab base-tab {{tab.classes}}"
+                         ng-repeat="tab in baseTabs"
+                         id="tab-title-{{::tab.uid}}"
+                         index="::tab.uid"
+                         md-ink-ripple
+                         title="{{getTabShortcuts(tab.uid)}}"
+                         select="tabSelected(tab)">
+                    <!-- TODO think about flags connect-off-->
+
+                    <!-- Tab title -->
+                    <uib-tab-heading bindonce class="heading">
+                        <div class="left-tab-title">
+                            <!--Start block icon of host-->
+                            <div class="wrap-icon icon-tab" ng-include src="'partials/' + tab.icon + '.html'"></div>
+                            <!--End block icon of host -->
+                            <!--Start block title of host -->
+                            <span class="tab-title" ng-bind="tab.alias || tab.title" ng-hide="hideTitles"></span>
+                            <!--End block title of host -->
+                        </div>
+                    </uib-tab-heading>
+                    <!-- End Tab title -->
+
+
+                    <!--Tab Content-->
+                    <div class="tabContentCtrl" ng-controller="TabcontentCtrl" ng-init="init(tab)">
+                        <!--Snippets-->
+                        <div class="snippets-tab-content" ng-if="isSnippets" ng-controller="SnippetsCtrl">
+                            <div class="snippets-content" ng-include="template.snippets" layout="row"></div>
+                        </div>
+                        <!--End Snippets-->
+
+                        <!--Port Forwarding Rules-->
+                        <!-- 'tabindex' here for opportunity to focus this 'div' -->
+                        <div class="pf-rules-tab-content" tabindex="1" ng-if="isRules" ng-controller="PortForwardingCtrl">
+                            <div class="pf-rules-content" ng-include="template.rules" layout="row"></div>
+                        </div>
+                        <!--End Port Forwarding Rules-->
+
+
+                        <div class="alfred-tab-content" ng-if="isAlfred" ng-controller="AlfredCtrl" ng-init="init()">
+                            <div class="alfred-content" ng-if="isShowAlfred" ng-include="template.alfred"></div>
+                        </div>
+
+                    </div>
+                    <!--End Tab Content-->
+
+                </uib-tab>
+                <!-- End Base tabs -->
+
+
+                <!-- Terminal tabs -->
+                <uib-tab class="tab connection-tab"
+                         ng-repeat="tab in terminalTabs"
+                         id="tab-title-{{::tab.uid}}"
+                         index="::tab.uid"
+                         title="{{tab.title + ', ' + getTabShortcuts(tab.uid)}}"
+                         select="tabSelected(tab)"
+                         ng-style="styleBackground(tab)">
+
+
+                    <!-- Tab title -->
+                    <uib-tab-heading bindonce context-menu
+                                     data-target="tabs-{{$index}}"
+                                     class="heading">
+                        <!--Start block icon of host-->
+                        <div class="left-tab-title terminals"
+                             ng-switch="tab.flag_connecting">
+
+
+                            <!-- We use ng-switch instead ng-if because ng-switch is adding only one Angular watcher -->
+                            <div class="progress-bar mdi" ng-switch-when="connect-on">
+                                <md-progress-circular class="progress-circular-container" md-mode="indeterminate"
+                                                      md-diameter="24"></md-progress-circular>
+                            </div>
+
+                            <i ng-switch-when="connect-error" class="mdi error-icon"></i>
+
+                            <div ng-switch-default
+                                 class="connection-indicator icon-tab"
+                                 ng-style="styleIconConnection(tab)">
+
+                                 <ng-include src="'partials/terminal-prompt.html'"></ng-include>
+
+                                 <span ng-if="tab.hasUnreadOutput"
+                                      ng-style="{'background-color': tab.scheme['foreground-color']}"
+                                      class="indicatorStdIn"></span>
+
+                                 <!--<i ng-style="{'color': tab.scheme['foreground-color']}"-->
+                                     <!--class="indicatorCloseIcon mdi mdi-close"></i>-->
+                            </div>
+                            <!--End block icon of host -->
+
+                            <!--Start block title of host -->
+                            <editable-title editable="tab.flag_connecting != 'connect-off'"
+                                            tabtitle="tab.title"
+                                            change_title="tab.triggerChangeTitle"
+                                            class="left-title tab-title"
+                                            ng-style="styleFontColor(tab)">
+                            </editable-title>
+
+                            <div class="terminal-tab-corner-top"
+                                 ng-include="'partials/terminal-tab-corner.html'">
+                            </div>
+
+                            <div class="terminal-tab-corner-bottom"
+                                 ng-include="'partials/terminal-tab-corner.html'">
+                            </div>
+
+                        </div>
+                        <!--End block title of host -->
+
+                        <!--Start block context menu of host -->
+                        <div class="context-menu" id="tabs-{{$index}}">
+                            <ul class="list context-menu__list">
+                                <li md-ink-ripple class="list-row" ng-class='{"disabled": !tab.connection}' ng-click="duplicateTab(tab.uid)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon duplicate-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Duplicate
+                                    </div>
+                                </li>
+                                <li ng-hide="hideTitles"
+                                    class="list-row"
+                                    md-ink-ripple
+                                    ng-click="renameTab(tab.uid)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon edit-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Rename
+                                    </div>
+                                </li>
+                                <li md-ink-ripple class="list-row" ng-click="closeTab(tab.uid)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon close-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Close
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End block context menu of host -->
+
+                    </uib-tab-heading>
+                    <!-- End Tab title -->
+
+
+                    <!--Tab Content-->
+                    <div class="tabContentCtrl">
+
+                        <!--Terminal-->
+                        <div class="terminal" ng-controller="TerminalCtrl"
+                             ng-init="init(tab.connection)">
+
+                            <!--Alert with global error for example: connection refused-->
+                            <div bindonce class="modal-box error-connect" ng-if="tab.isShowError">
+
+                                <div class="modal-box__content">
+                                    {{ errorMsg }}
+                                </div>
+
+                                <div class="modal-box__actions">
+
+                                    <button class="control-button control-button--notify"
+                                            md-ink-ripple
+                                            ng-click="onCloseTab()"
+                                            ng-auto-focus="true">
+                                        Close
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <!--End Alert with global error for example: connection refused-->
+
+                            <!--Overlay for share line-->
+                            <div class="iframe-overlay"></div>
+                            <!--End Overlay for share line-->
+
+                            <div class="terminal-outer-container"
+                                 ng-style="{'background-color':tab.scheme['background-color']}">
+                                <!--TODO this container is hack: we can't add padding at terminal.js-->
+
+                                <div id="{{::tab.uid}}" class="terminal-content">
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Terminal-->
+                    </div>
+                    <!--End Tab Content-->
+                </uib-tab>
+
+
+                <!--History-->
+                <div class="history-tab" ng-controller="HistoryList">
+                    <div class="heading tab">
+                        <div class="heading-title left-tab-title" bindonce context-menu
+                                data-target="history-context">
+                            <ng-include class="wrap-icon icon-tab"  src="'partials/history.html'"></ng-include>
+                            <span class="tab-title">History</span>
+                        </div>
+
+                        <div class="context-menu" id="history-context">
+                            <ul class="list context-menu__list">
+                                <li md-ink-ripple class="list-row" ng-click="clearAll()">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon remove-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Clear history
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <custom-search-filter model='filter_input'></custom-search-filter>
+
+                    </div>
+                    <uib-tab ng-repeat="activity in history | orderBy: '-connected_at' | limitTo : tabShown"
+                             class="tab {{show_history_title(activity) ? '' : 'hidden'}}"
+                             index="::activity.uid"
+                             md-ink-ripple
+                             select="tabSelected(activity)">
+                        <!-- Tab title -->
+                        <uib-tab-heading bindonce ng-dblclick="onConnectToHistory(activity)"
+                                         bo-class="{ 'highlight': highlight, 'expanded' : expanded }"
+                                         context-menu data-target="history-{{$index}}">
+                            <span class="left-title display-block">
+                                {{ ::activity.label || activity.address }}
+                                <span ng-if="::activity.counter > 1"> ({{::activity.counter}})</span>
+                                <i ng-if='::activity.errorMsg' class="mdi mdi-exclamation history__failed"></i>
+                            </span>
+                            <!--<span class="display-block subtitle">-->
+                                <!--{{::activity.connected_at | momentFilter}}-->
+                            <!--</span>-->
+
+                            <!--Start block context menu of history -->
+                            <div class="context-menu" id="history-{{$index}}">
+                                <ul class="list context-menu__list">
+                                    <li md-ink-ripple class="list-row" ng-click="onConnectToHistory(activity)">
+                                        <div class="list-row__primary">
+                                            <i class="context-menu__icon enter-icon"></i>
+                                        </div>
+                                        <div class="list-row__content">
+                                            Connect
+                                        </div>
+                                    </li>
+                                    <li md-ink-ripple class="list-row" ng-click="remove(activity)">
+                                        <div class="list-row__primary">
+                                            <i class="context-menu__icon remove-icon"></i>
+                                        </div>
+                                        <div class="list-row__content">
+                                            Remove
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End block context menu of history -->
+                        </uib-tab-heading>
+                        <div class="history-tab-content" ng-controller="HistoryTabCtrl" ng-init="init(activity)">
+                            <div class="history-content alfred-content" ng-include="template.history_tab" layout="row"></div>
+                        </div>
+                    </uib-tab>
+                    <div class="history__show-more"
+                            ng-if="tabShown < history.length" ng-click="showMoreHistory()"
+                            md-ink-ripple="rgba(158,164,179,0.098)"
+                            type="button">
+                        Show more…
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <!--End History-->
+                <!--Link to the store-->
+                <!--<div ng-if="!isProUser" class="go-premium">-->
+                    <!--<div>-->
+                        <!--<i class="mdi  mdi-flash"></i>-->
+                        <!--<h4>Go Premium</h4>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            </div>
+        </uib-tabset>
+
+    </div>
+    <!--End Tabs Controller-->
+</div>
+<!--End Main Controller-->
+
+<script src="js/configure.js"></script>
+<script src="js/dependencies.js"></script>
+<script src="js/entry.js"></script>
+
+<!--Overrides templates for angular-ui.bootstrap tabs-->
+<script id="uib/template/tabs/tabset.html" type="text/ng-template">
+    <div>
+        <ul id="container-left"
+            class="container-left nav nav-{{tabset.type || 'tabs'}}"
+            ng-class="{'nav-stacked': vertical, 'nav-justified': justified}"
+            ng-transclude
+            bindonce>
+        </ul>
+        <div id="container-right" class="tab-content">
+            <div class="resizer-wrapper">
+                <resize class="resizer slider-invisible" resize-left="#container-left" resize-right="#container-right" resize-min="55"></resize>
+            </div>
+            <div class="tab-pane"
+                 ng-repeat="tab in tabset.tabs"
+                 ng-class="{active: tabset.active === tab.index}"
+                 uib-tab-content-transclude="tab">
+            </div>
+        </div>
+    </div>
+</script>
+<!--End Overrides templates for angular-ui.bootstrap tabs-->
+
+
+<!--Overrides templates from lumx tab-->
+<script id="tab.html" type="text/ng-template">
+    <div class="tabs__pane" ng-class="{ 'tabs__pane--is-disabled': lxTab.ngDisabled , 'active': lxTab.tabIsActive() === true}">
+        <div ng-transclude></div>
+    </div>
+</script>
+<!--End Overrides templates from lumx tab-->
+
+
+</body>
+</html>

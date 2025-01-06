@@ -1,0 +1,35 @@
+<div class="user-profile_content right-side-layout">
+    <div class="right-side">
+        <div class="right-side-content-wrapper">
+
+            <div class="right-side-content">
+                <div class="auth-form wrap-login-form">
+                    <div class="title">
+                        Login
+                    </div>
+                    <ng-include src="'templates/loginForm.html'"></ng-include>
+                </div>
+
+                <div class="support-feedback-frame">
+                    <div class="title">
+                        Give Feedback
+                    </div>
+                    <button class="control-button control-button--forgot"
+                            md-ink-ripple
+                            ng-click="redirect_to_uservoice()">
+                        Support
+                    </button>
+                </div>
+
+                <div class="whiteframe">
+                    <div class="title">
+                        Application Version
+                    </div>
+                    <div ng-bind="::app_version" class="description">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,115 @@
+<md-dialog class="modal-box"
+           aria-label="Two-Factor Authentication">
+
+    <div class="modal-box__header modal-box__header--request">Two-Factor Authentication</div>
+
+    <div  class="modal-box__content">
+
+            <div ng-if="selection === steps[0]">
+                <p>Termius Two Factor Authentication is implemented with the help of Authy.</p>
+                </br>
+                <p>Make sure you have Authy activated.
+                    <a class="modal-box__link"
+                       href=""
+                       ng-click="redirect_to_link('https://www.authy.com/learn-more/')">
+                        Click here for instructions.
+                    </a>
+                    Use your phone number to login to Authy and retrieve your Authorization Code (Auth Token).
+                </p>
+            </div>
+
+            <form ng-if="selection === steps[1]"
+                  name="form_phone_number"
+                  ng-submit="form_phone_number.$valid && !disableButton && registerPhone()">
+
+                <div>Please fill out your Phone Number</div>
+
+                <md-input-container class="phone-input input-with-error"
+                                    ng-class="{'_is_error': error_phone}">
+                    <label class="phone-input__label">Phone Number</label>
+                    <i class="phone-input__plus mdi mdi-plus"></i>
+                    <input name="phone_number"
+                           ng-model="model.phone_number"
+                           ng-auto-focus="true"
+                           required
+                           ng-pattern="/^\d+$/"
+                           ng-change="validateData(form_phone_number.$invalid)">
+                    <div class="input-with-error__error"
+                         ng-show="form_phone_number.phone_number.$dirty || error_phone"
+                         ng-cloak>
+                        {{error_phone}}
+                    </div>
+                </md-input-container>
+
+            </form>
+
+            <form class="form_with_authy_token"
+                  ng-if="selection === steps[2]"
+                  name="form_authy_token"
+                  ng-submit="form_authy_token.$valid && !disableButton && submit()">
+                    <p>Please enter your Auth Token</p>
+                    <p>
+                        <a class="modal-box__link"
+                           href=""
+                           ng-click="redirect_to_link('https://www.authy.com/learn-more/')">
+                            How do I find my Auth Token?
+                        </a>
+                    </p>
+
+                <md-input-container class="input-with-error"
+                                    ng-class="{'_is_error': error_token}">
+                    <label>Authy token</label>
+                    <input class="authy_token"
+                           name="authy_token"
+                           ng-model="model.authy_token"
+                           ng-auto-focus="true"
+                           ng-pattern="/^\d+$/"
+                           ng-change="validateData(form_authy_token.$invalid)"
+                           required>
+                    <div class="input-with-error__error"
+                         ng-show="form_authy_token.authy_token.$dirty || error_token"
+                         ng-cloak>
+                        {{error_token}}
+                    </div>
+                </md-input-container>
+
+            </form>
+
+            <div class="modal-box__progress">
+                <md-progress-linear ng-show="confirm"
+                                    ng-cloak md-mode="indeterminate"></md-progress-linear>
+            </div>
+
+    </div>
+
+    <div class="modal-box__actions">
+        <button class="control-button control-button--cancel"
+                ng-click="cancel(true)"
+                md-ink-ripple
+                ng-disabled="confirm">
+            Cancel
+        </button>
+        <button class="control-button"
+                ng-if="selection === steps[0]"
+                ng-click="incrementStep()"
+                md-ink-ripple
+                md-autofocus>
+            Continue
+        </button>
+        <button class="control-button"
+                ng-if="selection === steps[1]"
+                md-ink-ripple
+                ng-click="registerPhone()"
+                ng-disabled="disableButton">
+            Continue
+        </button>
+        <button class="control-button"
+                ng-if="selection === steps[2]"
+                md-ink-ripple
+                ng-click="submit()"
+                ng-disabled="disableButton">
+            Confirm
+        </button>
+    </div>
+
+</md-dialog>

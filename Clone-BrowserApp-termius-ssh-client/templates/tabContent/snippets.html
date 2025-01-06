@@ -1,0 +1,127 @@
+<div class="snippets-content right-side-layout">
+    <div class="right-side" ng-class="{open_dialog: is_visible_form}">
+        <div class="right-side-content-wrapper">
+
+            <div class="right-side-content" ng-class="{'empty-screen' : emptyScreen}">
+
+                <div class="right-side-empty-screen">
+                    <div class="wrap-content">
+                        <i class="mdi snippet"></i>
+                        <h2 class="title-content">Snippets</h2>
+                        <p class="instruction">
+                            Snippets are predefined shell scripts,  <br>
+                            <span ng-click="openDialog()" class="add-link">Add a Snippet</span> to easily and conveniently <br>
+                            run any command at anytime
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right-side-tools">
+                    <span class="right-side-title">Snippets</span>
+                    <span flex></span>
+                    <lx-search-filter class="search_from_lumx" lx-width="150px" lx-closed="true">
+                        <input type="text" ng-model="searchFilter.query" placeholder="Search">
+                    </lx-search-filter>
+
+                    <div class="sort-menu">
+                        <div class="sort-menu__title">Arrange by: {{sort.title}}</div>
+                        <md-menu md-position-mode="target-right bottom">
+                            <md-button class="sort-menu__chevron"
+                                       ng-click="$mdMenu.open($event)">
+                                <i class="mdi mdi-chevron-down"></i>
+                            </md-button>
+                            <md-menu-content width="3">
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('created_at', true)">
+                                        <div>Date</div>
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('label', false)">
+                                        <div>Name</div>
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+                    </div>
+                </div>
+
+                <!-- Snippets -->
+                <ul class="list right-side-list">
+                    <li class="list-row" bindonce ng-repeat="snippet in snippets | filter: searchFilter.query | orderBy:sort.property:sort.reverse"
+                        context-menu="select(snippet)"
+                        data-target="snippets-{{::$index}}"
+                        bo-class="{ 'highlight': highlight, 'expanded' : expanded}"
+                        ng-class="{'selected' : snippet.is_selected}"
+                        ng-click="select(snippet)"
+                        ng-dblclick="openDialog(snippet)">
+
+                        <div class="list-row__primary">
+                            <i class="icon icon--l snippet-icon icon--circled mdi mdi-code-braces"></i>
+                        </div>
+
+                        <div class="list-row__content">
+                            <div ng-if="getSnippetTitle(snippet)">
+                                {{ getSnippetTitle(snippet) }}
+                            </div>
+                            <div class="list-row__content__description"
+                                 ng-if="getSnippetDescription(snippet)">
+                                {{ getSnippetDescription(snippet) }}
+                            </div>
+                        </div>
+
+                        <div class="list-row__buttons">
+                            <md-button ng-click="openDialog(snippet)"
+                                       class="list-row__buttons__edit-btn">
+                                Edit
+                            </md-button>
+                            <md-button ng-click="remove_snippet(snippet)"
+                                       class="list-row__buttons__remove-btn">
+                                Remove
+                            </md-button>
+                        </div>
+
+                        <div class="context-menu" id="snippets-{{::$index}}">
+                            <ul class="list context-menu__list">
+                                <li md-ink-ripple class="list-row" ng-click="openDialog(snippet)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon edit-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Edit
+                                    </div>
+                                </li>
+                                <li md-ink-ripple class="list-row" ng-click="remove_snippet(snippet)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon remove-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Remove
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+                <!-- End Snippets -->
+
+            </div>
+
+            <!-- Add Snippet -->
+            <div class="fab"
+                 ng-if="!is_visible_form">
+                <button class="btn control-button"
+                        md-ink-ripple
+                        ng-click="openDialog()">
+                    + Add Snippet
+                </button>
+            </div>
+            <!-- End Add Snippet -->
+        </div>
+    </div>
+
+    <div class="side-nav" ng-class="{open_dialog: is_visible_form}">
+        <div ng-if="is_visible_form" class="edit-form" ng-include="template.snippet_form"></div>
+    </div>
+</div>

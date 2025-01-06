@@ -1,0 +1,19 @@
+<div class="custom-search-filter">
+    <div class="custom-search-filter__container">
+        <label class="custom-search-filter__label">
+            <button class="btn btn--s btn--icon"
+                    ng-click="open()" md-ink-ripple>
+                <i class="mdi mdi-magnify"></i>
+            </button>
+        </label>
+
+        <input type="text" class="custom-search-filter__input" ng-blur="hide()" placeholder="Search" ng-model="filter_input.filter" tabindex="0" aria-invalid="false">
+
+        <div class="custom-search-filter__clear">
+            <button class="btn btn--s btn--icon"
+                    ng-click="clear()"  md-ink-ripple>
+                <i class="mdi mdi-window-close"></i>
+            </button>
+        </div>
+    </div>
+</div>

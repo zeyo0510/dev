@@ -1,0 +1,244 @@
+<div id="{{::uid}}" tabindex="1" class="alfred-widget" ng-click="setFocusAtInput($event)">
+    <div class="alfred">
+
+        <div class="alfred-box">
+            <!--Toolbar with menu-->
+            <div ng-if="::!controlsDisabled"
+                 class="toolbar alfred-toolbar"
+                 ng-class="{'inputInFocus': inputInFocus}">
+
+                <input type="text"
+                       id="alfred-input"
+                       ng-model="searchFilter.query"
+                       ng-keydown="keydown($event)"
+                       ng-focus="inputFocused()"
+                       ng-blur="inputLoseFocus()"
+                       placeholder={{::placeholder}}>
+
+                <span class="alfred-connect-button"
+                        ng-class="{'is-disabled': !connectState || !inputInFocus}"
+                        ng-click="enter()">
+                    Connect
+                </span>
+            </div>
+            <!--End Toolbar with menu-->
+
+            <!--Filters tag-->
+            <div class="data-box"
+                 bindonce
+                 bo-class="{ 'controls-disabled': controlsDisabled, 'search-filter-enabled': searchFilterEnabled }">
+
+                <!--Background for empty screens-->
+                <div class="right-side-empty-screen">
+                    <div class="wrap-content">
+                        <i class="mdi terminals-content"></i>
+                        <h2 class="title-content">Start a session</h2>
+                        <p class="instruction">
+                            You can enter an IP/hostname in the <br>
+                            Connect Field or
+                            <span ng-click="addConnection($event)" class="add-link">Add a New Host</span>
+                        </p>
+                    </div>
+                </div>
+                <!--End of background for empty screens-->
+
+
+                <div class="filters-toolbar">
+                    <lx-search-filter ng-if="::searchFilterEnabled" lx-width="100%" lx-color="#616161" lx-closed="false">
+                        <input class="search-filter-input"
+                               type="text"
+                               ng-focus="searchFilterFocused()"
+                               ng-model="searchFilter.query"
+                               placeholder="Search">
+                    </lx-search-filter>
+
+                    <div class="tags-menu alfred-menu">
+                        <i class="tags-menu__icon mdi mdi-tag alfred-icon"></i>
+                        <span class="count-tags" ng-if="chosen_tags.length">{{chosen_tags.length}}</span>
+                        <div class="alfred-menu__title">Tags</div>
+                        <!--<md-button class="md-button">-->
+                        <div class="alfred-menu__clear_tags" ng-if="chosen_tags.length" ng-click="filterByTag()">
+                            Clear All
+                            <i class="mdi mdi-close"></i>
+                        </div>
+                        <!--</md-button>-->
+
+                        <md-menu md-position-mode="target-right bottom">
+                            <md-button class="alfred-menu__chevron"
+                                       ng-click="$mdMenu.open($event)">
+                                <i class="mdi mdi-chevron-down"></i>
+                            </md-button>
+                            <md-menu-content width="3">
+                                <md-menu-item class="bordered-menu-item">
+                                    <md-button ng-click="filterByTag()">
+                                        <b>Deselect all</b>
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-item ng-repeat="tag in copy_tags track by $index"
+                                              ng-class="{'alfred-menu__selected-item': tag.is_chosen}">
+                                    <md-button ng-click="filterByTag(tag)">
+                                        <div class="alfred-menu__item-content">
+                                            {{::tag.label}}
+                                            <i ng-if="tag.is_chosen" class="mdi mdi-close"></i>
+                                        </div>
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+                    </div>
+
+                    <div class="sort-menu alfred-menu">
+                        <div ng-if="::controlsDisabled"
+                             class="alfred-menu__title">
+                            {{selectedSort}}
+                        </div>
+                        <div ng-if="::!controlsDisabled"
+                             class="alfred-menu__title">
+                            Arrange by: {{selectedSort}}
+                        </div>
+                        <md-menu md-position-mode="target-right bottom">
+                            <md-button class="alfred-menu__chevron"
+                                       ng-click="$mdMenu.open($event)">
+                                <i class="mdi mdi-chevron-down"></i>
+                            </md-button>
+                            <md-menu-content width="3">
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('Date')">
+                                        <div>Date</div>
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('Name')">
+                                        <div>Name</div>
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+                    </div>
+
+                </div>
+                <!--End Filters by tag-->
+
+                <div class="data-box-content">
+                    <!--Path groups-->
+                    <div ng-if="path_groups.length" class="parent-group">
+                        <ul>
+                            <li class="parent-group-list">
+                                <a ng-click="filterByGroup(null)">All hosts</a>
+                            </li>
+                            <li class="parent-group-list" ng-repeat="group in path_groups">
+                                <a ng-click="filterByGroup(group)">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                    {{ group.label }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End Path groups-->
+                    <!--Child groups-->
+                    <div ng-if="filteredGroups.length"
+                         class="alfred-subtitle">
+                        Groups
+                    </div>
+                    <ul class="alfred-groups-list">
+                        <li bindonce ng-repeat="group in filteredGroups = (children_group | filter:{ label: searchFilter.query })"
+                            context-menu
+                            context-menu-disabled="controlsDisabled"
+                            data-target="child_group-{{::uid}}-{{::$index}}"
+                            class="list-row">
+
+                            <div class="list-row__primary"
+                                 ng-click="filterByGroup(group)">
+                                <i class="icon icon--l group-icon"></i>
+                            </div>
+
+                            <div class="list-row__content"
+                                 ng-click="filterByGroup(group)">
+                                <div class="alfred-item-info">
+                                    <div class="alfred-item-title">{{ group.label }}</div>
+                                    <div class="alfred-item-subtitle">
+                                        <ng-pluralize count="group.hosts_count"
+                                                      when="{'0': 'No Hosts',
+                                                      'one': '{} Host',
+                                                      'other': '{} Hosts'}">
+                                        </ng-pluralize>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-row__buttons">
+                                <md-button ng-click="editGroup(group)"
+                                           class="list-row__buttons__edit-btn">
+                                    Edit
+                                </md-button>
+                                <md-button ng-click="removeGroup(group)"
+                                           class="list-row__buttons__remove-btn">
+                                    Remove
+                                </md-button>
+                            </div>
+
+                            <div class="context-menu" id="child_group-{{::uid}}-{{::$index}}">
+                                <ul class="list context-menu__list" role="menu">
+                                    <li md-ink-ripple class="list-row" ng-click="editGroup(group)">
+                                        <div class="list-row__primary">
+                                            <i class="context-menu__icon edit-icon"></i>
+                                        </div>
+                                        <div class="list-row__content">
+                                            Edit
+                                        </div>
+                                    </li>
+                                    <li md-ink-ripple class="list-row" ng-click="removeGroup(group)">
+                                        <div class="list-row__primary">
+                                            <i class="context-menu__icon remove-icon"></i>
+                                        </div>
+                                        <div class="list-row__content">
+                                            <span>Remove</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--End Child groups-->
+
+                    <!--Hosts List-->
+                    <div class="content-box">
+                        <div class="table">
+                            <div id="list">
+                                <div class="host-list">
+                                    <active-list connections="connections"
+                                                 uid="uid"
+                                                 height-cell="heightCell"
+                                                 query="searchFilter.query"
+                                                 selected-index="selectedIndex"
+                                                 current-group="current_group"
+                                                 controls-disabled="controlsDisabled">
+                                    </active-list>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Hosts List-->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Add buttons -->
+        <div ng-if="::!controlsDisabled"
+             class="fab">
+            <button class="btn control-button"
+                    ng-click="addGroup($event)"
+                    md-ink-ripple>
+                + New Group
+            </button>
+            <button class="btn control-button"
+                    ng-click="addConnection($event)"
+                    md-ink-ripple>
+                + New Host
+            </button>
+        </div>
+        <!-- End Add buttons -->
+
+    </div>
+</div>

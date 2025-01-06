@@ -1,0 +1,35 @@
+<div class="select-dialogue__actions">
+    <button class="control-button control-button--cancel select-dialogue__cancel-button"
+            ng-click="cancel()"
+            md-ink-ripple
+            type="button">
+        <i class="select-dialogue__close-arrow arrow-left-grey"></i>
+        <span>Cancel</span>
+    </button>
+    <button class="control-button"
+            ng-disabled="!selected_host"
+            ng-click="done()"
+            md-ink-ripple
+            type="submit">
+        Select host
+    </button>
+</div>
+<div class="select-host-panel__content">
+
+    <!--Alfred widget-->
+    <alfred uid="uid"
+            update-event="alfred_config.alfred_event_update"
+            select-host-event="alfred_config.select_host_event"
+            clear-filters-event="alfred_config.clear_filters_event"
+            hosts="alfred_config.hosts"
+            groups="alfred_config.groups"
+            taghosts="alfred_config.taghosts"
+            tags="alfred_config.tags"
+            controls-disabled="alfred_config.controlsDisabled"
+            search-filter-enabled="alfred_config.searchFilter"
+            on-select-host-callback="alfred_config.selectCallback(host)"
+            on-enter-host-callback="alfred_config.enterCallback(host)"
+    </alfred>
+    <!--End Alfred widget-->
+
+</div>

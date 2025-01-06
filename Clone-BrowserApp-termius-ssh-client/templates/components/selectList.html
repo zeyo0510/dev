@@ -1,0 +1,23 @@
+<div class="select-list__title">
+    {{::$ctrl.listTitle}}
+</div>
+<div class="select-list__item"
+    ng-repeat="model in $ctrl.collection"
+    ng-class="{'_is_selected': model._is_selected}"
+    ng-click="$ctrl.select(model)"
+    ng-dblclick="$ctrl.onDoubleClick()">
+
+    <i class="select-list__item__icon {{::$ctrl.iconClass}}"></i>
+
+    <div class="select-list__item__content">
+        <div class="select-list__item__title"
+             ng-if="::model.title">
+            {{::model.title}}
+        </div>
+        <div class="select-list__item__description"
+             ng-if="::model.description">
+            {{::model.description}}
+        </div>
+    </div>
+
+</div>

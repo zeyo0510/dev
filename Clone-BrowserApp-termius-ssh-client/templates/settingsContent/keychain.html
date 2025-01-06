@@ -1,0 +1,86 @@
+<div class="right-side-layout">
+    <div class="keys right-side" ng-class="{open_dialog: is_visible_form}">
+        <div class="right-side-content-wrapper">
+
+            <div class="right-side-content" ng-class="{'empty-screen' : sshKeysExist == 0 && sshIdentitiesExist == 0}">
+
+                <div class="right-side-empty-screen">
+                    <div class="wrap-content keychain-background">
+                        <i class="mdi keychain-content"></i>
+                        <h2 class="title-content">Identities & Keys</h2>
+                        <p class="instruction">
+                            Manage your <span ng-click="openDialog('ssh_identity')" class="add-link">Usernames</span> and <br>
+                            <span ng-click="openDialog('ssh_key')" class="add-link">Access Keys</span> by adding them <br>
+                            to the Keychain
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Keys and Identities -->
+                <div class="list-content">
+                    <div class="right-side-tools">
+                        <span flex></span>
+                        <lx-search-filter class="search_from_lumx" lx-width="150px" lx-closed="true">
+                            <input type="text" ng-model="searchFilter.query" placeholder="Search">
+                        </lx-search-filter>
+
+                        <div class="sort-menu">
+                            <div class="sort-menu__title">Arrange by: {{sort.title}}</div>
+                            <md-menu md-position-mode="target-right bottom">
+                                <md-button class="sort-menu__chevron"
+                                           ng-click="$mdMenu.open($event)">
+                                    <i class="mdi mdi-chevron-down"></i>
+                                </md-button>
+                                <md-menu-content class="settings-screen-menu"
+                                                 width="3">
+                                    <md-menu-item>
+                                        <md-button ng-click="sortBy('created_at', true)">
+                                            <div>Date</div>
+                                        </md-button>
+                                    </md-menu-item>
+                                    <md-menu-item>
+                                        <md-button ng-click="sortBy('label', false)">
+                                            <div>Name</div>
+                                        </md-button>
+                                    </md-menu-item>
+                                </md-menu-content>
+                            </md-menu>
+                        </div>
+                    </div>
+
+                    <div ng-show="show_keys == true" ng-controller="KeyChainKeysCtrl">
+                        <div class="right-side-list" ng-include="template_keys.url"></div>
+                    </div>
+
+                    <div ng-show="show_identities == true" ng-controller="KeyChainIdentitiesCtrl">
+                        <div class="right-side-list" ng-include="template_identities.url"></div>
+                    </div>
+                </div>
+                <!-- End Keys and Identities -->
+
+            </div>
+
+            <!-- Add Key, Identity -->
+            <div ng-if="!is_visible_form"
+                 class="fab">
+                <button class="btn control-button"
+                        ng-click="openDialog('ssh_key')"
+                        md-ink-ripple>
+                    + Add Key
+                </button>
+                <button class="btn control-button"
+                        ng-click="openDialog('ssh_identity')"
+                        md-ink-ripple>
+                    + Add Identity
+                </button>
+            </div>
+            <!-- End Add Key, Identity -->
+        </div>
+    </div>
+
+    <div class="side-nav" ng-class="{open_dialog: is_visible_form}">
+        <div ng-if="is_ssh_key" class="edit-form" ng-include='"templates/modals/keys.html"'></div>
+        <div ng-if="is_ssh_identity" class="edit-form" ng-include='"templates/modals/identities.html"'></div>
+    </div>
+
+</div>

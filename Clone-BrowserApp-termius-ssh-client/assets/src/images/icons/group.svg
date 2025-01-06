@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="V3-assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-784.000000, -432.000000)" fill="#FFFFFF">
+            <g id="group" transform="translate(784.000000, 432.645570)">
+                <g id="Group-icon">
+                    <polygon id="Fill-1" points="11 20 20 20 20 11 11 11"></polygon>
+                    <polygon id="Fill-2" points="0 0.000245063406 0 9.00024506 9 9.00024506 9 0.862642324 9 0.000245063406"></polygon>
+                    <path d="M8,9 L17,9 L17,0 L8,0 L8,9 Z M8.80136986,8.1369863 L16.1986301,8.1369863 L16.1986301,0.801369863 L8.80136986,0.801369863 L8.80136986,8.1369863 Z" id="Fill-3"></path>
+                    <path d="M0,17 L9,17 L9,8 L0,8 L0,17 Z M0.801369863,16.1370454 L8.13760274,16.1370454 L8.13760274,8.80193137 L0.801369863,8.80193137 L0.801369863,16.1370454 Z" id="Fill-4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

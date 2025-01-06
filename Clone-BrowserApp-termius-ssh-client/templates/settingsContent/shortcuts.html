@@ -1,0 +1,116 @@
+<div class="shortcuts-settings_content right-side-layout">
+    <div class="right-side">
+        <div class="right-side-content-wrapper">
+
+            <div class="right-side-content">
+
+                <div class="right-side-tools">
+                    <div class="right-side-title">
+                        Customize shortcuts
+                    </div>
+                    <span flex></span>
+                    <md-input-container class="shortcut-scheme-input">
+                        <label></label>
+                        <input name="scheme_name"
+                               pu-elastic-input
+                               ng-model="current.scheme_new"
+                               ng-disabled="!isImmutable(current.scheme)"
+                               ng-class="{'immutable-input': isImmutable(current.scheme)}"
+                               ng-focus="selectAndRememberText($event)"
+                               ng-blur="renameCurrentScheme()"
+                               ng-keyup="checkEditingFinish($event)"
+                               placeholder="{{remembered_scheme_name}}"
+                        >
+                    </md-input-container>
+                    <md-menu class="shortcut-presets-menu"
+                             md-position-mode="target-right bottom"
+                             md-offset="0 5">
+                        <md-button class="shortcut-presets-menu__open-btn"
+                                   aria-label="Open phone interactions menu"
+                                   ng-click="$mdMenu.open($event)">
+                            <i class="mdi mdi-menu-down"></i>
+                        </md-button>
+                        <md-menu-content width="3"
+                                         class="shortcut-presets-menu__content settings-screen-menu">
+                            <md-menu-item>
+                                <md-button ng-click="disableShortcuts()">
+                                    <div class="shortcuts-menu-title">
+                                        {{shortcuts_disabled_title}}
+                                    </div>
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item class="shortcut-presets-menu__content__editable-preset"
+                                          ng-repeat="(scheme_name, scheme) in schemes">
+                                <md-button class="shortcut-presets-menu__content__editable-preset__btn"
+                                           ng-click="changeScheme($event, scheme_name)"
+                                           md-prevent-menu-close="md-prevent-menu-close">
+                                    <div
+                                         class="shortcuts-menu-title">
+                                        {{scheme_name}}
+                                    </div>
+                                </md-button>
+                                <md-button class="remove-preset-btn"
+                                           lx-ripple
+                                           ng-click="deleteScheme(scheme_name)"
+                                           md-prevent-menu-close="md-prevent-menu-close"
+                                           ng-if="isImmutable(scheme_name)">
+                                    <i class="remove-icon"></i>
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+
+                <div ng-if="current.scheme"
+                     class="shortcut-list">
+                    <ul class="list">
+                        <li class="list-row">
+                            <div class="list-row__content shortcuts-list">
+                                <span class="display-block settings__description">Switch to [1&#8230;9] tab</span>
+                            </div>
+                            <div class="shortcut-input-wrapper shortcut-input-wrapper--select-mode">
+                                <md-input-container class="shortcut-list__input shortcut-list__switch-tab-input">
+                                    <md-select md-container-class="shortcuts-switch-tab-content"
+                                               ng-model="current.mod"
+                                               placeholder="Disabled"
+                                               md-ink-ripple="#9EA5B3"
+                                               ng-change="saveSelectedMod()">
+                                        <md-option>
+                                            Disabled
+                                        </md-option>
+                                        <md-option ng-repeat="mod in switch_mods" ng-value="mod">
+                                            {{mod}}
+                                        </md-option>
+                                    </md-select>
+                                </md-input-container>
+                                <div class="">
+                                    + [1&#8230;9]
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-row"
+                            bindonce
+                            ng-repeat="(_type, action) in actions">
+                            <div class="list-row__content">
+                                <span class="display-block settings__description">{{ action.actionName }}</span>
+                            </div>
+                            <div class="shortcut-input-wrapper">
+                                <md-input-container class="shortcut-list__input">
+                                    <label></label>
+                                    <input name="shortcut"
+                                           placeholder="Disabled"
+                                           ng-model="shortcuts[_type]"
+                                           ng-keydown="keydown($event, _type)"
+                                           ng-focus="pauseBinding(_type)"
+                                           ng-blur="unpauseBinding(_type)">
+                                </md-input-container>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

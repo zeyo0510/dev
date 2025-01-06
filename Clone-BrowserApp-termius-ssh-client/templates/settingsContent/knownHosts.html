@@ -1,0 +1,83 @@
+<div class="pf-rules-content right-side-layout">
+    <div class="pf-rules right-side" ng-class="{open_dialog: is_visible_form}">
+        <div class="right-side-content-wrapper">
+
+            <div class="right-side-content">
+
+                <div class="right-side-tools">
+                    <span class="right-side-title">Known Hosts</span>
+                    <span flex></span>
+                    <lx-search-filter class="search_from_lumx" lx-width="150px" lx-closed="true">
+                        <input type="text" ng-model="searchFilter.query" placeholder="Search">
+                    </lx-search-filter>
+
+                    <div class="sort-menu">
+                        <div class="sort-menu__title">Arrange by: {{sort.title}}</div>
+                        <md-menu md-position-mode="target-right bottom">
+                            <md-button class="sort-menu__chevron"
+                                       ng-click="$mdMenu.open($event)">
+                                <i class="mdi mdi-chevron-down"></i>
+                            </md-button>
+                            <md-menu-content class="settings-screen-menu"
+                                             width="3">
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('created_at', true)">
+                                        <div>Date</div>
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('label', false)">
+                                        <div>Name</div>
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+                    </div>
+                </div>
+
+                <!-- Known Hosts -->
+                <ul class="list right-side-list">
+
+                    <li class="list-row"
+                        bindonce
+                        ng-repeat="knownhost in knownhosts | filter: searchFilter.query"
+                        context-menu="select(knownhost)"
+                        bo-class="{ 'highlight': highlight, 'expanded' : expanded}"
+                        data-target="knownhosts-{{::$index}}"
+                        ng-class="{'selected': knownhost.is_selected}"
+                        ng-click="select(knownhost)">
+
+                        <div class="list-row__primary">
+                            <span class="icon icon--l known-hosts-icon icon--circled pf_icon">K</span>
+                        </div>
+
+                        <div class="list-row__content">
+                            <span class="display-block wrapped-text">{{ knownhost.host }}</span>
+                        </div>
+
+                        <div class="list-row__buttons">
+                            <md-button ng-click="removeKnownHost(knownhost)"
+                                       class="list-row__buttons__remove-btn">
+                                Remove
+                            </md-button>
+                        </div>
+
+                        <div class="context-menu" id="knownhosts-{{::$index}}">
+                            <ul class="list context-menu__list">
+                                <li md-ink-ripple="#9EA5B3" class="list-row" ng-click="removeKnownHost(knownhost)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon remove-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Remove
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!-- End Known Hosts -->
+            </div>
+        </div>
+    </div>
+</div>

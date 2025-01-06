@@ -1,0 +1,130 @@
+<div class="user-profile_content right-side-layout">
+    <div class="right-side">
+        <div class="right-side-content-wrapper">
+            <div class="right-side-content">
+
+                <div class="whiteframe">
+                    <div class="title">
+                        Premium Subscription
+                    </div>
+
+                    <div class="description"
+                         ng-if="isProUser && subscription">
+                        Your subscription renews on {{subscription.valid_until | date:'longDate'}}
+                        <br> ({{subscription.valid_until | twitterDate }})
+                    </div>
+
+                    <div class="text-red"
+                         ng-if="!isProUser && subscription">
+                        <b>Subscription has expired</b>
+                    </div>
+                </div>
+
+                <div class="whiteframe">
+                    <div class="title">
+                        Synchronization
+                    </div>
+                    <md-switch class="md-primary switch-sync-keys"
+                               md-no-ink
+                               aria-label="Switch No Ink"
+                               ng-change="change_sync_keys(sync_keys)"
+                               ng-model="sync_keys">
+                        Sync keys and identities
+                        <div class="description">
+                            Client side AES-256 encryption
+                        </div>
+                    </md-switch>
+
+                    <div class="last-sync-date-frame description">
+                        Last synchronization on
+                        <span class="last-sync-date">
+                                {{last_sync_date | date:'MMM dd, hh:mm'}}
+                        </span> (Just Now)
+                    </div>
+
+
+                    <button class="btn control-button"
+                            md-ink-ripple
+                            ng-disabled="!isProUser"
+                            ng-click="sync()">
+                        Sync Now
+                    </button>
+
+                    <button class="control-button control-button--forgot"
+                            md-ink-ripple
+                            ng-disabled="!isProUser"
+                            ng-click="reload_data()"
+                            type="button">
+                        Reload Data
+                    </button>
+                </div>
+
+                <div class="disable-md-input-frame">
+                    <div class="title">Account </div>
+                    <md-switch class="md-primary switch-sync-keys"
+                               md-no-ink
+                               aria-label="Switch No Ink"
+                               ng-change="change_ga_state(ga_state)"
+                               ng-model="ga_state">
+                        Send diagnostic data
+                        <div class="description">
+                            Help to make the app better
+                        </div>
+                    </md-switch>
+                    <div class="auth-form wrap-login-form">
+                        <md-input-container>
+                            <label>Email</label>
+                            <input ng-model="model.username" disabled>
+                        </md-input-container>
+
+                        <button class="control-button control-button--bordered"
+                                ng-disabled="!isProUser"
+                                md-ink-ripple
+                                ng-click="openChangePassword($event)">
+                            Change Password
+                        </button>
+                        <button class="control-button control-button--forgot"
+                                md-ink-ripple
+                                ng-click="logout($event)">
+                            Log Out
+                        </button>
+                        <button class="control-button control-button--forgot"
+                                md-ink-ripple
+                                ng-if="!confirmed_email"
+                                ng-click="confirm_email($event)">
+                            Verify
+                        </button>
+                    </div>
+                </div>
+                <div class="whiteframe">
+                    <md-switch class="md-primary switch-sync-keys"
+                               md-no-ink
+                               aria-label="Switch No Ink"
+                               ng-change="switch_two_factor_auth()"
+                               ng-model="model.two_factor_auth">
+                        Two-Factor Authentication
+                    </md-switch>
+
+                    <div class="support-feedback-frame">
+                        <div class="title">
+                            Give Feedback
+                        </div>
+                        <button class="control-button control-button--forgot"
+                                md-ink-ripple
+                                ng-click="redirect_to_uservoice()">
+                            Support
+                        </button>
+                    </div>
+                </div>
+
+                <div class="whiteframe">
+                    <div class="title">
+                        Application Version
+                    </div>
+                    <div ng-bind="::app_version" class="description">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

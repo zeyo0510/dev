@@ -1,0 +1,48 @@
+<form name="login" class="login">
+    <div ng-if="isIncludeErrorMsg" class="auth_error" type="danger">
+        <span class="error_text" ng-show="invalidFormDate">Username and/or password are incorrect</span>
+        <span class="error_text" ng-show="accountBlocked">Authentication blocked for 5 minutes</span>
+    </div>
+
+    <md-input-container>
+        <label>Email</label>
+        <input  name="username"
+                ng-disabled="disableName"
+                ng-model="model.username"
+                ng-auto-focus="!model.username">
+    </md-input-container>
+
+    <md-input-container>
+        <label>Password</label>
+        <input name="password"
+               type="password"
+               ng-model="model.master_password"
+               ng-auto-focus="!model.master_password && model.username">
+    </md-input-container>
+
+    <md-switch ng-model="model.remember_password" name="rememberUsername"  aria-label="Remember password">
+        Remember password
+    </md-switch>
+
+    <div class="mt++ buttons">
+        <button class="control-button control-button--forgot"
+                ng-click="show_forgot_password($event)"
+                md-ink-ripple
+                type="button">
+            Forgot password?
+        </button>
+        <button class="control-button control-button--cancel"
+                ng-click="logout()"
+                md-ink-ripple
+                type="button">
+            Cancel
+        </button>
+        <button class="control-button"
+                type="submit"
+                ng-disabled="!model.master_password || !model.username"
+                md-ink-ripple
+                ng-click="continue_login()">
+            Log in
+        </button>
+    </div>
+</form>

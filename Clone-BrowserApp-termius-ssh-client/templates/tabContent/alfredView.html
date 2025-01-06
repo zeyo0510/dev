@@ -1,0 +1,45 @@
+<div class="right-side-layout">
+    <div class="right-side" ng-class="{open_dialog: is_visible_form}">
+        <div class="right-side-content-wrapper">
+            <div class="right-side-content" ng-class="{'empty-screen' : !(model.hosts.length || model.groups.length) }">
+
+                <div layout="row" class="alfred-content">
+
+                    <!--Alfred widget-->
+                    <alfred uid="uid"
+                            update-event="model.alfred_event_update"
+                            hosts="model.hosts"
+                            groups="model.groups"
+                            taghosts="model.taghosts"
+                            tags="model.tags"
+                            height-cell="model.heightCell"
+                            placeholder="model.placeholder"
+                            on-add-group-callback="model.addGroup(parent_group)"
+                            on-edit-group-callback="model.editGroup(group)"
+                            on-remove-group-callback="model.removeGroup(group)"
+                            on-enter-host-callback="model.enterHost(host)"
+                            on-add-host-callback="model.addHost(parent_group)"
+                            on-edit-host-callback="model.editHost(host, always_open_form)"
+                            on-remove-host-callback="model.removeHost(host)" ng-cloak>
+                    </alfred>
+                    <!--End Alfred widget-->
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="side-nav" ng-class="{open_dialog: is_visible_form}">
+
+        <div class="form-controller" ng-if="group_form" ng-controller="GroupFormCtrl" ng-init="init(group_form)">
+            <div class="edit-form" ng-include="group_form_template"></div>
+        </div>
+
+        <div class="form-controller" ng-if="host_form" ng-controller="HostFormCtrl" ng-init="init(host_form)">
+            <div class="edit-form" ng-include="host_form_template"></div>
+        </div>
+
+
+    </div>
+</div>

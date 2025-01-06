@@ -1,0 +1,58 @@
+<div ng-if="filtered_ssh_keys.length"
+     class="right-side-title">
+    Keys
+</div>
+<ul class="list right-side-list">
+    <li class="list-row"
+        bindonce
+        ng-repeat="ssh_key in filtered_ssh_keys = (ssh_keys | filter:{ label: searchFilter.query } | orderBy:sort.property:sort.reverse) track by ssh_key.local_id"
+        context-menu="select('ssh_key', ssh_key)"
+        data-target="ssh-keys-{{::$index}}"
+        bo-class="{ 'highlight': highlight, 'expanded' : expanded}"
+        ng-class="{'selected' : ssh_key.is_selected}"
+        ng-click="select('ssh_key', ssh_key)"
+        ng-dblclick="openDialog('ssh_key', ssh_key)">
+
+        <div class="list-row__primary">
+            <i class="icon icon--l key-icon icon--circled mdi mdi-key"></i>
+        </div>
+
+        <div class="list-row__content">
+            <span class="display-block">{{ ssh_key.label }}</span>
+            <span class="display-block list-row__content__description">{{ ssh_key.type }}</span>
+        </div>
+
+        <div class="list-row__buttons">
+            <md-button ng-click="openDialog('ssh_key', ssh_key)"
+                       class="list-row__buttons__edit-btn">
+                Edit
+            </md-button>
+            <md-button ng-click="removeEntity('ssh_keys', ssh_key)"
+                       class="list-row__buttons__remove-btn">
+                Remove
+            </md-button>
+        </div>
+
+        <div class="context-menu" id="ssh-keys-{{::$index}}">
+            <ul class="list context-menu__list">
+                <li md-ink-ripple="#9EA5B3" class="list-row" ng-click="openDialog('ssh_key', ssh_key)">
+                    <div class="list-row__primary">
+                        <i class="context-menu__icon edit-icon"></i>
+                    </div>
+                    <div class="list-row__content">
+                        Edit
+                    </div>
+                </li>
+                <li md-ink-ripple="#9EA5B3" class="list-row" ng-click="removeEntity('ssh_keys', ssh_key)">
+                    <div class="list-row__primary">
+                        <i class="context-menu__icon remove-icon"></i>
+                    </div>
+                    <div class="list-row__content">
+                        Remove
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </li>
+</ul>

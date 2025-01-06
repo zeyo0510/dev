@@ -1,0 +1,34 @@
+<div class="select-dialogue__actions">
+    <button class="control-button control-button--cancel select-dialogue__cancel-button"
+            md-ink-ripple
+            ng-click="$ctrl.cancel()"
+            type="button"
+            tabindex="-1">
+        <i class="select-dialogue__close-arrow arrow-left-grey"></i>
+        <span>Cancel</span>
+    </button>
+    <button class="control-button"
+            ng-disabled="!$ctrl.model"
+            ng-click="$ctrl.select()"
+            md-ink-ripple
+            type="submit">
+        Select
+    </button>
+</div>
+
+<div class="select-dialogue__content">
+
+    <select-list class="select-list"
+                 ng-if="$ctrl.dialogueType == 'list'"
+                 list-type="$ctrl.listType"
+                 list-filter="$ctrl.listFilter"
+                 on-click="$ctrl.changeSelectedModel(model)"
+                 on-double-click="$ctrl.select()">
+    </select-list>
+
+    <select-theme
+      ng-if="$ctrl.dialogueType == 'colorScheme'"
+      entity="$ctrl.entity"
+      on-select="$ctrl.changeSelectedModel">
+    </select-theme>
+</div>

@@ -1,0 +1,36 @@
+<div class="edit-form__title">
+    {{is_new_model() ? 'Add Snippet' : 'Edit Snippet'}}
+</div>
+<form name="snippetForm" class="edit-form__content">
+
+    <div class="edit-form__content__wrapper">
+        <md-input-container>
+            <label>Label</label>
+            <input ng-model="snippet.label">
+        </md-input-container>
+
+
+        <md-input-container>
+            <label>Script</label>
+            <textarea ng-model="snippet.script"
+                      required></textarea>
+        </md-input-container>
+    </div>
+
+    <div class="edit-form__actions">
+        <button class="control-button control-button--cancel"
+                ng-click="closeDialog()"
+                md-ink-ripple
+                type="button">
+            Cancel
+        </button>
+        <button class="control-button"
+                ng-click="save_snippet()"
+                ng-disabled="snippetForm.$invalid"
+                md-ink-ripple
+                type="submit">
+            Save
+        </button>
+    </div>
+
+</form>

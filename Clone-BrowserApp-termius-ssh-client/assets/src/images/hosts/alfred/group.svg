@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>group_active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="V3.1-assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Host-icons" transform="translate(-913.000000, -106.000000)">
+            <g id="group_active" transform="translate(913.000000, 106.000000)">
+                <circle id="Oval" fill="#175277" cx="21.5" cy="21.5" r="21.5"></circle>
+                <g id="Group-icon" transform="translate(12.000000, 12.000000)" fill="#FFFFFF">
+                    <polygon id="Fill-1" points="11 20 20 20 20 11 11 11"></polygon>
+                    <polygon id="Fill-2" points="0 0.000245063406 0 9.00024506 9 9.00024506 9 0.862642324 9 0.000245063406"></polygon>
+                    <path d="M8,9 L17,9 L17,0 L8,0 L8,9 Z M8.80136986,8.1369863 L16.1986301,8.1369863 L16.1986301,0.801369863 L8.80136986,0.801369863 L8.80136986,8.1369863 Z" id="Fill-3"></path>
+                    <path d="M0,17 L9,17 L9,8 L0,8 L0,17 Z M0.801369863,16.1370454 L8.13760274,16.1370454 L8.13760274,8.80193137 L0.801369863,8.80193137 L0.801369863,16.1370454 Z" id="Fill-4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

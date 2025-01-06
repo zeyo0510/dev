@@ -1,0 +1,37 @@
+<md-dialog class="modal-box modal-box--crome-app-supporting" aria-label="Port Forwarding">
+
+    <div class="modal-box__header modal-box__header--crome-app-supporting">We've Moved</div>
+
+    <div class="modal-box__content modal-box__content--crome-app-supporting">
+        We're no longer supporting Termius as a Chrome app.
+        <br/>
+        To get the latest feature and enhancements, Download 
+        <br/>
+        Termius app for {{chromeAppSupportingDialogueCtrl.platform}}.
+        <md-switch ng-hide="chromeAppSupportingDialogueCtrl.hideDontShowAgain"
+                   class="md-primary modal-box--crome-app-supporting__dont-show-again"
+                   md-no-ink
+                   ng-model="chromeAppSupportingDialogueCtrl.dontShowAgain">
+            Don't show again
+    </md-switch>
+    </div>
+
+
+    <div class="modal-box__actions modal-box__actions--crome-app-supporting">
+
+        <button class="control-button control-button--cancel"
+                md-ink-ripple
+                ng-click="chromeAppSupportingDialogueCtrl.close()">
+            Cancel
+        </button>
+
+        <button class="control-button"
+                ng-click="chromeAppSupportingDialogueCtrl.hide()"
+                md-ink-ripple
+                md-autofocus>
+            Download termius for {{chromeAppSupportingDialogueCtrl.platform}}
+        </button>
+
+    </div>
+
+</md-dialog>

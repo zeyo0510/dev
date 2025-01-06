@@ -1,0 +1,34 @@
+<md-dialog class="modal-box"
+           aria-label="Reset password">
+
+    <div class="modal-box__header modal-box__header--request">{{title}}</div>
+
+    <div class="modal-box__content">
+        <form name="keyboard_inter">
+            <md-input-container>
+                <label>{{prompts.prompt}}</label>
+                <input md-autofocus
+                       ng-model="result"
+                       type="password"
+                       required>
+            </md-input-container>
+
+            <div class="modal-box__actions">
+                <button class="control-button control-button--cancel"
+                        ng-click="cancel()"
+                        md-ink-ripple
+                        type="button">
+                    Cancel
+                </button>
+                <button class="control-button"
+                        ng-click="connect()"
+                        md-ink-ripple
+                        ng-disabled="keyboard_inter.$invalid"
+                        type="submit">
+                    Connect
+                </button>
+            </div>
+        </form>
+    </div>
+
+</md-dialog>

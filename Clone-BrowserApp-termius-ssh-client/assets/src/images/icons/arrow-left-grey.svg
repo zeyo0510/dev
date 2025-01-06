@@ -1,0 +1,18 @@
+<svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+ <title>arrow</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="rotate(180 8.052581787109375,6.001464843750001) " fill-rule="evenodd" fill="none" id="V3-assets">
+   <g stroke="null" fill="#9EA5B3" id="Assets">
+    <polygon stroke="null" points="-0.00006103515625,5.001220703125 12.476806640625,5.001220703125 9.085205078125,1.410400390625 10.4210205078125,0 16.105224609375,6.00146484375 10.4210205078125,12.0029296875 9.085205078125,10.592529296875 12.476806640625,7.001708984375 -0.00006103515625,7.001708984375 " id="arrow"/>
+   </g>
+  </g>
+ </g>
+</svg>

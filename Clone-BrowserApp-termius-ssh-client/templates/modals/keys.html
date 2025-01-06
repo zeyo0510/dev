@@ -1,0 +1,53 @@
+<div class="edit-form__title">
+    {{ is_new_model() ? 'Add key' : 'Edit key' }}
+</div>
+<form name="keyForm"
+      class="edit-form__content">
+
+    <div class="edit-form__content__wrapper">
+        <md-input-container>
+            <label>Label</label>
+            <input ng-model="ssh_key.label" required>
+        </md-input-container>
+
+
+        <md-input-container>
+            <label>Passphrase</label>
+            <input type="password" ng-model="ssh_key.passphrase">
+        </md-input-container>
+
+        <md-input-container>
+            <label>Private key</label>
+            <textarea name="private_key"
+                      ng-model="ssh_key.private_key"
+                      md-no-resize
+                      max-rows="7"
+                      required></textarea>
+        </md-input-container>
+
+        <md-input-container>
+            <label>Public key</label>
+            <textarea name="private_key"
+                      ng-model="ssh_key.public_key"
+                      md-no-resize
+                      max-rows="7"></textarea>
+        </md-input-container>
+    </div>
+
+    <div class="edit-form__actions">
+        <button class="control-button control-button--cancel"
+                ng-click="closeDialog('ssh_key', is_new_model())"
+                md-ink-ripple
+                type="button">
+            Cancel
+        </button>
+        <button class="control-button"
+                ng-click="save_model('ssh_key')"
+                ng-disabled="keyForm.$invalid"
+                md-ink-ripple
+                type="submit">
+            Save
+        </button>
+    </div>
+
+</form>

@@ -1,0 +1,10 @@
+{
+    "appName": {
+        "message": "termius",
+        "description": "The name of the application"
+    },
+    "appDescription": {
+        "message": "Termius SSH Client",
+        "description": "The description of the application"
+    }
+}

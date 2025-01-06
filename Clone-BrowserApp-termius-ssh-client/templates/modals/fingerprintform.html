@@ -1,0 +1,25 @@
+<md-dialog class="modal-box">
+
+    <div class="modal-box__content">
+        <span ng-if="port == 22">The authenticity of host {{ host }} can't be established.</span>
+        <span ng-if="port != 22">The authenticity of host {{ host }}:{{port}} can't be established.</span>
+        <br>
+        <span>RSA key fingerprint is {{ key }}.</span><br>
+        <span>Are you sure you want to continue connecting (yes/no)?</span>
+    </div>
+
+    <div class="modal-box__actions">
+        <button class="control-button control-button--cancel"
+                md-ink-ripple
+                ng-click="close(false)">
+            No
+        </button>
+        <button class="control-button"
+                md-ink-ripple
+                ng-click="close(true)"
+                md-autofocus>
+            Yes
+        </button>
+    </div>
+
+</md-dialog>

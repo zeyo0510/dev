@@ -1,0 +1,76 @@
+<div id="fixed">
+    <div ng-if="filteredConnections.length"
+         class="alfred-subtitle">
+        Hosts
+    </div>
+    <ul class="alfred-hosts-list">
+        <li
+                bindonce ng-repeat="(key,connection) in filteredConnections = (connections | filterConnections:query:this) track by key"
+                id="{{::key}}"
+                ng-click="select(key)"
+                ng-dblclick="connect(connection, key)"
+                key="{{::key}}"
+                ng-class="{ selected: (key === selectedIndex) }"
+                context-menu="select(key)"
+                context-menu-disabled="controlsDisabled"
+                class="list-row"
+                data-target="menu-{{::uid}}-{{::$index}}"
+                bo-class="{ 'highlight': highlight, 'expanded' : expanded }">
+
+            <div class="list-row__primary">
+                <i class="icon icon--l host-icon {{connection.os_name}}"></i>
+            </div>
+
+            <div class="list-row__content">
+                <div class="alfred-item-title">{{ connection.label || connection.address }}</div>
+                <div class="alfred-item-subtitle" ng-bind="connection.username"></div>
+            </div>
+
+            <div class="list-row__buttons">
+                <md-button ng-click="connect(connection, key)"
+                           class="list-row__buttons__connect-btn">
+                    Connect
+                </md-button>
+                <md-button ng-click="edit(connection)"
+                           class="list-row__buttons__edit-btn">
+                    Edit
+                </md-button>
+                <md-button ng-click="remove(connection)"
+                           class="list-row__buttons__remove-btn">
+                    Remove
+                </md-button>
+            </div>
+
+            <!--Includes context menu for each cell-->
+            <div class="context-menu" id="menu-{{::uid}}-{{::$index}}">
+                <ul class="list context-menu__list" role="menu">
+                    <li md-ink-ripple class="list-row" ng-click="connect(connection, key)">
+                        <div class="list-row__primary">
+                            <i class="context-menu__icon enter-icon"></i>
+                        </div>
+                        <div class="list-row__content">
+                            Connect
+                        </div>
+                    </li>
+                    <li md-ink-ripple class="list-row" ng-click="edit(connection)">
+                        <div class="list-row__primary">
+                            <i class="context-menu__icon edit-icon"></i>
+                        </div>
+                        <div class="list-row__content">
+                            <span>Edit</span>
+                        </div>
+                    </li>
+                    <li md-ink-ripple class="list-row" ng-click="remove(connection)">
+                        <div class="list-row__primary">
+                            <i class="context-menu__icon remove-icon"></i>
+                        </div>
+                        <div class="list-row__content">
+                            <span>Remove</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--End Includes context menu for each cell-->
+        </li>
+    </ul>
+</div>

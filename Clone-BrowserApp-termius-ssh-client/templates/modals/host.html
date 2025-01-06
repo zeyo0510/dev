@@ -1,0 +1,225 @@
+<div class="edit-form__title">
+    {{ title }}
+</div>
+<form name="hostForm"
+      class="edit-form__content">
+
+    <div class="edit-form__content__wrapper">
+        <md-input-container flex>
+            <label>Label</label>
+            <input ng-model="current_host.label">
+        </md-input-container>
+
+        <div class="edit-form__item">
+
+            <md-input-container class="edit-form__item__input">
+                <label>Address</label>
+                <input ng-model="current_host.address" required>
+            </md-input-container>
+
+            <md-input-container class="edit-form__item__input edit-form__item__input--port">
+                <label>Port</label>
+                <input ng-model="current_host.ssh_config.port.value" ng-port-attr
+                       ng-class="{merged: current_host.ssh_config.port.is_merged || !current_host.ssh_config.port.value}"
+                       ng-keydown="current_host.ssh_config.port.is_merged = false"
+                       ng-blur="set_default_port()">
+            </md-input-container>
+
+        </div>
+
+        <!--There is NO ssh_identity-->
+        <div ng-if="!current_host.ssh_identity">
+            <!--Username field-->
+            <div class="edit-form__item">
+                <!--Username-->
+                <md-input-container class="edit-form__item__input">
+                    <label>Username</label>
+                    <input ng-model="current_host.username.username"
+                           ng-class="{ merged: current_host.username.is_merged == true }"
+                           ng-keydown="current_host.username.is_merged = false"
+                           ng-blur=set_default_field("username")>
+                </md-input-container>
+                <!--End Username-->
+
+                <div class="edit-form__item__btn"
+                     ng-click="openSelectList('Identities', set_ssh_identity)">
+                    <span>IDs</span>
+                    <i class="edit-form__item__btn__icon arrow-right-blue"></i>
+                </div>
+            </div>
+            <!--End Username field-->
+
+            <!--Password and SSH-key fields-->
+            <div class="edit-form__item">
+                <!--Password-->
+                <md-input-container class="edit-form__item__input">
+                    <label>Password</label>
+                    <input type="password"
+                           ng-model="current_host.password.password"
+                           ng-class="{ merged: current_host.password.is_merged == true }"
+                           ng-keydown="current_host.password.is_merged = false"
+                           ng-blur=set_default_field("password")>
+                </md-input-container>
+
+                <div class="edit-form__item__btn"
+                     ng-click="openSelectList('Keys', set_ssh_key)">
+                    <span>Keys</span>
+                    <i class="edit-form__item__btn__icon arrow-right-blue"></i>
+                </div>
+
+            </div>
+
+            <div class="edit-form__item"
+                 ng-if="current_host.ssh_key.ssh_key">
+                <!--SSH-key-->
+                <md-input-container class="edit-form__item__input">
+                    <label>Key</label>
+                    <input ng-model="current_host.ssh_key.ssh_key.label"
+                           ng-class="{ merged: current_host.ssh_key.is_merged == true }"
+                           readonly>
+                </md-input-container>
+                <!--End SSH-key-->
+
+                <div class="edit-form__item__btn edit-form__item__btn--remove"
+                     ng-click="reset_ssh_key()">
+                    <span>Remove</span>
+                </div>
+            </div>
+            <!--End Password and SSH-key fields-->
+
+        </div>
+        <!--End there is NO ssh_identity-->
+
+        <!--There is ssh_identity-->
+        <div class="edit-form__item"
+             ng-if="current_host.ssh_identity">
+            <md-input-container class="edit-form__item__input">
+                <label>Identity</label>
+                <input ng-if="current_host.ssh_identity.label"
+                       ng-model="current_host.ssh_identity.label"
+                       ng-class="{ merged: current_host.ssh_identity.is_merged == true }"
+                       readonly>
+                <input ng-if="!current_host.ssh_identity.label"
+                       ng-model="current_host.ssh_identity.username"
+                       ng-class="{ merged: current_host.ssh_identity.is_merged == true }"
+                       readonly>
+            </md-input-container>
+
+            <div class="edit-form__item__btn edit-form__item__btn--remove"
+                 ng-click="reset_ssh_identity()">
+                <span>Remove</span>
+            </div>
+        </div>
+        <!--End There is ssh_identity-->
+
+        <!--Parent Group-->
+        <div class="edit-form__item">
+            <md-input-container class="edit-form__item__input">
+                <label>Group</label>
+                <input ng-model="current_host.parent_group.label"
+                       readonly>
+            </md-input-container>
+
+            <div class="edit-form__item__btn"
+                 ng-if="!current_host.parent_group"
+                 ng-click="openSelectList('Groups', set_parent_group)">
+                <span>Groups</span>
+                <i class="edit-form__item__btn__icon arrow-right-blue"></i>
+            </div>
+
+            <div class="edit-form__item__btn edit-form__item__btn--remove"
+                 ng-if="current_host.parent_group"
+                 ng-click="reset_parent_group()">
+                <span>Root group</span>
+            </div>
+        </div>
+        <!--End Parent Group-->
+
+        <!--Snippet-->
+        <div class="edit-form__item"
+             ng-if="isProUser">
+            <md-input-container class="edit-form__item__input">
+                <label>Startup Snippet</label>
+                <input ng-model="current_host.snippet.label"
+                       ng-class="{ merged: current_host.snippet.is_merged == true }"
+                       readonly>
+
+            </md-input-container>
+
+            <div class="edit-form__item__btn"
+                 ng-if="!current_host.snippet || current_host.snippet.is_merged == true"
+                 ng-click="openSelectList('Snippets', set_snippet)">
+                <span>Snippets</span>
+                <i class="edit-form__item__btn__icon arrow-right-blue"></i>
+            </div>
+
+            <div class="edit-form__item__btn edit-form__item__btn--remove"
+                 ng-if="current_host.snippet && current_host.snippet.is_merged == false"
+                 ng-click="reset_snippet()">
+                <span>Remove</span>
+            </div>
+        </div>
+        <!--End Snippet-->
+
+        <!--Tag-->
+        <tags-input ng-model="chosen_tags"
+                    min-length="1"
+                    on-tag-removed="remove_tag($tag)"
+                    on-tag-added="add_tag($tag)">
+            <auto-complete min-length="1"
+                           source="loadTags($query)"></auto-complete>
+        </tags-input>
+        <!--End Tag-->
+
+        <!--Color scheme-->
+        <div class="edit-form__item color-sheme"
+             ng-if="isProUser">
+            <md-input-container class="edit-form__item__input">
+                <theme-form
+                        theme="color_scheme_model"
+                        merge-way="merge_way">
+                </theme-form>
+            </md-input-container>
+
+            <div class="edit-form__item__btn"
+                 ng-if="merge_way"
+                 ng-click="openColorScheme()">
+                <span>Theme options</span>
+                <i class="edit-form__item__btn__icon arrow-right-blue"></i>
+            </div>
+
+            <div class="edit-form__item__btn edit-form__item__btn--remove"
+                 ng-if="!merge_way"
+                 ng-click="reset_color_scheme()">
+                <span>Remove</span>
+            </div>
+        </div>
+        <!--End Color scheme-->
+    </div>
+
+    <div class="edit-form__actions">
+        <button class="control-button control-button--cancel"
+                ng-click="cancel()"
+                md-ink-ripple
+                type="button">
+            Cancel
+        </button>
+        <button class="control-button"
+                ng-click="save()"
+                md-ink-ripple
+                ng-disabled="hostForm.$invalid"
+                type="submit">
+            Save
+        </button>
+    </div>
+</form>
+
+<select-dialogue class="select-dialogue"
+                 ng-class="{ _is_visible: select }"
+                 dialogue-type="select.dialogueType"
+                 list-type="select.listType"
+                 list-filter="select.filter"
+                 on-select="select.onSelect"
+                 on-cancel="closeSelect"
+                 entity="select.entity">
+</select-dialogue>

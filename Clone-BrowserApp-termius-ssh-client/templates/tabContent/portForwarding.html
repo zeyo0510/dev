@@ -1,0 +1,185 @@
+<div class="pf-rules-content right-side-layout">
+    <div class="pf-rules right-side" ng-class="{open_dialog: is_visible_form}">
+        <div class="right-side-content-wrapper">
+
+            <div class="right-side-content" ng-class="{'empty-screen' : emptyScreen}">
+
+                <div class="right-side-empty-screen">
+                    <div class="wrap-content" ng-class="{'hosts-exist' : hostsExist}">
+                        <i class="mdi port-forwarding"></i>
+                        <h2 class="title-content">Port Forwarding</h2>
+                        <p class="instruction add-host">
+                            To create a port forwarding rule,<br>
+                            start by
+                            <span class="add-link" ng-click="goTerminals()">Adding a host</span>
+                        </p>
+                        <p class="instruction add-rule">
+                            To add your first rule, <br>
+                            start by
+                            <span class="add-link" ng-click="addRule()">Adding a rule</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right-side-tools">
+                    <span class="right-side-title">Port Forwarding</span>
+                    <span flex></span>
+                    <lx-search-filter class="search_from_lumx" lx-width="150px" lx-closed="true">
+                        <input type="text" ng-model="searchFilter.query" placeholder="Search">
+                    </lx-search-filter>
+
+                    <div class="sort-menu">
+                        <div class="sort-menu__title">Arrange by: {{sort.title}}</div>
+                        <md-menu md-position-mode="target-right bottom">
+                            <md-button class="sort-menu__chevron"
+                                       ng-click="$mdMenu.open($event)">
+                                <i class="mdi mdi-chevron-down"></i>
+                            </md-button>
+                            <md-menu-content width="3">
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('created_at', true)">
+                                        <div>Date</div>
+                                    </md-button>
+                                </md-menu-item>
+                                <md-menu-item>
+                                    <md-button ng-click="sortBy('label', false)">
+                                        <div>Name</div>
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                        </md-menu>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <ul class="list right-side-list">
+
+                    <li class="list-row"
+                        bindonce
+                        ng-repeat="pf_rule in pf_rules | filter: searchFilter.query | orderBy:sort.property:sort.reverse track by pf_rule.local_id"
+                        ng-dblclick="changeRuleState(pf_rule)"
+                        context-menu="select(pf_rule)"
+                        bo-class="{ 'highlight': highlight, 'expanded' : expanded}"
+                        data-target="pf_rules-{{::$index}}"
+                        ng-class="{'selected': pf_rule.is_selected, 'active': pf_rule.active}"
+                        ng-click="select(pf_rule)">
+
+                        <div class="list-row__primary">
+                        <span ng-if="pf_rule.pf_type == 'Local Rule'"
+                              class="icon icon--l icon--grey icon--circled pf_icon">L</span>
+                        <span ng-if="pf_rule.pf_type == 'Remote Rule'"
+                              class="icon icon--l icon--grey icon--circled pf_icon">R</span>
+                        </div>
+
+                        <div class="list-row__content">
+                            <div class="item-pf-rule">
+                                <div class="pf-rule-info">
+                                    <div class="pf-rule-title">
+                                        <span class="from">From {{ pf_rule.host.address }}:{{ pf_rule.local_port }}</span>
+                                        <span class="to">to {{ pf_rule.hostname }}:{{ pf_rule.remote_port }}</span>
+                                    </div>
+                                    <div class="list-row__content__description">
+                                        <div ng-bind="pf_rule.connected_at | momentFilter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-row__buttons">
+                            <md-button ng-if="!pf_rule.connecting && !pf_rule.active"
+                                       ng-click="connect(pf_rule)"
+                                       class="list-row__buttons__connect-btn">
+                                Connect
+                            </md-button>
+                            <div ng-if="pf_rule.connecting"
+                                 class="pf-connecting-progress">
+                                <md-progress-circular
+                                        class="pull-right"
+                                        md-mode="indeterminate"
+                                        md-diameter="20"></md-progress-circular>
+                            </div>
+                            <md-button ng-if="!pf_rule.connecting && pf_rule.active"
+                                       ng-click="closeSession($event, pf_rule)"
+                                       class="list-row__buttons__disconnect-btn">
+                                Disconnect
+                            </md-button>
+                            <md-button ng-hide="pf_rule.connecting"
+                                       ng-click="openDialog(pf_rule)"
+                                       class="list-row__buttons__edit-btn">
+                                Edit
+                            </md-button>
+                            <md-button ng-hide="pf_rule.connecting"
+                                       ng-click="removeRule(pf_rule)"
+                                       class="list-row__buttons__remove-btn">
+                                Remove
+                            </md-button>
+                        </div>
+
+                        <div class="context-menu" id="pf_rules-{{::$index}}">
+                            <ul class="list context-menu__list">
+                                <li class="list-row"
+                                    md-ink-ripple
+                                    ng-if="!pf_rule.connecting && !pf_rule.active"
+                                    ng-click="connect(pf_rule)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon enter-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Connect
+                                    </div>
+                                </li>
+                                <li class="list-row"
+                                    md-ink-ripple
+                                    ng-if="!pf_rule.connecting && pf_rule.active"
+                                    ng-click="closeSession($event, pf_rule)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon disconnect-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Disconnect
+                                    </div>
+                                </li>
+                                <li md-ink-ripple class="list-row" ng-click="openDialog(pf_rule)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon edit-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Edit
+                                    </div>
+                                </li>
+                                <li md-ink-ripple class="list-row" ng-click="removeRule(pf_rule)">
+                                    <div class="list-row__primary">
+                                        <i class="context-menu__icon remove-icon"></i>
+                                    </div>
+                                    <div class="list-row__content">
+                                        Remove
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Add Port Forwarding Rule -->
+            <div ng-if="!is_visible_form"
+                 class="fab" ng-class="{'hosts-exist' : !hostsExist}">
+                <button class="btn control-button"
+                        md-ink-ripple
+                        ng-click="addRule()">
+                    + Add Rule
+                </button>
+            </div>
+            <!-- End Port Forwarding Rule -->
+
+        </div>
+        <!-- End Content -->
+    </div>
+
+    <!--Form Add/Edit Port Forwarding-->
+    <div class="side-nav" ng-class="{open_dialog: is_visible_form}">
+        <div ng-if="is_visible_form" class="edit-form edit-form--port-forwarding" ng-include="template.rule_form" ng-controller="PFRuleFormCtrl" ng-init="init(pf_rule)"></div>
+    </div>
+    <!--End Form Add/Edit Port Forwarding-->
+</div>

@@ -1,0 +1,132 @@
+<div class="history-content right-side-layout">
+    <div class="history right-side" ng-class="{open_dialog: is_visible_form}">
+        <div class="right-side-content-wrapper">
+
+            <div class="right-side-content">
+                <div class="right-side-title">
+                    Connection to {{::activity.address}} at {{::activity.connected_at | momentFilter: 'time'}} {{::activity.connected_at | momentFilter: 'date' | lowercase}}
+                </div>
+
+                <div class="list_fields">
+                    <ul class="list">
+                        <li class="list-row" ng-if="::activity.label">
+                            <div class="list-row__primary">
+                                Label
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text">{{::activity.label}}</span>
+                            </div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-row__primary">
+                                Address
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text">{{::activity.address}}</span>
+                            </div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-row__primary">
+                                Port
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text">{{::activity.port}}</span>
+                            </div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-row__primary">
+                                Username
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text">{{::activity.username}}</span>
+                            </div>
+                        </li>
+                        <li class="list-row" ng-if="::activity.password">
+                            <div class="list-row__primary">
+                                Password
+                            </div>
+                            <div class="list-row__content password-field">
+                                <input type={{passwordInputType}} class="display-block wrapped-text" disabled value="{{::activity.password}}"/>
+                                <button class="btn btn--s btn--icon" lx-ripple ng-click="togglePassword()">
+                                    <i class="mdi" ng-class="(passwordInputType=='password') ? 'mdi-eye' : 'mdi-eye-off'"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-row__primary">
+                                Date
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text">{{::activity.connected_at | momentFilter: 'date'}}</span>
+                            </div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-row__primary">
+                                Time
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text">{{::activity.connected_at | momentFilter: 'time'}}</span>
+                            </div>
+                        </li>
+                        <li class="list-row">
+                            <div class="list-row__primary">
+                                Status
+                            </div>
+                            <div class="list-row__content">
+                                <span ng-if="::activity.errorMsg" class="display-block wrapped-text">Failed</span>
+                                <span ng-if="::!activity.errorMsg" class="display-block wrapped-text">Successful</span>
+                            </div>
+                        </li>
+                        <li class="list-row" ng-if="::activity.errorMsg">
+                            <div class="list-row__primary">
+                                Errors
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text">{{::activity.errorMsg}}</span>
+                            </div>
+                        </li>
+                        <li class="list-row" ng-if="::activity.startup_snippet">
+                            <div class="list-row__primary">
+                                Snippet
+                            </div>
+                            <div class="list-row__content">
+                                <span class="display-block wrapped-text" ng-snippet-label="activity.startup_snippet"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Buttons -->
+                <div class="mt++ fab">
+                    <button class="control-button"
+                            type="button"
+                            md-ink-ripple
+                            ng-click="connect()">
+                                Connect
+                    </button>
+                    <button class="control-button"
+                            type="submit"
+                            md-ink-ripple
+                            ng-disabled="::!is_quick_connect_host"
+                            ng-click="openDialog()">
+                                Add to host
+                    </button>
+                    <button class="control-button control-button--confirm"
+                            type="submit"
+                            md-ink-ripple
+                            ng-click="removeHistory()">
+                                Remove
+                    </button>
+                </div>
+                <!-- End Buttons -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="side-nav" ng-class="{open_dialog: is_visible_form}">
+        <div class="form-controller" ng-if="is_visible_form" ng-controller="HostFormCtrl" ng-init="init(host_form)">
+            <div class="edit-form" ng-include="host_form_template"></div>
+        </div>
+    </div>
+</div>

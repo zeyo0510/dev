@@ -1,0 +1,60 @@
+<div ng-if="filtered_ssh_identities.length"
+     class="right-side-title">
+    Identity
+</div>
+<ul class="list right-side-list">
+    <li class="list-row"
+        bindonce
+        ng-repeat="ssh_identity in filtered_ssh_identities = (ssh_identities | filter: search_identity) | orderBy:sort.property:sort.reverse track by ssh_identity.local_id"
+        context-menu="select('ssh_identity', ssh_identity)"
+        data-target="ssh_identities-{{::$index}}"
+        bo-class="{ 'highlight': highlight, 'expanded' : expanded }"
+        ng-class="{ 'selected' : ssh_identity.is_selected }"
+        ng-click="select('ssh_identity', ssh_identity)"
+        ng-dblclick="openDialog('ssh_identity', ssh_identity)">
+
+        <div class="list-row__primary">
+            <i class="icon icon--l identity-icon icon--circled mdi mdi-account"></i>
+        </div>
+
+        <div class="list-row__content">
+            <span ng-if="ssh_identity.label" class="display-block">{{ ssh_identity.label }}</span>
+            <span ng-if="!ssh_identity.label" class="display-block">{{ ssh_identity.username }}</span>
+
+            <span class="display-block list-row__content__description">{{ ssh_identity.auth_method }}</span>
+        </div>
+
+        <div class="list-row__buttons">
+            <md-button ng-click="openDialog('ssh_identity', ssh_identity)"
+                       class="list-row__buttons__edit-btn">
+                Edit
+            </md-button>
+            <md-button ng-click="removeEntity('ssh_identities', ssh_identity)"
+                       class="list-row__buttons__remove-btn">
+                Remove
+            </md-button>
+        </div>
+
+        <div class="context-menu" id="ssh_identities-{{::$index}}">
+            <ul class="list context-menu__list">
+                <li md-ink-ripple="#9EA5B3" class="list-row" ng-click="openDialog('ssh_identity', ssh_identity)">
+                    <div class="list-row__primary">
+                        <i class="context-menu__icon edit-icon"></i>
+                    </div>
+                    <div class="list-row__content">
+                        Edit
+                    </div>
+                </li>
+                <li md-ink-ripple="#9EA5B3" class="list-row" ng-click="removeEntity('ssh_identities', ssh_identity)">
+                    <div class="list-row__primary">
+                        <i class="context-menu__icon remove-icon"></i>
+                    </div>
+                    <div class="list-row__content">
+                        Remove
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </li>
+</ul>

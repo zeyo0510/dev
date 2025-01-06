@@ -1,0 +1,56 @@
+<div class="settings__title">Termius Preferences</div>
+<md-button ng-click="closeSettings()"
+        md-ink-ripple="#9EA5B3"
+        class="settings__close-btn">
+    <i class="mdi settings__close-btn__icon"></i>
+</md-button>
+<md-tabs md-stretch-tabs="never"
+         md-dynamic-height="false"
+         md-no-pagination="true"
+         md-border-bottom="false"
+         md-selected="settingsTabsActiveTab.index">
+    <md-tab ng-repeat="tab in settings_tabs"
+            md-on-select="onTabSelected(tab)"
+            label="{{::tab.title}}"
+            class="settings-tabs"
+            md-ink-ripple="#FFFFFF">
+
+        <!--Settings Terminal-->
+        <div class="settings-content-tabs" ng-if="tab.title == 'Terminal'" ng-controller="SettingsTerminalCtrl">
+            <div class="terminal_settings_template" ng-include="template.url" layout="row"></div>
+        </div>
+        <!--End Settings Terminal-->
+
+        <!--Ssh-keys-->
+        <div class="settings-content-tabs" ng-if="tab.title == 'Keychain'" ng-controller="KeyChainCtrl">
+            <div class="keychain_template" ng-include="template.url" layout="row"></div>
+        </div>
+        <!--End Ssh-keys-->
+
+        <!--Known Hosts-->
+        <div class="settings-content-tabs" ng-if="tab.title == 'Known Hosts'" ng-controller="KnownHostsCtrl">
+            <div class="known-hosts-content" ng-include="template.url" layout="row"></div>
+        </div>
+        <!--End Known Hosts-->
+
+        <!--Shortcuts Terminal-->
+        <div class="settings-content-tabs" ng-if="tab.title == 'Shortcuts'" ng-controller="ShortcutsTerminalCtrl">
+            <div class="shortcuts_template" ng-include="template.url" layout="row"></div>
+        </div>
+        <!--End Shortcuts Terminal-->
+
+        <!--User Profile-->
+        <div class="settings-content-tabs" ng-if="tab.title == 'Profile'">
+            <div class="user-profile">
+                <div class="user-profile_controller" ng-if="!username_str" ng-controller="AuthCtrl">
+                    <div class="change-password" ng-include="template.url"></div>
+                </div>
+                <div class="user-profile_controller" ng-if="username_str" ng-controller="UserProfileCtrl">
+                    <div class="change-password" ng-include="template.url"></div>
+                </div>
+            </div>
+        </div>
+        <!--End User Profile-->
+
+    </md-tab>
+</md-tabs>

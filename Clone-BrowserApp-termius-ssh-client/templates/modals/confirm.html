@@ -1,0 +1,23 @@
+<md-dialog class="modal-box">
+
+    <div class="modal-box__header modal-box__header--confirm">{{::confirmDialogueCtrl.title}}</div>
+
+    <div class="modal-box__content">
+        {{::confirmDialogueCtrl.content}}
+    </div>
+
+    <div class="modal-box__actions">
+        <button class="control-button control-button--cancel"
+                md-ink-ripple
+                ng-click="confirmDialogueCtrl.close()">
+            Cancel
+        </button>
+        <button class="control-button control-button--confirm"
+                ng-click="confirmDialogueCtrl.close(true)"
+                md-ink-ripple
+                md-autofocus>
+            {{::confirmDialogueCtrl.confirmButton}}
+        </button>
+    </div>
+
+</md-dialog>

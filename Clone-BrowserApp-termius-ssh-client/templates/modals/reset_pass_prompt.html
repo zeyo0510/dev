@@ -1,0 +1,35 @@
+<md-dialog class="modal-box"
+           aria-label="Reset password">
+
+    <div class="modal-box__header modal-box__header--request">Reset password</div>
+
+    <div class="modal-box__content">
+        <form name="reset_form">
+            <md-input-container>
+                <label>E-mail</label>
+                <input md-autofocus
+                       ng-model="email"
+                       type="email"
+                       name="email"
+                       required>
+            </md-input-container>
+
+            <div class="modal-box__actions">
+                <button class="control-button control-button--cancel"
+                        ng-click="cancel()"
+                        md-ink-ripple
+                        type="button">
+                    Cancel
+                </button>
+                <button class="control-button"
+                        ng-click="answer($event, email)"
+                        ng-disabled="reset_form.$invalid"
+                        md-ink-ripple
+                        type="submit">
+                    Reset
+                </button>
+            </div>
+        </form>
+    </div>
+
+</md-dialog>
