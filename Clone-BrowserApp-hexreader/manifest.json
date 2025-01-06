@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "min.js" ]
+      }
+   },
+   "description": "Binary file analyzer for Chrome",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon_small.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCw7LR18DuxSKzLlu0UwnL6aOHnTh0Dd3y6+X8DpfGUTMe7LGVq/vgykMONPvGh/bLVIX1BxWMj84C8xHklFMh2NTHhzWlJKTPSoQYRoGSW7KNm4jf8aqSN9qUvJyghqA1MX4zrRax7CkiZKMMkoIsaGRuMDPlb8RIaJ5g4bKfF2wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "23",
+   "name": "HexReader",
+   "offline_enabled": true,
+   "permissions": [ "fileSystem", "contextMenus", "clipboardWrite", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.5.24"
+}

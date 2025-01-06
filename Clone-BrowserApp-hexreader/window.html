@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel='stylesheet' type='text/css' href='style.css'/>
+  </head>
+  <body class='dark'>
+    <div id='header'>
+    	<span id='appTitle'></span>
+    	<div id='actionbar'>
+    		<div id='toolbarOpen'>Open</div>
+    		<!--PLACE HOLDER, RIGHT ALIGNED SECTION IN HEADER-->
+    	</div>
+
+    </div>
+
+    <!-- 
+    	yeah I know its a sin to use tables for layout or whatever, 
+    	 but at the moment I'd rather spend  time 
+    	 optimizing JavaScript then trying to get lovely divs to act like tables 
+    -->
+
+	<table id='startup'>
+		<tr>
+			<td style='font-size:12px; font-family:sans-serif;vertical-align:center; text-align:center; color:#999999;'>
+				<div id='dragboundary'>
+  					<button id='bttOpen'>Choose a file</button> or Drag &amp; Drop one here
+				</div>		
+			</td>
+		</tr>
+	</table>
+
+	<table align='center'>
+		<tr>
+			<td style='vertical-align:top;'>
+	    		<div id='grid'></div>
+	    	</td>
+	    	<td style='width:200px; padding-left:10px; vertical-align:top;'>
+	    		<div id='info'>
+					<table align='center'>
+						<tr>
+							<td colspan='2'>
+								<input type='text' placeholder='Address' readonly='true' id='valOffset'/>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan='2' class='title'>8-bit</td>
+						</tr>
+						<tr>
+							<td width='50%'>
+								<input type='text' placeholder='unsigned' readonly='true' id='valUint8'/>
+
+							</td>
+							<td>
+								<input type='text' placeholder='signed' readonly='true' id='valInt8'/>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2' class='title'>16-bit</td>
+						</tr>
+						<tr>
+							<td width='50%'>
+								<input type='text' placeholder='unsigned' readonly='true' id='valUint16'/>
+							</td>
+							<td>
+								<input type='text' placeholder='signed' readonly='true' id='valInt16'/>
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2' class='title'>32-bit</td>
+						</tr>
+						<tr>
+							<td width='50%'>
+								<input type='text' placeholder='unsigned' readonly='true' id='valUint32'/>
+							</td>
+							<td>
+								<input type='text' placeholder='signed' readonly='true' id='valInt32'/>
+							</td>
+						</tr>
+					</table>
+
+					<table style='width:100%; margin-top:10px;'>
+						<tr>
+							<td colspan='2' class='title' style='height:20px; line-height:18px;'>Selection
+
+								<img style='float:right; cursor:pointer; margin-top:1px; display:none;' src='bookmark_off.png' id='bookmarkImg'/>
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2'>
+								<input type='text' style='text-align:left; display:none;' placeholder='Bookmark Name' id='bookmarkName'/>
+							</td>
+						</tr>
+						<tr>
+							<td width='50%'>
+								<input type='number' min='0' placeholder='start' id='rangeStart'/>
+							</td>
+							<td>
+								<input type='number' placeholder='stop' id='rangeStop'/>
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2'>
+								<input type='text' readonly='true' placeholder='size' id='rangeSize'/>
+							</td>
+						</tr>
+					</table>
+
+
+		    	</div>
+		    </td>
+		</tr>
+	</table>
+
+    <div id='status'>
+
+		<input tabindex='1' type='text' placeholder='Search' id='search'/>
+
+		<div _tabindex='3' id='bookmarkSection'>
+			<div id='bookmarkMenu'>
+				Bookmarks
+
+			</div>
+
+			<div id='bookmarkList'>
+				<ul id='blist'></ul>
+			</div>
+		</div>
+
+		<input tabindex='2' type='text' placeholder='Jump to..' id='jumper'/>
+
+
+		<div id='sitelink'><a href='http://lostsource.com?app=HexReader' target='_blank'>lostsource.com</a></div>
+
+    </div>
+  </body>
+</html>
