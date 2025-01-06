@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Просмотр, анализ и обмен 3D файлами. Поиск 3D моделей в сети, подготовка к 3D печати и даже больше."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "3DView"
+   }
+}

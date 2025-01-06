@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thingiverse - 3DView</title>
+	<link href="../js/Backbone/backbone.modal.theme.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="../tipDialog/tipDialog.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="thing.css" media="screen" rel="stylesheet" type="text/css">
+	
+    <script src="thing.js"></script>
+  <body>
+  
+    <div class="bbm-modal__topbar" id="controls">
+		  <div class="topbar_buttonbar">
+		    <a href="#" id = "home" class="bbm-button">Home</a>
+		    <a href="#" id = "back" class="bbm-button inactive">&#9668 Back</a>
+		    <a href="#" id = "forward" class="bbm-button next inactive">Next &#9658</a>
+		    <a href="#" id = "close" class="bbm-button-close done">Close</a>
+		  </div>
+		  <div class="topbar_disclamer">
+			<div>
+				You are redirected to a third party website www.thingiverse.com. 
+			</div>			
+			<div>
+				"Awesome Team" has no supervision or control over this website, and shall not be liable for its use.
+			</div>			
+		  </div>
+    </div>
+	
+    <div id="controls" style ="display:none;">
+
+      <button id="reload" title="Reload">&#10227;</button>
+      <button id="terminate" title="Simulate Crash">&#9760;</button>
+      <form id="location-form">
+        <div id="center-column">
+          <input id="location" type="text" value="http://www.thingiverse.com/explore">
+        </div>
+        <input type="submit" value="Go">
+      </form>
+
+    </div>
+    <webview src="http://www.thingiverse.com/explore" style="width:1024; height:680px"></webview>
+
+    <div id="sad-webview">
+      <div id="sad-webview-icon">&#9762;</div>
+      <h2 id="crashed-label">Aw, Snap!</h2>
+      <h2 id="killed-label">Window is Dead!</h2>
+
+      <p>Something went wrong while displaying this webpage.
+      Please reopen this window.</p>
+    </div>
+  </body>
+</html>

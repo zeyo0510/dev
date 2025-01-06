@@ -1,0 +1,1 @@
+var Sidebar=function(b){var a=(new UI.Panel).setId("sidebar");a.add(new Sidebar.Scene(b));a.add(new Sidebar.Printer(b));a.add(new Sidebar.Object3D(b));a.add(new Sidebar.View(b));a.add(new Sidebar.Analysis(b));a.add(new Sidebar.Geometry(b));a.add(new Sidebar.Measurement(b));return a};

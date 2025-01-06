@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Powerful application for 3D printing enthusiasts and professionals"
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "3DView"
+   }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type"><title>Guide 3. How to prepare a model for 3D printing.</title>
+
+<link rel="stylesheet" href="help.article.css" type="text/css">
+</head>
+<body style="width: 800px;">
+<script src="help.js" type="text/javascript"></script>
+<div style="margin-left: 20px; width: 740px;">
+<h1 style="font-family: Corbel; margin-left: 0px; width: 760px;">Guide
+3. How to prepare a model for 3D printing.</h1>
+<div style="margin-left: 0px; width: 740px;"><span style="font-family: Arial;">Making
+real object from a 3D model is sometimes a complex project. The model
+requires certain qualities in order to be produced correctly. 3DView
+has tools to&nbsp;assess your 3D model for 3D printing and other
+processes and repair it. <br>
+Below you can find&nbsp;</span><span style="font-size: 12pt; line-height: 107%; font-family: &quot;Arial&quot;,sans-serif;">qualities
+</span><span style="font-family: Arial;"> of a 3D model you should take into
+account:&nbsp;</span><br>
+<ol>
+<li><a href="#quality-dimensions">Position and Size</a></li>
+<li><a href="#quality-orientation">Orientation</a></li>
+<li><a href="#quality-normals">Surface Normals</a></li>
+<li><a href="#quality-holes">Holes</a></li>
+<li><a href="#quality-shells">Shells and Features</a></li>
+<li><a href="#quality-thickness">Wall Thickness</a></li>
+<li><a href="#quality-intersections">Intersections</a><br>
+</li>
+</ol>
+<h3><br>
+<span style="font-family: Arial;"></span></h3>
+<h3><span style="font-family: Arial;"><a name="quality-dimensions"></a>Position and Size</span></h3>
+Please take below steps to position and scale your model to fit 3D
+printer.
+<h4><a name="quality-add-printer"></a>1. Add a
+3D Printer</h4>
+Your model has to be positioned and scaled to fit inside virtual build
+chamber of a 3D printer.<br>
+To see&nbsp;boundaries of a&nbsp;3D printer&nbsp;please go
+to menu "3D Printing" &gt; "Add 3D Printer"; then&nbsp;select a
+printer in the <a href="ui.html">Objects Tree</a>
+and set a printer in the <a href="ui.html">"3D
+Printer"</a> tab. If your printer is not listed in the available
+profiles - you can set its dimensions and other settings manually.<br>
+<br>
+<img style="width: 740px; height: 497px;" alt="Adding a printer to a 3D Secne" src="../assets/help/add-printer.gif">
+<h4><a name="quality-position"></a>2. Position
+your part inside a 3D Printer</h4>
+Once 3D Printer is visible, you can start positioning your models
+inside
+its chamber. To position models automatically, select them from the <a href="ui.html">Objects Tree</a> and then
+click&nbsp;<img style="width: 48px; height: 48px;" alt="Automatic positioning" src="../assets/buttons/disassemble.png" align="middle">icon
+(or&nbsp;press <span class="keyboard-button">&nbsp;Ctrl-A
+</span>).
+By applying automatic positioning again you will put your models to
+their original places.<br>
+Also you can position selected models manually by enabling
+translate mode <img style="width: 48px; height: 48px;" alt="Translate mode" src="../assets/buttons/translate.png" align="middle">(or press&nbsp;<span class="keyboard-button"> T </span>)
+and then use translation controls as described <a href="ui.html">here</a>. <br>
+<h4><a name="quality-size"></a>3. Make
+sure the part has a proper size</h4>
+Your part must fit 3D printer boundaries and has appropriate size.<br>
+<table style="text-align: left; width: 580px; height: 231px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><img style="width: 200px; height: 192px;" alt="Too large" src="../assets/help/large-part.gif"></td>
+<td><img style="width: 200px; height: 192px;" alt="Too large" src="../assets/help/small-part.gif"></td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; Too large</td>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; Too small</td>
+</tr>
+</tbody>
+</table>
+<br>
+If your model is too large or to small, it could mean the model is in
+wrong units. You can convert&nbsp;units of selected parts by using
+a menu item "Edit" &gt; "Units Conversion" or&nbsp;keyboard
+shortcuts<br>
+<ul>
+<li><span class="keyboard-button">&nbsp;Ctrl+Shift+I&nbsp;</span>
+to convert from mm to inches (making model smaller)&nbsp;</li>
+<li><span class="keyboard-button">&nbsp;Ctrl+Shift+M&nbsp;</span>
+to convert from&nbsp;inches to mm (making model larger)</li>
+</ul>
+Also you can&nbsp;scale selected models manually&nbsp;by
+enabling scale mode <img style="width: 48px; height: 48px;" alt="Translate mode" src="../assets/buttons/scale.png" align="middle">(or press&nbsp;<span class="keyboard-button"> S </span>)
+and then use scaling controls as described <a href="ui.html">here</a>.
+<br>
+<br>
+<span style="font-family: Arial;"></span>
+<h3><span style="font-family: Arial;"><a name="quality-orientation"></a>Orientation</span></h3>
+Because of the way how 3D printing works, model orientation affect the
+look and strength of the final part. <br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td>
+<dl>
+<dt>Very often The "layer" structure can be visible in
+the final part. 3DView can show you those layers before the model is
+actually printed. To see layers, select the part and click "Slice"
+checkbox on a <a href="ui.html">"View" tab</a>
+inside sidebar.&nbsp;</dt>
+<dd></dd>
+<dt>Note: sometimes you may need to zoom in to see layers
+when "Slice" mode is enabled.</dt>
+</dl>
+</td>
+<td><img style="width: 200px; height: 192px;" alt="Layers" src="../assets/help/layers.gif"></td>
+<td><img style="width: 200px; height: 192px;" alt="Layers" src="../assets/help/layers.jpg"></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: center;">Layers on a 3D model</td>
+<td style="text-align: center;">Layers on a physical
+part</td>
+</tr>
+</tbody>
+</table>
+<br>
+Besides the "layer" structure you may want to optimize the Z height of
+the part. Taller parts require more time to print and supports
+material. They are often more expensive. You can reduce print time and
+expenses simply by rotating your part to minimum Z height.<br>
+To rotate selected models, enable rotate mode <img style="width: 48px; height: 48px;" alt="Translate mode" src="../assets/buttons/rotate.png" align="middle">(or
+press&nbsp;<span class="keyboard-button"> R </span>)
+and then use rotation controls as described <a href="ui.html">here</a>.
+<br>
+<br>
+<h3><span style="font-family: Arial;"><a name="quality-normals"></a>Surface Normals</span></h3>
+Surface normals tells 3D printer where is "inside" and where is
+"outside" of your model. You must make sure all surfaces have the right
+orientation. You can see inverted surface&nbsp;in 3DView by <img style="width: 48px; height: 48px;" alt="Inverted triangles" title="Inverted triangles: shown" src="../assets/buttons/inverted_show.png" align="middle">
+button&nbsp;(or press&nbsp;<span class="keyboard-button">
+I </span>). When enabled, inverted surfaces are shown with a red
+color.<br>
+<ul>
+<li>To fix surface normals for selected models automatically
+choose menu item "Fixing" &gt; "Fix Normals"&nbsp;(or
+press&nbsp;<span class="keyboard-button"> Shift-N </span>).</li>
+<li>To invert all surface normals for selected
+models&nbsp;choose menu item "Fixing" &gt; "Invert
+Normals"&nbsp;(or press&nbsp;<span class="keyboard-button">
+Shift-I </span>).</li>
+<li>If you wish to invert surface normals of&nbsp;certain
+features
+(shells) of a single model manually, split your model into shells first
+and then
+invert normals of each shell separately.</li>
+</ul>
+<table style="text-align: left; width: 740px; height: 227px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><img style="width: 200px; height: 192px;" alt="Inverted normals" src="../assets/help/normals-inverted.jpg"></td>
+<td><img style="width: 200px; height: 192px;" alt="Correct normals" src="../assets/help/normals-correct.jpg"></td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp; &nbsp;
+&nbsp; &nbsp; Inverted normals</td>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; Correct
+normals</td>
+</tr>
+</tbody>
+</table>
+
+<h3><br><span style="font-family: Arial;"></span></h3><h3><span style="font-family: Arial;"><a name="quality-holes"></a>Holes</span></h3>
+Most 3D printers requires 3D model to be "watertight" (or have no
+holes). 3DView can detect and fill holes.<br>
+To detect holes -press <img style="width: 48px; height: 48px;" alt="Show holes" title="Holes: shown" src="../assets/buttons/edges_hide.png" align="middle">
+button&nbsp;(or press&nbsp;<span class="keyboard-button">
+H </span>). When enabled,&nbsp;hole boundaries are shown
+with&nbsp;a yellow color.<br>
+<h4><a name="quality-stitching"></a>1.
+Stitching</h4>
+In many cases, holes appear as the result of small gaps
+between&nbsp;adjacent surfaces. To fix those gaps automatically,
+select desired models and choose "Fixing" &gt; "Stitch Surfaces"
+(or press&nbsp;<span class="keyboard-button"> Shift-S </span>).<br>
+<h4><a name="quality-planar-holes"></a>2.
+Filling planar holes</h4>
+If there are some larger holes remaining after "Stitching" operation -
+you may want to fill them manually.<br>
+The holes that represent a missing piece of planar surface are called
+planar holes.<br>
+To fill a planar hole, go to "Fixing" &gt; "Fill Hole" (or
+press&nbsp;<span class="keyboard-button"> Shift-H </span>)
+and then click on the edge of the hole.<br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><img style="width: 200px; height: 192px;" alt="Holes hidden" src="../assets/help/holes-hidden.jpg"></td>
+<td><img style="width: 200px; height: 192px;" alt="Holes shown" src="../assets/help/holes-shown.jpg"></td>
+<td><img style="width: 200px; height: 192px;" alt="Holes fixed" src="../assets/help/holes-fixed.jpg"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Holes hidden</td>
+<td style="text-align: center;">Holes shown</td>
+<td style="text-align: center;">Holes filled</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h4><a name="quality-complex-holes"></a>3.
+Filling non-planar or complex holes</h4>
+When the hole covers very curvy piece of surface, the hole filling
+algorithm may not produce desired results so it is advised to split it
+into several planar holes before filling them.<br>
+Also when a single hole consists of 2 or more boundaries - it is
+required to merge boundaries so it is filled as one hole.<br>
+In both cases you will need a "bridge", cutting a single hole or
+joining separate holes.<br>
+To create a bridge,&nbsp;go to "Fixing" &gt; "Create Bridge"
+(or press&nbsp;<span class="keyboard-button"> Shift-B </span>)
+and then separately click on 2 opposite boundary edges.<br>
+<br>
+Filling non-planar&nbsp;hole:<br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><img style="width: 144px; height: 307px;" alt="Complex hole" src="../assets/help/camaro.jpg"></td>
+<td><img style="width: 144px; height: 307px;" alt="Complex hole" src="../assets/help/camaro-wrong-fill.jpg"></td>
+<td><img style="width: 144px; height: 307px;" alt="Complex hole" src="../assets/help/camaro-bridge.jpg"></td>
+<td><img style="width: 144px; height: 307px;" alt="Complex hole" src="../assets/help/camaro-fill.jpg"></td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp; Non-planar
+hole</td>
+<td style="text-align: center;">Result of hole
+filling</td>
+<td style="text-align: center;">Making bridges</td>
+<td style="text-align: center;">Filling separate
+planar holes</td>
+</tr>
+</tbody>
+</table>
+<br>
+Merging a&nbsp;complex hole with 2 boundaries:<br>
+<table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><img style="width: 200px; height: 192px;" alt="Complex hole" src="../assets/help/comlpex-hole.jpg"></td>
+<td><img style="width: 200px; height: 192px;" alt="Creating a bridge" src="../assets/help/comlpex-hole-bridge.jpg"></td>
+<td><img style="width: 200px; height: 192px;" alt="Bridge created" src="../assets/help/comlpex-hole-split.jpg"></td>
+</tr>
+<tr>
+<td style="text-align: center;">Hole with 2
+boundaries</td>
+<td style="text-align: center;">Creating a bridge</td>
+<td style="text-align: center;">Bridge created</td>
+</tr>
+</tbody>
+</table>
+<h3><br><span style="font-family: Arial;"></span></h3><h3><span style="font-family: Arial;"><a name="quality-shells"></a>Shells and Features</span></h3>Your
+3D model might contain features that you don't want to print. That
+could be floating surfaces, unwanted features, noise triangles, inside
+geometry... etc. Those features are easy to find when they are located
+outside of the&nbsp;model's body, but what to do if they are inside?<br><h4><a name="quality-look-inside"></a>1.
+Looking inside the model</h4>3DView has several features allowing you to look inside the part:<br><ul><li>Cutting piece of selected model (or clipping). Clipping controls located&nbsp;at the <a href="ui.html">View tab</a> on a&nbsp;sidebar.</li><li>Zooming the camera through the part.</li><li>Structural analysis mode <img src="../assets/buttons/analysis_hide.png" title="Holes: shown" alt="Show holes" style="width: 48px; height: 48px;" align="middle"> shows x-ray of all parts on scene.</li><li>Holes detection mode <img style="width: 48px; height: 48px;" alt="Show holes" title="Holes: shown" src="../assets/buttons/edges_hide.png" align="middle"> shows open boundaries inside models.</li></ul><table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td><img style="width: 189px; height: 200px;" alt="Complex hole" src="../assets/help/x-ray.jpg"></td><td><img style="width: 133px; height: 200px;" alt="Complex hole" src="../assets/help/look-inside.jpg"></td><td><img style="width: 285px; height: 200px;" alt="Complex hole" src="../assets/help/view-tab.png"></td></tr><tr><td>Structural analysis mode</td><td style="text-align: right;">Look inside the&nbsp;</td><td>bunny when clipping by X-plane</td></tr></tbody></table><h4><a name="quality-split-shells"></a>2. Removing unnecessary shells</h4>Shell is a set of interconnected&nbsp;triangles. Typically unwanted features of a model reside in a separate shell.<br>To
+remove unwanted shells - split the model into&nbsp;shells ("Edit" &gt;
+"Split Shells"), select unnecessary shells and remove them ("Edit" &gt;
+"Delete" or <span class="keyboard-button">&nbsp;Del&nbsp;</span> key). After unwanted shells are removed - select parent object from the <a href="ui.html">Objects Tree</a>
+and merge shells into single part again ("Edit" &gt; "Merge Children").<br><h3><span style="font-family: Arial;"><a name="quality-thickness"></a>Wall thickness</span></h3>
+Every 3D printer has a minimal thickness limitation. If your model does
+not meet minimal thickness criteria, it must be redesigned in order to
+be printed. 3DView allows detecting thin walls with its&nbsp;<a href="ui.html">Structural Analysis</a> mode. When activated with a <img src="../assets/buttons/analysis_hide.png" title="Holes: shown" alt="Show holes" style="width: 48px; height: 48px;" align="middle"> button (or <span class="keyboard-button">&nbsp;A&nbsp;</span>
+key), every model you select will be analyzed for minimal thicknesses
+and self-intersections. Surfaces with thin walls will get a color
+varying from green (thickness close to minimal) to red (thickness less
+than minimal)). You can set desired&nbsp;wall thickness in the <a href="ui.html">Analysis tab</a>&nbsp;on a&nbsp;sidebar.<br>Also you can check wall thickness at any point of a surface by using "Measure Thickness" <img style="width: 48px; height: 48px;" alt="Measure distance" title="Measure distance" src="../assets/buttons/thickness.png" align="middle">button <br>
+<h3><span style="font-family: Arial;"><a name="quality-intersections"></a>Intersections</span></h3>
+Depending on a 3D printing technology, model self-intersections may
+result in excessive material&nbsp;deposition or material over-curing. <span style="font-family: Arial;"></span>Some 3D printers require a 3D model to have no self-intersecting surfaces at all. <br>3DView allows detection of such surfaces with <a href="ui.html">Structural Analysis</a>. <br>In most cases, such types of errors typically require model re-design or complex/expensive software tools. <br>
+In some cases you can get rid of some intersections by applying "Remove
+Sharp Faces" or "Reduce Faces" operations from fixing menu in 3DView. <br>
+<br>
+<span style="font-family: Arial;"></span></div>
+Previous guide:&nbsp;<a href="model.html">Where to get
+3D models</a> &nbsp; &nbsp;Next guide:&nbsp;<a href="print.html">How to print your 3D model</a>
+</div>
+</body></html>

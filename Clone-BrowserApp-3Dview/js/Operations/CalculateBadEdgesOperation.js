@@ -1,0 +1,3 @@
+T.CalculateBadEdgesOperation=function(){};
+T.CalculateBadEdgesOperation.prototype.operate=function(d){T.GeometryUtils.updateEdgeFaces(d);var b=new T.Geometry,a,e,c;b.badEdgesCount=0;for(i in d.edgeFaceMap){edge=d.edgeFaceMap[i];a=i.split("_");e=0;var f=T.GeometryUtils.sameOrder(d.faces[edge[0]],a[0],a[1]);if(0==edge.length%2)for(c=1;c<edge.length;++c)f==T.GeometryUtils.sameOrder(d.faces[edge[c]],a[0],a[1])&&++e;if(1==edge.length%2||2<=edge.length&&edge.length-2!=2*e)e=d.vertices[a[0]],c=d.vertices[a[1]],e.badVertexOf=a[0],c.badVertexOf=a[1],
+f?(b.vertices.push(e),b.vertices.push(c)):(b.vertices.push(c),b.vertices.push(e)),b.badEdgesCount++}sendEventStatistic("Geometry","Calculate","Bad edges",b.badEdgesCount);return b};

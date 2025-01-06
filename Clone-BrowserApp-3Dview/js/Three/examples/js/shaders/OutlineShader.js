@@ -1,0 +1,1 @@
+T.OutlineShader={vertex_shader:"uniform float offset;\nvoid main() {\nvec3 cameraToVertex = position.xyz - cameraPosition.xyz;\nfloat fuzz = length(cameraToVertex) / 512.0;\nvec4 pos = modelViewMatrix * vec4( position + normal * offset * fuzz, 1.0 );\ngl_Position = projectionMatrix * pos;\n}",fragment_shader:"void main(){\ngl_FragColor = vec4( 1.0, 1.0, 0.0, 1.0 );\n}"};

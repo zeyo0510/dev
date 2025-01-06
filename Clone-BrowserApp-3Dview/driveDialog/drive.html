@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Drive - 3DView</title>
+    <link rel="stylesheet" href="drive.css">
+    <script src="/js/Backbone/jquery-2.1.0.min.js"></script>
+    <script src="/js/FancyTree/jquery-ui.custom.js"></script>
+	<link href="/js/FancyTree/skin-win8/ui.fancytree.css" rel="stylesheet" type="text/css">
+	<link href="/js/Backbone/backbone.modal.theme.css" rel="stylesheet" type="text/css">
+	<link href="/tipDialog/tipDialog.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="/js/FancyTree/jquery.fancytree-all.js"></script>
+    <script src="drive.js"></script>
+    <script src="drive.browser.js"></script>
+	<script src="/js/GoogleDrive/gdocs.js"></script>
+	<script src="/js/Operations/FileOperations.js"></script>
+	<script src="/js/Operations/GoogleDriveOperations.js"></script>
+	 
+  </head>	
+  <body>
+	<div class = "tabs" id = "top-controls">
+		<div class="tab">
+			<input type="radio" id="files-switch" name="tab-group-1" checked>
+			<label for="files-switch">Browse files</label>
+		</div>
+		<div class="tab">
+			<input type="radio" id="explore-switch" name="tab-group-1">
+			<label for="explore-switch">Manage Drive</label>
+		</div>
+		  
+			<div style ="display:none;">
+			  <button id="back" title="Go Back">&#9664;</button>
+			  <button id="forward" title="Go Forward">&#9654;</button>
+			  <button id="home" title="Go Home">&#8962;</button>
+			  <button id="reload" title="Reload">&#10227;</button>
+			  <button id="terminate" title="Simulate Crash">&#9760;</button>
+			  <form id="location-form">
+				<div id="center-column">
+				  <input id="location" type="text" value="https://drive.google.com/">
+				</div>
+				<input type="submit" value="Go">
+			  </form>
+			</div>
+		  
+    </div>
+	
+	<div id = "drive-browser">
+		<div id = "left-panel">
+			<div id = "tree-wrapper"></div>
+		</div>
+		
+		<div id = "panel-divider">
+			<div id = "divider"></div>
+		</div>
+		
+		<div id = "right-panel">
+			<div id = "list-wrapper">
+				<div id="grdive-files-loading" class ="grdive-loading"></div>
+				<div id="grdive-file-list"></div>
+			</div>
+		</div>
+
+		<div id = "bottom-controls">
+			<div class="bottom-right">
+			  <a href="#" id="open" class="bbm-button inactive">Open selected</a>
+			  <a href="#" id="close" class="bbm-button-close">Close</a>
+			</div>
+		</div>
+		
+    </div>
+	
+	<div id = "drive-web">
+	
+		<webview src="https://drive.google.com" style="width:1024; height:680px"></webview>
+
+		<div id="sad-webview">
+		  <div id="sad-webview-icon">&#9762;</div>
+		  <h2 id="crashed-label">Aw, Snap!</h2>
+		  <h2 id="killed-label">Window is Dead!</h2>
+
+		  <p>Something went wrong while displaying this webpage.
+		  Please reopen this window.</p>
+		</div>
+    </div>
+  </body>
+</html>

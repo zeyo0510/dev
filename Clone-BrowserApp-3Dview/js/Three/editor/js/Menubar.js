@@ -1,0 +1,1 @@
+var Menubar=function(b){var a=(new UI.Panel).setId("menubar");a.add(new Menubar.File(b));a.add(new Menubar.Edit(b));a.add(new Menubar.Fixing(b));a.add(new Menubar.Measure(b));a.add(new Menubar.Printing(b));a.add(new Menubar.View(b));a.add(new Menubar.Help(b));return a};

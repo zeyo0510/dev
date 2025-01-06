@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>3DView</title>
+		<link rel="stylesheet" href="index.css" type="text/css" />
+		<link rel="stylesheet" href="blog.css" type="text/css" />
+	</head>
+    <body style = "background: radial-gradient(#fff 0%, #eee 100%)">
+		
+		<img id="spinner" src = "/js/FancyTree/skin-win8/loading.gif" class= "center"/>
+		
+		<div id="Tip" style="position: absolute; visibility: hidden; z-index:1; color: #000000; font: normal normal bold 12px/normal 'Helvetica Neue', arial, sans-serif;
+		padding: 3px; background-color: #FFFFFF; BORDER: 1px solid #000000; opacity: 0.5; border-radius:3px; box-shadow: 3px 3px 2px #AAAAAA;"></div>
+
+	    <script src="js/google-analytics-bundle.js" type="text/javascript"></script>
+	    <script src="js/utility.js" type="text/javascript"></script>
+	    <script src="js/GoogleDrive/gdocs.js" type="text/javascript"></script>
+	    <script src="js/GoogleDrive/upload.js" type="text/javascript"></script>
+		
+	    <script src="js/Zip/zip.js" type="text/javascript"></script>
+		<script src="js/Zip/zip-ext.js" type="text/javascript"></script>
+		
+		<script src="js/Backbone/jquery-2.1.0.min.js" type="text/javascript"></script> 
+		<script src="js/jquery.timeago.js" type="text/javascript"></script> 
+		
+		<script src="js/FancyTree/jquery-ui.custom.js" type="text/javascript"></script>
+		<link href="js/FancyTree/skin-win8/ui.fancytree.css" rel="stylesheet" type="text/css">
+		<script src="js/FancyTree/jquery.fancytree-all.js" type="text/javascript"></script>
+
+		<script src="js/ContextMenu/jquery.ui.position.js" type="text/javascript"></script>
+		<script src="js/ContextMenu/jquery.contextMenu.js" type="text/javascript"></script>
+		<link href="js/ContextMenu/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
+		
+		<script type="text/javascript" src="js/ColorPicker/farbtastic.js"></script>
+		<link rel="stylesheet" href="js/ColorPicker/farbtastic.css" type="text/css" />
+		
+		<script src="js/Three/build/three.js" type="text/javascript"></script>
+		<script src="js/Operations/Extensions.js" type="text/javascript"></script>
+		<script src="js/Operations/Distances.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Platform.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/libs/system.min.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/fonts/helvetiker_bold.typeface.js" type="text/javascript"></script>
+		<!--<script src="js/Three/examples/js/BufferGeometryUtils.js" type="text/javascript"></script>-->
+		<script src="js/Three/examples/js/controls/EditorControls.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/controls/HUDControls.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/controls/TransformControls.js" type="text/javascript"></script>
+        <script src="js/Three/examples/js/controls/UniversalControls.js" type="text/javascript"></script>
+        <script src="js/Three/examples/js/controls/HoleSelectionControls.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Measurement.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Measurement.Distance.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Measurement.Thickness.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Measurement.Angle.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Measurement.Radius.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Measurement.Annotation.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Measurement.Info.js" type="text/javascript"></script>
+        <script src="js/Three/examples/js/controls/MeasurementControls.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/controls/BlogControls.js" type="text/javascript"></script>
+
+		<script src="js/Three/examples/js/loaders/AMFLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/BabylonLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/ColladaLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/OBJLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/PLYLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/STLLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/3DSLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/UTF8Loader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/VRMLLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/VTKLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/ctm/lzma.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/ctm/ctm.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/loaders/ctm/CTMLoader.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/materials/ObjectMaterial.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/materials/XrayMaterial.js" type="text/javascript"></script>
+		
+		<script src="js/Three/examples/js/shaders/CopyShader.js"></script>
+		<script src="js/Three/examples/js/shaders/AddShader.js"></script>
+		<script src="js/Three/examples/js/shaders/GlowShader.js"></script>
+		<script src="js/Three/examples/js/shaders/VerticalBlurMaskShader.js"></script>
+		<script src="js/Three/examples/js/shaders/HorizontalBlurShadowShader.js"></script>
+		<script src="js/Three/examples/js/shaders/ThicknessShader.js"></script>
+
+		<script src="js/Three/examples/js/postprocessing/EffectComposer.js"></script> 
+		<script src="js/Three/examples/js/postprocessing/ShaderPass.js"></script>
+		<script src="js/Three/examples/js/postprocessing/GlowPass.js"></script>
+		<script src="js/Three/examples/js/postprocessing/WallThicknessAnalysis.js"></script>
+		
+		<!--
+		<script src="js/Three/examples/js/exporters/BufferGeometryExporter.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/exporters/GeometryExporter.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/exporters/MaterialExporter.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/exporters/ObjectExporter.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/exporters/SceneExporter.js" type="text/javascript"></script>-->
+		<script src="js/Three/examples/js/exporters/OBJExporter.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/exporters/STLExporter.js" type="text/javascript"></script>
+
+		<!--<script src="js/Three/examples/js/renderers/WebGLRenderer3.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/renderers/SoftwareRenderer.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/renderers/SVGRenderer.js" type="text/javascript"></script>
+		
+		<script src="js/Three/editor/js/libs/rawdeflate.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/libs/rawinflate.js" type="text/javascript"></script>-->
+		<script src="js/Three/editor/js/libs/signals.min.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/libs/ui.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/libs/ui.three.js" type="text/javascript"></script>
+
+		<script src="js/Three/editor/js/History.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Notifications.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Editor.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Loader.js" type="text/javascript"></script>
+		<script src="js/Operations/FileOperations.js" type="text/javascript"></script>
+		<script src="js/Operations/GoogleDriveOperations.js" type="text/javascript"></script>
+		<script src="js/Operations/ThingiverseOperations.js" type="text/javascript"></script>
+		<script src="js/Operations/ZipOperations.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Menubar.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Menubar.File.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Menubar.Edit.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Menubar.Fixing.js" type="text/javascript"></script>
+		<!--<script src="js/Three/editor/js/Menubar.Add.js" type="text/javascript"></script>-->
+		<script src="js/Three/editor/js/Menubar.Measure.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Menubar.Printing.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Menubar.View.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Menubar.Help.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.js" type="text/javascript"></script>
+		<!--<script src="js/Three/editor/js/Sidebar.Renderer.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Animation.js" type="text/javascript"></script>-->
+        <script src="js/Three/editor/js/Sidebar.Material.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Sidebar.View.js" type="text/javascript"></script>
+        <script src="js/Three/editor/js/Sidebar.Measurement.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.CircleGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.CubeGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.CylinderGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.IcosahedronGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.PlaneGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.SphereGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.TorusGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Geometry.TorusKnotGeometry.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Analysis.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/HUD.js" type="text/javascript"></script>
+
+		<script src="js/Three/editor/js/Sidebar.Scene.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Object3D.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Sidebar.Printer.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/PrintersInfo.js" type="text/javascript"></script>
+		<!--<script src="js/Three/editor/js/Toolbar.js" type="text/javascript"></script>-->
+		<script src="js/Three/examples/js/helpers/SelectionHelper.js" type="text/javascript"></script>
+		<script src="js/Three/editor/js/Viewport.js" type="text/javascript"></script>
+
+        <script src="js/Operations/OperationFramework.js" type="text/javascript"></script>
+        <script src="js/Operations/CalculateBadEdgesOperation.js" type="text/javascript"></script>
+        <script src="js/Operations/GeometryUtils.js" type="text/javascript"></script>
+        <script src="js/Operations/ClosestEdgeSearch.js" type="text/javascript"></script>
+        <script src="js/Operations/Nesting.js" type="text/javascript"></script>
+        <script src="js/Operations/Grouping.js" type="text/javascript"></script>
+        <script src="js/Operations/SplitShellsOperation.js" type="text/javascript"></script>
+        <script src="js/Operations/MergeChildrenOperation.js" type="text/javascript"></script>
+		<script src="js/Operations/RemoveSharpTrianglesOperation.js" type="text/javascript"></script>
+        <script src="js/Operations/ReduceOperation.js" type="text/javascript"></script>
+        <script src="js/Operations/FixNormalsOperation.js" type="text/javascript"></script>
+        <script src="js/Operations/StitchOperation.js" type="text/javascript"></script>
+		<script src="js/Three/examples/js/modifiers/SubdivisionModifier.js" type="text/javascript"></script>
+        <!--<script src="js/Operations/MarkWindowOperation.js" type="text/javascript"></script>-->
+        <script src="js/Operations/PickingOperations.js" type="text/javascript"></script>
+        <script src="js/Operations/MirrorOperation.js" type="text/javascript"></script>
+        <script src="js/Operations/HoleFillerOperation.js" type="text/javascript"></script>
+
+		<script src="js/Backbone/underscore.js" type="text/javascript"></script> 
+		<script src="js/Backbone/backbone.js" type="text/javascript"></script> 
+		<link href="js/Backbone/backbone.modal.css" rel="stylesheet" type="text/css">
+		<link href="js/Backbone/backbone.modal.theme.css" rel="stylesheet" type="text/css" >
+		<script src="js/Backbone/backbone.modal.js" type="text/javascript"></script> 
+		<div class="app"></div>
+		<link href="tipDialog/tipDialog.css" rel="stylesheet" type="text/css" >
+	    <script src="tipDialog/tipDialog.js" type="text/javascript" type="text/javascript"></script>
+
+        <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
