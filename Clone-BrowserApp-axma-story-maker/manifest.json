@@ -1,0 +1,35 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_app_desc__",
+   "file_handlers": {
+      "text": {
+         "extensions": [ "sm" ],
+         "types": [ "text/*" ]
+      }
+   },
+   "icons": {
+      "128": "/icons/128.png",
+      "16": "/icons/16.png",
+      "48": "/icons/48.png",
+      "512": "/icons/512.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgKdrLAVjq8TNf+f3yyz5+xzgQpzxZKOwSwxPGVU3Igy2IxoSZs52FhcEiLK8abhLP3RcDfLZ2CXF54zmOMYcAIZt0ok8qR2HTLsEmuZhn3/Ub6cnjMpqQkjg93KoT+0DXdoneAMU8CLIHCS9Wp0qhT+tqJxXkPqZSDvCMTKN/sMynsXVyxrmLe7R8nKTVReven6wT9ZItuwjG9H9tYs83rAxDUiAe+WPu9eWti8vpfZ0NTLTgbp6AOEtOhfhIlMAkr5EYljCcJQlSUVt+QRqdWeV7j+R4/+Cvxu/Mb9jmm5sKU8lO+AHMigfXMeKKL6hHxEUaBwEmM89Rv4hy3mqbwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35.0",
+   "name": "__MSG_app_name__",
+   "offline_enabled": true,
+   "permissions": [ "storage", "unlimitedStorage", "browser", "contextMenus", "tts", "http://*/*", "https://*/*", {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   } ],
+   "sandbox": {
+      "pages": [ "preview.html" ]
+   },
+   "short_name": "__MSG_app_short_name__",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "4.7.1"
+}

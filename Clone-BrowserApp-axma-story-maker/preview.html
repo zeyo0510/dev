@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Preview Frame</title>
+
+<style>
+#myframe
+{
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<iframe name='myframe' id='myframe' frameborder='0' scrolling='auto' src='about:blank'></iframe>
+
+<script>
+
+window.addEventListener('message', function(e) {
+	var com = e.data;
+	var myframe = document.getElementById('myframe');
+	if (com=='' || com.substr(0,9)=='<!DOCTYPE') {
+		myframe.srcdoc = com;
+	} else {
+		myframe.contentWindow.postMessage(com,'*');
+	}
+});
+
+</script>
+
+</body>
+</html>
