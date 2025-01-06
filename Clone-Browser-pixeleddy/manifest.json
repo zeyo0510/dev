@@ -1,0 +1,21 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "PIXEL EDITOR!!!!!",
+   "homepage_url": "http://arg410.newgrounds.com",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "256": "icon-256.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgXtaBnxuEGqNUxjeb46EKF6BBqwywgP2t6qwIvG+5XnG38jjXSCZwj+FSk4b/L19A5tHON2n4IScLoc7Iuf8uXBQrDYQlWcmRrRxmTbspSuOlkldtdqxcUR/G4qqtLbu2dmdXAW+uU4dne++7QD2DP4qXzEB/ohF3Y04avZQ+gajY9i9zzjh2jKy+X7V2ABY0eZ9LAmZ8ub+NwhTshRumBweIUbgi5NyExrGw73P0/Qe0+xELSe9q6O/sl5afjsuquCYU4gE1bhxd50RQgrvqt/dKjxfgv/7fEkzo9FmOVbwO61J5dRDFBXvxhkoJiKwlvnp/LiZQbqfC936sZ0CDQIDAQAB",
+   "manifest_version": 2,
+   "name": "PixelEddy",
+   "offline_enabled": true,
+   "permissions": [ "storage", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}
