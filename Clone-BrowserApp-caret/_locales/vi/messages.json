@@ -1,0 +1,305 @@
+{
+   "aboutHomePage": {
+      "message": "Trang chủ"
+   },
+   "aboutLicense": {
+      "message": "Caret được phát hành theo giấy phép GPL, điều đó nghĩa là \u003Ca href=\"https://github.com/thomaswilburn/Caret\" target=_blank>mã nguồn\u003C/a> có thể được tự do sửa đổi cho phù hợp với bạn. Nếu bạn cảm thấy Caret hữu ích, hãy xem xét việc tặng Quỹ Free Software Foundation \u003Ca href=\"http://endsoftwarepatents.org/donate\" target=_blank> to End Software Patents\u003C/a>."
+   },
+   "aboutSupport": {
+      "message": "Hỗ trợ"
+   },
+   "aboutWrittenBy": {
+      "message": "Được viết bởi \u003Ca href=\"http://thomaswilburn.net\" target=_blank>Thomas Wilburn\u003C/a>"
+   },
+   "dialogCancel": {
+      "message": "Hủy"
+   },
+   "dialogDiscard": {
+      "message": "Bỏ qua"
+   },
+   "dialogModifiedBackground": {
+      "message": "Tệp này đã được chỉnh kể từ lần cuối nó được lưu. Bạn có muốn tải lại không?"
+   },
+   "dialogModifiedUnsaved": {
+      "message": "$1 đã thay đổi.\nLưu thay đổi?"
+   },
+   "dialogOK": {
+      "message": "Xác nhận"
+   },
+   "dialogReload": {
+      "message": "Tải lại"
+   },
+   "dialogSave": {
+      "message": "Lưu"
+   },
+   "dialogUnsaved": {
+      "message": "$1 có công việc chưa lưu."
+   },
+   "editorWordCount": {
+      "message": "$1 ký tự, $2 từ, $3 dòng"
+   },
+   "fileAutosaving": {
+      "message": "Thực thi tự động lưu cho toàn bộ tab..."
+   },
+   "fileLoaded": {
+      "message": "Đã tải $1, $2 bytes"
+   },
+   "loading": {
+      "message": "đang tải"
+   },
+   "menuAPI": {
+      "message": "Câu lệnh ngoài"
+   },
+   "menuAboutCaret": {
+      "message": "Về Caret"
+   },
+   "menuAddDir": {
+      "message": "Thêm thư mục"
+   },
+   "menuBlockComment": {
+      "message": "Bật khối chú thích"
+   },
+   "menuCheckForUpdates": {
+      "message": "Cập nhật"
+   },
+   "menuClearProject": {
+      "message": "Xóa dự án"
+   },
+   "menuClose": {
+      "message": "Đóng tệp"
+   },
+   "menuCommandPalette": {
+      "message": "Mở Command Palate"
+   },
+   "menuDefaults": {
+      "message": "Xem mặc định"
+   },
+   "menuEdit": {
+      "message": "Chỉnh sửa"
+   },
+   "menuEditProject": {
+      "message": "Sửa dự án hiện tại"
+   },
+   "menuEmergencyReset": {
+      "message": "Emergency Reset"
+   },
+   "menuExit": {
+      "message": "Thoát Caret"
+   },
+   "menuFile": {
+      "message": "Tệp"
+   },
+   "menuFind": {
+      "message": "Tìm"
+   },
+   "menuFindNext": {
+      "message": "Tìm tiếp"
+   },
+   "menuFindReplace": {
+      "message": "Tìm và Thay thế"
+   },
+   "menuGoToAnything": {
+      "message": "Đi đến..."
+   },
+   "menuGoToLine": {
+      "message": "Tới dòng"
+   },
+   "menuGoToRef": {
+      "message": "Tới Tham chiếu"
+   },
+   "menuGoToSearch": {
+      "message": "Tới Tìm kiếm"
+   },
+   "menuHelp": {
+      "message": "Trợ giúp"
+   },
+   "menuInsertFromFile": {
+      "message": "Chèn từ tệp"
+   },
+   "menuJoinLines": {
+      "message": "Hợp dòng"
+   },
+   "menuKeyboard": {
+      "message": "Bàn phím"
+   },
+   "menuKeyboardDefault": {
+      "message": "Bàn phím (Mặc định)"
+   },
+   "menuKillLine": {
+      "message": "Xóa dòng"
+   },
+   "menuMenus": {
+      "message": "Menu"
+   },
+   "menuMenusDefault": {
+      "message": "Menu (Mặc định)"
+   },
+   "menuMoveLinesDown": {
+      "message": "Chuyển dòng xuống dưới"
+   },
+   "menuMoveLinesUp": {
+      "message": "Chuyển dòng lên trên"
+   },
+   "menuNewFile": {
+      "message": "Mới"
+   },
+   "menuOpenFile": {
+      "message": "Mở"
+   },
+   "menuOpenProject": {
+      "message": "Mở tệp dự án"
+   },
+   "menuPrint": {
+      "message": "In"
+   },
+   "menuProject": {
+      "message": "Dự án"
+   },
+   "menuRedo": {
+      "message": "Làm lại"
+   },
+   "menuRefreshDir": {
+      "message": "Làm tươi thư mục"
+   },
+   "menuRemoveAllDirs": {
+      "message": "Xóa hết thư mục"
+   },
+   "menuReplayMacro": {
+      "message": "Chạy lại Macro"
+   },
+   "menuReset": {
+      "message": "Khôi phục"
+   },
+   "menuResetKeyboard": {
+      "message": "Khôi phục bàn phím"
+   },
+   "menuResetMenus": {
+      "message": "Khôi phục menu"
+   },
+   "menuResetTheme": {
+      "message": "Khôi phục chủ đề"
+   },
+   "menuResetUserPrefs": {
+      "message": "Khôi phục sở thích"
+   },
+   "menuRevert": {
+      "message": "Trở lại"
+   },
+   "menuSave": {
+      "message": "Lưu"
+   },
+   "menuSaveAs": {
+      "message": "Lưu như..."
+   },
+   "menuSaveProject": {
+      "message": "Lưu tệp dự án"
+   },
+   "menuSelectLine": {
+      "message": "Chọn dòng"
+   },
+   "menuSelectP": {
+      "message": "Chọn đoạn văn"
+   },
+   "menuSelectToMatch": {
+      "message": "Chọn để phù hợp với"
+   },
+   "menuSelectWord": {
+      "message": "Chọn từ"
+   },
+   "menuSetNewline": {
+      "message": "Thiết lập chế độ tự động xuống dòng"
+   },
+   "menuSettings": {
+      "message": "Cài đặt"
+   },
+   "menuSortLines": {
+      "message": "Sắp xếp dòng"
+   },
+   "menuSpacesToTabs": {
+      "message": "Đổi Space thành Tab"
+   },
+   "menuSplitLine": {
+      "message": "Tách dòng"
+   },
+   "menuTabsToSpaces": {
+      "message": "Đổi Tab thành Space"
+   },
+   "menuTheme": {
+      "message": "Tinh chỉnh theme"
+   },
+   "menuThemeDefault": {
+      "message": "Tinh chỉnh theme (Mặc định)"
+   },
+   "menuToLowercase": {
+      "message": "Chuyển thành Chữ thường"
+   },
+   "menuToUppercase": {
+      "message": "Chuyển thành Chữ hoa"
+   },
+   "menuToggleComment": {
+      "message": "Bật chú thích"
+   },
+   "menuToggleMacro": {
+      "message": "Bật ghi Macro"
+   },
+   "menuTools": {
+      "message": "Công cụ"
+   },
+   "menuTrimWhitespace": {
+      "message": "Trim Trailing Whitespace"
+   },
+   "menuUndo": {
+      "message": "Hoàn tác"
+   },
+   "menuUserPrefs": {
+      "message": "Sở thích"
+   },
+   "menuUserPrefsDefault": {
+      "message": "Sở thích (Mặc định)"
+   },
+   "menuWordCount": {
+      "message": "Đếm Từ"
+   },
+   "menuWrapToPrint": {
+      "message": "Bó dòng"
+   },
+   "notificationNoUpdateDetail": {
+      "message": "Không có bất kỳ bản cập nhật nào của Caret trong thời gian này."
+   },
+   "notificationNoUpdateTitle": {
+      "message": "Không có bản cập nhật mới"
+   },
+   "notificationUpdateAvailable": {
+      "message": "Caret: Có sẵn bản cập nhật"
+   },
+   "notificationUpdateDetail": {
+      "message": "Bản cập nhật của $1 có sẵn. Bạn có muốn cập nhật và khởi động lại ngay bây giờ?"
+   },
+   "notificationUpdateOK": {
+      "message": "Có, cập nhật và khởi động lại"
+   },
+   "notificationUpdateWait": {
+      "message": "Không, cảm ơn"
+   },
+   "notificationUpdated": {
+      "message": "Caret đã được cập nhật"
+   },
+   "notificationUpdatedDetail": {
+      "message": "Phiên bản $1. Click để xem thay đổi trên Cửa hàng Chrome trực tuyến."
+   },
+   "paletteExecuting": {
+      "message": "Đang chạy $1..."
+   },
+   "projectNoCurrentProject": {
+      "message": "Hiện tại không có dự ná nào được mở."
+   },
+   "recordingMacro": {
+      "message": "Đang ghi macro..."
+   },
+   "setSyntax": {
+      "message": "Đặt cú pháp: $1"
+   },
+   "setTheme": {
+      "message": "Đặt chủ đề: $1"
+   }
+}

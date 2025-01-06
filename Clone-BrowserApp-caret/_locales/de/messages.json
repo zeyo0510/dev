@@ -1,0 +1,368 @@
+{
+   "aboutHomePage": {
+      "message": "Startseite"
+   },
+   "aboutLicense": {
+      "message": "Caret ist unter einer GPL Lizenz verfügbar, was bedeutet, dass der \u003Ca href=\"https://github.com/thomaswilburn/Caret\" target=_blank>Quellcode\u003C/a> zur freien Benutzung und Veränderung verfügbar ist. Wenn du Caret nutzvoll findest, erwäge eine Spende an den \u003Ca href=\"http://endsoftwarepatents.org/donate\" target=_blank>Fond zum Beenden von Software Patenten\u003C/a> der Free Software Foundation."
+   },
+   "aboutSupport": {
+      "message": "Unterstützung"
+   },
+   "aboutWrittenBy": {
+      "message": "Von \u003Ca href=\"http://thomaswilburn.net\" target=_blank>Thomas Wilburn\u003C/a>"
+   },
+   "close": {
+      "message": "Schließen"
+   },
+   "dialogCancel": {
+      "message": "Abbrechen"
+   },
+   "dialogDiscard": {
+      "message": "Verwerfen"
+   },
+   "dialogModifiedBackground": {
+      "message": "Diese Datei wurde seit dem letzten Speichern geändert. Soll sie erneut geladen werden?"
+   },
+   "dialogModifiedUnsaved": {
+      "message": "$1 wurde geändert.\nSollen die Änderungen gespeichert werden?"
+   },
+   "dialogOK": {
+      "message": "OK"
+   },
+   "dialogReload": {
+      "message": "Neu laden"
+   },
+   "dialogSave": {
+      "message": "Speichern"
+   },
+   "dialogUnsaved": {
+      "message": "$1 enthält ungespeicherte Änderungen."
+   },
+   "editorWordCount": {
+      "message": "$1 Zeichen, $2 Wörter, $3 Zeilen"
+   },
+   "errorMissingFont": {
+      "message": "Die ausgewählte Schriftart steht Caret nicht zur Verfügung, da nur im System installierte Schriftarten verwendet werden können. Stattdessen wird eine Standardschriftart verwendet."
+   },
+   "errorProportionalFont": {
+      "message": "Die von Ihnen ausgewählte benutzerdefinierte Schriftart kann Probleme mit der Bearbeitungskomponente von Caret verursachen, die nur dicktengleiche Schriftarten unterstützt (bei denen alle Buchstaben dieselbe Breite haben). Wenn Cursorprobleme auftreten, setzen Sie die fontFamily-Einstellung in den Benutzereinstellungen zurück."
+   },
+   "fileAutosaving": {
+      "message": "Auto-Speichere alle Tabs&hellip;"
+   },
+   "fileLoaded": {
+      "message": "$1 geladen, $2 bytes"
+   },
+   "loading": {
+      "message": "lade&hellip;"
+   },
+   "maximize": {
+      "message": "Maximieren"
+   },
+   "menuAPI": {
+      "message": "Externe Befehle"
+   },
+   "menuAboutCaret": {
+      "message": "Über Caret"
+   },
+   "menuAddDir": {
+      "message": "Verzeichnis hinzufügen"
+   },
+   "menuBlockComment": {
+      "message": "Block-Kommentar Ein/Aus"
+   },
+   "menuCheckForUpdates": {
+      "message": "Nach Aktualisierungen suchen"
+   },
+   "menuClearProject": {
+      "message": "Projekt löschen"
+   },
+   "menuClose": {
+      "message": "Datei schließen"
+   },
+   "menuCommandPalette": {
+      "message": "Öffne Befehlszeile"
+   },
+   "menuDefaults": {
+      "message": "Standardeinstellungen"
+   },
+   "menuEdit": {
+      "message": "Bearbeiten"
+   },
+   "menuEditProject": {
+      "message": "Aktuelles Projekt bearbeiten"
+   },
+   "menuEmergencyReset": {
+      "message": "Notfall-Zurücksetzen"
+   },
+   "menuExit": {
+      "message": "Beenden"
+   },
+   "menuFile": {
+      "message": "Datei"
+   },
+   "menuFind": {
+      "message": "Suchen"
+   },
+   "menuFindNext": {
+      "message": "Nächster Treffer"
+   },
+   "menuFindReplace": {
+      "message": "Suchen und Ersetzen"
+   },
+   "menuGoToAnything": {
+      "message": "Gehe zu &hellip;"
+   },
+   "menuGoToLine": {
+      "message": "Gehe zu Zeile"
+   },
+   "menuGoToRef": {
+      "message": "Gehe zu Verweis"
+   },
+   "menuGoToSearch": {
+      "message": "Gehe zur Suche"
+   },
+   "menuHelp": {
+      "message": "Hilfe"
+   },
+   "menuInsertFromFile": {
+      "message": "Aus Datei einfügen"
+   },
+   "menuJoinLines": {
+      "message": "Zeilen zusammenfügen"
+   },
+   "menuKeyboard": {
+      "message": "Tastatur"
+   },
+   "menuKeyboardDefault": {
+      "message": "Tastatur (Standard)"
+   },
+   "menuKillLine": {
+      "message": "Zeilen löschen"
+   },
+   "menuMenus": {
+      "message": "Menüs"
+   },
+   "menuMenusDefault": {
+      "message": "Menüs (Standard)"
+   },
+   "menuMoveLinesDown": {
+      "message": "Zeilen nach unten verschieben"
+   },
+   "menuMoveLinesUp": {
+      "message": "Zeilen nach oben verschieben"
+   },
+   "menuNewFile": {
+      "message": "Neue Datei"
+   },
+   "menuOpenFile": {
+      "message": "Datei öffnen"
+   },
+   "menuOpenProject": {
+      "message": "Projektdatei öffnen"
+   },
+   "menuPrint": {
+      "message": "Drucken"
+   },
+   "menuProject": {
+      "message": "Projekt"
+   },
+   "menuRedo": {
+      "message": "Wiederholen"
+   },
+   "menuRefreshDir": {
+      "message": "Verzeichnisse neu laden"
+   },
+   "menuRemoveAllDirs": {
+      "message": "Alle Verzeichnisse entfernen"
+   },
+   "menuReplayMacro": {
+      "message": "Makro wiederholen"
+   },
+   "menuReset": {
+      "message": "Zurücksetzen"
+   },
+   "menuResetKeyboard": {
+      "message": "Tastatur zurücksetzen"
+   },
+   "menuResetMenus": {
+      "message": "Menüs zurücksetzen"
+   },
+   "menuResetSequences": {
+      "message": "Befehlsfolgen zurücksetzen"
+   },
+   "menuResetUserPrefs": {
+      "message": "Benutzereinstellungen zurücksetzen"
+   },
+   "menuRevert": {
+      "message": "Zurücksetzen"
+   },
+   "menuSave": {
+      "message": "Datei speichern"
+   },
+   "menuSaveAll": {
+      "message": "Alle Dateien speichern"
+   },
+   "menuSaveAs": {
+      "message": "Datei speichern unter&hellip;"
+   },
+   "menuSaveProject": {
+      "message": "Projektdatei speichern"
+   },
+   "menuSearchProject": {
+      "message": "Durchsuche alle Dateien"
+   },
+   "menuSelectLine": {
+      "message": "Zeile markieren"
+   },
+   "menuSelectP": {
+      "message": "Absatz markieren"
+   },
+   "menuSelectToMatch": {
+      "message": "Zusammengehöriges markieren"
+   },
+   "menuSelectWord": {
+      "message": "Wort markieren"
+   },
+   "menuSequences": {
+      "message": "Befehlsfolgen"
+   },
+   "menuSequencesDefault": {
+      "message": "Befehlsfolgen (Standard)"
+   },
+   "menuSetNewline": {
+      "message": "Zeilenvorschub-Modus festlegen"
+   },
+   "menuSettings": {
+      "message": "Einstellungen"
+   },
+   "menuSortLines": {
+      "message": "Zeilen sortieren"
+   },
+   "menuSpacesToTabs": {
+      "message": "Konvertiere Leerzeichen zu Tabs"
+   },
+   "menuSplitLine": {
+      "message": "Zeilen trennen"
+   },
+   "menuTabsToSpaces": {
+      "message": "Konvertiere Tabs zu Leerzeichen"
+   },
+   "menuToLowercase": {
+      "message": "In Kleinbuchstaben umwandeln"
+   },
+   "menuToUppercase": {
+      "message": "In Großbuchstaben umwandeln"
+   },
+   "menuToggleComment": {
+      "message": "Kommentar Ein/Aus"
+   },
+   "menuToggleMacro": {
+      "message": "Makro Aufzeichnung Ein/Aus"
+   },
+   "menuTools": {
+      "message": "Tools"
+   },
+   "menuTrimWhitespace": {
+      "message": "Anhängende Leerzeichen entfernen"
+   },
+   "menuUndo": {
+      "message": "Rückgängig"
+   },
+   "menuUserPrefs": {
+      "message": "Benutzereinstellungen"
+   },
+   "menuUserPrefsDefault": {
+      "message": "Benutzereinstellungen (Standard)"
+   },
+   "menuWordCount": {
+      "message": "Wortzählung"
+   },
+   "menuWrapToPrint": {
+      "message": "Auf Druckbereich umbrechen"
+   },
+   "minimize": {
+      "message": "Minimieren"
+   },
+   "notificationNoUpdateDetail": {
+      "message": "Momentan sind keine Aktualisierungen für Caret vorhanden."
+   },
+   "notificationNoUpdateTitle": {
+      "message": "Keine Aktualisierungen verfügbar"
+   },
+   "notificationUpdateAvailable": {
+      "message": "Caret: Aktualisierung verfügbar"
+   },
+   "notificationUpdateDetail": {
+      "message": "Ein Update auf Version $1 ist Verfügbar. Soll Caret aktualisiert werden und neu starten?"
+   },
+   "notificationUpdateOK": {
+      "message": "Ja, aktualisieren und neu starten"
+   },
+   "notificationUpdateWait": {
+      "message": "Nein, danke"
+   },
+   "notificationUpdated": {
+      "message": "Caret wurde aktualisiert"
+   },
+   "notificationUpdatedDetail": {
+      "message": "Aktuelle Version: $1. Klicken, um die Änderungshistorie anzusehen."
+   },
+   "paletteExecuting": {
+      "message": "$1 wird ausgeführt&hellip;"
+   },
+   "projectNoCurrentProject": {
+      "message": "Kein Projekt geöffnet."
+   },
+   "projectRemoveDirectory": {
+      "message": "Aus dem Projekt entfernen"
+   },
+   "recordingMacro": {
+      "message": "Zeichne Makro auf&hellip;"
+   },
+   "searchCancelled": {
+      "message": "\nSuche wurde abgebrochen. Die Höchstzahl an zulässigen Suchergebnissen kann in den Benutzereinstellungen geändert werden."
+   },
+   "searchDisplayQuery": {
+      "message": "Suche nach: $1\n"
+   },
+   "searchFindAll": {
+      "message": "Finde alle"
+   },
+   "searchMatchCase": {
+      "message": "Schreibweise vergleichen"
+   },
+   "searchNoDirectories": {
+      "message": "\nKeine Dateien durchsucht. Dem Projekt muß zuerst ein Verzeichnis hinzufügt werden."
+   },
+   "searchSummary": {
+      "message": "\n\n$1 Treffer gefunden. $2 Dateien durchsucht."
+   },
+   "searchTabName": {
+      "message": "Ergebnisse: $1"
+   },
+   "selectSyntax": {
+      "message": "Syntax auswählen"
+   },
+   "selectTheme": {
+      "message": "Thema auswählen"
+   },
+   "setSyntax": {
+      "message": "Setze Syntax: $1"
+   },
+   "setTheme": {
+      "message": "Setze Thema: $1"
+   },
+   "tabClose": {
+      "message": "Schließen"
+   },
+   "tabCloseRight": {
+      "message": "Tabs nach rechts schließen"
+   },
+   "tabCopyPath": {
+      "message": "Dateipfad kopieren"
+   },
+   "tabRevealInSideBar": {
+      "message": "In der Seitenleiste anzeigen"
+   }
+}

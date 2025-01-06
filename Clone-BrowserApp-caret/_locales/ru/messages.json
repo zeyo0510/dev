@@ -1,0 +1,335 @@
+{
+   "aboutHomePage": {
+      "message": "Веб-сайт проекта"
+   },
+   "aboutLicense": {
+      "message": "Caret доступен под GPL лицензией, что означает, что его \u003Ca href=\"https://github.com/thomaswilburn/Caret\" target=_blank>исходный код\u003C/a> находится в свободном доступе и вы можете использовать и изменять его по своему усмотрению. Если вы находите Caret полезным, то поддержите Free Software Foundation's \u003Ca href=\"http://endsoftwarepatents.org/donate\" target=_blank>Fund to End Software Patents\u003C/a>."
+   },
+   "aboutSupport": {
+      "message": "Поддержка"
+   },
+   "aboutWrittenBy": {
+      "message": "Автор \u003Ca href=\"http://thomaswilburn.net\" target=_blank>Thomas Wilburn\u003C/a>"
+   },
+   "dialogCancel": {
+      "message": "Отмена"
+   },
+   "dialogDiscard": {
+      "message": "Не сохранять"
+   },
+   "dialogModifiedBackground": {
+      "message": "Этот файл был изменён с момента последнего сохранения. Открыть его заново?"
+   },
+   "dialogModifiedUnsaved": {
+      "message": "$1 был изменён.\nВы хотите сохранить изменения?"
+   },
+   "dialogOK": {
+      "message": "ОК"
+   },
+   "dialogReload": {
+      "message": "Перезагрузить"
+   },
+   "dialogSave": {
+      "message": "Сохранить"
+   },
+   "dialogUnsaved": {
+      "message": "$1 имеет несохранённые изменения."
+   },
+   "editorWordCount": {
+      "message": "$1 символов, $2 слов, $3 строк"
+   },
+   "fileAutosaving": {
+      "message": "Выполнение автосохранения для всех вкладок..."
+   },
+   "fileLoaded": {
+      "message": "Загружено $1, $2 байт"
+   },
+   "loading": {
+      "message": "загрузка"
+   },
+   "menuAPI": {
+      "message": "Внешние команды"
+   },
+   "menuAboutCaret": {
+      "message": "О Caret"
+   },
+   "menuAddDir": {
+      "message": "Добавить папку"
+   },
+   "menuBlockComment": {
+      "message": "Блочный комментарий"
+   },
+   "menuCheckForUpdates": {
+      "message": "Проверить обновления"
+   },
+   "menuClearProject": {
+      "message": "Очистить проект"
+   },
+   "menuClose": {
+      "message": "Закрыть"
+   },
+   "menuCommandPalette": {
+      "message": "Поиск команд"
+   },
+   "menuDefaults": {
+      "message": "Стандартные настройки"
+   },
+   "menuEdit": {
+      "message": "Правка"
+   },
+   "menuEditProject": {
+      "message": "Редактировать текущий проект"
+   },
+   "menuEmergencyReset": {
+      "message": "Сбросить всё"
+   },
+   "menuExit": {
+      "message": "Выход"
+   },
+   "menuFile": {
+      "message": "Файл"
+   },
+   "menuFind": {
+      "message": "Поиск"
+   },
+   "menuFindNext": {
+      "message": "Искать далее"
+   },
+   "menuFindReplace": {
+      "message": "Замена"
+   },
+   "menuGoToAnything": {
+      "message": "Перейти к..."
+   },
+   "menuGoToLine": {
+      "message": "Перейти к строке"
+   },
+   "menuGoToRef": {
+      "message": "Перейти к ссылке"
+   },
+   "menuGoToSearch": {
+      "message": "Поиск по мере ввода"
+   },
+   "menuHelp": {
+      "message": "Справка"
+   },
+   "menuInsertFromFile": {
+      "message": "Вставить из файла"
+   },
+   "menuJoinLines": {
+      "message": "Объединить строки"
+   },
+   "menuKeyboard": {
+      "message": "Быстрые клавиши"
+   },
+   "menuKeyboardDefault": {
+      "message": "Быстрые клавиши"
+   },
+   "menuKillLine": {
+      "message": "Удалить строки"
+   },
+   "menuMenus": {
+      "message": "Меню"
+   },
+   "menuMenusDefault": {
+      "message": "Меню"
+   },
+   "menuMoveLinesDown": {
+      "message": "Опустить текущую строку"
+   },
+   "menuMoveLinesUp": {
+      "message": "Поднять текущую строку"
+   },
+   "menuNewFile": {
+      "message": "Создать"
+   },
+   "menuOpenFile": {
+      "message": "Открыть"
+   },
+   "menuOpenProject": {
+      "message": "Открыть файл проекта"
+   },
+   "menuPrint": {
+      "message": "Печать"
+   },
+   "menuProject": {
+      "message": "Проект"
+   },
+   "menuRedo": {
+      "message": "Повтор"
+   },
+   "menuRefreshDir": {
+      "message": "Обновить папки"
+   },
+   "menuRemoveAllDirs": {
+      "message": "Удалить все папки"
+   },
+   "menuReplayMacro": {
+      "message": "Повторить макрос"
+   },
+   "menuReset": {
+      "message": "Сбросить настройки"
+   },
+   "menuResetKeyboard": {
+      "message": "Быстрые клавиши"
+   },
+   "menuResetMenus": {
+      "message": "Меню"
+   },
+   "menuResetSequences": {
+      "message": "Серия команд"
+   },
+   "menuResetTheme": {
+      "message": "Пользовательская тема"
+   },
+   "menuResetUserPrefs": {
+      "message": "Общие"
+   },
+   "menuRevert": {
+      "message": "Восстановить"
+   },
+   "menuSave": {
+      "message": "Сохранить"
+   },
+   "menuSaveAll": {
+      "message": "Сохранить все файлы"
+   },
+   "menuSaveAs": {
+      "message": "Сохранить как..."
+   },
+   "menuSaveProject": {
+      "message": "Сохранить файл проекта"
+   },
+   "menuSearchProject": {
+      "message": "Искать по всем файлам"
+   },
+   "menuSelectLine": {
+      "message": "Выделить строку"
+   },
+   "menuSelectP": {
+      "message": "Выделить всё"
+   },
+   "menuSelectToMatch": {
+      "message": "Выделить до совпадения"
+   },
+   "menuSelectWord": {
+      "message": "Выделить слово"
+   },
+   "menuSequences": {
+      "message": "Серия команд"
+   },
+   "menuSequencesDefault": {
+      "message": "Серия команд"
+   },
+   "menuSetNewline": {
+      "message": "Режим новой строки"
+   },
+   "menuSettings": {
+      "message": "Настройки"
+   },
+   "menuSortLines": {
+      "message": "Отсортировать строки по алфавиту"
+   },
+   "menuSpacesToTabs": {
+      "message": "Пробелы в табы"
+   },
+   "menuSplitLine": {
+      "message": "Разбить строки"
+   },
+   "menuTabsToSpaces": {
+      "message": "Табы в пробелы"
+   },
+   "menuTheme": {
+      "message": "Пользовательская тема"
+   },
+   "menuThemeDefault": {
+      "message": "Пользовательская тема"
+   },
+   "menuToLowercase": {
+      "message": "Преобразовать в строчные"
+   },
+   "menuToUppercase": {
+      "message": "Преобразовать в ПРОПИСНЫЕ"
+   },
+   "menuToggleComment": {
+      "message": "Закомментировать строку"
+   },
+   "menuToggleMacro": {
+      "message": "Старт/стоп записи макроса"
+   },
+   "menuTools": {
+      "message": "Инструменты"
+   },
+   "menuTrimWhitespace": {
+      "message": "Удалить пробелы в конце строк"
+   },
+   "menuUndo": {
+      "message": "Отмена"
+   },
+   "menuUserPrefs": {
+      "message": "Общие"
+   },
+   "menuUserPrefsDefault": {
+      "message": "Общие"
+   },
+   "menuWordCount": {
+      "message": "Подсчёт слов"
+   },
+   "menuWrapToPrint": {
+      "message": "Удалить пробелы и табуляцию"
+   },
+   "notificationNoUpdateDetail": {
+      "message": "Сейчас нет никаких обновлений для Caret."
+   },
+   "notificationNoUpdateTitle": {
+      "message": "Нет доступных обновлений"
+   },
+   "notificationUpdateAvailable": {
+      "message": "Caret: Доступно обновление"
+   },
+   "notificationUpdateDetail": {
+      "message": "Доступно обновление до версии $1. Хотите обновиться сейчас (потребуется перезагрузка)?"
+   },
+   "notificationUpdateOK": {
+      "message": "Да, обновить и перезапустить"
+   },
+   "notificationUpdateWait": {
+      "message": "Нет, спасибо"
+   },
+   "notificationUpdated": {
+      "message": "Caret был обновлён"
+   },
+   "notificationUpdatedDetail": {
+      "message": "Новая версия: $1. Нажмите, чтобы увидеть список изменений."
+   },
+   "paletteExecuting": {
+      "message": "Выполнение $1..."
+   },
+   "projectNoCurrentProject": {
+      "message": "Нет открытых проектов."
+   },
+   "recordingMacro": {
+      "message": "Запись макроса..."
+   },
+   "searchCancelled": {
+      "message": "\nПоиск был отменён. Вы можете изменить максимальное количество разрешённых результатов поиска в общих настройках."
+   },
+   "searchDisplayQuery": {
+      "message": "Поиск: $1\n"
+   },
+   "searchNoDirectories": {
+      "message": "\nНет просканированных файлов. Сначала добавьте папку к вашему проекту."
+   },
+   "searchSummary": {
+      "message": "\n\nНайдено совпадений: $1. Файлов просканировано: $2."
+   },
+   "searchTabName": {
+      "message": "Результаты: $1"
+   },
+   "setSyntax": {
+      "message": "Установить синтаксис: $1"
+   },
+   "setTheme": {
+      "message": "Установить тему: $1"
+   }
+}

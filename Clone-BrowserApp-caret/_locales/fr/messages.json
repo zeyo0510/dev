@@ -1,0 +1,368 @@
+{
+   "aboutHomePage": {
+      "message": "Site web"
+   },
+   "aboutLicense": {
+      "message": "Caret est disponible sous licence GPL,  ce qui signifie que le \u003Ca href=\"https://github.com/thomaswilburn/Caret\" target=_blank>code source\u003C/a> est librement disponible pour utilisation et modification. Si vous trouvez Caret utile, envisagez une donation au \u003Ca href=\"http://endsoftwarepatents.org/donate\" target=_blank>fond de la Free Software Foundation Fund\u003C/a> pour la fin des brevets logiciels."
+   },
+   "aboutSupport": {
+      "message": "Support"
+   },
+   "aboutWrittenBy": {
+      "message": "Écrit par \u003Ca href=\"http://thomaswilburn.net\" target=_blank>Thomas Wilburn\u003C/a>"
+   },
+   "close": {
+      "message": "Fermer"
+   },
+   "dialogCancel": {
+      "message": "Annuler"
+   },
+   "dialogDiscard": {
+      "message": "Supprimer"
+   },
+   "dialogModifiedBackground": {
+      "message": "Ce fichier a été modifié depuis son dernier enregistrement. Voulez-vous le recharger ?"
+   },
+   "dialogModifiedUnsaved": {
+      "message": "$1 a été modifié.\nVoulez-vous enregistrer les changements ?"
+   },
+   "dialogOK": {
+      "message": "OK"
+   },
+   "dialogReload": {
+      "message": "Recharger"
+   },
+   "dialogSave": {
+      "message": "Enregistrer"
+   },
+   "dialogUnsaved": {
+      "message": "$1 a du travail non enregistré."
+   },
+   "editorWordCount": {
+      "message": "$1 caractères, $2 mots, $3 lignes"
+   },
+   "errorMissingFont": {
+      "message": "La police de caractères que vous avez choisie n'est pas disponible. Caret peut uniquement utiliser les polices installées sur votre système. Une policve par défaut va être utilisée à la place."
+   },
+   "errorProportionalFont": {
+      "message": "La police de caractères que vous avez choisie peut causer affecter le fonctionnement des composants d'édition de Caret, qui ne supoprtent que les polices à chasse fixe (pour lesquels toutes les lettres ont la même largeur). Si vous rencontrez des soucis avec le curseur, merci de réinitialiser le paramètre fontFamily dans vos Préférences de l'Utilisateur."
+   },
+   "fileAutosaving": {
+      "message": "Autoenregistrement en cours pour tous les onglets..."
+   },
+   "fileLoaded": {
+      "message": "$1 chargé, $2 octets"
+   },
+   "loading": {
+      "message": "chargement"
+   },
+   "maximize": {
+      "message": "Agrandire"
+   },
+   "menuAPI": {
+      "message": "Commandes Externes"
+   },
+   "menuAboutCaret": {
+      "message": "À propos de Caret"
+   },
+   "menuAddDir": {
+      "message": "Ajouter un Dossier"
+   },
+   "menuBlockComment": {
+      "message": "Basculer en Bloc de commentaire"
+   },
+   "menuCheckForUpdates": {
+      "message": "Vérifier les Mises à jour"
+   },
+   "menuClearProject": {
+      "message": "Nettoyer le Projet"
+   },
+   "menuClose": {
+      "message": "Fermer le Fichier"
+   },
+   "menuCommandPalette": {
+      "message": "Ouvrir la Palette de Commande"
+   },
+   "menuDefaults": {
+      "message": "Voir les Réglages par défaut"
+   },
+   "menuEdit": {
+      "message": "Édition"
+   },
+   "menuEditProject": {
+      "message": "Éditer le Projet en cours"
+   },
+   "menuEmergencyReset": {
+      "message": "Réinitialiser d'Urgence"
+   },
+   "menuExit": {
+      "message": "Quitter"
+   },
+   "menuFile": {
+      "message": "Fichier"
+   },
+   "menuFind": {
+      "message": "Chercher"
+   },
+   "menuFindNext": {
+      "message": "Trouver Suivant"
+   },
+   "menuFindReplace": {
+      "message": "Chercher/Remplacer"
+   },
+   "menuGoToAnything": {
+      "message": "Aller à..."
+   },
+   "menuGoToLine": {
+      "message": "Aller à la ligne"
+   },
+   "menuGoToRef": {
+      "message": "Aller à la Référence"
+   },
+   "menuGoToSearch": {
+      "message": "Aller à la Recherche"
+   },
+   "menuHelp": {
+      "message": "Aide"
+   },
+   "menuInsertFromFile": {
+      "message": "Insérer depuis un Fichier"
+   },
+   "menuJoinLines": {
+      "message": "Joindre les Lignes"
+   },
+   "menuKeyboard": {
+      "message": "Clavier"
+   },
+   "menuKeyboardDefault": {
+      "message": "Clavier (par Défaut)"
+   },
+   "menuKillLine": {
+      "message": "Supprimer la Ligne"
+   },
+   "menuMenus": {
+      "message": "Menus"
+   },
+   "menuMenusDefault": {
+      "message": "Menus (par Défaut)"
+   },
+   "menuMoveLinesDown": {
+      "message": "Déplacer la ligne vers le bas"
+   },
+   "menuMoveLinesUp": {
+      "message": "Déplacer la ligne vers le haut"
+   },
+   "menuNewFile": {
+      "message": "Nouveau Fichier"
+   },
+   "menuOpenFile": {
+      "message": "Ouvrir un Fichier"
+   },
+   "menuOpenProject": {
+      "message": "Ouvrir un Fichier de Projet"
+   },
+   "menuPrint": {
+      "message": "Imprimer"
+   },
+   "menuProject": {
+      "message": "Projet"
+   },
+   "menuRedo": {
+      "message": "Rétablir"
+   },
+   "menuRefreshDir": {
+      "message": "Rafraichir les Dossiers"
+   },
+   "menuRemoveAllDirs": {
+      "message": "Retirer tout les Dossiers"
+   },
+   "menuReplayMacro": {
+      "message": "Jouer une Macro"
+   },
+   "menuReset": {
+      "message": "Réinitialiser"
+   },
+   "menuResetKeyboard": {
+      "message": "Réinitialiser Clavier"
+   },
+   "menuResetMenus": {
+      "message": "Réinitialiser Menus"
+   },
+   "menuResetSequences": {
+      "message": "Réinitialiser les Séquences de commandes"
+   },
+   "menuResetUserPrefs": {
+      "message": "Réinitialiser les Préférences de l'Utilisateur"
+   },
+   "menuRevert": {
+      "message": "Revenir"
+   },
+   "menuSave": {
+      "message": "Enregistrer un Fichier"
+   },
+   "menuSaveAll": {
+      "message": "Enregistrer tous les Fichiers"
+   },
+   "menuSaveAs": {
+      "message": "Enregistrer un Fichier sous..."
+   },
+   "menuSaveProject": {
+      "message": "Enregistrer le Fichier du Projet"
+   },
+   "menuSearchProject": {
+      "message": "Chercher dans tous les Fichiers"
+   },
+   "menuSelectLine": {
+      "message": "Sélectionner une Ligne"
+   },
+   "menuSelectP": {
+      "message": "Sélectionner un Paragraphe"
+   },
+   "menuSelectToMatch": {
+      "message": "Sélectionner les Correspondances"
+   },
+   "menuSelectWord": {
+      "message": "Séletionner un Mot"
+   },
+   "menuSequences": {
+      "message": "Séquences de commandes"
+   },
+   "menuSequencesDefault": {
+      "message": "Séquences de commandes (par Défaut)"
+   },
+   "menuSetNewline": {
+      "message": "Activer le Mode Newline (Nouvelle ligne)"
+   },
+   "menuSettings": {
+      "message": "Réglages"
+   },
+   "menuSortLines": {
+      "message": "Trier les Lignes"
+   },
+   "menuSpacesToTabs": {
+      "message": "Convertir les Espaces en Tabulations"
+   },
+   "menuSplitLine": {
+      "message": "Séparer les Lignes"
+   },
+   "menuTabsToSpaces": {
+      "message": "Convertir les Tabulations en Espaces"
+   },
+   "menuToLowercase": {
+      "message": "Passer en Minuscules"
+   },
+   "menuToUppercase": {
+      "message": "Passer en Majuscules"
+   },
+   "menuToggleComment": {
+      "message": "Basculer en Commentaire"
+   },
+   "menuToggleMacro": {
+      "message": "Activer l'Enregistrement de Macro"
+   },
+   "menuTools": {
+      "message": "Outils"
+   },
+   "menuTrimWhitespace": {
+      "message": "Supprimer les Espaces de fin"
+   },
+   "menuUndo": {
+      "message": "Annuler"
+   },
+   "menuUserPrefs": {
+      "message": "Préférences de l'Utilisateur"
+   },
+   "menuUserPrefsDefault": {
+      "message": "Préférences de l'Utilisateur (par Défaut)"
+   },
+   "menuWordCount": {
+      "message": "Compter les Mots"
+   },
+   "menuWrapToPrint": {
+      "message": "Adapter pour Imprimer les marges"
+   },
+   "minimize": {
+      "message": "Réduire"
+   },
+   "notificationNoUpdateDetail": {
+      "message": "Il n'y a aucune mise à jour pour Caret actuellement."
+   },
+   "notificationNoUpdateTitle": {
+      "message": "Aucune mise à jour disponible"
+   },
+   "notificationUpdateAvailable": {
+      "message": "Caret : Mise à jour disponible"
+   },
+   "notificationUpdateDetail": {
+      "message": "Une mise à jour est disponible vers le version $1.  Souhaitez-vous mettre à jour et redémarrer maintenant ?"
+   },
+   "notificationUpdateOK": {
+      "message": "Oui, mettre à jour et redémarrer"
+   },
+   "notificationUpdateWait": {
+      "message": "Non merci"
+   },
+   "notificationUpdated": {
+      "message": "Caret a été mis à jour"
+   },
+   "notificationUpdatedDetail": {
+      "message": "Version $1 en cours. Cliquez pour lire les changements."
+   },
+   "paletteExecuting": {
+      "message": "Exécution de $1..."
+   },
+   "projectNoCurrentProject": {
+      "message": "Aucun projet actuellement ouvert."
+   },
+   "projectRemoveDirectory": {
+      "message": "Retiré du projet"
+   },
+   "recordingMacro": {
+      "message": "Enregistrement de la macro..."
+   },
+   "searchCancelled": {
+      "message": "\nLa recherche a été annulée. Vous pouvez changer le nombre maximum de résultats dans les Préférences de l'Utilisateur."
+   },
+   "searchDisplayQuery": {
+      "message": "Recherche de : $1\n"
+   },
+   "searchFindAll": {
+      "message": "Chercher Tout"
+   },
+   "searchMatchCase": {
+      "message": "Sensible à la Casse"
+   },
+   "searchNoDirectories": {
+      "message": "\nAucun fichier traité. Vous devez ajouter d'abord un dossier à votre projet."
+   },
+   "searchSummary": {
+      "message": "\n\n$1 occurences trouvées. $2 fichiers traités."
+   },
+   "searchTabName": {
+      "message": "Résultats : $1"
+   },
+   "selectSyntax": {
+      "message": "Choisir une syntaxe"
+   },
+   "selectTheme": {
+      "message": "Choisir un thème"
+   },
+   "setSyntax": {
+      "message": "Définir une Syntaxe: $1"
+   },
+   "setTheme": {
+      "message": "Définir un Thème: $1"
+   },
+   "tabClose": {
+      "message": "Fermer"
+   },
+   "tabCloseRight": {
+      "message": "Fermer les onglets à droite"
+   },
+   "tabCopyPath": {
+      "message": "Copier le chemin du fichier"
+   },
+   "tabRevealInSideBar": {
+      "message": "Révéler dans la colonne latérale"
+   }
+}

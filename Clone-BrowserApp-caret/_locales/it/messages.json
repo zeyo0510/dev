@@ -1,0 +1,326 @@
+{
+   "aboutHomePage": {
+      "message": "Pagina Iniziale"
+   },
+   "aboutLicense": {
+      "message": "Caret è disponibile sotto una licenza GPL, questo significa che il \u003Ca href=\"https://github.com/thomaswilburn/Caret\" target=_blank>codice sorgente\u003C/a> è disponibile gratuitamente per usarlo e modificarlo come preferisci. Se trovi Caret utile, considera di fare una donazione alla Free Software Foundation's \u003Ca href=\"http://endsoftwarepatents.org/donate\" target=_blank>fondo per i brevetti software\u003C/a>."
+   },
+   "aboutSupport": {
+      "message": "Supporto"
+   },
+   "aboutWrittenBy": {
+      "message": "Scritto da \u003Ca href=\"http://thomaswilburn.net\" target=_blank>Thomas Wilburn\u003C/a>"
+   },
+   "dialogCancel": {
+      "message": "Annulla"
+   },
+   "dialogDiscard": {
+      "message": "Scarta"
+   },
+   "dialogModifiedBackground": {
+      "message": "Questo file è stato modificato dall'ultima volta che è stato salvato. Vuoi ricaricarlo?"
+   },
+   "dialogModifiedUnsaved": {
+      "message": "$1 è stato modificato.\nVuoi salvare le modifiche?"
+   },
+   "dialogOK": {
+      "message": "OK"
+   },
+   "dialogReload": {
+      "message": "Ricarica"
+   },
+   "dialogSave": {
+      "message": "Salva"
+   },
+   "dialogUnsaved": {
+      "message": "$1 non è stato salvato."
+   },
+   "editorWordCount": {
+      "message": "$1 caratteri, $2 parole, $3 righe"
+   },
+   "fileAutosaving": {
+      "message": "Eseguo l'autosalvataggio di tutte le schede..."
+   },
+   "fileLoaded": {
+      "message": "Caricati $1, $2 bytes"
+   },
+   "loading": {
+      "message": "caricamento"
+   },
+   "menuAPI": {
+      "message": "Comandi Esterni"
+   },
+   "menuAboutCaret": {
+      "message": "Informazioni su Caret"
+   },
+   "menuAddDir": {
+      "message": "Aggiungi Cartella"
+   },
+   "menuBlockComment": {
+      "message": "Attiva Blocco Commento"
+   },
+   "menuCheckForUpdates": {
+      "message": "Controlla Aggiornamenti"
+   },
+   "menuClearProject": {
+      "message": "Pulisci Progetto"
+   },
+   "menuClose": {
+      "message": "Chiudi File"
+   },
+   "menuCommandPalette": {
+      "message": "Apri tavolozza comandi"
+   },
+   "menuDefaults": {
+      "message": "Viste Predefinite"
+   },
+   "menuEdit": {
+      "message": "Modifica"
+   },
+   "menuEditProject": {
+      "message": "Modifica Progetto Corrente"
+   },
+   "menuEmergencyReset": {
+      "message": "Azzeramento di Emergenza"
+   },
+   "menuExit": {
+      "message": "Esci"
+   },
+   "menuFile": {
+      "message": "File"
+   },
+   "menuFind": {
+      "message": "Trova"
+   },
+   "menuFindNext": {
+      "message": "Trova Successivo"
+   },
+   "menuFindReplace": {
+      "message": "Trova/Sostituisci"
+   },
+   "menuGoToAnything": {
+      "message": "Vai a..."
+   },
+   "menuGoToLine": {
+      "message": "Vai alla Riga"
+   },
+   "menuGoToRef": {
+      "message": "Vai al Riferimento"
+   },
+   "menuGoToSearch": {
+      "message": "Vai alla Ricerca"
+   },
+   "menuHelp": {
+      "message": "Aiuto"
+   },
+   "menuInsertFromFile": {
+      "message": "Inserisci da File"
+   },
+   "menuJoinLines": {
+      "message": "Unisci Righe"
+   },
+   "menuKeyboard": {
+      "message": "Tastiera"
+   },
+   "menuKeyboardDefault": {
+      "message": "Tastiera (Predefinita)"
+   },
+   "menuKillLine": {
+      "message": "Termina Righe"
+   },
+   "menuMenus": {
+      "message": "Menu"
+   },
+   "menuMenusDefault": {
+      "message": "Menu (Predefiniti)"
+   },
+   "menuMoveLinesDown": {
+      "message": "Sposta Riga Giù"
+   },
+   "menuMoveLinesUp": {
+      "message": "Sposta Riga Su"
+   },
+   "menuNewFile": {
+      "message": "Nuovo File"
+   },
+   "menuOpenFile": {
+      "message": "Apri File"
+   },
+   "menuOpenProject": {
+      "message": "Apri File Progetto"
+   },
+   "menuPrint": {
+      "message": "Stampa"
+   },
+   "menuProject": {
+      "message": "Progetto"
+   },
+   "menuRedo": {
+      "message": "Ripeti"
+   },
+   "menuRefreshDir": {
+      "message": "Ricarica Tutte le Cartelle"
+   },
+   "menuRemoveAllDirs": {
+      "message": "Rimuovi Tutte le Cartelle"
+   },
+   "menuReplayMacro": {
+      "message": "Ripeti Macro"
+   },
+   "menuReset": {
+      "message": "Azzera"
+   },
+   "menuResetKeyboard": {
+      "message": "Azzera Tastiera"
+   },
+   "menuResetMenus": {
+      "message": "Azzera Menu"
+   },
+   "menuResetSequences": {
+      "message": "Azzera Sequenza Comandi"
+   },
+   "menuResetUserPrefs": {
+      "message": "Azzera Preferenze Utente"
+   },
+   "menuRevert": {
+      "message": "Torna indietro"
+   },
+   "menuSave": {
+      "message": "Salva File"
+   },
+   "menuSaveAll": {
+      "message": "Salva tutti i Files"
+   },
+   "menuSaveAs": {
+      "message": "Salva File come..."
+   },
+   "menuSaveProject": {
+      "message": "Salva File Progetto"
+   },
+   "menuSearchProject": {
+      "message": "Cerca tutti i Files"
+   },
+   "menuSelectLine": {
+      "message": "Seleziona Riga"
+   },
+   "menuSelectP": {
+      "message": "Seleziona Paragrafo"
+   },
+   "menuSelectToMatch": {
+      "message": "Seleziona per Confronto"
+   },
+   "menuSelectWord": {
+      "message": "Seleziona Parola"
+   },
+   "menuSequences": {
+      "message": "Sequenza Comandi"
+   },
+   "menuSequencesDefault": {
+      "message": "Sequenza Comandi (Predefiniti)"
+   },
+   "menuSetNewline": {
+      "message": "Imposta Modalità Nuova Riga"
+   },
+   "menuSettings": {
+      "message": "Impostazioni"
+   },
+   "menuSortLines": {
+      "message": "Ordina Righe"
+   },
+   "menuSpacesToTabs": {
+      "message": "Converti Spazi in Tabs"
+   },
+   "menuSplitLine": {
+      "message": "Dividi Righe"
+   },
+   "menuTabsToSpaces": {
+      "message": "Converti Tabs in Spazi"
+   },
+   "menuToLowercase": {
+      "message": "in Minuscolo"
+   },
+   "menuToUppercase": {
+      "message": "in Maiuscolo"
+   },
+   "menuToggleComment": {
+      "message": "Attiva Commento"
+   },
+   "menuToggleMacro": {
+      "message": "Attiva Registrazione Macro"
+   },
+   "menuTools": {
+      "message": "Strumenti"
+   },
+   "menuTrimWhitespace": {
+      "message": "Trim Trailing Whitespace"
+   },
+   "menuUndo": {
+      "message": "Annulla"
+   },
+   "menuUserPrefs": {
+      "message": "Preferenze Utente"
+   },
+   "menuUserPrefsDefault": {
+      "message": "Preferenze Utente (Predefinite)"
+   },
+   "menuWordCount": {
+      "message": "Conta Parola"
+   },
+   "menuWrapToPrint": {
+      "message": "Adatta al margine di stampa"
+   },
+   "notificationNoUpdateDetail": {
+      "message": "Non ci sono aggiornamenti per Carte al momento."
+   },
+   "notificationNoUpdateTitle": {
+      "message": "Nessun aggiornamento disponibile"
+   },
+   "notificationUpdateAvailable": {
+      "message": "Caret: Aggiornamenti Disponibili"
+   },
+   "notificationUpdateDetail": {
+      "message": "Un aggiornamento alla versione $1 è disponibile. Vuoi aggiornare e riavviare ora?"
+   },
+   "notificationUpdateOK": {
+      "message": "Si, aggiorna e riavvia"
+   },
+   "notificationUpdateWait": {
+      "message": "No Grazie"
+   },
+   "notificationUpdated": {
+      "message": "Caret è stato aggiornato"
+   },
+   "notificationUpdatedDetail": {
+      "message": "Ora alla versione $1. Clicca per vedere il changelog."
+   },
+   "paletteExecuting": {
+      "message": "Esecuzione di $1..."
+   },
+   "projectNoCurrentProject": {
+      "message": "Nessun progetto aperto."
+   },
+   "recordingMacro": {
+      "message": "Registro la macro..."
+   },
+   "searchCancelled": {
+      "message": "\nLa ricerca è stata annullata. Puoi cambiare il numero massimo di risultati di ricerca nelle Preferenze Utente."
+   },
+   "searchDisplayQuery": {
+      "message": "Cercando: $1\n"
+   },
+   "searchNoDirectories": {
+      "message": "\nNessun files scansionato. Devi prima aggiungere una cartella al tuo progetto."
+   },
+   "searchSummary": {
+      "message": "\n\n$1 occorrenze trovate. $2 file scansionati."
+   },
+   "searchTabName": {
+      "message": "Risultati: $1"
+   },
+   "setSyntax": {
+      "message": "Imposto sintassi: $1"
+   },
+   "setTheme": {
+      "message": "Imposto tema: $1"
+   }
+}
