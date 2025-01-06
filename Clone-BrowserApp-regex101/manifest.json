@@ -1,0 +1,17 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Offline version of Regex101",
+   "icons": {
+      "128": "Regex101-128.png",
+      "16": "Regex101-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk/JgiGdWmSHyBP+S3/SvE9vxkU/tHOs0M4GFI4y4M/SA32RADD5yhWbHXuu5G5EovnTfyYN9f67VV2CqeJ19EgG9FWi+CzkMz/asg4jMNskBfMnGt4O5Z0JW1RIbpdUTM9ublavYHAjJ7hB22fSuBx3G2jlII2AUeoCRoLvBfnhsgBPTrvdXmkkHdPb5/PnH7n3KK14nmDIlKPmKfcOJNy5dW1+k4fJlROsb1S8dy36hRZHX7romDIHDk8M3q6EWTA/kMc6r9eOyFz2IVF31XeKyvv04PhdZvTzNz0Rgp+qtMeHyJeLrkpZlD10/uIawtp2woU4cGqVPUW15M6NsWQIDAQAB",
+   "manifest_version": 2,
+   "name": "Regex101",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}
