@@ -1,0 +1,23 @@
+{
+   "commandMinimodeToggle": {
+      "message": "Alternar modo mini"
+   },
+   "commandTimerSkip": {
+      "message": "Saltar"
+   },
+   "commandTimerToggle": {
+      "message": "Alternar"
+   },
+   "commandWindowFocus": {
+      "message": "Focalizar janela"
+   },
+   "description": {
+      "message": "Uma ferramenta para aumentar sua produtividade"
+   },
+   "modeNameDefault": {
+      "message": "Padrão"
+   },
+   "name": {
+      "message": "Cherry Tomato"
+   }
+}

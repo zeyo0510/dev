@@ -1,0 +1,23 @@
+{
+   "commandMinimodeToggle": {
+      "message": "Toggle mini mode"
+   },
+   "commandTimerSkip": {
+      "message": "Skip current phase"
+   },
+   "commandTimerToggle": {
+      "message": "Toggle timer"
+   },
+   "commandWindowFocus": {
+      "message": "Focus on timer window"
+   },
+   "description": {
+      "message": "A tool to boost your productivty"
+   },
+   "modeNameDefault": {
+      "message": "Default"
+   },
+   "name": {
+      "message": "Cherry Tomato"
+   }
+}

@@ -1,0 +1,23 @@
+{
+   "commandMinimodeToggle": {
+      "message": "In Minimodus schalten"
+   },
+   "commandTimerSkip": {
+      "message": "Überspringe aktuelle Phase"
+   },
+   "commandTimerToggle": {
+      "message": "Timer zurücksetzen"
+   },
+   "commandWindowFocus": {
+      "message": "eige Timer-Fenster"
+   },
+   "description": {
+      "message": "Ein Tool zur Steigerung deiner Produktivität"
+   },
+   "modeNameDefault": {
+      "message": "Standard"
+   },
+   "name": {
+      "message": "Cherry Tomato"
+   }
+}

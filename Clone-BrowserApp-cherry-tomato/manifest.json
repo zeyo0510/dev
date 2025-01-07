@@ -1,0 +1,57 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "public/main.js" ]
+      }
+   },
+   "commands": {
+      "minimodeToggle": {
+         "description": "__MSG_commandMinimodeToggle__",
+         "suggested_key": {
+            "default": "Ctrl+Shift+0"
+         }
+      },
+      "timerSkip": {
+         "description": "__MSG_commandTimerSkip__",
+         "global": true,
+         "suggested_key": {
+            "default": "Ctrl+Shift+2"
+         }
+      },
+      "timerToggle": {
+         "description": "__MSG_commandTimerToggle__",
+         "global": true,
+         "suggested_key": {
+            "default": "Ctrl+Shift+1"
+         }
+      },
+      "windowFocus": {
+         "description": "__MSG_commandWindowFocus__",
+         "global": true,
+         "suggested_key": {
+            "default": "Ctrl+Shift+9"
+         }
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "externally_connectable": {
+      "accepts_tls_channel_id": false,
+      "ids": [ "ibnogddakianadapbhdmefnhfalacnhp" ],
+      "matches": [ "*://*.cil.rocks/*", "https://sentry.io/*" ]
+   },
+   "icons": {
+      "128": "img/icons/icon_128.png",
+      "16": "img/icons/icon_16.png",
+      "256": "img/icons/icon_256.png",
+      "48": "img/icons/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmaQpBuTvAuMuHmZXs+SNnBR7LVuUNo0f+1HVAvzLi1fedMUZ42j41DULugp31gwKaDRr5WbGGXcPFz+ZJRVa0Dib7A3AIrj4EcfdWQtTzjToGR7zue6CACJ7w7OGTw5Iy5S5VspEtALr0pUMSV/mdUq3gA4DQ75THnEDd3EXcN79bxhRy91GcWyQkl+LD7KeMaD+RRLk1MWVV7rIPQ6BXxvcTcdSW/JGyM7llPY0lS5XIxblP7CLIWlxONDNCjuaQz8Xb71rDoFjqIBElmIdGRvlQ0Z1KuQ3SbEtXndNJmIhNylrQXi/tUpqyjCT1RSoO9ikgVFoe8KryZpUs3052wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "57",
+   "name": "__MSG_name__",
+   "offline_enabled": true,
+   "permissions": [ "https://sentry.io/*", "http://cil.rocks/*", "notifications", "storage", "idle", "alarms", "power", "system.display", "app.window.alwaysOnTop" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.2.21"
+}

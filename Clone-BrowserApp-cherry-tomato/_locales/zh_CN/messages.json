@@ -1,0 +1,23 @@
+{
+   "commandMinimodeToggle": {
+      "message": "切换迷你模式"
+   },
+   "commandTimerSkip": {
+      "message": "跳过当前时段"
+   },
+   "commandTimerToggle": {
+      "message": "切换计时状态"
+   },
+   "commandWindowFocus": {
+      "message": "聚焦应用窗口"
+   },
+   "description": {
+      "message": "帮助你提高生产力的小工具"
+   },
+   "modeNameDefault": {
+      "message": "默认模式"
+   },
+   "name": {
+      "message": "小番茄"
+   }
+}
