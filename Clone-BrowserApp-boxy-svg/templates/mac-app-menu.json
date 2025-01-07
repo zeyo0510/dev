@@ -1,0 +1,227 @@
+[
+  {
+    "label": "Boxy SVG",
+    "submenu": [
+      { "id": "about",       "label": "About Boxy SVG" },
+      {                                                                              "type": "separator" },
+      { "id": "preferences", "label": "Preferences…",  "accelerator": "Cmd+,"                            },
+      {                                                                              "type": "separator" },
+      {                      "label": "Services",                                    "role": "services"  },
+      {                                                                              "type": "separator" },
+      {                      "label": "Hide Boxy SVG", "accelerator": "Cmd+H",       "role": "hide"      },
+      {                      "label": "Hide Others",   "accelerator": "Cmd+Shift+H", "role": "hideothers"},
+      {                      "label": "Show All",                                    "role": "unhide"    },
+      {                                                                              "type": "separator" },
+      { "id": "quit",        "label": "Quit",          "accelerator": "Cmd+Q"                            }
+    ]
+  },
+  {
+    "label": "File",
+    "submenu": [
+      { "id": "new",               "label": "New",                "accelerator": "Cmd+N"                           },
+      { "id": "newFromSelected",   "label": "New from Selected",  "accelerator": "Cmd+Shift+N"                     },
+      { "id": "newFromClipboard",  "label": "New from Clipboard", "accelerator": "Cmd+Alt+Shift+N"                 },
+      { "id": "open",              "label": "Open…",              "accelerator": "Cmd+O"                           },
+      { "role": "recentdocuments", "label": "Open Recent", "submenu": [
+        { "role": "clearrecentdocuments", "label": "Clear Recent" }
+      ]},
+      {                                                                                        "type": "separator" },
+      { "id": "save",              "label": "Save",               "accelerator": "Cmd+S"                           },
+      { "id": "saveAs",            "label": "Save As…",           "accelerator": "Cmd+Shift+S"                     },
+      {                                                                                        "type": "separator" },
+      { "id": "import",            "label": "Import…",            "accelerator": "Cmd+I"                           },
+      { "id": "export",            "label": "Export…",            "accelerator": "Cmd+E"                           },
+      {                                                                                        "type": "separator" },
+      { "id": "print",             "label": "Print…",             "accelerator": "Cmd+P"                           },
+      {                                                                                        "type": "separator" },
+      { "id": "reloadFromDisk",    "label": "Reload from Disk"                                                     },
+      {                                                                                        "type": "separator" },
+      { "id": "close",             "label": "Close",              "accelerator": "Cmd+W"                           }
+    ]
+  },
+  {
+    "label": "Edit",
+    "submenu": [
+      { "id": "undo",        "label": "Undo",         "accelerator": "Cmd+Z"                             },
+      { "id": "redo",        "label": "Redo",         "accelerator": "Cmd+Shift+Z"                       },
+      {                                                                            "type": "separator"   },
+      { "id": "cut",         "label": "Cut",          "accelerator": "Cmd+X"                             },
+      { "id": "copy",        "label": "Copy",         "accelerator": "Cmd+C"                             },
+      { "id": "paste",       "label": "Paste",        "accelerator": "Cmd+V"                             },
+      { "id": "duplicate",   "label": "Duplicate",    "accelerator": "Cmd+D"                             },
+      { "id": "delete",      "label": "Delete"                                                           },
+      {                                                                            "type": "separator"   },
+      { "id": "selectAll",   "label": "Select All",   "accelerator": "Cmd+A"                             },
+      { "id": "deselectAll", "label": "Deselect All", "accelerator": "Cmd+Shift+A"                       }
+    ]
+  },
+  {
+    "label": "View",
+    "id": "view",
+    "submenu": [
+      { "id": "manualGuides",             "label": "Manual Guides",                "accelerator": "F1", "type": "checkbox"  },
+      { "id": "smartGuides",              "label": "Smart Guides",                 "accelerator": "F2", "type": "checkbox"  },
+      { "id": "grid",                     "label": "Grid",                         "accelerator": "F3", "type": "checkbox"  },
+      {                                                                                                 "type": "separator" },
+      { "id": "transparency",             "label": "Transparency",                 "accelerator": "F4", "type": "checkbox"  },
+      { "id": "views",                    "label": "Views",                        "accelerator": "F5", "type": "checkbox"  },
+      {                                                                                                 "type": "separator" },
+      { "id": "zoomIn",                   "label": "Zoom In",                      "accelerator": "="                       },
+      { "id": "zoomOut",                  "label": "Zoom Out",                     "accelerator": "-"                       },
+      { "id": "resetZoom",                "label": "Zoom Reset",                   "accelerator": "`"                       },
+      {                                                                                                 "type": "separator" },
+      { "id": "zoomToFitAllViews",        "label": "Zoom to Fit All Views",        "accelerator": "1"                       },
+      { "id": "zoomToFitAllObjects",      "label": "Zoom to Fit All Objects",      "accelerator": "2"                       },
+      { "id": "zoomToFitSelectedObjects", "label": "Zoom to Fit Selected Objects", "accelerator": "3"                       }
+    ]
+  },
+  {
+    "label": "Object",
+    "submenu": [
+      { "id": "group",                  "label": "Group",            "accelerator": "Cmd+G"                             },
+      { "id": "ungroup",                "label": "Ungroup",          "accelerator": "Cmd+Shift+G"                       },
+      {                                                                                             "type": "separator" },
+      { "id": "clip",                   "label": "Clip"                                                                 },
+      { "id": "unclip",                 "label": "Unclip"                                                               },
+      {                                                                                             "type": "separator" },
+      { "id": "mask",                   "label": "Mask"                                                                 },
+      { "id": "unmask",                 "label": "Unmask"                                                               },
+      {                                                                                             "type": "separator" },
+      { "id": "decreaseOpacity",        "label": "Decrease Opacity", "accelerator": "9"                                 },
+      { "id": "increaseOpacity",        "label": "Increase Opacity", "accelerator": "0"                                 },
+      {                                                                                             "type": "separator" },
+      { "id": "raise",                  "label": "Raise",            "accelerator": "]"                                 },
+      { "id": "lower",                  "label": "Lower",            "accelerator": "["                                 },
+      { "id": "raiseToFront",           "label": "Raise to Front",   "accelerator": "Cmd+]"                             },
+      { "id": "lowerToBack",            "label": "Lower to Back",    "accelerator": "Cmd+["                             },
+      {                                                                                             "type": "separator" },
+      { "id": "rotateCounterclockwise", "label": "Rotate -90°",      "accelerator": "Cmd+Shift+Left"                    },
+      { "id": "rotateClockwise",        "label": "Rotate +90°",      "accelerator": "Cmd+Shift+Right"                   },
+      {                                                                                             "type": "separator" },
+      { "id": "flipX",                  "label": "Flip X",           "accelerator": "Cmd+Shift+Up"                      },
+      { "id": "flipY",                  "label": "Flip Y",           "accelerator": "Cmd+Shift+Down"                    },
+      {                                                                                             "type": "separator" },
+      { "id": "removeTransform",        "label": "Remove Transform"                                                     },
+      { "id": "reduceTransform",        "label": "Reduce Transform"                                                     }
+    ]
+  },
+  {
+    "label": "Shape",
+    "submenu": [
+      { "id": "grabPaintColor",        "label": "Grab Paint Color", "accelerator": "Q"            },
+      {                                                                    "type": "separator"    },
+      { "id": "decreaseFillOpacity",   "label": "Decrease Fill Opacity"                           },
+      { "id": "increaseFillOpacity",   "label": "Increase Fill Opacity"                           },
+      {                                                                    "type": "separator"    },
+      { "id": "decreaseStrokeOpacity", "label": "Decrease Stroke Opacity"                         },
+      { "id": "increaseStrokeOpacity", "label": "Increase Stroke Opacity"                         },
+      {                                                                    "type": "separator"    },
+      { "id": "reorient",              "label": "Reorient"                                        },
+      { "id": "reverse",               "label": "Reverse"                                         },
+      {                                                                    "type": "separator"    },
+      { "id": "unite",                 "label": "Unite"                                           },
+      { "id": "subtract",              "label": "Subtract"                                        },
+      { "id": "intersect",             "label": "Intersect"                                       },
+      { "id": "exclude",               "label": "Exclude"                                         },
+      {                                                                    "type": "separator"    },
+      { "id": "shapeToPath",           "label": "Shape to Path"                                   },
+      { "id": "strokeToPath",          "label": "Stroke to Path"                                  },
+      {                                                                    "type": "separator"    },
+      { "id": "joinPaths",             "label": "Join Paths"                                      },
+      { "id": "splitPath",             "label": "Split Path"                                      },
+      { "id": "openPath",              "label": "Open Path"                                       },
+      { "id": "closePath",             "label": "Close Path"                                      },
+      { "id": "insetPath",             "label": "Inset Path"                                      },
+      { "id": "outsetPath",            "label": "Outset Path"                                     },
+      { "id": "simplifyPath",          "label": "Simplify Path"                                   },
+      { "id": "complexifyPath",        "label": "Complexify Path"                                 },
+      {                                                                    "type": "separator"    },
+      { "id": "joinNodes",             "label": "Join Nodes"                                      },
+      { "id": "splitNode",             "label": "Split Node"                                      },
+      { "id": "deleteNode",            "label": "Delete Node"                                     },
+      { "id": "breakNode",             "label": "Break Node"                                      }
+    ]
+  },
+  {
+    "label": "Tools",
+    "id": "tools",
+    "submenu": [
+      { "id": "previousTool",                        "label": "Previous Tool"     },
+      {                          "type": "separator"                              },
+      { "id": "transformTool",   "type": "checkbox", "label": "Transform Tool",     "accelerator": "Shift+T" },
+      { "id": "editTool",        "type": "checkbox", "label": "Edit Tool",          "accelerator": "Shift+E" },
+      { "id": "panTool",         "type": "checkbox", "label": "Pan Tool",           "accelerator": "Shift+P" },
+      { "id": "splineTool",      "type": "checkbox", "label": "Spline Tool",        "accelerator": "Shift+S" },
+      { "id": "freehandTool",    "type": "checkbox", "label": "Freehand Tool",      "accelerator": "Shift+F" },
+      { "id": "blobTool",        "type": "checkbox", "label": "Blob Tool",          "accelerator": "Shift+B" },
+      { "id": "rectTool",        "type": "checkbox", "label": "Rectangle Tool",     "accelerator": "Shift+R" },
+      { "id": "ellipseTool",     "type": "checkbox", "label": "Ellipse Tool",       "accelerator": "Shift+C" },
+      { "id": "otherShapeTool",  "type": "checkbox", "label": "Other Shape Tool",   "accelerator": "Shift+O" },
+      { "id": "textTool",        "type": "checkbox", "label": "Text Tool",          "accelerator": "Shift+Z" },
+      { "id": "textPathTool",    "type": "checkbox", "label": "Text Path Tool",     "accelerator": "Shift+X" },
+      { "id": "viewTool",        "type": "checkbox", "label": "View Tool",          "accelerator": "Shift+V" }
+    ]
+  },
+  {
+    "label": "Panels",
+    "id": "panels",
+    "submenu": [
+      { "id": "fillPanel",        "type": "checkbox", "label": "Fill Panel",        "accelerator": "F" },
+      { "id": "strokePanel",      "type": "checkbox", "label": "Stroke Panel",      "accelerator": "S" },
+      { "id": "compositingPanel", "type": "checkbox", "label": "Compositing Panel", "accelerator": "C" },
+      { "id": "typographyPanel",  "type": "checkbox", "label": "Typography Panel",  "accelerator": "T" },
+      { "id": "geometryPanel",    "type": "checkbox", "label": "Geometry Panel",    "accelerator": "G" },
+      { "id": "metaPanel",        "type": "checkbox", "label": "Meta Panel",        "accelerator": "M" },
+      { "id": "shapePanel",       "type": "checkbox", "label": "Shape Panel",       "accelerator": "X" },
+      { "id": "arrangementPanel", "type": "checkbox", "label": "Arrangement Panel", "accelerator": "A" },
+      { "id": "objectsPanel",     "type": "checkbox", "label": "Objects Panel",     "accelerator": "O" },
+      { "id": "defsPanel",        "type": "checkbox", "label": "Defs Panel",        "accelerator": "D" },
+      { "id": "libraryPanel",     "type": "checkbox", "label": "Library Panel",     "accelerator": "L" },
+      { "id": "generatorsPanel",  "type": "checkbox", "label": "Generators Panel",  "accelerator": "Z" },
+      { "id": "exportPanel",      "type": "checkbox", "label": "Export Panel",      "accelerator": "E" },
+      { "id": "historyPanel",     "type": "checkbox", "label": "History Panel",     "accelerator": "H" },
+      {                           "type": "separator"                                                  },
+      { "id": "elementsPanel",    "type": "checkbox", "label": "Elements Panel",    "accelerator": "I" }
+    ]
+  },
+  {
+    "label": "Window",
+    "role": "windowMenu",
+    "submenu": [
+      { "id": "minimize",           "label": "Minimize",               "role": "minimize"                                            },
+      { "id": "zoom",               "label": "Zoom",                   "role": "zoom"                                                },
+      { "id": "fullscreen",         "label": "Toggle Full Screen",     "role": "togglefullscreen"                                    },
+      {                                                                "type": "separator"                                           },
+      { "id": "previousTab",        "label": "Show Previous Tab",      "role": "selectPreviousTab",  "accelerator": "Ctrl+Shift+Tab" },
+      { "id": "nextTab",            "label": "Show Next Tab",          "role": "selectNextTab",      "accelerator": "Ctrl+Tab"       },
+      { "id": "moveTabToNewWindow", "label": "Move Tab to New Window", "role": "moveTabToNewWindow"                                  },
+      { "id": "mergeAllWindows",    "label": "Merge All Windows",      "role": "mergeAllWindows"                                     },
+
+      {                                                          "type": "separator"                                                 },
+      { "id": "bringAllToFront",  "label": "Bring All to Front", "role": "front"                                                     }
+    ]
+  },
+  {
+    "label": "Help",
+    "role": "help",
+    "submenu": [
+      { "id": "homepage",  "label": "Official Site"         },
+      { "id": "blog",      "label": "Blog"                  },
+      { "id": "tutorials", "label": "Tutorials"             },
+      { "id": "ideas",     "label": "Ideas"                 },
+      { "id": "bugs",      "label": "Bugs"                  },
+      { "id": "questions", "label": "Questions"             },
+      { "id": "changelog", "label": "Changelog"             },
+      { "type": "separator"                                 },
+      { "id": "rate",      "label": "Rate on Mac App Store" }
+    ]
+  },
+  {
+    "label": "Develop",
+    "id": "dev-menu",
+    "submenu": [
+      { "id": "reloadWindow",  "label": "Reload",  "accelerator":  "Cmd+R"        },
+      { "id": "inspectWindow", "label": "Inspect", "accelerator" : "Cmd+Option+I" }
+    ]
+  }
+]

@@ -1,0 +1,255 @@
+
+/*
+ * @copyright
+ *   © 2012-2022 Jarosław Foksa
+ */
+
+body[data-app="portal"] {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+body:not([data-app="portal"]) {
+  overflow: hidden;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  /* Bugfix: "Library Panel -> Fonts -> Subset" widget scrolls the body off-screen when clicked  */
+  position: fixed;
+}
+body[hidden]:not([data-app="portal"]) {
+  visibility: hidden;
+}
+
+/*****************************************************************************************************************/
+
+/**
+ * Dialogs
+ */
+
+dialog[open][hidden] {
+  display: block;
+  pointer-events: none;
+  transform: translateY(calc(-100% - 30px));
+}
+dialog[open][hidden]::backdrop {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*****************************************************************************************************************/
+
+/**
+ * Articles
+ */
+
+article h2 {
+  margin: 20px 0 12px 0;
+  padding: 0;
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 30px;
+  opacity: 1;
+}
+
+article h3 {
+  margin: 32px 0 12px;
+  padding: 0;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 26px;
+  opacity: 1;
+}
+
+article h3:first-child {
+  margin-top: 0;
+}
+article h3 em {
+  font-weight: 700;
+}
+
+article h3 strong,
+article h3 strong em {
+  font-weight: 900;
+}
+
+article h4 {
+  opacity: 1;
+  font-weight: 600;
+  font-size: 17.5px;
+}
+article h4 em {
+  font-weight: 700;
+}
+article h4 strong,
+article h4 strong em {
+  font-weight: 900;
+}
+
+article > p:first-child {
+  margin-top: 0;
+}
+
+article code {
+  font-size: 14px;
+}
+
+article pre {
+  font-size: inherit;
+  clear: both;
+}
+
+article a {
+  font-weight: 500;
+}
+
+article hr {
+  margin: 28px 0;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+  border: none;
+}
+
+/**
+ * Lists
+ */
+
+ul,
+ol {
+  margin: 12px 0;
+  padding: 0;
+}
+p + ul {
+  margin: -10px 0 0 0;
+}
+li > ul,
+li > ol {
+  margin: 0;
+}
+
+li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin-left: 20px;
+}
+ol li {
+  margin-left: 16px;
+}
+
+li > p {
+  margin-bottom: 0;
+}
+
+/**
+ * Blockquote
+ */
+
+blockquote {
+  box-sizing: border-box;
+  margin: 14px 0;
+  padding: 5px 14px;
+  border-left-width: 8px;
+  border-left-style: solid;
+}
+blockquote > blockquote {
+  margin: 6px 0;
+}
+
+blockquote > p:first-child {
+  margin-top: 0;
+}
+
+/**
+ * Figures
+ */
+
+figcaption {
+  padding: 5px 3px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  text-align: center;
+  cursor: text;
+}
+
+/* Image figure */
+
+figure[data-type="image"] {
+  display: flex;
+  flex-flow: column;
+  margin: 14px 0;
+  background: var(--checkboard-background);
+  border-width: 1px;
+  border-style: solid;
+  cursor: zoom-in;
+}
+
+figure[data-type="image"] img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  -webkit-user-modify: read-only;
+}
+figure[data-type="image"] img:active {
+  cursor: -webkit-grabbing;
+}
+
+/* Code figure */
+
+figure[data-type="code"] {
+  margin: 14px 0;
+  border-width: 1px;
+  border-style: solid;
+}
+
+figure[data-type="code"] > pre {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  max-height: 400px;
+  font-size: 14px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+figure[data-type="code"] > pre > code {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+figure[data-type="code"] .lines {
+  align-self: stretch;
+  width: fit-content;
+  min-width: 35px;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+figure[data-type="code"] .lines .line {
+  display: block;
+  width: 100%;
+  text-align: end;
+}
+
+figure[data-type="code"] .chars {
+  height: fit-content;
+  min-height: 100%;
+  margin: 0;
+  padding: 5px 8px;
+  overflow: auto;
+  box-sizing: border-box;
+  flex: 1;
+  white-space: pre;
+  user-select: text;
+  cursor: text;
+}

@@ -1,0 +1,1359 @@
+
+/*
+ * @copyright
+ *   © 2012-2022 Jarosław Foksa
+ */
+
+@import url("/modules/xel/themes/vanilla-dark.css");
+@import url("/themes/base.css");
+
+/******************************************************************************************************************
+ * HTML
+ *****************************************************************************************************************/
+
+body {
+  --titlebar-color: var(--background-color);
+  --green-status-color: #93d872;
+  --red-status-color: #ff8e9d;
+  --rubber-band-background-color: hsla(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l), 0.2);
+  --rubber-band-border-color: var(--light-accent-color);
+}
+
+article hr {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/**
+ * Figures
+ */
+
+figure figcaption {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+figure[data-type="image"] {
+  border-color: var(--border-color);
+}
+
+figure[data-type="code"] {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+figure[data-type="code"] .lines,
+figure[data-type="code"] .CodeMirror-linenumbers {
+  background: var(--background-color);
+  border-right-color: var(--border-color);
+}
+figure[data-type="code"] .line {
+  color: rgba(255, 255, 255, 0.6);
+}
+figure[data-type="code"] .cm-tag {
+  color: #ff7635;
+}
+figure[data-type="code"] .cm-attribute {
+  color: #e2a533;
+}
+figure[data-type="code"] .cm-string {
+  color: #87cc4c;
+}
+figure[data-type="code"] .cm-comment {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+figure[data-type="code"] .cm-keyword {
+  color: #ff6cb4;
+}
+figure[data-type="code"] .cm-property {
+  color: #d06537;
+}
+figure[data-type="code"] .cm-variable {
+  color: #d06537;
+}
+figure[data-type="code"] .cm-variable-2 {
+  color: #81add8;
+}
+figure[data-type="code"] .cm-def {
+  color: #d2c03e;
+}
+figure[data-type="code"] .cm-number {
+  color: #87afec;
+  font-weight: 500;
+}
+figure[data-type="code"] .cm-atom {
+  color: #2fceaa;
+}
+figure[data-type="code"] .cm-operator {
+  color: #cecece;
+}
+
+/******************************************************************************************************************
+ * CORE
+ *****************************************************************************************************************/
+
+/**
+ * Chrome app
+ */
+
+bx-chromeapp::part(header) {
+  border-color: var(--border-color);
+}
+
+/**
+ * Linux app
+ */
+
+bx-linuxapp {
+  border-top-color: var(--border-color);
+}
+
+bx-linuxapp::part(menubar) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/**
+ * Web app
+ */
+
+bx-webapp::part(header) {
+  border-color: var(--border-color);
+}
+
+/**
+ * Board
+ */
+
+bx-board {
+  background: var(--checkboard-background) #929292;
+  --canvas-background-color: #969696;
+  --selection-background-color: hsla(var(--accent-color-h), var(--accent-color-s), var(--accent-color-l), 0.4);
+}
+
+/**
+ * Tools dock
+ */
+
+bx-toolsdock {
+  background: var(--background-color);
+}
+
+/**
+ * Primary panels dock
+ */
+
+bx-primarypanelsdock {
+  background-color: var(--background-color);
+}
+
+/**
+ * Secondary panels dock
+ */
+
+bx-secondarypanelsdock {
+  box-shadow: 0 -1px 0px 0px var(--border-color);
+  background-color: var(--background-color);
+}
+
+/**
+ * Preferences
+ */
+
+bx-preferences::part(sidebar) {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * About
+ */
+
+bx-about::part(main) {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Rulers
+ */
+
+bx-rulers::part(ruler) {
+  background: var(--light-background-color);
+  border-color: var(--light-border-color);
+}
+
+bx-rulers::part(tick) {
+  color: var(--text-color);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/******************************************************************************************************************
+ * BLOCKS
+ *****************************************************************************************************************/
+
+/**
+ * Header block
+ */
+
+bx-headerblock::part(heading) {
+  color: var(--light-text-color);
+}
+
+bx-headerblock::part(subheading) {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+  color: #dcdcdc;
+}
+
+/**
+ * Demo block
+ */
+
+bx-demoblock::before {
+  background: #404040;
+  border-color: var(--border-color);
+}
+
+/**
+ * Intro block
+ */
+
+bx-introblock::before {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Purchase block
+ */
+
+bx-purchaseblock::before {
+  border-color: var(--border-color);
+}
+
+bx-purchaseblock {
+  color: rgba(255, 255, 255, 0.8);
+  --selection-background-color: rgba(255, 255, 255, 0.85);
+  --selection-color: #333333;
+}
+
+bx-purchaseblock::part(nav-button) {
+  background: #404040;
+}
+
+bx-purchaseblock::part(help-button) {
+  background: #d9d9d9;
+  border-color: #d9d9d9;
+  color: #404040;
+}
+
+bx-purchaseblock::part(badge) {
+  border-color: #777777;
+}
+
+bx-purchaseblock::part(footer-cell) {
+  background: #404040;
+}
+
+bx-purchaseblock::part(true-icon) {
+  color: var(--green-status-color);
+}
+
+bx-purchaseblock::part(false-icon) {
+  color: var(--red-status-color);
+}
+
+/**
+ * Tour block
+ */
+
+bx-tourblock {
+  color: var(--light-background-color);
+}
+
+bx-tourblock::before {
+  background: #efefef;
+}
+
+bx-tourblock::part(thumb) {
+  border-color: var(--dark-border-color);
+}
+
+bx-tourblock::part(toggled-thumb) {
+  outline: 5px solid #ff8585;
+  border-color: #88514f;
+}
+
+bx-tourblock::part(image) {
+  border-color: #d5d5d5;
+}
+
+/**
+ * Plan select block
+ */
+
+bx-planselectblock::part(selected-cell) {
+  background: var(--light-background-color);
+}
+
+bx-planselectblock::part(yes-icon) {
+  color: var(--green-status-color);
+}
+
+bx-planselectblock::part(no-icon) {
+  color: var(--red-status-color);
+}
+
+/**
+ * Profile block
+ */
+
+bx-profileblock {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Footer block
+ */
+
+bx-footerblock {
+  color: rgba(255, 255, 255, 0.4);
+  --selection-background-color: rgba(255, 255, 255, 0.85);
+  --selection-color: #383838;
+}
+
+bx-footerblock::before {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+bx-footerblock::part(anchor):hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/**
+ * Blog block
+ * Idea block
+ * Bug block
+ * Question block
+ * Comment block
+ */
+
+bx-blogblock::part(header),
+bx-ideablock::part(header),
+bx-bugblock::part(header),
+bx-questionblock::part(header),
+bx-commentblock::part(header) {
+  background: var(--background-color);
+  border-color: var(--dark-border-color);
+}
+
+bx-blogblock::part(main),
+bx-ideablock::part(main),
+bx-bugblock::part(main),
+bx-questionblock::part(main),
+bx-commentblock::part(main) {
+  background: var(--light-background-color);
+  border-color: var(--dark-border-color);
+}
+
+bx-blogblock::part(uid),
+bx-ideablock::part(uid),
+bx-bugblock::part(uid),
+bx-questionblock::part(uid),
+bx-commentblock::part(uid) {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+bx-ideablock[status="done"]::part(status),
+bx-bugblock[status="fixed"]::part(status),
+bx-questionblock[status="answered"]::part(status) {
+  color: var(--green-status-color);
+}
+bx-ideablock[status="rejected"]::part(status),
+bx-ideablock[status="duplicate"]::part(status),
+bx-ideablock[status="out-of-date"]::part(status),
+bx-bugblock[status="wont-fix"]::part(status),
+bx-bugblock[status="duplicate"]::part(status),
+bx-bugblock[status="out-of-date"]::part(status),
+bx-questionblock[status="duplicate"]::part(status),
+bx-questionblock[status="out-of-date"]::part(status) {
+  color: var(--red-status-color);
+}
+
+bx-commentblock::part(skeleton-item) {
+  background: var(--dark-background-color);
+}
+
+/**
+ * Blog preview block
+ * Idea preview block
+ * Bug preview block
+ * Question preview block
+ */
+
+bx-blogpreviewblock,
+bx-ideapreviewblock,
+bx-bugpreviewblock,
+bx-questionpreviewblock {
+  background: var(--light-background-color);
+  border-color: var(--dark-border-color);
+}
+
+bx-blogpreviewblock[blink],
+bx-ideapreviewblock[blink],
+bx-bugpreviewblock[blink],
+bx-questionpreviewblock[blink] {
+  background: var(--dark-background-color);
+}
+
+bx-blogpreviewblock::part(uid),
+bx-ideapreviewblock::part(uid),
+bx-bugpreviewblock::part(uid),
+bx-questionpreviewblock::part(uid) {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+bx-blogpreviewblock::part(details),
+bx-ideapreviewblock::part(details),
+bx-bugpreviewblock::part(details),
+bx-questionpreviewblock::part(details) {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+bx-blogpreviewblock::part(skeleton-item),
+bx-ideapreviewblock::part(skeleton-item),
+bx-bugpreviewblock::part(skeleton-item),
+bx-questionpreviewblock::part(skeleton-item) {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+bx-blogpreviewblock::part(title),
+bx-ideapreviewblock::part(title),
+bx-bugpreviewblock::part(title),
+bx-questionpreviewblock::part(title) {
+  color: var(--light-text-color);
+}
+
+bx-ideapreviewblock[status="done"]::part(title),
+bx-bugpreviewblock[status="fixed"]::part(title),
+bx-questionpreviewblock[status="answered"]::part(title) {
+  color: var(--green-status-color);
+}
+bx-ideapreviewblock[status="rejected"]::part(title),
+bx-ideapreviewblock[status="duplicate"]::part(title),
+bx-ideapreviewblock[status="out-of-date"]::part(title),
+bx-bugpreviewblock[status="wont-fix"]::part(title),
+bx-bugpreviewblock[status="duplicate"]::part(title),
+bx-bugpreviewblock[status="out-of-date"]::part(title),
+bx-questionpreviewblock[status="duplicate"]::part(title),
+bx-questionpreviewblock[status="out-of-date"]::part(title) {
+  color: var(--red-status-color);
+}
+
+/**
+ * Tutorial preview block
+ */
+
+bx-tutorialpreviewblock {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+bx-tutorialpreviewblock[blink] {
+  background: var(--dark-background-color);
+}
+
+/**
+ * Blog filter block
+ * Ideas filter block
+ * Bugs filter block
+ * Questions filter block
+ */
+
+bx-blogfilterblock,
+bx-ideasfilterblock,
+bx-bugsfilterblock,
+bx-questionsfilterblock,
+bx-searchblock {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Placeholder block
+ */
+
+bx-placeholderblock {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+/******************************************************************************************************************
+ * BROWSERS
+ *****************************************************************************************************************/
+
+/**
+ * Colors browser
+ * Filters browser
+ * Fonts browser
+ * Gradients browser
+ * Markers browser
+ * Patterns browser
+ * Symbols browser
+ */
+
+bx-colorsbrowser::part(header),
+bx-filtersbrowser::part(header),
+bx-fontsbrowser::part(header),
+bx-gradientsbrowser::part(header),
+bx-markersbrowser::part(header),
+bx-patternsbrowser::part(header),
+bx-symbolsbrowser::part(header) {
+  border-color: var(--border-color);
+}
+
+bx-colorsbrowser::part(main),
+bx-filtersbrowser::part(main),
+bx-fontsbrowser::part(main),
+bx-gradientsbrowser::part(main),
+bx-markersbrowser::part(main),
+bx-patternsbrowser::part(main),
+bx-symbolsbrowser::part(main) {
+  background: var(--light-background-color);
+}
+
+bx-colorsbrowser::part(footer),
+bx-filtersbrowser::part(footer),
+bx-fontsbrowser::part(footer),
+bx-gradientsbrowser::part(footer),
+bx-markersbrowser::part(footer),
+bx-patternsbrowser::part(footer),
+bx-symbolsbrowser::part(footer) {
+  border-color: var(--border-color);
+}
+
+bx-colorsbrowser::part(thumbnail),
+bx-filtersbrowser::part(thumbnail),
+bx-gradientsbrowser::part(thumbnail),
+bx-markersbrowser::part(thumbnail),
+bx-patternsbrowser::part(thumbnail),
+bx-symbolsbrowser::part(thumbnail) {
+  background: var(--checkboard-background) white;
+  border-color: var(--border-color);
+}
+
+/**
+ * Colors library browser
+ * Gradients library browser
+ * Fonts library browser
+ * Bitmaps library browser
+ * Vectors library browser
+ */
+
+bx-colorslibrarybrowser::part(header),
+bx-gradientslibrarybrowser::part(header),
+bx-fontslibrarybrowser::part(header),
+bx-bitmapslibrarybrowser::part(header),
+bx-vectorslibrarybrowser::part(header) {
+  border-color: var(--border-color);
+}
+
+bx-colorslibrarybrowser::part(main),
+bx-gradientslibrarybrowser::part(main),
+bx-fontslibrarybrowser::part(main),
+bx-bitmapslibrarybrowser::part(main),
+bx-vectorslibrarybrowser::part(main) {
+  background: var(--light-background-color);
+}
+
+bx-colorslibrarybrowser::part(footer),
+bx-gradientslibrarybrowser::part(footer),
+bx-fontslibrarybrowser::part(footer),
+bx-bitmapslibrarybrowser::part(footer),
+bx-vectorslibrarybrowser::part(footer) {
+  border-color: var(--border-color);
+}
+
+bx-colorslibrarybrowser::part(item),
+bx-gradientslibrarybrowser::part(item),
+bx-bitmapslibrarybrowser::part(item),
+bx-vectorslibrarybrowser::part(item) {
+  border-color: var(--border-color);
+}
+bx-bitmapslibrarybrowser::part(item),
+bx-vectorslibrarybrowser::part(item) {
+  background: var(--checkboard-background) #929292;
+}
+
+/**
+ * Cloud browser
+ */
+
+bx-cloudbrowser {
+  background: var(--light-background-color);
+}
+
+bx-cloudbrowser::part(header) {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+bx-cloudbrowser::part(footer) {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+bx-iconscloudbrowserview::part(ghost) {
+  color: rgba(255, 255, 255, 0.9);
+  background: #434343;
+}
+
+/**
+ * Objects browser
+ */
+
+bx-objectsbrowser::part(main) {
+  background: var(--light-background-color);
+}
+
+bx-objectsbrowser::part(footer) {
+  border-color: var(--border-color);
+}
+
+/******************************************************************************************************************
+ * FORMS
+ *****************************************************************************************************************/
+
+*[extends="bx-form"]::part(header),
+*[extends="bx-form"]::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--dark-border-color);
+}
+*[extends="bx-form"][blink]::part(footer) {
+  outline: 3px solid var(--light-accent-color);
+}
+
+/**
+ * Login form
+ */
+
+bx-loginform input {
+  background: var(--light-background-color);
+  border: 1px solid var(--border-color);
+}
+bx-loginform input:focus {
+  border-color: var(--accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-loginform input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+bx-loginform input::selection {
+  color: var(--selection-color);
+  background: var(--selection-background-color);
+}
+
+bx-loginform x-icon {
+  color: rgba(255, 255, 255, 0.7);
+  background: var(--lighter-background-color);
+  border-right: 1px solid var(--border-color);
+}
+bx-loginform input:focus + x-icon {
+  color: rgba(255, 255, 255, 0.9);
+  background: var(--accent-color);
+  outline: 1px solid var(--dark-accent-color);
+  border-right: none;
+}
+
+bx-loginform footer {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/******************************************************************************************************************
+ * GENERATORS
+ *****************************************************************************************************************/
+
+*[extends="bx-generator"]::part(footer) {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+*[extends="bx-generator"]::part(preview) {
+  background: var(--checkboard-background) #929292;
+  border-color: var(--border-color);
+}
+
+/******************************************************************************************************************
+ * INSPECTORS
+ *****************************************************************************************************************/
+
+/**
+ * Image primitive inspector
+ */
+
+bx-imageprimitiveinspector::part(thumbnail) {
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+/**
+ * CSS cascade inspector
+ */
+
+bx-csscascadeinspector {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+  --property-name-color: #e69797;
+  --property-value-color: var(--text-color);
+}
+
+bx-csscascadeinspector::part(heading) {
+  color: var(--light-text-color);
+  background: var(--lighter-background-color)
+}
+
+bx-csscascadeinspector::part(input) {
+  background: var(--light-background-color);
+  color: var(--light-text-color);
+  outline: 3px solid var(--accent-color);
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 4px;
+}
+
+bx-csscascadeinspector::part(invalid-input) {
+  outline-color: var(--error-color);
+  background: rgba(255, 0, 0, 0.1);
+}
+
+bx-csscascadeinspector::part(invalid-input)::selection {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+bx-csscascadeinspector::part(autocompletion-list) {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * DOM inspector
+ */
+
+bx-dominspector {
+  --bracket-color: #d023c4;
+  --tag-color: #f15be6;
+  --attribute-color: #b3a2b1;
+  --attribute-name-color: #e69797;
+  --attribute-value-color: #b4b4e6;
+  --highlight-color: #bb38b2;
+}
+
+bx-dominspector::part(input) {
+  background: var(--light-background-color);
+  color: var(--light-text-color);
+  outline: 3px solid var(--light-accent-color);
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 4px;
+}
+
+/**
+ * Filter inspector
+ */
+
+bx-filterinspector {
+  --edge-color: #828282;
+  --node-background-color: #222424;
+  --node-foreground-color: #828282;
+}
+
+bx-filterinspector::part(main) {
+  background: var(--light-background-color);
+}
+
+bx-filterinspector::part(sidebar) {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+bx-filterinspector::part(sidebar-header) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Gradient inspector
+ */
+
+bx-gradientinspector::part(gradient-slider) {
+  border-color: var(--border-color);
+  background-color: white;
+}
+
+/******************************************************************************************************************
+ * PAGES
+ *****************************************************************************************************************/
+
+bx-legalpage::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/******************************************************************************************************************
+ * PANELS
+ *****************************************************************************************************************/
+
+/**
+ * Export panel
+ */
+
+bx-exportpanel::part(header),
+bx-exportpanel::part(footer) {
+  border-color: var(--border-color);
+}
+
+bx-exportpanel::part(main) {
+  background: var(--light-background-color);
+}
+
+/**
+ * Generators panel
+ */
+
+bx-generatorspanel::part(header) {
+  border-color: var(--border-color);
+}
+
+bx-generatorspanel::part(main) {
+  background: var(--light-background-color);
+}
+
+/**
+ * Geometry panel
+ */
+
+bx-geometrypanel::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * History panel
+ */
+
+bx-historypanel::part(header),
+bx-historypanel::part(footer) {
+  border-color: var(--border-color);
+}
+
+bx-historypanel::part(main) {
+  background: var(--light-background-color);
+}
+
+/**
+ * Objects panel
+ */
+
+bx-objectspanel::part(header) {
+  border-color: var(--border-color);
+}
+
+/******************************************************************************************************************
+ * SETTINGS
+ *****************************************************************************************************************/
+
+/**
+ * Delete account settings
+ */
+
+bx-deleteaccountsettings::part(delete-button) {
+  background: #dd2c41;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+bx-deleteaccountsettings::part(delete-button):active {
+  background: #ba2536;
+}
+
+/**
+ * Export settings
+ */
+
+*[extends="bx-exportsettings"]::part(preview) {
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+/**
+ * Tool settings
+ */
+
+*[extends="bx-toolsettings"]::part(preview) {
+  color: var(--dark-background-color);
+  background: #efefef;
+  border: none;
+}
+
+/******************************************************************************************************************
+ * WIDGETS
+ *****************************************************************************************************************/
+
+/**
+ * Button
+ */
+
+/* @skin header */
+/* @skin footer */
+
+x-button[skin="header"],
+x-button[skin="footer"] {
+  color: rgba(255, 255, 255, 0.8);
+  background: #4e4e4e;
+  border: 1px solid #777777;
+}
+x-button[skin="header"][toggled],
+x-button[skin="footer"][toggled] {
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(135deg, #d22986 0%, #da5e38 100%);
+  border-color: #ff8585;
+}
+x-button[skin="header"][pressed],
+x-button[skin="footer"][pressed] {
+  filter: brightness(1.1);
+}
+x-button[skin="header"][toggled][pressed],
+x-button[skin="footer"][toggled][pressed] {
+  filter: brightness(1);
+}
+x-button[skin="header"]:focus,
+x-button[skin="footer"]:focus {
+  border-color: var(--accent-color);
+}
+
+x-button[skin="header"] x-label,
+x-button[skin="footer"] x-label {
+  font-weight: 700;
+}
+
+x-button[skin="header"] x-label {
+  text-transform: uppercase;
+}
+
+/* @skin titlebar */
+
+x-button[skin="titlebar"] {
+  height: 30px;
+  padding: 0px 7px;
+  background: none;
+  border: none;
+}
+x-button[skin="titlebar"]:hover {
+  color: black;
+  background: rgba(0, 0, 0, 0.07);
+}
+x-button[skin="titlebar"][pressed] {
+  color: black;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+x-button[skin="titlebar"] x-icon {
+  width: 14px;
+  height: 14px;
+  color: #5a5a5a;
+}
+
+/**
+ * Tag
+ */
+
+/* @skin colored */
+
+x-tag[skin="colored"] {
+  height: 18px;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+x-tag[skin="colored"]:not([scoped]) {
+  color: #fff;
+}
+x-tag[skin="colored"]::part(scope) {
+  background: none;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/**
+ * Card
+ */
+
+/* @skin document */
+
+x-card[skin="document"] {
+  margin: 30px 0;
+}
+x-card[skin="document"]:first-of-type {
+  margin-top: 0;
+}
+
+x-card[skin="document"] > main {
+  padding: 24px;
+}
+
+/**
+ * Align buttons
+ */
+
+bx-alignbuttons {
+  border-color: var(--border-color);
+}
+
+/**
+ * Avatar
+ */
+
+bx-avatar {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+bx-avatar[transparent] {
+  background: var(--checkboard-background) #929292;
+}
+
+/**
+ * Tooltip
+ */
+
+bx-tooltip {
+  color: var(--text-color);
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Cloud breadcrumb
+ */
+
+bx-cloudbreadcrumb {
+  background: var(--light-background-color);
+}
+
+bx-cloudbreadcrumb::part(item) {
+  border-color: var(--border-color);
+}
+bx-cloudbreadcrumb::part(item):focus {
+  border-color: var(--dark-accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-cloudbreadcrumb::part(toggled-item) {
+  background: var(--accent-color);
+  border-color: var(--light-accent-color);
+  color: rgba(255, 255, 255, 0.94);
+}
+
+/**
+ * Editor breadcrumb
+ */
+
+bx-editorbreadcrumb {
+  background: var(--light-background-color);
+}
+
+bx-editorbreadcrumb::part(item) {
+  border-color: var(--dark-border-color);
+}
+bx-editorbreadcrumb::part(item):focus {
+  border-color: var(--dark-accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-editorbreadcrumb::part(toggled-item) {
+  background: var(--accent-color);
+  border-color: var(--dark-accent-color);
+  color: rgba(255, 255, 255, 0.94);
+}
+
+/**
+ * Page breadcrumb
+ */
+
+bx-pagebreadcrumb {
+  background: var(--light-background-color);
+}
+
+bx-pagebreadcrumb::part(item) {
+  border-color: var(--border-color);
+}
+bx-pagebreadcrumb::part(item):focus {
+  border-color: var(--dark-accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-pagebreadcrumb::part(toggled-item) {
+  background: var(--accent-color);
+  border-color: var(--light-accent-color);
+  color: rgba(255, 255, 255, 0.94);
+}
+
+/**
+ * Cloud file preview
+ */
+
+bx-cloudfilepreview::part(main) {
+  background: var(--lighter-background-color);
+  border-color: var(--border-color);
+}
+bx-cloudfilepreview[selected]::part(main) {
+  border-color: var(--accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-cloudfilepreview[selected][editing]::part(main) {
+  border-color: var(--border-color);
+  outline: none;
+}
+
+bx-cloudfilepreview::part(thumbnail) {
+  background: var(--checkboard-background) #929292;
+  border-color: var(--light-border-color);
+}
+
+bx-cloudfilepreview[selected]::part(name) {
+  color: white;
+  background: var(--accent-color);
+}
+
+/**
+ * Cloud folder preview
+ */
+
+bx-cloudfolderpreview[selected]::part(main) {
+  border-color: var(--accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-cloudfolderpreview[selected][editing]::part(main) {
+  border-color: transparent;
+  outline: none;
+}
+
+bx-cloudfolderpreview::part(icon) {
+  color: var(--accent-color);
+}
+
+bx-cloudfolderpreview[selected]::part(name) {
+  color: white;
+  background: var(--accent-color);
+}
+
+/**
+ * Color select
+ */
+
+bx-colorselect::part(thumbnail) {
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+bx-colorselect::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Gradient select
+ */
+
+bx-gradientselect::part(thumbnail) {
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+bx-gradientselect::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Pattern select
+ */
+
+bx-patternselect::part(thumbnail) {
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+bx-patternselect::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Marker select
+ */
+
+bx-markerselect::part(thumbnail) {
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+bx-markerselect::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Filter select
+ */
+
+bx-filterselect::part(thumbnail) {
+  background-color: #828282;
+  border-color: var(--border-color);
+}
+
+bx-filterselect::part(heading) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+bx-filterselect::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Font family picker
+ */
+
+bx-fontfamilypicker::part(header),
+bx-fontfamilypicker::part(footer) {
+  background: var(--dark-background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Image viewer
+ */
+
+bx-imageviewer::part(backdrop) {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+bx-imageviewer::part(image) {
+  background-color: white;
+  border-color: var(--border-color);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 22px;
+}
+
+/**
+ * Pager
+ */
+
+bx-pager::part(item) {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+bx-pager::part(item):focus {
+  border-color: var(--accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-pager::part(toggled-item) {
+  background: var(--accent-color);
+  border-color: var(--light-accent-color);
+  color: white;
+}
+
+/**
+ * Paint order switch
+ */
+
+bx-paintorderswitch {
+  padding: 0;
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+bx-paintorderswitch::part(dragged-thumb) {
+  background: var(--background-color);
+  outline: 1px solid var(--border-color);
+}
+
+bx-paintorderswitch::part(toggled-thumb) {
+  background: var(--accent-color);
+  outline: 1px solid var(--light-accent-color);
+}
+bx-paintorderswitch:focus::part(toggled-thumb) {
+  box-shadow: 0 0 0px 5px var(--light-accent-color);
+}
+
+/**
+ * Rich text area
+ */
+
+bx-richtextarea {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+bx-richtextarea:focus {
+  z-index: 10;
+  border-color: var(--accent-color);
+  outline: 3px solid var(--light-accent-color);
+}
+bx-richtextarea[error] {
+  border-color: var(--error-color);
+  outline: 3px solid var(--error-color);
+}
+
+bx-richtextarea[error]::before {
+  color: var(--error-color);
+}
+
+/**
+ * Shortctus editor
+ */
+
+bx-shortcutseditor {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+bx-shortcutseditor::part(header) {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+bx-shortcutseditor::part(footer) {
+  background: var(--background-color);
+  border-color: var(--border-color);
+}
+
+/**
+ * Style picker
+ */
+
+bx-stylepicker::part(thumbnail) {
+  background: var(--checkboard-background) #cccccc;
+  border-color: var(--border-color);
+}
+
+/**
+ * Users editor
+ */
+
+bx-userseditor {
+  background: var(--light-background-color);
+  border-color: var(--border-color);
+}
+
+bx-userseditor::part(cell) {
+  border-color: var(--border-color);
+}
+
+bx-userseditor::part(index-cell) {
+  background: var(--light-background-color);
+}
+
+bx-userseditor:focus-within::part(selected-cell) {
+  color: white;
+  background: var(--accent-color);
+}
+
+/**
+ * Video player
+ */
+
+bx-videoplayer {
+  background: rgba(0, 0, 0, 0.6);
+}
