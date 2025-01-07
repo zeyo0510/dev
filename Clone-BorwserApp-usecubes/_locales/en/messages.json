@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Simply design your 3D pixel arts and bring them to life."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "usecubes"
+   }
+}
