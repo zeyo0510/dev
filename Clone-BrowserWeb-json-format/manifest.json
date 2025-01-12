@@ -1,0 +1,20 @@
+{
+   "app": {
+      "container": "panel",
+      "launch": {
+         "local_path": "index.html"
+      }
+   },
+   "description": "TThis extension gives any json format quickly and easily.",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "48": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6DACagL4vzaLCKsc5oOBWtd+kCwgwMKEJEiQXCBHIu8Ds8mWL8YfZswZFIir1p0rtsSnN/jUxgFGV3u9SEN8F8v0CTLmXJFFCd7DxNuhu3bRg3drXfZjWGShOT0nuFOOq5qe/AC67M4dkKUq1lxExHoo/V8oWjVNqisCRS3WB0zjfP6qoOXR3kpoDkhJN5WCVJ2yfDedK0CoHG/D5oZtT2AWxVk6Lu/o8oDsr4jR1d7ZcEpQxNbEO3XZMVwXxeuvNuyizc9GzXKdthRJDX9LYuKqZEtpI5O2sbTtgwHiRLO563A2HtFuKFVluCbmcNxpfCHA3zqHEn3q7bH286klcQIDAQAB",
+   "manifest_version": 2,
+   "name": "JSON Format",
+   "permissions": [ "clipboardRead", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
