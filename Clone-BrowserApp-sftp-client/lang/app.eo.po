@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menuo"
+
+msgid "file"
+msgstr "dosiero"
+
+msgid "view"
+msgstr "vido"
+
+msgid "edit"
+msgstr "redakti"
+
+msgid "help"
+msgstr "helpi"
+
+msgid "manage_accounts"
+msgstr "administri Kontoj"
+
+msgid "import_accounts"
+msgstr "import Kontoj"
+
+msgid "export_accounts"
+msgstr "eksporti Kontoj"
+
+msgid "quick_connect"
+msgstr "Rapida Konekti"
+
+msgid "message_log"
+msgstr "mesaĝo Ensalutu"
+
+msgid "local_directory"
+msgstr "lokaj Gvidlibro"
+
+msgid "uploads_downloads"
+msgstr "Alŝutoj / Elŝutoj"
+
+msgid "clear_saved_data"
+msgstr "Klara Savita Datumoj"
+
+msgid "edit_settings"
+msgstr "redakti Agordo"
+
+msgid "report_bug"
+msgstr "Raporti Insekto"
+
+msgid "suggest_feature"
+msgstr "Sugesti Karakterizaĵo"
+
+msgid "ask_a_question"
+msgstr "Demandi"
+
+msgid "change_log"
+msgstr "ŝanĝi Madero"
+
+msgid "about"
+msgstr "pri"
+
+msgid "exit"
+msgstr "eliro"
+
+msgid "host_ip_address"
+msgstr "Komputilo / IP adreso"
+
+msgid "username"
+msgstr "uzantonomo"
+
+msgid "password"
+msgstr "Pasvorto"
+
+msgid "port"
+msgstr "haveno"
+
+msgid "connect"
+msgstr "konekti"
+
+msgid "welcome"
+msgstr "bonvenon"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP kliento estas pri simpleco, ĝi estis konstruita sur la Google Chrome / Chrome VIN pakita app interfaco permesante la app esti rapida kaj respondema. Iuj de la funkcioj inkluzivas FTP Konto Direktisto stoki for kaj organizi vian plej us"
+
+msgid "latest_updates"
+msgstr "lastaj ĝisdatigoj"
+
+msgid "server_status"
+msgstr "servilo Statuso"
+
+msgid "license_server"
+msgstr "licenco Servilo"
+
+msgid "sftp_support"
+msgstr "subteno"
+
+msgid "notice_update"
+msgstr "Avizo / Aktualigoj"
+
+msgid "website"
+msgstr "retejo"
+
+msgid "clear_all"
+msgstr "klara Ĉiuj"
+
+msgid "manage"
+msgstr "administri"
+
+msgid "recheck"
+msgstr "Re-ĉeko"
+
+msgid "last_release"
+msgstr "lasta Release"
+
+msgid "released"
+msgstr "liberigita"
+
+msgid "queued"
+msgstr "vosto"
+
+msgid "failed"
+msgstr "malsukcesis"
+
+msgid "completed"
+msgstr "kompletigita"
+
+msgid "settings"
+msgstr "Agordoj"
+
+msgid "add_folder"
+msgstr "Aldoni Dosierujo"
+
+msgid "add_ftp_account"
+msgstr "Aldoni FTP Konto"
+
+msgid "file_editor"
+msgstr "Dosiera Redaktoro"
+
+msgid "editor_preferences"
+msgstr "redaktoro Agordoj"
+
+msgid "your_ftp_accounts"
+msgstr "Via FTP Kontoj"
+
+msgid "most_recent_used"
+msgstr "Plej ĵuse uzita."
+
+msgid "no_connections_yet_made"
+msgstr "Neniu rilatoj tamen faris"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Neniu FTP kontoj sube"
+
+msgid "most_recent_connections"
+msgstr "Plej Lastaj Ligoj"
+
+msgid "last_10_connections_made"
+msgstr "Lastaj 10 ligoj faritaj"
+
+msgid "designed_developed_by"
+msgstr "Desegnita & Evoluigita de"
+
+msgid "about_info"
+msgstr "Bonvolu uzi la SFTP kliento retejo por subteno, neniu subteno estas provizita per nia individua retejoj."
+
+msgid "local"
+msgstr "lokaj"
+
+msgid "remote"
+msgstr "Izolita"
+
+msgid "remote_location_desc"
+msgstr "Ekz / public_html"
+
+msgid "create_directory"
+msgstr "krei Gvidlibro"
+
+msgid "create_new_directory"
+msgstr "Krei novan Gvidlibro"
+
+msgid "create_file"
+msgstr "krei Dosiero"
+
+msgid "create_new_file"
+msgstr "Krei novan dosiertipon"
+
+msgid "refresh_list"
+msgstr "refresh Listo"
+
+msgid "change"
+msgstr "ŝanĝo"
+
+msgid "report_a_bug"
+msgstr "Raporti Insekto"
+
+msgid "suggest_a_feature"
+msgstr "Sugesti Karakterizaĵo"
+
+msgid "enter_password"
+msgstr "Enigu pasvorton"
+
+msgid "enter_your_password..."
+msgstr "Entajpu vian pasvorton ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Entajpu vian pasvorton ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP Kliento"
+
+msgid "faqs"
+msgstr "Demandoj"
+
+msgid "visit_sftp_client_website"
+msgstr "Vizito SFTP Kliento afiŝinto"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Taksas nin sur Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Raporti problemon aŭ akiri helpon"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Kunigu nin en Facebook aktualigojn"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Sekvu nin je Twitter por ĝisdatigoj"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Ni sur Google aktualigojn"
+
+msgid "okay"
+msgstr "okay"
+
+msgid "cancel"
+msgstr "nuligi"
+
+msgid "close"
+msgstr "Fermi"
+
+msgid "unknown_host"
+msgstr "nekonata Gastiganto"
+
+msgid "okay_to_continue"
+msgstr "Okay daŭrigi?"
+
+msgid "fingerprint"
+msgstr "fingropremo"
+
+msgid "remember"
+msgstr "memoru"
+
+msgid "file_permissions"
+msgstr "Dosieraj atingopermesoj"
+
+msgid "file_permissions_desc"
+msgstr "Bonvolu elekti la novajn atributojn por la elektita dosiero (j) / dosierujo (j)"
+
+msgid "read"
+msgstr "legi"
+
+msgid "write"
+msgstr "skribi"
+
+msgid "execute"
+msgstr "ekzekuti"
+
+msgid "owner"
+msgstr "posedanto"
+
+msgid "group"
+msgstr "grupo"
+
+msgid "public"
+msgstr "publikajn"
+
+msgid "numeric_value"
+msgstr "nombra valoro"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Entajpu la nomon de la nova dosierujo ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Entajpu la nomon de la nova dosiero ..."
+
+msgid "name"
+msgstr "nomo"
+
+msgid "enter_a_password"
+msgstr "Entajpu Pasvorto"
+
+msgid "language"
+msgstr "lingvo"
+
+msgid "seconds"
+msgstr "sekundoj"
+
+msgid "minutes"
+msgstr "minutoj"
+
+msgid "hour"
+msgstr "horo"
+
+msgid "hours"
+msgstr "horoj"
+
+msgid "day"
+msgstr "tago"
+
+msgid "trial_left"
+msgstr "juĝo Maldekstra"
+
+msgid "register_now"
+msgstr "registriĝu nun"
+
+msgid "general"
+msgstr "ĝenerala"
+
+msgid "security"
+msgstr "sekureco"
+
+msgid "master_password"
+msgstr "mastro Pasvorto"
+
+msgid "status"
+msgstr "statuso"
+
+msgid "enabled"
+msgstr "Enabled"
+
+msgid "disabled"
+msgstr "Disabled"
+
+msgid "timeout"
+msgstr "tempolimo"
+
+msgid "save"
+msgstr "Konservi"
+
+msgid "add_account"
+msgstr "Aldoni Konto"
+
+msgid "support"
+msgstr "subteno"
+
+msgid "notice_updates"
+msgstr "Avizo / Aktualigoj"
+
+msgid "please_login"
+msgstr "bonvolu Ensalutu"
+
+msgid "your_session_timed_out"
+msgstr "Via Sesio Timed Eksteren"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Pardonu la pasvorton vi tajpis malĝustan!"
+
+msgid "login"
+msgstr "Ensaluti"
+
+msgid "master_password_desc"
+msgstr "Povas tion mastro pasvorton teni viajn kontojn sekura."
+
+msgid "license_key"
+msgstr "permesilo Ŝlosilo"
+
+msgid "online"
+msgstr "Surreta"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "nuntempe Unavailable"
+
+msgid "no_message_to_display"
+msgstr "Neniu mesaĝo por montri"
+
+msgid "offline_notice_title"
+msgstr "Neatingebla - Ĉu vi offline aŭ en reto nur rilato?"
+
+msgid "offline_notice_desc"
+msgstr "Vi estas currently offline, en reto nur rilaton aŭ neniu ligo povus esti establita al nia servilo"
+
+msgid "edit_file"
+msgstr "redakti Dosiero"
+
+msgid "download"
+msgstr "Elŝuti"
+
+msgid "upload"
+msgstr "alŝuto"
+
+msgid "host_ip_is_required"
+msgstr "Komputilo / IP estas bezonata"
+
+msgid "apply_to_all_files"
+msgstr "Apliki al ĉiuj dosieroj"
+
+msgid "activate_now"
+msgstr "aktivigi Nun"
+
+msgid "deactivate"
+msgstr "De-aktivigi"
+
+msgid "in_progress"
+msgstr "En progreso"
+
+msgid "complete"
+msgstr "kompletan"
+
+msgid "direction"
+msgstr "direkto"
+
+msgid "progress"
+msgstr "progreso"
+
+msgid "permissions"
+msgstr "permesojn"
+
+msgid "owner_group"
+msgstr "Posedanto / Grupo"
+
+msgid "size"
+msgstr "grandeco"
+
+msgid "type"
+msgstr "tipo"
+
+msgid "modified"
+msgstr "modifita"
+
+msgid "trial"
+msgstr "juĝo"
+
+msgid "cleared"
+msgstr "malbaris"
+
+msgid "error_connecting"
+msgstr "eraro Konektante"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Eraro Connecting gastigi / ip adreson"
+
+msgid "error_connecting_to_port"
+msgstr "Eraro Konektante al haveno"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Bonvolu elekti loka dosierujo unue!"
+
+msgid "go"
+msgstr "iri"
+
+msgid "confirm"
+msgstr "konfirmi"
+
+msgid "delete"
+msgstr "forviŝi"
+
+msgid "rename"
+msgstr "alinomi"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopio URL (j) al poŝo"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Bonvolu konfirmi vi volas forigi la elektitan dosieron (j) / dosierujo (j)"
+
+msgid "cancelled_by_user"
+msgstr "Nuligita de uzanto"
+
+msgid "already_exists_overwrite"
+msgstr "jam ekzistas, anstataŭigi?"
+
+msgid "dashboard"
+msgstr "instrumentpanelo"
+
+msgid "my_accounts"
+msgstr "miaj Kontoj"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Dosiera Savita! Ĉiuj kontoj estas subtenita supre."
+
+msgid "file_failed_please_try_again"
+msgstr "Dosiero malsukcesis! Bonvolu reprovi."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Vi nun havas neniun kontoj esti subtenita supre."
+
+msgid "saved!"
+msgstr "Konservita!"
+
+msgid "please_enter_a_password"
+msgstr "Bonvolu aŭ entajpi pasvorton!"
+
+msgid "connection_closed"
+msgstr "La konekto malfermitis"
+
+msgid "listing_mode_set_to"
+msgstr "Printita reĝimo metita"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Loka servilo IP solvita, uzante eksteraj IP"
+
+msgid "login_incorrect"
+msgstr "Salutnomo malĝusta"
+
+msgid "keeping_connection_alive"
+msgstr "Tenanta rilato vivas"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Ne eblas skribi, datumoj ligo fermita"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Ne eblas legi datumojn ligo fermita"
+
+msgid "error_reading_file"
+msgstr "Eraro legante dosieron"
+
+msgid "error_writing_file"
+msgstr "Eraro skribante dosieron"
+
+msgid "failed_to_change_directory_to"
+msgstr "Malsukcesis ŝanĝi dosierujo"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Vi eble ne havas la ĝustan permesojn por aliri tiun dosierujon"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Revertir reen al antaŭa dosierujo"
+
+msgid "activate"
+msgstr "aktivigi"
+
+msgid "payment"
+msgstr "pago"
+
+msgid "license_key_is_required"
+msgstr "Permesilo ŝlosilo estas bezonata"
+
+msgid "license_activated!"
+msgstr "Licenco Aktivigita!"
+
+msgid "your_license_has_been_validated"
+msgstr "Via licenco estis validigita."
+
+msgid "thank_you!"
+msgstr "Dankon!"
+
+msgid "buy_now!"
+msgstr "Aĉetu nun!"
+
+msgid "buy_now"
+msgstr "Aĉetu nun"
+
+msgid "one_off_fee"
+msgstr "unu ekstere pago"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Bonvolu ĝisdatigi ĝui ĉi tiun programon sen limigoj"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Bonvolu eniri vian Permesilo Ŝlosilo sube"
+
+msgid "or"
+msgstr "AŬ"
+
+msgid "loading..."
+msgstr "Ŝarĝante ..."
+
+msgid "clear_accounts"
+msgstr "klara Kontoj"
+
+msgid "clear_ssh_keys"
+msgstr "Klara SSH Ŝlosiloj"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Forigas ĉiuj savis SSH klavoj"
+
+msgid "clear_app_settings"
+msgstr "Klara App Agordoj"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Forigas tutan app specifa agordojn"
+
+msgid "clear_recent_connections"
+msgstr "Klara Lastaj Ligoj"
+
+msgid "deletes_all_recent_connections"
+msgstr "Forigas ĉiuj lastaj ligoj"
+
+msgid "import_type"
+msgstr "import Tipo"
+
+msgid "please_select"
+msgstr "bonvolu Elekti"
+
+msgid "import_file"
+msgstr "Importi Dosiero"
+
+msgid "choose_file"
+msgstr "Elektu dosieron"
+
+msgid "delete_accounts"
+msgstr "forviŝi Kontoj"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Forigas ĉiuj ekzistantaj kontoj"
+
+msgid "import_now"
+msgstr "import Nun"
+
+msgid "none"
+msgstr "neniu"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Bonvolu rekomenci SFTP kliento app por la ŝanĝoj preni efikon."
+
+msgid "already_bought_the_app"
+msgstr "Jam aĉetis la App?"
+
+msgid "choose"
+msgstr "elektu"
+
+msgid "deleted!"
+msgstr "Forigita!"
+
+msgid "use_syncronised_browsing"
+msgstr "uzi syncronised navigacio"
+
+msgid "remote_directory"
+msgstr "fora Gvidlibro"
+
+msgid "rsa_key_only!"
+msgstr "RSA ŝlosilo nur!"
+
+msgid "no_key_selected"
+msgstr "Neniu ŝlosilo elektita."
+
+msgid "ssh_key_file"
+msgstr "SSH Ŝlosilo Dosiero"
+
+msgid "no_dir_selected"
+msgstr "Neniu dir selektitaj."
+
+msgid "keep_blank_for_current_password"
+msgstr "Konservu vakua por nuna pasvorto."
+
+msgid "logon_type"
+msgstr "Logon Tipo"
+
+msgid "normal"
+msgstr "normalaj"
+
+msgid "ask_for_password"
+msgstr "Petu Pasvorto"
+
+msgid "anonymous"
+msgstr "anonima"
+
+msgid "account_type"
+msgstr "konto Tipo"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normala Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "dosierujo"
+
+msgid "advanced"
+msgstr "Altnivelaj"
+
+msgid "folder_name"
+msgstr "dosierujo Nomo"
+
+msgid "parent"
+msgstr "patro"
+
+msgid "new_ftp_site"
+msgstr "Nova FTP Site"
+
+msgid "new_folder"
+msgstr "nova Dosierujo"
+
+msgid "clean_now"
+msgstr "pura Nun"
+
+msgid "host"
+msgstr "gastiganto"
+
+msgid "no_accounts_added..."
+msgstr "Neniu Kontoj Aldonita ..."
+
+msgid "unknown"
+msgstr "nekonata"
+
+msgid "file_saved!"
+msgstr "Dosiera Savita!"
+
+msgid "uploading_file!"
+msgstr "Alŝutas Dosiero!"
+
+msgid "save_failed!"
+msgstr "Konservu malsukcesis!"
+
+msgid "search"
+msgstr "Serĉu"
+
+msgid "find"
+msgstr "trovi"
+
+msgid "replace"
+msgstr "anstataŭigi"
+
+msgid "scroll_past_end"
+msgstr "Skribrulajxo Pasintaj Fino"
+
+msgid "show_annotations"
+msgstr "Montri Komentarioj"
+
+msgid "show_gutter"
+msgstr "Montri Gutter"
+
+msgid "show_invisibles"
+msgstr "Montri Nevideblaj"
+
+msgid "show_print_margin"
+msgstr "Montri Presi Marĝeno"
+
+msgid "highlight_active_line"
+msgstr "Emfazi Aktiva Linio"
+
+msgid "word_wrap"
+msgstr "vorto Wrap"
+
+msgid "split_code"
+msgstr "disigo Kodo"
+
+msgid "preferences"
+msgstr "Agordoj"
+
+msgid "close_all_tabs"
+msgstr "Fermi Ĉiuj Tabs"
+
+msgid "close_current_tab"
+msgstr "Fermi nunan folion"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto savi dosieron kiam mi tajpas"
+
+msgid "auto_save"
+msgstr "auto Konservi"
+
+msgid "quick_save"
+msgstr "Rapida Konservi"
+
+msgid "documentation"
+msgstr "dokumentado"
+
+msgid "themes"
+msgstr "temoj"
+
+msgid "keyboard_shortcuts"
+msgstr "klavkomandojn"
+
+msgid "coming_soon"
+msgstr "Coming Soon"
+
+msgid "empty"
+msgstr "malplena"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: mt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "file"
+msgstr "file"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "jeditjaw"
+
+msgid "help"
+msgstr "jgħinu"
+
+msgid "manage_accounts"
+msgstr "Manage Kontijiet"
+
+msgid "import_accounts"
+msgstr "Kontijiet ta 'importazzjoni"
+
+msgid "export_accounts"
+msgstr "Kontijiet ta 'esportazzjoni"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "messaġġ Log"
+
+msgid "local_directory"
+msgstr "Directory lokali"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Ċar Ssejvjata Dejta"
+
+msgid "edit_settings"
+msgstr "Edit Settings"
+
+msgid "report_bug"
+msgstr "Rapport Bug"
+
+msgid "suggest_feature"
+msgstr "Jissuġġerixxu Karatteristika"
+
+msgid "ask_a_question"
+msgstr "Saqsi mistoqsija"
+
+msgid "change_log"
+msgstr "Bidla fil-Log"
+
+msgid "about"
+msgstr "dwar"
+
+msgid "exit"
+msgstr "ħruġ"
+
+msgid "host_ip_address"
+msgstr "Ospitanti / IP Indirizz"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "password"
+
+msgid "port"
+msgstr "port"
+
+msgid "connect"
+msgstr "qabbad"
+
+msgid "welcome"
+msgstr "Merħba"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Klijent huwa kollha dwar sempliċità, ġie mibni fuq il-Google Chrome / Chrome OS interface app ippakkjat tippermetti l-app li tkun rapida u responsiva. Uħud mill-funzjonalità tinkludi Maniġer FTP Kont biex jaħżnu bogħod u torganizza aktar tiegħek "
+
+msgid "latest_updates"
+msgstr "Latest Aġġornamenti"
+
+msgid "server_status"
+msgstr "server Status"
+
+msgid "license_server"
+msgstr "liċenzja Server"
+
+msgid "sftp_support"
+msgstr "appoġġ"
+
+msgid "notice_update"
+msgstr "Avviż / Aġġornamenti"
+
+msgid "website"
+msgstr "website"
+
+msgid "clear_all"
+msgstr "ċar kollha"
+
+msgid "manage"
+msgstr "Manage"
+
+msgid "recheck"
+msgstr "Re verifika"
+
+msgid "last_release"
+msgstr "L-aħħar Rilaxx"
+
+msgid "released"
+msgstr "Meħlus"
+
+msgid "queued"
+msgstr "kju"
+
+msgid "failed"
+msgstr "naqset"
+
+msgid "completed"
+msgstr "Completed"
+
+msgid "settings"
+msgstr "settings"
+
+msgid "add_folder"
+msgstr "Żid Folder"
+
+msgid "add_ftp_account"
+msgstr "Żid Kont FTP"
+
+msgid "file_editor"
+msgstr "File Editur"
+
+msgid "editor_preferences"
+msgstr "Preferenzi Editur"
+
+msgid "your_ftp_accounts"
+msgstr "Kontijiet FTP tiegħek"
+
+msgid "most_recent_used"
+msgstr "Aktar reċentement użati."
+
+msgid "no_connections_yet_made"
+msgstr "Ebda konnessjonijiet għadhom ma sarux"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ebda kontijiet FTP miżjud għadhom"
+
+msgid "most_recent_connections"
+msgstr "Ħafna Konnessjonijiet reċenti"
+
+msgid "last_10_connections_made"
+msgstr "Aħħar 10-konnessjonijiet magħmula"
+
+msgid "designed_developed_by"
+msgstr "Iddisinjati & Żviluppat mill"
+
+msgid "about_info"
+msgstr "Jekk jogħġbok uża l-websajt Klijent SFTP għall-appoġġ, l-ebda appoġġ huwa pprovdut permezz ta 'websajts individwali tagħna."
+
+msgid "local"
+msgstr "lokali"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "pereżempju / public_html"
+
+msgid "create_directory"
+msgstr "Oħloq Direttorju"
+
+msgid "create_new_directory"
+msgstr "Oħloq New Direttorju"
+
+msgid "create_file"
+msgstr "Oħloq File"
+
+msgid "create_new_file"
+msgstr "Oħloq New File"
+
+msgid "refresh_list"
+msgstr "Lista riffriskar"
+
+msgid "change"
+msgstr "Bidla fil-"
+
+msgid "report_a_bug"
+msgstr "Rapport Bug"
+
+msgid "suggest_a_feature"
+msgstr "Jissuġġerixxu Karatteristika"
+
+msgid "enter_password"
+msgstr "Ikteb Password"
+
+msgid "enter_your_password..."
+msgstr "Ikteb il-password tiegħek ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Ikteb passphrase tiegħek ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP Klijent"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Żur SFTP Klijent Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Rata magħna fuq il Chrome webstore Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Jirrapporta kwistjoni jew tikseb l-għajnuna"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Ingħaqad magħna fuq Facebook għall-aġġornamenti"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow us fuq Twitter għall-aġġornamenti"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Magħna fuq Google għal aġġornamenti"
+
+msgid "okay"
+msgstr "okay"
+
+msgid "cancel"
+msgstr "Ikkanċella"
+
+msgid "close"
+msgstr "Agħlaq"
+
+msgid "unknown_host"
+msgstr "Mhux magħruf Ospitanti"
+
+msgid "okay_to_continue"
+msgstr "Okay biex tkompli?"
+
+msgid "fingerprint"
+msgstr "Marki tas-swaba"
+
+msgid "remember"
+msgstr "Ftakar"
+
+msgid "file_permissions"
+msgstr "Permessi file"
+
+msgid "file_permissions_desc"
+msgstr "Jekk jogħġbok agħżel l-attributi ġodda għall-fajl (s) magħżul / folder (i)"
+
+msgid "read"
+msgstr "Aqra"
+
+msgid "write"
+msgstr "Ikteb"
+
+msgid "execute"
+msgstr "teżegwixxi"
+
+msgid "owner"
+msgstr "sid"
+
+msgid "group"
+msgstr "grupp"
+
+msgid "public"
+msgstr "pubbliku"
+
+msgid "numeric_value"
+msgstr "Valur numeriku"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Daħħal l-isem tad-direttorju ġdid ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Daħħal l-isem tal-fajl il-ġdid ..."
+
+msgid "name"
+msgstr "isem"
+
+msgid "enter_a_password"
+msgstr "Daħħal Password"
+
+msgid "language"
+msgstr "lingwa"
+
+msgid "seconds"
+msgstr "sekondi"
+
+msgid "minutes"
+msgstr "minuti"
+
+msgid "hour"
+msgstr "siegħa"
+
+msgid "hours"
+msgstr "sigħat"
+
+msgid "day"
+msgstr "jum"
+
+msgid "trial_left"
+msgstr "prova Xellug"
+
+msgid "register_now"
+msgstr "reġistru Issa"
+
+msgid "general"
+msgstr "ġenerali"
+
+msgid "security"
+msgstr "Sigurtà"
+
+msgid "master_password"
+msgstr "kaptan Password"
+
+msgid "status"
+msgstr "istatus"
+
+msgid "enabled"
+msgstr "Iffaċilitati"
+
+msgid "disabled"
+msgstr "Disabled"
+
+msgid "timeout"
+msgstr "Spiċċa l-ħin"
+
+msgid "save"
+msgstr "Ħlief"
+
+msgid "add_account"
+msgstr "Żid Kont"
+
+msgid "support"
+msgstr "appoġġ"
+
+msgid "notice_updates"
+msgstr "Avviż / Aġġornamenti"
+
+msgid "please_login"
+msgstr "Jekk jogħġbok Login"
+
+msgid "your_session_timed_out"
+msgstr "Sessjoni Timed tiegħek Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Jiddispjacini l-password li tkun daħħalt kienet żbaljata!"
+
+msgid "login"
+msgstr "login"
+
+msgid "master_password_desc"
+msgstr "Issettja din il-password kaptan li jżommu kontijiet tiegħek sigura."
+
+msgid "license_key"
+msgstr "Ewlenin liċenzja"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "bħalissa mhux disponibbli"
+
+msgid "no_message_to_display"
+msgstr "Ebda messaġġ li juri"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Inti offline jew fuq netwerk konnessjoni biss?"
+
+msgid "offline_notice_desc"
+msgstr "Inti bħalissa offline, fuq netwerk konnessjoni jew l-ebda konnessjoni biss seta 'jiġi stabbilit għal server tagħna"
+
+msgid "edit_file"
+msgstr "jeditjaw fajl"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "Tella"
+
+msgid "host_ip_is_required"
+msgstr "Ospitanti / IP hija meħtieġa"
+
+msgid "apply_to_all_files"
+msgstr "Applika għall-fajls kollha"
+
+msgid "activate_now"
+msgstr "jattiva Issa"
+
+msgid "deactivate"
+msgstr "Jiġi deattivati"
+
+msgid "in_progress"
+msgstr "Fil-progress"
+
+msgid "complete"
+msgstr "Tlesti"
+
+msgid "direction"
+msgstr "direzzjoni"
+
+msgid "progress"
+msgstr "progress"
+
+msgid "permissions"
+msgstr "permessi"
+
+msgid "owner_group"
+msgstr "Sid / Grupp"
+
+msgid "size"
+msgstr "daqs"
+
+msgid "type"
+msgstr "tip"
+
+msgid "modified"
+msgstr "modifikat"
+
+msgid "trial"
+msgstr "prova"
+
+msgid "cleared"
+msgstr "Cleared"
+
+msgid "error_connecting"
+msgstr "żball Inqarrbu"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Żball Inqarrbu li jospita / indirizz IP"
+
+msgid "error_connecting_to_port"
+msgstr "Żball Inqarrbu l-port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Jekk jogħġbok agħżel direttorju lokali ewwel!"
+
+msgid "go"
+msgstr "Mur"
+
+msgid "confirm"
+msgstr "Ikkonferma"
+
+msgid "delete"
+msgstr "Ħassar"
+
+msgid "rename"
+msgstr "Semmi"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL (i) kopja lill clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Jekk jogħġbok ikkonferma li inti tixtieq li jitħassar il-fajl (s) magħżul / folder (i)"
+
+msgid "cancelled_by_user"
+msgstr "Imħassra mill-utent"
+
+msgid "already_exists_overwrite"
+msgstr "diġà jeżisti, jissostitwixxu?"
+
+msgid "dashboard"
+msgstr "dashboard"
+
+msgid "my_accounts"
+msgstr "Kontijiet tiegħi"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Ssejvjata! Il-kontijiet kollha ġew sostnuti."
+
+msgid "file_failed_please_try_again"
+msgstr "File rnexxielhomx! Jekk jogħġbok erġa pprova."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Inti bħalissa għandhom l-ebda kontijiet li tkun appoġġjata."
+
+msgid "saved!"
+msgstr "Ssejvjata!"
+
+msgid "please_enter_a_password"
+msgstr "Jekk joghgbok ikteb password!"
+
+msgid "connection_closed"
+msgstr "konnessjoni magħluqa"
+
+msgid "listing_mode_set_to"
+msgstr "Listing modalità stabbiliti biex"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "servers Lokali PI solvuti, bl-użu IP esterna"
+
+msgid "login_incorrect"
+msgstr "login żbaljata"
+
+msgid "keeping_connection_alive"
+msgstr "Żamma konnessjoni ħaj"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Ma jkunx jaf jikteb, konnessjoni tad-data magħluqa"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Mhux biex jaqra konnessjoni tad-data magħluqa"
+
+msgid "error_reading_file"
+msgstr "fajl qari Żball"
+
+msgid "error_writing_file"
+msgstr "Żball miktub fajl"
+
+msgid "failed_to_change_directory_to"
+msgstr "Naqset milli tbiddel direttorju lill"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Inti jista 'ma jkollhomx l-permessi korretti għall-aċċess dan id-direttorju"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Jerġgħu lura lura lill direttorju ta 'qabel"
+
+msgid "activate"
+msgstr "jattiva"
+
+msgid "payment"
+msgstr "Ħlas"
+
+msgid "license_key_is_required"
+msgstr "liċenzja ewlenija hija meħtieġa"
+
+msgid "license_activated!"
+msgstr "Liċenzja attivat!"
+
+msgid "your_license_has_been_validated"
+msgstr "liċenzja tiegħek tkun ġiet ivvalidata."
+
+msgid "thank_you!"
+msgstr "Grazzi!"
+
+msgid "buy_now!"
+msgstr "Ixtri issa!"
+
+msgid "buy_now"
+msgstr "Ixtri issa"
+
+msgid "one_off_fee"
+msgstr "darba ħlas"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Jekk jogħġbok upgrade biex igawdu dan app mingħajr restrizzjonijiet"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Jekk jogħġbok ikteb Ewlenin License tiegħek hawn taħt"
+
+msgid "or"
+msgstr "JEW"
+
+msgid "loading..."
+msgstr "Tagħbija ..."
+
+msgid "clear_accounts"
+msgstr "Kontijiet ċari"
+
+msgid "clear_ssh_keys"
+msgstr "Ċari Keys SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Tħassar ċwievet kollha SSH salvati"
+
+msgid "clear_app_settings"
+msgstr "Ċari Settings App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Iħassar kollha postijiet speċifiċi app"
+
+msgid "clear_recent_connections"
+msgstr "Konnessjonijiet riċenti ċari"
+
+msgid "deletes_all_recent_connections"
+msgstr "Iħassar konnessjonijiet riċenti kollha"
+
+msgid "import_type"
+msgstr "importazzjoni Tip"
+
+msgid "please_select"
+msgstr "Jekk jogħġbok Agħżel"
+
+msgid "import_file"
+msgstr "importazzjoni File"
+
+msgid "choose_file"
+msgstr "Agħżel File"
+
+msgid "delete_accounts"
+msgstr "Ħassar Kontijiet"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Iħassar kontijiet kollha eżistenti"
+
+msgid "import_now"
+msgstr "importazzjoni Issa"
+
+msgid "none"
+msgstr "Xejn"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Jekk jogħġbok jistartja SFTP app Klijent għall-bidliet jidħlu fis-seħħ."
+
+msgid "already_bought_the_app"
+msgstr "Diġà xtraw il App?"
+
+msgid "choose"
+msgstr "Agħżel"
+
+msgid "deleted!"
+msgstr "Imħassar!"
+
+msgid "use_syncronised_browsing"
+msgstr "użu browsing syncronised"
+
+msgid "remote_directory"
+msgstr "Directory Remote"
+
+msgid "rsa_key_only!"
+msgstr "RSA ewlenin biss!"
+
+msgid "no_key_selected"
+msgstr "Nru ċavetta magħżula."
+
+msgid "ssh_key_file"
+msgstr "SSH fajl Ewlenin"
+
+msgid "no_dir_selected"
+msgstr "Nru dir magħżula."
+
+msgid "keep_blank_for_current_password"
+msgstr "Żomm vojt għal-password attwali."
+
+msgid "logon_type"
+msgstr "logon Tip"
+
+msgid "normal"
+msgstr "normali"
+
+msgid "ask_for_password"
+msgstr "Itlob għall Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "kont Tip"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Konnessjoni normali)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Konnessjoni Secure)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Konnessjoni Secure)"
+
+msgid "folder"
+msgstr "folder"
+
+msgid "advanced"
+msgstr "avvanzata"
+
+msgid "folder_name"
+msgstr "folder Isem"
+
+msgid "parent"
+msgstr "parent"
+
+msgid "new_ftp_site"
+msgstr "Ġdid FTP Sit"
+
+msgid "new_folder"
+msgstr "Folder ġdida"
+
+msgid "clean_now"
+msgstr "nadif Issa"
+
+msgid "host"
+msgstr "ospitanti"
+
+msgid "no_accounts_added..."
+msgstr "Nru Kontijiet Miżjud ..."
+
+msgid "unknown"
+msgstr "Mhux magħruf"
+
+msgid "file_saved!"
+msgstr "File Ssejvjata!"
+
+msgid "uploading_file!"
+msgstr "Uploading fajl!"
+
+msgid "save_failed!"
+msgstr "Save rnexxielhomx!"
+
+msgid "search"
+msgstr "Fittex"
+
+msgid "find"
+msgstr "Sib"
+
+msgid "replace"
+msgstr "Issostitwixxi"
+
+msgid "scroll_past_end"
+msgstr "Skrollja Passat Tmiem"
+
+msgid "show_annotations"
+msgstr "Uri Annotazzjonijiet"
+
+msgid "show_gutter"
+msgstr "Uri kanal"
+
+msgid "show_invisibles"
+msgstr "Invisibles Uri"
+
+msgid "show_print_margin"
+msgstr "Uri Stampa Marġni"
+
+msgid "highlight_active_line"
+msgstr "Highlight Linja Attiva"
+
+msgid "word_wrap"
+msgstr "kelma Kebbeb"
+
+msgid "split_code"
+msgstr "Kodiċi Split"
+
+msgid "preferences"
+msgstr "preferenzi"
+
+msgid "close_all_tabs"
+msgstr "Tabs Agħlaq kollha"
+
+msgid "close_current_tab"
+msgstr "Tab kurrenti Agħlaq"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto isalva fajl meta I tip"
+
+msgid "auto_save"
+msgstr "auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "dokumentazzjoni"
+
+msgid "themes"
+msgstr "temi"
+
+msgid "keyboard_shortcuts"
+msgstr "Shortcuts Keyboard"
+
+msgid "coming_soon"
+msgstr "Ġej dalwaqt"
+
+msgid "empty"
+msgstr "vojta"

@@ -1,0 +1,776 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Мәзір"
+
+msgid "file"
+msgstr "файл"
+
+msgid "view"
+msgstr "көрініс"
+
+msgid "edit"
+msgstr "редакциялау"
+
+msgid "help"
+msgstr "Көмектесіңдер"
+
+msgid "manage_accounts"
+msgstr "Тіркелгілер басқару"
+
+msgid "import_accounts"
+msgstr "Импорт Есеп"
+
+msgid "export_accounts"
+msgstr "Экспорттық Есеп"
+
+msgid "quick_connect"
+msgstr "Жылдам Connect"
+
+msgid "message_log"
+msgstr "Хабар журналы"
+
+msgid "local_directory"
+msgstr "жергілікті Directory"
+
+msgid "uploads_downloads"
+msgstr "Жүктеулер / Жүктеулер"
+
+msgid "clear_saved_data"
+msgstr "Clear Сақталған деректер"
+
+msgid "edit_settings"
+msgstr "өңдеу параметрлері"
+
+msgid "report_bug"
+msgstr "Қате туралы хабарламаны"
+
+msgid "suggest_feature"
+msgstr "Мүмкіндікті ұсыну"
+
+msgid "ask_a_question"
+msgstr "Сұрақ қою"
+
+msgid "change_log"
+msgstr "өзгерту Log"
+
+msgid "about"
+msgstr "туралы"
+
+msgid "exit"
+msgstr "Шығу"
+
+msgid "host_ip_address"
+msgstr "Хост / IP мекенжайы"
+
+msgid "username"
+msgstr "Пайдаланушы аты"
+
+msgid "password"
+msgstr "пароль"
+
+msgid "port"
+msgstr "порт"
+
+msgid "connect"
+msgstr "қосылу"
+
+msgid "welcome"
+msgstr "Қош келдіңіздер"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Клиент барлық қарапайымдылығы туралы, ол бағдарлама тез және жауап болуы мүмкіндік беретін Google Chrome / Chrome OS пакеттелген қолданбаны интерфейсте салынды. функционалдық Кейбір алыс сақтау және бізге сіздің ең ұйымдастыру FTP менеджеріңізге "
+
+msgid "latest_updates"
+msgstr "Соңғы жаңартулар"
+
+msgid "server_status"
+msgstr "Сервер Status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "қолдау"
+
+msgid "notice_update"
+msgstr "Хабарлама / Жаңартулар"
+
+msgid "website"
+msgstr "Сайт"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "басқару"
+
+msgid "recheck"
+msgstr "Re-тексеру"
+
+msgid "last_release"
+msgstr "Өткен Release"
+
+msgid "released"
+msgstr "Шығарылған"
+
+msgid "queued"
+msgstr "Кезекте"
+
+msgid "failed"
+msgstr "Сәтсіз"
+
+msgid "completed"
+msgstr "Аяқталған"
+
+msgid "settings"
+msgstr "Параметрлер"
+
+msgid "add_folder"
+msgstr "қапшықты қосу"
+
+msgid "add_ftp_account"
+msgstr "FTP Тіркелгі қосу"
+
+msgid "file_editor"
+msgstr "Editor Файл"
+
+msgid "editor_preferences"
+msgstr "Редактор Жағдайлар"
+
+msgid "your_ftp_accounts"
+msgstr "Сіздің FTP Есеп"
+
+msgid "most_recent_used"
+msgstr "Ең соңғы пайдаланылған."
+
+msgid "no_connections_yet_made"
+msgstr "Жоқ қосылымдары әлі жасалған"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Бірде-FTP шоттар әлі қосты"
+
+msgid "most_recent_connections"
+msgstr "Ең соңғы Қосылымдар"
+
+msgid "last_10_connections_made"
+msgstr "жасалған соңғы 10 қосылымдары"
+
+msgid "designed_developed_by"
+msgstr "Әзірленген & дамытылған"
+
+msgid "about_info"
+msgstr "жоқ қолдауы біздің жеке сайттардың арқылы қамтамасыз етіледі, қолдау үшін SFTP Клиент веб-сайтын пайдаланыңыз."
+
+msgid "local"
+msgstr "жергілікті"
+
+msgid "remote"
+msgstr "алыстағы"
+
+msgid "remote_location_desc"
+msgstr "мысалы, / public_html"
+
+msgid "create_directory"
+msgstr "Directory жасау"
+
+msgid "create_new_directory"
+msgstr "Жаңа Directory жасау"
+
+msgid "create_file"
+msgstr "Файл жасау"
+
+msgid "create_new_file"
+msgstr "Жаңа файл жасау"
+
+msgid "refresh_list"
+msgstr "Жаңарту тізімі"
+
+msgid "change"
+msgstr "өзгеріс"
+
+msgid "report_a_bug"
+msgstr "Қате туралы хабарламаны"
+
+msgid "suggest_a_feature"
+msgstr "Мүмкіндікті ұсыну"
+
+msgid "enter_password"
+msgstr "Пароль енгізіңіз"
+
+msgid "enter_your_password..."
+msgstr "Құпия сөзді енгізіңіз ..."
+
+msgid "passphrase"
+msgstr "Кілттізбегі"
+
+msgid "enter_your_passphrase..."
+msgstr "Егер паролін келтіріңіз ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP Клиент"
+
+msgid "faqs"
+msgstr "FAQ-ның"
+
+msgid "visit_sftp_client_website"
+msgstr "SFTP Клиент сайтынажолығу"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Google Chrome веб-дүкенінде бізге бағалаңыз"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Ақау туралы хабарлау немесе анықтама алу"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "жаңартулар үшін Facebook созбай бізге"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "жаңартулар үшін Twitter орындаңыз біз"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Жаңартулар үшін Google АҚШ"
+
+msgid "okay"
+msgstr "Жақсы"
+
+msgid "cancel"
+msgstr "күшін жою"
+
+msgid "close"
+msgstr "жақын"
+
+msgid "unknown_host"
+msgstr "Белгісіз Host"
+
+msgid "okay_to_continue"
+msgstr "жалғастыру үшін Жарайды?"
+
+msgid "fingerprint"
+msgstr "саусақ таңбасы"
+
+msgid "remember"
+msgstr "есте сақтау"
+
+msgid "file_permissions"
+msgstr "файл рұқсаттары"
+
+msgid "file_permissions_desc"
+msgstr "Таңдалған файл (дар) / қалта (лар) үшін жаңа төлсипаттар таңдаңыз"
+
+msgid "read"
+msgstr "оқу"
+
+msgid "write"
+msgstr "жазу"
+
+msgid "execute"
+msgstr "орындау"
+
+msgid "owner"
+msgstr "ие"
+
+msgid "group"
+msgstr "топ"
+
+msgid "public"
+msgstr "қоғамдық"
+
+msgid "numeric_value"
+msgstr "Санесім"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Жаңа каталогтың атауын енгізіңіз ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "жаңа файл атауын енгізіңіз ..."
+
+msgid "name"
+msgstr "ат"
+
+msgid "enter_a_password"
+msgstr "құпия сөзді енгізіңіз"
+
+msgid "language"
+msgstr "тіл"
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "minutes"
+msgstr "хаттама"
+
+msgid "hour"
+msgstr "сағат"
+
+msgid "hours"
+msgstr "сағат"
+
+msgid "day"
+msgstr "күн"
+
+msgid "trial_left"
+msgstr "Сынақ Сол"
+
+msgid "register_now"
+msgstr "Енді Тіркелу"
+
+msgid "general"
+msgstr "жалпы"
+
+msgid "security"
+msgstr "қауіпсіздік"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "мәртебе"
+
+msgid "enabled"
+msgstr "Қосылған"
+
+msgid "disabled"
+msgstr "мүгедек"
+
+msgid "timeout"
+msgstr "Үзіліс"
+
+msgid "save"
+msgstr "сақтау"
+
+msgid "add_account"
+msgstr "Аккаунт қосу"
+
+msgid "support"
+msgstr "қолдау"
+
+msgid "notice_updates"
+msgstr "Хабарлама / Жаңартулар"
+
+msgid "please_login"
+msgstr "Логин сұраймыз"
+
+msgid "your_session_timed_out"
+msgstr "Сіздің сеанс Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Кешіріңіз, сіз енгізілген құпиясөз дұрыс болды!"
+
+msgid "login"
+msgstr "Кіру"
+
+msgid "master_password_desc"
+msgstr "қауіпсіз сіздің шоттарын жүргізу үшін осы басты құпия сөзді орнатыңыз."
+
+msgid "license_key"
+msgstr "лицензия кілті"
+
+msgid "online"
+msgstr "Онлайн"
+
+msgid "offline"
+msgstr "Оффлайн"
+
+msgid "currently_unavailable"
+msgstr "Қазіргі уақытта қол жетімді емес"
+
+msgid "no_message_to_display"
+msgstr "көрсету үшін ешқандай хабарлама"
+
+msgid "offline_notice_title"
+msgstr "Жетпейтін - сіз тыс немесе желі ғана байланысты ба?"
+
+msgid "offline_notice_desc"
+msgstr "Сіз желілік ғана байланысты немесе біздің серверге құрылған елді мекен үшін ешқандай байланысы туралы, қазіргі уақытта тыс"
+
+msgid "edit_file"
+msgstr "өңдеу Файл"
+
+msgid "download"
+msgstr "жүктеу"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Хост / IP талап етіледі"
+
+msgid "apply_to_all_files"
+msgstr "барлық файлдар жағыңыз"
+
+msgid "activate_now"
+msgstr "Енді іске қосыңыз"
+
+msgid "deactivate"
+msgstr "De-белсендіру"
+
+msgid "in_progress"
+msgstr "Орындалуда"
+
+msgid "complete"
+msgstr "аяқталған"
+
+msgid "direction"
+msgstr "бағыт"
+
+msgid "progress"
+msgstr "прогресс"
+
+msgid "permissions"
+msgstr "Рұқсаттар"
+
+msgid "owner_group"
+msgstr "Иесі / тобы"
+
+msgid "size"
+msgstr "Өлшем"
+
+msgid "type"
+msgstr "түрі"
+
+msgid "modified"
+msgstr "Өзгертілген"
+
+msgid "trial"
+msgstr "сот"
+
+msgid "cleared"
+msgstr "тазаланды"
+
+msgid "error_connecting"
+msgstr "Қате қосу"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP мекенжайын өтеді қосылу қатесі"
+
+msgid "error_connecting_to_port"
+msgstr "портына қосылу қатесі"
+
+msgid "please_select_a_local_directory_first"
+msgstr "бірінші жергілікті каталогты таңдаңыз!"
+
+msgid "go"
+msgstr "Go"
+
+msgid "confirm"
+msgstr "растау"
+
+msgid "delete"
+msgstr "Жою"
+
+msgid "rename"
+msgstr "Атын өзгерту"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Аралық сақтағышқа URL (лар) көшірмесі"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Сіз таңдаған файл (дар) жойғыңыз растаңыз сұраймыз / қалта (лар)"
+
+msgid "cancelled_by_user"
+msgstr "Пайдаланушы бас тартты"
+
+msgid "already_exists_overwrite"
+msgstr "қазірдің өзінде қайта жазу, бар?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Менің Есеп"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Файл сақталған! Барлық тіркелгілер сақтық көшірмесі жасалды."
+
+msgid "file_failed_please_try_again"
+msgstr "Файл пунктов! Тағы да қайталап көріңіз."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Сіз теңдестіруден өткен сақтық көшірмесі болуы ешқандай оқиғалар бар."
+
+msgid "saved!"
+msgstr "Сақталған!"
+
+msgid "please_enter_a_password"
+msgstr "құпия сөзді енгізіңіз!"
+
+msgid "connection_closed"
+msgstr "байланысты жапты"
+
+msgid "listing_mode_set_to"
+msgstr "үшін белгіленген листингілік режимі"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Сыртқы IP қолдана отырып шешуге жергілікті сервер IP,"
+
+msgid "login_incorrect"
+msgstr "дұрыс Логин"
+
+msgid "keeping_connection_alive"
+msgstr "тірі қосылымды жүргізу"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "жазу мүмкін емес, деректер қосылымын жабылды"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "жабық деректер қосылымын оқылмады"
+
+msgid "error_reading_file"
+msgstr "Файлды оқу кезіндегі қате"
+
+msgid "error_writing_file"
+msgstr "Жазу қатесі файл"
+
+msgid "failed_to_change_directory_to"
+msgstr "каталогты өзгерту мүмкін болмады"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Сіз бұл каталогына қатынау үшін дұрыс рұқсаттарыңыз жоқ шығар"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Алдыңғы каталогқа қайтарылды"
+
+msgid "activate"
+msgstr "іске қосыңыз"
+
+msgid "payment"
+msgstr "төлем"
+
+msgid "license_key_is_required"
+msgstr "Лицензиялық кілті қажет"
+
+msgid "license_activated!"
+msgstr "Лицензиялық Белсендірілген!"
+
+msgid "your_license_has_been_validated"
+msgstr "Сіздің лицензиялық тексерілген болатын."
+
+msgid "thank_you!"
+msgstr "Рақмет сізге!"
+
+msgid "buy_now!"
+msgstr "Қазір сатып Ал!"
+
+msgid "buy_now"
+msgstr "Қазір сатып Ал"
+
+msgid "one_off_fee"
+msgstr "алым өшіру бір"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "жоқ шектеулермен Осы қолданбаны пайдалану жаңартыңыз"
+
+msgid "please_enter_your_license_key_below"
+msgstr "төменде лицензия кілтін енгізіңіз"
+
+msgid "or"
+msgstr "НЕМЕСЕ"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Clear Есеп"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Пернелер"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "барлық сақталған SSH кілттерін жояды"
+
+msgid "clear_app_settings"
+msgstr "Clear App параметрлері"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "барлық қолданба нақты параметрлерді жояды"
+
+msgid "clear_recent_connections"
+msgstr "Clear Соңғы Қосылымдар"
+
+msgid "deletes_all_recent_connections"
+msgstr "барлық соңғы қосылымдарды жояды"
+
+msgid "import_type"
+msgstr "Импорт түрі"
+
+msgid "please_select"
+msgstr "таңдаңыз"
+
+msgid "import_file"
+msgstr "Сырттан алынған файл"
+
+msgid "choose_file"
+msgstr "Файл таңдау"
+
+msgid "delete_accounts"
+msgstr "Есептердіөшіру"
+
+msgid "deletes_all_existing_accounts"
+msgstr "барлық қолданыстағы тіркелгілерді жояды"
+
+msgid "import_now"
+msgstr "Енді импорттау"
+
+msgid "none"
+msgstr "None"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "өзгерістердің күшіне енуі үшін SFTP Клиент қолданбасын қайта іске қосыңыз."
+
+msgid "already_bought_the_app"
+msgstr "Қазірдің өзінде App сатып алған?"
+
+msgid "choose"
+msgstr "таңдау"
+
+msgid "deleted!"
+msgstr "Жойылған!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised Басқаларыншолу"
+
+msgid "remote_directory"
+msgstr "Қашықтан Directory"
+
+msgid "rsa_key_only!"
+msgstr "тек RSA кілті!"
+
+msgid "no_key_selected"
+msgstr "Ешқандай перне таңдалған."
+
+msgid "ssh_key_file"
+msgstr "SSH Кілт файл"
+
+msgid "no_dir_selected"
+msgstr "Бірде-реж таңдалған."
+
+msgid "keep_blank_for_current_password"
+msgstr "ағымдағы құпия сөзді бос ұстаңыз."
+
+msgid "logon_type"
+msgstr "Logon түрі"
+
+msgid "normal"
+msgstr "қалыпты"
+
+msgid "ask_for_password"
+msgstr "Парольді сұрауға"
+
+msgid "anonymous"
+msgstr "Аноним"
+
+msgid "account_type"
+msgstr "Тіркелгі түрі"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Қалыпты қосылу)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "папка"
+
+msgid "advanced"
+msgstr "озат"
+
+msgid "folder_name"
+msgstr "Қалта атауы"
+
+msgid "parent"
+msgstr "Ата-аналар"
+
+msgid "new_ftp_site"
+msgstr "Жаңа FTP Сайт"
+
+msgid "new_folder"
+msgstr "Жаңа папка"
+
+msgid "clean_now"
+msgstr "Енді таза"
+
+msgid "host"
+msgstr "хост"
+
+msgid "no_accounts_added..."
+msgstr "Бірде-Есеп Қосылған ..."
+
+msgid "unknown"
+msgstr "белгісіз"
+
+msgid "file_saved!"
+msgstr "Файл сақталған!"
+
+msgid "uploading_file!"
+msgstr "Қотарып берілетін файл!"
+
+msgid "save_failed!"
+msgstr "Сақтаужаңылысы!"
+
+msgid "search"
+msgstr "іздеу"
+
+msgid "find"
+msgstr "табу"
+
+msgid "replace"
+msgstr "ауыстырыңыз"
+
+msgid "scroll_past_end"
+msgstr "Scroll Өткен соңы"
+
+msgid "show_annotations"
+msgstr "көрсету Аннотациялар"
+
+msgid "show_gutter"
+msgstr "науадағы көрсету"
+
+msgid "show_invisibles"
+msgstr "көрсету минипуты"
+
+msgid "show_print_margin"
+msgstr "Көрсету Басып шығару маржа"
+
+msgid "highlight_active_line"
+msgstr "Белсенді жолын ерекшелеуге"
+
+msgid "word_wrap"
+msgstr "Сөз тасымалы"
+
+msgid "split_code"
+msgstr "сплит кодексі"
+
+msgid "preferences"
+msgstr "Жағдайлар"
+
+msgid "close_all_tabs"
+msgstr "Барлық қойындыларды жабу"
+
+msgid "close_current_tab"
+msgstr "Ағымдағы қойындыны жабу"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Мен енгізгенде Авто файлды сақтау"
+
+msgid "auto_save"
+msgstr "Авто сақтау"
+
+msgid "quick_save"
+msgstr "Жылдам сақтау"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: my\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menu ကို"
+
+msgid "file"
+msgstr "ဖိုင်မှတ်တမ်း"
+
+msgid "view"
+msgstr "ကြည့်ရှုခြင်း"
+
+msgid "edit"
+msgstr "Edit ကို"
+
+msgid "help"
+msgstr "ကူညီပါ"
+
+msgid "manage_accounts"
+msgstr "Manage Accounts ကို"
+
+msgid "import_accounts"
+msgstr "သွင်းကုန် Accounts ကို"
+
+msgid "export_accounts"
+msgstr "ပို့ကုန် Accounts ကို"
+
+msgid "quick_connect"
+msgstr "လျင်မြန်စွာ Connect ကို"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "ဒေသခံ Directory ကို"
+
+msgid "uploads_downloads"
+msgstr "upload / download"
+
+msgid "clear_saved_data"
+msgstr "Clear ကိုသိမ်းဆည်း Data ကို"
+
+msgid "edit_settings"
+msgstr "Edit Settings ကို"
+
+msgid "report_bug"
+msgstr "တစ်ဦး Bug တိုင်ကြားရန်"
+
+msgid "suggest_feature"
+msgstr "တစ်ဦး Feature ကိုအကြံပြု"
+
+msgid "ask_a_question"
+msgstr "မေးခွန်းတစ်ခုမေး"
+
+msgid "change_log"
+msgstr "ပြောင်းလဲမှုကို Log in ဝင်ရန်"
+
+msgid "about"
+msgstr "အကွောငျး"
+
+msgid "exit"
+msgstr "ထွက်ပေါက်"
+
+msgid "host_ip_address"
+msgstr "Host က / IP Address ကို"
+
+msgid "username"
+msgstr "username"
+
+msgid "password"
+msgstr "Password ကို"
+
+msgid "port"
+msgstr "ဆိပ်ကမ်း"
+
+msgid "connect"
+msgstr "ဆက်"
+
+msgid "welcome"
+msgstr "ကွိုဆို"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP လိုင်းအားလုံးရိုးရှင်းအကြောင်းဖြစ်ပါတယ်, ဒါကြောင့် app ကိုအစာရှောင်ခြင်းနှင့်တုံ့ပြန်မှုဖြစ်ခွင့်ပြုကို Google က Chrome / Chrome OS ကိုထုပ်ပေးထား app ကို interface ကိုပေါ်တွင်တည်ဆောက်ခဲ့တာဖြစ်ပါတယ်။ ထိုလုပ်ဆောင်ချက်များကိုတချို့ကပယ်သိုလှောင်ခြင်း"
+
+msgid "latest_updates"
+msgstr "နောက်ဆုံးရအပ်ဒိတ်များ"
+
+msgid "server_status"
+msgstr "Server ကိုအဆင့်အတန်း"
+
+msgid "license_server"
+msgstr "License ကို Server ကို"
+
+msgid "sftp_support"
+msgstr "ထောက်ပံ့"
+
+msgid "notice_update"
+msgstr "အသိပေးစာ / မွမ်းမံမှုများ"
+
+msgid "website"
+msgstr "ဝက်ဘ်ဆိုက်"
+
+msgid "clear_all"
+msgstr "အားလုံးကိုရှင်း"
+
+msgid "manage"
+msgstr "စီမံခန့်ခွဲရန်"
+
+msgid "recheck"
+msgstr "re-စစ်ဆေးမှုများ"
+
+msgid "last_release"
+msgstr "နောက်ဆုံးဖြန့်ချိ"
+
+msgid "released"
+msgstr "ဖြန့်ချိ"
+
+msgid "queued"
+msgstr "တန်းစီထားသည်"
+
+msgid "failed"
+msgstr "မအောင်မြင်ခဲ့ပါ"
+
+msgid "completed"
+msgstr "completed"
+
+msgid "settings"
+msgstr "Settings များ"
+
+msgid "add_folder"
+msgstr "Folder ကို Add"
+
+msgid "add_ftp_account"
+msgstr "တယောက်က FTP Account အ Add"
+
+msgid "file_editor"
+msgstr "အယ်ဒီတာ file"
+
+msgid "editor_preferences"
+msgstr "အယ်ဒီတာ Preferences ကို"
+
+msgid "your_ftp_accounts"
+msgstr "သင့်ရဲ့တယောက်က FTP Accounts ကို"
+
+msgid "most_recent_used"
+msgstr "အများစုမှာမကြာသေးမီကအသုံးပြုခဲ့သည်။"
+
+msgid "no_connections_yet_made"
+msgstr "အဘယ်သူမျှမကွန်နက်ရှင်များသေးလုပ်"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "အဘယ်သူမျှမတယောက်က FTP အကောင့်သေးဆက်ပြောသည်"
+
+msgid "most_recent_connections"
+msgstr "အများစုမှာလတ်တလော Connections ကို"
+
+msgid "last_10_connections_made"
+msgstr "လုပ်ပြီးခဲ့သည့် 10 ဆက်သွယ်မှုများကို"
+
+msgid "designed_developed_by"
+msgstr "ကဒီဇိုင်း & တီထွင်"
+
+msgid "about_info"
+msgstr "အဘယ်သူမျှမထောက်ခံမှု, ငါတို့တစ်ဦးချင်းစီဝက်ဘ်ဆိုက်များမှတဆင့်ထောက်ပံ့ပေးလျက်ရှိသည်, ထောက်ခံမှုများအတွက် sFTP လိုင်းဝက်ဘ်ဆိုက်ကိုသုံးပေးပါ။"
+
+msgid "local"
+msgstr "ဒေသဆိုင်ရာ"
+
+msgid "remote"
+msgstr "ဝေးလံသော"
+
+msgid "remote_location_desc"
+msgstr "ဥပမာ / public_html"
+
+msgid "create_directory"
+msgstr "Directory ကို Create"
+
+msgid "create_new_directory"
+msgstr "နယူး Directory ကို Create"
+
+msgid "create_file"
+msgstr "ဖိုင် Create"
+
+msgid "create_new_file"
+msgstr "နယူးဖိုင် Create"
+
+msgid "refresh_list"
+msgstr "Refresh စာရင်း"
+
+msgid "change"
+msgstr "ပွောငျးလဲ"
+
+msgid "report_a_bug"
+msgstr "တစ်ဦး Bug တိုင်ကြားရန်"
+
+msgid "suggest_a_feature"
+msgstr "တစ်ဦး Feature ကိုအကြံပြု"
+
+msgid "enter_password"
+msgstr "Password ကိုရိုက်ထည့်"
+
+msgid "enter_your_password..."
+msgstr "သင့်ရဲ့ password ကိုရိုက်ထည့်ပါ ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "သင့်ရဲ့ passphrase ကိုရိုက်ထည့်ပါ ..."
+
+msgid "email_sftp_client"
+msgstr "အီးမေးလ် sFTP လိုင်း"
+
+msgid "faqs"
+msgstr "မေးလေ့ရှိသောမေးခွန်းများရဲ့"
+
+msgid "visit_sftp_client_website"
+msgstr "sFTP လိုင်းကျဘျဆိုကျသွားရောက်ကြည့်ရှု"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "ကို Google က Chrome ဝက်ဘ်စတိုးအပေါ်ကျွန်တော်တို့ကိုအဆင့်သတ်မှတ်ရန်"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ပြဿနာတစ်ခုတိုင်ကြားရန်သို့မဟုတ်အကူအညီရ"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "updates တွေကို Facebook ပေါ်မှာကျွန်တော်တို့ကို Join"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "updates တွေကို Twitter ပေါ်တွင်ကျွန်တော်တို့ကိုလိုက်နာပါ"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 updates တွေကို Google မှာကျွန်တော်တို့ကို"
+
+msgid "okay"
+msgstr "အဆင်ပြေ"
+
+msgid "cancel"
+msgstr "Cancel"
+
+msgid "close"
+msgstr "ပိတ်"
+
+msgid "unknown_host"
+msgstr "အမည်မသိ Host က"
+
+msgid "okay_to_continue"
+msgstr "ဆက်ပြီးမှအဆင်ပြေ?"
+
+msgid "fingerprint"
+msgstr "လက်ဗွေ"
+
+msgid "remember"
+msgstr "သတိရ"
+
+msgid "file_permissions"
+msgstr "File ကိုခွင့်ပြုချက်များ"
+
+msgid "file_permissions_desc"
+msgstr "ရွေးချယ်ထားတဲ့ဖိုင် (s) ကို / folder ကို (s) အတွက်အသစ် Attribute တွေကို select လုပ်ပါကျေးဇူးပြုပြီး"
+
+msgid "read"
+msgstr "ဖတ်"
+
+msgid "write"
+msgstr "ရေးသား"
+
+msgid "execute"
+msgstr "သတ်"
+
+msgid "owner"
+msgstr "ပိုင်ဆိုင်သူ"
+
+msgid "group"
+msgstr "Group က"
+
+msgid "public"
+msgstr "ပြည်သူ့"
+
+msgid "numeric_value"
+msgstr "numeric Value တစ်ခု"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "သစ် directory ကို၏နာမကိုရိုက်ထည့်ပါ ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "သစ်ဖိုင်၏နာမကိုရိုက်ထည့်ပါ ..."
+
+msgid "name"
+msgstr "Name ကို"
+
+msgid "enter_a_password"
+msgstr "တစ်ဦး Password ကိုရိုက်ထည့်"
+
+msgid "language"
+msgstr "ဘာသာစကား"
+
+msgid "seconds"
+msgstr "စက္ကန့်ပိုင်း"
+
+msgid "minutes"
+msgstr "မိနစ်"
+
+msgid "hour"
+msgstr "နာရီ"
+
+msgid "hours"
+msgstr "နာရီ"
+
+msgid "day"
+msgstr "နေ့"
+
+msgid "trial_left"
+msgstr "ရုံးတင်စစ်ဆေးလက်ဝဲ"
+
+msgid "register_now"
+msgstr "အခု Register"
+
+msgid "general"
+msgstr "ယေဘုယျ"
+
+msgid "security"
+msgstr "လုံခွုံရေး"
+
+msgid "master_password"
+msgstr "master Password ကို"
+
+msgid "status"
+msgstr "status"
+
+msgid "enabled"
+msgstr "enabled"
+
+msgid "disabled"
+msgstr "မသန်စွမ်း"
+
+msgid "timeout"
+msgstr "ခဏပွဲရပ်ခြင်း"
+
+msgid "save"
+msgstr "ကြော်ငြာကို Save လုပ်ရန်"
+
+msgid "add_account"
+msgstr "အကောင့် Add"
+
+msgid "support"
+msgstr "ထောက်ပံ့"
+
+msgid "notice_updates"
+msgstr "အသိပေးစာ / မွမ်းမံမှုများ"
+
+msgid "please_login"
+msgstr "ဝင်မည် ကျေးဇူးပြု."
+
+msgid "your_session_timed_out"
+msgstr "သင့်ရဲ့တွေ့ဆုံဆွေးနွေးပွဲအချိန်ထဲက"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "ဝမ်းနည်းပါတယ်သင်ထည့်သွင်းစကားဝှက်ကိုမမှန်ကန်ကြောင်းခဲ့သည်!"
+
+msgid "login"
+msgstr "လော့ဂ်အင်"
+
+msgid "master_password_desc"
+msgstr "ဘေးကင်းလုံခြုံသင့်အကောင့်ကိုစောင့်ရှောက်ရန်ဒီမာစတာစကားဝှက်ကိုသတ်မှတ်မည်။"
+
+msgid "license_key"
+msgstr "လိုင်စင် Key ကို"
+
+msgid "online"
+msgstr "အွန်လိုင်း"
+
+msgid "offline"
+msgstr "အော့ဖ်လိုင်း"
+
+msgid "currently_unavailable"
+msgstr "လောလောဆယ်မရရှိနိုင်ပါ"
+
+msgid "no_message_to_display"
+msgstr "ဖော်ပြရန်ဘယ်သူမျှမကသတင်းစကား"
+
+msgid "offline_notice_title"
+msgstr "လက်လှမ်းမမှီပါ - သင်အော့ဖ်လိုင်းတစ်ခုသို့မဟုတ် network ကိုသာကွန်နက်ရှင်အပေါ်ပါသလား?"
+
+msgid "offline_notice_desc"
+msgstr "သင်တစ်ဦး network ကိုသာကွန်နက်ရှင်သို့မဟုတ်ကျနော်တို့ရဲ့ဆာဗာကိုထူထေ​​ာင်နိုင်ခြင်းမရှိ connection ပေါ်တွင်လက်ရှိအော့ဖ်လိုင်းဖြစ်နေ"
+
+msgid "edit_file"
+msgstr "Edit ကိုဖိုင်"
+
+msgid "download"
+msgstr "ဒေါင်းလုပ်"
+
+msgid "upload"
+msgstr "လွှတ်တင်ခြင်း"
+
+msgid "host_ip_is_required"
+msgstr "Host က / IP ကို​​လိုအပ်ပါသည်"
+
+msgid "apply_to_all_files"
+msgstr "အားလုံးဖိုင်များ Apply"
+
+msgid "activate_now"
+msgstr "အခုတော့ကိုသက်ဝင်"
+
+msgid "deactivate"
+msgstr "de-Activate"
+
+msgid "in_progress"
+msgstr "ဆောင်ရွက်ဆဲဖြစ်သည်"
+
+msgid "complete"
+msgstr "ပြည့်စုံသော"
+
+msgid "direction"
+msgstr "Direction အဖွဲ့"
+
+msgid "progress"
+msgstr "တိုးတက်ခြင်း"
+
+msgid "permissions"
+msgstr "ခွင့်ပြုချက်"
+
+msgid "owner_group"
+msgstr "ပိုင်ရှင် / အုပ်စု"
+
+msgid "size"
+msgstr "အရွယ်"
+
+msgid "type"
+msgstr "ပုံစံ"
+
+msgid "modified"
+msgstr "ပြင်ဆင်ထားသော"
+
+msgid "trial"
+msgstr "စမ်းသပ်ခြင်း"
+
+msgid "cleared"
+msgstr "ရှင်းလင်း"
+
+msgid "error_connecting"
+msgstr "အမှားချိတ်ဆက်ခြင်း"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ ip address ကိုအိမ်ရှင်အဖြစ်လက်ခံကျင်းပချိတ်ဆက်ခြင်းအမှား"
+
+msgid "error_connecting_to_port"
+msgstr "ဆိပ်ကမ်းနှင့်ဆက်သွယ်ခြင်းအမှား"
+
+msgid "please_select_a_local_directory_first"
+msgstr "ပထမဦးဆုံးတစ်ဦးကိုဒေသခံ directory ကို select လုပ်ပါကျေးဇူးပြုပြီး!"
+
+msgid "go"
+msgstr "Go ကို"
+
+msgid "confirm"
+msgstr "အတည်ပြု"
+
+msgid "delete"
+msgstr "ဖျက်ပစ်ပါ"
+
+msgid "rename"
+msgstr "Rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Clipboard မှ URL ကို (s) ကို Copy ကူး"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "သင်ရွေးချယ်ထားသောဖိုင် (s) ကိုဖျက်ပစ်ရန်ဆန္ဒရှိအတည်ပြုပေးပါ / folder ကို (s)"
+
+msgid "cancelled_by_user"
+msgstr "အသုံးပြုသူဖျက်သိမ်းလိုက်ပြီ"
+
+msgid "already_exists_overwrite"
+msgstr "ပြီးသား overwrite, တည်ရှိ?"
+
+msgid "dashboard"
+msgstr "dashboard ကို"
+
+msgid "my_accounts"
+msgstr "အကြှနျုပျ၏ Accounts ကို"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "သိမ်းဆည်း File! အားလုံးအကောင့်ဖွင့်ကျောထောက်နောက်ခံပြုပါပြီ။"
+
+msgid "file_failed_please_try_again"
+msgstr "File ကိုမအောင်မြင်ခဲ့ပါ! ထပ်ကြိုးစားပါ။"
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "သင်လက်ရှိဖွင့်ကျောထောက်နောက်ခံပြုခံရဖို့အဘယ်သူမျှမအကောင့်အသစ်များ၏ရှိသည်။"
+
+msgid "saved!"
+msgstr "ကယ်တင်ခြင်းသို့ရောက်သော!"
+
+msgid "please_enter_a_password"
+msgstr "စကားဝှက်ကိုရိုက်သွင်းပါ!"
+
+msgid "connection_closed"
+msgstr "connection ကိုပိတ်ထား"
+
+msgid "listing_mode_set_to"
+msgstr "သတ်မှတ်ထားအိမ်ခန်း mode ကို"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "ပြင်ပ IP ကို​​ အသုံးပြု. ဖြေရှင်းဒေသခံ server ကိုအိုင်ပီ,"
+
+msgid "login_incorrect"
+msgstr "မမှန်ကန်ကြောင်းဝင်မည်"
+
+msgid "keeping_connection_alive"
+msgstr "အသကျရှငျဆက်သွယ်မှု Keeping"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "မရေးနိုင်ဘူး, ဒေတာဆက်သွယ်မှုအပိတ်"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ပိတ်လိုက်ဒေတာဆက်သွယ်မှုဖတ်မရပါ"
+
+msgid "error_reading_file"
+msgstr "အမှားစာဖတ်ခြင်းဖိုင်"
+
+msgid "error_writing_file"
+msgstr "အမှားအရေးအသားဖိုင်"
+
+msgid "failed_to_change_directory_to"
+msgstr "ရန် directory ကိုပြောင်းလဲပစ်ရန်မအောင်မြင်ခဲ့ပါ"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "သငျသညျယခု directory ထဲကိုဝင်ရောက်ဖို့မှန်ကန်တဲ့ခွင့်ပြုချက်ရှိသည်မဟုတ်စေခြင်းငှါ"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "နောက်ကျောယခင် directory ကိုသို့ပြန်သွားခြင်း"
+
+msgid "activate"
+msgstr "Activate လုပ်"
+
+msgid "payment"
+msgstr "ငွေပေးချေမှုရမည့်"
+
+msgid "license_key_is_required"
+msgstr "လိုင်စင် key ကိုလိုအပ်ပါသည်"
+
+msgid "license_activated!"
+msgstr "လိုင်စင် activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "သင့်ရဲ့လိုင်စင်ကိုအတည်ပြုခဲ့သည်။"
+
+msgid "thank_you!"
+msgstr "ကျေးဇူးတင်ပါတယ်!"
+
+msgid "buy_now!"
+msgstr "အခုဝယ်ပါ!"
+
+msgid "buy_now"
+msgstr "အခုဝယ်ပါ"
+
+msgid "one_off_fee"
+msgstr "ကြေးချွတ်တယောက်"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "အဘယ်သူမျှမကန့်သတ်နှင့်အတူဒီ app ကိုခံစားအဆင့်မြှင့်တင်ရန် ကျေးဇူးပြု."
+
+msgid "please_enter_your_license_key_below"
+msgstr "အောက်တွင်သင့်လိုင်စင် Key ကိုရိုက်ထည့်ပေးပါ"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Clear ကို Accounts ကို"
+
+msgid "clear_ssh_keys"
+msgstr "Clear ကို SSH ကိုသော့ချက်များ"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "အားလုံးကယ်တင်ခြင်းသို့ရောက်ရ၏ SSH ကို keys ကိုဖျက်"
+
+msgid "clear_app_settings"
+msgstr "Clear ကို App ကိုချိန်ညှိ"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "အားလုံး app ကိုတိကျတဲ့ setting များကိုဖျက်"
+
+msgid "clear_recent_connections"
+msgstr "Clear Recent Connections ကို"
+
+msgid "deletes_all_recent_connections"
+msgstr "အားလုံးမကြာသေးမီဆက်သွယ်မှုများကိုဖျက်"
+
+msgid "import_type"
+msgstr "သွင်းကုန်အမျိုးအစား"
+
+msgid "please_select"
+msgstr "ကို Select လုပ်ပါကျေးဇူးပြုပြီး"
+
+msgid "import_file"
+msgstr "သွင်းကုန်ဖိုင်"
+
+msgid "choose_file"
+msgstr "ဖိုင်ရွေးပါ"
+
+msgid "delete_accounts"
+msgstr "Accounts ကိုဖျက်ပစ်ပါ"
+
+msgid "deletes_all_existing_accounts"
+msgstr "အားလုံးရှိပြီးသားအကောင့်ဖျက်"
+
+msgid "import_now"
+msgstr "ယခုတင်သွင်း"
+
+msgid "none"
+msgstr "အဘယ်သူမျှမ"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "အကျိုးသက်ရောက်မှုယူမှစသောအပြောင်းအလဲအဘို့အ sFTP လိုင်း app ကို restart လုပ်ပါပါ။"
+
+msgid "already_bought_the_app"
+msgstr "ယခုပင်လျှင် App ကိုဝယ်?"
+
+msgid "choose"
+msgstr "ရှေးခယျြ"
+
+msgid "deleted!"
+msgstr "ပယ်ဖျက်ခဲ့တဲ့!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised ကြည့်ရှုခြင်းကိုအသုံး"
+
+msgid "remote_directory"
+msgstr "ဝေးလံခေါင်သီ Directory ကို"
+
+msgid "rsa_key_only!"
+msgstr "သာ RSA သော့!"
+
+msgid "no_key_selected"
+msgstr "အဘယ်သူမျှမ key ကိုရွေးချယ်ထားကြသည်။"
+
+msgid "ssh_key_file"
+msgstr "SSH ကို Key ကိုဖိုင်"
+
+msgid "no_dir_selected"
+msgstr "အဘယ်သူမျှမ dir ရွေးချယ်ထားကြသည်။"
+
+msgid "keep_blank_for_current_password"
+msgstr "လက်ရှိစကားဝှက်ကွက်လပ်စောင့်ရှောက်လော့။"
+
+msgid "logon_type"
+msgstr "Logon အမျိုးအစား"
+
+msgid "normal"
+msgstr "ပုံမှန်"
+
+msgid "ask_for_password"
+msgstr "Password ကိုတောင်းပါ"
+
+msgid "anonymous"
+msgstr "အမည်မသိ"
+
+msgid "account_type"
+msgstr "အကောင့်အမျိုးအစား"
+
+msgid "ftp_normal_connection"
+msgstr "တယောက်က FTP (Normal ကော်နက်ရှင်)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (လုံခြုံတဲ့ Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH ကို (လုံခြုံတဲ့ Connection)"
+
+msgid "folder"
+msgstr "ဖိုငျတှဲ"
+
+msgid "advanced"
+msgstr "အဆင့်မြင့်"
+
+msgid "folder_name"
+msgstr "Folder ကိုအမည်"
+
+msgid "parent"
+msgstr "မိဘ"
+
+msgid "new_ftp_site"
+msgstr "နယူးကာ FTP ဆိုက်ကို"
+
+msgid "new_folder"
+msgstr "ဖိုင်တွဲအသစ်"
+
+msgid "clean_now"
+msgstr "အခုသန့်ရှင်းရေး"
+
+msgid "host"
+msgstr "host က"
+
+msgid "no_accounts_added..."
+msgstr "အဘယ်သူမျှမ Accounts ကို Added ..."
+
+msgid "unknown"
+msgstr "အမည်မသိ"
+
+msgid "file_saved!"
+msgstr "သိမ်းဆည်း File!"
+
+msgid "uploading_file!"
+msgstr "အပ်လုဒ်တင်ဖိုင်!"
+
+msgid "save_failed!"
+msgstr "Save လုပ်ခြင်းမအောင်မြင်ပါ!"
+
+msgid "search"
+msgstr "ရှာဖှေ"
+
+msgid "find"
+msgstr "Find"
+
+msgid "replace"
+msgstr "အစားထိုးမည်"
+
+msgid "scroll_past_end"
+msgstr "Scroll သည်အတိတ်မှအဆုံး"
+
+msgid "show_annotations"
+msgstr "show ကိုမှတ်စာများ"
+
+msgid "show_gutter"
+msgstr "ရေကျင်းပြရန်"
+
+msgid "show_invisibles"
+msgstr "show ကို invisible"
+
+msgid "show_print_margin"
+msgstr "Show ကိုပါပုံနှိပ် Margin"
+
+msgid "highlight_active_line"
+msgstr "Active ကိုလိုင်းမီးမောင်းထိုးပြ"
+
+msgid "word_wrap"
+msgstr "Word ကိုထုပ်ပိုးခြင်းအလှဆင်"
+
+msgid "split_code"
+msgstr "Split ကို Code ကို"
+
+msgid "preferences"
+msgstr "Preferences ကို"
+
+msgid "close_all_tabs"
+msgstr "အားလုံး Tabs ကိုပိတ်လိုက်ပါ"
+
+msgid "close_current_tab"
+msgstr "လက်ရှိ Tab ကိုပိတ်လိုက်ပါ"
+
+msgid "auto_save_file_when_i_type"
+msgstr "ငါရိုက်တဲ့အခါအော်တို file ကို save"
+
+msgid "auto_save"
+msgstr "အော်တိုကြော်ငြာကို Save လုပ်ရန်"
+
+msgid "quick_save"
+msgstr "လျင်မြန်စွာကြော်ငြာကို Save လုပ်ရန်"
+
+msgid "documentation"
+msgstr "မှတ်တမ်း"
+
+msgid "themes"
+msgstr "themes"
+
+msgid "keyboard_shortcuts"
+msgstr "keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "မကြာမှီလာမည်"
+
+msgid "empty"
+msgstr "ဗလာ"

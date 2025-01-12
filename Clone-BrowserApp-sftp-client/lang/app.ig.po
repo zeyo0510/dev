@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ig\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "Dezie"
+
+msgid "help"
+msgstr "Enyemaka"
+
+msgid "manage_accounts"
+msgstr "Jikwaa Akaụntụ"
+
+msgid "import_accounts"
+msgstr "Import Accounts"
+
+msgid "export_accounts"
+msgstr "Export Accounts"
+
+msgid "quick_connect"
+msgstr "Ndenye Jikọọ"
+
+msgid "message_log"
+msgstr "ozi Log"
+
+msgid "local_directory"
+msgstr "Obodo Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Zọrọ Data"
+
+msgid "edit_settings"
+msgstr "Dezie Ntọala"
+
+msgid "report_bug"
+msgstr "-Akọ a Bug"
+
+msgid "suggest_feature"
+msgstr "-Atụ aro a Feature"
+
+msgid "ask_a_question"
+msgstr "Jụọ a Question"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "Ụzọ ọpụpụ"
+
+msgid "host_ip_address"
+msgstr "Host / IP Address"
+
+msgid "username"
+msgstr "aha njirimara"
+
+msgid "password"
+msgstr "Password"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "jikọọ"
+
+msgid "welcome"
+msgstr "Welcome"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client bụ ihe niile banyere mfe, ọ na-e wuru na Google Chrome / Chrome OS packaged ngwa interface ikwe ka ngwa na-ngwa ngwa na-anabata. Ụfọdụ n'ime arụmọrụ-agụnye ihe FTP na Akaụntụ Manager na-echekwa ma hazie gị kasị anyị"
+
+msgid "latest_updates"
+msgstr "kacha ọhụrụ na mmelite"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "nkwado"
+
+msgid "notice_update"
+msgstr "Rịba / Updates"
+
+msgid "website"
+msgstr "weebụsaịtị"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "Jikwaa"
+
+msgid "recheck"
+msgstr "Re-ego"
+
+msgid "last_release"
+msgstr "ikpeazụ Hapụ"
+
+msgid "released"
+msgstr "wepụtara"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "okpu"
+
+msgid "completed"
+msgstr "dechara"
+
+msgid "settings"
+msgstr "Settings"
+
+msgid "add_folder"
+msgstr "Tinye nchekwa"
+
+msgid "add_ftp_account"
+msgstr "Tinye FTP na Akaụntụ"
+
+msgid "file_editor"
+msgstr "Njikwa Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Mmasị"
+
+msgid "your_ftp_accounts"
+msgstr "Gị FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "Kasị nso nso-eji."
+
+msgid "no_connections_yet_made"
+msgstr "Ọ dịghị njikọ ma mee"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ọ dịghị FTP ndekọ kwukwara ma"
+
+msgid "most_recent_connections"
+msgstr "Kasị nso nso Connections"
+
+msgid "last_10_connections_made"
+msgstr "Ikpeazụ 10 njikọ me"
+
+msgid "designed_developed_by"
+msgstr "E mere & Mepụtara"
+
+msgid "about_info"
+msgstr "Biko jiri sFTP Client website maka nkwado, ọ dịghị nkwado a na-nyere site anyị n'otu n'otu weebụsaịtị."
+
+msgid "local"
+msgstr "Obodo"
+
+msgid "remote"
+msgstr "remote"
+
+msgid "remote_location_desc"
+msgstr "eg / public_html"
+
+msgid "create_directory"
+msgstr "Mepụta Directory"
+
+msgid "create_new_directory"
+msgstr "Mepụta New Directory"
+
+msgid "create_file"
+msgstr "Mepụta File"
+
+msgid "create_new_file"
+msgstr "Mepụta New File"
+
+msgid "refresh_list"
+msgstr "Refresh List"
+
+msgid "change"
+msgstr "Change"
+
+msgid "report_a_bug"
+msgstr "-Akọ a Bug"
+
+msgid "suggest_a_feature"
+msgstr "-Atụ aro a Feature"
+
+msgid "enter_password"
+msgstr "Tinye Password"
+
+msgid "enter_your_password..."
+msgstr "Tinye paswọọdụ gị ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Tinye passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ si"
+
+msgid "visit_sftp_client_website"
+msgstr "Gị sFTP Client weebụsaịtị"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Dịruru anyị na Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "-Akọ otu ihe iseokwu ma ọ bụ nweta enyemaka"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Sonyere anyị on Facebook maka mmelite"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Soro anyị na Twitter maka mmelite"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Anyị on Google maka mmelite"
+
+msgid "okay"
+msgstr "dịkwa mma"
+
+msgid "cancel"
+msgstr "kagbuo"
+
+msgid "close"
+msgstr "nso"
+
+msgid "unknown_host"
+msgstr "Unknown Host"
+
+msgid "okay_to_continue"
+msgstr "Na na ịnọgide?"
+
+msgid "fingerprint"
+msgstr "mkpisiaka"
+
+msgid "remember"
+msgstr "Cheta"
+
+msgid "file_permissions"
+msgstr "File Ikikere"
+
+msgid "file_permissions_desc"
+msgstr "Biko họrọ ọhụrụ àgwà maka họrọ faịlụ (s) / nchekwa (s)"
+
+msgid "read"
+msgstr "Gụọ"
+
+msgid "write"
+msgstr "dee"
+
+msgid "execute"
+msgstr "igbu"
+
+msgid "owner"
+msgstr "nwe"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "ọnụọgụ Uru"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Tinye aha ọhụrụ directory ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Tinye aha ọhụrụ faịlụ ..."
+
+msgid "name"
+msgstr "aha"
+
+msgid "enter_a_password"
+msgstr "Tinye a Password"
+
+msgid "language"
+msgstr "asụsụ"
+
+msgid "seconds"
+msgstr "sekọnd"
+
+msgid "minutes"
+msgstr "nkeji"
+
+msgid "hour"
+msgstr "hour"
+
+msgid "hours"
+msgstr "awa"
+
+msgid "day"
+msgstr "Day"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "aha Ugbu a"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "nyeere"
+
+msgid "disabled"
+msgstr "nwere nkwarụ"
+
+msgid "timeout"
+msgstr "Nkeji oge"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Tinye na Akaụntụ"
+
+msgid "support"
+msgstr "nkwado"
+
+msgid "notice_updates"
+msgstr "Rịba / Updates"
+
+msgid "please_login"
+msgstr "biko Nbanye"
+
+msgid "your_session_timed_out"
+msgstr "Your Oge Ọzụzụ timed si"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Ndo paswọọdụ ị banyere bụ na-ekwesịghị ịdị!"
+
+msgid "login"
+msgstr "Banye"
+
+msgid "master_password_desc"
+msgstr "Nịm a-nwe-paswọọdụ ka ị na akaụntụ mma."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "Na-anọghị n'ịntanetị"
+
+msgid "currently_unavailable"
+msgstr "Ugbu Adịghị"
+
+msgid "no_message_to_display"
+msgstr "Ọ dịghị ozi iji gosipụta"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Ị na offline ma ọ bụ na a na netwọk naanị njikọ?"
+
+msgid "offline_notice_desc"
+msgstr "Ị bụ ugbu offline, on a netwọk naanị njikọ ma ọ bụ ọ njikọ nwere ike ike ka anyị server"
+
+msgid "edit_file"
+msgstr "Dezie File"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "Bulite"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP a chọrọ"
+
+msgid "apply_to_all_files"
+msgstr "-Emetụta niile faịlụ"
+
+msgid "activate_now"
+msgstr "rụọ ọrụ Ugbu a"
+
+msgid "deactivate"
+msgstr "De-Rụọ ọrụ"
+
+msgid "in_progress"
+msgstr "Na-aga n'ihu"
+
+msgid "complete"
+msgstr "Complete"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "ọganihu"
+
+msgid "permissions"
+msgstr "ikikere"
+
+msgid "owner_group"
+msgstr "Nwe / Group"
+
+msgid "size"
+msgstr "size"
+
+msgid "type"
+msgstr "ụdị"
+
+msgid "modified"
+msgstr "gbanwetụrụ"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "sụrụ"
+
+msgid "error_connecting"
+msgstr "Error Ijikọ"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error Ijikọ ka a nọrọ n'ụlọ / adreesị IP"
+
+msgid "error_connecting_to_port"
+msgstr "Error Ijikọ ka mmiri n'ọdụ ụgbọ mmiri"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Biko họrọ a local directory mbụ!"
+
+msgid "go"
+msgstr "-aga"
+
+msgid "confirm"
+msgstr "gosi"
+
+msgid "delete"
+msgstr "Hichapụ"
+
+msgid "rename"
+msgstr "kpọgharia aha"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) ka clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Biko gosi na ị chọrọ ka ihichapụ ahọrọ faịlụ (s) / nchekwa (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled site onye ọrụ"
+
+msgid "already_exists_overwrite"
+msgstr "ugbua dị, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "My Akaụntụ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Njikwa azọpụta! All akụkọ e kwadoo elu."
+
+msgid "file_failed_please_try_again"
+msgstr "File Okpu! Biko gbalịa ọzọ."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ị ugbu a na-enweghị ihe ndekọ na-kwadoo elu."
+
+msgid "saved!"
+msgstr "Azọpụta!"
+
+msgid "please_enter_a_password"
+msgstr "Biko tinye a paswọọdụ!"
+
+msgid "connection_closed"
+msgstr "njikọ emechi"
+
+msgid "listing_mode_set_to"
+msgstr "Ndepụta mode setịpụrụ na-"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Obodo nkesa IP kpebiri, na iji mpụga IP"
+
+msgid "login_incorrect"
+msgstr "nbanye na-ekwesịghị ịdị"
+
+msgid "keeping_connection_alive"
+msgstr "Edebe njikọ ndụ"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Enweghị ike ide ihe, data njikọ emechi"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Pụghị ịgụ njikọ data emechi"
+
+msgid "error_reading_file"
+msgstr "Error ọgụgụ file"
+
+msgid "error_writing_file"
+msgstr "Error ide faịlụ"
+
+msgid "failed_to_change_directory_to"
+msgstr "Dara na-agbanwe ndekọ na-"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "I wee ghara ziri ezi ikikere iji nweta a directory"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting azụ aga ndekọ"
+
+msgid "activate"
+msgstr "rụọ ọrụ"
+
+msgid "payment"
+msgstr "Ịkwụ ụgwọ"
+
+msgid "license_key_is_required"
+msgstr "License isi a chọrọ"
+
+msgid "license_activated!"
+msgstr "License rụọ ọrụ!"
+
+msgid "your_license_has_been_validated"
+msgstr "Akwụkwọ ikike e irè."
+
+msgid "thank_you!"
+msgstr "Daalụ!"
+
+msgid "buy_now!"
+msgstr "Zụta ugbu a!"
+
+msgid "buy_now"
+msgstr "Zụta ugbu a"
+
+msgid "one_off_fee"
+msgstr "otu anya nweta ego"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Biko nweta nkwalite na-enweta nke a na-eji ngwa na-enweghị mgbochi"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Biko tinye gị License Key n'okpuru"
+
+msgid "or"
+msgstr "MA Ọ BỤ"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Clear Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Igodo"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes niile echekwara na SSH Igodo"
+
+msgid "clear_app_settings"
+msgstr "Clear App Settings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes niile ngwa kpọmkwem ntọala"
+
+msgid "clear_recent_connections"
+msgstr "Clear odi nso Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes niile na-adịbeghị anya na njikọ"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "biko Họrọ"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "họrọ File"
+
+msgid "delete_accounts"
+msgstr "Hichapụ Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes nile dị na akaụntụ"
+
+msgid "import_now"
+msgstr "Import Ugbu a"
+
+msgid "none"
+msgstr "Ọ dịghị onye"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Biko Malitegharịa ekwentị sFTP Client ngwa n'ihi na mgbanwe-mmetụta."
+
+msgid "already_bought_the_app"
+msgstr "-Ama zụtara App?"
+
+msgid "choose"
+msgstr "họrọ"
+
+msgid "deleted!"
+msgstr "-Ehichapụ!"
+
+msgid "use_syncronised_browsing"
+msgstr "eji syncronised nchọgharị"
+
+msgid "remote_directory"
+msgstr "N'ime obodo Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA isi naanị!"
+
+msgid "no_key_selected"
+msgstr "Ọ dịghị isi họrọ."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "Ọ dịghị dir họrọ."
+
+msgid "keep_blank_for_current_password"
+msgstr "Na-ide maka ugbu a paswọọdụ."
+
+msgid "logon_type"
+msgstr "logon Type"
+
+msgid "normal"
+msgstr "nkịtị"
+
+msgid "ask_for_password"
+msgstr "Na-arịọ maka Password"
+
+msgid "anonymous"
+msgstr "amaonye"
+
+msgid "account_type"
+msgstr "Account Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Nkịtị Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "nchekwa"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "nchekwa aha"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "New nchekwa"
+
+msgid "clean_now"
+msgstr "ọcha Ugbu a"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "Ọ dịghị Accounts Tụkwasị ..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "Njikwa azọpụta!"
+
+msgid "uploading_file!"
+msgstr "-Ebugote File!"
+
+msgid "save_failed!"
+msgstr "Zọpụta Okpu!"
+
+msgid "search"
+msgstr "search"
+
+msgid "find"
+msgstr "chọta"
+
+msgid "replace"
+msgstr "dochie"
+
+msgid "scroll_past_end"
+msgstr "Pịgharịa n'Oge Gara Aga End"
+
+msgid "show_annotations"
+msgstr "Gosi Annotations"
+
+msgid "show_gutter"
+msgstr "Gosi gọta"
+
+msgid "show_invisibles"
+msgstr "Gosi Invisibles"
+
+msgid "show_print_margin"
+msgstr "Gosi Bipute oke"
+
+msgid "highlight_active_line"
+msgstr "Chetara Active Line"
+
+msgid "word_wrap"
+msgstr "okwu Kechie"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "mmasị"
+
+msgid "close_all_tabs"
+msgstr "Nso All Taabụ"
+
+msgid "close_current_tab"
+msgstr "Nso Ugbu A Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Nchekwa onwe faịlụ mgbe m pịnye"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Ndenye Save"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "gburugburu"
+
+msgid "keyboard_shortcuts"
+msgstr "keyboard Uzo mkpirisi"
+
+msgid "coming_soon"
+msgstr "Na-abịa oge adịghị anya"
+
+msgid "empty"
+msgstr "efu"

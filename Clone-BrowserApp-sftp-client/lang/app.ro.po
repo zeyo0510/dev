@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Meniul"
+
+msgid "file"
+msgstr "Fişier"
+
+msgid "view"
+msgstr "vizualizare"
+
+msgid "edit"
+msgstr "Editați | ×"
+
+msgid "help"
+msgstr "Ajutor"
+
+msgid "manage_accounts"
+msgstr "gestionaţi conturile"
+
+msgid "import_accounts"
+msgstr "Conturi de import"
+
+msgid "export_accounts"
+msgstr "Conturile de export"
+
+msgid "quick_connect"
+msgstr "Conectare rapidă"
+
+msgid "message_log"
+msgstr "mesaj Autentificare"
+
+msgid "local_directory"
+msgstr "Directory local"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Descărcări"
+
+msgid "clear_saved_data"
+msgstr "Șterge Datele salvate"
+
+msgid "edit_settings"
+msgstr "Editați setările"
+
+msgid "report_bug"
+msgstr "Raporteaza o eroare"
+
+msgid "suggest_feature"
+msgstr "Sugerează o caracteristică"
+
+msgid "ask_a_question"
+msgstr "Pune o intrebare"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "Despre"
+
+msgid "exit"
+msgstr "Ieșire"
+
+msgid "host_ip_address"
+msgstr "Gazdă / IP Address"
+
+msgid "username"
+msgstr "Nume de utilizator"
+
+msgid "password"
+msgstr "Parola"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Conectați"
+
+msgid "welcome"
+msgstr "Bine ati venit"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP este totul despre simplitate, acesta a fost construit pe interfața aplicației ambalate Google Chrome / Chrome OS care permite aplicației să fie rapid și receptiv. O parte din funcționalitatea include un manager de cont FTP pentru a stoca departe "
+
+msgid "latest_updates"
+msgstr "Cele mai recente actualizări"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "licenţă pe server"
+
+msgid "sftp_support"
+msgstr "A sustine"
+
+msgid "notice_update"
+msgstr "Notă / Actualizări"
+
+msgid "website"
+msgstr "website"
+
+msgid "clear_all"
+msgstr "Curata tot"
+
+msgid "manage"
+msgstr "Administra"
+
+msgid "recheck"
+msgstr "Reverificare"
+
+msgid "last_release"
+msgstr "ultima lansare"
+
+msgid "released"
+msgstr "Eliberată"
+
+msgid "queued"
+msgstr "Pus în așteptare"
+
+msgid "failed"
+msgstr "A eșuat"
+
+msgid "completed"
+msgstr "terminat"
+
+msgid "settings"
+msgstr "setările"
+
+msgid "add_folder"
+msgstr "Adaugă folder"
+
+msgid "add_ftp_account"
+msgstr "Adăugați un cont FTP"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Preferințe Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Conturile FTP"
+
+msgid "most_recent_used"
+msgstr "utilizate cel mai recent."
+
+msgid "no_connections_yet_made"
+msgstr "Nu există conexiuni încă făcute"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Nu există conturi FTP adăugat încă"
+
+msgid "most_recent_connections"
+msgstr "Cele mai multe conexiuni recente"
+
+msgid "last_10_connections_made"
+msgstr "Ultimele 10 conexiuni realizate"
+
+msgid "designed_developed_by"
+msgstr "Proiectat & dezvoltat de"
+
+msgid "about_info"
+msgstr "Vă rugăm să utilizați site-ul SFTP pentru sprijin, nici un sprijin este oferit prin intermediul site-urile noastre individuale."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "la distanta"
+
+msgid "remote_location_desc"
+msgstr "de exemplu / public_html"
+
+msgid "create_directory"
+msgstr "Creați director"
+
+msgid "create_new_directory"
+msgstr "Creați un nou director"
+
+msgid "create_file"
+msgstr "Crearea fișierului"
+
+msgid "create_new_file"
+msgstr "Creați nou fișier"
+
+msgid "refresh_list"
+msgstr "Improspatare"
+
+msgid "change"
+msgstr "Schimbare"
+
+msgid "report_a_bug"
+msgstr "Raporteaza o eroare"
+
+msgid "suggest_a_feature"
+msgstr "Sugerează o caracteristică"
+
+msgid "enter_password"
+msgstr "Introdu parola"
+
+msgid "enter_your_password..."
+msgstr "Introduceți parola..."
+
+msgid "passphrase"
+msgstr "expresia de acces"
+
+msgid "enter_your_passphrase..."
+msgstr "Introdu o parola de acces ..."
+
+msgid "email_sftp_client"
+msgstr "E-mail SFTP"
+
+msgid "faqs"
+msgstr "Întrebări frecvente"
+
+msgid "visit_sftp_client_website"
+msgstr "Viziteaza site-ul SFTP"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Da o nota ne pe Google Chrome Magazinul web"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Raportați o problemă sau pentru a obține ajutor"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Alăturați-ne pe Facebook pentru actualizări"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Urmărește-ne pe Twitter pentru actualizări"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Pentru noi pe Google pentru actualizări"
+
+msgid "okay"
+msgstr "bine"
+
+msgid "cancel"
+msgstr "Anulare"
+
+msgid "close"
+msgstr "Închide"
+
+msgid "unknown_host"
+msgstr "Gazda necunoscuta"
+
+msgid "okay_to_continue"
+msgstr "Ok pentru a continua?"
+
+msgid "fingerprint"
+msgstr "amprentă digitală"
+
+msgid "remember"
+msgstr "Tine minte"
+
+msgid "file_permissions"
+msgstr "Permisiuni fișiere"
+
+msgid "file_permissions_desc"
+msgstr "Vă rugăm să selectați atributele noi pentru fișierul selectat (e) / folder (e)"
+
+msgid "read"
+msgstr "Citire"
+
+msgid "write"
+msgstr "Scrie"
+
+msgid "execute"
+msgstr "A executa"
+
+msgid "owner"
+msgstr "Proprietar"
+
+msgid "group"
+msgstr "grup"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "Valoarea numerică"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Se introduce numele noului director ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Se introduce numele noului fișier ..."
+
+msgid "name"
+msgstr "Nume"
+
+msgid "enter_a_password"
+msgstr "Scrie o parolă"
+
+msgid "language"
+msgstr "Limba"
+
+msgid "seconds"
+msgstr "secunde"
+
+msgid "minutes"
+msgstr "minute"
+
+msgid "hour"
+msgstr "Ora"
+
+msgid "hours"
+msgstr "ore"
+
+msgid "day"
+msgstr "Zi"
+
+msgid "trial_left"
+msgstr "încercare pe stânga"
+
+msgid "register_now"
+msgstr "Înregistrează-te acum"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Securitate"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "stare"
+
+msgid "enabled"
+msgstr "Activat"
+
+msgid "disabled"
+msgstr "invalid"
+
+msgid "timeout"
+msgstr "Pauză"
+
+msgid "save"
+msgstr "Salvați"
+
+msgid "add_account"
+msgstr "Adaugă cont"
+
+msgid "support"
+msgstr "A sustine"
+
+msgid "notice_updates"
+msgstr "Notă / Actualizări"
+
+msgid "please_login"
+msgstr "Va rugam sa va logati"
+
+msgid "your_session_timed_out"
+msgstr "Sesiunea dvs. de temporizată Out expres"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Ne pare rău, parola pe care ați introdus a fost incorect!"
+
+msgid "login"
+msgstr "Logare"
+
+msgid "master_password_desc"
+msgstr "Setați această parolă master pentru a păstra conturile dvs. în condiții de siguranță."
+
+msgid "license_key"
+msgstr "Cheie de licență"
+
+msgid "online"
+msgstr "Pe net"
+
+msgid "offline"
+msgstr "Deconectat"
+
+msgid "currently_unavailable"
+msgstr "In prezent Indisponibil"
+
+msgid "no_message_to_display"
+msgstr "Nici un mesaj pentru a afișa"
+
+msgid "offline_notice_title"
+msgstr "Inaccesibilă - Ești deconectat sau într-o rețea doar conexiune?"
+
+msgid "offline_notice_desc"
+msgstr "În prezent, sunteți conectat, pe o rețea ar putea fi stabilită numai în conexiune sau nici o conexiune la serverul nostru"
+
+msgid "edit_file"
+msgstr "editaţi fișierul"
+
+msgid "download"
+msgstr "Descarca"
+
+msgid "upload"
+msgstr "Încărcați"
+
+msgid "host_ip_is_required"
+msgstr "Este nevoie de gazdă / IP"
+
+msgid "apply_to_all_files"
+msgstr "Se aplică tuturor fișierelor"
+
+msgid "activate_now"
+msgstr "Activeaza acum"
+
+msgid "deactivate"
+msgstr "Dezafectează"
+
+msgid "in_progress"
+msgstr "In progres"
+
+msgid "complete"
+msgstr "Complet"
+
+msgid "direction"
+msgstr "Direcţie"
+
+msgid "progress"
+msgstr "progres"
+
+msgid "permissions"
+msgstr "permisiuni"
+
+msgid "owner_group"
+msgstr "Proprietar / Grup"
+
+msgid "size"
+msgstr "mărimea"
+
+msgid "type"
+msgstr "Tip"
+
+msgid "modified"
+msgstr "modificată"
+
+msgid "trial"
+msgstr "Proces"
+
+msgid "cleared"
+msgstr "Cleared"
+
+msgid "error_connecting"
+msgstr "eroare de conectare"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Eroare la conectarea la gazdă / adresă IP"
+
+msgid "error_connecting_to_port"
+msgstr "Eroare la conectarea la portul"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Vă rugăm să selectați un director local mai întâi!"
+
+msgid "go"
+msgstr "Merge"
+
+msgid "confirm"
+msgstr "A confirma"
+
+msgid "delete"
+msgstr "Șterge"
+
+msgid "rename"
+msgstr "redenumire"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL-ul (e) Copiere în Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Vă rugăm să confirmați că doriți să ștergeți fișierul selectat (e) / folder (e)"
+
+msgid "cancelled_by_user"
+msgstr "Anulată de utilizator"
+
+msgid "already_exists_overwrite"
+msgstr "există deja, suprascrie?"
+
+msgid "dashboard"
+msgstr "Bord"
+
+msgid "my_accounts"
+msgstr "Conturile mele"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Fișierul salvat! Toate conturile au fost salvate."
+
+msgid "file_failed_please_try_again"
+msgstr "Fișierului a eșuat! Vă rugăm să încercați din nou."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "În prezent nu aveți conturi să fie susținute."
+
+msgid "saved!"
+msgstr "Salvate!"
+
+msgid "please_enter_a_password"
+msgstr "Vă rugăm să introduceți o parolă!"
+
+msgid "connection_closed"
+msgstr "conexiune închisă"
+
+msgid "listing_mode_set_to"
+msgstr "Modul Listarea setat la"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP server local rezolvat, folosind IP extern"
+
+msgid "login_incorrect"
+msgstr "conectare incorectă"
+
+msgid "keeping_connection_alive"
+msgstr "Menținerea conexiunii în viață"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Nu se poate scrie, conexiune de date închise"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Nu se poate citi conexiunea de date închise"
+
+msgid "error_reading_file"
+msgstr "Eroare la citirea fișierului"
+
+msgid "error_writing_file"
+msgstr "Eroare la scrierea fișierului"
+
+msgid "failed_to_change_directory_to"
+msgstr "Nu a reușit să se schimbe directorul pentru"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Este posibil să nu aveți permisiunile corecte pentru a accesa acest director"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Înapoi la directorul reverting precedent"
+
+msgid "activate"
+msgstr "Activati"
+
+msgid "payment"
+msgstr "Plată"
+
+msgid "license_key_is_required"
+msgstr "Este necesară cheia de licență"
+
+msgid "license_activated!"
+msgstr "Licență activat!"
+
+msgid "your_license_has_been_validated"
+msgstr "Licența dvs. a fost validată."
+
+msgid "thank_you!"
+msgstr "Mulțumesc!"
+
+msgid "buy_now!"
+msgstr "Cumpară acum!"
+
+msgid "buy_now"
+msgstr "Cumpară acum"
+
+msgid "one_off_fee"
+msgstr "o taxă unică"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Vă rugăm să actualizați să se bucure de această aplicație, fără restricții"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Vă rugăm să introduceți cheia de licență de mai jos"
+
+msgid "or"
+msgstr "SAU"
+
+msgid "loading..."
+msgstr "Se incarca..."
+
+msgid "clear_accounts"
+msgstr "Conturi clare"
+
+msgid "clear_ssh_keys"
+msgstr "Ștergeți chei SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Sterge toate cheile SSH salvate"
+
+msgid "clear_app_settings"
+msgstr "Setări clare App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Sterge toate setările aplicației specifice"
+
+msgid "clear_recent_connections"
+msgstr "Conexiuni clare recente"
+
+msgid "deletes_all_recent_connections"
+msgstr "Sterge toate conexiunile recente"
+
+msgid "import_type"
+msgstr "Tipul de import"
+
+msgid "please_select"
+msgstr "Te rog selecteaza"
+
+msgid "import_file"
+msgstr "Fișier import"
+
+msgid "choose_file"
+msgstr "Alege fișierul"
+
+msgid "delete_accounts"
+msgstr "Ștergerea conturilor"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Sterge toate conturile existente"
+
+msgid "import_now"
+msgstr "import acum"
+
+msgid "none"
+msgstr "Nici unul"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Vă rugăm să reporniți aplicația SFTP pentru ca modificările să aibă efect."
+
+msgid "already_bought_the_app"
+msgstr "a cumparat deja App?"
+
+msgid "choose"
+msgstr "Alege"
+
+msgid "deleted!"
+msgstr "Șters!"
+
+msgid "use_syncronised_browsing"
+msgstr "Folosind navigarea syncronised"
+
+msgid "remote_directory"
+msgstr "la distanță Directory"
+
+msgid "rsa_key_only!"
+msgstr "cheie RSA numai!"
+
+msgid "no_key_selected"
+msgstr "Nici o tastă selectată."
+
+msgid "ssh_key_file"
+msgstr "SSH Fișier cheie"
+
+msgid "no_dir_selected"
+msgstr "Nu dir selectat."
+
+msgid "keep_blank_for_current_password"
+msgstr "Păstra spațiu liber pentru parola curentă."
+
+msgid "logon_type"
+msgstr "logon Tip"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Cere-parolă"
+
+msgid "anonymous"
+msgstr "Anonim"
+
+msgid "account_type"
+msgstr "Tip de cont"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (conexiune normală)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (conexiune securizată)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (conexiune securizată)"
+
+msgid "folder"
+msgstr "Pliant"
+
+msgid "advanced"
+msgstr "Avansat"
+
+msgid "folder_name"
+msgstr "Numele fisierului"
+
+msgid "parent"
+msgstr "Mamă"
+
+msgid "new_ftp_site"
+msgstr "Noul site FTP"
+
+msgid "new_folder"
+msgstr "Dosar nou"
+
+msgid "clean_now"
+msgstr "curăţenie acum"
+
+msgid "host"
+msgstr "Gazdă"
+
+msgid "no_accounts_added..."
+msgstr "Nu există niciun cont Adăugat ..."
+
+msgid "unknown"
+msgstr "Necunoscut"
+
+msgid "file_saved!"
+msgstr "Fișierul salvat!"
+
+msgid "uploading_file!"
+msgstr "Se încarcă fișierul!"
+
+msgid "save_failed!"
+msgstr "Salvarea a eșuat!"
+
+msgid "search"
+msgstr "Căutare"
+
+msgid "find"
+msgstr "Găsi"
+
+msgid "replace"
+msgstr "A inlocui"
+
+msgid "scroll_past_end"
+msgstr "Trecut Sfârșit de derulare"
+
+msgid "show_annotations"
+msgstr "Afișați adnotările"
+
+msgid "show_gutter"
+msgstr "Afișează Jgheab"
+
+msgid "show_invisibles"
+msgstr "arată Invizibile"
+
+msgid "show_print_margin"
+msgstr "Afișează Print Marja"
+
+msgid "highlight_active_line"
+msgstr "Evidențiați Linie activă"
+
+msgid "word_wrap"
+msgstr "cuvânt Wrap"
+
+msgid "split_code"
+msgstr "Cod divizat"
+
+msgid "preferences"
+msgstr "Preferințe"
+
+msgid "close_all_tabs"
+msgstr "Închideți toate filele"
+
+msgid "close_current_tab"
+msgstr "Închide fila"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Salvare automată fișier când introduc"
+
+msgid "auto_save"
+msgstr "Salvare automată"
+
+msgid "quick_save"
+msgstr "Salvare rapida"
+
+msgid "documentation"
+msgstr "Documentație"
+
+msgid "themes"
+msgstr "tematică"
+
+msgid "keyboard_shortcuts"
+msgstr "Comenzi rapide de la tastatură"
+
+msgid "coming_soon"
+msgstr "In curand"
+
+msgid "empty"
+msgstr "gol"

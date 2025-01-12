@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Μενού"
+
+msgid "file"
+msgstr "Αρχείο"
+
+msgid "view"
+msgstr "Θέα"
+
+msgid "edit"
+msgstr "Επεξεργασία"
+
+msgid "help"
+msgstr "Βοήθεια"
+
+msgid "manage_accounts"
+msgstr "Διαχείριση λογαριασμών"
+
+msgid "import_accounts"
+msgstr "εισαγωγής Λογαριασμοί"
+
+msgid "export_accounts"
+msgstr "Λογαριασμοί των εξαγωγών"
+
+msgid "quick_connect"
+msgstr "Γρήγορη σύνδεση"
+
+msgid "message_log"
+msgstr "μήνυμα Ημερολόγιο"
+
+msgid "local_directory"
+msgstr "τοπική Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Εκκαθάριση αποθηκευμένων δεδομένων"
+
+msgid "edit_settings"
+msgstr "Επεξεργασία ρυθμίσεων"
+
+msgid "report_bug"
+msgstr "Αναφέρετε ένα σφάλμα"
+
+msgid "suggest_feature"
+msgstr "Προτείνετε ένα χαρακτηριστικό γνώρισμα"
+
+msgid "ask_a_question"
+msgstr "Κάνε μια ερώτηση"
+
+msgid "change_log"
+msgstr "αλλαγή Log"
+
+msgid "about"
+msgstr "Για"
+
+msgid "exit"
+msgstr "Έξοδος"
+
+msgid "host_ip_address"
+msgstr "Host / Διεύθυνση IP"
+
+msgid "username"
+msgstr "Όνομα Χρήστη"
+
+msgid "password"
+msgstr "Σύνθημα"
+
+msgid "port"
+msgstr "Λιμάνι"
+
+msgid "connect"
+msgstr "Συνδέω"
+
+msgid "welcome"
+msgstr "Καλωσόρισμα"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Πελάτης είναι όλα σχετικά με την απλότητα, έχει χτιστεί στη διασύνδεση συσκευασμένα εφαρμογή Google Chrome / Chrome OS που επιτρέπει στην εφαρμογή να είναι γρήγορο και να ανταποκρίνεται. Μερικές από τις λειτουργίες περιλαμβάνει ένα διαχειριστή το"
+
+msgid "latest_updates"
+msgstr "τελευταίες ενημερώσεις"
+
+msgid "server_status"
+msgstr "Κατάσταση διακομιστή"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Υποστήριξη"
+
+msgid "notice_update"
+msgstr "Ανακοίνωση / Ενημερώσεις"
+
+msgid "website"
+msgstr "Δικτυακός τόπος"
+
+msgid "clear_all"
+msgstr "Τα καθαρίζω όλα"
+
+msgid "manage"
+msgstr "Διαχειρίζομαι"
+
+msgid "recheck"
+msgstr "Re-έλεγχος"
+
+msgid "last_release"
+msgstr "τελευταία Τύπου"
+
+msgid "released"
+msgstr "κυκλοφόρησε"
+
+msgid "queued"
+msgstr "στην ουρά"
+
+msgid "failed"
+msgstr "Αποτυχημένος"
+
+msgid "completed"
+msgstr "Ολοκληρώθηκε το"
+
+msgid "settings"
+msgstr "Ρυθμίσεις"
+
+msgid "add_folder"
+msgstr "Προσθήκη φακέλου"
+
+msgid "add_ftp_account"
+msgstr "Προσθήκη λογαριασμού FTP"
+
+msgid "file_editor"
+msgstr "επεξεργασίας αρχείων"
+
+msgid "editor_preferences"
+msgstr "Προτιμήσεις editor"
+
+msgid "your_ftp_accounts"
+msgstr "Λογαριασμοί FTP σας"
+
+msgid "most_recent_used"
+msgstr "χρησιμοποιήσατε πιο πρόσφατα."
+
+msgid "no_connections_yet_made"
+msgstr "Δεν συνδέσεις κάνει ακόμα"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Δεν λογαριασμούς FTP προσθέσει ακόμα"
+
+msgid "most_recent_connections"
+msgstr "Πιο Πρόσφατα Συνδέσεις"
+
+msgid "last_10_connections_made"
+msgstr "Τελευταία 10 συνδέσεις"
+
+msgid "designed_developed_by"
+msgstr "Σχεδιασμός & Ανάπτυξη"
+
+msgid "about_info"
+msgstr "Παρακαλούμε χρησιμοποιήστε την ιστοσελίδα του πελάτη sFTP για την υποστήριξη, δεν υπάρχει υποστήριξη παρέχεται μέσω της ατομικής ιστοσελίδες μας."
+
+msgid "local"
+msgstr "Τοπικός"
+
+msgid "remote"
+msgstr "Μακρινός"
+
+msgid "remote_location_desc"
+msgstr "π.χ. / public_html"
+
+msgid "create_directory"
+msgstr "Δημιουργία ευρετηρίου"
+
+msgid "create_new_directory"
+msgstr "Δημιουργία νέου καταλόγου"
+
+msgid "create_file"
+msgstr "Δημιουργία αρχείου"
+
+msgid "create_new_file"
+msgstr "Δημιουργία νέου αρχείου"
+
+msgid "refresh_list"
+msgstr "Ανανέωση λίστας"
+
+msgid "change"
+msgstr "Αλλαγή"
+
+msgid "report_a_bug"
+msgstr "Αναφέρετε ένα σφάλμα"
+
+msgid "suggest_a_feature"
+msgstr "Προτείνετε ένα χαρακτηριστικό γνώρισμα"
+
+msgid "enter_password"
+msgstr "Εισάγετε τον κωδικό πρόσβασης"
+
+msgid "enter_your_password..."
+msgstr "Εισάγετε τον κωδικό σας..."
+
+msgid "passphrase"
+msgstr "συνθηματική φράση"
+
+msgid "enter_your_passphrase..."
+msgstr "Εισάγετε τη φράση πρόσβασης σας ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP πελάτη"
+
+msgid "faqs"
+msgstr "Συχνές Ερωτήσεις"
+
+msgid "visit_sftp_client_website"
+msgstr "Επίσκεψη sFTP πελάτη Ιστοσελίδα"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Βαθμολογήστε μας στο Chrome Webstore Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Αναφέρετε πρόβλημα ή να λάβετε βοήθεια"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Ελάτε μαζί μας στο Facebook για ενημερώσεις"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Ακολουθήστε μας στο Twitter για ενημερώσεις"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "Επισημαίνετε με +1 μας στο Google για ενημερώσεις"
+
+msgid "okay"
+msgstr "εντάξει"
+
+msgid "cancel"
+msgstr "Ματαίωση"
+
+msgid "close"
+msgstr "Κοντά"
+
+msgid "unknown_host"
+msgstr "Άγνωστος οικοδεσπότης"
+
+msgid "okay_to_continue"
+msgstr "Εντάξει για να συνεχίσετε;"
+
+msgid "fingerprint"
+msgstr "Δακτυλικό αποτύπωμα"
+
+msgid "remember"
+msgstr "Θυμάμαι"
+
+msgid "file_permissions"
+msgstr "Δικαιώματα αρχείου"
+
+msgid "file_permissions_desc"
+msgstr "Παρακαλούμε, επιλέξτε τις νέες ιδιότητες για το επιλεγμένο αρχείο (s) / φάκελο (ες)"
+
+msgid "read"
+msgstr "Διαβάζω"
+
+msgid "write"
+msgstr "Γράφω"
+
+msgid "execute"
+msgstr "Εκτέλεση"
+
+msgid "owner"
+msgstr "Ιδιοκτήτης"
+
+msgid "group"
+msgstr "Ομάδα"
+
+msgid "public"
+msgstr "Δημόσιο"
+
+msgid "numeric_value"
+msgstr "αριθμητική τιμή"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Πληκτρολογήστε το όνομα του νέου φακέλου ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Πληκτρολογήστε το όνομα του νέου αρχείου ..."
+
+msgid "name"
+msgstr "Όνομα"
+
+msgid "enter_a_password"
+msgstr "Εισαγετε εναν κωδικο"
+
+msgid "language"
+msgstr "Γλώσσα"
+
+msgid "seconds"
+msgstr "δευτερόλεπτα"
+
+msgid "minutes"
+msgstr "Λεπτά"
+
+msgid "hour"
+msgstr "Ώρα"
+
+msgid "hours"
+msgstr "Ώρες"
+
+msgid "day"
+msgstr "Ημέρα"
+
+msgid "trial_left"
+msgstr "δίκη αριστερά"
+
+msgid "register_now"
+msgstr "Κάνε εγγραφή τώρα"
+
+msgid "general"
+msgstr "Γενικός"
+
+msgid "security"
+msgstr "Ασφάλεια"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "Κατάσταση"
+
+msgid "enabled"
+msgstr "Ενεργοποιήθηκε"
+
+msgid "disabled"
+msgstr "Ανάπηρος"
+
+msgid "timeout"
+msgstr "Τέλος χρόνου"
+
+msgid "save"
+msgstr "Αποθηκεύσετε"
+
+msgid "add_account"
+msgstr "Προσθήκη λογαριασμού"
+
+msgid "support"
+msgstr "Υποστήριξη"
+
+msgid "notice_updates"
+msgstr "Ανακοίνωση / Ενημερώσεις"
+
+msgid "please_login"
+msgstr "ΠΑΡΑΚΑΛΩ ΣΥΝΔΕΘΕΙΤΕ"
+
+msgid "your_session_timed_out"
+msgstr "Συνεδρία σας Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Συγνώμη ο κωδικός πρόσβασης που εισαγάγατε ήταν λανθασμένη!"
+
+msgid "login"
+msgstr "Σύνδεση"
+
+msgid "master_password_desc"
+msgstr "Ορίστε αυτό το master password για να κρατήσει τους λογαριασμούς σας ασφαλή."
+
+msgid "license_key"
+msgstr "Κλειδί άδειας χρήσης"
+
+msgid "online"
+msgstr "σε απευθείας σύνδεση"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Προσωρινά μη διαθέσιμο"
+
+msgid "no_message_to_display"
+msgstr "Κανένα μήνυμα για να εμφανιστεί"
+
+msgid "offline_notice_title"
+msgstr "Απρόσιτο - Είστε εκτός σύνδεσης ή σε ένα δίκτυο μόνο σύνδεση;"
+
+msgid "offline_notice_desc"
+msgstr "Είστε εκτός σύνδεσης, σε ένα δίκτυο θα μπορούσε να δημιουργηθεί μόνο σύνδεση ή χωρίς σύνδεση στο διακομιστή μας"
+
+msgid "edit_file"
+msgstr "Επεξεργασία αρχείου"
+
+msgid "download"
+msgstr "Λήψη"
+
+msgid "upload"
+msgstr "Μεταφόρτωση"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP απαιτείται"
+
+msgid "apply_to_all_files"
+msgstr "Εφαρμογή σε όλα τα αρχεία"
+
+msgid "activate_now"
+msgstr "Ενεργοποίηση τώρα"
+
+msgid "deactivate"
+msgstr "De-ενεργοποίηση"
+
+msgid "in_progress"
+msgstr "Σε εξέλιξη"
+
+msgid "complete"
+msgstr "Πλήρης"
+
+msgid "direction"
+msgstr "Κατεύθυνση"
+
+msgid "progress"
+msgstr "Πρόοδος"
+
+msgid "permissions"
+msgstr "δικαιώματα"
+
+msgid "owner_group"
+msgstr "Ιδιοκτήτης / Ομάδα"
+
+msgid "size"
+msgstr "Μέγεθος"
+
+msgid "type"
+msgstr "Τύπος"
+
+msgid "modified"
+msgstr "τροποποιημένο"
+
+msgid "trial"
+msgstr "Δίκη"
+
+msgid "cleared"
+msgstr "εκκαθαρίζονται"
+
+msgid "error_connecting"
+msgstr "σφάλμα κατά τη σύνδεση"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Σφάλμα κατά τη σύνδεση για να φιλοξενήσει / διεύθυνση IP"
+
+msgid "error_connecting_to_port"
+msgstr "Σφάλμα κατά τη σύνδεση με τη θύρα"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Επιλέξτε έναν τοπικό κατάλογο πρώτο!"
+
+msgid "go"
+msgstr "Πάω"
+
+msgid "confirm"
+msgstr "Επιβεβαιώνω"
+
+msgid "delete"
+msgstr "Διαγράφω"
+
+msgid "rename"
+msgstr "Μετονομάζω"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL (s) Αντιγραφή στο πρόχειρο"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Επιβεβαιώστε ότι θέλετε να διαγράψετε το επιλεγμένο αρχείο (s) / φάκελο (ες)"
+
+msgid "cancelled_by_user"
+msgstr "Ακυρώθηκε από το χρήστη"
+
+msgid "already_exists_overwrite"
+msgstr "υπάρχει ήδη, να αντικαταστήσετε;"
+
+msgid "dashboard"
+msgstr "Ταμπλό"
+
+msgid "my_accounts"
+msgstr "Οι λογαριασμοί μου"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Αποθηκευμένο αρχείο! Όλοι οι λογαριασμοί έχουν αντίγραφα ασφαλείας."
+
+msgid "file_failed_please_try_again"
+msgstr "Αρχείου απέτυχε! ΠΑΡΑΚΑΛΩ προσπαθησε ξανα."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Αυτήν τη στιγμή έχετε κανένα λογαριασμοί που πρέπει να υποστηρίζεται."
+
+msgid "saved!"
+msgstr "Σωθεί!"
+
+msgid "please_enter_a_password"
+msgstr "Παρακαλώ εισάγετε έναν κωδικό πρόσβασης!"
+
+msgid "connection_closed"
+msgstr "Η σύνδεση έκλεισε"
+
+msgid "listing_mode_set_to"
+msgstr "Διαφημίσεων λειτουργία ρυθμιστεί σε"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Τοπική IP του server επιλυθεί, χρησιμοποιώντας εξωτερική IP"
+
+msgid "login_incorrect"
+msgstr "Μη έγκυρη σύνδεση"
+
+msgid "keeping_connection_alive"
+msgstr "Κρατώντας σύνδεση ζωντανός"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Θέση να γράψει, σύνδεση δεδομένων κλειστά"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Αδύνατη η ανάγνωση της σύνδεσης δεδομένων κλειστά"
+
+msgid "error_reading_file"
+msgstr "αρχείο Σφάλμα ανάγνωσης"
+
+msgid "error_writing_file"
+msgstr "αρχείο Σφάλμα κατά την εγγραφή"
+
+msgid "failed_to_change_directory_to"
+msgstr "Αποτυχία αλλαγής καταλόγου για να"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Μπορεί να μην έχετε τα κατάλληλα δικαιώματα για να αποκτήσετε πρόσβαση σε αυτό τον κατάλογο"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Θα επανέλθει στο προηγούμενο κατάλογο"
+
+msgid "activate"
+msgstr "Θέτω εις ενέργειαν"
+
+msgid "payment"
+msgstr "Πληρωμή"
+
+msgid "license_key_is_required"
+msgstr "κλειδί άδειας απαιτείται"
+
+msgid "license_activated!"
+msgstr "Άδεια Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "Η άδειά σας έχει επικυρωθεί."
+
+msgid "thank_you!"
+msgstr "Ευχαριστώ!"
+
+msgid "buy_now!"
+msgstr "Αγορασε τωρα!"
+
+msgid "buy_now"
+msgstr "Αγορασε τωρα"
+
+msgid "one_off_fee"
+msgstr "ένα εφάπαξ τέλος"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Παρακαλώ αναβάθμιση για να απολαύσετε αυτό το app χωρίς περιορισμούς"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Παρακαλώ εισάγετε το κλειδί άδειας χρήσης σας παρακάτω"
+
+msgid "or"
+msgstr "Ή"
+
+msgid "loading..."
+msgstr "Φόρτωση..."
+
+msgid "clear_accounts"
+msgstr "σαφές Λογαριασμοί"
+
+msgid "clear_ssh_keys"
+msgstr "Σαφές Κλειδιά SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Διαγράφει όλα τα αποθηκευμένα κλειδιά SSH"
+
+msgid "clear_app_settings"
+msgstr "Clear Settings App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Διαγράφει όλες τις ειδικές ρυθμίσεις της εφαρμογής"
+
+msgid "clear_recent_connections"
+msgstr "Εκκαθάριση πρόσφατου Συνδέσεις"
+
+msgid "deletes_all_recent_connections"
+msgstr "Διαγράφει όλες τις πρόσφατες συνδέσεις"
+
+msgid "import_type"
+msgstr "εισαγωγής Τύπος"
+
+msgid "please_select"
+msgstr "Παρακαλώ επιλέξτε"
+
+msgid "import_file"
+msgstr "εισαγωγής αρχείου"
+
+msgid "choose_file"
+msgstr "Επιλέξτε το αρχείο"
+
+msgid "delete_accounts"
+msgstr "Διαγραφή Λογαριασμών"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Διαγράφει όλα τα υπάρχοντα τους λογαριασμούς"
+
+msgid "import_now"
+msgstr "εισαγωγής Τώρα"
+
+msgid "none"
+msgstr "Κανένας"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Παρακαλώ κάντε επανεκκίνηση sFTP εφαρμογή Client για τις αλλαγές να τεθούν σε ισχύ."
+
+msgid "already_bought_the_app"
+msgstr "Ήδη αγοράσει το App;"
+
+msgid "choose"
+msgstr "Επιλέγω"
+
+msgid "deleted!"
+msgstr "Διαγραφούν!"
+
+msgid "use_syncronised_browsing"
+msgstr "χρησιμοποιήστε syncronised περιήγηση"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA κλειδί μόνο!"
+
+msgid "no_key_selected"
+msgstr "Δεν κλειδί που επελέγη."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "Δεν dir επιλέξει."
+
+msgid "keep_blank_for_current_password"
+msgstr "Κρατήστε κενό για τρέχοντα κωδικό πρόσβασης."
+
+msgid "logon_type"
+msgstr "Τύπος σύνδεσης"
+
+msgid "normal"
+msgstr "Κανονικός"
+
+msgid "ask_for_password"
+msgstr "Ζητήστε τον κωδικό"
+
+msgid "anonymous"
+msgstr "Ανώνυμος"
+
+msgid "account_type"
+msgstr "Τύπος Λογαριασμού"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (κανονική σύνδεση)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Ντοσιέ"
+
+msgid "advanced"
+msgstr "Προχωρημένος"
+
+msgid "folder_name"
+msgstr "Όνομα φακέλου"
+
+msgid "parent"
+msgstr "Μητρική εταιρεία"
+
+msgid "new_ftp_site"
+msgstr "Νέα Τοποθεσία FTP"
+
+msgid "new_folder"
+msgstr "Νέος φάκελος"
+
+msgid "clean_now"
+msgstr "Καθαρίστε Τώρα"
+
+msgid "host"
+msgstr "Πλήθος"
+
+msgid "no_accounts_added..."
+msgstr "Δεν Λογαριασμοί Προστέθηκε ..."
+
+msgid "unknown"
+msgstr "Άγνωστος"
+
+msgid "file_saved!"
+msgstr "Αποθηκευμένο αρχείο!"
+
+msgid "uploading_file!"
+msgstr "Ανέβασμα αρχείων!"
+
+msgid "save_failed!"
+msgstr "Αποθήκευση απέτυχε!"
+
+msgid "search"
+msgstr "Έρευνα"
+
+msgid "find"
+msgstr "Εύρημα"
+
+msgid "replace"
+msgstr "Αντικαθιστώ"
+
+msgid "scroll_past_end"
+msgstr "Μετακινηθείτε Παρελθόν End"
+
+msgid "show_annotations"
+msgstr "Εμφάνιση σχολιασμοί"
+
+msgid "show_gutter"
+msgstr "Εμφάνιση υδρορροών"
+
+msgid "show_invisibles"
+msgstr "Εμφάνιση Invisibles"
+
+msgid "show_print_margin"
+msgstr "Εμφάνιση εκτύπωσης Περιθώριο"
+
+msgid "highlight_active_line"
+msgstr "Επισημάνετε Active Γραμμή"
+
+msgid "word_wrap"
+msgstr "Αναδίπλωση λέξεων"
+
+msgid "split_code"
+msgstr "Split Κωδικός"
+
+msgid "preferences"
+msgstr "προτιμήσεις"
+
+msgid "close_all_tabs"
+msgstr "Κλείσιμο όλων των καρτελών"
+
+msgid "close_current_tab"
+msgstr "Κλείσιμο τρέχουσας καρτέλας"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Αυτόματη αποθήκευση αρχείων όταν πληκτρολογώ"
+
+msgid "auto_save"
+msgstr "Αυτόματη Αποθήκευση"
+
+msgid "quick_save"
+msgstr "Γρήγορη Αποθήκευση"
+
+msgid "documentation"
+msgstr "Απόδειξη με έγγραφα"
+
+msgid "themes"
+msgstr "θέματα"
+
+msgid "keyboard_shortcuts"
+msgstr "Συντομεύσεις πληκτρολογίου"
+
+msgid "coming_soon"
+msgstr "Έρχεται σύντομα"
+
+msgid "empty"
+msgstr "αδειάζω"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "Mengajukan"
+
+msgid "view"
+msgstr "Melihat"
+
+msgid "edit"
+msgstr "mengedit"
+
+msgid "help"
+msgstr "Membantu"
+
+msgid "manage_accounts"
+msgstr "mengelola Akun"
+
+msgid "import_accounts"
+msgstr "Akun impor"
+
+msgid "export_accounts"
+msgstr "Akun ekspor"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "pesan Log"
+
+msgid "local_directory"
+msgstr "Direktori lokal"
+
+msgid "uploads_downloads"
+msgstr "Upload / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Hapus Data Tersimpan"
+
+msgid "edit_settings"
+msgstr "Edit Pengaturan"
+
+msgid "report_bug"
+msgstr "Laporkan Bug"
+
+msgid "suggest_feature"
+msgstr "Sarankan Fitur sebuah"
+
+msgid "ask_a_question"
+msgstr "Berikan pertanyaan"
+
+msgid "change_log"
+msgstr "perubahan Log"
+
+msgid "about"
+msgstr "Tentang"
+
+msgid "exit"
+msgstr "Keluar"
+
+msgid "host_ip_address"
+msgstr "Host / IP Address"
+
+msgid "username"
+msgstr "Nama pengguna"
+
+msgid "password"
+msgstr "Kata sandi"
+
+msgid "port"
+msgstr "Pelabuhan"
+
+msgid "connect"
+msgstr "Menghubungkan"
+
+msgid "welcome"
+msgstr "Menyambut"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Client adalah semua tentang kesederhanaan, telah dibangun di antarmuka Google Chrome / Chrome OS aplikasi dikemas memungkinkan aplikasi untuk menjadi cepat dan responsif. Beberapa fungsi termasuk Account Manager FTP untuk menyimpan pergi dan meng"
+
+msgid "latest_updates"
+msgstr "Update terbaru"
+
+msgid "server_status"
+msgstr "Status Server"
+
+msgid "license_server"
+msgstr "lisensi Server"
+
+msgid "sftp_support"
+msgstr "Mendukung"
+
+msgid "notice_update"
+msgstr "Pemberitahuan / Pembaruan"
+
+msgid "website"
+msgstr "Situs web"
+
+msgid "clear_all"
+msgstr "Bersihkan semua"
+
+msgid "manage"
+msgstr "Mengelola"
+
+msgid "recheck"
+msgstr "Re-cek"
+
+msgid "last_release"
+msgstr "Rilis terakhir"
+
+msgid "released"
+msgstr "terlepas"
+
+msgid "queued"
+msgstr "antri"
+
+msgid "failed"
+msgstr "Gagal"
+
+msgid "completed"
+msgstr "Lengkap"
+
+msgid "settings"
+msgstr "pengaturan"
+
+msgid "add_folder"
+msgstr "Tambah Folder"
+
+msgid "add_ftp_account"
+msgstr "Tambahkan Akun FTP"
+
+msgid "file_editor"
+msgstr "Berkas Editor"
+
+msgid "editor_preferences"
+msgstr "Preferensi Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Akun FTP Anda"
+
+msgid "most_recent_used"
+msgstr "Yang terakhir digunakan."
+
+msgid "no_connections_yet_made"
+msgstr "Ada koneksi belum dibuat"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Tidak ada akun FTP yang ditambahkan"
+
+msgid "most_recent_connections"
+msgstr "Kebanyakan Koneksi Terbaru"
+
+msgid "last_10_connections_made"
+msgstr "Terakhir 10 koneksi dibuat"
+
+msgid "designed_developed_by"
+msgstr "Dirancang & Dikembangkan oleh"
+
+msgid "about_info"
+msgstr "Silakan gunakan situs klien SFTP untuk dukungan, tidak ada dukungan yang diberikan melalui website pribadi kita."
+
+msgid "local"
+msgstr "Lokal"
+
+msgid "remote"
+msgstr "Terpencil"
+
+msgid "remote_location_desc"
+msgstr "misalnya / public_html"
+
+msgid "create_directory"
+msgstr "Buat direktori"
+
+msgid "create_new_directory"
+msgstr "Buat Direktori Baru"
+
+msgid "create_file"
+msgstr "Buat Berkas"
+
+msgid "create_new_file"
+msgstr "Buat New File"
+
+msgid "refresh_list"
+msgstr "Segarkan Daftar"
+
+msgid "change"
+msgstr "Perubahan"
+
+msgid "report_a_bug"
+msgstr "Laporkan Bug"
+
+msgid "suggest_a_feature"
+msgstr "Sarankan Fitur sebuah"
+
+msgid "enter_password"
+msgstr "Masukkan kata kunci"
+
+msgid "enter_your_password..."
+msgstr "Masukkan kata sandi Anda ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Masukkan passphrase Anda ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP Client"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Kunjungi SFTP Client Situs Web"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Beri kami di Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Melaporkan masalah atau mendapatkan bantuan"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Bergabunglah dengan kami di Facebook untuk update"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Ikuti kami di Twitter untuk update"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Kami di Google untuk update"
+
+msgid "okay"
+msgstr "baik"
+
+msgid "cancel"
+msgstr "Membatalkan"
+
+msgid "close"
+msgstr "Dekat"
+
+msgid "unknown_host"
+msgstr "Tuan rumah yang tidak diketahui"
+
+msgid "okay_to_continue"
+msgstr "Oke untuk melanjutkan?"
+
+msgid "fingerprint"
+msgstr "Sidik jari"
+
+msgid "remember"
+msgstr "Ingat"
+
+msgid "file_permissions"
+msgstr "Izin File"
+
+msgid "file_permissions_desc"
+msgstr "Pilih atribut baru untuk file yang dipilih (s) / folder (s)"
+
+msgid "read"
+msgstr "Baca baca"
+
+msgid "write"
+msgstr "Menulis"
+
+msgid "execute"
+msgstr "Menjalankan"
+
+msgid "owner"
+msgstr "Pemilik"
+
+msgid "group"
+msgstr "Kelompok"
+
+msgid "public"
+msgstr "Publik"
+
+msgid "numeric_value"
+msgstr "Nilai angka"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Masukkan nama direktori baru ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Masukkan nama file baru ..."
+
+msgid "name"
+msgstr "Nama"
+
+msgid "enter_a_password"
+msgstr "Masukan kata sandi"
+
+msgid "language"
+msgstr "Bahasa"
+
+msgid "seconds"
+msgstr "detik"
+
+msgid "minutes"
+msgstr "Menit"
+
+msgid "hour"
+msgstr "Jam"
+
+msgid "hours"
+msgstr "Jam"
+
+msgid "day"
+msgstr "Hari"
+
+msgid "trial_left"
+msgstr "percobaan Kiri"
+
+msgid "register_now"
+msgstr "Daftar sekarang"
+
+msgid "general"
+msgstr "Umum"
+
+msgid "security"
+msgstr "Keamanan"
+
+msgid "master_password"
+msgstr "Password master"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "Diaktifkan"
+
+msgid "disabled"
+msgstr "Cacat"
+
+msgid "timeout"
+msgstr "Waktu habis"
+
+msgid "save"
+msgstr "Menyimpan"
+
+msgid "add_account"
+msgstr "Menambahkan akun"
+
+msgid "support"
+msgstr "Mendukung"
+
+msgid "notice_updates"
+msgstr "Pemberitahuan / Pembaruan"
+
+msgid "please_login"
+msgstr "Silahkan masuk"
+
+msgid "your_session_timed_out"
+msgstr "Anda Sesi Jangka waktu Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Maaf password yang dimasukkan salah!"
+
+msgid "login"
+msgstr "Masuk"
+
+msgid "master_password_desc"
+msgstr "Set password master ini untuk menjaga account Anda aman."
+
+msgid "license_key"
+msgstr "Kunci lisensi"
+
+msgid "online"
+msgstr "On line"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Sedang tidak tersedia"
+
+msgid "no_message_to_display"
+msgstr "Tidak ada pesan untuk ditampilkan"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Apakah Anda offline atau pada jaringan hanya koneksi?"
+
+msgid "offline_notice_desc"
+msgstr "Anda sedang offline, pada jaringan hanya koneksi atau tidak ada koneksi dapat dibentuk untuk server kami"
+
+msgid "edit_file"
+msgstr "Edit file"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP diperlukan"
+
+msgid "apply_to_all_files"
+msgstr "Berlaku untuk semua file"
+
+msgid "activate_now"
+msgstr "Sekarang aktif"
+
+msgid "deactivate"
+msgstr "Menonaktifkan"
+
+msgid "in_progress"
+msgstr "Sedang berlangsung"
+
+msgid "complete"
+msgstr "Lengkap"
+
+msgid "direction"
+msgstr "Arah"
+
+msgid "progress"
+msgstr "Kemajuan"
+
+msgid "permissions"
+msgstr "izin"
+
+msgid "owner_group"
+msgstr "Pemilik / Grup"
+
+msgid "size"
+msgstr "Ukuran"
+
+msgid "type"
+msgstr "Mengetik"
+
+msgid "modified"
+msgstr "Diubah"
+
+msgid "trial"
+msgstr "Percobaan"
+
+msgid "cleared"
+msgstr "dibersihkan"
+
+msgid "error_connecting"
+msgstr "kesalahan Menghubungkan"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Kesalahan Menghubungkan ke tuan rumah / alamat ip"
+
+msgid "error_connecting_to_port"
+msgstr "Kesalahan Menghubungkan ke port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Silakan pilih direktori lokal pertama!"
+
+msgid "go"
+msgstr "Pergi"
+
+msgid "confirm"
+msgstr "Memastikan"
+
+msgid "delete"
+msgstr "Menghapus"
+
+msgid "rename"
+msgstr "Ganti nama"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) ke Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Konfirmasikan bahwa Anda ingin menghapus file yang dipilih (s) / folder (s)"
+
+msgid "cancelled_by_user"
+msgstr "Dibatalkan oleh pengguna"
+
+msgid "already_exists_overwrite"
+msgstr "sudah ada, menimpa?"
+
+msgid "dashboard"
+msgstr "Dasbor"
+
+msgid "my_accounts"
+msgstr "Akun saya"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Berkas Disimpan! Semua akun telah didukung."
+
+msgid "file_failed_please_try_again"
+msgstr "File Gagal! Silakan coba lagi."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Saat ini tidak ada rekening yang akan didukung."
+
+msgid "saved!"
+msgstr "Disimpan!"
+
+msgid "please_enter_a_password"
+msgstr "Masukkan password!"
+
+msgid "connection_closed"
+msgstr "koneksi ditutup"
+
+msgid "listing_mode_set_to"
+msgstr "Listing modus diatur ke"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP server lokal diselesaikan, menggunakan IP eksternal"
+
+msgid "login_incorrect"
+msgstr "Login salah"
+
+msgid "keeping_connection_alive"
+msgstr "Menjaga hubungan hidup"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Tidak dapat menulis, koneksi data ditutup"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Tidak dapat membaca sambungan data ditutup"
+
+msgid "error_reading_file"
+msgstr "Kesalahan membaca file"
+
+msgid "error_writing_file"
+msgstr "File kesalahan penulisan"
+
+msgid "failed_to_change_directory_to"
+msgstr "Gagal mengubah direktori ke"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Anda mungkin tidak memiliki izin yang benar untuk mengakses direktori ini"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Mengembalikan kembali ke direktori sebelumnya"
+
+msgid "activate"
+msgstr "Mengaktifkan"
+
+msgid "payment"
+msgstr "Pembayaran"
+
+msgid "license_key_is_required"
+msgstr "kunci lisensi yang diperlukan"
+
+msgid "license_activated!"
+msgstr "Lisensi Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "lisensi Anda telah divalidasi."
+
+msgid "thank_you!"
+msgstr "Terima kasih!"
+
+msgid "buy_now!"
+msgstr "Beli sekarang!"
+
+msgid "buy_now"
+msgstr "Beli sekarang"
+
+msgid "one_off_fee"
+msgstr "satu dari biaya"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Silakan upgrade untuk menikmati aplikasi ini tanpa pembatasan"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Cukup masukkan Key License dibawah"
+
+msgid "or"
+msgstr "ATAU"
+
+msgid "loading..."
+msgstr "Pemuatan..."
+
+msgid "clear_accounts"
+msgstr "jelas Akun"
+
+msgid "clear_ssh_keys"
+msgstr "Jelas SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Menghapus semua kunci SSH disimpan"
+
+msgid "clear_app_settings"
+msgstr "Pengaturan App jelas"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Menghapus semua pengaturan khusus aplikasi"
+
+msgid "clear_recent_connections"
+msgstr "Koneksi Terbaru jelas"
+
+msgid "deletes_all_recent_connections"
+msgstr "Menghapus semua koneksi baru-baru ini"
+
+msgid "import_type"
+msgstr "impor Jenis"
+
+msgid "please_select"
+msgstr "Silahkan pilih"
+
+msgid "import_file"
+msgstr "impor Berkas"
+
+msgid "choose_file"
+msgstr "Pilih File"
+
+msgid "delete_accounts"
+msgstr "Hapus Akun"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Menghapus semua akun yang ada"
+
+msgid "import_now"
+msgstr "impor Sekarang"
+
+msgid "none"
+msgstr "tak satupun"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Silakan restart SFTP aplikasi Client untuk perubahan berlaku."
+
+msgid "already_bought_the_app"
+msgstr "Sudah membeli App?"
+
+msgid "choose"
+msgstr "Memilih"
+
+msgid "deleted!"
+msgstr "Dihapus!"
+
+msgid "use_syncronised_browsing"
+msgstr "menggunakan penjelajahan syncronised"
+
+msgid "remote_directory"
+msgstr "terpencil Directory"
+
+msgid "rsa_key_only!"
+msgstr "kunci RSA hanya!"
+
+msgid "no_key_selected"
+msgstr "Tidak ada tombol yang dipilih."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "Tidak ada dir dipilih."
+
+msgid "keep_blank_for_current_password"
+msgstr "Tetap kosong untuk password saat ini."
+
+msgid "logon_type"
+msgstr "logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Meminta Sandi"
+
+msgid "anonymous"
+msgstr "Anonim"
+
+msgid "account_type"
+msgstr "Jenis akun"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Map"
+
+msgid "advanced"
+msgstr "Maju"
+
+msgid "folder_name"
+msgstr "Nama folder"
+
+msgid "parent"
+msgstr "Induk"
+
+msgid "new_ftp_site"
+msgstr "Baru FTP Site"
+
+msgid "new_folder"
+msgstr "Folder baru"
+
+msgid "clean_now"
+msgstr "bersih Sekarang"
+
+msgid "host"
+msgstr "Tuan rumah"
+
+msgid "no_accounts_added..."
+msgstr "Tidak ada Akun Ditambahkan ..."
+
+msgid "unknown"
+msgstr "tidak diketahui"
+
+msgid "file_saved!"
+msgstr "Berkas Disimpan!"
+
+msgid "uploading_file!"
+msgstr "Upload file!"
+
+msgid "save_failed!"
+msgstr "Simpan Gagal!"
+
+msgid "search"
+msgstr "Pencarian"
+
+msgid "find"
+msgstr "Menemukan"
+
+msgid "replace"
+msgstr "Menggantikan"
+
+msgid "scroll_past_end"
+msgstr "Gulir Past End"
+
+msgid "show_annotations"
+msgstr "Tampilkan Anotasi"
+
+msgid "show_gutter"
+msgstr "Tampilkan Talang"
+
+msgid "show_invisibles"
+msgstr "Tampilkan Invisibles"
+
+msgid "show_print_margin"
+msgstr "Tampilkan Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Sorot Jalur Aktif"
+
+msgid "word_wrap"
+msgstr "kata Wrap"
+
+msgid "split_code"
+msgstr "Kode Berpisah"
+
+msgid "preferences"
+msgstr "preferensi"
+
+msgid "close_all_tabs"
+msgstr "Tutup Semua Tab"
+
+msgid "close_current_tab"
+msgstr "Tutup Tab sekarang"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto menyimpan file ketika saya mengetik"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "cepat Simpan"
+
+msgid "documentation"
+msgstr "Dokumentasi"
+
+msgid "themes"
+msgstr "tema"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "Segera akan datang"
+
+msgid "empty"
+msgstr "kosong"

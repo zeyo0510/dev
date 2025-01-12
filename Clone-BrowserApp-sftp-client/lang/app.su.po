@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: su\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "file"
+msgstr "file"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "édit"
+
+msgid "help"
+msgstr "Tulung"
+
+msgid "manage_accounts"
+msgstr "Atur Akun"
+
+msgid "import_accounts"
+msgstr "Akun impor"
+
+msgid "export_accounts"
+msgstr "Akun ékspor"
+
+msgid "quick_connect"
+msgstr "gancang Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "Diréktori lokal"
+
+msgid "uploads_downloads"
+msgstr "Muatan / Undeuran"
+
+msgid "clear_saved_data"
+msgstr "Hapus Data disimpen"
+
+msgid "edit_settings"
+msgstr "édit Setélan"
+
+msgid "report_bug"
+msgstr "Wartoskeun kutu a"
+
+msgid "suggest_feature"
+msgstr "Nyarankeun Feature a"
+
+msgid "ask_a_question"
+msgstr "Tanya patarosan a"
+
+msgid "change_log"
+msgstr "Robah Log"
+
+msgid "about"
+msgstr "kira-kira"
+
+msgid "exit"
+msgstr "Kaluar"
+
+msgid "host_ip_address"
+msgstr "Inangna / IP Alamat"
+
+msgid "username"
+msgstr "ngaran nu maké"
+
+msgid "password"
+msgstr "password"
+
+msgid "port"
+msgstr "palabuhan"
+
+msgid "connect"
+msgstr "nyambungan"
+
+msgid "welcome"
+msgstr "wilujeung sumping"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP klien kabeh ngeunaan kesederhanaan, geus diwangun dina interface Google Chrome / Chrome OS app rangkep ngamungkinkeun app jadi saum sareng responsif. Sababaraha pungsi ngawengku hiji Manager Akun ftp pikeun nyimpen jauh jeung ngatur paling Anjeun"
+
+msgid "latest_updates"
+msgstr "Apdet panganyarna"
+
+msgid "server_status"
+msgstr "Status server"
+
+msgid "license_server"
+msgstr "Lisensi Server"
+
+msgid "sftp_support"
+msgstr "sokongan"
+
+msgid "notice_update"
+msgstr "Bewara / Apdet"
+
+msgid "website"
+msgstr "website"
+
+msgid "clear_all"
+msgstr "Hapus Sadaya"
+
+msgid "manage"
+msgstr "ngurus"
+
+msgid "recheck"
+msgstr "Re-cek"
+
+msgid "last_release"
+msgstr "Release tukang"
+
+msgid "released"
+msgstr "dileupaskeun"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "gagal"
+
+msgid "completed"
+msgstr "réngsé"
+
+msgid "settings"
+msgstr "setélan"
+
+msgid "add_folder"
+msgstr "Tambah polder"
+
+msgid "add_ftp_account"
+msgstr "Tambah Akun ftp"
+
+msgid "file_editor"
+msgstr "Gambar Editor"
+
+msgid "editor_preferences"
+msgstr "Tanya editor"
+
+msgid "your_ftp_accounts"
+msgstr "Akun ftp anjeun"
+
+msgid "most_recent_used"
+msgstr "Kalolobaan nembe dipake."
+
+msgid "no_connections_yet_made"
+msgstr "No sambungan can dijieun"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No akun ftp ditambahkeun can"
+
+msgid "most_recent_connections"
+msgstr "Kalolobaan Pakait anyar"
+
+msgid "last_10_connections_made"
+msgstr "Tukang 10 sambungan dijieun"
+
+msgid "designed_developed_by"
+msgstr "Dirancang & Mekarkeun ku"
+
+msgid "about_info"
+msgstr "Mangga maké website klien sFTP for nu ngadukung, no pangrojong anu disadiakeun ngaliwatan situs web individu urang."
+
+msgid "local"
+msgstr "lokal"
+
+msgid "remote"
+msgstr "kapencil"
+
+msgid "remote_location_desc"
+msgstr "misalna / public_html"
+
+msgid "create_directory"
+msgstr "jieun Diréktori"
+
+msgid "create_new_directory"
+msgstr "Jieun Diréktori New"
+
+msgid "create_file"
+msgstr "jieun File"
+
+msgid "create_new_file"
+msgstr "Jieun File New"
+
+msgid "refresh_list"
+msgstr "Anyarkeun Daptar"
+
+msgid "change"
+msgstr "ngarobah"
+
+msgid "report_a_bug"
+msgstr "Wartoskeun kutu a"
+
+msgid "suggest_a_feature"
+msgstr "Nyarankeun Feature a"
+
+msgid "enter_password"
+msgstr "Tuliskeun Password"
+
+msgid "enter_your_password..."
+msgstr "Tuliskeun kecap akses Anjeun ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Tuliskeun passphrase anjeun ..."
+
+msgid "email_sftp_client"
+msgstr "Surélék sFTP klien"
+
+msgid "faqs"
+msgstr "FAQ urang"
+
+msgid "visit_sftp_client_website"
+msgstr "Nganjang sFTP klien Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Meunteun urang dina Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Wartoskeun hiji masalah atawa ménta bantuan"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Miluan urang dina Facebook pikeun apdet"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Turutan urang dina Twitter for apdet"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Urang dina Google pikeun apdet"
+
+msgid "okay"
+msgstr "Oké"
+
+msgid "cancel"
+msgstr "ngabatalkeun"
+
+msgid "close"
+msgstr "deukeut"
+
+msgid "unknown_host"
+msgstr "dipikanyaho inangna"
+
+msgid "okay_to_continue"
+msgstr "Oke neruskeun?"
+
+msgid "fingerprint"
+msgstr "cap jempol"
+
+msgid "remember"
+msgstr "ngelingan"
+
+msgid "file_permissions"
+msgstr "Pangidinan file"
+
+msgid "file_permissions_desc"
+msgstr "Mangga pilih atribut anyar pikeun file dipilih (s) / polder (s)"
+
+msgid "read"
+msgstr "maca"
+
+msgid "write"
+msgstr "Tulis"
+
+msgid "execute"
+msgstr "ngeksekusi"
+
+msgid "owner"
+msgstr "nu boga"
+
+msgid "group"
+msgstr "kumpulan"
+
+msgid "public"
+msgstr "masarakat"
+
+msgid "numeric_value"
+msgstr "Niley numerik"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Tuliskeun ngaran diréktori anyar ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Tuliskeun ngaran file anyar ..."
+
+msgid "name"
+msgstr "nami"
+
+msgid "enter_a_password"
+msgstr "Tuliskeun kecap akses"
+
+msgid "language"
+msgstr "basa"
+
+msgid "seconds"
+msgstr "detik"
+
+msgid "minutes"
+msgstr "menit"
+
+msgid "hour"
+msgstr "Jam"
+
+msgid "hours"
+msgstr "jam"
+
+msgid "day"
+msgstr "poe"
+
+msgid "trial_left"
+msgstr "sidang kenca"
+
+msgid "register_now"
+msgstr "ngadaptar ayeuna"
+
+msgid "general"
+msgstr "umum"
+
+msgid "security"
+msgstr "kaamanan"
+
+msgid "master_password"
+msgstr "password Master"
+
+msgid "status"
+msgstr "status"
+
+msgid "enabled"
+msgstr "diaktipkeun"
+
+msgid "disabled"
+msgstr "cacad"
+
+msgid "timeout"
+msgstr "Séép waktos"
+
+msgid "save"
+msgstr "Simpen"
+
+msgid "add_account"
+msgstr "Tambah Akun"
+
+msgid "support"
+msgstr "sokongan"
+
+msgid "notice_updates"
+msgstr "Bewara / Apdet"
+
+msgid "please_login"
+msgstr "mangga login"
+
+msgid "your_session_timed_out"
+msgstr "Anjeun Sidang Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Hampura sandikecap diasupkeun ieu salah!"
+
+msgid "login"
+msgstr "Lebet"
+
+msgid "master_password_desc"
+msgstr "Setel password master ieu tetep akun Anjeun aman."
+
+msgid "license_key"
+msgstr "Lisensi Key"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Ayeuna sadia"
+
+msgid "no_message_to_display"
+msgstr "No talatah pikeun mintonkeun"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Dupi anjeun offline atawa dina jaringan ngan sambungan?"
+
+msgid "offline_notice_desc"
+msgstr "Anjeun ayeuna offline, dina jaringan ngan sambungan atawa no sambungan bisa ngadegkeun ka server urang"
+
+msgid "edit_file"
+msgstr "édit File"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "upload"
+
+msgid "host_ip_is_required"
+msgstr "Inangna / IP moderator"
+
+msgid "apply_to_all_files"
+msgstr "Dilarapkeun ka sadaya payil"
+
+msgid "activate_now"
+msgstr "Aktipkeun Ayeuna"
+
+msgid "deactivate"
+msgstr "De-Aktipkeun"
+
+msgid "in_progress"
+msgstr "Nuju prosés"
+
+msgid "complete"
+msgstr "kumplit"
+
+msgid "direction"
+msgstr "tuju"
+
+msgid "progress"
+msgstr "kamajuan"
+
+msgid "permissions"
+msgstr "Pangidinan"
+
+msgid "owner_group"
+msgstr "Boga / Group"
+
+msgid "size"
+msgstr "ukuran"
+
+msgid "type"
+msgstr "ngetik"
+
+msgid "modified"
+msgstr "Dirobah"
+
+msgid "trial"
+msgstr "pangadilan"
+
+msgid "cleared"
+msgstr "diberesihan"
+
+msgid "error_connecting"
+msgstr "kasalahan Nyambungkeun"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Kasalahan Nyambungkeun ka imah / alamat ip"
+
+msgid "error_connecting_to_port"
+msgstr "Kasalahan Nyambungkeun ka port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Mangga milih diréktori lokal heula!"
+
+msgid "go"
+msgstr "indit"
+
+msgid "confirm"
+msgstr "ngeceskeun"
+
+msgid "delete"
+msgstr "pupus"
+
+msgid "rename"
+msgstr "ngaganti ngaran"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Tiron URL (s) ka clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Mangga mastikeun nu hayang mupus payel nu dipilih (s) / polder (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled ku pamaké"
+
+msgid "already_exists_overwrite"
+msgstr "geus nyampak, nimpa?"
+
+msgid "dashboard"
+msgstr "dasbor"
+
+msgid "my_accounts"
+msgstr "Akun My"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Gambar disimpen! Sadaya akun geus dicadangkeun."
+
+msgid "file_failed_please_try_again"
+msgstr "File Gagal! Mangga cobian deui."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Anjeun ayeuna boga akun jadi dicadangkeun."
+
+msgid "saved!"
+msgstr "Disimpen!"
+
+msgid "please_enter_a_password"
+msgstr "Mangga tuliskeun kecap akses!"
+
+msgid "connection_closed"
+msgstr "sambungan ditutup"
+
+msgid "listing_mode_set_to"
+msgstr "Listing mode disetel ka"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "server IP Lokal ngumbar, ngagunakeun IP luar"
+
+msgid "login_incorrect"
+msgstr "Login salah"
+
+msgid "keeping_connection_alive"
+msgstr "Ngajaga sambungan hirup"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Teu bisa nulis, sambungan data ditutup"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Teu bisa maca sambungan data ditutup"
+
+msgid "error_reading_file"
+msgstr "Kasalahan file maca"
+
+msgid "error_writing_file"
+msgstr "Kasalahan file tulisan"
+
+msgid "failed_to_change_directory_to"
+msgstr "Gagal pikeun ngarobah diréktori ka"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Anjeun bisa jadi teu boga idin bener pikeun ngakses diréktori ieu"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting deui ka diréktori saméméhna"
+
+msgid "activate"
+msgstr "Aktipkeun"
+
+msgid "payment"
+msgstr "pamayaran"
+
+msgid "license_key_is_required"
+msgstr "key Lisensi moderator"
+
+msgid "license_activated!"
+msgstr "Lisensi diaktipkeun!"
+
+msgid "your_license_has_been_validated"
+msgstr "lisénsi anjeun geus disahkeun."
+
+msgid "thank_you!"
+msgstr "Hatur nuhun!"
+
+msgid "buy_now!"
+msgstr "Mésér ayeuna!"
+
+msgid "buy_now"
+msgstr "Mésér ayeuna"
+
+msgid "one_off_fee"
+msgstr "hiji off fee"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Mangga ningkatkeun ngarasakeun app ieu kalawan no larangan"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Mangga asup Key Lisensi Anjeun di handap"
+
+msgid "or"
+msgstr "ATAWA"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Hapus Akun"
+
+msgid "clear_ssh_keys"
+msgstr "Hapus SSH kenop"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Hapusan sadaya kenop SSH disimpen"
+
+msgid "clear_app_settings"
+msgstr "Setélan App Hapus"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Hapusan sadaya setelan husus app"
+
+msgid "clear_recent_connections"
+msgstr "Pakait anyar Hapus"
+
+msgid "deletes_all_recent_connections"
+msgstr "Hapusan sadaya koneksi anyar"
+
+msgid "import_type"
+msgstr "impor Tipe"
+
+msgid "please_select"
+msgstr "Mangga pilih"
+
+msgid "import_file"
+msgstr "impor File"
+
+msgid "choose_file"
+msgstr "Pilih File"
+
+msgid "delete_accounts"
+msgstr "pupus Akun"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Hapusan sadaya akun aya"
+
+msgid "import_now"
+msgstr "impor Ayeuna"
+
+msgid "none"
+msgstr "teu sahiji bae"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Mangga ngabalikan deui sFTP app klien pikeun robah mawa pangaruh."
+
+msgid "already_bought_the_app"
+msgstr "Geus meuli App?"
+
+msgid "choose"
+msgstr "milih"
+
+msgid "deleted!"
+msgstr "Dihapus!"
+
+msgid "use_syncronised_browsing"
+msgstr "make browsing syncronised"
+
+msgid "remote_directory"
+msgstr "jauh Diréktori"
+
+msgid "rsa_key_only!"
+msgstr "key RSA ngan!"
+
+msgid "no_key_selected"
+msgstr "No konci dipilih."
+
+msgid "ssh_key_file"
+msgstr "SSH File Key"
+
+msgid "no_dir_selected"
+msgstr "No dir dipilih."
+
+msgid "keep_blank_for_current_password"
+msgstr "Jieun kosong keur sandi kiwari."
+
+msgid "logon_type"
+msgstr "Sandi Liwat Tipe"
+
+msgid "normal"
+msgstr "biasa"
+
+msgid "ask_for_password"
+msgstr "Ménta Password"
+
+msgid "anonymous"
+msgstr "henteu aya namina"
+
+msgid "account_type"
+msgstr "akun Tipe"
+
+msgid "ftp_normal_connection"
+msgstr "Ftp (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (aman Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (aman Connection)"
+
+msgid "folder"
+msgstr "map"
+
+msgid "advanced"
+msgstr "maju"
+
+msgid "folder_name"
+msgstr "polder Ngaran"
+
+msgid "parent"
+msgstr "indungna"
+
+msgid "new_ftp_site"
+msgstr "New ftp Loka"
+
+msgid "new_folder"
+msgstr "polder New"
+
+msgid "clean_now"
+msgstr "beresih Ayeuna"
+
+msgid "host"
+msgstr "nu boga imah"
+
+msgid "no_accounts_added..."
+msgstr "No Akun ditambahkeun ..."
+
+msgid "unknown"
+msgstr "teu dikenal"
+
+msgid "file_saved!"
+msgstr "Gambar disimpen!"
+
+msgid "uploading_file!"
+msgstr "Ngunggah File!"
+
+msgid "save_failed!"
+msgstr "Nyalametkeun Gagal!"
+
+msgid "search"
+msgstr "neangan"
+
+msgid "find"
+msgstr "Manggih"
+
+msgid "replace"
+msgstr "ngagentos"
+
+msgid "scroll_past_end"
+msgstr "Gulung Kapungkur End"
+
+msgid "show_annotations"
+msgstr "Ténjokeun Annotations"
+
+msgid "show_gutter"
+msgstr "Ténjokeun talang"
+
+msgid "show_invisibles"
+msgstr "Ténjokeun Invisibles"
+
+msgid "show_print_margin"
+msgstr "Ténjokeun Print margin"
+
+msgid "highlight_active_line"
+msgstr "Nyorot Line aktip"
+
+msgid "word_wrap"
+msgstr "kecap Wrap"
+
+msgid "split_code"
+msgstr "Code Split"
+
+msgid "preferences"
+msgstr "Tanya"
+
+msgid "close_all_tabs"
+msgstr "Deukeut Sadaya Tab"
+
+msgid "close_current_tab"
+msgstr "Deukeut Tab Wayah"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Otomatis nyalametkeun file basa kuring ngetik"
+
+msgid "auto_save"
+msgstr "Otomatis Simpen"
+
+msgid "quick_save"
+msgstr "gancang Simpen"
+
+msgid "documentation"
+msgstr "dokuméntasi"
+
+msgid "themes"
+msgstr "téma"
+
+msgid "keyboard_shortcuts"
+msgstr "Potong kompas keyboard"
+
+msgid "coming_soon"
+msgstr "Geura sumping"
+
+msgid "empty"
+msgstr "kosong"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "මෙනු"
+
+msgid "file"
+msgstr "ගොනුව"
+
+msgid "view"
+msgstr "දැක්ම"
+
+msgid "edit"
+msgstr "සංස්කරණය කරන්න"
+
+msgid "help"
+msgstr "උදව්"
+
+msgid "manage_accounts"
+msgstr "ගිණුම් කළමනාකරණය"
+
+msgid "import_accounts"
+msgstr "ආනයන ගිණුම්"
+
+msgid "export_accounts"
+msgstr "අපනයන ගිණුම්"
+
+msgid "quick_connect"
+msgstr "ඉක්මන් කනෙක්ට්"
+
+msgid "message_log"
+msgstr "පණිවුඩය ලොග්"
+
+msgid "local_directory"
+msgstr "පළාත් නාමාවලිය"
+
+msgid "uploads_downloads"
+msgstr "උඩුගත කිරීම් / බාගත කිරීම්"
+
+msgid "clear_saved_data"
+msgstr "පැහැදිලි දිවි ගළවාගත් දත්ත"
+
+msgid "edit_settings"
+msgstr "සැකසුම් සංස්කරණය කරන්න"
+
+msgid "report_bug"
+msgstr "දෝෂය වාර්තා"
+
+msgid "suggest_feature"
+msgstr "එය විශේෂාංගය යෝජනා"
+
+msgid "ask_a_question"
+msgstr "ප්රශ්නයක් අහන්න"
+
+msgid "change_log"
+msgstr "වෙනස් ලොග්"
+
+msgid "about"
+msgstr "ගැන"
+
+msgid "exit"
+msgstr "පිටවීම"
+
+msgid "host_ip_address"
+msgstr "සත්කාරක රට / IP ලිපිනය"
+
+msgid "username"
+msgstr "පරිශීලක නාමය"
+
+msgid "password"
+msgstr "මුරපදය"
+
+msgid "port"
+msgstr "වරාය"
+
+msgid "connect"
+msgstr "සම්බන්ධ"
+
+msgid "welcome"
+msgstr "ඔබ සාදරයෙන් පිළිගනිමු"
+
+msgid "welcome_intro"
+msgstr "<p> සේයාරූ සේවාලාභියා සියලු සරල ගැන, එය යෙදුම වේගවත් හා ප්රතිචාරාත්මක වීමට ඉඩ ගූගල් ක්රෝම් / Chrome OS ඇසුරුම් යෙදුම අතුරුමුහුණත මත ඉදිකර ඇත. ක්රියාකාරිත්වයක් සමහරුන් ගබඩා කිරීම සහ ඔබේ අපට බොහෝ සංවිධානය කිරීමට හැකි FTP ගිණුම් කළමනාකරු ඇතුළත්"
+
+msgid "latest_updates"
+msgstr "නවතම යාවත්කාලීන"
+
+msgid "server_status"
+msgstr "සේවාදායකය තත්ත්වය"
+
+msgid "license_server"
+msgstr "බලපත්ර සේවාදායකය"
+
+msgid "sftp_support"
+msgstr "සහාය"
+
+msgid "notice_update"
+msgstr "දැනුම් දීමකින් / යාවත්කාලීන කිරීම්"
+
+msgid "website"
+msgstr "වෙබ් අඩවිය"
+
+msgid "clear_all"
+msgstr "සියල්ල හිස්කරන්න"
+
+msgid "manage"
+msgstr "කළමනාකරණය"
+
+msgid "recheck"
+msgstr "නැවත පරීක්ෂා"
+
+msgid "last_release"
+msgstr "පසුගිය නිදහස් කිරීම"
+
+msgid "released"
+msgstr "නිදහස්"
+
+msgid "queued"
+msgstr "පේළි"
+
+msgid "failed"
+msgstr "අසමත්"
+
+msgid "completed"
+msgstr "සම්පූර්ණ කරන ලද"
+
+msgid "settings"
+msgstr "සැකසුම්"
+
+msgid "add_folder"
+msgstr "ෆෝල්ඩරය එක් කරන්න"
+
+msgid "add_ftp_account"
+msgstr "FTP ගිණුමේ එකතු කරන්න"
+
+msgid "file_editor"
+msgstr "ගොනු කර්තෘ"
+
+msgid "editor_preferences"
+msgstr "කර්තෘ මනාප"
+
+msgid "your_ftp_accounts"
+msgstr "ඔබගේ FTP ගිණුම්"
+
+msgid "most_recent_used"
+msgstr "වඩාත් මෑතක දී භාවිත කළා."
+
+msgid "no_connections_yet_made"
+msgstr "කිසිදු සම්බන්ධතාවයක් මෙතෙක්"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "කිසිදු FTP ගිණුම් තවම එක්"
+
+msgid "most_recent_connections"
+msgstr "මෑතකාලීන සම්බන්ධතා"
+
+msgid "last_10_connections_made"
+msgstr "කළ පසුගිය සම්බන්ධතා 10"
+
+msgid "designed_developed_by"
+msgstr "විසින් නිර්මාණය සහ සංවර්ධනය"
+
+msgid "about_info"
+msgstr "අපගේ පුද්ගලික වෙබ් අඩවි මගින් කිසිදු සහයෝගයක් ලබා, සහාය සඳහා සේයාරූ සේවාලාභියා වෙබ් අඩවිය භාවිතා කරන්න."
+
+msgid "local"
+msgstr "දේශීය"
+
+msgid "remote"
+msgstr "දුරස්ථ"
+
+msgid "remote_location_desc"
+msgstr "උදා: / public_html"
+
+msgid "create_directory"
+msgstr "නාමාවලිය නිර්මාණය"
+
+msgid "create_new_directory"
+msgstr "නව නාමාවලිය නිර්මාණය"
+
+msgid "create_file"
+msgstr "ගොනුව නිර්මාණය"
+
+msgid "create_new_file"
+msgstr "නව ගොනුව සාදන්න"
+
+msgid "refresh_list"
+msgstr "නැවුම් කරන්න ලැයිස්තුව"
+
+msgid "change"
+msgstr "වෙනස්"
+
+msgid "report_a_bug"
+msgstr "දෝෂය වාර්තා"
+
+msgid "suggest_a_feature"
+msgstr "එය විශේෂාංගය යෝජනා"
+
+msgid "enter_password"
+msgstr "මුරපදය ඇතුලත් කරන්න"
+
+msgid "enter_your_password..."
+msgstr "ඔබගේ මුර පදය ඇතුලත් කරන්න ..."
+
+msgid "passphrase"
+msgstr "මුරවදනක්"
+
+msgid "enter_your_passphrase..."
+msgstr "ඔබගේ මුර වදන ඇතුලත් කරන්න ..."
+
+msgid "email_sftp_client"
+msgstr "විද්යුත් සේයාරූ සේවාලාභියා"
+
+msgid "faqs"
+msgstr "නිතර අසන ප්රශ්න"
+
+msgid "visit_sftp_client_website"
+msgstr "සේයාරූ සේවාලාභියා වෙබ් අඩවිය වෙත පිවිසෙන්න"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "ගූගල් ක්රෝම් Webstore අප අගයන්න"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ප්රශ්නයක් වාර්තා කිරීමට හෝ උපකාර ලබා"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "ප්රගමනය කිරීම සඳහා අපේ Facebook සමග එකතු වන්න"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "ප්රගමනය කිරීම සඳහා ට්විටර් අප පසුපස"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 ප්රගමනය කිරීම සඳහා Google මත අපට"
+
+msgid "okay"
+msgstr "හරි හරී"
+
+msgid "cancel"
+msgstr "අවලංගු කරන්න"
+
+msgid "close"
+msgstr "සමීප"
+
+msgid "unknown_host"
+msgstr "නොදන්නා සත්කාරක"
+
+msgid "okay_to_continue"
+msgstr "දිගටම හරිද?"
+
+msgid "fingerprint"
+msgstr "ඇඟිලි සලකුණු"
+
+msgid "remember"
+msgstr "මතක තබා ගන්න"
+
+msgid "file_permissions"
+msgstr "ගොනු අවසර"
+
+msgid "file_permissions_desc"
+msgstr "තෝරාගත් ගොනු (ව) / ෆෝල්ඩරය (ව) සඳහා මෙම නව ලක්ෂණ තෝරන්න"
+
+msgid "read"
+msgstr "කියවන්න"
+
+msgid "write"
+msgstr "ලියන්න"
+
+msgid "execute"
+msgstr "ක්රියාත්මක"
+
+msgid "owner"
+msgstr "හිමිකරු"
+
+msgid "group"
+msgstr "සමූහය"
+
+msgid "public"
+msgstr "පොදු"
+
+msgid "numeric_value"
+msgstr "සංඛ්යාත්මක අගය"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "නව බහලුමේ නම ඇතුලත් කරන්න ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "නව ගොනුවේ නම ඇතුලත් කරන්න ..."
+
+msgid "name"
+msgstr "නම"
+
+msgid "enter_a_password"
+msgstr "රහස්පදයක් ඇතුල්"
+
+msgid "language"
+msgstr "භාෂාව"
+
+msgid "seconds"
+msgstr "තත්පර"
+
+msgid "minutes"
+msgstr "මිනිත්තු"
+
+msgid "hour"
+msgstr "පැය"
+
+msgid "hours"
+msgstr "පැය"
+
+msgid "day"
+msgstr "දවස"
+
+msgid "trial_left"
+msgstr "නඩු වාමාංශික"
+
+msgid "register_now"
+msgstr "දැන්ම ලියාපදිංචි වන්න"
+
+msgid "general"
+msgstr "ජනරාල්"
+
+msgid "security"
+msgstr "ආරක්ෂක"
+
+msgid "master_password"
+msgstr "ප්රධාන රහස්පදය"
+
+msgid "status"
+msgstr "තත්ත්වය"
+
+msgid "enabled"
+msgstr "සක්රීය"
+
+msgid "disabled"
+msgstr "ආබාධිත"
+
+msgid "timeout"
+msgstr "කාලය හමාරයි"
+
+msgid "save"
+msgstr "සුරකින්න"
+
+msgid "add_account"
+msgstr "ගිණුමක් එක් කරන්න"
+
+msgid "support"
+msgstr "සහාය"
+
+msgid "notice_updates"
+msgstr "දැනුම් දීමකින් / යාවත්කාලීන කිරීම්"
+
+msgid "please_login"
+msgstr "ලොගින් වන්න පිවිසෙන්න:"
+
+msgid "your_session_timed_out"
+msgstr "ඔබගේ සැසිය කල් ඉකුත් විය අතරින්"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "සමාවන්න ඔබ ඇතුළත් කළ මුරපදය වැරදියි!"
+
+msgid "login"
+msgstr "ඇතුල් වන්න"
+
+msgid "master_password_desc"
+msgstr "ඔබගේ ගිණුම් ආරක්ෂාව තබා මෙම ප්රධාන මුරපදය සකසන්න."
+
+msgid "license_key"
+msgstr "බලපත්ර යතුර"
+
+msgid "online"
+msgstr "සමඟ අමුත්තන්"
+
+msgid "offline"
+msgstr "නොබැඳි"
+
+msgid "currently_unavailable"
+msgstr "දැනට නොමැත"
+
+msgid "no_message_to_display"
+msgstr "ප්රදර්ශනය කිරීමට කිසිම පනිවිඩයක්"
+
+msgid "offline_notice_title"
+msgstr "පිවිසිය නොහැකි - ඔබ නොබැඳි හෝ ජාල සම්බන්ධ වන්නේ ඉන්නවද?"
+
+msgid "offline_notice_desc"
+msgstr "ඔබ විසින් ජාල සම්බන්ධ වන්නේ හෝ අපගේ සේවාදායකය වෙත ස්ථාපනය කළ හැකිද කිසිදු සම්බන්ධයක් මත, දැනට අසම්බන්ධිතව"
+
+msgid "edit_file"
+msgstr "සංස්කරණය කරන්න ගොනුව"
+
+msgid "download"
+msgstr "බාගත"
+
+msgid "upload"
+msgstr "උඩුගත"
+
+msgid "host_ip_is_required"
+msgstr "සත්කාරක රට / IP අවශ්ය වේ"
+
+msgid "apply_to_all_files"
+msgstr "සියළුම ගොනු සඳහා අදාළ"
+
+msgid "activate_now"
+msgstr "දැන් සක්රීය"
+
+msgid "deactivate"
+msgstr "De-ද ක්රියාත්මක"
+
+msgid "in_progress"
+msgstr "ප්රගතියේ"
+
+msgid "complete"
+msgstr "සම්පූර්ණ"
+
+msgid "direction"
+msgstr "අධ්යක්ෂණය"
+
+msgid "progress"
+msgstr "ප්රගතිය"
+
+msgid "permissions"
+msgstr "අවසර"
+
+msgid "owner_group"
+msgstr "අයිතිකරුෙග් / සමූහ"
+
+msgid "size"
+msgstr "තරම"
+
+msgid "type"
+msgstr "වර්ගය"
+
+msgid "modified"
+msgstr "නවීකරණය කරන ලද"
+
+msgid "trial"
+msgstr "නඩු විභාගය"
+
+msgid "cleared"
+msgstr "එළි පෙහෙළි"
+
+msgid "error_connecting"
+msgstr "සම්බන්ධ කිරීම දෝෂ"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP ලිපිනය සත්කාරකත්වය සම්බන්ධ දෝෂ"
+
+msgid "error_connecting_to_port"
+msgstr "වරාය වෙත සම්බන්ධ දෝෂ"
+
+msgid "please_select_a_local_directory_first"
+msgstr "කරුණාකර පළමු දේශීය බහලුම තෝරන්න!"
+
+msgid "go"
+msgstr "යන්න"
+
+msgid "confirm"
+msgstr "තහවුරු කරන්න"
+
+msgid "delete"
+msgstr "Delete"
+
+msgid "rename"
+msgstr "නැවත නම් කරන්න"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL පිටපත් කරන්න (s) පසුරු පුවරුවට"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "ඔබ තෝරාගත් ගොනු (ව) මකාදැමීමට අවශ්ය සනාථ කරන්න / ෆෝල්ඩරය (ව)"
+
+msgid "cancelled_by_user"
+msgstr "පරිශීලකයා විසින් අහෝසි"
+
+msgid "already_exists_overwrite"
+msgstr "දැනටමත් පවතී, නැවත ලියවෙනු?"
+
+msgid "dashboard"
+msgstr "උපකරණ පුවරුව"
+
+msgid "my_accounts"
+msgstr "මගේ ගිණුම්"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ගොනුව ගබඩා! සියලු ගිණුම් උපස්ථ කර ඇත."
+
+msgid "file_failed_please_try_again"
+msgstr "ගොනුව අසාර්ථක විය! කරුණාකර නැවත උත්සාහ කරන්න."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "ඔබ දැන් උපස්ථ කිරීමට කිසිදු ගිණුම් ඇති."
+
+msgid "saved!"
+msgstr "දිවි ගළවාගත්!"
+
+msgid "please_enter_a_password"
+msgstr "මුරපදයක් ඇතුල් කරන්න!"
+
+msgid "connection_closed"
+msgstr "සම්බන්ධතාවය වසා"
+
+msgid "listing_mode_set_to"
+msgstr "සකසා ලැයිස්තුගත මාදිලිය"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "විසඳා පළාත් සේවාදායකයේ IP බාහිර අන්තර්ජාල භාවිතා,"
+
+msgid "login_incorrect"
+msgstr "ලොගින් වන්න වැරදි"
+
+msgid "keeping_connection_alive"
+msgstr "සම්බන්ධයෙන් ජීවමානව පවත්වාගෙන යාමේ"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "ලිවීමට නොහැකි විය, දත්ත සම්බන්ධතාවය වසා"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "දත්ත සම්බන්ධතාවය වසා කියවිය නොහැක"
+
+msgid "error_reading_file"
+msgstr "දෝෂ කියවීම ගොනුව"
+
+msgid "error_writing_file"
+msgstr "දෝෂ ලිඛිතව ගොනුව"
+
+msgid "failed_to_change_directory_to"
+msgstr "ඩිරෙක්ටර වෙනස් කිරීමට නොහැකි විය"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "ඔබ මෙම බහලුම වෙත ප්රවේශ වීමට නිවැරදි අවසර නැත"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "නැවත පෙර බහලුම වෙත ප්රතිවර්තනය"
+
+msgid "activate"
+msgstr "සක්රීය"
+
+msgid "payment"
+msgstr "ගෙවීම"
+
+msgid "license_key_is_required"
+msgstr "බලපත්ර යතුර අවශ්ය වේ"
+
+msgid "license_activated!"
+msgstr "බලපත්ර සක්රිය!"
+
+msgid "your_license_has_been_validated"
+msgstr "ඔබගේ බලපත්රය වලංගු කර ඇත."
+
+msgid "thank_you!"
+msgstr "ඔබට ස්තුතියි!"
+
+msgid "buy_now!"
+msgstr "දැන් මිලදී ගන්න!"
+
+msgid "buy_now"
+msgstr "දැන් මිලදී ගන්න"
+
+msgid "one_off_fee"
+msgstr "ගාස්තුවක් අය එක්"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "කිසිදු සීමා සමග මෙම යෙදුම භුක්ති විඳීමට උත්ශ්රේණි"
+
+msgid "please_enter_your_license_key_below"
+msgstr "පහත ඔබගේ බලපත්ර යතුර ඇතුලත් කරන්න"
+
+msgid "or"
+msgstr "හෝ"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "පැහැදිලි ගිණුම්"
+
+msgid "clear_ssh_keys"
+msgstr "SSH යතුරු පැහැදිලි"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "සියළු සුරකින SSH යතුරු දමයි"
+
+msgid "clear_app_settings"
+msgstr "යෙදුම් සැකසුම් හිස්"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "සියලු යෙදුම විශේෂිත සැකසුම් දමයි"
+
+msgid "clear_recent_connections"
+msgstr "පැහැදිලි මෑතකාලීන සම්බන්ධතා"
+
+msgid "deletes_all_recent_connections"
+msgstr "සියලු මෑත සම්බන්ධතා දමයි"
+
+msgid "import_type"
+msgstr "ආනයන වර්ගය"
+
+msgid "please_select"
+msgstr "කරුණාකර තෝරන්න"
+
+msgid "import_file"
+msgstr "ආනයන ගොනුව"
+
+msgid "choose_file"
+msgstr "ගොනුව තෝරන්න"
+
+msgid "delete_accounts"
+msgstr "ගිණුම් මකා"
+
+msgid "deletes_all_existing_accounts"
+msgstr "දැනට පවතින සියලු ගිණුම් දමයි"
+
+msgid "import_now"
+msgstr "දැන් ආනයන"
+
+msgid "none"
+msgstr "නැහැ"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "වෙනස්කම් බලපැවැත් වීමට සේයාරූ සේවාලාභියා යෙදුම නැවත ආරම්භ කරන්න."
+
+msgid "already_bought_the_app"
+msgstr "මේ වන විටත් මෙම App මිලදී?"
+
+msgid "choose"
+msgstr "තෝරා"
+
+msgid "deleted!"
+msgstr "මකාදැමුවා!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised බ්රවුසින් භාවිතා"
+
+msgid "remote_directory"
+msgstr "දුරස්ථ නාමාවලිය"
+
+msgid "rsa_key_only!"
+msgstr "RSA ප්රධාන පමණයි!"
+
+msgid "no_key_selected"
+msgstr "කිසිදු යතුරක් තෝරා ගන්නා ලදී."
+
+msgid "ssh_key_file"
+msgstr "SSH කී ගොනුව"
+
+msgid "no_dir_selected"
+msgstr "කිසිදු හිස් තීරුවෙහි තෝරා ගන්නා ලදී."
+
+msgid "keep_blank_for_current_password"
+msgstr "දැනට පවතින මුරපදය සඳහා හිස් තබා ගන්න."
+
+msgid "logon_type"
+msgstr "ආරම්භක පැලැල්ල වර්ගය"
+
+msgid "normal"
+msgstr "සාමාන්ය"
+
+msgid "ask_for_password"
+msgstr "මුරපදය සඳහා ඉල්ලා"
+
+msgid "anonymous"
+msgstr "නිර්නාමික"
+
+msgid "account_type"
+msgstr "ගිණුම් වර්ගය"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (සාමාන්ය සම්බන්ධතාවය)"
+
+msgid "sftp_secure_connection"
+msgstr "සේයාරූ (ආරක්ෂිත සම්බන්ධතාව)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (ආරක්ෂිත සම්බන්ධතාව)"
+
+msgid "folder"
+msgstr "ෆෝල්ඩරය"
+
+msgid "advanced"
+msgstr "උසස්"
+
+msgid "folder_name"
+msgstr "ෆෝල්ඩරය නම"
+
+msgid "parent"
+msgstr "මව්"
+
+msgid "new_ftp_site"
+msgstr "නව FTP අඩවිය"
+
+msgid "new_folder"
+msgstr "නව බහාලුමක්"
+
+msgid "clean_now"
+msgstr "දැන් පිරිසිදු"
+
+msgid "host"
+msgstr "සත්කාරක රට"
+
+msgid "no_accounts_added..."
+msgstr "කිසිදු ගිණුම් එකතු ..."
+
+msgid "unknown"
+msgstr "නොදන්නා"
+
+msgid "file_saved!"
+msgstr "ගොනුව ගබඩා!"
+
+msgid "uploading_file!"
+msgstr "උඩුගත ගොනුව!"
+
+msgid "save_failed!"
+msgstr "අසාර්ථක විය සුරකින්න!"
+
+msgid "search"
+msgstr "සෙවීම"
+
+msgid "find"
+msgstr "සොයන්න"
+
+msgid "replace"
+msgstr "ආදේශ"
+
+msgid "scroll_past_end"
+msgstr "අනුචලන ආදි අවසානය"
+
+msgid "show_annotations"
+msgstr "අනුසටහන් පෙන්වන්න"
+
+msgid "show_gutter"
+msgstr "පිහිලි පෙන්වන්න"
+
+msgid "show_invisibles"
+msgstr "Invisibles පෙන්වන්න"
+
+msgid "show_print_margin"
+msgstr "මුද්රණය ආන්තිකය පෙන්වන්න"
+
+msgid "highlight_active_line"
+msgstr "ක්රියාකාරී ලයින් ඉස්මතු"
+
+msgid "word_wrap"
+msgstr "වචනය සඟරාව"
+
+msgid "split_code"
+msgstr "පියලි සංග්රහයේ"
+
+msgid "preferences"
+msgstr "මනාප"
+
+msgid "close_all_tabs"
+msgstr "සියලු ටැබ් වසන්න"
+
+msgid "close_current_tab"
+msgstr "වත්මන් Tab වසන්න"
+
+msgid "auto_save_file_when_i_type"
+msgstr "මම ටයිප් කරන විට වාහන ගොනුව සුරකින්න"
+
+msgid "auto_save"
+msgstr "වාහන සුරකින්න"
+
+msgid "quick_save"
+msgstr "ඉක්මන් සුරකින්න"
+
+msgid "documentation"
+msgstr "ලේඛගතකිරීම"
+
+msgid "themes"
+msgstr "තේමාවන්"
+
+msgid "keyboard_shortcuts"
+msgstr "යතුරු පුවරු කෙටිමං"
+
+msgid "coming_soon"
+msgstr "ඉක්මණින් පැමිණෙන"
+
+msgid "empty"
+msgstr "හිස්"

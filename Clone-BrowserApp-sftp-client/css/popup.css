@@ -1,0 +1,179 @@
+body.popup footer p {
+    padding: 7px;
+}
+
+.error_box {
+    margin: 10px 0;
+    display: block;
+    color: #990000;
+    padding: 6px 10px;
+    font-size: 11px;
+    background-color: #ffe8e8;
+    border: 1px solid #d0b3b3;
+}
+
+section.wrapper {
+    padding: 67px 17px 47px;
+}
+section.wrapper.manage_accounts {
+    padding: 50px 0px 30px;
+}
+section.wrapper.settings {
+    padding: 47px 0px;
+}
+section.wrapper.edit {
+    padding: 0px;
+}
+
+/* Overall */
+section.wrapper.about, section.wrapper.import_accounts, section.wrapper.settings, section.wrapper.clear_data, section.wrapper.manage_accounts, section.wrapper.file_permissions, section.wrapper.confirm, section.wrapper.hostkey, section.wrapper.download {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section.wrapper.advert {
+    padding: 0;
+}
+
+section.wrapper.download {
+    padding: 49px 0 30px;
+}
+section.wrapper.download > webview {
+    width: 100%;
+    height: 100%;
+}
+
+/* Manage Accounts */
+section.wrapper.manage_accounts tr.temp_tabs td {
+    position: relative;
+}
+section.wrapper.manage_accounts tr.temp_tabs td #popup_tabs {
+    position: absolute;
+    left: 20px;
+    top: -26px;
+    z-index: 10000;
+}
+section.wrapper.manage_accounts .folder_sites {
+    background: rgba(0, 0, 0, 0.06);
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+section.wrapper.manage_accounts #folder_sites {
+    height: 100%;
+    margin: 0px;
+    padding: 5px;
+    list-style: none;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.1);
+}
+section.wrapper.manage_accounts #folder_sites li ul {
+    list-style: none;
+}
+section.wrapper.manage_accounts #folder_sites li a {
+    padding: 2px 5px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+section.wrapper.manage_accounts #folder_sites li a i.fa {
+    width: 20px;
+    text-align: center;
+}
+section.wrapper.manage_accounts #folder_sites li a.cur {
+    background: #E5E5E5;
+    border: 1px solid #CCC;
+}
+section.wrapper.manage_accounts #add_modify {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+/* Edit */
+section.wrapper.edit #mainbody, section.wrapper.edit #mainbody .editorTab {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+section.wrapper.edit #tabs {
+    border-bottom: 1px solid #DDD;
+}
+#fileSaved {
+    display: none;
+    float: none;
+    color: #008000;
+    font-weight: 600;
+}
+#uploadFile {
+    display: none;
+    float: none;
+    color: #008000;
+    font-weight: 600;
+}
+#saveFailed {
+    display: none;
+    float: none;
+    color: #CC0000;
+    font-weight: 600;
+}
+#filePathName {
+    float: none;
+    color: #777;
+    font-weight: 600;
+}
+
+/* Import Accounts */
+section.wrapper.import_accounts p, section.wrapper.clear_data p {
+    padding: 10px 5px 0px;
+}
+
+
+/* File Permissions */
+section.wrapper.file_permissions {
+    padding-bottom: 18px;
+}
+section.wrapper.file_permissions fieldset {
+    position: relative;
+    border-radius: 4px;
+    margin: 17px 0px;
+    padding: 15px 5px 5px 5px;
+    border: 1px solid #bbb;
+}
+section.wrapper.file_permissions fieldset > label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #EEE;
+    padding: 0px 4px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+/* About */
+section.wrapper.about a {
+    color: #333;
+}
+section.wrapper.about a:hover {
+    color: #000;
+}
+
+/* Settings */
+section.wrapper.settings #left_tabs {
+    width: 180px;
+}
+section.wrapper.settings .tabMain {
+    display: none;
+}
+section.wrapper.settings .tabMain.cur {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    height: 336px;
+    min-height: 100%;
+}
+section.wrapper.settings .tabMain h2 {
+    text-shadow: 1px 1px 1px #CCC;
+}
+section.wrapper.settings .security_update {
+    float: left;
+}

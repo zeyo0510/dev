@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <base target="_blank">
+    <title>{{ 'editor_preferences'|trans }}</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/plugins/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body class="popup fullVersion">
+    <div id="loading_app">
+        <img src="images/loading.gif" class="loading" border="0" />
+    </div>
+    <div id="wrapper" class="hide">
+        <header class="full-page">
+            <div class="drag"></div>
+            <a id="logo"><img src="images/32.png" /></a>
+            <span class="title">{{ 'editor_preferences'|trans }}</span>
+        </header>
+        <section class="window-buttons">
+            <a id="window-close" class="close">
+                <i class="fa fa-close"></i>
+            </a>
+        </section>
+        <section class="wrapper confirm">
+            <table width="100%">
+                <tr>
+                    <td>Font Size</td>
+                    <td><select id="font-size"><option value="10">10px</option><option value="11">11px</option><option value="12">12px</option><option value="13">13px</option><option value="14">14px</option><option value="16">16px</option><option value="18">18px</option><option value="20">20px</option><option value="24">24px</option></select></td>
+                </tr>
+                <tr>
+                    <td>Theme</td>
+                    <td>
+                        <select id="font-size">
+                            <optgroup label="Bright">
+                                <option value="ace/theme/chrome">Chrome</option><option value="ace/theme/clouds">Clouds</option><option value="ace/theme/crimson_editor">Crimson Editor</option><option value="ace/theme/dawn">Dawn</option><option value="ace/theme/dreamweaver">Dreamweaver</option><option value="ace/theme/eclipse">Eclipse</option><option value="ace/theme/github">GitHub</option><option value="ace/theme/solarized_light">Solarized Light</option><option value="ace/theme/textmate">TextMate</option><option value="ace/theme/tomorrow">Tomorrow</option><option value="ace/theme/xcode">XCode</option><option value="ace/theme/kuroir">Kuroir</option><option value="ace/theme/katzenmilch">KatzenMilch</option>
+                            </optgroup>
+                            <optgroup label="Dark">
+                                <option value="ace/theme/ambiance">Ambiance</option><option value="ace/theme/chaos">Chaos</option><option value="ace/theme/clouds_midnight">Clouds Midnight</option><option value="ace/theme/cobalt">Cobalt</option><option value="ace/theme/idle_fingers">idle Fingers</option><option value="ace/theme/kr_theme">krTheme</option><option value="ace/theme/merbivore">Merbivore</option><option value="ace/theme/merbivore_soft">Merbivore Soft</option><option value="ace/theme/mono_industrial">Mono Industrial</option><option value="ace/theme/monokai">Monokai</option><option value="ace/theme/pastel_on_dark">Pastel on dark</option><option value="ace/theme/solarized_dark">Solarized Dark</option><option value="ace/theme/terminal">Terminal</option><option value="ace/theme/tomorrow_night">Tomorrow Night</option><option value="ace/theme/tomorrow_night_blue">Tomorrow Night Blue</option><option value="ace/theme/tomorrow_night_bright">Tomorrow Night Bright</option><option value="ace/theme/tomorrow_night_eighties">Tomorrow Night 80s</option><option value="ace/theme/twilight">Twilight</option><option value="ace/theme/vibrant_ink">Vibrant Ink</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tab Spaces</td>
+                    <td><input type="text" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Split Code</td>
+                    <td><input type="checkbox" id="split_code" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Word Wrap</td>
+                    <td><input type="checkbox" id="word_wrap" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Highlight Active Line</td>
+                    <td><input type="checkbox" id="highlight_active_line" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Show Print Margin</td>
+                    <td><input type="checkbox" id="show_print_margin" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Show Invisibles</td>
+                    <td><input type="checkbox" id="show_invisibles" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Show Gutter</td>
+                    <td><input type="checkbox" id="show_gutter" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Show Annotations</td>
+                    <td><input type="checkbox" id="show_annotations" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Scroll Past End</td>
+                    <td><input type="checkbox" id="scroll_past_end" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Show Indent Guides</td>
+                    <td><input type="checkbox" id="show_indent_guides" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Enable Elastic Tabstops</td>
+                    <td><input type="checkbox" id="enable_elastic_tabstops" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Use Soft Tabs</td>
+                    <td><input type="checkbox" id="show_indent_guides" value="1" /></td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <p>{{ 'YEAR'|trans }} &copy; {{ 'sftpclient'|trans }}</p>
+        </footer>
+    </div>
+</body>
+</html>

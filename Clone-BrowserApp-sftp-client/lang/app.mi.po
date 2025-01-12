@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: mi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "tahua"
+
+msgid "file"
+msgstr "kōnae"
+
+msgid "view"
+msgstr "Tirohia"
+
+msgid "edit"
+msgstr "Whakatika"
+
+msgid "help"
+msgstr "Āwhina"
+
+msgid "manage_accounts"
+msgstr "whakahaere Pūkete"
+
+msgid "import_accounts"
+msgstr "Kawemai Pūkete"
+
+msgid "export_accounts"
+msgstr "Pūkete Kaweake"
+
+msgid "quick_connect"
+msgstr "Tūhono Tere"
+
+msgid "message_log"
+msgstr "karere Takiuru"
+
+msgid "local_directory"
+msgstr "Whaiaronga Local"
+
+msgid "uploads_downloads"
+msgstr "Tukunga / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Ūkui Raraunga Tiakina"
+
+msgid "edit_settings"
+msgstr "Whakatika Tautuhinga"
+
+msgid "report_bug"
+msgstr "Pūrongo i te Bug"
+
+msgid "suggest_feature"
+msgstr "Homai he Āhuahira"
+
+msgid "ask_a_question"
+msgstr "A ani i te Pātai"
+
+msgid "change_log"
+msgstr "Huri Rangitaki"
+
+msgid "about"
+msgstr "Mō"
+
+msgid "exit"
+msgstr "Waiho"
+
+msgid "host_ip_address"
+msgstr "Kaihautū / Wāhitau IP"
+
+msgid "username"
+msgstr "ingoa kaiwhakamahi"
+
+msgid "password"
+msgstr "kupuhipa"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Tūhono"
+
+msgid "welcome"
+msgstr "Nau mai"
+
+msgid "welcome_intro"
+msgstr "<p> Kiritaki sFTP Ko katoa e pā ana ki te kuwaretanga, kua hanga ki runga ki te Google Chrome / Chrome OS atanga taupānga tākai tuku i te taupānga kia kia nohopuku me te aro. Ētahi o te taumahinga ngā tētahi Kaiwhakahaere Pūkete FTP ki te rokiroki atu, ka"
+
+msgid "latest_updates"
+msgstr "Whakahōunga Latest"
+
+msgid "server_status"
+msgstr "Tūnga tūmau"
+
+msgid "license_server"
+msgstr "Tūmau raihana"
+
+msgid "sftp_support"
+msgstr "tautoko"
+
+msgid "notice_update"
+msgstr "Notice / Whakahōunga"
+
+msgid "website"
+msgstr "paetukutuku"
+
+msgid "clear_all"
+msgstr "Ūkui katoa"
+
+msgid "manage"
+msgstr "whakahaere"
+
+msgid "recheck"
+msgstr "Re-Taki"
+
+msgid "last_release"
+msgstr "Release whakamutunga"
+
+msgid "released"
+msgstr "tukua"
+
+msgid "queued"
+msgstr "tūtirahia"
+
+msgid "failed"
+msgstr "I rahua"
+
+msgid "completed"
+msgstr "oti"
+
+msgid "settings"
+msgstr "tautuhinga"
+
+msgid "add_folder"
+msgstr "Tāpiri Kōpaki"
+
+msgid "add_ftp_account"
+msgstr "Tāpiri Pūkete FTP"
+
+msgid "file_editor"
+msgstr "Editor Kōnae"
+
+msgid "editor_preferences"
+msgstr "Manakohanga Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Koutou Pūkete FTP"
+
+msgid "most_recent_used"
+msgstr "Tino tata whakamahia."
+
+msgid "no_connections_yet_made"
+msgstr "No hononga ano hanga"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No pūkete FTP tāpiri ano"
+
+msgid "most_recent_connections"
+msgstr "Te nuinga o Hononga Tata"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 hononga i hanga"
+
+msgid "designed_developed_by"
+msgstr "Waihangatia & Whakawhanakehia e"
+
+msgid "about_info"
+msgstr "te whakamahi i koa te paetukutuku sFTP Kiritaki mo te tautoko, ngā kahore tautoko te roto i to tatou paetukutuku takitahi."
+
+msgid "local"
+msgstr "rohe"
+
+msgid "remote"
+msgstr "mamao"
+
+msgid "remote_location_desc"
+msgstr "tauira / public_html"
+
+msgid "create_directory"
+msgstr "Waihanga Whaiaronga"
+
+msgid "create_new_directory"
+msgstr "Waihanga Whaiaronga New"
+
+msgid "create_file"
+msgstr "Waihanga Kōnae"
+
+msgid "create_new_file"
+msgstr "Waihanga Kōnae New"
+
+msgid "refresh_list"
+msgstr "Rārangi Tāmata"
+
+msgid "change"
+msgstr "Huri"
+
+msgid "report_a_bug"
+msgstr "Pūrongo i te Bug"
+
+msgid "suggest_a_feature"
+msgstr "Homai he Āhuahira"
+
+msgid "enter_password"
+msgstr "Tomo Kupuhipa"
+
+msgid "enter_your_password..."
+msgstr "E tomo koutou kupuhipa ..."
+
+msgid "passphrase"
+msgstr "kīangahipa"
+
+msgid "enter_your_passphrase..."
+msgstr "E tomo koutou kīangahipa ..."
+
+msgid "email_sftp_client"
+msgstr "Īmēra Kiritaki sFTP"
+
+msgid "faqs"
+msgstr "FAQ o"
+
+msgid "visit_sftp_client_website"
+msgstr "Tirohia sFTP Kiritaki paetukutuku"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Whakatauria tatou i runga i te Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Pūrongo i te take ranei whiwhi te tauturu"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Hono tatou i runga i Facebook mo whakahōunga"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "A pee i tatou i runga i Twitter mo whakahōunga"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Tatou i runga i Google mō ngā whakahōunga"
+
+msgid "okay"
+msgstr "Te pai"
+
+msgid "cancel"
+msgstr "Whakakore"
+
+msgid "close"
+msgstr "Katia"
+
+msgid "unknown_host"
+msgstr "Kaihautū unknown"
+
+msgid "okay_to_continue"
+msgstr "Te pai ki te haere tonu?"
+
+msgid "fingerprint"
+msgstr "tapumati"
+
+msgid "remember"
+msgstr "Kia mahara"
+
+msgid "file_permissions"
+msgstr "Whakaaetanga kōnae"
+
+msgid "file_permissions_desc"
+msgstr "Koa tīpako i te huanga hou mo te kōnae i tīpakohia (s) / kōpaki (s)"
+
+msgid "read"
+msgstr "A tai'oi"
+
+msgid "write"
+msgstr "Tuhia"
+
+msgid "execute"
+msgstr "Whakaritea te"
+
+msgid "owner"
+msgstr "Kaipupuri"
+
+msgid "group"
+msgstr "rōpū"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "Uara Whika"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "E tomo te ingoa o te whaiaronga hou ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "E tomo te ingoa o te kōnae hou ..."
+
+msgid "name"
+msgstr "ingoa"
+
+msgid "enter_a_password"
+msgstr "E tomo te Kupuhipa"
+
+msgid "language"
+msgstr "reo"
+
+msgid "seconds"
+msgstr "hēkona"
+
+msgid "minutes"
+msgstr "meneti"
+
+msgid "hour"
+msgstr "haora"
+
+msgid "hours"
+msgstr "haora"
+
+msgid "day"
+msgstr "Day"
+
+msgid "trial_left"
+msgstr "Trial Mauī"
+
+msgid "register_now"
+msgstr "Rēhita Na"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Haumarutanga"
+
+msgid "master_password"
+msgstr "Kupuhipa te Kaiwhakaako"
+
+msgid "status"
+msgstr "tūnga"
+
+msgid "enabled"
+msgstr "whakahohea"
+
+msgid "disabled"
+msgstr "monokia"
+
+msgid "timeout"
+msgstr "wāhiki"
+
+msgid "save"
+msgstr "Tiaki"
+
+msgid "add_account"
+msgstr "Tāpiri Pūkete"
+
+msgid "support"
+msgstr "tautoko"
+
+msgid "notice_updates"
+msgstr "Notice / Whakahōunga"
+
+msgid "please_login"
+msgstr "koa Takiuru"
+
+msgid "your_session_timed_out"
+msgstr "Koutou Session Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Aroha ko hē te kupuhipa tomo koutou!"
+
+msgid "login"
+msgstr "takiuru"
+
+msgid "master_password_desc"
+msgstr "Whakaturia tenei kupuhipa ariki ki te pupuri i haumaru koutou pūkete."
+
+msgid "license_key"
+msgstr "Key raihana"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "tuimotu"
+
+msgid "currently_unavailable"
+msgstr "tēnei wā Korewātea"
+
+msgid "no_message_to_display"
+msgstr "No karere ki te whakaatu"
+
+msgid "offline_notice_title"
+msgstr "Ūnga - He tuimotu ranei i runga i te whatunga hononga anake koe?"
+
+msgid "offline_notice_desc"
+msgstr "Ko tēnei wā tuimotu koe, i runga i te whatunga taea whakapumautia hononga anake ranei kahore hononga ki to tatou tūmau"
+
+msgid "edit_file"
+msgstr "Whakatika Kōnae"
+
+msgid "download"
+msgstr "Tikiake"
+
+msgid "upload"
+msgstr "Tukuatu"
+
+msgid "host_ip_is_required"
+msgstr "hiahiatia Kaihautū / IP te"
+
+msgid "apply_to_all_files"
+msgstr "Te tono ki ngā kōnae katoa"
+
+msgid "activate_now"
+msgstr "whakahohe Na"
+
+msgid "deactivate"
+msgstr "De-whakahohe"
+
+msgid "in_progress"
+msgstr "i roto i te Kaunuku"
+
+msgid "complete"
+msgstr "Whakaotia"
+
+msgid "direction"
+msgstr "aronga"
+
+msgid "progress"
+msgstr "te ahunga whakamua"
+
+msgid "permissions"
+msgstr "whakaaetanga"
+
+msgid "owner_group"
+msgstr "Kaipupuri / Rōpū"
+
+msgid "size"
+msgstr "rahi"
+
+msgid "type"
+msgstr "momo"
+
+msgid "modified"
+msgstr "whakakētia"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "whakawāteatia"
+
+msgid "error_connecting"
+msgstr "hapa tūhono"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Hononga Hapa ki te manaaki / wāhitau ip"
+
+msgid "error_connecting_to_port"
+msgstr "Hononga Hapa ki te tauranga"
+
+msgid "please_select_a_local_directory_first"
+msgstr "tīpako koa he whaiaronga rohe tuatahi!"
+
+msgid "go"
+msgstr "haere"
+
+msgid "confirm"
+msgstr "Whakaūngia"
+
+msgid "delete"
+msgstr "Mukua"
+
+msgid "rename"
+msgstr "Whakaingoa"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Tārua URL (s) ki te papatopenga"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Koa whakau e hiahia ana koe ki te muku i te kōnae kua tīpakohia (s) / kōpaki (s)"
+
+msgid "cancelled_by_user"
+msgstr "Whakakorea e kaiwhakamahi"
+
+msgid "already_exists_overwrite"
+msgstr "kē, tuhirua?"
+
+msgid "dashboard"
+msgstr "Papatohu"
+
+msgid "my_accounts"
+msgstr "oku Pūkete"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Tiakina Kōnae! Kua pūkete katoa tāruatia."
+
+msgid "file_failed_please_try_again"
+msgstr "I rahua Kōnae! Koa ngana anō."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "E tēnei wā koe kahore pūkete ki te kia tāruatia."
+
+msgid "saved!"
+msgstr "Ora!"
+
+msgid "please_enter_a_password"
+msgstr "tomo koa he kupuhipa!"
+
+msgid "connection_closed"
+msgstr "katia hononga"
+
+msgid "listing_mode_set_to"
+msgstr "Te whakarārangi whakaturia aratau ki"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "whakatau IP tūmau Local, te whakamahi i IP waho"
+
+msgid "login_incorrect"
+msgstr "takiuru hē"
+
+msgid "keeping_connection_alive"
+msgstr "E rongoa nei i ora hononga"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Kāore e taea te tuhituhi, katia hononga raraunga"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Kāore e taea te pānui i tutakina hononga raraunga"
+
+msgid "error_reading_file"
+msgstr "kōnae pānui Hapa"
+
+msgid "error_writing_file"
+msgstr "kōnae tuhituhi Hapa"
+
+msgid "failed_to_change_directory_to"
+msgstr "I rahua te huri whaiaronga ki"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "E kore e whai koe i te whakaaetanga tika ki te uru atu ki tēnei whaiaronga"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Whakahoki hoki ki te whaiaronga o mua"
+
+msgid "activate"
+msgstr "whakahohe"
+
+msgid "payment"
+msgstr "utu"
+
+msgid "license_key_is_required"
+msgstr "hiahiatia kī raihana te"
+
+msgid "license_activated!"
+msgstr "Raihana Hohea!"
+
+msgid "your_license_has_been_validated"
+msgstr "Kua tou raihana kua whakamana."
+
+msgid "thank_you!"
+msgstr "Mauruuru e koe!"
+
+msgid "buy_now!"
+msgstr "Hokona Na!"
+
+msgid "buy_now"
+msgstr "Hokona Na"
+
+msgid "one_off_fee"
+msgstr "kotahi atu utu"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Koa ake ki te oaoa i tēnei taupānga ki kahore here"
+
+msgid "please_enter_your_license_key_below"
+msgstr "tomo koa koutou Key Raihana raro"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Ūkui Pūkete"
+
+msgid "clear_ssh_keys"
+msgstr "Ūkui Kī SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Muku taviri SSH katoa ora"
+
+msgid "clear_app_settings"
+msgstr "Tautuhinga App Ūkui"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Muku tautuhinga motuhake katoa taupānga"
+
+msgid "clear_recent_connections"
+msgstr "Ūkui Hononga Tata"
+
+msgid "deletes_all_recent_connections"
+msgstr "Muku hononga tata katoa"
+
+msgid "import_type"
+msgstr "Kawemai Momo"
+
+msgid "please_select"
+msgstr "koa Tīpakohia"
+
+msgid "import_file"
+msgstr "Kawemai Kōnae"
+
+msgid "choose_file"
+msgstr "Kōwhiri Kōnae"
+
+msgid "delete_accounts"
+msgstr "Mukua Pūkete"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Muku pūkete tīariari katoa"
+
+msgid "import_now"
+msgstr "Kawemai Na"
+
+msgid "none"
+msgstr "kahore"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Koa tīmata anō sFTP Kiritaki taupānga mō ki te huringa tango pānga."
+
+msgid "already_bought_the_app"
+msgstr "Kua hokona e te App?"
+
+msgid "choose"
+msgstr "Kōwhiri"
+
+msgid "deleted!"
+msgstr "Mukua!"
+
+msgid "use_syncronised_browsing"
+msgstr "te whakamahi i tirotiro syncronised"
+
+msgid "remote_directory"
+msgstr "Whaiaronga mamao"
+
+msgid "rsa_key_only!"
+msgstr "kī RSA anake!"
+
+msgid "no_key_selected"
+msgstr "tīpakohia No kī."
+
+msgid "ssh_key_file"
+msgstr "SSH Kōnae Key"
+
+msgid "no_dir_selected"
+msgstr "No dir tīpakohia."
+
+msgid "keep_blank_for_current_password"
+msgstr "Kia mau ki pātea mō te kupuhipa o nāianei."
+
+msgid "logon_type"
+msgstr "Momo Takiuru"
+
+msgid "normal"
+msgstr "Pūnoa"
+
+msgid "ask_for_password"
+msgstr "A ani i hoki Kupuhipa"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Momo pūkete"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Hononga Pūnoa)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Hononga Haumaru)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Hononga Haumaru)"
+
+msgid "folder"
+msgstr "kōpaki"
+
+msgid "advanced"
+msgstr "Arā"
+
+msgid "folder_name"
+msgstr "ingoa kōpaki"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "Pae FTP New"
+
+msgid "new_folder"
+msgstr "Kōpaki New"
+
+msgid "clean_now"
+msgstr "Clean Na"
+
+msgid "host"
+msgstr "Kaihautū"
+
+msgid "no_accounts_added..."
+msgstr "No apititia Accounts ..."
+
+msgid "unknown"
+msgstr "unknown"
+
+msgid "file_saved!"
+msgstr "Tiakina Kōnae!"
+
+msgid "uploading_file!"
+msgstr "Kōnae Tukuatu!"
+
+msgid "save_failed!"
+msgstr "Whakaorangia rahua!"
+
+msgid "search"
+msgstr "Rapu"
+
+msgid "find"
+msgstr "Kimihia"
+
+msgid "replace"
+msgstr "Whakakapia"
+
+msgid "scroll_past_end"
+msgstr "Panuku Past Whakamutunga"
+
+msgid "show_annotations"
+msgstr "Whakaatu Tuhipoka"
+
+msgid "show_gutter"
+msgstr "Whakaatu whāroto"
+
+msgid "show_invisibles"
+msgstr "Whakaatu Invisibles"
+
+msgid "show_print_margin"
+msgstr "Whakaatu Tawhē Tā"
+
+msgid "highlight_active_line"
+msgstr "Miramirahia Raina Hohe"
+
+msgid "word_wrap"
+msgstr "kupu Tākai"
+
+msgid "split_code"
+msgstr "Ritua Waehere"
+
+msgid "preferences"
+msgstr "Manakohanga"
+
+msgid "close_all_tabs"
+msgstr "Katia katoa Ripa"
+
+msgid "close_current_tab"
+msgstr "Katia Ripa nāianei"
+
+msgid "auto_save_file_when_i_type"
+msgstr "whakaorangia aunoa kōnae ina patopato ahau"
+
+msgid "auto_save"
+msgstr "Tiaki aunoa"
+
+msgid "quick_save"
+msgstr "Tiaki Tere"
+
+msgid "documentation"
+msgstr "tuhinga"
+
+msgid "themes"
+msgstr "kaupapa"
+
+msgid "keyboard_shortcuts"
+msgstr "Pokatata papapātuhi"
+
+msgid "coming_soon"
+msgstr "Haere mai i maoro"
+
+msgid "empty"
+msgstr "kau"

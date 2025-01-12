@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "Map"
+
+msgid "view"
+msgstr "Fisy"
+
+msgid "edit"
+msgstr "bewurkje"
+
+msgid "help"
+msgstr "Help"
+
+msgid "manage_accounts"
+msgstr "beheare Akkounts"
+
+msgid "import_accounts"
+msgstr "ymportearje Akkounts"
+
+msgid "export_accounts"
+msgstr "eksportearje Accounts"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "berjocht Oanmelde"
+
+msgid "local_directory"
+msgstr "lokale Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Saved Data"
+
+msgid "edit_settings"
+msgstr "bewurkje ynstellings"
+
+msgid "report_bug"
+msgstr "Rapportearje in Bug"
+
+msgid "suggest_feature"
+msgstr "Suggest in Feature"
+
+msgid "ask_a_question"
+msgstr "In fraach stelle"
+
+msgid "change_log"
+msgstr "Change Oanmelde"
+
+msgid "about"
+msgstr "Oer"
+
+msgid "exit"
+msgstr "Útgong"
+
+msgid "host_ip_address"
+msgstr "Host / IP-adres"
+
+msgid "username"
+msgstr "brûkersnamme"
+
+msgid "password"
+msgstr "Wachtwurd"
+
+msgid "port"
+msgstr "Haven"
+
+msgid "connect"
+msgstr "Ferbine"
+
+msgid "welcome"
+msgstr "Wolkom"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP- Client is alles oer ienfâld, dat is boud op de Google Chrome / Chrome OS ferpakt app ynterface sadat de app te wêzen fluch en responsive. Guon fan de funksjonaliteit befettet in FTP Account Manager te bewarjen fuort en organisearjen jo meast ús"
+
+msgid "latest_updates"
+msgstr "Latest Updates"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "lisinsje Server"
+
+msgid "sftp_support"
+msgstr "Stypje"
+
+msgid "notice_update"
+msgstr "Notice / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "clear All"
+
+msgid "manage"
+msgstr "beheare"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Lêste Release"
+
+msgid "released"
+msgstr "Released"
+
+msgid "queued"
+msgstr "wachtrige"
+
+msgid "failed"
+msgstr "mislearre"
+
+msgid "completed"
+msgstr "klear"
+
+msgid "settings"
+msgstr "ynstellings"
+
+msgid "add_folder"
+msgstr "Map tafoegje"
+
+msgid "add_ftp_account"
+msgstr "Add FTP Account"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "editor Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Jo FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "Meast resint brûkt."
+
+msgid "no_connections_yet_made"
+msgstr "Gjin ferbinings noch makke"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No FTP accounts added yet"
+
+msgid "most_recent_connections"
+msgstr "Most Recent Ferbinings"
+
+msgid "last_10_connections_made"
+msgstr "Lêste 10 ferbinings makke"
+
+msgid "designed_developed_by"
+msgstr "Ûntwurpen & ûntwikkele troch"
+
+msgid "about_info"
+msgstr "Brûk de SFTP- Client webside foar stipe, gjin stipe wurdt jûn troch ús yndividuele websiden."
+
+msgid "local"
+msgstr "Pleatslik"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "bgl / Public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Nije Directory"
+
+msgid "create_file"
+msgstr "Create Triem"
+
+msgid "create_new_file"
+msgstr "Nij Ofbyld"
+
+msgid "refresh_list"
+msgstr "ferfarskje List"
+
+msgid "change"
+msgstr "Feroaring"
+
+msgid "report_a_bug"
+msgstr "Rapportearje in Bug"
+
+msgid "suggest_a_feature"
+msgstr "Suggest in Feature"
+
+msgid "enter_password"
+msgstr "Wachtwurd ynjaan"
+
+msgid "enter_your_password..."
+msgstr "Fier jo wachtwurd ..."
+
+msgid "passphrase"
+msgstr "wachtwurd"
+
+msgid "enter_your_passphrase..."
+msgstr "Fier jo wachtwurd ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP- Client"
+
+msgid "faqs"
+msgstr "FAQ fan"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit SFTP- Client Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Rate ús op de Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rapportearje in dei of krije help"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Join ús op Facebook foar fernijings"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Folgje ús op Twitter foar fernijings"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Ús op Google foar fernijings"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "Ofbrekke"
+
+msgid "close"
+msgstr "Slute"
+
+msgid "unknown_host"
+msgstr "Unbekende host"
+
+msgid "okay_to_continue"
+msgstr "Okay om fierder te gean?"
+
+msgid "fingerprint"
+msgstr "Fingerprint"
+
+msgid "remember"
+msgstr "Remember"
+
+msgid "file_permissions"
+msgstr "triem Permissions"
+
+msgid "file_permissions_desc"
+msgstr "Selektearje de nije attributen foar de selektearre triem (s) / map (s)"
+
+msgid "read"
+msgstr "Lêze"
+
+msgid "write"
+msgstr "Skriuwe"
+
+msgid "execute"
+msgstr "Eksekutearje"
+
+msgid "owner"
+msgstr "Eigner"
+
+msgid "group"
+msgstr "Groep"
+
+msgid "public"
+msgstr "Iepenbier"
+
+msgid "numeric_value"
+msgstr "numeryk Value"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Fier de namme fan de nije map ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Fier de namme fan it nije triem ..."
+
+msgid "name"
+msgstr "Namme"
+
+msgid "enter_a_password"
+msgstr "Folje in wachtwurd yn"
+
+msgid "language"
+msgstr "Taal"
+
+msgid "seconds"
+msgstr "sekonden"
+
+msgid "minutes"
+msgstr "minuten"
+
+msgid "hour"
+msgstr "Oere"
+
+msgid "hours"
+msgstr "oeren"
+
+msgid "day"
+msgstr "Dei"
+
+msgid "trial_left"
+msgstr "Trial Linker"
+
+msgid "register_now"
+msgstr "Skriuw No yn"
+
+msgid "general"
+msgstr "Algemien"
+
+msgid "security"
+msgstr "Feiligens"
+
+msgid "master_password"
+msgstr "Master Wachtwurd"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "Mooglik meitsje"
+
+msgid "disabled"
+msgstr "Ynvalide"
+
+msgid "timeout"
+msgstr "Skoft"
+
+msgid "save"
+msgstr "Rêde"
+
+msgid "add_account"
+msgstr "Account tafoegje"
+
+msgid "support"
+msgstr "Stypje"
+
+msgid "notice_updates"
+msgstr "Notice / Updates"
+
+msgid "please_login"
+msgstr "please Login"
+
+msgid "your_session_timed_out"
+msgstr "Jo Sesje ferrûn"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry it wachtwurd dat jo ynfierd wie ferkeard!"
+
+msgid "login"
+msgstr "login"
+
+msgid "master_password_desc"
+msgstr "Set dit haadwachtwurd te hâlden jo akkounten feilich."
+
+msgid "license_key"
+msgstr "lisinsje Key"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Op it stuit net beskikber"
+
+msgid "no_message_to_display"
+msgstr "Gjin berjocht te werjaan"
+
+msgid "offline_notice_title"
+msgstr "Der Is Net Mear - Binne jo offline of op in netwurk allinne ferbining?"
+
+msgid "offline_notice_desc"
+msgstr "Jo binne op dit stuit sûnder ferbining, op in netwurk allinnich ferbining of gjin ferbining koe wurde fêststeld nei ús tsjinner"
+
+msgid "edit_file"
+msgstr "bewurkje Ofbyld"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP is nedich"
+
+msgid "apply_to_all_files"
+msgstr "Jilde foar alle triemmen"
+
+msgid "activate_now"
+msgstr "No aktivearje"
+
+msgid "deactivate"
+msgstr "De-aktivearje"
+
+msgid "in_progress"
+msgstr "Dwaande"
+
+msgid "complete"
+msgstr "Kompleet"
+
+msgid "direction"
+msgstr "Rjochting"
+
+msgid "progress"
+msgstr "Foarútgong"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Eigner / Groep"
+
+msgid "size"
+msgstr "Grutte"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "kear bewurke"
+
+msgid "trial"
+msgstr "Proef"
+
+msgid "cleared"
+msgstr "ûntromme"
+
+msgid "error_connecting"
+msgstr "flater Ferbine"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Flater Ferbine mei host / IP-adres"
+
+msgid "error_connecting_to_port"
+msgstr "Flater Ferbine mei haven"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Selektearje in lokale triemtafel earst!"
+
+msgid "go"
+msgstr "Go"
+
+msgid "confirm"
+msgstr "Befêstigje"
+
+msgid "delete"
+msgstr "wiskje"
+
+msgid "rename"
+msgstr "omneame"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) nei klamboerd"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Befêstigje jo wolle wiskje de selektearre triem (s) / map (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled troch brûker"
+
+msgid "already_exists_overwrite"
+msgstr "bestiet al, oerskriuwe?"
+
+msgid "dashboard"
+msgstr "dashboard"
+
+msgid "my_accounts"
+msgstr "myn Akkounts"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Saved! Alle akkounts binne stipe op."
+
+msgid "file_failed_please_try_again"
+msgstr "Triem is mislearre! Besykje it nochris."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Jo stuit hawwe gjin rekkens te wurde stipe op."
+
+msgid "saved!"
+msgstr "Bewarre!"
+
+msgid "please_enter_a_password"
+msgstr "Fier in wachtwurd yn!"
+
+msgid "connection_closed"
+msgstr "ferbining ferbrutsen"
+
+msgid "listing_mode_set_to"
+msgstr "Listing modus set oan"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokale tsjinner IP oplost, mei help fan eksterne IP"
+
+msgid "login_incorrect"
+msgstr "login incorrect"
+
+msgid "keeping_connection_alive"
+msgstr "Keeping ferbining libben"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Koe net skriuwe, gegevens ferbining sluten"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Koe net lêzen gegevens ferbining sluten"
+
+msgid "error_reading_file"
+msgstr "Fout by it lêzen triem"
+
+msgid "error_writing_file"
+msgstr "Flater skriuwen triem"
+
+msgid "failed_to_change_directory_to"
+msgstr "Mislearre te feroarjen triemtafel oan"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Mooglik beskikke jo net de krekte tagongsrjochten om dizze triemtafel"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting werom nei foarige map"
+
+msgid "activate"
+msgstr "aktivearje"
+
+msgid "payment"
+msgstr "Betelling"
+
+msgid "license_key_is_required"
+msgstr "Lisinsje kaai is nedich"
+
+msgid "license_activated!"
+msgstr "Lisinsje aktivearre!"
+
+msgid "your_license_has_been_validated"
+msgstr "Jo lisinsje is falidearre."
+
+msgid "thank_you!"
+msgstr "Dankewol!"
+
+msgid "buy_now!"
+msgstr "No keapje!"
+
+msgid "buy_now"
+msgstr "No keapje"
+
+msgid "one_off_fee"
+msgstr "ien off fee"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Graach upgrade te genietsjen dizze app mei gjin beheinings"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Fier jo diele Key hjirûnder"
+
+msgid "or"
+msgstr "OF"
+
+msgid "loading..."
+msgstr "Oan it laden ..."
+
+msgid "clear_accounts"
+msgstr "dúdlike Akkounts"
+
+msgid "clear_ssh_keys"
+msgstr "Dúdlik SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Wiskje alle bewarre SSH kaaien"
+
+msgid "clear_app_settings"
+msgstr "Dúdlik App ynstellings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Wiskje alle app spesifike ynstellings"
+
+msgid "clear_recent_connections"
+msgstr "Dúdlik Recent Ferbinings"
+
+msgid "deletes_all_recent_connections"
+msgstr "Wiskje alle resinte ferbinings"
+
+msgid "import_type"
+msgstr "ymportearje Type"
+
+msgid "please_select"
+msgstr "Meitsje in kar"
+
+msgid "import_file"
+msgstr "ymportearje Triem"
+
+msgid "choose_file"
+msgstr "Kies Bestân"
+
+msgid "delete_accounts"
+msgstr "wiskje Akkounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Wiskje alle besteande akkounts"
+
+msgid "import_now"
+msgstr "ymportearje no"
+
+msgid "none"
+msgstr "Gjin"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Please 'e nij starte SFTP- Client app foar de feroarings te nimmen effekt."
+
+msgid "already_bought_the_app"
+msgstr "Al kocht de App?"
+
+msgid "choose"
+msgstr "Kieze"
+
+msgid "deleted!"
+msgstr "Wiske!"
+
+msgid "use_syncronised_browsing"
+msgstr "brûke syncronised blêdzjen"
+
+msgid "remote_directory"
+msgstr "remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA kaai allinne!"
+
+msgid "no_key_selected"
+msgstr "Gjin kaai selektearre."
+
+msgid "ssh_key_file"
+msgstr "SSH Key Ofbyld"
+
+msgid "no_dir_selected"
+msgstr "Gjin dir selektearre."
+
+msgid "keep_blank_for_current_password"
+msgstr "Hâld blank foar aktuele wachtwurd."
+
+msgid "logon_type"
+msgstr "logon Type"
+
+msgid "normal"
+msgstr "Normaal"
+
+msgid "ask_for_password"
+msgstr "Freegje foar Wachtwurd"
+
+msgid "anonymous"
+msgstr "Anonym"
+
+msgid "account_type"
+msgstr "Akkount Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normaal ferbining)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP- (Feilige ferbining)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Feilige ferbining)"
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "advanced"
+msgstr "Avansearre"
+
+msgid "folder_name"
+msgstr "folder Name"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "Nije FTP Site"
+
+msgid "new_folder"
+msgstr "nije map"
+
+msgid "clean_now"
+msgstr "Clean no"
+
+msgid "host"
+msgstr "Gasthear"
+
+msgid "no_accounts_added..."
+msgstr "No Accounts Added ..."
+
+msgid "unknown"
+msgstr "Ûnbekend"
+
+msgid "file_saved!"
+msgstr "File Saved!"
+
+msgid "uploading_file!"
+msgstr "Heechladene triem!"
+
+msgid "save_failed!"
+msgstr "Bewarje mislearre!"
+
+msgid "search"
+msgstr "Sykje"
+
+msgid "find"
+msgstr "Fine"
+
+msgid "replace"
+msgstr "Ferfange"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Lit Annotations"
+
+msgid "show_gutter"
+msgstr "Lit Gutter"
+
+msgid "show_invisibles"
+msgstr "Lit AISB"
+
+msgid "show_print_margin"
+msgstr "Lit Print marzje"
+
+msgid "highlight_active_line"
+msgstr "Markearje Aktive Line"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "foarkar"
+
+msgid "close_all_tabs"
+msgstr "Alle ljeppers slute"
+
+msgid "close_current_tab"
+msgstr "Aktive ljepper slute"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto lis bestân doe't ik type"
+
+msgid "auto_save"
+msgstr "Auto bewarje"
+
+msgid "quick_save"
+msgstr "Quick bewarje"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "Tema"
+
+msgid "keyboard_shortcuts"
+msgstr "keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "Meikoarten"
+
+msgid "empty"
+msgstr "leech"

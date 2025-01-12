@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ps\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "غورنۍ"
+
+msgid "file"
+msgstr "د دوتنې"
+
+msgid "view"
+msgstr "محتویات"
+
+msgid "edit"
+msgstr "سمول"
+
+msgid "help"
+msgstr "مرسته"
+
+msgid "manage_accounts"
+msgstr "Manage حسابونه"
+
+msgid "import_accounts"
+msgstr "د وارداتو حسابونه"
+
+msgid "export_accounts"
+msgstr "د صادراتو د حسابونه"
+
+msgid "quick_connect"
+msgstr "د چټک اړیکي"
+
+msgid "message_log"
+msgstr "پيغام نشته وتنه ["
+
+msgid "local_directory"
+msgstr "ځايي Directory"
+
+msgid "uploads_downloads"
+msgstr "پورته کېدنې / دانلود"
+
+msgid "clear_saved_data"
+msgstr "روښانه خوندي شوي د معلوماتو د"
+
+msgid "edit_settings"
+msgstr "سمول امستنې"
+
+msgid "report_bug"
+msgstr "يو کړاو راپور"
+
+msgid "suggest_feature"
+msgstr "یو فیچر وړاندیز"
+
+msgid "ask_a_question"
+msgstr "پوښتنه"
+
+msgid "change_log"
+msgstr "د بدلون ننوتنه"
+
+msgid "about"
+msgstr "په اړه"
+
+msgid "exit"
+msgstr "وتون"
+
+msgid "host_ip_address"
+msgstr "کوربه / IP پته"
+
+msgid "username"
+msgstr "نوم"
+
+msgid "password"
+msgstr "رمز"
+
+msgid "port"
+msgstr "بندر"
+
+msgid "connect"
+msgstr "سره نښلوي"
+
+msgid "welcome"
+msgstr "ښه راغلاست"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> sFTP د مراجع د ټولو په اړه ساده وي، د هغې پر ګوګل کروم / کروم OS بسته اپلیکیشن ليدنمخ اجازه اپلیکیشن روژه او ځواب ویونکي وي جوړ شوی. د فعالیت د يو ايف ټي پي حساب د مدير شامل دی چې د لرې وساتي او ستاسې تر ټولو تن"
+
+msgid "latest_updates"
+msgstr "تازه تازه خبرونه"
+
+msgid "server_status"
+msgstr "د پالنګر حالت"
+
+msgid "license_server"
+msgstr "د جواز د پالنګر"
+
+msgid "sftp_support"
+msgstr "د ملاتړ"
+
+msgid "notice_update"
+msgstr "خبرتیا / تازه خبرونه"
+
+msgid "website"
+msgstr "وېب پاڼه"
+
+msgid "clear_all"
+msgstr "ټول پاک کړه"
+
+msgid "manage"
+msgstr "اداره"
+
+msgid "recheck"
+msgstr "Re-چک"
+
+msgid "last_release"
+msgstr "تېره اعلامیه"
+
+msgid "released"
+msgstr "خوشې"
+
+msgid "queued"
+msgstr "له پيله"
+
+msgid "failed"
+msgstr "کې پاتې راغی"
+
+msgid "completed"
+msgstr "بشپړ شوي"
+
+msgid "settings"
+msgstr "امستنې"
+
+msgid "add_folder"
+msgstr "Add پوښی"
+
+msgid "add_ftp_account"
+msgstr "Add ايف ټي پي حساب"
+
+msgid "file_editor"
+msgstr "د دوتنې اېډېټر"
+
+msgid "editor_preferences"
+msgstr "اېډېټر غوره توبونه"
+
+msgid "your_ftp_accounts"
+msgstr "ستاسو د ايف ټي پي حسابونه"
+
+msgid "most_recent_used"
+msgstr "په دې وروستیو کې کارول کيږي."
+
+msgid "no_connections_yet_made"
+msgstr "سره تړاو نه تر اوسه کړې"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "نه ايف ټي پي حساب زياته کړه تر اوسه"
+
+msgid "most_recent_connections"
+msgstr "تر ټولو وروستي پيوندونه"
+
+msgid "last_10_connections_made"
+msgstr "تېرو 10 اړیکو کړې"
+
+msgid "designed_developed_by"
+msgstr "طرح او پرمختللي له خوا"
+
+msgid "about_info"
+msgstr "لورينه وکړئ د ملاتړ د sFTP د مراجع ویب وکاروي، ملاتړ نه ده زموږ د انفرادي ویب پاڼو له لارې برابر."
+
+msgid "local"
+msgstr "د محلي"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "د بيلګې په توګه / public_html"
+
+msgid "create_directory"
+msgstr "Directory جوړول"
+
+msgid "create_new_directory"
+msgstr "ته نوي Directory"
+
+msgid "create_file"
+msgstr "دوتنه جوړول"
+
+msgid "create_new_file"
+msgstr "نوی دوتنه جوړول"
+
+msgid "refresh_list"
+msgstr "تاندول بشپړفهرست"
+
+msgid "change"
+msgstr "د بدلون"
+
+msgid "report_a_bug"
+msgstr "يو کړاو راپور"
+
+msgid "suggest_a_feature"
+msgstr "یو فیچر وړاندیز"
+
+msgid "enter_password"
+msgstr "شفر ورکړه"
+
+msgid "enter_your_password..."
+msgstr "خپل پټ نوم وليکئ ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "ستاسو passphrase وليکئ ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP د مراجع"
+
+msgid "faqs"
+msgstr "ډېرځليزې پوښتنې د"
+
+msgid "visit_sftp_client_website"
+msgstr "سفر sFTP د مراجع وېب پاڼه"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "پر ګوګل کروم Webstore موږ وڅېړئ"
+
+msgid "report_an_issue_or_get_help"
+msgstr "يوه موضوع ته خبرورکړي او یا د مرستې ترلاسه کولو"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "اوسمهالونه په فیس بوک کې زمونږ سره یو ځای شول"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "د تازه مونږ سره په"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "اوسمهالونه په ګوګل موږ +1"
+
+msgid "okay"
+msgstr "سمه ده"
+
+msgid "cancel"
+msgstr "لغوه کړه"
+
+msgid "close"
+msgstr "بندول"
+
+msgid "unknown_host"
+msgstr "نامعلوم کوربه"
+
+msgid "okay_to_continue"
+msgstr "ښه ته دوام ورکړي؟"
+
+msgid "fingerprint"
+msgstr "د ګوتې"
+
+msgid "remember"
+msgstr "په یاد ولرئ"
+
+msgid "file_permissions"
+msgstr "دوتنه حلال"
+
+msgid "file_permissions_desc"
+msgstr "لطفا د ټاکل شوي دوتنه (s) / پوښۍ د نوي صفاتو وټاکئ (s)"
+
+msgid "read"
+msgstr "ادامه"
+
+msgid "write"
+msgstr "وليکئ"
+
+msgid "execute"
+msgstr "چلول"
+
+msgid "owner"
+msgstr "خاوند"
+
+msgid "group"
+msgstr "ګروپ"
+
+msgid "public"
+msgstr "د عامې"
+
+msgid "numeric_value"
+msgstr "شمېريزو ارزښت"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "د نوې ډایرکټري نوم ورکړئ ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "د نوي دوتنې نوم ورکړئ ..."
+
+msgid "name"
+msgstr "نوم"
+
+msgid "enter_a_password"
+msgstr "يو شفر ورکړه"
+
+msgid "language"
+msgstr "ژبه"
+
+msgid "seconds"
+msgstr "کيکنډونه"
+
+msgid "minutes"
+msgstr "دقیقې"
+
+msgid "hour"
+msgstr "ساعت"
+
+msgid "hours"
+msgstr "ساعتونه"
+
+msgid "day"
+msgstr "ورځ"
+
+msgid "trial_left"
+msgstr "د محاکمې نه کيڼ"
+
+msgid "register_now"
+msgstr "اوس ې ثبت کړه"
+
+msgid "general"
+msgstr "جنرال"
+
+msgid "security"
+msgstr "امنیت"
+
+msgid "master_password"
+msgstr "شفر"
+
+msgid "status"
+msgstr "وضعیت"
+
+msgid "enabled"
+msgstr "وتوانول شوه"
+
+msgid "disabled"
+msgstr "معلولينو"
+
+msgid "timeout"
+msgstr "وخت خلاص شو"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Add اکانټ"
+
+msgid "support"
+msgstr "د ملاتړ"
+
+msgid "notice_updates"
+msgstr "خبرتیا / تازه خبرونه"
+
+msgid "please_login"
+msgstr "لطفا د ورتګ"
+
+msgid "your_session_timed_out"
+msgstr "ستاسو د ناستې د نښلېدلو"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "بښنه د پټنوم چې تاسې ليکلی د ناسم و!"
+
+msgid "login"
+msgstr "د ننه کیدل"
+
+msgid "master_password_desc"
+msgstr "د ټاکلو په دې شفر خپل حسابونه خوندي وساتي."
+
+msgid "license_key"
+msgstr "منښتليک کلیدي"
+
+msgid "online"
+msgstr "په آنلاین توګه"
+
+msgid "offline"
+msgstr "د نالیکي"
+
+msgid "currently_unavailable"
+msgstr "اوس آماده ندي"
+
+msgid "no_message_to_display"
+msgstr "نه پیغام د ښوون"
+
+msgid "offline_notice_title"
+msgstr "ناشوني دي - آیا تاسو د نالیکي یا په یوه شبکه یوازې په تړاو؟"
+
+msgid "offline_notice_desc"
+msgstr "تاسو اوس د نالیکي، پر یوه شبکه یوازې په تړاو او يا هم هيڅ تړاو کیدای شي چې زموږ د پالنګر جوړ شي"
+
+msgid "edit_file"
+msgstr "د دوتنې"
+
+msgid "download"
+msgstr "دانلود"
+
+msgid "upload"
+msgstr "پورته کول"
+
+msgid "host_ip_is_required"
+msgstr "کوربه / IP ته اړتيا ده"
+
+msgid "apply_to_all_files"
+msgstr "د ټولو دوتنو Apply"
+
+msgid "activate_now"
+msgstr "اوس فعالول"
+
+msgid "deactivate"
+msgstr "De-Activate"
+
+msgid "in_progress"
+msgstr "د پرمختګ په حال کې"
+
+msgid "complete"
+msgstr "بشپړ"
+
+msgid "direction"
+msgstr "جهت"
+
+msgid "progress"
+msgstr "پرمختګ"
+
+msgid "permissions"
+msgstr "حلال"
+
+msgid "owner_group"
+msgstr "خاوند / ډله"
+
+msgid "size"
+msgstr "اندازه"
+
+msgid "type"
+msgstr "ډول"
+
+msgid "modified"
+msgstr "بدلون موندلی"
+
+msgid "trial"
+msgstr "د محاکمې"
+
+msgid "cleared"
+msgstr "پاکه"
+
+msgid "error_connecting"
+msgstr "نښلول کې تېروتنه"
+
+msgid "error_connecting_to_host_ip"
+msgstr "تېروتنه نښلول د کوربه / IP پته"
+
+msgid "error_connecting_to_port"
+msgstr "له بندر سره نښلول کې تېروتنه"
+
+msgid "please_select_a_local_directory_first"
+msgstr "لطفا يو ځايي نوملړ د لومړي انتخاب!"
+
+msgid "go"
+msgstr "لاړ شه"
+
+msgid "confirm"
+msgstr "دا تصدیق کړي"
+
+msgid "delete"
+msgstr "ړنګول"
+
+msgid "rename"
+msgstr "نوم بدلول"
+
+msgid "copy_urls_to_clipboard"
+msgstr "په حافظی کښی کاپی (s) له ټوټه دړې"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "لطفا د دې تاييد تاسو غواړئ چې د ټاکل شوې د دوتنې (s) د ړنګولو / دادوسیه (s)"
+
+msgid "cancelled_by_user"
+msgstr "ردشوي له خوا د کارونکي عکس"
+
+msgid "already_exists_overwrite"
+msgstr "د مخکې نه شتون، ځاېناستول غواړئ؟"
+
+msgid "dashboard"
+msgstr "ډشبورډ"
+
+msgid "my_accounts"
+msgstr "زما حسابونه"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "دوتنه خوندي شوي! ټول حسابونه لري ملاتړ شوي دي."
+
+msgid "file_failed_please_try_again"
+msgstr "دوتنه کې ناکام شو! لطفا بیا هڅه وکړې."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "تاسو اوس مهال نه حسابونو ته شي ملاتړ شوې."
+
+msgid "saved!"
+msgstr "وژغوره!"
+
+msgid "please_enter_a_password"
+msgstr "لطفا د شفر!"
+
+msgid "connection_closed"
+msgstr "پیوستون بند"
+
+msgid "listing_mode_set_to"
+msgstr "داعلاناتو اکر ته ټاکل"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "ځايي سرور IP حل، بهرنۍ IP په کارولو"
+
+msgid "login_incorrect"
+msgstr "د ننوتو ناسم"
+
+msgid "keeping_connection_alive"
+msgstr "په تړاو د ژوندي ساتلو"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "د لیکلو توان نلري، اومتوک پیوستون تړل"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "د لوستلو اومتوک پیوستون تړل توان نلري"
+
+msgid "error_reading_file"
+msgstr "تېروتنه د لوستلو د دوتنې"
+
+msgid "error_writing_file"
+msgstr "توکبنسټ په ليکلو کې د دوتنې"
+
+msgid "failed_to_change_directory_to"
+msgstr "پاتې راغی چې د نوملړ بدلون"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "کېدی شي چې تاسو د درست د دې ډایرکرټرۍ ته لاسرسی نه لري"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "بېرته پخواني نوملړ د اوپيات"
+
+msgid "activate"
+msgstr "فعالول"
+
+msgid "payment"
+msgstr "د پیسو"
+
+msgid "license_key_is_required"
+msgstr "منښتليک له مهمو ته اړتيا ده"
+
+msgid "license_activated!"
+msgstr "منښتليک فعاله!"
+
+msgid "your_license_has_been_validated"
+msgstr "ستاسو د جواز لري اعتبار ورکړ شوي دي."
+
+msgid "thank_you!"
+msgstr "مننه!"
+
+msgid "buy_now!"
+msgstr "اوس يې اوپېره!"
+
+msgid "buy_now"
+msgstr "اوس يې اوپېره"
+
+msgid "one_off_fee"
+msgstr "يو پړاو فیس"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "لطفا د ترفیع د دې اپلیکیشن سره کوم بنديز نه خوند"
+
+msgid "please_enter_your_license_key_below"
+msgstr "مهرباني وکړئ لاندی خپل منښتليک کیلي ته ننوځي"
+
+msgid "or"
+msgstr "یا"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "روښانه حسابونه"
+
+msgid "clear_ssh_keys"
+msgstr "روښانه SSH کیلي"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "ټول خوندي SSH کیلي ګانو Deletes"
+
+msgid "clear_app_settings"
+msgstr "روښانه ددفتروسایل امستنې"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "ټول اپلیکیشن ځانګړو امستنې Deletes"
+
+msgid "clear_recent_connections"
+msgstr "روښانه وروستي پيوندونه"
+
+msgid "deletes_all_recent_connections"
+msgstr "د ټولو وروستیو اړیکو Deletes"
+
+msgid "import_type"
+msgstr "د وارداتو ډول"
+
+msgid "please_select"
+msgstr "هیله ده چې غوره"
+
+msgid "import_file"
+msgstr "دوتنه وارده"
+
+msgid "choose_file"
+msgstr "دوتنه غوره"
+
+msgid "delete_accounts"
+msgstr "حسابونه ړنګول"
+
+msgid "deletes_all_existing_accounts"
+msgstr "د ټولو موجوده حسابونو Deletes"
+
+msgid "import_now"
+msgstr "د وارداتو اوس"
+
+msgid "none"
+msgstr "هیڅ یو"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "مهرباني وکړئ بيا پېل کړئ sFTP د مراجع اپلیکیشن لپاره د بدلونونو د اغېز لپاره."
+
+msgid "already_bought_the_app"
+msgstr "لا د ددفتروسایل واخيست؟"
+
+msgid "choose"
+msgstr "غوره"
+
+msgid "deleted!"
+msgstr "ړنګ!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised په لټون کې وکاروي"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA مهمو يوازې!"
+
+msgid "no_key_selected"
+msgstr "نه مهم ټاکل."
+
+msgid "ssh_key_file"
+msgstr "SSH کیلي د دوتنې"
+
+msgid "no_dir_selected"
+msgstr "نه دير ټاکل."
+
+msgid "keep_blank_for_current_password"
+msgstr "لپاره اوسنی شفر خالي وساتئ."
+
+msgid "logon_type"
+msgstr "ننوتل ډول"
+
+msgid "normal"
+msgstr "نورمال"
+
+msgid "ask_for_password"
+msgstr "د شفر غوښتنه وکړئ"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "د حساب ډول"
+
+msgid "ftp_normal_connection"
+msgstr "ايف ټي پي (نورمال پیوستون)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (خوندي پیوستون)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (خوندي پیوستون)"
+
+msgid "folder"
+msgstr "دادوسیه"
+
+msgid "advanced"
+msgstr "ژور"
+
+msgid "folder_name"
+msgstr "دادوسیه خلاصه نوم"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "نوي FTP وېبپاڼه"
+
+msgid "new_folder"
+msgstr "د نوې کړکۍ"
+
+msgid "clean_now"
+msgstr "پاک اوس"
+
+msgid "host"
+msgstr "کوربه"
+
+msgid "no_accounts_added..."
+msgstr "نه حسابونه تازه ..."
+
+msgid "unknown"
+msgstr "نامعلوم"
+
+msgid "file_saved!"
+msgstr "دوتنه خوندي شوي!"
+
+msgid "uploading_file!"
+msgstr "د پورته دوتنه!"
+
+msgid "save_failed!"
+msgstr "Save ناکام شو!"
+
+msgid "search"
+msgstr "د لټون"
+
+msgid "find"
+msgstr "دنده موندل"
+
+msgid "replace"
+msgstr "ځاېناستول"
+
+msgid "scroll_past_end"
+msgstr "رغښت پخوانی پايان"
+
+msgid "show_annotations"
+msgstr "انکړپټه ښودل يادونو"
+
+msgid "show_gutter"
+msgstr "انکړپټه ښودل Gutter"
+
+msgid "show_invisibles"
+msgstr "انکړپټه ښودل Invisibles"
+
+msgid "show_print_margin"
+msgstr "خپرونه چاپ څنډی"
+
+msgid "highlight_active_line"
+msgstr "د فعالو کرښې په ګوته"
+
+msgid "word_wrap"
+msgstr "Word غبرګونه"
+
+msgid "split_code"
+msgstr "بیلتون کوډ"
+
+msgid "preferences"
+msgstr "غوره توبونه"
+
+msgid "close_all_tabs"
+msgstr "نږدې ټول په ټوپونو"
+
+msgid "close_current_tab"
+msgstr "نژدې روانه Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "د موټرونو کله چې زه ټايپ دوتنه پرې وساتل شي"
+
+msgid "auto_save"
+msgstr "د موټرونو Save"
+
+msgid "quick_save"
+msgstr "د چټک Save"
+
+msgid "documentation"
+msgstr "لاسوند"
+
+msgid "themes"
+msgstr "موضوعات"
+
+msgid "keyboard_shortcuts"
+msgstr "د ليکدړې"
+
+msgid "coming_soon"
+msgstr "ډېر ژر"
+
+msgid "empty"
+msgstr "تش"

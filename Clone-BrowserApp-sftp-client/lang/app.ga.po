@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "roghchlár"
+
+msgid "file"
+msgstr "comhad"
+
+msgid "view"
+msgstr "Amharc"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Cabhrú"
+
+msgid "manage_accounts"
+msgstr "Cuntais Bainistigh"
+
+msgid "import_accounts"
+msgstr "Cuntais Iompórtáil"
+
+msgid "export_accounts"
+msgstr "Cuntais Easpórtáil"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Logchomhad Teachtaireachtaí"
+
+msgid "local_directory"
+msgstr "Eolaire áitiúil"
+
+msgid "uploads_downloads"
+msgstr "Uasluchtuithe / Íoslódálacha"
+
+msgid "clear_saved_data"
+msgstr "Clear Sábháilte Sonraí"
+
+msgid "edit_settings"
+msgstr "Socruithe eagar"
+
+msgid "report_bug"
+msgstr "Tuarascáil ar Fabht"
+
+msgid "suggest_feature"
+msgstr "Mol Gné"
+
+msgid "ask_a_question"
+msgstr "Ceist a chur"
+
+msgid "change_log"
+msgstr "Athraigh Logáil"
+
+msgid "about"
+msgstr "Maidir"
+
+msgid "exit"
+msgstr "scoir"
+
+msgid "host_ip_address"
+msgstr "Óstach / IP Seoladh"
+
+msgid "username"
+msgstr "Ainm úsáideora"
+
+msgid "password"
+msgstr "Focal Faire"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Ceangail"
+
+msgid "welcome"
+msgstr "Fáilte"
+
+msgid "welcome_intro"
+msgstr "<p> Is SFTP cliant ar fad faoi simplíocht, tá sé tógtha ar an Google Chrome / Chrome OS comhéadan app pacáistithe ligeann an app a bheith go tapa agus sofhreagrach. Roinnt de na fheidhmiúlacht Bainisteoir Cuntas FTP a stóráil ar shiúl agus a eagrú do chui"
+
+msgid "latest_updates"
+msgstr "Nuashonruithe is déanaí"
+
+msgid "server_status"
+msgstr "Stádas freastalaí"
+
+msgid "license_server"
+msgstr "ceadúnas Freastalaí"
+
+msgid "sftp_support"
+msgstr "Tacaíocht"
+
+msgid "notice_update"
+msgstr "Fógra / Nuashonruithe"
+
+msgid "website"
+msgstr "láithreán"
+
+msgid "clear_all"
+msgstr "Glan Gach"
+
+msgid "manage"
+msgstr "Bainistigh"
+
+msgid "recheck"
+msgstr "Ath-seiceáil"
+
+msgid "last_release"
+msgstr "Scaoileadh Last"
+
+msgid "released"
+msgstr "scaoileadh"
+
+msgid "queued"
+msgstr "ciúáilte"
+
+msgid "failed"
+msgstr "theip"
+
+msgid "completed"
+msgstr "Críochnaithe"
+
+msgid "settings"
+msgstr "Socruithe"
+
+msgid "add_folder"
+msgstr "Cuir Fillteán"
+
+msgid "add_ftp_account"
+msgstr "Cuir Cuntas FTP"
+
+msgid "file_editor"
+msgstr "comhad Eagarthóir"
+
+msgid "editor_preferences"
+msgstr "Sainroghanna eagarthóir"
+
+msgid "your_ftp_accounts"
+msgstr "Do Cuntais FTP"
+
+msgid "most_recent_used"
+msgstr "is mó a úsáidtear le déanaí."
+
+msgid "no_connections_yet_made"
+msgstr "Níl aon naisc déanta fós"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Níl cuntais FTP leis fós"
+
+msgid "most_recent_connections"
+msgstr "An chuid is mó Naisc Déanaí"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 naisc a rinneadh"
+
+msgid "designed_developed_by"
+msgstr "Arna dhearadh agus arna fhorbairt ag"
+
+msgid "about_info"
+msgstr "Bain úsáid as an suíomh gréasáin Cliant SFTP le haghaidh tacaíochta, tá aon tacaíocht ar fáil trí ár láithreáin ghréasáin ar leith."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "cianda"
+
+msgid "remote_location_desc"
+msgstr "sh / public_html"
+
+msgid "create_directory"
+msgstr "Cruthaigh Eolaire"
+
+msgid "create_new_directory"
+msgstr "Cruthaigh Nua Eolaire"
+
+msgid "create_file"
+msgstr "Cruthaigh Comhad"
+
+msgid "create_new_file"
+msgstr "Cruthaigh Comhad Nua"
+
+msgid "refresh_list"
+msgstr "Liosta athnuachan"
+
+msgid "change"
+msgstr "Athraigh"
+
+msgid "report_a_bug"
+msgstr "Tuarascáil ar Fabht"
+
+msgid "suggest_a_feature"
+msgstr "Mol Gné"
+
+msgid "enter_password"
+msgstr "Iontráil Focal Faire"
+
+msgid "enter_your_password..."
+msgstr "Cuir isteach d'fhocal faire ..."
+
+msgid "passphrase"
+msgstr "Frása Faire"
+
+msgid "enter_your_passphrase..."
+msgstr "Cuir isteach do frása faire ..."
+
+msgid "email_sftp_client"
+msgstr "Ríomhphost SFTP cliant"
+
+msgid "faqs"
+msgstr "Ceisteanna Coitianta"
+
+msgid "visit_sftp_client_website"
+msgstr "Tabhair cuairt ar SFTP cliant láithreán"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Mheas muid ar an Chrome Google Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Tuairiscigh ceist nó cabhair a fháil"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Bí linn ar Facebook do nuashonruithe"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Lean muid ar Twitter do nuashonruithe"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Muid ar Google do nuashonruithe"
+
+msgid "okay"
+msgstr "ceart go leor"
+
+msgid "cancel"
+msgstr "Cealaigh"
+
+msgid "close"
+msgstr "Dún"
+
+msgid "unknown_host"
+msgstr "Óstríomhaire anaithnid"
+
+msgid "okay_to_continue"
+msgstr "Maith go leor chun leanúint ar aghaidh?"
+
+msgid "fingerprint"
+msgstr "méarlorg"
+
+msgid "remember"
+msgstr "Cuimhnigh"
+
+msgid "file_permissions"
+msgstr "Ceadanna comhad"
+
+msgid "file_permissions_desc"
+msgstr "Roghnaigh na tréithe nua don roghnaithe (í) / fillteán (í)"
+
+msgid "read"
+msgstr "Léigh"
+
+msgid "write"
+msgstr "Scríobh"
+
+msgid "execute"
+msgstr "Fhorghníomhú"
+
+msgid "owner"
+msgstr "úinéir"
+
+msgid "group"
+msgstr "Grúpa"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "Luach uimhriúil"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Iontráil ainm an eolaire nua ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Cuir isteach ainm an chomhaid nua ..."
+
+msgid "name"
+msgstr "Ainm"
+
+msgid "enter_a_password"
+msgstr "Iontráil Focal Faire"
+
+msgid "language"
+msgstr "teanga"
+
+msgid "seconds"
+msgstr "soicind"
+
+msgid "minutes"
+msgstr "Miontuairiscí"
+
+msgid "hour"
+msgstr "Uair"
+
+msgid "hours"
+msgstr "Uaireanta"
+
+msgid "day"
+msgstr "lá"
+
+msgid "trial_left"
+msgstr "triail Chlé"
+
+msgid "register_now"
+msgstr "Cláraigh anois"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Slándáil"
+
+msgid "master_password"
+msgstr "Pasfhocal Máistir"
+
+msgid "status"
+msgstr "stádas"
+
+msgid "enabled"
+msgstr "cumasaithe"
+
+msgid "disabled"
+msgstr "Faoi mhíchumas"
+
+msgid "timeout"
+msgstr "Sos"
+
+msgid "save"
+msgstr "Sábháil"
+
+msgid "add_account"
+msgstr "Cuir Cuntas"
+
+msgid "support"
+msgstr "Tacaíocht"
+
+msgid "notice_updates"
+msgstr "Fógra / Nuashonruithe"
+
+msgid "please_login"
+msgstr "le do thoil Logáil isteach"
+
+msgid "your_session_timed_out"
+msgstr "Do Seisiún uainiú Amach"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Tá brón orm go raibh an focal faire iontráil tú mícheart!"
+
+msgid "login"
+msgstr "Logáil isteach"
+
+msgid "master_password_desc"
+msgstr "Socraigh an príomhfhocal faire a choinneáil do chuntais sábháilte."
+
+msgid "license_key"
+msgstr "Eochair ceadúnas"
+
+msgid "online"
+msgstr "Líne"
+
+msgid "offline"
+msgstr "líne"
+
+msgid "currently_unavailable"
+msgstr "Faoi láthair Unavailable"
+
+msgid "no_message_to_display"
+msgstr "Gan teachtaireacht a chur ar taispeáint"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - An bhfuil tú as líne nó ar líonra nasc amháin?"
+
+msgid "offline_notice_desc"
+msgstr "Tá tú as líne faoi láthair, ar líonra bhféadfadh ach nasc nó gan aon nasc a bhunú chuig ár bhfreastalaí"
+
+msgid "edit_file"
+msgstr "Cuir Comhad"
+
+msgid "download"
+msgstr "íoslódáil"
+
+msgid "upload"
+msgstr "uaslódáil"
+
+msgid "host_ip_is_required"
+msgstr "Tá Óstach / IP ag teastáil"
+
+msgid "apply_to_all_files"
+msgstr "Cuir i bhfeidhm ar gach comhad"
+
+msgid "activate_now"
+msgstr "Gníomhachtaigh Anois"
+
+msgid "deactivate"
+msgstr "De-ghníomhachtú"
+
+msgid "in_progress"
+msgstr "Siúl"
+
+msgid "complete"
+msgstr "Comhlánaigh"
+
+msgid "direction"
+msgstr "treo"
+
+msgid "progress"
+msgstr "Dul chun cinn"
+
+msgid "permissions"
+msgstr "ceadanna"
+
+msgid "owner_group"
+msgstr "Úinéir / Grúpa"
+
+msgid "size"
+msgstr "méid"
+
+msgid "type"
+msgstr "cineál"
+
+msgid "modified"
+msgstr "Athraithe"
+
+msgid "trial"
+msgstr "triail"
+
+msgid "cleared"
+msgstr "imréitithe"
+
+msgid "error_connecting"
+msgstr "earráid Nascadh"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Earráid Nascadh a óstáil / seoladh IP"
+
+msgid "error_connecting_to_port"
+msgstr "Earráid Nascadh le port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Roghnaigh eolaire áitiúil ar dtús!"
+
+msgid "go"
+msgstr "Téigh"
+
+msgid "confirm"
+msgstr "Deimhnigh"
+
+msgid "delete"
+msgstr "Scrios"
+
+msgid "rename"
+msgstr "Athainmnigh"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Cóipeáil URL (anna) Ghearrthaisce"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Deimhnigh mian leat an comhad (í) roghnaithe a scriosadh / fillteán (í)"
+
+msgid "cancelled_by_user"
+msgstr "Cealaithe ag an úsáideoir"
+
+msgid "already_exists_overwrite"
+msgstr "cheana ann, le fhorscríobh?"
+
+msgid "dashboard"
+msgstr "Painéal na nIonstraimí"
+
+msgid "my_accounts"
+msgstr "Mo Cuntais"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Comhad Sábháilte! Gach cuntais cúltaca."
+
+msgid "file_failed_please_try_again"
+msgstr "Comhad Theip! Bain triail eile as."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Tá tú faoi láthair níl aon cuntais a bheidh le tacaíocht suas."
+
+msgid "saved!"
+msgstr "Sábháilte!"
+
+msgid "please_enter_a_password"
+msgstr "Iontráil focal faire!"
+
+msgid "connection_closed"
+msgstr "ceangal dúnta"
+
+msgid "listing_mode_set_to"
+msgstr "Liostú Mód leagtha chun"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP fhreastalaí áitiúil le rún, ag baint úsáide as IP seachtracha"
+
+msgid "login_incorrect"
+msgstr "Logáil Isteach mícheart"
+
+msgid "keeping_connection_alive"
+msgstr "Coimeád nasc beo"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Níféidir scríobh, dhún nasc sonraí"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Níféidir léamh nasc sonraí dúnta"
+
+msgid "error_reading_file"
+msgstr "comhad léamh Earráid"
+
+msgid "error_writing_file"
+msgstr "comhad scríobh Earráid"
+
+msgid "failed_to_change_directory_to"
+msgstr "Theip reatha a athrú go"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Ní B'fhéidir go mbeadh ort na ceadanna ceart chun rochtain a fháil ar an eolaire"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Bheifí ar ais go dtí eolaire roimhe"
+
+msgid "activate"
+msgstr "Gníomhachtaigh"
+
+msgid "payment"
+msgstr "íocaíocht"
+
+msgid "license_key_is_required"
+msgstr "Tá eochair ceadúnas ag teastáil"
+
+msgid "license_activated!"
+msgstr "Ceadúnas gníomhachtaithe!"
+
+msgid "your_license_has_been_validated"
+msgstr "Tá do cheadúnas a bheith bailíochtaithe."
+
+msgid "thank_you!"
+msgstr "Go raibh maith agat!"
+
+msgid "buy_now!"
+msgstr "Ceannaigh Anois!"
+
+msgid "buy_now"
+msgstr "Ceannaigh Anois"
+
+msgid "one_off_fee"
+msgstr "Táille aonuaire"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Tabhair uasghrádú chun taitneamh a bhaint an app gan aon srianta"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Cuir isteach do Eochair Ceadúnas thíos"
+
+msgid "or"
+msgstr "NÓ"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Cuntais Clear"
+
+msgid "clear_ssh_keys"
+msgstr "Eochracha SSH Clear"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Scrios gach eochair SSH shábháil"
+
+msgid "clear_app_settings"
+msgstr "Socruithe App Glan"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Scrios gach suíomh ar leith app"
+
+msgid "clear_recent_connections"
+msgstr "Glan Naisc Déanaí"
+
+msgid "deletes_all_recent_connections"
+msgstr "Scrios gach ceangal le déanaí"
+
+msgid "import_type"
+msgstr "Iompórtáil Cineál"
+
+msgid "please_select"
+msgstr "Roghnaigh le do thoil"
+
+msgid "import_file"
+msgstr "Iompórtáil Comhad"
+
+msgid "choose_file"
+msgstr "Roghnaigh Comhad"
+
+msgid "delete_accounts"
+msgstr "Scrios Cuntais"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Scrios gach cuntas reatha"
+
+msgid "import_now"
+msgstr "Iompórtáil Anois"
+
+msgid "none"
+msgstr "Ar bith"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Atosaigh SFTP app Cliant do na hathruithe seo a chur."
+
+msgid "already_bought_the_app"
+msgstr "Cheana féin cheannaigh an App?"
+
+msgid "choose"
+msgstr "Roghnaigh"
+
+msgid "deleted!"
+msgstr "Scriosta!"
+
+msgid "use_syncronised_browsing"
+msgstr "úsáid brabhsáil syncronised"
+
+msgid "remote_directory"
+msgstr "cianda Eolaire"
+
+msgid "rsa_key_only!"
+msgstr "RSA eochair amháin!"
+
+msgid "no_key_selected"
+msgstr "Níl eochair roghnaithe."
+
+msgid "ssh_key_file"
+msgstr "SSH Comhad Eochair"
+
+msgid "no_dir_selected"
+msgstr "Gan dir roghnaithe."
+
+msgid "keep_blank_for_current_password"
+msgstr "Coinnigh bán le haghaidh phasfhocal faoi láthair."
+
+msgid "logon_type"
+msgstr "Logon Cineál"
+
+msgid "normal"
+msgstr "gnáth"
+
+msgid "ask_for_password"
+msgstr "Iarr ar do Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Cineál Cuntas"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Ceangal Gnáth)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Ceangal Slán)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Ceangal Slán)"
+
+msgid "folder"
+msgstr "fillteán"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "Ainm fillteán"
+
+msgid "parent"
+msgstr "tuismitheoir"
+
+msgid "new_ftp_site"
+msgstr "Suíomh FTP nua"
+
+msgid "new_folder"
+msgstr "Fillteán nua"
+
+msgid "clean_now"
+msgstr "Clean Anois"
+
+msgid "host"
+msgstr "óstríomhaire"
+
+msgid "no_accounts_added..."
+msgstr "Uimh Added Cuntais ..."
+
+msgid "unknown"
+msgstr "anaithnid"
+
+msgid "file_saved!"
+msgstr "Comhad Sábháilte!"
+
+msgid "uploading_file!"
+msgstr "Uaslódáil comhad!"
+
+msgid "save_failed!"
+msgstr "Sábháil Theip!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "Aimsigh"
+
+msgid "replace"
+msgstr "Ionadaigh"
+
+msgid "scroll_past_end"
+msgstr "Scrollaigh Past End"
+
+msgid "show_annotations"
+msgstr "Taispeáin Anótálacha"
+
+msgid "show_gutter"
+msgstr "Taispeáin Gutter"
+
+msgid "show_invisibles"
+msgstr "Taispeáin Invisibles"
+
+msgid "show_print_margin"
+msgstr "Taispeáin Priontáil Imeall"
+
+msgid "highlight_active_line"
+msgstr "Cuir béim Líne Gníomhacha"
+
+msgid "word_wrap"
+msgstr "focal Wrap"
+
+msgid "split_code"
+msgstr "Scoilt Cód"
+
+msgid "preferences"
+msgstr "sainroghanna"
+
+msgid "close_all_tabs"
+msgstr "Dún Gach Tabs"
+
+msgid "close_current_tab"
+msgstr "Dún an Cluaisín Reatha"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto shábháil comhad nuair a scríobhann mé"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Sábháil Quick"
+
+msgid "documentation"
+msgstr "Doiciméadú"
+
+msgid "themes"
+msgstr "téamaí"
+
+msgid "keyboard_shortcuts"
+msgstr "Aicearraí Méarchláir"
+
+msgid "coming_soon"
+msgstr "Ag teacht go luath"
+
+msgid "empty"
+msgstr "folamh"

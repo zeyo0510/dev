@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ceb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "file"
+msgstr "file"
+
+msgid "view"
+msgstr "panglantaw"
+
+msgid "edit"
+msgstr "edit"
+
+msgid "help"
+msgstr "Tabangi"
+
+msgid "manage_accounts"
+msgstr "Pagdumala Asoy"
+
+msgid "import_accounts"
+msgstr "import Asoy"
+
+msgid "export_accounts"
+msgstr "export Asoy"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Mensahe sa Log"
+
+msgid "local_directory"
+msgstr "Lokal nga Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Tin-aw Luwas Data"
+
+msgid "edit_settings"
+msgstr "edit setting"
+
+msgid "report_bug"
+msgstr "Ibalita sa usa ka Bug"
+
+msgid "suggest_feature"
+msgstr "Isugyot sa usa ka Cebuano News"
+
+msgid "ask_a_question"
+msgstr "Pangutana"
+
+msgid "change_log"
+msgstr "Kausaban Log"
+
+msgid "about"
+msgstr "Mga"
+
+msgid "exit"
+msgstr "exit"
+
+msgid "host_ip_address"
+msgstr "Panon / IP Address"
+
+msgid "username"
+msgstr "username"
+
+msgid "password"
+msgstr "password"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Sumpaysumpaya"
+
+msgid "welcome"
+msgstr "welcome"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP kliyente mao ang tanan mahitungod sa kayano, kini gitukod sa ibabaw sa Google Chrome / Chrome os interface packaged app nagtugot sa mga app nga mahimong pagpuasa ug responsive. Ang pipila sa mga kagamitan, katuyoan naglakip sa usa ka FTP Account "
+
+msgid "latest_updates"
+msgstr "Latest Updates"
+
+msgid "server_status"
+msgstr "Status server"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Matikdi / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "Tin-aw ang tanan"
+
+msgid "manage"
+msgstr "Pagdumala"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Last Release"
+
+msgid "released"
+msgstr "Gipagawas"
+
+msgid "queued"
+msgstr "bahan ang naglinya"
+
+msgid "failed"
+msgstr "napakyas"
+
+msgid "completed"
+msgstr "nahuman"
+
+msgid "settings"
+msgstr "setting"
+
+msgid "add_folder"
+msgstr "Add Folder"
+
+msgid "add_ftp_account"
+msgstr "Add FTP Account"
+
+msgid "file_editor"
+msgstr "file Editor"
+
+msgid "editor_preferences"
+msgstr "Gusto Nimo nga Setting editor"
+
+msgid "your_ftp_accounts"
+msgstr "Ang imong FTP Asoy"
+
+msgid "most_recent_used"
+msgstr "Labing bag-o lang nga gigamit."
+
+msgid "no_connections_yet_made"
+msgstr "Walay koneksyon pa"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Walay FTP mga asoy dugang pa"
+
+msgid "most_recent_connections"
+msgstr "Labing bag-ong Connection"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 mga koneksiyon nga gihimo"
+
+msgid "designed_developed_by"
+msgstr "Gidisenyo & Og sa"
+
+msgid "about_info"
+msgstr "Palihug paggamit sa sFTP kliyente website alang sa suporta, walay suporta nga gihatag pinaagi sa atong tagsa-tagsa nga mga website."
+
+msgid "local"
+msgstr "Lokal nga"
+
+msgid "remote"
+msgstr "Hilit nga"
+
+msgid "remote_location_desc"
+msgstr "eg / public_html"
+
+msgid "create_directory"
+msgstr "Paghimo Directory"
+
+msgid "create_new_directory"
+msgstr "Paghimo Bag-ong Directory"
+
+msgid "create_file"
+msgstr "Paghimo File"
+
+msgid "create_new_file"
+msgstr "Paghimo Bag-ong File"
+
+msgid "refresh_list"
+msgstr "refresh List"
+
+msgid "change"
+msgstr "Kausaban"
+
+msgid "report_a_bug"
+msgstr "Ibalita sa usa ka Bug"
+
+msgid "suggest_a_feature"
+msgstr "Isugyot sa usa ka Cebuano News"
+
+msgid "enter_password"
+msgstr "Pagsulod Password"
+
+msgid "enter_your_password..."
+msgstr "Pagsulod sa imong password ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Pagsulod sa imong passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP kliyente"
+
+msgid "faqs"
+msgstr "FAQ ni"
+
+msgid "visit_sftp_client_website"
+msgstr "Bisitaha sFTP Kliyente Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Tubaga kanato sa Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "-Report sa usa ka isyu o og tabang"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Join kanato sa Facebook alang sa mga update"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Sunda kanato sa Twitter alang sa mga update"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Kanato sa Google alang sa mga update"
+
+msgid "okay"
+msgstr "okay"
+
+msgid "cancel"
+msgstr "Cancel"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "wala mailhi nga host"
+
+msgid "okay_to_continue"
+msgstr "Okay sa pagpadayon?"
+
+msgid "fingerprint"
+msgstr "fingerprint"
+
+msgid "remember"
+msgstr "Hinumdumi"
+
+msgid "file_permissions"
+msgstr "Permissions file"
+
+msgid "file_permissions_desc"
+msgstr "Palihug pagpili sa bag-o nga mga hiyas alang sa mga pinili nga (mga) file / suksukanan sa papel (mga)"
+
+msgid "read"
+msgstr "Basaha"
+
+msgid "write"
+msgstr "Isulat"
+
+msgid "execute"
+msgstr "Tumana"
+
+msgid "owner"
+msgstr "Tag-iya"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "numerawo Bili"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Pagsulod sa ngalan sa bag-ong directory ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Pagsulod sa ngalan sa bag-o nga file ..."
+
+msgid "name"
+msgstr "Ngalan"
+
+msgid "enter_a_password"
+msgstr "Mosulod sa usa ka Password"
+
+msgid "language"
+msgstr "Pinulongan"
+
+msgid "seconds"
+msgstr "segundo"
+
+msgid "minutes"
+msgstr "minutos"
+
+msgid "hour"
+msgstr "Hour"
+
+msgid "hours"
+msgstr "Pipila ka oras sa"
+
+msgid "day"
+msgstr "Adlaw sa"
+
+msgid "trial_left"
+msgstr "Trial Wala"
+
+msgid "register_now"
+msgstr "register Karon"
+
+msgid "general"
+msgstr "Kinatibuk-ang"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Magtutudlo Password"
+
+msgid "status"
+msgstr "Kahimtang"
+
+msgid "enabled"
+msgstr "nakahimo"
+
+msgid "disabled"
+msgstr "Baldado"
+
+msgid "timeout"
+msgstr "Timeout"
+
+msgid "save"
+msgstr "Luwasa"
+
+msgid "add_account"
+msgstr "Idugang Account"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Matikdi / Updates"
+
+msgid "please_login"
+msgstr "Palihug Login"
+
+msgid "your_session_timed_out"
+msgstr "Ang imong Session sa Panahon Gikan"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry sa password kamo misulod si sayop nga!"
+
+msgid "login"
+msgstr "Sulod"
+
+msgid "master_password_desc"
+msgstr "Ibutang kini nga agalon password sa pagtuman sa inyong mga asoy nga luwas."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Sa pagkakaron magawi, dili magamit"
+
+msgid "no_message_to_display"
+msgstr "Walay mensahe sa pagpasundayag sa"
+
+msgid "offline_notice_title"
+msgstr "Makab-ot - Ikaw ba offline o sa usa ka network lamang koneksyon?"
+
+msgid "offline_notice_desc"
+msgstr "Ikaw ang karon offline, sa usa ka network lamang koneksyon o walay koneksyon mahimong malig-on sa sa atong server"
+
+msgid "edit_file"
+msgstr "edit File"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "upload"
+
+msgid "host_ip_is_required"
+msgstr "Panon / IP gikinahanglan"
+
+msgid "apply_to_all_files"
+msgstr "Ibutang ang ngadto sa tanan nga mga files"
+
+msgid "activate_now"
+msgstr "activate Karon"
+
+msgid "deactivate"
+msgstr "De-Activate"
+
+msgid "in_progress"
+msgstr "sa Kauswagan"
+
+msgid "complete"
+msgstr "Bug-os nga"
+
+msgid "direction"
+msgstr "direksyon"
+
+msgid "progress"
+msgstr "nga Pag-uswag"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Tag-iya / Group"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "Matang"
+
+msgid "modified"
+msgstr "modified"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "Nahinloan"
+
+msgid "error_connecting"
+msgstr "sayop Sumpay"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Sayop Sumpay sa host / ip address nga"
+
+msgid "error_connecting_to_port"
+msgstr "Sayop Sumpay sa pantalan"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Palihug pagpili sa usa ka lokal nga directory una!"
+
+msgid "go"
+msgstr "Lakaw"
+
+msgid "confirm"
+msgstr "Sa pagmatuod sa"
+
+msgid "delete"
+msgstr "Tangtanga"
+
+msgid "rename"
+msgstr "Usba ang pangalan"
+
+msgid "copy_urls_to_clipboard"
+msgstr "(Mga) kopya URL sa Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Palihug sa pagmatuod sa imong gusto sa panas sa pinili (mga) file / (mga) suksukanan sa papel"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled sa user"
+
+msgid "already_exists_overwrite"
+msgstr "na naglungtad, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Ang akong mga Asoy"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Naluwas! Ang tanan nga mga asoy nga gipaluyohan sa."
+
+msgid "file_failed_please_try_again"
+msgstr "File pakyas! Palihug sulayi pag usab."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ikaw ang karon walay mga asoy nga gipaluyohan sa."
+
+msgid "saved!"
+msgstr "Maluwas!"
+
+msgid "please_enter_a_password"
+msgstr "Palihug mosulod sa usa ka password!"
+
+msgid "connection_closed"
+msgstr "koneksyon sirado"
+
+msgid "listing_mode_set_to"
+msgstr "Listahan mode gibutang sa"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokal nga server IP masulbad, sa paggamit sa sa gawas nga IP"
+
+msgid "login_incorrect"
+msgstr "Login sayop nga"
+
+msgid "keeping_connection_alive"
+msgstr "Pagtuman sa koneksyon nga buhi"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Dili makahimo sa pagsulat, koneksyon data sa sirado"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Dili makahimo sa pagbasa sa koneksyon data sa sirado"
+
+msgid "error_reading_file"
+msgstr "Sayop nga pagbasa file"
+
+msgid "error_writing_file"
+msgstr "Sayop pagsulat file"
+
+msgid "failed_to_change_directory_to"
+msgstr "Napakyas sa pag-usab directory sa"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Kamo dili makabaton sa husto nga Permissions sa pag-access directory niini nga"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Mobalik sa miaging directory"
+
+msgid "activate"
+msgstr "activate"
+
+msgid "payment"
+msgstr "pagbayad"
+
+msgid "license_key_is_required"
+msgstr "License yawe gikinahanglan"
+
+msgid "license_activated!"
+msgstr "License activate!"
+
+msgid "your_license_has_been_validated"
+msgstr "Ang imong lisensya na validate."
+
+msgid "thank_you!"
+msgstr "Salamat!"
+
+msgid "buy_now!"
+msgstr "Palita Karon!"
+
+msgid "buy_now"
+msgstr "Palita Karon"
+
+msgid "one_off_fee"
+msgstr "usa sa fee"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Palihug upgrade sa makatagamtam niini nga app nga walay mga pagdili"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Palihug mosulod sa inyong License Key sa ubos"
+
+msgid "or"
+msgstr "O"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Tin-aw nga Asoy"
+
+msgid "clear_ssh_keys"
+msgstr "Tin-aw nga selebrasyon Yawe"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes sa tanan nga maluwas nga selebrasyon yawe"
+
+msgid "clear_app_settings"
+msgstr "Tin-aw nga setting App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes sa tanan nga app piho nga mga kahimtang"
+
+msgid "clear_recent_connections"
+msgstr "Tin-aw nga bag-ong Connection"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes sa tanan nga mga bag-o nga koneksyon"
+
+msgid "import_type"
+msgstr "Type import"
+
+msgid "please_select"
+msgstr "Palihug Pagpili"
+
+msgid "import_file"
+msgstr "import File"
+
+msgid "choose_file"
+msgstr "Pagpili File"
+
+msgid "delete_accounts"
+msgstr "Tangtanga Asoy"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes sa tanan nga kasamtangan nga mga asoy"
+
+msgid "import_now"
+msgstr "import Karon"
+
+msgid "none"
+msgstr "Walay"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Palihug pagsugod usab sFTP kliyente app alang sa mga kausaban sa pag-epekto."
+
+msgid "already_bought_the_app"
+msgstr "Na gipalit sa App?"
+
+msgid "choose"
+msgstr "Pagpili"
+
+msgid "deleted!"
+msgstr "Thread!"
+
+msgid "use_syncronised_browsing"
+msgstr "sa paggamit sa syncronised basabasa"
+
+msgid "remote_directory"
+msgstr "Hilit nga Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA yawe lamang!"
+
+msgid "no_key_selected"
+msgstr "Walay yawe pinili nga."
+
+msgid "ssh_key_file"
+msgstr "Nga selebrasyon Key File"
+
+msgid "no_dir_selected"
+msgstr "Walay dir pinili nga."
+
+msgid "keep_blank_for_current_password"
+msgstr "Padayon sa blangko alang sa kasamtangan nga password."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Pangutan-a ang alang sa Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Type Account"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "Nga selebrasyon (Secure Connection)"
+
+msgid "folder"
+msgstr "suksukanan sa papel"
+
+msgid "advanced"
+msgstr "advanced"
+
+msgid "folder_name"
+msgstr "suksukanan sa papel Ngalan"
+
+msgid "parent"
+msgstr "ginikanan"
+
+msgid "new_ftp_site"
+msgstr "Bag-ong FTP Site"
+
+msgid "new_folder"
+msgstr "Bag-ong Folder"
+
+msgid "clean_now"
+msgstr "Limpyo Karon"
+
+msgid "host"
+msgstr "panon"
+
+msgid "no_accounts_added..."
+msgstr "Walay Asoy Added ..."
+
+msgid "unknown"
+msgstr "Wala mailhi"
+
+msgid "file_saved!"
+msgstr "File Naluwas!"
+
+msgid "uploading_file!"
+msgstr "Uploading File!"
+
+msgid "save_failed!"
+msgstr "Luwasa pakyas!"
+
+msgid "search"
+msgstr "Pangita"
+
+msgid "find"
+msgstr "Pangitaa ang"
+
+msgid "replace"
+msgstr "Isalikway ang"
+
+msgid "scroll_past_end"
+msgstr "Linukot nga Basahon Kagahapon Katapusan"
+
+msgid "show_annotations"
+msgstr "Ipakita mga pagpasabut bahin sa"
+
+msgid "show_gutter"
+msgstr "Ipakita ang kanal"
+
+msgid "show_invisibles"
+msgstr "Ipakita Invisibles"
+
+msgid "show_print_margin"
+msgstr "Ipakita ang Print sa Kilid"
+
+msgid "highlight_active_line"
+msgstr "Ipasiugda Aktibo Line"
+
+msgid "word_wrap"
+msgstr "Pulong Wrap"
+
+msgid "split_code"
+msgstr "split Code"
+
+msgid "preferences"
+msgstr "gusto Nimo nga Setting"
+
+msgid "close_all_tabs"
+msgstr "Close tanan nga Tabs"
+
+msgid "close_current_tab"
+msgstr "Suod nga Oras Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto pagluwas sa file sa diha nga type ko"
+
+msgid "auto_save"
+msgstr "Auto Luwasa"
+
+msgid "quick_save"
+msgstr "Quick Luwasa"
+
+msgid "documentation"
+msgstr "Dokumentasyon"
+
+msgid "themes"
+msgstr "tema"
+
+msgid "keyboard_shortcuts"
+msgstr "keyboard shortcuts"
+
+msgid "coming_soon"
+msgstr "Pag-anhi Wala madugay"
+
+msgid "empty"
+msgstr "walay sulod"

@@ -1,0 +1,803 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Help"
+
+msgid "empty"
+msgstr "Empty"
+
+msgid "retry"
+msgstr "Re-try"
+
+msgid "manage_accounts"
+msgstr "Manage Accounts"
+
+msgid "import_accounts"
+msgstr "Import Accounts"
+
+msgid "export_accounts"
+msgstr "Export Accounts"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "Local Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Saved Data"
+
+msgid "edit_settings"
+msgstr "Edit Settings"
+
+msgid "report_bug"
+msgstr "Report Bug"
+
+msgid "suggest_feature"
+msgstr "Suggest a Feature"
+
+msgid "ask_a_question"
+msgstr "Ask a Question"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "Exit"
+
+msgid "host_ip_address"
+msgstr "Host / IP Address"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Password"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Connect"
+
+msgid "welcome"
+msgstr "Welcome"
+
+msgid "welcome_intro"
+msgstr "sFTP Client is all about simplicity, it has been built on the Google Chrome / Chrome OS packaged app interface allowing the app to be fast and responsive. Some of the functionality includes an FTP Account Manager to store away and organise your most used and favourite FTP connections allowing you to access them with a single click, File/Folder Queue to see your currently uploading/downloading items, powerful text editor, and much more..."
+
+msgid "latest_updates"
+msgstr "Latest updates"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Notice / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "Manage"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Last Release"
+
+msgid "released"
+msgstr "Released"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "Failed"
+
+msgid "completed"
+msgstr "Completed"
+
+<<<<<<< HEAD
+=======
+msgid "waiting"
+msgstr "Waiting"
+
+>>>>>>> cda15c8583872f06f5d3fbcb80f61a628f26806c
+msgid "settings"
+msgstr "Settings"
+
+msgid "add_folder"
+msgstr "Add Folder"
+
+msgid "add_ftp_account"
+msgstr "Add FTP Account"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Your FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "Most recently used."
+
+msgid "no_connections_yet_made"
+msgstr "No connections yet made"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No FTP accounts added yet"
+
+msgid "most_recent_connections"
+msgstr "Most Recent Connections"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 connections made"
+
+msgid "designed_developed_by"
+msgstr "Designed & Developed by"
+
+msgid "about_info"
+msgstr "Please use the sFTP Client website for support, no support is provided through our individual websites."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "e.g. /public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Create New Directory"
+
+msgid "create_file"
+msgstr "Create File"
+
+msgid "create_new_file"
+msgstr "Create New File"
+
+msgid "refresh_list"
+msgstr "Refresh List"
+
+msgid "change"
+msgstr "Change"
+
+msgid "report_a_bug"
+msgstr "Report a Bug"
+
+msgid "suggest_a_feature"
+msgstr "Suggest a Feature"
+
+msgid "enter_password"
+msgstr "Enter Password"
+
+msgid "enter_your_password..."
+msgstr "Enter your password..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Enter your passphrase..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ's"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit sFTP Client Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Rate us on the Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Report an issue or get help"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Join us on Facebook for updates"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow us on Twitter for updates"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 us on Google for updates"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "Cancel"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "Unknown Host"
+
+msgid "okay_to_continue"
+msgstr "Okay to continue?"
+
+msgid "fingerprint"
+msgstr "Fingerprint"
+
+msgid "remember"
+msgstr "Remember"
+
+msgid "file_permissions"
+msgstr "File Permissions"
+
+msgid "file_permissions_desc"
+msgstr "Please select the new attributes for the selected file(s) / folder(s)"
+
+msgid "read"
+msgstr "Read"
+
+msgid "write"
+msgstr "Write"
+
+msgid "execute"
+msgstr "Execute"
+
+msgid "owner"
+msgstr "Owner"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "Numeric Value"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Enter the name of the new directory..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Enter the name of the new file..."
+
+msgid "name"
+msgstr "Name"
+
+msgid "enter_a_password"
+msgstr "Enter a password"
+
+msgid "language"
+msgstr "Language"
+
+msgid "seconds"
+msgstr "Seconds"
+
+msgid "minutes"
+msgstr "Minutes"
+
+msgid "hour"
+msgstr "Hour"
+
+msgid "hours"
+msgstr "Hours"
+
+msgid "day"
+msgstr "Day"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "Register now"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Master password"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "Enabled"
+
+msgid "disabled"
+msgstr "Disabled"
+
+msgid "timeout"
+msgstr "Timeout"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Add Account"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Notice / Updates"
+
+msgid "please_login"
+msgstr "Please Login"
+
+msgid "your_session_timed_out"
+msgstr "Your Session Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry the password you entered was incorrect!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Set this master password to keep your accounts safe."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Currently Unavailable"
+
+msgid "no_message_to_display"
+msgstr "No message to display"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Are you offline or on a network only connection?"
+
+msgid "offline_notice_desc"
+msgstr "You are currently offline, on a network only connection or no connection could be established to our server"
+
+msgid "edit_file"
+msgstr "Edit File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP is required"
+
+msgid "apply_to_all_files"
+msgstr "Apply to all files"
+
+msgid "activate_now"
+msgstr "Activate Now"
+
+msgid "deactivate"
+msgstr "De-activate"
+
+msgid "in_progress"
+msgstr "In Progress"
+
+msgid "complete"
+msgstr "Complete"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "Progress"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Owner / Group"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "Modified"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "Cleared"
+
+msgid "error_connecting"
+msgstr "Error Connecting"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error Connecting to host / ip address"
+
+msgid "error_connecting_to_port"
+msgstr "Error Connecting to port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Please select a local directory first!"
+
+msgid "go"
+msgstr "Go"
+
+msgid "confirm"
+msgstr "Confirm"
+
+msgid "delete"
+msgstr "Delete"
+
+msgid "rename"
+msgstr "Rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL(s) to Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Please confirm you wish to delete the selected file(s) / folder(s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled by user"
+
+msgid "already_exists_overwrite"
+msgstr "already exists, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "My Accounts"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Saved! All accounts have been backed up."
+
+msgid "file_failed_please_try_again"
+msgstr "File Failed! Please try again."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "You currently have no accounts to be backed up."
+
+msgid "saved!"
+msgstr "Saved!"
+
+msgid "please_enter_a_password"
+msgstr "Please enter a password!"
+
+msgid "connection_closed"
+msgstr "Connection closed"
+
+msgid "listing_mode_set_to"
+msgstr "Listing mode set to"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Local server IP resolved, using external IP"
+
+msgid "login_incorrect"
+msgstr "Login incorrect"
+
+msgid "keeping_connection_alive"
+msgstr "Keeping connection alive"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Unable to write, data connection closed"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Unable to read data connection closed"
+
+msgid "error_reading_file"
+msgstr "Error reading file"
+
+msgid "error_writing_file"
+msgstr "Error writing file"
+
+msgid "failed_to_change_directory_to"
+msgstr "Failed to change directory to"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "You may not have the correct permissions to access this directory"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting back to previous directory"
+
+msgid "activate"
+msgstr "Activate"
+
+msgid "payment"
+msgstr "Payment"
+
+msgid "license_key_is_required"
+msgstr "License key is required"
+
+msgid "purchase_a_license"
+msgstr "Purchase a License"
+
+msgid "license_activated!"
+msgstr "License Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "Your license has been validated."
+
+msgid "thank_you!"
+msgstr "Thank You!"
+
+msgid "buy_now!"
+msgstr "Buy Now!"
+
+msgid "buy_now"
+msgstr "Buy Now"
+
+msgid "one_off_fee"
+msgstr "one off fee"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Please upgrade to enjoy this app with no restrictions"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Please enter your License Key below"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading..."
+
+msgid "clear_accounts"
+msgstr "Clear Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes all saved SSH keys"
+
+msgid "clear_app_settings"
+msgstr "Clear App Settings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes all app specific settings"
+
+msgid "clear_recent_connections"
+msgstr "Clear Recent Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes all recent connections"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Please Select"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Choose File"
+
+msgid "delete_accounts"
+msgstr "Delete Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes all existing accounts"
+
+msgid "import_now"
+msgstr "Import Now"
+
+msgid "none"
+msgstr "None"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Please restart sFTP Client app for the changes to take effect."
+
+msgid "already_bought_the_app"
+msgstr "Already bought the App?"
+
+msgid "choose"
+msgstr "Choose"
+
+msgid "deleted!"
+msgstr "Deleted!"
+
+msgid "use_syncronised_browsing"
+msgstr "use syncronised browsing"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA key only!"
+
+msgid "no_key_selected"
+msgstr "No key selected."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "No dir selected."
+
+msgid "keep_blank_for_current_password"
+msgstr "Keep blank for current password."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Ask for Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Account Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "Folder Name"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "New Folder"
+
+msgid "clean_now"
+msgstr "Clean Now"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "No Accounts Added..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "File Saved!"
+
+msgid "uploading_file!"
+msgstr "Uploading File!"
+
+msgid "save_failed!"
+msgstr "Save Failed!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "Find"
+
+msgid "replace"
+msgstr "Replace"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Show Annotations"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Highlight Active Line"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "Preferences"
+
+msgid "close_all_tabs"
+msgstr "Close All Tabs"
+
+msgid "close_current_tab"
+msgstr "Close Current Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto save file when I type"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "Themes"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "Coming Soon"

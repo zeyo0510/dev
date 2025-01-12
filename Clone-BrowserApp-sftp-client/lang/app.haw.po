@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: haw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "kokua"
+
+msgid "manage_accounts"
+msgstr "hooponopono Buke Helu"
+
+msgid "import_accounts"
+msgstr "Import Buke Helu"
+
+msgid "export_accounts"
+msgstr "mea hoʻolilo Buke Helu"
+
+msgid "quick_connect"
+msgstr "hiki wawe hoʻohui"
+
+msgid "message_log"
+msgstr "Message i hoʻopaʻa '"
+
+msgid "local_directory"
+msgstr "Local Papa Kuhikuhi"
+
+msgid "uploads_downloads"
+msgstr "Hoʻouka / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Maopopo haʻakiu NāʻIkepili"
+
+msgid "edit_settings"
+msgstr "Edit Kāu Mau Koho Paʻamau"
+
+msgid "report_bug"
+msgstr "Hoike aku i ka pilikia"
+
+msgid "suggest_feature"
+msgstr "Paipai i kēia mau mea kanu"
+
+msgid "ask_a_question"
+msgstr "E noi i question"
+
+msgid "change_log"
+msgstr "Change i hoʻopaʻa '"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "'Ipuka"
+
+msgid "host_ip_address"
+msgstr "Koa / IP Address"
+
+msgid "username"
+msgstr "inoa mea hoʻohana"
+
+msgid "password"
+msgstr "Hua huna"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "hoʻohui"
+
+msgid "welcome"
+msgstr "Welina"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client mea a pau e pili ana i ka naau kupono, ua kūkuluʻia ma luna o ka Google ikona / ikona OS ~ IA mail app mau 'hiki i ka mail app e hoʻokēʻai, a me responsive. Kekahi o ka functionality nā he FTP moʻokāki manakia e hoahu aku, ae hoonohonoho i"
+
+msgid "latest_updates"
+msgstr "Latest moʻokāki hou"
+
+msgid "server_status"
+msgstr "Kuʻia ke kūlana"
+
+msgid "license_server"
+msgstr "laikini Kuʻia"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Hoike / moʻokāki hou"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "maopopo All"
+
+msgid "manage"
+msgstr "hooponopono"
+
+msgid "recheck"
+msgstr "Re-kaha"
+
+msgid "last_release"
+msgstr "hope Release"
+
+msgid "released"
+msgstr "kuu"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "ole"
+
+msgid "completed"
+msgstr "pau"
+
+msgid "settings"
+msgstr "Kāu Mau koho Paʻamau"
+
+msgid "add_folder"
+msgstr "Hoʻohui waihona"
+
+msgid "add_ftp_account"
+msgstr "Hoʻohui FTP waihona moʻokāki"
+
+msgid "file_editor"
+msgstr "File Luna Hoʻoponopono"
+
+msgid "editor_preferences"
+msgstr "hoʻoponopono Kāu Mau Koho Paʻamau"
+
+msgid "your_ftp_accounts"
+msgstr "Ko oukou FTP Buke Helu"
+
+msgid "most_recent_used"
+msgstr "Loa nei hoʻohana."
+
+msgid "no_connections_yet_made"
+msgstr "No pili 'o Randy i hana"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No FTP buke Mispells"
+
+msgid "most_recent_connections"
+msgstr "Most Nā i pili ai"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 pili 'o Randy i"
+
+msgid "designed_developed_by"
+msgstr "'Ia & hoʻomohala e"
+
+msgid "about_info"
+msgstr "ʻOluʻolu E hoʻohana i ka sFTP Client pūnaewele no kākoʻo, aole kākoʻo ua hoakaka ma ko kakou kanaka punaewele."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "loihi"
+
+msgid "remote_location_desc"
+msgstr "e like / public_html"
+
+msgid "create_directory"
+msgstr "ho okumu Papa Kuhikuhi"
+
+msgid "create_new_directory"
+msgstr "Ho okumu New Papa Kuhikuhi"
+
+msgid "create_file"
+msgstr "Hoʻoulu File"
+
+msgid "create_new_file"
+msgstr "Ho okumu i New File"
+
+msgid "refresh_list"
+msgstr "kiʻi hou i List"
+
+msgid "change"
+msgstr "ho'ololi"
+
+msgid "report_a_bug"
+msgstr "Hoike aku i ka pilikia"
+
+msgid "suggest_a_feature"
+msgstr "Paipai i kēia mau mea kanu"
+
+msgid "enter_password"
+msgstr "komo'ōlelo huna"
+
+msgid "enter_your_password..."
+msgstr "Komo kāu'ōlelo huna ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Komo i kou passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "NPP ka"
+
+msgid "visit_sftp_client_website"
+msgstr "Kipa sFTP Client Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Ana makou ma ka Google ikona Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Hoike mai i ka maʻi pūhā, aole hoi e kokua"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Hui mākou ma Facebook no IeAIIeXIAaIEE"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Hahai mākou ma Twitter no IeAIIeXIAaIEE"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Makou ma Google no IeAIIeXIAaIEE"
+
+msgid "okay"
+msgstr "Ka Moana"
+
+msgid "cancel"
+msgstr "Ho'ōki"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "Unknown koa"
+
+msgid "okay_to_continue"
+msgstr "Ka Moana e hoʻomau?"
+
+msgid "fingerprint"
+msgstr "Fingerprint"
+
+msgid "remember"
+msgstr "no"
+
+msgid "file_permissions"
+msgstr "File 'ae"
+
+msgid "file_permissions_desc"
+msgstr "E koho i nāʻano kaila hou no ka mea i koho waihona (s) / waihona (s)"
+
+msgid "read"
+msgstr "heluhelu mai o"
+
+msgid "write"
+msgstr "E kakau iho i"
+
+msgid "execute"
+msgstr "E hana"
+
+msgid "owner"
+msgstr "mea"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "laulā Value"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Komo i ka inoa o ka hou papa kuhikuhi ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Komo i ka inoa o ka hou waihona ..."
+
+msgid "name"
+msgstr "Name"
+
+msgid "enter_a_password"
+msgstr "Komo i ka'ōlelo huna"
+
+msgid "language"
+msgstr "'ōlelo"
+
+msgid "seconds"
+msgstr "kekona"
+
+msgid "minutes"
+msgstr "minuke"
+
+msgid "hour"
+msgstr "Hola"
+
+msgid "hours"
+msgstr "Nā hola"
+
+msgid "day"
+msgstr "Lā"
+
+msgid "trial_left"
+msgstr "Trial haalele"
+
+msgid "register_now"
+msgstr "aaeno Ano,"
+
+msgid "general"
+msgstr "Nui"
+
+msgid "security"
+msgstr "maluhia"
+
+msgid "master_password"
+msgstr "ke Kumu'ōlelo huna"
+
+msgid "status"
+msgstr "kūlana"
+
+msgid "enabled"
+msgstr "pūnaewele"
+
+msgid "disabled"
+msgstr "ka polokalamu JavaScript"
+
+msgid "timeout"
+msgstr "Manawa hoʻomaha"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Hoʻohui waihona moʻokāki"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Hoike / moʻokāki hou"
+
+msgid "please_login"
+msgstr "Please question"
+
+msgid "your_session_timed_out"
+msgstr "Ko oukou AD hopena mākaʻikaʻi"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "E kala mai i ka'ōlelo huna oukou i komo, ua pololei ole!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Waiho i keia kumu password e malama i ko oukou hoike palekana."
+
+msgid "license_key"
+msgstr "laikini Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Currently ou"
+
+msgid "no_message_to_display"
+msgstr "No memo e hōʻike '"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - O oe kahi waiho 'ole ma ka mea ulana pukapuka wale pilina?"
+
+msgid "offline_notice_desc"
+msgstr "No oe e Ke kahi waiho, ma ka pukapuka wale pilina paha aole pilina hiki ke hookupaa i ko kakou mau kikowaena,"
+
+msgid "edit_file"
+msgstr "Edit File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "nuipaʻa"
+
+msgid "host_ip_is_required"
+msgstr "Koa / IP, ua koi 'ia"
+
+msgid "apply_to_all_files"
+msgstr "Pili i na AEIU"
+
+msgid "activate_now"
+msgstr "haʻalele Ano,"
+
+msgid "deactivate"
+msgstr "De-ho'ā 'ia"
+
+msgid "in_progress"
+msgstr "Ke holo nei"
+
+msgid "complete"
+msgstr "ke hoʻoholo 'ia"
+
+msgid "direction"
+msgstr "kuhikuhi ana"
+
+msgid "progress"
+msgstr "holomua"
+
+msgid "permissions"
+msgstr "'ae"
+
+msgid "owner_group"
+msgstr "Mea / Group"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "ʻAno"
+
+msgid "modified"
+msgstr "mau ala"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "i hooakea ai i"
+
+msgid "error_connecting"
+msgstr "kikowaena ai pili aku"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Kikowaena ai pili aku i ka poe kaua / ip lookup"
+
+msgid "error_connecting_to_port"
+msgstr "Kikowaena ai pili aku i ka awa"
+
+msgid "please_select_a_local_directory_first"
+msgstr "E koho i kekahi kūloko papa kuhikuhi mua!"
+
+msgid "go"
+msgstr "hele"
+
+msgid "confirm"
+msgstr "hoʻokūpaʻa"
+
+msgid "delete"
+msgstr "e kāpae i"
+
+msgid "rename"
+msgstr "Kapa hou"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kope HKH (s) e hou"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Eʻoluʻolu, e hoʻokūpaʻa iāʻoukou makemake e kāpae i ka koho waihona (s) / waihona (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled ma ka mea hoʻohana"
+
+msgid "already_exists_overwrite"
+msgstr "ua nei, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "My Buke Helu"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File haʻakiu Nā! Na mooolelo mai i makani ai."
+
+msgid "file_failed_please_try_again"
+msgstr "File ole! E ho'āʻo hou."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Oukou kēia mea,ʻaʻole mooolelo mai ia e makani ai."
+
+msgid "saved!"
+msgstr "Hoolaia!"
+
+msgid "please_enter_a_password"
+msgstr "E kāhuakomo i ka password!"
+
+msgid "connection_closed"
+msgstr "pili paa"
+
+msgid "listing_mode_set_to"
+msgstr "Helu aaeei kau i"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Local kikowaena IP kane manaopaa, me mawaho IP"
+
+msgid "login_incorrect"
+msgstr "question pololei ole"
+
+msgid "keeping_connection_alive"
+msgstr "Ka malama ana pilina ola"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Hikiʻole i ka palapala, aeaiiuo pili paa"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Hikiʻole e heluhelu aeaiiuo pili paa"
+
+msgid "error_reading_file"
+msgstr "Kikowaena heluhelu AEI"
+
+msgid "error_writing_file"
+msgstr "Kikowaena palapala AEI"
+
+msgid "failed_to_change_directory_to"
+msgstr "Ole e loli papa kuhikuhi i"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "aole loa oukou e loaa i ka pololei i ka 'ae e nānā i kēia papa kuhikuhi"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting hoʻi i mua kuhikuhi"
+
+msgid "activate"
+msgstr "haʻalele"
+
+msgid "payment"
+msgstr "uku"
+
+msgid "license_key_is_required"
+msgstr "Laikini ki nei, ua koi 'ia"
+
+msgid "license_activated!"
+msgstr "Laikini ho'ā '!"
+
+msgid "your_license_has_been_validated"
+msgstr "Kou laikini i hōʻoiaʻia."
+
+msgid "thank_you!"
+msgstr "Mahalo iā ʻoe!"
+
+msgid "buy_now!"
+msgstr "Kūʻai i kēia manawa!"
+
+msgid "buy_now"
+msgstr "Kūʻai i kēia manawa"
+
+msgid "one_off_fee"
+msgstr "hookahi aku uku"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Please hōʻano hou i nā mea i keia mail app me kekahi kapu"
+
+msgid "please_enter_your_license_key_below"
+msgstr "E kāhuakomo i ko oukou laikini Key lalo"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "maopopo Buke Helu"
+
+msgid "clear_ssh_keys"
+msgstr "Maopopo SSH ki"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Holoi i ka manaʻo a pau hoolaia SSH ki"
+
+msgid "clear_app_settings"
+msgstr "Maopopo App Kāu Mau Koho Paʻamau"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Holoi i ka manaʻo a pau mail app ho'ākāka 'okoʻa no ka"
+
+msgid "clear_recent_connections"
+msgstr "Maopopo Nā i pili ai"
+
+msgid "deletes_all_recent_connections"
+msgstr "Holoi i ka manaʻo a pau i nā wahi i pili"
+
+msgid "import_type"
+msgstr "ImportʻAno"
+
+msgid "please_select"
+msgstr "E koho i"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "koho File"
+
+msgid "delete_accounts"
+msgstr "holoi Buke Helu"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Holoi i ka manaʻo a pau na buke"
+
+msgid "import_now"
+msgstr "Import Now"
+
+msgid "none"
+msgstr "None"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Please restart sFTP Client mail app no ​​nā hoʻololi e, e hookoia no."
+
+msgid "already_bought_the_app"
+msgstr "Ua kuai ka App?"
+
+msgid "choose"
+msgstr "koho"
+
+msgid "deleted!"
+msgstr "Holoiʻia!"
+
+msgid "use_syncronised_browsing"
+msgstr "hoʻohana syncronised kele"
+
+msgid "remote_directory"
+msgstr "kākou Papa Kuhikuhi"
+
+msgid "rsa_key_only!"
+msgstr "RSA kī wale nō!"
+
+msgid "no_key_selected"
+msgstr "No kī i koho."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "No dir i koho."
+
+msgid "keep_blank_for_current_password"
+msgstr "Malama hakahaka no ka mea, he password."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "E noi no ka mea,'ōlelo huna"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "waihona moʻokākiʻAno"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Manoukian)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (ai Manoukian)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (ai Manoukian)"
+
+msgid "folder"
+msgstr "waihona"
+
+msgid "advanced"
+msgstr "i hoʻomaka me"
+
+msgid "folder_name"
+msgstr "waihona Name"
+
+msgid "parent"
+msgstr "makua"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "New waihona"
+
+msgid "clean_now"
+msgstr "Clean Ano,"
+
+msgid "host"
+msgstr "koa"
+
+msgid "no_accounts_added..."
+msgstr "No Buke Helu Hoʻonui ..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "File haʻakiu Nā!"
+
+msgid "uploading_file!"
+msgstr "Uploaded File!"
+
+msgid "save_failed!"
+msgstr "Hoola ole!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "loaa"
+
+msgid "replace"
+msgstr "kuapo"
+
+msgid "scroll_past_end"
+msgstr "Pepa hala Hopena"
+
+msgid "show_annotations"
+msgstr "hō'ike Annotations"
+
+msgid "show_gutter"
+msgstr "Show Iebusi"
+
+msgid "show_invisibles"
+msgstr "hō'ike Invisibles"
+
+msgid "show_print_margin"
+msgstr "Hōʻike Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Kahińuliʻeleu Line"
+
+msgid "word_wrap"
+msgstr "olelo wahī"
+
+msgid "split_code"
+msgstr "mahae Code"
+
+msgid "preferences"
+msgstr "Kāu Mau koho Paʻamau"
+
+msgid "close_all_tabs"
+msgstr "Close All Tabs"
+
+msgid "close_current_tab"
+msgstr "Close Hawaii uku pila"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto ke ole AEI i ka wa aʻu e kikokiko i"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "hoopoina koke ana o Save"
+
+msgid "documentation"
+msgstr "Ka moʻolelo"
+
+msgid "themes"
+msgstr "Halaman"
+
+msgid "keyboard_shortcuts"
+msgstr "ʻoki pōkole papa pihi"
+
+msgid "coming_soon"
+msgstr "Hiki koke"
+
+msgid "empty"
+msgstr "nele"

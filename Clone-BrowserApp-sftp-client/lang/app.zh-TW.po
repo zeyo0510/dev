@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh-TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "菜單"
+
+msgid "file"
+msgstr "文件"
+
+msgid "view"
+msgstr "視圖"
+
+msgid "edit"
+msgstr "編輯"
+
+msgid "help"
+msgstr "幫幫我"
+
+msgid "manage_accounts"
+msgstr "管理帳戶"
+
+msgid "import_accounts"
+msgstr "導入帳戶"
+
+msgid "export_accounts"
+msgstr "出口佔"
+
+msgid "quick_connect"
+msgstr "快速連接"
+
+msgid "message_log"
+msgstr "消息日誌"
+
+msgid "local_directory"
+msgstr "本地目錄"
+
+msgid "uploads_downloads"
+msgstr "上傳/下載"
+
+msgid "clear_saved_data"
+msgstr "清除保存的數據"
+
+msgid "edit_settings"
+msgstr "編輯設置"
+
+msgid "report_bug"
+msgstr "報告錯誤"
+
+msgid "suggest_feature"
+msgstr "推薦功能"
+
+msgid "ask_a_question"
+msgstr "問一個問題"
+
+msgid "change_log"
+msgstr "更改日誌"
+
+msgid "about"
+msgstr "關於"
+
+msgid "exit"
+msgstr "出口"
+
+msgid "host_ip_address"
+msgstr "主機/ IP地址"
+
+msgid "username"
+msgstr "用戶名"
+
+msgid "password"
+msgstr "密碼"
+
+msgid "port"
+msgstr "端口"
+
+msgid "connect"
+msgstr "接"
+
+msgid "welcome"
+msgstr "歡迎"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP客戶端是所有關於簡單起見，已建成谷歌Chrome / Chrome OS的封裝應用接口，使應用程序是快速靈敏。一些功能包括一個FTP客戶經理來存儲路程，整理我們大多數"
+
+msgid "latest_updates"
+msgstr "最新更新"
+
+msgid "server_status"
+msgstr "服務器狀態"
+
+msgid "license_server"
+msgstr "許可證服務器"
+
+msgid "sftp_support"
+msgstr "支持"
+
+msgid "notice_update"
+msgstr "公告/更新"
+
+msgid "website"
+msgstr "網站"
+
+msgid "clear_all"
+msgstr "全部清除"
+
+msgid "manage"
+msgstr "管理"
+
+msgid "recheck"
+msgstr "重新檢查"
+
+msgid "last_release"
+msgstr "最後一個版本"
+
+msgid "released"
+msgstr "發布"
+
+msgid "queued"
+msgstr "排隊"
+
+msgid "failed"
+msgstr "失敗"
+
+msgid "completed"
+msgstr "完成"
+
+msgid "settings"
+msgstr "設置"
+
+msgid "add_folder"
+msgstr "新增文件夾"
+
+msgid "add_ftp_account"
+msgstr "添加FTP帳戶"
+
+msgid "file_editor"
+msgstr "文件編輯器"
+
+msgid "editor_preferences"
+msgstr "編輯器首選項"
+
+msgid "your_ftp_accounts"
+msgstr "您的FTP帳戶"
+
+msgid "most_recent_used"
+msgstr "最近使用。"
+
+msgid "no_connections_yet_made"
+msgstr "沒有連接尚未作出"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "沒有FTP帳戶尚未加入"
+
+msgid "most_recent_connections"
+msgstr "最近連接"
+
+msgid "last_10_connections_made"
+msgstr "在去年10個連接"
+
+msgid "designed_developed_by"
+msgstr "設計及開發所"
+
+msgid "about_info"
+msgstr "請使用SFTP客戶端網站的支持，不支持通過我們的個人網站提供。"
+
+msgid "local"
+msgstr "本地"
+
+msgid "remote"
+msgstr "遠程"
+
+msgid "remote_location_desc"
+msgstr "例如：/的public_html"
+
+msgid "create_directory"
+msgstr "創建目錄"
+
+msgid "create_new_directory"
+msgstr "新建目錄"
+
+msgid "create_file"
+msgstr "創建文件"
+
+msgid "create_new_file"
+msgstr "創建新文件"
+
+msgid "refresh_list"
+msgstr "刷新列表"
+
+msgid "change"
+msgstr "更改"
+
+msgid "report_a_bug"
+msgstr "報告錯誤"
+
+msgid "suggest_a_feature"
+msgstr "推薦功能"
+
+msgid "enter_password"
+msgstr "輸入密碼"
+
+msgid "enter_your_password..."
+msgstr "輸入您的密碼..."
+
+msgid "passphrase"
+msgstr "密碼"
+
+msgid "enter_your_passphrase..."
+msgstr "輸入您的密碼..."
+
+msgid "email_sftp_client"
+msgstr "電子郵件SFTP客戶端"
+
+msgid "faqs"
+msgstr "常見問題解答"
+
+msgid "visit_sftp_client_website"
+msgstr "訪問SFTP客戶端網站"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "我們評分的谷歌Chrome網上應用店"
+
+msgid "report_an_issue_or_get_help"
+msgstr "報告問題或得到幫助"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "加入我們的Facebook更新"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "跟隨我們的Twitter更新"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1我們谷歌更新"
+
+msgid "okay"
+msgstr "好的"
+
+msgid "cancel"
+msgstr "取消"
+
+msgid "close"
+msgstr "關"
+
+msgid "unknown_host"
+msgstr "未知主機"
+
+msgid "okay_to_continue"
+msgstr "好了繼續嗎？"
+
+msgid "fingerprint"
+msgstr "指紋"
+
+msgid "remember"
+msgstr "記得"
+
+msgid "file_permissions"
+msgstr "文件權限"
+
+msgid "file_permissions_desc"
+msgstr "請選擇所選文件（S）/文件夾中的新屬性（S）"
+
+msgid "read"
+msgstr "讀"
+
+msgid "write"
+msgstr "寫"
+
+msgid "execute"
+msgstr "執行"
+
+msgid "owner"
+msgstr "所有者"
+
+msgid "group"
+msgstr "組"
+
+msgid "public"
+msgstr "上市"
+
+msgid "numeric_value"
+msgstr "數值"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "輸入新目錄的名稱..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "輸入新的文件的名稱..."
+
+msgid "name"
+msgstr "名稱"
+
+msgid "enter_a_password"
+msgstr "輸入密碼"
+
+msgid "language"
+msgstr "語言"
+
+msgid "seconds"
+msgstr "秒"
+
+msgid "minutes"
+msgstr "紀要"
+
+msgid "hour"
+msgstr "小時"
+
+msgid "hours"
+msgstr "小時"
+
+msgid "day"
+msgstr "天"
+
+msgid "trial_left"
+msgstr "試用左"
+
+msgid "register_now"
+msgstr "現在註冊"
+
+msgid "general"
+msgstr "一般"
+
+msgid "security"
+msgstr "安全"
+
+msgid "master_password"
+msgstr "主密碼"
+
+msgid "status"
+msgstr "狀態"
+
+msgid "enabled"
+msgstr "啟用"
+
+msgid "disabled"
+msgstr "殘"
+
+msgid "timeout"
+msgstr "時間到"
+
+msgid "save"
+msgstr "保存"
+
+msgid "add_account"
+msgstr "新增帳戶"
+
+msgid "support"
+msgstr "支持"
+
+msgid "notice_updates"
+msgstr "公告/更新"
+
+msgid "please_login"
+msgstr "請登錄"
+
+msgid "your_session_timed_out"
+msgstr "您的會話超時"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "對不起，您輸入的密碼不正確！"
+
+msgid "login"
+msgstr "登錄"
+
+msgid "master_password_desc"
+msgstr "設置此主密碼，讓您的賬戶安全。"
+
+msgid "license_key"
+msgstr "註冊碼"
+
+msgid "online"
+msgstr "線上"
+
+msgid "offline"
+msgstr "當前離線"
+
+msgid "currently_unavailable"
+msgstr "當前不可用"
+
+msgid "no_message_to_display"
+msgstr "無消息顯示"
+
+msgid "offline_notice_title"
+msgstr "無法到達 - 你是離線或網絡連接只嗎？"
+
+msgid "offline_notice_desc"
+msgstr "您目前處於離線狀態，在網絡上唯一連接或無連接可以建立到我們的服務器"
+
+msgid "edit_file"
+msgstr "編輯文件"
+
+msgid "download"
+msgstr "下載"
+
+msgid "upload"
+msgstr "上傳"
+
+msgid "host_ip_is_required"
+msgstr "需要主機/ IP"
+
+msgid "apply_to_all_files"
+msgstr "應用於所有文件"
+
+msgid "activate_now"
+msgstr "現在激活"
+
+msgid "deactivate"
+msgstr "取消激活"
+
+msgid "in_progress"
+msgstr "進行中"
+
+msgid "complete"
+msgstr "完成"
+
+msgid "direction"
+msgstr "方向"
+
+msgid "progress"
+msgstr "進展"
+
+msgid "permissions"
+msgstr "權限"
+
+msgid "owner_group"
+msgstr "所有者/組"
+
+msgid "size"
+msgstr "尺寸"
+
+msgid "type"
+msgstr "類型"
+
+msgid "modified"
+msgstr "改性"
+
+msgid "trial"
+msgstr "審訊"
+
+msgid "cleared"
+msgstr "清除"
+
+msgid "error_connecting"
+msgstr "連接時出錯"
+
+msgid "error_connecting_to_host_ip"
+msgstr "錯誤連接至主機/ IP地址"
+
+msgid "error_connecting_to_port"
+msgstr "錯誤連接到端口"
+
+msgid "please_select_a_local_directory_first"
+msgstr "請首先選擇一個本地目錄！"
+
+msgid "go"
+msgstr "走"
+
+msgid "confirm"
+msgstr "確認"
+
+msgid "delete"
+msgstr "刪除"
+
+msgid "rename"
+msgstr "改名"
+
+msgid "copy_urls_to_clipboard"
+msgstr "複製網址（S）到剪貼板"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "請確認您要刪除選定的文件（S）/文件夾（S）"
+
+msgid "cancelled_by_user"
+msgstr "被用戶取消"
+
+msgid "already_exists_overwrite"
+msgstr "已經存在，覆蓋？"
+
+msgid "dashboard"
+msgstr "儀表板"
+
+msgid "my_accounts"
+msgstr "我的帳戶"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "文件中保存！所有帳戶已被備份。"
+
+msgid "file_failed_please_try_again"
+msgstr "文件失敗！請再試一次。"
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "您目前沒有任何賬戶進行備份。"
+
+msgid "saved!"
+msgstr "得救了！"
+
+msgid "please_enter_a_password"
+msgstr "請輸入密碼！"
+
+msgid "connection_closed"
+msgstr "連接關閉"
+
+msgid "listing_mode_set_to"
+msgstr "清單模式設置為"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "本地服務器的IP解析，使用外部IP"
+
+msgid "login_incorrect"
+msgstr "登入錯誤"
+
+msgid "keeping_connection_alive"
+msgstr "保持連接活著"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "無法寫入，數據連接關閉"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "無法讀取數據連接關閉"
+
+msgid "error_reading_file"
+msgstr "讀取文件時出錯"
+
+msgid "error_writing_file"
+msgstr "寫文件時出錯"
+
+msgid "failed_to_change_directory_to"
+msgstr "無法更改目錄"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "您可能沒有正確的權限訪問該目錄"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "回复到以前的目錄"
+
+msgid "activate"
+msgstr "啟用"
+
+msgid "payment"
+msgstr "付款"
+
+msgid "license_key_is_required"
+msgstr "許可證密鑰是必需的"
+
+msgid "license_activated!"
+msgstr "許可證激活！"
+
+msgid "your_license_has_been_validated"
+msgstr "您的許可證已被驗證。"
+
+msgid "thank_you!"
+msgstr "謝謝！"
+
+msgid "buy_now!"
+msgstr "立即購買！"
+
+msgid "buy_now"
+msgstr "立即購買"
+
+msgid "one_off_fee"
+msgstr "一次性費用"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "請升級到享受這個程序沒有任何限制"
+
+msgid "please_enter_your_license_key_below"
+msgstr "請在下面輸入您的許可密鑰"
+
+msgid "or"
+msgstr "要么"
+
+msgid "loading..."
+msgstr "載入中..."
+
+msgid "clear_accounts"
+msgstr "賬目清楚"
+
+msgid "clear_ssh_keys"
+msgstr "清除SSH密鑰"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "刪除所有保存的SSH密鑰"
+
+msgid "clear_app_settings"
+msgstr "清除應用程序設置"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "刪除所有應用程序特定設置"
+
+msgid "clear_recent_connections"
+msgstr "清除最近連接"
+
+msgid "deletes_all_recent_connections"
+msgstr "最近刪除所有連接"
+
+msgid "import_type"
+msgstr "導入類型"
+
+msgid "please_select"
+msgstr "請選擇"
+
+msgid "import_file"
+msgstr "導入文件"
+
+msgid "choose_file"
+msgstr "選擇文件"
+
+msgid "delete_accounts"
+msgstr "刪除帳戶"
+
+msgid "deletes_all_existing_accounts"
+msgstr "刪除所有現有帳戶"
+
+msgid "import_now"
+msgstr "立即導入"
+
+msgid "none"
+msgstr "沒有"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "請重新啟動SFTP客戶端應用程序，以使更改生效。"
+
+msgid "already_bought_the_app"
+msgstr "已經購買的應用程序？"
+
+msgid "choose"
+msgstr "選擇"
+
+msgid "deleted!"
+msgstr "刪除！"
+
+msgid "use_syncronised_browsing"
+msgstr "使用syncronised瀏覽"
+
+msgid "remote_directory"
+msgstr "遠程目錄"
+
+msgid "rsa_key_only!"
+msgstr "只有RSA密鑰！"
+
+msgid "no_key_selected"
+msgstr "無鍵來選擇。"
+
+msgid "ssh_key_file"
+msgstr "SSH密鑰文件"
+
+msgid "no_dir_selected"
+msgstr "沒有DIR選擇。"
+
+msgid "keep_blank_for_current_password"
+msgstr "保留空白當前密碼。"
+
+msgid "logon_type"
+msgstr "登錄類型"
+
+msgid "normal"
+msgstr "正常"
+
+msgid "ask_for_password"
+msgstr "詢問密碼"
+
+msgid "anonymous"
+msgstr "匿名"
+
+msgid "account_type"
+msgstr "帳戶類型"
+
+msgid "ftp_normal_connection"
+msgstr "FTP（正常連接）"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP（安全連接）"
+
+msgid "ssh_secure_connection"
+msgstr "SSH（安全連接）"
+
+msgid "folder"
+msgstr "夾"
+
+msgid "advanced"
+msgstr "高級"
+
+msgid "folder_name"
+msgstr "文件夾名稱"
+
+msgid "parent"
+msgstr "親"
+
+msgid "new_ftp_site"
+msgstr "新的FTP站點"
+
+msgid "new_folder"
+msgstr "新文件夾"
+
+msgid "clean_now"
+msgstr "立即清除"
+
+msgid "host"
+msgstr "主辦"
+
+msgid "no_accounts_added..."
+msgstr "未添加任何帳戶..."
+
+msgid "unknown"
+msgstr "未知"
+
+msgid "file_saved!"
+msgstr "文件中保存！"
+
+msgid "uploading_file!"
+msgstr "上傳文件！"
+
+msgid "save_failed!"
+msgstr "保存失敗！"
+
+msgid "search"
+msgstr "搜索"
+
+msgid "find"
+msgstr "找"
+
+msgid "replace"
+msgstr "更換"
+
+msgid "scroll_past_end"
+msgstr "滾過結束"
+
+msgid "show_annotations"
+msgstr "顯示註解"
+
+msgid "show_gutter"
+msgstr "顯示天溝"
+
+msgid "show_invisibles"
+msgstr "顯示隱身"
+
+msgid "show_print_margin"
+msgstr "顯示打印邊距"
+
+msgid "highlight_active_line"
+msgstr "選中活動行"
+
+msgid "word_wrap"
+msgstr "自動換行"
+
+msgid "split_code"
+msgstr "拆分代碼"
+
+msgid "preferences"
+msgstr "優先"
+
+msgid "close_all_tabs"
+msgstr "關閉所有標籤頁"
+
+msgid "close_current_tab"
+msgstr "關閉當前標籤頁"
+
+msgid "auto_save_file_when_i_type"
+msgstr "自動保存文件，當我輸入"
+
+msgid "auto_save"
+msgstr "自動保存"
+
+msgid "quick_save"
+msgstr "快速保存"
+
+msgid "documentation"
+msgstr "文檔"
+
+msgid "themes"
+msgstr "主題"
+
+msgid "keyboard_shortcuts"
+msgstr "鍵盤快捷鍵"
+
+msgid "coming_soon"
+msgstr "快來了"
+
+msgid "empty"
+msgstr "空"

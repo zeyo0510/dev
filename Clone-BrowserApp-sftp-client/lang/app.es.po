@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menú"
+
+msgid "file"
+msgstr "Archivo"
+
+msgid "view"
+msgstr "Ver"
+
+msgid "edit"
+msgstr "Editar"
+
+msgid "help"
+msgstr "Ayuda"
+
+msgid "manage_accounts"
+msgstr "Administrar cuentas"
+
+msgid "import_accounts"
+msgstr "Importar cuentas"
+
+msgid "export_accounts"
+msgstr "Exportar cuentas"
+
+msgid "quick_connect"
+msgstr "Conexión rápida"
+
+msgid "message_log"
+msgstr "Registro de mensajes"
+
+msgid "local_directory"
+msgstr "Directorio local"
+
+msgid "uploads_downloads"
+msgstr "Subidas / Descargas"
+
+msgid "clear_saved_data"
+msgstr "Borrar los datos guardados"
+
+msgid "edit_settings"
+msgstr "Editar ajustes"
+
+msgid "report_bug"
+msgstr "Reportar un error"
+
+msgid "suggest_feature"
+msgstr "Sugerir una mejora"
+
+msgid "ask_a_question"
+msgstr "Haz una pregunta"
+
+msgid "change_log"
+msgstr "Registro de cambios"
+
+msgid "about"
+msgstr "Acerca de"
+
+msgid "exit"
+msgstr "Salir"
+
+msgid "host_ip_address"
+msgstr "Servidor / Dirección IP"
+
+msgid "username"
+msgstr "Nombre de usuario"
+
+msgid "password"
+msgstr "Contraseña"
+
+msgid "port"
+msgstr "Puerto"
+
+msgid "connect"
+msgstr "Conectar"
+
+msgid "welcome"
+msgstr "Bienvenido"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP trata sobre la simplicidad, se ha construído con la interfaz de aplicación empaquetada Google Chrome / Chrome OS, permitiendo que la aplicación sea rápida y sensible. Algunas de las funcionalidades incluye un gestor de cuentas de FTP, para guar"
+
+msgid "latest_updates"
+msgstr "Últimas actualizaciones"
+
+msgid "server_status"
+msgstr "Estado del servidor"
+
+msgid "license_server"
+msgstr "Servidor de licencias"
+
+msgid "sftp_support"
+msgstr "Soporte"
+
+msgid "notice_update"
+msgstr "Nocitias / Actualizaciones"
+
+msgid "website"
+msgstr "Sitio web"
+
+msgid "clear_all"
+msgstr "Limpiar todo"
+
+msgid "manage"
+msgstr "Administrar"
+
+msgid "recheck"
+msgstr "Vuelva a verificar"
+
+msgid "last_release"
+msgstr "Último Lanzamiento"
+
+msgid "released"
+msgstr "Liberado"
+
+msgid "queued"
+msgstr "En cola"
+
+msgid "failed"
+msgstr "Fallado"
+
+msgid "completed"
+msgstr "Completado"
+
+msgid "settings"
+msgstr "Configuración"
+
+msgid "add_folder"
+msgstr "Agregar carpeta"
+
+msgid "add_ftp_account"
+msgstr "Añadir cuenta FTP"
+
+msgid "file_editor"
+msgstr "Editor de archivos"
+
+msgid "editor_preferences"
+msgstr "Preferencias del Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Tus Cuentas FTP"
+
+msgid "most_recent_used"
+msgstr "Utilizado recientemente."
+
+msgid "no_connections_yet_made"
+msgstr "No se han realizado conexiones"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No se han agregado cuentas FTP"
+
+msgid "most_recent_connections"
+msgstr "Conexiones recientes"
+
+msgid "last_10_connections_made"
+msgstr "Últimas 10 conexiones hechas"
+
+msgid "designed_developed_by"
+msgstr "Diseñado y desarrollado por"
+
+msgid "about_info"
+msgstr "Por favor, utilice el sitio de sFTP Client para el soporte, no se da soporte a través de nuestros sitios individuales."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "Remoto"
+
+msgid "remote_location_desc"
+msgstr "por ejemplo, / public_html"
+
+msgid "create_directory"
+msgstr "Crear directorio"
+
+msgid "create_new_directory"
+msgstr "Crear nuevo directorio"
+
+msgid "create_file"
+msgstr "Crear archivo"
+
+msgid "create_new_file"
+msgstr "Crear nuevo archivo"
+
+msgid "refresh_list"
+msgstr "Actualizar lista"
+
+msgid "change"
+msgstr "Cambio"
+
+msgid "report_a_bug"
+msgstr "Reportar un error"
+
+msgid "suggest_a_feature"
+msgstr "Sugerir una mejora"
+
+msgid "enter_password"
+msgstr "Introducir la contraseña"
+
+msgid "enter_your_password..."
+msgstr "Introduzca su contraseña ..."
+
+msgid "passphrase"
+msgstr "Contraseña"
+
+msgid "enter_your_passphrase..."
+msgstr "Introduzca su contraseña ..."
+
+msgid "email_sftp_client"
+msgstr "Email Cliente sFTP"
+
+msgid "faqs"
+msgstr "Preguntas frecuentes"
+
+msgid "visit_sftp_client_website"
+msgstr "Visita el sitio web de sFTP Client"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Califícanos en Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Reportar un problema u obtener ayuda"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Únase a nosotros en Facebook para recibir actualizaciones"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Síguenos en Twitter para recibir actualizaciones"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "US +1 en Google para recibir actualizaciones"
+
+msgid "okay"
+msgstr "Aceptar"
+
+msgid "cancel"
+msgstr "Cancelar"
+
+msgid "close"
+msgstr "Cerrar"
+
+msgid "unknown_host"
+msgstr "Host desconocido"
+
+msgid "okay_to_continue"
+msgstr "¿Aceptar para Continuar?"
+
+msgid "fingerprint"
+msgstr "Huella dactilar"
+
+msgid "remember"
+msgstr "Recordar"
+
+msgid "file_permissions"
+msgstr "Permisos de archivo"
+
+msgid "file_permissions_desc"
+msgstr "Por favor, seleccione los nuevos atributos para el archivo (s)/carpeta (s) seleccionados"
+
+msgid "read"
+msgstr "Leer"
+
+msgid "write"
+msgstr "Escribir"
+
+msgid "execute"
+msgstr "Ejecutar"
+
+msgid "owner"
+msgstr "Propietario"
+
+msgid "group"
+msgstr "Grupo"
+
+msgid "public"
+msgstr "Público"
+
+msgid "numeric_value"
+msgstr "Valor numérico"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Introduzca el nombre del nuevo directorio ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Introduzca el nombre del nuevo archivo ..."
+
+msgid "name"
+msgstr "Nombre"
+
+msgid "enter_a_password"
+msgstr "Ingrese una contraseña"
+
+msgid "language"
+msgstr "Idioma"
+
+msgid "seconds"
+msgstr "Segundos"
+
+msgid "minutes"
+msgstr "Minutos"
+
+msgid "hour"
+msgstr "Hora"
+
+msgid "hours"
+msgstr "Horas"
+
+msgid "day"
+msgstr "Día"
+
+msgid "trial_left"
+msgstr "Prueba restante"
+
+msgid "register_now"
+msgstr "Registrárse ahora"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Seguridad"
+
+msgid "master_password"
+msgstr "Contraseña maestra"
+
+msgid "status"
+msgstr "Estado"
+
+msgid "enabled"
+msgstr "Habilitado"
+
+msgid "disabled"
+msgstr "Deshabilitado"
+
+msgid "timeout"
+msgstr "Timeout"
+
+msgid "save"
+msgstr "Guardar"
+
+msgid "add_account"
+msgstr "Añadir cuenta"
+
+msgid "support"
+msgstr "Soporte"
+
+msgid "notice_updates"
+msgstr "Aviso / Actualizaciones"
+
+msgid "please_login"
+msgstr "Por favor Inicie sesión"
+
+msgid "your_session_timed_out"
+msgstr "Su sesión ha expirado"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Lo sentimos, la contraseña introducida es incorrecta!"
+
+msgid "login"
+msgstr "Iniciar sesión"
+
+msgid "master_password_desc"
+msgstr "Establecer esta contraseña maestra para mantener sus cuentas a salvo."
+
+msgid "license_key"
+msgstr "Licencia"
+
+msgid "online"
+msgstr "En línea"
+
+msgid "offline"
+msgstr "Desconectado"
+
+msgid "currently_unavailable"
+msgstr "Actualmente no disponible"
+
+msgid "no_message_to_display"
+msgstr "No hay mensajes que mostrar"
+
+msgid "offline_notice_title"
+msgstr "No se puede establecer - ¿Estás fuera de línea o en una red de conexión única?"
+
+msgid "offline_notice_desc"
+msgstr "Estás desconectado en este momento, en una red única o no se ha establecido conexión con nuestro servidor"
+
+msgid "edit_file"
+msgstr "Editar archivo"
+
+msgid "download"
+msgstr "Descargar"
+
+msgid "upload"
+msgstr "Subir"
+
+msgid "host_ip_is_required"
+msgstr "Se requiere Host / IP"
+
+msgid "apply_to_all_files"
+msgstr "Aplicar a todos los archivos"
+
+msgid "activate_now"
+msgstr "Activar ahora"
+
+msgid "deactivate"
+msgstr "Desactivar"
+
+msgid "in_progress"
+msgstr "En progreso"
+
+msgid "complete"
+msgstr "Completar"
+
+msgid "direction"
+msgstr "Dirección"
+
+msgid "progress"
+msgstr "Progreso"
+
+msgid "permissions"
+msgstr "permisos"
+
+msgid "owner_group"
+msgstr "Propietario / Grupo"
+
+msgid "size"
+msgstr "tamaño"
+
+msgid "type"
+msgstr "Tipo"
+
+msgid "modified"
+msgstr "Modificado"
+
+msgid "trial"
+msgstr "Juicio"
+
+msgid "cleared"
+msgstr "limpiado"
+
+msgid "error_connecting"
+msgstr "error al conectar"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error al conectar con el anfitrión de dirección / IP"
+
+msgid "error_connecting_to_port"
+msgstr "Error al conectar con el puerto"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Por favor, seleccione un directorio local en primer lugar!"
+
+msgid "go"
+msgstr "Ir"
+
+msgid "confirm"
+msgstr "Confirmar"
+
+msgid "delete"
+msgstr "Borrar"
+
+msgid "rename"
+msgstr "Rebautizar"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL (s) Copiar en el portapapeles"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Por favor, confirme que desea eliminar el archivo seleccionado (s) / carpeta (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelado por el usuario"
+
+msgid "already_exists_overwrite"
+msgstr "ya existe, sobreescribir?"
+
+msgid "dashboard"
+msgstr "Tablero"
+
+msgid "my_accounts"
+msgstr "Mis cuentas"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Archivo guardado! Todas las cuentas se han respaldado."
+
+msgid "file_failed_please_try_again"
+msgstr "Archivo Error! Por favor, inténtelo de nuevo."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Actualmente no tiene cuentas para hacer copias de seguridad."
+
+msgid "saved!"
+msgstr "¡Salvado!"
+
+msgid "please_enter_a_password"
+msgstr "¡Porfavor ingrese una contraseña!"
+
+msgid "connection_closed"
+msgstr "Conexión cerrada"
+
+msgid "listing_mode_set_to"
+msgstr "modo de listado establece en"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP del servidor local resolvió, mediante IP externa"
+
+msgid "login_incorrect"
+msgstr "Acceso incorrecto"
+
+msgid "keeping_connection_alive"
+msgstr "Mantener conexión viva"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "No se puede escribir, conexión de datos cerrada"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "No se puede leer la conexión de datos cerrada"
+
+msgid "error_reading_file"
+msgstr "Error al leer el archivo"
+
+msgid "error_writing_file"
+msgstr "Error al escribir el archivo"
+
+msgid "failed_to_change_directory_to"
+msgstr "No se pudo cambiar al directorio"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Puede que no tenga los permisos correctos para acceder a este directorio"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Volviendo de nuevo al directorio anterior"
+
+msgid "activate"
+msgstr "Activar"
+
+msgid "payment"
+msgstr "Pago"
+
+msgid "license_key_is_required"
+msgstr "Se requiere clave de licencia"
+
+msgid "license_activated!"
+msgstr "Licencia activada!"
+
+msgid "your_license_has_been_validated"
+msgstr "La licencia ha sido validado."
+
+msgid "thank_you!"
+msgstr "¡Gracias!"
+
+msgid "buy_now!"
+msgstr "¡Compra ahora!"
+
+msgid "buy_now"
+msgstr "Compra ahora"
+
+msgid "one_off_fee"
+msgstr "único pago"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Por favor, actualice a disfrutar de esta aplicación sin restricciones"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Por favor, introduzca la clave de licencia a continuación"
+
+msgid "or"
+msgstr "O"
+
+msgid "loading..."
+msgstr "Cargando..."
+
+msgid "clear_accounts"
+msgstr "Cuentas claras"
+
+msgid "clear_ssh_keys"
+msgstr "Claras claves SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Elimina todas las claves SSH guardados"
+
+msgid "clear_app_settings"
+msgstr "Configuración de la aplicación claras"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Elimina todos los ajustes específicos de aplicaciones"
+
+msgid "clear_recent_connections"
+msgstr "Conexiones claras recientes"
+
+msgid "deletes_all_recent_connections"
+msgstr "Elimina todas las conexiones recientes"
+
+msgid "import_type"
+msgstr "el tipo de importación"
+
+msgid "please_select"
+msgstr "Por favor seleccione"
+
+msgid "import_file"
+msgstr "Importar archivo"
+
+msgid "choose_file"
+msgstr "Elija el archivo"
+
+msgid "delete_accounts"
+msgstr "eliminar cuentas"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Elimina todas las cuentas existentes"
+
+msgid "import_now"
+msgstr "Importar ahora"
+
+msgid "none"
+msgstr "Ninguna"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Por favor, reinicie la aplicación cliente SFTP para que los cambios surtan efecto."
+
+msgid "already_bought_the_app"
+msgstr "Ya compró la App?"
+
+msgid "choose"
+msgstr "Escoger"
+
+msgid "deleted!"
+msgstr "Suprimido!"
+
+msgid "use_syncronised_browsing"
+msgstr "usar la exploración Syncronised"
+
+msgid "remote_directory"
+msgstr "Directorio remoto"
+
+msgid "rsa_key_only!"
+msgstr "única clave RSA!"
+
+msgid "no_key_selected"
+msgstr "Ninguna tecla seleccionada."
+
+msgid "ssh_key_file"
+msgstr "SSH archivo de clave"
+
+msgid "no_dir_selected"
+msgstr "No se seleccionó dir."
+
+msgid "keep_blank_for_current_password"
+msgstr "En blanco para mantener la contraseña actual."
+
+msgid "logon_type"
+msgstr "Tipo de inicio de sesión"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Pedir contraseña"
+
+msgid "anonymous"
+msgstr "Anónimo"
+
+msgid "account_type"
+msgstr "Tipo de cuenta"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (conexión normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Carpeta"
+
+msgid "advanced"
+msgstr "Avanzado"
+
+msgid "folder_name"
+msgstr "Nombre de la carpeta"
+
+msgid "parent"
+msgstr "Padre"
+
+msgid "new_ftp_site"
+msgstr "Nuevo sitio FTP"
+
+msgid "new_folder"
+msgstr "Nueva carpeta"
+
+msgid "clean_now"
+msgstr "Limpio ahora"
+
+msgid "host"
+msgstr "Anfitrión"
+
+msgid "no_accounts_added..."
+msgstr "No hay cuentas Agregado ..."
+
+msgid "unknown"
+msgstr "Desconocido"
+
+msgid "file_saved!"
+msgstr "Archivo guardado!"
+
+msgid "uploading_file!"
+msgstr "La subida de archivos!"
+
+msgid "save_failed!"
+msgstr "¡Error al guardar!"
+
+msgid "search"
+msgstr "Buscar"
+
+msgid "find"
+msgstr "Encontrar"
+
+msgid "replace"
+msgstr "Reemplazar"
+
+msgid "scroll_past_end"
+msgstr "Desplazarse más allá de Fin"
+
+msgid "show_annotations"
+msgstr "Mostrar anotaciones"
+
+msgid "show_gutter"
+msgstr "Mostrar Canalón"
+
+msgid "show_invisibles"
+msgstr "Mostrar invisibles"
+
+msgid "show_print_margin"
+msgstr "Mostrar Margen de impresión"
+
+msgid "highlight_active_line"
+msgstr "Resaltar línea activa"
+
+msgid "word_wrap"
+msgstr "Ajuste de línea"
+
+msgid "split_code"
+msgstr "código dividida"
+
+msgid "preferences"
+msgstr "preferencias"
+
+msgid "close_all_tabs"
+msgstr "Cierra todas las pestañas"
+
+msgid "close_current_tab"
+msgstr "Cierre la pestaña actual"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto guardar el archivo cuando introduzco"
+
+msgid "auto_save"
+msgstr "Auto Guardar"
+
+msgid "quick_save"
+msgstr "Guardado rapido"
+
+msgid "documentation"
+msgstr "Documentación"
+
+msgid "themes"
+msgstr "temas"
+
+msgid "keyboard_shortcuts"
+msgstr "Atajos de teclado"
+
+msgid "coming_soon"
+msgstr "Próximamente"
+
+msgid "empty"
+msgstr "vacío"

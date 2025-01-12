@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "మెనూ"
+
+msgid "file"
+msgstr "దస్త్రం"
+
+msgid "view"
+msgstr "చూడండి"
+
+msgid "edit"
+msgstr "మార్చు"
+
+msgid "help"
+msgstr "సహాయం"
+
+msgid "manage_accounts"
+msgstr "ఖాతాలను నిర్వహించు"
+
+msgid "import_accounts"
+msgstr "దిగుమతి అకౌంట్స్"
+
+msgid "export_accounts"
+msgstr "ఎగుమతి అకౌంట్స్"
+
+msgid "quick_connect"
+msgstr "త్వరిత Connect"
+
+msgid "message_log"
+msgstr "సందేశం లోనికి ప్రవేశించండి"
+
+msgid "local_directory"
+msgstr "స్థానిక డైరెక్టరీ"
+
+msgid "uploads_downloads"
+msgstr "అప్లోడ్లు / డౌన్లోడ్లు"
+
+msgid "clear_saved_data"
+msgstr "ప్రశాంతంగా సేవ్ డేటా"
+
+msgid "edit_settings"
+msgstr "సెట్టింగ్లను సవరించు"
+
+msgid "report_bug"
+msgstr "ఒక బగ్ రిపోర్ట్"
+
+msgid "suggest_feature"
+msgstr "ఒక ఫీచర్ సూచించండి"
+
+msgid "ask_a_question"
+msgstr "ఒక ప్రశ్న అడగండి"
+
+msgid "change_log"
+msgstr "లోనికి ప్రవేశించండి మార్చండి"
+
+msgid "about"
+msgstr "గురించి"
+
+msgid "exit"
+msgstr "ఎగ్జిట్"
+
+msgid "host_ip_address"
+msgstr "హోస్ట్ / IP అడ్రస్"
+
+msgid "username"
+msgstr "యూజర్ పేరు"
+
+msgid "password"
+msgstr "పాస్వర్డ్"
+
+msgid "port"
+msgstr "పోర్ట్"
+
+msgid "connect"
+msgstr "కనెక్ట్"
+
+msgid "welcome"
+msgstr "స్వాగతం"
+
+msgid "welcome_intro"
+msgstr "<p> కాదు SFTP క్లయింట్ అనువర్తనం వేగంగా ప్రతిస్పందించేలా అనుమతిస్తుంది గూగుల్ క్రోమ్ / క్రోమ్ OS ప్యాకేజీ అనువర్తన ఇంటర్ఫేస్ నిర్మించబడింది చెయ్యబడింది, అన్ని సరళత గురించి. కార్యాచరణలో కొంత దూరంగా నిల్వ మరియు మీ అత్యంత మాకు నిర్వహించడానికి ఒక FTP ఖాతా మేన"
+
+msgid "latest_updates"
+msgstr "తాజా నవీకరణలు"
+
+msgid "server_status"
+msgstr "సర్వర్ స్థితి"
+
+msgid "license_server"
+msgstr "లైసెన్సు సర్వర్"
+
+msgid "sftp_support"
+msgstr "మద్దతు"
+
+msgid "notice_update"
+msgstr "నోటీసు / నవీకరణలు"
+
+msgid "website"
+msgstr "వెబ్సైట్"
+
+msgid "clear_all"
+msgstr "అన్నింటినీ క్లియర్"
+
+msgid "manage"
+msgstr "నిర్వహించడానికి"
+
+msgid "recheck"
+msgstr "రీ-చెక్"
+
+msgid "last_release"
+msgstr "చివరి విడుదల"
+
+msgid "released"
+msgstr "విడుదల"
+
+msgid "queued"
+msgstr "క్యూలో"
+
+msgid "failed"
+msgstr "విఫలమైంది"
+
+msgid "completed"
+msgstr "పూర్తయింది"
+
+msgid "settings"
+msgstr "సెట్టింగులు"
+
+msgid "add_folder"
+msgstr "ఫోల్డర్ను జోడించండి"
+
+msgid "add_ftp_account"
+msgstr "FTP ఖాతా జోడించండి"
+
+msgid "file_editor"
+msgstr "ఫైలు ఎడిటర్"
+
+msgid "editor_preferences"
+msgstr "ఎడిటర్ ప్రాధాన్యతలు"
+
+msgid "your_ftp_accounts"
+msgstr "మీ FTP అకౌంట్స్"
+
+msgid "most_recent_used"
+msgstr "ఇటీవల ఉపయోగించారు."
+
+msgid "no_connections_yet_made"
+msgstr "ఏ కనెక్షన్లు ఇంకా"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ఏ FTP ఖాతాలకు ఇంకా జోడించారు"
+
+msgid "most_recent_connections"
+msgstr "ఇటీవలి కనెక్షన్లు"
+
+msgid "last_10_connections_made"
+msgstr "చేసిన చివరి 10 కనెక్షన్లు"
+
+msgid "designed_developed_by"
+msgstr "రూపకల్పన & అభివృద్ధి"
+
+msgid "about_info"
+msgstr "మద్దతు కోసం కాదు SFTP క్లయింట్ వెబ్సైట్ ఉపయోగించడానికి, ఏ మద్దతు మా వ్యక్తిగత వెబ్సైట్ల ద్వారా అందించబడుతుంది."
+
+msgid "local"
+msgstr "స్థానిక"
+
+msgid "remote"
+msgstr "రిమోట్"
+
+msgid "remote_location_desc"
+msgstr "ఉదా / public_html"
+
+msgid "create_directory"
+msgstr "డైరెక్టరీ సృష్టించు"
+
+msgid "create_new_directory"
+msgstr "కొత్త డైరెక్టరీ సృష్టించు"
+
+msgid "create_file"
+msgstr "ఫైల్ సృష్టించండి"
+
+msgid "create_new_file"
+msgstr "కొత్త ఫైలు సృష్టించండి"
+
+msgid "refresh_list"
+msgstr "రిఫ్రెష్ జాబితా"
+
+msgid "change"
+msgstr "మార్చు"
+
+msgid "report_a_bug"
+msgstr "ఒక బగ్ రిపోర్ట్"
+
+msgid "suggest_a_feature"
+msgstr "ఒక ఫీచర్ సూచించండి"
+
+msgid "enter_password"
+msgstr "రహస్య సంకేతం తెలపండి"
+
+msgid "enter_your_password..."
+msgstr "మీ పాస్వర్డ్ ని నమోదుచేయండి..."
+
+msgid "passphrase"
+msgstr "పాస్ఫ్రేజ్"
+
+msgid "enter_your_passphrase..."
+msgstr "మీ పాస్ఫ్రేజ్ని ఎంటర్ చెయ్యండి ..."
+
+msgid "email_sftp_client"
+msgstr "ఇమెయిల్ కాదు SFTP క్లయింట్"
+
+msgid "faqs"
+msgstr "తరచుగా అడిగే ప్రశ్నలు యొక్క"
+
+msgid "visit_sftp_client_website"
+msgstr "కాదు SFTP సందర్శించండి క్లయింట్ వెబ్సైట్"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "గూగుల్ క్రోమ్ వెబ్ స్టోర్ లో మాకు రేటింగ్"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ఒక సమస్యను నివేదించండి లేదా సహాయం పొందండి"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Facebook న మాకు కనుగొను నవీకరణలను కోసం"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "నవీకరణల కోసం ట్విట్టర్ లో మాకు అనుసరించండి"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "నవీకరణల కోసం Google లో మమ్మల్ని +1"
+
+msgid "okay"
+msgstr "సరే"
+
+msgid "cancel"
+msgstr "రద్దు"
+
+msgid "close"
+msgstr "క్లోజ్"
+
+msgid "unknown_host"
+msgstr "తెలియని హోస్ట్"
+
+msgid "okay_to_continue"
+msgstr "కొనసాగించడానికి సరే?"
+
+msgid "fingerprint"
+msgstr "వేలిముద్ర"
+
+msgid "remember"
+msgstr "గుర్తుంచుకో"
+
+msgid "file_permissions"
+msgstr "ఫైల్ అనుమతులు"
+
+msgid "file_permissions_desc"
+msgstr "దయచేసి (లు) ఎంచుకున్న ఫైల్ (లు) / ఫోల్డర్ కోసం కొత్త లక్షణాలను ఎంచుకోండి"
+
+msgid "read"
+msgstr "చదవండి"
+
+msgid "write"
+msgstr "వ్రాయడానికి"
+
+msgid "execute"
+msgstr "పనిచేయించు"
+
+msgid "owner"
+msgstr "యజమాని"
+
+msgid "group"
+msgstr "గ్రూప్"
+
+msgid "public"
+msgstr "ప్రజా"
+
+msgid "numeric_value"
+msgstr "సంఖ్యా విలువ"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "కొత్త డైరెక్టరీని ఇవ్వండి ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "కొత్త ఫైల్ పేరుని ఇవ్వండి ..."
+
+msgid "name"
+msgstr "పేరు"
+
+msgid "enter_a_password"
+msgstr "ఒక పాస్వర్డ్ని ఎంటర్ చెయ్యండి"
+
+msgid "language"
+msgstr "భాషా"
+
+msgid "seconds"
+msgstr "సెకనుల"
+
+msgid "minutes"
+msgstr "మినిట్స్"
+
+msgid "hour"
+msgstr "అవర్"
+
+msgid "hours"
+msgstr "గంటలు"
+
+msgid "day"
+msgstr "డే"
+
+msgid "trial_left"
+msgstr "ట్రయల్ ఎడమ"
+
+msgid "register_now"
+msgstr "ఇప్పుడు నమోదు చేసుకోండి"
+
+msgid "general"
+msgstr "జనరల్"
+
+msgid "security"
+msgstr "సెక్యూరిటీ"
+
+msgid "master_password"
+msgstr "మాస్టర్ పాస్వర్డ్ను"
+
+msgid "status"
+msgstr "స్థితి"
+
+msgid "enabled"
+msgstr "ప్రారంభించబడ్డ"
+
+msgid "disabled"
+msgstr "వికలాంగుల"
+
+msgid "timeout"
+msgstr "సమయం ముగిసినది"
+
+msgid "save"
+msgstr "సేవ్"
+
+msgid "add_account"
+msgstr "ఖాతా జోడించండి"
+
+msgid "support"
+msgstr "మద్దతు"
+
+msgid "notice_updates"
+msgstr "నోటీసు / నవీకరణలు"
+
+msgid "please_login"
+msgstr "దయచేసి లాగిన్"
+
+msgid "your_session_timed_out"
+msgstr "మీ సెషన్ ముగిసింది అవుట్"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "క్షమించండి మీరు ఎంటర్ పాస్వర్డ్ను తప్పు!"
+
+msgid "login"
+msgstr "లాగిన్"
+
+msgid "master_password_desc"
+msgstr "మీ ఖాతాలు సురక్షితంగా ఉంచడంలో ఈ మాస్టర్ అమర్చుము."
+
+msgid "license_key"
+msgstr "లైసెన్స్ కీ"
+
+msgid "online"
+msgstr "ఆన్లైన్"
+
+msgid "offline"
+msgstr "ఆఫ్లైన్"
+
+msgid "currently_unavailable"
+msgstr "ప్రస్తుతానికి అందుబాటులో లేని"
+
+msgid "no_message_to_display"
+msgstr "ప్రదర్శించడానికి కాదు సందేశాన్ని"
+
+msgid "offline_notice_title"
+msgstr "చేరుకోలేని - మీరు ఆఫ్లైన్లో లేదా నెట్వర్కు మాత్రమే కనెక్షన్ లో ఉన్నారా?"
+
+msgid "offline_notice_desc"
+msgstr "మీరు నెట్వర్క్లో మాత్రమే కనెక్షన్ లేదా ఎలాంటి సంబంధం మా సర్వర్కు ఏర్పాటు కాలేదు ప్రస్తుతం ఆఫ్లైన్లో ఉన్నారు,"
+
+msgid "edit_file"
+msgstr "దస్త్రం మార్చు"
+
+msgid "download"
+msgstr "డౌన్లోడ్"
+
+msgid "upload"
+msgstr "అప్లోడ్"
+
+msgid "host_ip_is_required"
+msgstr "హోస్ట్ / IP అవసరం"
+
+msgid "apply_to_all_files"
+msgstr "అన్ని ఫైల్స్ కి వర్తించు"
+
+msgid "activate_now"
+msgstr "ఇప్పుడు సక్రియం"
+
+msgid "deactivate"
+msgstr "డి-సక్రియం"
+
+msgid "in_progress"
+msgstr "ప్రోగ్రెస్ లో"
+
+msgid "complete"
+msgstr "పూర్తి"
+
+msgid "direction"
+msgstr "దర్శకత్వం"
+
+msgid "progress"
+msgstr "ప్రోగ్రెస్"
+
+msgid "permissions"
+msgstr "అనుమతులు"
+
+msgid "owner_group"
+msgstr "యజమాని / గ్రూప్"
+
+msgid "size"
+msgstr "పరిమాణం"
+
+msgid "type"
+msgstr "రకం"
+
+msgid "modified"
+msgstr "సవరించిన"
+
+msgid "trial"
+msgstr "ట్రయల్"
+
+msgid "cleared"
+msgstr "క్లియర్"
+
+msgid "error_connecting"
+msgstr "లోపం కనెక్ట్"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP చిరునామా లోపం హోస్ట్ కనెక్ట్"
+
+msgid "error_connecting_to_port"
+msgstr "లోపం పోర్ట్ కి కనెక్ట్"
+
+msgid "please_select_a_local_directory_first"
+msgstr "దయచేసి మొదట స్థానిక డైరెక్టరీ ఎంచుకోండి!"
+
+msgid "go"
+msgstr "వెళ్ళండి"
+
+msgid "confirm"
+msgstr "నిర్ధారించండి"
+
+msgid "delete"
+msgstr "తొలగించు"
+
+msgid "rename"
+msgstr "పేరుమార్చు"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL ను కాపీ చెయ్యి (లు) క్లిప్బోర్డ్కు"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "దయచేసి మీరు ఎంచుకున్న ఫైల్ (లు) తొలగించాలని అనుకుంటున్నారా నిర్ధారించండి / ఫోల్డర్ (లు)"
+
+msgid "cancelled_by_user"
+msgstr "వినియోగదారు రద్దు"
+
+msgid "already_exists_overwrite"
+msgstr "ఇప్పటికే ఉంది, తిరిగి రాస్తుంది?"
+
+msgid "dashboard"
+msgstr "డాష్బోర్డ్"
+
+msgid "my_accounts"
+msgstr "నా ఖాతాల"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ఫైల్ సేవ్! అన్ని ఖాతాలను మద్దతు చేశారు."
+
+msgid "file_failed_please_try_again"
+msgstr "ఫైలు విఫలమైంది! దయచేసి మళ్ళీ ప్రయత్నించండి."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "మీరు ప్రస్తుతం ఏ ఖాతాలు కావాలంటే ఉంటుంది."
+
+msgid "saved!"
+msgstr "సేవ్!"
+
+msgid "please_enter_a_password"
+msgstr "పాస్వర్డ్ని ఎంటర్ చెయ్యండి!"
+
+msgid "connection_closed"
+msgstr "కనెక్షన్ మూసివేయబడింది"
+
+msgid "listing_mode_set_to"
+msgstr "మోడ్ సెట్ జాబితా"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "స్థానిక సర్వర్ IP బాహ్య IP ఉపయోగించి, పరిష్కారం"
+
+msgid "login_incorrect"
+msgstr "లాగిన్ తప్పు"
+
+msgid "keeping_connection_alive"
+msgstr "కనెక్షన్ సజీవంగా ఉంచడం"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "వ్రాయలేరు, డేటా కనెక్షన్ మూసివేయబడింది"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "డేటా కనెక్షన్ మూసివేయబడింది చదవలేకపొయాను"
+
+msgid "error_reading_file"
+msgstr "ఫైలు చదవడంలో లోపం"
+
+msgid "error_writing_file"
+msgstr "ఫైలు వ్రాయునప్పుడు దోషం"
+
+msgid "failed_to_change_directory_to"
+msgstr "డైరక్టరి మార్చడం విఫలమైంది"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "మీరు ఈ డైరెక్టరీ యాక్సెస్ సరైన అనుమతులు లేవు ఉండవచ్చు"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "మునుపటి డైరెక్టరీ తిరిగి మారడానికి"
+
+msgid "activate"
+msgstr "సక్రియం"
+
+msgid "payment"
+msgstr "చెల్లింపు"
+
+msgid "license_key_is_required"
+msgstr "లైసెన్సు కీ అవసరం లేదు"
+
+msgid "license_activated!"
+msgstr "లైసెన్సు ఆక్టివేట్ అయ్యింది!"
+
+msgid "your_license_has_been_validated"
+msgstr "మీ లైసెన్స్ ప్రామాణికం చెయ్యబడింది."
+
+msgid "thank_you!"
+msgstr "ధన్యవాదాలు!"
+
+msgid "buy_now!"
+msgstr "ఇప్పుడే కొనండి!"
+
+msgid "buy_now"
+msgstr "ఇప్పుడే కొనండి"
+
+msgid "one_off_fee"
+msgstr "ఒక ఆఫ్ ఫీజు"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "ఎటువంటి ఆంక్షలు ఈ అనువర్తనం ఆస్వాదించడానికి అప్గ్రేడ్ చేయండి"
+
+msgid "please_enter_your_license_key_below"
+msgstr "క్రింద మీ లైసెన్స్ కీ నమోదు చేయండి"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "లోడ్..."
+
+msgid "clear_accounts"
+msgstr "అకౌంట్స్ ప్రశాంతంగా"
+
+msgid "clear_ssh_keys"
+msgstr "ప్రశాంతంగా SSH కీలు"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "రక్షించిన SSH కీల తొలగిస్తే"
+
+msgid "clear_app_settings"
+msgstr "ప్రశాంతంగా అనువర్తనం సెట్టింగ్లు"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "అన్ని అనువర్తనం నిర్దిష్ట సెట్టింగులను తొలగిస్తే"
+
+msgid "clear_recent_connections"
+msgstr "ప్రశాంతంగా ఇటీవలి కనెక్షన్లు"
+
+msgid "deletes_all_recent_connections"
+msgstr "ఇటీవల అన్ని కనెక్షన్లు తొలగిస్తే"
+
+msgid "import_type"
+msgstr "దిగుమతి టైప్"
+
+msgid "please_select"
+msgstr "దయచేసి ఎంచుకోండి"
+
+msgid "import_file"
+msgstr "దిగుమతి ఫైలు"
+
+msgid "choose_file"
+msgstr "ఫైల్ ఎంచుకోండి"
+
+msgid "delete_accounts"
+msgstr "అకౌంట్స్ తొలగించు"
+
+msgid "deletes_all_existing_accounts"
+msgstr "ఇప్పటికే అన్ని ఖాతాల తొలగిస్తే"
+
+msgid "import_now"
+msgstr "ఇప్పుడు దిగుమతి"
+
+msgid "none"
+msgstr "గమనిక"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "మార్పులు ప్రభావితం కావడానికి దయచేసి కాదు SFTP క్లయింట్ అనువర్తనాన్ని పునఃప్రారంభించండి."
+
+msgid "already_bought_the_app"
+msgstr "ఇప్పటికే అనువర్తనం కొనుగోలు?"
+
+msgid "choose"
+msgstr "ఎంచుకోండి"
+
+msgid "deleted!"
+msgstr "తొలగించబడింది!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised బ్రౌజింగ్ ఉపయోగించడానికి"
+
+msgid "remote_directory"
+msgstr "రిమోట్ డైరెక్టరీ"
+
+msgid "rsa_key_only!"
+msgstr "RSA కీ మాత్రమే!"
+
+msgid "no_key_selected"
+msgstr "ఏ కీ ఎన్నుకున్నారు."
+
+msgid "ssh_key_file"
+msgstr "SSH కీ ఫైల్ను"
+
+msgid "no_dir_selected"
+msgstr "తోబుట్టువుల dir ఎన్నుకున్నారు."
+
+msgid "keep_blank_for_current_password"
+msgstr "ప్రస్తుత పాస్వర్డ్ ఖాళీగా ఉంచండి."
+
+msgid "logon_type"
+msgstr "లాగాన్ టైప్"
+
+msgid "normal"
+msgstr "సాధారణ"
+
+msgid "ask_for_password"
+msgstr "పాస్వర్డ్ కోసం అడుగు"
+
+msgid "anonymous"
+msgstr "అనామక"
+
+msgid "account_type"
+msgstr "ఖాతా రకం"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (సాధారణ కనెక్షన్)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (సెక్యూర్ కనెక్షన్)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (సెక్యూర్ కనెక్షన్)"
+
+msgid "folder"
+msgstr "ఫోల్డర్"
+
+msgid "advanced"
+msgstr "ఆధునిక"
+
+msgid "folder_name"
+msgstr "ఫోల్డర్ పేరు"
+
+msgid "parent"
+msgstr "మాతృ"
+
+msgid "new_ftp_site"
+msgstr "న్యూ FTP సైట్"
+
+msgid "new_folder"
+msgstr "కొత్త అమరిక"
+
+msgid "clean_now"
+msgstr "ఇప్పుడు క్లీన్"
+
+msgid "host"
+msgstr "హోస్ట్"
+
+msgid "no_accounts_added..."
+msgstr "తోబుట్టువుల అకౌంట్స్ చేర్చబడింది ..."
+
+msgid "unknown"
+msgstr "తెలియని"
+
+msgid "file_saved!"
+msgstr "ఫైల్ సేవ్!"
+
+msgid "uploading_file!"
+msgstr "ఫైలు అప్లోడ్!"
+
+msgid "save_failed!"
+msgstr "సేవ్ విఫలమైంది!"
+
+msgid "search"
+msgstr "శోధన"
+
+msgid "find"
+msgstr "కనుగొనండి"
+
+msgid "replace"
+msgstr "పునఃస్థాపించుము"
+
+msgid "scroll_past_end"
+msgstr "స్క్రోల్ గత ఎండ్"
+
+msgid "show_annotations"
+msgstr "షో వ్యాఖ్యానాలు"
+
+msgid "show_gutter"
+msgstr "షో గట్టర్"
+
+msgid "show_invisibles"
+msgstr "ఇన్విజిబుల్స్ షో"
+
+msgid "show_print_margin"
+msgstr "ప్రింట్ మార్జిన్ షో"
+
+msgid "highlight_active_line"
+msgstr "క్రియాశీల లైన్ హైలైట్"
+
+msgid "word_wrap"
+msgstr "పద సర్దుబాటు"
+
+msgid "split_code"
+msgstr "స్ప్లిట్ కోడ్"
+
+msgid "preferences"
+msgstr "ప్రాధాన్యతలు"
+
+msgid "close_all_tabs"
+msgstr "టాబ్లను మూసివెయ్యి అన్ని"
+
+msgid "close_current_tab"
+msgstr "ప్రస్తుత టాబ్ మూసివేయి"
+
+msgid "auto_save_file_when_i_type"
+msgstr "నేను టైప్ చేసినప్పుడు ఆటో ఫైల్ సేవ్"
+
+msgid "auto_save"
+msgstr "ఆటో సేవ్"
+
+msgid "quick_save"
+msgstr "త్వరిత సేవ్"
+
+msgid "documentation"
+msgstr "డాక్యుమెంటేషన్"
+
+msgid "themes"
+msgstr "థీమ్స్"
+
+msgid "keyboard_shortcuts"
+msgstr "కీబోర్డ్ సత్వరమార్గాలు"
+
+msgid "coming_soon"
+msgstr "త్వరలో"
+
+msgid "empty"
+msgstr "ఖాళీగా"

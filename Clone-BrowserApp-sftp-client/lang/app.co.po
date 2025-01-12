@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: co\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "Veduta"
+
+msgid "edit"
+msgstr "Cancia"
+
+msgid "help"
+msgstr "Aiutu"
+
+msgid "manage_accounts"
+msgstr "gestione di Baillet"
+
+msgid "import_accounts"
+msgstr "Import Assistente"
+
+msgid "export_accounts"
+msgstr "ete Sapienza"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Trasi"
+
+msgid "local_directory"
+msgstr "Directory Local"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Data Saved"
+
+msgid "edit_settings"
+msgstr "Cancia taliata"
+
+msgid "report_bug"
+msgstr "Segnala un Bug"
+
+msgid "suggest_feature"
+msgstr "Cunziece na cupertine, Feature"
+
+msgid "ask_a_question"
+msgstr "Fammi un Dumanna"
+
+msgid "change_log"
+msgstr "Cambia Trasi"
+
+msgid "about"
+msgstr "prupòsitu di lu"
+
+msgid "exit"
+msgstr "uscita"
+
+msgid "host_ip_address"
+msgstr "U Pranzu Address / IP"
+
+msgid "username"
+msgstr "utilizatore"
+
+msgid "password"
+msgstr "Codice"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "cunnette"
+
+msgid "welcome"
+msgstr "Benvenuti"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client è tutti circa simplicità, ch'ella hè stata custruita nantu à l'interfaccia drogherie App Google Chrome / Chrome OS n'ammustra lu app da esse dighjunu è rispunzabbili. Arcuni di li funziunalitati, cumprenni nu diritturi Account FTP a riserv"
+
+msgid "latest_updates"
+msgstr "Latest Updates"
+
+msgid "server_status"
+msgstr "Status Server"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Guarda / Updates"
+
+msgid "website"
+msgstr "situ"
+
+msgid "clear_all"
+msgstr "Và Tutte"
+
+msgid "manage"
+msgstr "gestioni"
+
+msgid "recheck"
+msgstr "Re-arrigistramentu"
+
+msgid "last_release"
+msgstr "Last Year"
+
+msgid "released"
+msgstr "isciutu"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "Ùn hè pussìbule"
+
+msgid "completed"
+msgstr "cumplittatu"
+
+msgid "settings"
+msgstr "taliata"
+
+msgid "add_folder"
+msgstr "Add borsa"
+
+msgid "add_ftp_account"
+msgstr "Add Account FTP"
+
+msgid "file_editor"
+msgstr "schedariu Scrittori"
+
+msgid "editor_preferences"
+msgstr "Preferences scrittore"
+
+msgid "your_ftp_accounts"
+msgstr "Your ete FTP"
+
+msgid "most_recent_used"
+msgstr "Most in custus annus usatu."
+
+msgid "no_connections_yet_made"
+msgstr "No viaghji ancu fattu"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No cunti FTP yet"
+
+msgid "most_recent_connections"
+msgstr "Most viaghji Ùrtimi"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 raporti fatti"
+
+msgid "designed_developed_by"
+msgstr "Pruggittatu e sviluppatu rô"
+
+msgid "about_info"
+msgstr "Sceglite puru aduprà u situ Client sFTP di sustegnu, senza aiutu è data à traversu u nostru individuale siti web."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "éloigné"
+
+msgid "remote_location_desc"
+msgstr "esempiu / public_html"
+
+msgid "create_directory"
+msgstr "Crea un Directory"
+
+msgid "create_new_directory"
+msgstr "Crea un New Directory"
+
+msgid "create_file"
+msgstr "Crea un File"
+
+msgid "create_new_file"
+msgstr "Crea un New File"
+
+msgid "refresh_list"
+msgstr "List Refresh"
+
+msgid "change"
+msgstr "Cambia"
+
+msgid "report_a_bug"
+msgstr "Segnala un Bug"
+
+msgid "suggest_a_feature"
+msgstr "Cunziece na cupertine, Feature"
+
+msgid "enter_password"
+msgstr "Rinsignate Password"
+
+msgid "enter_your_password..."
+msgstr "Entre in u vostru password ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Rinsignate a vostra passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "E-mail sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ di l'"
+
+msgid "visit_sftp_client_website"
+msgstr "Visita sFTP Firm Client"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Qualchì noi nantu à u Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Segnala una pèrdita o arrivare aiutu"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Join us on Facebook per fighja"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow us on Twitter per fighja"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Us on Google per fighja"
+
+msgid "okay"
+msgstr "Dò"
+
+msgid "cancel"
+msgstr "Annulla"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "U Pranzu Unknown"
+
+msgid "okay_to_continue"
+msgstr "Dò cuntinuvà à?"
+
+msgid "fingerprint"
+msgstr "Agriculture"
+
+msgid "remember"
+msgstr "Ùn vi scurdate"
+
+msgid "file_permissions"
+msgstr "Permissions File"
+
+msgid "file_permissions_desc"
+msgstr "Sceglite u novu spicificu di u schedariu di lingua tedesca (s) / cartulare (s)"
+
+msgid "read"
+msgstr "Leggi"
+
+msgid "write"
+msgstr "Arriti"
+
+msgid "execute"
+msgstr "eseguì"
+
+msgid "owner"
+msgstr "Owner"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "Value Intervallu"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Entre in lu nomu di lu novu cartulare di ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Entre in lu nomu di lu novu schedariu ..."
+
+msgid "name"
+msgstr "nome"
+
+msgid "enter_a_password"
+msgstr "Inserisce un Password"
+
+msgid "language"
+msgstr "lingua"
+
+msgid "seconds"
+msgstr "seconde"
+
+msgid "minutes"
+msgstr "minuti"
+
+msgid "hour"
+msgstr "Ora"
+
+msgid "hours"
+msgstr "Orari"
+
+msgid "day"
+msgstr "Ghjornu"
+
+msgid "trial_left"
+msgstr "Trial sinistra"
+
+msgid "register_now"
+msgstr "iscrizzione Now"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Sistemi"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "permessu"
+
+msgid "disabled"
+msgstr "cacciatu"
+
+msgid "timeout"
+msgstr "Pausa"
+
+msgid "save"
+msgstr "Cruciani"
+
+msgid "add_account"
+msgstr "Add Account"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Guarda / Updates"
+
+msgid "please_login"
+msgstr "Please anmelden"
+
+msgid "your_session_timed_out"
+msgstr "Your Session Timed LAMENTU"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Scusate u codice vo avete fattu era sgarratu!"
+
+msgid "login"
+msgstr "Adelina"
+
+msgid "master_password_desc"
+msgstr "Piazzà stu codice maestru di tena u vostru cunti sicuru."
+
+msgid "license_key"
+msgstr "Santa Margherita di License"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Femme"
+
+msgid "currently_unavailable"
+msgstr "Nzinu a ora lu Unavailable"
+
+msgid "no_message_to_display"
+msgstr "No missaghju à fà cumparisce"
+
+msgid "offline_notice_title"
+msgstr "Fughjiticcia - Dunqui si tu off, o nantu à una reta sola volta?"
+
+msgid "offline_notice_desc"
+msgstr "Sei s'arricorda off, nantu à una reta pudia esse stabbilutu sola volta o micca cunnessione à u nostru servore"
+
+msgid "edit_file"
+msgstr "Cancia File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Subir"
+
+msgid "host_ip_is_required"
+msgstr "hè ubligatoria U Pranzu / IP"
+
+msgid "apply_to_all_files"
+msgstr "S'applicanu a tutti i schedari"
+
+msgid "activate_now"
+msgstr "attivà Now"
+
+msgid "deactivate"
+msgstr "De-attivà"
+
+msgid "in_progress"
+msgstr "In corsu"
+
+msgid "complete"
+msgstr "Complete"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "prugressu"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Owner / Group"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "mudificatu"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "viutatu"
+
+msgid "error_connecting"
+msgstr "Error culligamentu"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error culligamentu à riceva / adresse IP"
+
+msgid "error_connecting_to_port"
+msgstr "Error culligamentu à u portu di"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Sceglite puru un annuariu search prima!"
+
+msgid "go"
+msgstr "Aller"
+
+msgid "confirm"
+msgstr "cunfermanu"
+
+msgid "delete"
+msgstr "Delete"
+
+msgid "rename"
+msgstr "rinumate"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) to Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Please cunfirmà Vulete sguassà per u schedariu di lingua tedesca (s) / cartulare (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled par me"
+
+msgid "already_exists_overwrite"
+msgstr "già messagiu, schiaccià?"
+
+msgid "dashboard"
+msgstr "Escrivania"
+
+msgid "my_accounts"
+msgstr "I mo ete"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Schedariu Saved! Tutti i cunti hannu statu sustinuti up."
+
+msgid "file_failed_please_try_again"
+msgstr "File Ùn hè pussìbule! Please pruvari di novu."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "You s'arricorda mancanu i cunti a èssiri Tau."
+
+msgid "saved!"
+msgstr "Salvatu!"
+
+msgid "please_enter_a_password"
+msgstr "Entri un codice!"
+
+msgid "connection_closed"
+msgstr "connection chjusu"
+
+msgid "listing_mode_set_to"
+msgstr "Listing càlculu pona"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP servore Local risolta, usannu IP esterni"
+
+msgid "login_incorrect"
+msgstr "Adelina sgarratu"
+
+msgid "keeping_connection_alive"
+msgstr "Custodia, cunnessione vivu"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Impussibile à scrive, cunnessione dati chjusu"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Impussibile à leghje a cunnessione dati chjusu"
+
+msgid "error_reading_file"
+msgstr "schedariu di lettura Errore"
+
+msgid "error_writing_file"
+msgstr "schedariu di scrittura Errore"
+
+msgid "failed_to_change_directory_to"
+msgstr "Fiascatu à cambià u cartulare à"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "You ùn pò avè u permissions curretta à accede à stu cartulare"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting daretu à u cartulare di nanzu"
+
+msgid "activate"
+msgstr "attivà"
+
+msgid "payment"
+msgstr "Pudeti"
+
+msgid "license_key_is_required"
+msgstr "hè ubligatoria chiavi License"
+
+msgid "license_activated!"
+msgstr "License Generale!"
+
+msgid "your_license_has_been_validated"
+msgstr "Your licenza hè statu cunvalidatu."
+
+msgid "thank_you!"
+msgstr "À ringrazià ti!"
+
+msgid "buy_now!"
+msgstr "Cumprà avà!"
+
+msgid "buy_now"
+msgstr "Cumprà avà"
+
+msgid "one_off_fee"
+msgstr "una tantum tassa"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Per piacè à aghjurnà a gudiri sta 'app, cu nudda limitazzioni"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Entri u vostru Key License sottu"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Và Assistente"
+
+msgid "clear_ssh_keys"
+msgstr "Và Chiavi SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Sguassa tutte e chjave di SSH salvata"
+
+msgid "clear_app_settings"
+msgstr "Settings App U Populu Và"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Sguassa u bastimentu specifichi 'app"
+
+msgid "clear_recent_connections"
+msgstr "Và viaghji Ùrtimi"
+
+msgid "deletes_all_recent_connections"
+msgstr "Sguassa viaghji ricenti"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Please Select"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Scegli File"
+
+msgid "delete_accounts"
+msgstr "Delete Assistente"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Sguassa cunti ca asistevanu"
+
+msgid "import_now"
+msgstr "Import Now"
+
+msgid "none"
+msgstr "None"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Dimarrà sFTP App Client di i cambiamenti di a ntràsiri."
+
+msgid "already_bought_the_app"
+msgstr "Già accattatu lu App?"
+
+msgid "choose"
+msgstr "Scegli"
+
+msgid "deleted!"
+msgstr "Deleted!"
+
+msgid "use_syncronised_browsing"
+msgstr "aduprà abr syncronised"
+
+msgid "remote_directory"
+msgstr "éloigné Directory"
+
+msgid "rsa_key_only!"
+msgstr "solu chiavi RSA!"
+
+msgid "no_key_selected"
+msgstr "No chiavi ritenuti."
+
+msgid "ssh_key_file"
+msgstr "SSH File Key"
+
+msgid "no_dir_selected"
+msgstr "No voile ritenuti."
+
+msgid "keep_blank_for_current_password"
+msgstr "Lascià muta di a chjave realità."
+
+msgid "logon_type"
+msgstr "Type Logon"
+
+msgid "normal"
+msgstr "nurmale"
+
+msgid "ask_for_password"
+msgstr "Mi Manchi di Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Type Account"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Connection Normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Connection Secure)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Connection Secure)"
+
+msgid "folder"
+msgstr "chjamava"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "Name cartulare"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "New di u situ cù FTP"
+
+msgid "new_folder"
+msgstr "New borsa"
+
+msgid "clean_now"
+msgstr "Clean Now"
+
+msgid "host"
+msgstr "U Pranzu"
+
+msgid "no_accounts_added..."
+msgstr "No ete Added ..."
+
+msgid "unknown"
+msgstr "Inconnu"
+
+msgid "file_saved!"
+msgstr "Schedariu Saved!"
+
+msgid "uploading_file!"
+msgstr "Mandendu File!"
+
+msgid "save_failed!"
+msgstr "A La Fiera Ùn hè pussìbule!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "truvà"
+
+msgid "replace"
+msgstr "sustituiri"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Mostra Annotations"
+
+msgid "show_gutter"
+msgstr "Mostra ennemi"
+
+msgid "show_invisibles"
+msgstr "Mostra Christian"
+
+msgid "show_print_margin"
+msgstr "Mostra Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Metta Line Tempo"
+
+msgid "word_wrap"
+msgstr "Dyes Verbu"
+
+msgid "split_code"
+msgstr "Code Split"
+
+msgid "preferences"
+msgstr "Preferences"
+
+msgid "close_all_tabs"
+msgstr "Close All Tablatures"
+
+msgid "close_current_tab"
+msgstr "Close Tab attuale"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto salvà u schedariu quandu I inconnu"
+
+msgid "auto_save"
+msgstr "Auto Cruciani"
+
+msgid "quick_save"
+msgstr "Quick Cruciani"
+
+msgid "documentation"
+msgstr "ducumentazione in corsu"
+
+msgid "themes"
+msgstr "Slaves"
+
+msgid "keyboard_shortcuts"
+msgstr "accurtatoghji, tastiera"
+
+msgid "coming_soon"
+msgstr "Prestu"
+
+msgid "empty"
+msgstr "viotu"

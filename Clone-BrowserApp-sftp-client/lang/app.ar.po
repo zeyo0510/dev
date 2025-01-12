@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "قائمة طعام"
+
+msgid "file"
+msgstr "ملف"
+
+msgid "view"
+msgstr "رأي"
+
+msgid "edit"
+msgstr "تحرير"
+
+msgid "help"
+msgstr "مساعدة"
+
+msgid "manage_accounts"
+msgstr "إدارة الحسابات"
+
+msgid "import_accounts"
+msgstr "حسابات استيراد"
+
+msgid "export_accounts"
+msgstr "حسابات التصدير"
+
+msgid "quick_connect"
+msgstr "اتصال سريع"
+
+msgid "message_log"
+msgstr "رسالة تسجيل"
+
+msgid "local_directory"
+msgstr "دليل محلي"
+
+msgid "uploads_downloads"
+msgstr "تحميل / تنزيل"
+
+msgid "clear_saved_data"
+msgstr "مسح البيانات المحفوظة"
+
+msgid "edit_settings"
+msgstr "تحرير إعدادات"
+
+msgid "report_bug"
+msgstr "الإبلاغ عن الأخطاء"
+
+msgid "suggest_feature"
+msgstr "اقتراح ميزة"
+
+msgid "ask_a_question"
+msgstr "طرح سؤال"
+
+msgid "change_log"
+msgstr "غير المفتاح"
+
+msgid "about"
+msgstr "حول"
+
+msgid "exit"
+msgstr "خروج"
+
+msgid "host_ip_address"
+msgstr "المضيف / IP عنوان"
+
+msgid "username"
+msgstr "اسم المستخدم"
+
+msgid "password"
+msgstr "كلمه السر"
+
+msgid "port"
+msgstr "ميناء"
+
+msgid "connect"
+msgstr "ربط"
+
+msgid "welcome"
+msgstr "أهلا بك"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> عميل SFTP هو كل شيء عن البساطة، وقد بنيت على واجهة التطبيق تعبئتها جوجل كروم / كروم OS يسمح التطبيق ليكون سريع واستجابة. بعض من وظيفة تشمل مدير حساب FTP لتخزين بعيدا والأكثر الخاص بتنظيم لنا"
+
+msgid "latest_updates"
+msgstr "آخر التحديثات"
+
+msgid "server_status"
+msgstr "حالة السيرفر"
+
+msgid "license_server"
+msgstr "خادم ترخيص"
+
+msgid "sftp_support"
+msgstr "الدعم"
+
+msgid "notice_update"
+msgstr "علما / التحديثات"
+
+msgid "website"
+msgstr "موقع الكتروني"
+
+msgid "clear_all"
+msgstr "مسح الكل"
+
+msgid "manage"
+msgstr "إدارة"
+
+msgid "recheck"
+msgstr "إعادة الاختيار"
+
+msgid "last_release"
+msgstr "الإصدار الأخير"
+
+msgid "released"
+msgstr "صدر"
+
+msgid "queued"
+msgstr "في قائمة الانتظار"
+
+msgid "failed"
+msgstr "فشل"
+
+msgid "completed"
+msgstr "منجز"
+
+msgid "settings"
+msgstr "إعدادات"
+
+msgid "add_folder"
+msgstr "إضافة مجلد"
+
+msgid "add_ftp_account"
+msgstr "إضافة حساب FTP"
+
+msgid "file_editor"
+msgstr "ملف محرر"
+
+msgid "editor_preferences"
+msgstr "تفضيلات محرر"
+
+msgid "your_ftp_accounts"
+msgstr "حسابات FTP الخاصة بك"
+
+msgid "most_recent_used"
+msgstr "في الآونة الأخيرة تستخدم."
+
+msgid "no_connections_yet_made"
+msgstr "لا اتصالات حتى الان قدم"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "وأضافت لم حسابات FTP بعد"
+
+msgid "most_recent_connections"
+msgstr "معظم الاتصالات الأخيرة"
+
+msgid "last_10_connections_made"
+msgstr "مشاركة 10 العلاقات التي"
+
+msgid "designed_developed_by"
+msgstr "تصميم وتطوير شركة"
+
+msgid "about_info"
+msgstr "يرجى استخدام الموقع عميل SFTP للحصول على الدعم، لا يتم توفير الدعم من خلال المواقع الفردية لدينا."
+
+msgid "local"
+msgstr "محلي"
+
+msgid "remote"
+msgstr "عن بعد"
+
+msgid "remote_location_desc"
+msgstr "على سبيل المثال / بوبليك"
+
+msgid "create_directory"
+msgstr "إنشاء دليل"
+
+msgid "create_new_directory"
+msgstr "إنشاء دليل جديد"
+
+msgid "create_file"
+msgstr "إنشاء ملف"
+
+msgid "create_new_file"
+msgstr "إنشاء ملف جديد"
+
+msgid "refresh_list"
+msgstr "تحديث القائمة"
+
+msgid "change"
+msgstr "تغيير"
+
+msgid "report_a_bug"
+msgstr "الإبلاغ عن الأخطاء"
+
+msgid "suggest_a_feature"
+msgstr "اقتراح ميزة"
+
+msgid "enter_password"
+msgstr "أدخل كلمة المرور"
+
+msgid "enter_your_password..."
+msgstr "ادخل رقمك السري..."
+
+msgid "passphrase"
+msgstr "مرور"
+
+msgid "enter_your_passphrase..."
+msgstr "إدخال عبارة المرور الخاصة بك ..."
+
+msgid "email_sftp_client"
+msgstr "عميل SFTP البريد الإلكتروني"
+
+msgid "faqs"
+msgstr "الأسئلة الأكثر شيوعا"
+
+msgid "visit_sftp_client_website"
+msgstr "موقع العميل زيارة SFTP"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "معدل لنا على سوق Chrome الإلكتروني جوجل"
+
+msgid "report_an_issue_or_get_help"
+msgstr "الإبلاغ عن مشكلة أو الحصول على المساعدة"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "الانضمام إلينا في الفيسبوك للحصول على التحديثات"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "تابعونا على تويتر للحصول على التحديثات"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 لنا على جوجل للحصول على التحديثات"
+
+msgid "okay"
+msgstr "حسنا"
+
+msgid "cancel"
+msgstr "إلغاء"
+
+msgid "close"
+msgstr "قريب"
+
+msgid "unknown_host"
+msgstr "مضيف مجهول"
+
+msgid "okay_to_continue"
+msgstr "حسنا المتابعة؟"
+
+msgid "fingerprint"
+msgstr "بصمة"
+
+msgid "remember"
+msgstr "تذكر"
+
+msgid "file_permissions"
+msgstr "أذونات الملفات"
+
+msgid "file_permissions_desc"
+msgstr "يرجى تحديد السمات الجديدة للملف المحدد (ق) / مجلد (ق)"
+
+msgid "read"
+msgstr "اقرأ"
+
+msgid "write"
+msgstr "كتابة"
+
+msgid "execute"
+msgstr "نفذ"
+
+msgid "owner"
+msgstr "مالك"
+
+msgid "group"
+msgstr "تجمع"
+
+msgid "public"
+msgstr "عامة"
+
+msgid "numeric_value"
+msgstr "قيمة رقمية"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "أدخل اسم الدليل الجديد ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "أدخل اسم ملف جديد ..."
+
+msgid "name"
+msgstr "اسم"
+
+msgid "enter_a_password"
+msgstr "أدخل كلمة المرور"
+
+msgid "language"
+msgstr "لغة"
+
+msgid "seconds"
+msgstr "ثواني"
+
+msgid "minutes"
+msgstr "دقيقة"
+
+msgid "hour"
+msgstr "ساعة"
+
+msgid "hours"
+msgstr "ساعات"
+
+msgid "day"
+msgstr "يوم"
+
+msgid "trial_left"
+msgstr "محاكمة اليسار"
+
+msgid "register_now"
+msgstr "سجل الان"
+
+msgid "general"
+msgstr "جنرال لواء"
+
+msgid "security"
+msgstr "أمن"
+
+msgid "master_password"
+msgstr "كلمة السر الرئيسية"
+
+msgid "status"
+msgstr "الحالة"
+
+msgid "enabled"
+msgstr "تمكين"
+
+msgid "disabled"
+msgstr "معاق"
+
+msgid "timeout"
+msgstr "نفذ الوقت"
+
+msgid "save"
+msgstr "حفظ"
+
+msgid "add_account"
+msgstr "إضافة حساب"
+
+msgid "support"
+msgstr "الدعم"
+
+msgid "notice_updates"
+msgstr "علما / التحديثات"
+
+msgid "please_login"
+msgstr "الرجاء تسجيل الدخول"
+
+msgid "your_session_timed_out"
+msgstr "الدورة الخاصة بك مهلة"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "آسف كانت كلمة السر التي أدخلتها غير صحيحة!"
+
+msgid "login"
+msgstr "تسجيل الدخول"
+
+msgid "master_password_desc"
+msgstr "تعيين هذه كلمة سر رئيسية للحفاظ على أمان حساباتك."
+
+msgid "license_key"
+msgstr "مفتاح الترخيص"
+
+msgid "online"
+msgstr "على الانترنت"
+
+msgid "offline"
+msgstr "غير متصل"
+
+msgid "currently_unavailable"
+msgstr "غير متوفر حاليا"
+
+msgid "no_message_to_display"
+msgstr "لا يوجد حاليا أي لعرض"
+
+msgid "offline_notice_title"
+msgstr "لا يمكن الوصول إليه - هل أنت حاليا أو على شبكة اتصال فقط؟"
+
+msgid "offline_notice_desc"
+msgstr "أنت متواجد حاليا في الوقت الراهن، على شبكة الاتصال فقط أو لا علاقة يمكن أن تنشأ إلى خادمنا"
+
+msgid "edit_file"
+msgstr "تحرير الملف"
+
+msgid "download"
+msgstr "تحميل"
+
+msgid "upload"
+msgstr "تحميل"
+
+msgid "host_ip_is_required"
+msgstr "مطلوب المضيف / IP"
+
+msgid "apply_to_all_files"
+msgstr "تنطبق على جميع الملفات"
+
+msgid "activate_now"
+msgstr "نشط الآن"
+
+msgid "deactivate"
+msgstr "دي تنشيط"
+
+msgid "in_progress"
+msgstr "في تَقَدم"
+
+msgid "complete"
+msgstr "كامل"
+
+msgid "direction"
+msgstr "اتجاه"
+
+msgid "progress"
+msgstr "تقدم"
+
+msgid "permissions"
+msgstr "أذونات"
+
+msgid "owner_group"
+msgstr "مالك / المجموعة"
+
+msgid "size"
+msgstr "حجم"
+
+msgid "type"
+msgstr "اكتب"
+
+msgid "modified"
+msgstr "تم التعديل"
+
+msgid "trial"
+msgstr "التجربة"
+
+msgid "cleared"
+msgstr "مسح"
+
+msgid "error_connecting"
+msgstr "خطأ توصيل"
+
+msgid "error_connecting_to_host_ip"
+msgstr "خطأ توصيل لاستضافة / عنوان بروتوكول الإنترنت"
+
+msgid "error_connecting_to_port"
+msgstr "خطأ توصيل إلى ميناء"
+
+msgid "please_select_a_local_directory_first"
+msgstr "الرجاء اختيار الدليل المحلي لأول مرة!"
+
+msgid "go"
+msgstr "اذهب"
+
+msgid "confirm"
+msgstr "أكد"
+
+msgid "delete"
+msgstr "حذف"
+
+msgid "rename"
+msgstr "إعادة تسمية"
+
+msgid "copy_urls_to_clipboard"
+msgstr "نسخ رابط (ق) إلى الحافظة"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "الرجاء التأكد من أنك تريد حذف الملف المحدد (ق) / مجلد (ق)"
+
+msgid "cancelled_by_user"
+msgstr "ألغي من قبل المستخدم"
+
+msgid "already_exists_overwrite"
+msgstr "موجود مسبقا، الكتابة؟"
+
+msgid "dashboard"
+msgstr "لوحة القيادة"
+
+msgid "my_accounts"
+msgstr "حساباتي"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "الملف المحفوظ! وقد تدعم جميع الحسابات حتى."
+
+msgid "file_failed_please_try_again"
+msgstr "ملف فشل! حاول مرة اخرى."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "ليس لديك أي حسابات ليكون احتياطيا."
+
+msgid "saved!"
+msgstr "تم الحفظ!"
+
+msgid "please_enter_a_password"
+msgstr "الرجاء إدخال كلمة المرور!"
+
+msgid "connection_closed"
+msgstr "اتصال مغلقة"
+
+msgid "listing_mode_set_to"
+msgstr "قائمة ضبط الوضع ل"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "حل IP الملقم المحلي، وذلك باستخدام IP الخارجي"
+
+msgid "login_incorrect"
+msgstr "خطأ في تسجيل الدخول"
+
+msgid "keeping_connection_alive"
+msgstr "حفظ اتصال على قيد الحياة"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "غير قادر على الكتابة، أغلق اتصال البيانات"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "غير قادر على قراءة أغلق اتصال البيانات"
+
+msgid "error_reading_file"
+msgstr "ملف القراءة خطأ"
+
+msgid "error_writing_file"
+msgstr "خطأ في ملف الكتابة"
+
+msgid "failed_to_change_directory_to"
+msgstr "فشل في تغيير الدليل"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "لا تستطيع ديك الأذونات الصحيحة للوصول إلى هذا الدليل"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "الرجوع إلى الدليل السابق"
+
+msgid "activate"
+msgstr "تفعيل"
+
+msgid "payment"
+msgstr "دفع"
+
+msgid "license_key_is_required"
+msgstr "مطلوب مفتاح الترخيص"
+
+msgid "license_activated!"
+msgstr "رخصة المنشط!"
+
+msgid "your_license_has_been_validated"
+msgstr "وقد تم التحقق من صحة الترخيص الخاص بك."
+
+msgid "thank_you!"
+msgstr "شكرا!"
+
+msgid "buy_now!"
+msgstr "اشتري الآن!"
+
+msgid "buy_now"
+msgstr "اشتري الآن"
+
+msgid "one_off_fee"
+msgstr "مرة واحدة رسوم"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "الرجاء الترقية إلى يتمتع هذا التطبيق مع أي قيود"
+
+msgid "please_enter_your_license_key_below"
+msgstr "الرجاء إدخال مفتاح الترخيص الخاص بك أدناه"
+
+msgid "or"
+msgstr "أو"
+
+msgid "loading..."
+msgstr "جار التحميل..."
+
+msgid "clear_accounts"
+msgstr "الحسابات واضحة"
+
+msgid "clear_ssh_keys"
+msgstr "مفاتيح SSH واضحة"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "حذف كل مفاتيح SSH المحفوظة"
+
+msgid "clear_app_settings"
+msgstr "إعدادات التطبيقات واضحة"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "حذف كافة إعدادات معينة التطبيق"
+
+msgid "clear_recent_connections"
+msgstr "اتصالات الأخيرة واضحة"
+
+msgid "deletes_all_recent_connections"
+msgstr "حذف كافة الاتصالات الأخيرة"
+
+msgid "import_type"
+msgstr "نوع استيراد"
+
+msgid "please_select"
+msgstr "اختر من فضلك"
+
+msgid "import_file"
+msgstr "استيراد ملف"
+
+msgid "choose_file"
+msgstr "اختر ملف"
+
+msgid "delete_accounts"
+msgstr "حذف الحسابات"
+
+msgid "deletes_all_existing_accounts"
+msgstr "حذف كل الحسابات الموجودة"
+
+msgid "import_now"
+msgstr "استيراد الآن"
+
+msgid "none"
+msgstr "لا شيء"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "الرجاء إعادة تشغيل التطبيق العميل SFTP لتصبح التغييرات سارية المفعول."
+
+msgid "already_bought_the_app"
+msgstr "اشترى بالفعل التطبيق؟"
+
+msgid "choose"
+msgstr "اختار"
+
+msgid "deleted!"
+msgstr "تم الحذف!"
+
+msgid "use_syncronised_browsing"
+msgstr "استخدام التصفح syncronised"
+
+msgid "remote_directory"
+msgstr "دليل عن بعد"
+
+msgid "rsa_key_only!"
+msgstr "مفتاح RSA فقط!"
+
+msgid "no_key_selected"
+msgstr "لا المفتاح المحدد."
+
+msgid "ssh_key_file"
+msgstr "ملف مفتاح SSH"
+
+msgid "no_dir_selected"
+msgstr "لا دير المحدد."
+
+msgid "keep_blank_for_current_password"
+msgstr "تبقي فارغة لكلمة المرور الحالية."
+
+msgid "logon_type"
+msgstr "نوع تسجيل الدخول"
+
+msgid "normal"
+msgstr "عادي"
+
+msgid "ask_for_password"
+msgstr "طلب كلمة المرور"
+
+msgid "anonymous"
+msgstr "مجهول"
+
+msgid "account_type"
+msgstr "نوع الحساب"
+
+msgid "ftp_normal_connection"
+msgstr "بروتوكول نقل الملفات (اتصال عادي)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (اتصال آمن)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (اتصال آمن)"
+
+msgid "folder"
+msgstr "مجلد"
+
+msgid "advanced"
+msgstr "متقدم"
+
+msgid "folder_name"
+msgstr "اسم الملف"
+
+msgid "parent"
+msgstr "أصل"
+
+msgid "new_ftp_site"
+msgstr "موقع FTP جديد"
+
+msgid "new_folder"
+msgstr "ملف جديد"
+
+msgid "clean_now"
+msgstr "نظف الان"
+
+msgid "host"
+msgstr "مضيف"
+
+msgid "no_accounts_added..."
+msgstr "لا حسابات واضاف ..."
+
+msgid "unknown"
+msgstr "غير معروف"
+
+msgid "file_saved!"
+msgstr "الملف المحفوظ!"
+
+msgid "uploading_file!"
+msgstr "تحميل الملف!"
+
+msgid "save_failed!"
+msgstr "فشل عملية الحفظ!"
+
+msgid "search"
+msgstr "بحث"
+
+msgid "find"
+msgstr "تجد"
+
+msgid "replace"
+msgstr "يحل محل"
+
+msgid "scroll_past_end"
+msgstr "انتقل بعد نهاية"
+
+msgid "show_annotations"
+msgstr "مشاهدة الشروح"
+
+msgid "show_gutter"
+msgstr "مشاهدة مزراب"
+
+msgid "show_invisibles"
+msgstr "مشاهدة الغيبيات"
+
+msgid "show_print_margin"
+msgstr "مشاهدة طباعة الهامش"
+
+msgid "highlight_active_line"
+msgstr "تسليط الضوء على الخط النشط"
+
+msgid "word_wrap"
+msgstr "كلمة التفاف"
+
+msgid "split_code"
+msgstr "كود الانقسام"
+
+msgid "preferences"
+msgstr "التفضيلات"
+
+msgid "close_all_tabs"
+msgstr "إغلاق جميع علامات التبويب"
+
+msgid "close_current_tab"
+msgstr "إغلاق علامة التبويب الحالية"
+
+msgid "auto_save_file_when_i_type"
+msgstr "حفظ تلقائي ملف عندما كنت اكتب"
+
+msgid "auto_save"
+msgstr "حفظ السيارات"
+
+msgid "quick_save"
+msgstr "الحفظ السريع"
+
+msgid "documentation"
+msgstr "توثيق"
+
+msgid "themes"
+msgstr "المواضيع"
+
+msgid "keyboard_shortcuts"
+msgstr "اختصارات لوحة المفاتيح"
+
+msgid "coming_soon"
+msgstr "قريبا"
+
+msgid "empty"
+msgstr "فارغة"

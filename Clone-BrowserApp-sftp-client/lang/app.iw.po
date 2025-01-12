@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: iw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "תַפרִיט"
+
+msgid "file"
+msgstr "קוֹבֶץ"
+
+msgid "view"
+msgstr "נוף"
+
+msgid "edit"
+msgstr "לַעֲרוֹך"
+
+msgid "help"
+msgstr "עֶזרָה"
+
+msgid "manage_accounts"
+msgstr "ניהול חשבונות"
+
+msgid "import_accounts"
+msgstr "חשבונות יבוא"
+
+msgid "export_accounts"
+msgstr "חשבונות יצוא"
+
+msgid "quick_connect"
+msgstr "חיבור מהיר"
+
+msgid "message_log"
+msgstr "הודעת יומן"
+
+msgid "local_directory"
+msgstr "מדריך מקומי"
+
+msgid "uploads_downloads"
+msgstr "העלאות / הורדות"
+
+msgid "clear_saved_data"
+msgstr "נקה את הנתונים השמורים"
+
+msgid "edit_settings"
+msgstr "ערוך הגדרות"
+
+msgid "report_bug"
+msgstr "דווח על באג"
+
+msgid "suggest_feature"
+msgstr "הצע תכונה"
+
+msgid "ask_a_question"
+msgstr "שאל שאלה"
+
+msgid "change_log"
+msgstr "רישום של שינוי"
+
+msgid "about"
+msgstr "על אודות"
+
+msgid "exit"
+msgstr "יְצִיאָה"
+
+msgid "host_ip_address"
+msgstr "מארח / כתובת IP"
+
+msgid "username"
+msgstr "שם משתמש"
+
+msgid "password"
+msgstr "סיסמה"
+
+msgid "port"
+msgstr "נָמָל"
+
+msgid "connect"
+msgstr "לְחַבֵּר"
+
+msgid "welcome"
+msgstr "ברוכים הבאים"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> לקוח SFTP מכיל על פשטות, זה כבר בנוי על ממשק האפליקציה ארוזה Google Chrome / Chrome OS המאפשר ליישום ולהגיב במהירות. חלק מהפונקציונליות כולל מנהל חשבון FTP כדי לאפסן ולארגן ביותר שלך אלינו"
+
+msgid "latest_updates"
+msgstr "עדכונים אחרונים"
+
+msgid "server_status"
+msgstr "מצב השרת"
+
+msgid "license_server"
+msgstr "שרת רשיון"
+
+msgid "sftp_support"
+msgstr "תְמִיכָה"
+
+msgid "notice_update"
+msgstr "הודעה / עדכונים"
+
+msgid "website"
+msgstr "אתר אינטרנט"
+
+msgid "clear_all"
+msgstr "נקה הכל"
+
+msgid "manage"
+msgstr "לנהל"
+
+msgid "recheck"
+msgstr "בדוק מחדש"
+
+msgid "last_release"
+msgstr "השחרור אחרון"
+
+msgid "released"
+msgstr "מְשׁוּחרָר"
+
+msgid "queued"
+msgstr "שבתור"
+
+msgid "failed"
+msgstr "נִכשָׁל"
+
+msgid "completed"
+msgstr "הושלם"
+
+msgid "settings"
+msgstr "הגדרות"
+
+msgid "add_folder"
+msgstr "הוסף תיקיה"
+
+msgid "add_ftp_account"
+msgstr "הוסף חשבון FTP"
+
+msgid "file_editor"
+msgstr "עורך קובץ"
+
+msgid "editor_preferences"
+msgstr "העדפות עורך"
+
+msgid "your_ftp_accounts"
+msgstr "חשבונות FTP שלך"
+
+msgid "most_recent_used"
+msgstr "שהשתמשו בהם לאחרונה."
+
+msgid "no_connections_yet_made"
+msgstr "אין קשרים עשו עדיין"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "אין חשבונות FTP הוסיף עדיין"
+
+msgid "most_recent_connections"
+msgstr "רוב החיבורים האחרונים"
+
+msgid "last_10_connections_made"
+msgstr "אחרון 10 חיבורים שנעשו"
+
+msgid "designed_developed_by"
+msgstr "עוצב & שפותחה על ידי"
+
+msgid "about_info"
+msgstr "השתמש באתר הלקוח SFTP עבור תמיכה, ללא תמיכה מסופקת דרך האינטרנט המסוים שלנו."
+
+msgid "local"
+msgstr "מְקוֹמִי"
+
+msgid "remote"
+msgstr "מְרוּחָק"
+
+msgid "remote_location_desc"
+msgstr "למשל / public_html"
+
+msgid "create_directory"
+msgstr "צור Directory"
+
+msgid "create_new_directory"
+msgstr "צור חדש Directory"
+
+msgid "create_file"
+msgstr "צור קובץ"
+
+msgid "create_new_file"
+msgstr "יצירת קובץ חדש"
+
+msgid "refresh_list"
+msgstr "רשימת רענון"
+
+msgid "change"
+msgstr "שינוי"
+
+msgid "report_a_bug"
+msgstr "דווח על באג"
+
+msgid "suggest_a_feature"
+msgstr "הצע תכונה"
+
+msgid "enter_password"
+msgstr "הזן את הסיסמה"
+
+msgid "enter_your_password..."
+msgstr "הכנס את הסיסמה שלך..."
+
+msgid "passphrase"
+msgstr "משפט-סיסמה"
+
+msgid "enter_your_passphrase..."
+msgstr "יש להזין את הססמה שלך ..."
+
+msgid "email_sftp_client"
+msgstr "לקוח דואר אלקטרוני sFTP"
+
+msgid "faqs"
+msgstr "שאלות נפוצות של"
+
+msgid "visit_sftp_client_website"
+msgstr "אתר הלקוח בקר sFTP"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "דרג אותנו על חנות האינטרנט של Google Chrome"
+
+msgid "report_an_issue_or_get_help"
+msgstr "דווח על בעיה או לקבל עזרה"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "הצטרפו אלינו בפייסבוק לקבלת עדכונים"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "עקבו אחרינו בטוויטר עדכונים"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "ללחוץ על +1 אותנו ב- Google עבור עדכונים"
+
+msgid "okay"
+msgstr "בסדר"
+
+msgid "cancel"
+msgstr "לְבַטֵל"
+
+msgid "close"
+msgstr "לִסְגוֹר"
+
+msgid "unknown_host"
+msgstr "מארח לא ידוע"
+
+msgid "okay_to_continue"
+msgstr "אוקיי להמשיך?"
+
+msgid "fingerprint"
+msgstr "טביעת אצבע"
+
+msgid "remember"
+msgstr "לִזכּוֹר"
+
+msgid "file_permissions"
+msgstr "הרשאות קובץ"
+
+msgid "file_permissions_desc"
+msgstr "אנא מלא את תכונות חדשות עבור הקובץ שנבחר (ים) / תיקייה (ים)"
+
+msgid "read"
+msgstr "לקרוא"
+
+msgid "write"
+msgstr "לִכתוֹב"
+
+msgid "execute"
+msgstr "לבצע"
+
+msgid "owner"
+msgstr "בעלים"
+
+msgid "group"
+msgstr "קְבוּצָה"
+
+msgid "public"
+msgstr "פּוּמְבֵּי"
+
+msgid "numeric_value"
+msgstr "ערך מספרי"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "הזן את שם הספרייה החדשה ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "הזן את שם הקובץ החדש ..."
+
+msgid "name"
+msgstr "שֵׁם"
+
+msgid "enter_a_password"
+msgstr "הכניסי סיסמא"
+
+msgid "language"
+msgstr "שפה"
+
+msgid "seconds"
+msgstr "שניים"
+
+msgid "minutes"
+msgstr "דקות"
+
+msgid "hour"
+msgstr "שָׁעָה"
+
+msgid "hours"
+msgstr "שעות"
+
+msgid "day"
+msgstr "יְוֹם"
+
+msgid "trial_left"
+msgstr "שמאל משפט"
+
+msgid "register_now"
+msgstr "הירשם עכשיו"
+
+msgid "general"
+msgstr "כללי"
+
+msgid "security"
+msgstr "בִּטָחוֹן"
+
+msgid "master_password"
+msgstr "סיסמת-העל"
+
+msgid "status"
+msgstr "סטָטוּס"
+
+msgid "enabled"
+msgstr "מופעל"
+
+msgid "disabled"
+msgstr "נָכֶה"
+
+msgid "timeout"
+msgstr "פסק זמן"
+
+msgid "save"
+msgstr "להציל"
+
+msgid "add_account"
+msgstr "הוסף חשבון"
+
+msgid "support"
+msgstr "תְמִיכָה"
+
+msgid "notice_updates"
+msgstr "הודעה / עדכונים"
+
+msgid "please_login"
+msgstr "אנא התחברות"
+
+msgid "your_session_timed_out"
+msgstr "מתוך מתוזמן המושב שלך"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "מצטער הסיסמה שההזנה הייתה שגויה!"
+
+msgid "login"
+msgstr "כניסה"
+
+msgid "master_password_desc"
+msgstr "הגדר סיסמת המאסטר זה לשמור את החשבונות שלך בטוח."
+
+msgid "license_key"
+msgstr "מפתח רישיון"
+
+msgid "online"
+msgstr "באינטרנט"
+
+msgid "offline"
+msgstr "מנותק"
+
+msgid "currently_unavailable"
+msgstr "נכון לעכשיו לא זמין"
+
+msgid "no_message_to_display"
+msgstr "אין הודעה להציג"
+
+msgid "offline_notice_title"
+msgstr "הגישה אינה אפשרית - האם אתה מחובר או ברשת הקשר היחיד?"
+
+msgid "offline_notice_desc"
+msgstr "אתה במצב לא מקוון, ברשת רק חיבור או אין קשר ניתן להקים לשרת שלנו"
+
+msgid "edit_file"
+msgstr "קובץ ערוך"
+
+msgid "download"
+msgstr "הורדה"
+
+msgid "upload"
+msgstr "העלה"
+
+msgid "host_ip_is_required"
+msgstr "IP מארח / נדרש"
+
+msgid "apply_to_all_files"
+msgstr "החל על כל הקבצים"
+
+msgid "activate_now"
+msgstr "הפעל עכשיו"
+
+msgid "deactivate"
+msgstr "דה-הפעל"
+
+msgid "in_progress"
+msgstr "בתהליך"
+
+msgid "complete"
+msgstr "לְהַשְׁלִים"
+
+msgid "direction"
+msgstr "כיוון"
+
+msgid "progress"
+msgstr "התקדמות"
+
+msgid "permissions"
+msgstr "הרשאות"
+
+msgid "owner_group"
+msgstr "בעלים / קבוצה"
+
+msgid "size"
+msgstr "גודל"
+
+msgid "type"
+msgstr "סוּג"
+
+msgid "modified"
+msgstr "השתנה"
+
+msgid "trial"
+msgstr "מִשׁפָּט"
+
+msgid "cleared"
+msgstr "מְבוּעָר"
+
+msgid "error_connecting"
+msgstr "שגיאה בהתחברות"
+
+msgid "error_connecting_to_host_ip"
+msgstr "שגיאת חיבור אל מארח / כתובת IP"
+
+msgid "error_connecting_to_port"
+msgstr "שגיאה בהתחברות אל הנמל"
+
+msgid "please_select_a_local_directory_first"
+msgstr "אנא בחר לספרייה מקומית ראשונה!"
+
+msgid "go"
+msgstr "ללכת"
+
+msgid "confirm"
+msgstr "לְאַשֵׁר"
+
+msgid "delete"
+msgstr "לִמְחוֹק"
+
+msgid "rename"
+msgstr "שינוי שם"
+
+msgid "copy_urls_to_clipboard"
+msgstr "העתק כתובת אתר (ים) ללוח"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "נא לאשר שברצונך למחוק את הקובץ הנבחר (ים) / תיקייה (ים)"
+
+msgid "cancelled_by_user"
+msgstr "בוטלה על ידי המשתמש"
+
+msgid "already_exists_overwrite"
+msgstr "זה כבר קיים, להחליף אותו?"
+
+msgid "dashboard"
+msgstr "לוּחַ מַחווָנִים"
+
+msgid "my_accounts"
+msgstr "החשבונות שלי"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "קובץ נשמר! כל החשבונות גובו."
+
+msgid "file_failed_please_try_again"
+msgstr "קובץ נכשל! בבקשה נסה שוב."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "בשלב זה אין לך חשבונות להיות מגובים."
+
+msgid "saved!"
+msgstr "נשמר!"
+
+msgid "please_enter_a_password"
+msgstr "הזן להלן את הסיסמה!"
+
+msgid "connection_closed"
+msgstr "החיבור נסגר"
+
+msgid "listing_mode_set_to"
+msgstr "מודעה על מצב מוגדר"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP השרת המקומי נפתר, באמצעות IP חיצוני"
+
+msgid "login_incorrect"
+msgstr "כניסה לא נכונה"
+
+msgid "keeping_connection_alive"
+msgstr "שמירה על קשר חי"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "לא ניתן לכתוב, חיבור נתונים סגור"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "אין אפשרות לקרוא את חיבור הנתונים נסגר"
+
+msgid "error_reading_file"
+msgstr "שגיאה בקריאת קובץ"
+
+msgid "error_writing_file"
+msgstr "קובץ שגיאה בכתיבה"
+
+msgid "failed_to_change_directory_to"
+msgstr "נכשל שנה את הספרייה"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "אולי אין לך את ההרשאות המתאימות לגשת בספריה זו"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "חוזר בחזרה בספרייה קודמת"
+
+msgid "activate"
+msgstr "לְהַפְעִיל"
+
+msgid "payment"
+msgstr "תַשְׁלוּם"
+
+msgid "license_key_is_required"
+msgstr "מפתח רישיון נדרש"
+
+msgid "license_activated!"
+msgstr "רישיון הופעל!"
+
+msgid "your_license_has_been_validated"
+msgstr "הרישיון שלך יאומת."
+
+msgid "thank_you!"
+msgstr "תודה רבה לך!"
+
+msgid "buy_now!"
+msgstr "קנה עכשיו!"
+
+msgid "buy_now"
+msgstr "קנה עכשיו"
+
+msgid "one_off_fee"
+msgstr "בתשלום חד פעמי"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "שדרג מנת שתוכל ליהנות מיישום זה ללא הגבלות"
+
+msgid "please_enter_your_license_key_below"
+msgstr "אנא הזן את מפתח הרישיון שלך למטה"
+
+msgid "or"
+msgstr "אוֹ"
+
+msgid "loading..."
+msgstr "טוען..."
+
+msgid "clear_accounts"
+msgstr "חשבונות נקה"
+
+msgid "clear_ssh_keys"
+msgstr "מפתחות SSH נקה"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "מחק את כל מפתחות SSH הצילו"
+
+msgid "clear_app_settings"
+msgstr "הגדרות App נקה"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "מוחק את כל הגדרות ספציפיות לאפליקציה"
+
+msgid "clear_recent_connections"
+msgstr "חיבורים אחרונים נקה"
+
+msgid "deletes_all_recent_connections"
+msgstr "מחק את כל החיבורים האחרונים"
+
+msgid "import_type"
+msgstr "סוג היבוא"
+
+msgid "please_select"
+msgstr "בבקשה תבחר"
+
+msgid "import_file"
+msgstr "קובץ יבוא"
+
+msgid "choose_file"
+msgstr "בחר קובץ"
+
+msgid "delete_accounts"
+msgstr "מחק חשבונות"
+
+msgid "deletes_all_existing_accounts"
+msgstr "מחק את כל החשבונות קיימים"
+
+msgid "import_now"
+msgstr "עכשיו יבוא"
+
+msgid "none"
+msgstr "אף לא אחד"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "אנא הפעל מחדש את יישום לקוח SFTP כדי שהשינויים ייכנסו לתוקף."
+
+msgid "already_bought_the_app"
+msgstr "כבר קנה את App?"
+
+msgid "choose"
+msgstr "בחר"
+
+msgid "deleted!"
+msgstr "נמחק!"
+
+msgid "use_syncronised_browsing"
+msgstr "להשתמש בגלישה syncronised"
+
+msgid "remote_directory"
+msgstr "מדריך מרחוק"
+
+msgid "rsa_key_only!"
+msgstr "מפתח RSA בלבד!"
+
+msgid "no_key_selected"
+msgstr "אין מפתח שנבחר."
+
+msgid "ssh_key_file"
+msgstr "קובץ מפתח SSH"
+
+msgid "no_dir_selected"
+msgstr "אין dir שנבחרה."
+
+msgid "keep_blank_for_current_password"
+msgstr "שמור ריק הסיסמה הנוכחית."
+
+msgid "logon_type"
+msgstr "סוג Logon"
+
+msgid "normal"
+msgstr "נוֹרמָלִי"
+
+msgid "ask_for_password"
+msgstr "בקש סיסמה"
+
+msgid "anonymous"
+msgstr "בעילום שם"
+
+msgid "account_type"
+msgstr "סוג החשבון"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (חיבור רגיל)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (חיבור מאובטח)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (חיבור מאובטח)"
+
+msgid "folder"
+msgstr "תיקייה"
+
+msgid "advanced"
+msgstr "מִתקַדֵם"
+
+msgid "folder_name"
+msgstr "שם תיקייה"
+
+msgid "parent"
+msgstr "הוֹרֶה"
+
+msgid "new_ftp_site"
+msgstr "אתר FTP חדש"
+
+msgid "new_folder"
+msgstr "תיקייה חדשה"
+
+msgid "clean_now"
+msgstr "עכשיו נקי"
+
+msgid "host"
+msgstr "מארח"
+
+msgid "no_accounts_added..."
+msgstr "לא נוספו חשבונות ..."
+
+msgid "unknown"
+msgstr "לא ידוע"
+
+msgid "file_saved!"
+msgstr "קובץ נשמר!"
+
+msgid "uploading_file!"
+msgstr "קובץ מועלה!"
+
+msgid "save_failed!"
+msgstr "השמירה נכשלה!"
+
+msgid "search"
+msgstr "לחפש"
+
+msgid "find"
+msgstr "למצוא"
+
+msgid "replace"
+msgstr "החלף"
+
+msgid "scroll_past_end"
+msgstr "גלול העבר סוף"
+
+msgid "show_annotations"
+msgstr "צג הערות"
+
+msgid "show_gutter"
+msgstr "הצג Gutter"
+
+msgid "show_invisibles"
+msgstr "והמינימונים הצג"
+
+msgid "show_print_margin"
+msgstr "שולי הדפסת צג"
+
+msgid "highlight_active_line"
+msgstr "דגש קו פעיל"
+
+msgid "word_wrap"
+msgstr "עטיפת מילה"
+
+msgid "split_code"
+msgstr "קוד פיצול"
+
+msgid "preferences"
+msgstr "העדפות"
+
+msgid "close_all_tabs"
+msgstr "כרטיסיות כל Close"
+
+msgid "close_current_tab"
+msgstr "סגוראתהלשוניתהנוכחית"
+
+msgid "auto_save_file_when_i_type"
+msgstr "שמירה אוטומטית קובץ כשאני מקליד"
+
+msgid "auto_save"
+msgstr "שמירה אוטומטית"
+
+msgid "quick_save"
+msgstr "שמור מהיר"
+
+msgid "documentation"
+msgstr "תיעוד"
+
+msgid "themes"
+msgstr "ערכות נושא"
+
+msgid "keyboard_shortcuts"
+msgstr "קיצורי דרך במקלדת"
+
+msgid "coming_soon"
+msgstr "בקרוב"
+
+msgid "empty"
+msgstr "ריק"

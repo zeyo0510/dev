@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "skedar"
+
+msgid "view"
+msgstr "Pamje"
+
+msgid "edit"
+msgstr "redaktoj"
+
+msgid "help"
+msgstr "Ndihmë"
+
+msgid "manage_accounts"
+msgstr "menaxhuar Llogaritë"
+
+msgid "import_accounts"
+msgstr "Llogaritë e importit"
+
+msgid "export_accounts"
+msgstr "Llogaritë e eksportit"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "mesazhi Identifikohu"
+
+msgid "local_directory"
+msgstr "Directory lokale"
+
+msgid "uploads_downloads"
+msgstr "Ngarkimet / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Saved Data"
+
+msgid "edit_settings"
+msgstr "Ndrysho Settings"
+
+msgid "report_bug"
+msgstr "Njoftoni një të metë"
+
+msgid "suggest_feature"
+msgstr "Sugjeroni një Feature"
+
+msgid "ask_a_question"
+msgstr "Bej nje pyetje"
+
+msgid "change_log"
+msgstr "Dokumenti i ndryshimeve"
+
+msgid "about"
+msgstr "për"
+
+msgid "exit"
+msgstr "dalje"
+
+msgid "host_ip_address"
+msgstr "Host / IP Adresa"
+
+msgid "username"
+msgstr "Emri i përdoruesit"
+
+msgid "password"
+msgstr "fjalëkalim"
+
+msgid "port"
+msgstr "port"
+
+msgid "connect"
+msgstr "lidh"
+
+msgid "welcome"
+msgstr "i mirëpritur"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Klienti është mbi të gjitha thjeshtësi, ajo ka qenë e ndërtuar në interface Google Chrome / Chrome OS app paketuar lejuar aplikacioni të jetë i shpejtë dhe të përgjegjshëm. Disa nga funksionet përfshin një Soccer llogarisë FTP për të ruajtur larg"
+
+msgid "latest_updates"
+msgstr "Updates fundit"
+
+msgid "server_status"
+msgstr "server Status"
+
+msgid "license_server"
+msgstr "Server License"
+
+msgid "sftp_support"
+msgstr "mbështetje"
+
+msgid "notice_update"
+msgstr "Njoftim / Updates"
+
+msgid "website"
+msgstr "Faqja e internetit"
+
+msgid "clear_all"
+msgstr "Pastroji të gjitha"
+
+msgid "manage"
+msgstr "Menaxho"
+
+msgid "recheck"
+msgstr "Re-kontroll"
+
+msgid "last_release"
+msgstr "Release fundit"
+
+msgid "released"
+msgstr "Released"
+
+msgid "queued"
+msgstr "në radhë"
+
+msgid "failed"
+msgstr "i dështuar"
+
+msgid "completed"
+msgstr "i përfunduar"
+
+msgid "settings"
+msgstr "Cilësimet"
+
+msgid "add_folder"
+msgstr "Shto dosje"
+
+msgid "add_ftp_account"
+msgstr "Shto Llogari FTP"
+
+msgid "file_editor"
+msgstr "dokumentit Editor"
+
+msgid "editor_preferences"
+msgstr "Parapëlqime Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Llogaritë tuaja FTP"
+
+msgid "most_recent_used"
+msgstr "më të përdorur kohët e fundit."
+
+msgid "no_connections_yet_made"
+msgstr "Nuk ka lidhje bërë ende"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Nuk ka llogari FTP shtuara"
+
+msgid "most_recent_connections"
+msgstr "Shumica Lidhjet e fundit"
+
+msgid "last_10_connections_made"
+msgstr "Fundit 10 Lidhjet e bëra"
+
+msgid "designed_developed_by"
+msgstr "Designed dhe Zhvilluar nga"
+
+msgid "about_info"
+msgstr "Ju lutemi përdorni faqen e internetit SFTP Client për mbështetje, nuk ka mbështetje është dhënë nëpërmjet faqet tona individuale."
+
+msgid "local"
+msgstr "Lokal"
+
+msgid "remote"
+msgstr "i largët"
+
+msgid "remote_location_desc"
+msgstr "p.sh. / public_html"
+
+msgid "create_directory"
+msgstr "Krijo Directory"
+
+msgid "create_new_directory"
+msgstr "Krijo Ri Directory"
+
+msgid "create_file"
+msgstr "Krijo Skedar"
+
+msgid "create_new_file"
+msgstr "Krijo skedar të ri"
+
+msgid "refresh_list"
+msgstr "Lista refresh"
+
+msgid "change"
+msgstr "ndryshim"
+
+msgid "report_a_bug"
+msgstr "Njoftoni një të metë"
+
+msgid "suggest_a_feature"
+msgstr "Sugjeroni një Feature"
+
+msgid "enter_password"
+msgstr "Shkruani fjalëkalimin"
+
+msgid "enter_your_password..."
+msgstr "Shkruani fjalëkalimin tuaj ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Shkruani fjalëkalim tuaj ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "Pyetje"
+
+msgid "visit_sftp_client_website"
+msgstr "Vizitoni sFTP Klienti Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Na Vlerësoni në Chrome Dyqanin e uebit Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Raporto një problem ose të merrni ndihmë"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Bashkohu me ne në Facebook për përditësime"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Na ndiqni në Twitter për përditësime"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "na me +1 në Google për përditësime"
+
+msgid "okay"
+msgstr "Mirë"
+
+msgid "cancel"
+msgstr "anuloj"
+
+msgid "close"
+msgstr "afër"
+
+msgid "unknown_host"
+msgstr "Host Unknown"
+
+msgid "okay_to_continue"
+msgstr "Mirë për të vazhduar?"
+
+msgid "fingerprint"
+msgstr "gjurmë gishtash"
+
+msgid "remember"
+msgstr "mbaj mend"
+
+msgid "file_permissions"
+msgstr "Permissions fotografi"
+
+msgid "file_permissions_desc"
+msgstr "Ju lutemi zgjidhni atributet reja për dosjen e zgjedhur (s) / dosje (s)"
+
+msgid "read"
+msgstr "lexoj"
+
+msgid "write"
+msgstr "Shkruaj"
+
+msgid "execute"
+msgstr "zbatoj"
+
+msgid "owner"
+msgstr "pronar"
+
+msgid "group"
+msgstr "grup"
+
+msgid "public"
+msgstr "publik"
+
+msgid "numeric_value"
+msgstr "Vlera numerike"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Futni emrin e directory të re ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Shkruani emrin e file të ri ..."
+
+msgid "name"
+msgstr "emër"
+
+msgid "enter_a_password"
+msgstr "Futni një fjalëkalim"
+
+msgid "language"
+msgstr "Gjuhe"
+
+msgid "seconds"
+msgstr "sekonda"
+
+msgid "minutes"
+msgstr "minuta"
+
+msgid "hour"
+msgstr "orë"
+
+msgid "hours"
+msgstr "orë"
+
+msgid "day"
+msgstr "ditë"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "Regjistrohu tani"
+
+msgid "general"
+msgstr "i përgjithshëm"
+
+msgid "security"
+msgstr "Siguri"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "status"
+
+msgid "enabled"
+msgstr "enabled"
+
+msgid "disabled"
+msgstr "i paaftë"
+
+msgid "timeout"
+msgstr "Koha mbaroi"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Shtoni Llogari"
+
+msgid "support"
+msgstr "mbështetje"
+
+msgid "notice_updates"
+msgstr "Njoftim / Updates"
+
+msgid "please_login"
+msgstr "Ju lutem Identifikohu"
+
+msgid "your_session_timed_out"
+msgstr "Seanca Juaj kohën e duhur Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Na vjen keq fjalëkalimi që dhatë është i gabuar!"
+
+msgid "login"
+msgstr "hyrje"
+
+msgid "master_password_desc"
+msgstr "Bëje këtë mjeshtër fjalëkalim për të mbajtur llogaritë tuaja të sigurt."
+
+msgid "license_key"
+msgstr "Key License"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "në linjë"
+
+msgid "currently_unavailable"
+msgstr "Aktualisht i padisponueshëm"
+
+msgid "no_message_to_display"
+msgstr "Asnjë mesazh për të shfaqur"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - A jeni offline ose në një rrjet të vetëm të lidhjes?"
+
+msgid "offline_notice_desc"
+msgstr "Ju jeni aktualisht në linjë, në një rrjet të vetëm lidhje ose pa lidhje mund të themelohet në serverin tonë"
+
+msgid "edit_file"
+msgstr "Edit dokumentit"
+
+msgid "download"
+msgstr "Shkarko"
+
+msgid "upload"
+msgstr "Ngarkoni"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP është e nevojshme"
+
+msgid "apply_to_all_files"
+msgstr "Aplikoni për të gjitha dosjet"
+
+msgid "activate_now"
+msgstr "Aktivizo tani"
+
+msgid "deactivate"
+msgstr "De-aktivizuar"
+
+msgid "in_progress"
+msgstr "në Progres"
+
+msgid "complete"
+msgstr "i plotë"
+
+msgid "direction"
+msgstr "drejtim"
+
+msgid "progress"
+msgstr "progres"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Pronari / Group"
+
+msgid "size"
+msgstr "madhësi"
+
+msgid "type"
+msgstr "lloj"
+
+msgid "modified"
+msgstr "modifikuar"
+
+msgid "trial"
+msgstr "gjykim"
+
+msgid "cleared"
+msgstr "pastruar"
+
+msgid "error_connecting"
+msgstr "Error lidhur"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Gabim lidhur të presë / adresa ip"
+
+msgid "error_connecting_to_port"
+msgstr "Gabim Po lidhet me portin"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Ju lutem, përzgjidhni një directory lokale për herë të parë!"
+
+msgid "go"
+msgstr "shkoj"
+
+msgid "confirm"
+msgstr "konfirmoj"
+
+msgid "delete"
+msgstr "fshij"
+
+msgid "rename"
+msgstr "riemërtoj"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) për Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Ju lutem konfirmoni se ju deshironi te fshini zgjedhur file (s) / dosje (s)"
+
+msgid "cancelled_by_user"
+msgstr "Anullohen nga përdoruesi"
+
+msgid "already_exists_overwrite"
+msgstr "tashmë ekziston, prishësh?"
+
+msgid "dashboard"
+msgstr "baltëpritëse"
+
+msgid "my_accounts"
+msgstr "Llogaritë e mia"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Paraqesë Saved! Të gjitha llogaritë janë të mbështetura."
+
+msgid "file_failed_please_try_again"
+msgstr "Dokumentit dështoi! Ju lutemi provoni përsëri."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ju aktualisht nuk kanë llogari të jenë të mbështetura."
+
+msgid "saved!"
+msgstr "Ruajtur!"
+
+msgid "please_enter_a_password"
+msgstr "Ju lutem shkruani një fjalëkalim!"
+
+msgid "connection_closed"
+msgstr "lidhja mbyllur"
+
+msgid "listing_mode_set_to"
+msgstr "Renditur regjim të vendosur për"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP server lokal zgjidhet, duke përdorur IP të jashtëm"
+
+msgid "login_incorrect"
+msgstr "Login i gabuar"
+
+msgid "keeping_connection_alive"
+msgstr "Mbajtja gjallë lidhjen"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Në pamundësi për të shkruar, lidhja e të dhënave të mbyllura"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Në pamundësi për të lexuar lidhja e të dhënave të mbyllura"
+
+msgid "error_reading_file"
+msgstr "Gabim fotografi lexim"
+
+msgid "error_writing_file"
+msgstr "Gabim gjatë shkrimit fotografi"
+
+msgid "failed_to_change_directory_to"
+msgstr "Dështoi për të ndryshuar directory të"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Ju nuk mund të keni të drejtat e duhura për të hyrë në këtë directory"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Kthehet përsëri në directory mëparshme"
+
+msgid "activate"
+msgstr "aktivizoj"
+
+msgid "payment"
+msgstr "pagesë"
+
+msgid "license_key_is_required"
+msgstr "çelësi i licencës është e nevojshme"
+
+msgid "license_activated!"
+msgstr "License aktivizuar!"
+
+msgid "your_license_has_been_validated"
+msgstr "Licenca juaj është vërtetuar."
+
+msgid "thank_you!"
+msgstr "Faleminderit!"
+
+msgid "buy_now!"
+msgstr "Blej tani!"
+
+msgid "buy_now"
+msgstr "Blej tani"
+
+msgid "one_off_fee"
+msgstr "një off tarifë"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Ju lutemi të përmirësuar për të shijuar këtë app me pa kufizime"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Ju lutemi shkruani Key tuaj License poshtë"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Duke u ngarkuar ..."
+
+msgid "clear_accounts"
+msgstr "Llogaritë qarta"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Fshin të gjitha çelësat ruajtur SSH"
+
+msgid "clear_app_settings"
+msgstr "Clear Settings App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Fshin të gjitha parametrat specifike aplikacionit"
+
+msgid "clear_recent_connections"
+msgstr "Lidhjet e qarta e fundit"
+
+msgid "deletes_all_recent_connections"
+msgstr "Fshin të gjitha lidhjet e fundit"
+
+msgid "import_type"
+msgstr "Import Lloji"
+
+msgid "please_select"
+msgstr "Ju lutem zgjidhni"
+
+msgid "import_file"
+msgstr "Import dokumentit"
+
+msgid "choose_file"
+msgstr "zgjidhni file"
+
+msgid "delete_accounts"
+msgstr "Fshij Llogaritë"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Fshin të gjitha llogaritë ekzistuese"
+
+msgid "import_now"
+msgstr "Import Tani"
+
+msgid "none"
+msgstr "Asnje"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Ju lutem rinisni app SFTP Client për ndryshimet të hyjnë në fuqi."
+
+msgid "already_bought_the_app"
+msgstr "Tashmë e blerë app?"
+
+msgid "choose"
+msgstr "zgjedh"
+
+msgid "deleted!"
+msgstr "Fshihet!"
+
+msgid "use_syncronised_browsing"
+msgstr "përdorin shfletim syncronised"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA kyç vetëm!"
+
+msgid "no_key_selected"
+msgstr "No kyçe të zgjedhura."
+
+msgid "ssh_key_file"
+msgstr "SSH Key dokumentit"
+
+msgid "no_dir_selected"
+msgstr "No dir zgjedhur."
+
+msgid "keep_blank_for_current_password"
+msgstr "Mbani bosh për fjalëkalimin aktual."
+
+msgid "logon_type"
+msgstr "logon Lloji"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "ask_for_password"
+msgstr "Pyetni për Fjalëkalimi"
+
+msgid "anonymous"
+msgstr "anonim"
+
+msgid "account_type"
+msgstr "Lloji i Llogarisë"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Connection Normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "dosje"
+
+msgid "advanced"
+msgstr "i përparuar"
+
+msgid "folder_name"
+msgstr "Folder Emri"
+
+msgid "parent"
+msgstr "prind"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "Dosje e re"
+
+msgid "clean_now"
+msgstr "Clean Tani"
+
+msgid "host"
+msgstr "Mikpritës"
+
+msgid "no_accounts_added..."
+msgstr "No Llogaritë Added ..."
+
+msgid "unknown"
+msgstr "I panjohur"
+
+msgid "file_saved!"
+msgstr "Paraqesë Saved!"
+
+msgid "uploading_file!"
+msgstr "Ngarkimi i dokumentit!"
+
+msgid "save_failed!"
+msgstr "Ruaj dështoi!"
+
+msgid "search"
+msgstr "kërkim"
+
+msgid "find"
+msgstr "Gjej"
+
+msgid "replace"
+msgstr "zëvendësoj"
+
+msgid "scroll_past_end"
+msgstr "Shkoni Past End"
+
+msgid "show_annotations"
+msgstr "Shfaq Annotations"
+
+msgid "show_gutter"
+msgstr "Trego Gutter"
+
+msgid "show_invisibles"
+msgstr "Shfaq Invisibles"
+
+msgid "show_print_margin"
+msgstr "Trego Margin Print"
+
+msgid "highlight_active_line"
+msgstr "Highlight Line aktiv"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Kodi Split"
+
+msgid "preferences"
+msgstr "preferencat"
+
+msgid "close_all_tabs"
+msgstr "Close All Tabs"
+
+msgid "close_current_tab"
+msgstr "Close Tab aktual"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto ruani skedarin, kur unë lloji"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "dokumentim"
+
+msgid "themes"
+msgstr "Tema"
+
+msgid "keyboard_shortcuts"
+msgstr "Shortcuts Keyboard"
+
+msgid "coming_soon"
+msgstr "Vjen se shpejti"
+
+msgid "empty"
+msgstr "bosh"

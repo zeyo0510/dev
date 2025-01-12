@@ -1,0 +1,62 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height:100%;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	height: 100%;
+	position: relative;
+	background-color: #FFF;
+}
+body > footer {
+	position: fixed;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+}
+ul {
+	margin-left: 20px;
+}
+h2 {
+	font-size: 18px;
+	color: #555;
+	color: rgba(0,0,0,0.7);
+}
+b, strong {
+	font-weight: 600;
+}
+pre {
+	padding: 0px;
+	margin: 0px;
+}
+.clear {
+	clear:both;
+	display:block;
+}
+.clear-fix {
+	height: 1px;
+}
+select {
+	margin-left: 2px;
+	padding: 2px 3px;
+	border-radius: 2px;
+	border: 1px solid;
+	border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+	box-shadow: inset 0px 1px 3px #DDD;
+}
+select:focus {
+	outline: none;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}

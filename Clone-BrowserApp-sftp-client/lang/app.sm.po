@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sm\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "file"
+msgstr "faila"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "faʻatonutonu"
+
+msgid "help"
+msgstr "fesoasoani"
+
+msgid "manage_accounts"
+msgstr "pulea Tupe"
+
+msgid "import_accounts"
+msgstr "Faamatalaga tau tupe faaulufale"
+
+msgid "export_accounts"
+msgstr "Faamatalaga tau tupe auina atu i fafo"
+
+msgid "quick_connect"
+msgstr "vave fesootai"
+
+msgid "message_log"
+msgstr "savali ogalaau"
+
+msgid "local_directory"
+msgstr "Directory le lotoifale"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Feagaiga"
+
+msgid "clear_saved_data"
+msgstr "Manino Faamatalaga faaolaina"
+
+msgid "edit_settings"
+msgstr "faʻatonutonu tulaga"
+
+msgid "report_bug"
+msgstr "Lipoti a meaola laʻitiiti"
+
+msgid "suggest_feature"
+msgstr "Fautua a FAAALIA"
+
+msgid "ask_a_question"
+msgstr "Fai atu i se Fesili"
+
+msgid "change_log"
+msgstr "suiga ogalaau"
+
+msgid "about"
+msgstr "E tusa o le"
+
+msgid "exit"
+msgstr "ulufalega"
+
+msgid "host_ip_address"
+msgstr "'Au / Address IP"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Numera e le iloa e sesi"
+
+msgid "port"
+msgstr "tāulaga"
+
+msgid "connect"
+msgstr "sosoʻo"
+
+msgid "welcome"
+msgstr "Afio mai"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP kalani e uma e uiga i le faigofie, na fausia i luga o le Ofisa o polokalama afifi Google Chrome / Chrome OS le faatagaina o le polokalama e anapogi ma tali. O nisi o le functionality e aofia ai se Pule FTP Teugatupe e teu ese ma faatulaga outou s"
+
+msgid "latest_updates"
+msgstr "fou Faafouga"
+
+msgid "server_status"
+msgstr "faigaluega Tulaga"
+
+msgid "license_server"
+msgstr "faigaluega laisene"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Faasilasilaga / Faafouga"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "manino uma"
+
+msgid "manage"
+msgstr "pulea"
+
+msgid "recheck"
+msgstr "Toe siaki"
+
+msgid "last_release"
+msgstr "Faamatuu mulimuli"
+
+msgid "released"
+msgstr "faamalolo"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "Ua le mafai"
+
+msgid "completed"
+msgstr "maea"
+
+msgid "settings"
+msgstr "tulaga"
+
+msgid "add_folder"
+msgstr "faaopoopo faila"
+
+msgid "add_ftp_account"
+msgstr "Faaopoopo Teugatupe FTP"
+
+msgid "file_editor"
+msgstr "faatoai Faatonu"
+
+msgid "editor_preferences"
+msgstr "faatonu Manatu"
+
+msgid "your_ftp_accounts"
+msgstr "Lou Tupe FTP"
+
+msgid "most_recent_used"
+msgstr "Talu ai nei faaaogaina."
+
+msgid "no_connections_yet_made"
+msgstr "E leai se fesootaiga ae faia"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "E leai se tala FTP faaopoopo ae"
+
+msgid "most_recent_connections"
+msgstr "Sili ona lata mai nei sootaga"
+
+msgid "last_10_connections_made"
+msgstr "Mulimuli fesootaiga 10 faia"
+
+msgid "designed_developed_by"
+msgstr "Fuafuaina & fausia e"
+
+msgid "about_info"
+msgstr "Faamolemole faaaoga le website kalani sFTP mo lagolago, ua tuuina atu se lagolago e ala i lo tatou uepisaite tagata."
+
+msgid "local"
+msgstr "i le lotoifale"
+
+msgid "remote"
+msgstr "mamao tele"
+
+msgid "remote_location_desc"
+msgstr "eg / public_html"
+
+msgid "create_directory"
+msgstr "fatu Directory"
+
+msgid "create_new_directory"
+msgstr "Fatu Directory New"
+
+msgid "create_file"
+msgstr "fatu Pokolame"
+
+msgid "create_new_file"
+msgstr "Fatu Pokolame New"
+
+msgid "refresh_list"
+msgstr "Lisi toe faʻafou"
+
+msgid "change"
+msgstr "liuga"
+
+msgid "report_a_bug"
+msgstr "Lipoti a meaola laʻitiiti"
+
+msgid "suggest_a_feature"
+msgstr "Fautua a FAAALIA"
+
+msgid "enter_password"
+msgstr "Ulufale upu faataga"
+
+msgid "enter_your_password..."
+msgstr "Ulufale outou upu faataga ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Ulufale atu i lou passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP kalani"
+
+msgid "faqs"
+msgstr "FAQ a"
+
+msgid "visit_sftp_client_website"
+msgstr "Asiasi sFTP Website kalani"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Fuaina i tatou i le Webstore Chrome Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Lipoti se mataupu po o le maua ai le fesoasoani"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Auai i tatou i Facebook mo faafouga"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Mulimuli i tatou i Twitter mo faafouga"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 I tatou i Google mo faafouga"
+
+msgid "okay"
+msgstr "afaina"
+
+msgid "cancel"
+msgstr "solo"
+
+msgid "close"
+msgstr "lata"
+
+msgid "unknown_host"
+msgstr "'au le iloa"
+
+msgid "okay_to_continue"
+msgstr "Afaina ina ia faaauau pea?"
+
+msgid "fingerprint"
+msgstr "tulagalima"
+
+msgid "remember"
+msgstr "manatua"
+
+msgid "file_permissions"
+msgstr "Faatagaga faila"
+
+msgid "file_permissions_desc"
+msgstr "Faamolemole filifili le uiga fou mo le faila filifilia (s) / faila (s)"
+
+msgid "read"
+msgstr "faitau"
+
+msgid "write"
+msgstr "tusi"
+
+msgid "execute"
+msgstr "faʻasala oti"
+
+msgid "owner"
+msgstr "tagata e ona"
+
+msgid "group"
+msgstr "vasega"
+
+msgid "public"
+msgstr "Malo"
+
+msgid "numeric_value"
+msgstr "Taua Numeric"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Ulu atu i le suafa o le tusitaiala fou ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Ulu atu i le suafa o le faila fou ..."
+
+msgid "name"
+msgstr "igoa"
+
+msgid "enter_a_password"
+msgstr "Ulufale Atu i se upu faataga"
+
+msgid "language"
+msgstr "gagana"
+
+msgid "seconds"
+msgstr "sekone"
+
+msgid "minutes"
+msgstr "minute"
+
+msgid "hour"
+msgstr "Itula"
+
+msgid "hours"
+msgstr "itula"
+
+msgid "day"
+msgstr "Aso"
+
+msgid "trial_left"
+msgstr "faamasinoga Tauagavale"
+
+msgid "register_now"
+msgstr "Tusi resitala O lenei"
+
+msgid "general"
+msgstr "Aoao"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Matai upu faataga"
+
+msgid "status"
+msgstr "tulaga"
+
+msgid "enabled"
+msgstr "mafai ai ona"
+
+msgid "disabled"
+msgstr "tagata gase"
+
+msgid "timeout"
+msgstr "Uma le taimi"
+
+msgid "save"
+msgstr "vagana"
+
+msgid "add_account"
+msgstr "faaopoopo Teugatupe"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Faasilasilaga / Faafouga"
+
+msgid "please_login"
+msgstr "faamolemole Login"
+
+msgid "your_session_timed_out"
+msgstr "Lou Sauniga Mai taimi ai"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Malie o le saʻo le upu faataga e ulu!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Seti lenei upu faataga matai e tausia saogalemu outou tala."
+
+msgid "license_key"
+msgstr "laisene Key"
+
+msgid "online"
+msgstr "luga o le initoneti"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "le taimi nei le avanoa"
+
+msgid "no_message_to_display"
+msgstr "E leai se savali e faaali atu"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - O oe o offline po o se fesootaiga na sootaga?"
+
+msgid "offline_notice_desc"
+msgstr "O oe o le taimi nei offline, i luga o se fesootaiga e na o le sootaga po o se sootaga e mafai ona faavaeina i lo tatou faigaluega"
+
+msgid "edit_file"
+msgstr "faʻatonutonu Pokolame"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Uta i totonu"
+
+msgid "host_ip_is_required"
+msgstr "'Au / e manaomia IP"
+
+msgid "apply_to_all_files"
+msgstr "Talosaga i faila uma"
+
+msgid "activate_now"
+msgstr "faatoaaga lenei"
+
+msgid "deactivate"
+msgstr "De-faatoaaga"
+
+msgid "in_progress"
+msgstr "Sologa"
+
+msgid "complete"
+msgstr "Faatumu"
+
+msgid "direction"
+msgstr "ala"
+
+msgid "progress"
+msgstr "Alualu i Luma"
+
+msgid "permissions"
+msgstr "faatagaga"
+
+msgid "owner_group"
+msgstr "Tagata e ona / Vaega"
+
+msgid "size"
+msgstr "fua"
+
+msgid "type"
+msgstr "ituaiga"
+
+msgid "modified"
+msgstr "Fesuiaiga"
+
+msgid "trial"
+msgstr "faamasinoga"
+
+msgid "cleared"
+msgstr "faamamaina"
+
+msgid "error_connecting"
+msgstr "sese Soo"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Sese Soo e talimalo / tuatusi IP"
+
+msgid "error_connecting_to_port"
+msgstr "Sese Soo e taulaga"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Faamolemole muamua filifili se tusitaiala lotoifale!"
+
+msgid "go"
+msgstr "alu"
+
+msgid "confirm"
+msgstr "faamaonia"
+
+msgid "delete"
+msgstr "soloia"
+
+msgid "rename"
+msgstr "Rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopi URL (s) e laupapa kilipa"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Faamolemole faamaonia e te manao e aveese le faila filifilia (s) / faila (s)"
+
+msgid "cancelled_by_user"
+msgstr "Soloia e le tagata e faaaogāina"
+
+msgid "already_exists_overwrite"
+msgstr "ua i ai, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "lo'u Tupe"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Faatoai faaolaina! ua lagolagoina tala uma."
+
+msgid "file_failed_please_try_again"
+msgstr "Ua le mafai faila! Faamolemole toe taumafai."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "E maua i le taimi nei e leai se tala e lagolagoina."
+
+msgid "saved!"
+msgstr "Faaolaina!"
+
+msgid "please_enter_a_password"
+msgstr "Faamolemole ulu atu i se upu faataga!"
+
+msgid "connection_closed"
+msgstr "sootaga tapunia"
+
+msgid "listing_mode_set_to"
+msgstr "Lisi auala faatulagaina e"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP faigaluega i le lotoifale foia, e faaaoga IP fafo"
+
+msgid "login_incorrect"
+msgstr "Login sese"
+
+msgid "keeping_connection_alive"
+msgstr "O le tausia o le fesootaiga ola"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Le mafai e tusi, faamatalaga faamauina sootaga tapunia"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Le mafai ona faitau faamatalaga fesootai tapunia"
+
+msgid "error_reading_file"
+msgstr "Sese faila faitau"
+
+msgid "error_writing_file"
+msgstr "Sese faila tusitusia"
+
+msgid "failed_to_change_directory_to"
+msgstr "Ua le mafai ona suia tusitaiala e"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "E mafai ona e le maua le faatagaga saʻo e maua lenei tusitaiala"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting toe faatonuina muamua"
+
+msgid "activate"
+msgstr "faatoaaga"
+
+msgid "payment"
+msgstr "totogi"
+
+msgid "license_key_is_required"
+msgstr "e manaomia ki Laisene"
+
+msgid "license_activated!"
+msgstr "Faagaoioia Laisene!"
+
+msgid "your_license_has_been_validated"
+msgstr "ua faamaonia lou laisene."
+
+msgid "thank_you!"
+msgstr "Faafetai!"
+
+msgid "buy_now!"
+msgstr "Faatau nei!"
+
+msgid "buy_now"
+msgstr "Faatau nei"
+
+msgid "one_off_fee"
+msgstr "e tasi e ese totogifuapauina"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Faamolemole faaleleia e olioli i lenei polokalama ma e leai se tapulaa"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Faamolemole ulu atu i lou Key Laisene i lalo"
+
+msgid "or"
+msgstr "PO"
+
+msgid "loading..."
+msgstr "Utaina ..."
+
+msgid "clear_accounts"
+msgstr "Faamatalaga tau tupe manino"
+
+msgid "clear_ssh_keys"
+msgstr "Manino Ki SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "E aveesea ki SSH faaolaina uma"
+
+msgid "clear_app_settings"
+msgstr "Manino tulaga polokalama"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "E aveesea tulaga patino polokalama uma"
+
+msgid "clear_recent_connections"
+msgstr "Sootaga lata manino"
+
+msgid "deletes_all_recent_connections"
+msgstr "E aveesea fesootaiga lata uma"
+
+msgid "import_type"
+msgstr "Ituaiga faaulufale"
+
+msgid "please_select"
+msgstr "faamolemole Filifili"
+
+msgid "import_file"
+msgstr "Pokolame faaulufale"
+
+msgid "choose_file"
+msgstr "filifili Pokolame"
+
+msgid "delete_accounts"
+msgstr "soloia Faamatalaga Tau Tupe"
+
+msgid "deletes_all_existing_accounts"
+msgstr "E aveesea faamatalaga tau tupe o lo oi ai uma"
+
+msgid "import_now"
+msgstr "taua lenei"
+
+msgid "none"
+msgstr "leai se isi"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Faamolemole restart sFTP polokalama kalani mo le suiga i ona faamamaluina."
+
+msgid "already_bought_the_app"
+msgstr "Ua uma ona faatauina o le polokalama?"
+
+msgid "choose"
+msgstr "filifili"
+
+msgid "deleted!"
+msgstr "Aveesea!"
+
+msgid "use_syncronised_browsing"
+msgstr "faaaoga browsing syncronised"
+
+msgid "remote_directory"
+msgstr "Directory maotua"
+
+msgid "rsa_key_only!"
+msgstr "ki RSA na!"
+
+msgid "no_key_selected"
+msgstr "E leai se autu na filifilia."
+
+msgid "ssh_key_file"
+msgstr "SSH Pokolame Key"
+
+msgid "no_dir_selected"
+msgstr "E leai se dir filifilia."
+
+msgid "keep_blank_for_current_password"
+msgstr "Ia avanoa mo upu faataga i le taimi nei."
+
+msgid "logon_type"
+msgstr "Ituaiga Logon"
+
+msgid "normal"
+msgstr "māsani ai"
+
+msgid "ask_for_password"
+msgstr "Fesili atu mo upu faataga"
+
+msgid "anonymous"
+msgstr "lē faʻaigoaina"
+
+msgid "account_type"
+msgstr "tala Faatusa"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Sootaga masani)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Sootaga Saogalemu)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Sootaga Saogalemu)"
+
+msgid "folder"
+msgstr "faila"
+
+msgid "advanced"
+msgstr "maoaʻe"
+
+msgid "folder_name"
+msgstr "Suafa faila"
+
+msgid "parent"
+msgstr "matua"
+
+msgid "new_ftp_site"
+msgstr "Nofoaga FTP New"
+
+msgid "new_folder"
+msgstr "faila New"
+
+msgid "clean_now"
+msgstr "mama lenei"
+
+msgid "host"
+msgstr "matai"
+
+msgid "no_accounts_added..."
+msgstr "E leai se Tupe Faaopoopo ..."
+
+msgid "unknown"
+msgstr "Leiloa"
+
+msgid "file_saved!"
+msgstr "Faatoai faaolaina!"
+
+msgid "uploading_file!"
+msgstr "Uploading Pokolame!"
+
+msgid "save_failed!"
+msgstr "Vagana Ua le mafai!"
+
+msgid "search"
+msgstr "suʻe"
+
+msgid "find"
+msgstr "maua"
+
+msgid "replace"
+msgstr "sui"
+
+msgid "scroll_past_end"
+msgstr "Tusi taai Iuga Taimi ua Tuanai"
+
+msgid "show_annotations"
+msgstr "Faaali atu faamatalaga o"
+
+msgid "show_gutter"
+msgstr "Faaali alavai"
+
+msgid "show_invisibles"
+msgstr "Faaali Invisibles"
+
+msgid "show_print_margin"
+msgstr "Faaali autafa Lolomi"
+
+msgid "highlight_active_line"
+msgstr "Faailoga Line Active"
+
+msgid "word_wrap"
+msgstr "upu Saisai"
+
+msgid "split_code"
+msgstr "Tulafono vaeluaina"
+
+msgid "preferences"
+msgstr "Manatu"
+
+msgid "close_all_tabs"
+msgstr "Close Tabs uma"
+
+msgid "close_current_tab"
+msgstr "Close Nei Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "vagana taavale faila pe a ou taina"
+
+msgid "auto_save"
+msgstr "taavale Faasao"
+
+msgid "quick_save"
+msgstr "Faasao vave"
+
+msgid "documentation"
+msgstr "pepa aloaia"
+
+msgid "themes"
+msgstr "autu"
+
+msgid "keyboard_shortcuts"
+msgstr "piano pupuu"
+
+msgid "coming_soon"
+msgstr "Toetiti sau"
+
+msgid "empty"
+msgstr "gaogao"

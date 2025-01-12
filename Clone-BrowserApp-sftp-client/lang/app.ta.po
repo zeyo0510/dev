@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "பட்டி"
+
+msgid "file"
+msgstr "கோப்பு"
+
+msgid "view"
+msgstr "காண்க"
+
+msgid "edit"
+msgstr "தொகு"
+
+msgid "help"
+msgstr "உதவி"
+
+msgid "manage_accounts"
+msgstr "கணக்குகளை நிர்வகித்தல்"
+
+msgid "import_accounts"
+msgstr "இறக்குமதி கணக்குகள்"
+
+msgid "export_accounts"
+msgstr "ஏற்றுமதி கணக்குகள்"
+
+msgid "quick_connect"
+msgstr "விரைவு இணைப்பு"
+
+msgid "message_log"
+msgstr "செய்தி உள்நுழைய"
+
+msgid "local_directory"
+msgstr "உள்ளூர் அடைவு"
+
+msgid "uploads_downloads"
+msgstr "பதிவேற்றங்கள் / இறக்கம்"
+
+msgid "clear_saved_data"
+msgstr "அழி தரவு"
+
+msgid "edit_settings"
+msgstr "அமைப்புகளைத் திருத்து"
+
+msgid "report_bug"
+msgstr "ஒரு பிழை அறிக்கையை"
+
+msgid "suggest_feature"
+msgstr "தட்ஸ்"
+
+msgid "ask_a_question"
+msgstr "ஒரு கேள்வி கேள்"
+
+msgid "change_log"
+msgstr "மாற்றம் பரிசீலனை"
+
+msgid "about"
+msgstr "பற்றி"
+
+msgid "exit"
+msgstr "வெளியேறு"
+
+msgid "host_ip_address"
+msgstr "ஹோஸ்ட் / IP முகவரி"
+
+msgid "username"
+msgstr "பயனர்பெயர்"
+
+msgid "password"
+msgstr "கடவுச்சொல்"
+
+msgid "port"
+msgstr "போர்ட்"
+
+msgid "connect"
+msgstr "இணைக்கவும்"
+
+msgid "welcome"
+msgstr "வரவேற்கிறோம்"
+
+msgid "welcome_intro"
+msgstr "<p> வெளியிடுகிறீர்கள் கிளையண்ட் பயன்பாட்டை வேகமாக தடையின்றி அனுமதிக்கிறது கூகுள் குரோம் / Chrome OS ஐ தொகுக்கப்பட்ட பயன்பாட்டு இடைமுகத்தை கட்டப்பட்டது அனைத்து எளிமை பற்றி. சில செயல்பாடுகள் போய் சேமிக்க மற்றும் உங்கள் மிகவும் எங்களுக்கு ஏற்பாடு ஒரு FTP "
+
+msgid "latest_updates"
+msgstr "சமீபத்திய மேம்படுத்தல்கள்"
+
+msgid "server_status"
+msgstr "சர்வர் நிலையை"
+
+msgid "license_server"
+msgstr "உரிமம் சர்வர்"
+
+msgid "sftp_support"
+msgstr "ஆதரவு"
+
+msgid "notice_update"
+msgstr "அறிவிப்பு / மேம்படுத்தல்கள்"
+
+msgid "website"
+msgstr "வலைத்தளம்"
+
+msgid "clear_all"
+msgstr "அனைத்தையும் அழி"
+
+msgid "manage"
+msgstr "நிர்வகி"
+
+msgid "recheck"
+msgstr "மீண்டும் சரிபார்த்து"
+
+msgid "last_release"
+msgstr "கடந்த வெளியீட்டு"
+
+msgid "released"
+msgstr "வெளியிடப்பட்டது"
+
+msgid "queued"
+msgstr "வரிசைப்படுத்திய"
+
+msgid "failed"
+msgstr "தோல்வி"
+
+msgid "completed"
+msgstr "நிறைவு"
+
+msgid "settings"
+msgstr "அமைப்புகள்"
+
+msgid "add_folder"
+msgstr "அடைவு சேர்"
+
+msgid "add_ftp_account"
+msgstr "FTP கணக்கு சேர்"
+
+msgid "file_editor"
+msgstr "கோப்பு ஆசிரியர்"
+
+msgid "editor_preferences"
+msgstr "ஆசிரியர் விருப்பங்கள்"
+
+msgid "your_ftp_accounts"
+msgstr "உங்கள் FTP கணக்கு"
+
+msgid "most_recent_used"
+msgstr "மிகச் சமீபத்தில் பயன்படுத்திய."
+
+msgid "no_connections_yet_made"
+msgstr "இல்லை இணைப்புகளை இன்னமும் எடுக்கப்படவில்லை"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "இல்லை, FTP கணக்குகள் இதுவரை சேர்க்கப்பட்டது"
+
+msgid "most_recent_connections"
+msgstr "மிக சமீபத்திய இணைப்புகள்"
+
+msgid "last_10_connections_made"
+msgstr "செய்து கடந்த 10 இணைப்புகளை"
+
+msgid "designed_developed_by"
+msgstr "வடிவமைக்கப்பட்டது & உருவாக்கப்பட்டது"
+
+msgid "about_info"
+msgstr "ஆதரவு SFTP கிளையண்ட் வலைத்தளத்தில் பயன்படுத்த தயவு செய்து, எந்த ஆதரவு எங்கள் தனிப்பட்ட வலைத்தளங்களின் மூலம் வழங்கப்படுகிறது."
+
+msgid "local"
+msgstr "உள்ளூர்"
+
+msgid "remote"
+msgstr "தொலை"
+
+msgid "remote_location_desc"
+msgstr "எ.கா. / public_html"
+
+msgid "create_directory"
+msgstr "அடைவை உருவாக்கு"
+
+msgid "create_new_directory"
+msgstr "புதிய அடைவு உருவாக்கவும்"
+
+msgid "create_file"
+msgstr "கோப்பு உருவாக்க"
+
+msgid "create_new_file"
+msgstr "புதிய கோப்பு உருவாக்க"
+
+msgid "refresh_list"
+msgstr "புதுப்பிப்பு பட்டியல்"
+
+msgid "change"
+msgstr "மாற்றம்"
+
+msgid "report_a_bug"
+msgstr "ஒரு பிழை அறிக்கையை"
+
+msgid "suggest_a_feature"
+msgstr "தட்ஸ்"
+
+msgid "enter_password"
+msgstr "கடவுச்சொல்லை உள்ளிடவும்"
+
+msgid "enter_your_password..."
+msgstr "உங்கள் கடவுச்சொல்லை உள்ளிடவும்..."
+
+msgid "passphrase"
+msgstr "கடவுச்சொற்றொடர்"
+
+msgid "enter_your_passphrase..."
+msgstr "உங்கள் கடவுச்சொல்லை உள்ளிடு ..."
+
+msgid "email_sftp_client"
+msgstr "மின்னஞ்சல் SFTP கிளையண்ட்"
+
+msgid "faqs"
+msgstr "அடிக்கடி கேட்கப்படும் கேள்விகள்"
+
+msgid "visit_sftp_client_website"
+msgstr "வெளியிடுகிறீர்கள் வருகை வாடிக்கையாளர் இணையதளத்தில்"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "கூகிள் Chrome இணைய அங்காடி இல் எங்களை மதிப்பிடவும்"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ஒரு சிக்கல் குறித்து புகார் அல்லது உதவி பெற"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "மேம்படுத்தல்கள் பேஸ்புக் எங்களுக்கு சேர"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "மேம்படுத்தல்கள் Twitter இல் எங்களை பின்பற்றவும்"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "Google ஐ எங்களுக்கு +1"
+
+msgid "okay"
+msgstr "சரி"
+
+msgid "cancel"
+msgstr "ரத்து"
+
+msgid "close"
+msgstr "நெருக்கமான"
+
+msgid "unknown_host"
+msgstr "தெரியாத தொடர்பாளர்"
+
+msgid "okay_to_continue"
+msgstr "தொடர்ந்து சரியா?"
+
+msgid "fingerprint"
+msgstr "கைரேகை"
+
+msgid "remember"
+msgstr "நினைவில்"
+
+msgid "file_permissions"
+msgstr "கோப்பு அனுமதிகள்"
+
+msgid "file_permissions_desc"
+msgstr "தேர்ந்தெடுக்கப்பட்ட கோப்பு (கள்) / கோப்புறையை புதிய பண்புகளை தேர்வு (கள்), தயவு செய்து"
+
+msgid "read"
+msgstr "படிக்க"
+
+msgid "write"
+msgstr "எழுத"
+
+msgid "execute"
+msgstr "செயல்படுத்த"
+
+msgid "owner"
+msgstr "உரிமையாளர்"
+
+msgid "group"
+msgstr "குழு"
+
+msgid "public"
+msgstr "பொது"
+
+msgid "numeric_value"
+msgstr "எண் மதிப்பு"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "புதிய அடைவின் பெயரை உள்ளிடவும் ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "புதிய கோப்பு பெயரை உள்ளிடவும் ..."
+
+msgid "name"
+msgstr "பெயர்"
+
+msgid "enter_a_password"
+msgstr "ஒரு கடவுச்சொல்லை உள்ளிடவும்"
+
+msgid "language"
+msgstr "மொழி"
+
+msgid "seconds"
+msgstr "விநாடிகள்"
+
+msgid "minutes"
+msgstr "நிமிடங்கள்"
+
+msgid "hour"
+msgstr "ஹவர்"
+
+msgid "hours"
+msgstr "மணி"
+
+msgid "day"
+msgstr "தினம்"
+
+msgid "trial_left"
+msgstr "சோதனை இடது"
+
+msgid "register_now"
+msgstr "இப்போது பதிவு"
+
+msgid "general"
+msgstr "பொது"
+
+msgid "security"
+msgstr "பாதுகாப்பு"
+
+msgid "master_password"
+msgstr "மாஸ்டர் கடவுச்சொல்லை"
+
+msgid "status"
+msgstr "நிலைமை"
+
+msgid "enabled"
+msgstr "இயக்கப்பட்டது"
+
+msgid "disabled"
+msgstr "முடக்கப்பட்டது"
+
+msgid "timeout"
+msgstr "நேரம் முடிந்தது"
+
+msgid "save"
+msgstr "சேமி"
+
+msgid "add_account"
+msgstr "கணக்கு சேர்க்க"
+
+msgid "support"
+msgstr "ஆதரவு"
+
+msgid "notice_updates"
+msgstr "அறிவிப்பு / மேம்படுத்தல்கள்"
+
+msgid "please_login"
+msgstr "இங்கே கிளிக் செய்யவும்"
+
+msgid "your_session_timed_out"
+msgstr "உங்கள் அமர்வு முடிந்தது அவுட்"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "மன்னிக்கவும், நீங்கள் உள்ளிட்ட கடவுச்சொல் தவறானது!"
+
+msgid "login"
+msgstr "உள் நுழை"
+
+msgid "master_password_desc"
+msgstr "உங்கள் கணக்குகளை பாதுகாப்பாக வைக்க இந்த மாஸ்டர் கடவுச்சொல்லை அமைக்கவும்."
+
+msgid "license_key"
+msgstr "உரிமம் முக்கிய"
+
+msgid "online"
+msgstr "ஆன்லைன்"
+
+msgid "offline"
+msgstr "ஆஃப்லைன்"
+
+msgid "currently_unavailable"
+msgstr "தற்போது கிடைக்கவில்லை"
+
+msgid "no_message_to_display"
+msgstr "காண்பிப்பதற்கு எந்த செய்தியை"
+
+msgid "offline_notice_title"
+msgstr "அடையமுடியவில்லை - நீங்கள் ஆஃப்லைனில் அல்லது ஒரு பிணைய மட்டுமே இணைப்பு உள்ளீர்களா?"
+
+msgid "offline_notice_desc"
+msgstr "நீங்கள் ஒரு நெட்வொர்க்கில் மட்டுமே இணைப்பு அல்லது எந்த தொடர்பும் எங்கள் சர்வர் நிறுவப்பட்டது தற்போது ஆஃப்லைனில் உள்ளீர்கள்,"
+
+msgid "edit_file"
+msgstr "கோப்பு திருத்த"
+
+msgid "download"
+msgstr "பதிவிறக்க"
+
+msgid "upload"
+msgstr "பதிவேற்று"
+
+msgid "host_ip_is_required"
+msgstr "ஹோஸ்ட் / ஐபி தேவை"
+
+msgid "apply_to_all_files"
+msgstr "அனைத்து கோப்புகள் பொருந்தும்"
+
+msgid "activate_now"
+msgstr "இப்போது செயல்படுத்தவும்"
+
+msgid "deactivate"
+msgstr "டி செயலாக்க"
+
+msgid "in_progress"
+msgstr "முன்னேற்றம்"
+
+msgid "complete"
+msgstr "முழுமையான"
+
+msgid "direction"
+msgstr "திசையில்"
+
+msgid "progress"
+msgstr "முன்னேற்றம்"
+
+msgid "permissions"
+msgstr "அனுமதிகள்"
+
+msgid "owner_group"
+msgstr "உரிமையாளர் / குழு"
+
+msgid "size"
+msgstr "அளவு"
+
+msgid "type"
+msgstr "வகை"
+
+msgid "modified"
+msgstr "திருத்தப்பட்ட"
+
+msgid "trial"
+msgstr "சோதனை"
+
+msgid "cleared"
+msgstr "அழிக்கப்படும்"
+
+msgid "error_connecting"
+msgstr "இணைக்கும் பிழை"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP முகவரி நடத்த இணைக்கும் பிழை"
+
+msgid "error_connecting_to_port"
+msgstr "துறைமுக இணைக்கிறது பிழை"
+
+msgid "please_select_a_local_directory_first"
+msgstr "முதல் ஒரு உள்ளூர் அடைவில் தேர்ந்தெடுக்கவும்!"
+
+msgid "go"
+msgstr "போய்"
+
+msgid "confirm"
+msgstr "உறுதிப்படுத்தவும்"
+
+msgid "delete"
+msgstr "அழி"
+
+msgid "rename"
+msgstr "மறுபெயரிடு"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL (கள்) நகல் கிளிப்போர்டில்"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "/ அடைவு (கள்) நீங்கள் தேர்ந்தெடுத்த கோப்பு (கள்) நீக்க விரும்பினால், தயவுசெய்து உறுதிப்படுத்தவும்"
+
+msgid "cancelled_by_user"
+msgstr "பயனரால் ரத்துசெய்யப்பட்டது"
+
+msgid "already_exists_overwrite"
+msgstr "ஏற்கனவே உள்ளது, மேலெழுதும்?"
+
+msgid "dashboard"
+msgstr "டாஷ்போர்டு"
+
+msgid "my_accounts"
+msgstr "என் கணக்கு"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "கோப்பு சேமிக்கப்படும்! அனைத்து கணக்குகள் பிரதி எடுக்கப்பட்டன."
+
+msgid "file_failed_please_try_again"
+msgstr "கோப்பு தோல்வி! தயவு செய்து மீண்டும் முயற்சிக்கவும்."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "தற்போது நீங்கள் எந்த கணக்குகள் ஆதரவு வேண்டும் வேண்டும்."
+
+msgid "saved!"
+msgstr "சேமித்த!"
+
+msgid "please_enter_a_password"
+msgstr "கடவுச்சொல்லை உள்ளிடவும்!"
+
+msgid "connection_closed"
+msgstr "இணைப்பு மூடியது"
+
+msgid "listing_mode_set_to"
+msgstr "முறையில் அமைக்கப்பட தகவலுக்கு"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "உள்ளூர் சர்வர் ஐபி வெளிப்புற IP மூலம் தீர்க்கப்பட"
+
+msgid "login_incorrect"
+msgstr "உள்நுழைவு தவறானது"
+
+msgid "keeping_connection_alive"
+msgstr "உயிருடன் இணைப்பு வைத்து"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "எழுத முடியவில்லை, தரவு இணைப்பு மூடப்பட்டது"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "தரவு இணைப்பு மூடப்பட்டது படிக்க முடியவில்லை"
+
+msgid "error_reading_file"
+msgstr "கோப்பைப் படிப்பதில் பிழை"
+
+msgid "error_writing_file"
+msgstr "எழுதுகின்ற கோப்பில் பிழை"
+
+msgid "failed_to_change_directory_to"
+msgstr "அடைவு மாற்றுவதில் தோல்வி"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "நீங்கள் இந்த அடைவில் அணுக சரியான அனுமதி இல்லை"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "முந்தைய அடைவில் மீண்டும் பழைய நிலைக்கு"
+
+msgid "activate"
+msgstr "செயல்படுத்த"
+
+msgid "payment"
+msgstr "கொடுப்பனவு"
+
+msgid "license_key_is_required"
+msgstr "உரிமம் முக்கிய தேவை"
+
+msgid "license_activated!"
+msgstr "உரிமம் இயக்கப்பட்டது!"
+
+msgid "your_license_has_been_validated"
+msgstr "உங்கள் உரிமம் சரிபார்க்கப்பட்டது."
+
+msgid "thank_you!"
+msgstr "நன்றி!"
+
+msgid "buy_now!"
+msgstr "இப்போது வாங்க!"
+
+msgid "buy_now"
+msgstr "இப்போது வாங்க"
+
+msgid "one_off_fee"
+msgstr "ஒரு ஆஃப் கட்டணம்"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "எந்த கட்டுப்பாடுகளும் இந்த பயன்பாட்டை அனுபவிக்க மேம்படுத்தவும்"
+
+msgid "please_enter_your_license_key_below"
+msgstr "தயவு செய்து உங்கள் உரிமம் முக்கிய கீழே நுழைய"
+
+msgid "or"
+msgstr "அல்லது"
+
+msgid "loading..."
+msgstr "ஏற்றுதல்..."
+
+msgid "clear_accounts"
+msgstr "தெளிவு கணக்குகள்"
+
+msgid "clear_ssh_keys"
+msgstr "தெளிவு SSH விசைகளை"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "அனைத்து சேமித்த SSH விசைகளில் நீக்கபப்டுகிகிறது"
+
+msgid "clear_app_settings"
+msgstr "தெளிவு பயன்பாட்டு அமைப்புகள்"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "அனைத்து பயன்பாட்டை குறிப்பிட்ட அமைப்புகளை அழிக்கும்"
+
+msgid "clear_recent_connections"
+msgstr "சமீபத்திய இணைப்புகள்"
+
+msgid "deletes_all_recent_connections"
+msgstr "அனைத்து சமீபத்திய இணைப்புகளை நீக்கும்"
+
+msgid "import_type"
+msgstr "இறக்குமதி வகை"
+
+msgid "please_select"
+msgstr "தயவு செய்து தேர்வு செய்யவும்"
+
+msgid "import_file"
+msgstr "இறக்குமதி கோப்பு"
+
+msgid "choose_file"
+msgstr "கோப்பை தேர்ந்தெடுக்கவும்"
+
+msgid "delete_accounts"
+msgstr "கணக்குகள் நீக்கு"
+
+msgid "deletes_all_existing_accounts"
+msgstr "அனைத்து இருக்கும் கணக்குகள் நீக்கபப்டுகிகிறது"
+
+msgid "import_now"
+msgstr "இப்போது இறக்குமதி"
+
+msgid "none"
+msgstr "யாரும்"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "மாற்றங்களைச் க்கான வெளியிடுகிறீர்கள் க்ளையன்ட் பயன்பாட்டை மறுதொடக்கம் செய்க."
+
+msgid "already_bought_the_app"
+msgstr "ஏற்கனவே பயன்பாட்டை வாங்கி?"
+
+msgid "choose"
+msgstr "தேர்வு"
+
+msgid "deleted!"
+msgstr "நீக்கப்பட்டது!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised உலாவல் பயன்படுத்த"
+
+msgid "remote_directory"
+msgstr "தொலை"
+
+msgid "rsa_key_only!"
+msgstr "RSA திறவுகோல் மட்டுமே!"
+
+msgid "no_key_selected"
+msgstr "இல்லை முக்கிய தெரிவு செய்துள்ளார்."
+
+msgid "ssh_key_file"
+msgstr "SSH விசைக் கோப்பை"
+
+msgid "no_dir_selected"
+msgstr "இல்லை இய தெரிவு செய்துள்ளார்."
+
+msgid "keep_blank_for_current_password"
+msgstr "தற்போதைய கடவுச்சொல்லை வெற்று கொள்ளுங்கள்."
+
+msgid "logon_type"
+msgstr "logon தேடுவதற்கு டைப் செய்க"
+
+msgid "normal"
+msgstr "இயல்பான"
+
+msgid "ask_for_password"
+msgstr "கடவுச்சொல்லை கேட்கும்"
+
+msgid "anonymous"
+msgstr "அநாமதேய"
+
+msgid "account_type"
+msgstr "கணக்கு வகை"
+
+msgid "ftp_normal_connection"
+msgstr "ஒரு FTP (இயல்பான இணைப்பு)"
+
+msgid "sftp_secure_connection"
+msgstr "வெளியிடுகிறீர்கள் (பாதுகாப்பான இணைப்பு)"
+
+msgid "ssh_secure_connection"
+msgstr "எஸ்எஸ்ஹெச்சில் (பாதுகாப்பான இணைப்பு)"
+
+msgid "folder"
+msgstr "அடைவு"
+
+msgid "advanced"
+msgstr "மேம்பட்ட"
+
+msgid "folder_name"
+msgstr "கோப்புறை பெயரை"
+
+msgid "parent"
+msgstr "பெற்றோர்"
+
+msgid "new_ftp_site"
+msgstr "புதிய FTP தளம்"
+
+msgid "new_folder"
+msgstr "புதிய அடைவை"
+
+msgid "clean_now"
+msgstr "சுத்தமான இப்போது"
+
+msgid "host"
+msgstr "தொகுப்பாளர்"
+
+msgid "no_accounts_added..."
+msgstr "கணக்கு சேர்க்கப்படவில்லை ..."
+
+msgid "unknown"
+msgstr "தெரியாத"
+
+msgid "file_saved!"
+msgstr "கோப்பு சேமிக்கப்படும்!"
+
+msgid "uploading_file!"
+msgstr "கோப்பு பதிவேற்றம்"
+
+msgid "save_failed!"
+msgstr "சேமிக்க தோல்வி!"
+
+msgid "search"
+msgstr "தேடல்"
+
+msgid "find"
+msgstr "கண்டுபிடிக்க"
+
+msgid "replace"
+msgstr "மாற்றவும்"
+
+msgid "scroll_past_end"
+msgstr "கடந்த உருட்டலின்போது முடிவு"
+
+msgid "show_annotations"
+msgstr "காட்டு விரிவுரைகளைச்"
+
+msgid "show_gutter"
+msgstr "சாக்கடை காட்டு"
+
+msgid "show_invisibles"
+msgstr "இன்விஸிபிள்ஸ் காட்டு"
+
+msgid "show_print_margin"
+msgstr "அச்சு மார்ஜின் காட்டு"
+
+msgid "highlight_active_line"
+msgstr "செயலில் வரி முன்னிலைப்படுத்த"
+
+msgid "word_wrap"
+msgstr "வார்த்தை மடக்கு"
+
+msgid "split_code"
+msgstr "பிரி குறியீடு"
+
+msgid "preferences"
+msgstr "விருப்பங்கள்"
+
+msgid "close_all_tabs"
+msgstr "தாவல்களை மூடுக அனைத்து"
+
+msgid "close_current_tab"
+msgstr "தற்போதைய தத்தை & மூடு"
+
+msgid "auto_save_file_when_i_type"
+msgstr "நான் தட்டச்சு செய்யும் போது வாகன கோப்பு சேமிக்க"
+
+msgid "auto_save"
+msgstr "ஆட்டோ சேமி"
+
+msgid "quick_save"
+msgstr "விரைவு சேமி"
+
+msgid "documentation"
+msgstr "ஆவணம்"
+
+msgid "themes"
+msgstr "தீம்கள்"
+
+msgid "keyboard_shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+msgid "coming_soon"
+msgstr "விரைவில்"
+
+msgid "empty"
+msgstr "காலியாக"

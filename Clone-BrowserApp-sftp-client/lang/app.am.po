@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: am\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "ማውጫ"
+
+msgid "file"
+msgstr "ፋይል"
+
+msgid "view"
+msgstr "ይመልከቱ"
+
+msgid "edit"
+msgstr "አርትዕ"
+
+msgid "help"
+msgstr "እርዳታ"
+
+msgid "manage_accounts"
+msgstr "መለያዎችን ያቀናብሩ"
+
+msgid "import_accounts"
+msgstr "አስመጣ መለያዎች"
+
+msgid "export_accounts"
+msgstr "ወደ ውጪ ላክ መለያዎች"
+
+msgid "quick_connect"
+msgstr "ፈጣን አገናኝ"
+
+msgid "message_log"
+msgstr "ምዝግብ ማስታወሻ መልዕክት"
+
+msgid "local_directory"
+msgstr "አካባቢያዊ ማውጫ"
+
+msgid "uploads_downloads"
+msgstr "ሰቀላዎች / ውርዶች"
+
+msgid "clear_saved_data"
+msgstr "አጽዳ ተቀምጧል ውሂብ"
+
+msgid "edit_settings"
+msgstr "አርትዕ ቅንብሮች"
+
+msgid "report_bug"
+msgstr "አንድ ሳንካ ሪፖርት ያድርጉ"
+
+msgid "suggest_feature"
+msgstr "አንድ ባህሪ ይጠቁሙ"
+
+msgid "ask_a_question"
+msgstr "ጥያቄ ይጠይቁ"
+
+msgid "change_log"
+msgstr "ለውጥ ምዝግብ ማስታወሻ"
+
+msgid "about"
+msgstr "ስለ"
+
+msgid "exit"
+msgstr "ውጣ"
+
+msgid "host_ip_address"
+msgstr "አስተናጋጅ / የአይ ፒ አድራሻ"
+
+msgid "username"
+msgstr "የተጠቃሚ ስም"
+
+msgid "password"
+msgstr "የይለፍ ቃል"
+
+msgid "port"
+msgstr "ወደብ"
+
+msgid "connect"
+msgstr "ይገናኙ"
+
+msgid "welcome"
+msgstr "እንኳን ደህና መጣህ"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP ደንበኛ ይህ መተግበሪያው ፈጣን እና ምላሽ እንዲሆን በመፍቀድ የ Google Chrome / የ Chrome OS ጥቅል የመተግበሪያ በይነገጽ ላይ ተገንብቷል, ሁሉ ቀለል ባለ መንገድ ነው. አንዳንድ ተግባራዊነት ወዲያውኑ እንዲያከማች እና በጣም እኛን ማደራጀት የ FTP መለያ አስተዳዳሪ ያካትታል"
+
+msgid "latest_updates"
+msgstr "የቅርብ ጊዜ ዝማኔዎች"
+
+msgid "server_status"
+msgstr "የአገልጋይ ሁኔታ"
+
+msgid "license_server"
+msgstr "ፈቃድ አገልጋይ"
+
+msgid "sftp_support"
+msgstr "ድጋፍ"
+
+msgid "notice_update"
+msgstr "ማስታወቂያ / ዝማኔዎች"
+
+msgid "website"
+msgstr "ድህረገፅ"
+
+msgid "clear_all"
+msgstr "ሁሉንም ያፅዱ"
+
+msgid "manage"
+msgstr "ያቀናብሩ"
+
+msgid "recheck"
+msgstr "ዳግም-ፍተሻ"
+
+msgid "last_release"
+msgstr "የመጨረሻው የተለቀቀ"
+
+msgid "released"
+msgstr "የተለቀቀበት ቀን"
+
+msgid "queued"
+msgstr "ተሰልፏል"
+
+msgid "failed"
+msgstr "አልተሳካም"
+
+msgid "completed"
+msgstr "የተጠናቀቁ"
+
+msgid "settings"
+msgstr "ቅንብሮች"
+
+msgid "add_folder"
+msgstr "አቃፊ አክል"
+
+msgid "add_ftp_account"
+msgstr "የ FTP መለያ አክል"
+
+msgid "file_editor"
+msgstr "አርታዒ የፋይል"
+
+msgid "editor_preferences"
+msgstr "አርታኢ ምርጫዎች"
+
+msgid "your_ftp_accounts"
+msgstr "የእርስዎ FTP መለያዎች"
+
+msgid "most_recent_used"
+msgstr "በጣም በቅርብ ጊዜ ጥቅም ላይ."
+
+msgid "no_connections_yet_made"
+msgstr "ምንም ግንኙነቶች ገና አደረገ"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ምንም የ FTP መለያዎች ገና ታክሏል"
+
+msgid "most_recent_connections"
+msgstr "በጣም የቅርብ ጊዜ ግንኙነቶች"
+
+msgid "last_10_connections_made"
+msgstr "የተሠራ የመጨረሻ 10 ግንኙነቶች"
+
+msgid "designed_developed_by"
+msgstr "የተቀየሰ እና የተገነባ"
+
+msgid "about_info"
+msgstr "ድጋፍ sFTP ደንበኛ ድር ይጠቀሙ, ምንም ዓይነት ድጋፍ በእኛ ለነጠላ ድረ ገጾች አማካኝነት የቀረበ ነው."
+
+msgid "local"
+msgstr "አካባቢያዊ"
+
+msgid "remote"
+msgstr "ሩቅ"
+
+msgid "remote_location_desc"
+msgstr "ለምሳሌ / public_html"
+
+msgid "create_directory"
+msgstr "ማውጫ ፍጠር"
+
+msgid "create_new_directory"
+msgstr "አዲስ ማውጫ ፍጠር"
+
+msgid "create_file"
+msgstr "ፋይል ፍጠር"
+
+msgid "create_new_file"
+msgstr "አዲስ ፋይል ይፍጠሩ"
+
+msgid "refresh_list"
+msgstr "አድስ ዝርዝር"
+
+msgid "change"
+msgstr "ለዉጥ"
+
+msgid "report_a_bug"
+msgstr "አንድ ሳንካ ሪፖርት ያድርጉ"
+
+msgid "suggest_a_feature"
+msgstr "አንድ ባህሪ ይጠቁሙ"
+
+msgid "enter_password"
+msgstr "የይለፍ ቃል ያስገቡ"
+
+msgid "enter_your_password..."
+msgstr "የይለፍ ቃልዎን ያስገቡ ..."
+
+msgid "passphrase"
+msgstr "የይለፍ ሐረግ"
+
+msgid "enter_your_passphrase..."
+msgstr "የእርስዎን የይለፍ ሐረግ ያስገቡ ..."
+
+msgid "email_sftp_client"
+msgstr "የኢሜይል sFTP ተገልጋይ"
+
+msgid "faqs"
+msgstr "ተደጋጋሚ ጥያቄዎች የሰጠው"
+
+msgid "visit_sftp_client_website"
+msgstr "ይጎብኙ sFTP ደንበኛ ድር ጣቢያ"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "የ Google Chrome የድር መደብር ላይ ደረጃ ይስጡን!"
+
+msgid "report_an_issue_or_get_help"
+msgstr "አንድ ችግር ሪፖርት ያድርጉ ወይም እርዳታ ለማግኘት"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "ዝማኔዎችን Facebook ላይ እኛን ተቀላቀል"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "ዝማኔዎችን በ Twitter ላይ ይከተሉን"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "ዝማኔዎች በ Google ላይ እኛን +1"
+
+msgid "okay"
+msgstr "እሺ"
+
+msgid "cancel"
+msgstr "ሰርዝ"
+
+msgid "close"
+msgstr "ገጠመ"
+
+msgid "unknown_host"
+msgstr "ያልታወቀ አስተናጋጅ"
+
+msgid "okay_to_continue"
+msgstr "ለመቀጠል እሺ?"
+
+msgid "fingerprint"
+msgstr "አሻራ"
+
+msgid "remember"
+msgstr "አስታውስ"
+
+msgid "file_permissions"
+msgstr "ፋይል ፍቃዶች"
+
+msgid "file_permissions_desc"
+msgstr "(ዎች) የተመረጠውን ፋይል (ሎች) / አቃፊ ለ አዲስ ባህሪያት እባክዎ ይምረጡ"
+
+msgid "read"
+msgstr "አነበበ"
+
+msgid "write"
+msgstr "ጻፈ"
+
+msgid "execute"
+msgstr "አከናውን"
+
+msgid "owner"
+msgstr "ባለቤት"
+
+msgid "group"
+msgstr "ቡድን"
+
+msgid "public"
+msgstr "ሕዝባዊ"
+
+msgid "numeric_value"
+msgstr "ቁጥራዊ እሴት"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "አዲስ አቃፊ ስም ያስገቡ ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "አዲስ የፋይል ስም ያስገቡ ..."
+
+msgid "name"
+msgstr "ስም"
+
+msgid "enter_a_password"
+msgstr "አንድ የይለፍ ቃል ያስገቡ"
+
+msgid "language"
+msgstr "ቋንቋ"
+
+msgid "seconds"
+msgstr "ሰከንዶች"
+
+msgid "minutes"
+msgstr "ደቂቃዎች"
+
+msgid "hour"
+msgstr "ሰአት"
+
+msgid "hours"
+msgstr "ሰዓቶች"
+
+msgid "day"
+msgstr "ቀን"
+
+msgid "trial_left"
+msgstr "በችሎት ፊት ግራ"
+
+msgid "register_now"
+msgstr "አሁን መመዝገብ"
+
+msgid "general"
+msgstr "ጠቅላላ"
+
+msgid "security"
+msgstr "መያዣ"
+
+msgid "master_password"
+msgstr "ማስተር የይለፍ ቃል"
+
+msgid "status"
+msgstr "ሁናቴ"
+
+msgid "enabled"
+msgstr "ነቅቷል"
+
+msgid "disabled"
+msgstr "ተሰናክሏል"
+
+msgid "timeout"
+msgstr "ጊዜው አልቋል"
+
+msgid "save"
+msgstr "አስቀምጥ"
+
+msgid "add_account"
+msgstr "መለያ አክል"
+
+msgid "support"
+msgstr "ድጋፍ"
+
+msgid "notice_updates"
+msgstr "ማስታወቂያ / ዝማኔዎች"
+
+msgid "please_login"
+msgstr "ይግቡ እባክዎ"
+
+msgid "your_session_timed_out"
+msgstr "የእርስዎ ክፍለ ጊዜ የተመደበለት ውጭ"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "ይቅርታ ያስገቡት የይለፍ ቃል ትክክል ነበር!"
+
+msgid "login"
+msgstr "ግባ"
+
+msgid "master_password_desc"
+msgstr "ደህንነት የእርስዎን መለያዎች ለመጠበቅ ይህ እናት የይለፍ ቃል አዘጋጅ."
+
+msgid "license_key"
+msgstr "የፍቃድ ቁልፍ"
+
+msgid "online"
+msgstr "የመስመር ላይ"
+
+msgid "offline"
+msgstr "ከመስመር ውጭ"
+
+msgid "currently_unavailable"
+msgstr "በአሁኑ ጊዜ አይገኝም"
+
+msgid "no_message_to_display"
+msgstr "ምንም መልዕክት ለማሳየት"
+
+msgid "offline_notice_title"
+msgstr "ሊደረስባቸው የማይችሉ - ከመስመር ውጪ ወይም አውታረ መረብ ብቻ ነው ግንኙነት ላይ ነህ?"
+
+msgid "offline_notice_desc"
+msgstr "አንተ ብቻ ግንኙነት ወይም ምንም ግንኙነት ወደ የእኛ አገልጋይ መመስረት ይችላል መረብ ላይ, በአሁኑ ጊዜ ከመስመር ውጪ ናቸው"
+
+msgid "edit_file"
+msgstr "አርትዕ ፋይል"
+
+msgid "download"
+msgstr "አውርድ"
+
+msgid "upload"
+msgstr "ስቀል"
+
+msgid "host_ip_is_required"
+msgstr "አስተናጋጅ / የአይ ፒ ያስፈልጋል"
+
+msgid "apply_to_all_files"
+msgstr "ሁሉም ፋይሎች ላይ ተግብር"
+
+msgid "activate_now"
+msgstr "አሁን አግብር"
+
+msgid "deactivate"
+msgstr "ደ-ያግብሩ"
+
+msgid "in_progress"
+msgstr "በሂደት ላይ"
+
+msgid "complete"
+msgstr "ተጠናቀቀ"
+
+msgid "direction"
+msgstr "አቅጣጫ"
+
+msgid "progress"
+msgstr "እድገት"
+
+msgid "permissions"
+msgstr "ፍቃዶች"
+
+msgid "owner_group"
+msgstr "ባለቤት / ቡድን"
+
+msgid "size"
+msgstr "ልክ"
+
+msgid "type"
+msgstr "ዓይነት"
+
+msgid "modified"
+msgstr "የተቀየረበት"
+
+msgid "trial"
+msgstr "ችሎት"
+
+msgid "cleared"
+msgstr "ጸድቷል"
+
+msgid "error_connecting"
+msgstr "በማገናኘት ላይ ስህተት"
+
+msgid "error_connecting_to_host_ip"
+msgstr "ለማስተናገድ ጋር በመገናኘት ላይ ስህተት / አይ ፒ አድራሻ"
+
+msgid "error_connecting_to_port"
+msgstr "ወደብ ጋር በመገናኘት ላይ ስህተት"
+
+msgid "please_select_a_local_directory_first"
+msgstr "በመጀመሪያ አካባቢያዊ እባክህ ማውጫ ምረጥ!"
+
+msgid "go"
+msgstr "ሂድ"
+
+msgid "confirm"
+msgstr "አረጋግጥ"
+
+msgid "delete"
+msgstr "ሰርዝ"
+
+msgid "rename"
+msgstr "ዳግም ሰይም"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL ቅዳ (ዎች) ወደ ቅንጥብ ሰሌዳ"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "የተመረጠውን ፋይል (ዎች) መሰረዝ ከፈለጉ እባክዎ ያረጋግጡ / አቃፊ (ዎች)"
+
+msgid "cancelled_by_user"
+msgstr "በተጠቃሚ ተሰርዟል"
+
+msgid "already_exists_overwrite"
+msgstr "ቀደም ሲል, እንዲተኩ አለ?"
+
+msgid "dashboard"
+msgstr "ዳሽቦርድ"
+
+msgid "my_accounts"
+msgstr "የእኔ መለያዎች"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ተቀምጧል የፋይል! ሁሉንም መለያዎች ምትኬ ተደርገዋል."
+
+msgid "file_failed_please_try_again"
+msgstr "ፋይል አልተሳካም! እባክዎ ዳግም ይሞክሩ."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "በአሁኑ ጊዜ ምንም መለያዎች የተደገፈ መሆን አለባቸው."
+
+msgid "saved!"
+msgstr "ተቀምጧል!"
+
+msgid "please_enter_a_password"
+msgstr "እባክዎ የይለፍ ቃል ያስገቡ!"
+
+msgid "connection_closed"
+msgstr "ግንኙነት ተዘግቷል"
+
+msgid "listing_mode_set_to"
+msgstr "ሁነታ ተዘጋጅቷል ዝርዝር,"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "በአካባቢያዊ አገልጋይ የ IP ውጫዊ ፒ በመጠቀም, መፍትሔ"
+
+msgid "login_incorrect"
+msgstr "ትክክል ያልሆነ መግቢያ"
+
+msgid "keeping_connection_alive"
+msgstr "በሕይወት ግንኙነት መጠበቅ"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "መጻፍ አልተቻለም, የውሂብ ግንኙነት ተዘግቷል"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "የውሂብ ግንኙነት ተዘግቷል ማንበብ አልተቻለም"
+
+msgid "error_reading_file"
+msgstr "ፋይሉን በማንበብ ላይ ስህተት"
+
+msgid "error_writing_file"
+msgstr "ፋይል በመፃፍ ላይ ስህተት"
+
+msgid "failed_to_change_directory_to"
+msgstr "ወደ ማውጫ መቀየር አልተሳካም"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "ይህን አቃፊ ለመድረስ ትክክለኛ ፍቃዶች ላይኖራቸው ይችላል"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "ወደ ቀዳሚው ማውጫ ወደ ኋላ በመመለስ ላይ"
+
+msgid "activate"
+msgstr "አግብር"
+
+msgid "payment"
+msgstr "ክፍያ"
+
+msgid "license_key_is_required"
+msgstr "የፍቃድ ቁልፍ ያስፈልጋል"
+
+msgid "license_activated!"
+msgstr "ፈቃድ ገቢር!"
+
+msgid "your_license_has_been_validated"
+msgstr "የእርስዎ ፈቃድ ተረጋግጧል ተደርጓል."
+
+msgid "thank_you!"
+msgstr "አመሰግናለሁ!"
+
+msgid "buy_now!"
+msgstr "አሁን ግዛ!"
+
+msgid "buy_now"
+msgstr "አሁን ግዛ"
+
+msgid "one_off_fee"
+msgstr "አንድ ጠፍቷል ክፍያ"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "ምንም ገደቦች ጋር በዚህ መተግበሪያ ለመደሰት ያልቁ"
+
+msgid "please_enter_your_license_key_below"
+msgstr "ከዚህ በታች ፍቃድ ቁልፍ ያስገቡ"
+
+msgid "or"
+msgstr "ወይም"
+
+msgid "loading..."
+msgstr "በመጫን ላይ ..."
+
+msgid "clear_accounts"
+msgstr "አጽዳ መለያዎች"
+
+msgid "clear_ssh_keys"
+msgstr "አጽዳ SSH ቁልፎች"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "ሁሉንም የተቀመጡ SSH ቁልፍ ይሰርዛል"
+
+msgid "clear_app_settings"
+msgstr "አጽዳ የመተግበሪያ ቅንብሮች"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "ሁሉንም መተግበሪያ ተኮር ቅንብሮች ይሰርዛል"
+
+msgid "clear_recent_connections"
+msgstr "አጽዳ የቅርብ ጊዜ ግንኙነቶች"
+
+msgid "deletes_all_recent_connections"
+msgstr "ሁሉንም የቅርብ ጊዜ ግንኙነቶች ይሰርዛል"
+
+msgid "import_type"
+msgstr "አስመጣ አይነት"
+
+msgid "please_select"
+msgstr "ይምረጡ"
+
+msgid "import_file"
+msgstr "አስመጣ ፋይል"
+
+msgid "choose_file"
+msgstr "ፋይል ይምረጡ"
+
+msgid "delete_accounts"
+msgstr "መለያዎች ሰርዝ"
+
+msgid "deletes_all_existing_accounts"
+msgstr "ሁሉም ነባር መለያዎች ይሰርዛል"
+
+msgid "import_now"
+msgstr "አስመጣ አሁን"
+
+msgid "none"
+msgstr "አንድም"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "ለውጦች ተግባራዊ ለማድረግ sFTP ደንበኛ መተግበሪያ ዳግም ያስጀምሩት."
+
+msgid "already_bought_the_app"
+msgstr "ቀድሞውኑ የመተግበሪያ ገዛሁ?"
+
+msgid "choose"
+msgstr "መረጠ"
+
+msgid "deleted!"
+msgstr "ተሰርዟል!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised አሰሳ መጠቀም"
+
+msgid "remote_directory"
+msgstr "የርቀት ማውጫ"
+
+msgid "rsa_key_only!"
+msgstr "RSA ቁልፍ ብቻ ነው!"
+
+msgid "no_key_selected"
+msgstr "ምንም ቁልፍ ተመርጧል."
+
+msgid "ssh_key_file"
+msgstr "ኤስኤስኤች ቁልፍ ፋይል"
+
+msgid "no_dir_selected"
+msgstr "ምንም dir ተመርጧል."
+
+msgid "keep_blank_for_current_password"
+msgstr "የአሁኑ የይለፍ ቃል ባዶ ይቀጥሉ."
+
+msgid "logon_type"
+msgstr "Logon አይነት"
+
+msgid "normal"
+msgstr "የተለመደ"
+
+msgid "ask_for_password"
+msgstr "የይለፍ ቃል ጠይቅ"
+
+msgid "anonymous"
+msgstr "ስም የለሽ"
+
+msgid "account_type"
+msgstr "የመለያ አይነት"
+
+msgid "ftp_normal_connection"
+msgstr "የ FTP (መደበኛ ግንኙነት)"
+
+msgid "sftp_secure_connection"
+msgstr "በኤስኤፍቲፒ (ደህንነቱ የተጠበቀ ግንኙነት)"
+
+msgid "ssh_secure_connection"
+msgstr "ኤስኤስኤች (ደህንነቱ የተጠበቀ ግንኙነት)"
+
+msgid "folder"
+msgstr "አቃፊ"
+
+msgid "advanced"
+msgstr "የላቀ"
+
+msgid "folder_name"
+msgstr "የአቃፊ ስም"
+
+msgid "parent"
+msgstr "ወላጅ"
+
+msgid "new_ftp_site"
+msgstr "አዲስ የ FTP ጣቢያ"
+
+msgid "new_folder"
+msgstr "አዲስ ማህደር"
+
+msgid "clean_now"
+msgstr "ንጹሕ አሁን"
+
+msgid "host"
+msgstr "አስተናጋጅ"
+
+msgid "no_accounts_added..."
+msgstr "ምንም መለያዎች ታክሏል ..."
+
+msgid "unknown"
+msgstr "ያልታወቀ"
+
+msgid "file_saved!"
+msgstr "ተቀምጧል የፋይል!"
+
+msgid "uploading_file!"
+msgstr "በመስቀል ላይ ፋይል!"
+
+msgid "save_failed!"
+msgstr "ማስቀመጥ አልተሳካም!"
+
+msgid "search"
+msgstr "ፍለጋ"
+
+msgid "find"
+msgstr "አግኝ"
+
+msgid "replace"
+msgstr "ተካ"
+
+msgid "scroll_past_end"
+msgstr "ሸብልል ያለፉ መጨረሻ"
+
+msgid "show_annotations"
+msgstr "አሳይ ማብራሪያዎች"
+
+msgid "show_gutter"
+msgstr "አሳይ ትቦ"
+
+msgid "show_invisibles"
+msgstr "አሳይ Invisibles"
+
+msgid "show_print_margin"
+msgstr "አሳይ አትም ኅዳግ"
+
+msgid "highlight_active_line"
+msgstr "ንቁ መስመር ጎላ"
+
+msgid "word_wrap"
+msgstr "ቃል ቅለሳ"
+
+msgid "split_code"
+msgstr "የተከፈለ ኮድ"
+
+msgid "preferences"
+msgstr "ምርጫዎች"
+
+msgid "close_all_tabs"
+msgstr "ሁሉም ትሮችን ዝጋ"
+
+msgid "close_current_tab"
+msgstr "ዝጋ የአሁኑ ትር"
+
+msgid "auto_save_file_when_i_type"
+msgstr "እኔ ሲተይቡ በራስ ፋይል ማስቀመጥ"
+
+msgid "auto_save"
+msgstr "ራስ-አስቀምጥ"
+
+msgid "quick_save"
+msgstr "ፈጣን አስቀምጥ"
+
+msgid "documentation"
+msgstr "ስነዳ"
+
+msgid "themes"
+msgstr "ገጽታዎች"
+
+msgid "keyboard_shortcuts"
+msgstr "የቁልፍ ሰሌዳ አቋራጮች"
+
+msgid "coming_soon"
+msgstr "በቅርብ ቀን"
+
+msgid "empty"
+msgstr "ባዶ"

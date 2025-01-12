@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: st\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Thusa"
+
+msgid "manage_accounts"
+msgstr "Sebelisang Litlaleho"
+
+msgid "import_accounts"
+msgstr "Import Litlaleho"
+
+msgid "export_accounts"
+msgstr "Export Litlaleho"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "molaetsa Log"
+
+msgid "local_directory"
+msgstr "Directory Local"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "E hlakileng Data Pholositsoe"
+
+msgid "edit_settings"
+msgstr "Edit Settings"
+
+msgid "report_bug"
+msgstr "Tlaleha Kekana"
+
+msgid "suggest_feature"
+msgstr "Fana ka maikutlo a sa Feature"
+
+msgid "ask_a_question"
+msgstr "Botsa potso e"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "Etsoa"
+
+msgid "host_ip_address"
+msgstr "Batsholabaeng / IP Address"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Password"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Connect"
+
+msgid "welcome"
+msgstr "Welcome"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client ke tsohle ka tsela e bonolo, e hahiloe ka Google Chrome / Chrome OS tsa phutheloa app e segokanyimmediamentsi sa sebolokigolo lumella app e hore e be itime lijo 'me li amohele. Tse ling tsa tshebetso ya ho akarelletsa ho e Manager Account "
+
+msgid "latest_updates"
+msgstr "Latest Updates"
+
+msgid "server_status"
+msgstr "Status Server"
+
+msgid "license_server"
+msgstr "Server License"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Tsebiso / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "e hlakileng All"
+
+msgid "manage"
+msgstr "Sebelisang"
+
+msgid "recheck"
+msgstr "Re-cheke"
+
+msgid "last_release"
+msgstr "Release Last"
+
+msgid "released"
+msgstr "lokolloa"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "hlōleha"
+
+msgid "completed"
+msgstr "phethoa"
+
+msgid "settings"
+msgstr "Settings"
+
+msgid "add_folder"
+msgstr "Add foldareng ya mmino"
+
+msgid "add_ftp_account"
+msgstr "Add Account FTP"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Tse batlwang Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Litlaleho tsa hao tsa FTP"
+
+msgid "most_recent_used"
+msgstr "Morao ka ho fetisisa sebelisoa."
+
+msgid "no_connections_yet_made"
+msgstr "No dikgokelo leha ho le joalo ile a etsa"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No litlaleho FTP phaella leha ho le joalo"
+
+msgid "most_recent_connections"
+msgstr "Most Connections Recent"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 dikgokelo entsoeng"
+
+msgid "designed_developed_by"
+msgstr "Etselitsoe & be le ke"
+
+msgid "about_info"
+msgstr "Ka kōpo sebelisa sFTP Client websaeteng bakeng sa tshehetso, ha ho tshehetso e fanoang ka websites rōna ka bomong."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "ka thōko"
+
+msgid "remote_location_desc"
+msgstr "mohlala / public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Create New Directory"
+
+msgid "create_file"
+msgstr "Create File"
+
+msgid "create_new_file"
+msgstr "Create New File"
+
+msgid "refresh_list"
+msgstr "khatholla List"
+
+msgid "change"
+msgstr "Change"
+
+msgid "report_a_bug"
+msgstr "Tlaleha Kekana"
+
+msgid "suggest_a_feature"
+msgstr "Fana ka maikutlo a sa Feature"
+
+msgid "enter_password"
+msgstr "kena Password"
+
+msgid "enter_your_password..."
+msgstr "Kena phasewete ya hao ..."
+
+msgid "passphrase"
+msgstr "tselaitshupo"
+
+msgid "enter_your_passphrase..."
+msgstr "Kena tselaitshupo hao ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ a"
+
+msgid "visit_sftp_client_website"
+msgstr "Hape u ba etele sFTP Website Client"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Rate re ka Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Tlaleha taba e kapa fumana thuso"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Le rōna on Facebook bakeng diapdeite"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow re on Twitter bakeng sa diapdeite"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Re ho Google bakeng sa diapdeite"
+
+msgid "okay"
+msgstr "Ho lokile"
+
+msgid "cancel"
+msgstr "Hlakola"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "makhotla Unknown"
+
+msgid "okay_to_continue"
+msgstr "Ho lokile hore a tsoele pele?"
+
+msgid "fingerprint"
+msgstr "menoana"
+
+msgid "remember"
+msgstr "Hopola"
+
+msgid "file_permissions"
+msgstr "File Permissions"
+
+msgid "file_permissions_desc"
+msgstr "Ka kōpo khetha litšobotsi tse ncha tsa ho faele khetha (s) / foldara (s)"
+
+msgid "read"
+msgstr "bala"
+
+msgid "write"
+msgstr "Ngola"
+
+msgid "execute"
+msgstr "phethisa"
+
+msgid "owner"
+msgstr "mong'a"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "dipalo tsena Bohlokoa"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Kene lebitso la dibaka tse ncha ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Kene lebitso la faele e ncha ..."
+
+msgid "name"
+msgstr "Name"
+
+msgid "enter_a_password"
+msgstr "Kenya Password"
+
+msgid "language"
+msgstr "puo"
+
+msgid "seconds"
+msgstr "metsotsoana"
+
+msgid "minutes"
+msgstr "metsotso e"
+
+msgid "hour"
+msgstr "hora"
+
+msgid "hours"
+msgstr "Hours"
+
+msgid "day"
+msgstr "Ka letsatsi le"
+
+msgid "trial_left"
+msgstr "nyeoe ea Left"
+
+msgid "register_now"
+msgstr "ngodisa Joale"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "boemo"
+
+msgid "enabled"
+msgstr "nolofalletsa"
+
+msgid "disabled"
+msgstr "Bokooa"
+
+msgid "timeout"
+msgstr "Khefutso"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Add Account"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Tsebiso / Updates"
+
+msgid "please_login"
+msgstr "ka kōpo Register"
+
+msgid "your_session_timed_out"
+msgstr "Your Thuto behetsoeng nako Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry phasewete ya u kene ne nepahalang ho sona!"
+
+msgid "login"
+msgstr "Kena"
+
+msgid "master_password_desc"
+msgstr "Ipehele ena phasewete mong'a ho boloka litlaleho tsa hao tsa sireletsehileng."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "hona joale ha ho fumanehe"
+
+msgid "no_message_to_display"
+msgstr "No molaetsa ho bontša"
+
+msgid "offline_notice_title"
+msgstr "Fihlelehe - Na u, offline kapa ka marangrang mabapi feela?"
+
+msgid "offline_notice_desc"
+msgstr "O Hona joale, offline, ka netweke feela mabapi kapa che mabapi ne ho thehwa ho seva rona"
+
+msgid "edit_file"
+msgstr "Edit File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Batsholabaeng / IP ho hlokahala"
+
+msgid "apply_to_all_files"
+msgstr "Sebetsa ho difaele tsohle"
+
+msgid "activate_now"
+msgstr "kenya tshebetsong tshwariso ya Joale"
+
+msgid "deactivate"
+msgstr "De-, включите"
+
+msgid "in_progress"
+msgstr "E mocheng"
+
+msgid "complete"
+msgstr "Complete"
+
+msgid "direction"
+msgstr "tataiso"
+
+msgid "progress"
+msgstr "tsoelo-pele ea"
+
+msgid "permissions"
+msgstr "ditumello"
+
+msgid "owner_group"
+msgstr "Mong'a / Group"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "fetotsoeng"
+
+msgid "trial"
+msgstr "nyeoe ea"
+
+msgid "cleared"
+msgstr "hleka"
+
+msgid "error_connecting"
+msgstr "phoso tlohang"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Phoso tlohang ho amohela / IP aterese"
+
+msgid "error_connecting_to_port"
+msgstr "Phoso tlohang koung"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Ka kōpo khetha dibaka tsa lehae tsa pele!"
+
+msgid "go"
+msgstr "Go"
+
+msgid "confirm"
+msgstr "tiisetsa"
+
+msgid "delete"
+msgstr "hlakola"
+
+msgid "rename"
+msgstr "ho reha botjha"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Khopi URL (s) to klipbote"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Ka kōpo tiisetsa u lakatsa ho hlakola faele khetha (s) / foldara (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled ke user want-meet.ru"
+
+msgid "already_exists_overwrite"
+msgstr "se a ntse a le teng, hatiseletsa?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Litlaleho My"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Pholositsoe! litlaleho tseo kaofela li 'nile tsa tšehetsoa."
+
+msgid "file_failed_please_try_again"
+msgstr "File hlōleha! Ka kopo, leka hape."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Hona joale u na litlaleho ho tšehetsoa."
+
+msgid "saved!"
+msgstr "Pholosoa!"
+
+msgid "please_enter_a_password"
+msgstr "Ka kopo, kenya phasewete!"
+
+msgid "connection_closed"
+msgstr "mabapi koaloa"
+
+msgid "listing_mode_set_to"
+msgstr "Listing screen reader mode behiloeng ka ho"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Local seva IP rarolloa, a sebelisa Link IP"
+
+msgid "login_incorrect"
+msgstr "Login sa nepahalang"
+
+msgid "keeping_connection_alive"
+msgstr "Ho boloka mabapi phela '"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Ha ho kgonehe ho ngola, kgokahanyo koaloa"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Ha ho kgonehe ho bala kgokahanyo koaloa"
+
+msgid "error_reading_file"
+msgstr "Phoso faele ho bala"
+
+msgid "error_writing_file"
+msgstr "Phoso ho ngola faele"
+
+msgid "failed_to_change_directory_to"
+msgstr "Hlōleha ho fetola dibaka ho"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "U ka 'na ua ba le ditumello nepahetse ho fihlella dibaka ena"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting khutlisetsa ho dibaka mehleng"
+
+msgid "activate"
+msgstr "kenya tshebetsong tshwariso ya"
+
+msgid "payment"
+msgstr "tefello"
+
+msgid "license_key_is_required"
+msgstr "senotlolo License ho hlokahala"
+
+msgid "license_activated!"
+msgstr "License butswe!"
+
+msgid "your_license_has_been_validated"
+msgstr "laesense hao o tiisitsoe ka oona."
+
+msgid "thank_you!"
+msgstr "Kea leboha!"
+
+msgid "buy_now!"
+msgstr "Reka hona joale!"
+
+msgid "buy_now"
+msgstr "Reka hona joale"
+
+msgid "one_off_fee"
+msgstr "e 'ngoe duelwang"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Ka kōpo ntlafatsa ho thabela app e sena se na lithibelo"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Ka kopo, kenya License oa hao Key mona ka tlase"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "e hlakileng Litlaleho"
+
+msgid "clear_ssh_keys"
+msgstr "E hlakileng SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "E phumula tsohle SSH linotlolo pholosoa"
+
+msgid "clear_app_settings"
+msgstr "E hlakileng Settings App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "E phumula di-setting tsohle app e tse tobileng tseo"
+
+msgid "clear_recent_connections"
+msgstr "E hlakileng Connections Recent"
+
+msgid "deletes_all_recent_connections"
+msgstr "E phumula maqhama 'ohle morao tjena"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "ka kōpo Khetha"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "khetha File"
+
+msgid "delete_accounts"
+msgstr "hlakola Litlaleho"
+
+msgid "deletes_all_existing_accounts"
+msgstr "E phumula litlaleho tseo kaofela teng"
+
+msgid "import_now"
+msgstr "Import Joale"
+
+msgid "none"
+msgstr "None"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Ka kōpo restart app e sFTP Client bakeng sa liphetoho ho nka sebetsa."
+
+msgid "already_bought_the_app"
+msgstr "Se a ntse reka App?"
+
+msgid "choose"
+msgstr "khetha"
+
+msgid "deleted!"
+msgstr "Hlakolwa!"
+
+msgid "use_syncronised_browsing"
+msgstr "sebelisa syncronised ho lekola"
+
+msgid "remote_directory"
+msgstr "Directory ka thōko"
+
+msgid "rsa_key_only!"
+msgstr "RSA senotlolo feela!"
+
+msgid "no_key_selected"
+msgstr "Ho se konopo khethileng."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "No dir khethileng."
+
+msgid "keep_blank_for_current_password"
+msgstr "Boloka sekheo sena bakeng sa phasewete ya hajwale."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Kōpa Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Type Account"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Mabapi)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Sireletseha Mabapi)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Sireletseha Mabapi)"
+
+msgid "folder"
+msgstr "foldara"
+
+msgid "advanced"
+msgstr "e tsoetseng pele"
+
+msgid "folder_name"
+msgstr "Name foldara"
+
+msgid "parent"
+msgstr "motsoali"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "foldareng ya mmino New"
+
+msgid "clean_now"
+msgstr "Clean Joale"
+
+msgid "host"
+msgstr "batsholabaeng"
+
+msgid "no_accounts_added..."
+msgstr "No Litlaleho a phaella ka ..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "File Pholositsoe!"
+
+msgid "uploading_file!"
+msgstr "Uploading File!"
+
+msgid "save_failed!"
+msgstr "Pholosa hlōleha!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "fumana"
+
+msgid "replace"
+msgstr "nka sebaka"
+
+msgid "scroll_past_end"
+msgstr "Moqolo Fetileng End"
+
+msgid "show_annotations"
+msgstr "Show Annotations"
+
+msgid "show_gutter"
+msgstr "Show gare dit shila"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print thōko"
+
+msgid "highlight_active_line"
+msgstr "Totobatsa Active Line"
+
+msgid "word_wrap"
+msgstr "lentsoe la Box"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "Tse batlwang"
+
+msgid "close_all_tabs"
+msgstr "Close tsohle di-tab tsa"
+
+msgid "close_current_tab"
+msgstr "Close Current tab ya"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto pholosa faele ha ke thaepa"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "ditokomane"
+
+msgid "themes"
+msgstr "Themes"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard dikgutsufatso tsa ka"
+
+msgid "coming_soon"
+msgstr "E fihla haufinyane"
+
+msgid "empty"
+msgstr "ea lefeela"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "Fil"
+
+msgid "view"
+msgstr "Udsigt"
+
+msgid "edit"
+msgstr "Redigere"
+
+msgid "help"
+msgstr "Hjælp"
+
+msgid "manage_accounts"
+msgstr "Administrer konti"
+
+msgid "import_accounts"
+msgstr "Importer konti"
+
+msgid "export_accounts"
+msgstr "Eksport Konti"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "Lokal telefonbog"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Ryd gemte data"
+
+msgid "edit_settings"
+msgstr "Rediger indstillinger"
+
+msgid "report_bug"
+msgstr "Rapporter en fejl"
+
+msgid "suggest_feature"
+msgstr "Foreslå en Funktion"
+
+msgid "ask_a_question"
+msgstr "Stil et spørgsmål"
+
+msgid "change_log"
+msgstr "Skift Log"
+
+msgid "about"
+msgstr "Om"
+
+msgid "exit"
+msgstr "Udgang"
+
+msgid "host_ip_address"
+msgstr "Vært / IP-adresse"
+
+msgid "username"
+msgstr "Brugernavn"
+
+msgid "password"
+msgstr "Adgangskode"
+
+msgid "port"
+msgstr "Havn"
+
+msgid "connect"
+msgstr "Forbinde"
+
+msgid "welcome"
+msgstr "Velkomst"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP-klient handler om enkelhed, det er bygget på Google Chrome / Chrome OS pakket app-interface gør det muligt for app til at være hurtig og lydhør. Nogle af funktionaliteten omfatter en FTP Account Manager til at gemme væk og organisere dine mest os"
+
+msgid "latest_updates"
+msgstr "Seneste opdateringer"
+
+msgid "server_status"
+msgstr "Server status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Støtte"
+
+msgid "notice_update"
+msgstr "Notice / Opdateringer"
+
+msgid "website"
+msgstr "Internet side"
+
+msgid "clear_all"
+msgstr "Slet alt"
+
+msgid "manage"
+msgstr "Styre"
+
+msgid "recheck"
+msgstr "Re-kontrol"
+
+msgid "last_release"
+msgstr "sidste Frigivelse"
+
+msgid "released"
+msgstr "Udgivet"
+
+msgid "queued"
+msgstr "I kø"
+
+msgid "failed"
+msgstr "Mislykket"
+
+msgid "completed"
+msgstr "Afsluttet"
+
+msgid "settings"
+msgstr "Indstillinger"
+
+msgid "add_folder"
+msgstr "Tilføj mappe"
+
+msgid "add_ftp_account"
+msgstr "Tilføj FTP-konto"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Indstillinger"
+
+msgid "your_ftp_accounts"
+msgstr "Dine FTP-konti"
+
+msgid "most_recent_used"
+msgstr "Senest brugt."
+
+msgid "no_connections_yet_made"
+msgstr "Ingen forbindelser endnu gjort"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ingen FTP-konti tilføjet endnu"
+
+msgid "most_recent_connections"
+msgstr "Seneste Connections"
+
+msgid "last_10_connections_made"
+msgstr "Sidste 10 tilslutninger lavet"
+
+msgid "designed_developed_by"
+msgstr "Designet & Udviklet af"
+
+msgid "about_info"
+msgstr "Brug venligst SFTP-klient website for støtte, der er ingen støtte gennem vores individuelle websteder."
+
+msgid "local"
+msgstr "Lokal"
+
+msgid "remote"
+msgstr "Fjern"
+
+msgid "remote_location_desc"
+msgstr "fx / public_html"
+
+msgid "create_directory"
+msgstr "Opret Register"
+
+msgid "create_new_directory"
+msgstr "Opret ny Register"
+
+msgid "create_file"
+msgstr "Opret fil"
+
+msgid "create_new_file"
+msgstr "Opret ny fil"
+
+msgid "refresh_list"
+msgstr "Opdater liste"
+
+msgid "change"
+msgstr "Lave om"
+
+msgid "report_a_bug"
+msgstr "Rapporter en fejl"
+
+msgid "suggest_a_feature"
+msgstr "Foreslå en Funktion"
+
+msgid "enter_password"
+msgstr "Indtast adgangskode"
+
+msgid "enter_your_password..."
+msgstr "Skriv dit kodeord..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Indtast din adgangssætning ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP-klient"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Besøg SFTP-klient Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Bedøm os på Google Chrome Webshop"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rapporter et problem eller få hjælp"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Tag med os på Facebook for opdateringer"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Følg os på Twitter for opdateringer"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Os på Google efter opdateringer"
+
+msgid "okay"
+msgstr "okay"
+
+msgid "cancel"
+msgstr "Ophæve"
+
+msgid "close"
+msgstr "Tæt"
+
+msgid "unknown_host"
+msgstr "Ukendt vært"
+
+msgid "okay_to_continue"
+msgstr "Okay at fortsætte?"
+
+msgid "fingerprint"
+msgstr "Fingeraftryk"
+
+msgid "remember"
+msgstr "Huske"
+
+msgid "file_permissions"
+msgstr "Fil Tilladelser"
+
+msgid "file_permissions_desc"
+msgstr "Vælg de nye attributter for den valgte fil (er) / mappe (r)"
+
+msgid "read"
+msgstr "Læse"
+
+msgid "write"
+msgstr "Skrive"
+
+msgid "execute"
+msgstr "Udfør"
+
+msgid "owner"
+msgstr "Ejer"
+
+msgid "group"
+msgstr "Gruppe"
+
+msgid "public"
+msgstr "Offentlig"
+
+msgid "numeric_value"
+msgstr "Numerisk værdi"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Indtast navnet på den nye mappe ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Indtast navnet på den nye fil ..."
+
+msgid "name"
+msgstr "Navn"
+
+msgid "enter_a_password"
+msgstr "Indtast en adgangskode"
+
+msgid "language"
+msgstr "Sprog"
+
+msgid "seconds"
+msgstr "Sekunder"
+
+msgid "minutes"
+msgstr "Minutter"
+
+msgid "hour"
+msgstr "Time"
+
+msgid "hours"
+msgstr "Timer"
+
+msgid "day"
+msgstr "Dag"
+
+msgid "trial_left"
+msgstr "Trial Venstre"
+
+msgid "register_now"
+msgstr "Registrer nu"
+
+msgid "general"
+msgstr "Generel"
+
+msgid "security"
+msgstr "Sikkerhed"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "status"
+
+msgid "enabled"
+msgstr "Aktiveret"
+
+msgid "disabled"
+msgstr "Handicappet"
+
+msgid "timeout"
+msgstr "Tiden er gået"
+
+msgid "save"
+msgstr "Spare"
+
+msgid "add_account"
+msgstr "Tilføj konto"
+
+msgid "support"
+msgstr "Støtte"
+
+msgid "notice_updates"
+msgstr "Notice / Opdateringer"
+
+msgid "please_login"
+msgstr "venligst Login"
+
+msgid "your_session_timed_out"
+msgstr "Din session Tidsindstillet Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Beklager den indtastede adgangskode var forkert!"
+
+msgid "login"
+msgstr "Log på"
+
+msgid "master_password_desc"
+msgstr "Sæt denne master adgangskode for at holde dine konti sikkert."
+
+msgid "license_key"
+msgstr "Licensnøgle"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Ikke tilgængelig i øjeblikket"
+
+msgid "no_message_to_display"
+msgstr "Ingen meddelelse at vise"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Er du offline eller på et netværk eneste forbindelse?"
+
+msgid "offline_notice_desc"
+msgstr "Du er i øjeblikket offline, på et netværk eneste forbindelse eller ingen forbindelse kan etableres til vores server"
+
+msgid "edit_file"
+msgstr "Rediger fil"
+
+msgid "download"
+msgstr "Hent"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Vært / IP kræves"
+
+msgid "apply_to_all_files"
+msgstr "Anvend på alle filer"
+
+msgid "activate_now"
+msgstr "Aktiver nu"
+
+msgid "deactivate"
+msgstr "De-aktivere"
+
+msgid "in_progress"
+msgstr "I gang"
+
+msgid "complete"
+msgstr "Komplet"
+
+msgid "direction"
+msgstr "Retning"
+
+msgid "progress"
+msgstr "Fremskridt"
+
+msgid "permissions"
+msgstr "Tilladelser"
+
+msgid "owner_group"
+msgstr "Ejer / gruppe"
+
+msgid "size"
+msgstr "Størrelse"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "Modificeret"
+
+msgid "trial"
+msgstr "Forsøg"
+
+msgid "cleared"
+msgstr "ryddet"
+
+msgid "error_connecting"
+msgstr "Fejl Tilslutning"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Fejl Tilslutning til vært / ip-adresse"
+
+msgid "error_connecting_to_port"
+msgstr "Fejl Tilslutning til havn"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Vælg lokal mappe først!"
+
+msgid "go"
+msgstr "Gå"
+
+msgid "confirm"
+msgstr "Bekræfte"
+
+msgid "delete"
+msgstr "Slette"
+
+msgid "rename"
+msgstr "Omdøb"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopier webadresse (r) til udklipsholder"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Bekræft, at du ønsker at slette den valgte fil (er) / mappe (r)"
+
+msgid "cancelled_by_user"
+msgstr "Annulleret af bruger"
+
+msgid "already_exists_overwrite"
+msgstr "allerede eksisterer, overskrive?"
+
+msgid "dashboard"
+msgstr "instrumentbræt"
+
+msgid "my_accounts"
+msgstr "Mine konti"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Saved! Alle konti er blevet sikkerhedskopieret."
+
+msgid "file_failed_please_try_again"
+msgstr "Fil mislykkedes! Prøv igen."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Du har i øjeblikket ingen konti skal bakkes op."
+
+msgid "saved!"
+msgstr "Gemt!"
+
+msgid "please_enter_a_password"
+msgstr "Indtast venligst et kodeord!"
+
+msgid "connection_closed"
+msgstr "Forbindelse lukket"
+
+msgid "listing_mode_set_to"
+msgstr "Notering indstillet til"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokal server IP løst, ved hjælp af eksterne IP"
+
+msgid "login_incorrect"
+msgstr "Login forkert"
+
+msgid "keeping_connection_alive"
+msgstr "Holde forbindelsen i live"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Kan ikke skrive, dataforbindelse lukket"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Kan ikke læse dataforbindelse lukket"
+
+msgid "error_reading_file"
+msgstr "Fejl ved læsning fil"
+
+msgid "error_writing_file"
+msgstr "Fejl ved skrivning fil"
+
+msgid "failed_to_change_directory_to"
+msgstr "Det lykkedes ikke at skifte mappe til"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Du har måske ikke de korrekte tilladelser til at få adgang til denne mappe"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Vende tilbage tilbage til forrige mappe"
+
+msgid "activate"
+msgstr "Aktivere"
+
+msgid "payment"
+msgstr "Betaling"
+
+msgid "license_key_is_required"
+msgstr "Licens nøgle er påkrævet"
+
+msgid "license_activated!"
+msgstr "Licens Aktiveret!"
+
+msgid "your_license_has_been_validated"
+msgstr "Din licens er blevet valideret."
+
+msgid "thank_you!"
+msgstr "Thank You!"
+
+msgid "buy_now!"
+msgstr "Køb nu!"
+
+msgid "buy_now"
+msgstr "Køb nu"
+
+msgid "one_off_fee"
+msgstr "engangsbeløb"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Opgrader til at nyde denne app uden begrænsninger"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Indtast venligst dit licensnøgle nedenfor"
+
+msgid "or"
+msgstr "ELLER"
+
+msgid "loading..."
+msgstr "Indlæser ..."
+
+msgid "clear_accounts"
+msgstr "klare konti"
+
+msgid "clear_ssh_keys"
+msgstr "Ryd SSH-nøgler"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Sletter alle gemte SSH-nøgler"
+
+msgid "clear_app_settings"
+msgstr "Ryd App Indstillinger"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Sletter alle app specifikke indstillinger"
+
+msgid "clear_recent_connections"
+msgstr "Ryd seneste Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Sletter alle seneste tilslutninger"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Vælg venligst"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Vælg fil"
+
+msgid "delete_accounts"
+msgstr "Slet Konti"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Sletter alle eksisterende konti"
+
+msgid "import_now"
+msgstr "Import nu"
+
+msgid "none"
+msgstr "Ingen"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Genstart SFTP-klient app for at ændringerne kan træde i kraft."
+
+msgid "already_bought_the_app"
+msgstr "Allerede købte App?"
+
+msgid "choose"
+msgstr "Vælge"
+
+msgid "deleted!"
+msgstr "Slettet!"
+
+msgid "use_syncronised_browsing"
+msgstr "bruge synkroniseret browsing"
+
+msgid "remote_directory"
+msgstr "Fjernbetjening Register"
+
+msgid "rsa_key_only!"
+msgstr "RSA-nøgle kun!"
+
+msgid "no_key_selected"
+msgstr "Ingen nøgle valgt."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "Ingen dir valgt."
+
+msgid "keep_blank_for_current_password"
+msgstr "Behold blank for nuværende adgangskode."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Spørg efter adgangskode"
+
+msgid "anonymous"
+msgstr "Anonym"
+
+msgid "account_type"
+msgstr "Kontotype"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Sikker forbindelse)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "advanced"
+msgstr "Fremskreden"
+
+msgid "folder_name"
+msgstr "Folder Name"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "Ny FTP site"
+
+msgid "new_folder"
+msgstr "Ny mappe"
+
+msgid "clean_now"
+msgstr "Clean nu"
+
+msgid "host"
+msgstr "Vært"
+
+msgid "no_accounts_added..."
+msgstr "Ingen Konti Tilføjet ..."
+
+msgid "unknown"
+msgstr "Ukendt"
+
+msgid "file_saved!"
+msgstr "File Saved!"
+
+msgid "uploading_file!"
+msgstr "Upload fil!"
+
+msgid "save_failed!"
+msgstr "Gem mislykkedes!"
+
+msgid "search"
+msgstr "Søge"
+
+msgid "find"
+msgstr "Find"
+
+msgid "replace"
+msgstr "Erstatte"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Vis anmærkninger"
+
+msgid "show_gutter"
+msgstr "Vis Gutter"
+
+msgid "show_invisibles"
+msgstr "Vis Invisibles"
+
+msgid "show_print_margin"
+msgstr "Vis Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Fremhæv Active linje"
+
+msgid "word_wrap"
+msgstr "Tekstombrydning"
+
+msgid "split_code"
+msgstr "Split kode"
+
+msgid "preferences"
+msgstr "Indstillinger"
+
+msgid "close_all_tabs"
+msgstr "Luk alle faner"
+
+msgid "close_current_tab"
+msgstr "Luk faneblad"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto gem filen, når jeg skriver"
+
+msgid "auto_save"
+msgstr "Auto Gem"
+
+msgid "quick_save"
+msgstr "Hurtig Gem"
+
+msgid "documentation"
+msgstr "Dokumentation"
+
+msgid "themes"
+msgstr "Temaer"
+
+msgid "keyboard_shortcuts"
+msgstr "Tastaturgenveje"
+
+msgid "coming_soon"
+msgstr "Coming Soon"
+
+msgid "empty"
+msgstr "tom"

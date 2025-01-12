@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "Fichier"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "edit"
+
+msgid "help"
+msgstr "Hëllef"
+
+msgid "manage_accounts"
+msgstr "verwalten Konten"
+
+msgid "import_accounts"
+msgstr "Import Konten"
+
+msgid "export_accounts"
+msgstr "Export Konten"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "lokal Gemeng"
+
+msgid "uploads_downloads"
+msgstr "Eropgeluede / erofgelueden"
+
+msgid "clear_saved_data"
+msgstr "Kloer gerett Data"
+
+msgid "edit_settings"
+msgstr "edit Parameteren"
+
+msgid "report_bug"
+msgstr "Rapport e Käfer"
+
+msgid "suggest_feature"
+msgstr "Proposéiere engem Spillfilmer"
+
+msgid "ask_a_question"
+msgstr "Froen eng Question"
+
+msgid "change_log"
+msgstr "änneren Log"
+
+msgid "about"
+msgstr "Iwwer"
+
+msgid "exit"
+msgstr "Exit"
+
+msgid "host_ip_address"
+msgstr "Provider / IP Adress"
+
+msgid "username"
+msgstr "Benotzernumm"
+
+msgid "password"
+msgstr "Passwuert"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Connect"
+
+msgid "welcome"
+msgstr "Wëllkomm"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client ass all iwwer Simplicitéit, huet et op de Google Bauoffall / Bauoffall OS Emballagen App Interface gebaut ginn wouduerch d'App schnell a reaktiounsfäeger gin. Verschiddener vun der Funktionalitéit ëmfaasst en FTP Account Manager ewech ze r"
+
+msgid "latest_updates"
+msgstr "Lescht Neiegkeeten"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "Lizenz Server"
+
+msgid "sftp_support"
+msgstr "Ënnerstëtzung"
+
+msgid "notice_update"
+msgstr "Remark / Aktualiséierung"
+
+msgid "website"
+msgstr "Websäit"
+
+msgid "clear_all"
+msgstr "kloer All"
+
+msgid "manage"
+msgstr "geréieren"
+
+msgid "recheck"
+msgstr "Re-Check"
+
+msgid "last_release"
+msgstr "Last Netflix"
+
+msgid "released"
+msgstr "Verëffentlechung"
+
+msgid "queued"
+msgstr "suergt"
+
+msgid "failed"
+msgstr "ausfale"
+
+msgid "completed"
+msgstr "fäerdeg"
+
+msgid "settings"
+msgstr "Parameteren"
+
+msgid "add_folder"
+msgstr "Artikel dobäimaachen"
+
+msgid "add_ftp_account"
+msgstr "Foto FTP Account"
+
+msgid "file_editor"
+msgstr "Fichier Redakter"
+
+msgid "editor_preferences"
+msgstr "Redakter Astellungen"
+
+msgid "your_ftp_accounts"
+msgstr "Är FTP Konten"
+
+msgid "most_recent_used"
+msgstr "Déi meescht kuerzem benotzt."
+
+msgid "no_connections_yet_made"
+msgstr "Nee Verbindungen nach gemaach"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Nee FTP Konte dobäi nach"
+
+msgid "most_recent_connections"
+msgstr "Jéngster Connections"
+
+msgid "last_10_connections_made"
+msgstr "Leschten 10 Verbindungen gemaach"
+
+msgid "designed_developed_by"
+msgstr "Entworf & Entwécklerstudio"
+
+msgid "about_info"
+msgstr "Benotzt d'sFTP Client Websäit fir ënnerstëtzen, ass keng Ënnerstëtzung duerch eis eenzel Websäite gëtt."
+
+msgid "local"
+msgstr "lokal"
+
+msgid "remote"
+msgstr "Erfindungen"
+
+msgid "remote_location_desc"
+msgstr "zB / public_html"
+
+msgid "create_directory"
+msgstr "Neie Guide"
+
+msgid "create_new_directory"
+msgstr "Schafen New Guide"
+
+msgid "create_file"
+msgstr "schafen Fichier"
+
+msgid "create_new_file"
+msgstr "Schafen New Fichier"
+
+msgid "refresh_list"
+msgstr "Update Lëscht"
+
+msgid "change"
+msgstr "änneren"
+
+msgid "report_a_bug"
+msgstr "Rapport e Käfer"
+
+msgid "suggest_a_feature"
+msgstr "Proposéiere engem Spillfilmer"
+
+msgid "enter_password"
+msgstr "gitt Passwuert"
+
+msgid "enter_your_password..."
+msgstr "Gitt Är Passwuert ..."
+
+msgid "passphrase"
+msgstr "Passwuert"
+
+msgid "enter_your_passphrase..."
+msgstr "Gitt Är Passwuert ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ d'"
+
+msgid "visit_sftp_client_website"
+msgstr "Besicht sFTP Client Site"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Bewäert eis op de Google Bauoffall Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rapport en Thema oder Hëllef kréien"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Maacht eis op Facebook fir Aktualiséierungen"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Verfolleg eis op Twitter fir Aktualiséierungen"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Eis iwwert Google fir Aktualiséierungen"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "annuléieren"
+
+msgid "close"
+msgstr "Zoumaachen"
+
+msgid "unknown_host"
+msgstr "onbekannten Host"
+
+msgid "okay_to_continue"
+msgstr "Okay weiderfueren?"
+
+msgid "fingerprint"
+msgstr "Fangerofdrock"
+
+msgid "remember"
+msgstr "erënneren"
+
+msgid "file_permissions"
+msgstr "Fichier souguer"
+
+msgid "file_permissions_desc"
+msgstr "Wielt weg de neie Attributer vun der gewielter Datei (s) / Dossier (s)"
+
+msgid "read"
+msgstr "Weiderliesen"
+
+msgid "write"
+msgstr "schreiwen"
+
+msgid "execute"
+msgstr "exekutéieren"
+
+msgid "owner"
+msgstr "Besëtzer"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "ëffentlech"
+
+msgid "numeric_value"
+msgstr "da gëllt"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Gitt hei den Numm vun der neier directory ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Gitt hei den Numm vun der neier Fichier ..."
+
+msgid "name"
+msgstr "Numm"
+
+msgid "enter_a_password"
+msgstr "Gitt e Passwuert"
+
+msgid "language"
+msgstr "Sprooch"
+
+msgid "seconds"
+msgstr "Sekonnen"
+
+msgid "minutes"
+msgstr "Minutt"
+
+msgid "hour"
+msgstr "Stonn"
+
+msgid "hours"
+msgstr "Stonnen"
+
+msgid "day"
+msgstr "Dag"
+
+msgid "trial_left"
+msgstr "Prozess gauche"
+
+msgid "register_now"
+msgstr "Schreiwt Iech elo"
+
+msgid "general"
+msgstr "allgemeng"
+
+msgid "security"
+msgstr "Sécherheet"
+
+msgid "master_password"
+msgstr "Master Passwuert"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "aktivéiert"
+
+msgid "disabled"
+msgstr "Behënnerter"
+
+msgid "timeout"
+msgstr "Äuszäit"
+
+msgid "save"
+msgstr "spueren"
+
+msgid "add_account"
+msgstr "Foto Account"
+
+msgid "support"
+msgstr "Ënnerstëtzung"
+
+msgid "notice_updates"
+msgstr "Remark / Aktualiséierung"
+
+msgid "please_login"
+msgstr "Sot Login"
+
+msgid "your_session_timed_out"
+msgstr "Är Sessioun iwwerschratt ginn"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Entschëllegt den Passwuert, dat dir agin war falsch!"
+
+msgid "login"
+msgstr "Aloggen"
+
+msgid "master_password_desc"
+msgstr "Set dëser Meeschtesch Passwuert ze halen Är Konten sécher."
+
+msgid "license_key"
+msgstr "Lizenz Key"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "momentan erreechbar"
+
+msgid "no_message_to_display"
+msgstr "Nee Message ze affichéieren"
+
+msgid "offline_notice_title"
+msgstr "Erreecht - Sidd Dir sitt oder op engem Réseau Verbindung?"
+
+msgid "offline_notice_desc"
+msgstr "Dir sidd am Moment offline, op engem Réseau Verbindung oder keng Verbindung kéint zu eise Server gegrënnt ginn"
+
+msgid "edit_file"
+msgstr "edit Fichier"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Eroplueden"
+
+msgid "host_ip_is_required"
+msgstr "Provider / IP ass néideg"
+
+msgid "apply_to_all_files"
+msgstr "Gëlle fir all Fichieren"
+
+msgid "activate_now"
+msgstr "Aktivéiert Elo"
+
+msgid "deactivate"
+msgstr "De-aktivéieren"
+
+msgid "in_progress"
+msgstr "Am gaangen"
+
+msgid "complete"
+msgstr "komplett"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "Progress"
+
+msgid "permissions"
+msgstr "Permissiounen"
+
+msgid "owner_group"
+msgstr "Besëtzer / Group"
+
+msgid "size"
+msgstr "Gréisst"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "geännert"
+
+msgid "trial"
+msgstr "Prozess"
+
+msgid "cleared"
+msgstr "geschëppt"
+
+msgid "error_connecting"
+msgstr "Feeler Vernetzung"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Feeler Adress zu Gaascht / IP Vernetzung"
+
+msgid "error_connecting_to_port"
+msgstr "Feeler ze port Vernetzung"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Wielt weg eng lokal directory éischt!"
+
+msgid "go"
+msgstr "Go"
+
+msgid "confirm"
+msgstr "confirméieren"
+
+msgid "delete"
+msgstr "läsche"
+
+msgid "rename"
+msgstr "réckelt"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) zu Numm"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Confirméiert weg datt Dir wëllt der gewielter Datei (s) / Dossier (s) ze läschen"
+
+msgid "cancelled_by_user"
+msgstr "Risiken duerch Benotzer"
+
+msgid "already_exists_overwrite"
+msgstr "schonns, iwwerschreiwe wëllt?"
+
+msgid "dashboard"
+msgstr "bäi"
+
+msgid "my_accounts"
+msgstr "meng Konten"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Fichier gerett! All Konten hunn gedroe ginn ass."
+
+msgid "file_failed_please_try_again"
+msgstr "Fichier Kee! Probéiert weg nach eng Kéier."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Dir hutt momentan keng Konte gedroe ginn."
+
+msgid "saved!"
+msgstr "Gerett!"
+
+msgid "please_enter_a_password"
+msgstr "Gitt weg e Passwuert!"
+
+msgid "connection_closed"
+msgstr "Connexioun zougemaach"
+
+msgid "listing_mode_set_to"
+msgstr "Oplëschtung Modus Formatioun ze"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokal Server IP geléist, mat externen IP"
+
+msgid "login_incorrect"
+msgstr "Login Guichet"
+
+msgid "keeping_connection_alive"
+msgstr "Haalt Verbindung lieweg"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Kann ze schreiwen, zougemaach Donnéeën Verbindung"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Kann Donnéeën Verbindung ze liesen zougemaach"
+
+msgid "error_reading_file"
+msgstr "Feeler beim Liesen Fichier"
+
+msgid "error_writing_file"
+msgstr "Feeler beim Schreiwe vun der Datei"
+
+msgid "failed_to_change_directory_to"
+msgstr "Kee Dossier ze änneren ze"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Dir vläicht déi richteg Permissiounen net dësem Dossier ze Zougang"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting zréck ze virdrun directory"
+
+msgid "activate"
+msgstr "aktivéieren"
+
+msgid "payment"
+msgstr "Bezuelen"
+
+msgid "license_key_is_required"
+msgstr "Lizenz Schlëssel ass néideg"
+
+msgid "license_activated!"
+msgstr "Lizenz ausgeléist!"
+
+msgid "your_license_has_been_validated"
+msgstr "Äre Lizenz validéiert."
+
+msgid "thank_you!"
+msgstr "Merci!"
+
+msgid "buy_now!"
+msgstr "Kaaf elo!"
+
+msgid "buy_now"
+msgstr "Kaaf elo"
+
+msgid "one_off_fee"
+msgstr "ee ugefaangen Iwwerweisung"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Sot Upgrade dëser App mat keng Restriktiounen ze genéissen"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Weg gitt är Lizenz Key ënnendrënner"
+
+msgid "or"
+msgstr "ODER"
+
+msgid "loading..."
+msgstr "Lueden ..."
+
+msgid "clear_accounts"
+msgstr "kloer Konten"
+
+msgid "clear_ssh_keys"
+msgstr "Kloer SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes all gerett SSH Schlësselen"
+
+msgid "clear_app_settings"
+msgstr "Kloer App Parameteren"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes all App spezifesch Astellunge"
+
+msgid "clear_recent_connections"
+msgstr "Kloer rezenten Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes all rezent Verbindunge"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Sot Wielt"
+
+msgid "import_file"
+msgstr "Fichier"
+
+msgid "choose_file"
+msgstr "wielt Fichier"
+
+msgid "delete_accounts"
+msgstr "läsche Konten"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes all bestehend Benotzerkonten"
+
+msgid "import_now"
+msgstr "Import Elo"
+
+msgid "none"
+msgstr "näischt"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Sot Reouverture sFTP Client App fir den Ännerunge virgeholl."
+
+msgid "already_bought_the_app"
+msgstr "Scho kaaft der App?"
+
+msgid "choose"
+msgstr "wielt"
+
+msgid "deleted!"
+msgstr "Geläscht!"
+
+msgid "use_syncronised_browsing"
+msgstr "benotzen syncronised Consultatioun"
+
+msgid "remote_directory"
+msgstr "Erfindungen Guide"
+
+msgid "rsa_key_only!"
+msgstr "RSA Schlësselwierder nëmmen!"
+
+msgid "no_key_selected"
+msgstr "Nee Schlëssel ausgewielt."
+
+msgid "ssh_key_file"
+msgstr "SSH Key Fichier"
+
+msgid "no_dir_selected"
+msgstr "Nee Richtung ausgewielt."
+
+msgid "keep_blank_for_current_password"
+msgstr "Hale fir aktuell Passwuert eidel."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "ask_for_password"
+msgstr "Froen fir Passwuert"
+
+msgid "anonymous"
+msgstr "anonym"
+
+msgid "account_type"
+msgstr "Kont Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Séchert Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Séchert Connection)"
+
+msgid "folder"
+msgstr "Dossier"
+
+msgid "advanced"
+msgstr "Détailléiert"
+
+msgid "folder_name"
+msgstr "Dossier Numm"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "New dobäimaachen"
+
+msgid "clean_now"
+msgstr "Clean Elo"
+
+msgid "host"
+msgstr "Provider"
+
+msgid "no_accounts_added..."
+msgstr "Nee Konten Iwwerwaachungslëscht ..."
+
+msgid "unknown"
+msgstr "onbekannt"
+
+msgid "file_saved!"
+msgstr "Fichier gerett!"
+
+msgid "uploading_file!"
+msgstr "Eropgelueden Datei!"
+
+msgid "save_failed!"
+msgstr "Späichert Kee!"
+
+msgid "search"
+msgstr "Sich"
+
+msgid "find"
+msgstr "Op ee Bléck"
+
+msgid "replace"
+msgstr "Ignoréieren"
+
+msgid "scroll_past_end"
+msgstr "Minière Vireg End"
+
+msgid "show_annotations"
+msgstr "Show configuréieren"
+
+msgid "show_gutter"
+msgstr "Show serieux"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Drécken Rand"
+
+msgid "highlight_active_line"
+msgstr "Highlight Aktiv Linn"
+
+msgid "word_wrap"
+msgstr "Wuert Ver"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "Virléiften"
+
+msgid "close_all_tabs"
+msgstr "Zoumaachen All Tabs"
+
+msgid "close_current_tab"
+msgstr "Zoumaachen Aktuell Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto retten Fichier wann ech Typ"
+
+msgid "auto_save"
+msgstr "Auto späicheren"
+
+msgid "quick_save"
+msgstr "Quick späicheren"
+
+msgid "documentation"
+msgstr "Dokumentatioun"
+
+msgid "themes"
+msgstr "Themen"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Kierzel"
+
+msgid "coming_soon"
+msgstr "Kënnt geschwënn"
+
+msgid "empty"
+msgstr "eidel"

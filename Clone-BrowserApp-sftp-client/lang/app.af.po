@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: af\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Spyskaart"
+
+msgid "file"
+msgstr "lêer"
+
+msgid "view"
+msgstr "Beskou"
+
+msgid "edit"
+msgstr "wysig"
+
+msgid "help"
+msgstr "help"
+
+msgid "manage_accounts"
+msgstr "bestuur Rekeninge"
+
+msgid "import_accounts"
+msgstr "invoer Rekeninge"
+
+msgid "export_accounts"
+msgstr "Rekeninge uitvoer"
+
+msgid "quick_connect"
+msgstr "Snel Connect"
+
+msgid "message_log"
+msgstr "boodskap Meld"
+
+msgid "local_directory"
+msgstr "plaaslike Gids"
+
+msgid "uploads_downloads"
+msgstr "Uploads / downloads"
+
+msgid "clear_saved_data"
+msgstr "Duidelik gestoor data"
+
+msgid "edit_settings"
+msgstr "instellings te wysig"
+
+msgid "report_bug"
+msgstr "Report a bug"
+
+msgid "suggest_feature"
+msgstr "Stel 'n Kenmerk"
+
+msgid "ask_a_question"
+msgstr "Vra 'n vraag"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "oor"
+
+msgid "exit"
+msgstr "uitgang"
+
+msgid "host_ip_address"
+msgstr "Host / IP-adres"
+
+msgid "username"
+msgstr "Gebruikersnaam"
+
+msgid "password"
+msgstr "wagwoord"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Verbind"
+
+msgid "welcome"
+msgstr "Welkom"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP kliënt is alles oor eenvoud, dit is gebou op die Google Chrome / Chrome OS verpak app koppelvlak sodat die jeug te vinnig en reageer nie. Sommige van die funksies sluit in 'n FTP-rekening Bestuurder om weg te slaan en te organiseer jou mees ons"
+
+msgid "latest_updates"
+msgstr "Laaste updates"
+
+msgid "server_status"
+msgstr "bediener Status"
+
+msgid "license_server"
+msgstr "lisensie bediener"
+
+msgid "sftp_support"
+msgstr "Ondersteuning"
+
+msgid "notice_update"
+msgstr "Kennisgewing / Updates"
+
+msgid "website"
+msgstr "webwerf"
+
+msgid "clear_all"
+msgstr "duidelik al"
+
+msgid "manage"
+msgstr "bestuur"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "laaste Release"
+
+msgid "released"
+msgstr "vrygestel"
+
+msgid "queued"
+msgstr "wachtrij"
+
+msgid "failed"
+msgstr "Kon"
+
+msgid "completed"
+msgstr "voltooi"
+
+msgid "settings"
+msgstr "instellings"
+
+msgid "add_folder"
+msgstr "Voeg gids"
+
+msgid "add_ftp_account"
+msgstr "Voeg FTP rekening"
+
+msgid "file_editor"
+msgstr "lêer redakteur"
+
+msgid "editor_preferences"
+msgstr "redakteur Voorkeure"
+
+msgid "your_ftp_accounts"
+msgstr "Jou FTP Rekeninge"
+
+msgid "most_recent_used"
+msgstr "Mees onlangs gebruik."
+
+msgid "no_connections_yet_made"
+msgstr "Nog geen verbindings gemaak"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Nog geen FTP rekeninge bygevoeg"
+
+msgid "most_recent_connections"
+msgstr "Mees onlangse Connections"
+
+msgid "last_10_connections_made"
+msgstr "Laaste 10 konneksies gemaak"
+
+msgid "designed_developed_by"
+msgstr "Ontwerp & Ontwikkel deur"
+
+msgid "about_info"
+msgstr "Gebruik asseblief die sFTP kliënt webwerf vir ondersteuning, is geen ondersteuning verskaf deur ons individuele webwerwe."
+
+msgid "local"
+msgstr "plaaslike"
+
+msgid "remote"
+msgstr "Afgeleë"
+
+msgid "remote_location_desc"
+msgstr "eg / public_html"
+
+msgid "create_directory"
+msgstr "Skep Gids"
+
+msgid "create_new_directory"
+msgstr "Skep nuwe gids"
+
+msgid "create_file"
+msgstr "Skep lêer"
+
+msgid "create_new_file"
+msgstr "Skep nuwe lêer"
+
+msgid "refresh_list"
+msgstr "Herlaai Lys"
+
+msgid "change"
+msgstr "verandering"
+
+msgid "report_a_bug"
+msgstr "Report a bug"
+
+msgid "suggest_a_feature"
+msgstr "Stel 'n Kenmerk"
+
+msgid "enter_password"
+msgstr "Tik wagwoord in"
+
+msgid "enter_your_password..."
+msgstr "Sleutel jou wagwoord in..."
+
+msgid "passphrase"
+msgstr "wagwoord"
+
+msgid "enter_your_passphrase..."
+msgstr "Gee jou wagwoord ..."
+
+msgid "email_sftp_client"
+msgstr "E-pos sFTP kliënt"
+
+msgid "faqs"
+msgstr "Vrae se"
+
+msgid "visit_sftp_client_website"
+msgstr "Besoek sFTP kliënt Webwerf"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Gradeer ons op die Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rapporteer 'n probleem of kry hulp"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Sluit by ons aan op Facebook vir updates"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Volg ons op Twitter vir updates"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Ons op Google vir updates"
+
+msgid "okay"
+msgstr "Goed"
+
+msgid "cancel"
+msgstr "kanselleer"
+
+msgid "close"
+msgstr "Naby"
+
+msgid "unknown_host"
+msgstr "onbekend Host"
+
+msgid "okay_to_continue"
+msgstr "Goed om voort te gaan?"
+
+msgid "fingerprint"
+msgstr "vingerafdruk"
+
+msgid "remember"
+msgstr "onthou"
+
+msgid "file_permissions"
+msgstr "permissies"
+
+msgid "file_permissions_desc"
+msgstr "Kies die nuwe eienskappe vir die geselekteerde lêer (s) / gids (s)"
+
+msgid "read"
+msgstr "Lees"
+
+msgid "write"
+msgstr "Skryf"
+
+msgid "execute"
+msgstr "uit te voer"
+
+msgid "owner"
+msgstr "Eienaar"
+
+msgid "group"
+msgstr "groep"
+
+msgid "public"
+msgstr "openbare"
+
+msgid "numeric_value"
+msgstr "numeriese waarde"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Tik die naam van die nuwe gids ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Tik die naam van die nuwe lêer ..."
+
+msgid "name"
+msgstr "naam"
+
+msgid "enter_a_password"
+msgstr "'N wagwoord in"
+
+msgid "language"
+msgstr "taal"
+
+msgid "seconds"
+msgstr "sekondes"
+
+msgid "minutes"
+msgstr "Minute"
+
+msgid "hour"
+msgstr "Uur"
+
+msgid "hours"
+msgstr "Ure"
+
+msgid "day"
+msgstr "dag"
+
+msgid "trial_left"
+msgstr "verhoor Left"
+
+msgid "register_now"
+msgstr "registreer Nou"
+
+msgid "general"
+msgstr "algemene"
+
+msgid "security"
+msgstr "sekuriteit"
+
+msgid "master_password"
+msgstr "hoof wagwoord"
+
+msgid "status"
+msgstr "status"
+
+msgid "enabled"
+msgstr "enabled"
+
+msgid "disabled"
+msgstr "gestremde"
+
+msgid "timeout"
+msgstr "tydverstreke"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Voeg rekening"
+
+msgid "support"
+msgstr "Ondersteuning"
+
+msgid "notice_updates"
+msgstr "Kennisgewing / Updates"
+
+msgid "please_login"
+msgstr "asseblief Teken in"
+
+msgid "your_session_timed_out"
+msgstr "Jou sessie het uitgetel"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Jammer die wagwoord wat jy ingetik het, is verkeerd!"
+
+msgid "login"
+msgstr "Teken aan"
+
+msgid "master_password_desc"
+msgstr "Stel hierdie hoof wagwoord om jou rekeninge veilig te hou."
+
+msgid "license_key"
+msgstr "Lisensie sleutel"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "op die regte pad"
+
+msgid "currently_unavailable"
+msgstr "Tans nie beskikbaar nie"
+
+msgid "no_message_to_display"
+msgstr "Geen boodskap te vertoon"
+
+msgid "offline_notice_title"
+msgstr "Onbereikbaar - Is jy op die regte pad of op 'n netwerk net verband?"
+
+msgid "offline_notice_desc"
+msgstr "Jy is tans op die regte pad, op 'n netwerk enigste verbinding of geen verband kon vasgestel word na ons bediener"
+
+msgid "edit_file"
+msgstr "Lêer wysig"
+
+msgid "download"
+msgstr "Aflaai"
+
+msgid "upload"
+msgstr "Laai"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP vereis"
+
+msgid "apply_to_all_files"
+msgstr "Van toepassing op alle lêers"
+
+msgid "activate_now"
+msgstr "aktiveer Nou"
+
+msgid "deactivate"
+msgstr "De-aktiveer"
+
+msgid "in_progress"
+msgstr "in Progress"
+
+msgid "complete"
+msgstr "volledige"
+
+msgid "direction"
+msgstr "rigting"
+
+msgid "progress"
+msgstr "vordering"
+
+msgid "permissions"
+msgstr "permissions"
+
+msgid "owner_group"
+msgstr "Eienaar / Groep"
+
+msgid "size"
+msgstr "grootte"
+
+msgid "type"
+msgstr "tipe"
+
+msgid "modified"
+msgstr "Gewysig"
+
+msgid "trial"
+msgstr "verhoor"
+
+msgid "cleared"
+msgstr "skoongemaak"
+
+msgid "error_connecting"
+msgstr "fout by die koppeling"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Fout by die koppeling aan te bied / IP-adres"
+
+msgid "error_connecting_to_port"
+msgstr "Fout by die koppeling na die hawe"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Kies eers 'n plaaslike gids!"
+
+msgid "go"
+msgstr "Gaan"
+
+msgid "confirm"
+msgstr "bevestig"
+
+msgid "delete"
+msgstr "verwyder"
+
+msgid "rename"
+msgstr "Herbenoem"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL (s) Kopieer na die knipbord"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Bevestig asseblief u die geselekteerde lêer (s) te skrap / gids (s)"
+
+msgid "cancelled_by_user"
+msgstr "Gekanselleerde deur gebruiker"
+
+msgid "already_exists_overwrite"
+msgstr "bestaan ​​reeds, oorskryf?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "my Rekeninge"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Lêer gestoor is nie! Alle rekeninge is gerugsteun."
+
+msgid "file_failed_please_try_again"
+msgstr "Lêer het misluk! Probeer asseblief weer."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Jy het tans geen rekeninge te back-up."
+
+msgid "saved!"
+msgstr "Gered!"
+
+msgid "please_enter_a_password"
+msgstr "'N wagwoord in!"
+
+msgid "connection_closed"
+msgstr "verbinding gesluit"
+
+msgid "listing_mode_set_to"
+msgstr "Listing af stel op"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Plaaslike bediener IP opgelos, met behulp van eksterne IP"
+
+msgid "login_incorrect"
+msgstr "Teken verkeerde"
+
+msgid "keeping_connection_alive"
+msgstr "Hou verband lewendig"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Nie kan skryf nie, data konneksie gesluit"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Nie in staat om te lees data verbinding gesluit"
+
+msgid "error_reading_file"
+msgstr "Kon nie lêer lees"
+
+msgid "error_writing_file"
+msgstr "Fout met skryf lêer"
+
+msgid "failed_to_change_directory_to"
+msgstr "Kon nie gids te verander na"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Jy mag nie die korrekte toestemming om toegang tot hierdie gids het"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Terugkeer terug na die vorige gids"
+
+msgid "activate"
+msgstr "aktiveer"
+
+msgid "payment"
+msgstr "betaling"
+
+msgid "license_key_is_required"
+msgstr "Lisensie sleutel vereis"
+
+msgid "license_activated!"
+msgstr "Lisensie Geaktiveerde!"
+
+msgid "your_license_has_been_validated"
+msgstr "Jou lisensie is goedgekeur."
+
+msgid "thank_you!"
+msgstr "Dankie!"
+
+msgid "buy_now!"
+msgstr "Koop nou!"
+
+msgid "buy_now"
+msgstr "koop Nou"
+
+msgid "one_off_fee"
+msgstr "eenmalige fooi"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Gradeer asseblief op na hierdie inligting met geen beperkings geniet"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Voer hieronder jou lisensie kode"
+
+msgid "or"
+msgstr "OF"
+
+msgid "loading..."
+msgstr "Laai ..."
+
+msgid "clear_accounts"
+msgstr "duidelik Rekeninge"
+
+msgid "clear_ssh_keys"
+msgstr "Duidelik SSH-sleutels"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Verwyder alle gered SSH sleutels"
+
+msgid "clear_app_settings"
+msgstr "Duidelike App Instellings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Verwyder alle inligting spesifieke instellings"
+
+msgid "clear_recent_connections"
+msgstr "Duidelike Onlangse Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Verwyder al die onlangse verbindings"
+
+msgid "import_type"
+msgstr "invoer Tipe"
+
+msgid "please_select"
+msgstr "Kies asseblief"
+
+msgid "import_file"
+msgstr "invoer lêer"
+
+msgid "choose_file"
+msgstr "Kies lêer"
+
+msgid "delete_accounts"
+msgstr "verwyder Rekeninge"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Verwyder alle bestaande rekeninge"
+
+msgid "import_now"
+msgstr "Voer nou"
+
+msgid "none"
+msgstr "Geen"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Herbegin asb sFTP kliënt artikels vir die veranderinge in werking tree."
+
+msgid "already_bought_the_app"
+msgstr "Reeds die program gekoop?"
+
+msgid "choose"
+msgstr "kies"
+
+msgid "deleted!"
+msgstr "Verwyder!"
+
+msgid "use_syncronised_browsing"
+msgstr "gebruik syncronised blaai"
+
+msgid "remote_directory"
+msgstr "Remote Gids"
+
+msgid "rsa_key_only!"
+msgstr "RSA sleutel net!"
+
+msgid "no_key_selected"
+msgstr "Geen sleutel gekies."
+
+msgid "ssh_key_file"
+msgstr "SSH Sleutel lêer"
+
+msgid "no_dir_selected"
+msgstr "Geen rig gekies."
+
+msgid "keep_blank_for_current_password"
+msgstr "Hou skoon en kliek om huidige wagwoord."
+
+msgid "logon_type"
+msgstr "logon Tipe"
+
+msgid "normal"
+msgstr "Normaal"
+
+msgid "ask_for_password"
+msgstr "Vra vir wagwoord"
+
+msgid "anonymous"
+msgstr "Anoniem"
+
+msgid "account_type"
+msgstr "Soort Rekening"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normale Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (veilige verbinding)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (veilige verbinding)"
+
+msgid "folder"
+msgstr "gids"
+
+msgid "advanced"
+msgstr "Gevorderde"
+
+msgid "folder_name"
+msgstr "Mapnaam"
+
+msgid "parent"
+msgstr "Ouer"
+
+msgid "new_ftp_site"
+msgstr "Nuwe FTP werf"
+
+msgid "new_folder"
+msgstr "Nuwe leêr"
+
+msgid "clean_now"
+msgstr "skoon Nou"
+
+msgid "host"
+msgstr "host"
+
+msgid "no_accounts_added..."
+msgstr "Geen rekeninge Added ..."
+
+msgid "unknown"
+msgstr "onbekend"
+
+msgid "file_saved!"
+msgstr "Lêer gestoor is nie!"
+
+msgid "uploading_file!"
+msgstr "Oplaai lêer!"
+
+msgid "save_failed!"
+msgstr "Slaan Kon!"
+
+msgid "search"
+msgstr "Soek"
+
+msgid "find"
+msgstr "Vind"
+
+msgid "replace"
+msgstr "vervang"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Wys aantekeninge"
+
+msgid "show_gutter"
+msgstr "Wys Gutter"
+
+msgid "show_invisibles"
+msgstr "Wys onsigbare"
+
+msgid "show_print_margin"
+msgstr "Wys Druk Marge"
+
+msgid "highlight_active_line"
+msgstr "Kies 'n voorbeeldfoto Active Line"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split Kode"
+
+msgid "preferences"
+msgstr "Voorkeure"
+
+msgid "close_all_tabs"
+msgstr "Close All Tabs"
+
+msgid "close_current_tab"
+msgstr "Close Huidige Oortjie"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto save lêer wanneer ek tik"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Vinnige Save"
+
+msgid "documentation"
+msgstr "dokumentasie"
+
+msgid "themes"
+msgstr "Temas"
+
+msgid "keyboard_shortcuts"
+msgstr "Kortpaaie"
+
+msgid "coming_soon"
+msgstr "Kom binnekort"
+
+msgid "empty"
+msgstr "leë"

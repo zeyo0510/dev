@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "ಮೆನು"
+
+msgid "file"
+msgstr "ಫೈಲ್"
+
+msgid "view"
+msgstr "ನೋಟ"
+
+msgid "edit"
+msgstr "ಸಂಪಾದಿಸಿ"
+
+msgid "help"
+msgstr "ಸಹಾಯ"
+
+msgid "manage_accounts"
+msgstr "ಖಾತೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
+
+msgid "import_accounts"
+msgstr "ಆಮದು ಖಾತೆಗಳು"
+
+msgid "export_accounts"
+msgstr "ರಫ್ತು ಖಾತೆಗಳು"
+
+msgid "quick_connect"
+msgstr "ತ್ವರಿತ ಸಂಪರ್ಕ"
+
+msgid "message_log"
+msgstr "ಸಂದೇಶ ಲಾಗ್"
+
+msgid "local_directory"
+msgstr "ಕೋಶ"
+
+msgid "uploads_downloads"
+msgstr "ಅಪ್ಲೋಡ್ಗಳು / ಡೌನ್ಲೋಡ್ಗಳು"
+
+msgid "clear_saved_data"
+msgstr "ತೆರವುಗೊಳಿಸಿ ಉಳಿಸಿದ ಡೇಟಾವನ್ನು"
+
+msgid "edit_settings"
+msgstr "ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಸಂಪಾದಿಸಿ"
+
+msgid "report_bug"
+msgstr "ಒಂದು ದೋಷವನ್ನು ವರದಿ"
+
+msgid "suggest_feature"
+msgstr "ಫೀಚರ್ ಸಲಹೆ"
+
+msgid "ask_a_question"
+msgstr "ಒಂದು ಪ್ರಶ್ನೆ ಕೇಳಿ"
+
+msgid "change_log"
+msgstr "ಲಾಗ್"
+
+msgid "about"
+msgstr "ಬಗ್ಗೆ"
+
+msgid "exit"
+msgstr "ನಿರ್ಗಮಿಸಿ"
+
+msgid "host_ip_address"
+msgstr "ಹೋಸ್ಟ್ / IP ವಿಳಾಸ"
+
+msgid "username"
+msgstr "ಬಳಕೆದಾರ ಹೆಸರು"
+
+msgid "password"
+msgstr "ಪಾಸ್ವರ್ಡ್"
+
+msgid "port"
+msgstr "ಪೋರ್ಟ್"
+
+msgid "connect"
+msgstr "ಸಂಪರ್ಕಿಸಿ"
+
+msgid "welcome"
+msgstr "ಸ್ವಾಗತ"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP ಕ್ಲೈಂಟ್ ಅಪ್ಲಿಕೇಶನ್ ವೇಗದ ಸ್ಪಂದಿಸುವ ಅವಕಾಶ ಗೂಗಲ್ ಕ್ರೋಮ್ / ಕ್ರೋಮ್ ಓಎಸ್ ಪ್ಯಾಕ್ ಅಪ್ಲಿಕೇಶನ್ ಇಂಟರ್ಫೇಸ್ ಮೇಲೆ ಕಟ್ಟಲಾಗಿದೆ ಎಲ್ಲಾ ಸರಳತೆ ಬಗ್ಗೆ. ಕಾರ್ಯವನ್ನು ಕೆಲವು ದೂರ ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ನಿಮ್ಮ ಅತ್ಯಂತ ನಮಗೆ ಸಂಘಟಿಸಲು ಒಂದು FTP ಖಾತೆ ವ್ಯವಸ್ಥಾಪಕ ಒಳಗೊಂಡಿದೆ"
+
+msgid "latest_updates"
+msgstr "ಇತ್ತೀಚಿನ ಅಪ್ಡೇಟ್ಗಳು"
+
+msgid "server_status"
+msgstr "ಸರ್ವರ್ ಸ್ಥಿತಿ"
+
+msgid "license_server"
+msgstr "ಪರವಾನಗಿ ಸರ್ವರ್"
+
+msgid "sftp_support"
+msgstr "ಬೆಂಬಲ"
+
+msgid "notice_update"
+msgstr "ಎಚ್ಚರಿಕೆ / ಅಪ್ಡೇಟ್ಗಳು"
+
+msgid "website"
+msgstr "ವೆಬ್ಸೈಟ್"
+
+msgid "clear_all"
+msgstr "ಎಲ್ಲವನ್ನೂ ತೆಗೆ"
+
+msgid "manage"
+msgstr "ನಿರ್ವಹಿಸು"
+
+msgid "recheck"
+msgstr "ಮರು ಚೆಕ್"
+
+msgid "last_release"
+msgstr "ಕೊನೆಯ ಬಿಡುಗಡೆ"
+
+msgid "released"
+msgstr "ಬಿಡುಗಡೆ"
+
+msgid "queued"
+msgstr "ಸರತಿಯಲ್ಲಿ"
+
+msgid "failed"
+msgstr "ವಿಫಲವಾಗಿದೆ"
+
+msgid "completed"
+msgstr "ಪೂರ್ಣಗೊಂಡಿದೆ"
+
+msgid "settings"
+msgstr "ಸೆಟ್ಟಿಂಗ್ಗಳು"
+
+msgid "add_folder"
+msgstr "ಫೋಲ್ಡರ್ ಸೇರಿಸು"
+
+msgid "add_ftp_account"
+msgstr "FTP ಖಾತೆಯನ್ನು ಸೇರಿಸಿ"
+
+msgid "file_editor"
+msgstr "ಫೈಲ್ ಸಂಪಾದಕ"
+
+msgid "editor_preferences"
+msgstr "ಸಂಪಾದಕ ಪ್ರಾಶಸ್ತ್ಯಗಳು"
+
+msgid "your_ftp_accounts"
+msgstr "ನಿಮ್ಮ FTP ಖಾತೆಗಳು"
+
+msgid "most_recent_used"
+msgstr "ಇತ್ತೀಚೆಗೆ ಬಳಸಲಾಗುತ್ತದೆ."
+
+msgid "no_connections_yet_made"
+msgstr "ಯಾವುದೇ ಸಂಪರ್ಕವನ್ನು ಇನ್ನೂ"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ಯಾವುದೇ FTP ಖಾತೆಗಳು ಇನ್ನೂ ಸೇರಿಸಲಾಗಿದೆ"
+
+msgid "most_recent_connections"
+msgstr "ಇತ್ತೀಚಿನ ಸಂಪರ್ಕಗಳು"
+
+msgid "last_10_connections_made"
+msgstr "ಮಾಡಿದ ಕಳೆದ 10 ಸಂಪರ್ಕಗಳನ್ನು"
+
+msgid "designed_developed_by"
+msgstr "ವಿನ್ಯಾಸಗೊಳಿಸಿದ ಮತ್ತು ಅಭಿವೃದ್ಧಿ"
+
+msgid "about_info"
+msgstr "ದಯವಿಟ್ಟು ಬೆಂಬಲ SFTP ಕ್ಲೈಂಟ್ ವೆಬ್ಸೈಟ್ ಬಳಸಲು ಯಾವುದೇ ಬೆಂಬಲ ನಮ್ಮ ವೈಯಕ್ತಿಕ ವೆಬ್ಸೈಟ್ಗಳಿಗೆ ಮೂಲಕ ಒದಗಿಸಲಾಗುತ್ತದೆ."
+
+msgid "local"
+msgstr "ಸ್ಥಳೀಯ"
+
+msgid "remote"
+msgstr "ರಿಮೋಟ್"
+
+msgid "remote_location_desc"
+msgstr "ದಾ / public_html"
+
+msgid "create_directory"
+msgstr "ಡೈರೆಕ್ಟರಿ ರಚಿಸಲು"
+
+msgid "create_new_directory"
+msgstr "ಹೊಸ ಕೋಶವನ್ನು ರಚಿಸಿ"
+
+msgid "create_file"
+msgstr "ಕಡತ ರಚಿಸಿ"
+
+msgid "create_new_file"
+msgstr "ಹೊಸ ಕಡತ ರಚಿಸಿ"
+
+msgid "refresh_list"
+msgstr "ರಿಫ್ರೆಶ್ ಪಟ್ಟಿ"
+
+msgid "change"
+msgstr "ಬದಲಾವಣೆ"
+
+msgid "report_a_bug"
+msgstr "ಒಂದು ದೋಷವನ್ನು ವರದಿ"
+
+msgid "suggest_a_feature"
+msgstr "ಫೀಚರ್ ಸಲಹೆ"
+
+msgid "enter_password"
+msgstr "ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ"
+
+msgid "enter_your_password..."
+msgstr "ನಿಮ್ಮ ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ ..."
+
+msgid "passphrase"
+msgstr "ಪಾಸ್ಫ್ರೇಸ್"
+
+msgid "enter_your_passphrase..."
+msgstr "ನಿಮ್ಮ ಪಾಸ್ಫ್ರೇಸ್ ಅನ್ನು ನಮೂದಿಸಿ ..."
+
+msgid "email_sftp_client"
+msgstr "ಇಮೇಲ್ SFTP ಕ್ಲೈಂಟ್"
+
+msgid "faqs"
+msgstr "FAQ '"
+
+msgid "visit_sftp_client_website"
+msgstr "sFTP ಭೇಟಿ ಗ್ರಾಹಕ ವೆಬ್ಸೈಟ್"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "ಗೂಗಲ್ ಕ್ರೋಮ್ ವೆಬ್ ಅಂಗಡಿ ನಮಗೆ ದರ"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ಸಮಸ್ಯೆಯನ್ನು ವರದಿಮಾಡಿ ಅಥವಾ ಸಹಾಯ ಪಡೆಯಲು"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "ನವೀಕರಣಗಳನ್ನು ಫೇಸ್ಬುಕ್ ಮೇಲೆ ನಮಗೆ ಸೇರಲು"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "ನವೀಕರಣಗಳನ್ನು Twitter ನಲ್ಲಿ ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "ನವೀಕರಣಗಳನ್ನು Google ನಲ್ಲಿ ನಮ್ಮನ್ನು +1"
+
+msgid "okay"
+msgstr "ಸರಿ"
+
+msgid "cancel"
+msgstr "ರದ್ದು"
+
+msgid "close"
+msgstr "ಮುಚ್ಚಿ"
+
+msgid "unknown_host"
+msgstr "ಅಜ್ಞಾತ ಹೋಸ್ಟ್"
+
+msgid "okay_to_continue"
+msgstr "ಮುಂದುವರಿಸಲು ಸರಿ?"
+
+msgid "fingerprint"
+msgstr "ಫಿಂಗರ್ಪ್ರಿಂಟ್"
+
+msgid "remember"
+msgstr "ನೆನಪಿಡಿ"
+
+msgid "file_permissions"
+msgstr "ಫೈಲ್ ಅನುಮತಿಗಳು"
+
+msgid "file_permissions_desc"
+msgstr "ದಯವಿಟ್ಟು (ಗಳು) ಆಯ್ಕೆ ಕಡತ (ಗಳು) / ಫೋಲ್ಡರ್ ಹೊಸ ಲಕ್ಷಣಗಳನ್ನು ಆಯ್ಕೆ"
+
+msgid "read"
+msgstr "ಓದಿ"
+
+msgid "write"
+msgstr "ಬರೆಯಿರಿ"
+
+msgid "execute"
+msgstr "ನಿರ್ವಹಿಸು"
+
+msgid "owner"
+msgstr "ಮಾಲೀಕ"
+
+msgid "group"
+msgstr "ಗ್ರೂಪ್"
+
+msgid "public"
+msgstr "ಸಾರ್ವಜನಿಕ"
+
+msgid "numeric_value"
+msgstr "ಸಂಖ್ಯಾ ಮೌಲ್ಯ"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "ಹೊಸ ಕೋಶದ ಹೆಸರನ್ನು ನಮೂದಿಸಿ ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "ಹೊಸ ಫೈಲ್ ಹೆಸರು ನಮೂದಿಸಿ ..."
+
+msgid "name"
+msgstr "ಹೆಸರು"
+
+msgid "enter_a_password"
+msgstr "ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ"
+
+msgid "language"
+msgstr "ಭಾಷಾ"
+
+msgid "seconds"
+msgstr "ಸೆಕೆಂಡ್ಸ್"
+
+msgid "minutes"
+msgstr "ಮಿನಿಟ್ಸ್"
+
+msgid "hour"
+msgstr "ಅವರ್"
+
+msgid "hours"
+msgstr "ಅವರ್ಸ್"
+
+msgid "day"
+msgstr "ದಿನ"
+
+msgid "trial_left"
+msgstr "ಟ್ರಯಲ್ ಎಡ"
+
+msgid "register_now"
+msgstr "ಈಗ ನೋಂದಣಿ"
+
+msgid "general"
+msgstr "ಜನರಲ್"
+
+msgid "security"
+msgstr "ಭದ್ರತಾ"
+
+msgid "master_password"
+msgstr "ಮಾಸ್ಟರ್ ಪಾಸ್ವರ್ಡ್"
+
+msgid "status"
+msgstr "ಸ್ಥಿತಿ"
+
+msgid "enabled"
+msgstr "ಶಕ್ತಗೊಂಡಿದೆ"
+
+msgid "disabled"
+msgstr "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+
+msgid "timeout"
+msgstr "ಮುಗಿಯಿತು"
+
+msgid "save"
+msgstr "ಉಳಿಸಿ"
+
+msgid "add_account"
+msgstr "ಖಾತೆಯನ್ನು ಸೇರಿಸು"
+
+msgid "support"
+msgstr "ಬೆಂಬಲ"
+
+msgid "notice_updates"
+msgstr "ಎಚ್ಚರಿಕೆ / ಅಪ್ಡೇಟ್ಗಳು"
+
+msgid "please_login"
+msgstr "ದಯವಿಟ್ಟು ಲಾಗಿನ್"
+
+msgid "your_session_timed_out"
+msgstr "ನಿಮ್ಮ ಸೆಷನ್ ಟೈಮ್ಡ್ ಔಟ್"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "ಕ್ಷಮಿಸಿ ನೀವು ನಮೂದಿಸಿದ ಪಾಸ್ವರ್ಡ್ ತಪ್ಪಾಗಿದೆ ಆಗಿತ್ತು!"
+
+msgid "login"
+msgstr "ಲಾಗಿನ್"
+
+msgid "master_password_desc"
+msgstr "ನಿಮ್ಮ ಖಾತೆಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಇರಿಸಲು ಮಾಸ್ಟರ್ ಗುಪ್ತಪದವನ್ನು ಹೊಂದಿಸುತ್ತದೆ."
+
+msgid "license_key"
+msgstr "ಪರವಾನಗಿ ಕೀಲಿ"
+
+msgid "online"
+msgstr "ಆನ್ಲೈನ್"
+
+msgid "offline"
+msgstr "ಆಫ್ಲೈನ್"
+
+msgid "currently_unavailable"
+msgstr "ಪ್ರಸ್ತುತ ಲಭ್ಯವಿರುವುದಿಲ್ಲ"
+
+msgid "no_message_to_display"
+msgstr "ಪ್ರದರ್ಶಿಸಲು ಯಾವುದೇ ಸಂದೇಶ"
+
+msgid "offline_notice_title"
+msgstr "ಅಲಭ್ಯ - ನೀವು ಆಫ್ಲೈನ್ ಅಥವಾ ಒಂದು ಜಾಲಬಂಧ ಮಾತ್ರ ಸಂಪರ್ಕವನ್ನು ಬಯಸುವಿರಾ?"
+
+msgid "offline_notice_desc"
+msgstr "ನೀವು ಕೇವಲ ಸಂಪರ್ಕ ಅಥವಾ ಯಾವುದೇ ಸಂಪರ್ಕವನ್ನು ನೆಟ್ವರ್ಕ್ ನಮ್ಮ ಸರ್ವರ್ಗೆ ಸ್ಥಾಪಿಸಿತು ಎಂದು, ಪ್ರಸ್ತುತ ಆಫ್ಲೈನ್"
+
+msgid "edit_file"
+msgstr "ಫೈಲ್ ಸಂಪಾದಿಸಿ"
+
+msgid "download"
+msgstr "ಡೌನ್ಲೋಡ್"
+
+msgid "upload"
+msgstr "ಅಪ್ಲೋಡ್"
+
+msgid "host_ip_is_required"
+msgstr "ಹೋಸ್ಟ್ / ಐಪಿ ಅಗತ್ಯವಿದೆ"
+
+msgid "apply_to_all_files"
+msgstr "ಎಲ್ಲಾ ಕಡತಗಳನ್ನು ಅನ್ವಯಿಸುತ್ತವೆ"
+
+msgid "activate_now"
+msgstr "ಈಗ ಕ್ರಿಯಾಶೀಲಗೊಳಿಸು"
+
+msgid "deactivate"
+msgstr "ಡಿ-ಸಕ್ರಿಯಗೊಳಿಸಿ"
+
+msgid "in_progress"
+msgstr "ಪ್ರಗತಿಯಲ್ಲಿದೆ"
+
+msgid "complete"
+msgstr "ಕಂಪ್ಲೀಟ್"
+
+msgid "direction"
+msgstr "ನಿರ್ದೇಶನ"
+
+msgid "progress"
+msgstr "ಪ್ರೋಗ್ರೆಸ್"
+
+msgid "permissions"
+msgstr "ಅನುಮತಿಗಳು"
+
+msgid "owner_group"
+msgstr "ಮಾಲೀಕ / ಗ್ರೂಪ್"
+
+msgid "size"
+msgstr "ಗಾತ್ರ"
+
+msgid "type"
+msgstr "ಕೌಟುಂಬಿಕತೆ"
+
+msgid "modified"
+msgstr "ಬದಲಾಯಿಸಲಾಗಿತ್ತು"
+
+msgid "trial"
+msgstr "ಟ್ರಯಲ್"
+
+msgid "cleared"
+msgstr "ತೆರವುಗೊಳಿಸಲಾಗಿದೆ"
+
+msgid "error_connecting"
+msgstr "ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ ದೋಷ"
+
+msgid "error_connecting_to_host_ip"
+msgstr "ಆತಿಥ್ಯ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ ದೋಷ / IP ವಿಳಾಸ"
+
+msgid "error_connecting_to_port"
+msgstr "ಪೋರ್ಟ್ ಸಂಪರ್ಕ ದೋಷ"
+
+msgid "please_select_a_local_directory_first"
+msgstr "ದಯವಿಟ್ಟು ಮೊದಲು ಕೋಶ ಆಯ್ಕೆ!"
+
+msgid "go"
+msgstr "ಹೋಗಿ"
+
+msgid "confirm"
+msgstr "ದೃಢೀಕರಿಸಿ"
+
+msgid "delete"
+msgstr "ಅಳಿಸಿ"
+
+msgid "rename"
+msgstr "ಮರುಹೆಸರಿಸು"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL ನಕಲಿಸಿ (ಗಳು) ಕ್ಲಿಪ್ಬೋರ್ಡ್ಗೆ"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "/ ಫೋಲ್ಡರ್ (ರು) ನೀವು ಆಯ್ಕೆ ಕಡತ (ಗಳು) ಅಳಿಸಲು ಬಯಸುವ ಖಚಿತಪಡಿಸಲು ದಯವಿಟ್ಟು"
+
+msgid "cancelled_by_user"
+msgstr "ಬಳಕೆದಾರರಿಂದ ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
+
+msgid "already_exists_overwrite"
+msgstr "ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ ಬದಲಿಸಿ?"
+
+msgid "dashboard"
+msgstr "ಡ್ಯಾಶ್ಬೋರ್ಡ್"
+
+msgid "my_accounts"
+msgstr "ನನ್ನ ಖಾತೆಗಳನ್ನು"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ಉಳಿಸಿದ ಫೈಲ್! ಎಲ್ಲಾ ಖಾತೆಗಳನ್ನು ನಿರ್ಧರಿಸುತ್ತವೆ."
+
+msgid "file_failed_please_try_again"
+msgstr "ಫೈಲ್ ವಿಫಲವಾಗಿದೆ! ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "ನೀವು ಪ್ರಸ್ತುತ ಯಾವುದೇ ಖಾತೆಗಳನ್ನು ಬ್ಯಾಕ್ಅಪ್ ಮಾಡಬೇಕು."
+
+msgid "saved!"
+msgstr "ಉಳಿಸಿದ!"
+
+msgid "please_enter_a_password"
+msgstr "ದಯವಿಟ್ಟು ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಿ!"
+
+msgid "connection_closed"
+msgstr "ಸಂಪರ್ಕವು ಕಡಿದು"
+
+msgid "listing_mode_set_to"
+msgstr "ಮೋಡ್ಗೆ ಸೆಟ್ ಪಟ್ಟಿ"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "ಸ್ಥಳೀಯ ಸರ್ವರ್ IP ಹೊರಗಿನ IP ಬಳಸಿಕೊಂಡು ಬಗೆಹರಿಯಿತು"
+
+msgid "login_incorrect"
+msgstr "ಲಾಗಿನ್ ತಪ್ಪು"
+
+msgid "keeping_connection_alive"
+msgstr "ಜೀವಂತವಾಗಿ ಸಂಪರ್ಕ ಕೀಪಿಂಗ್"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "ಬರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ, ಡೇಟಾ ಸಂಪರ್ಕವನ್ನು ಮುಚ್ಚಿದೆ"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ಓದಲು ಡೇಟಾ ಸಂಪರ್ಕವನ್ನು ಮುಚ್ಚಿದೆ ಸಾಧ್ಯವಿಲ್ಲ"
+
+msgid "error_reading_file"
+msgstr "ಕಡತ ಓದುವ ದೋಷ"
+
+msgid "error_writing_file"
+msgstr "ಕಡತ ಬರವಣಿಗೆಯು ದೋಷ"
+
+msgid "failed_to_change_directory_to"
+msgstr "ಕೋಶಕ್ಕೆ ಬದಲಾಯಿಸಿ ವಿಫಲವಾಗಿದೆ"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "ಈ ಕೋಶವನ್ನು ಪ್ರವೇಶಿಸಲು ಸರಿಯಾದ ಅನುಮತಿಗಳನ್ನು ಹೊಂದಿರುವುದಿಲ್ಲ"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "ಹಿಂದಿನ ಕೋಶವನ್ನು ಹಿಂತಿರುಗುವ"
+
+msgid "activate"
+msgstr "ಸಕ್ರಿಯಗೊಳಿಸಿ"
+
+msgid "payment"
+msgstr "ಪಾವತಿ"
+
+msgid "license_key_is_required"
+msgstr "ಪರವಾನಗಿ ಕೀಲಿ ಅಗತ್ಯವಿದೆ"
+
+msgid "license_activated!"
+msgstr "ಪರವಾನಗಿ ಸಕ್ರಿಯ!"
+
+msgid "your_license_has_been_validated"
+msgstr "ನಿಮ್ಮ ಪರವಾನಗಿ ಊರ್ಜಿತಗೊಳಿಸಲಾಗಿದೆ."
+
+msgid "thank_you!"
+msgstr "ಧನ್ಯವಾದಗಳು!"
+
+msgid "buy_now!"
+msgstr "ಈಗ ಖರೀದಿಸು!"
+
+msgid "buy_now"
+msgstr "ಈಗ ಖರೀದಿಸು"
+
+msgid "one_off_fee"
+msgstr "ಒಂದು ಆಫ್ ಶುಲ್ಕ"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "ಯಾವುದೇ ನಿರ್ಬಂಧವಿಲ್ಲದೆ ಈ ಅಪ್ಲಿಕೇಶನ್ ಆನಂದಿಸಿ ಅಪ್ಗ್ರೇಡ್ ಮಾಡಿ"
+
+msgid "please_enter_your_license_key_below"
+msgstr "ಕೆಳಗಿನ ನಿಮ್ಮ ಪರವಾನಗಿ ಕೀಲಿ ನಮೂದಿಸಿ"
+
+msgid "or"
+msgstr "ಅಥವಾ"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "ಖಾತೆಗಳು ತೆರವುಗೊಳಿಸಿ"
+
+msgid "clear_ssh_keys"
+msgstr "ತೆರವುಗೊಳಿಸಿ SSH ಕೀಗಳನ್ನು"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "ಎಲ್ಲಾ ಉಳಿಸಿದ SSH ಕೀಲಿಗಳ ಅಳಿಸಿದರೆ"
+
+msgid "clear_app_settings"
+msgstr "ಅಪ್ಲಿಕೇಶನ್ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "ಎಲ್ಲಾ ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ದಿಷ್ಟ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಅಳಿಸಿದರೆ"
+
+msgid "clear_recent_connections"
+msgstr "ಇತ್ತೀಚಿನ ಸಂಪರ್ಕಗಳು ತೆರವುಗೊಳಿಸಿ"
+
+msgid "deletes_all_recent_connections"
+msgstr "ಎಲ್ಲಾ ಇತ್ತೀಚಿನ ಸಂಪರ್ಕಗಳನ್ನು ಅಳಿಸಿದರೆ"
+
+msgid "import_type"
+msgstr "ಆಮದು ಕೌಟುಂಬಿಕತೆ"
+
+msgid "please_select"
+msgstr "ದಯವಿಟ್ಟು ಆಯ್ಕೆ ಮಾಡು"
+
+msgid "import_file"
+msgstr "ಆಮದು ಫೈಲ್"
+
+msgid "choose_file"
+msgstr "ಫೈಲ್ ಆಯ್ಕೆ"
+
+msgid "delete_accounts"
+msgstr "ಖಾತೆಗಳನ್ನು ಅಳಿಸಿ"
+
+msgid "deletes_all_existing_accounts"
+msgstr "ಎಲ್ಲಾ ಖಾತೆಗಳನ್ನು ಅಳಿಸಿ"
+
+msgid "import_now"
+msgstr "ಈಗ ಆಮದು"
+
+msgid "none"
+msgstr "ಯಾವುದೂ"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "ಬದಲಾವಣೆಗಳು ಪರಿಣಾಮ ಬೀರಲು ನೀವು ದಯವಿಟ್ಟು SFTP ಕ್ಲೈಂಟ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ."
+
+msgid "already_bought_the_app"
+msgstr "ಈಗಾಗಲೇ ಅಪ್ಲಿಕೇಶನ್ ಖರೀದಿಸಿತು?"
+
+msgid "choose"
+msgstr "ಆಯ್ಕೆ"
+
+msgid "deleted!"
+msgstr "ಅಳಿಸಲಾಗಿದೆ!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised ಬ್ರೌಸಿಂಗ್ ಬಳಸಲು"
+
+msgid "remote_directory"
+msgstr "ರಿಮೋಟ್ ಡೈರೆಕ್ಟರಿ"
+
+msgid "rsa_key_only!"
+msgstr "RSA ಕೀ ಮಾತ್ರ!"
+
+msgid "no_key_selected"
+msgstr "ಯಾವುದೇ ಪ್ರಮುಖ ಆಯ್ಕೆ."
+
+msgid "ssh_key_file"
+msgstr "SSH ಕೀಲಿ ಫೈಲ್"
+
+msgid "no_dir_selected"
+msgstr "ಯಾವುದೇ ಡಿರ್ ಆಯ್ಕೆ."
+
+msgid "keep_blank_for_current_password"
+msgstr "ಪ್ರಸ್ತುತ ಪಾಸ್ವರ್ಡ್ ಖಾಲಿ ಕೀಪ್."
+
+msgid "logon_type"
+msgstr "ಲಾಗಾನ್ ಕೌಟುಂಬಿಕತೆ"
+
+msgid "normal"
+msgstr "ಸಾಧಾರಣ"
+
+msgid "ask_for_password"
+msgstr "ಪಾಸ್ವರ್ಡ್ ಕೇಳಿ"
+
+msgid "anonymous"
+msgstr "ಅನಾಮಧೇಯ"
+
+msgid "account_type"
+msgstr "ಖಾತೆಯ ಪ್ರಕಾರ"
+
+msgid "ftp_normal_connection"
+msgstr "FTP ಯ (ಸಾಧಾರಣ ಸಂಪರ್ಕ)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (ಸುರಕ್ಷಿತ ಸಂಪರ್ಕ)"
+
+msgid "ssh_secure_connection"
+msgstr "ಯಂತ್ರವನ್ನು ssh (ಸುರಕ್ಷಿತ ಸಂಪರ್ಕ)"
+
+msgid "folder"
+msgstr "ಫೋಲ್ಡರ್"
+
+msgid "advanced"
+msgstr "ಸುಧಾರಿತ"
+
+msgid "folder_name"
+msgstr "ಫೋಲ್ಡರ್ ಹೆಸರು"
+
+msgid "parent"
+msgstr "ಪೋಷಕ"
+
+msgid "new_ftp_site"
+msgstr "ಹೊಸ FTP ತಾಣದ"
+
+msgid "new_folder"
+msgstr "ಹೊಸ ಫೋಲ್ಡರ್"
+
+msgid "clean_now"
+msgstr "ಈಗ ಕ್ಲೀನ್"
+
+msgid "host"
+msgstr "ಹೋಸ್ಟ್"
+
+msgid "no_accounts_added..."
+msgstr "ಯಾವುದೇ ಖಾತೆಗಳು ಸೇರಿಸಲಾಗಿದೆ ..."
+
+msgid "unknown"
+msgstr "ಅಜ್ಞಾತ"
+
+msgid "file_saved!"
+msgstr "ಉಳಿಸಿದ ಫೈಲ್!"
+
+msgid "uploading_file!"
+msgstr "ಫೈಲ್ ಅಪ್ಲೋಡ್!"
+
+msgid "save_failed!"
+msgstr "ಉಳಿಸಿ ವಿಫಲವಾಗಿದೆ!"
+
+msgid "search"
+msgstr "ಹುಡುಕು"
+
+msgid "find"
+msgstr "ಕ್ಲಿಕ್"
+
+msgid "replace"
+msgstr "ಬದಲಾಯಿಸಿ"
+
+msgid "scroll_past_end"
+msgstr "ಸ್ಕ್ರಾಲ್ ಪಾಸ್ಟ್ ಎಂಡ್"
+
+msgid "show_annotations"
+msgstr "ಶೋ ಟಿಪ್ಪಣಿಗಳು"
+
+msgid "show_gutter"
+msgstr "ಶೋ ಚರಂಡಿಯ"
+
+msgid "show_invisibles"
+msgstr "ಇನ್ವಿಸಿಬಲ್ಸ್ಗೆ ಶೋ"
+
+msgid "show_print_margin"
+msgstr "ಪ್ರಿಂಟ್ ಮಾರ್ಜಿನ್ ಶೋ"
+
+msgid "highlight_active_line"
+msgstr "ಸಕ್ರಿಯ ಲೈನ್ ಹೈಲೈಟ್"
+
+msgid "word_wrap"
+msgstr "ಪದ ಸುತ್ತು"
+
+msgid "split_code"
+msgstr "ಒಡೆದ ಕೋಡ್"
+
+msgid "preferences"
+msgstr "ಆಯ್ಕೆಗಳು"
+
+msgid "close_all_tabs"
+msgstr "ಟ್ಯಾಬ್ಗಳನ್ನು ಮುಚ್ಚಿ ಎಲ್ಲಾ"
+
+msgid "close_current_tab"
+msgstr "ಈಗಿನಹಾಳೆಯನ್ನುಮುಚ್ಚು"
+
+msgid "auto_save_file_when_i_type"
+msgstr "ನಾನು ಟೈಪ್ ಆಟೋ ಕಡತವನ್ನು ಉಳಿಸಲು"
+
+msgid "auto_save"
+msgstr "ಆಟೋ ಉಳಿಸಿ"
+
+msgid "quick_save"
+msgstr "ತ್ವರಿತ ಉಳಿಸಿ"
+
+msgid "documentation"
+msgstr "ದಾಖಲೆ"
+
+msgid "themes"
+msgstr "ಥೀಮ್ಗಳು"
+
+msgid "keyboard_shortcuts"
+msgstr "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್ಕಟ್ಗಳು"
+
+msgid "coming_soon"
+msgstr "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ"
+
+msgid "empty"
+msgstr "ಖಾಲಿ"

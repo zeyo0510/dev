@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Thực đơn"
+
+msgid "file"
+msgstr "Tập tin"
+
+msgid "view"
+msgstr "Lượt xem"
+
+msgid "edit"
+msgstr "Chỉnh sửa"
+
+msgid "help"
+msgstr "Trợ giúp"
+
+msgid "manage_accounts"
+msgstr "quản lý tài khoản"
+
+msgid "import_accounts"
+msgstr "Tài khoản nhập khẩu"
+
+msgid "export_accounts"
+msgstr "Tài khoản xuất khẩu"
+
+msgid "quick_connect"
+msgstr "Kết nối nhanh"
+
+msgid "message_log"
+msgstr "tin nhắn Đăng nhập"
+
+msgid "local_directory"
+msgstr "Local mục"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Xóa dữ liệu đã lưu"
+
+msgid "edit_settings"
+msgstr "chỉnh sửa Cài đặt"
+
+msgid "report_bug"
+msgstr "Báo cáo lỗi"
+
+msgid "suggest_feature"
+msgstr "Đề nghị một tính năng"
+
+msgid "ask_a_question"
+msgstr "Đặt câu hỏi"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "Trong khoảng"
+
+msgid "exit"
+msgstr "Lối thoát"
+
+msgid "host_ip_address"
+msgstr "Host / IP Địa chỉ"
+
+msgid "username"
+msgstr "Tên đăng nhập"
+
+msgid "password"
+msgstr "Mật khẩu"
+
+msgid "port"
+msgstr "Hải cảng"
+
+msgid "connect"
+msgstr "Kết nối"
+
+msgid "welcome"
+msgstr "Chào mừng"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Khách hàng là tất cả về sự đơn giản, nó đã được xây dựng trên giao diện ứng dụng đóng gói Google Chrome / Chrome OS cho phép các ứng dụng để có thể nhanh chóng và đáp ứng. Một số chức năng bao gồm quản lý tài khoản FTP để lưu trữ và tổ chức đi hầ"
+
+msgid "latest_updates"
+msgstr "Cập nhật mới nhất"
+
+msgid "server_status"
+msgstr "Tình trạng máy chủ"
+
+msgid "license_server"
+msgstr "License server"
+
+msgid "sftp_support"
+msgstr "Ủng hộ"
+
+msgid "notice_update"
+msgstr "Thông báo / cập nhật"
+
+msgid "website"
+msgstr "Trang mạng"
+
+msgid "clear_all"
+msgstr "Làm sạch tất cả"
+
+msgid "manage"
+msgstr "quản lý"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Phát hành cuối"
+
+msgid "released"
+msgstr "Phát hành"
+
+msgid "queued"
+msgstr "xếp hàng"
+
+msgid "failed"
+msgstr "Thất bại"
+
+msgid "completed"
+msgstr "Đã hoàn thành"
+
+msgid "settings"
+msgstr "Cài đặt"
+
+msgid "add_folder"
+msgstr "Thêm thư mục"
+
+msgid "add_ftp_account"
+msgstr "Thêm tài khoản FTP"
+
+msgid "file_editor"
+msgstr "file Editor"
+
+msgid "editor_preferences"
+msgstr "Tuỳ chọn biên tập viên"
+
+msgid "your_ftp_accounts"
+msgstr "Tài khoản FTP của bạn"
+
+msgid "most_recent_used"
+msgstr "Gần đây nhất được sử dụng."
+
+msgid "no_connections_yet_made"
+msgstr "Không có kết nối chưa thực hiện"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Không có tài khoản FTP nào được bổ sung"
+
+msgid "most_recent_connections"
+msgstr "Hầu hết các kết nối gần đây"
+
+msgid "last_10_connections_made"
+msgstr "10 kết nối được tạo"
+
+msgid "designed_developed_by"
+msgstr "Được thiết kế và phát triển bởi"
+
+msgid "about_info"
+msgstr "Vui lòng sử dụng các trang web của khách hàng SFTP hỗ trợ, không hỗ trợ được cung cấp thông qua các trang web cá nhân của chúng tôi."
+
+msgid "local"
+msgstr "địa phương"
+
+msgid "remote"
+msgstr "Xa"
+
+msgid "remote_location_desc"
+msgstr "ví dụ như / public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Tạo mới thư mục"
+
+msgid "create_file"
+msgstr "tạo tập tin"
+
+msgid "create_new_file"
+msgstr "Tạo New File"
+
+msgid "refresh_list"
+msgstr "Danh sách Refresh"
+
+msgid "change"
+msgstr "Thay đổi"
+
+msgid "report_a_bug"
+msgstr "Báo cáo lỗi"
+
+msgid "suggest_a_feature"
+msgstr "Đề nghị một tính năng"
+
+msgid "enter_password"
+msgstr "Nhập mật khẩu"
+
+msgid "enter_your_password..."
+msgstr "Nhập mật khẩu của bạn..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Nhập mật khẩu của bạn ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP Khách hàng"
+
+msgid "faqs"
+msgstr "Hỏi đáp của"
+
+msgid "visit_sftp_client_website"
+msgstr "Thăm SFTP website Khách hàng"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Đánh giá chúng tôi trên Chrome Webstore Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Báo cáo sự cố hoặc nhận được giúp đỡ"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Tham gia chúng tôi trên Facebook để cập nhật"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Thực hiện theo chúng tôi trên Twitter để cập nhật"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Chúng tôi trên Google cho cập nhật"
+
+msgid "okay"
+msgstr "đuợc"
+
+msgid "cancel"
+msgstr "hủy bỏ"
+
+msgid "close"
+msgstr "Gần"
+
+msgid "unknown_host"
+msgstr "Unknown host"
+
+msgid "okay_to_continue"
+msgstr "Được rồi tiếp tục không?"
+
+msgid "fingerprint"
+msgstr "vân tay"
+
+msgid "remember"
+msgstr "Nhớ lại"
+
+msgid "file_permissions"
+msgstr "cho phép file"
+
+msgid "file_permissions_desc"
+msgstr "Vui lòng chọn các thuộc tính mới cho tập tin được lựa chọn (s) / thư mục (s)"
+
+msgid "read"
+msgstr "Đọc"
+
+msgid "write"
+msgstr "viết"
+
+msgid "execute"
+msgstr "Thi hành"
+
+msgid "owner"
+msgstr "Chủ nhân"
+
+msgid "group"
+msgstr "Nhóm"
+
+msgid "public"
+msgstr "Công cộng"
+
+msgid "numeric_value"
+msgstr "Giá trị số"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Nhập tên của thư mục mới ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Nhập tên của tập tin mới ..."
+
+msgid "name"
+msgstr "Tên"
+
+msgid "enter_a_password"
+msgstr "gõ mật khẩu"
+
+msgid "language"
+msgstr "ngôn ngữ"
+
+msgid "seconds"
+msgstr "giây"
+
+msgid "minutes"
+msgstr "từ phút"
+
+msgid "hour"
+msgstr "giờ"
+
+msgid "hours"
+msgstr "giờ"
+
+msgid "day"
+msgstr "ngày"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "Đăng ký ngay"
+
+msgid "general"
+msgstr "Chung"
+
+msgid "security"
+msgstr "Bảo vệ"
+
+msgid "master_password"
+msgstr "Mật khẩu cấp cao"
+
+msgid "status"
+msgstr "Trạng thái"
+
+msgid "enabled"
+msgstr "Bật"
+
+msgid "disabled"
+msgstr "Tàn tật"
+
+msgid "timeout"
+msgstr "Hết giờ"
+
+msgid "save"
+msgstr "Tiết kiệm"
+
+msgid "add_account"
+msgstr "Thêm tài khoản"
+
+msgid "support"
+msgstr "Ủng hộ"
+
+msgid "notice_updates"
+msgstr "Thông báo / cập nhật"
+
+msgid "please_login"
+msgstr "Vui lòng hãy đăng nhập"
+
+msgid "your_session_timed_out"
+msgstr "Phiên họp của bạn Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Xin lỗi mật khẩu bạn nhập không chính xác!"
+
+msgid "login"
+msgstr "Đăng nhập"
+
+msgid "master_password_desc"
+msgstr "Đặt mật khẩu chủ này để giữ cho tài khoản của bạn an toàn."
+
+msgid "license_key"
+msgstr "Mã bản quyền"
+
+msgid "online"
+msgstr "Trực tuyến"
+
+msgid "offline"
+msgstr "ẩn"
+
+msgid "currently_unavailable"
+msgstr "hiện nay Không có sẵn"
+
+msgid "no_message_to_display"
+msgstr "Không có thông báo để hiển thị"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Bạn có ngoại tuyến hoặc trên một mạng duy nhất kết nối?"
+
+msgid "offline_notice_desc"
+msgstr "Bạn hiện đang ngoại tuyến, trên mạng chỉ kết nối hoặc không kết nối có thể được thiết lập để máy chủ của chúng tôi"
+
+msgid "edit_file"
+msgstr "Edit file"
+
+msgid "download"
+msgstr "Tải về"
+
+msgid "upload"
+msgstr "Tải lên"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP là cần thiết"
+
+msgid "apply_to_all_files"
+msgstr "Áp dụng cho tất cả các file"
+
+msgid "activate_now"
+msgstr "Kích hoạt ngay"
+
+msgid "deactivate"
+msgstr "De-activate"
+
+msgid "in_progress"
+msgstr "Trong tiến trình"
+
+msgid "complete"
+msgstr "Hoàn thành"
+
+msgid "direction"
+msgstr "Phương hướng"
+
+msgid "progress"
+msgstr "Tiến bộ, tiến trình"
+
+msgid "permissions"
+msgstr "Quyền"
+
+msgid "owner_group"
+msgstr "Chủ sở hữu / Nhóm"
+
+msgid "size"
+msgstr "Kích thước"
+
+msgid "type"
+msgstr "Kiểu"
+
+msgid "modified"
+msgstr "Được thay đổi"
+
+msgid "trial"
+msgstr "Thử nghiệm"
+
+msgid "cleared"
+msgstr "xóa"
+
+msgid "error_connecting"
+msgstr "lỗi khi kết nối"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Lỗi khi kết nối để lưu trữ / địa chỉ ip"
+
+msgid "error_connecting_to_port"
+msgstr "Lỗi khi kết nối đến cổng"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Vui lòng chọn một thư mục địa phương đầu tiên!"
+
+msgid "go"
+msgstr "Đi"
+
+msgid "confirm"
+msgstr "Xác nhận"
+
+msgid "delete"
+msgstr "Xóa bỏ"
+
+msgid "rename"
+msgstr "Đổi tên"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Sao chép URL (s) to Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Vui lòng xác nhận bạn muốn xóa các tập tin được lựa chọn (s) / thư mục (s)"
+
+msgid "cancelled_by_user"
+msgstr "Bị hủy bỏ bởi người dùng"
+
+msgid "already_exists_overwrite"
+msgstr "đã tồn tại, ghi đè không?"
+
+msgid "dashboard"
+msgstr "bảng điều khiển"
+
+msgid "my_accounts"
+msgstr "Tài khoản của tôi"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Nộp lưu! Tất cả các tài khoản đã được sao lưu."
+
+msgid "file_failed_please_try_again"
+msgstr "Tập tin thất bại! Vui lòng thử lại."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Bạn hiện không có tài khoản để được sao lưu."
+
+msgid "saved!"
+msgstr "Lưu!"
+
+msgid "please_enter_a_password"
+msgstr "Vui lòng nhập mật khẩu!"
+
+msgid "connection_closed"
+msgstr "kết nối bị đóng"
+
+msgid "listing_mode_set_to"
+msgstr "Liệt kê chế độ thiết lập để"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP máy chủ địa phương giải quyết, sử dụng IP bên ngoài"
+
+msgid "login_incorrect"
+msgstr "Đăng nhập không chính xác"
+
+msgid "keeping_connection_alive"
+msgstr "Giữ kết nối sống"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Không thể ghi, kết nối dữ liệu đóng"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Không thể đọc kết nối dữ liệu đóng"
+
+msgid "error_reading_file"
+msgstr "Lỗi khi đọc tệp"
+
+msgid "error_writing_file"
+msgstr "Lỗi khi ghi tệp"
+
+msgid "failed_to_change_directory_to"
+msgstr "Không thể thay đổi thư mục"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Bạn có thể không có quyền đúng để truy cập vào thư mục này"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Quay trở lại thư mục trước"
+
+msgid "activate"
+msgstr "Kích hoạt"
+
+msgid "payment"
+msgstr "Thanh toán"
+
+msgid "license_key_is_required"
+msgstr "key bản quyền là cần thiết"
+
+msgid "license_activated!"
+msgstr "Giấy phép hoạt!"
+
+msgid "your_license_has_been_validated"
+msgstr "Giấy phép của bạn đã được xác nhận."
+
+msgid "thank_you!"
+msgstr "Cho tôi biết!"
+
+msgid "buy_now!"
+msgstr "Mua ngay!"
+
+msgid "buy_now"
+msgstr "Mua ngay"
+
+msgid "one_off_fee"
+msgstr "một khoản phí"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Hãy nâng cấp để sử dụng ứng dụng này không có giới hạn"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Vui lòng nhập key bản quyền của bạn dưới đây"
+
+msgid "or"
+msgstr "HOẶC LÀ"
+
+msgid "loading..."
+msgstr "Tải..."
+
+msgid "clear_accounts"
+msgstr "rõ ràng tài khoản"
+
+msgid "clear_ssh_keys"
+msgstr "Rõ ràng SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Xóa tất cả các phím SSH lưu"
+
+msgid "clear_app_settings"
+msgstr "Cài đặt ứng dụng rõ ràng"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Xóa tất cả các cài đặt cụ thể ứng dụng"
+
+msgid "clear_recent_connections"
+msgstr "Rõ ràng các kết nối gần đây"
+
+msgid "deletes_all_recent_connections"
+msgstr "Xóa tất cả các kết nối gần đây"
+
+msgid "import_type"
+msgstr "Loại nhập khẩu"
+
+msgid "please_select"
+msgstr "Vui lòng chọn"
+
+msgid "import_file"
+msgstr "Import file"
+
+msgid "choose_file"
+msgstr "Chọn tập tin"
+
+msgid "delete_accounts"
+msgstr "xóa Tài khoản"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Xóa tất cả các tài khoản hiện có"
+
+msgid "import_now"
+msgstr "nhập Bây giờ"
+
+msgid "none"
+msgstr "không ai"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Hãy khởi động lại ứng dụng máy khách SFTP để các thay đổi có hiệu lực."
+
+msgid "already_bought_the_app"
+msgstr "Đã mua App?"
+
+msgid "choose"
+msgstr "Chọn"
+
+msgid "deleted!"
+msgstr "Đã bị xóa!"
+
+msgid "use_syncronised_browsing"
+msgstr "sử dụng trình duyệt syncronised"
+
+msgid "remote_directory"
+msgstr "remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "khóa RSA chỉ!"
+
+msgid "no_key_selected"
+msgstr "Không có khóa được lựa chọn."
+
+msgid "ssh_key_file"
+msgstr "SSH File Key"
+
+msgid "no_dir_selected"
+msgstr "Không dir chọn."
+
+msgid "keep_blank_for_current_password"
+msgstr "Giữ trống cho mật khẩu hiện tại."
+
+msgid "logon_type"
+msgstr "Logon Loại"
+
+msgid "normal"
+msgstr "bình thường"
+
+msgid "ask_for_password"
+msgstr "Yêu cầu Mật khẩu"
+
+msgid "anonymous"
+msgstr "Vô danh"
+
+msgid "account_type"
+msgstr "Kiểu tài khoản"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (kết nối bình thường)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (kết nối an toàn)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (kết nối an toàn)"
+
+msgid "folder"
+msgstr "Thư mục"
+
+msgid "advanced"
+msgstr "Nâng cao"
+
+msgid "folder_name"
+msgstr "Tên thư mục"
+
+msgid "parent"
+msgstr "Cha mẹ"
+
+msgid "new_ftp_site"
+msgstr "FTP Site mới"
+
+msgid "new_folder"
+msgstr "Thư mục mới"
+
+msgid "clean_now"
+msgstr "clean Now"
+
+msgid "host"
+msgstr "chủ nhà"
+
+msgid "no_accounts_added..."
+msgstr "Không có tài khoản gia tăng ..."
+
+msgid "unknown"
+msgstr "không xác định"
+
+msgid "file_saved!"
+msgstr "Nộp lưu!"
+
+msgid "uploading_file!"
+msgstr "Tải lên tập tin!"
+
+msgid "save_failed!"
+msgstr "Lưu thất bại!"
+
+msgid "search"
+msgstr "Tìm kiếm"
+
+msgid "find"
+msgstr "Tìm thấy"
+
+msgid "replace"
+msgstr "Thay thế"
+
+msgid "scroll_past_end"
+msgstr "Di chuyển quá khứ End"
+
+msgid "show_annotations"
+msgstr "Hiển thị chú thích"
+
+msgid "show_gutter"
+msgstr "Hiện Gutter"
+
+msgid "show_invisibles"
+msgstr "Hiện Invisibles"
+
+msgid "show_print_margin"
+msgstr "Hiện Margin In"
+
+msgid "highlight_active_line"
+msgstr "Làm nổi bật kích hoạt dòng"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "chia Mã"
+
+msgid "preferences"
+msgstr "Sở thích"
+
+msgid "close_all_tabs"
+msgstr "Đóng tất cả các tab"
+
+msgid "close_current_tab"
+msgstr "Đóng Tab hiện tại"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Tự động lưu file khi tôi gõ"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Lưu nhanh"
+
+msgid "documentation"
+msgstr "Tài liệu"
+
+msgid "themes"
+msgstr "chủ đề"
+
+msgid "keyboard_shortcuts"
+msgstr "Các phím tắt bàn phím"
+
+msgid "coming_soon"
+msgstr "Coming Soon"
+
+msgid "empty"
+msgstr "trống"

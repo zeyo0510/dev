@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "پروجيڪٽ"
+
+msgid "file"
+msgstr "عڪس"
+
+msgid "view"
+msgstr "ڏسو"
+
+msgid "edit"
+msgstr "تبديلي آڻيو"
+
+msgid "help"
+msgstr "مدد"
+
+msgid "manage_accounts"
+msgstr "اڪائونٽ منظم ڪريو"
+
+msgid "import_accounts"
+msgstr "آمد اڪائونٽس"
+
+msgid "export_accounts"
+msgstr "ٻاھر اڪائونٽس"
+
+msgid "quick_connect"
+msgstr "تڪڙا Connect"
+
+msgid "message_log"
+msgstr "پيغام ڪاٺ"
+
+msgid "local_directory"
+msgstr "مقامي نامو"
+
+msgid "uploads_downloads"
+msgstr "اپ / ڊائون لوڊ"
+
+msgid "clear_saved_data"
+msgstr "سانڍيل ڊيٽا پڌري"
+
+msgid "edit_settings"
+msgstr "جوڙ ۾ تبديلي آڻيو"
+
+msgid "report_bug"
+msgstr "بگ رپورٽ ڪريو"
+
+msgid "suggest_feature"
+msgstr "هڪ مضمون جو مشورو"
+
+msgid "ask_a_question"
+msgstr "هڪ سوال پڇي سگھان"
+
+msgid "change_log"
+msgstr "ڪاٺ تبديل ڪريو"
+
+msgid "about"
+msgstr "بابت"
+
+msgid "exit"
+msgstr "خارجي"
+
+msgid "host_ip_address"
+msgstr "ميزبان / IP پتي"
+
+msgid "username"
+msgstr "کاتي جو نالو"
+
+msgid "password"
+msgstr "پاسورڊ"
+
+msgid "port"
+msgstr "پورٽ"
+
+msgid "connect"
+msgstr "سان ڳنڍڻ"
+
+msgid "welcome"
+msgstr "ڀلي ڪري آيا"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> sFTP ڪلائنٽ سڀ سادگي جي باري ۾ آهي، ان کي گوگل ڪروم / ڪروم او ايس packaged ائپ جي ايپ ۾ روزو رکڻ ۽ قبوليو وڃي ٿو رهڻ انٽرفيس تي تعمير ڪيو ويو آهي. هن فنڪشن جو ڪجهه پري ذخيرو ۽ توهان اسان جي سڀ کان وڌيڪ منظم ڪرڻ "
+
+msgid "latest_updates"
+msgstr "تازه ترين احوال"
+
+msgid "server_status"
+msgstr "سرور جو اسٽيٽس"
+
+msgid "license_server"
+msgstr "نامي سرور"
+
+msgid "sftp_support"
+msgstr "حمايت"
+
+msgid "notice_update"
+msgstr "نوٽيس / احوال"
+
+msgid "website"
+msgstr "ويب سائيٽ"
+
+msgid "clear_all"
+msgstr "سڀ صاف ڪريو"
+
+msgid "manage"
+msgstr "منظم ڪريو"
+
+msgid "recheck"
+msgstr "ٻيهر چيڪ"
+
+msgid "last_release"
+msgstr "آخري ڇڏڻ"
+
+msgid "released"
+msgstr "آزاد"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "ناڪام ٿيو"
+
+msgid "completed"
+msgstr "مڪمل"
+
+msgid "settings"
+msgstr "جوڙ"
+
+msgid "add_folder"
+msgstr "فولڊر شامل ڪريو"
+
+msgid "add_ftp_account"
+msgstr "ايف ٽي پي کاتي ۾ شامل ڪريو"
+
+msgid "file_editor"
+msgstr "جو دائرو ايڊيٽر"
+
+msgid "editor_preferences"
+msgstr "ايڊيٽر ترجيحات"
+
+msgid "your_ftp_accounts"
+msgstr "توهان جو ايف ٽي پي اڪائونٽس"
+
+msgid "most_recent_used"
+msgstr "سڀ کان تازو استعمال ڪيو."
+
+msgid "no_connections_yet_made"
+msgstr "ڪو به ڪنيڪشن موجود ڪيو"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ڪو به ايف حساب ڪتاب موجود شامل"
+
+msgid "most_recent_connections"
+msgstr "گهڻو ڪري موجوده ڪنيڪشن"
+
+msgid "last_10_connections_made"
+msgstr "ڪيو آخري 10 ڪنيڪشن"
+
+msgid "designed_developed_by"
+msgstr "ٺهيل ۽ ڊولپرس"
+
+msgid "about_info"
+msgstr "حمايت لاء استعمال ڪرڻ جي sFTP ڪلائنٽ ويب سائيٽ، ڪو به حمايت اسان جي انفرادي ويب سائيٽ جي ذريعي مهيا آهي مهرباني."
+
+msgid "local"
+msgstr "مقامي"
+
+msgid "remote"
+msgstr "ريموٽ"
+
+msgid "remote_location_desc"
+msgstr "مثال طور / public_html"
+
+msgid "create_directory"
+msgstr "ھدايت نامو ٺاهيو"
+
+msgid "create_new_directory"
+msgstr "نئون نامو ٺاهيو"
+
+msgid "create_file"
+msgstr "عڪس ٺاهيو"
+
+msgid "create_new_file"
+msgstr "نئين فائيل ٺاهيو"
+
+msgid "refresh_list"
+msgstr "ريفريش لسٽ"
+
+msgid "change"
+msgstr "تبديل ڪريو"
+
+msgid "report_a_bug"
+msgstr "بگ رپورٽ ڪريو"
+
+msgid "suggest_a_feature"
+msgstr "هڪ مضمون جو مشورو"
+
+msgid "enter_password"
+msgstr "پاسورڊ داخل ڪريو"
+
+msgid "enter_your_password..."
+msgstr "توهان جي پاسورڊ داخل ڪريو ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "توهان passphrase داخل ڪريو ..."
+
+msgid "email_sftp_client"
+msgstr "اي ميل sFTP ڪلائنٽ"
+
+msgid "faqs"
+msgstr "لوڊ جي"
+
+msgid "visit_sftp_client_website"
+msgstr "جو دورو ڪريو sFTP ڪلائنٽ ويب سائٽ"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "گوگل ڪروم Webstore تي اسان جي درجه بندي"
+
+msgid "report_an_issue_or_get_help"
+msgstr "هڪ مسئلي جي رپورٽ يا مدد حاصل"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "تازه لاء ڪريو تي اسان جي تاريخ"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "تازه لاء Twitter تي اسان جي تابعداري ڪريو"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 تازه لاء گوگل تي اسان کي"
+
+msgid "okay"
+msgstr "ٺيڪ"
+
+msgid "cancel"
+msgstr "رد"
+
+msgid "close"
+msgstr "بند ڪيو"
+
+msgid "unknown_host"
+msgstr "اڻ ڄاتل ميزبان"
+
+msgid "okay_to_continue"
+msgstr "جاري رکڻ لاء درست آهي؟"
+
+msgid "fingerprint"
+msgstr "فنگر"
+
+msgid "remember"
+msgstr "ياد"
+
+msgid "file_permissions"
+msgstr "عڪس اجازتون"
+
+msgid "file_permissions_desc"
+msgstr "مهرباني ڪري هن جي چونڊ فائيل (ص) / فولڊر (ص) لاء نئين جزن کي چونڊيو"
+
+msgid "read"
+msgstr "پڙهڻ"
+
+msgid "write"
+msgstr "لکڻ"
+
+msgid "execute"
+msgstr "Execute"
+
+msgid "owner"
+msgstr "وارو"
+
+msgid "group"
+msgstr "گروپ"
+
+msgid "public"
+msgstr "پبلڪ"
+
+msgid "numeric_value"
+msgstr "انگن جي ويليو"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "نئين ڊاريڪٽري جو نالو لکو ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "نئين فائيل جي نالي ۾ گھڙو ..."
+
+msgid "name"
+msgstr "نالو"
+
+msgid "enter_a_password"
+msgstr "هڪ ڳجھو لفظ جوملا"
+
+msgid "language"
+msgstr "لئنگئيج"
+
+msgid "seconds"
+msgstr "سيڪنڊ"
+
+msgid "minutes"
+msgstr "منٽ"
+
+msgid "hour"
+msgstr "ڪلاڪ"
+
+msgid "hours"
+msgstr "ڪلاڪ"
+
+msgid "day"
+msgstr "ڏينهن"
+
+msgid "trial_left"
+msgstr "پرک کاٻو"
+
+msgid "register_now"
+msgstr "هاڻي ئي رجسٽر ٿيو"
+
+msgid "general"
+msgstr "جنرل"
+
+msgid "security"
+msgstr "سيڪيورٽي"
+
+msgid "master_password"
+msgstr "ماسٽر پاسورڊ"
+
+msgid "status"
+msgstr "اسٽيٽس"
+
+msgid "enabled"
+msgstr "مهرباني"
+
+msgid "disabled"
+msgstr "معذور"
+
+msgid "timeout"
+msgstr "وقت ختم ٿي ويو"
+
+msgid "save"
+msgstr "سانڍيو"
+
+msgid "add_account"
+msgstr "کاتي شامل ڪريو"
+
+msgid "support"
+msgstr "حمايت"
+
+msgid "notice_updates"
+msgstr "نوٽيس / احوال"
+
+msgid "please_login"
+msgstr "مهرباني ڪري لاگ ان"
+
+msgid "your_session_timed_out"
+msgstr "پنهنجي سيشن وقت گذري ويو ٻاهر"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "افسوس جو ڳجھو لفظ توهان کي داخل غلط هو!"
+
+msgid "login"
+msgstr "لاگ ان"
+
+msgid "master_password_desc"
+msgstr "توهان جي حساب ڪتاب محفوظ رکڻ لاء هن رکن ٿا پاسورڊ سيٽ ڪريو."
+
+msgid "license_key"
+msgstr "نامي چاٻي"
+
+msgid "online"
+msgstr "آن لائن"
+
+msgid "offline"
+msgstr "آف لائن"
+
+msgid "currently_unavailable"
+msgstr "في الحال دستياب ناهي"
+
+msgid "no_message_to_display"
+msgstr "ڪو به پيغام ڏيکارڻ لاء"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - توهان آف لائن يا هڪ نيٽ ورڪ صرف سلسلي تي آھن؟"
+
+msgid "offline_notice_desc"
+msgstr "هيئنر توهان آف لائن آهن، هڪ نيٽ ورڪ صرف سلسلي يا ڪو سلسلو اسان جي سرور کي قائم ٿي سگهي تي"
+
+msgid "edit_file"
+msgstr "عڪس ۾ تبديلي آڻيو"
+
+msgid "download"
+msgstr "لاهيو"
+
+msgid "upload"
+msgstr "اپلوڊ"
+
+msgid "host_ip_is_required"
+msgstr "ميزبان / پي جي ضرورت هوندي آهي"
+
+msgid "apply_to_all_files"
+msgstr "سڀ فائلون تي لاڳو"
+
+msgid "activate_now"
+msgstr "هاڻي ايڪٽيويٽ"
+
+msgid "deactivate"
+msgstr "من-ايڪٽيويٽ"
+
+msgid "in_progress"
+msgstr "جاري آهي"
+
+msgid "complete"
+msgstr "پوري"
+
+msgid "direction"
+msgstr "رخ"
+
+msgid "progress"
+msgstr "جاري آهي"
+
+msgid "permissions"
+msgstr "اجازت"
+
+msgid "owner_group"
+msgstr "مالڪ / گروپ"
+
+msgid "size"
+msgstr "ڪرائون سائيز واري"
+
+msgid "type"
+msgstr "قسم"
+
+msgid "modified"
+msgstr "تبديل ٿيل"
+
+msgid "trial"
+msgstr "پرک"
+
+msgid "cleared"
+msgstr "هليا"
+
+msgid "error_connecting"
+msgstr "ڳنڍي غلطي"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP پتو ميزبان سان ڳنڍڻ جو مسئلو"
+
+msgid "error_connecting_to_port"
+msgstr "پورٽ کي ڳنڍي غلطي"
+
+msgid "please_select_a_local_directory_first"
+msgstr "مهرباني ڪري هڪ مقامي ڊاريڪٽري پهريون منتخب ڪريو!"
+
+msgid "go"
+msgstr "وڃ"
+
+msgid "confirm"
+msgstr "جي تصديق"
+
+msgid "delete"
+msgstr "خارج ڪريو"
+
+msgid "rename"
+msgstr "نالو مٽائي"
+
+msgid "copy_urls_to_clipboard"
+msgstr "ڪاپي URL جو (جي) Clipboard لاء"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "مهرباني ڪري تصديق توهان جي چونڊيل فائيل (ص) کي ختم ڪرڻ جي خواهش / فولڊر (ص)"
+
+msgid "cancelled_by_user"
+msgstr "صارف جي Cancelled"
+
+msgid "already_exists_overwrite"
+msgstr "اڳ ۾ ئي موجود آهي، overwrite؟"
+
+msgid "dashboard"
+msgstr "ڊيش بورڊ"
+
+msgid "my_accounts"
+msgstr "منهنجي اڪائونٽس"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "سانڍيل جو دائرو! سڀئي حساب ڪتاب بخشيا ويا آهن."
+
+msgid "file_failed_please_try_again"
+msgstr "عڪس ۾ ناڪامي ٿي! ٻيهر ڪوشش ڪريو."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "هيئنر توهان سنڌ جو ڪو به حساب ڪتاب کنيو يافته ٿي آهي."
+
+msgid "saved!"
+msgstr "سانڍيل!"
+
+msgid "please_enter_a_password"
+msgstr "هڪ پاسورڊ داخل ڪريو!"
+
+msgid "connection_closed"
+msgstr "سلسلو بند"
+
+msgid "listing_mode_set_to"
+msgstr "لسٽنگ کي مقرر صورت"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "مقامي سرور پي حل، ظاهري پي استعمال ڪري"
+
+msgid "login_incorrect"
+msgstr "غلط لاگ ان"
+
+msgid "keeping_connection_alive"
+msgstr "تعلقي جيئريون"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "لکڻ نه ٿي سگھيا، ڊيٽا سلسلو بند"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "بند ڊيٽا سلسلي پڙهڻ نه ٿي سگھيا"
+
+msgid "error_reading_file"
+msgstr "پڙهائي فائل جو مسئلو"
+
+msgid "error_writing_file"
+msgstr "مسئلو لکڻ فائل"
+
+msgid "failed_to_change_directory_to"
+msgstr "کي ھدايت نامو تبديل ڪرڻ ۾ ناڪامي ٿي"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "توهان هن ڊاريڪٽري تائين رسائي ڪرڻ جي صحيح اجازتون نه ٿي سگھي ٿو"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "واپس نظارو ڊاريڪٽري کي Reverting"
+
+msgid "activate"
+msgstr "ايڪٽيويٽ"
+
+msgid "payment"
+msgstr "ادائگي"
+
+msgid "license_key_is_required"
+msgstr "نامي اهم ضرورت هوندي آهي"
+
+msgid "license_activated!"
+msgstr "نامي چالو!"
+
+msgid "your_license_has_been_validated"
+msgstr "توهان جي لائسنس جي تصديق ڪئي وئي آهي."
+
+msgid "thank_you!"
+msgstr "توهان جي مهرباني!"
+
+msgid "buy_now!"
+msgstr "هاڻ خريد ڪريو!"
+
+msgid "buy_now"
+msgstr "هاڻ خريد ڪريو"
+
+msgid "one_off_fee"
+msgstr "فيس بند هڪ"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "ڪو به پابندي سان هي ائپ آسودو واڌاري ڪريو"
+
+msgid "please_enter_your_license_key_below"
+msgstr "هيٺ توهان جي لائسنس چاٻي داخل ڪريو"
+
+msgid "or"
+msgstr "يا"
+
+msgid "loading..."
+msgstr "لوڊنگ ٿي رهي آهي ..."
+
+msgid "clear_accounts"
+msgstr "اڪائونٽس پڌري"
+
+msgid "clear_ssh_keys"
+msgstr "واضح SSH ڪنجيون"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "سڀني کي بچايوسون SSH ڪنجيون Deletes"
+
+msgid "clear_app_settings"
+msgstr "واضح ايپ سيٽنگون"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "سڀ ائپ مخصوص جوڙ Deletes"
+
+msgid "clear_recent_connections"
+msgstr "واضح موجوده ڪنيڪشن"
+
+msgid "deletes_all_recent_connections"
+msgstr "تازو سڀ ڪنيڪشن Deletes"
+
+msgid "import_type"
+msgstr "آمد قسم"
+
+msgid "please_select"
+msgstr "مهرباني ڪري چونڊ ڪريو"
+
+msgid "import_file"
+msgstr "آمد عڪس"
+
+msgid "choose_file"
+msgstr "عڪس چونڊيو"
+
+msgid "delete_accounts"
+msgstr "اڪائونٽس خارج ڪريو"
+
+msgid "deletes_all_existing_accounts"
+msgstr "سڀ موجود حساب ڪتاب Deletes"
+
+msgid "import_now"
+msgstr "هاڻي آمد"
+
+msgid "none"
+msgstr "ڪو"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "جي تبديلين جو اثر وٺڻ لاء sFTP ڪلائنٽ ائپ وري هلايو ڪريو."
+
+msgid "already_bought_the_app"
+msgstr "اڳ ۾ ئي ائپ خريد ڪئي؟"
+
+msgid "choose"
+msgstr "چونڊيو"
+
+msgid "deleted!"
+msgstr "ختم ٿي!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised برائوزنگ استعمال"
+
+msgid "remote_directory"
+msgstr "ريموٽ نامو"
+
+msgid "rsa_key_only!"
+msgstr "صرف RSA اهم!"
+
+msgid "no_key_selected"
+msgstr "ڪو به اهم ٿيل."
+
+msgid "ssh_key_file"
+msgstr "SSH چاٻي عڪس"
+
+msgid "no_dir_selected"
+msgstr "نه آيو. ٿيل."
+
+msgid "keep_blank_for_current_password"
+msgstr "موجوده پاسورڊ لاء خالي رکو."
+
+msgid "logon_type"
+msgstr "Logon قسم"
+
+msgid "normal"
+msgstr "عام"
+
+msgid "ask_for_password"
+msgstr "پاسورڊ لاء پڇ"
+
+msgid "anonymous"
+msgstr "گمنام"
+
+msgid "account_type"
+msgstr "اڪائونٽ قسم"
+
+msgid "ftp_normal_connection"
+msgstr "ايف ٽي پي (عام سلسلي)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (محفوظ سلسلي)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (محفوظ سلسلي)"
+
+msgid "folder"
+msgstr "فولڊر"
+
+msgid "advanced"
+msgstr "اعلي درجي"
+
+msgid "folder_name"
+msgstr "فولڊر جو نالو"
+
+msgid "parent"
+msgstr "مٿيون"
+
+msgid "new_ftp_site"
+msgstr "نئون ايف سائيٽ"
+
+msgid "new_folder"
+msgstr "نئون فولڊر"
+
+msgid "clean_now"
+msgstr "هاڻي صاف"
+
+msgid "host"
+msgstr "ميزبان"
+
+msgid "no_accounts_added..."
+msgstr "ڪو اڪائونٽ ۾ شامل ..."
+
+msgid "unknown"
+msgstr "اڻڄاڻ"
+
+msgid "file_saved!"
+msgstr "سانڍيل جو دائرو!"
+
+msgid "uploading_file!"
+msgstr "Uploading عڪس!"
+
+msgid "save_failed!"
+msgstr "ناڪام بچاء!"
+
+msgid "search"
+msgstr "ڳولا"
+
+msgid "find"
+msgstr "مان ڳولا ڪريو"
+
+msgid "replace"
+msgstr "مٽائي"
+
+msgid "scroll_past_end"
+msgstr "ڏسو گذريل آخر"
+
+msgid "show_annotations"
+msgstr "نظر Annotations"
+
+msgid "show_gutter"
+msgstr "گٽر ڏيکاريو"
+
+msgid "show_invisibles"
+msgstr "نظر Invisibles"
+
+msgid "show_print_margin"
+msgstr "نظر پرنٽ حاشيہ"
+
+msgid "highlight_active_line"
+msgstr "ڪامران لائين نمايان"
+
+msgid "word_wrap"
+msgstr "ڪلام لپيٽڻ"
+
+msgid "split_code"
+msgstr "۾ ورهايو ويو ڪوڊ"
+
+msgid "preferences"
+msgstr "ترجيحات"
+
+msgid "close_all_tabs"
+msgstr "سڀ Tabs بند"
+
+msgid "close_current_tab"
+msgstr "بند موجوده ٽيب"
+
+msgid "auto_save_file_when_i_type"
+msgstr "جڏهن مون کي لکندو خود فائيل محفوظ"
+
+msgid "auto_save"
+msgstr "خود سانڍيو"
+
+msgid "quick_save"
+msgstr "تڪڙا سانڍيو"
+
+msgid "documentation"
+msgstr "دستاويزي"
+
+msgid "themes"
+msgstr "مزاحيه"
+
+msgid "keyboard_shortcuts"
+msgstr "شارٽ ڪٽس"
+
+msgid "coming_soon"
+msgstr "جلد اچي رهيو آهي"
+
+msgid "empty"
+msgstr "خالي"

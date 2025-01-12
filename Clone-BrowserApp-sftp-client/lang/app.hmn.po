@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hmn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Ntawv qhia zaub mov"
+
+msgid "file"
+msgstr "Cov ntaub ntawv"
+
+msgid "view"
+msgstr "Saib"
+
+msgid "edit"
+msgstr "Kho kom raug neeg"
+
+msgid "help"
+msgstr "pab"
+
+msgid "manage_accounts"
+msgstr "tswj Accounts"
+
+msgid "import_accounts"
+msgstr "Ntshuam Accounts"
+
+msgid "export_accounts"
+msgstr "export Accounts"
+
+msgid "quick_connect"
+msgstr "ceev Connect"
+
+msgid "message_log"
+msgstr "lus nkag mus"
+
+msgid "local_directory"
+msgstr "Local Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear rua ntaub ntawv"
+
+msgid "edit_settings"
+msgstr "Kho kom raug neeg tej chaw"
+
+msgid "report_bug"
+msgstr "Qhia ib tug Kab laum"
+
+msgid "suggest_feature"
+msgstr "Muab tswv yim txog ib tug Feature"
+
+msgid "ask_a_question"
+msgstr "Nug ib tug Lus Nug"
+
+msgid "change_log"
+msgstr "hloov nkag mus"
+
+msgid "about"
+msgstr "Hais txog"
+
+msgid "exit"
+msgstr "Exit"
+
+msgid "host_ip_address"
+msgstr "Tus tswv tsev / IP chaw nyob"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Lo lus zais"
+
+msgid "port"
+msgstr "Chaw nres nkoj"
+
+msgid "connect"
+msgstr "txuas"
+
+msgid "welcome"
+msgstr "Zoo siab txais tos"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Client yog tag nrho hais txog simplicity, nws tau raug ua nyob rau hauv Google Chrome / Chrome OS fej app interface uas lub app yuav ceev thiab teb. Ib txhia ntawm cov functionality muaj xws li ib tug FTP Account Manager rau cia tam sim ntawd thi"
+
+msgid "latest_updates"
+msgstr "Tseeb tshiab"
+
+msgid "server_status"
+msgstr "neeg rau zaub mov raws li txoj cai"
+
+msgid "license_server"
+msgstr "Daim ntawv tso cai neeg rau zaub mov"
+
+msgid "sftp_support"
+msgstr "Kev them nyiaj yug"
+
+msgid "notice_update"
+msgstr "Daim ntawv ceeb toom / tshiab"
+
+msgid "website"
+msgstr "lub vas sab"
+
+msgid "clear_all"
+msgstr "Clear Tag nrho"
+
+msgid "manage"
+msgstr "tswj"
+
+msgid "recheck"
+msgstr "Re-tshev"
+
+msgid "last_release"
+msgstr "xeem Tso"
+
+msgid "released"
+msgstr "tso tawm"
+
+msgid "queued"
+msgstr "queued"
+
+msgid "failed"
+msgstr "Ua tsis tau tejyam"
+
+msgid "completed"
+msgstr "ua kom tiav"
+
+msgid "settings"
+msgstr "chaw"
+
+msgid "add_folder"
+msgstr "Ntxiv nplaub tshev"
+
+msgid "add_ftp_account"
+msgstr "Ntxiv FTP Account"
+
+msgid "file_editor"
+msgstr "ntaub ntawv editor"
+
+msgid "editor_preferences"
+msgstr "editor Nyiam Zoo Li Cas"
+
+msgid "your_ftp_accounts"
+msgstr "Koj FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "Feem ntau cov nyuam qhuav siv."
+
+msgid "no_connections_yet_made"
+msgstr "Tsis sib txuas tsis tau ua"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Tsis FTP nyiaj ntxiv tsis tau"
+
+msgid "most_recent_connections"
+msgstr "Feem ntau cov Tsis ntev los no kev sib txuas"
+
+msgid "last_10_connections_made"
+msgstr "10 kev sib txuas ua"
+
+msgid "designed_developed_by"
+msgstr "Tsim & Tsim los ntawm"
+
+msgid "about_info"
+msgstr "Thov siv cov SFTP Client website kev them nyiaj yug, tsis muaj kev pab txhawb nqa yog muab los ntawm peb cov neeg websites."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "tej thaj chaw deb"
+
+msgid "remote_location_desc"
+msgstr "xws li / public_html"
+
+msgid "create_directory"
+msgstr "tsim Directory"
+
+msgid "create_new_directory"
+msgstr "Tsim Tshiab Directory"
+
+msgid "create_file"
+msgstr "tsim ntaub ntawv"
+
+msgid "create_new_file"
+msgstr "Tsim Tshiab Cov ntaub ntawv"
+
+msgid "refresh_list"
+msgstr "refresh Sau"
+
+msgid "change"
+msgstr "hloov"
+
+msgid "report_a_bug"
+msgstr "Qhia ib tug Kab laum"
+
+msgid "suggest_a_feature"
+msgstr "Muab tswv yim txog ib tug Feature"
+
+msgid "enter_password"
+msgstr "Sau lo lus zais"
+
+msgid "enter_your_password..."
+msgstr "Sau koj lo lus zais ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Sau koj passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP Client"
+
+msgid "faqs"
+msgstr "FAQ tus"
+
+msgid "visit_sftp_client_website"
+msgstr "Mus saib SFTP Client lub vas sab"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Npaum peb nyob rau Google Chrome webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Qhia ib qhov teeb meem los yog tau txais kev pab"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Koom peb rau Facebook tshiab"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Ua raws li peb ntawm Twitter tshiab"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Peb hauv Google tshiab"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "Ncua tseg"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "Unknown party"
+
+msgid "okay_to_continue"
+msgstr "Okay mus ntxiv?"
+
+msgid "fingerprint"
+msgstr "tuabneeg"
+
+msgid "remember"
+msgstr "Nco ntsoov"
+
+msgid "file_permissions"
+msgstr "Cov ntaub ntawv Permissions"
+
+msgid "file_permissions_desc"
+msgstr "Thov xaiv cov tshiab cwj pwm rau cov xaiv cov ntaub ntawv (s) / nplaub tshev (s)"
+
+msgid "read"
+msgstr "nyeem"
+
+msgid "write"
+msgstr "sau"
+
+msgid "execute"
+msgstr "ua"
+
+msgid "owner"
+msgstr "tswv"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "numeric nqi"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Sau lub npe ntawm tus tshiab directory ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Sau lub npe ntawm tus tshiab cov ntaub ntawv ..."
+
+msgid "name"
+msgstr "Lub npe"
+
+msgid "enter_a_password"
+msgstr "Sau ib tug Password"
+
+msgid "language"
+msgstr "lus"
+
+msgid "seconds"
+msgstr "vib nas this"
+
+msgid "minutes"
+msgstr "feeb"
+
+msgid "hour"
+msgstr "teev"
+
+msgid "hours"
+msgstr "teev"
+
+msgid "day"
+msgstr "hnub"
+
+msgid "trial_left"
+msgstr "Mus sib hais laug"
+
+msgid "register_now"
+msgstr "Sau npe tam sim no"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "raws li txoj cai"
+
+msgid "enabled"
+msgstr "enabled"
+
+msgid "disabled"
+msgstr "xiam oob qhab"
+
+msgid "timeout"
+msgstr "timeout"
+
+msgid "save"
+msgstr "Txuag"
+
+msgid "add_account"
+msgstr "Ntxiv account"
+
+msgid "support"
+msgstr "Kev them nyiaj yug"
+
+msgid "notice_updates"
+msgstr "Daim ntawv ceeb toom / tshiab"
+
+msgid "please_login"
+msgstr "thov ID nkag mus"
+
+msgid "your_session_timed_out"
+msgstr "Koj qhib timed tawm"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Thov txim lo lus zais koj nkag mus hauv yog tsis yog!"
+
+msgid "login"
+msgstr "ID nkag mus"
+
+msgid "master_password_desc"
+msgstr "Muab qhov no tswv lo lus zais kom koj tso nyiaj zoo."
+
+msgid "license_key"
+msgstr "Daim ntawv tso cai Ntsiab"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Tam sim no tsis txaus ntseeg"
+
+msgid "no_message_to_display"
+msgstr "Tsis lus mus tso saib"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Yog koj offline los yog nyob rau ib lub network xwb twb kev txuas?"
+
+msgid "offline_notice_desc"
+msgstr "Koj uas tam sim no offline, nyob rau ib network xwb kev twb kev txuas los yog tsis muaj kev twb kev txuas yuav tsum tau tsim rau peb neeg rau zaub mov"
+
+msgid "edit_file"
+msgstr "Kho kom raug neeg ntaub ntawv"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "upload"
+
+msgid "host_ip_is_required"
+msgstr "Tus tswv tsev / IP yog yuav tsum tau"
+
+msgid "apply_to_all_files"
+msgstr "Siv rau tag nrho cov ntaub ntawv"
+
+msgid "activate_now"
+msgstr "qhib tam sim no"
+
+msgid "deactivate"
+msgstr "De-qhib"
+
+msgid "in_progress"
+msgstr "Nyob rau hauv kev kawm"
+
+msgid "complete"
+msgstr "Sau kom tiav"
+
+msgid "direction"
+msgstr "kev taw qhia"
+
+msgid "progress"
+msgstr "Progress"
+
+msgid "permissions"
+msgstr "permissions"
+
+msgid "owner_group"
+msgstr "Tswv / Group"
+
+msgid "size"
+msgstr "loj"
+
+msgid "type"
+msgstr "hom"
+
+msgid "modified"
+msgstr "hloov"
+
+msgid "trial"
+msgstr "Mus sib hais"
+
+msgid "cleared"
+msgstr "cleared"
+
+msgid "error_connecting"
+msgstr "kev ua yuam kev txuas"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Kev ua yuam kev txuas mus party / ip chaw nyob"
+
+msgid "error_connecting_to_port"
+msgstr "Kev ua yuam kev txuas rau qhov chaw nres nkoj"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Thov xaiv ib lub zos directory ua ntej!"
+
+msgid "go"
+msgstr "mus"
+
+msgid "confirm"
+msgstr "Paub meej tias"
+
+msgid "delete"
+msgstr "Rho tawm"
+
+msgid "rename"
+msgstr "rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Daim URL (s) rau cia"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Thov paub meej tias koj xav rho tawm hauv cov xaiv cov ntaub ntawv (s) / nplaub tshev (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled los ntawm cov neeg siv"
+
+msgid "already_exists_overwrite"
+msgstr "twb tshwm sim, overwrite?"
+
+msgid "dashboard"
+msgstr "dashboard"
+
+msgid "my_accounts"
+msgstr "kuv Accounts"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Ntaub ntawv rua! Tag nrho cov nyiaj tau phwj."
+
+msgid "file_failed_please_try_again"
+msgstr "Cov ntaub ntawv tsis tau tejyam! Thov koj sim dua."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Koj tam sim no tsis muaj nyiaj mus yuav phwj."
+
+msgid "saved!"
+msgstr "Kev cawmdim!"
+
+msgid "please_enter_a_password"
+msgstr "Thov sau ib lo lus zais!"
+
+msgid "connection_closed"
+msgstr "Kev twb kev txuas kaw"
+
+msgid "listing_mode_set_to"
+msgstr "Qhia hom teem rau"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Local neeg rau zaub mov IP daws, siv lwm IP"
+
+msgid "login_incorrect"
+msgstr "ID nkag mus tsis yog"
+
+msgid "keeping_connection_alive"
+msgstr "Khaws kev twb kev txuas ciaj sia"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Tsis tau sau ntawv, cov ntaub ntawv kev twb kev txuas kaw"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Tsis tau nyeem cov ntaub ntawv kev twb kev txuas kaw"
+
+msgid "error_reading_file"
+msgstr "Kev ua yuam kev nyeem ntawv cov ntaub ntawv"
+
+msgid "error_writing_file"
+msgstr "Kev ua yuam kev sau ntawv cov ntaub ntawv"
+
+msgid "failed_to_change_directory_to"
+msgstr "Ua tsis tau tejyam rau hloov directory rau"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Tej zaum koj yuav tsis muaj qhov tseeb permissions tau cov directory"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting rov qab mus rau yav dhau los directory"
+
+msgid "activate"
+msgstr "qhib"
+
+msgid "payment"
+msgstr "Payment"
+
+msgid "license_key_is_required"
+msgstr "Daim ntawv tso cai tseem ceeb yog yuav tsum tau"
+
+msgid "license_activated!"
+msgstr "Daim ntawv tso cai tshuab txais!"
+
+msgid "your_license_has_been_validated"
+msgstr "Koj daim ntawv tso cai twb tau validated."
+
+msgid "thank_you!"
+msgstr "Ua tsaug rau koj!"
+
+msgid "buy_now!"
+msgstr "Muas tam sim no!"
+
+msgid "buy_now"
+msgstr "muas tam sim no"
+
+msgid "one_off_fee"
+msgstr "ib tug tawm tus nqi"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Thov txawj tej yam ntxiv rau kev txaus siab no app uas tsis muaj kev txwv"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Thov sau koj Daim ntawv tso cai Ntsiab hauv qab no"
+
+msgid "or"
+msgstr "LOS YOG"
+
+msgid "loading..."
+msgstr "Chaw thau khoom ..."
+
+msgid "clear_accounts"
+msgstr "Clear Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Daws"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes tag nrho rua SSH daws"
+
+msgid "clear_app_settings"
+msgstr "Clear App chaw"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes tag nrho cov app tej chaw"
+
+msgid "clear_recent_connections"
+msgstr "Clear Tsis ntev los no kev sib txuas"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes tag nrho cov tsis ntev los no kev sib txuas"
+
+msgid "import_type"
+msgstr "Ntshuam hom"
+
+msgid "please_select"
+msgstr "thov Xaiv"
+
+msgid "import_file"
+msgstr "Ntshuam ntaub ntawv"
+
+msgid "choose_file"
+msgstr "xaiv cov ntaub ntawv"
+
+msgid "delete_accounts"
+msgstr "Rho tawm Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes tag nrho cov uas twb muaj lawm nyiaj"
+
+msgid "import_now"
+msgstr "Ntshuam Tam sim no"
+
+msgid "none"
+msgstr "tsis muaj leej twg"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Thov pib dua SFTP Client app rau cov kev hloov rau noj cov nyhuv."
+
+msgid "already_bought_the_app"
+msgstr "Twb yuav lub App?"
+
+msgid "choose"
+msgstr "xaiv"
+
+msgid "deleted!"
+msgstr "Deleted!"
+
+msgid "use_syncronised_browsing"
+msgstr "siv syncronised browsing"
+
+msgid "remote_directory"
+msgstr "tej thaj chaw deb Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA tseem ceeb xwb!"
+
+msgid "no_key_selected"
+msgstr "Tsis tseem ceeb xaiv."
+
+msgid "ssh_key_file"
+msgstr "SSH Ntsiab ntaub ntawv"
+
+msgid "no_dir_selected"
+msgstr "Tsis dir xaiv."
+
+msgid "keep_blank_for_current_password"
+msgstr "Khaws dawb paug rau tam sim no lo lus zais."
+
+msgid "logon_type"
+msgstr "logon hom"
+
+msgid "normal"
+msgstr "qub"
+
+msgid "ask_for_password"
+msgstr "Nug kom Password"
+
+msgid "anonymous"
+msgstr "anonymous"
+
+msgid "account_type"
+msgstr "account hom"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (qub kev twb kev txuas)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Luag twb kev txuas)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Luag twb kev txuas)"
+
+msgid "folder"
+msgstr "nplaub tshev"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "nplaub tshev npe"
+
+msgid "parent"
+msgstr "Niam Txiv"
+
+msgid "new_ftp_site"
+msgstr "Tshiab FTP Site"
+
+msgid "new_folder"
+msgstr "Tshiab nplaub tshev"
+
+msgid "clean_now"
+msgstr "Ntxuav Tam sim no"
+
+msgid "host"
+msgstr "tus tswv tsev"
+
+msgid "no_accounts_added..."
+msgstr "Tsis Accounts Ntxiv ..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "Ntaub ntawv rua!"
+
+msgid "uploading_file!"
+msgstr "Uploading Cov ntaub ntawv!"
+
+msgid "save_failed!"
+msgstr "Txuag tsis tau tejyam!"
+
+msgid "search"
+msgstr "Nrhiav"
+
+msgid "find"
+msgstr "nrhiav"
+
+msgid "replace"
+msgstr "hloov"
+
+msgid "scroll_past_end"
+msgstr "Scroll Yav tag los End"
+
+msgid "show_annotations"
+msgstr "Qhia annotations"
+
+msgid "show_gutter"
+msgstr "Qhia Gutter"
+
+msgid "show_invisibles"
+msgstr "Qhia invisibles"
+
+msgid "show_print_margin"
+msgstr "Qhia Sau npoo"
+
+msgid "highlight_active_line"
+msgstr "Thas xim rau Active Kab"
+
+msgid "word_wrap"
+msgstr "lo lus Wrap"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "nyiam Zoo Li Cas"
+
+msgid "close_all_tabs"
+msgstr "Close Tag nrho Tabs"
+
+msgid "close_current_tab"
+msgstr "Close Tam sim no Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Nws pib txuag cov ntaub ntawv thaum kuv ntaus"
+
+msgid "auto_save"
+msgstr "pib Txuag"
+
+msgid "quick_save"
+msgstr "ceev Txuag"
+
+msgid "documentation"
+msgstr "Lwm cov ntaub ntawv"
+
+msgid "themes"
+msgstr "Ntxhais"
+
+msgid "keyboard_shortcuts"
+msgstr "keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "tab tom yuav tuaj"
+
+msgid "empty"
+msgstr "empty"

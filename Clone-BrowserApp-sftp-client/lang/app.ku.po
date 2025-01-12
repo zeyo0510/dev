@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Qerta xûrekê"
+
+msgid "file"
+msgstr "Dosî"
+
+msgid "view"
+msgstr "Dîtinî"
+
+msgid "edit"
+msgstr "Weşandin"
+
+msgid "help"
+msgstr "Alîkarî"
+
+msgid "manage_accounts"
+msgstr "Manage Accounts"
+
+msgid "import_accounts"
+msgstr "Accounts Import"
+
+msgid "export_accounts"
+msgstr "Accounts export"
+
+msgid "quick_connect"
+msgstr "Connect Quick"
+
+msgid "message_log"
+msgstr "Message bike Têkeve Têkeve"
+
+msgid "local_directory"
+msgstr "Directory herêmî"
+
+msgid "uploads_downloads"
+msgstr "Yên barkirî / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Data Saved"
+
+msgid "edit_settings"
+msgstr "biguherîne Settings"
+
+msgid "report_bug"
+msgstr "Report a Bug"
+
+msgid "suggest_feature"
+msgstr "Suggest a Dirêje"
+
+msgid "ask_a_question"
+msgstr "Ask a Question"
+
+msgid "change_log"
+msgstr "Change bike Têkeve Têkeve"
+
+msgid "about"
+msgstr "Ji dor"
+
+msgid "exit"
+msgstr "Derî"
+
+msgid "host_ip_address"
+msgstr "Host / IP Address"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Şîfre"
+
+msgid "port"
+msgstr "Bender"
+
+msgid "connect"
+msgstr "Bihevgirêdan"
+
+msgid "welcome"
+msgstr "Bi xêr hatî"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> SFTP e ku hemû li ser bi merdî, ew hatiye dîtin li ser virtual app packaged Google Chrome / Chrome OS rê ya app ji bo bi lez û bersîva avakirin. Hin ji yên ku fonksiyonên de heye Account Manager FTP ji bo depoki"
+
+msgid "latest_updates"
+msgstr "Latest rojanekirî"
+
+msgid "server_status"
+msgstr "Server Rewş"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Alîkarî"
+
+msgid "notice_update"
+msgstr "Notice / rojanekirî"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "Rêvebirin"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Last Release"
+
+msgid "released"
+msgstr "serbest hatin berdan"
+
+msgid "queued"
+msgstr "li hêvîya"
+
+msgid "failed"
+msgstr "bi ser neket"
+
+msgid "completed"
+msgstr "Qediya"
+
+msgid "settings"
+msgstr "Mîhengên"
+
+msgid "add_folder"
+msgstr "add Folder"
+
+msgid "add_ftp_account"
+msgstr "Lê zêde bike Account FTP"
+
+msgid "file_editor"
+msgstr "Nawy File"
+
+msgid "editor_preferences"
+msgstr "Preferences editor"
+
+msgid "your_ftp_accounts"
+msgstr "Accounts FTP te"
+
+msgid "most_recent_used"
+msgstr "Herî dawî tê bikaranîn."
+
+msgid "no_connections_yet_made"
+msgstr "No girêdanên nehatine"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No bikarhênerên FTP added yet"
+
+msgid "most_recent_connections"
+msgstr "Herî Connections dawî"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 girêdanên kirin"
+
+msgid "designed_developed_by"
+msgstr "Designed & Developed by"
+
+msgid "about_info"
+msgstr "Ji kerema xwe re bi kar tînin malpera SFTP ji bo piştgiriyê, ti alîkariya bi rêya malperên şexsî me dike dayîn."
+
+msgid "local"
+msgstr "Herêmî"
+
+msgid "remote"
+msgstr "Dûr"
+
+msgid "remote_location_desc"
+msgstr "mînak / public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Create Directory New"
+
+msgid "create_file"
+msgstr "Wêne"
+
+msgid "create_new_file"
+msgstr "Nû ê Pelan Biafirîne"
+
+msgid "refresh_list"
+msgstr "Lîsteyê Nû"
+
+msgid "change"
+msgstr "Gûherrandinî"
+
+msgid "report_a_bug"
+msgstr "Report a Bug"
+
+msgid "suggest_a_feature"
+msgstr "Suggest a Dirêje"
+
+msgid "enter_password"
+msgstr "Şifreyê têke"
+
+msgid "enter_your_password..."
+msgstr "Te şîfreya xwe binivîse ..."
+
+msgid "passphrase"
+msgstr "nasnavê"
+
+msgid "enter_your_passphrase..."
+msgstr "węneyę jorin xwe binivîse ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP"
+
+msgid "faqs"
+msgstr "Pirs û Bersîv da"
+
+msgid "visit_sftp_client_website"
+msgstr "Serlêdana SFTP Website Client"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Pûan me li ser Chrome Webstore Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Report an pirsa an alîkariyê bistînin"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "ji me re li ser Facebook Join ji bo rojanekirina"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "ji me re li ser Twitter Follow ji bo rojanekirina"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Me li ser Google ji bo rojanekirina"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "Bişûndekirin"
+
+msgid "close"
+msgstr "Nêzîkî"
+
+msgid "unknown_host"
+msgstr "Mazûbanê nenas"
+
+msgid "okay_to_continue"
+msgstr "Okay ji bo berdewam?"
+
+msgid "fingerprint"
+msgstr "Şopa tilî"
+
+msgid "remember"
+msgstr "Bîrveanîn"
+
+msgid "file_permissions"
+msgstr "Permissions Wêne"
+
+msgid "file_permissions_desc"
+msgstr "Ji kerema xwe ve ji taybetiyên nû bo pelê hilbijartî (s) / peldanka hilbijêre (s)"
+
+msgid "read"
+msgstr "Xwendin"
+
+msgid "write"
+msgstr "Nivîsîn"
+
+msgid "execute"
+msgstr "Dardekirin"
+
+msgid "owner"
+msgstr "Xwedî"
+
+msgid "group"
+msgstr "Kom"
+
+msgid "public"
+msgstr "Alenî"
+
+msgid "numeric_value"
+msgstr "Nirx hejmar"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "bi navê peldanka nû binivîse ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "bi navê pelê nû binivîse ..."
+
+msgid "name"
+msgstr "Nav"
+
+msgid "enter_a_password"
+msgstr "xwe şîfreyê binivîse"
+
+msgid "language"
+msgstr "Ziman"
+
+msgid "seconds"
+msgstr "seconds"
+
+msgid "minutes"
+msgstr "minutes"
+
+msgid "hour"
+msgstr "Seet"
+
+msgid "hours"
+msgstr "saetan"
+
+msgid "day"
+msgstr "Roj"
+
+msgid "trial_left"
+msgstr "trial Çep"
+
+msgid "register_now"
+msgstr "Register Now"
+
+msgid "general"
+msgstr "Giştî"
+
+msgid "security"
+msgstr "Ewlekarî"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "Cî"
+
+msgid "enabled"
+msgstr "çalake"
+
+msgid "disabled"
+msgstr "Bêmecel"
+
+msgid "timeout"
+msgstr "Başim"
+
+msgid "save"
+msgstr "Rizgarkirin"
+
+msgid "add_account"
+msgstr "lê zêde bike Account"
+
+msgid "support"
+msgstr "Alîkarî"
+
+msgid "notice_updates"
+msgstr "Notice / rojanekirî"
+
+msgid "please_login"
+msgstr "Login"
+
+msgid "your_session_timed_out"
+msgstr "Session te bihûriye Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Bi dax ve li te şîfre têketiyê çewt e!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Set ev nasnava xwe biparêze bikarhênerên xwe ewle."
+
+msgid "license_key"
+msgstr "Key License"
+
+msgid "online"
+msgstr "bike"
+
+msgid "offline"
+msgstr "Ne girêdayî"
+
+msgid "currently_unavailable"
+msgstr "Niha Unavailable"
+
+msgid "no_message_to_display"
+msgstr "No peyamê ji bo nîşandanê"
+
+msgid "offline_notice_title"
+msgstr "Libî - Ma tu is an li ser torê bi tenê dikarî girêdanê?"
+
+msgid "offline_notice_desc"
+msgstr "Tu ji xwe niha negirêdayî ye, li ser torê bi tenê dikarî girêdana an na girêdanê dikare were kirin ji bo server me damezrandin"
+
+msgid "edit_file"
+msgstr "biguherîne Wêne"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP tê xwestin"
+
+msgid "apply_to_all_files"
+msgstr "Ji bo hemû pelan"
+
+msgid "activate_now"
+msgstr "çalakkirin û Now"
+
+msgid "deactivate"
+msgstr "De-çalakkirin û"
+
+msgid "in_progress"
+msgstr "Ez teslîm nabim"
+
+msgid "complete"
+msgstr "Tevî"
+
+msgid "direction"
+msgstr "Ber"
+
+msgid "progress"
+msgstr "Pêşverûtî"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Xwedî / Group"
+
+msgid "size"
+msgstr "Mezinayî"
+
+msgid "type"
+msgstr "Awa"
+
+msgid "modified"
+msgstr "de hate"
+
+msgid "trial"
+msgstr "Bazarî"
+
+msgid "cleared"
+msgstr "Cleared"
+
+msgid "error_connecting"
+msgstr "Error girêdan"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error girêdan mazûvanîya / Adresa IP'yê"
+
+msgid "error_connecting_to_port"
+msgstr "Error girêdan ji bo port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Ji kerema xwe ve yekem a directory herêmî hilbijêrî!"
+
+msgid "go"
+msgstr "Çûyin"
+
+msgid "confirm"
+msgstr "Tesdîqkirin"
+
+msgid "delete"
+msgstr "Vemirandina"
+
+msgid "rename"
+msgstr "Nav biguherîne"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) ji panoyê"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Ji kerema xwe re piştrast bike ku tu dixwazî ​​ku pelê hilbijartî (s) bibî / peldanka (s)"
+
+msgid "cancelled_by_user"
+msgstr "Hilandin by user"
+
+msgid "already_exists_overwrite"
+msgstr "jixwe heye, li ser binivîsî?"
+
+msgid "dashboard"
+msgstr "Rojhan"
+
+msgid "my_accounts"
+msgstr "Hesaba min"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Saved File! Hemû hesab bi piştevanîya bûye."
+
+msgid "file_failed_please_try_again"
+msgstr "Wêne ser neket! Ji kerema xwe careke din biceribîne."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Tu niha tu bikarhênerên bi bê piştevanîya xwe."
+
+msgid "saved!"
+msgstr "Xilas!"
+
+msgid "please_enter_a_password"
+msgstr "Ji kerema xwe şîfreyê binivîse!"
+
+msgid "connection_closed"
+msgstr "Connection girtî"
+
+msgid "listing_mode_set_to"
+msgstr "Lîsta mode set to"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP pêşkêşkara herêmî çareser, bi bikaranîna Link IP"
+
+msgid "login_incorrect"
+msgstr "Login rast nenivîsandiye,"
+
+msgid "keeping_connection_alive"
+msgstr "Piştgiriya girêdana zindî"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Nikare binivîse, pêwendiya welat girtî"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Nikare bi xwendin connection welat girtî"
+
+msgid "error_reading_file"
+msgstr "Çewtiya xwendina pelê"
+
+msgid "error_writing_file"
+msgstr "Çewtiya nivîsandinê"
+
+msgid "failed_to_change_directory_to"
+msgstr "Ji bo guherandina directory bi ser neket"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Hûn dikarin destûrên di gihîştina vê rehberê ne xwedî"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Tablo dîsa ji bo rêveberiya ku berê"
+
+msgid "activate"
+msgstr "de çalak bike"
+
+msgid "payment"
+msgstr "Diravdanî"
+
+msgid "license_key_is_required"
+msgstr "key lîsansa pêwîst e"
+
+msgid "license_activated!"
+msgstr "License Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "lîsansa xwe hatiye rastbûna dîtin."
+
+msgid "thank_you!"
+msgstr "Sipas ji were!"
+
+msgid "buy_now!"
+msgstr "Dibe ez çi bikim!"
+
+msgid "buy_now"
+msgstr "Dibe ez çi bikim"
+
+msgid "one_off_fee"
+msgstr "yek off heqê"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Ji kerema xwe ve upgrade ji huneran ev app bi tu sînorkirinên"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Ji kerema xwe ve Key lîsansa xwe li jêr binivisîne"
+
+msgid "or"
+msgstr "AN"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Accounts zelal"
+
+msgid "clear_ssh_keys"
+msgstr "Clear Keys SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Giştî keys SSH xilas"
+
+msgid "clear_app_settings"
+msgstr "Settings App zelal"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Giştî Mîhengên taybet app"
+
+msgid "clear_recent_connections"
+msgstr "Clear Connections dawî"
+
+msgid "deletes_all_recent_connections"
+msgstr "Giştî girêdanên dawî"
+
+msgid "import_type"
+msgstr "Type Import"
+
+msgid "please_select"
+msgstr "Ji kerema xwe re hilbijêre"
+
+msgid "import_file"
+msgstr "Import Wêne"
+
+msgid "choose_file"
+msgstr "Choose File"
+
+msgid "delete_accounts"
+msgstr "Vemirandina Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Giştî hemû hesabên heyî"
+
+msgid "import_now"
+msgstr "Import Now"
+
+msgid "none"
+msgstr "Netû"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Ji kerema xwe ve app SFTP ji nû ve ji bo guherand bibandor bibin."
+
+msgid "already_bought_the_app"
+msgstr "Jixwe kirî ji App?"
+
+msgid "choose"
+msgstr "Helbijartin"
+
+msgid "deleted!"
+msgstr "Deleted!"
+
+msgid "use_syncronised_browsing"
+msgstr "bi kar tînin gera syncronised"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "key RSA tenê!"
+
+msgid "no_key_selected"
+msgstr "No key hilbijartin."
+
+msgid "ssh_key_file"
+msgstr "SSH File Key"
+
+msgid "no_dir_selected"
+msgstr "No dir hilbijartin."
+
+msgid "keep_blank_for_current_password"
+msgstr "vala ji bo şîfreya niha biparêze."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Ask for Password"
+
+msgid "anonymous"
+msgstr "Bênav"
+
+msgid "account_type"
+msgstr "Type account"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Connection Normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Pêçek"
+
+msgid "advanced"
+msgstr "Pêşveçû"
+
+msgid "folder_name"
+msgstr "Name peldanka"
+
+msgid "parent"
+msgstr "dê û bav"
+
+msgid "new_ftp_site"
+msgstr "Site New FTP"
+
+msgid "new_folder"
+msgstr "Peldanka nû"
+
+msgid "clean_now"
+msgstr "Clean Now"
+
+msgid "host"
+msgstr "Mazûban"
+
+msgid "no_accounts_added..."
+msgstr "No Accounts Ev babete ji layê ..."
+
+msgid "unknown"
+msgstr "Nenas"
+
+msgid "file_saved!"
+msgstr "Saved File!"
+
+msgid "uploading_file!"
+msgstr "Wêne barkirin!"
+
+msgid "save_failed!"
+msgstr "Save ser neket!"
+
+msgid "search"
+msgstr "Gerr"
+
+msgid "find"
+msgstr "Dîtin"
+
+msgid "replace"
+msgstr "Diberdaxistin"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Show Annotations"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Kenarê"
+
+msgid "highlight_active_line"
+msgstr "H'emű Line Active"
+
+msgid "word_wrap"
+msgstr "Peyv Wrap"
+
+msgid "split_code"
+msgstr "Code Split"
+
+msgid "preferences"
+msgstr "Hemû gotar"
+
+msgid "close_all_tabs"
+msgstr "Close Hemû Tabloyan"
+
+msgid "close_current_tab"
+msgstr "Pekana Rojane Bigire"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto file xilas gava ku ez Corî"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Save Quick"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "Themes"
+
+msgid "keyboard_shortcuts"
+msgstr "Kurteriyên Klavyeyê"
+
+msgid "coming_soon"
+msgstr "Ji nêzda"
+
+msgid "empty"
+msgstr "vala"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "valikko"
+
+msgid "file"
+msgstr "tiedosto"
+
+msgid "view"
+msgstr "näkymä"
+
+msgid "edit"
+msgstr "Muokata"
+
+msgid "help"
+msgstr "Auttaa"
+
+msgid "manage_accounts"
+msgstr "tilien hallinta"
+
+msgid "import_accounts"
+msgstr "Tuo tilit"
+
+msgid "export_accounts"
+msgstr "Export Accounts"
+
+msgid "quick_connect"
+msgstr "quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "paikallinen hakemisto"
+
+msgid "uploads_downloads"
+msgstr "Ladatut / Lataukset"
+
+msgid "clear_saved_data"
+msgstr "Clear Saved Data"
+
+msgid "edit_settings"
+msgstr "Muokkaa asetuksia"
+
+msgid "report_bug"
+msgstr "Ilmoita virheestä"
+
+msgid "suggest_feature"
+msgstr "Ehdota Ominaisuus"
+
+msgid "ask_a_question"
+msgstr "Kysy kysymys"
+
+msgid "change_log"
+msgstr "Kanavan tiedot"
+
+msgid "about"
+msgstr "Noin"
+
+msgid "exit"
+msgstr "poistuminen"
+
+msgid "host_ip_address"
+msgstr "Isäntä / IP-osoite"
+
+msgid "username"
+msgstr "Käyttäjätunnus"
+
+msgid "password"
+msgstr "Salasana"
+
+msgid "port"
+msgstr "portti"
+
+msgid "connect"
+msgstr "kytkeä"
+
+msgid "welcome"
+msgstr "Tervetuloa"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP on kyse yksinkertaisuus, se on rakennettu Google Chrome / Chrome OS pakattu app käyttöliittymän avulla sovelluksen nopea ja reagoiva. Jotkut toiminnot on sisäänrakennettu FTP Account Manager tallentaa pois ja järjestää useimmat meistä"
+
+msgid "latest_updates"
+msgstr "Viimeisimmät päivitykset"
+
+msgid "server_status"
+msgstr "Server status"
+
+msgid "license_server"
+msgstr "käyttöoikeuspalvelin"
+
+msgid "sftp_support"
+msgstr "Tuki"
+
+msgid "notice_update"
+msgstr "Ilmoitus / Päivitykset"
+
+msgid "website"
+msgstr "verkkosivusto"
+
+msgid "clear_all"
+msgstr "Tyhjennä"
+
+msgid "manage"
+msgstr "hoitaa"
+
+msgid "recheck"
+msgstr "Uudelleen tarkistaa"
+
+msgid "last_release"
+msgstr "viimeksi Release"
+
+msgid "released"
+msgstr "Julkaistu"
+
+msgid "queued"
+msgstr "jonossa"
+
+msgid "failed"
+msgstr "epäonnistui"
+
+msgid "completed"
+msgstr "valmistunut"
+
+msgid "settings"
+msgstr "Asetukset"
+
+msgid "add_folder"
+msgstr "Lisää kansio"
+
+msgid "add_ftp_account"
+msgstr "Lisää FTP-tili"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Asetukset"
+
+msgid "your_ftp_accounts"
+msgstr "FTP tilit"
+
+msgid "most_recent_used"
+msgstr "Viimeksi käytetty."
+
+msgid "no_connections_yet_made"
+msgstr "Ei yhteyksiä vielä tehty"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ei FTP-tilejä lisätty vielä"
+
+msgid "most_recent_connections"
+msgstr "Uusimmat Liitännät"
+
+msgid "last_10_connections_made"
+msgstr "Viimeiset 10 liitännät tehty"
+
+msgid "designed_developed_by"
+msgstr "Suunnittelu Ja Kehittäminen"
+
+msgid "about_info"
+msgstr "Käytä SFTP verkkosivuilla tukea, ei tukea annetaan kautta yksittäisiä sivustoja."
+
+msgid "local"
+msgstr "paikallinen"
+
+msgid "remote"
+msgstr "Etä"
+
+msgid "remote_location_desc"
+msgstr "esim / public_html"
+
+msgid "create_directory"
+msgstr "Luo hakemisto"
+
+msgid "create_new_directory"
+msgstr "Luo uusi hakemisto"
+
+msgid "create_file"
+msgstr "Luo tiedosto"
+
+msgid "create_new_file"
+msgstr "Luo uusi tiedosto"
+
+msgid "refresh_list"
+msgstr "Päivitä lista"
+
+msgid "change"
+msgstr "Muuttaa"
+
+msgid "report_a_bug"
+msgstr "Ilmoita virheestä"
+
+msgid "suggest_a_feature"
+msgstr "Ehdota Ominaisuus"
+
+msgid "enter_password"
+msgstr "Kirjoita salasana"
+
+msgid "enter_your_password..."
+msgstr "Syötä salasanasi..."
+
+msgid "passphrase"
+msgstr "Tunnuslause"
+
+msgid "enter_your_passphrase..."
+msgstr "Anna tunnuslause ..."
+
+msgid "email_sftp_client"
+msgstr "Sähköposti SFTP"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Käy SFTP Verkkosivu"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Arvioi meille Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Ilmoita ongelmasta tai saada apua"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Liity meihin Facebook päivitykset"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Seuraa meitä Twitterissä päivitykset"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+ 1 meidät Google päivityksiä"
+
+msgid "okay"
+msgstr "Okei"
+
+msgid "cancel"
+msgstr "Peruuttaa"
+
+msgid "close"
+msgstr "Lähellä"
+
+msgid "unknown_host"
+msgstr "Tuntematon isäntä"
+
+msgid "okay_to_continue"
+msgstr "Okei jatkaa?"
+
+msgid "fingerprint"
+msgstr "Sormenjälki"
+
+msgid "remember"
+msgstr "Muistaa"
+
+msgid "file_permissions"
+msgstr "Tiedoston oikeudet"
+
+msgid "file_permissions_desc"
+msgstr "Valitse uusia määritteitä valittuun tiedostoon (s) / kansio (s)"
+
+msgid "read"
+msgstr "Lukea"
+
+msgid "write"
+msgstr "Kirjoittaa"
+
+msgid "execute"
+msgstr "Suorittaa"
+
+msgid "owner"
+msgstr "Omistaja"
+
+msgid "group"
+msgstr "Ryhmä"
+
+msgid "public"
+msgstr "Julkinen"
+
+msgid "numeric_value"
+msgstr "numeerinen arvo"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Kirjoita nimi uuden hakemiston ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Kirjoita nimi uuden tiedoston ..."
+
+msgid "name"
+msgstr "Nimi"
+
+msgid "enter_a_password"
+msgstr "Kirjoita salasana"
+
+msgid "language"
+msgstr "Kieli"
+
+msgid "seconds"
+msgstr "sekuntia"
+
+msgid "minutes"
+msgstr "Minuutit"
+
+msgid "hour"
+msgstr "Tunnin"
+
+msgid "hours"
+msgstr "tuntia"
+
+msgid "day"
+msgstr "Päivä"
+
+msgid "trial_left"
+msgstr "Trial Vasen"
+
+msgid "register_now"
+msgstr "Rekisteröidy nyt"
+
+msgid "general"
+msgstr "yleinen"
+
+msgid "security"
+msgstr "turvallisuus"
+
+msgid "master_password"
+msgstr "Pääsalasana"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "käytössä"
+
+msgid "disabled"
+msgstr "Liikuntarajoitteinen"
+
+msgid "timeout"
+msgstr "Aikalisä"
+
+msgid "save"
+msgstr "Tallentaa"
+
+msgid "add_account"
+msgstr "Lisää tili"
+
+msgid "support"
+msgstr "Tuki"
+
+msgid "notice_updates"
+msgstr "Ilmoitus / Päivitykset"
+
+msgid "please_login"
+msgstr "Kirjaudu sisään, ole hyvä"
+
+msgid "your_session_timed_out"
+msgstr "Istuntosi aika Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Valitettavasti salasana oli väärä!"
+
+msgid "login"
+msgstr "Kirjaudu sisään"
+
+msgid "master_password_desc"
+msgstr "Aseta tämä pääsalasana pitää tilejä turvassa."
+
+msgid "license_key"
+msgstr "Lisenssiavain"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Poissa"
+
+msgid "currently_unavailable"
+msgstr "Ei saatavilla tällä hetkellä"
+
+msgid "no_message_to_display"
+msgstr "Ei viesti näyttää"
+
+msgid "offline_notice_title"
+msgstr "Saavuttamaton - Oletko offline tai verkossa vain yhteyden?"
+
+msgid "offline_notice_desc"
+msgstr "Olet tällä hetkellä offline-tilassa, verkossa ainoa yhteys tai ei lainkaan yhteyttä voitaisiin perustaa palvelimelle"
+
+msgid "edit_file"
+msgstr "Edit File"
+
+msgid "download"
+msgstr "Lataa"
+
+msgid "upload"
+msgstr "Lataa"
+
+msgid "host_ip_is_required"
+msgstr "Isäntä / IP vaaditaan"
+
+msgid "apply_to_all_files"
+msgstr "Käytä kaikkiin tiedostot"
+
+msgid "activate_now"
+msgstr "Aktivoi nyt"
+
+msgid "deactivate"
+msgstr "De-aktivoida"
+
+msgid "in_progress"
+msgstr "Käynnissä"
+
+msgid "complete"
+msgstr "Täydellinen"
+
+msgid "direction"
+msgstr "Suunta"
+
+msgid "progress"
+msgstr "edistyminen"
+
+msgid "permissions"
+msgstr "käyttöoikeudet"
+
+msgid "owner_group"
+msgstr "Omistaja / ryhmä"
+
+msgid "size"
+msgstr "Koko"
+
+msgid "type"
+msgstr "Tyyppi"
+
+msgid "modified"
+msgstr "Muokattu"
+
+msgid "trial"
+msgstr "oikeudenkäynti"
+
+msgid "cleared"
+msgstr "Cleared"
+
+msgid "error_connecting"
+msgstr "error Yhteyden"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error Yhteyden isäntä / IP-osoite"
+
+msgid "error_connecting_to_port"
+msgstr "Virhe Liittäminen porttiin"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Valitse paikallinen hakemisto ensin!"
+
+msgid "go"
+msgstr "Mennä"
+
+msgid "confirm"
+msgstr "Vahvistaa"
+
+msgid "delete"
+msgstr "Poistaa"
+
+msgid "rename"
+msgstr "Nimeä uudelleen"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopioi URL (s) leikepöydälle"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Vahvista haluat poistaa valitun tiedoston (t) / kansio (s)"
+
+msgid "cancelled_by_user"
+msgstr "Peruuttama käyttäjä"
+
+msgid "already_exists_overwrite"
+msgstr "jo olemassa, korvataanko?"
+
+msgid "dashboard"
+msgstr "kojelauta"
+
+msgid "my_accounts"
+msgstr "Omat tilit"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Tiedoston Tallennettu! Kaikki tilit on varmuuskopioitu."
+
+msgid "file_failed_please_try_again"
+msgstr "Tiedoston epäonnistui! Yritä uudelleen."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ei tällä hetkellä ole tilejä varmuuskopioida."
+
+msgid "saved!"
+msgstr "Tallennettu!"
+
+msgid "please_enter_a_password"
+msgstr "Anna salasana!"
+
+msgid "connection_closed"
+msgstr "yhteys suljettu"
+
+msgid "listing_mode_set_to"
+msgstr "Esitysjärjestystä asetettu"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Paikallinen IP ratkaistu käyttämällä ulkoista IP"
+
+msgid "login_incorrect"
+msgstr "Tulo virheellinen"
+
+msgid "keeping_connection_alive"
+msgstr "Keeping yhteys elossa"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Kykene kirjoittamaan, datayhteys suljettu"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Ei voitu lukea datayhteys suljetaan"
+
+msgid "error_reading_file"
+msgstr "Virhe luettaessa tiedostoa"
+
+msgid "error_writing_file"
+msgstr "Virhe kirjoitettaessa tiedostoa"
+
+msgid "failed_to_change_directory_to"
+msgstr "Muuttaminen epäonnistui hakemistoon"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Sinulla ei ehkä ole oikeita käyttöoikeuksia pääsyn tähän hakemistoon"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Palataan takaisin edelliseen hakemistoon"
+
+msgid "activate"
+msgstr "Aktivoida"
+
+msgid "payment"
+msgstr "maksu"
+
+msgid "license_key_is_required"
+msgstr "Lisenssiavain tarvitaan"
+
+msgid "license_activated!"
+msgstr "Lisenssi Aktivoitu!"
+
+msgid "your_license_has_been_validated"
+msgstr "Käyttöoikeutesi on validoitu."
+
+msgid "thank_you!"
+msgstr "Kiitos!"
+
+msgid "buy_now!"
+msgstr "Osta nyt!"
+
+msgid "buy_now"
+msgstr "Osta nyt"
+
+msgid "one_off_fee"
+msgstr "kertaluonteinen maksu"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Päivitä nauttia tästä app ilman rajoituksia"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Anna -lisenssiavain alla"
+
+msgid "or"
+msgstr "TAI"
+
+msgid "loading..."
+msgstr "Ladataan ..."
+
+msgid "clear_accounts"
+msgstr "Clear tilit"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH-avaimien"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Poistaa kaikki tallennetut SSH-avaimet"
+
+msgid "clear_app_settings"
+msgstr "Tyhjennä App asetukset"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Poistaa kaikki sovelluksen asetukset"
+
+msgid "clear_recent_connections"
+msgstr "Clear Viimeaikaiset Liitännät"
+
+msgid "deletes_all_recent_connections"
+msgstr "Poistaa kaikki viimeaikaiset yhteydet"
+
+msgid "import_type"
+msgstr "Tuo tyyppi"
+
+msgid "please_select"
+msgstr "Ole hyvä ja valitse"
+
+msgid "import_file"
+msgstr "Tuo tiedosto"
+
+msgid "choose_file"
+msgstr "Valitse tiedosto"
+
+msgid "delete_accounts"
+msgstr "Poista tilit"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Poistaa kaikki nykyiset tilit"
+
+msgid "import_now"
+msgstr "Tuo nyt"
+
+msgid "none"
+msgstr "Ei mitään"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Ole hyvä ja käynnistä sFTP Client sovellus, jotta muutokset tulevat voimaan."
+
+msgid "already_bought_the_app"
+msgstr "Jo ostanut App?"
+
+msgid "choose"
+msgstr "Valita"
+
+msgid "deleted!"
+msgstr "Poistettu!"
+
+msgid "use_syncronised_browsing"
+msgstr "käyttää syncronised selailu"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA-avain vain!"
+
+msgid "no_key_selected"
+msgstr "Mitään näppäintä valittuna."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "Ei dir valittu."
+
+msgid "keep_blank_for_current_password"
+msgstr "Pidä tyhjä nykyinen salasana."
+
+msgid "logon_type"
+msgstr "Logon Tyyppi"
+
+msgid "normal"
+msgstr "normaali"
+
+msgid "ask_for_password"
+msgstr "Pyydä salasana"
+
+msgid "anonymous"
+msgstr "anonyymi"
+
+msgid "account_type"
+msgstr "Tilin tyyppi"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (normaali liitäntä)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Suojattu yhteys)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Suojattu yhteys)"
+
+msgid "folder"
+msgstr "Kansio"
+
+msgid "advanced"
+msgstr "kehittynyt"
+
+msgid "folder_name"
+msgstr "kansion nimi"
+
+msgid "parent"
+msgstr "vanhempi"
+
+msgid "new_ftp_site"
+msgstr "Uusi FTP-sivusto"
+
+msgid "new_folder"
+msgstr "Uusi kansio"
+
+msgid "clean_now"
+msgstr "Clean Now"
+
+msgid "host"
+msgstr "isäntä"
+
+msgid "no_accounts_added..."
+msgstr "Ei Accounts Added ..."
+
+msgid "unknown"
+msgstr "Tuntematon"
+
+msgid "file_saved!"
+msgstr "Tiedoston Tallennettu!"
+
+msgid "uploading_file!"
+msgstr "Lataaminen tiedosto!"
+
+msgid "save_failed!"
+msgstr "Tallenna epäonnistui!"
+
+msgid "search"
+msgstr "Haku"
+
+msgid "find"
+msgstr "Löytää"
+
+msgid "replace"
+msgstr "Korvata"
+
+msgid "scroll_past_end"
+msgstr "Vierittää End"
+
+msgid "show_annotations"
+msgstr "Näytä Merkinnät"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Näytä Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Korosta Aktiivinen linja"
+
+msgid "word_wrap"
+msgstr "Rivitys"
+
+msgid "split_code"
+msgstr "Split koodi"
+
+msgid "preferences"
+msgstr "Asetukset"
+
+msgid "close_all_tabs"
+msgstr "Sulje kaikki välilehdet"
+
+msgid "close_current_tab"
+msgstr "Sulje nykyinen välilehti"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto Tallenna tiedosto kun kirjoitan"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Pikatallennus"
+
+msgid "documentation"
+msgstr "Dokumentointi"
+
+msgid "themes"
+msgstr "Teemat"
+
+msgid "keyboard_shortcuts"
+msgstr "Näppäinoikotiet"
+
+msgid "coming_soon"
+msgstr "Tulossa pian"
+
+msgid "empty"
+msgstr "tyhjä"

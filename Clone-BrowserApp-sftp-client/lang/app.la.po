@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: la\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "file:"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "auxilium"
+
+msgid "manage_accounts"
+msgstr "Ratio Manage"
+
+msgid "import_accounts"
+msgstr "Ratio Import"
+
+msgid "export_accounts"
+msgstr "Ratio Export"
+
+msgid "quick_connect"
+msgstr "Velox Connect"
+
+msgid "message_log"
+msgstr "Log"
+
+msgid "local_directory"
+msgstr "Local Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Aequaliter Nubila Servo Notitia"
+
+msgid "edit_settings"
+msgstr "Edit Occasus"
+
+msgid "report_bug"
+msgstr "Report a Bug"
+
+msgid "suggest_feature"
+msgstr "Suggest a feature"
+
+msgid "ask_a_question"
+msgstr "Ask a Question"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "exitus"
+
+msgid "host_ip_address"
+msgstr "Host / IP Address"
+
+msgid "username"
+msgstr "More"
+
+msgid "password"
+msgstr "Password"
+
+msgid "port"
+msgstr "portum"
+
+msgid "connect"
+msgstr "Connect"
+
+msgid "welcome"
+msgstr "About"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client est omnis de simplicitate, fuerit aedificavit in Google Chrome / app Chrome packaged in app sino interface est ieiunium et dociles. Nonnullus of functionality ad includit amet repones Computus Manager, ut et nos organize tui"
+
+msgid "latest_updates"
+msgstr "Suspendisse"
+
+msgid "server_status"
+msgstr "Status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Notice / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "clear all"
+
+msgid "manage"
+msgstr "Manage"
+
+msgid "recheck"
+msgstr "Re-reprehendo"
+
+msgid "last_release"
+msgstr "Last Release"
+
+msgid "released"
+msgstr "Released"
+
+msgid "queued"
+msgstr "queued"
+
+msgid "failed"
+msgstr "failed"
+
+msgid "completed"
+msgstr "completur"
+
+msgid "settings"
+msgstr "occasus"
+
+msgid "add_folder"
+msgstr "Add Folder"
+
+msgid "add_ftp_account"
+msgstr "Add FTP Account"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Ratio vestri FTP"
+
+msgid "most_recent_used"
+msgstr "Plurimus nuper usus."
+
+msgid "no_connections_yet_made"
+msgstr "Sed nexus non fecit"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Et non addidit rationibus amet"
+
+msgid "most_recent_connections"
+msgstr "Most Recent Iunctio"
+
+msgid "last_10_connections_made"
+msgstr "Nexus est ultimum X"
+
+msgid "designed_developed_by"
+msgstr "Designed per"
+
+msgid "about_info"
+msgstr "Quaeso uti website sFTP Client, nullae sustentationi provideatur per singula websites."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "Longinquus"
+
+msgid "remote_location_desc"
+msgstr "eg / public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Create New Directory"
+
+msgid "create_file"
+msgstr "Create File:"
+
+msgid "create_new_file"
+msgstr "Create New File:"
+
+msgid "refresh_list"
+msgstr "Refresh List"
+
+msgid "change"
+msgstr "mutationem"
+
+msgid "report_a_bug"
+msgstr "Report a Bug"
+
+msgid "suggest_a_feature"
+msgstr "Suggest a feature"
+
+msgid "enter_password"
+msgstr "Password intrare"
+
+msgid "enter_your_password..."
+msgstr "Your Password ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Enter your passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit website sFTP Client"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Rate nos in Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Report causa vel auxilium"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Coniungere nobis in Facebook pro updates"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow us on Twitter pro updates"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "I nos in Google pro updates"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "Cancel"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "Ignotus hospes"
+
+msgid "okay_to_continue"
+msgstr "Bene est continue?"
+
+msgid "fingerprint"
+msgstr "Fingerprint"
+
+msgid "remember"
+msgstr "Memento,"
+
+msgid "file_permissions"
+msgstr "file Permissionibus"
+
+msgid "file_permissions_desc"
+msgstr "Select novum attributa delectae file (s) / folder (s)"
+
+msgid "read"
+msgstr "Read"
+
+msgid "write"
+msgstr "write"
+
+msgid "execute"
+msgstr "judicium"
+
+msgid "owner"
+msgstr "dominus"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "frequens Value"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Directory intra nomine ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Da nomen novae lima ..."
+
+msgid "name"
+msgstr "nomine"
+
+msgid "enter_a_password"
+msgstr "Ineo a password"
+
+msgid "language"
+msgstr "Language"
+
+msgid "seconds"
+msgstr "Secundi"
+
+msgid "minutes"
+msgstr "minutes"
+
+msgid "hour"
+msgstr "Hora"
+
+msgid "hours"
+msgstr "horae"
+
+msgid "day"
+msgstr "Dies"
+
+msgid "trial_left"
+msgstr "Left Trial"
+
+msgid "register_now"
+msgstr "Register Now"
+
+msgid "general"
+msgstr "Generalis"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Vinco Password"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "enabled"
+
+msgid "disabled"
+msgstr "disabled"
+
+msgid "timeout"
+msgstr "Vicis"
+
+msgid "save"
+msgstr "nisi"
+
+msgid "add_account"
+msgstr "Propter add"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Notice / Updates"
+
+msgid "please_login"
+msgstr "Login"
+
+msgid "your_session_timed_out"
+msgstr "Sessionem tuam opportuno"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Password est incorrect ingressus est paenitet!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Set ista ratio ut servo vestri password tutum magistri."
+
+msgid "license_key"
+msgstr "Key licentiam"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "days"
+
+msgid "no_message_to_display"
+msgstr "Non ad propono"
+
+msgid "offline_notice_title"
+msgstr "Impossibile -, vel super a network online solum circa vos sunt?"
+
+msgid "offline_notice_desc"
+msgstr "Offline es currently in connexione vel conexionem modum retis non posset institui ad server"
+
+msgid "edit_file"
+msgstr "File Edit"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP quod requiritur,"
+
+msgid "apply_to_all_files"
+msgstr "Et omnia files"
+
+msgid "activate_now"
+msgstr "Nunc eu"
+
+msgid "deactivate"
+msgstr "De activate"
+
+msgid "in_progress"
+msgstr "In progress"
+
+msgid "complete"
+msgstr "Complete"
+
+msgid "direction"
+msgstr "Directio"
+
+msgid "progress"
+msgstr "Progress"
+
+msgid "permissions"
+msgstr "permissionibus"
+
+msgid "owner_group"
+msgstr "Dominus / Humus"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "modified"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "cleared"
+
+msgid "error_connecting"
+msgstr "Error"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error in Host / IP"
+
+msgid "error_connecting_to_port"
+msgstr "Error in portum,"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Select a primo loci presul!"
+
+msgid "go"
+msgstr "Vade,"
+
+msgid "confirm"
+msgstr "Confirma"
+
+msgid "delete"
+msgstr "Delete"
+
+msgid "rename"
+msgstr "Rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL () ut Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Placere vultis confirmandum lego delete file (s) / folder (s)"
+
+msgid "cancelled_by_user"
+msgstr "Pax per user"
+
+msgid "already_exists_overwrite"
+msgstr "iam, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "My Account"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Saved? Omnia iam certioribus rationibus."
+
+msgid "file_failed_please_try_again"
+msgstr "File defecit? Quaero, iterum conare."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ut tu aute tabulae adiuti."
+
+msgid "saved!"
+msgstr "Saved?"
+
+msgid "please_enter_a_password"
+msgstr "Please enter a password!"
+
+msgid "connection_closed"
+msgstr "clausa Connection"
+
+msgid "listing_mode_set_to"
+msgstr "Set in modum Listing"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Servo Locus IP placuit, externa per IP"
+
+msgid "login_incorrect"
+msgstr "Login falsa,"
+
+msgid "keeping_connection_alive"
+msgstr "Memoria pertinet vivere"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Nec potui scribere, data circa clausa"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Legere valeant notitia circa clausa"
+
+msgid "error_reading_file"
+msgstr "Error file lectionem"
+
+msgid "error_writing_file"
+msgstr "Error Scriptura file"
+
+msgid "failed_to_change_directory_to"
+msgstr "Non ad mutare Directory"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Non poteris rectam aditus licentias directorio"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Redeunt rursus ad priorem Directory"
+
+msgid "activate"
+msgstr "excitant,"
+
+msgid "payment"
+msgstr "Payment"
+
+msgid "license_key_is_required"
+msgstr "Requiritur licentia key"
+
+msgid "license_activated!"
+msgstr "License activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "Tuus iam License convalescit."
+
+msgid "thank_you!"
+msgstr "Gratias tibi!"
+
+msgid "buy_now!"
+msgstr "Buy Now!"
+
+msgid "buy_now"
+msgstr "Buy Now"
+
+msgid "one_off_fee"
+msgstr "unus de feodo,"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Quaeso, nullis iam exceptionibus app upgrade ad hanc"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Please enter Key infra your License"
+
+msgid "or"
+msgstr "VEL"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Ratio patet,"
+
+msgid "clear_ssh_keys"
+msgstr "Aequaliter Nubila Keys SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes omnes salvos claves SSH"
+
+msgid "clear_app_settings"
+msgstr "App Solis Occasus"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Delet omnia loca particularia App"
+
+msgid "clear_recent_connections"
+msgstr "Recent Iunctio Nubila"
+
+msgid "deletes_all_recent_connections"
+msgstr "Delet omne recens iunctio"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Select"
+
+msgid "import_file"
+msgstr "File Import"
+
+msgid "choose_file"
+msgstr "Eligere file"
+
+msgid "delete_accounts"
+msgstr "Delete Ratio"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Quae omnia delet rationibus"
+
+msgid "import_now"
+msgstr "Sed Import"
+
+msgid "none"
+msgstr "Omnia"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Please sileo sFTP Client app mutationes ad effectum."
+
+msgid "already_bought_the_app"
+msgstr "Iam emit App?"
+
+msgid "choose"
+msgstr "Elige"
+
+msgid "deleted!"
+msgstr "Delevit!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised utimur Viewing"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA key tantum!"
+
+msgid "no_key_selected"
+msgstr "Non amet lectus."
+
+msgid "ssh_key_file"
+msgstr "Key File SSH"
+
+msgid "no_dir_selected"
+msgstr "Dir non lectus."
+
+msgid "keep_blank_for_current_password"
+msgstr "Custodite blank pro current password."
+
+msgid "logon_type"
+msgstr "item Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Interroga pro Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Type Account"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (iunctio)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (iunctio)"
+
+msgid "folder"
+msgstr "folder"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "folder nomen"
+
+msgid "parent"
+msgstr "Parent"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "New Folder"
+
+msgid "clean_now"
+msgstr "mundus autem"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "Ratio non added ..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "File Saved?"
+
+msgid "uploading_file!"
+msgstr "Uploading File:"
+
+msgid "save_failed!"
+msgstr "Save defecit?"
+
+msgid "search"
+msgstr "quaerere"
+
+msgid "find"
+msgstr "Find"
+
+msgid "replace"
+msgstr "Repone"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Show Annotations"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Show inuisibiles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Highlight commouerit"
+
+msgid "word_wrap"
+msgstr "Verbum wrap"
+
+msgid "split_code"
+msgstr "Codex Split"
+
+msgid "preferences"
+msgstr "Praeferentiae"
+
+msgid "close_all_tabs"
+msgstr "Close Omnia Lyrics"
+
+msgid "close_current_tab"
+msgstr "Close current tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto nisi cum file type I"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "nisi cito"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "Theme"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "Mox adventu"
+
+msgid "empty"
+msgstr "inanis"

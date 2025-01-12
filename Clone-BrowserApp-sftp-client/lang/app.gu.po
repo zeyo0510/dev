@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: gu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "મેનુ"
+
+msgid "file"
+msgstr "ફાઇલ"
+
+msgid "view"
+msgstr "જુઓ"
+
+msgid "edit"
+msgstr "સંપાદિત કરો"
+
+msgid "help"
+msgstr "મદદ"
+
+msgid "manage_accounts"
+msgstr "એકાઉન્ટ્સ મેનેજ"
+
+msgid "import_accounts"
+msgstr "આયાત એકાઉન્ટ્સ"
+
+msgid "export_accounts"
+msgstr "નિકાસ એકાઉન્ટ્સ"
+
+msgid "quick_connect"
+msgstr "ઝડપી કનેક્ટ"
+
+msgid "message_log"
+msgstr "સંદેશ લોગ"
+
+msgid "local_directory"
+msgstr "સ્થાનિક ડિરેક્ટરી"
+
+msgid "uploads_downloads"
+msgstr "અપલોડ / ડાઉનલોડ"
+
+msgid "clear_saved_data"
+msgstr "સાચવેલા ડેટા સાફ કરો"
+
+msgid "edit_settings"
+msgstr "સેટિંગ્સ સંપાદિત કરો"
+
+msgid "report_bug"
+msgstr "એક ક્ષતિ અહેવાલ"
+
+msgid "suggest_feature"
+msgstr "એક સુચન"
+
+msgid "ask_a_question"
+msgstr "સવાલ પૂછો"
+
+msgid "change_log"
+msgstr "ફેરફાર લોગ"
+
+msgid "about"
+msgstr "વિશે"
+
+msgid "exit"
+msgstr "બહાર નીકળો"
+
+msgid "host_ip_address"
+msgstr "યજમાન / IP સરનામું"
+
+msgid "username"
+msgstr "વપરાશકર્તા નામ"
+
+msgid "password"
+msgstr "પાસવર્ડ"
+
+msgid "port"
+msgstr "પોર્ટ"
+
+msgid "connect"
+msgstr "જોડાવા"
+
+msgid "welcome"
+msgstr "આપનું સ્વાગત છે"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP ક્લાયન્ટનો કે તે Google Chrome / Chrome OS પેકેજ્ડ એપ્લિકેશન એપ્લિકેશન ઝડપી અને પ્રતિભાવ માટે પરવાનગી આપે છે ઈન્ટરફેસ પર બિલ્ટ કરી દેવામાં આવી બધી સરળતા વિશે છે. કાર્યક્ષમતા કેટલાક દૂર સંગ્રહવા માટે અને તમારા સૌથી અમને આયોજન કરવા માટે તમને FTP એક"
+
+msgid "latest_updates"
+msgstr "તાજેતરના સુધારાઓ"
+
+msgid "server_status"
+msgstr "સર્વર સ્થિતિ"
+
+msgid "license_server"
+msgstr "લાઈસન્સ સર્વર"
+
+msgid "sftp_support"
+msgstr "આધાર"
+
+msgid "notice_update"
+msgstr "નોટીસ / સુધારાઓ"
+
+msgid "website"
+msgstr "વેબસાઇટ"
+
+msgid "clear_all"
+msgstr "બધું સાફ કરો"
+
+msgid "manage"
+msgstr "મેનેજ કરો"
+
+msgid "recheck"
+msgstr "ફરી ચેક"
+
+msgid "last_release"
+msgstr "છેલ્લા પ્રકાશન"
+
+msgid "released"
+msgstr "પ્રકાશિત"
+
+msgid "queued"
+msgstr "કતારમાં"
+
+msgid "failed"
+msgstr "નિષ્ફળ"
+
+msgid "completed"
+msgstr "પૂર્ણ"
+
+msgid "settings"
+msgstr "સેટિંગ્સ"
+
+msgid "add_folder"
+msgstr "ફોલ્ડર ઉમેરો"
+
+msgid "add_ftp_account"
+msgstr "FTP એકાઉન્ટ ઉમેરો"
+
+msgid "file_editor"
+msgstr "ફાઇલ સંપાદક"
+
+msgid "editor_preferences"
+msgstr "સંપાદક પસંદગીઓ"
+
+msgid "your_ftp_accounts"
+msgstr "તમારી ftp એકાઉન્ટ્સ"
+
+msgid "most_recent_used"
+msgstr "તાજેતરમાં ઉપયોગ થાય છે."
+
+msgid "no_connections_yet_made"
+msgstr "કોઈ જોડાણો હજુ સુધી કરવામાં"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "કોઈ FTP એકાઉન્ટ્સ હજુ સુધી ઉમેરી"
+
+msgid "most_recent_connections"
+msgstr "મોટા ભાગના તાજેતરના જોડાણો"
+
+msgid "last_10_connections_made"
+msgstr "કરવામાં છેલ્લા 10 જોડાણો"
+
+msgid "designed_developed_by"
+msgstr "દ્વારા ડિઝાઇન અને સંકલ્પના"
+
+msgid "about_info"
+msgstr "આધાર માટે ઉપયોગ કૃપા કરીને SFTP ક્લાઈન્ટ વેબસાઇટ, કોઈ આધાર અમારી વ્યક્તિગત વેબસાઇટ્સ દ્વારા પૂરી પાડવામાં આવે છે."
+
+msgid "local"
+msgstr "સ્થાનિક"
+
+msgid "remote"
+msgstr "દૂરસ્થ"
+
+msgid "remote_location_desc"
+msgstr "દા.ત. / public_html"
+
+msgid "create_directory"
+msgstr "ડિરેક્ટરી બનાવો"
+
+msgid "create_new_directory"
+msgstr "નવી ડિરેક્ટરી બનાવો"
+
+msgid "create_file"
+msgstr "ફાઈલ બનાવો"
+
+msgid "create_new_file"
+msgstr "નવી ફાઈલ બનાવવા"
+
+msgid "refresh_list"
+msgstr "પુનઃતાજું યાદી"
+
+msgid "change"
+msgstr "બદલો"
+
+msgid "report_a_bug"
+msgstr "એક ક્ષતિ અહેવાલ"
+
+msgid "suggest_a_feature"
+msgstr "એક સુચન"
+
+msgid "enter_password"
+msgstr "પાસવર્ડ દાખલ કરો"
+
+msgid "enter_your_password..."
+msgstr "તમારો પાસવર્ડ દાખલ કરો ..."
+
+msgid "passphrase"
+msgstr "પાસફ્રેઝ"
+
+msgid "enter_your_passphrase..."
+msgstr "તમારો પાસફ્રેઝ દાખલ કરો ..."
+
+msgid "email_sftp_client"
+msgstr "ઇમેઇલ SFTP ક્લાયન્ટનો"
+
+msgid "faqs"
+msgstr "FAQ માતાનો"
+
+msgid "visit_sftp_client_website"
+msgstr "ની મુલાકાત લો SFTP ક્લાયન્ટનો વેબસાઇટ"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Google Chrome વેબ દુકાનમાં પર અમને દર"
+
+msgid "report_an_issue_or_get_help"
+msgstr "સમસ્યાની જાણ કરો અથવા મદદ મળી"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "સુધારાઓ માટે ફેસબુક પર અમારી સાથે જોડાઓ"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "સુધારાઓ માટે Twitter પર અમને અનુસરો"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "સુધારાઓ માટે Google પર અમને +1"
+
+msgid "okay"
+msgstr "બરાબર"
+
+msgid "cancel"
+msgstr "રદ કરો"
+
+msgid "close"
+msgstr "બંધ"
+
+msgid "unknown_host"
+msgstr "અજાણ્યા મેજબાન"
+
+msgid "okay_to_continue"
+msgstr "ચાલુ રાખવા માટે બરાબર?"
+
+msgid "fingerprint"
+msgstr "ફિંગરપ્રિન્ટ"
+
+msgid "remember"
+msgstr "યાદ રાખો"
+
+msgid "file_permissions"
+msgstr "ફાઇલ પરવાનગીઓ"
+
+msgid "file_permissions_desc"
+msgstr "(ઓ) કૃપા કરીને પસંદ કરેલ ફાઇલ (ઓ) / ફોલ્ડર માટે નવા લક્ષણો પસંદ"
+
+msgid "read"
+msgstr "વાંચવું"
+
+msgid "write"
+msgstr "લખો"
+
+msgid "execute"
+msgstr "ચલાવો"
+
+msgid "owner"
+msgstr "માલિક"
+
+msgid "group"
+msgstr "ગ્રુપ"
+
+msgid "public"
+msgstr "જાહેર"
+
+msgid "numeric_value"
+msgstr "આંકડાકીય કિંમત"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "નવા ડિરેક્ટરીનું નામ દાખલ કરો ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "નવી ફાઈલ નામ દાખલ કરો ..."
+
+msgid "name"
+msgstr "નામ"
+
+msgid "enter_a_password"
+msgstr "પાસવર્ડ દાખલ કરો"
+
+msgid "language"
+msgstr "ભાષા"
+
+msgid "seconds"
+msgstr "સેકન્ડ્સ"
+
+msgid "minutes"
+msgstr "મિનિટ"
+
+msgid "hour"
+msgstr "કલાક"
+
+msgid "hours"
+msgstr "કલાક"
+
+msgid "day"
+msgstr "દિવસ"
+
+msgid "trial_left"
+msgstr "ટ્રાયલ ડાબે"
+
+msgid "register_now"
+msgstr "અત્યારે નોંધાવો"
+
+msgid "general"
+msgstr "જનરલ"
+
+msgid "security"
+msgstr "સુરક્ષા"
+
+msgid "master_password"
+msgstr "માસ્ટર પાસવર્ડ"
+
+msgid "status"
+msgstr "સ્થિતિ"
+
+msgid "enabled"
+msgstr "સક્ષમ"
+
+msgid "disabled"
+msgstr "અપંગ"
+
+msgid "timeout"
+msgstr "સમયસમાપ્તિ"
+
+msgid "save"
+msgstr "સાચવો"
+
+msgid "add_account"
+msgstr "ખાતું ઉમેરો"
+
+msgid "support"
+msgstr "આધાર"
+
+msgid "notice_updates"
+msgstr "નોટીસ / સુધારાઓ"
+
+msgid "please_login"
+msgstr "પ્રવેશ કરો"
+
+msgid "your_session_timed_out"
+msgstr "તમારા સત્ર ટાઇમ્ડ આઉટ"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "માફ કરશો તમે દાખલ કરેલ પાસવર્ડની ખોટો હતો!"
+
+msgid "login"
+msgstr "પ્રવેશ"
+
+msgid "master_password_desc"
+msgstr "આ માસ્ટર પાસવર્ડ તમારા એકાઉન્ટ્સ સુરક્ષિત રાખવા માટે સેટ કરો."
+
+msgid "license_key"
+msgstr "લાઇસન્સ કી"
+
+msgid "online"
+msgstr "ઓનલાઇન"
+
+msgid "offline"
+msgstr "ઑફલાઇન"
+
+msgid "currently_unavailable"
+msgstr "હાલ ઉપલબ્ધ નથી"
+
+msgid "no_message_to_display"
+msgstr "કોઈ સંદેશ પ્રદર્શિત કરવા માટે"
+
+msgid "offline_notice_title"
+msgstr "પહોંચેલ - તમે ઑફલાઇન અથવા નેટવર્ક જોડાણ માત્ર પર હોય છે?"
+
+msgid "offline_notice_desc"
+msgstr "તમે નેટવર્ક પર માત્ર જોડાણ અથવા કોઈ જોડાણ અમારા સર્વર પર સ્થાપિત કરી શકાય છે હાલમાં ઑફલાઇન છો,"
+
+msgid "edit_file"
+msgstr "ફાઈલમાં ફેરફાર"
+
+msgid "download"
+msgstr "ડાઉનલોડ કરો"
+
+msgid "upload"
+msgstr "અપલોડ કરો"
+
+msgid "host_ip_is_required"
+msgstr "યજમાન / IP જરૂરી છે"
+
+msgid "apply_to_all_files"
+msgstr "બધી ફાઈલો માટે લાગુ પડે છે"
+
+msgid "activate_now"
+msgstr "હવે સક્રિય"
+
+msgid "deactivate"
+msgstr "દ સક્રિય"
+
+msgid "in_progress"
+msgstr "પ્રગતિ માં"
+
+msgid "complete"
+msgstr "પૂર્ણ"
+
+msgid "direction"
+msgstr "દિશા"
+
+msgid "progress"
+msgstr "પ્રગતિ"
+
+msgid "permissions"
+msgstr "પરવાનગીઓ"
+
+msgid "owner_group"
+msgstr "માલિક / ગ્રુપ"
+
+msgid "size"
+msgstr "માપ"
+
+msgid "type"
+msgstr "પ્રકાર"
+
+msgid "modified"
+msgstr "ફેરફાર"
+
+msgid "trial"
+msgstr "ટ્રાયલ"
+
+msgid "cleared"
+msgstr "સાફ"
+
+msgid "error_connecting"
+msgstr "જોડાવવામાં ક્ષતિ"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP સરનામું હોસ્ટ સાથે જોડાવવામાં ક્ષતિ"
+
+msgid "error_connecting_to_port"
+msgstr "પોર્ટ સાથે જોડાવવામાં ક્ષતિ"
+
+msgid "please_select_a_local_directory_first"
+msgstr "કૃપા કરીને એક સ્થાનિક ડિરેક્ટરી પ્રથમ પસંદ કરો!"
+
+msgid "go"
+msgstr "જાઓ"
+
+msgid "confirm"
+msgstr "ખાતરી કરો"
+
+msgid "delete"
+msgstr "કાઢી નાખો"
+
+msgid "rename"
+msgstr "નામ બદલો"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL ની કૉપિ કરો (ઓ) ક્લિપબોર્ડ પર"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "કૃપા કરીને ખાતરી કરો કે તમે પસંદ કરેલ ફાઇલ (ઓ) કાઢી નાખવા માંગો છો / ફોલ્ડર (ઓ)"
+
+msgid "cancelled_by_user"
+msgstr "વપરાશકર્તા દ્વારા રદ"
+
+msgid "already_exists_overwrite"
+msgstr "પહેલેથી જ ફરીથી લખી અસ્તિત્વમાં છે?"
+
+msgid "dashboard"
+msgstr "ડેશબોર્ડ"
+
+msgid "my_accounts"
+msgstr "મારા એકાઉન્ટ્સ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "સાચવેલા ફાઈલ! બધા એકાઉન્ટ્સ બેકઅપ લેવામાં આવ્યો છે."
+
+msgid "file_failed_please_try_again"
+msgstr "ફાઇલ નિષ્ફળ! મહેરબાની કરીને ફરીથી પ્રયતન કરો."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "તમે હાલમાં કોઈ એકાઉન્ટ્સ બેકઅપ કરી શકાય છે."
+
+msgid "saved!"
+msgstr "સાચવેલા!"
+
+msgid "please_enter_a_password"
+msgstr "પાસવર્ડ દાખલ કરો કૃપા કરીને!"
+
+msgid "connection_closed"
+msgstr "જોડાણ બંધ કર્યું"
+
+msgid "listing_mode_set_to"
+msgstr "સ્થિતિમાં સુયોજિત સૂચિ"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "સ્થાનિક સર્વર IP ઉકેલાઈ, બાહ્ય IP ઉપયોગ કરીને"
+
+msgid "login_incorrect"
+msgstr "લૉગિન ખોટું"
+
+msgid "keeping_connection_alive"
+msgstr "જોડાણ જીવંત રાખવા"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "લખવા માટે અસમર્થ, ડેટા કનેક્શન બંધ"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ડેટા કનેક્શન બંધ વાંચવામાં અસમર્થ"
+
+msgid "error_reading_file"
+msgstr "ફાઇલને વાંચવામાં ભૂલ"
+
+msgid "error_writing_file"
+msgstr "લખવામાં ક્ષતિ ફાઇલ"
+
+msgid "failed_to_change_directory_to"
+msgstr "ડિરેક્ટરીને બદલો કરવામાં નિષ્ફળ"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "તમે આ ડિરેક્ટરી ઍક્સેસ કરવા યોગ્ય તમારી પાસે પરવાનગીઓ નથી"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "અગાઉના ડિરેક્ટરીમાં પાછા ફેરવવાનો"
+
+msgid "activate"
+msgstr "સક્રિય"
+
+msgid "payment"
+msgstr "ચુકવણી"
+
+msgid "license_key_is_required"
+msgstr "લાઈસન્સ કી જરૂરી છે"
+
+msgid "license_activated!"
+msgstr "લાઈસન્સ સક્રિય!"
+
+msgid "your_license_has_been_validated"
+msgstr "તમારી લાઈસન્સ માન્ય કરવામાં આવી છે."
+
+msgid "thank_you!"
+msgstr "આભાર!"
+
+msgid "buy_now!"
+msgstr "હમણાં જ ખરીદો!"
+
+msgid "buy_now"
+msgstr "હમણાં જ ખરીદો"
+
+msgid "one_off_fee"
+msgstr "એક બંધ ફી"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "કોઈ બંધનો સાથે આ એપ્લિકેશન આનંદ અપગ્રેડ કરો"
+
+msgid "please_enter_your_license_key_below"
+msgstr "નીચે તમારી લાઈસન્સ કી દાખલ કરો"
+
+msgid "or"
+msgstr "અથવા"
+
+msgid "loading..."
+msgstr "લોડ કરી રહ્યું છે ..."
+
+msgid "clear_accounts"
+msgstr "એકાઉન્ટ્સ સ્પષ્ટ"
+
+msgid "clear_ssh_keys"
+msgstr "સ્પષ્ટ SSH કી"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "બધા સાચવવામાં SSH કી કાઢી નાંખે છે"
+
+msgid "clear_app_settings"
+msgstr "સ્પષ્ટ એપ્લિકેશન સેટિંગ્સ"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "બધા એપ્લિકેશન ચોક્કસ સુયોજનો કાઢી નાંખે છે"
+
+msgid "clear_recent_connections"
+msgstr "સ્પષ્ટ તાજેતરના જોડાણો"
+
+msgid "deletes_all_recent_connections"
+msgstr "તાજેતરના બધા જોડાણો કાઢી નાંખે છે"
+
+msgid "import_type"
+msgstr "આયાત પ્રકાર"
+
+msgid "please_select"
+msgstr "મહેરબાની કરી, પસંદ કરો"
+
+msgid "import_file"
+msgstr "આયાત ફાઇલ"
+
+msgid "choose_file"
+msgstr "ફાઇલ પસંદ કરો"
+
+msgid "delete_accounts"
+msgstr "એકાઉન્ટ્સ કાઢી"
+
+msgid "deletes_all_existing_accounts"
+msgstr "બધા હાલના એકાઉન્ટ્સ કાઢી નાંખે છે"
+
+msgid "import_now"
+msgstr "આયાત હવે"
+
+msgid "none"
+msgstr "કંઈ"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "ફેરફારોની અસર લાવવા માટે SFTP ક્લાયન્ટનો એપ્લિકેશનને ફરીથી પ્રારંભ કરો."
+
+msgid "already_bought_the_app"
+msgstr "પહેલાથી એપ્લિકેશન ખરીદી?"
+
+msgid "choose"
+msgstr "પસંદ કરો"
+
+msgid "deleted!"
+msgstr "કાઢી નાખ્યું!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised બ્રાઉઝિંગ ઉપયોગ"
+
+msgid "remote_directory"
+msgstr "દૂરસ્થ ડિરેક્ટરી"
+
+msgid "rsa_key_only!"
+msgstr "RSA કી માત્ર!"
+
+msgid "no_key_selected"
+msgstr "કોઈ કી પસંદ કરેલ હોય."
+
+msgid "ssh_key_file"
+msgstr "SSH કી ફાઇલ"
+
+msgid "no_dir_selected"
+msgstr "કોઈ dir પસંદ કરેલ હોય."
+
+msgid "keep_blank_for_current_password"
+msgstr "વર્તમાન પાસવર્ડ માટે ખાલી રાખો."
+
+msgid "logon_type"
+msgstr "Logon પ્રકાર"
+
+msgid "normal"
+msgstr "સામાન્ય"
+
+msgid "ask_for_password"
+msgstr "પાસવર્ડ માટે પૂછો"
+
+msgid "anonymous"
+msgstr "અનામિક"
+
+msgid "account_type"
+msgstr "ખાતાનો પ્રકાર"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (સામાન્ય જોડાણ)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (સુરક્ષિત જોડાણ)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (સુરક્ષિત જોડાણ)"
+
+msgid "folder"
+msgstr "ફોલ્ડર"
+
+msgid "advanced"
+msgstr "અદ્યતન"
+
+msgid "folder_name"
+msgstr "ફોલ્ડર નામ"
+
+msgid "parent"
+msgstr "પિતૃ"
+
+msgid "new_ftp_site"
+msgstr "ન્યૂ FTP સાઈટ"
+
+msgid "new_folder"
+msgstr "નવું ફોલ્ડર"
+
+msgid "clean_now"
+msgstr "સ્વચ્છ હવે"
+
+msgid "host"
+msgstr "યજમાન"
+
+msgid "no_accounts_added..."
+msgstr "કોઈ એકાઉન્ટ્સ ઉમેરવામાં ..."
+
+msgid "unknown"
+msgstr "અજ્ઞાત"
+
+msgid "file_saved!"
+msgstr "સાચવેલા ફાઈલ!"
+
+msgid "uploading_file!"
+msgstr "ફાઇલ અપલોડ કરી!"
+
+msgid "save_failed!"
+msgstr "સાચવો નિષ્ફળ!"
+
+msgid "search"
+msgstr "શોધ"
+
+msgid "find"
+msgstr "શોધવા"
+
+msgid "replace"
+msgstr "બદલો"
+
+msgid "scroll_past_end"
+msgstr "સરક ભૂતકાળના અંતે"
+
+msgid "show_annotations"
+msgstr "એનોટેશન્સ"
+
+msgid "show_gutter"
+msgstr "બતાવો ગટર"
+
+msgid "show_invisibles"
+msgstr "બતાવો Invisibles"
+
+msgid "show_print_margin"
+msgstr "બતાવો છાપો માર્જિન"
+
+msgid "highlight_active_line"
+msgstr "સક્રિય લીટી પ્રકાશિત"
+
+msgid "word_wrap"
+msgstr "શબ્દ કામળો"
+
+msgid "split_code"
+msgstr "સ્પ્લિટ કોડ"
+
+msgid "preferences"
+msgstr "પસંદગીઓ"
+
+msgid "close_all_tabs"
+msgstr "બંધ કરો બધા ટૅબ્સ"
+
+msgid "close_current_tab"
+msgstr "હાલનીટેબબંધકરો"
+
+msgid "auto_save_file_when_i_type"
+msgstr "જ્યારે હું લખો ઓટો ફાઈલ સંગ્રહો"
+
+msgid "auto_save"
+msgstr "ઓટો સેવ"
+
+msgid "quick_save"
+msgstr "ઝડપી સાચવો"
+
+msgid "documentation"
+msgstr "દસ્તાવેજીકરણ"
+
+msgid "themes"
+msgstr "થીમ"
+
+msgid "keyboard_shortcuts"
+msgstr "કીબોર્ડ શૉર્ટકટ્સ"
+
+msgid "coming_soon"
+msgstr "ટૂક સમયમાં આવી રહ્યું છે"
+
+msgid "empty"
+msgstr "ખાલી"

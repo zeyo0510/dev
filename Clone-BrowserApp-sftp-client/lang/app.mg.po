@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: mg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "sakafo"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "anglisy"
+
+msgid "help"
+msgstr "Vonjeo"
+
+msgid "manage_accounts"
+msgstr "Manage Kaonty"
+
+msgid "import_accounts"
+msgstr "Import Kaonty"
+
+msgid "export_accounts"
+msgstr "Export Kaonty"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "Local Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Voavonjy Data"
+
+msgid "edit_settings"
+msgstr "Hanova ny Settings"
+
+msgid "report_bug"
+msgstr "Report ny Bug"
+
+msgid "suggest_feature"
+msgstr "Toroy hevitra ny Feature"
+
+msgid "ask_a_question"
+msgstr "Hametraka fanontaniana"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "Fivoahana"
+
+msgid "host_ip_address"
+msgstr "Host / IP Address"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Password"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Connect"
+
+msgid "welcome"
+msgstr "Welcome"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client dia rehetra momba ny tsotra, izany dia efa naorina teo ny Google Chrome / Chrome OS anaty baoritra fampiharana interface tsara mamela ny fampiharana mba ho mafy sy manaiky. Ny sasany dia ahitana ny fahafaha-miasa ny FTP Account Manager mit"
+
+msgid "latest_updates"
+msgstr "vaovao farany"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "Mombamomba ny mpanoratra Server"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Notice / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "Clear rehetra"
+
+msgid "manage"
+msgstr "mitantana"
+
+msgid "recheck"
+msgstr "Re-maso"
+
+msgid "last_release"
+msgstr "Last Release"
+
+msgid "released"
+msgstr "navoaka"
+
+msgid "queued"
+msgstr "nilahatra"
+
+msgid "failed"
+msgstr "tsy nahomby"
+
+msgid "completed"
+msgstr "vita"
+
+msgid "settings"
+msgstr "Settings"
+
+msgid "add_folder"
+msgstr "Add Folder"
+
+msgid "add_ftp_account"
+msgstr "Add FTP kaonty"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Préférences"
+
+msgid "your_ftp_accounts"
+msgstr "Ny FTP Kaonty"
+
+msgid "most_recent_used"
+msgstr "Vao haingana indrindra nampiasaina."
+
+msgid "no_connections_yet_made"
+msgstr "Tsy misy fifandraisana mbola nanao"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No FTP kaonty nanampy mbola"
+
+msgid "most_recent_connections"
+msgstr "Farany indrindra Connections"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 fifandraisana atao"
+
+msgid "designed_developed_by"
+msgstr "Natao & Developed by"
+
+msgid "about_info"
+msgstr "Mba mampiasa ny sFTP Client vohikala ho an'ny fanohanana, tsy misy fanohanana dia omena amin'ny alalan'ny tranonkala ny tsirairay."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "oh / public_html"
+
+msgid "create_directory"
+msgstr "hamorona Directory"
+
+msgid "create_new_directory"
+msgstr "Hamorona New Directory"
+
+msgid "create_file"
+msgstr "hamorona File"
+
+msgid "create_new_file"
+msgstr "Hamorona New File"
+
+msgid "refresh_list"
+msgstr "Refresh List"
+
+msgid "change"
+msgstr "Change"
+
+msgid "report_a_bug"
+msgstr "Report ny Bug"
+
+msgid "suggest_a_feature"
+msgstr "Toroy hevitra ny Feature"
+
+msgid "enter_password"
+msgstr "Ampidiro Password"
+
+msgid "enter_your_password..."
+msgstr "Ampidiro ny tenimiafina ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Ampidiro ny passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ ny"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit sFTP Client Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Hanome naoty antsika eo amin'ny Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Tatitra ny olana na mahazo fanampiana"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Hiaraka aminay ao amin'ny Facebook ny fanavaozam-baovao"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Araho izahay ao amin'ny Twitter ny vaovao farany"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Antsika ao amin'ny Google noho ny vaovao farany"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "hanafoana"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "Unknown Host"
+
+msgid "okay_to_continue"
+msgstr "Ekena ny hanohy?"
+
+msgid "fingerprint"
+msgstr "tondro"
+
+msgid "remember"
+msgstr "Tsarovy"
+
+msgid "file_permissions"
+msgstr "File Permissions"
+
+msgid "file_permissions_desc"
+msgstr "Fidio azafady ny toetra vaovao ho an'ny voafantina rakitra (s) / fampirimana (s)"
+
+msgid "read"
+msgstr "Vakio"
+
+msgid "write"
+msgstr "Soraty"
+
+msgid "execute"
+msgstr "hampihatra"
+
+msgid "owner"
+msgstr "Owner"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "Numeric Sarobidy"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Ampidiro ny anaran'ny Directory vaovao ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Ampidiro ny anaran'ny rakitra vaovao ..."
+
+msgid "name"
+msgstr "Name"
+
+msgid "enter_a_password"
+msgstr "Mampidira Password"
+
+msgid "language"
+msgstr "fiteny"
+
+msgid "seconds"
+msgstr "Seconds"
+
+msgid "minutes"
+msgstr "Minutes"
+
+msgid "hour"
+msgstr "ora"
+
+msgid "hours"
+msgstr "Hours"
+
+msgid "day"
+msgstr "Day"
+
+msgid "trial_left"
+msgstr "Trial ankavia"
+
+msgid "register_now"
+msgstr "Register Ankehitriny"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "afaka"
+
+msgid "disabled"
+msgstr "Disabled"
+
+msgid "timeout"
+msgstr "Fotoana dila"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Add Account"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Notice / Updates"
+
+msgid "please_login"
+msgstr "Please Login"
+
+msgid "your_session_timed_out"
+msgstr "Ara-potoana ny Session Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Miala tsiny ny tenimiafina nampidirinao dia diso!"
+
+msgid "login"
+msgstr "Hiditra"
+
+msgid "master_password_desc"
+msgstr "Ataovy izany tompony tenimiafina hitandrina ny tantara azo antoka."
+
+msgid "license_key"
+msgstr "Mombamomba ny mpanoratra Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Tsy vonona amin'izao fotoana izao"
+
+msgid "no_message_to_display"
+msgstr "Tsy misy hafatra mba hampiseho"
+
+msgid "offline_notice_title"
+msgstr "Takatra - ianao ivelan'ny aterineto, na amin'ny tambajotra fifandraisana ihany?"
+
+msgid "offline_notice_desc"
+msgstr "Amin'izao fotoana izao ianao ivelan'ny aterineto, amin'ny tambajotra ihany fifandraisana na tsy misy fifandraisana mety haorina amin 'ny lohamilina"
+
+msgid "edit_file"
+msgstr "Hanova ny File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP takiana"
+
+msgid "apply_to_all_files"
+msgstr "Ampiharo ny antontan-taratasy rehetra"
+
+msgid "activate_now"
+msgstr "mampihetsika Ankehitriny"
+
+msgid "deactivate"
+msgstr "De-hampavitrika"
+
+msgid "in_progress"
+msgstr "Eo an-dàlana"
+
+msgid "complete"
+msgstr "Complete"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "Progress"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Tompony / Group"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "Modified"
+
+msgid "trial"
+msgstr "fitsapana"
+
+msgid "cleared"
+msgstr "nanala"
+
+msgid "error_connecting"
+msgstr "Error Mampifandray"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Hadisoana Mampifandray hampiantrano / adiresy IP"
+
+msgid "error_connecting_to_port"
+msgstr "Hadisoana Mampifandray ny seranana"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Azafady mifidiana Directory an-toerana voalohany!"
+
+msgid "go"
+msgstr "Mandehana"
+
+msgid "confirm"
+msgstr "Confirm"
+
+msgid "delete"
+msgstr "Fafao"
+
+msgid "rename"
+msgstr "Hanova anarana"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) ny hela-tsilaka"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Azafady hampiorina anareo te-hamafa ireo voafantina rakitra (s) / fampirimana (s)"
+
+msgid "cancelled_by_user"
+msgstr "Nofoanana ny mpampiasa"
+
+msgid "already_exists_overwrite"
+msgstr "efa misy, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "My Kaonty"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File voavonjy! Tantara rehetra no nanohana ny."
+
+msgid "file_failed_please_try_again"
+msgstr "File Tsy nahomby! Manandrama indray azafady."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ianao amin'izao fotoana izao dia tsy manana kaonty mba ho nanohana."
+
+msgid "saved!"
+msgstr "Voavonjy!"
+
+msgid "please_enter_a_password"
+msgstr "Ampidiro ny tenimiafina!"
+
+msgid "connection_closed"
+msgstr "Connection mihidy"
+
+msgid "listing_mode_set_to"
+msgstr "Lisitra ireo fomba teo amin'ny"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Tapa-kevitra eo an-toerana mpizara IP, mampiasa ivelany IP"
+
+msgid "login_incorrect"
+msgstr "Login diso"
+
+msgid "keeping_connection_alive"
+msgstr "Fitandremana fifandraisana velona"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Dia tsy afaka nanoratra, angona fifandraisana nikatona"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Tsy afaka mamaky ny angon-drakitra fifandraisana nikatona"
+
+msgid "error_reading_file"
+msgstr "Famakiana Error rakitra"
+
+msgid "error_writing_file"
+msgstr "Error fanoratana rakitra"
+
+msgid "failed_to_change_directory_to"
+msgstr "Tsy nahomby ny hanova Directory ny"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Mety tsy manana ny marina alalana mba hiditra ao amin'io lahatahiry io"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Reverting indray teo aloha Directory"
+
+msgid "activate"
+msgstr "hampavitrika"
+
+msgid "payment"
+msgstr "Payment"
+
+msgid "license_key_is_required"
+msgstr "Mombamomba ny mpanoratra manan-danja dia ilaina"
+
+msgid "license_activated!"
+msgstr "License mampandeha!"
+
+msgid "your_license_has_been_validated"
+msgstr "Ny fahazoan-dàlana, tsy nisy nanan-kery."
+
+msgid "thank_you!"
+msgstr "Misaotra anao!"
+
+msgid "buy_now!"
+msgstr "Hividy izao!"
+
+msgid "buy_now"
+msgstr "Hividy izao"
+
+msgid "one_off_fee"
+msgstr "iray eny saran'ny"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Mba hanatsarana ny mankafy izany fampiharana tsy misy sakantsakana"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Ampidiro ny License Key eto ambany"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Clear Kaonty"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Mamafa voavonjy rehetra SSH fanalahidy"
+
+msgid "clear_app_settings"
+msgstr "Clear App Settings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Mamafa fampiharana ny toe-javatra manokana"
+
+msgid "clear_recent_connections"
+msgstr "Clear Recent Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Mamafa vao haingana ny fifandraisana"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Please Select"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Mifidiana File"
+
+msgid "delete_accounts"
+msgstr "Fafao Kaonty"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Mamafa rehetra efa misy kaonty"
+
+msgid "import_now"
+msgstr "Import Ankehitriny"
+
+msgid "none"
+msgstr "tsy misy"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Mba hamerina sFTP Client fampiharana ny fiovana hisy fiantraikany."
+
+msgid "already_bought_the_app"
+msgstr "Efa nividy ny App?"
+
+msgid "choose"
+msgstr "Mifidiana"
+
+msgid "deleted!"
+msgstr "Fafao!"
+
+msgid "use_syncronised_browsing"
+msgstr "mampiasa syncronised Browsing"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "Afrika Atsimo ihany no manan-danja!"
+
+msgid "no_key_selected"
+msgstr "Tsy misy manan-danja voafantina."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "No Back voafantina."
+
+msgid "keep_blank_for_current_password"
+msgstr "Foana banga ny tenimiafina amin'izao fotoana izao."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Mangataha Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Account Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "lahatahiry"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "lahatahiry Name"
+
+msgid "parent"
+msgstr "Ray Aman-dreny"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "New Folder"
+
+msgid "clean_now"
+msgstr "Clean Ankehitriny"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "No Kaonty Added ..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "File voavonjy!"
+
+msgid "uploading_file!"
+msgstr "Hampiditra fisie!"
+
+msgid "save_failed!"
+msgstr "Vonjeo Tsy nahomby!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "Find"
+
+msgid "replace"
+msgstr "manolo"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past Ny"
+
+msgid "show_annotations"
+msgstr "Show Annotations"
+
+msgid "show_gutter"
+msgstr "Show tatatra"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print sisiny"
+
+msgid "highlight_active_line"
+msgstr "Hanasongadinana Active-dalana,"
+
+msgid "word_wrap"
+msgstr "teny Wrap"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "safidinao"
+
+msgid "close_all_tabs"
+msgstr "Close rehetra Kihebaheba"
+
+msgid "close_current_tab"
+msgstr "Close Current Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto afa-rakitra rehefa manoratra aho"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "lohahevitra"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "Ho avy tsy ho ela"
+
+msgid "empty"
+msgstr "foana"

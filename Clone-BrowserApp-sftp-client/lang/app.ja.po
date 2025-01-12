@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "メニュー"
+
+msgid "file"
+msgstr "ファイル"
+
+msgid "view"
+msgstr "ビュー"
+
+msgid "edit"
+msgstr "編集"
+
+msgid "help"
+msgstr "助けて"
+
+msgid "manage_accounts"
+msgstr "アカウントを管理します"
+
+msgid "import_accounts"
+msgstr "インポートアカウント"
+
+msgid "export_accounts"
+msgstr "エクスポート・アカウント"
+
+msgid "quick_connect"
+msgstr "クイックコネクト"
+
+msgid "message_log"
+msgstr "メッセージログ"
+
+msgid "local_directory"
+msgstr "ローカルディレクトリ"
+
+msgid "uploads_downloads"
+msgstr "アップロード/ダウンロード"
+
+msgid "clear_saved_data"
+msgstr "クリア保存データ"
+
+msgid "edit_settings"
+msgstr "設定の編集"
+
+msgid "report_bug"
+msgstr "バグを報告します"
+
+msgid "suggest_feature"
+msgstr "機能を提案します"
+
+msgid "ask_a_question"
+msgstr "質問する"
+
+msgid "change_log"
+msgstr "変更ログ"
+
+msgid "about"
+msgstr "約"
+
+msgid "exit"
+msgstr "出口"
+
+msgid "host_ip_address"
+msgstr "ホスト/ IPアドレス"
+
+msgid "username"
+msgstr "ユーザー名"
+
+msgid "password"
+msgstr "パスワード"
+
+msgid "port"
+msgstr "ポート"
+
+msgid "connect"
+msgstr "接続します"
+
+msgid "welcome"
+msgstr "ようこそ"
+
+msgid "welcome_intro"
+msgstr "<p> SFTPクライアントは、それはアプリが高速で応答することを可能にするGoogle Chromeの/クロームOSパッケージ化されたアプリのインターフェイス上に構築された、すべてのシンプルさについてです。機能の一部が離れて保存し、あなたの最も私たちを整理するためにFTPアカウントマネージャを含み"
+
+msgid "latest_updates"
+msgstr "最新の更新情報"
+
+msgid "server_status"
+msgstr "サーバステータス"
+
+msgid "license_server"
+msgstr "ライセンスサーバー"
+
+msgid "sftp_support"
+msgstr "サポート"
+
+msgid "notice_update"
+msgstr "お知らせ/更新情報"
+
+msgid "website"
+msgstr "ウェブサイト"
+
+msgid "clear_all"
+msgstr "すべてクリア"
+
+msgid "manage"
+msgstr "管理します"
+
+msgid "recheck"
+msgstr "再チェック"
+
+msgid "last_release"
+msgstr "最終リリース"
+
+msgid "released"
+msgstr "リリースされ"
+
+msgid "queued"
+msgstr "待ち行列に入れられました"
+
+msgid "failed"
+msgstr "失敗しました"
+
+msgid "completed"
+msgstr "完成しました"
+
+msgid "settings"
+msgstr "設定"
+
+msgid "add_folder"
+msgstr "フォルダーを追加"
+
+msgid "add_ftp_account"
+msgstr "FTPアカウントを追加"
+
+msgid "file_editor"
+msgstr "ファイルエディタ"
+
+msgid "editor_preferences"
+msgstr "エディタの設定"
+
+msgid "your_ftp_accounts"
+msgstr "あなたのFTPアカウント"
+
+msgid "most_recent_used"
+msgstr "最も最近使用しました。"
+
+msgid "no_connections_yet_made"
+msgstr "いいえ接続はまだ行われていません"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "いいえFTPアカウントは追加されていません"
+
+msgid "most_recent_connections"
+msgstr "最近の接続"
+
+msgid "last_10_connections_made"
+msgstr "最後に行われた10の接続"
+
+msgid "designed_developed_by"
+msgstr "によって設計＆開発"
+
+msgid "about_info"
+msgstr "サポートのためのSFTPクライアントのウェブサイトを使用してください、サポートが私たちの個々のウェブサイトを介して提供されていません。"
+
+msgid "local"
+msgstr "地元"
+
+msgid "remote"
+msgstr "リモート"
+
+msgid "remote_location_desc"
+msgstr "例えば/ public_htmlの"
+
+msgid "create_directory"
+msgstr "ディレクトリを作成します"
+
+msgid "create_new_directory"
+msgstr "新しいディレクトリを作成します。"
+
+msgid "create_file"
+msgstr "ファイルを作成します。"
+
+msgid "create_new_file"
+msgstr "新しいファイルを作成します。"
+
+msgid "refresh_list"
+msgstr "リフレッシュリスト"
+
+msgid "change"
+msgstr "変化する"
+
+msgid "report_a_bug"
+msgstr "バグを報告します"
+
+msgid "suggest_a_feature"
+msgstr "機能を提案します"
+
+msgid "enter_password"
+msgstr "パスワードを入力する"
+
+msgid "enter_your_password..."
+msgstr "パスワードを入力してください..."
+
+msgid "passphrase"
+msgstr "パスフレーズ"
+
+msgid "enter_your_passphrase..."
+msgstr "パスフレーズを入力してください..."
+
+msgid "email_sftp_client"
+msgstr "メールSFTPクライアント"
+
+msgid "faqs"
+msgstr "よくある質問"
+
+msgid "visit_sftp_client_website"
+msgstr "SFTPクライアントのウェブサイトをご覧ください"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Google Chromeのウェブストア上で私たちを評価します"
+
+msgid "report_an_issue_or_get_help"
+msgstr "問題を報告したり、助けを得ます"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "更新をFacebookに登録してご参加ください"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "更新をTwitterでフォローします"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "1アップデートのためのGoogleで私たち"
+
+msgid "okay"
+msgstr "はい"
+
+msgid "cancel"
+msgstr "キャンセル"
+
+msgid "close"
+msgstr "閉じる"
+
+msgid "unknown_host"
+msgstr "未知のホスト"
+
+msgid "okay_to_continue"
+msgstr "継続しても大丈夫？"
+
+msgid "fingerprint"
+msgstr "指紋"
+
+msgid "remember"
+msgstr "覚えています"
+
+msgid "file_permissions"
+msgstr "ファイルのアクセス権"
+
+msgid "file_permissions_desc"
+msgstr "選択したファイル/フォルダ（複数可）のための新しい属性を選択してください"
+
+msgid "read"
+msgstr "読む"
+
+msgid "write"
+msgstr "書きます"
+
+msgid "execute"
+msgstr "実行します"
+
+msgid "owner"
+msgstr "オーナー"
+
+msgid "group"
+msgstr "グループ"
+
+msgid "public"
+msgstr "パブリック"
+
+msgid "numeric_value"
+msgstr "数値"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "新しいディレクトリの名前を入力してください..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "新しいファイルの名前を入力してください..."
+
+msgid "name"
+msgstr "名"
+
+msgid "enter_a_password"
+msgstr "パスワードを入力します"
+
+msgid "language"
+msgstr "言語"
+
+msgid "seconds"
+msgstr "秒"
+
+msgid "minutes"
+msgstr "分"
+
+msgid "hour"
+msgstr "時間"
+
+msgid "hours"
+msgstr "営業時間"
+
+msgid "day"
+msgstr "日"
+
+msgid "trial_left"
+msgstr "試用左"
+
+msgid "register_now"
+msgstr "今すぐ登録"
+
+msgid "general"
+msgstr "一般的な"
+
+msgid "security"
+msgstr "セキュリティ"
+
+msgid "master_password"
+msgstr "マスターパスワード"
+
+msgid "status"
+msgstr "状態"
+
+msgid "enabled"
+msgstr "使用可能"
+
+msgid "disabled"
+msgstr "使用禁止"
+
+msgid "timeout"
+msgstr "タイムアウト"
+
+msgid "save"
+msgstr "セーブ"
+
+msgid "add_account"
+msgstr "アカウントを追加する"
+
+msgid "support"
+msgstr "サポート"
+
+msgid "notice_updates"
+msgstr "お知らせ/更新情報"
+
+msgid "please_login"
+msgstr "ログインしてください"
+
+msgid "your_session_timed_out"
+msgstr "あなたのセッションのタイムアウト"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "申し訳ありませんが、あなたが入力したパスワードが正しくありませんでした！"
+
+msgid "login"
+msgstr "ログイン"
+
+msgid "master_password_desc"
+msgstr "安全なアカウントを維持するために、このマスターパスワードを設定します。"
+
+msgid "license_key"
+msgstr "ライセンスキー"
+
+msgid "online"
+msgstr "オンライン"
+
+msgid "offline"
+msgstr "オフライン"
+
+msgid "currently_unavailable"
+msgstr "現在お取り扱いできません"
+
+msgid "no_message_to_display"
+msgstr "いいえ、メッセージは表示されませんします"
+
+msgid "offline_notice_title"
+msgstr "到達不能 - あなたがオフラインまたはネットワーク接続だけではありますか？"
+
+msgid "offline_notice_desc"
+msgstr "あなただけの接続または接続なしで当社のサーバーに確立することができ、ネットワーク上で、現在オフラインです"
+
+msgid "edit_file"
+msgstr "ファイルの編集"
+
+msgid "download"
+msgstr "ダウンロード"
+
+msgid "upload"
+msgstr "アップロード"
+
+msgid "host_ip_is_required"
+msgstr "ホスト/ IPが必要です"
+
+msgid "apply_to_all_files"
+msgstr "すべてのファイルに適用されます"
+
+msgid "activate_now"
+msgstr "今すぐアクティブ化"
+
+msgid "deactivate"
+msgstr "非アクティブ化"
+
+msgid "in_progress"
+msgstr "進行中"
+
+msgid "complete"
+msgstr "コンプリート"
+
+msgid "direction"
+msgstr "方向"
+
+msgid "progress"
+msgstr "進捗"
+
+msgid "permissions"
+msgstr "パーミッション"
+
+msgid "owner_group"
+msgstr "所有者/グループ"
+
+msgid "size"
+msgstr "サイズ"
+
+msgid "type"
+msgstr "タイプ"
+
+msgid "modified"
+msgstr "修正されました"
+
+msgid "trial"
+msgstr "トライアル"
+
+msgid "cleared"
+msgstr "クリア"
+
+msgid "error_connecting"
+msgstr "接続エラー"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IPアドレスをホストへの接続エラー"
+
+msgid "error_connecting_to_port"
+msgstr "ポートへの接続エラー"
+
+msgid "please_select_a_local_directory_first"
+msgstr "最初にローカルディレクトリを選択してください！"
+
+msgid "go"
+msgstr "行きます"
+
+msgid "confirm"
+msgstr "確認します"
+
+msgid "delete"
+msgstr "削除"
+
+msgid "rename"
+msgstr "リネーム"
+
+msgid "copy_urls_to_clipboard"
+msgstr "クリップボードへのURL（複数可）のコピー"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "あなたが選択したファイル（複数可）を削除したいご確認ください/フォルダ（複数可）"
+
+msgid "cancelled_by_user"
+msgstr "ユーザーによってキャンセル"
+
+msgid "already_exists_overwrite"
+msgstr "すでに上書きされ、存在していますか？"
+
+msgid "dashboard"
+msgstr "ダッシュボード"
+
+msgid "my_accounts"
+msgstr "マイアカウント"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "保存されたファイル！すべてのアカウントがバックアップされています。"
+
+msgid "file_failed_please_try_again"
+msgstr "ファイルには、失敗しました！もう一度やり直してください。"
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "あなたが現在バックアップすべきアカウントを持っていません。"
+
+msgid "saved!"
+msgstr "保存されました！"
+
+msgid "please_enter_a_password"
+msgstr "パスワードを入力してください！"
+
+msgid "connection_closed"
+msgstr "接続を閉じました"
+
+msgid "listing_mode_set_to"
+msgstr "に設定リストモード"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "外部IPを使用して解決ローカルサーバのIP、"
+
+msgid "login_incorrect"
+msgstr "不正なログイン"
+
+msgid "keeping_connection_alive"
+msgstr "アライブ接続を維持"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "書き込むことができません、データ接続を閉じました"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "閉じたデータ接続を読み取ることができません。"
+
+msgid "error_reading_file"
+msgstr "ファイルの読み取りエラー"
+
+msgid "error_writing_file"
+msgstr "ファイルの書き込みエラー"
+
+msgid "failed_to_change_directory_to"
+msgstr "にディレクトリの変更に失敗しました"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "あなたは、このディレクトリにアクセスするための適切な権限を持っていない可能性があり"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "前のディレクトリに戻します"
+
+msgid "activate"
+msgstr "活性化します"
+
+msgid "payment"
+msgstr "支払い"
+
+msgid "license_key_is_required"
+msgstr "ライセンスキーが必要です"
+
+msgid "license_activated!"
+msgstr "ライセンス活性化！"
+
+msgid "your_license_has_been_validated"
+msgstr "あなたのライセンスが検証されています。"
+
+msgid "thank_you!"
+msgstr "ありがとうございました！"
+
+msgid "buy_now!"
+msgstr "今買う！"
+
+msgid "buy_now"
+msgstr "今買う"
+
+msgid "one_off_fee"
+msgstr "料金オフ1"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "制限なしでこのアプリを楽しむためにアップグレードしてください"
+
+msgid "please_enter_your_license_key_below"
+msgstr "以下のライセンスキーを入力してください。"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "読み込んでいます..."
+
+msgid "clear_accounts"
+msgstr "クリアアカウント"
+
+msgid "clear_ssh_keys"
+msgstr "クリアSSHキー"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "保存されているすべてのSSHキーを削除します。"
+
+msgid "clear_app_settings"
+msgstr "クリアアプリの設定"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "すべてのアプリ固有の設定を削除します。"
+
+msgid "clear_recent_connections"
+msgstr "クリア最近の接続"
+
+msgid "deletes_all_recent_connections"
+msgstr "最近のすべての接続を削除します。"
+
+msgid "import_type"
+msgstr "インポートタイプ"
+
+msgid "please_select"
+msgstr "選んでください"
+
+msgid "import_file"
+msgstr "ファイルのインポート"
+
+msgid "choose_file"
+msgstr "ファイルを選ぶ"
+
+msgid "delete_accounts"
+msgstr "アカウントを削除"
+
+msgid "deletes_all_existing_accounts"
+msgstr "すべての既存のアカウントを削除します。"
+
+msgid "import_now"
+msgstr "今のインポート"
+
+msgid "none"
+msgstr "なし"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "変更を有効にするにはSFTPクライアントアプリを再起動してください。"
+
+msgid "already_bought_the_app"
+msgstr "既にアプリを買いましたの？"
+
+msgid "choose"
+msgstr "選ぶ"
+
+msgid "deleted!"
+msgstr "削除されました！"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronisedブラウジングを使用"
+
+msgid "remote_directory"
+msgstr "リモートディレクトリ"
+
+msgid "rsa_key_only!"
+msgstr "RSA鍵のみ！"
+
+msgid "no_key_selected"
+msgstr "どのキーが選択されていません。"
+
+msgid "ssh_key_file"
+msgstr "SSHキーファイル"
+
+msgid "no_dir_selected"
+msgstr "いいえdirが選択されていません。"
+
+msgid "keep_blank_for_current_password"
+msgstr "現在のパスワードは空白保管してください。"
+
+msgid "logon_type"
+msgstr "ログオンの種類"
+
+msgid "normal"
+msgstr "ノーマル"
+
+msgid "ask_for_password"
+msgstr "パスワードを求めます"
+
+msgid "anonymous"
+msgstr "匿名の"
+
+msgid "account_type"
+msgstr "口座の種類"
+
+msgid "ftp_normal_connection"
+msgstr "FTP（通常接続）"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP（セキュア接続）"
+
+msgid "ssh_secure_connection"
+msgstr "SSH（セキュア接続）"
+
+msgid "folder"
+msgstr "フォルダ"
+
+msgid "advanced"
+msgstr "高度な"
+
+msgid "folder_name"
+msgstr "フォルダ名"
+
+msgid "parent"
+msgstr "親"
+
+msgid "new_ftp_site"
+msgstr "新しいFTPサイト"
+
+msgid "new_folder"
+msgstr "新規フォルダ"
+
+msgid "clean_now"
+msgstr "今すぐクリーン"
+
+msgid "host"
+msgstr "ホスト"
+
+msgid "no_accounts_added..."
+msgstr "いいえアカウントを追加しません..."
+
+msgid "unknown"
+msgstr "未知の"
+
+msgid "file_saved!"
+msgstr "保存されたファイル！"
+
+msgid "uploading_file!"
+msgstr "アップロードファイル！"
+
+msgid "save_failed!"
+msgstr "保存に失敗しました！"
+
+msgid "search"
+msgstr "サーチ"
+
+msgid "find"
+msgstr "見つけます"
+
+msgid "replace"
+msgstr "置き換える"
+
+msgid "scroll_past_end"
+msgstr "スクロール過去終了"
+
+msgid "show_annotations"
+msgstr "アノテーションを表示"
+
+msgid "show_gutter"
+msgstr "ガターを表示"
+
+msgid "show_invisibles"
+msgstr "表示不可視"
+
+msgid "show_print_margin"
+msgstr "表示印刷マージン"
+
+msgid "highlight_active_line"
+msgstr "アクティブラインを強調表示します"
+
+msgid "word_wrap"
+msgstr "ワードラップ"
+
+msgid "split_code"
+msgstr "スプリットコード"
+
+msgid "preferences"
+msgstr "環境設定"
+
+msgid "close_all_tabs"
+msgstr "すべてのタブを閉じます"
+
+msgid "close_current_tab"
+msgstr "現在のタブを閉じます"
+
+msgid "auto_save_file_when_i_type"
+msgstr "私が入力したときに自動ファイルを保存しました"
+
+msgid "auto_save"
+msgstr "自動保存"
+
+msgid "quick_save"
+msgstr "クイックセーブ"
+
+msgid "documentation"
+msgstr "ドキュメンテーション"
+
+msgid "themes"
+msgstr "テーマ"
+
+msgid "keyboard_shortcuts"
+msgstr "キーボードショートカット"
+
+msgid "coming_soon"
+msgstr "近日公開"
+
+msgid "empty"
+msgstr "空の"

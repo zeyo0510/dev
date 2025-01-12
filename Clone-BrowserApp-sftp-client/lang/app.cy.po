@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Dewislen"
+
+msgid "file"
+msgstr "ffeil"
+
+msgid "view"
+msgstr "Gweld"
+
+msgid "edit"
+msgstr "golygu"
+
+msgid "help"
+msgstr "Help"
+
+msgid "manage_accounts"
+msgstr "rheoli Cyfrifon"
+
+msgid "import_accounts"
+msgstr "Cyfrifon mewnforio"
+
+msgid "export_accounts"
+msgstr "Cyfrifon allforio"
+
+msgid "quick_connect"
+msgstr "Cyswllt Cyflym"
+
+msgid "message_log"
+msgstr "neges Log"
+
+msgid "local_directory"
+msgstr "Cyfeiriadur lleol"
+
+msgid "uploads_downloads"
+msgstr "Llwythiadau / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clirio Data Cadw"
+
+msgid "edit_settings"
+msgstr "Gosodiadau golygu"
+
+msgid "report_bug"
+msgstr "Adroddiad a Bug"
+
+msgid "suggest_feature"
+msgstr "Awgrymwch Nodwedd"
+
+msgid "ask_a_question"
+msgstr "Gofynnwch Gwestiwn"
+
+msgid "change_log"
+msgstr "Log Newid"
+
+msgid "about"
+msgstr "Ynglŷn"
+
+msgid "exit"
+msgstr "ymadael"
+
+msgid "host_ip_address"
+msgstr "Gwesteiwr / Cyfeiriad IP"
+
+msgid "username"
+msgstr "enw defnyddiwr"
+
+msgid "password"
+msgstr "cyfrinair"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Cysylltu"
+
+msgid "welcome"
+msgstr "Croeso"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Cleient yn ymwneud symlrwydd, mae wedi cael ei hadeiladu ar Google Chrome / Chrome AO rhyngwyneb app becynnu caniatáu i'r app i fod yn gyflym ac yn ymatebol. Mae rhai o'r swyddogaethau yn cynnwys Rheolwr Cyfrifon FTP i storio i ffwrdd a threfnu e"
+
+msgid "latest_updates"
+msgstr "Diweddariadau diweddaraf"
+
+msgid "server_status"
+msgstr "Statws gweinydd"
+
+msgid "license_server"
+msgstr "Gweinydd License"
+
+msgid "sftp_support"
+msgstr "Cymorth"
+
+msgid "notice_update"
+msgstr "Rhybudd / Diweddariadau"
+
+msgid "website"
+msgstr "gwefan"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "rheoli"
+
+msgid "recheck"
+msgstr "Ail-wiriad"
+
+msgid "last_release"
+msgstr "Rhyddhau diwethaf"
+
+msgid "released"
+msgstr "rhyddhawyd"
+
+msgid "queued"
+msgstr "ciw"
+
+msgid "failed"
+msgstr "Methwyd"
+
+msgid "completed"
+msgstr "cwblhawyd"
+
+msgid "settings"
+msgstr "gosodiadau"
+
+msgid "add_folder"
+msgstr "Ychwanegu Ffolder"
+
+msgid "add_ftp_account"
+msgstr "Ychwanegu Cyfrif FTP"
+
+msgid "file_editor"
+msgstr "Ffeil Golygydd"
+
+msgid "editor_preferences"
+msgstr "Dewisiadau Golygydd"
+
+msgid "your_ftp_accounts"
+msgstr "Eich Cyfrifon FTP"
+
+msgid "most_recent_used"
+msgstr "a ddefnyddir yn fwyaf diweddar."
+
+msgid "no_connections_yet_made"
+msgstr "Dim cysylltiadau a wnaed hyd yn hyn"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Dim cyfrifon FTP hychwanegu eto"
+
+msgid "most_recent_connections"
+msgstr "Mae'r rhan fwyaf o Connections Diweddar"
+
+msgid "last_10_connections_made"
+msgstr "Diwethaf 10 cysylltiadau a wneir"
+
+msgid "designed_developed_by"
+msgstr "Dyluniwyd & Datblygwyd gan"
+
+msgid "about_info"
+msgstr "Defnyddiwch y wefan Cleient SFTP am gefnogaeth, nid oes unrhyw gymorth yn cael ei ddarparu trwy ein gwefannau unigol."
+
+msgid "local"
+msgstr "lleol"
+
+msgid "remote"
+msgstr "Pell"
+
+msgid "remote_location_desc"
+msgstr "ee / public_html"
+
+msgid "create_directory"
+msgstr "creu Cyfeiriadur"
+
+msgid "create_new_directory"
+msgstr "Creu Cyfeiriadur Newydd"
+
+msgid "create_file"
+msgstr "creu Ffeil"
+
+msgid "create_new_file"
+msgstr "Creu Ffeil Newydd"
+
+msgid "refresh_list"
+msgstr "Rhestr Refresh"
+
+msgid "change"
+msgstr "Newid"
+
+msgid "report_a_bug"
+msgstr "Adroddiad a Bug"
+
+msgid "suggest_a_feature"
+msgstr "Awgrymwch Nodwedd"
+
+msgid "enter_password"
+msgstr "Rhowch Cyfrinair"
+
+msgid "enter_your_password..."
+msgstr "Rhowch eich cyfrinair ..."
+
+msgid "passphrase"
+msgstr "ymadrodd cyfrin"
+
+msgid "enter_your_passphrase..."
+msgstr "Rhowch eich cyfrin-ymadrodd ..."
+
+msgid "email_sftp_client"
+msgstr "E-bost SFTP Cleient"
+
+msgid "faqs"
+msgstr "Cwestiynau Cyffredin"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit SFTP Cleient Gwefan"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Cyfradd ni ar y Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rhoi gwybod am broblem neu i gael cymorth"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Ymunwch â ni ar Facebook am ddiweddariadau"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Dilynwch ni ar Twitter ar gyfer diweddariadau"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Ni ar Google ar gyfer diweddariadau"
+
+msgid "okay"
+msgstr "iawn"
+
+msgid "cancel"
+msgstr "Diddymu"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "Gwesteiwr anhysbys"
+
+msgid "okay_to_continue"
+msgstr "Iawn i barhau?"
+
+msgid "fingerprint"
+msgstr "Olion Bysedd"
+
+msgid "remember"
+msgstr "Cofiwch"
+
+msgid "file_permissions"
+msgstr "Caniatadau File"
+
+msgid "file_permissions_desc"
+msgstr "Dewiswch y priodoleddau newydd ar gyfer y ffeil (iau) a ddewiswyd / folder (au)"
+
+msgid "read"
+msgstr "darllen"
+
+msgid "write"
+msgstr "ysgrifennu"
+
+msgid "execute"
+msgstr "gweithredu"
+
+msgid "owner"
+msgstr "perchennog"
+
+msgid "group"
+msgstr "grŵp"
+
+msgid "public"
+msgstr "cyhoeddus"
+
+msgid "numeric_value"
+msgstr "Gwerth rhifol"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Rhowch enw'r cyfeiriadur newydd ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Rhowch enw'r ffeil newydd ..."
+
+msgid "name"
+msgstr "enw"
+
+msgid "enter_a_password"
+msgstr "Rhowch gyfrinair"
+
+msgid "language"
+msgstr "iaith"
+
+msgid "seconds"
+msgstr "eiliad"
+
+msgid "minutes"
+msgstr "Cofnodion"
+
+msgid "hour"
+msgstr "awr"
+
+msgid "hours"
+msgstr "oriau"
+
+msgid "day"
+msgstr "diwrnod"
+
+msgid "trial_left"
+msgstr "treial chwith"
+
+msgid "register_now"
+msgstr "Cofrestrwch nawr"
+
+msgid "general"
+msgstr "cyffredinol"
+
+msgid "security"
+msgstr "diogelwch"
+
+msgid "master_password"
+msgstr "prif gyfrinair"
+
+msgid "status"
+msgstr "statws"
+
+msgid "enabled"
+msgstr "Galluogwyd"
+
+msgid "disabled"
+msgstr "anabl"
+
+msgid "timeout"
+msgstr "Amser allan"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Ychwanegu Cyfrif"
+
+msgid "support"
+msgstr "Cymorth"
+
+msgid "notice_updates"
+msgstr "Rhybudd / Diweddariadau"
+
+msgid "please_login"
+msgstr "Os gwelwch yn dda Mewngofnodi"
+
+msgid "your_session_timed_out"
+msgstr "Eich Sesiwn Amseru Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Mae'n ddrwg gennym roedd eich cyfrinair yn anghywir!"
+
+msgid "login"
+msgstr "Mewngofnodi"
+
+msgid "master_password_desc"
+msgstr "Gosod hyn meistr cyfrinair i gadw eich cyfrifon yn ddiogel."
+
+msgid "license_key"
+msgstr "Allwedd trwydded"
+
+msgid "online"
+msgstr "Ar-lein"
+
+msgid "offline"
+msgstr "All-lein"
+
+msgid "currently_unavailable"
+msgstr "Ar hyn o bryd Ddim ar Gael"
+
+msgid "no_message_to_display"
+msgstr "Dim neges i arddangos"
+
+msgid "offline_notice_title"
+msgstr "Anghyraeddadwy - Ydych chi'n all-lein neu ar rwydwaith gysylltiad yn unig?"
+
+msgid "offline_notice_desc"
+msgstr "Yr ydych yn all-lein ar hyn o bryd, ar rwydwaith dim ond cysylltiad neu dim cysylltiad yn cael ei sefydlu at ein gweinydd"
+
+msgid "edit_file"
+msgstr "golygu Ffeil"
+
+msgid "download"
+msgstr "Lawrlwytho"
+
+msgid "upload"
+msgstr "Llwytho i fyny"
+
+msgid "host_ip_is_required"
+msgstr "Mae angen Gwesteiwr / IP"
+
+msgid "apply_to_all_files"
+msgstr "Gwneud cais i holl ffeiliau"
+
+msgid "activate_now"
+msgstr "activate Now"
+
+msgid "deactivate"
+msgstr "Dad-activate"
+
+msgid "in_progress"
+msgstr "Ar y gweill"
+
+msgid "complete"
+msgstr "Cwblhau"
+
+msgid "direction"
+msgstr "cyfarwyddyd"
+
+msgid "progress"
+msgstr "cynnydd"
+
+msgid "permissions"
+msgstr "Caniatâd"
+
+msgid "owner_group"
+msgstr "Perchennog / Grŵp"
+
+msgid "size"
+msgstr "maint"
+
+msgid "type"
+msgstr "math"
+
+msgid "modified"
+msgstr "Addaswyd"
+
+msgid "trial"
+msgstr "treial"
+
+msgid "cleared"
+msgstr "clirio"
+
+msgid "error_connecting"
+msgstr "gwall Cysylltu"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Gwall Cysylltu i gynnal / cyfeiriad ip"
+
+msgid "error_connecting_to_port"
+msgstr "Gwall Cysylltu porthladd"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Dewiswch cyfeiriadur lleol yn gyntaf!"
+
+msgid "go"
+msgstr "Ewch"
+
+msgid "confirm"
+msgstr "cadarnhau"
+
+msgid "delete"
+msgstr "Dileu"
+
+msgid "rename"
+msgstr "Ailenwi"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL (au) Copi i Chlipfwrdd"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Cadarnhewch eich bod am ddileu'r ffeil (iau) a ddewiswyd / folder (au)"
+
+msgid "cancelled_by_user"
+msgstr "Wedi'i Ganslo gan y defnyddiwr"
+
+msgid "already_exists_overwrite"
+msgstr "eisoes yn bodoli, trosysgrifo?"
+
+msgid "dashboard"
+msgstr "dangosfwrdd"
+
+msgid "my_accounts"
+msgstr "fy Cyfrifon"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Ffeil Saved! Mae pob cyfrifon wedi cael eu hategu."
+
+msgid "file_failed_please_try_again"
+msgstr "Ffeil Wedi methu! Trio eto os gwelwch yn dda."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ar hyn o bryd nid oes rhaid i chi cyfrifon gael eu hategu."
+
+msgid "saved!"
+msgstr "Saved!"
+
+msgid "please_enter_a_password"
+msgstr "Rhowch gyfrinair!"
+
+msgid "connection_closed"
+msgstr "Ceuwyd y cysylltiad"
+
+msgid "listing_mode_set_to"
+msgstr "Rhestru modd gosod i"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Penderfynodd IP gweinydd lleol, gan ddefnyddio IP allanol"
+
+msgid "login_incorrect"
+msgstr "Login anghywir"
+
+msgid "keeping_connection_alive"
+msgstr "Cadw cysylltiad yn fyw"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Methu ysgrifennu, cysylltiad data wedi cau"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Methu darllen data cysylltiad cau"
+
+msgid "error_reading_file"
+msgstr "file Gwall wrth ddarllen"
+
+msgid "error_writing_file"
+msgstr "file Gwall wrth ysgrifennu"
+
+msgid "failed_to_change_directory_to"
+msgstr "Methwyd newid cyfeiriadur i"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Efallai nad oes gennych y caniatadau cywir i gael mynediad at y cyfeiriadur hwn"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Mynd yn ôl i'r cyfeiriadur blaenorol"
+
+msgid "activate"
+msgstr "activate"
+
+msgid "payment"
+msgstr "talu"
+
+msgid "license_key_is_required"
+msgstr "Mae angen allwedd trwydded"
+
+msgid "license_activated!"
+msgstr "Trwydded Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "Eich trwydded wedi cael ei ddilysu."
+
+msgid "thank_you!"
+msgstr "Diolch!"
+
+msgid "buy_now!"
+msgstr "Prynu Nawr!"
+
+msgid "buy_now"
+msgstr "prynu Nawr"
+
+msgid "one_off_fee"
+msgstr "untro ffi"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Os gwelwch yn dda uwchraddio i fwynhau app hwn heb unrhyw gyfyngiadau"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Rhowch eich License Allwedd isod"
+
+msgid "or"
+msgstr "NEU"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Cyfrifon clir"
+
+msgid "clear_ssh_keys"
+msgstr "Clirio'r Keys SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Dileu yr holl allweddi SSH arbed"
+
+msgid "clear_app_settings"
+msgstr "Gosodiadau App Clear"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Dileu pob lleoliad penodol app"
+
+msgid "clear_recent_connections"
+msgstr "Cysylltiadau diweddar clir"
+
+msgid "deletes_all_recent_connections"
+msgstr "Dileu pob cysylltiad diweddar"
+
+msgid "import_type"
+msgstr "Math mewnforio"
+
+msgid "please_select"
+msgstr "dewiswch"
+
+msgid "import_file"
+msgstr "File mewnforio"
+
+msgid "choose_file"
+msgstr "Dewiswch Ffeil"
+
+msgid "delete_accounts"
+msgstr "Dileu Cyfrifon"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Dileu holl gyfrifon cyfredol"
+
+msgid "import_now"
+msgstr "mewnforio Now"
+
+msgid "none"
+msgstr "Dim"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Ailgychwynnwch SFTP app Cleient ar gyfer y newidiadau ddod i rym."
+
+msgid "already_bought_the_app"
+msgstr "Eisoes yn prynu yr App?"
+
+msgid "choose"
+msgstr "Dewiswch"
+
+msgid "deleted!"
+msgstr "Dilëwyd!"
+
+msgid "use_syncronised_browsing"
+msgstr "defnyddio pori syncronised"
+
+msgid "remote_directory"
+msgstr "Cyfeiriadur o Bell"
+
+msgid "rsa_key_only!"
+msgstr "RSA allweddol yn unig!"
+
+msgid "no_key_selected"
+msgstr "Dim allweddol dethol."
+
+msgid "ssh_key_file"
+msgstr "SSH Ffeil Allweddol"
+
+msgid "no_dir_selected"
+msgstr "Dim dir dethol."
+
+msgid "keep_blank_for_current_password"
+msgstr "Cadwch yn wag am gyfrinair ar hyn o bryd."
+
+msgid "logon_type"
+msgstr "Logon Math"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "ask_for_password"
+msgstr "Gofynnwch am Cyfrinair"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Math o gyfrif"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Cysylltiad Normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Cysylltiad Diogel)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Cysylltiad Diogel)"
+
+msgid "folder"
+msgstr "ffolder"
+
+msgid "advanced"
+msgstr "Uwch"
+
+msgid "folder_name"
+msgstr "ffolder Enw"
+
+msgid "parent"
+msgstr "rhiant"
+
+msgid "new_ftp_site"
+msgstr "Safle FTP newydd"
+
+msgid "new_folder"
+msgstr "Plygell newydd"
+
+msgid "clean_now"
+msgstr "Glân Nawr"
+
+msgid "host"
+msgstr "gwesteiwr"
+
+msgid "no_accounts_added..."
+msgstr "Dim Cyfrifon Ychwanegol ..."
+
+msgid "unknown"
+msgstr "anhysbys"
+
+msgid "file_saved!"
+msgstr "Ffeil Saved!"
+
+msgid "uploading_file!"
+msgstr "Ffeil Llwytho!"
+
+msgid "save_failed!"
+msgstr "Arbed Methu!"
+
+msgid "search"
+msgstr "Chwilio"
+
+msgid "find"
+msgstr "Dod o hyd i"
+
+msgid "replace"
+msgstr "Amnewid"
+
+msgid "scroll_past_end"
+msgstr "Sgroliwch Gorffennol End"
+
+msgid "show_annotations"
+msgstr "Dangos anodiadau"
+
+msgid "show_gutter"
+msgstr "Dangos Gutter"
+
+msgid "show_invisibles"
+msgstr "Dangos Invisibles"
+
+msgid "show_print_margin"
+msgstr "Dangos Print Ymyl"
+
+msgid "highlight_active_line"
+msgstr "Highlight Llinell Active"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Cod Hollti"
+
+msgid "preferences"
+msgstr "Dewisiadau"
+
+msgid "close_all_tabs"
+msgstr "Tabiau Close All"
+
+msgid "close_current_tab"
+msgstr "Cau Tab Cyfredol"
+
+msgid "auto_save_file_when_i_type"
+msgstr "arbed Auto ffeil pan fyddaf yn teipio"
+
+msgid "auto_save"
+msgstr "auto Cadw"
+
+msgid "quick_save"
+msgstr "Cyflym Save"
+
+msgid "documentation"
+msgstr "dogfennaeth"
+
+msgid "themes"
+msgstr "themâu"
+
+msgid "keyboard_shortcuts"
+msgstr "allweddell Shortcuts"
+
+msgid "coming_soon"
+msgstr "Dod yn fuan"
+
+msgid "empty"
+msgstr "gwag"

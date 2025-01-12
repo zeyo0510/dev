@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Меню"
+
+msgid "file"
+msgstr "файл"
+
+msgid "view"
+msgstr "Посмотреть"
+
+msgid "edit"
+msgstr "редактировать"
+
+msgid "help"
+msgstr "Помогите"
+
+msgid "manage_accounts"
+msgstr "Управление учетными записями"
+
+msgid "import_accounts"
+msgstr "Импорт учетных записей"
+
+msgid "export_accounts"
+msgstr "Экспорт счетов"
+
+msgid "quick_connect"
+msgstr "Быстрое соединение"
+
+msgid "message_log"
+msgstr "Журнал сообщений"
+
+msgid "local_directory"
+msgstr "Локальный каталог"
+
+msgid "uploads_downloads"
+msgstr "Загрузки / Загрузки"
+
+msgid "clear_saved_data"
+msgstr "Очистить сохраненные данные"
+
+msgid "edit_settings"
+msgstr "Изменить настройки"
+
+msgid "report_bug"
+msgstr "Сообщить об ошибке"
+
+msgid "suggest_feature"
+msgstr "Предложить функцию"
+
+msgid "ask_a_question"
+msgstr "Задайте вопрос"
+
+msgid "change_log"
+msgstr "Журнал изменений"
+
+msgid "about"
+msgstr "Около"
+
+msgid "exit"
+msgstr "Выход"
+
+msgid "host_ip_address"
+msgstr "Host / IP-адрес"
+
+msgid "username"
+msgstr "Имя пользователя"
+
+msgid "password"
+msgstr "пароль"
+
+msgid "port"
+msgstr "порт"
+
+msgid "connect"
+msgstr "подключать"
+
+msgid "welcome"
+msgstr "Добро пожаловат"
+
+msgid "welcome_intro"
+msgstr "<p> Клиент SFTP это все о простоте, она была построена на пакетное приложение интерфейса Google Chrome / Chrome OS, позволяя приложение, чтобы быть быстрым и отзывчивым. Некоторые функции включает в себя диспетчер учетной записи FTP для хранения прочь и о"
+
+msgid "latest_updates"
+msgstr "Последние обновления"
+
+msgid "server_status"
+msgstr "Состояние сервера"
+
+msgid "license_server"
+msgstr "Сервер лицензий"
+
+msgid "sftp_support"
+msgstr "Поддержка"
+
+msgid "notice_update"
+msgstr "Примечание / Обновления"
+
+msgid "website"
+msgstr "Веб-сайт"
+
+msgid "clear_all"
+msgstr "Очистить все"
+
+msgid "manage"
+msgstr "управлять"
+
+msgid "recheck"
+msgstr "Повторная проверка"
+
+msgid "last_release"
+msgstr "Последний релиз"
+
+msgid "released"
+msgstr "Выпущенный"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "Не смогли"
+
+msgid "completed"
+msgstr "Завершенный"
+
+msgid "settings"
+msgstr "настройки"
+
+msgid "add_folder"
+msgstr "Добавить папку"
+
+msgid "add_ftp_account"
+msgstr "Добавить учетную запись FTP"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Редактор настроек"
+
+msgid "your_ftp_accounts"
+msgstr "Ваши Учетные записи FTP"
+
+msgid "most_recent_used"
+msgstr "Совсем недавно использовали."
+
+msgid "no_connections_yet_made"
+msgstr "Никакие подключения пока не сделано"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Нет учетных записей FTP еще не добавлены"
+
+msgid "most_recent_connections"
+msgstr "Большинство Последние Связи"
+
+msgid "last_10_connections_made"
+msgstr "Последние 10 соединений из"
+
+msgid "designed_developed_by"
+msgstr "Разработанный & Разработка"
+
+msgid "about_info"
+msgstr "Пожалуйста, используйте веб-сайт клиента SFTP для поддержки, поддержка не предоставляется через наших отдельных веб-сайтов."
+
+msgid "local"
+msgstr "Местный"
+
+msgid "remote"
+msgstr "Дистанционный пульт"
+
+msgid "remote_location_desc"
+msgstr "например / public_html"
+
+msgid "create_directory"
+msgstr "Создать каталог"
+
+msgid "create_new_directory"
+msgstr "Создать новый каталог"
+
+msgid "create_file"
+msgstr "Создать файл"
+
+msgid "create_new_file"
+msgstr "Создать новый файл"
+
+msgid "refresh_list"
+msgstr "Обновить список"
+
+msgid "change"
+msgstr "+ Изменить"
+
+msgid "report_a_bug"
+msgstr "Сообщить об ошибке"
+
+msgid "suggest_a_feature"
+msgstr "Предложить функцию"
+
+msgid "enter_password"
+msgstr "Введите пароль"
+
+msgid "enter_your_password..."
+msgstr "Введите ваш пароль..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Введите кодовую фразу ..."
+
+msgid "email_sftp_client"
+msgstr "Почтовый клиент SFTP"
+
+msgid "faqs"
+msgstr "Часто задаваемые вопросы"
+
+msgid "visit_sftp_client_website"
+msgstr "Посетите SFTP клиент Веб-сайт"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Оцените нас на Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Сообщить о проблеме или получить помощь"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Присоединяйтесь к нам на Facebook для обновления"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Следуйте за нами на Twitter за обновлениями"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 К нам на Google обновлений"
+
+msgid "okay"
+msgstr "Хорошо"
+
+msgid "cancel"
+msgstr "Отмена"
+
+msgid "close"
+msgstr "Закрыть"
+
+msgid "unknown_host"
+msgstr "Неизвестный хост"
+
+msgid "okay_to_continue"
+msgstr "Хорошо, чтобы продолжить?"
+
+msgid "fingerprint"
+msgstr "отпечаток пальца"
+
+msgid "remember"
+msgstr "Запомнить"
+
+msgid "file_permissions"
+msgstr "права доступа к файлам"
+
+msgid "file_permissions_desc"
+msgstr "Пожалуйста, выберите новые атрибуты для выбранного файла (ов) / папки (ы)"
+
+msgid "read"
+msgstr "Читать"
+
+msgid "write"
+msgstr "Написать"
+
+msgid "execute"
+msgstr "казнить"
+
+msgid "owner"
+msgstr "владелец"
+
+msgid "group"
+msgstr "группа"
+
+msgid "public"
+msgstr "общественного"
+
+msgid "numeric_value"
+msgstr "Числовое значение"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Введите имя нового каталога ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Введите имя нового файла ..."
+
+msgid "name"
+msgstr "имя"
+
+msgid "enter_a_password"
+msgstr "Введите пароль"
+
+msgid "language"
+msgstr "язык"
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "minutes"
+msgstr "минут"
+
+msgid "hour"
+msgstr "Час"
+
+msgid "hours"
+msgstr "часов"
+
+msgid "day"
+msgstr "День"
+
+msgid "trial_left"
+msgstr "Пробный левый"
+
+msgid "register_now"
+msgstr "Зарегистрируйтесь сейчас"
+
+msgid "general"
+msgstr "Генеральная"
+
+msgid "security"
+msgstr "Безопасность"
+
+msgid "master_password"
+msgstr "Основной пароль"
+
+msgid "status"
+msgstr "Положение дел"
+
+msgid "enabled"
+msgstr "Включено"
+
+msgid "disabled"
+msgstr "Отключено"
+
+msgid "timeout"
+msgstr "Тайм-аут"
+
+msgid "save"
+msgstr "Сохранить"
+
+msgid "add_account"
+msgstr "Добавить аккаунт"
+
+msgid "support"
+msgstr "Поддержка"
+
+msgid "notice_updates"
+msgstr "Примечание / Обновления"
+
+msgid "please_login"
+msgstr "Пожалуйста, войдите"
+
+msgid "your_session_timed_out"
+msgstr "Ваша сессия Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "К сожалению пароль, который вы ввели неверный!"
+
+msgid "login"
+msgstr "Авторизоваться"
+
+msgid "master_password_desc"
+msgstr "Установите этот мастер-пароль, чтобы сохранить свои счета в безопасности."
+
+msgid "license_key"
+msgstr "Лицензионный ключ"
+
+msgid "online"
+msgstr "В сети"
+
+msgid "offline"
+msgstr "Не в сети"
+
+msgid "currently_unavailable"
+msgstr "В настоящее время недоступен"
+
+msgid "no_message_to_display"
+msgstr "Нет сообщений для отображения"
+
+msgid "offline_notice_title"
+msgstr "Недоступен - Вы в автономном режиме или в сети только соединения?"
+
+msgid "offline_notice_desc"
+msgstr "Вы в настоящее время в автономном режиме, в сети только соединение или нет соединения может быть установлена ​​на наш сервер"
+
+msgid "edit_file"
+msgstr "Редактирование файла"
+
+msgid "download"
+msgstr "Скачать"
+
+msgid "upload"
+msgstr "Загрузить"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP требуется"
+
+msgid "apply_to_all_files"
+msgstr "Применить ко всем файлам"
+
+msgid "activate_now"
+msgstr "Активировать сейчас"
+
+msgid "deactivate"
+msgstr "Дезактивировать"
+
+msgid "in_progress"
+msgstr "В ходе выполнения"
+
+msgid "complete"
+msgstr "полный"
+
+msgid "direction"
+msgstr "направление"
+
+msgid "progress"
+msgstr "Прогресс"
+
+msgid "permissions"
+msgstr "Разрешения"
+
+msgid "owner_group"
+msgstr "Владелец / Группа"
+
+msgid "size"
+msgstr "Размер"
+
+msgid "type"
+msgstr "Тип"
+
+msgid "modified"
+msgstr "модифицированный"
+
+msgid "trial"
+msgstr "пробный"
+
+msgid "cleared"
+msgstr "Очищенные"
+
+msgid "error_connecting"
+msgstr "Ошибка при подключении"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Ошибка подключения к хост / IP-адрес"
+
+msgid "error_connecting_to_port"
+msgstr "Ошибка при подключении к порту"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Пожалуйста, выберите локальный каталог в первую очередь!"
+
+msgid "go"
+msgstr "Идти"
+
+msgid "confirm"
+msgstr "подтвердить"
+
+msgid "delete"
+msgstr "Удалить"
+
+msgid "rename"
+msgstr "переименовывать"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Копировать URL (ы) в буфер обмена"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Пожалуйста, подтвердите, что вы хотите, чтобы удалить выбранный файл (ы) / папки (ы)"
+
+msgid "cancelled_by_user"
+msgstr "Отменено пользователем"
+
+msgid "already_exists_overwrite"
+msgstr "уже существует, перезаписать?"
+
+msgid "dashboard"
+msgstr "Панель приборов"
+
+msgid "my_accounts"
+msgstr "Мои аккаунты"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Файл сохранен! Все счета были подкреплены."
+
+msgid "file_failed_please_try_again"
+msgstr "Ошибка файла! Пожалуйста, попробуйте еще раз."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "У вас нет счета не должны быть подкреплены."
+
+msgid "saved!"
+msgstr "Сохраненный!"
+
+msgid "please_enter_a_password"
+msgstr "Пожалуйста, введите пароль!"
+
+msgid "connection_closed"
+msgstr "Соединение закрыто"
+
+msgid "listing_mode_set_to"
+msgstr "Листинг режим установлен в положение"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Локальный IP-сервер разрешен, используя внешний IP"
+
+msgid "login_incorrect"
+msgstr "Логин неверный"
+
+msgid "keeping_connection_alive"
+msgstr "Поддержание связи в живых"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Невозможно записать, соединение данных закрыто"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Невозможно прочитать данные соединения закрыто"
+
+msgid "error_reading_file"
+msgstr "Ошибка при чтении файла"
+
+msgid "error_writing_file"
+msgstr "Ошибка записи файла"
+
+msgid "failed_to_change_directory_to"
+msgstr "Не удалось изменить каталог для"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Вы не можете иметь правильные разрешения на доступ к этому каталогу"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Возвращаясь обратно в предыдущий каталог"
+
+msgid "activate"
+msgstr "активировать"
+
+msgid "payment"
+msgstr "Оплата"
+
+msgid "license_key_is_required"
+msgstr "Лицензионный ключ требуется"
+
+msgid "license_activated!"
+msgstr "Лицензия Активированный!"
+
+msgid "your_license_has_been_validated"
+msgstr "Ваша лицензия была подтверждена."
+
+msgid "thank_you!"
+msgstr "Спасибо!"
+
+msgid "buy_now!"
+msgstr "Купить сейчас!"
+
+msgid "buy_now"
+msgstr "купить сейчас"
+
+msgid "one_off_fee"
+msgstr "одноразовая плата"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Пожалуйста, обновите пользоваться этим приложением без каких-либо ограничений"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Пожалуйста, введите лицензионный ключ ниже"
+
+msgid "or"
+msgstr "ИЛИ"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Очистить счетов"
+
+msgid "clear_ssh_keys"
+msgstr "Очистить ключи SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Удаляет все сохраненные ключи SSH"
+
+msgid "clear_app_settings"
+msgstr "Очистить Настройки приложения"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Удаляет все специфические настройки приложения"
+
+msgid "clear_recent_connections"
+msgstr "Очистить недавние Связи"
+
+msgid "deletes_all_recent_connections"
+msgstr "Удаляет все последние соединения"
+
+msgid "import_type"
+msgstr "Импорт Тип"
+
+msgid "please_select"
+msgstr "Пожалуйста выберите"
+
+msgid "import_file"
+msgstr "Импортировать файл"
+
+msgid "choose_file"
+msgstr "Выберите файл"
+
+msgid "delete_accounts"
+msgstr "Удаление учетных записей"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Удаляет все существующие учетные записи"
+
+msgid "import_now"
+msgstr "Импортировать сейчас"
+
+msgid "none"
+msgstr "Никто"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Пожалуйста, перезапустите SFTP клиентское приложение для того, чтобы изменения вступили в силу."
+
+msgid "already_bought_the_app"
+msgstr "Уже купил App?"
+
+msgid "choose"
+msgstr "выберите"
+
+msgid "deleted!"
+msgstr "Удаляется!"
+
+msgid "use_syncronised_browsing"
+msgstr "использовать syncronised просмотр"
+
+msgid "remote_directory"
+msgstr "Удаленный каталог"
+
+msgid "rsa_key_only!"
+msgstr "ключ RSA только!"
+
+msgid "no_key_selected"
+msgstr "Ключ не выбран."
+
+msgid "ssh_key_file"
+msgstr "SSH ключевой файл"
+
+msgid "no_dir_selected"
+msgstr "Ни один реж не выбран."
+
+msgid "keep_blank_for_current_password"
+msgstr "Держите пустым для текущего пароля."
+
+msgid "logon_type"
+msgstr "Тип входа"
+
+msgid "normal"
+msgstr "Нормальный"
+
+msgid "ask_for_password"
+msgstr "Запрашивать пароль"
+
+msgid "anonymous"
+msgstr "анонимный"
+
+msgid "account_type"
+msgstr "тип аккаунта"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "папка"
+
+msgid "advanced"
+msgstr "продвинутый"
+
+msgid "folder_name"
+msgstr "Имя папки"
+
+msgid "parent"
+msgstr "родитель"
+
+msgid "new_ftp_site"
+msgstr "Новый FTP-сайта"
+
+msgid "new_folder"
+msgstr "Новая папка"
+
+msgid "clean_now"
+msgstr "Чистый Теперь"
+
+msgid "host"
+msgstr "хозяин"
+
+msgid "no_accounts_added..."
+msgstr "Нет счетов Добавлено ..."
+
+msgid "unknown"
+msgstr "неизвестный"
+
+msgid "file_saved!"
+msgstr "Файл сохранен!"
+
+msgid "uploading_file!"
+msgstr "Загрузка файла!"
+
+msgid "save_failed!"
+msgstr "Не удалось сохранить!"
+
+msgid "search"
+msgstr "Поиск"
+
+msgid "find"
+msgstr "найти"
+
+msgid "replace"
+msgstr "замещать"
+
+msgid "scroll_past_end"
+msgstr "Свиток Прошлое Конец"
+
+msgid "show_annotations"
+msgstr "Показать Аннотации"
+
+msgid "show_gutter"
+msgstr "Показать водостоков"
+
+msgid "show_invisibles"
+msgstr "Показать минипуты"
+
+msgid "show_print_margin"
+msgstr "Показать печати Маржа"
+
+msgid "highlight_active_line"
+msgstr "Выделите активной линии"
+
+msgid "word_wrap"
+msgstr "Перенос слова"
+
+msgid "split_code"
+msgstr "Сплит код"
+
+msgid "preferences"
+msgstr "предпочтения"
+
+msgid "close_all_tabs"
+msgstr "Закрыть все вкладки"
+
+msgid "close_current_tab"
+msgstr "Закрыть текущая вкладка"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Автоматическое сохранение файла при вводе"
+
+msgid "auto_save"
+msgstr "Автосохранение"
+
+msgid "quick_save"
+msgstr "Быстрое сохранение"
+
+msgid "documentation"
+msgstr "Документация"
+
+msgid "themes"
+msgstr "Темы"
+
+msgid "keyboard_shortcuts"
+msgstr "Горячие клавиши"
+
+msgid "coming_soon"
+msgstr "Скоро"
+
+msgid "empty"
+msgstr "пустой"

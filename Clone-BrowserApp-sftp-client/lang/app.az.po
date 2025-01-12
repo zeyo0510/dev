@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menyu"
+
+msgid "file"
+msgstr "fayl"
+
+msgid "view"
+msgstr "baxış"
+
+msgid "edit"
+msgstr "redaktə etmək"
+
+msgid "help"
+msgstr "kömək"
+
+msgid "manage_accounts"
+msgstr "Hesablama idarə"
+
+msgid "import_accounts"
+msgstr "Import Accounts"
+
+msgid "export_accounts"
+msgstr "Export Accounts"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Giriş"
+
+msgid "local_directory"
+msgstr "Yerli Directory"
+
+msgid "uploads_downloads"
+msgstr "Yükləmələr / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Saxlanılan Data"
+
+msgid "edit_settings"
+msgstr "Edit Settings"
+
+msgid "report_bug"
+msgstr "bir səhv hesabat"
+
+msgid "suggest_feature"
+msgstr "Bir xüsusiyyət təklif"
+
+msgid "ask_a_question"
+msgstr "Sual ver"
+
+msgid "change_log"
+msgstr "değiştir"
+
+msgid "about"
+msgstr "haqqında"
+
+msgid "exit"
+msgstr "çıxış"
+
+msgid "host_ip_address"
+msgstr "Host / IP ünvanı"
+
+msgid "username"
+msgstr "İstifadəçi adı"
+
+msgid "password"
+msgstr "parol"
+
+msgid "port"
+msgstr "port"
+
+msgid "connect"
+msgstr "birləşdirmək"
+
+msgid "welcome"
+msgstr "xoş"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP müştəri bu app sürətli və cavab olmaq üçün imkan Google Chrome / Chrome OS qablaşdırılmış app interface inşa edilmişdir, bütün sadəlik edir. funksionallığı bəzi üz saxlamaq və ən bizi təşkil etmək üçün FTP Account Manager daxildir"
+
+msgid "latest_updates"
+msgstr "Latest Updates"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "Lisenziya Server"
+
+msgid "sftp_support"
+msgstr "dəstək"
+
+msgid "notice_update"
+msgstr "Notice / Updates"
+
+msgid "website"
+msgstr "Ana səhifə"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "idarə"
+
+msgid "recheck"
+msgstr "Re-çek"
+
+msgid "last_release"
+msgstr "Son Release"
+
+msgid "released"
+msgstr "Çıxış"
+
+msgid "queued"
+msgstr "sıraya"
+
+msgid "failed"
+msgstr "Uğursuz"
+
+msgid "completed"
+msgstr "Tamamlanmış"
+
+msgid "settings"
+msgstr "Settings"
+
+msgid "add_folder"
+msgstr "Qovluq əlavə et"
+
+msgid "add_ftp_account"
+msgstr "FTP Hesab əlavə et"
+
+msgid "file_editor"
+msgstr "Redaktor Fayl"
+
+msgid "editor_preferences"
+msgstr "Editor Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Sizin FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "Ən son istifadə."
+
+msgid "no_connections_yet_made"
+msgstr "No əlaqələri hələ"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No FTP hesabları Sənaye"
+
+msgid "most_recent_connections"
+msgstr "Ən Son Connections"
+
+msgid "last_10_connections_made"
+msgstr "edilən Son 10 əlaqələri"
+
+msgid "designed_developed_by"
+msgstr "Designed & hazırlanıb"
+
+msgid "about_info"
+msgstr "dəstək üçün SFTP müştəri veb istifadə edin, heç bir dəstək fərdi saytları vasitəsilə təmin edilir."
+
+msgid "local"
+msgstr "yerli"
+
+msgid "remote"
+msgstr "uzaq"
+
+msgid "remote_location_desc"
+msgstr "məsələn / public_html"
+
+msgid "create_directory"
+msgstr "qovluq yaradın"
+
+msgid "create_new_directory"
+msgstr "New qovluq yaradın"
+
+msgid "create_file"
+msgstr "Fayl yarat"
+
+msgid "create_new_file"
+msgstr "Yeni bir fayl yaratmaq"
+
+msgid "refresh_list"
+msgstr "Refresh siyahısı"
+
+msgid "change"
+msgstr "dəyişiklik"
+
+msgid "report_a_bug"
+msgstr "bir səhv hesabat"
+
+msgid "suggest_a_feature"
+msgstr "Bir xüsusiyyət təklif"
+
+msgid "enter_password"
+msgstr "Parol daxil edin"
+
+msgid "enter_your_password..."
+msgstr "Şifrəni daxil edin ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "passphrase daxil edin ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP müştəri"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit SFTP müştəri səhifə"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Google Chrome Webstore bizə Rate"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Bir məsələ hesabat və ya yardım almaq"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "güncellemeler üçün Facebook-da bizə qoşul"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "yenilikləri üçün Twitter bizi izləyin"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "güncellemeler üçün Google bizə +1"
+
+msgid "okay"
+msgstr "oldu"
+
+msgid "cancel"
+msgstr "ləğv etmək"
+
+msgid "close"
+msgstr "Yaxın"
+
+msgid "unknown_host"
+msgstr "Unknown Host"
+
+msgid "okay_to_continue"
+msgstr "Davam etmək üçün OK?"
+
+msgid "fingerprint"
+msgstr "Fingerprint"
+
+msgid "remember"
+msgstr "xatırlamaq"
+
+msgid "file_permissions"
+msgstr "File Permissions"
+
+msgid "file_permissions_desc"
+msgstr "(S) Seçilmiş fayl (s) / qovluq üçün yeni atributları seçin"
+
+msgid "read"
+msgstr "oxumaq"
+
+msgid "write"
+msgstr "yazmaq"
+
+msgid "execute"
+msgstr "icra etmək"
+
+msgid "owner"
+msgstr "sahib"
+
+msgid "group"
+msgstr "qrup"
+
+msgid "public"
+msgstr "ictimai"
+
+msgid "numeric_value"
+msgstr "Elektron Value"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "yeni siyahı adını daxil edin ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "yeni fayl adını daxil edin ..."
+
+msgid "name"
+msgstr "ad"
+
+msgid "enter_a_password"
+msgstr "bir parol daxil edin"
+
+msgid "language"
+msgstr "dil"
+
+msgid "seconds"
+msgstr "Seconds"
+
+msgid "minutes"
+msgstr "Minutes"
+
+msgid "hour"
+msgstr "saat"
+
+msgid "hours"
+msgstr "Saat"
+
+msgid "day"
+msgstr "Gün"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "İndi qeydiyyatdan keçin"
+
+msgid "general"
+msgstr "general"
+
+msgid "security"
+msgstr "təhlükəsizlik"
+
+msgid "master_password"
+msgstr "Master Şifrə"
+
+msgid "status"
+msgstr "vəziyyət"
+
+msgid "enabled"
+msgstr "Effektiv"
+
+msgid "disabled"
+msgstr "əlil"
+
+msgid "timeout"
+msgstr "Vaxt"
+
+msgid "save"
+msgstr "Yadda saxla"
+
+msgid "add_account"
+msgstr "Hesab əlavə et"
+
+msgid "support"
+msgstr "dəstək"
+
+msgid "notice_updates"
+msgstr "Notice / Updates"
+
+msgid "please_login"
+msgstr "Giriş edin"
+
+msgid "your_session_timed_out"
+msgstr "Sizin Session Müddətli Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry Daxil parol yanlış idi!"
+
+msgid "login"
+msgstr "Daxil ol"
+
+msgid "master_password_desc"
+msgstr "təhlükəsiz hesabı saxlamaq üçün bu master parol seçin."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "Onlayn"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Hal-hazırda Unavailable"
+
+msgid "no_message_to_display"
+msgstr "No mesaj keçirmək üçün"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Siz offline və ya şəbəkə yalnız əlaqə var?"
+
+msgid "offline_notice_desc"
+msgstr "Siz yalnız bağlantısı və ya heç bir əlaqəsi bizim server müəyyən edilə bilər bir şəbəkə hazırda offline"
+
+msgid "edit_file"
+msgstr "Edit Fayl"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Yükləmək"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP tələb olunur"
+
+msgid "apply_to_all_files"
+msgstr "bütün faylları müraciət"
+
+msgid "activate_now"
+msgstr "İndi aktivləşdir"
+
+msgid "deactivate"
+msgstr "De-aktivləşdirmək"
+
+msgid "in_progress"
+msgstr "davam"
+
+msgid "complete"
+msgstr "tam"
+
+msgid "direction"
+msgstr "istiqamət"
+
+msgid "progress"
+msgstr "tərəqqi"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Owner / Group"
+
+msgid "size"
+msgstr "boy"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "Modified"
+
+msgid "trial"
+msgstr "sınaq"
+
+msgid "cleared"
+msgstr "təmizləndi"
+
+msgid "error_connecting"
+msgstr "Connecting Error"
+
+msgid "error_connecting_to_host_ip"
+msgstr "keçiriləcək Connecting Error / IP ünvanı"
+
+msgid "error_connecting_to_port"
+msgstr "port qoşulma Error"
+
+msgid "please_select_a_local_directory_first"
+msgstr "ilk yerli kataloq seçin!"
+
+msgid "go"
+msgstr "getmək"
+
+msgid "confirm"
+msgstr "təsdiqləmək"
+
+msgid "delete"
+msgstr "sil"
+
+msgid "rename"
+msgstr "Rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) Panoya"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Seçdiyiniz fayl (s) silmək üçün təsdiq edin / qovluq (s)"
+
+msgid "cancelled_by_user"
+msgstr "Istifadəçi tərəfindən ləğv"
+
+msgid "already_exists_overwrite"
+msgstr "artıq üzerine mövcuddur?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Mənim Hesablama"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Qurtardı Fayl! Bütün hesabları yedeklenir edilmişdir."
+
+msgid "file_failed_please_try_again"
+msgstr "Fayl Uğursuz! Zəhmət olmasa bir daha cəhd edin."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Hal-hazırda heç bir hesabları yedeklenir lazımdır."
+
+msgid "saved!"
+msgstr "Saxlanan!"
+
+msgid "please_enter_a_password"
+msgstr "bir parol daxil edin!"
+
+msgid "connection_closed"
+msgstr "Connection bağladı"
+
+msgid "listing_mode_set_to"
+msgstr "rejimi müəyyən Listing"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Yerli server IP xarici IP istifadə edərək, həll"
+
+msgid "login_incorrect"
+msgstr "səhv Giriş"
+
+msgid "keeping_connection_alive"
+msgstr "canlı bağlantısı saxlanması"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "yazmaq bilmir, veri bağlantısı bağladı"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "veri bağlantısı qapalı oxumaq bilmir"
+
+msgid "error_reading_file"
+msgstr "Error oxu fayl"
+
+msgid "error_writing_file"
+msgstr "Error yazı fayl"
+
+msgid "failed_to_change_directory_to"
+msgstr "üçün kataloq dəyişdirmək üçün uğursuz oldu"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Bu kataloq daxil olmaq üçün düzgün icazələrin ola bilər"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "əvvəlki kataloq geri geri"
+
+msgid "activate"
+msgstr "aktivləşdirmək"
+
+msgid "payment"
+msgstr "Ödəniş"
+
+msgid "license_key_is_required"
+msgstr "Lisenziya əsas tələb olunur"
+
+msgid "license_activated!"
+msgstr "Lisenziya Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "Sizin lisenziya təsdiq edilmişdir."
+
+msgid "thank_you!"
+msgstr "Çox sağ ol!"
+
+msgid "buy_now!"
+msgstr "İndi al!"
+
+msgid "buy_now"
+msgstr "İndi Al"
+
+msgid "one_off_fee"
+msgstr "bir off haqqı"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "heç bir məhdudiyyət ilə bu app istifadə etmək təkmilləşdirmək edin"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Aşağıdakı lisenziya açarı daxil edin"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Clear Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "bütün xilas SSH düymələri siler"
+
+msgid "clear_app_settings"
+msgstr "Clear App Settings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "bütün app xüsusi parametrləri siler"
+
+msgid "clear_recent_connections"
+msgstr "Clear Son Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "bütün son əlaqələri siler"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Zəhmət olmasa seçin"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Faylı seçin"
+
+msgid "delete_accounts"
+msgstr "Hesablama sil"
+
+msgid "deletes_all_existing_accounts"
+msgstr "bütün mövcud hesabları siler"
+
+msgid "import_now"
+msgstr "Import Now"
+
+msgid "none"
+msgstr "heç kim"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "dəyişikliklər təsir etmək üçün SFTP müştəri app yenidən başladın edin."
+
+msgid "already_bought_the_app"
+msgstr "Artıq App alıb?"
+
+msgid "choose"
+msgstr "seçmək"
+
+msgid "deleted!"
+msgstr "Silinmiş!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised gəzən istifadə"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA açarı yalnız!"
+
+msgid "no_key_selected"
+msgstr "No əsas seçilmiş."
+
+msgid "ssh_key_file"
+msgstr "SSH Key Fayl"
+
+msgid "no_dir_selected"
+msgstr "No dir seçilmiş."
+
+msgid "keep_blank_for_current_password"
+msgstr "cari parol boş saxlayın."
+
+msgid "logon_type"
+msgstr "Daxil Type"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "ask_for_password"
+msgstr "Parol tələb"
+
+msgid "anonymous"
+msgstr "anonim"
+
+msgid "account_type"
+msgstr "hesab növü"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "qovluq"
+
+msgid "advanced"
+msgstr "qabaqcıl"
+
+msgid "folder_name"
+msgstr "Qovluq adı"
+
+msgid "parent"
+msgstr "valideyn"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "Yeni qovluq"
+
+msgid "clean_now"
+msgstr "Clean Now"
+
+msgid "host"
+msgstr "Ev sahibi"
+
+msgid "no_accounts_added..."
+msgstr "No Accounts Added ..."
+
+msgid "unknown"
+msgstr "Naməlum"
+
+msgid "file_saved!"
+msgstr "Qurtardı Fayl!"
+
+msgid "uploading_file!"
+msgstr "Yüklənir File!"
+
+msgid "save_failed!"
+msgstr "Save Uğursuz!"
+
+msgid "search"
+msgstr "axtarış"
+
+msgid "find"
+msgstr "tapmaq"
+
+msgid "replace"
+msgstr "dəyişdirmək"
+
+msgid "scroll_past_end"
+msgstr "Scroll Keçmiş End"
+
+msgid "show_annotations"
+msgstr "Show Ek Notlar"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Active Line seçin"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split Kodu"
+
+msgid "preferences"
+msgstr "Preferences"
+
+msgid "close_all_tabs"
+msgstr "Bütün yaxın Tabs"
+
+msgid "close_current_tab"
+msgstr "Yaxın cari Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Mən yazın zaman Auto fayl saxlamaq"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "Sənədlər"
+
+msgid "themes"
+msgstr "Movzu"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "Tezliklə"
+
+msgid "empty"
+msgstr "boş"

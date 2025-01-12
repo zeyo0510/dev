@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "ເມນູ"
+
+msgid "file"
+msgstr "ເອກະສານ"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "ດັດແກ້"
+
+msgid "help"
+msgstr "ຊ່ວຍເຫຼືອ"
+
+msgid "manage_accounts"
+msgstr "ການຄຸ້ມຄອງບັນຊີ"
+
+msgid "import_accounts"
+msgstr "ບັນຊີການນໍາເຂົ້າ"
+
+msgid "export_accounts"
+msgstr "ບັນຊີການສົ່ງອອກ"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "ເຂົ້າສູ່ລະບົບຂໍ້ຄວາມ"
+
+msgid "local_directory"
+msgstr "Directory ທ້ອງຖິ່ນ"
+
+msgid "uploads_downloads"
+msgstr "uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "ທີ່ຈະແຈ້ງຂໍ້ມູນທີ່ບັນທຶກໄວ້"
+
+msgid "edit_settings"
+msgstr "ແກ້ໄຂການຕັ້ງຄ່າ"
+
+msgid "report_bug"
+msgstr "ລາຍງານ Bug ເປັນ"
+
+msgid "suggest_feature"
+msgstr "ຄໍາແນະນໍາຕ່າງໆຄຸນນະສົມບັດເປັນ"
+
+msgid "ask_a_question"
+msgstr "ຖາມ​ຄໍາ​ຖາມ"
+
+msgid "change_log"
+msgstr "ການປ່ຽນແປງເຂົ້າສູ່ລະບົບ"
+
+msgid "about"
+msgstr "ກ່ຽວກັບ"
+
+msgid "exit"
+msgstr "ການທ່ອງທ່ຽວ"
+
+msgid "host_ip_address"
+msgstr "ການເປັນເຈົ້າພາບ / ທີ່ຢູ່ IP"
+
+msgid "username"
+msgstr "ຊື່ຜູ້ໃຊ້"
+
+msgid "password"
+msgstr "ລະຫັດຜ່ານ"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "ເຊື່ອມຕໍ່"
+
+msgid "welcome"
+msgstr "ຍິນດີຕ້ອນຮັບ"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP ເນື່ອງຈາກລູກຄ້າເປັນທັງຫມົດກ່ຽວກັບຄວາມລຽບງ່າຍ, ມັນໄດ້ຮັບການກໍ່ສ້າງກ່ຽວກັບກູໂກ Chrome / Chrome OS ໃນການໂຕ້ຕອບ app ຫຸ້ມຫໍ່ໃຫ້ app ທີ່ຈະໄວແລະຕອບສະຫນອງ. ບາງສ່ວນຂອງການເຮັດວຽກປະກອບມີການຄຸ້ມຄອງບັນຊີ FTP ການເກັບຮັກສາໃນທັນທີແລະການຈັດຕັ້ງທີ່ສຸດຂອງທ່ານພວກເຮົ"
+
+msgid "latest_updates"
+msgstr "ອັບເດດຫຼ້າສຸດ"
+
+msgid "server_status"
+msgstr "ສະຖານະຂອງເຄື່ອງແມ່ຂ່າຍ"
+
+msgid "license_server"
+msgstr "ໃບອະນຸຍາດ Server"
+
+msgid "sftp_support"
+msgstr "ສະຫນັບສະຫນູນ"
+
+msgid "notice_update"
+msgstr "ຫນັງສືແຈ້ງການ / ການປັບປຸງ"
+
+msgid "website"
+msgstr "ເວັບໄຊທ໌"
+
+msgid "clear_all"
+msgstr "ຈະແຈ້ງທັງຫມົດ"
+
+msgid "manage"
+msgstr "ການຄຸ້ມຄອງ"
+
+msgid "recheck"
+msgstr "ກວດເບິ່ງ"
+
+msgid "last_release"
+msgstr "ຂ່າວຫຼ້າສຸດ"
+
+msgid "released"
+msgstr "ປ່ອຍອອກມາເມື່ອ"
+
+msgid "queued"
+msgstr "ຄິວ"
+
+msgid "failed"
+msgstr "ສົບຜົນສໍາເລັດ"
+
+msgid "completed"
+msgstr "ສໍາເລັດ"
+
+msgid "settings"
+msgstr "ການຕັ້ງຄ່າ"
+
+msgid "add_folder"
+msgstr "ເພີ່ມໂຟເດີ"
+
+msgid "add_ftp_account"
+msgstr "ຕື່ມການບັນຊີ FTP"
+
+msgid "file_editor"
+msgstr "ເອກະສານບັນນາທິການ"
+
+msgid "editor_preferences"
+msgstr "ການຕັ້ງຄ່າບັນນາທິການ"
+
+msgid "your_ftp_accounts"
+msgstr "ບັນຊີ FTP ຂອງທ່ານ"
+
+msgid "most_recent_used"
+msgstr "ນໍາໃຊ້ຫຼາຍທີ່ສຸດບໍ່ດົນມານີ້."
+
+msgid "no_connections_yet_made"
+msgstr "ບໍ່ມີການເຊື່ອມຕໍ່ທັນໄດ້"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ບໍ່ມີບັນຊີ FTP ເພີ່ມ yet"
+
+msgid "most_recent_connections"
+msgstr "ທີ່ສຸດ Connections ຫຼ້າສຸດ"
+
+msgid "last_10_connections_made"
+msgstr "10 ການເຊື່ອມຕໍ່ເຮັດໃຫ້"
+
+msgid "designed_developed_by"
+msgstr "ອອກແບບແລະພັດທະນາໂດຍ"
+
+msgid "about_info"
+msgstr "ກະລຸນາໃຊ້ເວັບໄຊທ໌ລູກຄ້າ SFTP ສໍາລັບການສະຫນັບສະຫນູນ, ສະຫນັບສະຫນູນທີ່ບໍ່ມີໃຫ້ບໍລິການຜ່ານເວັບໄຊທ໌ບຸກຄົນຂອງພວກເຮົາ."
+
+msgid "local"
+msgstr "ທ້ອງຖິ່ນ"
+
+msgid "remote"
+msgstr "ຫ່າງໄກສອກຫຼີກ"
+
+msgid "remote_location_desc"
+msgstr "ຕົວຢ່າງ / public_html"
+
+msgid "create_directory"
+msgstr "ສ້າງ Directory"
+
+msgid "create_new_directory"
+msgstr "ສ້າງ Directory ໃຫມ່"
+
+msgid "create_file"
+msgstr "ສ້າງ File"
+
+msgid "create_new_file"
+msgstr "ສ້າງ File ໃຫມ່"
+
+msgid "refresh_list"
+msgstr "ບັນຊີ Refresh"
+
+msgid "change"
+msgstr "ການປ່ຽນແປງ"
+
+msgid "report_a_bug"
+msgstr "ລາຍງານ Bug ເປັນ"
+
+msgid "suggest_a_feature"
+msgstr "ຄໍາແນະນໍາຕ່າງໆຄຸນນະສົມບັດເປັນ"
+
+msgid "enter_password"
+msgstr "ກະລຸນາໃສ່ລະຫັດຜ່ານ"
+
+msgid "enter_your_password..."
+msgstr "ກະລຸນາໃສ່ລະຫັດຜ່ານຂອງທ່ານ ..."
+
+msgid "passphrase"
+msgstr "ລະຫັດຜ່ານ"
+
+msgid "enter_your_passphrase..."
+msgstr "ກະລຸນາໃສ່ລະຫັດຜ່ານຂອງທ່ານ ..."
+
+msgid "email_sftp_client"
+msgstr "ອີເມວລູກຄ້າ SFTP"
+
+msgid "faqs"
+msgstr "ຂອງທີມງານ"
+
+msgid "visit_sftp_client_website"
+msgstr "ເວັບໄຊທ໌ Client ຢ້ຽມຢາມ sFTP ເນື່ອງ"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "ອັດຕາພວກເຮົາກ່ຽວກັບກູໂກ Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ລາຍງານບັນຫາຫຼືໄດ້ຮັບການຊ່ວຍເຫຼືອ"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "ເຂົ້າຮ່ວມພວກເຮົາກ່ຽວກັບເຟສບຸກສໍາລັບການປັບປຸງ"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "ປະຕິບັດຕາມພວກເຮົາກ່ຽວກັບ Twitter ສໍາລັບການປັບປຸງ"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 ພວກເຮົາກ່ຽວກັບກູໂກສໍາລັບການປັບປຸງ"
+
+msgid "okay"
+msgstr "okay"
+
+msgid "cancel"
+msgstr "ຍົກເລີກການ"
+
+msgid "close"
+msgstr "ປິດ"
+
+msgid "unknown_host"
+msgstr "ຮູ້ຈັກ Host"
+
+msgid "okay_to_continue"
+msgstr "ຫຍັງທີ່ຈະສືບຕໍ່?"
+
+msgid "fingerprint"
+msgstr "ລາຍນິ້ວມື"
+
+msgid "remember"
+msgstr "ຈືຂໍ້ມູນການ"
+
+msgid "file_permissions"
+msgstr "ການອະນຸຍາດເອກະສານ"
+
+msgid "file_permissions_desc"
+msgstr "ກະລຸນາເລືອກຄຸນລັກສະນະໃຫມ່ສໍາລັບໄຟລ໌ທີ່ເລືອກ (s) / folder (s)"
+
+msgid "read"
+msgstr "ອ່ານ"
+
+msgid "write"
+msgstr "ຂຽນ"
+
+msgid "execute"
+msgstr "ປະຕິບັດ"
+
+msgid "owner"
+msgstr "ເຈົ້າຂອງ"
+
+msgid "group"
+msgstr "ກຸ່ມ"
+
+msgid "public"
+msgstr "ສາທາລະນະ"
+
+msgid "numeric_value"
+msgstr "ມູນຄ່າຈໍານວນຫລາຍ"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "ກະລຸນາໃສ່ຊື່ຂອງລະບົບໃຫມ່ ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "ກະລຸນາໃສ່ຊື່ຂອງໄຟລ໌ໃຫມ່ ..."
+
+msgid "name"
+msgstr "ຊື່"
+
+msgid "enter_a_password"
+msgstr "ກະລຸນາໃສ່ລະຫັດຜ່ານ"
+
+msgid "language"
+msgstr "ພາສາ"
+
+msgid "seconds"
+msgstr "ວິນາທີ"
+
+msgid "minutes"
+msgstr "ນາທີ"
+
+msgid "hour"
+msgstr "ຊົ່ວໂມງ"
+
+msgid "hours"
+msgstr "ຊົ່ວໂມງ"
+
+msgid "day"
+msgstr "ວັນ"
+
+msgid "trial_left"
+msgstr "ການທົດລອງຊ້າຍ"
+
+msgid "register_now"
+msgstr "ລົງ​ທະ​ບຽນ​ດຽວ​ນີ້"
+
+msgid "general"
+msgstr "ໂດຍທົ່ວໄປ"
+
+msgid "security"
+msgstr "ຄວາມປອດໄພ"
+
+msgid "master_password"
+msgstr "ລະຫັດຜ່ານແມ່ບົດ"
+
+msgid "status"
+msgstr "ສະຖານະພາບ"
+
+msgid "enabled"
+msgstr "ເປີດການໃຊ້ງານ"
+
+msgid "disabled"
+msgstr "ຄົນພິການ"
+
+msgid "timeout"
+msgstr "ຫມົດ​ເວ​ລາ"
+
+msgid "save"
+msgstr "ບັນທຶກ"
+
+msgid "add_account"
+msgstr "ເພີ່ມ​ບັນ​ຊີ"
+
+msgid "support"
+msgstr "ສະຫນັບສະຫນູນ"
+
+msgid "notice_updates"
+msgstr "ຫນັງສືແຈ້ງການ / ການປັບປຸງ"
+
+msgid "please_login"
+msgstr "ກະລຸນາເຂົ້າສູ່ລະບົບ"
+
+msgid "your_session_timed_out"
+msgstr "Timed Session ຂອງທ່ານອອກ"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "ຂໍອະໄພລະຫັດຜ່ານທີ່ທ່ານເຂົ້າໄປໄດ້ທີ່ບໍ່ຖືກຕ້ອງ!"
+
+msgid "login"
+msgstr "ເຂົ້າ​ສູ່​ລະ​ບົບ"
+
+msgid "master_password_desc"
+msgstr "ຕັ້ງລະຫັດຜ່ານແມ່ບົດນີ້ຈະຮັກສາບັນຊີຂອງທ່ານປອດໄພ."
+
+msgid "license_key"
+msgstr "Key ໃບອະນຸຍາດ"
+
+msgid "online"
+msgstr "ອອນໄລນ໌"
+
+msgid "offline"
+msgstr "ອອຟໄລ"
+
+msgid "currently_unavailable"
+msgstr "ບໍ່ສາມາດປະຈຸບັນ"
+
+msgid "no_message_to_display"
+msgstr "ຂໍ້ຄວາມທີ່ບໍ່ມີທີ່ຈະສະແດງ"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - ທ່ານມີຄວາມອອຟໄລຫລືເທິງເຄືອຂ່າຍການເຊື່ອມຕໍ່ພຽງແຕ່?"
+
+msgid "offline_notice_desc"
+msgstr "ທ່ານປະຈຸບັນມີອອຟໄລ, ໃນເຄືອຂ່າຍພຽງແຕ່ການເຊື່ອມຕໍ່ຫຼືການເຊື່ອມຕໍ່ບໍ່ມີສາມາດໄດ້ຮັບການສ້າງຕັ້ງຂຶ້ນຂອງເຄື່ອງແມ່ຂ່າຍຂອງພວກເຮົາ"
+
+msgid "edit_file"
+msgstr "ດັດແກ້ເອກະສານ"
+
+msgid "download"
+msgstr "ດາວໂຫລດ"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "ການເປັນເຈົ້າພາບ / IP ເປັນສິ່ງຈໍາເປັນ"
+
+msgid "apply_to_all_files"
+msgstr "ສະຫມັກຂໍເອົາໄຟລ໌ທັງຫມົດ"
+
+msgid "activate_now"
+msgstr "ເປີດໃຊ້ວຽກໃນປັດຈຸບັນ"
+
+msgid "deactivate"
+msgstr "De ກິດຈະກໍາ"
+
+msgid "in_progress"
+msgstr "ໃນຄວາມຄືບຫນ້າ"
+
+msgid "complete"
+msgstr "ສົມບູນ"
+
+msgid "direction"
+msgstr "ທິດທາງ"
+
+msgid "progress"
+msgstr "ຄວາມຄືບຫນ້າ"
+
+msgid "permissions"
+msgstr "ການອະນຸຍາດ"
+
+msgid "owner_group"
+msgstr "ເຈົ້າຂອງ / Group"
+
+msgid "size"
+msgstr "ຂະຫນາດ"
+
+msgid "type"
+msgstr "ປະເພດ"
+
+msgid "modified"
+msgstr "ຖືກແກ້ໄຂ"
+
+msgid "trial"
+msgstr "ການທົດລອງ"
+
+msgid "cleared"
+msgstr "ການເກັບກູ້"
+
+msgid "error_connecting"
+msgstr "ຄວາມຜິດພາດການເຊື່ອມຕໍ່"
+
+msgid "error_connecting_to_host_ip"
+msgstr "ຄວາມຜິດພາດການເຊື່ອມຕໍ່ການເປັນເຈົ້າພາບ / ທີ່ຢູ່ IP"
+
+msgid "error_connecting_to_port"
+msgstr "ຄວາມຜິດພາດການເຊື່ອມຕໍ່ກັບທີ່ Port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "ກະລຸນາເລືອກລະບົບທ້ອງຖິ່ນຄັ້ງທໍາອິດ!"
+
+msgid "go"
+msgstr "ໄປ"
+
+msgid "confirm"
+msgstr "ຢືນຢັນ"
+
+msgid "delete"
+msgstr "ລົບ"
+
+msgid "rename"
+msgstr "ປ່ຽນຊື່"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL ສໍາເນົາ (s) ເພື່ອ Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "ກະລຸນາຢືນຢັນວ່າທ່ານຕ້ອງການທີ່ຈະລົບໄຟທີ່ເລືອກ (s) / folder (s)"
+
+msgid "cancelled_by_user"
+msgstr "ຍົກເລີກໂດຍຜູ້ໃຊ້"
+
+msgid "already_exists_overwrite"
+msgstr "ແລ້ວມີຢູ່, ແທນທີ່?"
+
+msgid "dashboard"
+msgstr "dashboard"
+
+msgid "my_accounts"
+msgstr "ບັນຊີຂອງຂ້າພະເຈົ້າ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ເອກະສານທີ່ບັນທຶກໄວ້! ບັນຊີທັງຫມົດໄດ້ຮັບການສະຫນັບສະຫນູນ."
+
+msgid "file_failed_please_try_again"
+msgstr "ເອກະສານບໍ່ສາມາດ! ກະລຸນາພະຍາຍາມອີກເທື່ອຫນຶ່ງ."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "ທ່ານຍັງບໍ່ມີບັນຊີຈະໄດ້ຮັບການສະຫນັບສະຫນູນ."
+
+msgid "saved!"
+msgstr "ບັນທືກ!"
+
+msgid "please_enter_a_password"
+msgstr "ກະລຸນາໃສ່ລະຫັດຜ່ານ?"
+
+msgid "connection_closed"
+msgstr "ປິດການເຊື່ອມຕໍ່"
+
+msgid "listing_mode_set_to"
+msgstr "ຮູບແບບ Listing ກໍານົດທີ່ຈະ"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP ຂອງເຄື່ອງແມ່ຂ່າຍໃນທ້ອງຖິ່ນແກ້ໄຂ, ການນໍາໃຊ້ IP ຈາກພາຍນອກ"
+
+msgid "login_incorrect"
+msgstr "ເຂົ້າສູ່ລະບົບທີ່ບໍ່ຖືກຕ້ອງ"
+
+msgid "keeping_connection_alive"
+msgstr "ການຮັກສາການເຊື່ອມຕໍ່ມີຊີວິດຢູ່"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "ບໍ່ສາມາດຂຽນ, ການເຊື່ອມຕໍ່ຂໍ້ມູນປິດ"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ບໍ່ສາມາດອ່ານການເຊື່ອມຕໍ່ຂໍ້ມູນປິດ"
+
+msgid "error_reading_file"
+msgstr "ເອກະສານການອ່ານຜິດພາດ"
+
+msgid "error_writing_file"
+msgstr "ເອກະສານລາຍລັກອັກສອນ Error"
+
+msgid "failed_to_change_directory_to"
+msgstr "ສົບຜົນສໍາເລັດມີການປ່ຽນແປງລະບົບການ"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "ທ່ານອາດຈະບໍ່ມີການອະນຸຍາດທີ່ຖືກຕ້ອງໃນການເຂົ້າເຖິງລະບົບນີ້"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "ການກັບຄືນກັບຄືນໄປບ່ອນລະບົບທີ່ຜ່ານມາ"
+
+msgid "activate"
+msgstr "ກະຕຸ້ນ"
+
+msgid "payment"
+msgstr "ການຊໍາລະເງິນ"
+
+msgid "license_key_is_required"
+msgstr "ທີ່ສໍາຄັນໃບອະນຸຍາດຖືກຕ້ອງການ"
+
+msgid "license_activated!"
+msgstr "ໃບອະນຸຍາດທີ່ໃຊ້!"
+
+msgid "your_license_has_been_validated"
+msgstr "ໃບອະນຸຍາດຂອງທ່ານໄດ້ຮັບການກວດສອບ."
+
+msgid "thank_you!"
+msgstr "ຂອບ​ໃຈ!"
+
+msgid "buy_now!"
+msgstr "ຊື້​ດຽວ​ນີ້!"
+
+msgid "buy_now"
+msgstr "ຊື້​ດຽວ​ນີ້"
+
+msgid "one_off_fee"
+msgstr "ຄ່າຫນຶ່ງອອກ"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "ກະລຸນາໃຫ້ມີຄວາມສຸກ app ນີ້ມີຂໍ້ຈໍາກັດທີ່ບໍ່ມີ"
+
+msgid "please_enter_your_license_key_below"
+msgstr "ກະລຸນາໃສ່ທີ່ສໍາຄັນໃບອະນຸຍາດຂອງທ່ານຂ້າງລຸ່ມນີ້"
+
+msgid "or"
+msgstr "ຫຼື"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "ບັນຊີທີ່ຈະແຈ້ງ"
+
+msgid "clear_ssh_keys"
+msgstr "ຈະແຈ້ງຫຼັກ SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "ລຶບຕົວທີ່ໃຊ້ໃນ SSH ບັນທຶກທັງຫມົດ"
+
+msgid "clear_app_settings"
+msgstr "Settings App ທີ່ຈະແຈ້ງ"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "ລຶບສະເພາະ app ທັງຫມົດ"
+
+msgid "clear_recent_connections"
+msgstr "ການເຊື່ອມຕໍ່ທີ່ຜ່ານມາຈະແຈ້ງ"
+
+msgid "deletes_all_recent_connections"
+msgstr "ລຶບການເຊື່ອມຕໍ່ທີ່ຜ່ານມາທັງຫມົດ"
+
+msgid "import_type"
+msgstr "ປະເພດການນໍາເຂົ້າ"
+
+msgid "please_select"
+msgstr "ກະ​ລຸ​ນາ​ເລືອກ"
+
+msgid "import_file"
+msgstr "ນໍາເຂົ້າໄຟລ໌"
+
+msgid "choose_file"
+msgstr "ເລືອກ​ເອົາ​ໄຟລ​໌"
+
+msgid "delete_accounts"
+msgstr "ລຶບບັນຊີ"
+
+msgid "deletes_all_existing_accounts"
+msgstr "ລຶບບັນຊີທີ່ມີຢູ່ແລ້ວທັງຫມົດ"
+
+msgid "import_now"
+msgstr "ການນໍາເຂົ້າໃນປັດຈຸບັນ"
+
+msgid "none"
+msgstr "ບໍ່ມີ"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "ກະລຸນາ restart app ລູກຄ້າ SFTP ສໍາລັບການປ່ຽນແປງທີ່ຈະມີຜົນກະທົບ."
+
+msgid "already_bought_the_app"
+msgstr "ແລ້ວຊື້ App ແນວໃດ?"
+
+msgid "choose"
+msgstr "ເລືອກ"
+
+msgid "deleted!"
+msgstr "ລົບ!"
+
+msgid "use_syncronised_browsing"
+msgstr "ນໍາໃຊ້ຜົນການຊອກຫາ syncronised"
+
+msgid "remote_directory"
+msgstr "Directory ຫ່າງໄກສອກຫຼີກ"
+
+msgid "rsa_key_only!"
+msgstr "RSA ທີ່ສໍາຄັນເທົ່ານັ້ນ!"
+
+msgid "no_key_selected"
+msgstr "ທີ່ສໍາຄັນບໍ່ມີການຄັດເລືອກ."
+
+msgid "ssh_key_file"
+msgstr "SSH File Key"
+
+msgid "no_dir_selected"
+msgstr "ບໍ່ມີ dir ເລືອກ."
+
+msgid "keep_blank_for_current_password"
+msgstr "ຮັກສາເລີຍສໍາລັບການລະຫັດຜ່ານໃນປັດຈຸບັນ."
+
+msgid "logon_type"
+msgstr "ປະເພດເຂົ້າສູ່ລະບົບ"
+
+msgid "normal"
+msgstr "ປົກກະຕິ"
+
+msgid "ask_for_password"
+msgstr "ຮ້ອງຂໍໃຫ້ມີລະຫັດຜ່ານ"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "ປະເພດບັນຊີ"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (ການເຊື່ອມຕໍ່ປົກກະຕິ)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (ການເຊື່ອມຕໍ່ທີ່ປອດໄພ)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (ການເຊື່ອມຕໍ່ທີ່ປອດໄພ)"
+
+msgid "folder"
+msgstr "ໂຟນເດີ"
+
+msgid "advanced"
+msgstr "ກ້າວຫນ້າທາງດ້ານ"
+
+msgid "folder_name"
+msgstr "ຊື່ໂຟເດີ"
+
+msgid "parent"
+msgstr "ພໍ່ແມ່"
+
+msgid "new_ftp_site"
+msgstr "ເວັບໄຊ FTP ໃຫມ່"
+
+msgid "new_folder"
+msgstr "Folder ໃຫມ່"
+
+msgid "clean_now"
+msgstr "ທໍາຄວາມສະອາດໃນປັດຈຸບັນ"
+
+msgid "host"
+msgstr "ການເປັນເຈົ້າພາບ"
+
+msgid "no_accounts_added..."
+msgstr "ບໍ່ມີບັນຊີເພີ່ມ ..."
+
+msgid "unknown"
+msgstr "ບໍ່ຮູ້ຈັກ"
+
+msgid "file_saved!"
+msgstr "ເອກະສານທີ່ບັນທຶກໄວ້!"
+
+msgid "uploading_file!"
+msgstr "ໄຟລ໌ທີ່ສົ່ງ!"
+
+msgid "save_failed!"
+msgstr "ຊ່ວຍປະຢັດບໍ່!"
+
+msgid "search"
+msgstr "ຄົ້ນຫາ"
+
+msgid "find"
+msgstr "ຄົ້ນຫາ"
+
+msgid "replace"
+msgstr "ທົດແທນ"
+
+msgid "scroll_past_end"
+msgstr "ເລື່ອນຜ່ານມາສຸດທ້າຍ"
+
+msgid "show_annotations"
+msgstr "ສະແດງໃຫ້ເຫັນ Annotations"
+
+msgid "show_gutter"
+msgstr "ສະແດງໃຫ້ເຫັນ Gutter"
+
+msgid "show_invisibles"
+msgstr "ສະແດງໃຫ້ເຫັນເບິ່ງເຫັນໄດ້"
+
+msgid "show_print_margin"
+msgstr "ສະແດງໃຫ້ເຫັນຂອບ Print"
+
+msgid "highlight_active_line"
+msgstr "ເນັ້ນຫນັກໃສ່ການໃຊ້ວຽກ Line"
+
+msgid "word_wrap"
+msgstr "ຄໍາຫໍ່"
+
+msgid "split_code"
+msgstr "ລະຫັດການແບ່ງປັນ"
+
+msgid "preferences"
+msgstr "ຕາມທີ່ໃຈມັກ"
+
+msgid "close_all_tabs"
+msgstr "ປິດທັງຫມົດ Tabs"
+
+msgid "close_current_tab"
+msgstr "ປິດ Tab ປັດຈຸບັນ"
+
+msgid "auto_save_file_when_i_type"
+msgstr "ອັດຕະໂນມັດຊ່ວຍປະຢັດເອກະສານໃນເວລາທີ່ຂ້າພະເຈົ້າປະເພດ"
+
+msgid "auto_save"
+msgstr "ອັດຕະໂນມັດຊ່ວຍປະຢັດ"
+
+msgid "quick_save"
+msgstr "ຊ່ວຍປະຢັດໄວ"
+
+msgid "documentation"
+msgstr "ເອກະສານ"
+
+msgid "themes"
+msgstr "ຫົວຂໍ້"
+
+msgid "keyboard_shortcuts"
+msgstr "ແປ້ນພິມ"
+
+msgid "coming_soon"
+msgstr "Coming Soon"
+
+msgid "empty"
+msgstr "ເປົ່າ"

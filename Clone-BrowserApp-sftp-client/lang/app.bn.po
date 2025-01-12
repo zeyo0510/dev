@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "মেনু"
+
+msgid "file"
+msgstr "ফাইল"
+
+msgid "view"
+msgstr "দৃশ্য"
+
+msgid "edit"
+msgstr "সম্পাদন করা"
+
+msgid "help"
+msgstr "সাহায্য"
+
+msgid "manage_accounts"
+msgstr "হিসাব পরিচালনা"
+
+msgid "import_accounts"
+msgstr "আমদানি অ্যাকাউন্টস"
+
+msgid "export_accounts"
+msgstr "রপ্তানি অ্যাকাউন্টস"
+
+msgid "quick_connect"
+msgstr "দ্রুত সংযোগ"
+
+msgid "message_log"
+msgstr "বার্তা লগ"
+
+msgid "local_directory"
+msgstr "স্থানীয় নির্দেশিকা"
+
+msgid "uploads_downloads"
+msgstr "আপলোড / ডাউনলোড"
+
+msgid "clear_saved_data"
+msgstr "সংরক্ষিত ডেটা সাফ করুন"
+
+msgid "edit_settings"
+msgstr "সেটিংস সম্পাদনা"
+
+msgid "report_bug"
+msgstr "একটি বাগ রিপোর্ট"
+
+msgid "suggest_feature"
+msgstr "একটি বৈশিষ্ট্য সুপারিশ"
+
+msgid "ask_a_question"
+msgstr "প্রশ্ন জিজ্ঞাসা কর"
+
+msgid "change_log"
+msgstr "লগিন পরিবর্তন করুন"
+
+msgid "about"
+msgstr "সম্বন্ধে"
+
+msgid "exit"
+msgstr "প্রস্থান"
+
+msgid "host_ip_address"
+msgstr "হোস্ট / IP ঠিকানা"
+
+msgid "username"
+msgstr "ব্যবহারকারীর নাম"
+
+msgid "password"
+msgstr "পাসওয়ার্ড"
+
+msgid "port"
+msgstr "বন্দর"
+
+msgid "connect"
+msgstr "সংযোগ করা"
+
+msgid "welcome"
+msgstr "স্বাগত"
+
+msgid "welcome_intro"
+msgstr "<p> এসএফটিপি ক্লায়েন্ট এটা গুগল ক্রোম / ক্রোম ওএস প্যাকেজড অ্যাপ অ্যাপ্লিকেশন দ্রুত এবং প্রতিক্রিয়াশীল হতে সক্ষম হবেন ইন্টারফেস নির্মিত হয়েছে সব সরলতা সম্পর্কে হয়. কার্যকারিতা কিছু দূরে সংরক্ষণ এবং আপনার সবচেয়ে আমাদের সংগঠিত করার জন্য একটি এফটিপি অ্য"
+
+msgid "latest_updates"
+msgstr "সর্বশেষ আপডেট"
+
+msgid "server_status"
+msgstr "সার্ভার স্থিতি"
+
+msgid "license_server"
+msgstr "লাইসেন্স সার্ভার"
+
+msgid "sftp_support"
+msgstr "সমর্থন"
+
+msgid "notice_update"
+msgstr "নোটিশ / আপডেট"
+
+msgid "website"
+msgstr "ওয়েবসাইট"
+
+msgid "clear_all"
+msgstr "সব পরিষ্কার করে দাও"
+
+msgid "manage"
+msgstr "পরিচালনা করা"
+
+msgid "recheck"
+msgstr "রি-চেক"
+
+msgid "last_release"
+msgstr "সর্বশেষ রিলিজ"
+
+msgid "released"
+msgstr "মুক্ত"
+
+msgid "queued"
+msgstr "সারিবদ্ধ"
+
+msgid "failed"
+msgstr "অনুত্তীর্ণ"
+
+msgid "completed"
+msgstr "সম্পন্ন"
+
+msgid "settings"
+msgstr "সেটিংস"
+
+msgid "add_folder"
+msgstr "ফোল্ডার যোগ করুন"
+
+msgid "add_ftp_account"
+msgstr "এফটিপি একাউন্ট যোগ"
+
+msgid "file_editor"
+msgstr "ফাইল এডিটর"
+
+msgid "editor_preferences"
+msgstr "সম্পাদক পছন্দসমূহ"
+
+msgid "your_ftp_accounts"
+msgstr "আপনার FTP অ্যাকাউন্টস"
+
+msgid "most_recent_used"
+msgstr "অতি সম্প্রতি ব্যবহৃত."
+
+msgid "no_connections_yet_made"
+msgstr "কোন সংযোগ এখনো তৈরি"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "কোন এফটিপি অ্যাকাউন্ট এখনও যোগ"
+
+msgid "most_recent_connections"
+msgstr "সম্প্রতি সংযোগ"
+
+msgid "last_10_connections_made"
+msgstr "তৈরি সর্বশেষ 10 সংযোগ"
+
+msgid "designed_developed_by"
+msgstr "ডিজাইন ও দ্বারা নির্মাতা"
+
+msgid "about_info"
+msgstr "সমর্থনের জন্য ব্যবহার করুন এসএফটিপি ক্লায়েন্ট ওয়েবসাইট, কোন সমর্থন আমাদের পৃথক ওয়েবসাইটের মাধ্যমে প্রদান করা হয়."
+
+msgid "local"
+msgstr "স্থানীয়"
+
+msgid "remote"
+msgstr "দূরবর্তী"
+
+msgid "remote_location_desc"
+msgstr "যেমন / public_html"
+
+msgid "create_directory"
+msgstr "ডিরেক্টরি তৈরি"
+
+msgid "create_new_directory"
+msgstr "নতুন ডিরেক্টরি তৈরি করুন"
+
+msgid "create_file"
+msgstr "ফাইল তৈরি করুন"
+
+msgid "create_new_file"
+msgstr "নতুন ফাইল তৈরি করুন"
+
+msgid "refresh_list"
+msgstr "তালিকা পুনরুজ্জীবিত করা"
+
+msgid "change"
+msgstr "পরিবর্তন"
+
+msgid "report_a_bug"
+msgstr "একটি বাগ রিপোর্ট"
+
+msgid "suggest_a_feature"
+msgstr "একটি বৈশিষ্ট্য সুপারিশ"
+
+msgid "enter_password"
+msgstr "পাসওয়ার্ড লিখুন"
+
+msgid "enter_your_password..."
+msgstr "আপনার পাসওয়ার্ড লিখুন..."
+
+msgid "passphrase"
+msgstr "পাসফ্রেজ"
+
+msgid "enter_your_passphrase..."
+msgstr "আপনার পাসওয়ার্ড লিখুন ..."
+
+msgid "email_sftp_client"
+msgstr "ইমেল এসএফটিপি ক্লায়েন্ট"
+
+msgid "faqs"
+msgstr "অনবরত জিজ্ঞাসিত প্রশ্ন"
+
+msgid "visit_sftp_client_website"
+msgstr "পরিদর্শন এসএফটিপি ক্লায়েন্ট ওয়েবসাইট"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "গুগল ক্রোম ওয়েবদোকানে আমাদের রেট"
+
+msgid "report_an_issue_or_get_help"
+msgstr "একটি সমস্যার প্রতিবেদন করুন বা সাহায্য পেতে"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "আপডেটের জন্য ফেসবুকে আমাদের সাথে যোগ দিন"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "আপডেটের জন্য টুইটার আমাদের অনুসরণ করুন"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "আপডেটের জন্য Google এ আমাদের +1"
+
+msgid "okay"
+msgstr "ঠিক আছে"
+
+msgid "cancel"
+msgstr "বাতিল"
+
+msgid "close"
+msgstr "ঘনিষ্ঠ"
+
+msgid "unknown_host"
+msgstr "অজানা হোস্ট"
+
+msgid "okay_to_continue"
+msgstr "অব্যাহত রাখার জন্য ঠিক আছে?"
+
+msgid "fingerprint"
+msgstr "অঙ্গুলাঙ্ক"
+
+msgid "remember"
+msgstr "মনে রাখা"
+
+msgid "file_permissions"
+msgstr "ফাইলের অনুমতি"
+
+msgid "file_permissions_desc"
+msgstr "(গুলি) অনুগ্রহ করে নির্বাচিত ফাইল (গুলি) / ফোল্ডার জন্য নতুন বৈশিষ্ট্য নির্বাচন"
+
+msgid "read"
+msgstr "পড়া"
+
+msgid "write"
+msgstr "লেখা"
+
+msgid "execute"
+msgstr "এক্সিকিউট"
+
+msgid "owner"
+msgstr "মালিক"
+
+msgid "group"
+msgstr "গ্রুপ"
+
+msgid "public"
+msgstr "প্রকাশ্য"
+
+msgid "numeric_value"
+msgstr "সংখ্যামান"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "নতুন ডিরেক্টরির নাম লিখুন ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "নতুন ফাইলের নাম লিখুন ..."
+
+msgid "name"
+msgstr "নাম"
+
+msgid "enter_a_password"
+msgstr "একটি পাসওয়ার্ড লিখুন"
+
+msgid "language"
+msgstr "ভাষা"
+
+msgid "seconds"
+msgstr "সেকেন্ড"
+
+msgid "minutes"
+msgstr "মিনিট"
+
+msgid "hour"
+msgstr "ঘন্টা"
+
+msgid "hours"
+msgstr "ঘন্টার"
+
+msgid "day"
+msgstr "দিন"
+
+msgid "trial_left"
+msgstr "ট্রায়াল বাম"
+
+msgid "register_now"
+msgstr "এখন নিবন্ধন করুন"
+
+msgid "general"
+msgstr "সাধারণ"
+
+msgid "security"
+msgstr "নিরাপত্তা"
+
+msgid "master_password"
+msgstr "মাস্টার পাসওয়ার্ড"
+
+msgid "status"
+msgstr "অবস্থা"
+
+msgid "enabled"
+msgstr "Enabled"
+
+msgid "disabled"
+msgstr "অক্ষম"
+
+msgid "timeout"
+msgstr "সময় শেষ"
+
+msgid "save"
+msgstr "সংরক্ষণ করুন"
+
+msgid "add_account"
+msgstr "হিসাব যোগ করা"
+
+msgid "support"
+msgstr "সমর্থন"
+
+msgid "notice_updates"
+msgstr "নোটিশ / আপডেট"
+
+msgid "please_login"
+msgstr "দয়া করে লগইন করুন"
+
+msgid "your_session_timed_out"
+msgstr "আপনার সেশন সময়যুক্ত আউট"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "দুঃখিত আপনার লেখা পাসওয়ার্ডটি ভুল ছিল!"
+
+msgid "login"
+msgstr "লগইন"
+
+msgid "master_password_desc"
+msgstr "এই মাস্টার পাসওয়ার্ড আপনার অ্যাকাউন্ট নিরাপদ রাখতে নির্ধারণ করুন."
+
+msgid "license_key"
+msgstr "লাইসেন্স কী"
+
+msgid "online"
+msgstr "অনলাইন"
+
+msgid "offline"
+msgstr "অফলাইন"
+
+msgid "currently_unavailable"
+msgstr "বর্তমানে অপ্রাপ্য"
+
+msgid "no_message_to_display"
+msgstr "কোন বার্তা প্রদর্শন করতে"
+
+msgid "offline_notice_title"
+msgstr "অনধিগম্য - আপনি অফলাইনে বা নেটওয়ার্ক শুধুমাত্র সংযোগ হয়?"
+
+msgid "offline_notice_desc"
+msgstr "আপনি একটি নেটওয়ার্কে শুধুমাত্র সংযোগ বা কোন সংযোগ আমাদের সার্ভার স্থাপন করা যেতে পারে বর্তমানে অফলাইনে আছেন,"
+
+msgid "edit_file"
+msgstr "ফাইল সম্পাদনা"
+
+msgid "download"
+msgstr "ডাউনলোড"
+
+msgid "upload"
+msgstr "আপলোড"
+
+msgid "host_ip_is_required"
+msgstr "হোস্ট / আইপি প্রয়োজন বোধ করা হয়"
+
+msgid "apply_to_all_files"
+msgstr "সমস্ত ফাইল প্রয়োগ"
+
+msgid "activate_now"
+msgstr "এখন সচল"
+
+msgid "deactivate"
+msgstr "ডি-অ্যাক্টিভেট"
+
+msgid "in_progress"
+msgstr "চলমান"
+
+msgid "complete"
+msgstr "সম্পূর্ণ"
+
+msgid "direction"
+msgstr "অভিমুখ"
+
+msgid "progress"
+msgstr "উন্নতি"
+
+msgid "permissions"
+msgstr "অনুমতিসমূহ"
+
+msgid "owner_group"
+msgstr "মালিক / গ্রুপ"
+
+msgid "size"
+msgstr "আয়তন"
+
+msgid "type"
+msgstr "আদর্শ"
+
+msgid "modified"
+msgstr "পরিমিত"
+
+msgid "trial"
+msgstr "পরীক্ষা"
+
+msgid "cleared"
+msgstr "সাফ"
+
+msgid "error_connecting"
+msgstr "সংযুক্ত হচ্ছে ত্রুটি"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ আইপি ঠিকানা হোস্ট করার জন্য সংযোগ স্থাপন করার সময় ত্রুটি"
+
+msgid "error_connecting_to_port"
+msgstr "পোর্টে সংযোগ ত্রুটি"
+
+msgid "please_select_a_local_directory_first"
+msgstr "অনুগ্রহ করে একটি স্থানীয় ডিরেক্টরি প্রথম নির্বাচন করুন!"
+
+msgid "go"
+msgstr "যাওয়া"
+
+msgid "confirm"
+msgstr "নিশ্চিত করা"
+
+msgid "delete"
+msgstr "মুছে ফেলা"
+
+msgid "rename"
+msgstr "পুনঃনামকরণ"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL অনুলিপি করুন (গুলি) সরিয়ে ক্লিপবোর্ডে নিয়ে"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "দয়া করে নিশ্চিত করুন আপনি নির্বাচিত ফাইল (গুলি) মুছে ফেলতে ইচ্ছুক / ফোল্ডার (গুলি)"
+
+msgid "cancelled_by_user"
+msgstr "ব্যবহারকারী দ্বারা বাতিলকৃত"
+
+msgid "already_exists_overwrite"
+msgstr "ইতিমধ্যে, ওভাররাইট রয়েছে?"
+
+msgid "dashboard"
+msgstr "ড্যাশবোর্ড"
+
+msgid "my_accounts"
+msgstr "আমার হিসাব"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "সংরক্ষিত ফাইল! সমস্ত অ্যাকাউন্ট ব্যাক আপ করা হয়েছে."
+
+msgid "file_failed_please_try_again"
+msgstr "ফাইল ব্যর্থ! অনুগ্রহপূর্বক আবার চেষ্টা করুন."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "আপনি বর্তমানে কোন একাউন্ট ব্যাক আপ করা আছে."
+
+msgid "saved!"
+msgstr "সংরক্ষিত!"
+
+msgid "please_enter_a_password"
+msgstr "একটি পাসওয়ার্ড লিখুন দয়া করে!"
+
+msgid "connection_closed"
+msgstr "সংযোগ বন্ধ"
+
+msgid "listing_mode_set_to"
+msgstr "মোড সেট তালিকা"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "লোকাল সার্ভার আইপি সমাধান, বহিস্থিত IP ব্যবহার"
+
+msgid "login_incorrect"
+msgstr "ভুল লগইন"
+
+msgid "keeping_connection_alive"
+msgstr "সংযোগ জীবিত রাখা"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "লিখতে অক্ষম, ডেটা সংযোগ বন্ধ"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ডেটা সংযোগ বন্ধ পড়তে অক্ষম"
+
+msgid "error_reading_file"
+msgstr "ফাইল পড়ার সময় ত্রুটি"
+
+msgid "error_writing_file"
+msgstr "ত্রুটি লেখা ফাইল"
+
+msgid "failed_to_change_directory_to"
+msgstr "ডিরেক্টরিটিতে পরিবর্তন করতে ব্যর্থ হয়েছে"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "আপনি এই ডাইরেক্টরিতে প্রবেশ করার সঠিক অনুমতি নাও থাকতে পারে"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "পূর্ববর্তী ডিরেক্টরি ফিরে প্রত্যাবর্তন করা"
+
+msgid "activate"
+msgstr "সক্রিয় করা"
+
+msgid "payment"
+msgstr "প্রদান"
+
+msgid "license_key_is_required"
+msgstr "লাইসেন্স কী প্রয়োজন বোধ করা হয়"
+
+msgid "license_activated!"
+msgstr "লাইসেন্স সক্রিয় হয়েছে!"
+
+msgid "your_license_has_been_validated"
+msgstr "আপনার লাইসেন্স যাচাই করা হয়েছে."
+
+msgid "thank_you!"
+msgstr "ধন্যবাদ!"
+
+msgid "buy_now!"
+msgstr "এখন কেন!"
+
+msgid "buy_now"
+msgstr "এখন কেন"
+
+msgid "one_off_fee"
+msgstr "এক বন্ধ ফি"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "বিনা বাধায় এই অ্যাপ্লিকেশন ভোগ আপগ্রেড করুন"
+
+msgid "please_enter_your_license_key_below"
+msgstr "নিচে আপনার লাইসেন্স কী লিখুন দয়া করে"
+
+msgid "or"
+msgstr "অথবা"
+
+msgid "loading..."
+msgstr "লোড হচ্ছে ..."
+
+msgid "clear_accounts"
+msgstr "হিসাব পরিষ্কার"
+
+msgid "clear_ssh_keys"
+msgstr "সাফ SSH কী"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "সমস্ত সংরক্ষিত SSH কী মুছে ফেলে"
+
+msgid "clear_app_settings"
+msgstr "সাফ অ্যাপ সেটিংস"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "সব অ্যাপ্লিকেশন নির্দিষ্ট সেটিংস মুছে"
+
+msgid "clear_recent_connections"
+msgstr "সাফ সাম্প্রতিক সংযোগ"
+
+msgid "deletes_all_recent_connections"
+msgstr "সাম্প্রতিক সব সংযোগ মুছে"
+
+msgid "import_type"
+msgstr "আমদানি প্রকার"
+
+msgid "please_select"
+msgstr "অনুগ্রহ করে নির্বাচন করুন"
+
+msgid "import_file"
+msgstr "ফাইল আমদানি"
+
+msgid "choose_file"
+msgstr "ফাইল পছন্দ কর"
+
+msgid "delete_accounts"
+msgstr "একাউন্টস মুছুন"
+
+msgid "deletes_all_existing_accounts"
+msgstr "সমস্ত বিদ্যমান অ্যাকাউন্ট মুছে ফেলে"
+
+msgid "import_now"
+msgstr "আমদানি এখন"
+
+msgid "none"
+msgstr "না"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "পরিবর্তনগুলি কার্যকরী করতে এসএফটিপি ক্লায়েন্ট অ্যাপ্লিকেশন পুনরায় আরম্ভ করুন."
+
+msgid "already_bought_the_app"
+msgstr "ইতিমধ্যে অ্যাপ্লিকেশন কেনা?"
+
+msgid "choose"
+msgstr "বেছে নিন"
+
+msgid "deleted!"
+msgstr "মোছা হয়েছে!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised ব্রাউজিং ব্যবহার"
+
+msgid "remote_directory"
+msgstr "রিমোট নির্দেশিকা"
+
+msgid "rsa_key_only!"
+msgstr "RSA কী শুধুমাত্র!"
+
+msgid "no_key_selected"
+msgstr "কোনো কি নির্বাচন করেছেন."
+
+msgid "ssh_key_file"
+msgstr "SSH কী ফাইল"
+
+msgid "no_dir_selected"
+msgstr "কোন Dir নির্বাচন করেছেন."
+
+msgid "keep_blank_for_current_password"
+msgstr "বর্তমান পাসওয়ার্ড ফাঁকা রাখুন."
+
+msgid "logon_type"
+msgstr "লগঅন প্রকার"
+
+msgid "normal"
+msgstr "সাধারণ"
+
+msgid "ask_for_password"
+msgstr "পাসওয়ার্ড জন্য জিজ্ঞাসা করুন"
+
+msgid "anonymous"
+msgstr "নামবিহীন"
+
+msgid "account_type"
+msgstr "অ্যাকাউন্ট ধরন"
+
+msgid "ftp_normal_connection"
+msgstr "এফটিপি (সাধারন সংযোগ)"
+
+msgid "sftp_secure_connection"
+msgstr "এসএফটিপি (সিকিউর কানেকশন)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH- র (সিকিউর কানেকশন)"
+
+msgid "folder"
+msgstr "ফোল্ডার"
+
+msgid "advanced"
+msgstr "অগ্রসর"
+
+msgid "folder_name"
+msgstr "ফোল্ডারের নাম"
+
+msgid "parent"
+msgstr "মাতা"
+
+msgid "new_ftp_site"
+msgstr "নতুন এফটিপি সাইট"
+
+msgid "new_folder"
+msgstr "নতুন ফোল্ডার"
+
+msgid "clean_now"
+msgstr "ক্লিন এখন"
+
+msgid "host"
+msgstr "নিমন্ত্রণকর্তা"
+
+msgid "no_accounts_added..."
+msgstr "কোন একাউন্ট যোগ করা হয়েছে ..."
+
+msgid "unknown"
+msgstr "অজানা"
+
+msgid "file_saved!"
+msgstr "সংরক্ষিত ফাইল!"
+
+msgid "uploading_file!"
+msgstr "আপলোড ফাইল!"
+
+msgid "save_failed!"
+msgstr "সংরক্ষণ ব্যর্থ হয়েছে!"
+
+msgid "search"
+msgstr "অনুসন্ধান"
+
+msgid "find"
+msgstr "আবিষ্কার"
+
+msgid "replace"
+msgstr "প্রতিস্থাপন করা"
+
+msgid "scroll_past_end"
+msgstr "স্ক্রোল অতীত শেষ"
+
+msgid "show_annotations"
+msgstr "টীকা দেখান"
+
+msgid "show_gutter"
+msgstr "দেখান পায়োনালী"
+
+msgid "show_invisibles"
+msgstr "দেখান Invisibles"
+
+msgid "show_print_margin"
+msgstr "দেখান প্রিন্ট মার্জিন"
+
+msgid "highlight_active_line"
+msgstr "সক্রিয় লাইন হাইলাইট করুন"
+
+msgid "word_wrap"
+msgstr "শব্দ মোড়ানো"
+
+msgid "split_code"
+msgstr "স্প্লিট কোড"
+
+msgid "preferences"
+msgstr "পছন্দসমূহ"
+
+msgid "close_all_tabs"
+msgstr "বন্ধ সকল ট্যাব"
+
+msgid "close_current_tab"
+msgstr "বর্তমান ট্যাব বন্ধ করুন"
+
+msgid "auto_save_file_when_i_type"
+msgstr "যখন আমি টাইপ অটো ফাইলটি সংরক্ষণ"
+
+msgid "auto_save"
+msgstr "স্বয়ংক্রিয় সংরক্ষণ"
+
+msgid "quick_save"
+msgstr "দ্রুত সংরক্ষণ"
+
+msgid "documentation"
+msgstr "ডকুমেন্টেশন"
+
+msgid "themes"
+msgstr "থিমস"
+
+msgid "keyboard_shortcuts"
+msgstr "কিবোর্ড শর্টকাট"
+
+msgid "coming_soon"
+msgstr "শীঘ্রই আসছে"
+
+msgid "empty"
+msgstr "খালি"

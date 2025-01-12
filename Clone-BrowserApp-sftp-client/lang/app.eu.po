@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "ikusi"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Laguntza"
+
+msgid "manage_accounts"
+msgstr "Kudeatu kontuak"
+
+msgid "import_accounts"
+msgstr "Inportatu kontuak"
+
+msgid "export_accounts"
+msgstr "Export kontuak"
+
+msgid "quick_connect"
+msgstr "Quick konektatu"
+
+msgid "message_log"
+msgstr "mezuen egunkaria"
+
+msgid "local_directory"
+msgstr "Baldintza"
+
+msgid "uploads_downloads"
+msgstr "Igoerak / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Garbitu gordetako datuak"
+
+msgid "edit_settings"
+msgstr "Editatu ezarpenak"
+
+msgid "report_bug"
+msgstr "Bug baten berri"
+
+msgid "suggest_feature"
+msgstr "Film bat proposatu"
+
+msgid "ask_a_question"
+msgstr "Egin galdera bat"
+
+msgid "change_log"
+msgstr "aldaketen erregistroa"
+
+msgid "about"
+msgstr "buruz"
+
+msgid "exit"
+msgstr "Exit"
+
+msgid "host_ip_address"
+msgstr "Zerbitzaria / IP Helbidea"
+
+msgid "username"
+msgstr "Erabiltzaile izena"
+
+msgid "password"
+msgstr "Pasahitza"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "konektatu"
+
+msgid "welcome"
+msgstr "Ongi"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP bezero guztiak soiltasun buruzko da, izan da Google Chrome / Chrome OS ontziratutako aplikazioaren interfazean aplikazioa azkar eta sentikorrena izatea ahalbidetzen gainean eraikia. funtzionalitate batzuk FTP kontua kudeatzailea bat barne kanpoan"
+
+msgid "latest_updates"
+msgstr "Azken eguneratzeak"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "Lizentzia Server"
+
+msgid "sftp_support"
+msgstr "Laguntzarako"
+
+msgid "notice_update"
+msgstr "Oharra / media"
+
+msgid "website"
+msgstr "Web"
+
+msgid "clear_all"
+msgstr "Garbitu guztiak"
+
+msgid "manage"
+msgstr "Kudeatu"
+
+msgid "recheck"
+msgstr "Re-kontrol"
+
+msgid "last_release"
+msgstr "Azken oharra"
+
+msgid "released"
+msgstr "Argitaratze"
+
+msgid "queued"
+msgstr "Ilaran"
+
+msgid "failed"
+msgstr "Huts egin"
+
+msgid "completed"
+msgstr "Osatua"
+
+msgid "settings"
+msgstr "Ezarpenak"
+
+msgid "add_folder"
+msgstr "Gehitu karpeta"
+
+msgid "add_ftp_account"
+msgstr "Gehitu FTP kontua"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editore Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Zure FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "Erabilitako azken."
+
+msgid "no_connections_yet_made"
+msgstr "Ez dago konexiorik gabe egin"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ez FTP kontuak gehitu oraindik"
+
+msgid "most_recent_connections"
+msgstr "Azken konexioak"
+
+msgid "last_10_connections_made"
+msgstr "Azken 10 egin konexioak"
+
+msgid "designed_developed_by"
+msgstr "Diseinatua & k garatua"
+
+msgid "about_info"
+msgstr "Mesedez, erabili SFTP bezero webgunean laguntza, laguntza ez gure web banakako bidez ematen da."
+
+msgid "local"
+msgstr "Tokiko"
+
+msgid "remote"
+msgstr "Urruneko"
+
+msgid "remote_location_desc"
+msgstr "adibidez / public_html"
+
+msgid "create_directory"
+msgstr "Sortu direktorioa"
+
+msgid "create_new_directory"
+msgstr "Sortu Directory"
+
+msgid "create_file"
+msgstr "Fitxategi"
+
+msgid "create_new_file"
+msgstr "Fitxategi berria"
+
+msgid "refresh_list"
+msgstr "Freskatu zerrenda"
+
+msgid "change"
+msgstr "Aldatu"
+
+msgid "report_a_bug"
+msgstr "Bug baten berri"
+
+msgid "suggest_a_feature"
+msgstr "Film bat proposatu"
+
+msgid "enter_password"
+msgstr "Sartu pasahitza"
+
+msgid "enter_your_password..."
+msgstr "Sartu pasahitza ..."
+
+msgid "passphrase"
+msgstr "Pasa-esaldia"
+
+msgid "enter_your_passphrase..."
+msgstr "Idatzi zure pasaesaldia ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP bezero"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Bisita SFTP bezero Web"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Baloratu du Google Chrome Webstore on"
+
+msgid "report_an_issue_or_get_help"
+msgstr "arazo baten berri edo laguntza lortzeko"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Etorri gurekin Facebook on eguneratzeak"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "TOTAAL eguneraketak egiteko"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Gurekin Google eguneratzerik dagoen"
+
+msgid "okay"
+msgstr "ados"
+
+msgid "cancel"
+msgstr "Utzi"
+
+msgid "close"
+msgstr "Itxi"
+
+msgid "unknown_host"
+msgstr "Ostalari ezezaguna"
+
+msgid "okay_to_continue"
+msgstr "Ados jarraitzeko?"
+
+msgid "fingerprint"
+msgstr "Hatz-marka"
+
+msgid "remember"
+msgstr "Gogoratu"
+
+msgid "file_permissions"
+msgstr "Fitxategien baimenak"
+
+msgid "file_permissions_desc"
+msgstr "Hautatu hautatutako fitxategia (s) / karpetan dagoen atributu berria (k)"
+
+msgid "read"
+msgstr "irakurri"
+
+msgid "write"
+msgstr "Idatzi"
+
+msgid "execute"
+msgstr "Exekuzio"
+
+msgid "owner"
+msgstr "Titularra"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Publikoa"
+
+msgid "numeric_value"
+msgstr "zenbakizko balioa"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Sartu direktorioa berriaren izena ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Sartu fitxategi berriaren izena ..."
+
+msgid "name"
+msgstr "izena"
+
+msgid "enter_a_password"
+msgstr "Sartu pasahitza bat"
+
+msgid "language"
+msgstr "Hizkuntza"
+
+msgid "seconds"
+msgstr "Seconds"
+
+msgid "minutes"
+msgstr "Minutuak"
+
+msgid "hour"
+msgstr "Ordua"
+
+msgid "hours"
+msgstr "Ordutegia"
+
+msgid "day"
+msgstr "eguna"
+
+msgid "trial_left"
+msgstr "Trial Ezker"
+
+msgid "register_now"
+msgstr "Izena eman orain"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Segurtasuna"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "Egoera"
+
+msgid "enabled"
+msgstr "Gaituta"
+
+msgid "disabled"
+msgstr "Ezinduen"
+
+msgid "timeout"
+msgstr "Denboraz kanpo"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "kontua Gehitu"
+
+msgid "support"
+msgstr "Laguntzarako"
+
+msgid "notice_updates"
+msgstr "Oharra / media"
+
+msgid "please_login"
+msgstr "Mesedez Sartu"
+
+msgid "your_session_timed_out"
+msgstr "Zure Saio"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sentitzen dut pasahitza sartu duzun da zuzena!"
+
+msgid "login"
+msgstr "Saioa hasi"
+
+msgid "master_password_desc"
+msgstr "Ezarri pasahitz maisua hau zure kontuak seguru mantentzeko."
+
+msgid "license_key"
+msgstr "Lizentzi gakoa"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Gaur egun ez dago erabilgarri"
+
+msgid "no_message_to_display"
+msgstr "Ez dago mezu zer erakutsi"
+
+msgid "offline_notice_title"
+msgstr "Dabilela - Are you offline edo sare bat bakarrik konexio on?"
+
+msgid "offline_notice_desc"
+msgstr "Sare batean bakarrik konexio edo loturarik ez egon gure zerbitzariak ezarri ahal deskonektaturik dira,"
+
+msgid "edit_file"
+msgstr "Editatu fitxategia"
+
+msgid "download"
+msgstr "Deskargatu"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Zerbitzaria / IP beharrezkoa da"
+
+msgid "apply_to_all_files"
+msgstr "fitxategi guztiei"
+
+msgid "activate_now"
+msgstr "Aktibatu orain"
+
+msgid "deactivate"
+msgstr "De-activate"
+
+msgid "in_progress"
+msgstr "Eraikitzen"
+
+msgid "complete"
+msgstr "osoa"
+
+msgid "direction"
+msgstr "Zuzendaritza"
+
+msgid "progress"
+msgstr "Eraikitzen"
+
+msgid "permissions"
+msgstr "Baimenak"
+
+msgid "owner_group"
+msgstr "Titularra / Taldea"
+
+msgid "size"
+msgstr "Tamaina"
+
+msgid "type"
+msgstr "Mota"
+
+msgid "modified"
+msgstr "Modified"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "garbian"
+
+msgid "error_connecting"
+msgstr "Errorea konektatzea"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Errorea ostalariarekin konektatu / IP helbidea"
+
+msgid "error_connecting_to_port"
+msgstr "Errorea portura konektatzea"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Mesedez aukeratu direktorio lokal lehen!"
+
+msgid "go"
+msgstr "Joan"
+
+msgid "confirm"
+msgstr "Berretsi"
+
+msgid "delete"
+msgstr "ezabatu"
+
+msgid "rename"
+msgstr "Izena aldatu"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopiatu URL (s) arbelera"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Mesedez, baieztatu hautatutako fitxategia (k) ezabatu nahi dituzula / karpeta (k)"
+
+msgid "cancelled_by_user"
+msgstr "Erabiltzaileak bertan behera utzi"
+
+msgid "already_exists_overwrite"
+msgstr "Dagoeneko badago, gainidatzi?"
+
+msgid "dashboard"
+msgstr "arbela"
+
+msgid "my_accounts"
+msgstr "Nire kontuak"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Gorde! Kontu guztiak bizkar eman dira."
+
+msgid "file_failed_please_try_again"
+msgstr "File Huts! Saiatu berriro mesedez."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Une honetan ez duzu konturik babesaz behar."
+
+msgid "saved!"
+msgstr "Gordetako!"
+
+msgid "please_enter_a_password"
+msgstr "Sartu pasahitza!"
+
+msgid "connection_closed"
+msgstr "Konexioa itxi"
+
+msgid "listing_mode_set_to"
+msgstr "Modu fitxa behar den ezartzeko"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Bertako zerbitzariak IP ebatzi, kanpoko IP erabiliz"
+
+msgid "login_incorrect"
+msgstr "Sartu okerra"
+
+msgid "keeping_connection_alive"
+msgstr "konexioa bizirik mantentzea"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Ezin da idatzi, datuen konexioa itxi"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Ezin da datu-konexioa itxi irakurtzeko"
+
+msgid "error_reading_file"
+msgstr "Errorea fitxategia irakurtzean"
+
+msgid "error_writing_file"
+msgstr "Errorea fitxategia idaztean"
+
+msgid "failed_to_change_directory_to"
+msgstr "Huts egin du direktorioa aldatzeko"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Agian ez duzu baimen egokirik karpetara sartzen dute"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Atzera reverting Aurreko direktorioa"
+
+msgid "activate"
+msgstr "Aktibatu"
+
+msgid "payment"
+msgstr "Ordainketa"
+
+msgid "license_key_is_required"
+msgstr "Lizentzia gakoa beharrezkoa da"
+
+msgid "license_activated!"
+msgstr "Lizentzia aktibatua!"
+
+msgid "your_license_has_been_validated"
+msgstr "Zure lizentzia balidatu."
+
+msgid "thank_you!"
+msgstr "Eskerrik asko!"
+
+msgid "buy_now!"
+msgstr "Erosi orain!"
+
+msgid "buy_now"
+msgstr "Erosi orain"
+
+msgid "one_off_fee"
+msgstr "bat off kuota"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Mesedez, eguneratu aplikazio hau mugarik gabe gozatzeko"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Mesedez sartu zure Lizentzi gakoa behean"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Kargatzen ..."
+
+msgid "clear_accounts"
+msgstr "Eguraldi kontuak"
+
+msgid "clear_ssh_keys"
+msgstr "Eguraldi SSH gakoak"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Ezabatzen gordetako SSH gako guztiak"
+
+msgid "clear_app_settings"
+msgstr "Eguraldi App ezarpenak"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "aplikazioaren ezarpenak partida guztiak ezabatzen"
+
+msgid "clear_recent_connections"
+msgstr "Garbitu azken konexioak"
+
+msgid "deletes_all_recent_connections"
+msgstr "Ezabatzen berrienak konexio guztiak"
+
+msgid "import_type"
+msgstr "Inportatu Mota"
+
+msgid "please_select"
+msgstr "Aukeratu"
+
+msgid "import_file"
+msgstr "Inportatu fitxategia"
+
+msgid "choose_file"
+msgstr "Aukeratu fitxategia"
+
+msgid "delete_accounts"
+msgstr "ezabatu kontuak"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Ezabatzen dauden kontuak guztiak"
+
+msgid "import_now"
+msgstr "Inportatu orain"
+
+msgid "none"
+msgstr "Bat ere ez"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Berrabiarazi SFTP bezero aplikazioa aldaketak eragina izan dezaten."
+
+msgid "already_bought_the_app"
+msgstr "Dagoeneko erosi aplikazioa?"
+
+msgid "choose"
+msgstr "Aukeratu"
+
+msgid "deleted!"
+msgstr "Ezabatutako!"
+
+msgid "use_syncronised_browsing"
+msgstr "erabili syncronised browsing"
+
+msgid "remote_directory"
+msgstr "Urruneko Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA gako bakarra!"
+
+msgid "no_key_selected"
+msgstr "Ez dago gakoa hautatu."
+
+msgid "ssh_key_file"
+msgstr "SSH Gako-fitxategia"
+
+msgid "no_dir_selected"
+msgstr "Ez dir aukeratu ditu."
+
+msgid "keep_blank_for_current_password"
+msgstr "Uneko pasahitza hutsik."
+
+msgid "logon_type"
+msgstr "Saio Mota"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "ask_for_password"
+msgstr "Eskatu pasahitza"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Kontu-mota"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Connection Normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "advanced"
+msgstr "aurreratua"
+
+msgid "folder_name"
+msgstr "Karpetaren izena"
+
+msgid "parent"
+msgstr "Guraso"
+
+msgid "new_ftp_site"
+msgstr "FTP gunea New"
+
+msgid "new_folder"
+msgstr "Karpeta berria"
+
+msgid "clean_now"
+msgstr "Garbitu orain"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "Ez da konturik gehitu ..."
+
+msgid "unknown"
+msgstr "Ezezaguna"
+
+msgid "file_saved!"
+msgstr "Gorde!"
+
+msgid "uploading_file!"
+msgstr "Fitxategia igotzerakoan!"
+
+msgid "save_failed!"
+msgstr "Save Huts!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "Aurkitu"
+
+msgid "replace"
+msgstr "Ordeztu"
+
+msgid "scroll_past_end"
+msgstr "Zoaz Past End"
+
+msgid "show_annotations"
+msgstr "Erakutsi oharpenak"
+
+msgid "show_gutter"
+msgstr "Erakutsi Gutter"
+
+msgid "show_invisibles"
+msgstr "Erakutsi Invisibles"
+
+msgid "show_print_margin"
+msgstr "Erakutsi Inprimatu Margin"
+
+msgid "highlight_active_line"
+msgstr "Nabarmendu aktiboa Line"
+
+msgid "word_wrap"
+msgstr "Itzulbiratu"
+
+msgid "split_code"
+msgstr "Split Código"
+
+msgid "preferences"
+msgstr "Preferences"
+
+msgid "close_all_tabs"
+msgstr "Itxi fitxa"
+
+msgid "close_current_tab"
+msgstr "Itxi uneko fitxa"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto gorde fitxategi naizenean idazten"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Save Quick"
+
+msgid "documentation"
+msgstr "Dokumentazio"
+
+msgid "themes"
+msgstr "Gaiak"
+
+msgid "keyboard_shortcuts"
+msgstr "Teklatuko lasterbideak"
+
+msgid "coming_soon"
+msgstr "Laister"
+
+msgid "empty"
+msgstr "empty"

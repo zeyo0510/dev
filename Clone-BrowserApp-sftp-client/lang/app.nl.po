@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "Bestand"
+
+msgid "view"
+msgstr "Beeld"
+
+msgid "edit"
+msgstr "Bewerk"
+
+msgid "help"
+msgstr "Hulp"
+
+msgid "manage_accounts"
+msgstr "Accounts beheren"
+
+msgid "import_accounts"
+msgstr "Accounts importeren"
+
+msgid "export_accounts"
+msgstr "Accounts exporteren"
+
+msgid "quick_connect"
+msgstr "Snel verbinden"
+
+msgid "message_log"
+msgstr "Berichtenlogboek"
+
+msgid "local_directory"
+msgstr "Lokale mappenstructuur"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Opgeslagen gegevens opschonen"
+
+msgid "edit_settings"
+msgstr "Instellingen aanpassen"
+
+msgid "report_bug"
+msgstr "Een \tfout rapporteren"
+
+msgid "suggest_feature"
+msgstr "Een functie voorstellen"
+
+msgid "ask_a_question"
+msgstr "Stel een vraag"
+
+msgid "change_log"
+msgstr "Veranderingslogboek"
+
+msgid "about"
+msgstr "Over sFTP Client"
+
+msgid "exit"
+msgstr "Sluiten"
+
+msgid "host_ip_address"
+msgstr "Host / IP-adres"
+
+msgid "username"
+msgstr "Gebruikersnaam"
+
+msgid "password"
+msgstr "Wachtwoord"
+
+msgid "port"
+msgstr "Poort"
+
+msgid "connect"
+msgstr "Verbinden"
+
+msgid "welcome"
+msgstr "Welkom"
+
+msgid "welcome_intro"
+msgstr "sFTP Client gaat vooral om eenvoudigheid. Het is gebouwd op de Google Chrome / Chrome OS packaged app interface, waardoor de app snel en responsive is. Een deel van de funcionaliteit bestaat uit een FTP Account manager die ervoor zorgt dat jouw meest gebruikte en favoriete FTP verbindingen opgeslagen en georganizeerd worden, zodat je met een simple muisklik kan inloggen, File/Folder Queue waardoor je je actuele uploading/dowloading items ziet, powerful text editor en nog veel meer..."
+
+msgid "latest_updates"
+msgstr "Laatste updates"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "Licentie Server"
+
+msgid "sftp_support"
+msgstr "Klantenservice"
+
+msgid "notice_update"
+msgstr "Aankondiging / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "Alles wissen"
+
+msgid "manage"
+msgstr "Beheren"
+
+msgid "recheck"
+msgstr "Opnieuw controleren"
+
+msgid "last_release"
+msgstr "Laatste versie"
+
+msgid "released"
+msgstr "Gepubliceerd"
+
+msgid "queued"
+msgstr "Wachtrij"
+
+msgid "failed"
+msgstr "Mislukt"
+
+msgid "completed"
+msgstr "Voltooid"
+
+msgid "settings"
+msgstr "instellingen"
+
+msgid "add_folder"
+msgstr "Map toevoegen"
+
+msgid "add_ftp_account"
+msgstr "FTP Account toevoegen"
+
+msgid "file_editor"
+msgstr "Bestand Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Voorkeuren"
+
+msgid "your_ftp_accounts"
+msgstr "Uw FTP-accounts"
+
+msgid "most_recent_used"
+msgstr "Meest recent gebruikt."
+
+msgid "no_connections_yet_made"
+msgstr "Nog geen verbindingen gemaakt"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Er zijn nog geen FTP-accounts toegevoegd"
+
+msgid "most_recent_connections"
+msgstr "Meest recente verbindingen"
+
+msgid "last_10_connections_made"
+msgstr "Laatste 10 verbindingen"
+
+msgid "designed_developed_by"
+msgstr "Designed & Ontwikkelde door"
+
+msgid "about_info"
+msgstr "Gebruik voor de klantenservice de sFTP Client website. Er wordt geen klantenservice/hulp verleent op onze individuele websites."
+
+msgid "local"
+msgstr "Lokaal"
+
+msgid "remote"
+msgstr "Extern"
+
+msgid "remote_location_desc"
+msgstr "bijv. /public_html"
+
+msgid "create_directory"
+msgstr "Map aanmaken"
+
+msgid "create_new_directory"
+msgstr "Nieuwe map aanmaken"
+
+msgid "create_file"
+msgstr "Bestand aanmaken"
+
+msgid "create_new_file"
+msgstr "Nieuw bestand aanmaken"
+
+msgid "refresh_list"
+msgstr "Ververs lijst"
+
+msgid "change"
+msgstr "Verandering"
+
+msgid "report_a_bug"
+msgstr "Fout rapporteren"
+
+msgid "suggest_a_feature"
+msgstr "Een functie voorstellen"
+
+msgid "enter_password"
+msgstr "Voer een wachtwoord in"
+
+msgid "enter_your_password..."
+msgstr "Voer uw wachtwoord in..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Voer uw passphrase in ..."
+
+msgid "email_sftp_client"
+msgstr "E-mail SFTP-client"
+
+msgid "faqs"
+msgstr "FAQ's"
+
+msgid "visit_sftp_client_website"
+msgstr "Bezoek de SFTP-client Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Beoordeel ons op de Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Een probleem melden of hulp vragen"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Volg ons op Facebook voor nieuws"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Volg ons op Twitter voor nieuws"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Ons op Google voor nieuws"
+
+msgid "okay"
+msgstr "oké"
+
+msgid "cancel"
+msgstr "Annuleren"
+
+msgid "close"
+msgstr "Sluiten"
+
+msgid "unknown_host"
+msgstr "Onbekende host"
+
+msgid "okay_to_continue"
+msgstr "Akkoord om verder te gaan?"
+
+msgid "fingerprint"
+msgstr "Vingerafdruk"
+
+msgid "remember"
+msgstr "Onthouden"
+
+msgid "file_permissions"
+msgstr "bestandspermissies"
+
+msgid "file_permissions_desc"
+msgstr "Selecteer nieuwe attributen voor het geselecteerde bestand (en) / map (pen)"
+
+msgid "read"
+msgstr "Lezen"
+
+msgid "write"
+msgstr "Schrijven"
+
+msgid "execute"
+msgstr "uitvoeren"
+
+msgid "owner"
+msgstr "Eigenaar"
+
+msgid "group"
+msgstr "Groep"
+
+msgid "public"
+msgstr "Publiek"
+
+msgid "numeric_value"
+msgstr "Numerieke waarde"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Voer een naam in voor de nieuwe map..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Voer een naam in voor het nieuwe bestand..."
+
+msgid "name"
+msgstr "Naam"
+
+msgid "enter_a_password"
+msgstr "Vul een wachtwoord in"
+
+msgid "language"
+msgstr "Taal"
+
+msgid "seconds"
+msgstr "Seconden"
+
+msgid "minutes"
+msgstr "Minuten"
+
+msgid "hour"
+msgstr "Uur"
+
+msgid "hours"
+msgstr "uren"
+
+msgid "day"
+msgstr "Dag"
+
+msgid "trial_left"
+msgstr "Trial periode"
+
+msgid "register_now"
+msgstr "Registreer nu"
+
+msgid "general"
+msgstr "Algemeen"
+
+msgid "security"
+msgstr "Beveiliging"
+
+msgid "master_password"
+msgstr "Master wachtwoord"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "Ingeschakeld"
+
+msgid "disabled"
+msgstr "Uitgeschakeld"
+
+msgid "timeout"
+msgstr "Time-out"
+
+msgid "save"
+msgstr "Opslaan"
+
+msgid "add_account"
+msgstr "Account toevoegen"
+
+msgid "support"
+msgstr "Klantenservice"
+
+msgid "notice_updates"
+msgstr "Aankondiging / Updates"
+
+msgid "please_login"
+msgstr "Log alstublieft in"
+
+msgid "your_session_timed_out"
+msgstr "Uw sessie is verlopen"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry, de door u ingevoerde wachtwoord is onjuist!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Stel dit hoofdwachtwoord in om uw accounts veilig te houden."
+
+msgid "license_key"
+msgstr "Licentiesleutel"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Momenteel niet beschikbaar"
+
+msgid "no_message_to_display"
+msgstr "Er is momenteel geen bericht"
+
+msgid "offline_notice_title"
+msgstr "Onbereikbaar - U bent momenteel offline."
+
+msgid "offline_notice_desc"
+msgstr "U bent momenteel offline, er kon geen verbinding worden gemaakt met onze server."
+
+msgid "edit_file"
+msgstr "Bestand bewerken"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP is vereist"
+
+msgid "apply_to_all_files"
+msgstr "Toepassen op alle bestanden"
+
+msgid "activate_now"
+msgstr "nu activeren"
+
+msgid "deactivate"
+msgstr "Deactiveren"
+
+msgid "in_progress"
+msgstr "Bezig"
+
+msgid "complete"
+msgstr "compleet"
+
+msgid "direction"
+msgstr "Richting"
+
+msgid "progress"
+msgstr "Bezig"
+
+msgid "permissions"
+msgstr "Machtigingen"
+
+msgid "owner_group"
+msgstr "Eigenaar / Groep"
+
+msgid "size"
+msgstr "Grootte"
+
+msgid "type"
+msgstr "Type"
+
+msgid "modified"
+msgstr "Gewijzigd"
+
+msgid "trial"
+msgstr "Proefversie"
+
+msgid "cleared"
+msgstr "Gewist"
+
+msgid "error_connecting"
+msgstr "Fout bij het verbinden"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Fout bij het verbinden van host / ip adres"
+
+msgid "error_connecting_to_port"
+msgstr "Fout bij het verbinden met de port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Selecteer eerst een lokale map!"
+
+msgid "go"
+msgstr "Verbinden"
+
+msgid "confirm"
+msgstr "Bevestigen"
+
+msgid "delete"
+msgstr "Verwijderen"
+
+msgid "rename"
+msgstr "Hernoemen"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopieer URL(s) naar het klembord"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Bevestigen dat u de geselecteerde bestand(en) / map(pen) wilt verwijderen"
+
+msgid "cancelled_by_user"
+msgstr "Geannuleerd door gebruiker"
+
+msgid "already_exists_overwrite"
+msgstr "Bestaat al, toch overschrijven?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Mijn accounts"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Bestand opgeslagen! Alle accounts zijn gebackupt."
+
+msgid "file_failed_please_try_again"
+msgstr "Bestand mislukt! Probeer het opnieuw."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "U heeft momenteel geen accounts die gebackupt kunnen worden."
+
+msgid "saved!"
+msgstr "Opgeslagen!"
+
+msgid "please_enter_a_password"
+msgstr "Voer een wachtwoord in!"
+
+msgid "connection_closed"
+msgstr "Verbinding verbroken"
+
+msgid "listing_mode_set_to"
+msgstr "Listing ingesteld op"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokale server IP opgelost. Maakt nu gebruik van de externe IP"
+
+msgid "login_incorrect"
+msgstr "Login onjuist"
+
+msgid "keeping_connection_alive"
+msgstr "Houdt de verbinding open (alive)"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Kan niet schrijven, dataverbinding verbroken"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Kan data niet lezen, verbinding verbroken."
+
+msgid "error_reading_file"
+msgstr "Fout bij het lezen van bestand"
+
+msgid "error_writing_file"
+msgstr "Fout bij het schrijven van bestand"
+
+msgid "failed_to_change_directory_to"
+msgstr "Map wijziging mislukt"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Mogelijk heeft u niet de juiste machtigingen om toegang te krijgen tot deze map"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Terugkerend naar de vorige directory"
+
+msgid "activate"
+msgstr "Activeren"
+
+msgid "payment"
+msgstr "Betaling"
+
+msgid "license_key_is_required"
+msgstr "Licentie sleutel is vereist"
+
+msgid "license_activated!"
+msgstr "Licentie geactiveerd!"
+
+msgid "your_license_has_been_validated"
+msgstr "Uw licentie is gevalideerd."
+
+msgid "thank_you!"
+msgstr "dank u wel!"
+
+msgid "buy_now!"
+msgstr "Nu kopen!"
+
+msgid "buy_now"
+msgstr "Nu kopen"
+
+msgid "one_off_fee"
+msgstr "Eenmalige vergoeding"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Gelieve te upgraden om sFTP Client te kunnen gebruiken zonder beperkingen"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Geef hieronder uw licentiecode"
+
+msgid "or"
+msgstr "OF"
+
+msgid "loading..."
+msgstr "laden ..."
+
+msgid "clear_accounts"
+msgstr "Wis Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Wis SSH sleutels"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Wis alle opgeslagen SSH sleutels"
+
+msgid "clear_app_settings"
+msgstr "Wis App instellingen"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Reset alle sFTP client instellingen"
+
+msgid "clear_recent_connections"
+msgstr "Wis recente verbindingen"
+
+msgid "deletes_all_recent_connections"
+msgstr "Wis alle recente verbindingen"
+
+msgid "import_type"
+msgstr "Importeer type"
+
+msgid "please_select"
+msgstr "Selecteer"
+
+msgid "import_file"
+msgstr "Importeer bestand"
+
+msgid "choose_file"
+msgstr "Kies bestand"
+
+msgid "delete_accounts"
+msgstr "Accounts verwijderen"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Wist alle bestaande accounts"
+
+msgid "import_now"
+msgstr "Nu importeren"
+
+msgid "none"
+msgstr "Geen"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Herstart sFTP Client om de wijzigingen van kracht te laten komen."
+
+msgid "already_bought_the_app"
+msgstr "Heeft u de App al gekocht?"
+
+msgid "choose"
+msgstr "Kies"
+
+msgid "deleted!"
+msgstr "Verwijderd!"
+
+msgid "use_syncronised_browsing"
+msgstr "Gebruik gesynchroniseerde browsen"
+
+msgid "remote_directory"
+msgstr "Externe map"
+
+msgid "rsa_key_only!"
+msgstr "RSA-sleutel alleen!"
+
+msgid "no_key_selected"
+msgstr "Geen sleutel geselecteerd."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "Geen dir geselecteerd."
+
+msgid "keep_blank_for_current_password"
+msgstr "Overslaan om het wachtwoord te behouden."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "normaal"
+
+msgid "ask_for_password"
+msgstr "Vraag naar wachtwoord"
+
+msgid "anonymous"
+msgstr "Anoniem"
+
+msgid "account_type"
+msgstr "account type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normale verbinding)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Veilige verbinding)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Veilige verbinding)"
+
+msgid "folder"
+msgstr "Map"
+
+msgid "advanced"
+msgstr "Geavanceerd"
+
+msgid "folder_name"
+msgstr "Map naam"
+
+msgid "parent"
+msgstr "Bron"
+
+msgid "new_ftp_site"
+msgstr "Nieuwe FTP site"
+
+msgid "new_folder"
+msgstr "Nieuwe map"
+
+msgid "clean_now"
+msgstr "Nu opschonen"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "Geen Accounts toegevoegd ..."
+
+msgid "unknown"
+msgstr "Onbekend"
+
+msgid "file_saved!"
+msgstr "File Saved!"
+
+msgid "uploading_file!"
+msgstr "Uploaden File!"
+
+msgid "save_failed!"
+msgstr "Save mislukt!"
+
+msgid "search"
+msgstr "Zoeken"
+
+msgid "find"
+msgstr "Vind"
+
+msgid "replace"
+msgstr "Vervangen"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "Show Annotations"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Marge"
+
+msgid "highlight_active_line"
+msgstr "Highlight Active Line"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "voorkeuren"
+
+msgid "close_all_tabs"
+msgstr "Sluit alle tabbladen"
+
+msgid "close_current_tab"
+msgstr "Sluiten Huidig ​​tabblad"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto save file toen ik typ"
+
+msgid "auto_save"
+msgstr "Auto opslaan"
+
+msgid "quick_save"
+msgstr "Snel opslaan"
+
+msgid "documentation"
+msgstr "Documentatie"
+
+msgid "themes"
+msgstr "Thema's"
+
+msgid "keyboard_shortcuts"
+msgstr "Toetsenbord sneltoetsen"
+
+msgid "coming_soon"
+msgstr "Binnenkort beschikbaar"
+
+msgid "empty"
+msgstr "leeg"

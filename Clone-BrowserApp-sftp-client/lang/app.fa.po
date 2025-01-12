@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "فهرست"
+
+msgid "file"
+msgstr "پرونده"
+
+msgid "view"
+msgstr "چشم انداز"
+
+msgid "edit"
+msgstr "ویرایش"
+
+msgid "help"
+msgstr "کمک"
+
+msgid "manage_accounts"
+msgstr "مدیریت حساب"
+
+msgid "import_accounts"
+msgstr "حساب واردات"
+
+msgid "export_accounts"
+msgstr "حساب صادرات"
+
+msgid "quick_connect"
+msgstr "اتصال سریع"
+
+msgid "message_log"
+msgstr "پیام ورود"
+
+msgid "local_directory"
+msgstr "راهنمای محلی"
+
+msgid "uploads_downloads"
+msgstr "ارسال / دریافت ها"
+
+msgid "clear_saved_data"
+msgstr "پاک کردن داده ها ذخیره شده"
+
+msgid "edit_settings"
+msgstr "ویرایش تنظیمات"
+
+msgid "report_bug"
+msgstr "گزارش یک اشکال"
+
+msgid "suggest_feature"
+msgstr "پیشنهاد یک ویژگی"
+
+msgid "ask_a_question"
+msgstr "سوال در"
+
+msgid "change_log"
+msgstr "ورود به سیستم تغییر"
+
+msgid "about"
+msgstr "در باره"
+
+msgid "exit"
+msgstr "خروج"
+
+msgid "host_ip_address"
+msgstr "میزبان / IP نشانی"
+
+msgid "username"
+msgstr "نام کاربری"
+
+msgid "password"
+msgstr "کلمه عبور"
+
+msgid "port"
+msgstr "بندر"
+
+msgid "connect"
+msgstr "اتصال"
+
+msgid "welcome"
+msgstr "خوش آمدی"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> سرویس گیرنده SFTP همه چیز در مورد سادگی، از آن شده است در رابط برنامه بسته بندی گوگل کروم / کروم سیستم عامل اجازه می دهد برنامه به سریع و پاسخگو ساخته شده است. برخی از قابلیت های شامل مدیریت حساب FTP برای ذخیره "
+
+msgid "latest_updates"
+msgstr "آخرین به روزرسانی ها"
+
+msgid "server_status"
+msgstr "وضعیت سرور"
+
+msgid "license_server"
+msgstr "مجوز سرور"
+
+msgid "sftp_support"
+msgstr "حمایت کردن"
+
+msgid "notice_update"
+msgstr "توجه / به روز رسانی"
+
+msgid "website"
+msgstr "سایت اینترنتی"
+
+msgid "clear_all"
+msgstr "همه را پاک کن"
+
+msgid "manage"
+msgstr "مدیریت"
+
+msgid "recheck"
+msgstr "دوباره چک کنید"
+
+msgid "last_release"
+msgstr "آخرین نسخه"
+
+msgid "released"
+msgstr "منتشر شد"
+
+msgid "queued"
+msgstr "در صف"
+
+msgid "failed"
+msgstr "ناموفق"
+
+msgid "completed"
+msgstr "تکمیل شده"
+
+msgid "settings"
+msgstr "تنظیمات"
+
+msgid "add_folder"
+msgstr "اضافه کردن پوشه"
+
+msgid "add_ftp_account"
+msgstr "اضافه کردن حساب FTP"
+
+msgid "file_editor"
+msgstr "ویرایشگر فایل"
+
+msgid "editor_preferences"
+msgstr "تنظیمات ویرایشگر"
+
+msgid "your_ftp_accounts"
+msgstr "حساب FTP خود را"
+
+msgid "most_recent_used"
+msgstr "اخیرا استفاده می شود."
+
+msgid "no_connections_yet_made"
+msgstr "بدون اتصال هنوز ساخته"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "هیچ حساب FTP اضافه نشده است"
+
+msgid "most_recent_connections"
+msgstr "بسیاری از اتصالات کنندگان"
+
+msgid "last_10_connections_made"
+msgstr "آخرین 10 اتصالات ساخته شده"
+
+msgid "designed_developed_by"
+msgstr "طراحی و توسعه توسط"
+
+msgid "about_info"
+msgstr "لطفا با استفاده از وب سایت سرویس گیرنده SFTP برای پشتیبانی، هیچ پشتیبانی از طریق وب سایت های فردی ما ارائه شده است."
+
+msgid "local"
+msgstr "محلی"
+
+msgid "remote"
+msgstr "از راه دور"
+
+msgid "remote_location_desc"
+msgstr "به عنوان مثال / public_html و"
+
+msgid "create_directory"
+msgstr "ایجاد دایرکتوری"
+
+msgid "create_new_directory"
+msgstr "ایجاد دایرکتوری جدید"
+
+msgid "create_file"
+msgstr "ایجاد فایل"
+
+msgid "create_new_file"
+msgstr "ایجاد فایل جدید"
+
+msgid "refresh_list"
+msgstr "تازه کردن لیست"
+
+msgid "change"
+msgstr "تغییر دادن"
+
+msgid "report_a_bug"
+msgstr "گزارش یک اشکال"
+
+msgid "suggest_a_feature"
+msgstr "پیشنهاد یک ویژگی"
+
+msgid "enter_password"
+msgstr "رمز عبور را وارد کنید"
+
+msgid "enter_your_password..."
+msgstr "رمز عبور خود را وارد کنید ..."
+
+msgid "passphrase"
+msgstr "عبارت عبور"
+
+msgid "enter_your_passphrase..."
+msgstr "عبارت عبور خود را وارد کنید ..."
+
+msgid "email_sftp_client"
+msgstr "ایمیل گیرنده SFTP"
+
+msgid "faqs"
+msgstr "پرسش و پاسخ"
+
+msgid "visit_sftp_client_website"
+msgstr "مشاهده وب سایت مشتری SFTP"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "امتیاز دادن به ما در فروشگاه وب Chrome گوگل"
+
+msgid "report_an_issue_or_get_help"
+msgstr "گزارش یک مشکل و یا دریافت کمک"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "ما در فیس بوک بپیوندید برای به روز رسانی"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "ما را در توییتر دنبال کنید برای به روز رسانی"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 ما را در گوگل برای به روز رسانی"
+
+msgid "okay"
+msgstr "باشه"
+
+msgid "cancel"
+msgstr "لغو کردن"
+
+msgid "close"
+msgstr "نزدیک"
+
+msgid "unknown_host"
+msgstr "میزبان ناشناس"
+
+msgid "okay_to_continue"
+msgstr "خوب ادامه دهید؟"
+
+msgid "fingerprint"
+msgstr "اثر انگشت"
+
+msgid "remember"
+msgstr "یاد آوردن"
+
+msgid "file_permissions"
+msgstr "مجوز های دسترسی فایل"
+
+msgid "file_permissions_desc"
+msgstr "لطفا ویژگی های جدید برای فایل (های) انتخاب / پوشه را انتخاب کنید (بازدید کنندگان)"
+
+msgid "read"
+msgstr "خواندن"
+
+msgid "write"
+msgstr "نوشتن"
+
+msgid "execute"
+msgstr "اجرا کردن"
+
+msgid "owner"
+msgstr "مالک"
+
+msgid "group"
+msgstr "گروه"
+
+msgid "public"
+msgstr "عمومی"
+
+msgid "numeric_value"
+msgstr "مقدار عددی"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "نام دایرکتوری جدید را وارد کنید ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "نام فایل جدید را وارد کنید ..."
+
+msgid "name"
+msgstr "نام"
+
+msgid "enter_a_password"
+msgstr "رمز عبور را وارد کنید"
+
+msgid "language"
+msgstr "زبان"
+
+msgid "seconds"
+msgstr "ثانیه"
+
+msgid "minutes"
+msgstr "دقایق"
+
+msgid "hour"
+msgstr "ساعت"
+
+msgid "hours"
+msgstr "ساعت ها"
+
+msgid "day"
+msgstr "روز"
+
+msgid "trial_left"
+msgstr "دادگاه چپ"
+
+msgid "register_now"
+msgstr "اکنون ثبت نام کنید"
+
+msgid "general"
+msgstr "عمومی"
+
+msgid "security"
+msgstr "امنیت"
+
+msgid "master_password"
+msgstr "گذرواژه اصلی"
+
+msgid "status"
+msgstr "وضعیت"
+
+msgid "enabled"
+msgstr "فعال"
+
+msgid "disabled"
+msgstr "معلول"
+
+msgid "timeout"
+msgstr "ایست"
+
+msgid "save"
+msgstr "صرفه جویی"
+
+msgid "add_account"
+msgstr "اضافه کردن حساب"
+
+msgid "support"
+msgstr "حمایت کردن"
+
+msgid "notice_updates"
+msgstr "توجه / به روز رسانی"
+
+msgid "please_login"
+msgstr "لطفا وارد شوید"
+
+msgid "your_session_timed_out"
+msgstr "جلسه خود را به پایان رسیده است"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "با عرض پوزش رمز عبور وارد شده اشتباه بود!"
+
+msgid "login"
+msgstr "ورود"
+
+msgid "master_password_desc"
+msgstr "تنظیم این رمز عبور کارشناسی ارشد برای نگه داشتن حساب خود را امن."
+
+msgid "license_key"
+msgstr "کلید مجوز"
+
+msgid "online"
+msgstr "آنلاین"
+
+msgid "offline"
+msgstr "آفلاین"
+
+msgid "currently_unavailable"
+msgstr "در حال حاضر در دسترس نیست"
+
+msgid "no_message_to_display"
+msgstr "هیچ پیام برای نمایش"
+
+msgid "offline_notice_title"
+msgstr "غیر قابل دسترس - آیا شما آنلاین و یا بر روی یک شبکه تنها ارتباط؟"
+
+msgid "offline_notice_desc"
+msgstr "شما در حال حاضر آنلاین، بر روی یک شبکه تنها اتصال و یا بدون اتصال به می تواند به سرور ما تاسیس"
+
+msgid "edit_file"
+msgstr "ویرایش فایل"
+
+msgid "download"
+msgstr "دانلود"
+
+msgid "upload"
+msgstr "بارگذاری"
+
+msgid "host_ip_is_required"
+msgstr "میزبان / IP مورد نیاز است"
+
+msgid "apply_to_all_files"
+msgstr "درخواست برای تمام فایل های"
+
+msgid "activate_now"
+msgstr "هم اکنون فعال کن"
+
+msgid "deactivate"
+msgstr "از کار انداختن"
+
+msgid "in_progress"
+msgstr "در حال انجام"
+
+msgid "complete"
+msgstr "تکمیل"
+
+msgid "direction"
+msgstr "جهت"
+
+msgid "progress"
+msgstr "پیش رفتن"
+
+msgid "permissions"
+msgstr "مجوز"
+
+msgid "owner_group"
+msgstr "مالک /"
+
+msgid "size"
+msgstr "اندازه"
+
+msgid "type"
+msgstr "نوع"
+
+msgid "modified"
+msgstr "اصلاح شده"
+
+msgid "trial"
+msgstr "آزمایش"
+
+msgid "cleared"
+msgstr "پاک"
+
+msgid "error_connecting"
+msgstr "خطا در اتصال"
+
+msgid "error_connecting_to_host_ip"
+msgstr "خطا در اتصال به میزبان / آدرس IP"
+
+msgid "error_connecting_to_port"
+msgstr "خطا در اتصال به پورت"
+
+msgid "please_select_a_local_directory_first"
+msgstr "لطفا ابتدا یک دایرکتوری محلی را انتخاب کنید!"
+
+msgid "go"
+msgstr "رفتن"
+
+msgid "confirm"
+msgstr "تایید"
+
+msgid "delete"
+msgstr "حذف"
+
+msgid "rename"
+msgstr "تغییر نام"
+
+msgid "copy_urls_to_clipboard"
+msgstr "کپی URL (بازدید کنندگان) به تخته"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "لطفا تأیید کنید که میخواهید فایل انتخاب شده (بازدید کنندگان) حذف / پوشه (ها)"
+
+msgid "cancelled_by_user"
+msgstr "لغو شده توسط کاربران"
+
+msgid "already_exists_overwrite"
+msgstr "قبل وجود دارد، جایگزین شود؟"
+
+msgid "dashboard"
+msgstr "داشبورد"
+
+msgid "my_accounts"
+msgstr "حساب من"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ذخیره شده فایل! تمام حساب های پشتیبان گرفته شده است."
+
+msgid "file_failed_please_try_again"
+msgstr "فایل ناموفق بود! لطفا دوباره تلاش کنید."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "شما در حال حاضر هیچ حساب به حمایت شود تا."
+
+msgid "saved!"
+msgstr "ذخیره!"
+
+msgid "please_enter_a_password"
+msgstr "لطفا رمز عبور را وارد کنید!"
+
+msgid "connection_closed"
+msgstr "اتصال بسته"
+
+msgid "listing_mode_set_to"
+msgstr "لیست تهیه حالت به"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP سرور محلی حل و فصل، با استفاده از IP خارجی"
+
+msgid "login_incorrect"
+msgstr "ورود نادرست"
+
+msgid "keeping_connection_alive"
+msgstr "نگه داشتن ارتباط زنده"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "قادر به نوشتن، اتصال داده بسته"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "قادر به خواندن اتصال داده بسته"
+
+msgid "error_reading_file"
+msgstr "خطا در خواندن فایل"
+
+msgid "error_writing_file"
+msgstr "خطا در نوشتن فایل"
+
+msgid "failed_to_change_directory_to"
+msgstr "برای تغییر دایرکتوری شکست خورده"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "شما ممکن است از اجازه دسترسی به دسترسی به این دایرکتوری ندارد"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "رجوع به دایرکتوری قبلی"
+
+msgid "activate"
+msgstr "فعال کردن"
+
+msgid "payment"
+msgstr "پرداخت"
+
+msgid "license_key_is_required"
+msgstr "کلید مجوز مورد نیاز است"
+
+msgid "license_activated!"
+msgstr "مجوز فعال!"
+
+msgid "your_license_has_been_validated"
+msgstr "مجوز خود را دارای اعتبار بوده است."
+
+msgid "thank_you!"
+msgstr "متشکرم!"
+
+msgid "buy_now!"
+msgstr "خرید در حال حاضر!"
+
+msgid "buy_now"
+msgstr "خرید کن"
+
+msgid "one_off_fee"
+msgstr "یکی کردن هزینه"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "لطفا به ارتقاء به لذت بردن از این برنامه بدون محدودیت"
+
+msgid "please_enter_your_license_key_below"
+msgstr "لطفا کلید مجوز خود را در زیر وارد کنید"
+
+msgid "or"
+msgstr "یا"
+
+msgid "loading..."
+msgstr "در حال بارگذاری ..."
+
+msgid "clear_accounts"
+msgstr "حساب پاک"
+
+msgid "clear_ssh_keys"
+msgstr "روشن کلیدهای SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "حذف تمام کلید های SSH را نجات داد"
+
+msgid "clear_app_settings"
+msgstr "تنظیمات برنامه روشن"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "حذف تمام تنظیمات خاص برنامه"
+
+msgid "clear_recent_connections"
+msgstr "پاک اتصالات کنندگان"
+
+msgid "deletes_all_recent_connections"
+msgstr "حذف تمام اتصالات اخیر"
+
+msgid "import_type"
+msgstr "نوع واردات"
+
+msgid "please_select"
+msgstr "لطفا انتخاب کنید"
+
+msgid "import_file"
+msgstr "واردات فایل"
+
+msgid "choose_file"
+msgstr "انتخاب فایل"
+
+msgid "delete_accounts"
+msgstr "حذف حساب"
+
+msgid "deletes_all_existing_accounts"
+msgstr "حذف تمام حساب های موجود"
+
+msgid "import_now"
+msgstr "واردات در حال حاضر"
+
+msgid "none"
+msgstr "هیچ"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "لطفا برنامه سرویس گیرنده SFTP راه اندازی مجدد برای تغییرات تاثیر گذار."
+
+msgid "already_bought_the_app"
+msgstr "در حال حاضر خرید برنامه؟"
+
+msgid "choose"
+msgstr "انتخاب کنید"
+
+msgid "deleted!"
+msgstr "حذف شده!"
+
+msgid "use_syncronised_browsing"
+msgstr "استفاده از مرور syncronised"
+
+msgid "remote_directory"
+msgstr "از راه دور کتاب راهنمای"
+
+msgid "rsa_key_only!"
+msgstr "کلید RSA تنها!"
+
+msgid "no_key_selected"
+msgstr "بدون کلید انتخاب شده است."
+
+msgid "ssh_key_file"
+msgstr "فایل کلید SSH"
+
+msgid "no_dir_selected"
+msgstr "بدون دیر انتخاب شده است."
+
+msgid "keep_blank_for_current_password"
+msgstr "خالی برای رمز عبور فعلی را نگه دارید."
+
+msgid "logon_type"
+msgstr "ورود نوع"
+
+msgid "normal"
+msgstr "طبیعی"
+
+msgid "ask_for_password"
+msgstr "درخواست برای رمز عبور"
+
+msgid "anonymous"
+msgstr "ناشناس"
+
+msgid "account_type"
+msgstr "نوع حساب"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (اتصال عادی)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (اتصال امن)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (اتصال امن)"
+
+msgid "folder"
+msgstr "پوشه"
+
+msgid "advanced"
+msgstr "پیشرفته"
+
+msgid "folder_name"
+msgstr "نام پوشه"
+
+msgid "parent"
+msgstr "والدین"
+
+msgid "new_ftp_site"
+msgstr "سایت جدید FTP"
+
+msgid "new_folder"
+msgstr "پوشه جدید"
+
+msgid "clean_now"
+msgstr "الآن تمیز کن"
+
+msgid "host"
+msgstr "میزبان"
+
+msgid "no_accounts_added..."
+msgstr "هیچ حسابی اضافه ..."
+
+msgid "unknown"
+msgstr "ناشناخته"
+
+msgid "file_saved!"
+msgstr "ذخیره شده فایل!"
+
+msgid "uploading_file!"
+msgstr "آپلود فایل!"
+
+msgid "save_failed!"
+msgstr "ذخیره انجام نشد!"
+
+msgid "search"
+msgstr "جستجو کردن"
+
+msgid "find"
+msgstr "پیدا کردن"
+
+msgid "replace"
+msgstr "جایگزین کردن"
+
+msgid "scroll_past_end"
+msgstr "رفته گذشته پایان"
+
+msgid "show_annotations"
+msgstr "نمایش حاشیه نویسی"
+
+msgid "show_gutter"
+msgstr "نمایش قطره قطره شدن"
+
+msgid "show_invisibles"
+msgstr "نمایش نامرئی"
+
+msgid "show_print_margin"
+msgstr "نمایش چاپ حاشیه"
+
+msgid "highlight_active_line"
+msgstr "برجسته خط فعال"
+
+msgid "word_wrap"
+msgstr "قرار دادن کلمه"
+
+msgid "split_code"
+msgstr "کد اسپلیت"
+
+msgid "preferences"
+msgstr "تنظیمات"
+
+msgid "close_all_tabs"
+msgstr "بستن همه برگهها"
+
+msgid "close_current_tab"
+msgstr "این زبانه را ببندید"
+
+msgid "auto_save_file_when_i_type"
+msgstr "خودرو فایل را ذخیره کنید وقتی که من نوع"
+
+msgid "auto_save"
+msgstr "صرفه جویی در خودرو"
+
+msgid "quick_save"
+msgstr "ذخیره سازی سریع"
+
+msgid "documentation"
+msgstr "مستندات"
+
+msgid "themes"
+msgstr "تم"
+
+msgid "keyboard_shortcuts"
+msgstr "میانبرهای صفحه کلید"
+
+msgid "coming_soon"
+msgstr "به زودی"
+
+msgid "empty"
+msgstr "خالی"

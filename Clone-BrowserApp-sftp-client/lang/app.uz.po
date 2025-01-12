@@ -1,0 +1,716 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menyu"
+
+msgid "file"
+msgstr "Fayl"
+
+msgid "view"
+msgstr "ko'rinish"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Yordam bering"
+
+msgid "manage_accounts"
+msgstr "Hisob boshqarish"
+
+msgid "import_accounts"
+msgstr "import Hisob"
+
+msgid "export_accounts"
+msgstr "eksport Hisob"
+
+msgid "quick_connect"
+msgstr "Tezkor Connect"
+
+msgid "message_log"
+msgstr "Xabar Kirish"
+
+msgid "local_directory"
+msgstr "mahalliy Directory"
+
+msgid "uploads_downloads"
+msgstr "Yuklash / Yuklamalar"
+
+msgid "clear_saved_data"
+msgstr "Aniq Saqlangan Data"
+
+msgid "edit_settings"
+msgstr "Edit Sozlamalar"
+
+msgid "report_bug"
+msgstr "Xato haqida"
+
+msgid "suggest_feature"
+msgstr "Bir xususiyat tavsiya eting"
+
+msgid "ask_a_question"
+msgstr "Savol"
+
+msgid "change_log"
+msgstr "Change Kirish"
+
+msgid "about"
+msgstr "atrofida"
+
+msgid "exit"
+msgstr "Chiqish"
+
+msgid "host_ip_address"
+msgstr "Host / IP manzili"
+
+msgid "username"
+msgstr "Foydalanuvchi nomi"
+
+msgid "password"
+msgstr "parol"
+
+msgid "port"
+msgstr "port"
+
+msgid "connect"
+msgstr "ulang"
+
+msgid "welcome"
+msgstr "Xush kelibsiz"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP xaridorlar bu dasturni tez va sezgir bo'lishi imkonini beruvchi Google Chrome / Chrome OS qadoqlangan ilova interfeys ustiga qurilgan, barcha soddaligi haqida. funktsional Ba'zi yuz saqlash va eng bizni tashkil qilish FTP Account Manager o'z ichi"
+
+msgid "latest_updates"
+msgstr "Oxirgi Yangiliklar"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "Litsenziya Server"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Xabarnoma / Yangiliklar"
+
+msgid "website"
+msgstr "veb-sayt"
+
+msgid "clear_all"
+msgstr "Clear barcha"
+
+msgid "manage"
+msgstr "boshqarish"
+
+msgid "recheck"
+msgstr "Re-tekshirish"
+
+msgid "last_release"
+msgstr "oxirgi reliz"
+
+msgid "released"
+msgstr "ozod"
+
+msgid "queued"
+msgstr "o'rinni qo'lga kiritgan"
+
+msgid "failed"
+msgstr "Muvaffaqiyatsiz"
+
+msgid "completed"
+msgstr "Bajarilgan"
+
+msgid "settings"
+msgstr "Sozlamalar"
+
+msgid "add_folder"
+msgstr "jildini qo'shish"
+
+msgid "add_ftp_account"
+msgstr "FTP Hisob qo'shish"
+
+msgid "file_editor"
+msgstr "muharriri Fayl"
+
+msgid "editor_preferences"
+msgstr "muharriri afzal"
+
+msgid "your_ftp_accounts"
+msgstr "Sizning FTP Hisob"
+
+msgid "most_recent_used"
+msgstr "Eng oxirgi ishlatilgan."
+
+msgid "no_connections_yet_made"
+msgstr "No ulanishlarni hali qildi"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No FTP hisob hali qo'shildi"
+
+msgid "most_recent_connections"
+msgstr "Eng So'nggi Connections"
+
+msgid "last_10_connections_made"
+msgstr "qilgan so'nggi 10 ulanishlarni"
+
+msgid "designed_developed_by"
+msgstr "Designed & tomonidan ishlab chiqilgan"
+
+msgid "about_info"
+msgstr "qo'llab-quvvatlash uchun SFTP xaridorlar sayt foydalaning, hech qo'llab-quvvatlash bizning shaxsiy veb-saytlari orqali taqdim etiladi."
+
+msgid "local"
+msgstr "mahalliy"
+
+msgid "remote"
+msgstr "uzoq"
+
+msgid "remote_location_desc"
+msgstr "masalan, / public_html"
+
+msgid "create_directory"
+msgstr "Directory yaratish"
+
+msgid "create_new_directory"
+msgstr "Yangi katalog yaratish"
+
+msgid "create_file"
+msgstr "File yaratish"
+
+msgid "create_new_file"
+msgstr "Yangi fayl yaratish"
+
+msgid "refresh_list"
+msgstr "yangilash ro'yxati"
+
+msgid "change"
+msgstr "o'zgarish"
+
+msgid "report_a_bug"
+msgstr "Xato haqida"
+
+msgid "suggest_a_feature"
+msgstr "Bir xususiyat tavsiya eting"
+
+msgid "enter_password"
+msgstr "Parolni kiriting"
+
+msgid "enter_your_password..."
+msgstr "Parolni kiriting ..."
+
+msgid "passphrase"
+msgstr "kalit so'z"
+
+msgid "enter_your_passphrase..."
+msgstr "siz parolni kiriting ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP xaridorlar"
+
+msgid "faqs"
+msgstr "FAQ ning"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit SFTP xaridorlar Sayt"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Google Chrome internet-do'konida bizni baholang"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Muammo haqida xabar yoki yordam olish"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "yangilanishlarni Facebookda bizga qo'shiling"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "yangilanishlarni Twitter bizni qiling"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "yangilanishlarni Google bizni +1"
+
+msgid "okay"
+msgstr "xop"
+
+msgid "cancel"
+msgstr "Bekor qilish"
+
+msgid "close"
+msgstr "yaqin"
+
+msgid "unknown_host"
+msgstr "noma'lum Host"
+
+msgid "okay_to_continue"
+msgstr "davom ettirish uchun okay?"
+
+msgid "fingerprint"
+msgstr "barmoq izi"
+
+msgid "remember"
+msgstr "eslab"
+
+msgid "file_permissions"
+msgstr "Fayl ruxsati"
+
+msgid "file_permissions_desc"
+msgstr "(S) tanlangan fayl (lar) / papka uchun yangi sifatlarga tanlang"
+
+msgid "read"
+msgstr "o'qing"
+
+msgid "write"
+msgstr "yozish"
+
+msgid "execute"
+msgstr "bajarish"
+
+msgid "owner"
+msgstr "egasi"
+
+msgid "group"
+msgstr "guruh"
+
+msgid "public"
+msgstr "ijtimoiy"
+
+msgid "numeric_value"
+msgstr "ularning soni, bahosi"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Yangi katalog nomini kiriting ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Yangi fayl nomini kiriting ..."
+
+msgid "name"
+msgstr "ism"
+
+msgid "enter_a_password"
+msgstr "parolni kiriting"
+
+msgid "language"
+msgstr "til"
+
+msgid "seconds"
+msgstr "soniya"
+
+msgid "minutes"
+msgstr "daqiqa"
+
+msgid "hour"
+msgstr "soat"
+
+msgid "hours"
+msgstr "soat"
+
+msgid "day"
+msgstr "kun"
+
+msgid "trial_left"
+msgstr "Trial Chap"
+
+msgid "register_now"
+msgstr "Bas, endi ro'yxatdan"
+
+msgid "general"
+msgstr "umumiy"
+
+msgid "security"
+msgstr "xavfsizlik"
+
+msgid "master_password"
+msgstr "master Parolni"
+
+msgid "status"
+msgstr "holat"
+
+msgid "enabled"
+msgstr "yoqilgan"
+
+msgid "disabled"
+msgstr "nogironlar"
+
+msgid "timeout"
+msgstr "Vaqt tugadi"
+
+msgid "save"
+msgstr "saqlash"
+
+msgid "add_account"
+msgstr "Hisob qo'shish"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Xabarnoma / Yangiliklar"
+
+msgid "please_login"
+msgstr "Kirish Iltimos"
+
+msgid "your_session_timed_out"
+msgstr "Sizning Sessiya Vaqtincha Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Kechirasiz Siz kiritgan parol noto'g'ri edi!"
+
+msgid "login"
+msgstr "Kirish"
+
+msgid "master_password_desc"
+msgstr "xavfsiz hisob saqlashga bu master parolni o'rnating."
+
+msgid "license_key"
+msgstr "Litsenziya kaliti"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "mavjud emas"
+
+msgid "no_message_to_display"
+msgstr "No Xabar namoyish qilish uchun"
+
+msgid "offline_notice_title"
+msgstr "Erishib bo'lmaydigan - Foydalanuvchi yoki tarmoq faqat ulanish olasizmi?"
+
+msgid "offline_notice_desc"
+msgstr "Siz faqat ulanish yoki hech aloqasi bizning serverga tashkil mumkin, bir tarmoqqa, hozircha bilan aloqa Foydalanuvchining bo'ladi"
+
+msgid "edit_file"
+msgstr "Edit Fayl"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Yuklab olish"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP talab qilinadi"
+
+msgid "apply_to_all_files"
+msgstr "Barcha fayllar uchun amal"
+
+msgid "activate_now"
+msgstr "Endi faollashtirish"
+
+msgid "deactivate"
+msgstr "De-activate"
+
+msgid "in_progress"
+msgstr "Jarayonda"
+
+msgid "complete"
+msgstr "to'la"
+
+msgid "direction"
+msgstr "yo'nalish"
+
+msgid "progress"
+msgstr "taraqqiyot"
+
+msgid "permissions"
+msgstr "ruxsatlar"
+
+msgid "owner_group"
+msgstr "Egasi / Group"
+
+msgid "size"
+msgstr "Size"
+
+msgid "type"
+msgstr "shrift"
+
+msgid "modified"
+msgstr "tahrirlangan"
+
+msgid "trial"
+msgstr "sinov"
+
+msgid "cleared"
+msgstr "o'tkazilgan"
+
+msgid "error_connecting"
+msgstr "ulash xato"
+
+msgid "error_connecting_to_host_ip"
+msgstr "mezbonlik ulash Xato / IP-manzil"
+
+msgid "error_connecting_to_port"
+msgstr "portiga ulash Xato"
+
+msgid "please_select_a_local_directory_first"
+msgstr "birinchi mahalliy katalogini tanlang!"
+
+msgid "go"
+msgstr "borib"
+
+msgid "confirm"
+msgstr "tasdiqlang"
+
+msgid "delete"
+msgstr "o'chirish"
+
+msgid "rename"
+msgstr "Nomini o'zgartirish"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Nusxa URL (lar) Buferga"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "siz tanlagan fayl (lar) Yo'q qilmoqchi tasdiqlash Iltimos / papka (lar)"
+
+msgid "cancelled_by_user"
+msgstr "Foydalanuvchining bekor"
+
+msgid "already_exists_overwrite"
+msgstr "allaqachon, almashtirishni mavjud?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Mening Hisob"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Saqlangan fayl! Barcha hisob Zahiralangan etildi."
+
+msgid "file_failed_please_try_again"
+msgstr "Fayl Muvaffaqiyatsiz! Iltimos, yana bir bor urinib ko'ring."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Siz hech hisob zaxira kerak."
+
+msgid "saved!"
+msgstr "Saqlangan!"
+
+msgid "please_enter_a_password"
+msgstr "parolni kiriting!"
+
+msgid "connection_closed"
+msgstr "ulanish yopiq"
+
+msgid "listing_mode_set_to"
+msgstr "rejimi o'rnatilgan listingiga"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Mahalliy server IP tashqi IP foydalanib, hal"
+
+msgid "login_incorrect"
+msgstr "noto'g'ri Kirish"
+
+msgid "keeping_connection_alive"
+msgstr "tirik ulanish tutilishi"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "yozish bo'lmadi, ulanish yopildi"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ulanish yopildi o'qib bo'lmadi"
+
+msgid "error_reading_file"
+msgstr "Xato o'qish fayl"
+
+msgid "error_writing_file"
+msgstr "Xato yozish fayl"
+
+msgid "failed_to_change_directory_to"
+msgstr "uchun katalog o'zgartirish bo'lmadi"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Siz ushbu katalogga kirish uchun to'g'ri huquqingiz yo'q bo'lishi mumkin"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "oldingi katalogga qaytib qayon"
+
+msgid "activate"
+msgstr "faollashtirish"
+
+msgid "payment"
+msgstr "to'lov"
+
+msgid "license_key_is_required"
+msgstr "Litsenziya kaliti talab qilinadi"
+
+msgid "license_activated!"
+msgstr "Litsenziya faol!"
+
+msgid "your_license_has_been_validated"
+msgstr "Sizning litsenziya tasdiqlangan qilindi."
+
+msgid "thank_you!"
+msgstr "Rahmat!"
+
+msgid "buy_now!"
+msgstr "Hozir xarid qilish!"
+
+msgid "buy_now"
+msgstr "Hozir xarid qilish"
+
+msgid "one_off_fee"
+msgstr "Bir off to'lovi"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "hech cheklovlar bilan ilova bahramand yangilang"
+
+msgid "please_enter_your_license_key_below"
+msgstr "quyidagi kaliti kiriting"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "aniq Hisob"
+
+msgid "clear_ssh_keys"
+msgstr "Aniq SSH Tugmalar"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Barcha saqlab SSH kalitlari o'chiriladi"
+
+msgid "clear_app_settings"
+msgstr "Aniq App Sozlamalar"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Barcha ilova maxsus sozlash o'chiriladi"
+
+msgid "clear_recent_connections"
+msgstr "Aniq Recent Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Barcha so'nggi ulanishlarni o'chiradi"
+
+msgid "import_type"
+msgstr "import turi"
+
+msgid "please_select"
+msgstr "Iltimos tanlang"
+
+msgid "import_file"
+msgstr "import Fayl"
+
+msgid "choose_file"
+msgstr "File tanlang"
+
+msgid "delete_accounts"
+msgstr "hisob yo'q"
+
+msgid "deletes_all_existing_accounts"
+msgstr "barcha mavjud hisob o'chiriladi"
+
+msgid "import_now"
+msgstr "import Endi"
+
+msgid "none"
+msgstr "hech qaysi"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "o'zgarishlar kuchga uchun SFTP xaridorlar ilovasini qayta yuklang."
+
+msgid "already_bought_the_app"
+msgstr "Allaqachon App sotib?"
+
+msgid "choose"
+msgstr "tanlang"
+
+msgid "deleted!"
+msgstr "O'chirildi!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised ko'rish foydalanish"
+
+msgid "remote_directory"
+msgstr "masofadan Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA kalit faqat!"
+
+msgid "no_key_selected"
+msgstr "No asosiy tanlangan."
+
+msgid "ssh_key_file"
+msgstr "SSH Key Fayl"
+
+msgid "no_dir_selected"
+msgstr "No dir tanlangan."
+
+msgid "keep_blank_for_current_password"
+msgstr "joriy parolni bo'sh tuting."
+
+msgid "logon_type"
+msgstr "tizimga kirish turi"
+
+msgid "normal"
+msgstr "oddiy"
+
+msgid "ask_for_password"
+msgstr "Parol so'rash"
+
+msgid "anonymous"
+msgstr "anonim"
+
+msgid "account_type"
+msgstr "Hisobning turi"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Oddiy Ulanish)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Ulanish)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Ulanish)"
+
+msgid "folder"
+msgstr "papka"
+
+msgid "advanced"
+msgstr "ilg'or"
+
+msgid "folder_name"
+msgstr "papka nomi"
+
+msgid "parent"
+msgstr "Ota-ona"
+
+msgid "new_ftp_site"
+msgstr "Yangi FTP sayt"
+
+msgid "new_folder"
+msgstr "Yangi papka"
+
+msgid "clean_now"
+msgstr "toza Endi"
+
+msgid "host"
+msgstr "mezbon"
+
+msgid "no_accounts_added..."
+msgstr "No Hisob Kiritilgan ..."
+
+msgid "unknown"
+msgstr "noma'lum"

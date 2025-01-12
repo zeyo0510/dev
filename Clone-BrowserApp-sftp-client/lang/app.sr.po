@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "мени"
+
+msgid "file"
+msgstr "фајл"
+
+msgid "view"
+msgstr "Поглед"
+
+msgid "edit"
+msgstr "едит"
+
+msgid "help"
+msgstr "Помоћ"
+
+msgid "manage_accounts"
+msgstr "upravljanje Аццоунтс"
+
+msgid "import_accounts"
+msgstr "импорт рачуни"
+
+msgid "export_accounts"
+msgstr "извоз рачуни"
+
+msgid "quick_connect"
+msgstr "brzo повезивање"
+
+msgid "message_log"
+msgstr "Порука се"
+
+msgid "local_directory"
+msgstr "lokalna Директоријум"
+
+msgid "uploads_downloads"
+msgstr "Уплоадс / Преузимања"
+
+msgid "clear_saved_data"
+msgstr "Јасно Кеш"
+
+msgid "edit_settings"
+msgstr "Едит Сеттингс"
+
+msgid "report_bug"
+msgstr "Пријавите грешку"
+
+msgid "suggest_feature"
+msgstr "Суггест а феатуре"
+
+msgid "ask_a_question"
+msgstr "Поставите питање"
+
+msgid "change_log"
+msgstr "Промена Лого"
+
+msgid "about"
+msgstr "О томе"
+
+msgid "exit"
+msgstr "излаз"
+
+msgid "host_ip_address"
+msgstr "Хост / ИП адреса"
+
+msgid "username"
+msgstr "Корисничко име"
+
+msgid "password"
+msgstr "лозинка"
+
+msgid "port"
+msgstr "лука"
+
+msgid "connect"
+msgstr "повезати"
+
+msgid "welcome"
+msgstr "Добродошли"
+
+msgid "welcome_intro"
+msgstr "<p> СФТП клијент је све о једноставности, то је изграђен на Цхроме / Цхроме ОС апликација у пакету интерфејсом омогућава апликација буде брзо и реагује. Неке од функционалности садржи Манагер ФТП налог за чување далеко и организовати ваш већина нас"
+
+msgid "latest_updates"
+msgstr "Латест Упдатес"
+
+msgid "server_status"
+msgstr "Статус сервера"
+
+msgid "license_server"
+msgstr "Лиценца сервер"
+
+msgid "sftp_support"
+msgstr "подршка"
+
+msgid "notice_update"
+msgstr "Обавештење о / Ажурирање"
+
+msgid "website"
+msgstr "вебсајт"
+
+msgid "clear_all"
+msgstr "Избриши све"
+
+msgid "manage"
+msgstr "Управљати"
+
+msgid "recheck"
+msgstr "Ре-цхецк"
+
+msgid "last_release"
+msgstr "Последња Издање"
+
+msgid "released"
+msgstr "ослобођен"
+
+msgid "queued"
+msgstr "чекању"
+
+msgid "failed"
+msgstr "Није успео"
+
+msgid "completed"
+msgstr "завршен"
+
+msgid "settings"
+msgstr "Подешавања"
+
+msgid "add_folder"
+msgstr "Додај фолдер"
+
+msgid "add_ftp_account"
+msgstr "Адд ФТП Аццоунт"
+
+msgid "file_editor"
+msgstr "Филе Едитор"
+
+msgid "editor_preferences"
+msgstr "Подешавања едитор"
+
+msgid "your_ftp_accounts"
+msgstr "ФТП налози"
+
+msgid "most_recent_used"
+msgstr "Недавно се користи."
+
+msgid "no_connections_yet_made"
+msgstr "Нема везе још направио"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Нема ФТП налога додао"
+
+msgid "most_recent_connections"
+msgstr "Мост Рецент Везе"
+
+msgid "last_10_connections_made"
+msgstr "Ласт 10 спојеви"
+
+msgid "designed_developed_by"
+msgstr "Дизајнирао и креирао"
+
+msgid "about_info"
+msgstr "Молимо Вас да користите сајт СФТП клијент за подршку, без подршке обавља се преко наших појединачних сајтова."
+
+msgid "local"
+msgstr "lokalna"
+
+msgid "remote"
+msgstr "даљински"
+
+msgid "remote_location_desc"
+msgstr "нпр / публиц_хтмл"
+
+msgid "create_directory"
+msgstr "створити Дирецтори"
+
+msgid "create_new_directory"
+msgstr "Створити нови директоријум"
+
+msgid "create_file"
+msgstr "створити Филе"
+
+msgid "create_new_file"
+msgstr "Направи нову Филе"
+
+msgid "refresh_list"
+msgstr "Освежи листу"
+
+msgid "change"
+msgstr "промена"
+
+msgid "report_a_bug"
+msgstr "Пријавите грешку"
+
+msgid "suggest_a_feature"
+msgstr "Суггест а феатуре"
+
+msgid "enter_password"
+msgstr "Унесите лозинку"
+
+msgid "enter_your_password..."
+msgstr "Унесите лозинку..."
+
+msgid "passphrase"
+msgstr "пасспхрасе"
+
+msgid "enter_your_passphrase..."
+msgstr "Унесите своју фразу ..."
+
+msgid "email_sftp_client"
+msgstr "Емаил СФТП клијент"
+
+msgid "faqs"
+msgstr "Често је"
+
+msgid "visit_sftp_client_website"
+msgstr "Посета СФТП клијент Сајт"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Рате нас на Гоогле Цхроме веб продавници"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Пријави проблем или сте добили помоћ"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Придружите нам се на Фацебоок за ажурирање"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Пратите нас на Твиттер ажурирања"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Нас на Гоогле ажурирања"
+
+msgid "okay"
+msgstr "Добро"
+
+msgid "cancel"
+msgstr "отказати"
+
+msgid "close"
+msgstr "близу"
+
+msgid "unknown_host"
+msgstr "ункновн хост"
+
+msgid "okay_to_continue"
+msgstr "У реду да наставите?"
+
+msgid "fingerprint"
+msgstr "отисак прста"
+
+msgid "remember"
+msgstr "Запамтити"
+
+msgid "file_permissions"
+msgstr "Филе Дозволе"
+
+msgid "file_permissions_desc"
+msgstr "Молимо одаберите нове атрибуте за изабрану датотеку (е) / фолдер (е)"
+
+msgid "read"
+msgstr "читати"
+
+msgid "write"
+msgstr "писати"
+
+msgid "execute"
+msgstr "извршити"
+
+msgid "owner"
+msgstr "Власник"
+
+msgid "group"
+msgstr "Група"
+
+msgid "public"
+msgstr "јавни"
+
+msgid "numeric_value"
+msgstr "бројчану вредност"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Унесите име новог директоријума ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Унесите име новог фајла ..."
+
+msgid "name"
+msgstr "име"
+
+msgid "enter_a_password"
+msgstr "Унесите лозинку"
+
+msgid "language"
+msgstr "језик"
+
+msgid "seconds"
+msgstr "секунде"
+
+msgid "minutes"
+msgstr "Минута"
+
+msgid "hour"
+msgstr "сат"
+
+msgid "hours"
+msgstr "сати"
+
+msgid "day"
+msgstr "дан"
+
+msgid "trial_left"
+msgstr "suđenje Леви"
+
+msgid "register_now"
+msgstr "Региструј се сада"
+
+msgid "general"
+msgstr "општи"
+
+msgid "security"
+msgstr "безбедност"
+
+msgid "master_password"
+msgstr "главну лозинку"
+
+msgid "status"
+msgstr "статус"
+
+msgid "enabled"
+msgstr "omogućeno"
+
+msgid "disabled"
+msgstr "онемогућен"
+
+msgid "timeout"
+msgstr "Пауза у утакмици"
+
+msgid "save"
+msgstr "саве"
+
+msgid "add_account"
+msgstr "Додај налог"
+
+msgid "support"
+msgstr "подршка"
+
+msgid "notice_updates"
+msgstr "Обавештење о / Ажурирање"
+
+msgid "please_login"
+msgstr "Молим вас пријавите се"
+
+msgid "your_session_timed_out"
+msgstr "Ваша сесија је истекло"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Жао ми је лозинка коју сте унели је нетачна!"
+
+msgid "login"
+msgstr "Пријава"
+
+msgid "master_password_desc"
+msgstr "Поставите ову главну лозинку да задржи своје налоге сигурно."
+
+msgid "license_key"
+msgstr "лиценца кључ"
+
+msgid "online"
+msgstr "мрежи"
+
+msgid "offline"
+msgstr "оффлине"
+
+msgid "currently_unavailable"
+msgstr "Тренутно недоступно"
+
+msgid "no_message_to_display"
+msgstr "Нема порука за приказ"
+
+msgid "offline_notice_title"
+msgstr "Недоступан - Да ли сте офлајн или на мрежу само везе?"
+
+msgid "offline_notice_desc"
+msgstr "Ви сте тренутно није на мрежи може да се утврди само веза или нема везе на наш сервер"
+
+msgid "edit_file"
+msgstr "едит Фајл"
+
+msgid "download"
+msgstr "Преузимање"
+
+msgid "upload"
+msgstr "отпремање"
+
+msgid "host_ip_is_required"
+msgstr "Хост / ИП је потребно"
+
+msgid "apply_to_all_files"
+msgstr "Примени на све фајлове"
+
+msgid "activate_now"
+msgstr "Активирајте сада"
+
+msgid "deactivate"
+msgstr "Де-ацтивате"
+
+msgid "in_progress"
+msgstr "У току"
+
+msgid "complete"
+msgstr "комплетан"
+
+msgid "direction"
+msgstr "Правац"
+
+msgid "progress"
+msgstr "напредак"
+
+msgid "permissions"
+msgstr "Дозволе"
+
+msgid "owner_group"
+msgstr "Власник / Група"
+
+msgid "size"
+msgstr "величина"
+
+msgid "type"
+msgstr "Тип"
+
+msgid "modified"
+msgstr "Модифиед"
+
+msgid "trial"
+msgstr "суђење"
+
+msgid "cleared"
+msgstr "обрисан"
+
+msgid "error_connecting"
+msgstr "Грешка Повезивање"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Грешка Повезивање Хост / ИП адреса"
+
+msgid "error_connecting_to_port"
+msgstr "Грешка Повезивање са порт"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Изаберите локални директоријум први!"
+
+msgid "go"
+msgstr "ићи"
+
+msgid "confirm"
+msgstr "потврдити"
+
+msgid "delete"
+msgstr "избрисати"
+
+msgid "rename"
+msgstr "ренаме"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Копирај УРЛ (и) у оставу"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Молимо Вас да потврдите да желите избрисати одабрану датотеку (е) / фолдера (и)"
+
+msgid "cancelled_by_user"
+msgstr "Отказан од стране корисника"
+
+msgid "already_exists_overwrite"
+msgstr "већ постоји, преписати?"
+
+msgid "dashboard"
+msgstr "командна табла"
+
+msgid "my_accounts"
+msgstr "Моји рачуни"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Филе Савед! Сви рачуни су резервне копије."
+
+msgid "file_failed_please_try_again"
+msgstr "Филе Фаилед! Молим вас, покушајте поново."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Тренутно немају рачуна да се резервне копије."
+
+msgid "saved!"
+msgstr "Савед!"
+
+msgid "please_enter_a_password"
+msgstr "Молимо унесите лозинку!"
+
+msgid "connection_closed"
+msgstr "connection цлосед"
+
+msgid "listing_mode_set_to"
+msgstr "Листинг подешен на"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Локални сервер ИП решен, користећи спољашњу ИП"
+
+msgid "login_incorrect"
+msgstr "Нетачна пријава"
+
+msgid "keeping_connection_alive"
+msgstr "Кеепинг везу аливе"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Не могу да пишем, веза за пренос података затворено"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Није могуће прочитати везу за пренос података затворено"
+
+msgid "error_reading_file"
+msgstr "Грешка при читању датотеке"
+
+msgid "error_writing_file"
+msgstr "Грешка приликом писања датотеке"
+
+msgid "failed_to_change_directory_to"
+msgstr "Нису променили директоријум у"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Можда немате исправне дозволе за приступ овај директоријум"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Враћање назад на претходни директоријум"
+
+msgid "activate"
+msgstr "Активирати"
+
+msgid "payment"
+msgstr "Плаћање"
+
+msgid "license_key_is_required"
+msgstr "кључ је дозвола"
+
+msgid "license_activated!"
+msgstr "Лиценца Ацтиватед!"
+
+msgid "your_license_has_been_validated"
+msgstr "Ваша лиценца је потврђена."
+
+msgid "thank_you!"
+msgstr "Хвала вам!"
+
+msgid "buy_now!"
+msgstr "Купи Сада!"
+
+msgid "buy_now"
+msgstr "купити Сада"
+
+msgid "one_off_fee"
+msgstr "једнократно Накнада"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Молимо Вас да надоградите да уживају ову апликацију без ограничења"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Унесите шифру лиценце испод"
+
+msgid "or"
+msgstr "ИЛИ"
+
+msgid "loading..."
+msgstr "Лоадинг ..."
+
+msgid "clear_accounts"
+msgstr "Чист рачун"
+
+msgid "clear_ssh_keys"
+msgstr "Цлеар ССХ кључеви"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Брише све сачуване ССХ кључеве"
+
+msgid "clear_app_settings"
+msgstr "Цлеар Подешавања апликација"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Брише све специфичне поставке апликације"
+
+msgid "clear_recent_connections"
+msgstr "Цлеар Рецент Везе"
+
+msgid "deletes_all_recent_connections"
+msgstr "Брише све недавне везе"
+
+msgid "import_type"
+msgstr "импорт Тип"
+
+msgid "please_select"
+msgstr "Молимо изаберите"
+
+msgid "import_file"
+msgstr "импорт фајла"
+
+msgid "choose_file"
+msgstr "Одаберите датотеку"
+
+msgid "delete_accounts"
+msgstr "Обриши Аццоунтс"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Брише све постојеће рачуне"
+
+msgid "import_now"
+msgstr "импорт Сада"
+
+msgid "none"
+msgstr "Ниједан"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Молимо Вас да поново СФТП Цлиент апликацију за промене ступиле на снагу."
+
+msgid "already_bought_the_app"
+msgstr "Већ купио апликацију?"
+
+msgid "choose"
+msgstr "изабрати"
+
+msgid "deleted!"
+msgstr "Делетед!"
+
+msgid "use_syncronised_browsing"
+msgstr "користити синхронизовано претраживање"
+
+msgid "remote_directory"
+msgstr "Даљински Директоријум"
+
+msgid "rsa_key_only!"
+msgstr "РСА кључа само!"
+
+msgid "no_key_selected"
+msgstr "Не кључ изабран."
+
+msgid "ssh_key_file"
+msgstr "ССХ кључ фајла"
+
+msgid "no_dir_selected"
+msgstr "изабран ниједан дир."
+
+msgid "keep_blank_for_current_password"
+msgstr "Држите празно за текућу лозинку."
+
+msgid "logon_type"
+msgstr "логон Тип"
+
+msgid "normal"
+msgstr "нормалан"
+
+msgid "ask_for_password"
+msgstr "Пита за лозинку"
+
+msgid "anonymous"
+msgstr "анониман"
+
+msgid "account_type"
+msgstr "Тип рачун"
+
+msgid "ftp_normal_connection"
+msgstr "ФТП (Нормална везе)"
+
+msgid "sftp_secure_connection"
+msgstr "СФТП (Сецуре Цоннецтион)"
+
+msgid "ssh_secure_connection"
+msgstr "ССХ (Сецуре Цоннецтион)"
+
+msgid "folder"
+msgstr "фасцикла"
+
+msgid "advanced"
+msgstr "напредан"
+
+msgid "folder_name"
+msgstr "Име фасцикле"
+
+msgid "parent"
+msgstr "родитељ"
+
+msgid "new_ftp_site"
+msgstr "Нови ФТП Сите"
+
+msgid "new_folder"
+msgstr "Нова фасцикла"
+
+msgid "clean_now"
+msgstr "цлеан Сада"
+
+msgid "host"
+msgstr "Домаћин"
+
+msgid "no_accounts_added..."
+msgstr "Не налог је додат ..."
+
+msgid "unknown"
+msgstr "Непознат"
+
+msgid "file_saved!"
+msgstr "Филе Савед!"
+
+msgid "uploading_file!"
+msgstr "Уплоадинг фајла!"
+
+msgid "save_failed!"
+msgstr "Саве Фаилед!"
+
+msgid "search"
+msgstr "Претраживање"
+
+msgid "find"
+msgstr "пронаћи"
+
+msgid "replace"
+msgstr "Заменити"
+
+msgid "scroll_past_end"
+msgstr "Сцролл прошлости Крај"
+
+msgid "show_annotations"
+msgstr "Схов напомене"
+
+msgid "show_gutter"
+msgstr "схов олука"
+
+msgid "show_invisibles"
+msgstr "Схов Инвисиблес"
+
+msgid "show_print_margin"
+msgstr "Схов Маргина отиска"
+
+msgid "highlight_active_line"
+msgstr "Хигхлигхт Ацтиве Лине"
+
+msgid "word_wrap"
+msgstr "Прелом редова"
+
+msgid "split_code"
+msgstr "Сплит код"
+
+msgid "preferences"
+msgstr "преференцес"
+
+msgid "close_all_tabs"
+msgstr "Затвори све картице"
+
+msgid "close_current_tab"
+msgstr "Цлосе Тренутни Таб"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Ауто саве филе кад куцам"
+
+msgid "auto_save"
+msgstr "ауто Сачувај"
+
+msgid "quick_save"
+msgstr "brzo Сачувај"
+
+msgid "documentation"
+msgstr "документација"
+
+msgid "themes"
+msgstr "Теме"
+
+msgid "keyboard_shortcuts"
+msgstr "Пречице на тастатури"
+
+msgid "coming_soon"
+msgstr "Долази ускоро"
+
+msgid "empty"
+msgstr "празан"

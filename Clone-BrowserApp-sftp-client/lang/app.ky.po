@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ky\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "меню"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "көрүнүш"
+
+msgid "edit"
+msgstr "редакциялоо"
+
+msgid "help"
+msgstr "жардам"
+
+msgid "manage_accounts"
+msgstr "Каттоо эсептерин башкаруу"
+
+msgid "import_accounts"
+msgstr "Import эсептери"
+
+msgid "export_accounts"
+msgstr "экспорт эсептери"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "жергиликтүү Directory"
+
+msgid "uploads_downloads"
+msgstr "Жүктөөлөр / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Ачык-айкын Сакталган маалыматтар"
+
+msgid "edit_settings"
+msgstr "Edit Орнотуулар"
+
+msgid "report_bug"
+msgstr "Ката жөнүндө билдирүү"
+
+msgid "suggest_feature"
+msgstr "Мүмкүнчүлүк сунуштоо"
+
+msgid "ask_a_question"
+msgstr "Суроо берүү"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "жөнүндө"
+
+msgid "exit"
+msgstr "чыгуу"
+
+msgid "host_ip_address"
+msgstr "Host / IP дареги"
+
+msgid "username"
+msgstr "колдонуучунун аты"
+
+msgid "password"
+msgstr "Купуя сөз"
+
+msgid "port"
+msgstr "порт"
+
+msgid "connect"
+msgstr "байланышуу"
+
+msgid "welcome"
+msgstr "Кош келдиңиз"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Кардар жөнөкөй жөнүндө, ал колдонмо тез жооп берүүгө мүмкүндүк берүүчү Google Chrome / Chrome OS топтомдошкон колдонмо иштей курулуп жатат. иштөөсүнө бирлердин сактоо жана өзгөчө бизге уюштуруу үчүн FTP Account менеджери кирет"
+
+msgid "latest_updates"
+msgstr "акыркы өзгөрүүлөр"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "лицензия Server"
+
+msgid "sftp_support"
+msgstr "колдоо"
+
+msgid "notice_update"
+msgstr "Билдирүү / өзгөрүүлөр"
+
+msgid "website"
+msgstr "сайты"
+
+msgid "clear_all"
+msgstr "ачык-айкын Бардык"
+
+msgid "manage"
+msgstr "башкаруу"
+
+msgid "recheck"
+msgstr "Re-текшерүү"
+
+msgid "last_release"
+msgstr "акыркы релизи"
+
+msgid "released"
+msgstr "бошотулду"
+
+msgid "queued"
+msgstr "кезекте"
+
+msgid "failed"
+msgstr "ишке ашкан жок"
+
+msgid "completed"
+msgstr "аяктады"
+
+msgid "settings"
+msgstr "Орнотуулар"
+
+msgid "add_folder"
+msgstr "Папка кошуу"
+
+msgid "add_ftp_account"
+msgstr "Кошуу FTP Каттоо"
+
+msgid "file_editor"
+msgstr "File редактор"
+
+msgid "editor_preferences"
+msgstr "редактору Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Сиздин FTP аккаунттар"
+
+msgid "most_recent_used"
+msgstr "Жакында колдонулган."
+
+msgid "no_connections_yet_made"
+msgstr "Эч кандай байланыш дагы жасалган"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Жок FTP эсептерин кошо"
+
+msgid "most_recent_connections"
+msgstr "Көпчүлүк жазуу Соолуган"
+
+msgid "last_10_connections_made"
+msgstr "акыркы 10 байланыштар"
+
+msgid "designed_developed_by"
+msgstr "Иштелип чыккан жана тарабынан иштелип чыккан"
+
+msgid "about_info"
+msgstr "колдоо үчүн SFTP кардар сайттан колдонууга суранам, эч кандай колдоо биздин айрым сайттар аркылуу берилет."
+
+msgid "local"
+msgstr "жергиликтүү"
+
+msgid "remote"
+msgstr "алыскы"
+
+msgid "remote_location_desc"
+msgstr "мисалы / Celebrity"
+
+msgid "create_directory"
+msgstr "түзүү Directory"
+
+msgid "create_new_directory"
+msgstr "Create New Directory"
+
+msgid "create_file"
+msgstr "түзүү File"
+
+msgid "create_new_file"
+msgstr "Create New File"
+
+msgid "refresh_list"
+msgstr "Тизмекти жаңылоо"
+
+msgid "change"
+msgstr "өзгөртүү"
+
+msgid "report_a_bug"
+msgstr "Ката жөнүндө билдирүү"
+
+msgid "suggest_a_feature"
+msgstr "Мүмкүнчүлүк сунуштоо"
+
+msgid "enter_password"
+msgstr "кирип калуу"
+
+msgid "enter_your_password..."
+msgstr "сөздү кирет ..."
+
+msgid "passphrase"
+msgstr "сөз айкашын"
+
+msgid "enter_your_passphrase..."
+msgstr "Сиздин айкашын кирет ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP Кардар"
+
+msgid "faqs"
+msgstr "FAQ анын"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit SFTP Кардар сайт"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Google Chrome дүкөнүндө бизди баалайт"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Маселе жөнүндө кабарлоо же жардам алуу"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "билүү үчүн Facebook бизге кошулуп,"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "билүү үчүн Twitter'де ээрчип"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "билүү үчүн Google бизди 1'лөө"
+
+msgid "okay"
+msgstr "Болуптур"
+
+msgid "cancel"
+msgstr "жокко чыгаруу"
+
+msgid "close"
+msgstr "жакын"
+
+msgid "unknown_host"
+msgstr "белгисиз Host"
+
+msgid "okay_to_continue"
+msgstr "мындан ары да жакшы?"
+
+msgid "fingerprint"
+msgstr "манжалардын издери"
+
+msgid "remember"
+msgstr "эстөө"
+
+msgid "file_permissions"
+msgstr "File Уруксаат"
+
+msgid "file_permissions_desc"
+msgstr "Сураныч, тандалып алынган иштин үчүн жаңы сапаттарын тандоо (с) / папка (с)"
+
+msgid "read"
+msgstr "окуу"
+
+msgid "write"
+msgstr "жазуу"
+
+msgid "execute"
+msgstr "ишке ашыруу"
+
+msgid "owner"
+msgstr "ээси"
+
+msgid "group"
+msgstr "группа"
+
+msgid "public"
+msgstr "коомдук"
+
+msgid "numeric_value"
+msgstr "сандык мааниси"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "жаңы жетекчилигинин атын ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "жаңы билэ атын ..."
+
+msgid "name"
+msgstr "ысым"
+
+msgid "enter_a_password"
+msgstr "бир калуу кирет"
+
+msgid "language"
+msgstr "тил"
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "minutes"
+msgstr "мүнөт"
+
+msgid "hour"
+msgstr "саат"
+
+msgid "hours"
+msgstr "саат"
+
+msgid "day"
+msgstr "күн"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "каттоо"
+
+msgid "general"
+msgstr "жалпы"
+
+msgid "security"
+msgstr "коопсуздук"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "абал"
+
+msgid "enabled"
+msgstr "иштетилген"
+
+msgid "disabled"
+msgstr "өчүрүлгөн"
+
+msgid "timeout"
+msgstr "Убакыт бүттү"
+
+msgid "save"
+msgstr "Сактоо"
+
+msgid "add_account"
+msgstr "кошуу каттоо"
+
+msgid "support"
+msgstr "колдоо"
+
+msgid "notice_updates"
+msgstr "Билдирүү / өзгөрүүлөр"
+
+msgid "please_login"
+msgstr "Сураныч, кириңиз"
+
+msgid "your_session_timed_out"
+msgstr "Сиздин Session Убактылуу Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Кечиресиз, сиз кирген сырсөз туура болгон!"
+
+msgid "login"
+msgstr "Кирүү"
+
+msgid "master_password_desc"
+msgstr "Сиздин эсеп коопсуз болушу үчүн, бул кожоюн сөздү койду."
+
+msgid "license_key"
+msgstr "Лицензиялык Ачкыч"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Азыркы учурда жеткиликсиз"
+
+msgid "no_message_to_display"
+msgstr "Эч кандай билдирүү өзгөрүүлөр"
+
+msgid "offline_notice_title"
+msgstr "Жеткиликтүү - Сиз сырткары же тармак боюнча гана байланыш барбы?"
+
+msgid "offline_notice_desc"
+msgstr "Тармакта, учурда болуп кошулуу же эч кандай байланыш гана жүрүш үчүн түзүлүшү мүмкүн"
+
+msgid "edit_file"
+msgstr "Edit File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP талап кылынат"
+
+msgid "apply_to_all_files"
+msgstr "бардык документтери колдонулат"
+
+msgid "activate_now"
+msgstr "Азыр активдештирүү"
+
+msgid "deactivate"
+msgstr "Де-өчүрүү"
+
+msgid "in_progress"
+msgstr "Прогрессте"
+
+msgid "complete"
+msgstr "аяктоо"
+
+msgid "direction"
+msgstr "башкаруу"
+
+msgid "progress"
+msgstr "алдыга жылуу"
+
+msgid "permissions"
+msgstr "уруксаттар"
+
+msgid "owner_group"
+msgstr "Менчик ээси / Group"
+
+msgid "size"
+msgstr "көлөм"
+
+msgid "type"
+msgstr "түрү"
+
+msgid "modified"
+msgstr "барак"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "тазаланды"
+
+msgid "error_connecting"
+msgstr "ката туташуу"
+
+msgid "error_connecting_to_host_ip"
+msgstr "өтөт туташуу катасы / IP дареги"
+
+msgid "error_connecting_to_port"
+msgstr "портуна туташуу катасы"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Адегенде жергиликтүү каталогду тандоо!"
+
+msgid "go"
+msgstr "барып,"
+
+msgid "confirm"
+msgstr "ырастоо"
+
+msgid "delete"
+msgstr "жок"
+
+msgid "rename"
+msgstr "атын"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Көчүрмөсү URL (с) тактасына"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Сиз тандаган (лар) жок каалайм ырастап / папка (с)"
+
+msgid "cancelled_by_user"
+msgstr "Колдонуучу тарабынан жокко чыгарылды"
+
+msgid "already_exists_overwrite"
+msgstr "бар, жокко?"
+
+msgid "dashboard"
+msgstr "бөлмө"
+
+msgid "my_accounts"
+msgstr "Менин Каттоо"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File сакталды! Бардык билдирүүлөр колдоого алынган."
+
+msgid "file_failed_please_try_again"
+msgstr "File ишке ашкан жок! Кайра аракет кыл."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Учурда эч кандай билдирүүлөр төп келиши керек."
+
+msgid "saved!"
+msgstr "Куткарды!"
+
+msgid "please_enter_a_password"
+msgstr "Сураныч, сөздү киргизип!"
+
+msgid "connection_closed"
+msgstr "байланыш жабылган"
+
+msgid "listing_mode_set_to"
+msgstr "режим коюлса Тизме"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Жергиликтүү Server IP чечилген, тышкы IP колдонуу"
+
+msgid "login_incorrect"
+msgstr "Кирүү туура эмес"
+
+msgid "keeping_connection_alive"
+msgstr "тирүү байланышты сактоо"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "жаза албай, берилиштер базасына байланыш жабык"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "берилиштер базасына байланыш жабык окуй албаган"
+
+msgid "error_reading_file"
+msgstr "Ката окуу билэ"
+
+msgid "error_writing_file"
+msgstr "Ката жазуу билэ"
+
+msgid "failed_to_change_directory_to"
+msgstr "үчүн каталогду өзгөртө алган жок"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Бул түз мүмкүндүк алуу туура уруксаттарды болушу мүмкүн эмес"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "мурунку каталогун кайра кайтарылууда"
+
+msgid "activate"
+msgstr "жандандыруу"
+
+msgid "payment"
+msgstr "төлөө"
+
+msgid "license_key_is_required"
+msgstr "Лицензия негизги талап кылынат"
+
+msgid "license_activated!"
+msgstr "Лицензия жандандырылды!"
+
+msgid "your_license_has_been_validated"
+msgstr "Сиздин лицензия бекитиле элек."
+
+msgid "thank_you!"
+msgstr "Рахмат сага!"
+
+msgid "buy_now!"
+msgstr "Азыр сатып ал!"
+
+msgid "buy_now"
+msgstr "Азыр сатып ал"
+
+msgid "one_off_fee"
+msgstr "бир өчүрүү төлөм"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Сураныч, эч кандай чектөөлөр менен бул колдонмону пайдалануу үчүн жогорулатуу"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Сураныч, төмөндө берилген ачкычын кирет"
+
+msgid "or"
+msgstr "ЖЕ"
+
+msgid "loading..."
+msgstr "Жүктөлүүдө ..."
+
+msgid "clear_accounts"
+msgstr "ачык-айкын эсептер"
+
+msgid "clear_ssh_keys"
+msgstr "Ачык-айкын SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "бардык сакталган SSH баскычтарды жок кылат"
+
+msgid "clear_app_settings"
+msgstr "Ачык-айкын App Орнотуулар"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "бардык колдонмо белгилүү орнотууларды тазалап жок"
+
+msgid "clear_recent_connections"
+msgstr "Так жазуу Соолуган"
+
+msgid "deletes_all_recent_connections"
+msgstr "бардык акыркы байланышы жок кылат"
+
+msgid "import_type"
+msgstr "Import түрү"
+
+msgid "please_select"
+msgstr "Тандаңыз"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "тандап File"
+
+msgid "delete_accounts"
+msgstr "жок эсептерин"
+
+msgid "deletes_all_existing_accounts"
+msgstr "иштеп жаткан бардык эсеп жок кылынды"
+
+msgid "import_now"
+msgstr "Import Азыр"
+
+msgid "none"
+msgstr "эч ким"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "өзгөртүүлөр күчүнө кирүүсү үчүн сураныч SFTP кардар колдонмосун кайра."
+
+msgid "already_bought_the_app"
+msgstr "Буга чейин колдонмону сатып алды эле?"
+
+msgid "choose"
+msgstr "тандап алуу"
+
+msgid "deleted!"
+msgstr "Жок!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised чыгуу колдонуу"
+
+msgid "remote_directory"
+msgstr "алыскы Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA ачкыч гана!"
+
+msgid "no_key_selected"
+msgstr "тандалган жок ачкыч."
+
+msgid "ssh_key_file"
+msgstr "SSH Негизги File"
+
+msgid "no_dir_selected"
+msgstr "Жок реж тандалды."
+
+msgid "keep_blank_for_current_password"
+msgstr "азыркы сырсөз бош болгула."
+
+msgid "logon_type"
+msgstr "папке түрү"
+
+msgid "normal"
+msgstr "демейдеги"
+
+msgid "ask_for_password"
+msgstr "Сырсөз сурап"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "эсеп түрү"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Жөнөкөй Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "папка"
+
+msgid "advanced"
+msgstr "алдынкы"
+
+msgid "folder_name"
+msgstr "Папканы ачуу Name"
+
+msgid "parent"
+msgstr "ата-эне"
+
+msgid "new_ftp_site"
+msgstr "Жаңы FTP-сайты"
+
+msgid "new_folder"
+msgstr "Жаңы Папка"
+
+msgid "clean_now"
+msgstr "таза сатып алуу"
+
+msgid "host"
+msgstr "кожоюн"
+
+msgid "no_accounts_added..."
+msgstr "Жок эсептери Added ..."
+
+msgid "unknown"
+msgstr "белгисиз"
+
+msgid "file_saved!"
+msgstr "File сакталды!"
+
+msgid "uploading_file!"
+msgstr "Uploading File!"
+
+msgid "save_failed!"
+msgstr "Сактап калды!"
+
+msgid "search"
+msgstr "издөө"
+
+msgid "find"
+msgstr "табуу"
+
+msgid "replace"
+msgstr "алмаштыруу"
+
+msgid "scroll_past_end"
+msgstr "Жылдыруу Past End"
+
+msgid "show_annotations"
+msgstr "Show Түшүндүрмөлөр"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Show минипуты"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Кыймылы жок сызыгы баса"
+
+msgid "word_wrap"
+msgstr "ташымал"
+
+msgid "split_code"
+msgstr "бөлүүчү Code"
+
+msgid "preferences"
+msgstr "түзөтүү"
+
+msgid "close_all_tabs"
+msgstr "Жакын Бардык Аккорды"
+
+msgid "close_current_tab"
+msgstr "Жакын Current Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto мен тергенде сактап"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Тез сактоо"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "темалары"
+
+msgid "keyboard_shortcuts"
+msgstr "клавиатура Жарлыктар"
+
+msgid "coming_soon"
+msgstr "Келе жакында"
+
+msgid "empty"
+msgstr "бош"

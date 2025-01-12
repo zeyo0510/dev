@@ -1,0 +1,776 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menüü"
+
+msgid "file"
+msgstr "fail"
+
+msgid "view"
+msgstr "vaade"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "aitama"
+
+msgid "manage_accounts"
+msgstr "kontode haldamine"
+
+msgid "import_accounts"
+msgstr "Import Accounts"
+
+msgid "export_accounts"
+msgstr "ekspordi Accounts"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Teadetelogi"
+
+msgid "local_directory"
+msgstr "Kohalik Kataloog"
+
+msgid "uploads_downloads"
+msgstr "Lisatud / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear salvestatud andmeid"
+
+msgid "edit_settings"
+msgstr "Muuda seadeid"
+
+msgid "report_bug"
+msgstr "Teata veast"
+
+msgid "suggest_feature"
+msgstr "Soovita Feature"
+
+msgid "ask_a_question"
+msgstr "Küsi küsimus"
+
+msgid "change_log"
+msgstr "muutuste logi"
+
+msgid "about"
+msgstr "umbes"
+
+msgid "exit"
+msgstr "Väljapääs"
+
+msgid "host_ip_address"
+msgstr "Host / IP aadress"
+
+msgid "username"
+msgstr "kasutajanimi"
+
+msgid "password"
+msgstr "parool"
+
+msgid "port"
+msgstr "port"
+
+msgid "connect"
+msgstr "ühendama"
+
+msgid "welcome"
+msgstr "Tere tulemast"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Klient on kõike lihtsus, see on ehitatud Google Chrome / Chrome OS pakitud app kasutajaliides võimaldab rakendus olema kiire ja tundlik. Mõned funktsioonid sisaldab FTP kliendihaldur hoiustatav ja korraldada oma kõige meil"
+
+msgid "latest_updates"
+msgstr "Viimased uuendused"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "litsensiserveriga"
+
+msgid "sftp_support"
+msgstr "abi"
+
+msgid "notice_update"
+msgstr "Teade / Uuendused"
+
+msgid "website"
+msgstr "veebisait"
+
+msgid "clear_all"
+msgstr "Kustuta kõik"
+
+msgid "manage"
+msgstr "juhtima"
+
+msgid "recheck"
+msgstr "Re-tšeki"
+
+msgid "last_release"
+msgstr "Viimati Release"
+
+msgid "released"
+msgstr "Välja"
+
+msgid "queued"
+msgstr "Järjekorras"
+
+msgid "failed"
+msgstr "ebaõnnestunud"
+
+msgid "completed"
+msgstr "Valminud"
+
+msgid "settings"
+msgstr "Seaded"
+
+msgid "add_folder"
+msgstr "Lisa kaust"
+
+msgid "add_ftp_account"
+msgstr "Lisa FTP konto"
+
+msgid "file_editor"
+msgstr "failiredaktori"
+
+msgid "editor_preferences"
+msgstr "toimetaja eelistused"
+
+msgid "your_ftp_accounts"
+msgstr "Teie FTP kontod"
+
+msgid "most_recent_used"
+msgstr "Viimasel ajal kasutatakse."
+
+msgid "no_connections_yet_made"
+msgstr "Seosed puuduvad veel tehtud"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ei FTP kontode veel lisatud"
+
+msgid "most_recent_connections"
+msgstr "Viimati ühendused"
+
+msgid "last_10_connections_made"
+msgstr "Viimased 10 ühendused tehtud"
+
+msgid "designed_developed_by"
+msgstr "Mõeldud & Arendaja"
+
+msgid "about_info"
+msgstr "Palun kasutage sFTP Klient veebilehel toetust, ei ole tuge pakub meie individuaalne veebilehed."
+
+msgid "local"
+msgstr "kohalik"
+
+msgid "remote"
+msgstr "kauge"
+
+msgid "remote_location_desc"
+msgstr "nt / public_html"
+
+msgid "create_directory"
+msgstr "Kataloogi loomine"
+
+msgid "create_new_directory"
+msgstr "Loo uus kataloog"
+
+msgid "create_file"
+msgstr "Loo fail"
+
+msgid "create_new_file"
+msgstr "Loo uus Fail"
+
+msgid "refresh_list"
+msgstr "Värskenda nimekirja"
+
+msgid "change"
+msgstr "muutus"
+
+msgid "report_a_bug"
+msgstr "Teata veast"
+
+msgid "suggest_a_feature"
+msgstr "Soovita Feature"
+
+msgid "enter_password"
+msgstr "Sisestage parool"
+
+msgid "enter_your_password..."
+msgstr "Sisestage parool ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Sisesta paroolifraas ..."
+
+msgid "email_sftp_client"
+msgstr "E sFTP Client"
+
+msgid "faqs"
+msgstr "KKK"
+
+msgid "visit_sftp_client_website"
+msgstr "Külasta sFTP Klient Koduleht"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Hinda meie Google Chrome Veebipoe"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Teavita probleemist või saada abi"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Liitu meiega Facebook uuendused"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Jälgi meid Twitter uuendused"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1, Meid Google uuendused"
+
+msgid "okay"
+msgstr "Okei"
+
+msgid "cancel"
+msgstr "tühistama"
+
+msgid "close"
+msgstr "Sulge"
+
+msgid "unknown_host"
+msgstr "Tundmatu Host"
+
+msgid "okay_to_continue"
+msgstr "Okei jätkata?"
+
+msgid "fingerprint"
+msgstr "sõrmejälg"
+
+msgid "remember"
+msgstr "meeles pidama"
+
+msgid "file_permissions"
+msgstr "faili reeglid"
+
+msgid "file_permissions_desc"
+msgstr "Palun valige uus atribuudid valitud fail (id) / kaust (s)"
+
+msgid "read"
+msgstr "lugenud"
+
+msgid "write"
+msgstr "kirjutama"
+
+msgid "execute"
+msgstr "täitma"
+
+msgid "owner"
+msgstr "omanik"
+
+msgid "group"
+msgstr "rühm"
+
+msgid "public"
+msgstr "avalik"
+
+msgid "numeric_value"
+msgstr "numbriline väärtus"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Sisestage nimi uue kataloogi ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Sisestage nimi uue faili ..."
+
+msgid "name"
+msgstr "nimi"
+
+msgid "enter_a_password"
+msgstr "Sisesta salasõna"
+
+msgid "language"
+msgstr "keel"
+
+msgid "seconds"
+msgstr "sekundit"
+
+msgid "minutes"
+msgstr "protokoll"
+
+msgid "hour"
+msgstr "Tund"
+
+msgid "hours"
+msgstr "tööaeg"
+
+msgid "day"
+msgstr "päev"
+
+msgid "trial_left"
+msgstr "Trial Vasak"
+
+msgid "register_now"
+msgstr "Registreeru kohe"
+
+msgid "general"
+msgstr "üld-"
+
+msgid "security"
+msgstr "turvalisus"
+
+msgid "master_password"
+msgstr "ülemparooli"
+
+msgid "status"
+msgstr "olek"
+
+msgid "enabled"
+msgstr "Lubatud"
+
+msgid "disabled"
+msgstr "invaliidistunud"
+
+msgid "timeout"
+msgstr "Aeg maha"
+
+msgid "save"
+msgstr "Salvesta"
+
+msgid "add_account"
+msgstr "Lisa konto"
+
+msgid "support"
+msgstr "abi"
+
+msgid "notice_updates"
+msgstr "Teade / Uuendused"
+
+msgid "please_login"
+msgstr "Palun logige sisse"
+
+msgid "your_session_timed_out"
+msgstr "Teie sessioon aegus"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Kahjuks sisestatud parooli oli vale!"
+
+msgid "login"
+msgstr "Logi sisse"
+
+msgid "master_password_desc"
+msgstr "Määra ülemparooliga hoida oma kontosid ohutu."
+
+msgid "license_key"
+msgstr "litsentsi võti"
+
+msgid "online"
+msgstr "Hetkel"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Hetkel kättesaamatu"
+
+msgid "no_message_to_display"
+msgstr "No teate, et kuvada"
+
+msgid "offline_notice_title"
+msgstr "Kättesaamatu - Kas te olete offline või võrgus ainus ühendus?"
+
+msgid "offline_notice_desc"
+msgstr "Olete praegu võrguühenduseta, võrgus ainus ühendus või ei suudetud kindlaks meie serveris"
+
+msgid "edit_file"
+msgstr "Muuda faili"
+
+msgid "download"
+msgstr "Lae alla"
+
+msgid "upload"
+msgstr "Laadi üles"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP on vajalik"
+
+msgid "apply_to_all_files"
+msgstr "Kanna kõik failid"
+
+msgid "activate_now"
+msgstr "Aktiveeri kohe"
+
+msgid "deactivate"
+msgstr "Deaktiveerida"
+
+msgid "in_progress"
+msgstr "in Progress"
+
+msgid "complete"
+msgstr "täielik"
+
+msgid "direction"
+msgstr "suund"
+
+msgid "progress"
+msgstr "edu"
+
+msgid "permissions"
+msgstr "reeglid"
+
+msgid "owner_group"
+msgstr "Omanik / grupp"
+
+msgid "size"
+msgstr "suurus"
+
+msgid "type"
+msgstr "tüüp"
+
+msgid "modified"
+msgstr "Muudetud"
+
+msgid "trial"
+msgstr "kohtuprotsess"
+
+msgid "cleared"
+msgstr "Cleared"
+
+msgid "error_connecting"
+msgstr "Viga ühendamine"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Viga ühendamine võõrustada / IP-aadressi"
+
+msgid "error_connecting_to_port"
+msgstr "Viga ühendamine sadama"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Palun valige kohaliku kataloogi esimene!"
+
+msgid "go"
+msgstr "minema"
+
+msgid "confirm"
+msgstr "kinnitama"
+
+msgid "delete"
+msgstr "kustutama"
+
+msgid "rename"
+msgstr "Nimeta"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopeeri URL (id) lõikepuhvrisse"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Palun kinnitage soovid kustutada valitud fail (id) / kaust (s)"
+
+msgid "cancelled_by_user"
+msgstr "Kasutaja on tühistanud"
+
+msgid "already_exists_overwrite"
+msgstr "juba olemas, kirjutatakse?"
+
+msgid "dashboard"
+msgstr "armatuurlaud"
+
+msgid "my_accounts"
+msgstr "Minu kontod"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Salvestatud faili! Kõik kontod on varundada."
+
+msgid "file_failed_please_try_again"
+msgstr "Faili ebaõnnestus! Palun proovi uuesti."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Sa ei ole praegu kontod käiks."
+
+msgid "saved!"
+msgstr "Salvestatud!"
+
+msgid "please_enter_a_password"
+msgstr "Palun sisesta parool!"
+
+msgid "connection_closed"
+msgstr "Ühendus suletud"
+
+msgid "listing_mode_set_to"
+msgstr "Börsile režiim seatud"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Kohalik server IP lahendatud, kasutades välist IP"
+
+msgid "login_incorrect"
+msgstr "Logi vale"
+
+msgid "keeping_connection_alive"
+msgstr "Hoiame ühendust peal"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Ei saa kirjutada, andmeside suletud"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Ei saa lugeda andmesideühenduse suletud"
+
+msgid "error_reading_file"
+msgstr "Faili lugemise viga"
+
+msgid "error_writing_file"
+msgstr "Viga faili"
+
+msgid "failed_to_change_directory_to"
+msgstr "Muutmine nurjus kataloogi"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Sa ei pruugi olla õige load juurdepääsuks selle kataloogi"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Tagasipöördumine eelmise kataloogi"
+
+msgid "activate"
+msgstr "aktiveerima"
+
+msgid "payment"
+msgstr "makse"
+
+msgid "license_key_is_required"
+msgstr "Võti on vajalik"
+
+msgid "license_activated!"
+msgstr "Litsentsi aktiveeritud!"
+
+msgid "your_license_has_been_validated"
+msgstr "Teie litsents on valideeritud."
+
+msgid "thank_you!"
+msgstr "Aitäh!"
+
+msgid "buy_now!"
+msgstr "Osta kohe!"
+
+msgid "buy_now"
+msgstr "Osta kohe"
+
+msgid "one_off_fee"
+msgstr "ühekordne tasu"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Palun uuendage nautida seda app ilma piiranguteta"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Palun sisesta oma litsentsi võti alla"
+
+msgid "or"
+msgstr "VÕI"
+
+msgid "loading..."
+msgstr "Laadimine ..."
+
+msgid "clear_accounts"
+msgstr "Clear Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH-võtmed"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Kustutab kõik salvestatud SSH võtmete"
+
+msgid "clear_app_settings"
+msgstr "Clear Rakenduse seaded"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Kustutab kõik app seaded"
+
+msgid "clear_recent_connections"
+msgstr "Clear Recent ühendused"
+
+msgid "deletes_all_recent_connections"
+msgstr "Kustutab kõik viimastel ühendused"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Palun vali"
+
+msgid "import_file"
+msgstr "Import faili"
+
+msgid "choose_file"
+msgstr "Vali fail"
+
+msgid "delete_accounts"
+msgstr "Kustuta Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Kustutab kõik olemasolevad kontod"
+
+msgid "import_now"
+msgstr "Import nüüd"
+
+msgid "none"
+msgstr "mitte ükski"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Palun käivita sFTP Klient app, et muudatused jõustuvad."
+
+msgid "already_bought_the_app"
+msgstr "Juba ostetud App?"
+
+msgid "choose"
+msgstr "valima"
+
+msgid "deleted!"
+msgstr "Kustutada!"
+
+msgid "use_syncronised_browsing"
+msgstr "kasuta syncronised sirvimine"
+
+msgid "remote_directory"
+msgstr "serveri kataloogi"
+
+msgid "rsa_key_only!"
+msgstr "RSA ainult!"
+
+msgid "no_key_selected"
+msgstr "Ei võti valitud."
+
+msgid "ssh_key_file"
+msgstr "SSH Võtmefaili"
+
+msgid "no_dir_selected"
+msgstr "Ei dir valitud."
+
+msgid "keep_blank_for_current_password"
+msgstr "Hoia tühjaks parool."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "normaalne"
+
+msgid "ask_for_password"
+msgstr "Küsi parooli"
+
+msgid "anonymous"
+msgstr "anonüümne"
+
+msgid "account_type"
+msgstr "Konto tüüp"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Kaust"
+
+msgid "advanced"
+msgstr "edasijõudnud"
+
+msgid "folder_name"
+msgstr "Folder Name"
+
+msgid "parent"
+msgstr "vanem"
+
+msgid "new_ftp_site"
+msgstr "Uus FTP"
+
+msgid "new_folder"
+msgstr "Uus kaust"
+
+msgid "clean_now"
+msgstr "Clean nüüd"
+
+msgid "host"
+msgstr "võõrustaja"
+
+msgid "no_accounts_added..."
+msgstr "Ei kontod lisatud ..."
+
+msgid "unknown"
+msgstr "tundmatu"
+
+msgid "file_saved!"
+msgstr "Salvestatud faili!"
+
+msgid "uploading_file!"
+msgstr "Faili üleslaadimine!"
+
+msgid "save_failed!"
+msgstr "Säästa ebaõnnestus!"
+
+msgid "search"
+msgstr "Otsing"
+
+msgid "find"
+msgstr "leidma"
+
+msgid "replace"
+msgstr "asendama"
+
+msgid "scroll_past_end"
+msgstr "Möödakerimisel End"
+
+msgid "show_annotations"
+msgstr "Näita annotatsioonid"
+
+msgid "show_gutter"
+msgstr "Näita vihmaveerennid"
+
+msgid "show_invisibles"
+msgstr "Näita nähtamatud"
+
+msgid "show_print_margin"
+msgstr "Näita printimisääriste"
+
+msgid "highlight_active_line"
+msgstr "Highlight Active Line"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split kood"
+
+msgid "preferences"
+msgstr "eelistused"
+
+msgid "close_all_tabs"
+msgstr "Sulge kõik vahelehed"
+
+msgid "close_current_tab"
+msgstr "Sulge aktiivne kaart"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto salvestada faili, kui ma tüüpi"
+
+msgid "auto_save"
+msgstr "Isesalvestus"
+
+msgid "quick_save"
+msgstr "Kiire Salvesta"

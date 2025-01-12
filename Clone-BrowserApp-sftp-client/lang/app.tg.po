@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Меню"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Кӯмак"
+
+msgid "manage_accounts"
+msgstr "Идоракунии ҳисоб"
+
+msgid "import_accounts"
+msgstr "ҳисоб Воридоти"
+
+msgid "export_accounts"
+msgstr "ҳисоб Содироти"
+
+msgid "quick_connect"
+msgstr "Пайвастшавӣ зуд"
+
+msgid "message_log"
+msgstr "Message Русский"
+
+msgid "local_directory"
+msgstr "Directory маҳаллӣ"
+
+msgid "uploads_downloads"
+msgstr "Боргузориҳо / Боргириҳо"
+
+msgid "clear_saved_data"
+msgstr "Тоза маълумот Иродаи"
+
+msgid "edit_settings"
+msgstr "Edit Танзимотҳо"
+
+msgid "report_bug"
+msgstr "Гузориши як хатои"
+
+msgid "suggest_feature"
+msgstr "Пешниҳод кардан Фарқияти"
+
+msgid "ask_a_question"
+msgstr "як савол"
+
+msgid "change_log"
+msgstr "Тағйирёбии Русский"
+
+msgid "about"
+msgstr "дар бораи"
+
+msgid "exit"
+msgstr "Баромадгоҳ"
+
+msgid "host_ip_address"
+msgstr "Мизбон / IP Нишонӣ"
+
+msgid "username"
+msgstr "Логин"
+
+msgid "password"
+msgstr "Рамз"
+
+msgid "port"
+msgstr "бандаргоҳ"
+
+msgid "connect"
+msgstr "пайваст кардан"
+
+msgid "welcome"
+msgstr "Хуш омадед"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP мизољон аст, ҳама дар бораи самимияте, ба он шудааст, оид ба интерфейси барнома бастабандишуда Google Chrome / Chrome OS имкон барнома бошад, рӯза ва ҷавобгӯ сохта. Баъзе аз вазифаи мегирад раис Ҳисоби FTP барои нигоҳ дур ва ташкили кунед мо"
+
+msgid "latest_updates"
+msgstr "охирин Шарҳҳо"
+
+msgid "server_status"
+msgstr "сервер Status"
+
+msgid "license_server"
+msgstr "иҷозатнома Server"
+
+msgid "sftp_support"
+msgstr "таъмин"
+
+msgid "notice_update"
+msgstr "Диққат / Шарҳҳо"
+
+msgid "website"
+msgstr "Вебсайтро"
+
+msgid "clear_all"
+msgstr "Тоза Ҳамаи"
+
+msgid "manage"
+msgstr "идора кардан"
+
+msgid "recheck"
+msgstr "Аз нав ба чек"
+
+msgid "last_release"
+msgstr "Last озод"
+
+msgid "released"
+msgstr "озодшуда"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "муяссар"
+
+msgid "completed"
+msgstr "Гузаронида шуд"
+
+msgid "settings"
+msgstr "Танзимот"
+
+msgid "add_folder"
+msgstr "Иловаи Папкаи"
+
+msgid "add_ftp_account"
+msgstr "Иловаи ҳисоб FTP"
+
+msgid "file_editor"
+msgstr "Муҳаррири файл"
+
+msgid "editor_preferences"
+msgstr "Preferences муҳаррири"
+
+msgid "your_ftp_accounts"
+msgstr "Ҳисоб FTP Шумо"
+
+msgid "most_recent_used"
+msgstr "Бештари наздикӣ истифода бурда мешавад."
+
+msgid "no_connections_yet_made"
+msgstr "Не пайвастҳои ҳанӯз дод"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Не ҳисобҳои FTP илова ҳанӯз"
+
+msgid "most_recent_connections"
+msgstr "Аксари Пайвастшавиҳо охирин"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 пайвастҳои дод"
+
+msgid "designed_developed_by"
+msgstr "Таҳиягар & Сайти мазкур бо"
+
+msgid "about_info"
+msgstr "Лутфан, истифода сомона мизоҷон sFTP барои дастгирии нест, дастгирии тавассути сомонаҳои инфиродӣ моро таъмин намудааст."
+
+msgid "local"
+msgstr "маҳаллӣ"
+
+msgid "remote"
+msgstr "дурдаст"
+
+msgid "remote_location_desc"
+msgstr "мисол: / public_html"
+
+msgid "create_directory"
+msgstr "сохтани Феҳрист"
+
+msgid "create_new_directory"
+msgstr "Сохтани Феҳрист нав"
+
+msgid "create_file"
+msgstr "сохтани файл"
+
+msgid "create_new_file"
+msgstr "Эҷоди файли нав"
+
+msgid "refresh_list"
+msgstr "Рӯйхати Зуддии"
+
+msgid "change"
+msgstr "иваз"
+
+msgid "report_a_bug"
+msgstr "Гузориши як хатои"
+
+msgid "suggest_a_feature"
+msgstr "Пешниҳод кардан Фарқияти"
+
+msgid "enter_password"
+msgstr "ворид кунед Рамз"
+
+msgid "enter_your_password..."
+msgstr "паролро ворид кунед ..."
+
+msgid "passphrase"
+msgstr "Гузарвожа"
+
+msgid "enter_your_passphrase..."
+msgstr "гузарвожаи худро ворид кунед ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP мизољон"
+
+msgid "faqs"
+msgstr "FAQ кард"
+
+msgid "visit_sftp_client_website"
+msgstr "Сафари sFTP сомона мизољон"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Баҳо мо дар Chrome Webstore Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Гузориши масъала ё гирифтани кӯмак"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Моро дар Facebook ҳамроҳ барои навсозиҳои"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Моро дар Twitter пайравӣ барои навсозиҳои"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Моро дар Google барои навсозиҳои"
+
+msgid "okay"
+msgstr "Хуб"
+
+msgid "cancel"
+msgstr "Бекор"
+
+msgid "close"
+msgstr "наздик"
+
+msgid "unknown_host"
+msgstr "мизбони ношинохта"
+
+msgid "okay_to_continue"
+msgstr "Хуб идома диҳед?"
+
+msgid "fingerprint"
+msgstr "изи ангушт"
+
+msgid "remember"
+msgstr "Дар хотир доред"
+
+msgid "file_permissions"
+msgstr "Иҷозатҳои File"
+
+msgid "file_permissions_desc"
+msgstr "Лутфан хусусиятҳои нав барои файли интихобшуда (ҳо) и / папка интихоб намоед (р)"
+
+msgid "read"
+msgstr "хондан"
+
+msgid "write"
+msgstr "навиштан"
+
+msgid "execute"
+msgstr "ба дор овехтан"
+
+msgid "owner"
+msgstr "молик"
+
+msgid "group"
+msgstr "гурӯҳ"
+
+msgid "public"
+msgstr "умумӣ"
+
+msgid "numeric_value"
+msgstr "арзиши ададӣ"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Номи феҳрист навро ворид ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "номи файли навро ворид кунед ..."
+
+msgid "name"
+msgstr "ном"
+
+msgid "enter_a_password"
+msgstr "гузарвожа ворид кунед"
+
+msgid "language"
+msgstr "забон"
+
+msgid "seconds"
+msgstr "сония"
+
+msgid "minutes"
+msgstr "Сурати"
+
+msgid "hour"
+msgstr "соат"
+
+msgid "hours"
+msgstr "Соатњо"
+
+msgid "day"
+msgstr "рӯз"
+
+msgid "trial_left"
+msgstr "Додгоҳи чап"
+
+msgid "register_now"
+msgstr "ба Реестри ҳоло"
+
+msgid "general"
+msgstr "генерал"
+
+msgid "security"
+msgstr "Амният"
+
+msgid "master_password"
+msgstr "гузарвожа Эй Ӯстод!"
+
+msgid "status"
+msgstr "Статуси"
+
+msgid "enabled"
+msgstr "Даргирифта"
+
+msgid "disabled"
+msgstr "маъюб"
+
+msgid "timeout"
+msgstr "Поёни вақт"
+
+msgid "save"
+msgstr "Захира"
+
+msgid "add_account"
+msgstr "Иловаи ҳисоб"
+
+msgid "support"
+msgstr "таъмин"
+
+msgid "notice_updates"
+msgstr "Диққат / Шарҳҳо"
+
+msgid "please_login"
+msgstr "Лутфан Вуруд ба"
+
+msgid "your_session_timed_out"
+msgstr "Ҷаласаи Шумо Вақти"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Бубахшед, ки Нишонае, ки шумо ворид нодуруст буд!"
+
+msgid "login"
+msgstr "Даромадан"
+
+msgid "master_password_desc"
+msgstr "Танзими ин паролро устои барои нигоҳ доштани ҳисобҳои худро бехатар."
+
+msgid "license_key"
+msgstr "калиди иҷозатнома"
+
+msgid "online"
+msgstr "онлайн"
+
+msgid "offline"
+msgstr "Ғоиб"
+
+msgid "currently_unavailable"
+msgstr "Айни дастнорас"
+
+msgid "no_message_to_display"
+msgstr "Не шодбошӣ ба намоиш"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Оё шумо хомӯш ё дар шабакаи танҳо пайвастшавӣ?"
+
+msgid "offline_notice_desc"
+msgstr "Ту ҳоло хомӯш, дар шабакаи танҳо барои пайваст кардан ё робитае нест метавон ба сервери мо соҳибмартаба"
+
+msgid "edit_file"
+msgstr "Таҳрири File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Замима"
+
+msgid "host_ip_is_required"
+msgstr "Мизбон / IP зарур аст"
+
+msgid "apply_to_all_files"
+msgstr "Apply ба ҳамаи файлҳои"
+
+msgid "activate_now"
+msgstr "Фаъол Акнун"
+
+msgid "deactivate"
+msgstr "De-Фаъолсозӣ"
+
+msgid "in_progress"
+msgstr "Дар ҷараён"
+
+msgid "complete"
+msgstr "пурра"
+
+msgid "direction"
+msgstr "равона"
+
+msgid "progress"
+msgstr "пешравӣ"
+
+msgid "permissions"
+msgstr "иҷозатҳои"
+
+msgid "owner_group"
+msgstr "Молик / Гурӯҳи"
+
+msgid "size"
+msgstr "андоза"
+
+msgid "type"
+msgstr "Намуди"
+
+msgid "modified"
+msgstr "дигаргун"
+
+msgid "trial"
+msgstr "мурофиаи"
+
+msgid "cleared"
+msgstr "тоза"
+
+msgid "error_connecting"
+msgstr "Хато Connecting"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Хато Connecting мизбони / Суроғаи IP"
+
+msgid "error_connecting_to_port"
+msgstr "Хато Пайвастшавӣ ба бандари"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Лутфан, аввал як феҳристи маҳаллӣ интихоб кунед!"
+
+msgid "go"
+msgstr "рафтан"
+
+msgid "confirm"
+msgstr "тасдиқ"
+
+msgid "delete"
+msgstr "Нобуд"
+
+msgid "rename"
+msgstr "Ивази ном-"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL Нусхаи (р) ба силули"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Лутфан таъйид кунед, ки шумо мехоҳед файли интихобшуда (ҳо) барои тоза / папкаи (р)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled аз тарафи корбаре"
+
+msgid "already_exists_overwrite"
+msgstr "аллакай мавҷуд аст, бознависӣ кунед?"
+
+msgid "dashboard"
+msgstr "панели"
+
+msgid "my_accounts"
+msgstr "Суратҳисобҳои ман"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Иродаи файл! Ҳамаи ҳисобҳои ҳамдаст дода шудааст."
+
+msgid "file_failed_please_try_again"
+msgstr "File муяссар! Лутфан, боз кӯшиш кунед."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Шумо айни замон нест, ҳисобҳои мешавад дастгирӣ кард."
+
+msgid "saved!"
+msgstr "Наҷот!"
+
+msgid "please_enter_a_password"
+msgstr "Лутфан, паролро ворид кунед!"
+
+msgid "connection_closed"
+msgstr "Пайвастшавӣ пӯшида"
+
+msgid "listing_mode_set_to"
+msgstr "Рӯйхати ҳолати танзим"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP-сервер маҳаллӣ ҳал, истифода беруна IP"
+
+msgid "login_incorrect"
+msgstr "Вуруд нодуруст"
+
+msgid "keeping_connection_alive"
+msgstr "Нигоҳ доштани пайвастшавӣ зинда"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Қодир ба навиштани, пайвасти баста"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Қодир ба хондан пайвасти баста"
+
+msgid "error_reading_file"
+msgstr "Хато файли хониш"
+
+msgid "error_writing_file"
+msgstr "Хато файл навиштани"
+
+msgid "failed_to_change_directory_to"
+msgstr "ба тағйир Феҳристи ба муяссар"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Шумо метавонед иҷозатҳо барои дуруст ба дастрасӣ ба ин феҳрист нест,"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Бадашро ба феҳристи гузашта"
+
+msgid "activate"
+msgstr "Фаъол"
+
+msgid "payment"
+msgstr "пардохти"
+
+msgid "license_key_is_required"
+msgstr "Калиди иҷозатнома зарур аст"
+
+msgid "license_activated!"
+msgstr "Литсензия фаъол!"
+
+msgid "your_license_has_been_validated"
+msgstr "иҷозатнома шумо бо validated шуд."
+
+msgid "thank_you!"
+msgstr "Сипос!"
+
+msgid "buy_now!"
+msgstr "Ҳозир харед!"
+
+msgid "buy_now"
+msgstr "Ҳозир харед"
+
+msgid "one_off_fee"
+msgstr "як яккарата"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Лутфан, навсозӣ, ба лаззат ин барнома бо нест маҳдудият"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Лутфан асосӣ иҷозатнома шумо дар поён ворид кунед"
+
+msgid "or"
+msgstr "Ё"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "ҳисоб Тоза"
+
+msgid "clear_ssh_keys"
+msgstr "Clear Тугмачаҳо SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Ҳузф ҳамаи калидҳои SSH наҷот"
+
+msgid "clear_app_settings"
+msgstr "Танзимот Барномасозони Clear"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Ҳузф намудани ҳамаи танзимоти мушаххас барнома"
+
+msgid "clear_recent_connections"
+msgstr "Clear Пайвастшавиҳо охирин"
+
+msgid "deletes_all_recent_connections"
+msgstr "Ҳузф ҳамаи пайвастҳои охир"
+
+msgid "import_type"
+msgstr "Намуди Воридоти"
+
+msgid "please_select"
+msgstr "Лутфан, интихоб кунед"
+
+msgid "import_file"
+msgstr "Воридоти File"
+
+msgid "choose_file"
+msgstr "Интихоби файл"
+
+msgid "delete_accounts"
+msgstr "Тоза кардани ҳисоб"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Ҳузф ҳамаи ҳисобҳо мавҷуда"
+
+msgid "import_now"
+msgstr "Воридоти Акнун"
+
+msgid "none"
+msgstr "Ҳеҷ"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Лутфан барнома мизољон sFTP аз нав барои ворид намудани тағйирот ба гирифтани таъсири."
+
+msgid "already_bought_the_app"
+msgstr "Аллакай харида Барномасозони?"
+
+msgid "choose"
+msgstr "интихоб кардан"
+
+msgid "deleted!"
+msgstr "Филтри барчасбҳо!"
+
+msgid "use_syncronised_browsing"
+msgstr "истифода дидани syncronised"
+
+msgid "remote_directory"
+msgstr "дурдаст Directory"
+
+msgid "rsa_key_only!"
+msgstr "Тугмаи Љанубї, танҳо!"
+
+msgid "no_key_selected"
+msgstr "Не калиди интихобшуда."
+
+msgid "ssh_key_file"
+msgstr "SSH File асосӣ"
+
+msgid "no_dir_selected"
+msgstr "Не dir интихобшуда."
+
+msgid "keep_blank_for_current_password"
+msgstr "холӣ барои гузарвожа ҷорӣ нигоҳ доред."
+
+msgid "logon_type"
+msgstr "Logon Намуди"
+
+msgid "normal"
+msgstr "оддӣ"
+
+msgid "ask_for_password"
+msgstr "Пурсед, ки барои Рамз"
+
+msgid "anonymous"
+msgstr "беимзо"
+
+msgid "account_type"
+msgstr "Намуди Ҳисоби"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Пайвастшавӣ оддӣ)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Пайвастшавӣ Амн)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Пайвастшавӣ Амн)"
+
+msgid "folder"
+msgstr "папкаи"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "Номи папкаи"
+
+msgid "parent"
+msgstr "падару модар"
+
+msgid "new_ftp_site"
+msgstr "Сайти нав FTP"
+
+msgid "new_folder"
+msgstr "Папкаи нав"
+
+msgid "clean_now"
+msgstr "тоза Акнун"
+
+msgid "host"
+msgstr "мизбон"
+
+msgid "no_accounts_added..."
+msgstr "Не ҳисоб иловашуда ..."
+
+msgid "unknown"
+msgstr "номашҳур"
+
+msgid "file_saved!"
+msgstr "Иродаи файл!"
+
+msgid "uploading_file!"
+msgstr "Парвандаи боргузоришуда!"
+
+msgid "save_failed!"
+msgstr "Сабт нашудааст!"
+
+msgid "search"
+msgstr "кофтуков"
+
+msgid "find"
+msgstr "Пайдо"
+
+msgid "replace"
+msgstr "иваз кардан"
+
+msgid "scroll_past_end"
+msgstr "Ҳаракат ба гузашта End"
+
+msgid "show_annotations"
+msgstr "Намоиши Annotations"
+
+msgid "show_gutter"
+msgstr "нишон Gutter"
+
+msgid "show_invisibles"
+msgstr "Намоиши Invisibles"
+
+msgid "show_print_margin"
+msgstr "Намоиши Чоп маржа"
+
+msgid "highlight_active_line"
+msgstr "Таъкид Хати фаъол"
+
+msgid "word_wrap"
+msgstr "Каломи табии"
+
+msgid "split_code"
+msgstr "Кодекси & nbsp;"
+
+msgid "preferences"
+msgstr "Preferences"
+
+msgid "close_all_tabs"
+msgstr "Ки ҳамаи ҷадвалбандҳоропок кунед"
+
+msgid "close_current_tab"
+msgstr "Наздик Ҷадвалбандии Ҷорӣ"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Худкор файл сарфакор бошам, вақте чоп"
+
+msgid "auto_save"
+msgstr "худкор Захира"
+
+msgid "quick_save"
+msgstr "Захира зуд"
+
+msgid "documentation"
+msgstr "Ҳуҷҷатгузорӣ"
+
+msgid "themes"
+msgstr "мавзӯъҳо"
+
+msgid "keyboard_shortcuts"
+msgstr "Миёнбурҳои Keyboard"
+
+msgid "coming_soon"
+msgstr "Ба зудӣ"
+
+msgid "empty"
+msgstr "холӣ"

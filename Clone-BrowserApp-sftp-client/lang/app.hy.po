@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "մենյու"
+
+msgid "file"
+msgstr "ֆայլ"
+
+msgid "view"
+msgstr "տեսարան"
+
+msgid "edit"
+msgstr "խմբագրել"
+
+msgid "help"
+msgstr "Օգնություն"
+
+msgid "manage_accounts"
+msgstr "կառավարել հաշիվները"
+
+msgid "import_accounts"
+msgstr "Ներմուծել հաշիվներ"
+
+msgid "export_accounts"
+msgstr "արտահանման հաշիվներ"
+
+msgid "quick_connect"
+msgstr "Quick կոնեկտ"
+
+msgid "message_log"
+msgstr "հաղորդագրություն Մուտք"
+
+msgid "local_directory"
+msgstr "Տեղական Ուղեցույց"
+
+msgid "uploads_downloads"
+msgstr "Բեռնումներ / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Մաքրել պահպանված տվյալները"
+
+msgid "edit_settings"
+msgstr "Խմբագրել Կառավարում"
+
+msgid "report_bug"
+msgstr "Հաղորդել Bug"
+
+msgid "suggest_feature"
+msgstr "Առաջարկել մի առանձնահատկություն"
+
+msgid "ask_a_question"
+msgstr "Հարց տվեք"
+
+msgid "change_log"
+msgstr "Փոխել Մուտք"
+
+msgid "about"
+msgstr "Մասին"
+
+msgid "exit"
+msgstr "Ելք"
+
+msgid "host_ip_address"
+msgstr "Host / IP հասցե"
+
+msgid "username"
+msgstr "Օգտագործողի անունը"
+
+msgid "password"
+msgstr "գաղտնաբառ"
+
+msgid "port"
+msgstr "նավահանգիստ"
+
+msgid "connect"
+msgstr "միացնել"
+
+msgid "welcome"
+msgstr "ողջույն"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Հաճախորդի բոլոր մասին պարզությամբ, այն արդեն կառուցվել է Google Chrome / Chrome OS փաթեթավորված ծրագրի ինտերֆեյսի թույլ տալով, որ ծրագիրը պետք է արագ եւ արձագանքող: Որոշ ֆունկցիոնալ ներառում է FTP Հաշվի կառավարիչ է պահել հեռավորության վրա եւ կազմ"
+
+msgid "latest_updates"
+msgstr "Վերջին թարմացումներ"
+
+msgid "server_status"
+msgstr "Server կարգավիճակը"
+
+msgid "license_server"
+msgstr "Լիցենզիա Server"
+
+msgid "sftp_support"
+msgstr "աջակցություն"
+
+msgid "notice_update"
+msgstr "Ծանուցման / Updates"
+
+msgid "website"
+msgstr "կայք"
+
+msgid "clear_all"
+msgstr "Մաքրել բոլորը"
+
+msgid "manage"
+msgstr "կառավարել"
+
+msgid "recheck"
+msgstr "Re-ստուգման"
+
+msgid "last_release"
+msgstr "Անցյալ ՕՆԼԱՅՆ"
+
+msgid "released"
+msgstr "ազատ է արձակվել"
+
+msgid "queued"
+msgstr "հերթում"
+
+msgid "failed"
+msgstr "Ձախողվեց"
+
+msgid "completed"
+msgstr "Ավարտված"
+
+msgid "settings"
+msgstr "Կառավարում"
+
+msgid "add_folder"
+msgstr "Ավելացնել Երկապանակ"
+
+msgid "add_ftp_account"
+msgstr "Ավելացնել FTP հաշիվ"
+
+msgid "file_editor"
+msgstr "Ֆայլի խմբագիր"
+
+msgid "editor_preferences"
+msgstr "խմբագիր Նախապատվություններ"
+
+msgid "your_ftp_accounts"
+msgstr "Ձեր FTP հաշիվներ"
+
+msgid "most_recent_used"
+msgstr "Most վերջերս օգտագործվել."
+
+msgid "no_connections_yet_made"
+msgstr "Ոչ միացումներ դեռեւս"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ոչ FTP հաշիվներ անվանումը"
+
+msgid "most_recent_connections"
+msgstr "Most Recent Connections"
+
+msgid "last_10_connections_made"
+msgstr "Վերջին 10 միացումներ պատրաստված"
+
+msgid "designed_developed_by"
+msgstr "Կայքի դիզայնը եւ պատրաստումը"
+
+msgid "about_info"
+msgstr "Խնդրում ենք օգտագործել SFTP հաճախորդի կայքը աջակցության համար, ոչ մի աջակցություն է տրամադրվում մեր անհատական ​​կայքերում:"
+
+msgid "local"
+msgstr "Տեղական"
+
+msgid "remote"
+msgstr "Հեռավոր"
+
+msgid "remote_location_desc"
+msgstr "օրինակ / public_html"
+
+msgid "create_directory"
+msgstr "Ստեղծել ՏԵՂԵԿԱՏՈՒ"
+
+msgid "create_new_directory"
+msgstr "Ստեղծել նոր ցուցակում"
+
+msgid "create_file"
+msgstr "Ստեղծել ֆայլ"
+
+msgid "create_new_file"
+msgstr "Ստեղծել նոր ֆայլ"
+
+msgid "refresh_list"
+msgstr "Թարմացնել ցուցակ"
+
+msgid "change"
+msgstr "փոփոխություն"
+
+msgid "report_a_bug"
+msgstr "Հաղորդել Bug"
+
+msgid "suggest_a_feature"
+msgstr "Առաջարկել մի առանձնահատկություն"
+
+msgid "enter_password"
+msgstr "Մուտքագրեք գաղտնաբառը"
+
+msgid "enter_your_password..."
+msgstr "Մուտքագրեք ձեր գաղտնաբառը ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Մուտքագրեք Անցաբառը ..."
+
+msgid "email_sftp_client"
+msgstr "Փոստի SFTP Հաճախորդի"
+
+msgid "faqs"
+msgstr "FAQ է"
+
+msgid "visit_sftp_client_website"
+msgstr "Այցելել SFTP Հաճախորդի կայք"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Գնահատեք մեզ Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Հաղորդել է խնդրի, կամ ստանալ օգնություն"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Միացեք մեզ Facebook- ում թարմացման"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Հետեւեք մեզ Twitter- ում թարմացման"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Մեզ Google- ի թարմացումներ"
+
+msgid "okay"
+msgstr "Լավ"
+
+msgid "cancel"
+msgstr "վերացնել"
+
+msgid "close"
+msgstr "փակել"
+
+msgid "unknown_host"
+msgstr "Անհայտ տեր"
+
+msgid "okay_to_continue"
+msgstr "Okay է շարունակել."
+
+msgid "fingerprint"
+msgstr "մատնադրոշմ"
+
+msgid "remember"
+msgstr "Հիշել"
+
+msgid "file_permissions"
+msgstr "ֆայլի"
+
+msgid "file_permissions_desc"
+msgstr "Խնդրում ենք ընտրել նոր հատկանիշներ համար ընտրված ֆայլ (ներ) / թղթապանակի (ներ)"
+
+msgid "read"
+msgstr "կարդալ"
+
+msgid "write"
+msgstr "գրել"
+
+msgid "execute"
+msgstr "կատարել"
+
+msgid "owner"
+msgstr "սեփականատեր"
+
+msgid "group"
+msgstr "խումբ"
+
+msgid "public"
+msgstr "Հանրային"
+
+msgid "numeric_value"
+msgstr "թվային արժեք"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Մուտքագրեք անունը նոր դիրեկտորիայի ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Մուտքագրեք անունը նոր ֆայլ ..."
+
+msgid "name"
+msgstr "անուն"
+
+msgid "enter_a_password"
+msgstr "Մուտքագրեք գաղտնաբառը"
+
+msgid "language"
+msgstr "Լեզու"
+
+msgid "seconds"
+msgstr "վայրկյան"
+
+msgid "minutes"
+msgstr "արձանագրություն"
+
+msgid "hour"
+msgstr "ժամ"
+
+msgid "hours"
+msgstr "Ժամ"
+
+msgid "day"
+msgstr "օր"
+
+msgid "trial_left"
+msgstr "Trial Ձախ"
+
+msgid "register_now"
+msgstr "Գրանցվել հիմա"
+
+msgid "general"
+msgstr "ընդհանուր"
+
+msgid "security"
+msgstr "անվտանգություն"
+
+msgid "master_password"
+msgstr "Վարպետ Գաղտնաբառ"
+
+msgid "status"
+msgstr "Ստատուս"
+
+msgid "enabled"
+msgstr "Միացված"
+
+msgid "disabled"
+msgstr "Անաշխատունակ"
+
+msgid "timeout"
+msgstr "Ընդմիջում"
+
+msgid "save"
+msgstr "Պահպանել"
+
+msgid "add_account"
+msgstr "Ավելացնել հաշիվ"
+
+msgid "support"
+msgstr "աջակցություն"
+
+msgid "notice_updates"
+msgstr "Ծանուցման / Updates"
+
+msgid "please_login"
+msgstr "Խնդրում ենք Մուտք"
+
+msgid "your_session_timed_out"
+msgstr "Ձեր նիստ Ժամանակավրվծ Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Ներեցեք եք գաղտնաբառը մտել էր սխալ:"
+
+msgid "login"
+msgstr "լոգին"
+
+msgid "master_password_desc"
+msgstr "Սահմանել այս վարպետության գաղտնաբառը պահել ձեր հաշիվները անվտանգ."
+
+msgid "license_key"
+msgstr "Լիցենզիայի բանալի"
+
+msgid "online"
+msgstr "առցանց"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "այժմ անհասանելի"
+
+msgid "no_message_to_display"
+msgstr "Ոչ ուղերձ է դրսեւորել"
+
+msgid "offline_notice_title"
+msgstr "Անհասանելի - Դուք չէ կամ մի ցանց, միայն կապի."
+
+msgid "offline_notice_desc"
+msgstr "Դուք այժմ չէ, մի ցանցի միակ կապը, կամ ոչ մի կապ կարող է ստեղծվել մեր սերվերի"
+
+msgid "edit_file"
+msgstr "Խմբագրել Պատկեր"
+
+msgid "download"
+msgstr "Բեռնել"
+
+msgid "upload"
+msgstr "վերբեռնում"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP պահանջվում"
+
+msgid "apply_to_all_files"
+msgstr "Դիմել է բոլոր ֆայլերը"
+
+msgid "activate_now"
+msgstr "Ակտիվացնել Now"
+
+msgid "deactivate"
+msgstr "De-Ակտիվացնել"
+
+msgid "in_progress"
+msgstr "Ընթացքի մեջ է"
+
+msgid "complete"
+msgstr "ամբողջական"
+
+msgid "direction"
+msgstr "ուղղություն"
+
+msgid "progress"
+msgstr "առաջխաղացում"
+
+msgid "permissions"
+msgstr "թույլտվությունները"
+
+msgid "owner_group"
+msgstr "Owner / Group"
+
+msgid "size"
+msgstr "չափ"
+
+msgid "type"
+msgstr "Տիպ"
+
+msgid "modified"
+msgstr "Փոփոխված"
+
+msgid "trial"
+msgstr "փորձնական"
+
+msgid "cleared"
+msgstr "դիտել են"
+
+msgid "error_connecting"
+msgstr "Սխալ Connecting"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Սխալ Միանալով հյուրընկալել / IP հասցեն"
+
+msgid "error_connecting_to_port"
+msgstr "Սխալ Միացում նավահանգիստ"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Խնդրում ենք ընտրել տեղական տեղեկատու առաջինը!"
+
+msgid "go"
+msgstr "գնալ"
+
+msgid "confirm"
+msgstr "հաստատել"
+
+msgid "delete"
+msgstr "ջնջել"
+
+msgid "rename"
+msgstr "վերանվանել"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (ներ) Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Խնդրում ենք հաստատել, որ դուք ցանկանում եք ջնջել ընտրված ֆայլը (ներ) / թղթապանակ (ներ)"
+
+msgid "cancelled_by_user"
+msgstr "ԸՆԴՀԱՏՎԵԼ Է մասին"
+
+msgid "already_exists_overwrite"
+msgstr "արդեն գոյություն ունի, վերագրանցել."
+
+msgid "dashboard"
+msgstr "ղեկավարման վահան"
+
+msgid "my_accounts"
+msgstr "Իմ հաշիվներ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Պատկեր պահպանված է! Բոլոր հաշիվները, որոնք ապահովված են:"
+
+msgid "file_failed_please_try_again"
+msgstr "Ձախողվեց: Խնդրում եմ կրկին փորձեք."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Դուք այժմ հաշիվ չունեն պետք է ապահովված են."
+
+msgid "saved!"
+msgstr "Պահպանված է!"
+
+msgid "please_enter_a_password"
+msgstr "Խնդրում ենք մուտքագրել գաղտնաբառս"
+
+msgid "connection_closed"
+msgstr "Connection փակվել է"
+
+msgid "listing_mode_set_to"
+msgstr "Արտադրանքի ռեժիմ սահմանվել է"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Տեղական սերվեր IP լուծվել, օգտագործելով արտաքին IP"
+
+msgid "login_incorrect"
+msgstr "Մուտք կոռեկտ"
+
+msgid "keeping_connection_alive"
+msgstr "Պահելը կապը կենդանի"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Անհնար է գրել, տվյալների կապը փակ է"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Անհնար է կարդալ տվյալների կապը փակ է"
+
+msgid "error_reading_file"
+msgstr "Սխալ ընթերցում ֆայլի"
+
+msgid "error_writing_file"
+msgstr "Սխալ գրելու ֆայլի"
+
+msgid "failed_to_change_directory_to"
+msgstr "Չհաջողվեց փոխել տեղեկատու է"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Դուք չեք կարող ունենալ ճիշտ թույլատվություններ այս թղթապանակը"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Վերադառնալով վերադառնալ նախորդ դիրեկտորիայի"
+
+msgid "activate"
+msgstr "ակտիվացնել"
+
+msgid "payment"
+msgstr "վճարում"
+
+msgid "license_key_is_required"
+msgstr "Լիցենզիա բանալին պահանջվում"
+
+msgid "license_activated!"
+msgstr "Լիցենզիա ակտիվացված"
+
+msgid "your_license_has_been_validated"
+msgstr "Ձեր լիցենզիան արդեն վավերացվել:"
+
+msgid "thank_you!"
+msgstr "Շնորհակալություն!"
+
+msgid "buy_now!"
+msgstr "Գնիր հիմա!"
+
+msgid "buy_now"
+msgstr "Գնիր հիմա"
+
+msgid "one_off_fee"
+msgstr "մեկը դուրս վճար"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Խնդրում ենք բարելավել է վայելել այս հավելվածը առանց սահմանափակումների"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Խնդրում ենք մուտքագրել ձեր լիցենզիա բանալին ստորեւ"
+
+msgid "or"
+msgstr "ԿԱՄ"
+
+msgid "loading..."
+msgstr "Բեռնվում է ..."
+
+msgid "clear_accounts"
+msgstr "Մաքրել հաշիվներ"
+
+msgid "clear_ssh_keys"
+msgstr "Մաքրել SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes բոլոր պահպանված SSH բանալիները"
+
+msgid "clear_app_settings"
+msgstr "Մաքրել Ծր Կառավարում"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes բոլոր հավելվածների կոնկրետ պարամետրեր"
+
+msgid "clear_recent_connections"
+msgstr "Մաքրել Վերջին Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes բոլոր վերջին կապեր"
+
+msgid "import_type"
+msgstr "Ներմուծում տեսակը"
+
+msgid "please_select"
+msgstr "Խնդրում ենք ընտրել"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Ընտրել ֆայլը"
+
+msgid "delete_accounts"
+msgstr "ջնջել հաշիվներ"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes բոլոր առկա հաշիվները"
+
+msgid "import_now"
+msgstr "Ներմուծում Now"
+
+msgid "none"
+msgstr "ոչ ոք"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Խնդրում ենք վերագործարկել SFTP հաճախորդի հավելվածը փոփոխությունները ուժի մեջ է մտնում:"
+
+msgid "already_bought_the_app"
+msgstr "Արդեն գնել է App."
+
+msgid "choose"
+msgstr "ընտրել"
+
+msgid "deleted!"
+msgstr "Ջնջված!"
+
+msgid "use_syncronised_browsing"
+msgstr "օգտագործել syncronised թերթելիս"
+
+msgid "remote_directory"
+msgstr "Remote Ուղեցույց"
+
+msgid "rsa_key_only!"
+msgstr "RSA բանալին միայն"
+
+msgid "no_key_selected"
+msgstr "Ոչ բանալին ընտրված."
+
+msgid "ssh_key_file"
+msgstr "SSH Key Պատկեր"
+
+msgid "no_dir_selected"
+msgstr "Ոչ ռեժ ընտրված."
+
+msgid "keep_blank_for_current_password"
+msgstr "Պահպանեք դատարկ ընթացիկ գաղտնաբառ."
+
+msgid "logon_type"
+msgstr "մուտք Type"
+
+msgid "normal"
+msgstr "սովորական"
+
+msgid "ask_for_password"
+msgstr "Հարցրեք Գաղտնաբառ"
+
+msgid "anonymous"
+msgstr "Անանուն"
+
+msgid "account_type"
+msgstr "Հաշվի տեսակը"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Նորմալ Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "թղթապանակ"
+
+msgid "advanced"
+msgstr "առաջադեմ"
+
+msgid "folder_name"
+msgstr "Թղթապանակ Անունը"
+
+msgid "parent"
+msgstr "ծնող"
+
+msgid "new_ftp_site"
+msgstr "Նոր FTP Site"
+
+msgid "new_folder"
+msgstr "Նոր թղթապանակ"
+
+msgid "clean_now"
+msgstr "մաքուր Now"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "Ոչ հաշիվներ Ավելացված ..."
+
+msgid "unknown"
+msgstr "անհայտ"
+
+msgid "file_saved!"
+msgstr "Պատկեր պահպանված է!"
+
+msgid "uploading_file!"
+msgstr "Բեռնված ֆայլի!"
+
+msgid "save_failed!"
+msgstr "Save ձախողվեց."
+
+msgid "search"
+msgstr "որոնում"
+
+msgid "find"
+msgstr "գտնել"
+
+msgid "replace"
+msgstr "փոխարինել"
+
+msgid "scroll_past_end"
+msgstr "Ոլորել Անցյալ End"
+
+msgid "show_annotations"
+msgstr "Ցույց տալ անոտացիաներ"
+
+msgid "show_gutter"
+msgstr "Ցույց տալ Ջրահեռացման"
+
+msgid "show_invisibles"
+msgstr "Ցույց տալ Անտեսանելիները"
+
+msgid "show_print_margin"
+msgstr "Ցույց տալ Տպել Շուրթ"
+
+msgid "highlight_active_line"
+msgstr "Կարեւորում Ակտիվ Line"
+
+msgid "word_wrap"
+msgstr "Բառի փաթեթավորեք"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "նախապատվություններ"
+
+msgid "close_all_tabs"
+msgstr "Փակել բոլոր ներդիրները"
+
+msgid "close_current_tab"
+msgstr "Փակել Ընթացիկ Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Ավտո պահպանել ֆայլը, երբ ես մուտքագրել"
+
+msgid "auto_save"
+msgstr "Auto Պահպանել"
+
+msgid "quick_save"
+msgstr "Արագ Պահպանել"
+
+msgid "documentation"
+msgstr "փաստաթղթավորում"
+
+msgid "themes"
+msgstr "Թեմաներ"
+
+msgid "keyboard_shortcuts"
+msgstr "ստեղնաշարի դյուրանցումները"
+
+msgid "coming_soon"
+msgstr "Շուտով"
+
+msgid "empty"
+msgstr "դատարկ"

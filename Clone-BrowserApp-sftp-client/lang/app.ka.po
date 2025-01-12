@@ -1,0 +1,776 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "მენიუ"
+
+msgid "file"
+msgstr "ფაილი"
+
+msgid "view"
+msgstr "კალენდარი"
+
+msgid "edit"
+msgstr "რედაქტირება"
+
+msgid "help"
+msgstr "დახმარება"
+
+msgid "manage_accounts"
+msgstr "ანგარიშების მართვა"
+
+msgid "import_accounts"
+msgstr "იმპორტი"
+
+msgid "export_accounts"
+msgstr "ექსპორტის ანგარიშები"
+
+msgid "quick_connect"
+msgstr "სწრაფი დაკავშირება"
+
+msgid "message_log"
+msgstr "შეტყობინება შესვლა"
+
+msgid "local_directory"
+msgstr "ადგილობრივი დირექტორია"
+
+msgid "uploads_downloads"
+msgstr "ატვირთვები / ჩამოტვირთვების"
+
+msgid "clear_saved_data"
+msgstr "წმინდა შენახული მონაცემები"
+
+msgid "edit_settings"
+msgstr "პარამეტრების რედაქტირება"
+
+msgid "report_bug"
+msgstr "შეცდომის"
+
+msgid "suggest_feature"
+msgstr "მოგვაწოდეთ მხატვრული"
+
+msgid "ask_a_question"
+msgstr "დასვი კითხვა"
+
+msgid "change_log"
+msgstr "შეცვლა შესვლა"
+
+msgid "about"
+msgstr "მომხმარებლის"
+
+msgid "exit"
+msgstr "Exit"
+
+msgid "host_ip_address"
+msgstr "მასპინძელი / IP მისამართი"
+
+msgid "username"
+msgstr "მომხმარებლის სახელი"
+
+msgid "password"
+msgstr "პაროლი"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "დაკავშირება"
+
+msgid "welcome"
+msgstr "კეთილი"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP კლიენტი არის ყველაფერი სიმარტივე, ეს უკვე აგებული Google Chrome / Chrome OS შეფუთული პროგრამის ინტერფეისი, რომელიც საშუალებას შეეძლება სწრაფი და თანამგრძნობი. ზოგიერთი ფუნქციონალური მოიცავს FTP ანგარიშის მენეჯერი შესანახად მოშორებით და ორგანიზება"
+
+msgid "latest_updates"
+msgstr "განახლებები"
+
+msgid "server_status"
+msgstr "სერვერის სტატუსი"
+
+msgid "license_server"
+msgstr "ლიცენზიის Server"
+
+msgid "sftp_support"
+msgstr "მხარდაჭერა"
+
+msgid "notice_update"
+msgstr "განაცხადის / Updates"
+
+msgid "website"
+msgstr "საიტი"
+
+msgid "clear_all"
+msgstr "ყველაფრის გასუფთავება"
+
+msgid "manage"
+msgstr "მართვა"
+
+msgid "recheck"
+msgstr "Re-გამშვები"
+
+msgid "last_release"
+msgstr "ბოლო გამოსვლის"
+
+msgid "released"
+msgstr "გაათავისუფლეს"
+
+msgid "queued"
+msgstr "რიგშია"
+
+msgid "failed"
+msgstr "ვერ"
+
+msgid "completed"
+msgstr "დასრულებული"
+
+msgid "settings"
+msgstr "პარამეტრები"
+
+msgid "add_folder"
+msgstr "დაამატე ფოლდერი"
+
+msgid "add_ftp_account"
+msgstr "სანიშნეს FTP ანგარიში"
+
+msgid "file_editor"
+msgstr "ფაილი რედაქტორი"
+
+msgid "editor_preferences"
+msgstr "რედაქტორი პრიორიტეტები"
+
+msgid "your_ftp_accounts"
+msgstr "თქვენი FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "ბოლო დროს გამოყენებული."
+
+msgid "no_connections_yet_made"
+msgstr "არ კავშირების გაუკეთებია"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "არარის FTP ანგარიშები დაემატა კიდევ"
+
+msgid "most_recent_connections"
+msgstr "უახლესი კავშირი"
+
+msgid "last_10_connections_made"
+msgstr "ბოლო 10 კავშირები გააკეთა"
+
+msgid "designed_developed_by"
+msgstr "დიზაინი & დამზადებულია"
+
+msgid "about_info"
+msgstr "გთხოვთ გამოიყენოთ SFTP კლიენტი ვებ მხარდაჭერა, მხარდაჭერა არ ხორციელდება ჩვენი ინდივიდუალური საიტებზე."
+
+msgid "local"
+msgstr "ადგილობრივი"
+
+msgid "remote"
+msgstr "დისტანციური"
+
+msgid "remote_location_desc"
+msgstr "მაგალითად / public_html"
+
+msgid "create_directory"
+msgstr "შექმნა დირექტორია"
+
+msgid "create_new_directory"
+msgstr "შექმნა ახალი დირექტორია"
+
+msgid "create_file"
+msgstr "ფაილი"
+
+msgid "create_new_file"
+msgstr "შექმნა ახალი ფაილი"
+
+msgid "refresh_list"
+msgstr "სიის განახლება"
+
+msgid "change"
+msgstr "შეცვლა"
+
+msgid "report_a_bug"
+msgstr "შეცდომის"
+
+msgid "suggest_a_feature"
+msgstr "მოგვაწოდეთ მხატვრული"
+
+msgid "enter_password"
+msgstr "შეიყვანეთ პაროლი"
+
+msgid "enter_your_password..."
+msgstr "შეიყვანეთ თქვენი პაროლი..."
+
+msgid "passphrase"
+msgstr "კოდური ფრაზა"
+
+msgid "enter_your_passphrase..."
+msgstr "შეიყვანეთ თქვენი პაროლი ..."
+
+msgid "email_sftp_client"
+msgstr "ელ-ფოსტის გაგზავნა SFTP კლიენტი"
+
+msgid "faqs"
+msgstr "ხშირად დასმული კითხვები"
+
+msgid "visit_sftp_client_website"
+msgstr "ვიზიტი SFTP კლიენტი საიტი"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "შეფასება ჩვენთან Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "საკითხის ან მიიღოთ დახმარება"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "შემოგვიერთდით Facebook- ზე სიახლეებზე"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow us on Twitter განახლებები"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Us on Google სიახლეებზე"
+
+msgid "okay"
+msgstr "კარგი"
+
+msgid "cancel"
+msgstr "გაუქმება"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "უცნობი მასპინძელი"
+
+msgid "okay_to_continue"
+msgstr "Okay გაგრძელება?"
+
+msgid "fingerprint"
+msgstr "თითის ანაბეჭდის"
+
+msgid "remember"
+msgstr "დამახსოვრება"
+
+msgid "file_permissions"
+msgstr "ფაილის უფლებები"
+
+msgid "file_permissions_desc"
+msgstr "გთხოვთ აირჩიოთ ახალი ატრიბუტები შერჩეული ფაილი (s) / ფოლდერი (s)"
+
+msgid "read"
+msgstr "დაწვრილებით"
+
+msgid "write"
+msgstr "დაწერეთ"
+
+msgid "execute"
+msgstr "შეასრულოს"
+
+msgid "owner"
+msgstr "Owner"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "საჯარო"
+
+msgid "numeric_value"
+msgstr "რიცხვითი მნიშვნელობა"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "შეიყვანეთ სახელი ახალი დირექტორია ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "შეიყვანეთ სახელი ახალი ფაილი ..."
+
+msgid "name"
+msgstr "სახელი"
+
+msgid "enter_a_password"
+msgstr "შეიყვანეთ პაროლი"
+
+msgid "language"
+msgstr "ენა"
+
+msgid "seconds"
+msgstr "Seconds"
+
+msgid "minutes"
+msgstr "Minutes"
+
+msgid "hour"
+msgstr "საათი"
+
+msgid "hours"
+msgstr "საათები"
+
+msgid "day"
+msgstr "დღეს"
+
+msgid "trial_left"
+msgstr "Trial მარცხენა"
+
+msgid "register_now"
+msgstr "დარეგისტრირდით ახლა"
+
+msgid "general"
+msgstr "ზოგადი"
+
+msgid "security"
+msgstr "უსაფრთხოების"
+
+msgid "master_password"
+msgstr "სამაგისტრო პაროლი"
+
+msgid "status"
+msgstr "სტატუსი"
+
+msgid "enabled"
+msgstr "ჩართულია"
+
+msgid "disabled"
+msgstr "შეზღუდული შესაძლებლობების მქონე"
+
+msgid "timeout"
+msgstr "დროის ამოწურვა"
+
+msgid "save"
+msgstr "გადარჩენა"
+
+msgid "add_account"
+msgstr "ანგარიშის დამატება"
+
+msgid "support"
+msgstr "მხარდაჭერა"
+
+msgid "notice_updates"
+msgstr "განაცხადის / Updates"
+
+msgid "please_login"
+msgstr "გთხოვთ შესვლა"
+
+msgid "your_session_timed_out"
+msgstr "თქვენი სესია ვადა ამოიწურა"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "უკაცრავად, თქვენ მიერ შეყვანილი პაროლი არასწორია!"
+
+msgid "login"
+msgstr "შესვლა"
+
+msgid "master_password_desc"
+msgstr "უცნობია ამ საძიებო დაგავიწყდათ თქვენი ანგარიშების უსაფრთხო."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "შემოსული არ არის"
+
+msgid "currently_unavailable"
+msgstr "ამჟამად მიუწვდომელია"
+
+msgid "no_message_to_display"
+msgstr "არარის გაგზავნა ცარიელია"
+
+msgid "offline_notice_title"
+msgstr "მიუწვდომელი - ხართ თუ offline ან ქსელის მხოლოდ დაკავშირებით?"
+
+msgid "offline_notice_desc"
+msgstr "თქვენ ხართ გაკეთებული ფორუმზე, ქსელში მხოლოდ კავშირი, ან კავშირი არ შეიძლება დაწესდეს ჩვენს სერვერზე"
+
+msgid "edit_file"
+msgstr "რედაქტირება ფაილი"
+
+msgid "download"
+msgstr "ჩამოტვირთვა"
+
+msgid "upload"
+msgstr "ატვირთვა"
+
+msgid "host_ip_is_required"
+msgstr "მასპინძელი / IP არის საჭირო"
+
+msgid "apply_to_all_files"
+msgstr "ვრცელდება ყველა ფაილი"
+
+msgid "activate_now"
+msgstr "გააქტიურება ახლა"
+
+msgid "deactivate"
+msgstr "დე გააქტიურება"
+
+msgid "in_progress"
+msgstr "პროგრესირებს"
+
+msgid "complete"
+msgstr "სრული"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "პროგრესი"
+
+msgid "permissions"
+msgstr "ნებართვები"
+
+msgid "owner_group"
+msgstr "მფლობელი / ჯგუფი"
+
+msgid "size"
+msgstr "ზომა"
+
+msgid "type"
+msgstr "ტიპი"
+
+msgid "modified"
+msgstr "განახლდა"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "განბაჟებული"
+
+msgid "error_connecting"
+msgstr "დაკავშირების შეცდომა"
+
+msgid "error_connecting_to_host_ip"
+msgstr "შეცდომა დამაკავშირებელი უმასპინძლებს / IP მისამართი"
+
+msgid "error_connecting_to_port"
+msgstr "დაკავშირების შეცდომა პორტი"
+
+msgid "please_select_a_local_directory_first"
+msgstr "გთხოვთ აირჩიოთ ადგილობრივი დირექტორია პირველი!"
+
+msgid "go"
+msgstr "ტურიზმი"
+
+msgid "confirm"
+msgstr "დაადასტურეთ"
+
+msgid "delete"
+msgstr "წაშლა"
+
+msgid "rename"
+msgstr "სახელის შეცვლა"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (ებ) ბუფერში"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "გთხოვთ დაადასტუროთ გსურთ წაშალოთ შერჩეული ფაილი (s) / ფოლდერი (s)"
+
+msgid "cancelled_by_user"
+msgstr "გაუქმებულია შესახებ"
+
+msgid "already_exists_overwrite"
+msgstr "უკვე არსებობს, გადაწერა?"
+
+msgid "dashboard"
+msgstr "დაფა"
+
+msgid "my_accounts"
+msgstr "ჩემი ანგარიშები"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ფაილი შენახული! ყველა ანგარიში არ იყო გამყარებული."
+
+msgid "file_failed_please_try_again"
+msgstr "ფაილი ვერ! გთხოვთ კიდევ სცადეთ."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "თქვენ არ გაქვთ ანგარიშები უნდა იყოს გამყარებული."
+
+msgid "saved!"
+msgstr "შენახულია!"
+
+msgid "please_enter_a_password"
+msgstr "გთხოვთ შეიყვანოთ პაროლი?"
+
+msgid "connection_closed"
+msgstr "კავშირი დაიხურა"
+
+msgid "listing_mode_set_to"
+msgstr "ჩამონათვალი რეჟიმში მითითებული"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "ლოკალური სერვერზე IP გადაწყდება, გარე IP"
+
+msgid "login_incorrect"
+msgstr "შესვლა არასწორია"
+
+msgid "keeping_connection_alive"
+msgstr "შენახვა კავშირი ცოცხალია"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "ვერ ვწერ, მონაცემთა კავშირი დაიხურა"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ვერ წაიკითხა მონაცემთა კავშირის დახურულია"
+
+msgid "error_reading_file"
+msgstr "შეცდომა ფაილის"
+
+msgid "error_writing_file"
+msgstr "ფაილის ჩაწერის შეცდომა"
+
+msgid "failed_to_change_directory_to"
+msgstr "ვერ შეცვლის დირექტორია"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "თქვენ არ გაქვთ სწორი წვდომის ეს დირექტორია"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "უკან დაბრუნება თავში წინა დირექტორია"
+
+msgid "activate"
+msgstr "გააქტიურება"
+
+msgid "payment"
+msgstr "გადახდა"
+
+msgid "license_key_is_required"
+msgstr "ლიცენზიის გასაღები საჭირო"
+
+msgid "license_activated!"
+msgstr "ლიცენზიის გააქტიურებული!"
+
+msgid "your_license_has_been_validated"
+msgstr "თქვენი ლიცენზია უკვე დამტკიცდა."
+
+msgid "thank_you!"
+msgstr "გმადლობთ!"
+
+msgid "buy_now!"
+msgstr "იყიდე ეხლა!"
+
+msgid "buy_now"
+msgstr "იყიდე ეხლა"
+
+msgid "one_off_fee"
+msgstr "ერთი off მოსაკრებელი"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "გთხოვთ, გადახვიდეთ ისარგებლოს ამ app არ შეზღუდვები"
+
+msgid "please_enter_your_license_key_below"
+msgstr "გთხოვთ შეიყვანოთ თქვენი License Key ქვემოთ"
+
+msgid "or"
+msgstr "ან"
+
+msgid "loading..."
+msgstr "იტვირთება..."
+
+msgid "clear_accounts"
+msgstr "წმინდა ანგარიშები"
+
+msgid "clear_ssh_keys"
+msgstr "წმინდა SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "წაშლის ყველა გადაარჩინა SSH გასაღებები"
+
+msgid "clear_app_settings"
+msgstr "წმინდა App პარამეტრები"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "წაშლის app კონკრეტული პარამეტრების"
+
+msgid "clear_recent_connections"
+msgstr "წმინდა ბოლო კავშირი"
+
+msgid "deletes_all_recent_connections"
+msgstr "წაშლის ყველა ბოლო კავშირები"
+
+msgid "import_type"
+msgstr "იმპორტი ტიპი"
+
+msgid "please_select"
+msgstr "აირჩიეთ"
+
+msgid "import_file"
+msgstr "იმპორტი ფაილი"
+
+msgid "choose_file"
+msgstr "აირჩიეთ ფაილი"
+
+msgid "delete_accounts"
+msgstr "წაშლა ანგარიშები"
+
+msgid "deletes_all_existing_accounts"
+msgstr "წაშლის ყველა არსებული ანგარიშები"
+
+msgid "import_now"
+msgstr "იმპორტი ახლა"
+
+msgid "none"
+msgstr "არცერთი"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "გადატვირთეთ SFTP კლიენტი app რომ ცვლილებები ძალაში."
+
+msgid "already_bought_the_app"
+msgstr "უკვე შეიძინა აპლიკაცია?"
+
+msgid "choose"
+msgstr "არჩევა"
+
+msgid "deleted!"
+msgstr "წაშლილია!"
+
+msgid "use_syncronised_browsing"
+msgstr "გამოყენება syncronised გვერდების"
+
+msgid "remote_directory"
+msgstr "დისტანციური დირექტორია"
+
+msgid "rsa_key_only!"
+msgstr "RSA გასაღები მხოლოდ!"
+
+msgid "no_key_selected"
+msgstr "არარის გასაღები შერჩეული."
+
+msgid "ssh_key_file"
+msgstr "SSH გასაღების ფაილი"
+
+msgid "no_dir_selected"
+msgstr "არარის რეჟ შერჩეული."
+
+msgid "keep_blank_for_current_password"
+msgstr "შეინახეთ ცარიელი მოქმედი პაროლი."
+
+msgid "logon_type"
+msgstr "ავტორიზაცია ტიპი"
+
+msgid "normal"
+msgstr "ნორმალური"
+
+msgid "ask_for_password"
+msgstr "მოითხოვე პაროლი"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "ანგარიშის ტიპი"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (ნორმალური კავშირი)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (უსაფრთხო კავშირი)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (უსაფრთხო კავშირი)"
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "advanced"
+msgstr "მოწინავე"
+
+msgid "folder_name"
+msgstr "საქაღალდის სახელი"
+
+msgid "parent"
+msgstr "მშობელი"
+
+msgid "new_ftp_site"
+msgstr "New FTP საიტის"
+
+msgid "new_folder"
+msgstr "ახალი საქაღალდე"
+
+msgid "clean_now"
+msgstr "სუფთა ახლა"
+
+msgid "host"
+msgstr "მასპინძელი"
+
+msgid "no_accounts_added..."
+msgstr "ანგარიშები არ დაემატა ..."
+
+msgid "unknown"
+msgstr "უცნობია"
+
+msgid "file_saved!"
+msgstr "ფაილი შენახული!"
+
+msgid "uploading_file!"
+msgstr "ფაილის ატვირთვა!"
+
+msgid "save_failed!"
+msgstr "შენახვა ვერ მოხერხდა!"
+
+msgid "search"
+msgstr "ძებნა"
+
+msgid "find"
+msgstr "ძებნა"
+
+msgid "replace"
+msgstr "ჩანაცვლება"
+
+msgid "scroll_past_end"
+msgstr "Scroll Past End"
+
+msgid "show_annotations"
+msgstr "შოუ ანოტაციები"
+
+msgid "show_gutter"
+msgstr "Show Gutter"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "მონიშნეთ შემოვიდა ხაზი"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split კოდი"
+
+msgid "preferences"
+msgstr "პრიორიტეტები"
+
+msgid "close_all_tabs"
+msgstr "Close ყველა ჩანართის"
+
+msgid "close_current_tab"
+msgstr "Close აქტუალური Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "ავტომატური შენახვა ფაილი, როდესაც მე აკრიფოთ"
+
+msgid "auto_save"
+msgstr "ავტომატური შენახვა"
+
+msgid "quick_save"
+msgstr "სწრაფი Save"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menú"
+
+msgid "file"
+msgstr "Dossier"
+
+msgid "view"
+msgstr "vista"
+
+msgid "edit"
+msgstr "editar"
+
+msgid "help"
+msgstr "ajudar"
+
+msgid "manage_accounts"
+msgstr "administrar comptes"
+
+msgid "import_accounts"
+msgstr "Importa comptes"
+
+msgid "export_accounts"
+msgstr "Comptes d'exportació"
+
+msgid "quick_connect"
+msgstr "connexió ràpida"
+
+msgid "message_log"
+msgstr "Registre de missatges"
+
+msgid "local_directory"
+msgstr "directori local"
+
+msgid "uploads_downloads"
+msgstr "Càrregues / Descàrregues"
+
+msgid "clear_saved_data"
+msgstr "Esborrar les dades guardades"
+
+msgid "edit_settings"
+msgstr "Edita la configuració de"
+
+msgid "report_bug"
+msgstr "Avisa d'un error"
+
+msgid "suggest_feature"
+msgstr "Suggerir una funció"
+
+msgid "ask_a_question"
+msgstr "Fer una pregunta"
+
+msgid "change_log"
+msgstr "canvi de registre"
+
+msgid "about"
+msgstr "sobre"
+
+msgid "exit"
+msgstr "sortida"
+
+msgid "host_ip_address"
+msgstr "Direcció d'amfitrió / IP"
+
+msgid "username"
+msgstr "Nom d'usuari"
+
+msgid "password"
+msgstr "contrasenya"
+
+msgid "port"
+msgstr "port"
+
+msgid "connect"
+msgstr "connectar"
+
+msgid "welcome"
+msgstr "Benvinguda"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP és tot sobre la simplicitat, s'ha incorporat a la interfície aplicació empaquetada Google Chrome / Chrome US permetent que l'aplicació sigui ràpida i sensible. Algunes de les funcionalitats inclou un gestor de comptes d'FTP, per guardar i organit"
+
+msgid "latest_updates"
+msgstr "El més recent"
+
+msgid "server_status"
+msgstr "Estat del servidor"
+
+msgid "license_server"
+msgstr "servidor de llicències"
+
+msgid "sftp_support"
+msgstr "suport"
+
+msgid "notice_update"
+msgstr "Avís / Actualitzacions"
+
+msgid "website"
+msgstr "lloc web"
+
+msgid "clear_all"
+msgstr "esborrar tot"
+
+msgid "manage"
+msgstr "gestionar"
+
+msgid "recheck"
+msgstr "Torneu a verificar"
+
+msgid "last_release"
+msgstr "últim llançament"
+
+msgid "released"
+msgstr "publicat"
+
+msgid "queued"
+msgstr "en cua"
+
+msgid "failed"
+msgstr "Fracassat"
+
+msgid "completed"
+msgstr "acabat"
+
+msgid "settings"
+msgstr "ajustos"
+
+msgid "add_folder"
+msgstr "Afegeix carpeta"
+
+msgid "add_ftp_account"
+msgstr "Afegir compte FTP"
+
+msgid "file_editor"
+msgstr "Editor d'arxius"
+
+msgid "editor_preferences"
+msgstr "preferències Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Els seus Comptes FTP"
+
+msgid "most_recent_used"
+msgstr "utilitzat més recentment."
+
+msgid "no_connections_yet_made"
+msgstr "No obstant això connexions fetes"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No hi ha comptes FTP ha estat afegit encara"
+
+msgid "most_recent_connections"
+msgstr "Majoria de les connexions recents"
+
+msgid "last_10_connections_made"
+msgstr "Últims 10 connexions fetes"
+
+msgid "designed_developed_by"
+msgstr "Dissenyat i desenvolupat per"
+
+msgid "about_info"
+msgstr "Si us plau, utilitzeu la pàgina web del client SFTP per al suport, sense el suport es proporciona a través dels llocs individuals."
+
+msgid "local"
+msgstr "local"
+
+msgid "remote"
+msgstr "remot"
+
+msgid "remote_location_desc"
+msgstr "per exemple, / public_html"
+
+msgid "create_directory"
+msgstr "crear directori"
+
+msgid "create_new_directory"
+msgstr "Crear nou directori"
+
+msgid "create_file"
+msgstr "crear arxiu"
+
+msgid "create_new_file"
+msgstr "Crear nou arxiu"
+
+msgid "refresh_list"
+msgstr "actualitzar llista"
+
+msgid "change"
+msgstr "canvi"
+
+msgid "report_a_bug"
+msgstr "Avisa d'un error"
+
+msgid "suggest_a_feature"
+msgstr "Suggerir una funció"
+
+msgid "enter_password"
+msgstr "Introduir la contrasenya"
+
+msgid "enter_your_password..."
+msgstr "Fica la teva contrasenya..."
+
+msgid "passphrase"
+msgstr "contrasenya"
+
+msgid "enter_your_passphrase..."
+msgstr "Introduïu la contrasenya ..."
+
+msgid "email_sftp_client"
+msgstr "E-mail SFTP"
+
+msgid "faqs"
+msgstr "Preguntes més freqüents de"
+
+msgid "visit_sftp_client_website"
+msgstr "Visita SFTP Lloc Web Client"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "ens classificaria en el Google Chrome WebStore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Informar d'un problema o obtenir ajuda"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Uniu-vos a Facebook per rebre actualitzacions"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Segueix-nos a Twitter per actualitzacions"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "US +1 a Google per a les actualitzacions"
+
+msgid "okay"
+msgstr "Bé"
+
+msgid "cancel"
+msgstr "Cancel · lar"
+
+msgid "close"
+msgstr "a prop"
+
+msgid "unknown_host"
+msgstr "Host desconegut"
+
+msgid "okay_to_continue"
+msgstr "Continuar amb la feina?"
+
+msgid "fingerprint"
+msgstr "empremta dactilar"
+
+msgid "remember"
+msgstr "recordar"
+
+msgid "file_permissions"
+msgstr "Permisos d'arxiu"
+
+msgid "file_permissions_desc"
+msgstr "Seleccioneu els nous atributs per a l'arxiu (s) seleccionat / carpeta (s)"
+
+msgid "read"
+msgstr "llegir"
+
+msgid "write"
+msgstr "escriure"
+
+msgid "execute"
+msgstr "executar"
+
+msgid "owner"
+msgstr "propietari"
+
+msgid "group"
+msgstr "grup"
+
+msgid "public"
+msgstr "públic"
+
+msgid "numeric_value"
+msgstr "valor numèric"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Introduïu el nom del nou directori ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Introduïu el nom del nou arxiu ..."
+
+msgid "name"
+msgstr "Nom"
+
+msgid "enter_a_password"
+msgstr "Introduïu una contrasenya"
+
+msgid "language"
+msgstr "Llenguatge"
+
+msgid "seconds"
+msgstr "segons"
+
+msgid "minutes"
+msgstr "acta"
+
+msgid "hour"
+msgstr "Hores"
+
+msgid "hours"
+msgstr "hores"
+
+msgid "day"
+msgstr "dia"
+
+msgid "trial_left"
+msgstr "judici esquerra"
+
+msgid "register_now"
+msgstr "Registra't ara"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "seguretat"
+
+msgid "master_password"
+msgstr "contrasenya mestra"
+
+msgid "status"
+msgstr "Estat"
+
+msgid "enabled"
+msgstr "habilitat"
+
+msgid "disabled"
+msgstr "discapacitat"
+
+msgid "timeout"
+msgstr "Temps d'espera"
+
+msgid "save"
+msgstr "Desar"
+
+msgid "add_account"
+msgstr "Afegir compte"
+
+msgid "support"
+msgstr "suport"
+
+msgid "notice_updates"
+msgstr "Avís / Actualitzacions"
+
+msgid "please_login"
+msgstr "Si us plau Accedeix"
+
+msgid "your_session_timed_out"
+msgstr "La seva sessió Temps d'espera esgotat"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "En aquest moment la contrasenya introduïda és incorrecta!"
+
+msgid "login"
+msgstr "iniciar Sessió"
+
+msgid "master_password_desc"
+msgstr "Ajust aquesta contrasenya mestra per mantenir els seus comptes fora de perill."
+
+msgid "license_key"
+msgstr "Clau de llicència"
+
+msgid "online"
+msgstr "en línia"
+
+msgid "offline"
+msgstr "desconnectat"
+
+msgid "currently_unavailable"
+msgstr "Actualment no disponible"
+
+msgid "no_message_to_display"
+msgstr "Cap missatge de mostrar"
+
+msgid "offline_notice_title"
+msgstr "Inabastable - Estàs fora de línia o en una xarxa única connexió?"
+
+msgid "offline_notice_desc"
+msgstr "Vostè està connectada en aquest moment, en una xarxa podrien establir única connexió o sense connexió amb el nostre servidor"
+
+msgid "edit_file"
+msgstr "Edita el fitxer"
+
+msgid "download"
+msgstr "descarregar"
+
+msgid "upload"
+msgstr "Pujar"
+
+msgid "host_ip_is_required"
+msgstr "Es requereix Host / IP"
+
+msgid "apply_to_all_files"
+msgstr "Aplicar a tots els arxius"
+
+msgid "activate_now"
+msgstr "activar ara"
+
+msgid "deactivate"
+msgstr "desactivaran"
+
+msgid "in_progress"
+msgstr "En progrés"
+
+msgid "complete"
+msgstr "complet"
+
+msgid "direction"
+msgstr "Direcció"
+
+msgid "progress"
+msgstr "progrés"
+
+msgid "permissions"
+msgstr "permisos"
+
+msgid "owner_group"
+msgstr "Propietari / Grup"
+
+msgid "size"
+msgstr "mida"
+
+msgid "type"
+msgstr "tipus"
+
+msgid "modified"
+msgstr "modificat"
+
+msgid "trial"
+msgstr "judici"
+
+msgid "cleared"
+msgstr "netejat"
+
+msgid "error_connecting"
+msgstr "error al connectar"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Ha fallat la connexió amb l'amfitrió de direcció / IP"
+
+msgid "error_connecting_to_port"
+msgstr "Ha fallat la connexió amb el port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Seleccioneu un directori local en primer lloc!"
+
+msgid "go"
+msgstr "anar"
+
+msgid "confirm"
+msgstr "confirmar"
+
+msgid "delete"
+msgstr "esborrar"
+
+msgid "rename"
+msgstr "rebatejar"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL (s) Copia al porta-retalls"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Confirmeu que voleu eliminar el fitxer seleccionat (s) / carpeta (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancel·lat per l'usuari"
+
+msgid "already_exists_overwrite"
+msgstr "ja existeix, sobreescriure?"
+
+msgid "dashboard"
+msgstr "tauler d'instruments"
+
+msgid "my_accounts"
+msgstr "Els meus comptes"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Arxiu guardat! Tots els comptes s'han donat suport."
+
+msgid "file_failed_please_try_again"
+msgstr "Arxiu Error! Siusplau torna-ho a provar."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Actualment no té comptes per fer còpies de seguretat."
+
+msgid "saved!"
+msgstr "Saved!"
+
+msgid "please_enter_a_password"
+msgstr "Si us plau, introdueixi una contrasenya!"
+
+msgid "connection_closed"
+msgstr "connexió tancada"
+
+msgid "listing_mode_set_to"
+msgstr "manera de llistat estableix en"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP del servidor local va resoldre, mitjançant IP externa"
+
+msgid "login_incorrect"
+msgstr "Inici de sessió incorrecte"
+
+msgid "keeping_connection_alive"
+msgstr "Mantenir connexió viva"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "No es pot escriure, connexió de dades tancada"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "No es pot llegir la connexió de dades tancada"
+
+msgid "error_reading_file"
+msgstr "Error en llegir el fitxer"
+
+msgid "error_writing_file"
+msgstr "Error en escriure el fitxer"
+
+msgid "failed_to_change_directory_to"
+msgstr "No s'ha pogut canviar l'directori"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Potser no teniu els permisos correctes per accedir a aquest directori"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Tornant de nou al directori anterior"
+
+msgid "activate"
+msgstr "activar"
+
+msgid "payment"
+msgstr "pagament"
+
+msgid "license_key_is_required"
+msgstr "Es requereix clau de llicència"
+
+msgid "license_activated!"
+msgstr "Llicència activada!"
+
+msgid "your_license_has_been_validated"
+msgstr "La llicència ha estat validat."
+
+msgid "thank_you!"
+msgstr "Gràcies!"
+
+msgid "buy_now!"
+msgstr "Compra ara!"
+
+msgid "buy_now"
+msgstr "Compra ara"
+
+msgid "one_off_fee"
+msgstr "únic pagament"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Si us plau, actualitzi a gaudir d'aquesta aplicació sense restriccions"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Si us plau, introdueixi la clau de llicència a continuació"
+
+msgid "or"
+msgstr "Oregon"
+
+msgid "loading..."
+msgstr "Carregant ..."
+
+msgid "clear_accounts"
+msgstr "comptes clars"
+
+msgid "clear_ssh_keys"
+msgstr "Clares claus SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Elimina totes les claus SSH guardats"
+
+msgid "clear_app_settings"
+msgstr "Configuració de l'aplicació clares"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Elimina tots els ajustos específics d'aplicacions"
+
+msgid "clear_recent_connections"
+msgstr "Connexions clares recents"
+
+msgid "deletes_all_recent_connections"
+msgstr "Elimina totes les connexions recents"
+
+msgid "import_type"
+msgstr "el tipus d'importació"
+
+msgid "please_select"
+msgstr "Si us plau seleccioni"
+
+msgid "import_file"
+msgstr "Importa fitxer"
+
+msgid "choose_file"
+msgstr "Trieu l'arxiu"
+
+msgid "delete_accounts"
+msgstr "eliminar comptes"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Elimina tots els comptes existents"
+
+msgid "import_now"
+msgstr "Importa ara"
+
+msgid "none"
+msgstr "cap"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Si us plau, reinicieu l'aplicació client SFTP perquè els canvis tinguin efecte."
+
+msgid "already_bought_the_app"
+msgstr "Ja va comprar l'App?"
+
+msgid "choose"
+msgstr "triar"
+
+msgid "deleted!"
+msgstr "Suprimit!"
+
+msgid "use_syncronised_browsing"
+msgstr "utilitzar l'exploració Syncronised"
+
+msgid "remote_directory"
+msgstr "directori remot"
+
+msgid "rsa_key_only!"
+msgstr "única clau RSA!"
+
+msgid "no_key_selected"
+msgstr "Cap tecla seleccionada."
+
+msgid "ssh_key_file"
+msgstr "SSH arxiu de clau"
+
+msgid "no_dir_selected"
+msgstr "No es va seleccionar dir."
+
+msgid "keep_blank_for_current_password"
+msgstr "En blanc per mantenir la contrasenya actual."
+
+msgid "logon_type"
+msgstr "Tipus d'inici de sessió"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "ask_for_password"
+msgstr "demanar contrasenya"
+
+msgid "anonymous"
+msgstr "anònim"
+
+msgid "account_type"
+msgstr "Tipus de compte"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (connexió normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "carpeta"
+
+msgid "advanced"
+msgstr "avançat"
+
+msgid "folder_name"
+msgstr "Nom de la carpeta"
+
+msgid "parent"
+msgstr "pare"
+
+msgid "new_ftp_site"
+msgstr "Nou lloc FTP"
+
+msgid "new_folder"
+msgstr "Carpeta nova"
+
+msgid "clean_now"
+msgstr "netejar ara"
+
+msgid "host"
+msgstr "amfitrió"
+
+msgid "no_accounts_added..."
+msgstr "No hi ha comptes Afegit ..."
+
+msgid "unknown"
+msgstr "desconegut"
+
+msgid "file_saved!"
+msgstr "Arxiu guardat!"
+
+msgid "uploading_file!"
+msgstr "La pujada d'arxius!"
+
+msgid "save_failed!"
+msgstr "No s'ha pogut salvar!"
+
+msgid "search"
+msgstr "Cerca"
+
+msgid "find"
+msgstr "trobar"
+
+msgid "replace"
+msgstr "reemplaçar"
+
+msgid "scroll_past_end"
+msgstr "Desplaçar-se més enllà de Cap"
+
+msgid "show_annotations"
+msgstr "Mostra anotacions"
+
+msgid "show_gutter"
+msgstr "Mostra Canaló"
+
+msgid "show_invisibles"
+msgstr "Mostra invisibles"
+
+msgid "show_print_margin"
+msgstr "Mostra Marge d'impressió"
+
+msgid "highlight_active_line"
+msgstr "Ressaltar línia activa"
+
+msgid "word_wrap"
+msgstr "L'ajust de línia"
+
+msgid "split_code"
+msgstr "codi dividida"
+
+msgid "preferences"
+msgstr "preferències"
+
+msgid "close_all_tabs"
+msgstr "Tancar totes les pestanyes"
+
+msgid "close_current_tab"
+msgstr "Tanca la pestanya actual"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto guardar l'arxiu quan introdueixo"
+
+msgid "auto_save"
+msgstr "acte Desar"
+
+msgid "quick_save"
+msgstr "Desar ràpida"
+
+msgid "documentation"
+msgstr "documentació"
+
+msgid "themes"
+msgstr "temes"
+
+msgid "keyboard_shortcuts"
+msgstr "Dreceres de teclat"
+
+msgid "coming_soon"
+msgstr "Pròximament"
+
+msgid "empty"
+msgstr "buit"

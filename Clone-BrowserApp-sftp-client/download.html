@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <base target="_blank">
+    <title>{{ 'download'|trans }}</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/plugins/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body class="popup fullVersion">
+<div id="loading_app">
+    <img src="images/loading.gif" class="loading" border="0" />
+</div>
+<div id="wrapper" class="hide">
+    <header class="full-page">
+        <div class="drag"></div>
+        <a id="logo"><img src="images/32.png" /></a>
+        <span class="title">{{ 'download'|trans }}</span>
+    </header>
+    <section class="window-buttons">
+        <a id="window-close" class="close">
+            <i class="fa fa-close"></i>
+        </a>
+    </section>
+    <section class="wrapper download">
+        <webview src="https://www.sftpapp.com/download" width="100%" height="100%"></webview>
+    </section>
+    <footer>
+        <p>{{ 'YEAR'|trans }} &copy; {{ 'sftpclient'|trans }}</p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "цэс"
+
+msgid "file"
+msgstr "Файл"
+
+msgid "view"
+msgstr "харах"
+
+msgid "edit"
+msgstr "Засварлах"
+
+msgid "help"
+msgstr "Туслаач"
+
+msgid "manage_accounts"
+msgstr "Бүртгэлд удирдах"
+
+msgid "import_accounts"
+msgstr "Импортын бүртгэл"
+
+msgid "export_accounts"
+msgstr "Экспортын бүртгэл"
+
+msgid "quick_connect"
+msgstr "Түргэн Connect"
+
+msgid "message_log"
+msgstr "Зурвас нэвтрэх"
+
+msgid "local_directory"
+msgstr "Орон нутгийн сан"
+
+msgid "uploads_downloads"
+msgstr "Оруулах / татаж авах"
+
+msgid "clear_saved_data"
+msgstr "Clear Хадгалсан мэдээлэл"
+
+msgid "edit_settings"
+msgstr "Edit Settings"
+
+msgid "report_bug"
+msgstr "Алдааны тайланг"
+
+msgid "suggest_feature"
+msgstr "боломж санал болгох"
+
+msgid "ask_a_question"
+msgstr "Асуулт асуу"
+
+msgid "change_log"
+msgstr "Change нэвтрэх"
+
+msgid "about"
+msgstr "тухай"
+
+msgid "exit"
+msgstr "гарах"
+
+msgid "host_ip_address"
+msgstr "Host / IP хаяг"
+
+msgid "username"
+msgstr "Хэрэглэгчийн нэр"
+
+msgid "password"
+msgstr "Нууц үг"
+
+msgid "port"
+msgstr "порт"
+
+msgid "connect"
+msgstr "холбоно"
+
+msgid "welcome"
+msgstr "тавтай морилно уу"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP Хэрэглэгч энэ апп-г хурдан, хариуцлагатай байх боломжийг олгодог Google-ийн Chrome / Chrome OS савласан апп интерфэйс дээр баригдсан байна, бүх энгийн тухай асуудал юм. үйл ажиллагаанд зарим нь хол хадгалах, таны хамгийн биднийг зохион байгуулах "
+
+msgid "latest_updates"
+msgstr "Хамгийн сүүлийн үеийн Шинэчлэлтүүд нь"
+
+msgid "server_status"
+msgstr "Server байдал"
+
+msgid "license_server"
+msgstr "Лиценз Server"
+
+msgid "sftp_support"
+msgstr "дэмжлэг үзүүлэх"
+
+msgid "notice_update"
+msgstr "Тендерийн зарын / Шинэчлэлтүүд нь"
+
+msgid "website"
+msgstr "вэб сайт"
+
+msgid "clear_all"
+msgstr "Бүгдийг цэвэрлэ"
+
+msgid "manage"
+msgstr "удирдах"
+
+msgid "recheck"
+msgstr "Дахин шалгах"
+
+msgid "last_release"
+msgstr "Өнгөрсөн Хувилбарын"
+
+msgid "released"
+msgstr "гарсан"
+
+msgid "queued"
+msgstr "дараалалд"
+
+msgid "failed"
+msgstr "чадсангүй"
+
+msgid "completed"
+msgstr "дууссан"
+
+msgid "settings"
+msgstr "Тохиргоо"
+
+msgid "add_folder"
+msgstr "Folder нэмэх"
+
+msgid "add_ftp_account"
+msgstr "FTP данс нэмэх"
+
+msgid "file_editor"
+msgstr "Файлын Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Таны FTP бүртгэл"
+
+msgid "most_recent_used"
+msgstr "Хамгийн сүүлд ашигласан байна."
+
+msgid "no_connections_yet_made"
+msgstr "Ямар ч холбоо ч хийсэн"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Ямар ч FTP данс хараахан нэмэгдсэн"
+
+msgid "most_recent_connections"
+msgstr "Хамгийн сүүлийн үеийн холболт"
+
+msgid "last_10_connections_made"
+msgstr "хийсэн сүүлийн 10 холболтууд"
+
+msgid "designed_developed_by"
+msgstr "Designed & Боловсруулсан"
+
+msgid "about_info"
+msgstr "дэмжлэг SFTP Хэрэглэгч вэб хуудас ашиглана уу, ямар ч дэмжлэг нь бидний хувь хүний ​​вэб сайт дамжуулан олгож байна."
+
+msgid "local"
+msgstr "Орон нутгийн"
+
+msgid "remote"
+msgstr "алсын"
+
+msgid "remote_location_desc"
+msgstr "Өөрөөр хэлбэл, / public_html"
+
+msgid "create_directory"
+msgstr "санг бий болгох"
+
+msgid "create_new_directory"
+msgstr "Шинэ сан бий болгох"
+
+msgid "create_file"
+msgstr "файл үүсгэх"
+
+msgid "create_new_file"
+msgstr "Шинэ файл үүсгэх"
+
+msgid "refresh_list"
+msgstr "Сэргээх жагсаалт"
+
+msgid "change"
+msgstr "Change"
+
+msgid "report_a_bug"
+msgstr "Алдааны тайланг"
+
+msgid "suggest_a_feature"
+msgstr "боломж санал болгох"
+
+msgid "enter_password"
+msgstr "Нууц үгээ оруулна"
+
+msgid "enter_your_password..."
+msgstr "Нууц үгээ оруулна уу..."
+
+msgid "passphrase"
+msgstr "Нэвтрэх"
+
+msgid "enter_your_passphrase..."
+msgstr "Таны нэвтрэх үгийг оруулна уу ..."
+
+msgid "email_sftp_client"
+msgstr "И-мэйл SFTP Клиент"
+
+msgid "faqs"
+msgstr "тусламж-ийн"
+
+msgid "visit_sftp_client_website"
+msgstr "Бичигчийн SFTP Хэрэглэгч вэб"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Google Chrome Webstore дээр биднийг үнэлэх"
+
+msgid "report_an_issue_or_get_help"
+msgstr "асуудлыг мэдээлэх, эсвэл тусламж авах"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "шинэчлэлтүүдийн хувьд Facebook дээр бидэнтэй нэгдээрэй"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "шинэчлэлтүүдийн хувьд Twitter дээр биднийг дагаарай"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "шинэчлэлтүүдийн хувьд Google дээр биднийг +1"
+
+msgid "okay"
+msgstr "За"
+
+msgid "cancel"
+msgstr "Болих"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "Үл мэдэгдэх эзэн"
+
+msgid "okay_to_continue"
+msgstr "үргэлжлүүлэх За?"
+
+msgid "fingerprint"
+msgstr "Хурууны хээ"
+
+msgid "remember"
+msgstr "санаарай"
+
+msgid "file_permissions"
+msgstr "Файлын зөвшөөрлүүд"
+
+msgid "file_permissions_desc"
+msgstr "(С) сонгосон файлд (ууд) / хавтас шинэ шинж чанаруудыг сонгоно уу"
+
+msgid "read"
+msgstr "Унших"
+
+msgid "write"
+msgstr "бичих"
+
+msgid "execute"
+msgstr "Гүйцэтгэх"
+
+msgid "owner"
+msgstr "Эзэмшигч"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Олон нийтийн"
+
+msgid "numeric_value"
+msgstr "тоон утга"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "шинэ сан нэрийг оруулна уу ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Шинэ файлын нэрийг оруулна уу ..."
+
+msgid "name"
+msgstr "нэр"
+
+msgid "enter_a_password"
+msgstr "нууц үгээ оруулна уу"
+
+msgid "language"
+msgstr "хэл"
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "minutes"
+msgstr "минут"
+
+msgid "hour"
+msgstr "цаг"
+
+msgid "hours"
+msgstr "цаг"
+
+msgid "day"
+msgstr "өдөр"
+
+msgid "trial_left"
+msgstr "Шүүхийн Left"
+
+msgid "register_now"
+msgstr "Одоо бүртгүүл"
+
+msgid "general"
+msgstr "Ерөнхий"
+
+msgid "security"
+msgstr "Аюулгүй байдал"
+
+msgid "master_password"
+msgstr "мастер Нууц үг"
+
+msgid "status"
+msgstr "байдал"
+
+msgid "enabled"
+msgstr "идэвхжсэн"
+
+msgid "disabled"
+msgstr "Хөгжлийн бэрхшээлтэй"
+
+msgid "timeout"
+msgstr "хугацаа"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "данс нэмэх"
+
+msgid "support"
+msgstr "дэмжлэг үзүүлэх"
+
+msgid "notice_updates"
+msgstr "Тендерийн зарын / Шинэчлэлтүүд нь"
+
+msgid "please_login"
+msgstr "Нэвтрэх хэсэг"
+
+msgid "your_session_timed_out"
+msgstr "Таны хуралдаан хугацаатай Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Уучлаарай Таны оруулсан нууц үг буруу байна!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Таны данс аюулгүй байлгахын тулд энэ мастер нууц үгийг тохируулна."
+
+msgid "license_key"
+msgstr "Лицензийн түлхүүр"
+
+msgid "online"
+msgstr "Онлайн"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Одоогийн байдлаар ашиглах боломжгүй"
+
+msgid "no_message_to_display"
+msgstr "Ямар ч зурвас харуулах"
+
+msgid "offline_notice_title"
+msgstr "Холбогдох боломжгүй - Та офлайн эсвэл сүлжээнд зөвхөн холболт дээр байна уу?"
+
+msgid "offline_notice_desc"
+msgstr "Та зөвхөн холболт, эсвэл ямар ч холбоогvй нь манай сервер байгуулж болох нь сүлжээн дээр, одоогоор оффлайн байна"
+
+msgid "edit_file"
+msgstr "засах Файлын"
+
+msgid "download"
+msgstr "Татаж авах"
+
+msgid "upload"
+msgstr "оруулах"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP шаардлагатай"
+
+msgid "apply_to_all_files"
+msgstr "бүх файлуудыг хэрэглэх"
+
+msgid "activate_now"
+msgstr "Одоо идэвхжүүлэх"
+
+msgid "deactivate"
+msgstr "De-Идэвхжүүлэх"
+
+msgid "in_progress"
+msgstr "хөгжил дэвшил"
+
+msgid "complete"
+msgstr "иж бүрэн"
+
+msgid "direction"
+msgstr "чиглэл"
+
+msgid "progress"
+msgstr "дэвшил"
+
+msgid "permissions"
+msgstr "зөвшөөрлүүд"
+
+msgid "owner_group"
+msgstr "Эзэмшигч / бүлэг"
+
+msgid "size"
+msgstr "Хэмжээ"
+
+msgid "type"
+msgstr "Санал авах"
+
+msgid "modified"
+msgstr "хувиргасан"
+
+msgid "trial"
+msgstr "Шүүхийн"
+
+msgid "cleared"
+msgstr "засав"
+
+msgid "error_connecting"
+msgstr "холбох алдаа"
+
+msgid "error_connecting_to_host_ip"
+msgstr "зохион холбох алдаа / IP хаяг"
+
+msgid "error_connecting_to_port"
+msgstr "порт уруу холбох алдаа"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Эхнийх нь, орон нутгийн санг сонгоно уу!"
+
+msgid "go"
+msgstr "Go"
+
+msgid "confirm"
+msgstr "баталгаажуул"
+
+msgid "delete"
+msgstr "устгах"
+
+msgid "rename"
+msgstr "нэр солих"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (ууд) Бал нь"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Таны сонгосон файлыг (үүд) устгахыг хүсэж шалгана уу / хавтас (ууд)"
+
+msgid "cancelled_by_user"
+msgstr "хэрэглэгчийн хүчингүй"
+
+msgid "already_exists_overwrite"
+msgstr "аль хэдийн дарж байхгүй байна?"
+
+msgid "dashboard"
+msgstr "самбар"
+
+msgid "my_accounts"
+msgstr "миний данс"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Файлын Хадгалсан! Мэдээлэл данс нөөцлөгдөх байна."
+
+msgid "file_failed_please_try_again"
+msgstr "Файл чадсангүй! Дахин оролдоно уу."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Та одоогоор ямар ч данс нөөцлөгдөх ёстой."
+
+msgid "saved!"
+msgstr "Хадгалсан!"
+
+msgid "please_enter_a_password"
+msgstr "нууц үгээ оруулна уу!"
+
+msgid "connection_closed"
+msgstr "Холболтын хаалттай"
+
+msgid "listing_mode_set_to"
+msgstr "горим гэж тохируулсан жагсаалт"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Орон нутгийн сервер IP, шийдвэрлэх гадаад IP ашиглан"
+
+msgid "login_incorrect"
+msgstr "Холбогдох буруу"
+
+msgid "keeping_connection_alive"
+msgstr "амьд холболт байлгах нь"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "бичих боломжгүй, өгөгдлийн холболт хаалттай"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "өгөгдлийн холболт хаалттай унших боломжгүй"
+
+msgid "error_reading_file"
+msgstr "Алдаа унших файл"
+
+msgid "error_writing_file"
+msgstr "Алдаа бичих файл"
+
+msgid "failed_to_change_directory_to"
+msgstr "сан уруу сангаа өөрчилж чадсангүй"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Та энэ санг хандах нь зөв зөвшөөрөл байж болно"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Өмнөх сан буцаж буцаах"
+
+msgid "activate"
+msgstr "Идэвхжүүлэх"
+
+msgid "payment"
+msgstr "төлбөрийн"
+
+msgid "license_key_is_required"
+msgstr "Лиценз түлхүүр шаардлагатай"
+
+msgid "license_activated!"
+msgstr "Лиценз идэвхжүүлсэн!"
+
+msgid "your_license_has_been_validated"
+msgstr "Таны тусгай зөвшөөрлийн хүчин төгөлдөр байна."
+
+msgid "thank_you!"
+msgstr "Баярлалаа!"
+
+msgid "buy_now!"
+msgstr "Одоо худалдаж авах!"
+
+msgid "buy_now"
+msgstr "Одоо худалдаж авах"
+
+msgid "one_off_fee"
+msgstr "нэг удаагийн хураамж"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "ямар ч хязгаарлалт энэ апп-г эдлэх шинэчлэх уу"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Доор таны лиценз түлхүүрийг оруулна уу"
+
+msgid "or"
+msgstr "ЭСВЭЛ"
+
+msgid "loading..."
+msgstr "Ачааллаж байна ..."
+
+msgid "clear_accounts"
+msgstr "Clear бүртгэл"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH түлхүүрүүдийг"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Бүх хадгалсан SSH түлхүүрүүдийг устгадаг"
+
+msgid "clear_app_settings"
+msgstr "Clear App Тохиргоо"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "бүх апп тодорхой тохиргоог устгадаг"
+
+msgid "clear_recent_connections"
+msgstr "Clear Сүүлийн үед холболт"
+
+msgid "deletes_all_recent_connections"
+msgstr "Бүх шинэ холболтуудыг устгадаг"
+
+msgid "import_type"
+msgstr "Импортын төрөл"
+
+msgid "please_select"
+msgstr "Сонгоно уу"
+
+msgid "import_file"
+msgstr "Импортын Файлын"
+
+msgid "choose_file"
+msgstr "Файл сонгох"
+
+msgid "delete_accounts"
+msgstr "Бүртгэлд устгах"
+
+msgid "deletes_all_existing_accounts"
+msgstr "байгаа бүх дансыг устгадаг"
+
+msgid "import_now"
+msgstr "Импортын Одоо"
+
+msgid "none"
+msgstr "Аль нь ч биш"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "өөрчлөлт хүчин төгөлдөр болгохын тулд SFTP Client програмыг дахин эхлүүлнэ үү."
+
+msgid "already_bought_the_app"
+msgstr "Аль хэдийн Апп худалдаж авсан?"
+
+msgid "choose"
+msgstr "сонгоно уу"
+
+msgid "deleted!"
+msgstr "Устгагдсан!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised үзэх ашиглах"
+
+msgid "remote_directory"
+msgstr "алсын лавлах"
+
+msgid "rsa_key_only!"
+msgstr "RSA гол нь зөвхөн!"
+
+msgid "no_key_selected"
+msgstr "Ямар ч гол сонгосон."
+
+msgid "ssh_key_file"
+msgstr "SSH Түлхүүр Файлын"
+
+msgid "no_dir_selected"
+msgstr "Ямар ч DIR сонгосон."
+
+msgid "keep_blank_for_current_password"
+msgstr "Одоогийн нууц хоосон байлга."
+
+msgid "logon_type"
+msgstr "Logon төрөл"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Нууц үг нь асуу"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Дансны төрөл"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Ердийн холболт)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure холболт)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure холболт)"
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "advanced"
+msgstr "Нарийвчилсан"
+
+msgid "folder_name"
+msgstr "Folder нэр"
+
+msgid "parent"
+msgstr "Эцэг эх"
+
+msgid "new_ftp_site"
+msgstr "Шинэ FTP сайт"
+
+msgid "new_folder"
+msgstr "Шинэ хавтас"
+
+msgid "clean_now"
+msgstr "цэвэр Одоо"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "Ямар ч бүртгэл Нэмэгдсэн ..."
+
+msgid "unknown"
+msgstr "тодорхойгүй"
+
+msgid "file_saved!"
+msgstr "Файлын Хадгалсан!"
+
+msgid "uploading_file!"
+msgstr "Байршуулж байна Файл!"
+
+msgid "save_failed!"
+msgstr "Чадсангүй ивээх!"
+
+msgid "search"
+msgstr "хайх"
+
+msgid "find"
+msgstr "хай"
+
+msgid "replace"
+msgstr "солих"
+
+msgid "scroll_past_end"
+msgstr "Scroll Өнгөрсөн Төгсгөл"
+
+msgid "show_annotations"
+msgstr "харуулах Тэмдэглэгээ"
+
+msgid "show_gutter"
+msgstr "харуулах ус зайлуулах"
+
+msgid "show_invisibles"
+msgstr "харуулах Invisibles"
+
+msgid "show_print_margin"
+msgstr "Харуулах Хэвлэх Маржийн"
+
+msgid "highlight_active_line"
+msgstr "Идэвхтэй Line дараарай"
+
+msgid "word_wrap"
+msgstr "Гэдэг үг ороосон"
+
+msgid "split_code"
+msgstr "Split хууль"
+
+msgid "preferences"
+msgstr "Тохиргооны"
+
+msgid "close_all_tabs"
+msgstr "Мэдээлэл Close Tabs"
+
+msgid "close_current_tab"
+msgstr "Хаах Одоогийн Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Би бичиж байх үед Авто файлыг хадгалах"
+
+msgid "auto_save"
+msgstr "Авто хадгалах"
+
+msgid "quick_save"
+msgstr "Түргэн Save"
+
+msgid "documentation"
+msgstr "Documentation буюу бичиг баримтын"
+
+msgid "themes"
+msgstr "сэдэв"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Холбогч"
+
+msgid "coming_soon"
+msgstr "Тун удахгүй"
+
+msgid "empty"
+msgstr "хоосон"

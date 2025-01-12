@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Meny"
+
+msgid "file"
+msgstr "Fil"
+
+msgid "view"
+msgstr "Se"
+
+msgid "edit"
+msgstr "Redigera"
+
+msgid "help"
+msgstr "Hjälp"
+
+msgid "manage_accounts"
+msgstr "Hantera konton"
+
+msgid "import_accounts"
+msgstr "import~~POS=TRUNC"
+
+msgid "export_accounts"
+msgstr "export~~POS=TRUNC konton"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "meddelande Log"
+
+msgid "local_directory"
+msgstr "lokal katalog"
+
+msgid "uploads_downloads"
+msgstr "Uppladdningar / nedladdningar"
+
+msgid "clear_saved_data"
+msgstr "Rensa sparade data"
+
+msgid "edit_settings"
+msgstr "Ändra inställningar"
+
+msgid "report_bug"
+msgstr "Rapportera en bugg"
+
+msgid "suggest_feature"
+msgstr "Föreslå en funktion"
+
+msgid "ask_a_question"
+msgstr "Ställa en fråga"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "Handla om"
+
+msgid "exit"
+msgstr "Utgång"
+
+msgid "host_ip_address"
+msgstr "Värd / IP-adress"
+
+msgid "username"
+msgstr "Användarnamn"
+
+msgid "password"
+msgstr "Lösenord"
+
+msgid "port"
+msgstr "Hamn"
+
+msgid "connect"
+msgstr "Ansluta"
+
+msgid "welcome"
+msgstr "Välkommen"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP-klient handlar om enkelhet, det har byggts på Google Chrome / Chrome OS förpackade app gränssnitt som möjliggör appen att vara snabb och lyhörd. Några av de funktioner inkluderar en FTP Account Manager för att lagra bort och organisera dina mest "
+
+msgid "latest_updates"
+msgstr "Senaste uppdateringarna"
+
+msgid "server_status"
+msgstr "server Status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Stöd"
+
+msgid "notice_update"
+msgstr "Observera / Uppdateringar"
+
+msgid "website"
+msgstr "webbplats"
+
+msgid "clear_all"
+msgstr "Rensa alla"
+
+msgid "manage"
+msgstr "Hantera"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Senaste utgåvan"
+
+msgid "released"
+msgstr "Släppte ut"
+
+msgid "queued"
+msgstr "kö"
+
+msgid "failed"
+msgstr "misslyckades"
+
+msgid "completed"
+msgstr "Avslutad"
+
+msgid "settings"
+msgstr "inställningar"
+
+msgid "add_folder"
+msgstr "Lägg till mapp"
+
+msgid "add_ftp_account"
+msgstr "Lägg till FTP-konto"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Inställningar"
+
+msgid "your_ftp_accounts"
+msgstr "FTP-konton"
+
+msgid "most_recent_used"
+msgstr "Senast använda."
+
+msgid "no_connections_yet_made"
+msgstr "Inga anslutningar ännu gjorts"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Inga FTP konton lagt ännu"
+
+msgid "most_recent_connections"
+msgstr "Det senaste Anslutningar"
+
+msgid "last_10_connections_made"
+msgstr "Senaste 10 anslutningar som görs"
+
+msgid "designed_developed_by"
+msgstr "Planerad och utvecklad av"
+
+msgid "about_info"
+msgstr "Använd SFTP-klient webbplats för support, ingen stöd genom våra enskilda webbplatser."
+
+msgid "local"
+msgstr "Lokal"
+
+msgid "remote"
+msgstr "Avlägsen"
+
+msgid "remote_location_desc"
+msgstr "t.ex. / public_html"
+
+msgid "create_directory"
+msgstr "Skapa Directory"
+
+msgid "create_new_directory"
+msgstr "Skapa ny katalog"
+
+msgid "create_file"
+msgstr "Skapa fil"
+
+msgid "create_new_file"
+msgstr "Skapa ny fil"
+
+msgid "refresh_list"
+msgstr "Uppdatera lista"
+
+msgid "change"
+msgstr "Byta"
+
+msgid "report_a_bug"
+msgstr "Rapportera en bugg"
+
+msgid "suggest_a_feature"
+msgstr "Föreslå en funktion"
+
+msgid "enter_password"
+msgstr "Skriv in lösenord"
+
+msgid "enter_your_password..."
+msgstr "Ange ditt lösenord..."
+
+msgid "passphrase"
+msgstr "lösenfras"
+
+msgid "enter_your_passphrase..."
+msgstr "Ange ditt lösenord ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP-klient"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Besök SFTP-klient Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Betyg oss på Google Chrome Web Store"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rapportera ett problem eller få hjälp"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Gå med oss ​​på Facebook för uppdateringar"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Följ oss på Twitter för uppdateringar"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Oss på Google efter uppdateringar"
+
+msgid "okay"
+msgstr "Okej"
+
+msgid "cancel"
+msgstr "Annullera"
+
+msgid "close"
+msgstr "Stänga"
+
+msgid "unknown_host"
+msgstr "Okänd värd"
+
+msgid "okay_to_continue"
+msgstr "Okej att fortsätta?"
+
+msgid "fingerprint"
+msgstr "Fingeravtryck"
+
+msgid "remember"
+msgstr "Kom ihåg"
+
+msgid "file_permissions"
+msgstr "filrättigheter"
+
+msgid "file_permissions_desc"
+msgstr "Välj de nya attributen för den valda filen (s) / mapp (s)"
+
+msgid "read"
+msgstr "Läsa"
+
+msgid "write"
+msgstr "Skriva"
+
+msgid "execute"
+msgstr "Avrätta"
+
+msgid "owner"
+msgstr "Ägare"
+
+msgid "group"
+msgstr "Grupp"
+
+msgid "public"
+msgstr "offentlig"
+
+msgid "numeric_value"
+msgstr "numeriskt värde"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Skriv in namnet på den nya katalogen ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Skriv in namnet på den nya filen ..."
+
+msgid "name"
+msgstr "namn"
+
+msgid "enter_a_password"
+msgstr "Skriv in ett lösenord"
+
+msgid "language"
+msgstr "Språk"
+
+msgid "seconds"
+msgstr "sekunder"
+
+msgid "minutes"
+msgstr "Minuter"
+
+msgid "hour"
+msgstr "Timme"
+
+msgid "hours"
+msgstr "timmar"
+
+msgid "day"
+msgstr "Dag"
+
+msgid "trial_left"
+msgstr "trial Vänster"
+
+msgid "register_now"
+msgstr "Registrera nu"
+
+msgid "general"
+msgstr "Allmän"
+
+msgid "security"
+msgstr "Säkerhet"
+
+msgid "master_password"
+msgstr "huvudlösenord"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "Aktiverad"
+
+msgid "disabled"
+msgstr "handikappad"
+
+msgid "timeout"
+msgstr "Paus"
+
+msgid "save"
+msgstr "Spara"
+
+msgid "add_account"
+msgstr "Lägg till konto"
+
+msgid "support"
+msgstr "Stöd"
+
+msgid "notice_updates"
+msgstr "Observera / Uppdateringar"
+
+msgid "please_login"
+msgstr "Vänligen logga in"
+
+msgid "your_session_timed_out"
+msgstr "Din Session Timeout"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Tyvärr lösenordet du angav var felaktig!"
+
+msgid "login"
+msgstr "Logga in"
+
+msgid "master_password_desc"
+msgstr "Ställ in den här huvudlösenord för att hålla dina konton säker."
+
+msgid "license_key"
+msgstr "Licensnyckel"
+
+msgid "online"
+msgstr "Uppkopplad"
+
+msgid "offline"
+msgstr "Off-line"
+
+msgid "currently_unavailable"
+msgstr "För närvarande inte tillgänglig"
+
+msgid "no_message_to_display"
+msgstr "Inget meddelande att visa"
+
+msgid "offline_notice_title"
+msgstr "Onåbar - Är du offline eller på en nätverks enda kopplingen?"
+
+msgid "offline_notice_desc"
+msgstr "Du är för närvarande offline, i ett nätverk endast anslutning eller ingen anslutning kunde fastställas till vår server"
+
+msgid "edit_file"
+msgstr "Redigera fil"
+
+msgid "download"
+msgstr "Ladda ner"
+
+msgid "upload"
+msgstr "Ladda upp"
+
+msgid "host_ip_is_required"
+msgstr "Värd / IP krävs"
+
+msgid "apply_to_all_files"
+msgstr "Tillämpa på alla filer"
+
+msgid "activate_now"
+msgstr "Aktivera nu"
+
+msgid "deactivate"
+msgstr "Avaktivera"
+
+msgid "in_progress"
+msgstr "Pågående"
+
+msgid "complete"
+msgstr "Komplett"
+
+msgid "direction"
+msgstr "Riktning"
+
+msgid "progress"
+msgstr "Framsteg"
+
+msgid "permissions"
+msgstr "behörigheter"
+
+msgid "owner_group"
+msgstr "Ägare / grupp"
+
+msgid "size"
+msgstr "Storlek"
+
+msgid "type"
+msgstr "Typ"
+
+msgid "modified"
+msgstr "Ändrad"
+
+msgid "trial"
+msgstr "Rättegång"
+
+msgid "cleared"
+msgstr "rensat"
+
+msgid "error_connecting"
+msgstr "fel vid anslutning"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Fel vid anslutning till värd / IP-adress"
+
+msgid "error_connecting_to_port"
+msgstr "Fel vid anslutning till hamnen"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Välj en lokal katalog först!"
+
+msgid "go"
+msgstr "Gå"
+
+msgid "confirm"
+msgstr "Bekräfta"
+
+msgid "delete"
+msgstr "Radera"
+
+msgid "rename"
+msgstr "Döpa om"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopiera URL (s) till Urklipp"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Bekräfta att du vill ta bort den valda filen (s) / mapp (s)"
+
+msgid "cancelled_by_user"
+msgstr "Inställd av användaren"
+
+msgid "already_exists_overwrite"
+msgstr "redan existerar, skriva?"
+
+msgid "dashboard"
+msgstr "instrumentbräda"
+
+msgid "my_accounts"
+msgstr "Mina konton"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Sparade filen! Alla konton har säkerhetskopierats."
+
+msgid "file_failed_please_try_again"
+msgstr "Fil misslyckades! Var god försök igen."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Du har för närvarande inga konton som ska säkerhetskopieras."
+
+msgid "saved!"
+msgstr "Räddad!"
+
+msgid "please_enter_a_password"
+msgstr "Ange ett lösenord!"
+
+msgid "connection_closed"
+msgstr "anslutning stängd"
+
+msgid "listing_mode_set_to"
+msgstr "Listläge inställt på"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokal IP lösas med hjälp av externa IP"
+
+msgid "login_incorrect"
+msgstr "Logga felaktig"
+
+msgid "keeping_connection_alive"
+msgstr "Hålla kopplingen uppe"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Det går inte att skriva, stängd dataanslutning"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Det går inte att läsa dataanslutning stängd"
+
+msgid "error_reading_file"
+msgstr "Fel vid läsning av fil"
+
+msgid "error_writing_file"
+msgstr "Fel vid skrivning av fil"
+
+msgid "failed_to_change_directory_to"
+msgstr "Det gick inte att ändra katalog till"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Du kanske inte har rätt behörigheter för att komma åt den här katalogen"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Återgång till föregående katalog"
+
+msgid "activate"
+msgstr "Aktivera"
+
+msgid "payment"
+msgstr "Betalning"
+
+msgid "license_key_is_required"
+msgstr "Licensnyckel krävs"
+
+msgid "license_activated!"
+msgstr "Licens Aktiverad!"
+
+msgid "your_license_has_been_validated"
+msgstr "Din licens har validerats."
+
+msgid "thank_you!"
+msgstr "Tack!"
+
+msgid "buy_now!"
+msgstr "Köp nu!"
+
+msgid "buy_now"
+msgstr "Köp nu"
+
+msgid "one_off_fee"
+msgstr "en engångsavgift"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Uppgradera för att njuta av denna app utan begränsningar"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Ange din licensnyckel nedan"
+
+msgid "or"
+msgstr "ELLER"
+
+msgid "loading..."
+msgstr "Läser in..."
+
+msgid "clear_accounts"
+msgstr "tydliga konton"
+
+msgid "clear_ssh_keys"
+msgstr "Tydliga SSH-nycklar"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Tar bort alla sparade SSH-nycklar"
+
+msgid "clear_app_settings"
+msgstr "Tydliga App Settings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Raderar alla specifika inställningar app"
+
+msgid "clear_recent_connections"
+msgstr "Tydliga Senaste Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Tar bort alla senaste anslutningar"
+
+msgid "import_type"
+msgstr "import Typ"
+
+msgid "please_select"
+msgstr "Vänligen välj"
+
+msgid "import_file"
+msgstr "importfil"
+
+msgid "choose_file"
+msgstr "Välj FIL"
+
+msgid "delete_accounts"
+msgstr "Radera konton"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Tar bort alla befintliga konton"
+
+msgid "import_now"
+msgstr "import nu"
+
+msgid "none"
+msgstr "Ingen"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Starta SFTP-klient app för att ändringarna ska träda i kraft."
+
+msgid "already_bought_the_app"
+msgstr "Redan köpt App?"
+
+msgid "choose"
+msgstr "Välja"
+
+msgid "deleted!"
+msgstr "Raderade!"
+
+msgid "use_syncronised_browsing"
+msgstr "använda synkroniserad bläddring"
+
+msgid "remote_directory"
+msgstr "fjärrregister"
+
+msgid "rsa_key_only!"
+msgstr "RSA-nyckel bara!"
+
+msgid "no_key_selected"
+msgstr "Ingen nyckel vald."
+
+msgid "ssh_key_file"
+msgstr "SSH Key Arkiv"
+
+msgid "no_dir_selected"
+msgstr "Ingen dir vald."
+
+msgid "keep_blank_for_current_password"
+msgstr "Håll tomt för nuvarande lösenord."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Vanligt"
+
+msgid "ask_for_password"
+msgstr "Fråga efter lösenord"
+
+msgid "anonymous"
+msgstr "Anonym"
+
+msgid "account_type"
+msgstr "Användartyp"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Säker anslutning)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Mapp"
+
+msgid "advanced"
+msgstr "Avancerad"
+
+msgid "folder_name"
+msgstr "Mapp namn"
+
+msgid "parent"
+msgstr "Förälder"
+
+msgid "new_ftp_site"
+msgstr "Nya FTP-plats"
+
+msgid "new_folder"
+msgstr "Ny mapp"
+
+msgid "clean_now"
+msgstr "Rengör nu"
+
+msgid "host"
+msgstr "Värd"
+
+msgid "no_accounts_added..."
+msgstr "Inga konton Lade ..."
+
+msgid "unknown"
+msgstr "Okänd"
+
+msgid "file_saved!"
+msgstr "Sparade filen!"
+
+msgid "uploading_file!"
+msgstr "Uppladdning fil!"
+
+msgid "save_failed!"
+msgstr "Spara misslyckades!"
+
+msgid "search"
+msgstr "Sök"
+
+msgid "find"
+msgstr "Hitta"
+
+msgid "replace"
+msgstr "Byta ut"
+
+msgid "scroll_past_end"
+msgstr "Bläddra Tidigare End"
+
+msgid "show_annotations"
+msgstr "Visa Anteckningar"
+
+msgid "show_gutter"
+msgstr "Visa Gutter"
+
+msgid "show_invisibles"
+msgstr "Visa osynliga"
+
+msgid "show_print_margin"
+msgstr "Visa Utskriftsmarginal"
+
+msgid "highlight_active_line"
+msgstr "Markera Aktiv linje"
+
+msgid "word_wrap"
+msgstr "radbrytning"
+
+msgid "split_code"
+msgstr "split kod"
+
+msgid "preferences"
+msgstr "preferenser"
+
+msgid "close_all_tabs"
+msgstr "Stäng alla flikar"
+
+msgid "close_current_tab"
+msgstr "Stäng aktuell flik"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Autosparfilen när jag skriver"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "snabb Spara"
+
+msgid "documentation"
+msgstr "Dokumentation"
+
+msgid "themes"
+msgstr "teman"
+
+msgid "keyboard_shortcuts"
+msgstr "Tangentbordsgenvägar"
+
+msgid "coming_soon"
+msgstr "Kommer snart"
+
+msgid "empty"
+msgstr "tömma"

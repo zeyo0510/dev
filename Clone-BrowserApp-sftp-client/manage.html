@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <base target="_blank">
+    <title>{{ 'manage_accounts'|trans }}</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/plugins/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/manage_accounts.js"></script>
+</head>
+<body class="popup fullVersion">
+    <div id="loading_app">
+        <img src="images/loading.gif" class="loading" border="0" />
+    </div>
+    <div id="wrapper" class="hide">
+        <header class="full-page">
+            <div class="drag"></div>
+            <a id="logo"><img src="images/32.png" /></a>
+            <span class="title">{{ 'manage_accounts'|trans }}</span>
+        </header>
+        <section class="window-buttons">
+            <a id="window-close" class="close">
+                <i class="fa fa-close"></i>
+            </a>
+        </section>
+        <section class="wrapper manage_accounts">
+            <div id="tabs">
+                <div class="container">
+                    <div class="tabs">
+                        <a id="add_folder" class="button btn-icon">
+                            <i class="fa fa-folder-open"></i>
+                            {{ 'add_folder'|trans }}
+                        </a>
+                        <a id="add_ftp" class="button btn-icon">
+                            <i class="fa fa-sitemap"></i>
+                            {{ 'add_account'|trans }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="250" height="100%" class="folder_sites">
+                        <ul id="folder_sites"></ul>
+                    </td>
+                    <td>
+                        <table id="content" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td height="100%">
+                                    <div id="add_modify"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            <p>{{ 'YEAR'|trans }} &copy; {{ 'sftpclient'|trans }}</p>
+        </footer>
+    </div>
+</body>
+</html>

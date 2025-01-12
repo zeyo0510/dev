@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "меню"
+
+msgid "file"
+msgstr "файл"
+
+msgid "view"
+msgstr "выгляд"
+
+msgid "edit"
+msgstr "рэдагаваць"
+
+msgid "help"
+msgstr "дапамогу"
+
+msgid "manage_accounts"
+msgstr "Кіраванне ўліковымі запісамі"
+
+msgid "import_accounts"
+msgstr "Імпарт уліковых запісаў"
+
+msgid "export_accounts"
+msgstr "экспарт рахункаў"
+
+msgid "quick_connect"
+msgstr "быстроразъемное злучэнне"
+
+msgid "message_log"
+msgstr "часопіс паведамленняў"
+
+msgid "local_directory"
+msgstr "лакальны каталог"
+
+msgid "uploads_downloads"
+msgstr "Загрузкі / загрузкі"
+
+msgid "clear_saved_data"
+msgstr "Ачысціць захаваныя дадзеныя"
+
+msgid "edit_settings"
+msgstr "змяніць налады"
+
+msgid "report_bug"
+msgstr "Паведаміць пра памылку"
+
+msgid "suggest_feature"
+msgstr "прапанаваць функцыю"
+
+msgid "ask_a_question"
+msgstr "задаваць пытанне"
+
+msgid "change_log"
+msgstr "часопіс змяненняў"
+
+msgid "about"
+msgstr "аб"
+
+msgid "exit"
+msgstr "выхад"
+
+msgid "host_ip_address"
+msgstr "Host / IP-адрас"
+
+msgid "username"
+msgstr "Імя карыстальніка"
+
+msgid "password"
+msgstr "пароль"
+
+msgid "port"
+msgstr "порт"
+
+msgid "connect"
+msgstr "падключаць"
+
+msgid "welcome"
+msgstr "дабро запрашаем"
+
+msgid "welcome_intro"
+msgstr "<p> Кліент SFTP гэта ўсё аб прастаце, яна была пабудавана на пакетнае дадатак інтэрфейсу Google Chrome / Chrome OS, дазваляючы дадатак, каб быць хуткім і спагадным. Некаторыя функцыі ўключае ў сябе дыспетчар ўліковага запісу FTP для захоўвання прэч і арга"
+
+msgid "latest_updates"
+msgstr "апошнія абнаўлення"
+
+msgid "server_status"
+msgstr "статус сервера"
+
+msgid "license_server"
+msgstr "сервер ліцэнзій"
+
+msgid "sftp_support"
+msgstr "падтрымка"
+
+msgid "notice_update"
+msgstr "Заўвага / Абнаўленні"
+
+msgid "website"
+msgstr "вэб-сайт"
+
+msgid "clear_all"
+msgstr "ачысціць ўсе"
+
+msgid "manage"
+msgstr "кіраваць"
+
+msgid "recheck"
+msgstr "паўторная праверка"
+
+msgid "last_release"
+msgstr "апошні рэліз"
+
+msgid "released"
+msgstr "выпушчаны"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "Не атрымалася"
+
+msgid "completed"
+msgstr "завершаны"
+
+msgid "settings"
+msgstr "налады"
+
+msgid "add_folder"
+msgstr "дадаць тэчку"
+
+msgid "add_ftp_account"
+msgstr "Дадаць уліковы запіс FTP"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "рэдактар ​​настроек"
+
+msgid "your_ftp_accounts"
+msgstr "Вашы Уліковыя запісы FTP"
+
+msgid "most_recent_used"
+msgstr "Зусім нядаўна выкарыстоўвалі."
+
+msgid "no_connections_yet_made"
+msgstr "Ніякія падлучэння пакуль не зроблена"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Няма уліковых запісаў FTP яшчэ не дададзеныя"
+
+msgid "most_recent_connections"
+msgstr "Большасць Апошнія Сувязі"
+
+msgid "last_10_connections_made"
+msgstr "Апошнія 10 злучэнняў з"
+
+msgid "designed_developed_by"
+msgstr "Распрацаваны & Распрацоўка"
+
+msgid "about_info"
+msgstr "Калі ласка, выкарыстоўвайце вэб-сайт кліента SFTP для падтрымкі, падтрымка не прадастаўляецца праз нашых асобных вэб-сайтаў."
+
+msgid "local"
+msgstr "мясцовы"
+
+msgid "remote"
+msgstr "аддалены"
+
+msgid "remote_location_desc"
+msgstr "напрыклад / public_html"
+
+msgid "create_directory"
+msgstr "стварыць каталог"
+
+msgid "create_new_directory"
+msgstr "Стварыць новы каталог"
+
+msgid "create_file"
+msgstr "стварыць файл"
+
+msgid "create_new_file"
+msgstr "Стварыць новы файл"
+
+msgid "refresh_list"
+msgstr "абнавіць спіс"
+
+msgid "change"
+msgstr "змена"
+
+msgid "report_a_bug"
+msgstr "Паведаміць пра памылку"
+
+msgid "suggest_a_feature"
+msgstr "прапанаваць функцыю"
+
+msgid "enter_password"
+msgstr "Увядзіце пароль"
+
+msgid "enter_your_password..."
+msgstr "Калі ласка, увядзіце пароль ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Увядзіце кодавую фразу ..."
+
+msgid "email_sftp_client"
+msgstr "Паштовы кліент SFTP"
+
+msgid "faqs"
+msgstr "Часта задаюць пытанні"
+
+msgid "visit_sftp_client_website"
+msgstr "Наведайце SFTP кліент Вэб-сайт"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Ацаніце нас на Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Паведаміць аб праблеме або атрымаць дапамогу"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Далучайцеся да нас на Facebook для абнаўлення"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Выконвайце за намі на Twitter за абнаўленнямі"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Да нас на Google абнаўленняў"
+
+msgid "okay"
+msgstr "добра"
+
+msgid "cancel"
+msgstr "адмяніць"
+
+msgid "close"
+msgstr "блізка"
+
+msgid "unknown_host"
+msgstr "Невядомы хост"
+
+msgid "okay_to_continue"
+msgstr "Добра, каб працягнуць?"
+
+msgid "fingerprint"
+msgstr "адбітак пальца"
+
+msgid "remember"
+msgstr "запомніць"
+
+msgid "file_permissions"
+msgstr "правы доступу да файлаў"
+
+msgid "file_permissions_desc"
+msgstr "Калі ласка, абярыце новыя атрыбуты для абранага файла (ов) / папкі (ы)"
+
+msgid "read"
+msgstr "счытванне"
+
+msgid "write"
+msgstr "запіс"
+
+msgid "execute"
+msgstr "пакараць смерцю"
+
+msgid "owner"
+msgstr "уладальнік"
+
+msgid "group"
+msgstr "група"
+
+msgid "public"
+msgstr "грамадскага"
+
+msgid "numeric_value"
+msgstr "лікавае значэнне"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Калі ласка, увядзіце імя новага каталога ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Калі ласка, увядзіце імя новага файла ..."
+
+msgid "name"
+msgstr "імя"
+
+msgid "enter_a_password"
+msgstr "Калі ласка, увядзіце пароль"
+
+msgid "language"
+msgstr "мова"
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "minutes"
+msgstr "хвілін"
+
+msgid "hour"
+msgstr "гадзіну"
+
+msgid "hours"
+msgstr "гадзін"
+
+msgid "day"
+msgstr "дзень"
+
+msgid "trial_left"
+msgstr "пробны левы"
+
+msgid "register_now"
+msgstr "рэгістрацыя"
+
+msgid "general"
+msgstr "агульны"
+
+msgid "security"
+msgstr "бяспекі"
+
+msgid "master_password"
+msgstr "Майстар-пароль"
+
+msgid "status"
+msgstr "статус"
+
+msgid "enabled"
+msgstr "ўключана"
+
+msgid "disabled"
+msgstr "інвалід"
+
+msgid "timeout"
+msgstr "Тайм-аўт"
+
+msgid "save"
+msgstr "захаваць"
+
+msgid "add_account"
+msgstr "Дадаць уліковы запіс"
+
+msgid "support"
+msgstr "падтрымка"
+
+msgid "notice_updates"
+msgstr "Заўвага / Абнаўленні"
+
+msgid "please_login"
+msgstr "Калі ласка, увайдзіце"
+
+msgid "your_session_timed_out"
+msgstr "Ваша сесія Timed Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "На жаль пароль, які вы ўвялі няправільны!"
+
+msgid "login"
+msgstr "Увайсці"
+
+msgid "master_password_desc"
+msgstr "Ўсталюеце гэты майстар-пароль, каб захаваць свае рахункі ў бяспецы."
+
+msgid "license_key"
+msgstr "Ліцэнзійны ключ"
+
+msgid "online"
+msgstr "інтэрнэт"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "У цяперашні час не даступная"
+
+msgid "no_message_to_display"
+msgstr "Няма паведамленняў для адлюстравання"
+
+msgid "offline_notice_title"
+msgstr "Недаступны - Вы ў аўтаномным рэжыме або ў сеткі толькі злучэння?"
+
+msgid "offline_notice_desc"
+msgstr "Вы ў цяперашні час у аўтаномным рэжыме, у сеткі толькі злучэнне або няма злучэння можа быць ўстаноўлена на наш сервер"
+
+msgid "edit_file"
+msgstr "рэдагаванне файла"
+
+msgid "download"
+msgstr "спампаваць"
+
+msgid "upload"
+msgstr "загрузіць"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP патрабуецца"
+
+msgid "apply_to_all_files"
+msgstr "Прымяніць да ўсіх файлаў"
+
+msgid "activate_now"
+msgstr "актываваць зараз"
+
+msgid "deactivate"
+msgstr "дэзактываваць"
+
+msgid "in_progress"
+msgstr "У працэсе"
+
+msgid "complete"
+msgstr "поўны"
+
+msgid "direction"
+msgstr "напрамак"
+
+msgid "progress"
+msgstr "прагрэс"
+
+msgid "permissions"
+msgstr "дазволу"
+
+msgid "owner_group"
+msgstr "Уладальнік / Група"
+
+msgid "size"
+msgstr "памер"
+
+msgid "type"
+msgstr "тып"
+
+msgid "modified"
+msgstr "мадыфікаваны"
+
+msgid "trial"
+msgstr "пробны"
+
+msgid "cleared"
+msgstr "вычышчаныя"
+
+msgid "error_connecting"
+msgstr "Памылка пры падключэнні"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Памылка падлучэння да хост / IP-адрас"
+
+msgid "error_connecting_to_port"
+msgstr "Памылка пры падключэнні да порта"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Калі ласка, абярыце лакальны каталог у першую чаргу!"
+
+msgid "go"
+msgstr "ісці"
+
+msgid "confirm"
+msgstr "пацвердзіць"
+
+msgid "delete"
+msgstr "выдаляць"
+
+msgid "rename"
+msgstr "пераназываць"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Капіяваць URL (ы) у буфер абмену"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Калі ласка, пацвердзіце, што вы хочаце, каб выдаліць абраны файл (ы) / папкі (ы)"
+
+msgid "cancelled_by_user"
+msgstr "адменена карыстальнікам"
+
+msgid "already_exists_overwrite"
+msgstr "ўжо існуе, перазапісаць?"
+
+msgid "dashboard"
+msgstr "прыборная панэль"
+
+msgid "my_accounts"
+msgstr "Мае акаўнты"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Файл захаваны! Усе рахункі былі падмацаваныя."
+
+msgid "file_failed_please_try_again"
+msgstr "Памылка файла! Калі ласка, паспрабуйце яшчэ раз."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "У вас няма рахункі не павінны быць падмацаваныя."
+
+msgid "saved!"
+msgstr "Захаваны!"
+
+msgid "please_enter_a_password"
+msgstr "Калі ласка, увядзіце пароль!"
+
+msgid "connection_closed"
+msgstr "Сувязь спынена"
+
+msgid "listing_mode_set_to"
+msgstr "Лістынг рэжым усталяваны ў становішча"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Лакальны IP-сервер дазволены, выкарыстоўваючы знешні IP"
+
+msgid "login_incorrect"
+msgstr "увайсці няслушныя"
+
+msgid "keeping_connection_alive"
+msgstr "Падтрыманне сувязі ў жывых"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Немагчыма запісаць, злучэнне дадзеных закрыта"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Немагчыма прачытаць дадзеныя злучэння закрыта"
+
+msgid "error_reading_file"
+msgstr "Памылка пры чытанні файла"
+
+msgid "error_writing_file"
+msgstr "Памылка запісу файла"
+
+msgid "failed_to_change_directory_to"
+msgstr "Не ўдалося змяніць каталог для"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Вы не можаце мець правільныя дазволу на доступ да гэтага каталогу"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Вяртаючыся назад у папярэдні каталог"
+
+msgid "activate"
+msgstr "актываваць"
+
+msgid "payment"
+msgstr "аплата"
+
+msgid "license_key_is_required"
+msgstr "Ліцэнзійны ключ патрабуецца"
+
+msgid "license_activated!"
+msgstr "Ліцэнзія Актываваны!"
+
+msgid "your_license_has_been_validated"
+msgstr "Ваша ліцэнзія была пацверджана."
+
+msgid "thank_you!"
+msgstr "Дзякуй!"
+
+msgid "buy_now!"
+msgstr "Купіць зараз!"
+
+msgid "buy_now"
+msgstr "Купіць зараз"
+
+msgid "one_off_fee"
+msgstr "аднаразовая плата"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Калі ласка, абновіце карыстацца гэтым дадаткам без якіх-небудзь абмежаванняў"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Калі ласка, увядзіце ліцэнзійны ключ ніжэй"
+
+msgid "or"
+msgstr "АБО"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "ачысціць рахункаў"
+
+msgid "clear_ssh_keys"
+msgstr "Ачысціць ключы SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Выдаляе ўсе захаваныя ключы SSH"
+
+msgid "clear_app_settings"
+msgstr "Ачысціць Налады прыкладання"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Выдаляе ўсе спецыфічныя налады прыкладання"
+
+msgid "clear_recent_connections"
+msgstr "Ачысціць нядаўнія Сувязі"
+
+msgid "deletes_all_recent_connections"
+msgstr "Выдаляе ўсе апошнія злучэння"
+
+msgid "import_type"
+msgstr "імпарт Тып"
+
+msgid "please_select"
+msgstr "Калі ласка, абярыце"
+
+msgid "import_file"
+msgstr "імпарт файлаў"
+
+msgid "choose_file"
+msgstr "Выберыце файл"
+
+msgid "delete_accounts"
+msgstr "Выдаленне ўліковых запісаў"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Выдаляе ўсе існуючыя уліковыя запісы"
+
+msgid "import_now"
+msgstr "імпартаваць зараз"
+
+msgid "none"
+msgstr "ні адзін"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Калі ласка, перазапусціце SFTP кліенцкае прыкладанне для таго, каб змены ўступілі ў сілу."
+
+msgid "already_bought_the_app"
+msgstr "Ўжо купіў App?"
+
+msgid "choose"
+msgstr "выбіраць"
+
+msgid "deleted!"
+msgstr "Выдаляецца!"
+
+msgid "use_syncronised_browsing"
+msgstr "выкарыстоўваць syncronised прагляд"
+
+msgid "remote_directory"
+msgstr "аддалены каталог"
+
+msgid "rsa_key_only!"
+msgstr "ключ RSA толькі!"
+
+msgid "no_key_selected"
+msgstr "Ключ не абраны."
+
+msgid "ssh_key_file"
+msgstr "SSH ключавой файл"
+
+msgid "no_dir_selected"
+msgstr "Ні адзін рэж не абраны."
+
+msgid "keep_blank_for_current_password"
+msgstr "Трымаеце пустым для бягучага пароля."
+
+msgid "logon_type"
+msgstr "тып ўваходу"
+
+msgid "normal"
+msgstr "нармальны"
+
+msgid "ask_for_password"
+msgstr "запытваць пароль"
+
+msgid "anonymous"
+msgstr "ананімны"
+
+msgid "account_type"
+msgstr "Тып ўліковага запісу"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "тэчка"
+
+msgid "advanced"
+msgstr "прасунуты"
+
+msgid "folder_name"
+msgstr "імя папкі"
+
+msgid "parent"
+msgstr "бацька"
+
+msgid "new_ftp_site"
+msgstr "Новы FTP-сайта"
+
+msgid "new_folder"
+msgstr "Новая тэчка"
+
+msgid "clean_now"
+msgstr "чысціня зараз"
+
+msgid "host"
+msgstr "гаспадар"
+
+msgid "no_accounts_added..."
+msgstr "Няма рахункаў Паведамленні ..."
+
+msgid "unknown"
+msgstr "невядомы"
+
+msgid "file_saved!"
+msgstr "Файл захаваны!"
+
+msgid "uploading_file!"
+msgstr "Загрузка файла!"
+
+msgid "save_failed!"
+msgstr "Не атрымалася захаваць!"
+
+msgid "search"
+msgstr "пошук"
+
+msgid "find"
+msgstr "знайсці"
+
+msgid "replace"
+msgstr "замяшчаць"
+
+msgid "scroll_past_end"
+msgstr "Скрутак Мінулае Канец"
+
+msgid "show_annotations"
+msgstr "паказаць Анатацыі"
+
+msgid "show_gutter"
+msgstr "паказаць вадасцёкаў"
+
+msgid "show_invisibles"
+msgstr "паказаць минипуты"
+
+msgid "show_print_margin"
+msgstr "Паказаць друку Маржа"
+
+msgid "highlight_active_line"
+msgstr "Вылучыце актыўнай лініі"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "спліт код"
+
+msgid "preferences"
+msgstr "перавагі"
+
+msgid "close_all_tabs"
+msgstr "Зачыніць усе вакенцы"
+
+msgid "close_current_tab"
+msgstr "Зачыніць Бягучы Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Аўтаматычнае захаванне файла пры ўводзе"
+
+msgid "auto_save"
+msgstr "Аўтазахаванне"
+
+msgid "quick_save"
+msgstr "хуткае захаванне"
+
+msgid "documentation"
+msgstr "дакументацыя"
+
+msgid "themes"
+msgstr "тэмы"
+
+msgid "keyboard_shortcuts"
+msgstr "спалучэння клавіш"
+
+msgid "coming_soon"
+msgstr "хутка"
+
+msgid "empty"
+msgstr "пусты"

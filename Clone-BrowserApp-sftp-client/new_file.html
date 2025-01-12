@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <base target="_blank">
+    <title>{{ 'create_new_file'|trans }}</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/plugins/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body class="popup fullVersion">
+    <div id="loading_app">
+        <img src="images/loading.gif" class="loading" border="0" />
+    </div>
+    <div id="wrapper" class="hide">
+        <header class="full-page">
+            <div class="drag"></div>
+            <a id="logo"><img src="images/32.png" /></a>
+            <span class="title">{{ 'create_new_file'|trans }}</span>
+        </header>
+        <section class="window-buttons">
+            <a id="window-close" class="close">
+                <i class="fa fa-close"></i>
+            </a>
+        </section>
+        <section class="wrapper import_accounts">
+            <div id="create_new_file">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td>
+                            <div class="input_wrapper">
+                                <i class="fa fa-file"></i>
+                                <input type="text" name="file" placeholder="{{ 'enter_the_name_of_the_new_file...'|trans }}" size="32" />
+                            </div>
+                        </td>
+                        <td>
+                            <button id="okay" class="button btn-icon green">
+                                <i class="fa fa-check"></i>
+                                {{ 'create_file'|trans }}
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <p>{{ 'YEAR'|trans }} &copy; {{ 'sftpclient'|trans }}</p>
+        </footer>
+    </div>
+</body>
+</html>

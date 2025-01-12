@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "orodha"
+
+msgid "file"
+msgstr "faili"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Msaada"
+
+msgid "manage_accounts"
+msgstr "Dhibiti Akaunti"
+
+msgid "import_accounts"
+msgstr "Import Hesabu za"
+
+msgid "export_accounts"
+msgstr "Export Hesabu za"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "ujumbe Log"
+
+msgid "local_directory"
+msgstr "Saraka Mitaa"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Futa Data Kuokolewa"
+
+msgid "edit_settings"
+msgstr "Edit Settings"
+
+msgid "report_bug"
+msgstr "Ripoti Bug"
+
+msgid "suggest_feature"
+msgstr "Kupendekeza Feature"
+
+msgid "ask_a_question"
+msgstr "Uliza Swali"
+
+msgid "change_log"
+msgstr "Change Ingia"
+
+msgid "about"
+msgstr "kuhusu"
+
+msgid "exit"
+msgstr "Toka"
+
+msgid "host_ip_address"
+msgstr "Jeshi / IP ya mitaani"
+
+msgid "username"
+msgstr "username"
+
+msgid "password"
+msgstr "nywila"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "kuungana"
+
+msgid "welcome"
+msgstr "Karibu"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Mteja ni wote kuhusu unyenyekevu, imekuwa umejengwa juu ya Google Chrome / Chrome OS vifurushi programu interface kuruhusu programu kuwa haraka na msikivu. Baadhi ya utendaji ni pamoja na Meneja wa Akaunti FTP kuhifadhi mbali na kuandaa zaidi yak"
+
+msgid "latest_updates"
+msgstr "latest Updates"
+
+msgid "server_status"
+msgstr "Hali server"
+
+msgid "license_server"
+msgstr "Server leseni"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Ilani / Updates"
+
+msgid "website"
+msgstr "tovuti"
+
+msgid "clear_all"
+msgstr "wazi All"
+
+msgid "manage"
+msgstr "kusimamia"
+
+msgid "recheck"
+msgstr "Re-kuangalia"
+
+msgid "last_release"
+msgstr "Release mwisho"
+
+msgid "released"
+msgstr "iliyotolewa"
+
+msgid "queued"
+msgstr "foleni"
+
+msgid "failed"
+msgstr "alishindwa"
+
+msgid "completed"
+msgstr "kukamilika"
+
+msgid "settings"
+msgstr "mazingira"
+
+msgid "add_folder"
+msgstr "Kuongeza Folder"
+
+msgid "add_ftp_account"
+msgstr "Kuongeza Akaunti FTP"
+
+msgid "file_editor"
+msgstr "file Mhariri"
+
+msgid "editor_preferences"
+msgstr "Mapendekezo mhariri"
+
+msgid "your_ftp_accounts"
+msgstr "Akaunti zako FTP"
+
+msgid "most_recent_used"
+msgstr "Hivi karibuni kutumika."
+
+msgid "no_connections_yet_made"
+msgstr "Hakuna uhusiano bado alifanya"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Hakuna akaunti FTP aliongeza bado"
+
+msgid "most_recent_connections"
+msgstr "Wengi Connections za hivi karibuni"
+
+msgid "last_10_connections_made"
+msgstr "Mwisho 10 connections alifanya"
+
+msgid "designed_developed_by"
+msgstr "Iliyoundwa & Maendeleo na"
+
+msgid "about_info"
+msgstr "Tafadhali kutumia sFTP Mteja tovuti kwa ajili ya msaada, hakuna msaada hutolewa kwa njia ya tovuti yetu binafsi."
+
+msgid "local"
+msgstr "Mitaa"
+
+msgid "remote"
+msgstr "kijijini"
+
+msgid "remote_location_desc"
+msgstr "mfano / public_html"
+
+msgid "create_directory"
+msgstr "kujenga Directory"
+
+msgid "create_new_directory"
+msgstr "Kujenga New Saraka"
+
+msgid "create_file"
+msgstr "kujenga faili"
+
+msgid "create_new_file"
+msgstr "Kujenga New faili"
+
+msgid "refresh_list"
+msgstr "Refresh Orodha"
+
+msgid "change"
+msgstr "mabadiliko"
+
+msgid "report_a_bug"
+msgstr "Ripoti Bug"
+
+msgid "suggest_a_feature"
+msgstr "Kupendekeza Feature"
+
+msgid "enter_password"
+msgstr "weka Nenosiri"
+
+msgid "enter_your_password..."
+msgstr "Kuingia password yako ..."
+
+msgid "passphrase"
+msgstr "passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Kuingia passphrase yako ..."
+
+msgid "email_sftp_client"
+msgstr "Barua pepe sFTP Mteja"
+
+msgid "faqs"
+msgstr "Maswali ya"
+
+msgid "visit_sftp_client_website"
+msgstr "Ziara sFTP tovuti Mteja"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Kiwango sisi juu ya Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Ripoti tatizo au kupata msaada"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Kujiunga na sisi katika Picha kwa updates"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Kufuata yetu Twitter kwa updates"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "Ku + 1 yetu juu ya Google kwa updates"
+
+msgid "okay"
+msgstr "sawa"
+
+msgid "cancel"
+msgstr "kufuta"
+
+msgid "close"
+msgstr "karibu"
+
+msgid "unknown_host"
+msgstr "Jeshi haijulikani"
+
+msgid "okay_to_continue"
+msgstr "Okay kuendelea?"
+
+msgid "fingerprint"
+msgstr "Fingerprint"
+
+msgid "remember"
+msgstr "Kumbuka"
+
+msgid "file_permissions"
+msgstr "faili Ruhusa"
+
+msgid "file_permissions_desc"
+msgstr "Tafadhali kuchagua sifa mpya kwa ajili ya faili kuchaguliwa (s) / folder (s)"
+
+msgid "read"
+msgstr "kusoma"
+
+msgid "write"
+msgstr "kuandika"
+
+msgid "execute"
+msgstr "Kutekeleza"
+
+msgid "owner"
+msgstr "mmiliki"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "numeric Thamani"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Kuingia jina la directory mpya ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Ingiza jina la faili mpya ..."
+
+msgid "name"
+msgstr "jina"
+
+msgid "enter_a_password"
+msgstr "kuingia password"
+
+msgid "language"
+msgstr "lugha"
+
+msgid "seconds"
+msgstr "sekunde"
+
+msgid "minutes"
+msgstr "dakika"
+
+msgid "hour"
+msgstr "saa"
+
+msgid "hours"
+msgstr "masaa"
+
+msgid "day"
+msgstr "siku"
+
+msgid "trial_left"
+msgstr "kesi kushoto"
+
+msgid "register_now"
+msgstr "Jiandikishe sasa"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Usalama"
+
+msgid "master_password"
+msgstr "bwana password"
+
+msgid "status"
+msgstr "hali"
+
+msgid "enabled"
+msgstr "kuwezeshwa"
+
+msgid "disabled"
+msgstr "walemavu"
+
+msgid "timeout"
+msgstr "Muda umeisha"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Kuongeza Akaunti"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Ilani / Updates"
+
+msgid "please_login"
+msgstr "tafadhali Login"
+
+msgid "your_session_timed_out"
+msgstr "Kikao cha wako wakati muafaka Kati"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry nywila uliyoingiza sio sahihi!"
+
+msgid "login"
+msgstr "Ingia"
+
+msgid "master_password_desc"
+msgstr "Kuweka hii nenosiri bwana kuweka akaunti yako salama."
+
+msgid "license_key"
+msgstr "leseni muhimu"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Hivi sasa Mauzo"
+
+msgid "no_message_to_display"
+msgstr "Hakuna ujumbe wa kuonyesha"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Je, wewe offline au kwenye mtandao uhusiano tu?"
+
+msgid "offline_notice_desc"
+msgstr "Wewe ni sasa now, kwenye mtandao tu uhusiano au hakuna uhusiano inaweza kuwa imara na server yetu"
+
+msgid "edit_file"
+msgstr "Edit faili"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "Pakia"
+
+msgid "host_ip_is_required"
+msgstr "Jeshi / IP anahitajika"
+
+msgid "apply_to_all_files"
+msgstr "Yanahusu mafaili yote"
+
+msgid "activate_now"
+msgstr "kuamsha Sasa"
+
+msgid "deactivate"
+msgstr "De-kuamsha"
+
+msgid "in_progress"
+msgstr "Inaendelea"
+
+msgid "complete"
+msgstr "kamili"
+
+msgid "direction"
+msgstr "mwelekeo"
+
+msgid "progress"
+msgstr "maendeleo"
+
+msgid "permissions"
+msgstr "ruhusa"
+
+msgid "owner_group"
+msgstr "Mmiliki / Group"
+
+msgid "size"
+msgstr "ukubwa"
+
+msgid "type"
+msgstr "aina"
+
+msgid "modified"
+msgstr "iliyopita"
+
+msgid "trial"
+msgstr "kesi"
+
+msgid "cleared"
+msgstr "akalipa"
+
+msgid "error_connecting"
+msgstr "kosa Kuunganisha"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Kosa Kuunganisha kuwa mwenyeji wa / anwani ya IP"
+
+msgid "error_connecting_to_port"
+msgstr "Kosa Kuunganisha na bandari"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Tafadhali kuchagua saraka za mitaa kwanza!"
+
+msgid "go"
+msgstr "Go"
+
+msgid "confirm"
+msgstr "kuthibitisha"
+
+msgid "delete"
+msgstr "kufuta"
+
+msgid "rename"
+msgstr "rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) kwa Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Tafadhali kuthibitisha unataka kufuta faili kuchaguliwa (s) / folder (s)"
+
+msgid "cancelled_by_user"
+msgstr "Kufutwa kwa mtumiaji"
+
+msgid "already_exists_overwrite"
+msgstr "tayari ipo, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Hesabu za My"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Faili Kuokolewa! Akaunti zote wamekuwa yanayoambatana."
+
+msgid "file_failed_please_try_again"
+msgstr "Faili Imeshindwa! Tafadhali jaribu tena."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Kwa sasa una hakuna akaunti kwa kuwa yanayoambatana."
+
+msgid "saved!"
+msgstr "Kuokolewa!"
+
+msgid "please_enter_a_password"
+msgstr "Tafadhali kuingia password!"
+
+msgid "connection_closed"
+msgstr "connection imefungwa"
+
+msgid "listing_mode_set_to"
+msgstr "Listing mode kuweka"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Mitaa server IP kutatuliwa, kwa kutumia IP nje"
+
+msgid "login_incorrect"
+msgstr "Login sahihi"
+
+msgid "keeping_connection_alive"
+msgstr "Kuweka uhusiano hai"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Haiwezi kuandika, data uhusiano imefungwa"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Hawawezi kusoma data uhusiano imefungwa"
+
+msgid "error_reading_file"
+msgstr "Kosa file kusoma"
+
+msgid "error_writing_file"
+msgstr "Kosa kuandika file"
+
+msgid "failed_to_change_directory_to"
+msgstr "Ilishindwa kubadilisha directory kwa"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Unaweza kuwa na ruhusa sahihi ya kupata saraka hii"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Inarejea nyuma directory uliopita"
+
+msgid "activate"
+msgstr "kuamsha"
+
+msgid "payment"
+msgstr "malipo"
+
+msgid "license_key_is_required"
+msgstr "ufunguo leseni inahitajika"
+
+msgid "license_activated!"
+msgstr "Leseni Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "Leseni yako imekuwa kuthibitishwa."
+
+msgid "thank_you!"
+msgstr "Asante!"
+
+msgid "buy_now!"
+msgstr "Nunua Sasa!"
+
+msgid "buy_now"
+msgstr "Nunua Sasa"
+
+msgid "one_off_fee"
+msgstr "moja mbali ada"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Tafadhali kuboresha na kufurahia programu hii na hakuna vikwazo"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Tafadhali kuingia Leseni yako muhimu hapa chini"
+
+msgid "or"
+msgstr "aU"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "wazi Hesabu za"
+
+msgid "clear_ssh_keys"
+msgstr "Wazi SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes zote SSH funguo kuokolewa"
+
+msgid "clear_app_settings"
+msgstr "Wazi Settings App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes zote mipangilio ya programu maalum"
+
+msgid "clear_recent_connections"
+msgstr "Wazi Connections za hivi karibuni"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes uhusiano wote hivi karibuni"
+
+msgid "import_type"
+msgstr "Import Aina"
+
+msgid "please_select"
+msgstr "Tafadhali chagua"
+
+msgid "import_file"
+msgstr "Import faili"
+
+msgid "choose_file"
+msgstr "kuchagua faili"
+
+msgid "delete_accounts"
+msgstr "kufuta Hesabu za"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes akaunti zote zilizopo"
+
+msgid "import_now"
+msgstr "Import Sasa"
+
+msgid "none"
+msgstr "hakuna"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Tafadhali kuanzisha upya programu sFTP Mteja kwa mabadiliko kuchukua athari."
+
+msgid "already_bought_the_app"
+msgstr "Tayari kununuliwa App?"
+
+msgid "choose"
+msgstr "Chagua"
+
+msgid "deleted!"
+msgstr "Ilifutwa!"
+
+msgid "use_syncronised_browsing"
+msgstr "kutumia syncronised kuvinjari"
+
+msgid "remote_directory"
+msgstr "Saraka kijijini"
+
+msgid "rsa_key_only!"
+msgstr "RSA ufunguo tu!"
+
+msgid "no_key_selected"
+msgstr "Hakuna ufunguo kuchaguliwa."
+
+msgid "ssh_key_file"
+msgstr "SSH muhimu faili"
+
+msgid "no_dir_selected"
+msgstr "Hakuna dir kuchaguliwa."
+
+msgid "keep_blank_for_current_password"
+msgstr "Kuendelea tupu kwa password sasa."
+
+msgid "logon_type"
+msgstr "logon Aina"
+
+msgid "normal"
+msgstr "kawaida"
+
+msgid "ask_for_password"
+msgstr "Kuuliza kwa Nywila"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Aina ya Akaunti"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Kawaida Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (salama Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Salama Connection)"
+
+msgid "folder"
+msgstr "folder"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "Jina folder"
+
+msgid "parent"
+msgstr "Mzazi"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "Folder New"
+
+msgid "clean_now"
+msgstr "safi Sasa"
+
+msgid "host"
+msgstr "jeshi"
+
+msgid "no_accounts_added..."
+msgstr "Hakuna Hesabu za Added ..."
+
+msgid "unknown"
+msgstr "haijulikani"
+
+msgid "file_saved!"
+msgstr "Faili Kuokolewa!"
+
+msgid "uploading_file!"
+msgstr "Kuweka faili!"
+
+msgid "save_failed!"
+msgstr "Ila Imeshindwa!"
+
+msgid "search"
+msgstr "tafuta"
+
+msgid "find"
+msgstr "kupata"
+
+msgid "replace"
+msgstr "nafasi"
+
+msgid "scroll_past_end"
+msgstr "Scroll Zamani Mwisho"
+
+msgid "show_annotations"
+msgstr "show Annotations"
+
+msgid "show_gutter"
+msgstr "show Gutter"
+
+msgid "show_invisibles"
+msgstr "show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Kuonyesha Active Line"
+
+msgid "word_wrap"
+msgstr "neno Wrap"
+
+msgid "split_code"
+msgstr "Split Kanuni"
+
+msgid "preferences"
+msgstr "mapendekezo"
+
+msgid "close_all_tabs"
+msgstr "Karibu zote Tabs"
+
+msgid "close_current_tab"
+msgstr "Karibu sasa Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto kuokoa faili wakati mimi aina"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "nyaraka"
+
+msgid "themes"
+msgstr "mandhari"
+
+msgid "keyboard_shortcuts"
+msgstr "Kinanda njia za mkato"
+
+msgid "coming_soon"
+msgstr "Coming Soon"
+
+msgid "empty"
+msgstr "tupu"

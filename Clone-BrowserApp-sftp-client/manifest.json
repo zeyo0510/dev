@@ -1,0 +1,40 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/launch.js" ]
+      }
+   },
+   "author": "sFTP App Ltd",
+   "description": "Access your Local/Remote FTP server (including your NAS drive), local server, VPS, dedicated server, cloud server or shared hosting.",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "24": "images/24.png",
+      "32": "images/32.png",
+      "64": "images/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq3mkPlQqCe0KGCxWOCOgnVoFr1BnHMSDTzUYJm9fy8rA5Fqp3TKQpR3+SSnGRdAi56Nk8dhknjMBfyTO1L95OXPBNSUTKziDyPjwnfwILNgHyPNXJ/LXRpmYJKFw4NHowPiTVvN5HZxI3Oz/JqAtxrh/ZMTrZEDdcJVc1cunoK7W6ps9Bi1RyK9kj/RYuNyNhwSI/43ytVHgoPg0/cKpPMHEFuNa/Qa+sAclsNdz9C+5x0oH0x1Cn8qQCOEgmgO0v3zATqDt5IvZP5oV2Yftmq4iflLH5JRISh/RsjSTKItZW9XfLA7xfUVy8DCk6UrBoy95g6SO31P/UkLRnvv+nwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "34",
+   "name": "sFTP Client",
+   "offline_enabled": true,
+   "permissions": [ "storage", "clipboardWrite", "clipboardRead", "unlimitedStorage", {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   }, "contextMenus", "\u003Call_urls>", "fullscreen", "webview", "notifications", {
+      "mediaGalleries": [ "read", "allAutoDetected" ]
+   }, "https://www.sftpapp.com/", "https://api.sftpapp.com/", "https://payments.sftpapp.com/", "https://chrome.sftpapp.com/", "https://www.googleapis.com/" ],
+   "short_name": "sFTP Client",
+   "sockets": {
+      "tcp": {
+         "connect": "*:*"
+      },
+      "tcpServer": {
+         "listen": "*:*"
+      },
+      "udp": {
+         "send": "*:*"
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.9.2.0"
+}

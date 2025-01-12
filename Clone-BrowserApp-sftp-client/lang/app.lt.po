@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Meniu"
+
+msgid "file"
+msgstr "byla"
+
+msgid "view"
+msgstr "vaizdas"
+
+msgid "edit"
+msgstr "Redaguoti"
+
+msgid "help"
+msgstr "padėti"
+
+msgid "manage_accounts"
+msgstr "tvarkyti abonementus"
+
+msgid "import_accounts"
+msgstr "importo sąskaitos"
+
+msgid "export_accounts"
+msgstr "eksporto sąskaitos"
+
+msgid "quick_connect"
+msgstr "quick Connect"
+
+msgid "message_log"
+msgstr "Pranešimo Prisijungti"
+
+msgid "local_directory"
+msgstr "vietinis katalogas"
+
+msgid "uploads_downloads"
+msgstr "Paveiksliukai / Siuntiniai"
+
+msgid "clear_saved_data"
+msgstr "Išvalyti Išsaugoti Duomenys"
+
+msgid "edit_settings"
+msgstr "redaguoti"
+
+msgid "report_bug"
+msgstr "Pranešk apie klaidą"
+
+msgid "suggest_feature"
+msgstr "Pasiūlykite funkcija"
+
+msgid "ask_a_question"
+msgstr "Užduok klausimą"
+
+msgid "change_log"
+msgstr "Pakeisti Prisijungti"
+
+msgid "about"
+msgstr "apie"
+
+msgid "exit"
+msgstr "išeiti"
+
+msgid "host_ip_address"
+msgstr "Priimančioji / IP adresas"
+
+msgid "username"
+msgstr "Vartotojo vardas"
+
+msgid "password"
+msgstr "slaptažodis"
+
+msgid "port"
+msgstr "uostas"
+
+msgid "connect"
+msgstr "Prisijungti"
+
+msgid "welcome"
+msgstr "laukiamas"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP klientas yra visa informacija apie paprastumą, jis buvo pastatytas ant Google Chrome &quot;/&quot; Chrome OS supakuoti app sąsają, leidžiančią app, kad būtų greitai ir reaguoti. Kai funkcionalumo apima FTP sąskaitos vadybininku saugoti toli ir or"
+
+msgid "latest_updates"
+msgstr "Paskutiniai atnaujinimai"
+
+msgid "server_status"
+msgstr "serverio būsena"
+
+msgid "license_server"
+msgstr "serverio licencijos"
+
+msgid "sftp_support"
+msgstr "parama"
+
+msgid "notice_update"
+msgstr "Pranešimas / Atnaujinimai"
+
+msgid "website"
+msgstr "Interneto svetainė"
+
+msgid "clear_all"
+msgstr "Išvalyti viską"
+
+msgid "manage"
+msgstr "valdyti"
+
+msgid "recheck"
+msgstr "Re-Check"
+
+msgid "last_release"
+msgstr "Paskutinis spaudai"
+
+msgid "released"
+msgstr "išleistas"
+
+msgid "queued"
+msgstr "eilėje"
+
+msgid "failed"
+msgstr "nepavyko"
+
+msgid "completed"
+msgstr "užbaigtas"
+
+msgid "settings"
+msgstr "Nustatymai"
+
+msgid "add_folder"
+msgstr "Pridėti aplanką"
+
+msgid "add_ftp_account"
+msgstr "Pridėti FTP paskyros"
+
+msgid "file_editor"
+msgstr "Failo redaktorius"
+
+msgid "editor_preferences"
+msgstr "redaktorius Nustatymai"
+
+msgid "your_ftp_accounts"
+msgstr "Jūsų FTP sąskaitų"
+
+msgid "most_recent_used"
+msgstr "Dauguma neseniai vartojote."
+
+msgid "no_connections_yet_made"
+msgstr "Nėra jungtys dar padarė"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "nėra pridėta FTP sąskaitų dar"
+
+msgid "most_recent_connections"
+msgstr "Dauguma Naujausi jungtys"
+
+msgid "last_10_connections_made"
+msgstr "10 naujausių jungtys, pagaminti"
+
+msgid "designed_developed_by"
+msgstr "Sukurta & Developed by"
+
+msgid "about_info"
+msgstr "Prašome naudoti SFTP Client svetainę paramos, parama yra teikiama per mūsų individualių svetainėse."
+
+msgid "local"
+msgstr "vietinis"
+
+msgid "remote"
+msgstr "Nuotolinis"
+
+msgid "remote_location_desc"
+msgstr "pvz / public_html"
+
+msgid "create_directory"
+msgstr "Sukurti katalogas"
+
+msgid "create_new_directory"
+msgstr "Sukurti naują katalogą"
+
+msgid "create_file"
+msgstr "Sukurti failą"
+
+msgid "create_new_file"
+msgstr "Sukurti naują failą"
+
+msgid "refresh_list"
+msgstr "Atnaujinti sąrašą"
+
+msgid "change"
+msgstr "pokytis"
+
+msgid "report_a_bug"
+msgstr "Pranešk apie klaidą"
+
+msgid "suggest_a_feature"
+msgstr "Pasiūlykite funkcija"
+
+msgid "enter_password"
+msgstr "Įvesti slaptažodį"
+
+msgid "enter_your_password..."
+msgstr "Įveskite savo slaptažodį..."
+
+msgid "passphrase"
+msgstr "slaptažodis"
+
+msgid "enter_your_passphrase..."
+msgstr "Įveskite savo slaptą frazę ..."
+
+msgid "email_sftp_client"
+msgstr "Paštas SFTP klientas"
+
+msgid "faqs"
+msgstr "DUK"
+
+msgid "visit_sftp_client_website"
+msgstr "Aplankykite SFTP klientas svetainė"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Įvertinti mus Google Chrome &quot;internetinės parduotuvės"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Pranešti apie problemą arba gauti pagalbos"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Prisijunkite prie mūsų &quot;Facebook&quot; atnaujinimus"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow us on Twitter atnaujinimus"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Mus Google atnaujinimų"
+
+msgid "okay"
+msgstr "Gerai"
+
+msgid "cancel"
+msgstr "atšaukti"
+
+msgid "close"
+msgstr "Uždaryti"
+
+msgid "unknown_host"
+msgstr "Nežinomas adresas"
+
+msgid "okay_to_continue"
+msgstr "Gerai tęsti?"
+
+msgid "fingerprint"
+msgstr "pirštų atspaudas"
+
+msgid "remember"
+msgstr "Prisiminti"
+
+msgid "file_permissions"
+msgstr "failų leidimai"
+
+msgid "file_permissions_desc"
+msgstr "Prašome pasirinkti naujų atributus pasirinkto failo (-ų) / aplanko (-ai)"
+
+msgid "read"
+msgstr "skaityti"
+
+msgid "write"
+msgstr "rašyti"
+
+msgid "execute"
+msgstr "vykdyti"
+
+msgid "owner"
+msgstr "savininkas"
+
+msgid "group"
+msgstr "grupė"
+
+msgid "public"
+msgstr "visuomenės"
+
+msgid "numeric_value"
+msgstr "skaitinė reikšmė"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Įveskite naują katalogą vardą ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Įveskite naują failo vardą ..."
+
+msgid "name"
+msgstr "vardas"
+
+msgid "enter_a_password"
+msgstr "Įveskite slaptažodį"
+
+msgid "language"
+msgstr "kalba"
+
+msgid "seconds"
+msgstr "sekundžių"
+
+msgid "minutes"
+msgstr "protokolas"
+
+msgid "hour"
+msgstr "valanda"
+
+msgid "hours"
+msgstr "valandos"
+
+msgid "day"
+msgstr "diena"
+
+msgid "trial_left"
+msgstr "Bandomoji Kairysis"
+
+msgid "register_now"
+msgstr "Registruokis dabar"
+
+msgid "general"
+msgstr "bendras"
+
+msgid "security"
+msgstr "saugumas"
+
+msgid "master_password"
+msgstr "Pagrindinis slaptažodis"
+
+msgid "status"
+msgstr "statusas"
+
+msgid "enabled"
+msgstr "Įjungtas"
+
+msgid "disabled"
+msgstr "neįgalusis"
+
+msgid "timeout"
+msgstr "Laikas baigėsi"
+
+msgid "save"
+msgstr "Sutaupyti"
+
+msgid "add_account"
+msgstr "Pridėti paskyrą"
+
+msgid "support"
+msgstr "parama"
+
+msgid "notice_updates"
+msgstr "Pranešimas / Atnaujinimai"
+
+msgid "please_login"
+msgstr "Prašome prisijungti"
+
+msgid "your_session_timed_out"
+msgstr "Jūsų sesija laikas baigėsi"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Atsiprašome įvestas slaptažodis neteisingas!"
+
+msgid "login"
+msgstr "Prisijungti"
+
+msgid "master_password_desc"
+msgstr "Nustatykite šį pagrindinį slaptažodį išlaikyti savo sąskaitas saugus."
+
+msgid "license_key"
+msgstr "Licencijos raktas"
+
+msgid "online"
+msgstr "Prisijungęs"
+
+msgid "offline"
+msgstr "Atsijungęs"
+
+msgid "currently_unavailable"
+msgstr "Šiuo metu nepasiekiamas"
+
+msgid "no_message_to_display"
+msgstr "Nėra žinutė rodyti"
+
+msgid "offline_notice_title"
+msgstr "Nepasiekiama - esate neprisijungę arba tinklo tik prijungimo?"
+
+msgid "offline_notice_desc"
+msgstr "Jūs šiuo metu esate neprisijungę prie tinklo gali būti nustatytas tik jungtis ar ne ryšys su mūsų serveryje"
+
+msgid "edit_file"
+msgstr "Redaguoti Failo"
+
+msgid "download"
+msgstr "parsisiųsti"
+
+msgid "upload"
+msgstr "Įkelti"
+
+msgid "host_ip_is_required"
+msgstr "Priimančioji / IP reikalingi"
+
+msgid "apply_to_all_files"
+msgstr "Taikyti visus failus"
+
+msgid "activate_now"
+msgstr "Aktyvuok Dabar"
+
+msgid "deactivate"
+msgstr "Deaktyvuoti"
+
+msgid "in_progress"
+msgstr "Vyksta"
+
+msgid "complete"
+msgstr "pilnas"
+
+msgid "direction"
+msgstr "Kryptis"
+
+msgid "progress"
+msgstr "Progresas"
+
+msgid "permissions"
+msgstr "Leidimai"
+
+msgid "owner_group"
+msgstr "Savininkas / Grupės"
+
+msgid "size"
+msgstr "dydis"
+
+msgid "type"
+msgstr "tipas"
+
+msgid "modified"
+msgstr "modifikuotas"
+
+msgid "trial"
+msgstr "bandomasis"
+
+msgid "cleared"
+msgstr "išvalytas"
+
+msgid "error_connecting"
+msgstr "klaida jungiantis"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Klaida jungiantis prie priimančiosios / IP adresas"
+
+msgid "error_connecting_to_port"
+msgstr "Klaida jungiantis prie uosto"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Prašome pasirinkti vietinį katalogą pirmas!"
+
+msgid "go"
+msgstr "eiti"
+
+msgid "confirm"
+msgstr "Patvirtinti"
+
+msgid "delete"
+msgstr "panaikinti"
+
+msgid "rename"
+msgstr "pervadinti"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopijuoti adresas (-ai) į iškarpinę"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Patvirtinkite, kad norite ištrinti pasirinktą failą (-us) / aplankas (-ai)"
+
+msgid "cancelled_by_user"
+msgstr "Atšauktas vartotojas"
+
+msgid "already_exists_overwrite"
+msgstr "jau egzistuoja, perrašyti?"
+
+msgid "dashboard"
+msgstr "prietaisų skydas"
+
+msgid "my_accounts"
+msgstr "Mano sąskaita"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Failo išsaugoti! Visos sąskaitos buvo paremti."
+
+msgid "file_failed_please_try_again"
+msgstr "Failo Nepavyko! Prašau, pabandykite dar kartą."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Jūs šiuo metu neturiu sąskaitos turi būti paremti."
+
+msgid "saved!"
+msgstr "Išsaugoti!"
+
+msgid "please_enter_a_password"
+msgstr "Prašome įvesti slaptažodį!"
+
+msgid "connection_closed"
+msgstr "Ryšio uždarytas"
+
+msgid "listing_mode_set_to"
+msgstr "Įtraukimo režimas nustatytas į"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Vietinis serverio IP išspręsta, naudojant išorinį IP"
+
+msgid "login_incorrect"
+msgstr "Vartotojas neteisingas"
+
+msgid "keeping_connection_alive"
+msgstr "Išlaikyti ryšį gyvą"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Nepavyko rašyti, duomenų ryšys uždarytas"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Nepavyko perskaityti duomenų ryšys uždarytas"
+
+msgid "error_reading_file"
+msgstr "Klaida skaitant failą"
+
+msgid "error_writing_file"
+msgstr "Klaida rašant failą"
+
+msgid "failed_to_change_directory_to"
+msgstr "Nepavyko pakeisti katalogą"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Galbūt Jūs neturite teisingus leidimus patekti į šį katalogą"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Atkuriama atgal į ankstesnį katalogą"
+
+msgid "activate"
+msgstr "aktyvinti"
+
+msgid "payment"
+msgstr "mokėjimas"
+
+msgid "license_key_is_required"
+msgstr "Licenzijos raktas reikalingas"
+
+msgid "license_activated!"
+msgstr "Licencijos aktyvuotos!"
+
+msgid "your_license_has_been_validated"
+msgstr "Jūsų licencija buvo patvirtintas."
+
+msgid "thank_you!"
+msgstr "Ačiū!"
+
+msgid "buy_now!"
+msgstr "Pirkti dabar!"
+
+msgid "buy_now"
+msgstr "Pirkti dabar"
+
+msgid "one_off_fee"
+msgstr "vienkartinis mokestis"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Prašome atnaujinti mėgautis šią programą be jokių apribojimų"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Prašome įvesti savo licenzijos raktas žemiau"
+
+msgid "or"
+msgstr "ARBA"
+
+msgid "loading..."
+msgstr "Kraunasi ..."
+
+msgid "clear_accounts"
+msgstr "Išvalyti sąskaitos"
+
+msgid "clear_ssh_keys"
+msgstr "Išvalyti SSH raktus"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Ištrina visus išsaugotus SSH raktus"
+
+msgid "clear_app_settings"
+msgstr "Išvalyti App Nustatymai"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Ištrina visus konkrečios programos nustatymus"
+
+msgid "clear_recent_connections"
+msgstr "Išvalyti Naujausi jungtys"
+
+msgid "deletes_all_recent_connections"
+msgstr "Ištrina visus vėliausių ryšių"
+
+msgid "import_type"
+msgstr "importas tipas"
+
+msgid "please_select"
+msgstr "Prašome pasirinkti"
+
+msgid "import_file"
+msgstr "importas Failų"
+
+msgid "choose_file"
+msgstr "Pasirinkti failą"
+
+msgid "delete_accounts"
+msgstr "Ištrinti abonementai"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Ištrina visas esamas sąskaitas"
+
+msgid "import_now"
+msgstr "importas Dabar"
+
+msgid "none"
+msgstr "Nė vienas"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Prašome iš naujo sFTP Client programą, kad pakeitimai įsigaliotų."
+
+msgid "already_bought_the_app"
+msgstr "Jau nupirko programą?"
+
+msgid "choose"
+msgstr "pasirinkti"
+
+msgid "deleted!"
+msgstr "Ištrintas!"
+
+msgid "use_syncronised_browsing"
+msgstr "naudoti sinchronizuota naršymą"
+
+msgid "remote_directory"
+msgstr "Nuotolinis katalogo"
+
+msgid "rsa_key_only!"
+msgstr "RSA rakto tik!"
+
+msgid "no_key_selected"
+msgstr "Nėra raktas pasirinktas."
+
+msgid "ssh_key_file"
+msgstr "SSH raktų Failų"
+
+msgid "no_dir_selected"
+msgstr "Nėra rež pasirinktas."
+
+msgid "keep_blank_for_current_password"
+msgstr "Laikyti tuščias dabartinės slaptažodžiu."
+
+msgid "logon_type"
+msgstr "Registravimosi tipas"
+
+msgid "normal"
+msgstr "Normalus"
+
+msgid "ask_for_password"
+msgstr "Klauskite Slaptažodis"
+
+msgid "anonymous"
+msgstr "Anoniminis"
+
+msgid "account_type"
+msgstr "Paskyros tipas"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (normalus ryšys)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure connection)"
+
+msgid "folder"
+msgstr "aplankas"
+
+msgid "advanced"
+msgstr "pažangus"
+
+msgid "folder_name"
+msgstr "aplanko pavadinimas"
+
+msgid "parent"
+msgstr "tėvas"
+
+msgid "new_ftp_site"
+msgstr "Nauja svetainė FTP"
+
+msgid "new_folder"
+msgstr "Naujas aplankas"
+
+msgid "clean_now"
+msgstr "Švarios dabar"
+
+msgid "host"
+msgstr "kariuomenė"
+
+msgid "no_accounts_added..."
+msgstr "Nėra sąskaitos patalpintas ..."
+
+msgid "unknown"
+msgstr "nežinomas"
+
+msgid "file_saved!"
+msgstr "Failo išsaugoti!"
+
+msgid "uploading_file!"
+msgstr "Įkeliant failą!"
+
+msgid "save_failed!"
+msgstr "Išsaugoti Nepavyko!"
+
+msgid "search"
+msgstr "Paieška"
+
+msgid "find"
+msgstr "rasti"
+
+msgid "replace"
+msgstr "pakeisti"
+
+msgid "scroll_past_end"
+msgstr "Pereikite praeitis pabaiga"
+
+msgid "show_annotations"
+msgstr "Rodyti Komentarai"
+
+msgid "show_gutter"
+msgstr "Rodyti Gutter"
+
+msgid "show_invisibles"
+msgstr "Rodyti Invisibles"
+
+msgid "show_print_margin"
+msgstr "Rodyti spausdinimo paraščių"
+
+msgid "highlight_active_line"
+msgstr "Pažymėkite Active Line"
+
+msgid "word_wrap"
+msgstr "žodis Laužyti"
+
+msgid "split_code"
+msgstr "Splitas kodas"
+
+msgid "preferences"
+msgstr "Nustatymai"
+
+msgid "close_all_tabs"
+msgstr "Uždaryti visus skirtukus"
+
+msgid "close_current_tab"
+msgstr "Uždaryti esamąkortelę"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Automatiškai išsaugoti failą, kai aš tipo"
+
+msgid "auto_save"
+msgstr "Automatinis Išsaugoti"
+
+msgid "quick_save"
+msgstr "Greitas Išsaugoti"
+
+msgid "documentation"
+msgstr "Dokumentacija"
+
+msgid "themes"
+msgstr "tematika"
+
+msgid "keyboard_shortcuts"
+msgstr "Klaviatūros nuorodos"
+
+msgid "coming_soon"
+msgstr "Netrukus"
+
+msgid "empty"
+msgstr "tuščia"

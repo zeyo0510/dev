@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: so\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "file"
+msgstr "File"
+
+msgid "view"
+msgstr "View"
+
+msgid "edit"
+msgstr "edit"
+
+msgid "help"
+msgstr "I caawi"
+
+msgid "manage_accounts"
+msgstr "Maamul Accounts"
+
+msgid "import_accounts"
+msgstr "Import Accounts"
+
+msgid "export_accounts"
+msgstr "Xisaabaadka dhoofinta"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "Directory Local"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Saved Data"
+
+msgid "edit_settings"
+msgstr "Settings Edit"
+
+msgid "report_bug"
+msgstr "Report bahal ah"
+
+msgid "suggest_feature"
+msgstr "Soo jeedi Feature a"
+
+msgid "ask_a_question"
+msgstr "Weydii Su'aal"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "Exit"
+
+msgid "host_ip_address"
+msgstr "Martigeliyaha / Address IP"
+
+msgid "username"
+msgstr "username"
+
+msgid "password"
+msgstr "Password"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Connect"
+
+msgid "welcome"
+msgstr "Welcome"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client waa dhan oo ku saabsan xog la ', waxaa la dhisay on Google Chrome / Chrome OS interface app baakadeeyey ku jidaynayey app ah in ay si degdeg ah oo ka jawaabaan. Qaar ka mid ah shaqeynta ka mid ah Manager Account FTP ah in uu kaydiyo iska i"
+
+msgid "latest_updates"
+msgstr "Updates Latest"
+
+msgid "server_status"
+msgstr "server Status"
+
+msgid "license_server"
+msgstr "Server License"
+
+msgid "sftp_support"
+msgstr "Taageerada"
+
+msgid "notice_update"
+msgstr "Ogeysiis / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "Maaree"
+
+msgid "recheck"
+msgstr "Dib-u-jeeg"
+
+msgid "last_release"
+msgstr "Release Last"
+
+msgid "released"
+msgstr "sii daayay"
+
+msgid "queued"
+msgstr "bacadka"
+
+msgid "failed"
+msgstr "fashilmay"
+
+msgid "completed"
+msgstr "Waxaa buuxiya"
+
+msgid "settings"
+msgstr "Settings"
+
+msgid "add_folder"
+msgstr "Add Folder"
+
+msgid "add_ftp_account"
+msgstr "Add Account FTP"
+
+msgid "file_editor"
+msgstr "Fayl Editor"
+
+msgid "editor_preferences"
+msgstr "Preferences Editor"
+
+msgid "your_ftp_accounts"
+msgstr "Xisaabaadka Your FTP"
+
+msgid "most_recent_used"
+msgstr "Dhowaan loo isticmaalo."
+
+msgid "no_connections_yet_made"
+msgstr "xidhiidhada No weli ka dhigay"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No xisaab FTP weli ku daray"
+
+msgid "most_recent_connections"
+msgstr "Most Recent Connections"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 xidhiidhada dhigay"
+
+msgid "designed_developed_by"
+msgstr "Waxaa loo & Developed by"
+
+msgid "about_info"
+msgstr "Fadlan isticmaal bogga internetka ee Client sFTP taageero, taageero ma waxaa lagu bixiyaa iyada oo loo marayo websites shaqsi our."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "tusaale / public_html"
+
+msgid "create_directory"
+msgstr "Abuur Directory"
+
+msgid "create_new_directory"
+msgstr "Abuur New Directory"
+
+msgid "create_file"
+msgstr "Abuur File"
+
+msgid "create_new_file"
+msgstr "Abuur File New"
+
+msgid "refresh_list"
+msgstr "List Refresh"
+
+msgid "change"
+msgstr "Change"
+
+msgid "report_a_bug"
+msgstr "Report bahal ah"
+
+msgid "suggest_a_feature"
+msgstr "Soo jeedi Feature a"
+
+msgid "enter_password"
+msgstr "Ku qor Password"
+
+msgid "enter_your_password..."
+msgstr "Ku qor password ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Waxaad ku qortaa passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ ee"
+
+msgid "visit_sftp_client_website"
+msgstr "Booqo sFTP Client Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "na Rate on Chrome ah Webstore Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Report arrin ama aad gargaar u hesho"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Nagu soo biir on Facebook casriyeysan"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "na raac on Twitter casriyeysan"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "na +1 on Google casriyeysan"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "Cancel"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "martigeliyaha Lama yaqaan"
+
+msgid "okay_to_continue"
+msgstr "Okay in ay sii wadaan?"
+
+msgid "fingerprint"
+msgstr "faraha"
+
+msgid "remember"
+msgstr "Xusuusnow"
+
+msgid "file_permissions"
+msgstr "Ogolaanshaha File"
+
+msgid "file_permissions_desc"
+msgstr "Fadlan dooro sifooyin cusub ee file ee la doortay (s) / folder (s)"
+
+msgid "read"
+msgstr "Read"
+
+msgid "write"
+msgstr "Qor"
+
+msgid "execute"
+msgstr "Fuli"
+
+msgid "owner"
+msgstr "Mulkiilaha"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Dadweynaha"
+
+msgid "numeric_value"
+msgstr "Qiimaha tiro"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Ku qor magaca buugga cusub ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Ku qor magaca file cusub ..."
+
+msgid "name"
+msgstr "Magaca"
+
+msgid "enter_a_password"
+msgstr "Ku qor password a"
+
+msgid "language"
+msgstr "Language"
+
+msgid "seconds"
+msgstr "Seconds"
+
+msgid "minutes"
+msgstr "Minutes"
+
+msgid "hour"
+msgstr "Saacadda"
+
+msgid "hours"
+msgstr "Saacadaha"
+
+msgid "day"
+msgstr "Day"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "hadda diiwaan"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Ammaanka"
+
+msgid "master_password"
+msgstr "Master password"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "karti"
+
+msgid "disabled"
+msgstr "naafada"
+
+msgid "timeout"
+msgstr "fekero"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Add Account"
+
+msgid "support"
+msgstr "Taageerada"
+
+msgid "notice_updates"
+msgstr "Ogeysiis / Updates"
+
+msgid "please_login"
+msgstr "Fadlan gal"
+
+msgid "your_session_timed_out"
+msgstr "Your Kulanka lagu tiriyaa Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry password aad u galay waxay ahayd sax ahayn!"
+
+msgid "login"
+msgstr "login"
+
+msgid "master_password_desc"
+msgstr "Calan password sayidkiisa this si ay u sii ammaan ah xisaab-aad."
+
+msgid "license_key"
+msgstr "Key License"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Currently maqan"
+
+msgid "no_message_to_display"
+msgstr "fariin No in uu soo bandhigo"
+
+msgid "offline_notice_title"
+msgstr "Gaari - offline ama on shabakad xiriir oo kaliya baad tahay?"
+
+msgid "offline_notice_desc"
+msgstr "Waxaad tahay hadda offline, on shabakad xiriir oo kaliya ama xidhiidh la lahayn ayaa laga yaabaa in loo aasaasay si our server"
+
+msgid "edit_file"
+msgstr "edit File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Martigeliyaha / IP loo baahan yahay"
+
+msgid "apply_to_all_files"
+msgstr "Codso in files oo dhan"
+
+msgid "activate_now"
+msgstr "Guddi Hadda"
+
+msgid "deactivate"
+msgstr "De-kaakacaysa"
+
+msgid "in_progress"
+msgstr "In Progress"
+
+msgid "complete"
+msgstr "Buuxi"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "Horumarka"
+
+msgid "permissions"
+msgstr "Ogolaanshaha"
+
+msgid "owner_group"
+msgstr "Mulkiilaha / Group"
+
+msgid "size"
+msgstr "size"
+
+msgid "type"
+msgstr "Nooca"
+
+msgid "modified"
+msgstr "Wax kabadal"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "bariyeelay"
+
+msgid "error_connecting"
+msgstr "Error xiridda"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error xiridda inay marti / Ciwaanka IP: ga"
+
+msgid "error_connecting_to_port"
+msgstr "Error xiridda dekedda"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Fadlan dooro hagaha ah ugu horeeyay ee maxalli!"
+
+msgid "go"
+msgstr "Tag"
+
+msgid "confirm"
+msgstr "Xaqiiji"
+
+msgid "delete"
+msgstr "Delete"
+
+msgid "rename"
+msgstr "magaca"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL Copy (s) in sabuurad"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Fadlan xaqiiji in aad rabto in aad tirtirto file ee la doortay (s) / folder (s)"
+
+msgid "cancelled_by_user"
+msgstr "Waala joojiyay by user"
+
+msgid "already_exists_overwrite"
+msgstr "hore u jirta, overwrite?"
+
+msgid "dashboard"
+msgstr "dashboard"
+
+msgid "my_accounts"
+msgstr "Xisaabaadka My"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Fayl Saved! Dhammaan xisaabaadka ayaa la xoojiyaa."
+
+msgid "file_failed_please_try_again"
+msgstr "File fashilmay! Fadlan isku day mar kale."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Waxaad hadda lahayn xisaab in la xoojiyaa."
+
+msgid "saved!"
+msgstr "Saved!"
+
+msgid "please_enter_a_password"
+msgstr "Fadlan qor password a!"
+
+msgid "connection_closed"
+msgstr "Connection xiray"
+
+msgid "listing_mode_set_to"
+msgstr "Liiska hab qarka u saaran inay"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP server Local xalin, iyadoo la isticmaalayo dibadda IP"
+
+msgid "login_incorrect"
+msgstr "login aan sax ahayn"
+
+msgid "keeping_connection_alive"
+msgstr "ILAALI xiriir nool"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Lama qoro, la xiriira xogta la xiray"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Lama akhri xiriir xogta la xiray"
+
+msgid "error_reading_file"
+msgstr "file reading Error"
+
+msgid "error_writing_file"
+msgstr "file qoraal Error"
+
+msgid "failed_to_change_directory_to"
+msgstr "Ku guuldarraystay in la beddelo buugga si"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Waxaa laga yaabaa inaad aan haysan ogolaanshaha sax ah si aad u hesho buuga this"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Loogu noqonin in buugga hore dib"
+
+msgid "activate"
+msgstr "Guddi"
+
+msgid "payment"
+msgstr "Payment"
+
+msgid "license_key_is_required"
+msgstr "muhiimka ah License ayaa loo baahan yahay"
+
+msgid "license_activated!"
+msgstr "License kacsan!"
+
+msgid "your_license_has_been_validated"
+msgstr "Your liisanka ayaa la saxay."
+
+msgid "thank_you!"
+msgstr "Mahadsanid!"
+
+msgid "buy_now!"
+msgstr "Iibso Now!"
+
+msgid "buy_now"
+msgstr "iibso Hadda"
+
+msgid "one_off_fee"
+msgstr "mid off lacag"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Fadlan kor ku raaxaysan app this la xayiraad lahayn"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Fadlan qor Key License aad hoos"
+
+msgid "or"
+msgstr "AMA"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Xisaabaadka Clear"
+
+msgid "clear_ssh_keys"
+msgstr "Clear Ssh Furayaasha"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Tirtirtaa dhammaan furayaasha Ssh badbaadiyey"
+
+msgid "clear_app_settings"
+msgstr "Settings Clear App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Tirtirtaa dhammaan goobaha gaar app"
+
+msgid "clear_recent_connections"
+msgstr "Connections Clear Recent"
+
+msgid "deletes_all_recent_connections"
+msgstr "Tirtirtaa dhammaan xidhiidhada dhawaan"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Fadlan dooro"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Dooro File"
+
+msgid "delete_accounts"
+msgstr "Delete Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Tirtirtaa dhammaan xisaabaadka jira"
+
+msgid "import_now"
+msgstr "Import Hadda"
+
+msgid "none"
+msgstr "None"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Fadlan guuleysatey sFTP app Client isbedelada in uu dhaqan-."
+
+msgid "already_bought_the_app"
+msgstr "Durba iibsaday App ah?"
+
+msgid "choose"
+msgstr "Dooro"
+
+msgid "deleted!"
+msgstr "Masaxay!"
+
+msgid "use_syncronised_browsing"
+msgstr "isticmaalaan dhirta syncronised"
+
+msgid "remote_directory"
+msgstr "Directory Remote"
+
+msgid "rsa_key_only!"
+msgstr "muhiimka ah RSA oo keliya!"
+
+msgid "no_key_selected"
+msgstr "muhiimka ah ee No xulay."
+
+msgid "ssh_key_file"
+msgstr "Ssh Key File"
+
+msgid "no_dir_selected"
+msgstr "dir No xulay."
+
+msgid "keep_blank_for_current_password"
+msgstr "Ka dhig bannaan, waayo, password hadda."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Weydiiso Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Account Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Connection Normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Connection Secure)"
+
+msgid "ssh_secure_connection"
+msgstr "Ssh (Connection Secure)"
+
+msgid "folder"
+msgstr "folder"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "folder Name"
+
+msgid "parent"
+msgstr "Waalidka"
+
+msgid "new_ftp_site"
+msgstr "Site New FTP"
+
+msgid "new_folder"
+msgstr "Folder New"
+
+msgid "clean_now"
+msgstr "nadiifi Hadda"
+
+msgid "host"
+msgstr "martigeliyaha"
+
+msgid "no_accounts_added..."
+msgstr "No Accounts Added ..."
+
+msgid "unknown"
+msgstr "Lama yaqaan"
+
+msgid "file_saved!"
+msgstr "Fayl Saved!"
+
+msgid "uploading_file!"
+msgstr "File koombiyuutarka!"
+
+msgid "save_failed!"
+msgstr "Save fashilmay!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "Raadi"
+
+msgid "replace"
+msgstr "beddel"
+
+msgid "scroll_past_end"
+msgstr "Scroll hore End"
+
+msgid "show_annotations"
+msgstr "Show qoritaan gaaban"
+
+msgid "show_gutter"
+msgstr "Show biyomareenka"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print margin"
+
+msgid "highlight_active_line"
+msgstr "Bandhigaan Line Active"
+
+msgid "word_wrap"
+msgstr "Word laalaab"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "Doorbidka"
+
+msgid "close_all_tabs"
+msgstr "Close dhammaan furayaashan"
+
+msgid "close_current_tab"
+msgstr "Tab Close hadda"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto badbaadin file markii aan ku qor"
+
+msgid "auto_save"
+msgstr "auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "Warqadaha"
+
+msgid "themes"
+msgstr "Dulucda"
+
+msgid "keyboard_shortcuts"
+msgstr "keyboard"
+
+msgid "coming_soon"
+msgstr "Imaatinka Soon"
+
+msgid "empty"
+msgstr "madhan"

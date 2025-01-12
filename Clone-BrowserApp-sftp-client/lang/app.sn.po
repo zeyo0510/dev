@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menyu"
+
+msgid "file"
+msgstr "faira"
+
+msgid "view"
+msgstr "maonero"
+
+msgid "edit"
+msgstr "pepeta"
+
+msgid "help"
+msgstr "batsira"
+
+msgid "manage_accounts"
+msgstr "Manage Accounts"
+
+msgid "import_accounts"
+msgstr "Import Accounts"
+
+msgid "export_accounts"
+msgstr "Export Accounts"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "Local Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Aponese Data"
+
+msgid "edit_settings"
+msgstr "Edit Settings"
+
+msgid "report_bug"
+msgstr "Dzinoshuma Bug"
+
+msgid "suggest_feature"
+msgstr "Suggest munhu Feature"
+
+msgid "ask_a_question"
+msgstr "Bvunza mubvunzo"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "About"
+
+msgid "exit"
+msgstr "mbudo"
+
+msgid "host_ip_address"
+msgstr "Hondo / IP Address"
+
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Pasiwedhi"
+
+msgid "port"
+msgstr "poti"
+
+msgid "connect"
+msgstr "batanidza"
+
+msgid "welcome"
+msgstr "Mauya"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client nezvei nyore, rave yakavakwa pamusoro Google Chrome / Chrome Os mumapepa Anwendung inowanikwa kubvumira Anwendung kuti kutsanya uye vanoteerera. Vamwe functionality kunosanganisira ftp Account Manager kuchengetera kure uye kuronga inonyany"
+
+msgid "latest_updates"
+msgstr "Latest Updates"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "rezinesi Server"
+
+msgid "sftp_support"
+msgstr "tsigira"
+
+msgid "notice_update"
+msgstr "Notice / Updates"
+
+msgid "website"
+msgstr "Website"
+
+msgid "clear_all"
+msgstr "Bvisa zvese"
+
+msgid "manage"
+msgstr "tarisa"
+
+msgid "recheck"
+msgstr "Re-cheki"
+
+msgid "last_release"
+msgstr "Last Release"
+
+msgid "released"
+msgstr "kusunungurwa"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "vakakundikana"
+
+msgid "completed"
+msgstr "Inopera"
+
+msgid "settings"
+msgstr "Settings"
+
+msgid "add_folder"
+msgstr "Add forodha"
+
+msgid "add_ftp_account"
+msgstr "Add ftp Account"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Editor Zvamada"
+
+msgid "your_ftp_accounts"
+msgstr "Your ftp Accounts"
+
+msgid "most_recent_used"
+msgstr "Most ichangobva kushandiswa."
+
+msgid "no_connections_yet_made"
+msgstr "No kwokubatana asi akaita"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No ftp nhoroondo awedzera asi"
+
+msgid "most_recent_connections"
+msgstr "Most Recent Connections"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 kwokubatana akaita"
+
+msgid "designed_developed_by"
+msgstr "Yakagadzirwa & Kunotangwa ne"
+
+msgid "about_info"
+msgstr "Please kushandisa sFTP Client Website rutsigiro, hapana rutsigiro inopiwa kuburikidza Websites dzedu pachedu."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "kure"
+
+msgid "remote_location_desc"
+msgstr "eg / public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Create New Directory"
+
+msgid "create_file"
+msgstr "Create File"
+
+msgid "create_new_file"
+msgstr "Create New File"
+
+msgid "refresh_list"
+msgstr "Refresh List"
+
+msgid "change"
+msgstr "chinja"
+
+msgid "report_a_bug"
+msgstr "Dzinoshuma Bug"
+
+msgid "suggest_a_feature"
+msgstr "Suggest munhu Feature"
+
+msgid "enter_password"
+msgstr "Enter Password"
+
+msgid "enter_your_password..."
+msgstr "Pindai password ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Pindai passphrase yenyu ..."
+
+msgid "email_sftp_client"
+msgstr "Email sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ zvaJehovha"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit sFTP Client Website"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "isu Ona pamusoro Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Report nyaya kana kuwana rubatsiro"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Join isu on Facebook nokuda inogadziridza"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Tevedzera tiri Twitter nokuda inogadziridza"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "isu +1 musi Google nokuda inogadziridza"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "kanzura"
+
+msgid "close"
+msgstr "pedyo"
+
+msgid "unknown_host"
+msgstr "Unknown Host"
+
+msgid "okay_to_continue"
+msgstr "Okay kuramba?"
+
+msgid "fingerprint"
+msgstr "fingapurindi"
+
+msgid "remember"
+msgstr "yeuka"
+
+msgid "file_permissions"
+msgstr "File Permissions"
+
+msgid "file_permissions_desc"
+msgstr "Please sarudza zvitsva unhu kuti vakasarudzwa file (s) / forodha (s)"
+
+msgid "read"
+msgstr "verenga"
+
+msgid "write"
+msgstr "nyora"
+
+msgid "execute"
+msgstr "ponda"
+
+msgid "owner"
+msgstr "muridzi"
+
+msgid "group"
+msgstr "boka"
+
+msgid "public"
+msgstr "ruzhinji rwevanhu"
+
+msgid "numeric_value"
+msgstr "Numeric Kukosha"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Pinda zita dhairetori itsva ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Pinda zita faira matsva ..."
+
+msgid "name"
+msgstr "zita"
+
+msgid "enter_a_password"
+msgstr "Kupinda Password"
+
+msgid "language"
+msgstr "mutauro"
+
+msgid "seconds"
+msgstr "masekondi"
+
+msgid "minutes"
+msgstr "maminitsi"
+
+msgid "hour"
+msgstr "Awa"
+
+msgid "hours"
+msgstr "Hours"
+
+msgid "day"
+msgstr "Zuva"
+
+msgid "trial_left"
+msgstr "kutongwa Left"
+
+msgid "register_now"
+msgstr "Register Now"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "chibatiso"
+
+msgid "master_password"
+msgstr "tenzi Password"
+
+msgid "status"
+msgstr "chinzvimbo"
+
+msgid "enabled"
+msgstr "akwanise"
+
+msgid "disabled"
+msgstr "remara"
+
+msgid "timeout"
+msgstr "Nguva yapera"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Add Account"
+
+msgid "support"
+msgstr "tsigira"
+
+msgid "notice_updates"
+msgstr "Notice / Updates"
+
+msgid "please_login"
+msgstr "Please Login"
+
+msgid "your_session_timed_out"
+msgstr "Your Session nenguva Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sorry ari pasiwedhi pawakatanga akanga sizvo!"
+
+msgid "login"
+msgstr "Login"
+
+msgid "master_password_desc"
+msgstr "Set tenzi ichi pasiwedhi kuchengeta nhoroondo yako njodzi."
+
+msgid "license_key"
+msgstr "rezinesi Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Currently isina"
+
+msgid "no_message_to_display"
+msgstr "No shoko kuratidza"
+
+msgid "offline_notice_title"
+msgstr "Zvatisingagoni - Uri offline NO kana riri zvakarukwa chete kubatana?"
+
+msgid "offline_notice_desc"
+msgstr "Muri Parizvino offline NO, pamusoro pomumbure chete kubatana kana pasina kubatana raigona asimbiswa Server yedu"
+
+msgid "edit_file"
+msgstr "Edit File"
+
+msgid "download"
+msgstr "Download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Hondo / IP runodiwa"
+
+msgid "apply_to_all_files"
+msgstr "Zvinoshanda mafaira zvose"
+
+msgid "activate_now"
+msgstr "Activate Now"
+
+msgid "deactivate"
+msgstr "De-Activate"
+
+msgid "in_progress"
+msgstr "Munzira"
+
+msgid "complete"
+msgstr "yose"
+
+msgid "direction"
+msgstr "divi"
+
+msgid "progress"
+msgstr "budiriro"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Owner / Group"
+
+msgid "size"
+msgstr "zera"
+
+msgid "type"
+msgstr "mhando"
+
+msgid "modified"
+msgstr "Modified"
+
+msgid "trial"
+msgstr "kutongwa"
+
+msgid "cleared"
+msgstr "akachenurwa"
+
+msgid "error_connecting"
+msgstr "Error unobatanidza"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Error unobatanidza kugara naHama / Rinozvikudza ip kero"
+
+msgid "error_connecting_to_port"
+msgstr "Error unobatanidza kuti chengarava"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Please kusarudza yomunzvimbo dhairetori kutanga!"
+
+msgid "go"
+msgstr "famba"
+
+msgid "confirm"
+msgstr "simbisa"
+
+msgid "delete"
+msgstr "Kudzima"
+
+msgid "rename"
+msgstr "Rename"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) kuti Clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Please akusimbisei kuda Kudzima wasarudza file (s) / forodha (s)"
+
+msgid "cancelled_by_user"
+msgstr "Cancelled nemhengo"
+
+msgid "already_exists_overwrite"
+msgstr "atova aripo, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Accounts My"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Kuponeswa! Nhoroondo zvose ndakazvipiwa kutsigirwa."
+
+msgid "file_failed_please_try_again"
+msgstr "File Chakundikana! Edzai zvakare."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Iwe Pari havana nhoroondo kuti kutsigirwa."
+
+msgid "saved!"
+msgstr "Kununurwa!"
+
+msgid "please_enter_a_password"
+msgstr "Please kupinda Password!"
+
+msgid "connection_closed"
+msgstr "Connection kuvharwa"
+
+msgid "listing_mode_set_to"
+msgstr "Yataura rudzi wakaiswa kuti"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Local Server IP ndakatsungawo, vachishandisa zvekunze IP"
+
+msgid "login_incorrect"
+msgstr "Login sizvo"
+
+msgid "keeping_connection_alive"
+msgstr "Kuchengeta kubatana mupenyu"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Asingakwanisi kunyora, mashoko kubatana akadzivira"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Atadza verenga mashoko kubatanidza yakavharwa"
+
+msgid "error_reading_file"
+msgstr "Error kuverenga faira"
+
+msgid "error_writing_file"
+msgstr "Error kunyora faira"
+
+msgid "failed_to_change_directory_to"
+msgstr "Vakakundikana changed dhairetori kuti"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Ungasava akarurama Permissions kuwana dhairetori ichi"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Vachidzokera shure yapfuura dhairetori"
+
+msgid "activate"
+msgstr "Activate"
+
+msgid "payment"
+msgstr "mubhadharo"
+
+msgid "license_key_is_required"
+msgstr "Rezinesi kiyi runodiwa"
+
+msgid "license_activated!"
+msgstr "Rezinesi Activated!"
+
+msgid "your_license_has_been_validated"
+msgstr "rezinesi Your yave yakasimbiswa."
+
+msgid "thank_you!"
+msgstr "Wazviita!"
+
+msgid "buy_now!"
+msgstr "Tenga izvozvi!"
+
+msgid "buy_now"
+msgstr "Tenga izvozvi"
+
+msgid "one_off_fee"
+msgstr "mumwe kure muripo"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Ndapota ndiwedzere kunakidzwa Anwendung iyi pasina kurambidzwa"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Please kupinda dzenyu License Key pazasi"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Clear Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Deletes zvose vakaponeswa SSH makiyi"
+
+msgid "clear_app_settings"
+msgstr "Clear App Settings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Deletes zvose Anwendung chaicho pazviruva"
+
+msgid "clear_recent_connections"
+msgstr "Clear Recent Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Deletes zvose kuchangobva kwokubatana"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Sarudza"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "Sarudza File"
+
+msgid "delete_accounts"
+msgstr "Kudzima Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Deletes zvose huripo nhoroondo"
+
+msgid "import_now"
+msgstr "Import Now"
+
+msgid "none"
+msgstr "hapana"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Please restart sFTP Client Anwendung kuchinja kutora maturo."
+
+msgid "already_bought_the_app"
+msgstr "Nechekare akatenga App?"
+
+msgid "choose"
+msgstr "Sarudza"
+
+msgid "deleted!"
+msgstr "Dzadzimwa!"
+
+msgid "use_syncronised_browsing"
+msgstr "shandisa syncronised Browsing"
+
+msgid "remote_directory"
+msgstr "Remote Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA kiyi chete!"
+
+msgid "no_key_selected"
+msgstr "No kiyi vakasarudzwa."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "No DIR vakasarudzwa."
+
+msgid "keep_blank_for_current_password"
+msgstr "Ramba amboita kuti uno password."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Kumbira Password"
+
+msgid "anonymous"
+msgstr "kusazivikanwa"
+
+msgid "account_type"
+msgstr "Account Type"
+
+msgid "ftp_normal_connection"
+msgstr "Ftp (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Akachengeteka Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Akachengeteka Connection)"
+
+msgid "folder"
+msgstr "forodha"
+
+msgid "advanced"
+msgstr "enderera"
+
+msgid "folder_name"
+msgstr "forodha Name"
+
+msgid "parent"
+msgstr "mubereki"
+
+msgid "new_ftp_site"
+msgstr "New ftp Site"
+
+msgid "new_folder"
+msgstr "New forodha"
+
+msgid "clean_now"
+msgstr "zvakachena Now"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "No Accounts Added ..."
+
+msgid "unknown"
+msgstr "tsva"
+
+msgid "file_saved!"
+msgstr "File Kuponeswa!"
+
+msgid "uploading_file!"
+msgstr "Uchiisa File!"
+
+msgid "save_failed!"
+msgstr "Save Chakundikana!"
+
+msgid "search"
+msgstr "kutsvaka"
+
+msgid "find"
+msgstr "wana"
+
+msgid "replace"
+msgstr "tsiva"
+
+msgid "scroll_past_end"
+msgstr "Mupumburu Past End"
+
+msgid "show_annotations"
+msgstr "Show Annotations"
+
+msgid "show_gutter"
+msgstr "Show munoyerera"
+
+msgid "show_invisibles"
+msgstr "Show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print kumahombekombe"
+
+msgid "highlight_active_line"
+msgstr "Simbisai Active Line"
+
+msgid "word_wrap"
+msgstr "shoko putira"
+
+msgid "split_code"
+msgstr "Split Code"
+
+msgid "preferences"
+msgstr "Zvaunogona Kuchinja"
+
+msgid "close_all_tabs"
+msgstr "Close All Tabs"
+
+msgid "close_current_tab"
+msgstr "Close Current Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto kuponesa faira apo ini kutaipa"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "Documentation"
+
+msgid "themes"
+msgstr "Themes"
+
+msgid "keyboard_shortcuts"
+msgstr "kiibhodhi Shortcuts"
+
+msgid "coming_soon"
+msgstr "Kuuya manje manje"
+
+msgid "empty"
+msgstr "chinhu"

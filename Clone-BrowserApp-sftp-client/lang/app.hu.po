@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menü"
+
+msgid "file"
+msgstr "akta"
+
+msgid "view"
+msgstr "Kilátás"
+
+msgid "edit"
+msgstr "szerkesztése"
+
+msgid "help"
+msgstr "Segítség"
+
+msgid "manage_accounts"
+msgstr "Fiókok kezelése"
+
+msgid "import_accounts"
+msgstr "import számlák"
+
+msgid "export_accounts"
+msgstr "export számlák"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Bejelentkezés"
+
+msgid "local_directory"
+msgstr "helyi könyvtár"
+
+msgid "uploads_downloads"
+msgstr "Feltöltések / letöltések"
+
+msgid "clear_saved_data"
+msgstr "Mentett adatok"
+
+msgid "edit_settings"
+msgstr "Beállítások szerkesztése"
+
+msgid "report_bug"
+msgstr "Jelentse be a hibát"
+
+msgid "suggest_feature"
+msgstr "Javasoljon egy funkciót"
+
+msgid "ask_a_question"
+msgstr "Kérdezzen"
+
+msgid "change_log"
+msgstr "Változások naplója"
+
+msgid "about"
+msgstr "Ról ről"
+
+msgid "exit"
+msgstr "Kijárat"
+
+msgid "host_ip_address"
+msgstr "Host / IP cím"
+
+msgid "username"
+msgstr "Felhasználónév"
+
+msgid "password"
+msgstr "Jelszó"
+
+msgid "port"
+msgstr "Kikötő"
+
+msgid "connect"
+msgstr "Csatlakozás"
+
+msgid "welcome"
+msgstr "Üdvözöljük"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP ügyfél szól egyszerűség, már épül a Google Chrome / Chrome OS csomagolt alkalmazás interfész, amely lehetővé teszi az alkalmazást, hogy gyors és rugalmas. A funkciók tartalmaz egy FTP Account Manager tárolható és megszervezi a legtöbb minket"
+
+msgid "latest_updates"
+msgstr "legújabb frissítések"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Támogatás"
+
+msgid "notice_update"
+msgstr "Közlemény / Frissítések"
+
+msgid "website"
+msgstr "Weboldal"
+
+msgid "clear_all"
+msgstr "Kitörölni mindent"
+
+msgid "manage"
+msgstr "kezel"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "utolsó Release"
+
+msgid "released"
+msgstr "felszabadított"
+
+msgid "queued"
+msgstr "Sorban álló"
+
+msgid "failed"
+msgstr "nem sikerült"
+
+msgid "completed"
+msgstr "befejezték"
+
+msgid "settings"
+msgstr "Beállítások"
+
+msgid "add_folder"
+msgstr "Mappa hozzáadása"
+
+msgid "add_ftp_account"
+msgstr "Add FTP fiók"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "Szerkesztő beállításai"
+
+msgid "your_ftp_accounts"
+msgstr "FTP fiókok"
+
+msgid "most_recent_used"
+msgstr "Legutóbb használt."
+
+msgid "no_connections_yet_made"
+msgstr "Nincs kapcsolat még készül"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Nem FTP még hozzá"
+
+msgid "most_recent_connections"
+msgstr "Legújabb kapcsolatok"
+
+msgid "last_10_connections_made"
+msgstr "Az utolsó 10 csatlakozók készült"
+
+msgid "designed_developed_by"
+msgstr "Designed & Fejlesztette"
+
+msgid "about_info"
+msgstr "Használja a SFTP ügyfél weboldalát, nem nyújtanak támogatást a mi egyéni honlapok."
+
+msgid "local"
+msgstr "Helyi"
+
+msgid "remote"
+msgstr "Távoli"
+
+msgid "remote_location_desc"
+msgstr "pl / public_html"
+
+msgid "create_directory"
+msgstr "könyvtár létrehozása"
+
+msgid "create_new_directory"
+msgstr "Új könyvtár"
+
+msgid "create_file"
+msgstr "Fájl létrehozása"
+
+msgid "create_new_file"
+msgstr "Új fájl létrehozása"
+
+msgid "refresh_list"
+msgstr "Lista frissítése"
+
+msgid "change"
+msgstr "Változás"
+
+msgid "report_a_bug"
+msgstr "Jelentse be a hibát"
+
+msgid "suggest_a_feature"
+msgstr "Javasoljon egy funkciót"
+
+msgid "enter_password"
+msgstr "Írd be a jelszót"
+
+msgid "enter_your_password..."
+msgstr "Írd be a jelszavad..."
+
+msgid "passphrase"
+msgstr "Jelmondat"
+
+msgid "enter_your_passphrase..."
+msgstr "Írja be a jelszót ..."
+
+msgid "email_sftp_client"
+msgstr "E-mail SFTP ügyfél"
+
+msgid "faqs"
+msgstr "GYIK"
+
+msgid "visit_sftp_client_website"
+msgstr "Látogasson SFTP ügyfél honlapja"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Értékeljen minket a Google Chrome Webáruház"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Hibabejelentés vagy segítség"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Csatlakozz hozzánk a Facebook-on a frissítéseket"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Kövess minket a Twitter frissítések"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+ 1-gyel minket a Google frissítések"
+
+msgid "okay"
+msgstr "oké"
+
+msgid "cancel"
+msgstr "Törölni"
+
+msgid "close"
+msgstr "Közeli"
+
+msgid "unknown_host"
+msgstr "Ismeretlen kiszolgáló"
+
+msgid "okay_to_continue"
+msgstr "Oké, hogy továbbra is?"
+
+msgid "fingerprint"
+msgstr "Ujjlenyomat"
+
+msgid "remember"
+msgstr "Emlékezik"
+
+msgid "file_permissions"
+msgstr "fájl jogosultságok"
+
+msgid "file_permissions_desc"
+msgstr "Kérjük, válassza ki az új attribútumokat a kiválasztott fájl (ok) / mappa (k)"
+
+msgid "read"
+msgstr "Olvas"
+
+msgid "write"
+msgstr "Ír"
+
+msgid "execute"
+msgstr "kivégez"
+
+msgid "owner"
+msgstr "Tulajdonos"
+
+msgid "group"
+msgstr "Csoport"
+
+msgid "public"
+msgstr "Nyilvános"
+
+msgid "numeric_value"
+msgstr "számértéket"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Írja be a nevét az új könyvtár ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Írja be a nevét az új file ..."
+
+msgid "name"
+msgstr "Név"
+
+msgid "enter_a_password"
+msgstr "Írja be a jelszót"
+
+msgid "language"
+msgstr "Nyelv"
+
+msgid "seconds"
+msgstr "másodperc"
+
+msgid "minutes"
+msgstr "Percek"
+
+msgid "hour"
+msgstr "Óra"
+
+msgid "hours"
+msgstr "Órák"
+
+msgid "day"
+msgstr "Nap"
+
+msgid "trial_left"
+msgstr "Trial Bal"
+
+msgid "register_now"
+msgstr "Regisztrálj most"
+
+msgid "general"
+msgstr "Általános"
+
+msgid "security"
+msgstr "Biztonság"
+
+msgid "master_password"
+msgstr "mester jelszó"
+
+msgid "status"
+msgstr "Állapot"
+
+msgid "enabled"
+msgstr "Engedélyezett"
+
+msgid "disabled"
+msgstr "Tiltva"
+
+msgid "timeout"
+msgstr "Időtúllépés"
+
+msgid "save"
+msgstr "Mentés"
+
+msgid "add_account"
+msgstr "Fiók hozzáadása"
+
+msgid "support"
+msgstr "Támogatás"
+
+msgid "notice_updates"
+msgstr "Közlemény / Frissítések"
+
+msgid "please_login"
+msgstr "Kérjük jelentkezzen be"
+
+msgid "your_session_timed_out"
+msgstr "A Session Időzített Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Sajnáljuk, de a megadott jelszó hibás!"
+
+msgid "login"
+msgstr "Bejelentkezés"
+
+msgid "master_password_desc"
+msgstr "Állítsa ezt főjelszó tartani a számlák biztonságos."
+
+msgid "license_key"
+msgstr "Licenckulcs"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Jelenleg nem elérhető"
+
+msgid "no_message_to_display"
+msgstr "Nincs üzenet megjelenítéséhez"
+
+msgid "offline_notice_title"
+msgstr "Elérhetetlen - Ön nem elérhető, vagy egy hálózati összeköttetés csak?"
+
+msgid "offline_notice_desc"
+msgstr "Ön jelenleg offline, egy hálózati kapcsolat csak nem vagy kapcsolatot létrehozni a szerverünk"
+
+msgid "edit_file"
+msgstr "Fájl szerkesztése"
+
+msgid "download"
+msgstr "Letöltés"
+
+msgid "upload"
+msgstr "Feltöltés"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP van szükség"
+
+msgid "apply_to_all_files"
+msgstr "Alkalmazás az összes fájlt"
+
+msgid "activate_now"
+msgstr "Aktiváld most"
+
+msgid "deactivate"
+msgstr "Deaktiválás"
+
+msgid "in_progress"
+msgstr "Folyamatban"
+
+msgid "complete"
+msgstr "teljes"
+
+msgid "direction"
+msgstr "Irány"
+
+msgid "progress"
+msgstr "Haladás"
+
+msgid "permissions"
+msgstr "Engedélyek"
+
+msgid "owner_group"
+msgstr "Tulajdonos / Csoport"
+
+msgid "size"
+msgstr "Méret"
+
+msgid "type"
+msgstr "típus"
+
+msgid "modified"
+msgstr "Módosított"
+
+msgid "trial"
+msgstr "Próba"
+
+msgid "cleared"
+msgstr "Törölve"
+
+msgid "error_connecting"
+msgstr "hiba csatlakoztatása"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Nem sikerült csatlakozni a fogadó / ip cím"
+
+msgid "error_connecting_to_port"
+msgstr "Nem sikerült csatlakozni a port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Kérjük, válasszon ki egy helyi könyvtárba első!"
+
+msgid "go"
+msgstr "Megy"
+
+msgid "confirm"
+msgstr "megerősít"
+
+msgid "delete"
+msgstr "Töröl"
+
+msgid "rename"
+msgstr "átnevezése"
+
+msgid "copy_urls_to_clipboard"
+msgstr "URL másolása (ek) a vágólapra"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Kérjük, erősítse meg a törölni kívánt a kiválasztott fájl (oka) / mappa (k)"
+
+msgid "cancelled_by_user"
+msgstr "Törölt felhasználó"
+
+msgid "already_exists_overwrite"
+msgstr "már létezik, felülírja?"
+
+msgid "dashboard"
+msgstr "Műszerfal"
+
+msgid "my_accounts"
+msgstr "Saját számlák"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Fájl megnyitása! Minden fiókot alátámasztani."
+
+msgid "file_failed_please_try_again"
+msgstr "Fájl nem sikerült! Kérlek próbáld újra."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Jelenleg nincsenek számlák kell alátámasztani."
+
+msgid "saved!"
+msgstr "Mentett!"
+
+msgid "please_enter_a_password"
+msgstr "Kérjük, adjon meg egy jelszót!"
+
+msgid "connection_closed"
+msgstr "kapcsolat lezárva"
+
+msgid "listing_mode_set_to"
+msgstr "Listázó módban beállítva"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Helyi szerver IP megoldani, külső IP"
+
+msgid "login_incorrect"
+msgstr "Helytelen bejelentkezés"
+
+msgid "keeping_connection_alive"
+msgstr "Tartása életben a kapcsolatot"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Nem lehet írni, adatkapcsolat zárt"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Nem sikerült beolvasni az adatkapcsolat zárt"
+
+msgid "error_reading_file"
+msgstr "Hiba a fájl olvasása"
+
+msgid "error_writing_file"
+msgstr "Hiba a fájl írása"
+
+msgid "failed_to_change_directory_to"
+msgstr "Nem sikerült módosítani a könyvtár"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Lehet, hogy nem rendelkezik a megfelelő engedélyekkel elérheti ezt a könyvtárat"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Visszatérve most az előző könyvtárba"
+
+msgid "activate"
+msgstr "Aktiválja"
+
+msgid "payment"
+msgstr "Fizetés"
+
+msgid "license_key_is_required"
+msgstr "Licenc kulcs szükséges"
+
+msgid "license_activated!"
+msgstr "Licenc aktivált!"
+
+msgid "your_license_has_been_validated"
+msgstr "A licenc nem érvényesítette."
+
+msgid "thank_you!"
+msgstr "Köszönöm!"
+
+msgid "buy_now!"
+msgstr "Vásárolj most!"
+
+msgid "buy_now"
+msgstr "Vásárolj most"
+
+msgid "one_off_fee"
+msgstr "egyszeri díj"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Kérjük, frissítse élvezni ezt app korlátozások nélkül"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Kérjük, adja meg az alábbi Licenckulcsot"
+
+msgid "or"
+msgstr "VAGY"
+
+msgid "loading..."
+msgstr "Betöltés..."
+
+msgid "clear_accounts"
+msgstr "Tiszta számlák"
+
+msgid "clear_ssh_keys"
+msgstr "Tiszta SSH-kulcsok"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Törli az összes mentett SSH-kulcsok"
+
+msgid "clear_app_settings"
+msgstr "Tiszta App Beállítások"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Törli az összes alkalmazás specifikus beállítások"
+
+msgid "clear_recent_connections"
+msgstr "Tiszta Újabb kapcsolatok"
+
+msgid "deletes_all_recent_connections"
+msgstr "Törli az összes legutóbbi csatlakozások"
+
+msgid "import_type"
+msgstr "import Type"
+
+msgid "please_select"
+msgstr "Kérlek, válassz"
+
+msgid "import_file"
+msgstr "Fájl importálása"
+
+msgid "choose_file"
+msgstr "Válassz fájlt"
+
+msgid "delete_accounts"
+msgstr "Törlés számlák"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Törli az összes meglévő számlák"
+
+msgid "import_now"
+msgstr "import most"
+
+msgid "none"
+msgstr "Egyik sem"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Kérjük, indítsa újra SFTP kliens alkalmazás a változtatások életbe léptetéséhez."
+
+msgid "already_bought_the_app"
+msgstr "Már vásárolt az App?"
+
+msgid "choose"
+msgstr "Választ"
+
+msgid "deleted!"
+msgstr "Törölve!"
+
+msgid "use_syncronised_browsing"
+msgstr "használja syncronised böngészés"
+
+msgid "remote_directory"
+msgstr "távoli könyvtár"
+
+msgid "rsa_key_only!"
+msgstr "RSA kulcsot csak!"
+
+msgid "no_key_selected"
+msgstr "Nincs kulcs kiválasztva."
+
+msgid "ssh_key_file"
+msgstr "SSH kulcs fájl"
+
+msgid "no_dir_selected"
+msgstr "Nem dir kiválasztva."
+
+msgid "keep_blank_for_current_password"
+msgstr "Tartsuk üres jelszót."
+
+msgid "logon_type"
+msgstr "bejelentkezési típus"
+
+msgid "normal"
+msgstr "Normál"
+
+msgid "ask_for_password"
+msgstr "Kérjen jelszó"
+
+msgid "anonymous"
+msgstr "Névtelen"
+
+msgid "account_type"
+msgstr "Fiók Típus"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Folder"
+
+msgid "advanced"
+msgstr "Fejlett"
+
+msgid "folder_name"
+msgstr "Mappa neve"
+
+msgid "parent"
+msgstr "Szülő"
+
+msgid "new_ftp_site"
+msgstr "Új FTP oldal"
+
+msgid "new_folder"
+msgstr "Új mappa"
+
+msgid "clean_now"
+msgstr "tiszta most"
+
+msgid "host"
+msgstr "Házigazda"
+
+msgid "no_accounts_added..."
+msgstr "Nincs hozzáadott fiók ..."
+
+msgid "unknown"
+msgstr "Ismeretlen"
+
+msgid "file_saved!"
+msgstr "Fájl megnyitása!"
+
+msgid "uploading_file!"
+msgstr "Feltöltés fájl!"
+
+msgid "save_failed!"
+msgstr "Mentése nem sikerült!"
+
+msgid "search"
+msgstr "Keresés"
+
+msgid "find"
+msgstr "megtalálja"
+
+msgid "replace"
+msgstr "Cserélje"
+
+msgid "scroll_past_end"
+msgstr "Végiggörget End"
+
+msgid "show_annotations"
+msgstr "Jelölések megjelenítése"
+
+msgid "show_gutter"
+msgstr "mutatása ereszcsatorna"
+
+msgid "show_invisibles"
+msgstr "mutatása Invisibles"
+
+msgid "show_print_margin"
+msgstr "Mutatása Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Kiemelés Aktív vonal"
+
+msgid "word_wrap"
+msgstr "Sortörés"
+
+msgid "split_code"
+msgstr "osztott Code"
+
+msgid "preferences"
+msgstr "preferenciák"
+
+msgid "close_all_tabs"
+msgstr "Az összes lap bezárása"
+
+msgid "close_current_tab"
+msgstr "Az aktuális lap bezárása"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Automatikus mentési fájl mikor írja"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Gyors mentése"
+
+msgid "documentation"
+msgstr "Dokumentáció"
+
+msgid "themes"
+msgstr "témák"
+
+msgid "keyboard_shortcuts"
+msgstr "Gyorsbillentyűket"
+
+msgid "coming_soon"
+msgstr "Hamarosan"
+
+msgid "empty"
+msgstr "üres"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ha\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "file"
+
+msgid "view"
+msgstr "view"
+
+msgid "edit"
+msgstr "Shirya"
+
+msgid "help"
+msgstr "Taimake"
+
+msgid "manage_accounts"
+msgstr "Sarrafa Accounts"
+
+msgid "import_accounts"
+msgstr "Import Accounts"
+
+msgid "export_accounts"
+msgstr "Export Accounts"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "Local Directory"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Clear Sami Ceto Data"
+
+msgid "edit_settings"
+msgstr "Shirya Saituna"
+
+msgid "report_bug"
+msgstr "Rahoto a Bug"
+
+msgid "suggest_feature"
+msgstr "Bayar da shawarar a Feature"
+
+msgid "ask_a_question"
+msgstr "Tambaya"
+
+msgid "change_log"
+msgstr "Change Log"
+
+msgid "about"
+msgstr "game da"
+
+msgid "exit"
+msgstr "fita"
+
+msgid "host_ip_address"
+msgstr "Watsa shiri / IP Address"
+
+msgid "username"
+msgstr "Sunan mai amfani"
+
+msgid "password"
+msgstr "Password"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "connect"
+
+msgid "welcome"
+msgstr "Welcome"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP Client ne duk game da sauki, an gina a kan Google Chrome / Chrome OS kunsasshen app dubawa barin app zama azumi da kuma m. Wasu daga cikin ayyuka ya hada da wani FTP Account Manager don adana bãya, kuma tsara your mafi mu"
+
+msgid "latest_updates"
+msgstr "Bugawa Updates"
+
+msgid "server_status"
+msgstr "Server Status"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "Support"
+
+msgid "notice_update"
+msgstr "Dandali / Updates"
+
+msgid "website"
+msgstr "Yanar Gizo"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "Sarrafa"
+
+msgid "recheck"
+msgstr "Re-rajistan"
+
+msgid "last_release"
+msgstr "Last Release"
+
+msgid "released"
+msgstr "released"
+
+msgid "queued"
+msgstr "Queued"
+
+msgid "failed"
+msgstr "Ba a yi nasarar"
+
+msgid "completed"
+msgstr "kammala"
+
+msgid "settings"
+msgstr "Saituna"
+
+msgid "add_folder"
+msgstr "Add Jaka"
+
+msgid "add_ftp_account"
+msgstr "Add FTP Account"
+
+msgid "file_editor"
+msgstr "File Edita"
+
+msgid "editor_preferences"
+msgstr "edita Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Your FTP Accounts"
+
+msgid "most_recent_used"
+msgstr "Mafi kwanan nan amfani da su."
+
+msgid "no_connections_yet_made"
+msgstr "No sadarwa yet sanya"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "No FTP asusun added yet"
+
+msgid "most_recent_connections"
+msgstr "Mai Recent Connections"
+
+msgid "last_10_connections_made"
+msgstr "Last 10 sadarwa sanya"
+
+msgid "designed_developed_by"
+msgstr "Tsararren & Bunƙasa"
+
+msgid "about_info"
+msgstr "Don Allah a yi amfani da sFTP Client website for goyon baya, ba goyon bayan da aka bayar ta hanyar mu mutum yanar."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "Nesa"
+
+msgid "remote_location_desc"
+msgstr "eg / public_html"
+
+msgid "create_directory"
+msgstr "Create Directory"
+
+msgid "create_new_directory"
+msgstr "Create New Directory"
+
+msgid "create_file"
+msgstr "Create File"
+
+msgid "create_new_file"
+msgstr "Create New File"
+
+msgid "refresh_list"
+msgstr "Refresh List"
+
+msgid "change"
+msgstr "Change"
+
+msgid "report_a_bug"
+msgstr "Rahoto a Bug"
+
+msgid "suggest_a_feature"
+msgstr "Bayar da shawarar a Feature"
+
+msgid "enter_password"
+msgstr "Shigar Password"
+
+msgid "enter_your_password..."
+msgstr "Shigar da kalmar wucewa ..."
+
+msgid "passphrase"
+msgstr "Passphrase"
+
+msgid "enter_your_passphrase..."
+msgstr "Shigar da passphrase ..."
+
+msgid "email_sftp_client"
+msgstr "Email Client sFTP"
+
+msgid "faqs"
+msgstr "FAQ ta"
+
+msgid "visit_sftp_client_website"
+msgstr "Visit sFTP Client Yanar Gizo"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Rate mu a Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rahoto wani batu ko samun taimako"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Join da mu a kan Facebook for updates"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Ku bi mu a Twitter for updates"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Da mu a kan Google for updates"
+
+msgid "okay"
+msgstr "To"
+
+msgid "cancel"
+msgstr "soke"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "unknown watsa shiri"
+
+msgid "okay_to_continue"
+msgstr "To ka ci gaba?"
+
+msgid "fingerprint"
+msgstr "yatsa"
+
+msgid "remember"
+msgstr "Ka tuna"
+
+msgid "file_permissions"
+msgstr "file Izini"
+
+msgid "file_permissions_desc"
+msgstr "Don Allah ka zaɓa sabon halaye da aka zaɓa fayil (s) / fayil (s)"
+
+msgid "read"
+msgstr "karanta"
+
+msgid "write"
+msgstr "rubuta"
+
+msgid "execute"
+msgstr "kashe"
+
+msgid "owner"
+msgstr "Mai"
+
+msgid "group"
+msgstr "Group"
+
+msgid "public"
+msgstr "Jama'a"
+
+msgid "numeric_value"
+msgstr "Tazarar Value"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Shigar da sunan sabon directory ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Shigar da sunan sabon fayil ..."
+
+msgid "name"
+msgstr "name"
+
+msgid "enter_a_password"
+msgstr "Shigar da Password"
+
+msgid "language"
+msgstr "Harshe"
+
+msgid "seconds"
+msgstr "seconds"
+
+msgid "minutes"
+msgstr "minutes"
+
+msgid "hour"
+msgstr "Sa'a"
+
+msgid "hours"
+msgstr "hours"
+
+msgid "day"
+msgstr "Day"
+
+msgid "trial_left"
+msgstr "Trial Hagu"
+
+msgid "register_now"
+msgstr "Yi rijista yanzu"
+
+msgid "general"
+msgstr "Janar"
+
+msgid "security"
+msgstr "Tsaro"
+
+msgid "master_password"
+msgstr "Jagora Password"
+
+msgid "status"
+msgstr "Status"
+
+msgid "enabled"
+msgstr "An kunna"
+
+msgid "disabled"
+msgstr "guragu"
+
+msgid "timeout"
+msgstr "Fitar lokaci"
+
+msgid "save"
+msgstr "Ajiye"
+
+msgid "add_account"
+msgstr "Add Account"
+
+msgid "support"
+msgstr "Support"
+
+msgid "notice_updates"
+msgstr "Dandali / Updates"
+
+msgid "please_login"
+msgstr "Don Allah Login"
+
+msgid "your_session_timed_out"
+msgstr "Your Zama ƙare"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Yi haƙuri da kalmar sirri da ka shiga ya m!"
+
+msgid "login"
+msgstr "Shiga"
+
+msgid "master_password_desc"
+msgstr "Kafa wannan master kalmar sirri don kiyaye your asusun lafiya."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "A halin yanzu babu"
+
+msgid "no_message_to_display"
+msgstr "No sako ga nuna"
+
+msgid "offline_notice_title"
+msgstr "Unreachable - Ko kana offline ko kuwa a kan hanyar sadarwa kawai dangane?"
+
+msgid "offline_notice_desc"
+msgstr "Kai a halin yanzu offline, a kan wani cibiyar sadarwa kawai dangane ko ba dangane za a iya kafa ga uwar garken"
+
+msgid "edit_file"
+msgstr "Shirya File"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "Upload"
+
+msgid "host_ip_is_required"
+msgstr "Watsa shiri / IP da ake bukata"
+
+msgid "apply_to_all_files"
+msgstr "Aiwatar to duk fayiloli"
+
+msgid "activate_now"
+msgstr "kunna Yanzu"
+
+msgid "deactivate"
+msgstr "De-Kunna"
+
+msgid "in_progress"
+msgstr "Ana kai"
+
+msgid "complete"
+msgstr "complete"
+
+msgid "direction"
+msgstr "direction"
+
+msgid "progress"
+msgstr "Ci gaban"
+
+msgid "permissions"
+msgstr "izini"
+
+msgid "owner_group"
+msgstr "Mai / Group"
+
+msgid "size"
+msgstr "size"
+
+msgid "type"
+msgstr "type"
+
+msgid "modified"
+msgstr "modified"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "barrantar"
+
+msgid "error_connecting"
+msgstr "kuskure sadar"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Kuskure sadar bakuncin / ip address"
+
+msgid "error_connecting_to_port"
+msgstr "Kuskure sadar zuwa tashar jiragen ruwa"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Don Allah zaži wani gida directory farko!"
+
+msgid "go"
+msgstr "tafi"
+
+msgid "confirm"
+msgstr "tabbatar da"
+
+msgid "delete"
+msgstr "share"
+
+msgid "rename"
+msgstr "sake suna"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Copy URL (s) to allo mai rike takarda"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Da fatan a tabbatar ka so ka share da aka zaɓa fayil (s) / fayil (s)"
+
+msgid "cancelled_by_user"
+msgstr "Soke da mai amfani da"
+
+msgid "already_exists_overwrite"
+msgstr "Dama akwai, overwrite?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "My Accounts"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File ceto! All asusun da aka goyon baya up."
+
+msgid "file_failed_please_try_again"
+msgstr "File nasarar! Don Allah a sake gwadawa."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Za ka a halin yanzu da wani asusun da za a goyon baya har."
+
+msgid "saved!"
+msgstr "Tsira!"
+
+msgid "please_enter_a_password"
+msgstr "Don Allah shigar da kalmar sirri!"
+
+msgid "connection_closed"
+msgstr "Connection rufe"
+
+msgid "listing_mode_set_to"
+msgstr "Listing hanya saita zuwa"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Local uwar garken IP niyyar zartarwa, ta yin amfani da external IP"
+
+msgid "login_incorrect"
+msgstr "login m"
+
+msgid "keeping_connection_alive"
+msgstr "Tsayawa dangane da rai"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Kasa rubuta, data connection rufe"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "An kasa karanta data connection rufe"
+
+msgid "error_reading_file"
+msgstr "Kuskuren fayil na karatu"
+
+msgid "error_writing_file"
+msgstr "Kuskure rubutu fayil"
+
+msgid "failed_to_change_directory_to"
+msgstr "Ba a yi nasarar canza shugabanci to"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Za ka iya ba da daidai izini don samun damar wannan directory"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Kõmãwa koma baya directory"
+
+msgid "activate"
+msgstr "kunna"
+
+msgid "payment"
+msgstr "Biyan"
+
+msgid "license_key_is_required"
+msgstr "License key ake bukata"
+
+msgid "license_activated!"
+msgstr "License kunna!"
+
+msgid "your_license_has_been_validated"
+msgstr "Your lasisi da aka inganta."
+
+msgid "thank_you!"
+msgstr "Na gode!"
+
+msgid "buy_now!"
+msgstr "Saya yanzu!"
+
+msgid "buy_now"
+msgstr "Saya yanzu"
+
+msgid "one_off_fee"
+msgstr "daya kashe kudin"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Don Allah hažaka to ji dadin wannan app ba tare da wani hani"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Don Allah shigar da License Key kasa"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Clear Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Clear SSH Kunamu"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Share duk ceto SSH keys"
+
+msgid "clear_app_settings"
+msgstr "Clear App Saituna"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Share duk app takamaiman saituna"
+
+msgid "clear_recent_connections"
+msgstr "Clear Recent Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Share duk 'yan sadarwa"
+
+msgid "import_type"
+msgstr "Import Type"
+
+msgid "please_select"
+msgstr "Don Allah Select"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "zabi File"
+
+msgid "delete_accounts"
+msgstr "share Accounts"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Share duk data kasance asusun"
+
+msgid "import_now"
+msgstr "Import Yanzu"
+
+msgid "none"
+msgstr "Babu"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Don Allah zata sake farawa sFTP Client app ga canje-canje ya dauki sakamako."
+
+msgid "already_bought_the_app"
+msgstr "Tuni sayi App?"
+
+msgid "choose"
+msgstr "zabi"
+
+msgid "deleted!"
+msgstr "Share!"
+
+msgid "use_syncronised_browsing"
+msgstr "amfani syncronised browsing"
+
+msgid "remote_directory"
+msgstr "Nesa Directory"
+
+msgid "rsa_key_only!"
+msgstr "RSA key kawai!"
+
+msgid "no_key_selected"
+msgstr "No key zaba."
+
+msgid "ssh_key_file"
+msgstr "SSH Key File"
+
+msgid "no_dir_selected"
+msgstr "No dir zaba."
+
+msgid "keep_blank_for_current_password"
+msgstr "Ka blank for halin yanzu kalmar sirri."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "al'ada"
+
+msgid "ask_for_password"
+msgstr "Ka tambayi don Password"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "account Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Al'ada Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "Jaka"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "Jaka Name"
+
+msgid "parent"
+msgstr "iyaye"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "New Jaka"
+
+msgid "clean_now"
+msgstr "Clean Yanzu"
+
+msgid "host"
+msgstr "watsa shiri"
+
+msgid "no_accounts_added..."
+msgstr "No Accounts Added ..."
+
+msgid "unknown"
+msgstr "unknown"
+
+msgid "file_saved!"
+msgstr "File ceto!"
+
+msgid "uploading_file!"
+msgstr "Ana aikawa File!"
+
+msgid "save_failed!"
+msgstr "Ajiye nasarar!"
+
+msgid "search"
+msgstr "search"
+
+msgid "find"
+msgstr "Find"
+
+msgid "replace"
+msgstr "Sauya"
+
+msgid "scroll_past_end"
+msgstr "Gungura Past End"
+
+msgid "show_annotations"
+msgstr "show Sidewiki"
+
+msgid "show_gutter"
+msgstr "show gutter"
+
+msgid "show_invisibles"
+msgstr "show Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print gefe"
+
+msgid "highlight_active_line"
+msgstr "Haskaka Active Line"
+
+msgid "word_wrap"
+msgstr "Kalmar kunsa"
+
+msgid "split_code"
+msgstr "raba Code"
+
+msgid "preferences"
+msgstr "Preferences"
+
+msgid "close_all_tabs"
+msgstr "Close All Shafuka"
+
+msgid "close_current_tab"
+msgstr "Close Current Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Ajiy.atomatik file lokacin da na rubuta"
+
+msgid "auto_save"
+msgstr "auto Ajiye"
+
+msgid "quick_save"
+msgstr "Quick Ajiye"
+
+msgid "documentation"
+msgstr "takardun"
+
+msgid "themes"
+msgstr "jigogi"
+
+msgid "keyboard_shortcuts"
+msgstr "keyboard Gajerun hanyoyi"
+
+msgid "coming_soon"
+msgstr "Ba da da ewa Akuma"
+
+msgid "empty"
+msgstr "m"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "menu"
+
+msgid "file"
+msgstr "súbor"
+
+msgid "view"
+msgstr "pohľad"
+
+msgid "edit"
+msgstr "editovať"
+
+msgid "help"
+msgstr "Pomoc"
+
+msgid "manage_accounts"
+msgstr "správa účtov"
+
+msgid "import_accounts"
+msgstr "import účtov"
+
+msgid "export_accounts"
+msgstr "export Accounts"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Message Log"
+
+msgid "local_directory"
+msgstr "miestnej adresár"
+
+msgid "uploads_downloads"
+msgstr "Nahranie / stiahnutie"
+
+msgid "clear_saved_data"
+msgstr "Clear uložené dáta"
+
+msgid "edit_settings"
+msgstr "upraviť nastavenia"
+
+msgid "report_bug"
+msgstr "nahlásiť chybu"
+
+msgid "suggest_feature"
+msgstr "navrhnúť funkciu"
+
+msgid "ask_a_question"
+msgstr "Opýtať sa otázku"
+
+msgid "change_log"
+msgstr "zmena Log"
+
+msgid "about"
+msgstr "o"
+
+msgid "exit"
+msgstr "Východ"
+
+msgid "host_ip_address"
+msgstr "Hostiteľ / IP adresa"
+
+msgid "username"
+msgstr "užívateľské meno"
+
+msgid "password"
+msgstr "heslo"
+
+msgid "port"
+msgstr "prístav"
+
+msgid "connect"
+msgstr "pripojiť"
+
+msgid "welcome"
+msgstr "vitajte"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP klienta je predovšetkým o jednoduchosť, bol postavený na balené aplikácie rozhranie Google Chrome / Chrome OS, ktorá umožňuje aplikáciu byť rýchly a citlivý. Niektoré funkcie zahŕňa správcu FTP účet pre ukladanie preč a organizovať vaše najviac n"
+
+msgid "latest_updates"
+msgstr "Posledná aktualizácia"
+
+msgid "server_status"
+msgstr "server Status"
+
+msgid "license_server"
+msgstr "serverová licencia"
+
+msgid "sftp_support"
+msgstr "podpora"
+
+msgid "notice_update"
+msgstr "Upozornenie / aktualizácia"
+
+msgid "website"
+msgstr "webové stránky"
+
+msgid "clear_all"
+msgstr "Zmazať všetko"
+
+msgid "manage"
+msgstr "spravovať"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Posledná správa"
+
+msgid "released"
+msgstr "uvoľnený"
+
+msgid "queued"
+msgstr "vo fronte"
+
+msgid "failed"
+msgstr "neúspešný"
+
+msgid "completed"
+msgstr "dokončený"
+
+msgid "settings"
+msgstr "nastavenie"
+
+msgid "add_folder"
+msgstr "Pridať priečinok"
+
+msgid "add_ftp_account"
+msgstr "Pridať účet FTP"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "preferencie editor"
+
+msgid "your_ftp_accounts"
+msgstr "FTP účtov"
+
+msgid "most_recent_used"
+msgstr "V poslednej dobe používa."
+
+msgid "no_connections_yet_made"
+msgstr "Zatiaľ žiadne spoje vykonané"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Zatiaľ žiadne FTP účty z pridanej"
+
+msgid "most_recent_connections"
+msgstr "najaktuálnejšie Pripojenie"
+
+msgid "last_10_connections_made"
+msgstr "Posledných 10 prípojky uskutočnenej"
+
+msgid "designed_developed_by"
+msgstr "Navrhnutý a vyvinutý"
+
+msgid "about_info"
+msgstr "Využite webové stránky SFTP klienta pre podporu, nie je podpora je poskytovaná prostredníctvom našich individuálnych webových stránok."
+
+msgid "local"
+msgstr "Miestna"
+
+msgid "remote"
+msgstr "diaľkový"
+
+msgid "remote_location_desc"
+msgstr "napr / public_html"
+
+msgid "create_directory"
+msgstr "vytvoriť adresár"
+
+msgid "create_new_directory"
+msgstr "Vytvoriť nový adresár"
+
+msgid "create_file"
+msgstr "vytvorte súbor"
+
+msgid "create_new_file"
+msgstr "Vytvoriť nový súbor"
+
+msgid "refresh_list"
+msgstr "aktualizovať zoznam"
+
+msgid "change"
+msgstr "zmena"
+
+msgid "report_a_bug"
+msgstr "nahlásiť chybu"
+
+msgid "suggest_a_feature"
+msgstr "navrhnúť funkciu"
+
+msgid "enter_password"
+msgstr "Zadajte heslo"
+
+msgid "enter_your_password..."
+msgstr "Zadajte heslo ..."
+
+msgid "passphrase"
+msgstr "prístupové heslo"
+
+msgid "enter_your_passphrase..."
+msgstr "Zadajte svoje prístupové heslo ..."
+
+msgid "email_sftp_client"
+msgstr "Email SFTP klienta"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Návšteva SFTP klienta webovej stránky"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Ohodnoťte nás na obchode Chrome Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Nahlásiť problém alebo získať pomoc"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Pridajte sa k nám na Facebooku aktualizácie"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Sledujte nás na Twitteri aktualizácie"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 K nám na Google aktualizácií"
+
+msgid "okay"
+msgstr "dobre"
+
+msgid "cancel"
+msgstr "Zrušiť"
+
+msgid "close"
+msgstr "Blízky"
+
+msgid "unknown_host"
+msgstr "Neznámy hostiteľ"
+
+msgid "okay_to_continue"
+msgstr "Dobre pokračovať?"
+
+msgid "fingerprint"
+msgstr "odtlačok prsta"
+
+msgid "remember"
+msgstr "pamätať"
+
+msgid "file_permissions"
+msgstr "oprávnenie súboru"
+
+msgid "file_permissions_desc"
+msgstr "Prosím, vyberte nové atribúty pre vybraný súbor (y) / zložku (y)"
+
+msgid "read"
+msgstr "čítať"
+
+msgid "write"
+msgstr "zapísať"
+
+msgid "execute"
+msgstr "vykonať"
+
+msgid "owner"
+msgstr "majiteľ"
+
+msgid "group"
+msgstr "skupina"
+
+msgid "public"
+msgstr "verejnosť"
+
+msgid "numeric_value"
+msgstr "číselná hodnota"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Zadajte názov nového adresára ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Zadajte názov nového súboru ..."
+
+msgid "name"
+msgstr "Názov"
+
+msgid "enter_a_password"
+msgstr "Zadajte heslo"
+
+msgid "language"
+msgstr "Jazyk"
+
+msgid "seconds"
+msgstr "sekundy"
+
+msgid "minutes"
+msgstr "zápis"
+
+msgid "hour"
+msgstr "hodina"
+
+msgid "hours"
+msgstr "hodiny"
+
+msgid "day"
+msgstr "deň"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "teraz registrovať"
+
+msgid "general"
+msgstr "všeobecný"
+
+msgid "security"
+msgstr "zabezpečenia"
+
+msgid "master_password"
+msgstr "hlavné heslo"
+
+msgid "status"
+msgstr "Postavenie"
+
+msgid "enabled"
+msgstr "povolené"
+
+msgid "disabled"
+msgstr "invalidný"
+
+msgid "timeout"
+msgstr "Čas vypršal"
+
+msgid "save"
+msgstr "uložiť"
+
+msgid "add_account"
+msgstr "Pridať účet"
+
+msgid "support"
+msgstr "podpora"
+
+msgid "notice_updates"
+msgstr "Upozornenie / aktualizácia"
+
+msgid "please_login"
+msgstr "prosím prihláste"
+
+msgid "your_session_timed_out"
+msgstr "Vaša relácia vypršal"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Je nám ľúto zadané heslo nebolo správne!"
+
+msgid "login"
+msgstr "Prihlásiť sa"
+
+msgid "master_password_desc"
+msgstr "Nastavte túto hlavné heslo, aby sa vaše účty v bezpečí."
+
+msgid "license_key"
+msgstr "Licenčný kľúč"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "Momentálne nedostupný"
+
+msgid "no_message_to_display"
+msgstr "Žiadna správa sa zobrazí"
+
+msgid "offline_notice_title"
+msgstr "Nedosiahnuteľný - Ste v režime offline alebo na sieti iba spojenie?"
+
+msgid "offline_notice_desc"
+msgstr "Momentálne ste v režime offline, v sieti len spojenia alebo žiadna súvislosť by mohla byť stanovená na náš server"
+
+msgid "edit_file"
+msgstr "upraviť súbor"
+
+msgid "download"
+msgstr "Stiahnuť ▼"
+
+msgid "upload"
+msgstr "nahrať"
+
+msgid "host_ip_is_required"
+msgstr "je nutné hostiteľ / IP"
+
+msgid "apply_to_all_files"
+msgstr "Vzťahovať na všetky súbory"
+
+msgid "activate_now"
+msgstr "Aktivovať teraz"
+
+msgid "deactivate"
+msgstr "De-activate"
+
+msgid "in_progress"
+msgstr "prebieha"
+
+msgid "complete"
+msgstr "kompletné"
+
+msgid "direction"
+msgstr "smer"
+
+msgid "progress"
+msgstr "pokrok"
+
+msgid "permissions"
+msgstr "oprávnenie"
+
+msgid "owner_group"
+msgstr "Vlastník / Group"
+
+msgid "size"
+msgstr "veľkosť"
+
+msgid "type"
+msgstr "typ"
+
+msgid "modified"
+msgstr "modifikovaná"
+
+msgid "trial"
+msgstr "pokus"
+
+msgid "cleared"
+msgstr "vymazané"
+
+msgid "error_connecting"
+msgstr "Chyba pri pripájaní"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Chyba pri pripájaní k hostiteľovi / ip adresa"
+
+msgid "error_connecting_to_port"
+msgstr "Chyba pri pripájaní k portu"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Prosím, vyberte prvú lokálne adresár!"
+
+msgid "go"
+msgstr "ísť"
+
+msgid "confirm"
+msgstr "potvrdiť"
+
+msgid "delete"
+msgstr "vymazať"
+
+msgid "rename"
+msgstr "premenovať"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopírovať adresu URL (y) do schránky"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Prosím potvrďte, že chcete zmazať vybraný súbor (y) / zložku (y)"
+
+msgid "cancelled_by_user"
+msgstr "zrušené užívateľom"
+
+msgid "already_exists_overwrite"
+msgstr "už existuje, prepísať?"
+
+msgid "dashboard"
+msgstr "prístrojová doska"
+
+msgid "my_accounts"
+msgstr "moje účty"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Súbor uložený! Všetky účty boli zálohované."
+
+msgid "file_failed_please_try_again"
+msgstr "Súbor zlyhala! Prosím skúste znova."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Máte v súčasnej dobe žiadne účty, ktoré majú byť zálohované."
+
+msgid "saved!"
+msgstr "Uložený!"
+
+msgid "please_enter_a_password"
+msgstr "Prosím zadajte heslo!"
+
+msgid "connection_closed"
+msgstr "spojenie ukončené"
+
+msgid "listing_mode_set_to"
+msgstr "Odkaz režim nastavený na hodnotu"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokálne IP servera vyriešený použitím externej IP"
+
+msgid "login_incorrect"
+msgstr "vstup nesprávne"
+
+msgid "keeping_connection_alive"
+msgstr "Udržiavanie pripojenie alive"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Nemožno písať, dátové spojenie uzavreté"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Nemožno čítať dátové spojenie uzavreté"
+
+msgid "error_reading_file"
+msgstr "Chyba pri načítaní súboru"
+
+msgid "error_writing_file"
+msgstr "písanie súboru došlo k chybe"
+
+msgid "failed_to_change_directory_to"
+msgstr "Nepodarilo sa zmeniť adresár"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Nesmiete mať správne povolenia na prístup k tomuto adresáru"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Návrat späť do predchádzajúceho adresára"
+
+msgid "activate"
+msgstr "Aktivovať"
+
+msgid "payment"
+msgstr "platba"
+
+msgid "license_key_is_required"
+msgstr "je nutná licenčný kľúč"
+
+msgid "license_activated!"
+msgstr "Licencia aktivovaná!"
+
+msgid "your_license_has_been_validated"
+msgstr "Vaša licencia bola overená."
+
+msgid "thank_you!"
+msgstr "Ďakujem!"
+
+msgid "buy_now!"
+msgstr "Kúpte teraz!"
+
+msgid "buy_now"
+msgstr "Kúpte teraz"
+
+msgid "one_off_fee"
+msgstr "jeden jednorazový poplatok"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Prosím, inovovať, aby si túto aplikáciu bez obmedzenia"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Prosím, zadajte svoje licenčný kľúč nižšie"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "Načítava..."
+
+msgid "clear_accounts"
+msgstr "čisté účty"
+
+msgid "clear_ssh_keys"
+msgstr "Jasné SSH kľúče"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Vymaže všetky uložené SSH kľúče"
+
+msgid "clear_app_settings"
+msgstr "Jasné Nastavenie App"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Odstráni všetky špecifické nastavenia aplikácie"
+
+msgid "clear_recent_connections"
+msgstr "Jasné Nedávne Pripojenie"
+
+msgid "deletes_all_recent_connections"
+msgstr "Odstráni všetky nedávne zapojenie"
+
+msgid "import_type"
+msgstr "import Type"
+
+msgid "please_select"
+msgstr "Prosím vyber"
+
+msgid "import_file"
+msgstr "import súborov"
+
+msgid "choose_file"
+msgstr "Vyberte súbor"
+
+msgid "delete_accounts"
+msgstr "odstrániť účty"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Zmaže všetky existujúce účty"
+
+msgid "import_now"
+msgstr "teraz import"
+
+msgid "none"
+msgstr "nikto"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Reštartujte klientskej aplikácie SFTP, aby sa zmeny prejavili."
+
+msgid "already_bought_the_app"
+msgstr "Už kúpil App?"
+
+msgid "choose"
+msgstr "Vybrať"
+
+msgid "deleted!"
+msgstr "Zmazaný!"
+
+msgid "use_syncronised_browsing"
+msgstr "použite syncronised prechádzanie"
+
+msgid "remote_directory"
+msgstr "vzdialený adresár"
+
+msgid "rsa_key_only!"
+msgstr "jediným kľúčom RSA!"
+
+msgid "no_key_selected"
+msgstr "Žiadne Vybraný kľúč."
+
+msgid "ssh_key_file"
+msgstr "Key File SSH"
+
+msgid "no_dir_selected"
+msgstr "Nie dir vybraný."
+
+msgid "keep_blank_for_current_password"
+msgstr "Udržujte prázdne pre aktuálne heslo."
+
+msgid "logon_type"
+msgstr "typ prihlásenie"
+
+msgid "normal"
+msgstr "normálne"
+
+msgid "ask_for_password"
+msgstr "Otázka na heslo"
+
+msgid "anonymous"
+msgstr "Anonymný"
+
+msgid "account_type"
+msgstr "Typ účtu"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normálne Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "zložka"
+
+msgid "advanced"
+msgstr "pokročilý"
+
+msgid "folder_name"
+msgstr "Názov zložky"
+
+msgid "parent"
+msgstr "rodič"
+
+msgid "new_ftp_site"
+msgstr "nový FTP"
+
+msgid "new_folder"
+msgstr "Nový priečinok"
+
+msgid "clean_now"
+msgstr "čistý teraz"
+
+msgid "host"
+msgstr "Hostiteľ"
+
+msgid "no_accounts_added..."
+msgstr "Žiadne účty z pridanej ..."
+
+msgid "unknown"
+msgstr "nevedno"
+
+msgid "file_saved!"
+msgstr "Súbor uložený!"
+
+msgid "uploading_file!"
+msgstr "Nahrávanie súborov!"
+
+msgid "save_failed!"
+msgstr "Uloženie zlyhalo!"
+
+msgid "search"
+msgstr "Vyhľadanie"
+
+msgid "find"
+msgstr "Nájsť"
+
+msgid "replace"
+msgstr "vymeniť"
+
+msgid "scroll_past_end"
+msgstr "ešte End"
+
+msgid "show_annotations"
+msgstr "zobraziť poznámky"
+
+msgid "show_gutter"
+msgstr "show Gutter"
+
+msgid "show_invisibles"
+msgstr "zobraziť Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Zvýrazniť aktívne linky"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "rozdeliť kód"
+
+msgid "preferences"
+msgstr "predvoľby"
+
+msgid "close_all_tabs"
+msgstr "Zatvorenie všetkých kariet"
+
+msgid "close_current_tab"
+msgstr "Close Current Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Automatické ukladanie súboru, keď píšem"
+
+msgid "auto_save"
+msgstr "auto Save"
+
+msgid "quick_save"
+msgstr "rýchle uloženie"
+
+msgid "documentation"
+msgstr "dokumentácia"
+
+msgid "themes"
+msgstr "témy"
+
+msgid "keyboard_shortcuts"
+msgstr "Klávesové skratky"
+
+msgid "coming_soon"
+msgstr "Už čoskoro"
+
+msgid "empty"
+msgstr "prázdny"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "مینو"
+
+msgid "file"
+msgstr "فائل"
+
+msgid "view"
+msgstr "لنک"
+
+msgid "edit"
+msgstr "تصیح"
+
+msgid "help"
+msgstr "مدد"
+
+msgid "manage_accounts"
+msgstr "اکاؤنٹس کا نظم کریں"
+
+msgid "import_accounts"
+msgstr "درآمد کے اکاؤنٹس"
+
+msgid "export_accounts"
+msgstr "ایکسپورٹ اکاؤنٹس"
+
+msgid "quick_connect"
+msgstr "فوری کنیکٹ"
+
+msgid "message_log"
+msgstr "پیغام تبا"
+
+msgid "local_directory"
+msgstr "مقامی ڈائریکٹری"
+
+msgid "uploads_downloads"
+msgstr "اپ لوڈ / ڈاؤن لوڈ"
+
+msgid "clear_saved_data"
+msgstr "واضح بچایا ڈیٹا"
+
+msgid "edit_settings"
+msgstr "ماحول میں ترمیم"
+
+msgid "report_bug"
+msgstr "بگ کی رپورٹ"
+
+msgid "suggest_feature"
+msgstr "ایک خصوصیت تجویز"
+
+msgid "ask_a_question"
+msgstr "ایک سوال پوچھنا"
+
+msgid "change_log"
+msgstr "تبدیلی لاگ ان کریں"
+
+msgid "about"
+msgstr "کے بارے میں"
+
+msgid "exit"
+msgstr "باہر نکلیں"
+
+msgid "host_ip_address"
+msgstr "میزبان / IP ایڈریس"
+
+msgid "username"
+msgstr "صارف کا نام"
+
+msgid "password"
+msgstr "پاس ورڈ"
+
+msgid "port"
+msgstr "پورٹ"
+
+msgid "connect"
+msgstr "رابطہ قائم کریں"
+
+msgid "welcome"
+msgstr "خوش آمدید"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> SFTP کلائنٹ اس ایپ کو تیز رفتار اور ذمہ دار ہونے کے لئے کی اجازت دی گوگل کروم / کروم OS پیکیجڈ اے پی پی کے انٹرفیس پر تعمیر کیا گیا ہے، تمام سادگی کے بارے میں ہے. فعالیت کے کچھ دور ذخیرہ اور آپ کے سب سے زیادہ ام"
+
+msgid "latest_updates"
+msgstr "تازہ ترین معلومات"
+
+msgid "server_status"
+msgstr "سرور کی حیثیت"
+
+msgid "license_server"
+msgstr "لائسنس سرور"
+
+msgid "sftp_support"
+msgstr "سپورٹ"
+
+msgid "notice_update"
+msgstr "نوٹس / تازہ ترین معلومات کے"
+
+msgid "website"
+msgstr "ویب سائٹ"
+
+msgid "clear_all"
+msgstr "تمام کو صاف کریں"
+
+msgid "manage"
+msgstr "انتظام کریں"
+
+msgid "recheck"
+msgstr "دوبارہ چیک"
+
+msgid "last_release"
+msgstr "آخری رہائی"
+
+msgid "released"
+msgstr "جاری"
+
+msgid "queued"
+msgstr "قطار بند"
+
+msgid "failed"
+msgstr "ناکام ہوگیا"
+
+msgid "completed"
+msgstr "مکمل"
+
+msgid "settings"
+msgstr "ترتیبات"
+
+msgid "add_folder"
+msgstr "فولڈر بناؤ"
+
+msgid "add_ftp_account"
+msgstr "FTP اکاؤنٹ شامل کریں"
+
+msgid "file_editor"
+msgstr "فائل ایڈیٹر"
+
+msgid "editor_preferences"
+msgstr "ایڈیٹر کی ترجیحات"
+
+msgid "your_ftp_accounts"
+msgstr "آپ کے FTP اکاؤنٹس"
+
+msgid "most_recent_used"
+msgstr "سب سے زیادہ حال ہی میں استعمال."
+
+msgid "no_connections_yet_made"
+msgstr "کوئی کنکشن کو ابھی تک بنا دیا"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "کوئی FTP اکاؤنٹس دوستوں میں شامل"
+
+msgid "most_recent_connections"
+msgstr "سب سے حالیہ کنکشنز"
+
+msgid "last_10_connections_made"
+msgstr "بنایا آخری 10 کے کنکشن"
+
+msgid "designed_developed_by"
+msgstr "ڈیزائن & کی طرف سے تیار"
+
+msgid "about_info"
+msgstr "کی حمایت کے لیے استعمال کریں SFTP کلائنٹ کی ویب سائٹ، کوئی حمایت اپنی انفرادی ویب سائٹس کے ذریعے فراہم کی جاتی ہے."
+
+msgid "local"
+msgstr "مقامی"
+
+msgid "remote"
+msgstr "ریموٹ"
+
+msgid "remote_location_desc"
+msgstr "مثال کے طور پر / public_html"
+
+msgid "create_directory"
+msgstr "ڈائریکٹری تشکیل دیں"
+
+msgid "create_new_directory"
+msgstr "نئی ڈائریکٹری تشکیل دیں"
+
+msgid "create_file"
+msgstr "فائل بنائیں"
+
+msgid "create_new_file"
+msgstr "نئی فائل بنانے کے"
+
+msgid "refresh_list"
+msgstr "تازہ کریں لسٹ"
+
+msgid "change"
+msgstr "تبدیل کریں"
+
+msgid "report_a_bug"
+msgstr "بگ کی رپورٹ"
+
+msgid "suggest_a_feature"
+msgstr "ایک خصوصیت تجویز"
+
+msgid "enter_password"
+msgstr "پاس ورڈ درج کریں"
+
+msgid "enter_your_password..."
+msgstr "اپنا پاس ورڈ درج کریں..."
+
+msgid "passphrase"
+msgstr "پاس فریز"
+
+msgid "enter_your_passphrase..."
+msgstr "آپ کے پاس فریز درج کریں ..."
+
+msgid "email_sftp_client"
+msgstr "دوستوں کوارسال کریں SFTP کلائنٹ"
+
+msgid "faqs"
+msgstr "سوالات کی"
+
+msgid "visit_sftp_client_website"
+msgstr "دورہ SFTP کلائنٹ کی ویب سائٹ"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "گوگل کروم ویب اسٹور پر شرح ہمیں"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ایک مسئلہ کی رپورٹ یا مدد حاصل"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "اپ ڈیٹس کے لئے فیس بک پر پائیے"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "اپ ڈیٹس کے لئے ٹویٹر پر ہمارے ساتھ چلیے"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "اپ ڈیٹس کے لئے گوگل پر ہمارے +1"
+
+msgid "okay"
+msgstr "ٹھیک ہے"
+
+msgid "cancel"
+msgstr "منسوخ کریں"
+
+msgid "close"
+msgstr "بند کریں"
+
+msgid "unknown_host"
+msgstr "نامعلوم میزبان"
+
+msgid "okay_to_continue"
+msgstr "جاری رکھنے کے لئے ٹھیک ہے؟"
+
+msgid "fingerprint"
+msgstr "فنگرپرنٹ"
+
+msgid "remember"
+msgstr "یاد رکھیں"
+
+msgid "file_permissions"
+msgstr "فائل کی اجازت"
+
+msgid "file_permissions_desc"
+msgstr "(زبانیں) منتخب فائل (ے) / فولڈر کے لئے نئے صفات براہ مہربانی منتخب کریں"
+
+msgid "read"
+msgstr "پڑھیں"
+
+msgid "write"
+msgstr "لکھیں"
+
+msgid "execute"
+msgstr "ایگزیکیوٹ"
+
+msgid "owner"
+msgstr "مالک"
+
+msgid "group"
+msgstr "گروپ"
+
+msgid "public"
+msgstr "عوام"
+
+msgid "numeric_value"
+msgstr "عددی قیمت"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "نئی ڈائریکٹری کا نام درج کریں ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "نئی فائل کا نام درج کریں ..."
+
+msgid "name"
+msgstr "نام"
+
+msgid "enter_a_password"
+msgstr "پاس ورڈ درج کریں"
+
+msgid "language"
+msgstr "زبان"
+
+msgid "seconds"
+msgstr "سیکنڈز"
+
+msgid "minutes"
+msgstr "منٹس"
+
+msgid "hour"
+msgstr "قیامت"
+
+msgid "hours"
+msgstr "گھنٹے"
+
+msgid "day"
+msgstr "ڈے"
+
+msgid "trial_left"
+msgstr "آزمائشی بائیں"
+
+msgid "register_now"
+msgstr "ابھی رجسٹر کریں"
+
+msgid "general"
+msgstr "جنرل"
+
+msgid "security"
+msgstr "سیکورٹی"
+
+msgid "master_password"
+msgstr "ماسٹر پاس ورڈ"
+
+msgid "status"
+msgstr "سٹیٹس"
+
+msgid "enabled"
+msgstr "قابل بنایا"
+
+msgid "disabled"
+msgstr "معذور"
+
+msgid "timeout"
+msgstr "وقت ختم"
+
+msgid "save"
+msgstr "محفوظ کریں"
+
+msgid "add_account"
+msgstr "اکاؤنٹ کا اضافہ"
+
+msgid "support"
+msgstr "سپورٹ"
+
+msgid "notice_updates"
+msgstr "نوٹس / تازہ ترین معلومات کے"
+
+msgid "please_login"
+msgstr "برائے مہربانی لاگ ان کریں"
+
+msgid "your_session_timed_out"
+msgstr "آپ کے سیشن کا وقت ختم ہوگیا آؤٹ"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "معذرت پاس ورڈ آپ کا درج غلط تھا!"
+
+msgid "login"
+msgstr "لاگ ان"
+
+msgid "master_password_desc"
+msgstr "آپ کے اکاؤنٹس کو محفوظ رکھنے کے لیے اس ماسٹر پاس ورڈ مقرر کریں."
+
+msgid "license_key"
+msgstr "لائسنس کی چابی"
+
+msgid "online"
+msgstr "آن لائن"
+
+msgid "offline"
+msgstr "آف لائن"
+
+msgid "currently_unavailable"
+msgstr "اس وقت میسر نہیں"
+
+msgid "no_message_to_display"
+msgstr "ظاہر کرنے کے لئے کوئی پیغام"
+
+msgid "offline_notice_title"
+msgstr "ناقابل رسائی - آپ آف لائن یا ایک نیٹ ورک صرف کنکشن پر ہیں؟"
+
+msgid "offline_notice_desc"
+msgstr "آپ ایک نیٹ ورک پر صرف کنکشن یا کوئی تعلق ہمارے سرور کے لئے قائم کیا جا سکتا ہے فی الحال آف لائن ہیں،"
+
+msgid "edit_file"
+msgstr "فائل میں ترمیم کریں"
+
+msgid "download"
+msgstr "لوڈ"
+
+msgid "upload"
+msgstr "اپ لوڈ کریں"
+
+msgid "host_ip_is_required"
+msgstr "میزبان / IP کی ضرورت ہے"
+
+msgid "apply_to_all_files"
+msgstr "تمام فائلوں پر لگائیں"
+
+msgid "activate_now"
+msgstr "ابھی چالو کریں"
+
+msgid "deactivate"
+msgstr "DE- چالو"
+
+msgid "in_progress"
+msgstr "کام جاری ہے"
+
+msgid "complete"
+msgstr "مکمل"
+
+msgid "direction"
+msgstr "سمت"
+
+msgid "progress"
+msgstr "پیش رفت"
+
+msgid "permissions"
+msgstr "اجازتیں"
+
+msgid "owner_group"
+msgstr "مالک / گروپ"
+
+msgid "size"
+msgstr "سائز"
+
+msgid "type"
+msgstr "قسم"
+
+msgid "modified"
+msgstr "تبدیل شدہ"
+
+msgid "trial"
+msgstr "آزمائشی"
+
+msgid "cleared"
+msgstr "صاف"
+
+msgid "error_connecting"
+msgstr "منسلک کرنے میں غلطی"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP ایڈریس میزبان سے منسلک خرابی"
+
+msgid "error_connecting_to_port"
+msgstr "پورٹ سے منسلک کرنے میں خامی"
+
+msgid "please_select_a_local_directory_first"
+msgstr "سب سے پہلے ایک مقامی ڈائریکٹری کو منتخب کریں!"
+
+msgid "go"
+msgstr "جاؤ"
+
+msgid "confirm"
+msgstr "تصدیق کریں"
+
+msgid "delete"
+msgstr "حذف کریں"
+
+msgid "rename"
+msgstr "نام تبدیل کریں"
+
+msgid "copy_urls_to_clipboard"
+msgstr "کاپی URL (ے) کلپ بورڈ پر"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "/ فولڈر آپ کے منتخب کردہ فائل (زبانیں) کو حذف کرنا چاہتے ہیں براہ مہربانی تصدیق کریں (ے)"
+
+msgid "cancelled_by_user"
+msgstr "صارف کی طرف سے منسوخ کر دیا گیا"
+
+msgid "already_exists_overwrite"
+msgstr "پہلے سے موجود ہے، ادلیکھت؟"
+
+msgid "dashboard"
+msgstr "ڈیش بورڈ"
+
+msgid "my_accounts"
+msgstr "میرے اکاؤنٹ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "محفوظ فائل! تمام اکاؤنٹس اپ بنایا گیا ہے."
+
+msgid "file_failed_please_try_again"
+msgstr "فائل میں ناکام! دوبارہ کوشش کریں."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "آپ فی الحال کوئی اکاؤنٹس حمایت حاصل کیا جا کرنے کے لئے ہے."
+
+msgid "saved!"
+msgstr "محفوظ ہوگیا!"
+
+msgid "please_enter_a_password"
+msgstr "ایک پاس ورڈ درج کریں!"
+
+msgid "connection_closed"
+msgstr "کنکشن بند کر دیا"
+
+msgid "listing_mode_set_to"
+msgstr "موڈ کے لئے مقرر کی لسٹنگ"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "مقامی سرور IP خارجی IP کا استعمال کرتے ہوئے، حل کیا"
+
+msgid "login_incorrect"
+msgstr "غلط لاگ ان"
+
+msgid "keeping_connection_alive"
+msgstr "کنکشن زندہ رکھنے"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "لکھنے کے لئے کے قابل نہیں، ڈیٹا کنکشن کو بند کر دیا"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ڈیٹا کنکشن بند کر پڑھنے سے قاصر"
+
+msgid "error_reading_file"
+msgstr "خرابی فائل پڑھنے"
+
+msgid "error_writing_file"
+msgstr "خرابی تحریری طور پر کی فائل"
+
+msgid "failed_to_change_directory_to"
+msgstr "ڈائریکٹری تبدیل کرنے میں ناکام"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "آپ کو اس ڈائریکٹری تک رسائی حاصل کرنے کے لئے صحیح اجازت نہیں ہو سکتے"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "پچھلے ڈائریکٹری پر واپس واپس"
+
+msgid "activate"
+msgstr "فعال کریں"
+
+msgid "payment"
+msgstr "ادائیگی"
+
+msgid "license_key_is_required"
+msgstr "لائسنس کی چابی کی ضرورت ہے"
+
+msgid "license_activated!"
+msgstr "لائسنس کو چالو!"
+
+msgid "your_license_has_been_validated"
+msgstr "آپ کا لائسنس توثیق کی گئی ہے."
+
+msgid "thank_you!"
+msgstr "آپ کا شکریہ!"
+
+msgid "buy_now!"
+msgstr "ابھی خریدئے!"
+
+msgid "buy_now"
+msgstr "ابھی خریدئے"
+
+msgid "one_off_fee"
+msgstr "ایک بند کرنے کی فیس"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "کوئی پابندی کے ساتھ اس اپلی کیشن سے لطف اندوز کرنے اپ گریڈ کریں"
+
+msgid "please_enter_your_license_key_below"
+msgstr "ذیل میں آپ کے لائسنس کلید درج کریں"
+
+msgid "or"
+msgstr "OR"
+
+msgid "loading..."
+msgstr "لوڈ ہورہا ہے ..."
+
+msgid "clear_accounts"
+msgstr "واضح اکاؤنٹس"
+
+msgid "clear_ssh_keys"
+msgstr "واضح SSH چابیاں"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "تمام بچایا SSH کی چابیاں کو خارج کرتا ہے"
+
+msgid "clear_app_settings"
+msgstr "واضح اپلی ترتیبات"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "تمام اپلی کیشن مخصوص ترتیبات کو خارج کرتا ہے"
+
+msgid "clear_recent_connections"
+msgstr "واضح حالیہ کنکشنز"
+
+msgid "deletes_all_recent_connections"
+msgstr "تمام حالیہ کنکشنوں کو خارج کرتا ہے"
+
+msgid "import_type"
+msgstr "درآمد کی قسم"
+
+msgid "please_select"
+msgstr "براہ مہربانی منتخب کریں"
+
+msgid "import_file"
+msgstr "درآمد فائل"
+
+msgid "choose_file"
+msgstr "فائل منتخب کریں"
+
+msgid "delete_accounts"
+msgstr "اکاؤنٹس کو حذف کریں"
+
+msgid "deletes_all_existing_accounts"
+msgstr "تمام موجودہ اکاؤنٹس کو خارج کرتا ہے"
+
+msgid "import_now"
+msgstr "ابھی درآمد"
+
+msgid "none"
+msgstr "کوئی بھی نہیں"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "تبدیلیوں کا اثر لینے کے لئے SFTP کلائنٹ اے پی پی دوبارہ شروع کریں."
+
+msgid "already_bought_the_app"
+msgstr "پہلے سے اطلاق خریدا؟"
+
+msgid "choose"
+msgstr "میں سے انتخاب کریں"
+
+msgid "deleted!"
+msgstr "ڈیلیٹ کر دیا!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised براؤزنگ کا استعمال"
+
+msgid "remote_directory"
+msgstr "ریموٹ ڈائرکٹری"
+
+msgid "rsa_key_only!"
+msgstr "RSA چابی صرف!"
+
+msgid "no_key_selected"
+msgstr "کوئی اہم کو منتخب کیا."
+
+msgid "ssh_key_file"
+msgstr "SSH کلید فائل"
+
+msgid "no_dir_selected"
+msgstr "کوئی دیر کے منتخب."
+
+msgid "keep_blank_for_current_password"
+msgstr "موجودہ پاس ورڈ لئے خالی رکھیں."
+
+msgid "logon_type"
+msgstr "لاگ آن کی قسم"
+
+msgid "normal"
+msgstr "عمومی"
+
+msgid "ask_for_password"
+msgstr "پاس ورڈ طلب"
+
+msgid "anonymous"
+msgstr "گمنام"
+
+msgid "account_type"
+msgstr "اکاؤنٹ کی اقسام"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (عمومی کنکشن)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (محفوظ کنکشن)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (محفوظ کنکشن)"
+
+msgid "folder"
+msgstr "فولڈر"
+
+msgid "advanced"
+msgstr "اعلی درجے کی"
+
+msgid "folder_name"
+msgstr "فولڈر کا نام"
+
+msgid "parent"
+msgstr "والدین"
+
+msgid "new_ftp_site"
+msgstr "نئے FTP سائٹ"
+
+msgid "new_folder"
+msgstr "نیا فولڈر"
+
+msgid "clean_now"
+msgstr "کلین ابھی"
+
+msgid "host"
+msgstr "میزبان"
+
+msgid "no_accounts_added..."
+msgstr "کوئی اکاؤنٹس شامل ..."
+
+msgid "unknown"
+msgstr "نامعلوم"
+
+msgid "file_saved!"
+msgstr "محفوظ فائل!"
+
+msgid "uploading_file!"
+msgstr "اپ لوڈ فائل!"
+
+msgid "save_failed!"
+msgstr "محفوظ کریں ناکام ہو گیا!"
+
+msgid "search"
+msgstr "تلاش کریں"
+
+msgid "find"
+msgstr "مل"
+
+msgid "replace"
+msgstr "بدل دیں"
+
+msgid "scroll_past_end"
+msgstr "کتابچہ ماضی اختتام"
+
+msgid "show_annotations"
+msgstr "دکھائیں تشریحات"
+
+msgid "show_gutter"
+msgstr "دکھائیں گٹر"
+
+msgid "show_invisibles"
+msgstr "Invisibles میں دکھائیں"
+
+msgid "show_print_margin"
+msgstr "پرنٹ مارجن دکھائیں"
+
+msgid "highlight_active_line"
+msgstr "ایکٹو لکیر نمایاں"
+
+msgid "word_wrap"
+msgstr "لفظ لفاف"
+
+msgid "split_code"
+msgstr "سپلٹ کوڈ"
+
+msgid "preferences"
+msgstr "ترجیحات"
+
+msgid "close_all_tabs"
+msgstr "ٹیبز تمام بند کریں"
+
+msgid "close_current_tab"
+msgstr "موجودہ ٹیب بند کریں"
+
+msgid "auto_save_file_when_i_type"
+msgstr "میں ٹائپ جب آٹو فائل کو بچانے کے"
+
+msgid "auto_save"
+msgstr "آٹو محفوظ کریں"
+
+msgid "quick_save"
+msgstr "فوری محفوظ کریں"
+
+msgid "documentation"
+msgstr "دستاویزی"
+
+msgid "themes"
+msgstr "موضوعات"
+
+msgid "keyboard_shortcuts"
+msgstr "کی بورڈ شارٹ کٹس"
+
+msgid "coming_soon"
+msgstr "جلد آ رہا ہے"
+
+msgid "empty"
+msgstr "خالی"

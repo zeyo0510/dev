@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "meni"
+
+msgid "file"
+msgstr "fajl"
+
+msgid "view"
+msgstr "pogled"
+
+msgid "edit"
+msgstr "Uredi"
+
+msgid "help"
+msgstr "pomoći"
+
+msgid "manage_accounts"
+msgstr "Upravljanje računima"
+
+msgid "import_accounts"
+msgstr "uvoz računa"
+
+msgid "export_accounts"
+msgstr "izvoz računa"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "poruka Prijavite"
+
+msgid "local_directory"
+msgstr "lokalni imenik"
+
+msgid "uploads_downloads"
+msgstr "Uploads / Preuzimanja"
+
+msgid "clear_saved_data"
+msgstr "Obriši spremljene podatke"
+
+msgid "edit_settings"
+msgstr "Uredi postavke"
+
+msgid "report_bug"
+msgstr "Prijavi grešku"
+
+msgid "suggest_feature"
+msgstr "Predložite karakteristike"
+
+msgid "ask_a_question"
+msgstr "Postavi pitanje"
+
+msgid "change_log"
+msgstr "Promijeni Prijavite"
+
+msgid "about"
+msgstr "oko"
+
+msgid "exit"
+msgstr "Izlaz"
+
+msgid "host_ip_address"
+msgstr "Domaćin / IP adresa"
+
+msgid "username"
+msgstr "Korisničko"
+
+msgid "password"
+msgstr "lozinka"
+
+msgid "port"
+msgstr "luka"
+
+msgid "connect"
+msgstr "spojiti"
+
+msgid "welcome"
+msgstr "dobrodošli"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP klijent je sve o jednostavnosti, to je izgrađen na Google Chrome / Chrome OS sučelje pakirani aplikaciju omogućava aplikaciju da bude brz i brzo. Neke od funkcionalnosti uključuje Manager FTP nalog za čuvanje daleko i organizovanje većina nas"
+
+msgid "latest_updates"
+msgstr "Latest Updates"
+
+msgid "server_status"
+msgstr "Status servera"
+
+msgid "license_server"
+msgstr "Licenca Server"
+
+msgid "sftp_support"
+msgstr "podrška"
+
+msgid "notice_update"
+msgstr "Obavijest / Ažuriranje"
+
+msgid "website"
+msgstr "sajt"
+
+msgid "clear_all"
+msgstr "Clear All"
+
+msgid "manage"
+msgstr "upravljati"
+
+msgid "recheck"
+msgstr "Re-check"
+
+msgid "last_release"
+msgstr "Posljednje objave"
+
+msgid "released"
+msgstr "oslobođen"
+
+msgid "queued"
+msgstr "čekanju"
+
+msgid "failed"
+msgstr "Failed"
+
+msgid "completed"
+msgstr "završen"
+
+msgid "settings"
+msgstr "Postavke"
+
+msgid "add_folder"
+msgstr "Dodaj Folder"
+
+msgid "add_ftp_account"
+msgstr "Dodaj FTP računa"
+
+msgid "file_editor"
+msgstr "File Editor"
+
+msgid "editor_preferences"
+msgstr "urednik Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "FTP računa"
+
+msgid "most_recent_used"
+msgstr "Nedavno se koristi."
+
+msgid "no_connections_yet_made"
+msgstr "Još nema veze napravljen"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Nema FTP račune još"
+
+msgid "most_recent_connections"
+msgstr "Najnovije Connections"
+
+msgid "last_10_connections_made"
+msgstr "Zadnjih 10 veza koje"
+
+msgid "designed_developed_by"
+msgstr "Dizajniran & Razvijen od strane"
+
+msgid "about_info"
+msgstr "Molimo vas da koristite web stranice SFTP klijent za podršku, no podrška se pruža kroz naše individualne web stranica."
+
+msgid "local"
+msgstr "lokalne"
+
+msgid "remote"
+msgstr "daljinski"
+
+msgid "remote_location_desc"
+msgstr "npr / public_html"
+
+msgid "create_directory"
+msgstr "Napravi Directory"
+
+msgid "create_new_directory"
+msgstr "Napravi novi direktorij"
+
+msgid "create_file"
+msgstr "Kreiranje datoteke"
+
+msgid "create_new_file"
+msgstr "Napravi novi File"
+
+msgid "refresh_list"
+msgstr "Refresh List"
+
+msgid "change"
+msgstr "promjena"
+
+msgid "report_a_bug"
+msgstr "Prijavi grešku"
+
+msgid "suggest_a_feature"
+msgstr "Predložite karakteristike"
+
+msgid "enter_password"
+msgstr "Enter Password"
+
+msgid "enter_your_password..."
+msgstr "Unesite svoju lozinku ..."
+
+msgid "passphrase"
+msgstr "lozinku"
+
+msgid "enter_your_passphrase..."
+msgstr "Unesite svoju lozinku ..."
+
+msgid "email_sftp_client"
+msgstr "E-mail SFTP klijent"
+
+msgid "faqs"
+msgstr "FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Posjetite SFTP klijent Web"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Ocenite nas na Google Chrome Webstore"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Prijavite problem ili dobiti pomoć"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Pridružite nam se na Facebook-u za ažuriranja"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Pratite nas na Twitter ažuriranja"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Nas na Google ažuriranja"
+
+msgid "okay"
+msgstr "U redu"
+
+msgid "cancel"
+msgstr "otkazati"
+
+msgid "close"
+msgstr "blizu"
+
+msgid "unknown_host"
+msgstr "Unknown Host"
+
+msgid "okay_to_continue"
+msgstr "U redu za nastavak?"
+
+msgid "fingerprint"
+msgstr "otisak prsta"
+
+msgid "remember"
+msgstr "zapamtiti"
+
+msgid "file_permissions"
+msgstr "File Dozvole"
+
+msgid "file_permissions_desc"
+msgstr "Molimo vas da izaberete nove atribute za odabranu datoteku (e) / folder (e)"
+
+msgid "read"
+msgstr "čitati"
+
+msgid "write"
+msgstr "pisati"
+
+msgid "execute"
+msgstr "izvršiti"
+
+msgid "owner"
+msgstr "vlasnik"
+
+msgid "group"
+msgstr "grupa"
+
+msgid "public"
+msgstr "javnost"
+
+msgid "numeric_value"
+msgstr "brojčanu vrijednost"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Unesite ime novog direktorija ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Unesite ime nove datoteke ..."
+
+msgid "name"
+msgstr "ime"
+
+msgid "enter_a_password"
+msgstr "Unesite lozinku"
+
+msgid "language"
+msgstr "jezik"
+
+msgid "seconds"
+msgstr "sekundi"
+
+msgid "minutes"
+msgstr "zapisnik"
+
+msgid "hour"
+msgstr "sat"
+
+msgid "hours"
+msgstr "sati"
+
+msgid "day"
+msgstr "dan"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "Registrirajte se sada"
+
+msgid "general"
+msgstr "general"
+
+msgid "security"
+msgstr "bezbjednost"
+
+msgid "master_password"
+msgstr "Master Password"
+
+msgid "status"
+msgstr "status"
+
+msgid "enabled"
+msgstr "omogućeno"
+
+msgid "disabled"
+msgstr "invaliditetom"
+
+msgid "timeout"
+msgstr "Vrijeme je isteklo"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Dodaj računa"
+
+msgid "support"
+msgstr "podrška"
+
+msgid "notice_updates"
+msgstr "Obavijest / Ažuriranje"
+
+msgid "please_login"
+msgstr "Molimo vas Prijava"
+
+msgid "your_session_timed_out"
+msgstr "Vaša sesija je istekla"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Žao mi je lozinka koju ste unijeli je neispravna!"
+
+msgid "login"
+msgstr "Ulogovati se"
+
+msgid "master_password_desc"
+msgstr "Postavite ovo master lozinku kako bi vaše račune na sigurnom."
+
+msgid "license_key"
+msgstr "License Key"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "Trenutno nedostupno"
+
+msgid "no_message_to_display"
+msgstr "Nema poruka za prikaz"
+
+msgid "offline_notice_title"
+msgstr "Silent - Jesi li na mreži ili na mreži jedina veza?"
+
+msgid "offline_notice_desc"
+msgstr "Vi ste trenutno na mreži, na mreži jedina veza ili nikakva veza može biti uspostavljena na naš server"
+
+msgid "edit_file"
+msgstr "Uredi datoteke"
+
+msgid "download"
+msgstr "Skinuti"
+
+msgid "upload"
+msgstr "upload"
+
+msgid "host_ip_is_required"
+msgstr "Domaćin / IP je potrebna"
+
+msgid "apply_to_all_files"
+msgstr "Nanesite na sve datoteke"
+
+msgid "activate_now"
+msgstr "aktiviranje sada"
+
+msgid "deactivate"
+msgstr "De-aktiviranje"
+
+msgid "in_progress"
+msgstr "U toku"
+
+msgid "complete"
+msgstr "kompletan"
+
+msgid "direction"
+msgstr "pravac"
+
+msgid "progress"
+msgstr "napredak"
+
+msgid "permissions"
+msgstr "Dozvole"
+
+msgid "owner_group"
+msgstr "Vlasnik / Grupa"
+
+msgid "size"
+msgstr "veličina"
+
+msgid "type"
+msgstr "tip"
+
+msgid "modified"
+msgstr "Promjena"
+
+msgid "trial"
+msgstr "suđenje"
+
+msgid "cleared"
+msgstr "Očišćena"
+
+msgid "error_connecting"
+msgstr "greška Povezivanje"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Greška Povezivanje na host / IP adresa"
+
+msgid "error_connecting_to_port"
+msgstr "Greška Povezivanje na port"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Molimo da prvo odaberete lokalni direktorij!"
+
+msgid "go"
+msgstr "ići"
+
+msgid "confirm"
+msgstr "potvrditi"
+
+msgid "delete"
+msgstr "izbrisati"
+
+msgid "rename"
+msgstr "preimenovati"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopiraj URL (e) Preuzmi"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Molimo Vas da potvrdite da želite izbrisati odabranu datoteku (e) / folder (e)"
+
+msgid "cancelled_by_user"
+msgstr "Otkazano korisnik"
+
+msgid "already_exists_overwrite"
+msgstr "već postoji, prebrisati?"
+
+msgid "dashboard"
+msgstr "komandna tabla"
+
+msgid "my_accounts"
+msgstr "Moji računi"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File Saved! Svi računi su kopije."
+
+msgid "file_failed_please_try_again"
+msgstr "File nije uspjela! Molimo pokušajte ponovo."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Trenutno nemate računa da se kopije."
+
+msgid "saved!"
+msgstr "Sačuvano!"
+
+msgid "please_enter_a_password"
+msgstr "Molimo vas da unesete lozinku!"
+
+msgid "connection_closed"
+msgstr "Provedeno zatvoren"
+
+msgid "listing_mode_set_to"
+msgstr "Oglas mod podešen na"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Lokalni server IP riješiti, koristeći vanjski IP"
+
+msgid "login_incorrect"
+msgstr "Prijava netačno"
+
+msgid "keeping_connection_alive"
+msgstr "Keeping priključak živ"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "U nemogućnosti da pišu, povezivanje podataka zatvorena"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Nije moguće čitati podatkovne veze zatvorena"
+
+msgid "error_reading_file"
+msgstr "Greška čitanja datoteke"
+
+msgid "error_writing_file"
+msgstr "Greška pisanja datoteke"
+
+msgid "failed_to_change_directory_to"
+msgstr "Nije uspio promijeniti direktorij na"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Možda nećete imati odgovarajuće dozvole za pristup ovom direktoriju"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Vraćanje na prethodni direktorij"
+
+msgid "activate"
+msgstr "aktivirati"
+
+msgid "payment"
+msgstr "plaćanje"
+
+msgid "license_key_is_required"
+msgstr "licence ključ je potrebno"
+
+msgid "license_activated!"
+msgstr "Licenca za aktivaciju!"
+
+msgid "your_license_has_been_validated"
+msgstr "Vaša licenca je potvrđena."
+
+msgid "thank_you!"
+msgstr "Hvala ti!"
+
+msgid "buy_now!"
+msgstr "Kupi sada!"
+
+msgid "buy_now"
+msgstr "Kupi sada"
+
+msgid "one_off_fee"
+msgstr "jednokratna naknada"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Molimo nadogradite uživati ​​ovu aplikaciju bez ograničenja"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Unesite svoj ključ licence ispod"
+
+msgid "or"
+msgstr "ILI"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "jasno računa"
+
+msgid "clear_ssh_keys"
+msgstr "Jasno SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Briše sve sačuvane ključeve SSH"
+
+msgid "clear_app_settings"
+msgstr "Jasno App Settings"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Briše sve specifične postavke aplikacije"
+
+msgid "clear_recent_connections"
+msgstr "Clear Recent Connections"
+
+msgid "deletes_all_recent_connections"
+msgstr "Briše sve nedavne veze"
+
+msgid "import_type"
+msgstr "uvoz Vrsta"
+
+msgid "please_select"
+msgstr "Molimo odaberite"
+
+msgid "import_file"
+msgstr "uvoz datoteke"
+
+msgid "choose_file"
+msgstr "Odabrati datoteku"
+
+msgid "delete_accounts"
+msgstr "Brisanje računa"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Briše sve postojeće račune"
+
+msgid "import_now"
+msgstr "uvoz sada"
+
+msgid "none"
+msgstr "nijedan"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Molimo vas da ponovo pokrenete SFTP klijent aplikaciju za promjene stupile na snagu."
+
+msgid "already_bought_the_app"
+msgstr "Već kupio App?"
+
+msgid "choose"
+msgstr "Izabrati"
+
+msgid "deleted!"
+msgstr "Deleted!"
+
+msgid "use_syncronised_browsing"
+msgstr "koristiti syncronised pretraživanje"
+
+msgid "remote_directory"
+msgstr "daljinski Directory"
+
+msgid "rsa_key_only!"
+msgstr "samo RSA ključ!"
+
+msgid "no_key_selected"
+msgstr "izabran nijedan ključ."
+
+msgid "ssh_key_file"
+msgstr "SSH ključ File"
+
+msgid "no_dir_selected"
+msgstr "izabran nijedan dir."
+
+msgid "keep_blank_for_current_password"
+msgstr "Držite prazno za trenutnu lozinku."
+
+msgid "logon_type"
+msgstr "Logon Type"
+
+msgid "normal"
+msgstr "normalan"
+
+msgid "ask_for_password"
+msgstr "Pitajte za lozinku"
+
+msgid "anonymous"
+msgstr "anoniman"
+
+msgid "account_type"
+msgstr "Account Type"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Normal Connection)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Secure Connection)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Secure Connection)"
+
+msgid "folder"
+msgstr "fascikla"
+
+msgid "advanced"
+msgstr "napredan"
+
+msgid "folder_name"
+msgstr "folder Name"
+
+msgid "parent"
+msgstr "roditelj"
+
+msgid "new_ftp_site"
+msgstr "Novi FTP Site"
+
+msgid "new_folder"
+msgstr "New Folder"
+
+msgid "clean_now"
+msgstr "Clean Now"
+
+msgid "host"
+msgstr "domaćin"
+
+msgid "no_accounts_added..."
+msgstr "Ne računa na dodatu ..."
+
+msgid "unknown"
+msgstr "nepoznat"
+
+msgid "file_saved!"
+msgstr "File Saved!"
+
+msgid "uploading_file!"
+msgstr "Upload datoteke!"
+
+msgid "save_failed!"
+msgstr "Save nije uspjela!"
+
+msgid "search"
+msgstr "pretraživanje"
+
+msgid "find"
+msgstr "pronaći"
+
+msgid "replace"
+msgstr "zamijeniti"
+
+msgid "scroll_past_end"
+msgstr "Dođite Past Kraj"
+
+msgid "show_annotations"
+msgstr "Pokaži Annotations"
+
+msgid "show_gutter"
+msgstr "Pokaži Gutter"
+
+msgid "show_invisibles"
+msgstr "Pokaži Invisibles"
+
+msgid "show_print_margin"
+msgstr "Show Print Margin"
+
+msgid "highlight_active_line"
+msgstr "Highlight Active Line"
+
+msgid "word_wrap"
+msgstr "Word Wrap"
+
+msgid "split_code"
+msgstr "Split Kod"
+
+msgid "preferences"
+msgstr "Postavke"
+
+msgid "close_all_tabs"
+msgstr "Zatvorite sve kartice"
+
+msgid "close_current_tab"
+msgstr "Zatvori Trenutni Tab"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto save file kada sam tip"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "dokumentacija"
+
+msgid "themes"
+msgstr "Teme"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Shortcuts"
+
+msgid "coming_soon"
+msgstr "Uskoro dolazi"
+
+msgid "empty"
+msgstr "prazan"

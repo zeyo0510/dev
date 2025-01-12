@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "메뉴"
+
+msgid "file"
+msgstr "파일"
+
+msgid "view"
+msgstr "전망"
+
+msgid "edit"
+msgstr "편집하다"
+
+msgid "help"
+msgstr "도움"
+
+msgid "manage_accounts"
+msgstr "계정 관리"
+
+msgid "import_accounts"
+msgstr "가져 오기 계정"
+
+msgid "export_accounts"
+msgstr "수출 계정"
+
+msgid "quick_connect"
+msgstr "빠른 연결"
+
+msgid "message_log"
+msgstr "메시지 로그"
+
+msgid "local_directory"
+msgstr "로컬 디렉토리"
+
+msgid "uploads_downloads"
+msgstr "업로드 / 다운로드"
+
+msgid "clear_saved_data"
+msgstr "삭제 저장된 데이터"
+
+msgid "edit_settings"
+msgstr "편집 설정"
+
+msgid "report_bug"
+msgstr "버그 신고"
+
+msgid "suggest_feature"
+msgstr "기능 제안"
+
+msgid "ask_a_question"
+msgstr "질문하기"
+
+msgid "change_log"
+msgstr "로그인 변경"
+
+msgid "about"
+msgstr "약"
+
+msgid "exit"
+msgstr "출구"
+
+msgid "host_ip_address"
+msgstr "호스트 / IP 주소"
+
+msgid "username"
+msgstr "사용자 이름"
+
+msgid "password"
+msgstr "암호"
+
+msgid "port"
+msgstr "포트"
+
+msgid "connect"
+msgstr "잇다"
+
+msgid "welcome"
+msgstr "환영"
+
+msgid "welcome_intro"
+msgstr "<p> SFTP 클라이언트는이 앱이 빠르고 반응 할 수 있도록 구글 크롬 / 크롬 OS 패키지 응용 프로그램 인터페이스에 내장 된 모든 단순에 관한 것입니다. 기능 중 일부는 멀리 저장하고 대부분의 우리를 구성하는 FTP 계정 관리자를 포함"
+
+msgid "latest_updates"
+msgstr "최신 업데이트"
+
+msgid "server_status"
+msgstr "서버 상태"
+
+msgid "license_server"
+msgstr "라이센스 서버"
+
+msgid "sftp_support"
+msgstr "지원하다"
+
+msgid "notice_update"
+msgstr "공지 사항 / 업데이트"
+
+msgid "website"
+msgstr "웹 사이트"
+
+msgid "clear_all"
+msgstr "모두 지우기"
+
+msgid "manage"
+msgstr "꾸리다"
+
+msgid "recheck"
+msgstr "다시 확인"
+
+msgid "last_release"
+msgstr "마지막 릴리스"
+
+msgid "released"
+msgstr "출시"
+
+msgid "queued"
+msgstr "대기 중"
+
+msgid "failed"
+msgstr "실패한"
+
+msgid "completed"
+msgstr "완료"
+
+msgid "settings"
+msgstr "설정"
+
+msgid "add_folder"
+msgstr "폴더 추가"
+
+msgid "add_ftp_account"
+msgstr "FTP 계정 추가"
+
+msgid "file_editor"
+msgstr "에디터 파일"
+
+msgid "editor_preferences"
+msgstr "편집기 환경 설정"
+
+msgid "your_ftp_accounts"
+msgstr "귀하의 FTP 계정"
+
+msgid "most_recent_used"
+msgstr "가장 최근에 사용."
+
+msgid "no_connections_yet_made"
+msgstr "어떤 연결이 아직 이루어지지"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "어떤 FTP 계정이 아직 추가되지"
+
+msgid "most_recent_connections"
+msgstr "가장 최근 연결"
+
+msgid "last_10_connections_made"
+msgstr "만든 마지막 10 연결"
+
+msgid "designed_developed_by"
+msgstr "설계 &에 의해 개발"
+
+msgid "about_info"
+msgstr "지원을위한 SFTP 클라이언트 웹 사이트를 사용하십시오, 지원이 우리의 개인 웹 사이트를 통해 제공되지 않습니다."
+
+msgid "local"
+msgstr "노동 조합 지부"
+
+msgid "remote"
+msgstr "먼"
+
+msgid "remote_location_desc"
+msgstr "예를 들어 / public_html이"
+
+msgid "create_directory"
+msgstr "디렉토리 만들기"
+
+msgid "create_new_directory"
+msgstr "새 디렉토리 만들기"
+
+msgid "create_file"
+msgstr "파일 만들기"
+
+msgid "create_new_file"
+msgstr "새 파일 만들기"
+
+msgid "refresh_list"
+msgstr "새로 고침 목록"
+
+msgid "change"
+msgstr "변화"
+
+msgid "report_a_bug"
+msgstr "버그 신고"
+
+msgid "suggest_a_feature"
+msgstr "기능 제안"
+
+msgid "enter_password"
+msgstr "암호를 입력"
+
+msgid "enter_your_password..."
+msgstr "비밀번호를 입력 ..."
+
+msgid "passphrase"
+msgstr "암호"
+
+msgid "enter_your_passphrase..."
+msgstr "당신의 암호를 입력 ..."
+
+msgid "email_sftp_client"
+msgstr "이메일 SFTP 클라이언트"
+
+msgid "faqs"
+msgstr "자주 묻는 질문의"
+
+msgid "visit_sftp_client_website"
+msgstr "방문 SFTP 클라이언트 웹 사이트"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "구글 크롬 웹 스토어에서 우리를 평가"
+
+msgid "report_an_issue_or_get_help"
+msgstr "문제 신고 또는 도움을받을"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "업데이트를 페이스 북에 합류 해"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "업데이트를 트위터에 우리를 따르라"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "업데이트 Google에서 우리를 +1"
+
+msgid "okay"
+msgstr "괜찮아"
+
+msgid "cancel"
+msgstr "취소하다"
+
+msgid "close"
+msgstr "닫기"
+
+msgid "unknown_host"
+msgstr "알 수없는 호스트"
+
+msgid "okay_to_continue"
+msgstr "계속 그래?"
+
+msgid "fingerprint"
+msgstr "지문"
+
+msgid "remember"
+msgstr "생각해 내다"
+
+msgid "file_permissions"
+msgstr "파일 권한"
+
+msgid "file_permissions_desc"
+msgstr "(들)을 선택한 파일 (들) / 폴더의 새 속성을 선택하세요"
+
+msgid "read"
+msgstr "독서"
+
+msgid "write"
+msgstr "쓰다"
+
+msgid "execute"
+msgstr "실행"
+
+msgid "owner"
+msgstr "소유자"
+
+msgid "group"
+msgstr "그룹"
+
+msgid "public"
+msgstr "공공의"
+
+msgid "numeric_value"
+msgstr "숫자 값"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "새 디렉토리의 이름을 입력합니다 ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "새 파일의 이름을 입력 ..."
+
+msgid "name"
+msgstr "이름"
+
+msgid "enter_a_password"
+msgstr "암호를 입력"
+
+msgid "language"
+msgstr "언어"
+
+msgid "seconds"
+msgstr "초"
+
+msgid "minutes"
+msgstr "의사록"
+
+msgid "hour"
+msgstr "시간"
+
+msgid "hours"
+msgstr "시간"
+
+msgid "day"
+msgstr "일"
+
+msgid "trial_left"
+msgstr "시험 왼쪽"
+
+msgid "register_now"
+msgstr "지금 등록하세요"
+
+msgid "general"
+msgstr "일반"
+
+msgid "security"
+msgstr "보안"
+
+msgid "master_password"
+msgstr "마스터 암호"
+
+msgid "status"
+msgstr "지위"
+
+msgid "enabled"
+msgstr "사용"
+
+msgid "disabled"
+msgstr "장애인"
+
+msgid "timeout"
+msgstr "시간 제한"
+
+msgid "save"
+msgstr "구하다"
+
+msgid "add_account"
+msgstr "계정을 추가"
+
+msgid "support"
+msgstr "지원하다"
+
+msgid "notice_updates"
+msgstr "공지 사항 / 업데이트"
+
+msgid "please_login"
+msgstr "로그인 해주세요"
+
+msgid "your_session_timed_out"
+msgstr "세션 시간 초과"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "죄송합니다 입력 한 암호가 잘못했다!"
+
+msgid "login"
+msgstr "로그인"
+
+msgid "master_password_desc"
+msgstr "안전 계정을 유지하기 위해이 마스터 암호를 설정합니다."
+
+msgid "license_key"
+msgstr "라이센스 키"
+
+msgid "online"
+msgstr "온라인으로"
+
+msgid "offline"
+msgstr "오프라인"
+
+msgid "currently_unavailable"
+msgstr "현재 사용할 수없는"
+
+msgid "no_message_to_display"
+msgstr "어떤 메시지가 표시 없습니다"
+
+msgid "offline_notice_title"
+msgstr "연결할 - 오프라인 또는 네트워크에만 연결이 있습니까?"
+
+msgid "offline_notice_desc"
+msgstr "당신은 연결 또는 연결되지는 우리의 서버에 설치 될 수있는 네트워크에 현재 오프라인"
+
+msgid "edit_file"
+msgstr "파일 편집"
+
+msgid "download"
+msgstr "다운로드"
+
+msgid "upload"
+msgstr "업로드"
+
+msgid "host_ip_is_required"
+msgstr "호스트 / IP가 필요합니다"
+
+msgid "apply_to_all_files"
+msgstr "모든 파일에 적용"
+
+msgid "activate_now"
+msgstr "지금 활성화"
+
+msgid "deactivate"
+msgstr "드 활성화"
+
+msgid "in_progress"
+msgstr "진행 중"
+
+msgid "complete"
+msgstr "완전한"
+
+msgid "direction"
+msgstr "방향"
+
+msgid "progress"
+msgstr "진행"
+
+msgid "permissions"
+msgstr "권한"
+
+msgid "owner_group"
+msgstr "소유자 / 그룹"
+
+msgid "size"
+msgstr "크기"
+
+msgid "type"
+msgstr "유형"
+
+msgid "modified"
+msgstr "수정"
+
+msgid "trial"
+msgstr "시도"
+
+msgid "cleared"
+msgstr "해제"
+
+msgid "error_connecting"
+msgstr "연결 오류"
+
+msgid "error_connecting_to_host_ip"
+msgstr "호스트에 연결 오류 / IP 주소"
+
+msgid "error_connecting_to_port"
+msgstr "포트에 연결 오류"
+
+msgid "please_select_a_local_directory_first"
+msgstr "먼저 로컬 디렉토리를 선택하세요!"
+
+msgid "go"
+msgstr "가기"
+
+msgid "confirm"
+msgstr "확인"
+
+msgid "delete"
+msgstr "지우다"
+
+msgid "rename"
+msgstr "이름 바꾸기"
+
+msgid "copy_urls_to_clipboard"
+msgstr "복사 URL (들) 클립 보드"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "선택한 파일을 삭제할 확인하시기 바랍니다 / 폴더 (들)"
+
+msgid "cancelled_by_user"
+msgstr "사용자에 의해 취소"
+
+msgid "already_exists_overwrite"
+msgstr "이미 덮어 존재?"
+
+msgid "dashboard"
+msgstr "계기반"
+
+msgid "my_accounts"
+msgstr "내 계정"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "저장된 파일! 모든 계정이 백업되었습니다."
+
+msgid "file_failed_please_try_again"
+msgstr "파일 실패! 다시 시도하십시오."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "현재 어떤 계정이 백업되지해야합니다."
+
+msgid "saved!"
+msgstr "저장!"
+
+msgid "please_enter_a_password"
+msgstr "비밀번호를 입력하세요!"
+
+msgid "connection_closed"
+msgstr "연결 종료"
+
+msgid "listing_mode_set_to"
+msgstr "모드로 설정 목록"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "로컬 서버 IP 외부 IP를 사용하여 해결"
+
+msgid "login_incorrect"
+msgstr "잘못된 로그인"
+
+msgid "keeping_connection_alive"
+msgstr "살아 연결을 유지"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "쓸 수 없습니다, 데이터 연결이 닫힙니다"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "데이터 연결이 닫혀 읽을 수 없습니다"
+
+msgid "error_reading_file"
+msgstr "파일을 읽는 중 오류"
+
+msgid "error_writing_file"
+msgstr "파일 쓰기 오류"
+
+msgid "failed_to_change_directory_to"
+msgstr "에 디렉토리를 변경하지 못했습니다"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "이 디렉토리에 액세스 할 수있는 올바른 권한이 없습니다"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "이전 디렉토리로 다시 되돌리기"
+
+msgid "activate"
+msgstr "활성화"
+
+msgid "payment"
+msgstr "지불"
+
+msgid "license_key_is_required"
+msgstr "라이센스 키가 필요합니다"
+
+msgid "license_activated!"
+msgstr "라이센스 활성화!"
+
+msgid "your_license_has_been_validated"
+msgstr "라이센스는 검증되었습니다."
+
+msgid "thank_you!"
+msgstr "고맙습니다!"
+
+msgid "buy_now!"
+msgstr "지금 주문!"
+
+msgid "buy_now"
+msgstr "지금 주문"
+
+msgid "one_off_fee"
+msgstr "일회성 비용"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "아무 제한이 응용 프로그램을 즐길 수있는 업그레이드하세요"
+
+msgid "please_enter_your_license_key_below"
+msgstr "아래에 라이센스 키를 입력하세요"
+
+msgid "or"
+msgstr "또는"
+
+msgid "loading..."
+msgstr "로드 중 ..."
+
+msgid "clear_accounts"
+msgstr "클리어 계정"
+
+msgid "clear_ssh_keys"
+msgstr "클리어 SSH 키"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "저장된 모든 SSH 키를 삭제합니다"
+
+msgid "clear_app_settings"
+msgstr "클리어 앱 설정"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "모든 응용 프로그램 별 설정을 삭제합니다"
+
+msgid "clear_recent_connections"
+msgstr "삭제 최근 연결"
+
+msgid "deletes_all_recent_connections"
+msgstr "최근의 모든 연결을 삭제합니다"
+
+msgid "import_type"
+msgstr "가져 오기 유형"
+
+msgid "please_select"
+msgstr "선택 해주세요"
+
+msgid "import_file"
+msgstr "파일 가져 오기"
+
+msgid "choose_file"
+msgstr "파일을 선택"
+
+msgid "delete_accounts"
+msgstr "계정 삭제"
+
+msgid "deletes_all_existing_accounts"
+msgstr "기존의 모든 계정을 삭제합니다"
+
+msgid "import_now"
+msgstr "가져 오기 지금"
+
+msgid "none"
+msgstr "없음"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "변경 내용을 적용하려면 SFTP 클라이언트 응용 프로그램을 다시 시작하십시오."
+
+msgid "already_bought_the_app"
+msgstr "이미 앱을 구입?"
+
+msgid "choose"
+msgstr "고르다"
+
+msgid "deleted!"
+msgstr "삭제!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised 검색을 사용"
+
+msgid "remote_directory"
+msgstr "원격 디렉토리"
+
+msgid "rsa_key_only!"
+msgstr "RSA 키 만!"
+
+msgid "no_key_selected"
+msgstr "어떤 키를 선택하지 않았습니다."
+
+msgid "ssh_key_file"
+msgstr "SSH 키 파일"
+
+msgid "no_dir_selected"
+msgstr "어떤 일세를 선택하지 않았습니다."
+
+msgid "keep_blank_for_current_password"
+msgstr "현재 암호 빈 유지합니다."
+
+msgid "logon_type"
+msgstr "로그온 유형"
+
+msgid "normal"
+msgstr "표준"
+
+msgid "ask_for_password"
+msgstr "암호를 요청"
+
+msgid "anonymous"
+msgstr "익명"
+
+msgid "account_type"
+msgstr "계정 유형"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (일반 연결)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (보안 연결)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (보안 연결)"
+
+msgid "folder"
+msgstr "폴더"
+
+msgid "advanced"
+msgstr "많은"
+
+msgid "folder_name"
+msgstr "폴더 이름"
+
+msgid "parent"
+msgstr "부모의"
+
+msgid "new_ftp_site"
+msgstr "새로운 FTP 사이트"
+
+msgid "new_folder"
+msgstr "새 폴더"
+
+msgid "clean_now"
+msgstr "클린 지금"
+
+msgid "host"
+msgstr "주인"
+
+msgid "no_accounts_added..."
+msgstr "어떤 계정을 추가하지 ..."
+
+msgid "unknown"
+msgstr "알 수 없는"
+
+msgid "file_saved!"
+msgstr "저장된 파일!"
+
+msgid "uploading_file!"
+msgstr "업로드 파일!"
+
+msgid "save_failed!"
+msgstr "저장 실패!"
+
+msgid "search"
+msgstr "수색"
+
+msgid "find"
+msgstr "발견"
+
+msgid "replace"
+msgstr "바꾸다"
+
+msgid "scroll_past_end"
+msgstr "스크롤 과거의 끝"
+
+msgid "show_annotations"
+msgstr "보기 주석"
+
+msgid "show_gutter"
+msgstr "보기 거터"
+
+msgid "show_invisibles"
+msgstr "보기 여백 키"
+
+msgid "show_print_margin"
+msgstr "보기 인쇄 여백"
+
+msgid "highlight_active_line"
+msgstr "액티브 라인을 강조"
+
+msgid "word_wrap"
+msgstr "줄 바꿈"
+
+msgid "split_code"
+msgstr "분할 코드"
+
+msgid "preferences"
+msgstr "환경 설정"
+
+msgid "close_all_tabs"
+msgstr "모든 탭 닫기"
+
+msgid "close_current_tab"
+msgstr "현재 탭 닫기"
+
+msgid "auto_save_file_when_i_type"
+msgstr "내가 입력 할 때 자동으로 파일을 저장"
+
+msgid "auto_save"
+msgstr "자동 저장"
+
+msgid "quick_save"
+msgstr "빠른 저장"
+
+msgid "documentation"
+msgstr "선적 서류 비치"
+
+msgid "themes"
+msgstr "테마"
+
+msgid "keyboard_shortcuts"
+msgstr "키보드 바로 가기"
+
+msgid "coming_soon"
+msgstr "출시 예정"
+
+msgid "empty"
+msgstr "빈"

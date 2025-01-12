@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ht\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Menu"
+
+msgid "file"
+msgstr "file"
+
+msgid "view"
+msgstr "Gade"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "help"
+msgstr "Ede"
+
+msgid "manage_accounts"
+msgstr "jere Kont"
+
+msgid "import_accounts"
+msgstr "Import Kont"
+
+msgid "export_accounts"
+msgstr "Kont Export"
+
+msgid "quick_connect"
+msgstr "Quick Konekte"
+
+msgid "message_log"
+msgstr "mesaj Log"
+
+msgid "local_directory"
+msgstr "Anyè Lokal"
+
+msgid "uploads_downloads"
+msgstr "Téléchargements / Downloads"
+
+msgid "clear_saved_data"
+msgstr "Klè sove Done"
+
+msgid "edit_settings"
+msgstr "Edit Anviwònman"
+
+msgid "report_bug"
+msgstr "Rapòte yon ensèk"
+
+msgid "suggest_feature"
+msgstr "Sigjere yon Feature"
+
+msgid "ask_a_question"
+msgstr "Poze kesyon"
+
+msgid "change_log"
+msgstr "Chanje Log"
+
+msgid "about"
+msgstr "sou"
+
+msgid "exit"
+msgstr "Sòti"
+
+msgid "host_ip_address"
+msgstr "Akèy / Adrès IP"
+
+msgid "username"
+msgstr "D '"
+
+msgid "password"
+msgstr "Modpas"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Konekte"
+
+msgid "welcome"
+msgstr "Byenveni"
+
+msgid "welcome_intro"
+msgstr "<p> sftp Kliyan se tout sou senplisite, li te bati sou koòdone nan Google Chrome / Chrome OS pake app ki pèmèt app a yo dwe vit ak dinamik. Gen kèk nan fonctionnalités a genyen ladan l yon Manadjè ftp Kont nan magazen lwen ak òganize pi ou nou"
+
+msgid "latest_updates"
+msgstr "dènye Updates"
+
+msgid "server_status"
+msgstr "sèvè Ki dènye nouvèl"
+
+msgid "license_server"
+msgstr "lisans sèvè"
+
+msgid "sftp_support"
+msgstr "Sipò"
+
+msgid "notice_update"
+msgstr "Avi / Dènye Nouvèl"
+
+msgid "website"
+msgstr "Sit wèb"
+
+msgid "clear_all"
+msgstr "Klè tout"
+
+msgid "manage"
+msgstr "jere"
+
+msgid "recheck"
+msgstr "Re-chèk"
+
+msgid "last_release"
+msgstr "Dènye Release"
+
+msgid "released"
+msgstr "Released"
+
+msgid "queued"
+msgstr "atant"
+
+msgid "failed"
+msgstr "echwe"
+
+msgid "completed"
+msgstr "terminée"
+
+msgid "settings"
+msgstr "anviwònman"
+
+msgid "add_folder"
+msgstr "ajoute Dosye"
+
+msgid "add_ftp_account"
+msgstr "Add Kont ftp"
+
+msgid "file_editor"
+msgstr "File editè"
+
+msgid "editor_preferences"
+msgstr "editè Preferences"
+
+msgid "your_ftp_accounts"
+msgstr "Kont ftp ou"
+
+msgid "most_recent_used"
+msgstr "Pi resamman itilize."
+
+msgid "no_connections_yet_made"
+msgstr "Pa gen koneksyon poko fè"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Pa gen kont ftp te ajoute ankò"
+
+msgid "most_recent_connections"
+msgstr "Ki pi resan Koneksyon"
+
+msgid "last_10_connections_made"
+msgstr "Dènye 10 koneksyon te fè"
+
+msgid "designed_developed_by"
+msgstr "Ki fèt & Devlope pa"
+
+msgid "about_info"
+msgstr "Tanpri itilize sit entènèt la Kliyan sftp pou sipò, pa gen okenn sipò bay nan sit entènèt endividyèl nou."
+
+msgid "local"
+msgstr "Lokal"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "egzanp / public_html"
+
+msgid "create_directory"
+msgstr "Kreye Anyè"
+
+msgid "create_new_directory"
+msgstr "Kreye nouvo Anyè"
+
+msgid "create_file"
+msgstr "Kreye File"
+
+msgid "create_new_file"
+msgstr "Kreye nouvo File"
+
+msgid "refresh_list"
+msgstr "Refresh Lis"
+
+msgid "change"
+msgstr "Chanje"
+
+msgid "report_a_bug"
+msgstr "Rapòte yon ensèk"
+
+msgid "suggest_a_feature"
+msgstr "Sigjere yon Feature"
+
+msgid "enter_password"
+msgstr "antre nan modpas"
+
+msgid "enter_your_password..."
+msgstr "Mete modpas ou ..."
+
+msgid "passphrase"
+msgstr "pasfraz"
+
+msgid "enter_your_passphrase..."
+msgstr "Antre nan pasfraz ou ..."
+
+msgid "email_sftp_client"
+msgstr "Imèl sftp Kliyan"
+
+msgid "faqs"
+msgstr "a FAQ"
+
+msgid "visit_sftp_client_website"
+msgstr "Vizite sftp Kliyan Sit wèb"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Evalye nou sou Google Chrome vebstor a"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Rapòte yon pwoblèm oswa pou w jwenn èd"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Join nou sou Facebook pou dènye"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Swiv nou sou Twitter pou dènye nouvèl"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Nou sou Google Pou dènye"
+
+msgid "okay"
+msgstr "oke"
+
+msgid "cancel"
+msgstr "Anile"
+
+msgid "close"
+msgstr "Close"
+
+msgid "unknown_host"
+msgstr "unknown Akèy"
+
+msgid "okay_to_continue"
+msgstr "Oke kontinye?"
+
+msgid "fingerprint"
+msgstr "anprent"
+
+msgid "remember"
+msgstr "sonje"
+
+msgid "file_permissions"
+msgstr "Permissions file"
+
+msgid "file_permissions_desc"
+msgstr "Tanpri chwazi atribi ki nouvo pou dosye a chwazi (yo) / katab (yo)"
+
+msgid "read"
+msgstr "li"
+
+msgid "write"
+msgstr "ekri"
+
+msgid "execute"
+msgstr "egzekite"
+
+msgid "owner"
+msgstr "Mèt"
+
+msgid "group"
+msgstr "Gwoup"
+
+msgid "public"
+msgstr "Piblik"
+
+msgid "numeric_value"
+msgstr "Valè nimerik"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Ekri non an nan anyè a nouvo ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Ekri non an nan dosye a nouvo ..."
+
+msgid "name"
+msgstr "Non"
+
+msgid "enter_a_password"
+msgstr "Mete yon Modpas"
+
+msgid "language"
+msgstr "Lang"
+
+msgid "seconds"
+msgstr "segonn"
+
+msgid "minutes"
+msgstr "minit"
+
+msgid "hour"
+msgstr "lè"
+
+msgid "hours"
+msgstr "Orè"
+
+msgid "day"
+msgstr "jou"
+
+msgid "trial_left"
+msgstr "Jijman Left"
+
+msgid "register_now"
+msgstr "Enskri Koulye a,"
+
+msgid "general"
+msgstr "Jeneral"
+
+msgid "security"
+msgstr "sekirite"
+
+msgid "master_password"
+msgstr "Mèt Modpas"
+
+msgid "status"
+msgstr "Ki dènye nouvèl"
+
+msgid "enabled"
+msgstr "pèmèt"
+
+msgid "disabled"
+msgstr "andikape"
+
+msgid "timeout"
+msgstr "poz"
+
+msgid "save"
+msgstr "Save"
+
+msgid "add_account"
+msgstr "Add Kont"
+
+msgid "support"
+msgstr "Sipò"
+
+msgid "notice_updates"
+msgstr "Avi / Dènye Nouvèl"
+
+msgid "please_login"
+msgstr "souple Connexion"
+
+msgid "your_session_timed_out"
+msgstr "Sesyon ou kwonometre soti"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Padon modpas la ou te antre nan te kòrèk!"
+
+msgid "login"
+msgstr "login"
+
+msgid "master_password_desc"
+msgstr "Mete modpas sa a mèt kenbe kont ou an sekirite."
+
+msgid "license_key"
+msgstr "lisans kle"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "currently_unavailable"
+msgstr "kounye a disponib"
+
+msgid "no_message_to_display"
+msgstr "Pa gen mesaj yo montre"
+
+msgid "offline_notice_title"
+msgstr "Enjwayabl - Èske w offline oswa sou yon rezo sèlman koneksyon?"
+
+msgid "offline_notice_desc"
+msgstr "Ou se kounye a offline, sou yon rezo te kapab sèlman koneksyon oswa ki pa gen koneksyon dwe etabli nan sèvè nou an"
+
+msgid "edit_file"
+msgstr "Edit File"
+
+msgid "download"
+msgstr "download"
+
+msgid "upload"
+msgstr "Voye"
+
+msgid "host_ip_is_required"
+msgstr "se Akèy / IP mande"
+
+msgid "apply_to_all_files"
+msgstr "Aplike nan tout dosye"
+
+msgid "activate_now"
+msgstr "aktive Koulye a,"
+
+msgid "deactivate"
+msgstr "De-aktive"
+
+msgid "in_progress"
+msgstr "pwosè"
+
+msgid "complete"
+msgstr "ranpli"
+
+msgid "direction"
+msgstr "Direksyon"
+
+msgid "progress"
+msgstr "Pwogrè"
+
+msgid "permissions"
+msgstr "Permissions"
+
+msgid "owner_group"
+msgstr "Mèt / Gwoup"
+
+msgid "size"
+msgstr "Kantite moun ki"
+
+msgid "type"
+msgstr "Kalite"
+
+msgid "modified"
+msgstr "modifye"
+
+msgid "trial"
+msgstr "Jijman"
+
+msgid "cleared"
+msgstr "otorize"
+
+msgid "error_connecting"
+msgstr "Erè Koneksyon"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Erè Konekte ak lòt moun òganize / adrès IP"
+
+msgid "error_connecting_to_port"
+msgstr "Erè Koneksyon nan pò"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Tanpri chwazi yon anyè lokal premye!"
+
+msgid "go"
+msgstr "Ale"
+
+msgid "confirm"
+msgstr "konfime"
+
+msgid "delete"
+msgstr "Debarase m de"
+
+msgid "rename"
+msgstr "Chanje non"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopi URL (yo) nan clipboard"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Tanpri konfime ou ta vle efase dosye a chwazi (yo) / katab (yo)"
+
+msgid "cancelled_by_user"
+msgstr "Anile pa itilizatè"
+
+msgid "already_exists_overwrite"
+msgstr "deja egziste, recouvrir?"
+
+msgid "dashboard"
+msgstr "Dach"
+
+msgid "my_accounts"
+msgstr "Kont mwen"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "File sove! Tout kont yo te apiye moute."
+
+msgid "file_failed_please_try_again"
+msgstr "File Echwe! Tanpri eseye ankò."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Ou kounye a pa gen okenn kont yo dwe apiye moute."
+
+msgid "saved!"
+msgstr "Sove!"
+
+msgid "please_enter_a_password"
+msgstr "Tanpri antre yon modpas!"
+
+msgid "connection_closed"
+msgstr "Koneksyon fèmen"
+
+msgid "listing_mode_set_to"
+msgstr "Lis mòd mete nan"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP sèvè lokal rezoud, lè l sèvi avèk ekstèn IP"
+
+msgid "login_incorrect"
+msgstr "login kòrèk"
+
+msgid "keeping_connection_alive"
+msgstr "Kenbe koneksyon vivan"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Kapab ekri, koneksyon done fèmen"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Kapab li koneksyon done fèmen"
+
+msgid "error_reading_file"
+msgstr "Erè dosye lekti"
+
+msgid "error_writing_file"
+msgstr "Erè dosye ekri"
+
+msgid "failed_to_change_directory_to"
+msgstr "Echwe pou pou chanje anyè"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Ou pa ka gen autorisations yo kòrèk jwenn aksè nan anyè sa a"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Restore tounen nan anyè anvan"
+
+msgid "activate"
+msgstr "aktive"
+
+msgid "payment"
+msgstr "Peman"
+
+msgid "license_key_is_required"
+msgstr "se kle Lisans mande"
+
+msgid "license_activated!"
+msgstr "Lisans aktive!"
+
+msgid "your_license_has_been_validated"
+msgstr "te lisans ou te valide."
+
+msgid "thank_you!"
+msgstr "Mèsi!"
+
+msgid "buy_now!"
+msgstr "Achte kounya!"
+
+msgid "buy_now"
+msgstr "Achte kounya"
+
+msgid "one_off_fee"
+msgstr "youn nan frè"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Tanpri ajou ak jwi sa a app ki pa gen okenn restriksyon"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Tanpri antre kle Lisans ou anba a"
+
+msgid "or"
+msgstr "OSWA"
+
+msgid "loading..."
+msgstr "Loading ..."
+
+msgid "clear_accounts"
+msgstr "Kont Klè"
+
+msgid "clear_ssh_keys"
+msgstr "Klè SSH Keys"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Efase tout kle SSH sove"
+
+msgid "clear_app_settings"
+msgstr "Klè App Anviwònman"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Efase tout anviwònman espesifik app"
+
+msgid "clear_recent_connections"
+msgstr "Klè Koneksyon Dènye"
+
+msgid "deletes_all_recent_connections"
+msgstr "Supresyon tout koneksyon ki sot pase"
+
+msgid "import_type"
+msgstr "Import Kalite"
+
+msgid "please_select"
+msgstr "tanpri chwazi"
+
+msgid "import_file"
+msgstr "Import File"
+
+msgid "choose_file"
+msgstr "chwazi File"
+
+msgid "delete_accounts"
+msgstr "Debarase m de Kont"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Efase tout kont ki deja egziste"
+
+msgid "import_now"
+msgstr "Import Koulye a,"
+
+msgid "none"
+msgstr "Okenn"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Tanpri rekòmanse sftp app Kliyan pou fè chanjman yo yo pran efè."
+
+msgid "already_bought_the_app"
+msgstr "Deja te achte App a?"
+
+msgid "choose"
+msgstr "chwazi"
+
+msgid "deleted!"
+msgstr "Efase!"
+
+msgid "use_syncronised_browsing"
+msgstr "sèvi ak syncronised Navigasyon"
+
+msgid "remote_directory"
+msgstr "Remote Anyè"
+
+msgid "rsa_key_only!"
+msgstr "RSA kle sèlman!"
+
+msgid "no_key_selected"
+msgstr "Pa gen kle chwazi."
+
+msgid "ssh_key_file"
+msgstr "SSH kle File"
+
+msgid "no_dir_selected"
+msgstr "Pa gen dir chwazi."
+
+msgid "keep_blank_for_current_password"
+msgstr "Kenbe vid pou modpas aktyèl la."
+
+msgid "logon_type"
+msgstr "koneksyon Kalite"
+
+msgid "normal"
+msgstr "nòmal"
+
+msgid "ask_for_password"
+msgstr "Mande pou Modpas"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Kalite Kont"
+
+msgid "ftp_normal_connection"
+msgstr "Ftp (Nòmal Koneksyon)"
+
+msgid "sftp_secure_connection"
+msgstr "Sftp (Tache Koneksyon)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (Tache Koneksyon)"
+
+msgid "folder"
+msgstr "dosye"
+
+msgid "advanced"
+msgstr "avanse"
+
+msgid "folder_name"
+msgstr "Non dosye"
+
+msgid "parent"
+msgstr "Paran"
+
+msgid "new_ftp_site"
+msgstr "Nouvo ftp sit"
+
+msgid "new_folder"
+msgstr "nouvo Dosye"
+
+msgid "clean_now"
+msgstr "Netwaye Koulye a,"
+
+msgid "host"
+msgstr "Akèy"
+
+msgid "no_accounts_added..."
+msgstr "Pa gen Kont Te ajoute ..."
+
+msgid "unknown"
+msgstr "unknown"
+
+msgid "file_saved!"
+msgstr "File sove!"
+
+msgid "uploading_file!"
+msgstr "Uploading File!"
+
+msgid "save_failed!"
+msgstr "Save Echwe!"
+
+msgid "search"
+msgstr "Search"
+
+msgid "find"
+msgstr "jwenn"
+
+msgid "replace"
+msgstr "ranplase"
+
+msgid "scroll_past_end"
+msgstr "Scroll Depi lontan Fen"
+
+msgid "show_annotations"
+msgstr "Montre Anote"
+
+msgid "show_gutter"
+msgstr "Montre Dal"
+
+msgid "show_invisibles"
+msgstr "Montre envizibl"
+
+msgid "show_print_margin"
+msgstr "Montre Enprime Maj"
+
+msgid "highlight_active_line"
+msgstr "Mete aksan sou aktif Line"
+
+msgid "word_wrap"
+msgstr "Pawòl vlope"
+
+msgid "split_code"
+msgstr "Split Kòd"
+
+msgid "preferences"
+msgstr "Preferences"
+
+msgid "close_all_tabs"
+msgstr "Fèmen tout Tabs"
+
+msgid "close_current_tab"
+msgstr "Close Kouran Contenu"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto sove dosye lè mwen tape"
+
+msgid "auto_save"
+msgstr "Auto Save"
+
+msgid "quick_save"
+msgstr "Quick Save"
+
+msgid "documentation"
+msgstr "dokimantasyon"
+
+msgid "themes"
+msgstr "Themes"
+
+msgid "keyboard_shortcuts"
+msgstr "klavye rakoursi"
+
+msgid "coming_soon"
+msgstr "vini byento"
+
+msgid "empty"
+msgstr "vid"

@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: yi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "מעניו"
+
+msgid "file"
+msgstr "טעקע"
+
+msgid "view"
+msgstr "קוק"
+
+msgid "edit"
+msgstr "ויסרעדאַגירן"
+
+msgid "help"
+msgstr "הילף"
+
+msgid "manage_accounts"
+msgstr "אויפֿפּאַסן אַקקאָונץ"
+
+msgid "import_accounts"
+msgstr "ימפּאָרט אַקקאָונץ"
+
+msgid "export_accounts"
+msgstr "עקספּאָרט אַקאַונץ"
+
+msgid "quick_connect"
+msgstr "שנעל קאָננעקט"
+
+msgid "message_log"
+msgstr "אַרטיקל קלאָץ"
+
+msgid "local_directory"
+msgstr "היגע דירעקטארי"
+
+msgid "uploads_downloads"
+msgstr "ופּלאָאַדס / דאַונלאָודז"
+
+msgid "clear_saved_data"
+msgstr "קלאָר סאַוועד דאַטאַ"
+
+msgid "edit_settings"
+msgstr "רעדאַגירן סעטטינגס"
+
+msgid "report_bug"
+msgstr "באריכט אַ זשוק"
+
+msgid "suggest_feature"
+msgstr "פֿאָרשלאָגן אַ שטריך"
+
+msgid "ask_a_question"
+msgstr "פרעגן אַ קשיא"
+
+msgid "change_log"
+msgstr "טוישן קלאָץ"
+
+msgid "about"
+msgstr "וועגן"
+
+msgid "exit"
+msgstr "אַרויסגאַנג"
+
+msgid "host_ip_address"
+msgstr "באַלעבאָס / יפּ אַדרעס"
+
+msgid "username"
+msgstr "נאמען"
+
+msgid "password"
+msgstr "פּאַראָל"
+
+msgid "port"
+msgstr "פּאָרט"
+
+msgid "connect"
+msgstr "פאַרבינדן"
+
+msgid "welcome"
+msgstr "באַגריסן"
+
+msgid "welcome_intro"
+msgstr "<p style=\";text-align:right;direction:rtl\"> ספטפּ קליענט איז אַלע וועגן פּאַשטעס, עס האט שוין געבויט אויף דער Google קראָום / קראָום אַס פּאַקידזשד אַפּ צובינד אַלאַוינג די אַפּ צו זייַן שנעל און אָפּרופיק. עטלעכע פון ​​די פונקטיאָנאַליטי כולל אַ FTP אַקא"
+
+msgid "latest_updates"
+msgstr "וועגן ופּדאַטעס"
+
+msgid "server_status"
+msgstr "סערווירער סטאַטוס"
+
+msgid "license_server"
+msgstr "דערלויבעניש סערווירער"
+
+msgid "sftp_support"
+msgstr "שטיצן"
+
+msgid "notice_update"
+msgstr "נאָטיץ / ופּדאַטעס"
+
+msgid "website"
+msgstr "וועבזייַטל"
+
+msgid "clear_all"
+msgstr "קלאָר אַלע"
+
+msgid "manage"
+msgstr "פירן"
+
+msgid "recheck"
+msgstr "שייעך-טשעק"
+
+msgid "last_release"
+msgstr "לעצטע מעלדונג"
+
+msgid "released"
+msgstr "רעלעאַסעד"
+
+msgid "queued"
+msgstr "קוועועד"
+
+msgid "failed"
+msgstr "ניט אַנדערש"
+
+msgid "completed"
+msgstr "געענדיקט"
+
+msgid "settings"
+msgstr "סעטטינגס"
+
+msgid "add_folder"
+msgstr "לייג צו טעקע"
+
+msgid "add_ftp_account"
+msgstr "לייג צו FTP אַקאַונט"
+
+msgid "file_editor"
+msgstr "טעקע רעדאַקטאָר"
+
+msgid "editor_preferences"
+msgstr "עדיטאָר פּרעפֿערענצן"
+
+msgid "your_ftp_accounts"
+msgstr "דיין FTP אַקקאָונץ"
+
+msgid "most_recent_used"
+msgstr "רובֿ לעצטנס געוויינט."
+
+msgid "no_connections_yet_made"
+msgstr "קיין קאַנעקשאַנז נאָך געמאכט"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ניט קיין FTP אַקאַונץ צוגעגעבן נאָך"
+
+msgid "most_recent_connections"
+msgstr "לעצטן קאָננעקטיאָנס"
+
+msgid "last_10_connections_made"
+msgstr "לעצטע 10 קאַנעקשאַנז געמאכט"
+
+msgid "designed_developed_by"
+msgstr "דיזיינד & דעוועלאָפּעד דורך"
+
+msgid "about_info"
+msgstr "ביטע נוצן די ספטפּ קליענט וועבזייַטל פֿאַר שטיצן, קיין שטיצן איז צוגעשטעלט דורך אונדזער יחיד וועבסיטעס."
+
+msgid "local"
+msgstr "היגע"
+
+msgid "remote"
+msgstr "ווייַט"
+
+msgid "remote_location_desc"
+msgstr "למשל / פּובליק_הטמל"
+
+msgid "create_directory"
+msgstr "שאַפֿן דירעקטארי"
+
+msgid "create_new_directory"
+msgstr "שאַפֿן ניו דירעקטארי"
+
+msgid "create_file"
+msgstr "שאַפֿן טעקע"
+
+msgid "create_new_file"
+msgstr "שאַפֿן ניו טעקע"
+
+msgid "refresh_list"
+msgstr "דערפרישן רשימה"
+
+msgid "change"
+msgstr "טוישן"
+
+msgid "report_a_bug"
+msgstr "באריכט אַ זשוק"
+
+msgid "suggest_a_feature"
+msgstr "פֿאָרשלאָגן אַ שטריך"
+
+msgid "enter_password"
+msgstr "אַרייַן פּאַראָל"
+
+msgid "enter_your_password..."
+msgstr "אַרייַן אייער פּאַראָל ..."
+
+msgid "passphrase"
+msgstr "פּאַסספראַסע"
+
+msgid "enter_your_passphrase..."
+msgstr "אַרייַן אייער פּאַסספראַסע ..."
+
+msgid "email_sftp_client"
+msgstr "בליצפּאָסט ספטפּ קליענט"
+
+msgid "faqs"
+msgstr "FAQ ס"
+
+msgid "visit_sftp_client_website"
+msgstr "באַזוכן ספטפּ קליענט וועבסייט"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "קורס אונדז אויף די גוגל קראָום וועבסטאָרע"
+
+msgid "report_an_issue_or_get_help"
+msgstr "באריכט אַ אַרויסגעבן אָדער באַקומען הילף"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "תאריך אונדז אויף Facebook פֿאַר ופּדאַטעס"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "גיי אונדז אויף טוויטטער פֿאַר ופּדאַטעס"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "1 אונדז אויף גוגל פֿאַר ופּדאַטעס"
+
+msgid "okay"
+msgstr "אקעי"
+
+msgid "cancel"
+msgstr "באָטל מאַכן"
+
+msgid "close"
+msgstr "נאָענט"
+
+msgid "unknown_host"
+msgstr "ונקנאָוון האָסט"
+
+msgid "okay_to_continue"
+msgstr "אָוקיי צו פאָרזעצן?"
+
+msgid "fingerprint"
+msgstr "פינגערפּרינט"
+
+msgid "remember"
+msgstr "געדענקען"
+
+msgid "file_permissions"
+msgstr "טעקע פּערמישאַנז"
+
+msgid "file_permissions_desc"
+msgstr "ביטע סעלעקטירן דעם נייַ אַטראַביוץ פֿאַר די אויסגעקליבן טעקע (s) / טעקע (s)"
+
+msgid "read"
+msgstr "לייענען"
+
+msgid "write"
+msgstr "שרייַבן"
+
+msgid "execute"
+msgstr "ויספירן"
+
+msgid "owner"
+msgstr "באַזיצער"
+
+msgid "group"
+msgstr "גרופּע"
+
+msgid "public"
+msgstr "עפנטלעך"
+
+msgid "numeric_value"
+msgstr "נומעריק ווערט"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "אַרייַן די נאָמען פון די נייַ Directory ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "אַרייַן די נאָמען פון די נייַ טעקע ..."
+
+msgid "name"
+msgstr "נאָמען"
+
+msgid "enter_a_password"
+msgstr "אַרייַן אַ פּאַראָל"
+
+msgid "language"
+msgstr "שפּראַך"
+
+msgid "seconds"
+msgstr "סעקאָנדס"
+
+msgid "minutes"
+msgstr "מינוט"
+
+msgid "hour"
+msgstr "שאָ"
+
+msgid "hours"
+msgstr "אַורז"
+
+msgid "day"
+msgstr "טאָג"
+
+msgid "trial_left"
+msgstr "פּראָצעס לינקס"
+
+msgid "register_now"
+msgstr "רעגיסטרירן איצט"
+
+msgid "general"
+msgstr "אַלגעמיין"
+
+msgid "security"
+msgstr "זיכערהייַט"
+
+msgid "master_password"
+msgstr "האר שפּריכוואָרט"
+
+msgid "status"
+msgstr "סטאטוס"
+
+msgid "enabled"
+msgstr "ענאַבלעד"
+
+msgid "disabled"
+msgstr "פאַרקריפּלט"
+
+msgid "timeout"
+msgstr "טיימאַוט"
+
+msgid "save"
+msgstr "ראַטעווען"
+
+msgid "add_account"
+msgstr "לייג צו אַקאַונט"
+
+msgid "support"
+msgstr "שטיצן"
+
+msgid "notice_updates"
+msgstr "נאָטיץ / ופּדאַטעס"
+
+msgid "please_login"
+msgstr "ביטע לאָגין"
+
+msgid "your_session_timed_out"
+msgstr "דיין סעסיע טיימד אויס"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "אנטשולדיגט די פּאַראָל איר אריין איז פאַלש!"
+
+msgid "login"
+msgstr "צייכן אריין"
+
+msgid "master_password_desc"
+msgstr "שטעלן דעם בעל פּאַראָל צו האַלטן דיין אַקאַונץ זיכער."
+
+msgid "license_key"
+msgstr "דערלויבעניש שליסל"
+
+msgid "online"
+msgstr "אָנליין"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "currently_unavailable"
+msgstr "איצט ונאַוואַילאַבלע"
+
+msgid "no_message_to_display"
+msgstr "ניט קיין אָנזאָג צו אַרויסווייַזן"
+
+msgid "offline_notice_title"
+msgstr "אַנריטשאַבאַל - ביסט איר offline אָדער אויף אַ נעץ בלויז קשר?"
+
+msgid "offline_notice_desc"
+msgstr "איר זענט איצט offline, אויף אַ נעץ בלויז קשר אָדער קיין קשר קען זיין געגרינדעט צו אונדזער סערווירער"
+
+msgid "edit_file"
+msgstr "רעדאַגירן טעקע"
+
+msgid "download"
+msgstr "דאַונלאָוד"
+
+msgid "upload"
+msgstr "צופֿעליקער"
+
+msgid "host_ip_is_required"
+msgstr "באַלעבאָס / יפּ איז required"
+
+msgid "apply_to_all_files"
+msgstr "צולייגן צו אַלע טעקעס"
+
+msgid "activate_now"
+msgstr "אַקטיוואַטע איצט"
+
+msgid "deactivate"
+msgstr "דע-אַקטאַווייט"
+
+msgid "in_progress"
+msgstr "מען ארבעט דערויף"
+
+msgid "complete"
+msgstr "גאַנץ"
+
+msgid "direction"
+msgstr "ריכטונג"
+
+msgid "progress"
+msgstr "פּראָגרעס"
+
+msgid "permissions"
+msgstr "פּערמיססיאָנס"
+
+msgid "owner_group"
+msgstr "באַזיצער / גרופּע"
+
+msgid "size"
+msgstr "גרייס"
+
+msgid "type"
+msgstr "טיפּ"
+
+msgid "modified"
+msgstr "modified"
+
+msgid "trial"
+msgstr "פּראָצעס"
+
+msgid "cleared"
+msgstr "קלירד"
+
+msgid "error_connecting"
+msgstr "טעות קאַנעקטינג"
+
+msgid "error_connecting_to_host_ip"
+msgstr "טעות קאַנעקטינג צו באַלעבאָס / IP אַדרעס"
+
+msgid "error_connecting_to_port"
+msgstr "טעות קאַנעקטינג צו פּאָרט"
+
+msgid "please_select_a_local_directory_first"
+msgstr "ביטע סעלעקטירן אַ היגע Directory ערשטער!"
+
+msgid "go"
+msgstr "גיין"
+
+msgid "confirm"
+msgstr "באַשטעטיקן"
+
+msgid "delete"
+msgstr "ויסמעקן"
+
+msgid "rename"
+msgstr "רענאַמע"
+
+msgid "copy_urls_to_clipboard"
+msgstr "קאָפּיע URL (s) צו קליפּבאָרד"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "ביטע באַשטעטיקן איר ווינטשן צו ויסמעקן די אויסגעקליבן טעקע (s) / טעקע (s)"
+
+msgid "cancelled_by_user"
+msgstr "קאַנסעללעד דורך באַניצער"
+
+msgid "already_exists_overwrite"
+msgstr "שוין יגזיסץ, אָווועררייט?"
+
+msgid "dashboard"
+msgstr "דאַשבאָאַרד"
+
+msgid "my_accounts"
+msgstr "מיין אַקקאָונץ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "טעקע סאַוועד! אַלע אַקאַונץ האָבן שוין באַקט אַרויף."
+
+msgid "file_failed_please_try_again"
+msgstr "טעקע אַנדערש! ביטע פּרובירן ווידער."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "איר איצט האָבן קיין אַקאַונץ צו זייַן באַקט אַרויף."
+
+msgid "saved!"
+msgstr "געזונט!"
+
+msgid "please_enter_a_password"
+msgstr "ביטע אַרייַן אַ פּאַראָל!"
+
+msgid "connection_closed"
+msgstr "קאַנעקשאַן פֿאַרמאַכט"
+
+msgid "listing_mode_set_to"
+msgstr "ליסטינג מאָדע שטעלן צו"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "היגע סערווירער יפּ ריזאַלווד, ניצן פונדרויסנדיק יפּ"
+
+msgid "login_incorrect"
+msgstr "לאָגין פאַלש"
+
+msgid "keeping_connection_alive"
+msgstr "בעכעסקעם קשר לעבעדיק"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "געקענט צו שרייַבן, דאַטן קשר פֿאַרמאַכט"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "געקענט צו לייענען דאַטן קשר פֿאַרמאַכט"
+
+msgid "error_reading_file"
+msgstr "טעות לייענען טעקע"
+
+msgid "error_writing_file"
+msgstr "טעות שרייבן טעקע"
+
+msgid "failed_to_change_directory_to"
+msgstr "געקענט צו טוישן Directory צו"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "איר מייַ ניט האָבן דעם ריכטיק פּערמישאַנז צו צוטריט דעם דירעקטארי"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "רעווערטינג צוריק צו פרייַערדיק דירעקטארי"
+
+msgid "activate"
+msgstr "אַקטיוואַטע"
+
+msgid "payment"
+msgstr "צאָלונג"
+
+msgid "license_key_is_required"
+msgstr "דערלויבעניש שליסל איז required"
+
+msgid "license_activated!"
+msgstr "דערלויבעניש אַקטיווייטיד!"
+
+msgid "your_license_has_been_validated"
+msgstr "דיין דערלויבעניש האט שוין וואַלאַדייטאַד."
+
+msgid "thank_you!"
+msgstr "אדאנק!"
+
+msgid "buy_now!"
+msgstr "קויף יעצט!"
+
+msgid "buy_now"
+msgstr "קויף יעצט"
+
+msgid "one_off_fee"
+msgstr "איינער אַוועק אָפּצאָל"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "ביטע אַפּגרייד צו הנאה דעם אַפּ מיט קיין ריסטריקשאַנז"
+
+msgid "please_enter_your_license_key_below"
+msgstr "ביטע אַרייַן אייער דערלויבעניש שליסל ונטן"
+
+msgid "or"
+msgstr "אָדער"
+
+msgid "loading..."
+msgstr "לאָודינג ..."
+
+msgid "clear_accounts"
+msgstr "קלאָר אַקקאָונץ"
+
+msgid "clear_ssh_keys"
+msgstr "קלאָר סש קיז"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "דיליץ אַלע געזונט סש שליסלען"
+
+msgid "clear_app_settings"
+msgstr "קלאָר אַפּ סעטטינגס"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "דיליץ אַלע אַפּ ספּעציפיש סעטטינגס"
+
+msgid "clear_recent_connections"
+msgstr "קלאָר לעצטע קאָננעקטיאָנס"
+
+msgid "deletes_all_recent_connections"
+msgstr "דיליץ אַלע פריש קאַנעקשאַנז"
+
+msgid "import_type"
+msgstr "ימפּאָרט טיפּע"
+
+msgid "please_select"
+msgstr "ביטע סעלעקט"
+
+msgid "import_file"
+msgstr "אַרייַנפיר טעקע"
+
+msgid "choose_file"
+msgstr "קלייַבן טעקע"
+
+msgid "delete_accounts"
+msgstr "דיליט אַקקאָונץ"
+
+msgid "deletes_all_existing_accounts"
+msgstr "דיליץ אַלע שאַפֿן אַקאַונץ"
+
+msgid "import_now"
+msgstr "ימפּאָרט איצט"
+
+msgid "none"
+msgstr "גאָרניט"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "ביטע ריסטאַרט ספטפּ קליענט אַפּ פֿאַר די ענדערונגען צו נעמען ווירקונג."
+
+msgid "already_bought_the_app"
+msgstr "שוין באָוגהט די אַפּ?"
+
+msgid "choose"
+msgstr "קלייַבן"
+
+msgid "deleted!"
+msgstr "אויסגעמעקט!"
+
+msgid "use_syncronised_browsing"
+msgstr "נוצן סינקראָניסעד בראַוזינג"
+
+msgid "remote_directory"
+msgstr "רימאָוט דירעקטארי"
+
+msgid "rsa_key_only!"
+msgstr "רסאַ שליסל בלויז!"
+
+msgid "no_key_selected"
+msgstr "קיין שליסל אויסגעקליבן."
+
+msgid "ssh_key_file"
+msgstr "סש שליסל טעקע"
+
+msgid "no_dir_selected"
+msgstr "ניט דיר אויסגעקליבן."
+
+msgid "keep_blank_for_current_password"
+msgstr "האַלטן ליידיק פֿאַר איצטיקן פּאַראָל."
+
+msgid "logon_type"
+msgstr "לאָגאָן טיפּע"
+
+msgid "normal"
+msgstr "נאָרמאַל"
+
+msgid "ask_for_password"
+msgstr "בעט פֿאַר פּאַראָל"
+
+msgid "anonymous"
+msgstr "אַנאָנימע באַנוצערס"
+
+msgid "account_type"
+msgstr "אַקאַונט טיפּע"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (נאָרמאַל קאַנעקשאַן)"
+
+msgid "sftp_secure_connection"
+msgstr "ספטפּ (סעקורע קאַנעקשאַן)"
+
+msgid "ssh_secure_connection"
+msgstr "סש (סעקורע קאַנעקשאַן)"
+
+msgid "folder"
+msgstr "טעקע"
+
+msgid "advanced"
+msgstr "אַוואַנסירטע"
+
+msgid "folder_name"
+msgstr "טעקע נאָמען"
+
+msgid "parent"
+msgstr "פאָטער"
+
+msgid "new_ftp_site"
+msgstr "ניו FTP מאַפּע"
+
+msgid "new_folder"
+msgstr "ניו טעקע"
+
+msgid "clean_now"
+msgstr "ריין איצט"
+
+msgid "host"
+msgstr "באַלעבאָס"
+
+msgid "no_accounts_added..."
+msgstr "ניט קיין אַקקאָונץ צוגעגעבן ..."
+
+msgid "unknown"
+msgstr "ומבאַקאַנט"
+
+msgid "file_saved!"
+msgstr "טעקע סאַוועד!"
+
+msgid "uploading_file!"
+msgstr "ופּלאָאַדינג טעקע!"
+
+msgid "save_failed!"
+msgstr "היט אַנדערש!"
+
+msgid "search"
+msgstr "זוכן"
+
+msgid "find"
+msgstr "געפינען"
+
+msgid "replace"
+msgstr "פאַרבייַטן"
+
+msgid "scroll_past_end"
+msgstr "מעגילע פּאַסט סוף"
+
+msgid "show_annotations"
+msgstr "ווייַזן אַננאָטאַטיאָנס"
+
+msgid "show_gutter"
+msgstr "ווייַזן גוטטער"
+
+msgid "show_invisibles"
+msgstr "ווייַזן ינוויסיבלעס"
+
+msgid "show_print_margin"
+msgstr "ווייַזן דרוק דעם גרענעץ"
+
+msgid "highlight_active_line"
+msgstr "הויכפּונקט אַקטיוו ליין"
+
+msgid "word_wrap"
+msgstr "וואָרט ראַפּ"
+
+msgid "split_code"
+msgstr "שפּאַלטן קאָוד"
+
+msgid "preferences"
+msgstr "פּרעפֿערענצן"
+
+msgid "close_all_tabs"
+msgstr "נאָענט אַלע טאַבס"
+
+msgid "close_current_tab"
+msgstr "נאָענט קראַנט טאַב"
+
+msgid "auto_save_file_when_i_type"
+msgstr "אַוטאָ ראַטעווען טעקע ווען איך טיפּ"
+
+msgid "auto_save"
+msgstr "אַוטאָ ראַטעווען"
+
+msgid "quick_save"
+msgstr "שנעל היט"
+
+msgid "documentation"
+msgstr "דאָקומענטאַטיאָן"
+
+msgid "themes"
+msgstr "טהעמעס"
+
+msgid "keyboard_shortcuts"
+msgstr "קלאַוויאַטור שאָרטקאַץ"
+
+msgid "coming_soon"
+msgstr "קומענדיק באַלד"
+
+msgid "empty"
+msgstr "ליידיק"

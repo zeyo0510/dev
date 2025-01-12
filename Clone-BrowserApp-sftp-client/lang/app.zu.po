@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "Imenyu"
+
+msgid "file"
+msgstr "Ifayela"
+
+msgid "view"
+msgstr "Buka"
+
+msgid "edit"
+msgstr "Hlela"
+
+msgid "help"
+msgstr "Usizo"
+
+msgid "manage_accounts"
+msgstr "Phatha ama-akhawunti"
+
+msgid "import_accounts"
+msgstr "Ngenisa ama-Akhawunti"
+
+msgid "export_accounts"
+msgstr "Ama-Akhawunti Export"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "Umlayezo Log"
+
+msgid "local_directory"
+msgstr "Directory Local"
+
+msgid "uploads_downloads"
+msgstr "Okulayishiwe /-Google Play"
+
+msgid "clear_saved_data"
+msgstr "Sula idatha elondoloziwe"
+
+msgid "edit_settings"
+msgstr "Hlela Izilungiselelo"
+
+msgid "report_bug"
+msgstr "Bika Bug"
+
+msgid "suggest_feature"
+msgstr "Phakamisa isici"
+
+msgid "ask_a_question"
+msgstr "Buza Umbuzo"
+
+msgid "change_log"
+msgstr "Guqula Log"
+
+msgid "about"
+msgstr "Mayelana"
+
+msgid "exit"
+msgstr "Phuma"
+
+msgid "host_ip_address"
+msgstr "Host / Ikheli le-IP"
+
+msgid "username"
+msgstr "Igama lomsebenzisi"
+
+msgid "password"
+msgstr "Iphasiwedi"
+
+msgid "port"
+msgstr "Port"
+
+msgid "connect"
+msgstr "Xhuma"
+
+msgid "welcome"
+msgstr "Siyakwamukela"
+
+msgid "welcome_intro"
+msgstr "<p> kwe-sFTP Client imayelana izinto zibe lula, wona lwakhiwe kwi-Google Chrome / Chrome OS lokusebenza zahlanganiswa isikhombimsebenzisi ngokuvumela lokusebenza fast futhi isabele. Abanye ukusebenza kuhlanganisa i Manager FTP Akhawunti ukuze ukugcina awa"
+
+msgid "latest_updates"
+msgstr "Updates Latest"
+
+msgid "server_status"
+msgstr "Isimo Server"
+
+msgid "license_server"
+msgstr "Server License"
+
+msgid "sftp_support"
+msgstr "Amaprosesa asekelwe"
+
+msgid "notice_update"
+msgstr "Isaziso / Updates"
+
+msgid "website"
+msgstr "Iwebhusayithi"
+
+msgid "clear_all"
+msgstr "Sula Konke"
+
+msgid "manage"
+msgstr "Phatha"
+
+msgid "recheck"
+msgstr "Re-isheke"
+
+msgid "last_release"
+msgstr "Release Last"
+
+msgid "released"
+msgstr "Khishiwe"
+
+msgid "queued"
+msgstr "Kusemgqeni"
+
+msgid "failed"
+msgstr "Yehlulekile"
+
+msgid "completed"
+msgstr "Kwaphela"
+
+msgid "settings"
+msgstr "Amasethingi"
+
+msgid "add_folder"
+msgstr "Engeza Ifolda"
+
+msgid "add_ftp_account"
+msgstr "Engeza i-akhawunti FTP"
+
+msgid "file_editor"
+msgstr "Ifayela Editor"
+
+msgid "editor_preferences"
+msgstr "Umhleli Izintandokazi ze"
+
+msgid "your_ftp_accounts"
+msgstr "Ama-Akhawunti Yakho FTP"
+
+msgid "most_recent_used"
+msgstr "Okusetshenziswe kamuva."
+
+msgid "no_connections_yet_made"
+msgstr "Azikho ukuxhumeka okwamanje wenza"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "Awekho ama-akhawunti FTP added yet"
+
+msgid "most_recent_connections"
+msgstr "Connections Iningi kwakamuva"
+
+msgid "last_10_connections_made"
+msgstr "Uxhumano lwenethiwekhi 10 Last ezenziwe"
+
+msgid "designed_developed_by"
+msgstr "Yakhelwe & Yasungulwa ngu"
+
+msgid "about_info"
+msgstr "Sicela usebenzise kwe-sFTP Client website for support, akukho ukwesekwa lizwakala website yethu ngabanye."
+
+msgid "local"
+msgstr "Local"
+
+msgid "remote"
+msgstr "Remote"
+
+msgid "remote_location_desc"
+msgstr "isib / public_html"
+
+msgid "create_directory"
+msgstr "Dala Directory"
+
+msgid "create_new_directory"
+msgstr "Dala New Directory"
+
+msgid "create_file"
+msgstr "Yakha File"
+
+msgid "create_new_file"
+msgstr "Yakha File New"
+
+msgid "refresh_list"
+msgstr "Vuselela Uhlu"
+
+msgid "change"
+msgstr "Guqula"
+
+msgid "report_a_bug"
+msgstr "Bika Bug"
+
+msgid "suggest_a_feature"
+msgstr "Phakamisa isici"
+
+msgid "enter_password"
+msgstr "Faka Iphasiwedi"
+
+msgid "enter_your_password..."
+msgstr "Faka iphasiwedi yakho ..."
+
+msgid "passphrase"
+msgstr "Umshwana wokungena"
+
+msgid "enter_your_passphrase..."
+msgstr "Faka igama lakho ..."
+
+msgid "email_sftp_client"
+msgstr "Email kwe-sFTP Client"
+
+msgid "faqs"
+msgstr "FAQ sika"
+
+msgid "visit_sftp_client_website"
+msgstr "Vakashela kwe-sFTP Client Iwebhusayithi"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "Linganisela us on Google Chrome sewebhu"
+
+msgid "report_an_issue_or_get_help"
+msgstr "Bika inkinga noma uthole usizo"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "Hlanganyela nathi on Facebook izibuyekezo"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "Follow us on Twitter for updates"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 Kithi ku-Google izibuyekezo"
+
+msgid "okay"
+msgstr "Okay"
+
+msgid "cancel"
+msgstr "Khansela"
+
+msgid "close"
+msgstr "Vala"
+
+msgid "unknown_host"
+msgstr "Host Unknown"
+
+msgid "okay_to_continue"
+msgstr "Okay ukuze uqhubeke?"
+
+msgid "fingerprint"
+msgstr "Fingerprint"
+
+msgid "remember"
+msgstr "Khumbula"
+
+msgid "file_permissions"
+msgstr "Izimvume Ifayela"
+
+msgid "file_permissions_desc"
+msgstr "Sicela ukhethe ngezimfanelo omusha ifayela ekhethiwe (s) / ifolda (s)"
+
+msgid "read"
+msgstr "Funda"
+
+msgid "write"
+msgstr "Bhala"
+
+msgid "execute"
+msgstr "Sayinda"
+
+msgid "owner"
+msgstr "Umnikazi"
+
+msgid "group"
+msgstr "Iqembu"
+
+msgid "public"
+msgstr "Public"
+
+msgid "numeric_value"
+msgstr "Value yezinombolo"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "Faka igama lwemibhalo entsha ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "Faka igama ifayela entsha ..."
+
+msgid "name"
+msgstr "Igama"
+
+msgid "enter_a_password"
+msgstr "Faka iphasiwedi"
+
+msgid "language"
+msgstr "Ulimi"
+
+msgid "seconds"
+msgstr "Seconds"
+
+msgid "minutes"
+msgstr "Amaminithi"
+
+msgid "hour"
+msgstr "Ihora"
+
+msgid "hours"
+msgstr "Amahora"
+
+msgid "day"
+msgstr "Usuku"
+
+msgid "trial_left"
+msgstr "Trial Left"
+
+msgid "register_now"
+msgstr "Bhalisa manje"
+
+msgid "general"
+msgstr "General"
+
+msgid "security"
+msgstr "Security"
+
+msgid "master_password"
+msgstr "iphasiwedi Master"
+
+msgid "status"
+msgstr "Isimo"
+
+msgid "enabled"
+msgstr "Inikwe amandla"
+
+msgid "disabled"
+msgstr "Abakhubazekile"
+
+msgid "timeout"
+msgstr "Isikhathi siphelile"
+
+msgid "save"
+msgstr "Londoloza"
+
+msgid "add_account"
+msgstr "Engeza i-akhawunti"
+
+msgid "support"
+msgstr "Amaprosesa asekelwe"
+
+msgid "notice_updates"
+msgstr "Isaziso / Updates"
+
+msgid "please_login"
+msgstr "Sicela ungene ngemvume"
+
+msgid "your_session_timed_out"
+msgstr "Session Your Iphele Out"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "Uxolo iphasiwedi oyifakile ayilungile!"
+
+msgid "login"
+msgstr "Ngena ngemvume"
+
+msgid "master_password_desc"
+msgstr "Misa iphasiwedi master ukugcina ama-akhawunti akho ephephile."
+
+msgid "license_key"
+msgstr "Key License"
+
+msgid "online"
+msgstr "Online"
+
+msgid "offline"
+msgstr "Okungaxhunyiwe ku-inthanethi"
+
+msgid "currently_unavailable"
+msgstr "Okwamanje ayitholakali"
+
+msgid "no_message_to_display"
+msgstr "Ayikho umyalezo ukubonisa"
+
+msgid "offline_notice_title"
+msgstr "Ayifinyeleleki - Ingabe u-offline noma inethiwekhi uxhumano kuphela?"
+
+msgid "offline_notice_desc"
+msgstr "Wena-intanethi okwamanje, on a lwenethiwekhi kuphela noma akukho uxhumano babengase isungulwe server yethu"
+
+msgid "edit_file"
+msgstr "Hlela Ifayela"
+
+msgid "download"
+msgstr "Thwebula"
+
+msgid "upload"
+msgstr "Layisha"
+
+msgid "host_ip_is_required"
+msgstr "Host / IP siyadingeka"
+
+msgid "apply_to_all_files"
+msgstr "Faka kuwo wonke amafayela"
+
+msgid "activate_now"
+msgstr "Cupha Manje"
+
+msgid "deactivate"
+msgstr "De kusebenze"
+
+msgid "in_progress"
+msgstr "Kuyaqhubeka"
+
+msgid "complete"
+msgstr "Qedela"
+
+msgid "direction"
+msgstr "Direction"
+
+msgid "progress"
+msgstr "Progress"
+
+msgid "permissions"
+msgstr "Izimvume"
+
+msgid "owner_group"
+msgstr "Umnikazi / Group"
+
+msgid "size"
+msgstr "Usayizi"
+
+msgid "type"
+msgstr "Uhlobo"
+
+msgid "modified"
+msgstr "Modified"
+
+msgid "trial"
+msgstr "Trial"
+
+msgid "cleared"
+msgstr "Kwasuswa"
+
+msgid "error_connecting"
+msgstr "Iphutha Ixhuma"
+
+msgid "error_connecting_to_host_ip"
+msgstr "Iphutha Ixhuma ukuze ukusingatha / ikheli ip"
+
+msgid "error_connecting_to_port"
+msgstr "Iphutha Ixhuma ziya"
+
+msgid "please_select_a_local_directory_first"
+msgstr "Sicela ukhethe lwemibhalo okuqala endawo!"
+
+msgid "go"
+msgstr "Hamba"
+
+msgid "confirm"
+msgstr "Qinisekisa"
+
+msgid "delete"
+msgstr "Susa"
+
+msgid "rename"
+msgstr "Qamba kabusha"
+
+msgid "copy_urls_to_clipboard"
+msgstr "Kopisha i-URL (s) ebhodini lokukopisha"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "Sicela uqinisekise ukuthi ufisa ukususa ifayela ekhethiwe (s) / ifolda (s)"
+
+msgid "cancelled_by_user"
+msgstr "Kukhanseliwe ngumsebenzisi"
+
+msgid "already_exists_overwrite"
+msgstr "selivele likhona, ngaphezulu?"
+
+msgid "dashboard"
+msgstr "Dashboard"
+
+msgid "my_accounts"
+msgstr "Ama-Akhawunti yami"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "Ifayela Saved! Wonke ama-akhawunti eyenziwe isipele."
+
+msgid "file_failed_please_try_again"
+msgstr "Ifayela Yehlulekile! Sicela uzame futhi."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "Okwamanje awunawo ama-akhawunti isipele."
+
+msgid "saved!"
+msgstr "Ilondolozwe!"
+
+msgid "please_enter_a_password"
+msgstr "Sicela ufake iphasiwedi!"
+
+msgid "connection_closed"
+msgstr "Connection ivaliwe"
+
+msgid "listing_mode_set_to"
+msgstr "Uhlu mode isethwe ku"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "Local iseva IP zixazululwe, besebenzisa IP yangaphandle"
+
+msgid "login_incorrect"
+msgstr "login ayilungile"
+
+msgid "keeping_connection_alive"
+msgstr "Ukugcina uxhumano alive"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "Ayikwazi ukubhala, uxhumano lwedatha ivaliwe"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "Ayikwazi ukufunda uxhumano lwedatha ivaliwe"
+
+msgid "error_reading_file"
+msgstr "Iphutha lokufunda ifayela"
+
+msgid "error_writing_file"
+msgstr "Iphutha lokubhala ifayela"
+
+msgid "failed_to_change_directory_to"
+msgstr "Yehlulekile ukushintsha lwemibhalo"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "Ungase ungabi nayo izimvume letifanele ukuze ufinyelele kulesi lwemibhalo"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "Ibuyela emuva lwemibhalo yangaphambilini"
+
+msgid "activate"
+msgstr "Cupha"
+
+msgid "payment"
+msgstr "Inkokhelo"
+
+msgid "license_key_is_required"
+msgstr "Ukhiye License iyadingeka"
+
+msgid "license_activated!"
+msgstr "Ilayisensi Kuvulwa!"
+
+msgid "your_license_has_been_validated"
+msgstr "ilayisense yakho iye sigunyazwe."
+
+msgid "thank_you!"
+msgstr "Ngiyabonga!"
+
+msgid "buy_now!"
+msgstr "Thenga Manje!"
+
+msgid "buy_now"
+msgstr "Thenga Manje"
+
+msgid "one_off_fee"
+msgstr "one off Imali"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "Sicela uthuthukele ukujabulela lolu hlelo lokusebenza kungabikho imikhawulo"
+
+msgid "please_enter_your_license_key_below"
+msgstr "Sicela ufake wak Ilayisensi ngezansi"
+
+msgid "or"
+msgstr "NOMA"
+
+msgid "loading..."
+msgstr "Iyalayisha ..."
+
+msgid "clear_accounts"
+msgstr "Sula Accounts"
+
+msgid "clear_ssh_keys"
+msgstr "Sula-SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "Okususa yonke agciniwe ssh okhiye"
+
+msgid "clear_app_settings"
+msgstr "Sula izilungiselelo zohlelo lokusebenza"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "Okususa yonke amasethingi abaluliwe lokusebenza"
+
+msgid "clear_recent_connections"
+msgstr "Sula Connections kwakamuva"
+
+msgid "deletes_all_recent_connections"
+msgstr "Okususiwe uxhumano yamuva"
+
+msgid "import_type"
+msgstr "Ngenisa Uhlobo"
+
+msgid "please_select"
+msgstr "Sicela Khetha"
+
+msgid "import_file"
+msgstr "Ngenisa Ifayela"
+
+msgid "choose_file"
+msgstr "Khetha Ifayela"
+
+msgid "delete_accounts"
+msgstr "Susa ama-Akhawunti"
+
+msgid "deletes_all_existing_accounts"
+msgstr "Okususiwe wonke ama-akhawunti ekhona"
+
+msgid "import_now"
+msgstr "Ngenisa Manje"
+
+msgid "none"
+msgstr "None"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "Sicela uqale kabusha kwe-sFTP Client lwe-izinguquko ukuthatha nomphumela."
+
+msgid "already_bought_the_app"
+msgstr "Kakade wathenga App?"
+
+msgid "choose"
+msgstr "Khetha"
+
+msgid "deleted!"
+msgstr "Ezisusiwe!"
+
+msgid "use_syncronised_browsing"
+msgstr "sebenzisa ukuphequlula syncronised"
+
+msgid "remote_directory"
+msgstr "Directory Remote"
+
+msgid "rsa_key_only!"
+msgstr "ukhiye RSA kuphela!"
+
+msgid "no_key_selected"
+msgstr "Ayikho inombolo ekhethiwe."
+
+msgid "ssh_key_file"
+msgstr "Ssh Ifayela Key"
+
+msgid "no_dir_selected"
+msgstr "Ayikho Thumela ezikhethiwe."
+
+msgid "keep_blank_for_current_password"
+msgstr "Gcina blank for iphasiwedi zamanje."
+
+msgid "logon_type"
+msgstr "Logon Uhlobo"
+
+msgid "normal"
+msgstr "Normal"
+
+msgid "ask_for_password"
+msgstr "Cela Iphasiwedi"
+
+msgid "anonymous"
+msgstr "Anonymous"
+
+msgid "account_type"
+msgstr "Uhlobo lwe-akhawunti"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (Connection Normal)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (Connection Okulondekile)"
+
+msgid "ssh_secure_connection"
+msgstr "Ssh (Connection Okulondekile)"
+
+msgid "folder"
+msgstr "Ifolda"
+
+msgid "advanced"
+msgstr "Advanced"
+
+msgid "folder_name"
+msgstr "Igama Ifolda"
+
+msgid "parent"
+msgstr "Umzali"
+
+msgid "new_ftp_site"
+msgstr "New FTP Site"
+
+msgid "new_folder"
+msgstr "Ifolda entsha"
+
+msgid "clean_now"
+msgstr "Clean Manje"
+
+msgid "host"
+msgstr "Host"
+
+msgid "no_accounts_added..."
+msgstr "Ayikho Added Accounts ..."
+
+msgid "unknown"
+msgstr "Unknown"
+
+msgid "file_saved!"
+msgstr "Ifayela Saved!"
+
+msgid "uploading_file!"
+msgstr "Kulayishwa Ifayela!"
+
+msgid "save_failed!"
+msgstr "Londoloza Yehlulekile!"
+
+msgid "search"
+msgstr "Ukucinga"
+
+msgid "find"
+msgstr "Thola"
+
+msgid "replace"
+msgstr "Miselela"
+
+msgid "scroll_past_end"
+msgstr "Pheqa Past End"
+
+msgid "show_annotations"
+msgstr "Bonisa amazwana"
+
+msgid "show_gutter"
+msgstr "Bonisa umsele wamanzi"
+
+msgid "show_invisibles"
+msgstr "Bonisa Invisibles"
+
+msgid "show_print_margin"
+msgstr "Bonisa Phrinta Margin"
+
+msgid "highlight_active_line"
+msgstr "Gqamisa Line Active"
+
+msgid "word_wrap"
+msgstr "iZwi Wrap"
+
+msgid "split_code"
+msgstr "Split Ikhodi"
+
+msgid "preferences"
+msgstr "Izintandokazi ze"
+
+msgid "close_all_tabs"
+msgstr "Vala wonke amathebhu"
+
+msgid "close_current_tab"
+msgstr "Vala ithebhu yamanje"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Gcina i-otho ifayela lapho Ngibhala"
+
+msgid "auto_save"
+msgstr "Londoloza Auto"
+
+msgid "quick_save"
+msgstr "Londoloza Quick"
+
+msgid "documentation"
+msgstr "Amaphepha"
+
+msgid "themes"
+msgstr "Izihloko"
+
+msgid "keyboard_shortcuts"
+msgstr "Keyboard Amashothikhathi"
+
+msgid "coming_soon"
+msgstr "Kuyeza maduze"
+
+msgid "empty"
+msgstr "ezingenalutho"

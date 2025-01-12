@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <base target="_blank">
+    <title>{{ 'file_editor'|trans }}</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <script type="text/javascript" src="js/plugins/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body class="popup edit_popup fullVersion">
+    <div id="loading_app">
+        <img src="images/loading.gif" class="loading" border="0" />
+    </div>
+    <div id="wrapper" class="hide">
+        <header class="full-page">
+            <div class="drag"></div>
+            <a id="menu">|||</a>
+            <span class="title">
+                <span>sFTP</span> Client
+            </span>
+        </header>
+        <nav>
+            <ul>
+                <li class="logo text-center">
+                    <img src="images/128.png" width="100" height="100" />
+                    <p>
+                        <span class="text">
+                            <span>{{ 'sftpclient'|trans }}</span>
+                        </span>
+                    </p>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-file"></i>
+                        {{ 'file'|trans }}
+                    </a>
+                    <ul>
+                        <li>
+                            <a id="save_file">
+                                <i class="fa fa-save"></i>
+                                {{ 'save'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a id="" title="{{ 'auto_save_file_when_i_type'|trans }}">
+                                <label for="auto_save">
+                                    <i><input type="checkbox" id="auto_save" value="1" /></i>
+                                    {{ 'auto_save'|trans }}
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="close_tab">
+                                <i class="fa fa-close-circle"></i>
+                                {{ 'close_current_tab'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a id="close_all_tabs">
+                                <i class="fa fa-"></i>
+                                {{ 'close_all_tabs'|trans }}
+                            </a>
+                        </li>
+                        <li style="display:none;">
+                            <a id="preferences">
+                                <i class="fa fa-"></i>
+                                {{ 'preferences'|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-eye"></i>
+                        {{ 'view'|trans }}
+                    </a>
+                    <ul>
+                        <li style="display: none;">
+                            <a id="split_code">
+                                <i class="fa fa-"></i>
+                                {{ 'split_code'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="word_wrap">
+                                <i class="fa fa-"></i>
+                                {{ 'word_wrap'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="highlight_active_line">
+                                <i class="fa fa-"></i>
+                                {{ 'highlight_active_line'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="show_print_margin">
+                                <i class="fa fa-"></i>
+                                {{ 'show_print_margin'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="show_invisibles">
+                                <i class="fa fa-"></i>
+                                {{ 'show_invisibles'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="show_gutter">
+                                <i class="fa fa-"></i>
+                                {{ 'show_gutter'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a id="show_annotations">
+                                <i class="fa fa-"></i>
+                                {{ 'show_annotations'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="scroll_past_end">
+                                <i class="fa fa-"></i>
+                                {{ 'scroll_past_end'|trans }} <sub></sub>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li style="display: none;">
+                    <a>
+                        <i class="fa fa-file"></i>
+                        {{ 'edit'|trans }}
+                    </a>
+                    <ul>
+                        <li>
+                            <a id="">
+                                <i class="fa fa-"></i>
+                                {{ 'redo'|trans }} <sub>(CTRL+Y)</sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="">
+                                <i class="fa fa-"></i>
+                                {{ 'undo'|trans }} <sub>(CTRL+Z)</sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="">
+                                <i class="fa fa-"></i>
+                                {{ 'cut'|trans }} <sub>(CTRL+X)</sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="">
+                                <i class="fa fa-"></i>
+                                {{ 'copy'|trans }} <sub>(CTRL+C)</sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="">
+                                <i class="fa fa-"></i>
+                                {{ 'paste'|trans }} <sub>(CTRL+V)</sub>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-search"></i>
+                        {{ 'search'|trans }}
+                    </a>
+                    <ul>
+                        <li>
+                            <a id="search_find">
+                                <i class="fa fa-search-plus"></i>
+                                {{ 'find'|trans }} <sub>(CTRL+F)</sub>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="search_replace">
+                                <i class="fa fa-code"></i>
+                                {{ 'replace'|trans }} <sub>(CTRL+H)</sub>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="window-buttons">
+            <a id="window-close" class="close">
+                <i class="fa fa-close"></i>
+            </a>
+        </section>
+        <div id="container" class="full-page">
+            <section class="wrapper edit">
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div id="tabs">
+                                <div class="left"><span></span></div>
+                                <div class="container"><div class="tabs"></div></div>
+                                <div class="right"><span></span></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="100%" id="mainbody"></td>
+                    </tr>
+                </table>
+            </section>
+            <footer>
+                <p>{{ 'YEAR'|trans }} &copy; {{ 'sftpclient'|trans }}</p>
+                <p id="filePathName"></p>
+                <p id="fileSaved">{{ 'file_saved!'|trans }}</p>
+                <p id="uploadFile">{{ 'uploading_file!'|trans }}</p>
+                <p id="saveFailed">{{ 'save_failed!'|trans }}</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

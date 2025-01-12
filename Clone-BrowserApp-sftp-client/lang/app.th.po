@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "เมนู"
+
+msgid "file"
+msgstr "ไฟล์"
+
+msgid "view"
+msgstr "ดู"
+
+msgid "edit"
+msgstr "แก้ไข"
+
+msgid "help"
+msgstr "ช่วยด้วย"
+
+msgid "manage_accounts"
+msgstr "จัดการบัญชี"
+
+msgid "import_accounts"
+msgstr "นำเข้าบัญชี"
+
+msgid "export_accounts"
+msgstr "บัญชีการส่งออก"
+
+msgid "quick_connect"
+msgstr "Quick Connect"
+
+msgid "message_log"
+msgstr "บันทึกข้อความ"
+
+msgid "local_directory"
+msgstr "ไดเรกทอรีท้องถิ่น"
+
+msgid "uploads_downloads"
+msgstr "อัปโหลด / ดาวน์โหลด"
+
+msgid "clear_saved_data"
+msgstr "ล้างข้อมูลที่บันทึกไว้"
+
+msgid "edit_settings"
+msgstr "แก้ไขการตั้งค่า"
+
+msgid "report_bug"
+msgstr "รายงานข้อผิดพลาด"
+
+msgid "suggest_feature"
+msgstr "แนะนำคุณลักษณะ"
+
+msgid "ask_a_question"
+msgstr "ถามคำถาม"
+
+msgid "change_log"
+msgstr "บันทึกการเปลี่ยนแปลง"
+
+msgid "about"
+msgstr "เกี่ยวกับ"
+
+msgid "exit"
+msgstr "ทางออก"
+
+msgid "host_ip_address"
+msgstr "โฮสต์ / ที่อยู่ IP"
+
+msgid "username"
+msgstr "ชื่อผู้ใช้"
+
+msgid "password"
+msgstr "รหัสผ่าน"
+
+msgid "port"
+msgstr "ท่าเรือ"
+
+msgid "connect"
+msgstr "เชื่อมต่อ"
+
+msgid "welcome"
+msgstr "ยินดีต้อนรับ"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP ไคลเอ็นต์ทั้งหมดที่เกี่ยวกับความเรียบง่ายจะได้รับการสร้างขึ้นบนอินเตอร์เฟซของ Google Chrome / Chrome OS แอปแพคเกจที่ช่วยให้การตรวจสอบเพื่อจะรวดเร็วและตอบสนอง บางส่วนของการทำงานรวมถึงผู้จัดการบัญชี FTP เพื่อจัดเก็บและจัดระเบียบที่สุดของคุณเรา"
+
+msgid "latest_updates"
+msgstr "อัพเดทล่าสุด"
+
+msgid "server_status"
+msgstr "สถานะของเซิร์ฟเวอร์"
+
+msgid "license_server"
+msgstr "License Server"
+
+msgid "sftp_support"
+msgstr "สนับสนุน"
+
+msgid "notice_update"
+msgstr "แจ้งให้ทราบล่วงหน้า / ปรับปรุง"
+
+msgid "website"
+msgstr "เว็บไซต์"
+
+msgid "clear_all"
+msgstr "ลบทั้งหมด"
+
+msgid "manage"
+msgstr "จัดการ"
+
+msgid "recheck"
+msgstr "ตรวจสอบอีกครั้ง"
+
+msgid "last_release"
+msgstr "รุ่นล่าสุด"
+
+msgid "released"
+msgstr "การเผยแพร่"
+
+msgid "queued"
+msgstr "จัดคิว"
+
+msgid "failed"
+msgstr "ล้มเหลว"
+
+msgid "completed"
+msgstr "เสร็จ"
+
+msgid "settings"
+msgstr "การตั้งค่า"
+
+msgid "add_folder"
+msgstr "เพิ่มกล่องเก็บไฟล์"
+
+msgid "add_ftp_account"
+msgstr "เพิ่มบัญชี FTP"
+
+msgid "file_editor"
+msgstr "แก้ไขไฟล์"
+
+msgid "editor_preferences"
+msgstr "การตั้งค่าตัวแก้ไข"
+
+msgid "your_ftp_accounts"
+msgstr "บัญชี FTP ของคุณ"
+
+msgid "most_recent_used"
+msgstr "ที่ใช้มากที่สุดเมื่อเร็ว ๆ นี้"
+
+msgid "no_connections_yet_made"
+msgstr "ไม่มีการเชื่อมต่อได้ทำ"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ไม่มีบัญชี FTP เพิ่มเลย"
+
+msgid "most_recent_connections"
+msgstr "ส่วนใหญ่การเชื่อมต่อล่าสุด"
+
+msgid "last_10_connections_made"
+msgstr "10 การเชื่อมต่อที่ทำ"
+
+msgid "designed_developed_by"
+msgstr "ออกแบบและพัฒนาโดย"
+
+msgid "about_info"
+msgstr "โปรดใช้เว็บไซต์ SFTP ลูกค้าที่ให้การสนับสนุนไม่มีการสนับสนุนให้บริการผ่านเว็บไซต์ของเราแต่ละคน"
+
+msgid "local"
+msgstr "ในประเทศ"
+
+msgid "remote"
+msgstr "รีโมท"
+
+msgid "remote_location_desc"
+msgstr "เช่น / public_html"
+
+msgid "create_directory"
+msgstr "สร้างไดเรกทอรี"
+
+msgid "create_new_directory"
+msgstr "สร้างไดเรกทอรีใหม่"
+
+msgid "create_file"
+msgstr "สร้างไฟล์"
+
+msgid "create_new_file"
+msgstr "สร้างไฟล์ใหม่"
+
+msgid "refresh_list"
+msgstr "รีเฟรชรายการ"
+
+msgid "change"
+msgstr "เปลี่ยนแปลง"
+
+msgid "report_a_bug"
+msgstr "รายงานข้อผิดพลาด"
+
+msgid "suggest_a_feature"
+msgstr "แนะนำคุณลักษณะ"
+
+msgid "enter_password"
+msgstr "ใส่รหัสผ่าน"
+
+msgid "enter_your_password..."
+msgstr "ป้อนรหัสผ่านของคุณ ..."
+
+msgid "passphrase"
+msgstr "ข้อความรหัสผ่าน"
+
+msgid "enter_your_passphrase..."
+msgstr "ป้อนข้อความรหัสผ่านของคุณ ..."
+
+msgid "email_sftp_client"
+msgstr "อีเมล์ SFTP ลูกค้า"
+
+msgid "faqs"
+msgstr "คำถามที่พบบ่อย"
+
+msgid "visit_sftp_client_website"
+msgstr "เยี่ยมชมเว็บไซต์ของลูกค้า sFTP"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "คะแนนเราใน Google Chrome เว็บสโตร์"
+
+msgid "report_an_issue_or_get_help"
+msgstr "รายงานปัญหาหรือได้รับความช่วยเหลือ"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "เข้าร่วมกับเราได้ทาง Facebook สำหรับการปรับปรุง"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "ติดตามเราได้ที่ Twitter สำหรับการปรับปรุง"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 เราใน Google สำหรับการปรับปรุง"
+
+msgid "okay"
+msgstr "ถูก"
+
+msgid "cancel"
+msgstr "ยกเลิก"
+
+msgid "close"
+msgstr "ปิด"
+
+msgid "unknown_host"
+msgstr "โฮสต์ที่ไม่รู้จัก"
+
+msgid "okay_to_continue"
+msgstr "เอาล่ะเพื่อดำเนินการต่อ?"
+
+msgid "fingerprint"
+msgstr "ลายนิ้วมือ"
+
+msgid "remember"
+msgstr "จำ"
+
+msgid "file_permissions"
+msgstr "สิทธิ์ของแฟ้ม"
+
+msgid "file_permissions_desc"
+msgstr "กรุณาเลือกคุณลักษณะใหม่สำหรับไฟล์ที่เลือก (s) / โฟลเดอร์ (s)"
+
+msgid "read"
+msgstr "อ่าน"
+
+msgid "write"
+msgstr "เขียน"
+
+msgid "execute"
+msgstr "ปฏิบัติ"
+
+msgid "owner"
+msgstr "เจ้าของ"
+
+msgid "group"
+msgstr "กลุ่ม"
+
+msgid "public"
+msgstr "สาธารณะ"
+
+msgid "numeric_value"
+msgstr "ค่าตัวเลข"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "ใส่ชื่อของไดเรกทอรีใหม่ ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "ใส่ชื่อของแฟ้มใหม่ ..."
+
+msgid "name"
+msgstr "ชื่อ"
+
+msgid "enter_a_password"
+msgstr "ป้อนรหัสผ่าน"
+
+msgid "language"
+msgstr "ภาษา"
+
+msgid "seconds"
+msgstr "วินาที"
+
+msgid "minutes"
+msgstr "รายงานการประชุม"
+
+msgid "hour"
+msgstr "ชั่วโมง"
+
+msgid "hours"
+msgstr "ชั่วโมง"
+
+msgid "day"
+msgstr "วัน"
+
+msgid "trial_left"
+msgstr "ทดลองซ้าย"
+
+msgid "register_now"
+msgstr "สมัครตอนนี้"
+
+msgid "general"
+msgstr "ทั่วไป"
+
+msgid "security"
+msgstr "ความปลอดภัย"
+
+msgid "master_password"
+msgstr "รหัสผ่านหลัก"
+
+msgid "status"
+msgstr "สถานะ"
+
+msgid "enabled"
+msgstr "เปิดใช้งาน"
+
+msgid "disabled"
+msgstr "พิการ"
+
+msgid "timeout"
+msgstr "หมดเวลา"
+
+msgid "save"
+msgstr "ประหยัด"
+
+msgid "add_account"
+msgstr "เพิ่มบัญชี"
+
+msgid "support"
+msgstr "สนับสนุน"
+
+msgid "notice_updates"
+msgstr "แจ้งให้ทราบล่วงหน้า / ปรับปรุง"
+
+msgid "please_login"
+msgstr "กรุณาเข้าสู่ระบบ"
+
+msgid "your_session_timed_out"
+msgstr "หมดเวลาเซสชันของคุณหมด"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "ขออภัยรหัสผ่านที่คุณป้อนไม่ถูกต้อง!"
+
+msgid "login"
+msgstr "เข้าสู่ระบบ"
+
+msgid "master_password_desc"
+msgstr "ตั้งรหัสผ่านหลักนี้เพื่อให้บัญชีของคุณปลอดภัย"
+
+msgid "license_key"
+msgstr "คีย์ใบอนุญาต"
+
+msgid "online"
+msgstr "ออนไลน์"
+
+msgid "offline"
+msgstr "ออฟไลน์"
+
+msgid "currently_unavailable"
+msgstr "ขณะนี้ยังไม่เปิดให้บริการ"
+
+msgid "no_message_to_display"
+msgstr "ไม่มีข้อความที่จะแสดง"
+
+msgid "offline_notice_title"
+msgstr "ไม่สามารถเข้าถึง - คุณเป็นแบบออฟไลน์หรือในเครือข่ายการเชื่อมต่อเพียง?"
+
+msgid "offline_notice_desc"
+msgstr "ขณะนี้คุณเป็นแบบออฟไลน์ในเครือข่ายเท่านั้นการเชื่อมต่อหรือไม่มีการเชื่อมต่ออาจจะมีการจัดตั้งขึ้นเพื่อเซิร์ฟเวอร์ของเรา"
+
+msgid "edit_file"
+msgstr "แก้ไขไฟล์"
+
+msgid "download"
+msgstr "ดาวน์โหลด"
+
+msgid "upload"
+msgstr "อัปโหลด"
+
+msgid "host_ip_is_required"
+msgstr "โฮสต์ / IP เป็นสิ่งจำเป็น"
+
+msgid "apply_to_all_files"
+msgstr "นำไปใช้กับไฟล์ทั้งหมด"
+
+msgid "activate_now"
+msgstr "เปิดใช้งานตอนนี้"
+
+msgid "deactivate"
+msgstr "หรือ de-activate"
+
+msgid "in_progress"
+msgstr "กำลังดำเนินการ"
+
+msgid "complete"
+msgstr "สมบูรณ์"
+
+msgid "direction"
+msgstr "ทิศทาง"
+
+msgid "progress"
+msgstr "ความคืบหน้า"
+
+msgid "permissions"
+msgstr "สิทธิ์"
+
+msgid "owner_group"
+msgstr "เจ้าของ / กลุ่ม"
+
+msgid "size"
+msgstr "ขนาด"
+
+msgid "type"
+msgstr "ชนิด"
+
+msgid "modified"
+msgstr "ดัดแปลง"
+
+msgid "trial"
+msgstr "การทดลอง"
+
+msgid "cleared"
+msgstr "เคลียร์"
+
+msgid "error_connecting"
+msgstr "ข้อผิดพลาดในการเชื่อมต่อ"
+
+msgid "error_connecting_to_host_ip"
+msgstr "ข้อผิดพลาดการเชื่อมต่อที่จะเป็นเจ้าภาพ / ที่อยู่ IP"
+
+msgid "error_connecting_to_port"
+msgstr "ข้อผิดพลาดการเชื่อมต่อกับพอร์ต"
+
+msgid "please_select_a_local_directory_first"
+msgstr "กรุณาเลือกไดเรกทอรีท้องถิ่นแรก!"
+
+msgid "go"
+msgstr "ไป"
+
+msgid "confirm"
+msgstr "ยืนยัน"
+
+msgid "delete"
+msgstr "ลบ"
+
+msgid "rename"
+msgstr "ตั้งชื่อใหม่"
+
+msgid "copy_urls_to_clipboard"
+msgstr "คัดลอก URL (s) ไปที่คลิปบอร์ด"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "โปรดยืนยันว่าคุณต้องการที่จะลบไฟล์ที่เลือก (s) / โฟลเดอร์ (s)"
+
+msgid "cancelled_by_user"
+msgstr "ถูกยกเลิกโดยผู้ใช้"
+
+msgid "already_exists_overwrite"
+msgstr "มีอยู่แล้วเขียนทับ?"
+
+msgid "dashboard"
+msgstr "แผงควบคุม"
+
+msgid "my_accounts"
+msgstr "บัญชีของฉัน"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ไฟล์ที่บันทึกไว้! บัญชีทั้งหมดได้รับการสำรองข้อมูล"
+
+msgid "file_failed_please_try_again"
+msgstr "ไฟล์ล้มเหลว! กรุณาลองอีกครั้ง."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "ขณะนี้คุณไม่มีบัญชีที่จะสำรอง"
+
+msgid "saved!"
+msgstr "บันทึกไว้!"
+
+msgid "please_enter_a_password"
+msgstr "กรุณาใส่รหัสผ่าน!"
+
+msgid "connection_closed"
+msgstr "ปิดการเชื่อมต่อ"
+
+msgid "listing_mode_set_to"
+msgstr "โหมดการจดทะเบียนในตลาดหลักทรัพย์"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "IP ของเซิร์ฟเวอร์ในท้องถิ่นได้รับการแก้ไขโดยใช้ IP ภายนอก"
+
+msgid "login_incorrect"
+msgstr "เข้าสู่ระบบที่ไม่ถูกต้อง"
+
+msgid "keeping_connection_alive"
+msgstr "การเชื่อมต่อการรักษาชีวิต"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "ไม่สามารถเขียน, การเชื่อมต่อข้อมูลปิด"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "ไม่สามารถอ่านการเชื่อมต่อข้อมูลปิด"
+
+msgid "error_reading_file"
+msgstr "การอ่านไฟล์ข้อผิดพลาด"
+
+msgid "error_writing_file"
+msgstr "ข้อผิดพลาดในการเขียนไฟล์"
+
+msgid "failed_to_change_directory_to"
+msgstr "ไม่สามารถเปลี่ยนไดเรกทอรีไป"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "คุณอาจจะไม่ได้มีสิทธิ์ที่ถูกต้องในการเข้าถึงไดเรกทอรีนี้"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "คืนกลับไปยังไดเรกทอรีก่อนหน้านี้"
+
+msgid "activate"
+msgstr "กระตุ้น"
+
+msgid "payment"
+msgstr "การชำระเงิน"
+
+msgid "license_key_is_required"
+msgstr "คีย์ใบอนุญาตที่จำเป็น"
+
+msgid "license_activated!"
+msgstr "ใบอนุญาตเปิดใช้งาน!"
+
+msgid "your_license_has_been_validated"
+msgstr "ใบอนุญาตของคุณได้รับการตรวจสอบ"
+
+msgid "thank_you!"
+msgstr "ขอขอบคุณ!"
+
+msgid "buy_now!"
+msgstr "Buy Now!"
+
+msgid "buy_now"
+msgstr "ซื้อตอนนี้"
+
+msgid "one_off_fee"
+msgstr "อย่างใดอย่างหนึ่งออกค่า"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "กรุณาอัพเกรดสนุกกับ app นี้โดยไม่มีข้อ จำกัด"
+
+msgid "please_enter_your_license_key_below"
+msgstr "กรุณากรอกคีย์ใบอนุญาตของคุณด้านล่าง"
+
+msgid "or"
+msgstr "หรือ"
+
+msgid "loading..."
+msgstr "กำลังโหลด ..."
+
+msgid "clear_accounts"
+msgstr "บัญชีที่ชัดเจน"
+
+msgid "clear_ssh_keys"
+msgstr "ล้างคีย์ SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "ลบคีย์ SSH ที่บันทึกไว้ทั้งหมด"
+
+msgid "clear_app_settings"
+msgstr "การตั้งค่าต่างที่ชัดเจน"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "ลบการตั้งค่าเฉพาะทั้งหมดของแอป"
+
+msgid "clear_recent_connections"
+msgstr "การเชื่อมต่อล่าสุดที่ชัดเจน"
+
+msgid "deletes_all_recent_connections"
+msgstr "ลบการเชื่อมต่อล่าสุดทั้งหมด"
+
+msgid "import_type"
+msgstr "ประเภทนำเข้า"
+
+msgid "please_select"
+msgstr "โปรดเลือก"
+
+msgid "import_file"
+msgstr "นำเข้าแฟ้ม"
+
+msgid "choose_file"
+msgstr "เลือกไฟล์"
+
+msgid "delete_accounts"
+msgstr "ลบบัญชี"
+
+msgid "deletes_all_existing_accounts"
+msgstr "ลบบัญชีที่มีอยู่ทั้งหมด"
+
+msgid "import_now"
+msgstr "ตอนนี้นำเข้า"
+
+msgid "none"
+msgstr "ไม่มี"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "กรุณาเริ่มต้นแอป SFTP ลูกค้าเพื่อให้การเปลี่ยนแปลงมีผลบังคับใช้"
+
+msgid "already_bought_the_app"
+msgstr "ซื้อแล้ว app?"
+
+msgid "choose"
+msgstr "เลือก"
+
+msgid "deleted!"
+msgstr "ที่ถูกลบ!"
+
+msgid "use_syncronised_browsing"
+msgstr "ใช้การเรียกดู syncronised"
+
+msgid "remote_directory"
+msgstr "ไดเรกทอรีระยะไกล"
+
+msgid "rsa_key_only!"
+msgstr "คีย์ RSA เท่านั้น!"
+
+msgid "no_key_selected"
+msgstr "ไม่ได้เลือกที่สำคัญ"
+
+msgid "ssh_key_file"
+msgstr "ไฟล์คีย์ SSH"
+
+msgid "no_dir_selected"
+msgstr "ไม่ได้เลือก dir"
+
+msgid "keep_blank_for_current_password"
+msgstr "ให้ว่างสำหรับรหัสผ่านปัจจุบัน"
+
+msgid "logon_type"
+msgstr "ประเภทการเข้าสู่ระบบ"
+
+msgid "normal"
+msgstr "ปกติ"
+
+msgid "ask_for_password"
+msgstr "ขอรหัสผ่าน"
+
+msgid "anonymous"
+msgstr "ไม่ระบุชื่อ"
+
+msgid "account_type"
+msgstr "ประเภทบัญชี"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (การเชื่อมต่อปกติ)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (เชื่อมต่อที่ปลอดภัย)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (เชื่อมต่อที่ปลอดภัย)"
+
+msgid "folder"
+msgstr "โฟลเดอร์"
+
+msgid "advanced"
+msgstr "สูง"
+
+msgid "folder_name"
+msgstr "ชื่อโฟลเดอร์"
+
+msgid "parent"
+msgstr "ผู้ปกครอง"
+
+msgid "new_ftp_site"
+msgstr "FTP ไซต์ใหม่"
+
+msgid "new_folder"
+msgstr "แฟ้มใหม่"
+
+msgid "clean_now"
+msgstr "Clean Now"
+
+msgid "host"
+msgstr "เจ้าภาพ"
+
+msgid "no_accounts_added..."
+msgstr "ไม่มีบัญชีเพิ่ม ..."
+
+msgid "unknown"
+msgstr "ไม่ทราบ"
+
+msgid "file_saved!"
+msgstr "ไฟล์ที่บันทึกไว้!"
+
+msgid "uploading_file!"
+msgstr "อัพโหลดไฟล์!"
+
+msgid "save_failed!"
+msgstr "บันทึกล้มเหลว!"
+
+msgid "search"
+msgstr "ค้นหา"
+
+msgid "find"
+msgstr "หา"
+
+msgid "replace"
+msgstr "แทนที่"
+
+msgid "scroll_past_end"
+msgstr "เลื่อนสุดท้ายที่ผ่านมา"
+
+msgid "show_annotations"
+msgstr "แสดงคำอธิบายประกอบ"
+
+msgid "show_gutter"
+msgstr "แสดงรางน้ำ"
+
+msgid "show_invisibles"
+msgstr "แสดงฤทธานุภาพ"
+
+msgid "show_print_margin"
+msgstr "แสดงขอบกระดาษ"
+
+msgid "highlight_active_line"
+msgstr "ไฮไลต์ที่ใช้งานสาย"
+
+msgid "word_wrap"
+msgstr "ตัดคำ"
+
+msgid "split_code"
+msgstr "รหัส Split"
+
+msgid "preferences"
+msgstr "การตั้งค่า"
+
+msgid "close_all_tabs"
+msgstr "ปิดแท็บทั้งหมด"
+
+msgid "close_current_tab"
+msgstr "ปิดแท็บปัจจุบัน"
+
+msgid "auto_save_file_when_i_type"
+msgstr "Auto บันทึกแฟ้มเมื่อฉันพิมพ์"
+
+msgid "auto_save"
+msgstr "บันทึกอัตโนมัติ"
+
+msgid "quick_save"
+msgstr "บันทึกด่วน"
+
+msgid "documentation"
+msgstr "เอกสาร"
+
+msgid "themes"
+msgstr "ธีม"
+
+msgid "keyboard_shortcuts"
+msgstr "แป้นพิมพ์ลัด"
+
+msgid "coming_soon"
+msgstr "เร็ว ๆ นี้"
+
+msgid "empty"
+msgstr "ว่างเปล่า"

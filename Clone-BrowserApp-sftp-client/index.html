@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <base target="_blank">
+    <title>sFTP Client</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/plugins/jquery.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+</head>
+<body id="index" class="fullVersion">
+    <div id="loading_app">
+        <img src="images/256.png" width="256" height="256" border="0" />
+    </div>
+    <div id="wrapper" class="hide">
+        <header class="full-page">
+            <div class="drag"></div>
+            <a id="menu">|||</a>
+            <span class="title">
+                <span>sFTP</span> Client
+            </span>
+            <a href="https://www.sftpapp.com/download/windows" id="download_windows" class="button btn-icon green hide" style="-webkit-app-region: no-drag;">
+                <i class="fa fa-star" style="color: #fbc02d;"></i>
+                Download <b>v3</b> app for Windows
+            </a>
+            <a href="https://www.sftpapp.com/download/mac" id="download_macos" class="button btn-icon green hide" style="-webkit-app-region: no-drag;">
+                <i class="fa fa-star" style="color: #fbc02d;"></i>
+                Download <b>v3</b> app for macOS
+            </a>
+            <a href="https://www.sftpapp.com/download/linux" id="download_linux" class="button btn-icon green hide" style="-webkit-app-region: no-drag;">
+                <i class="fa fa-star" style="color: #fbc02d;"></i>
+                Download <b>v3</b> app for Linux
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li class="logo text-center">
+                    <img src="/images/128.png" width="100" height="100" />
+                    <p>
+                        <span class="text">
+                            <span>{{ 'sftpclient'|trans }}</span><br />
+                            <i>
+                                <span class="version_num">{{ 'app_version'|trans }}</span>
+                                <span class="released_date">{{ 'app_release_date'|trans }}</span>
+                            </i>
+                        </span>
+                        <a href="https://chrome.sftpapp.com" title="{{ 'visit_sftp_client_website'|trans }}">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                        <a href="https://community.sftpapp.com" title="Community Forums">
+                            <i class="fa fa-comments"></i>
+                        </a>
+                        <a href="https://chrome.sftpapp.com/frequently-asked-questions" title="{{ 'faqs'|trans }}">
+                            <i class="fa fa-question-circle"></i>
+                        </a>
+                        <a href="https://chrome.sftpapp.com/change-log" title="{{ 'change_log'|trans }}">
+                            <i class="fa fa-list-alt"></i>
+                        </a>
+                        <a href="mailto:help@sftpapp.com" title="{{ 'email_sftp_client'|trans }}">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://community.sftpapp.com/t/help-support" title="{{ 'report_an_issue_or_get_help'|trans }}">
+                            <i class="fa fa-support"></i>
+                        </a>
+                        <a href="https://chrome.google.com/webstore/detail/sftp-client/jajcoljhdglkjpfefjkgiohbhnkkmipm/reviews" title="{{ 'rate_us_on_the_google_chrome_webstore'|trans }}">
+                            <i class="fa fa-chrome"></i>
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-file"></i>
+                        {{ 'file'|trans }}
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="user_license_update">
+                                <i class="fa fa-key"></i>
+                                Enter License Key
+                            </a>
+                        </li>
+                        <li>
+                            <a class="file_manage">
+                                <i class="fa fa-server"></i>
+                                {{ 'manage_accounts'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="file_import">
+                                <i class="fa fa-upload"></i>
+                                {{ 'import_accounts'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="file_export">
+                                <i class="fa fa-download"></i>
+                                {{ 'export_accounts'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="file_activate hide">
+                                <i class="fa fa-key"></i>
+                                {{ 'activate_now'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="file_deactivate hide">
+                                <i class="fa fa-key"></i>
+                                {{ 'deactivate'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a id="close-app">
+                                <i class="fa fa-times-circle-o"></i>
+                                {{ 'exit'|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-eye"></i>
+                        {{ 'view'|trans }}
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="view_quick-connect">
+                                <i class="fa fa-check"></i>
+                                {{ 'quick_connect'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="view_message-log">
+                                <i class="fa fa-check"></i>
+                                {{ 'message_log'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="view_local-dir">
+                                <i class="fa fa-check"></i>
+                                {{ 'local_directory'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="view_upload-download">
+                                <i class="fa fa-check"></i>
+                                {{ 'uploads_downloads'|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-pencil"></i>
+                        {{ 'edit'|trans }}
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="edit_clear">
+                                <i class="fa fa-eraser"></i>
+                                {{ 'clear_saved_data'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="edit_settings">
+                                <i class="fa fa-cogs"></i>
+                                {{ 'settings'|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa fa-support"></i>
+                        {{ 'help'|trans }}
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="https://community.sftpapp.com/t/help-support" target="_blank" class="help_report_bug">
+                                <i class="fa fa-bug"></i>
+                                {{ 'report_a_bug'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://help.sftpapp.com/v/chrome/" target="_blank" class="help_suggest-feature">
+                                <i class="fa fa-book"></i>
+                                {{ 'documentation'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://chrome.sftpapp.com/change-log" target="_blank" class="help_change-log">
+                                <i class="fa fa-list-alt"></i>
+                                {{ 'change_log'|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="help_about">
+                                <i class="fa fa-info-circle"></i>
+                                {{ 'about'|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer">
+                    <div class="social">
+                        <a href="https://twitter.com/sFTPApp" target="_blank" class="twitter" title="{{ 'follow_us_on_twitter_for_updates'|trans }}">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sFTPClient" target="_blank" class="facebook" title="{{ 'join_us_on_facebook_for_updates'|trans }}">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <span>{{ 'YEAR'|trans }} &copy; sFTP App Ltd</span>
+                </li>
+            </ul>
+        </nav>
+        <section class="window-buttons">
+            <a id="window-close" class="close">
+                <i class="fa fa-close"></i>
+            </a>
+            <a id="window-maximize" class="maximize">
+                <i class="fa fa-clone"></i>
+            </a>
+            <a id="window-minimize" class="minimize">
+                <i class="fa fa-minus"></i>
+            </a>
+            <a href="https://twitter.com/sFTPApp" target="_blank" class="social twitter">
+                <i class="fa fa-twitter"></i>
+                <span>{{ 'follow_us_on_twitter_for_updates'|trans }}</span>
+            </a>
+            <a href="https://www.facebook.com/sFTPClient" target="_blank" class="social facebook">
+                <i class="fa fa-facebook"></i>
+                <span>{{ 'join_us_on_facebook_for_updates'|trans }}</span>
+            </a>
+            <a href="https://community.sftpapp.com" target="_blank" class="social forums">
+                <i class="fa fa-comments"></i>
+                <span>Community Forums</span>
+            </a>
+            <a href="https://help.sftpapp.com/v/chrome/" target="_blank" class="social help">
+                <i class="fa fa-support"></i>
+                <span>{{ 'report_an_issue_or_get_help'|trans }}</span>
+            </a>
+        </section>
+        <div id="container" class="full-page">
+            <div id="quickConnect">
+                <div id="connect_main">
+                    <a id="accounts_expand" class="button btn-icon blue">
+                        <i class="fa fa-tasks"></i>
+                        {{ 'my_accounts'|trans }}
+                    </a>
+                    <h2>
+                        <a class="button fRight">{{ 'manage'|trans }}</a>
+                        {{ 'my_accounts'|trans }}
+                    </h2>
+                    <ul class="accounts"></ul>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                <tr>
+                <td>&nbsp;&nbsp;</td>
+                <td><i class="fa fa-bolt"></i></td>
+                <td class="title">{{ 'connect'|trans }}</td>
+                <td>
+                    <div class="input_wrapper">
+                        <i class="fa fa-server"></i>
+                        <input type="text" id="address" size="18" placeholder="{{ 'host_ip_address'|trans }}" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input_wrapper">
+                        <i class="fa fa-user"></i>
+                        <input type="text" id="username" size="18" placeholder="{{ 'username'|trans }}" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input_wrapper">
+                        <i class="fa fa-unlock-alt"></i>
+                        <input type="password" id="password" size="18" placeholder="{{ 'password'|trans }}" />
+                    </div>
+                </td>
+                <td>
+                    <div class="input_wrapper">
+                        <i class="fa fa-terminal"></i>
+                        <input type="text" id="port" size="4" placeholder="{{ 'port'|trans }}" />
+                    </div>
+                </td>
+                <td>
+                    <button id="connectButton" class="button btn-icon">
+                        <i class="fa fa-plug"></i>
+                        {{ 'go'|trans }}
+                    </button>
+                </td>
+                </tr>
+                </table>
+            </div>
+            <div id="tabs">
+                <div class="left">
+                    <i class="fa fa-chevron-left"></i>
+                </div>
+                <div class="container">
+                    <div class="tabs"></div>
+                </div>
+                <div class="right">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div id="mainbody">
+                <section id="welcomeMain" class="ftpTab">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="main" valign="top">
+                                <section class="main">
+                                    <div class="welcome_container">
+                                        <section class="grid right w40">
+                                            <div style="padding: 20px 20px 0px;">
+                                                <div class="title">
+                                                    <a href="https://payments.sftpapp.com/order/chrome" id="upgrade_button" class="button btn-icon red upgrade_now">
+                                                        <i class="fa fa-shopping-cart"></i>
+                                                        Upgrade Now
+                                                    </a>
+                                                    <h2 id="user_details_name">
+                                                        <i class="fa fa-user"></i>
+                                                        Unlicensed User
+                                                    </h2>
+                                                    <span id="user_details_email"></span>
+                                                </div>
+                                                <div class="content">
+                                                    <span style="font-size: 15px;">
+                                                        <b>{{ 'license_key'|trans }}:</b>
+                                                    </span><br />&nbsp;<br />
+
+                                                    <table width="100%" cellpadding="3" cellspacing="0">
+                                                        <tr>
+                                                            <td class="hide">Activations</td>
+                                                            <td align="left">Type</td>
+                                                            <td align="right">Status</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="hide"><span id="user_license_uses" class="icon red" style="margin: 5px 0;">0</span></td>
+                                                            <td align="left"><span id="user_license_type" class="icon red" style="margin: 5px 0;">None</span></td>
+                                                            <td align="right"><span id="user_license_status" class="icon red" style="margin: 5px 0;">Unlicensed</span></td>
+                                                        </tr>
+                                                    </table>
+                                                    <p id="user_license_buttons" align="center" style="padding-top: 10px;">
+                                                        <a id="user_license_update" class="button btn-icon red">
+                                                            <i class="fa fa-key"></i>
+                                                            Enter License Key
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="clear clear-fix"></div>
+                                            <div class="box">
+                                                <div class="title">
+                                                    <span class="fRight"><img src="images/64.png" width="48" /></span>
+                                                    <h2>{{ 'sftpclient'|trans }}</h2>
+                                                    <span class="welcome_v version_num">{{ 'app_version'|trans }}</span>
+                                                </div>
+                                                <div class="content">{{ 'welcome_intro'|trans }}</div>
+                                            </div>
+                                            <div class="clear clear-fix"></div>
+                                            <div class="box">
+                                                <div class="title">
+                                                    <a class="button btn-icon blue recheck_status"><i class="fa fa-refresh"></i> {{ 'recheck'|trans }}</a>
+                                                    <h2>{{ 'server_status'|trans }}</h2>
+                                                </div>
+                                                <div class="content">
+                                                    <table width="100%" cellpadding="3" cellspacing="0" class="row_data">
+                                                        <tr>
+                                                            <td><i class="fa fa-server"></i> {{ 'license_server'|trans }}</td>
+                                                            <td align="right"><span id="license_status" class="icon"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i class="fa fa-globe"></i> {{ 'website'|trans }}</td>
+                                                            <td align="right"><span id="website_status" class="icon"></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i class="fa fa-support"></i> {{ 'support'|trans }}</td>
+                                                            <td align="right"><span id="support_status" class="icon"></span></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="clear clear-fix"></div>
+                                            <div class="box">
+                                                <div class="title">
+                                                    <a href="https://www.sftpapp.com/change-log" class="button btn-icon change-log"><i class="fa fa-eye"></i> {{ 'change_log'|trans }}</a>
+                                                    <h2><i class="fa fa-newspaper-o"></i> {{ 'notice_updates'|trans }}</h2>
+                                                    <p>{{ 'released'|trans }}: {{ 'app_release_date'|trans }} - {{ 'app_version'|trans }}</p>
+                                                </div>
+                                                <div class="content">
+                                                    <span id="admin_notice"></span>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="grid left w60">
+                                            <div class="box">
+                                                <div class="title">
+                                                    <a class="button btn-icon clear-history clear_all red">
+                                                        <i class="fa fa-times"></i>
+                                                        {{ 'clear_all'|trans }}
+                                                    </a>
+                                                    <h2>
+                                                        <i class="fa fa-server"></i>
+                                                        {{ 'most_recent_connections'|trans }}
+                                                    </h2>
+                                                    <p>{{ 'last_10_connections_made'|trans }}</p>
+                                                </div>
+                                                <div id="recent_connections" class="content">
+                                                    <p>{{ 'no_connections_yet_made'|trans }}</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="grid left w60">
+                                            <div class="box">
+                                                <div class="title">
+                                                    <a id="dashboard_manage" class="button btn-icon">
+                                                        <i class="fa fa-cogs"></i>
+                                                        {{ 'manage'|trans }}
+                                                    </a>
+                                                    <h2>{{ 'my_accounts'|trans }}</h2>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="accounts"></ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="clear"></div>
+                                    </div>
+                                </section>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section id="login">
+        <form id="login_form" class="box" action="javascript:void(0);" method="post">
+            <div class="title">
+                <img src="images/64.png" style="float:left;height:45px;margin-right:10px;">
+                <h2>{{ 'please_login'|trans }}</h2>
+                <p>{{ 'your_session_timed_out'|trans }}</p>
+            </div>
+            <div class="content">
+                <span class="error hide">{{ 'sorry_the_password_you_entered_was_incorrect'|trans }}</span>
+                <input type="password" id="login_pass" placeholder="{{ 'enter_your_password...'|trans }}" />
+                <p align="right"><input type="button" value="{{ 'login'|trans }}" /></p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

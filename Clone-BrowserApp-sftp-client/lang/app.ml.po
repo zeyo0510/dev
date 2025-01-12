@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "മെനു"
+
+msgid "file"
+msgstr "ഫയല്"
+
+msgid "view"
+msgstr "കാണുക"
+
+msgid "edit"
+msgstr "തിരുത്തുക"
+
+msgid "help"
+msgstr "സഹായിക്കൂ"
+
+msgid "manage_accounts"
+msgstr "അക്കൗണ്ടുകൾ നിയന്ത്രിക്കുക"
+
+msgid "import_accounts"
+msgstr "അക്കൗണ്ടുകൾ ഇംപോർട്ട്"
+
+msgid "export_accounts"
+msgstr "കയറ്റുമതി അക്കൗണ്ടുകൾ"
+
+msgid "quick_connect"
+msgstr "ദ്രുത കണക്റ്റ്"
+
+msgid "message_log"
+msgstr "സന്ദേശ ലോഗ്"
+
+msgid "local_directory"
+msgstr "പ്രാദേശിക ഡയറക്ടറി"
+
+msgid "uploads_downloads"
+msgstr "അപ്ലോഡുകൾ / ഡൗൺലോഡുകൾ"
+
+msgid "clear_saved_data"
+msgstr "തെളിഞ്ഞ സംരക്ഷിച്ച ഡാറ്റ"
+
+msgid "edit_settings"
+msgstr "ക്രമീകരണങ്ങൾ എഡിറ്റുചെയ്യുക"
+
+msgid "report_bug"
+msgstr "ബഗ് റിപ്പോർട്ട്"
+
+msgid "suggest_feature"
+msgstr "ഒരു സവിശേഷത നിർദ്ദേശിക്കുക"
+
+msgid "ask_a_question"
+msgstr "ഒരു ചോദ്യം ചോദിക്കൂ"
+
+msgid "change_log"
+msgstr "മാറ്റം"
+
+msgid "about"
+msgstr "കുറിച്ച്"
+
+msgid "exit"
+msgstr "പുറത്ത്"
+
+msgid "host_ip_address"
+msgstr "ഹോസ്റ്റ് / ഐപി വിലാസം"
+
+msgid "username"
+msgstr "ഉപയോക്തൃനാമം"
+
+msgid "password"
+msgstr "പാസ്വേഡ്"
+
+msgid "port"
+msgstr "തുറമുഖം"
+
+msgid "connect"
+msgstr "ബന്ധിപ്പിക്കുക"
+
+msgid "welcome"
+msgstr "സ്വാഗതം"
+
+msgid "welcome_intro"
+msgstr "<p> sFTP ക്ലയന്റ് എല്ലാ ലളിതമാണ്, അത് അപ്ലിക്കേഷൻ ഫാസ്റ്റ് പ്രതികരിക്കുന്നതെന്നും അനുവദിക്കുന്നത് ഗൂഗിൾ ക്രോം / ക്രോം ഒഎസ് പാക്കേജുചെയ്ത അപ്ലിക്കേഷൻ ഇന്റർഫേസിൽ നിർമ്മിച്ചിരിക്കുന്നത്. ചില പ്രവർത്തനങ്ങൾ അകലെ സംഭരിക്കാൻ ഞങ്ങളെ നിങ്ങളുടെ ഏറ്റവും സംഘടിപ്പിക"
+
+msgid "latest_updates"
+msgstr "പുതിയ അപ്ഡേറ്റുകൾ"
+
+msgid "server_status"
+msgstr "സെർവർ അവസ്ഥ"
+
+msgid "license_server"
+msgstr "ലൈസൻസ് സെർവർ"
+
+msgid "sftp_support"
+msgstr "പിന്തുണ"
+
+msgid "notice_update"
+msgstr "അറിയിപ്പ് / അപ്ഡേറ്റുകൾ"
+
+msgid "website"
+msgstr "വെബ്സൈറ്റ്"
+
+msgid "clear_all"
+msgstr "എല്ലാം മായ്ക്കുക"
+
+msgid "manage"
+msgstr "നിയന്ത്രിക്കുക"
+
+msgid "recheck"
+msgstr "വീണ്ടും പരിശോധിച്ച്"
+
+msgid "last_release"
+msgstr "അവസാനം റിലീസ്"
+
+msgid "released"
+msgstr "റിലീസ്"
+
+msgid "queued"
+msgstr "ക്യൂവിലാണ്"
+
+msgid "failed"
+msgstr "പരാജയപ്പെട്ടു"
+
+msgid "completed"
+msgstr "പൂർത്തിയായത്"
+
+msgid "settings"
+msgstr "ക്രമീകരണങ്ങൾ"
+
+msgid "add_folder"
+msgstr "ഫോൾഡർ ചേർക്കുക"
+
+msgid "add_ftp_account"
+msgstr "എഫ്ടിപി അക്കൗണ്ട് ചേർക്കുക"
+
+msgid "file_editor"
+msgstr "ഫയൽ എഡിറ്റർ"
+
+msgid "editor_preferences"
+msgstr "എഡിറ്റർ മുൻഗണനകൾ"
+
+msgid "your_ftp_accounts"
+msgstr "നിങ്ങളുടെ FTP അക്കൗണ്ടുകൾ"
+
+msgid "most_recent_used"
+msgstr "ഏറ്റവും സമീപകാലത്ത് ഉപയോഗിച്ച."
+
+msgid "no_connections_yet_made"
+msgstr "കണക്ഷനുകൾ ഇതുവരെ"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "ഇല്ല എഫ്ടിപി അക്കൗണ്ടുകൾ ഇതുവരെ ചേർത്തു"
+
+msgid "most_recent_connections"
+msgstr "ഏറ്റവും അടുത്തിടെയുള്ള കണക്ഷനുകൾ"
+
+msgid "last_10_connections_made"
+msgstr "ഉണ്ടാക്കി അവസാനം 10 കണക്ഷനുകൾ"
+
+msgid "designed_developed_by"
+msgstr "രൂപകൽപ്പന ചെയ്തത് & വികസിപ്പിച്ചത്"
+
+msgid "about_info"
+msgstr "യാതൊരു പിന്തുണ ഞങ്ങളുടെ വ്യക്തിഗത വെബ്സൈറ്റുകൾ വകയിരുത്തിയിട്ടുണ്ട് പിന്തുണയ്ക്കായി sFTP ക്ലയന്റ് വെബ്സൈറ്റ് ഉപയോഗിക്കുക."
+
+msgid "local"
+msgstr "പ്രാദേശിക"
+
+msgid "remote"
+msgstr "റിമോട്ട്"
+
+msgid "remote_location_desc"
+msgstr "ഉദാ / public_html"
+
+msgid "create_directory"
+msgstr "ഡയറക്ടറി സൃഷ്ടിക്കുക"
+
+msgid "create_new_directory"
+msgstr "പുതിയ ഡയറക്ടറി സൃഷ്ടിക്കുക"
+
+msgid "create_file"
+msgstr "പ്രമാണം സൃഷ്ടിക്കുക"
+
+msgid "create_new_file"
+msgstr "പുതിയ ഫയൽ സൃഷ്ടിക്കുക"
+
+msgid "refresh_list"
+msgstr "ലിസ്റ്റ് പുതുക്കുക"
+
+msgid "change"
+msgstr "മാറ്റം"
+
+msgid "report_a_bug"
+msgstr "ബഗ് റിപ്പോർട്ട്"
+
+msgid "suggest_a_feature"
+msgstr "ഒരു സവിശേഷത നിർദ്ദേശിക്കുക"
+
+msgid "enter_password"
+msgstr "പാസ്വേഡ് നല്കൂ"
+
+msgid "enter_your_password..."
+msgstr "നിങ്ങളുടെ പാസ്വേഡ് നൽകുക ..."
+
+msgid "passphrase"
+msgstr "പാസ്ഫ്രെയ്സ്"
+
+msgid "enter_your_passphrase..."
+msgstr "നിങ്ങളുടെ പാസ്ഫ്രെയ്സ് നൽകുക ..."
+
+msgid "email_sftp_client"
+msgstr "ഇമെയിൽ sFTP ക്ലയന്റ്"
+
+msgid "faqs"
+msgstr "സ്ഥിരം ന്റെ"
+
+msgid "visit_sftp_client_website"
+msgstr "സന്ദർശിക്കുക sFTP ക്ലയന്റ് വെബ്സൈറ്റ്"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "ഗൂഗിൾ ക്രോം വെബ്സ്റ്റോറിലെ ഞങ്ങളെ റേറ്റുചെയ്യുക"
+
+msgid "report_an_issue_or_get_help"
+msgstr "ഒരു പ്രശ്നം റിപ്പോർട്ടുചെയ്യുക അല്ലെങ്കിൽ സഹായം ലഭിക്കാൻ"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "അപ്ഡേറ്റുകൾക്കായി ഫേസ്ബുക്ക് ഞങ്ങളെ ചേരുക"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "അപ്ഡേറ്റുകൾക്കായി ഞങ്ങളെ Twitter ൽ പിന്തുടരുക"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 ചെയ്യുക അപ്ഡേറ്റുകൾക്കായി Google ഞങ്ങളെ"
+
+msgid "okay"
+msgstr "ശരി"
+
+msgid "cancel"
+msgstr "റദ്ദാക്കുക"
+
+msgid "close"
+msgstr "അടയ്ക്കുക"
+
+msgid "unknown_host"
+msgstr "അപരിചിതമായ ഹോസ്റ്റ്"
+
+msgid "okay_to_continue"
+msgstr "തുടരാൻ ശരി?"
+
+msgid "fingerprint"
+msgstr "വിരലടയാളം"
+
+msgid "remember"
+msgstr "സ്മരിക്കുക"
+
+msgid "file_permissions"
+msgstr "ഫയൽ അനുമതികൾ"
+
+msgid "file_permissions_desc"
+msgstr "തിരഞ്ഞെടുത്ത ഫയൽ (ങ്ങൾ) / ഫോൾഡറിൽ (ങ്ങൾ) പുതിയ ഗുണങ്ങൾക്കായി തിരഞ്ഞെടുക്കുക"
+
+msgid "read"
+msgstr "വായിക്കുക"
+
+msgid "write"
+msgstr "എഴുതുക"
+
+msgid "execute"
+msgstr "നിർവ്വഹിക്കുക"
+
+msgid "owner"
+msgstr "ഉടമ"
+
+msgid "group"
+msgstr "ഗ്രൂപ്പ്"
+
+msgid "public"
+msgstr "പൊതു"
+
+msgid "numeric_value"
+msgstr "സംഖ്യാ മൂല്യം"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "പുതിയ ഡയറക്ടറിയുടെ പേര് നൽകുക ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "പുതിയ ഫയലിന്റെ പേര് നൽകുക ..."
+
+msgid "name"
+msgstr "പേര്"
+
+msgid "enter_a_password"
+msgstr "ഒരു പാസ്വേഡ് നൽകുക"
+
+msgid "language"
+msgstr "ഭാഷ"
+
+msgid "seconds"
+msgstr "സെക്കൻഡ്"
+
+msgid "minutes"
+msgstr "മിനിറ്റുകൾ"
+
+msgid "hour"
+msgstr "മണിക്കൂര്"
+
+msgid "hours"
+msgstr "മണിക്കൂറുകൾ"
+
+msgid "day"
+msgstr "ദിവസം"
+
+msgid "trial_left"
+msgstr "ട്രയൽ ഇടത്"
+
+msgid "register_now"
+msgstr "ഇപ്പോള് പെരുചേര്ക്കൂ"
+
+msgid "general"
+msgstr "പൊതുവായ"
+
+msgid "security"
+msgstr "സുരക്ഷ"
+
+msgid "master_password"
+msgstr "മാസ്റ്റർ പാസ്വേഡ്"
+
+msgid "status"
+msgstr "പദവി"
+
+msgid "enabled"
+msgstr "പ്രാപ്തമാക്കി"
+
+msgid "disabled"
+msgstr "അപ്രാപ്തമാക്കി"
+
+msgid "timeout"
+msgstr "ടൈം ഔട്ട്"
+
+msgid "save"
+msgstr "രക്ഷിക്കും"
+
+msgid "add_account"
+msgstr "അക്കൗണ്ട് ചേർക്കുക"
+
+msgid "support"
+msgstr "പിന്തുണ"
+
+msgid "notice_updates"
+msgstr "അറിയിപ്പ് / അപ്ഡേറ്റുകൾ"
+
+msgid "please_login"
+msgstr "ലോഗിൻ ദയവായി"
+
+msgid "your_session_timed_out"
+msgstr "നിങ്ങളുടെ സെഷൻ സമയബന്ധിത ഔട്ട്"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "ക്ഷമിക്കണം നിങ്ങൾ നൽകിയ പാസ്വേഡ് ശരിയല്ല!"
+
+msgid "login"
+msgstr "ലോഗിൻ"
+
+msgid "master_password_desc"
+msgstr "നിങ്ങളുടെ അക്കൗണ്ടുകൾ സുരക്ഷിതമായി സൂക്ഷിക്കാൻ ഈ മാസ്റ്റർ പാസ്വേഡ് സജ്ജമാക്കുക."
+
+msgid "license_key"
+msgstr "അനുവാദ പത്രം"
+
+msgid "online"
+msgstr "ഓൺലൈൻ"
+
+msgid "offline"
+msgstr "ഓഫ്ലൈൻ"
+
+msgid "currently_unavailable"
+msgstr "ഇപ്പോള് ലഭ്യമല്ല"
+
+msgid "no_message_to_display"
+msgstr "പ്രദർശിപ്പിക്കുന്നതിന് സന്ദേശം"
+
+msgid "offline_notice_title"
+msgstr "പരിധിക്ക് - നിങ്ങൾ ഓഫ്ലൈൻ അല്ലെങ്കിൽ നെറ്റ്വർക്ക് കണക്ഷൻ ൽ ഉണ്ടോ?"
+
+msgid "offline_notice_desc"
+msgstr "നിങ്ങൾക്ക് ഒരു നെറ്റ്വർക്ക് മാത്രം കണക്ഷൻ അല്ലെങ്കിൽ യാതൊരു കണക്ഷൻ ഞങ്ങളുടെ സെർവർ സാധിക്കും കഴിഞ്ഞില്ല ന് നിലവിൽ ഓഫ്ലൈനിൽ"
+
+msgid "edit_file"
+msgstr "ഫയൽ എഡിറ്റ്"
+
+msgid "download"
+msgstr "ഇറക്കുമതി"
+
+msgid "upload"
+msgstr "അപ്ലോഡ്"
+
+msgid "host_ip_is_required"
+msgstr "ഹോസ്റ്റ് / ഐപി ആവശ്യമാണ്"
+
+msgid "apply_to_all_files"
+msgstr "എല്ലാ ഫയലുകളും പ്രയോഗിക്കുക"
+
+msgid "activate_now"
+msgstr "ഇപ്പോൾ സജീവമാക്കുക"
+
+msgid "deactivate"
+msgstr "ഡീ-സജീവമാക്കുക"
+
+msgid "in_progress"
+msgstr "പുരോഗതിയിൽ"
+
+msgid "complete"
+msgstr "പൂർത്തിയാക്കുക"
+
+msgid "direction"
+msgstr "സംവിധാനം"
+
+msgid "progress"
+msgstr "പുരോഗതി"
+
+msgid "permissions"
+msgstr "അനുമതികൾ"
+
+msgid "owner_group"
+msgstr "ഉടമ / ഗ്രൂപ്പ്"
+
+msgid "size"
+msgstr "വലുപ്പം"
+
+msgid "type"
+msgstr "ടൈപ്പ് ചെയ്യുക"
+
+msgid "modified"
+msgstr "തിരുത്തപ്പെട്ടത്"
+
+msgid "trial"
+msgstr "വിചാരണ"
+
+msgid "cleared"
+msgstr "മായ്ച്ചു"
+
+msgid "error_connecting"
+msgstr "ബന്ധിപ്പിക്കുന്നതിൽ പിശക്"
+
+msgid "error_connecting_to_host_ip"
+msgstr "/ IP വിലാസം ആതിഥേയത്വം ബന്ധിപ്പിക്കുന്നതിൽ പിശക്"
+
+msgid "error_connecting_to_port"
+msgstr "പോർട്ട് ലേക്ക് ബന്ധിപ്പിക്കുന്നു പിശക്"
+
+msgid "please_select_a_local_directory_first"
+msgstr "ആദ്യം ഒരു പ്രാദേശിക ഡയറക്ടറി തിരഞ്ഞെടുക്കുക!"
+
+msgid "go"
+msgstr "പോകു"
+
+msgid "confirm"
+msgstr "ഉറപ്പിക്കുക"
+
+msgid "delete"
+msgstr "ഇല്ലാതാക്കുക"
+
+msgid "rename"
+msgstr "പുനർനാമകരണം"
+
+msgid "copy_urls_to_clipboard"
+msgstr "ക്ലിപ്ബോർഡ് യുആർഎൽ (ങ്ങൾ) പകർത്തുക"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "/ ഫോൾഡറിൽ (ങ്ങൾ) നിങ്ങൾ തിരഞ്ഞെടുത്ത ഫയൽ (ങ്ങൾ) ഇല്ലാതാക്കാൻ ആഗ്രഹിക്കുന്ന സ്ഥിരീകരിക്കുക"
+
+msgid "cancelled_by_user"
+msgstr "ഉപയോക്താവ് റദ്ദാക്കി"
+
+msgid "already_exists_overwrite"
+msgstr "ഇതിനകം മുകളിൽ മറ്റൊരു നിലവിലുണ്ട്?"
+
+msgid "dashboard"
+msgstr "ഡാഷ്ബോർഡ്"
+
+msgid "my_accounts"
+msgstr "എന്റെ അക്കൗണ്ടുകൾ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ഫയൽ സംരക്ഷിച്ചു! എല്ലാ അക്കൗണ്ടുകളും ബാക്കപ്പ് ചെയ്തു."
+
+msgid "file_failed_please_try_again"
+msgstr "ഫയൽ പരാജയപ്പെട്ടു! വീണ്ടും ശ്രമിക്കുക."
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "നിങ്ങൾ നിലവിൽ ബാക്കപ്പുചെയ്യേണ്ടതില്ല യാതൊരു അക്കൗണ്ടുകൾ ഉണ്ട്."
+
+msgid "saved!"
+msgstr "സംരക്ഷിച്ചു!"
+
+msgid "please_enter_a_password"
+msgstr "ദയവായി ഒരു പാസ്വേഡ് നൽകുക!"
+
+msgid "connection_closed"
+msgstr "കണക്ഷൻ അടച്ചു"
+
+msgid "listing_mode_set_to"
+msgstr "ലിസ്റ്റിംഗ് മോഡിൽ സെറ്റ്"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "പ്രാദേശിക സെർവർ ഐപി പരിഹരിച്ചതായി, ബാഹ്യ ഐ.പി. ഉപയോഗിച്ച്"
+
+msgid "login_incorrect"
+msgstr "തെറ്റായ ലോഗിൻ"
+
+msgid "keeping_connection_alive"
+msgstr "കണക്ഷൻ ജീവനോടെ നിലനിർത്തുന്നത്"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "എഴുതാൻ കഴിയുന്നില്ല, ഡാറ്റ കണക്ഷൻ അടച്ചു"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "അടഞ്ഞിരിക്കുന്നു ഡാറ്റ കണക്ഷൻ വായിക്കാൻ കഴിയുന്നില്ല"
+
+msgid "error_reading_file"
+msgstr "ഫയൽ വായിക്കുന്നതിൽ പിശക്"
+
+msgid "error_writing_file"
+msgstr "എഴുത്തു ഫയൽ പിശക്"
+
+msgid "failed_to_change_directory_to"
+msgstr "ഡയറക്ടറിയുടെ മാറ്റുന്നതിൽ പരാജയപ്പെട്ടു"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "ഈ ഡയറക്ടറി ആക്സസ് ശരിയായ അനുമതികൾ ഇല്ലാത്തതോ"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "തിരികെ മുമ്പത്തെ ഡയറക്ടറി പഴയപടിയാക്കുന്നു"
+
+msgid "activate"
+msgstr "സജീവമാക്കുക"
+
+msgid "payment"
+msgstr "പേയ്മെന്റ്"
+
+msgid "license_key_is_required"
+msgstr "ലൈസൻസ് കീ ആവശ്യമാണ്"
+
+msgid "license_activated!"
+msgstr "ലൈസൻസ് സജീവമാക്കി!"
+
+msgid "your_license_has_been_validated"
+msgstr "നിങ്ങളുടെ ലൈസൻസ് സാധൂകരിച്ചു ചെയ്തു."
+
+msgid "thank_you!"
+msgstr "നന്ദി!"
+
+msgid "buy_now!"
+msgstr "ഇപ്പോൾ വാങ്ങുക!"
+
+msgid "buy_now"
+msgstr "ഇപ്പോൾ വാങ്ങുക"
+
+msgid "one_off_fee"
+msgstr "ഫീസ് ഓഫ് ഒറ്റ"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "നിയന്ത്രണമില്ലാത്ത ഈ അപ്ലിക്കേഷൻ ആസ്വദിക്കാൻ ദയവായി നവീകരിക്കുക"
+
+msgid "please_enter_your_license_key_below"
+msgstr "ദയവായി ചുവടെ നിങ്ങളുടെ ലൈസൻസ് കീ നൽകുക"
+
+msgid "or"
+msgstr "അഥവാ"
+
+msgid "loading..."
+msgstr "ലോഡിംഗ്..."
+
+msgid "clear_accounts"
+msgstr "മായ്ക്കുക അക്കൗണ്ടുകൾ"
+
+msgid "clear_ssh_keys"
+msgstr "തെളിഞ്ഞ SSH കീകൾ"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "എല്ലാ സംരക്ഷിച്ച SSH കീകൾ ഇല്ലാതാക്കുകയും"
+
+msgid "clear_app_settings"
+msgstr "തെളിഞ്ഞ അപ്ലിക്കേഷൻ ക്രമീകരണങ്ങൾ"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "എല്ലാ അപ്ലിക്കേഷൻ നിർദ്ദിഷ്ട ക്രമീകരണം ഇല്ലാതാക്കുകയും"
+
+msgid "clear_recent_connections"
+msgstr "അടുത്തിടെഉപയോഗിച്ചരചനകള്മായ്ക്കുക കണക്ഷനുകൾ"
+
+msgid "deletes_all_recent_connections"
+msgstr "എല്ലാ സമീപകാല കണക്ഷനുകൾ ഇല്ലാതാക്കുകയും"
+
+msgid "import_type"
+msgstr "ഇംപോർട്ട് ഇനം"
+
+msgid "please_select"
+msgstr "ദയവായി തിരഞ്ഞെടുക്കുക"
+
+msgid "import_file"
+msgstr "ഇറക്കുമതി ഫയൽ"
+
+msgid "choose_file"
+msgstr "ഫയൽ തിരഞ്ഞെടുക്കുക"
+
+msgid "delete_accounts"
+msgstr "അക്കൗണ്ടുകൾ ഇല്ലാതാക്കുക"
+
+msgid "deletes_all_existing_accounts"
+msgstr "നിലവിലുള്ള എല്ലാ അക്കൗണ്ടുകളും ഇല്ലാതാക്കുകയും"
+
+msgid "import_now"
+msgstr "ഇപ്പോൾ ഇംപോർട്ട്"
+
+msgid "none"
+msgstr "ഒന്നുമില്ല"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "പ്രാബല്യത്തിൽ മാറ്റങ്ങൾ sFTP ക്ലയന്റ് അപ്ലിക്കേഷൻ വീണ്ടും ആരംഭിക്കുക."
+
+msgid "already_bought_the_app"
+msgstr "ഇതിനകം അപ്ലിക്കേഷൻ വാങ്ങി?"
+
+msgid "choose"
+msgstr "തിരഞ്ഞെടുക്കുക"
+
+msgid "deleted!"
+msgstr "ഇല്ലാതാക്കി!"
+
+msgid "use_syncronised_browsing"
+msgstr "syncronised ബ്രൗസിംഗ് ഉപയോഗിക്കുകയോ"
+
+msgid "remote_directory"
+msgstr "വിദൂര ഡയറക്ടറി"
+
+msgid "rsa_key_only!"
+msgstr "മാത്രം RSA കീ!"
+
+msgid "no_key_selected"
+msgstr "ഒരു കീയും തിരഞ്ഞെടുത്ത."
+
+msgid "ssh_key_file"
+msgstr "SSH കീ ഫയൽ"
+
+msgid "no_dir_selected"
+msgstr "ഇല്ല dir തിരഞ്ഞെടുത്ത."
+
+msgid "keep_blank_for_current_password"
+msgstr "നിലവിലെ പാസ്വേഡ് ശൂന്യമായി നിലനിർത്തുക."
+
+msgid "logon_type"
+msgstr "ലോഗോൺ ഇനം"
+
+msgid "normal"
+msgstr "സാധാരണ"
+
+msgid "ask_for_password"
+msgstr "പാസ്വേഡ് ചോദിക്കുക"
+
+msgid "anonymous"
+msgstr "പേരറിയാത്ത"
+
+msgid "account_type"
+msgstr "അക്കൗണ്ട് തരം"
+
+msgid "ftp_normal_connection"
+msgstr "എഫ്ടിപി (സാധാരണ കണക്ഷൻ)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (സുരക്ഷിത ബന്ധം)"
+
+msgid "ssh_secure_connection"
+msgstr "എസ്എസ്എച്ച് (സുരക്ഷിത ബന്ധം)"
+
+msgid "folder"
+msgstr "ഫോൾഡർ"
+
+msgid "advanced"
+msgstr "വിപുലമായ"
+
+msgid "folder_name"
+msgstr "ഫോൾഡർ പേര്"
+
+msgid "parent"
+msgstr "രക്ഷാകർതൃ"
+
+msgid "new_ftp_site"
+msgstr "പുതിയ FTP സൈറ്റിൻറെ"
+
+msgid "new_folder"
+msgstr "പുതിയ ഫോള്ഡര്"
+
+msgid "clean_now"
+msgstr "ഇപ്പോൾ ക്ലീൻ"
+
+msgid "host"
+msgstr "ഹോസ്റ്റ്"
+
+msgid "no_accounts_added..."
+msgstr "അക്കൗണ്ടുകളൊന്നും ചേർത്തില്ല ..."
+
+msgid "unknown"
+msgstr "അറിയപ്പെടാത്ത"
+
+msgid "file_saved!"
+msgstr "ഫയൽ സംരക്ഷിച്ചു!"
+
+msgid "uploading_file!"
+msgstr "ഫയൽ അപ്ലോഡ്!"
+
+msgid "save_failed!"
+msgstr "സംരക്ഷിക്കൽ പരാജയപ്പെട്ടു!"
+
+msgid "search"
+msgstr "തിരയൽ"
+
+msgid "find"
+msgstr "കണ്ടെത്തുക"
+
+msgid "replace"
+msgstr "മാറ്റിസ്ഥാപിക്കുക"
+
+msgid "scroll_past_end"
+msgstr "സ്ക്രോൾ കഴിഞ്ഞ എൻഡ്"
+
+msgid "show_annotations"
+msgstr "വ്യാഖ്യാനങ്ങൾ കാണിക്കുക"
+
+msgid "show_gutter"
+msgstr "ഓട കാണിക്കുക"
+
+msgid "show_invisibles"
+msgstr "Invisibles കാണിക്കുക"
+
+msgid "show_print_margin"
+msgstr "പ്രിന്റ് മാർജിൻ കാണിക്കുക"
+
+msgid "highlight_active_line"
+msgstr "സജീവ ലൈൻ ഹൈലൈറ്റ്"
+
+msgid "word_wrap"
+msgstr "വാക്ക് റാപ്പപ്പ്"
+
+msgid "split_code"
+msgstr "സ്പ്ലിട് കോഡ്"
+
+msgid "preferences"
+msgstr "മുൻഗണനകൾ"
+
+msgid "close_all_tabs"
+msgstr "എല്ലാ ടാബുകളും അടയ്ക്കുക"
+
+msgid "close_current_tab"
+msgstr "നിലവിലുള്ള ടാബ് അടയ്ക്കുക"
+
+msgid "auto_save_file_when_i_type"
+msgstr "ഞാൻ ടൈപ്പ് യാന്ത്രിക ഫയൽ സേവ്"
+
+msgid "auto_save"
+msgstr "ഓട്ടോ സംരക്ഷിക്കുക"
+
+msgid "quick_save"
+msgstr "പെട്ടെന്ന് സംരക്ഷിക്കുക"
+
+msgid "documentation"
+msgstr "വിവരണക്കുറിപ്പു്"
+
+msgid "themes"
+msgstr "തീമുകൾ"
+
+msgid "keyboard_shortcuts"
+msgstr "കീബോർഡ് കുറുക്കുവഴികൾ"
+
+msgid "coming_soon"
+msgstr "ഉടൻ വരുന്നു"
+
+msgid "empty"
+msgstr "ഒഴിഞ്ഞ"

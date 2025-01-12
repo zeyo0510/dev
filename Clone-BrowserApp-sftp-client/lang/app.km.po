@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-04-21 15:57+0100\n"
+"PO-Revision-Date: 2016-04-21 15:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "sftpclient"
+msgstr "sFTP Client"
+
+msgid "menu"
+msgstr "ម៉ឺនុយ"
+
+msgid "file"
+msgstr "ឯកសារ"
+
+msgid "view"
+msgstr "មើល"
+
+msgid "edit"
+msgstr "កែសម្រួល"
+
+msgid "help"
+msgstr "ជំនួយ"
+
+msgid "manage_accounts"
+msgstr "គ្រប់គ្រងគណនី"
+
+msgid "import_accounts"
+msgstr "ការនាំចូលគណនី"
+
+msgid "export_accounts"
+msgstr "ការនាំចេញគណនី"
+
+msgid "quick_connect"
+msgstr "ភ្ជាប់រហ័ស"
+
+msgid "message_log"
+msgstr "កំណត់ហេតុសារ"
+
+msgid "local_directory"
+msgstr "ថតមូលដ្ឋាន"
+
+msgid "uploads_downloads"
+msgstr "ឯកសារផ្ទុកឡើង / ទាញយក"
+
+msgid "clear_saved_data"
+msgstr "ជម្រះទិន្នន័យបានរក្សាទុក"
+
+msgid "edit_settings"
+msgstr "កែសម្រួលការកំណត់"
+
+msgid "report_bug"
+msgstr "របាយការណ៍កំហុស"
+
+msgid "suggest_feature"
+msgstr "ផ្ដល់យោបល់លក្ខណៈពិសេសមួយ"
+
+msgid "ask_a_question"
+msgstr "សួរ​មួយ​សំនួរ"
+
+msgid "change_log"
+msgstr "ការផ្លាស់ប្តូរចូល"
+
+msgid "about"
+msgstr "អំពី"
+
+msgid "exit"
+msgstr "ការចាកចេញ"
+
+msgid "host_ip_address"
+msgstr "ម៉ាស៊ីន / អាសយដ្ឋាន IP"
+
+msgid "username"
+msgstr "ឈ្មោះអ្នកប្រើ"
+
+msgid "password"
+msgstr "ការពាក្យសម្ងាត់"
+
+msgid "port"
+msgstr "កំពង់ផែ"
+
+msgid "connect"
+msgstr "ភ្ជាប់"
+
+msgid "welcome"
+msgstr "សូមស្វាគមន៍"
+
+msgid "welcome_intro"
+msgstr "<p> អតិថិជន sFTP គឺអំពីភាពសាមញ្ញ, វាត្រូវបានគេសាងសង់ឡើងនៅលើចំណុចប្រទាក់កម្មវិធីខ្ចប់របស់ Google Chrome / ប្រព័ន្ធប្រតិបត្តិការ Chrome OS ដែលអនុញ្ញាតឱ្យកម្មវិធីមានល្បឿនលឿននិងឆ្លើយតប។ មួយចំនួននៃមុខងាររួមបញ្ចូលទាំងកម្មវិធីគ្រប់គ្រងគណនី FTP ដើម្បីរក្សាទុកឆ្ងា"
+
+msgid "latest_updates"
+msgstr "ការធ្វើឱ្យទាន់សម័យចុងក្រោយបំផុត"
+
+msgid "server_status"
+msgstr "ស្ថានភាពម៉ាស៊ីនបម្រើ"
+
+msgid "license_server"
+msgstr "អាជ្ញាប័ណ្ណម៉ាស៊ីនបម្រើ"
+
+msgid "sftp_support"
+msgstr "ការគាំទ្រ"
+
+msgid "notice_update"
+msgstr "សេចក្តីជូនដំណឹង / ការធ្វើឱ្យទាន់សម័យ"
+
+msgid "website"
+msgstr "គេហទំព័រ"
+
+msgid "clear_all"
+msgstr "ជម្រះទាំងអស់"
+
+msgid "manage"
+msgstr "គ្រប់គ្រង"
+
+msgid "recheck"
+msgstr "ពិនិត្យឡើងវិញ"
+
+msgid "last_release"
+msgstr "ការចេញផ្សាយចុងក្រោយនេះ"
+
+msgid "released"
+msgstr "ចេញផ្សាយ"
+
+msgid "queued"
+msgstr "ដាក់​​ជាជួរ"
+
+msgid "failed"
+msgstr "បរាជ័យក្នុង"
+
+msgid "completed"
+msgstr "បានបញ្ចប់"
+
+msgid "settings"
+msgstr "ការកំណត់"
+
+msgid "add_folder"
+msgstr "បន្ថែមថត"
+
+msgid "add_ftp_account"
+msgstr "បន្ថែមគណនី FTP ដែល"
+
+msgid "file_editor"
+msgstr "កម្មវិធីនិពន្ធឯកសារ"
+
+msgid "editor_preferences"
+msgstr "ចំណង់ចំណូលចិត្តកម្មវិធីនិពន្ធ"
+
+msgid "your_ftp_accounts"
+msgstr "គណនី FTP របស់អ្នក"
+
+msgid "most_recent_used"
+msgstr "ប្រើថ្មីបំផុត។"
+
+msgid "no_connections_yet_made"
+msgstr "មិនមានការតភ្ជាប់ដែលបានធ្វើនៅឡើយទេ"
+
+msgid "no_ftp_accounts_added_yet"
+msgstr "គ្មានគណនី FTP បន្ថែមនៅឡើយទេ"
+
+msgid "most_recent_connections"
+msgstr "ការតភ្ជាប់ថ្មីបំផុត"
+
+msgid "last_10_connections_made"
+msgstr "ចុងក្រោយនេះបានធ្វើឱ្យការតភ្ជាប់ទាំង 10"
+
+msgid "designed_developed_by"
+msgstr "រចនានិងបង្កើតឡើងដោយ"
+
+msgid "about_info"
+msgstr "សូមប្រើវេបសាយរបស់ម៉ាស៊ីនភ្ញៀវតាម sFTP សម្រាប់ការគាំទ្រ, ការគាំទ្រនោះទេគឺត្រូវបានផ្តល់ជូនតាមរយៈគេហទំព័ររបស់យើងជាលក្ខណៈបុគ្គល។"
+
+msgid "local"
+msgstr "ក្នុងស្រុក"
+
+msgid "remote"
+msgstr "ពីចម្ងាយ"
+
+msgid "remote_location_desc"
+msgstr "ឧទាហរណ៍ / public_html"
+
+msgid "create_directory"
+msgstr "បង្កើតថត"
+
+msgid "create_new_directory"
+msgstr "បង្កើតថតថ្មី"
+
+msgid "create_file"
+msgstr "បង្កើតឯកសារ"
+
+msgid "create_new_file"
+msgstr "បង្កើតឯកសារថ្មី"
+
+msgid "refresh_list"
+msgstr "ធ្វើឱ្យស្រស់បញ្ជី"
+
+msgid "change"
+msgstr "ការផ្លាស់ប្តូរ"
+
+msgid "report_a_bug"
+msgstr "របាយការណ៍កំហុស"
+
+msgid "suggest_a_feature"
+msgstr "ផ្ដល់យោបល់លក្ខណៈពិសេសមួយ"
+
+msgid "enter_password"
+msgstr "បញ្ចូលពាក្យសម្ងាត់"
+
+msgid "enter_your_password..."
+msgstr "បញ្ចូលពាក្យសម្ងាត់របស់អ្នក ..."
+
+msgid "passphrase"
+msgstr "ឃ្លាសម្ងាត់"
+
+msgid "enter_your_passphrase..."
+msgstr "បញ្ចូលឃ្លាសម្ងាត់របស់អ្នក ..."
+
+msgid "email_sftp_client"
+msgstr "ម៉ាស៊ីនភ្ញៀវអ៊ីម៉ែល sFTP"
+
+msgid "faqs"
+msgstr "សំនួរញឹកញាប់"
+
+msgid "visit_sftp_client_website"
+msgstr "គេហទំព័រអតិថិជនដំណើរទស្សនកិច្ច sFTP"
+
+msgid "rate_us_on_the_google_chrome_webstore"
+msgstr "អត្រាពួកយើងនៅលើហាងលក់បណ្ដាញ Chrome របស់ Google"
+
+msgid "report_an_issue_or_get_help"
+msgstr "រាយការណ៍បញ្ហាឬទទួលបានជំនួយ"
+
+msgid "join_us_on_facebook_for_updates"
+msgstr "ចូលរួមជាមួយពួកយើងនៅលើហ្វេសប៊ុកសម្រាប់ការធ្វើឱ្យទាន់សម័យ"
+
+msgid "follow_us_on_twitter_for_updates"
+msgstr "តាមពួកយើងនៅលើ Twitter សម្រាប់ការធ្វើឱ្យទាន់សម័យ"
+
+msgid "plus1_us_on_google_for_updates"
+msgstr "+1 ពួកយើងនៅលើ Google សម្រាប់ការធ្វើឱ្យទាន់សម័យ"
+
+msgid "okay"
+msgstr "យល់ព្រម"
+
+msgid "cancel"
+msgstr "បោះបង់"
+
+msgid "close"
+msgstr "បិទ"
+
+msgid "unknown_host"
+msgstr "មិនស្គាល់ម៉ាស៊ីន"
+
+msgid "okay_to_continue"
+msgstr "មិនអីទេដើម្បីបន្តឬ?"
+
+msgid "fingerprint"
+msgstr "ស្នាមម្រាមដៃ"
+
+msgid "remember"
+msgstr "សូមចងចាំ"
+
+msgid "file_permissions"
+msgstr "សិទ្ធិរបស់ឯកសារ"
+
+msgid "file_permissions_desc"
+msgstr "សូមជ្រើសគុណលក្ខណៈថ្មីសម្រាប់ឯកសារដែលបានជ្រើស (s) / ថត (s បាន)"
+
+msgid "read"
+msgstr "អាន"
+
+msgid "write"
+msgstr "ការសរសេរ"
+
+msgid "execute"
+msgstr "ប្រតិបត្តិ"
+
+msgid "owner"
+msgstr "ម្ចាស់"
+
+msgid "group"
+msgstr "ជាក្រុម"
+
+msgid "public"
+msgstr "សាធារណៈ"
+
+msgid "numeric_value"
+msgstr "តម្លៃជាលេខ"
+
+msgid "enter_the_name_of_the_new_directory..."
+msgstr "បញ្ចូលឈ្មោះថតថ្មីនេះ ..."
+
+msgid "enter_the_name_of_the_new_file..."
+msgstr "បញ្ចូលឈ្មោះឯកសារថ្មីនេះ ..."
+
+msgid "name"
+msgstr "ឈ្មោះ"
+
+msgid "enter_a_password"
+msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់​"
+
+msgid "language"
+msgstr "ភាសា"
+
+msgid "seconds"
+msgstr "វិនាទី"
+
+msgid "minutes"
+msgstr "នាទី"
+
+msgid "hour"
+msgstr "ហួរ"
+
+msgid "hours"
+msgstr "ម៉ោងធ្វើការ"
+
+msgid "day"
+msgstr "ថ្ងៃ"
+
+msgid "trial_left"
+msgstr "អង្គជំនុំឆ្វេង"
+
+msgid "register_now"
+msgstr "ចុះឈ្មោះ​ឥឡូវនេះ"
+
+msgid "general"
+msgstr "ទូទៅ"
+
+msgid "security"
+msgstr "សន្ដិសុខ"
+
+msgid "master_password"
+msgstr "ពាក្យសម្ងាត់មេ"
+
+msgid "status"
+msgstr "ស្ថានភាព"
+
+msgid "enabled"
+msgstr "បានបើក"
+
+msgid "disabled"
+msgstr "ជនពិការ"
+
+msgid "timeout"
+msgstr "ដល់​ម៉ោង"
+
+msgid "save"
+msgstr "រក្សាទុក"
+
+msgid "add_account"
+msgstr "បន្ថែមគណនី"
+
+msgid "support"
+msgstr "ការគាំទ្រ"
+
+msgid "notice_updates"
+msgstr "សេចក្តីជូនដំណឹង / ការធ្វើឱ្យទាន់សម័យ"
+
+msgid "please_login"
+msgstr "សូមចូល"
+
+msgid "your_session_timed_out"
+msgstr "សម័យពេលវេលារបស់អ្នក"
+
+msgid "sorry_the_password_you_entered_was_incorrect"
+msgstr "ការសោកស្តាយពាក្យសម្ងាត់ដែលអ្នកបានបញ្ចូលមិនត្រឹមត្រូវ!"
+
+msgid "login"
+msgstr "ចូល"
+
+msgid "master_password_desc"
+msgstr "កំណត់ពាក្យសម្ងាត់មេនេះដើម្បីរក្សាគណនីរបស់អ្នកមានសុវត្ថិភាព។"
+
+msgid "license_key"
+msgstr "គន្លឹះអាជ្ញាប័ណ្ណ"
+
+msgid "online"
+msgstr "លើបណ្តាញ"
+
+msgid "offline"
+msgstr "ក្រៅបណ្តាញ"
+
+msgid "currently_unavailable"
+msgstr "ដែលមិនអាចប្រើបច្ចុប្បន្ន"
+
+msgid "no_message_to_display"
+msgstr "មិនមានសារដើម្បីបង្ហាញ"
+
+msgid "offline_notice_title"
+msgstr "ទៅដល់ - តើអ្នកនៅក្រៅបណ្ដាញឬនៅលើបណ្ដាញតភ្ជាប់តែមួយ?"
+
+msgid "offline_notice_desc"
+msgstr "អ្នកកំពុងនៅក្រៅបណ្ដាញនៅលើបណ្តាញតែការតភ្ជាប់ឬការតភ្ជាប់នោះទេអាចនឹងត្រូវបានបង្កើតឡើងទៅម៉ាស៊ីនបម្រើរបស់យើង"
+
+msgid "edit_file"
+msgstr "កែសម្រួលឯកសារ"
+
+msgid "download"
+msgstr "ទាញយក"
+
+msgid "upload"
+msgstr "ផ្ទុកឡើង"
+
+msgid "host_ip_is_required"
+msgstr "ម៉ាស៊ីន / IP ដែលត្រូវបានទាមទារ"
+
+msgid "apply_to_all_files"
+msgstr "អនុវត្តទៅឯកសារទាំងអស់"
+
+msgid "activate_now"
+msgstr "ធ្វើឱ្យសកម្មឥឡូវនេះ"
+
+msgid "deactivate"
+msgstr "de សកម្ម"
+
+msgid "in_progress"
+msgstr "កំពុង​ដំណើរការ"
+
+msgid "complete"
+msgstr "បានបញ្ចប់"
+
+msgid "direction"
+msgstr "ទិសដៅ"
+
+msgid "progress"
+msgstr "ការរីកចំរើន"
+
+msgid "permissions"
+msgstr "សិទ្ធិ"
+
+msgid "owner_group"
+msgstr "ម្ចាស់ / ក្រុម"
+
+msgid "size"
+msgstr "ទំហំ"
+
+msgid "type"
+msgstr "ប្រភេទ"
+
+msgid "modified"
+msgstr "បានកែប្រែ"
+
+msgid "trial"
+msgstr "ការជំនុំជម្រះ"
+
+msgid "cleared"
+msgstr "ជម្រះ"
+
+msgid "error_connecting"
+msgstr "កំហុសក្នុងការតភ្ជាប់"
+
+msgid "error_connecting_to_host_ip"
+msgstr "កំហុសក្នុងការតភ្ជាប់ទៅម៉ាស៊ីន / អាសយដ្ឋាន IP"
+
+msgid "error_connecting_to_port"
+msgstr "កំហុសក្នុងការតភ្ជាប់ទៅកំពង់ផែ"
+
+msgid "please_select_a_local_directory_first"
+msgstr "សូមជ្រើសថតមូលដ្ឋានជាលើកដំបូង!"
+
+msgid "go"
+msgstr "ចូលទៅ"
+
+msgid "confirm"
+msgstr "អះអាង"
+
+msgid "delete"
+msgstr "លុប"
+
+msgid "rename"
+msgstr "ប្តូរឈ្មោះ"
+
+msgid "copy_urls_to_clipboard"
+msgstr "ចម្លង URL (s) បានទៅក្ដារតម្បៀតខ្ទាស់"
+
+msgid "please_confirm_you_wish_to_delete_the_selected_files_folders"
+msgstr "សូមបញ្ជាក់ថាអ្នកចង់លុបឯកសារដែលបានជ្រើស (s) / ថត (s បាន)"
+
+msgid "cancelled_by_user"
+msgstr "លុបចោលដោយអ្នកប្រើ"
+
+msgid "already_exists_overwrite"
+msgstr "រួចហើយសរសេរជាន់ពីលើ?"
+
+msgid "dashboard"
+msgstr "ផ្ទាំងគ្រប់គ្រង"
+
+msgid "my_accounts"
+msgstr "គណនីរបស់ខ្ញុំ"
+
+msgid "file_saved_all_accounts_have_been_backed_up"
+msgstr "ឯកសាររក្សាទុក! គណនីទាំងអស់ត្រូវបានគាំទ្រឡើង។"
+
+msgid "file_failed_please_try_again"
+msgstr "ឯកសារបានបរាជ័យ! សូម​ព្យាយាម​ម្ដងទៀត។"
+
+msgid "you_currently_have_no_accounts_to_be_backed_up"
+msgstr "បច្ចុប្បន្នអ្នកមិនមានគណនីដែលត្រូវបានគាំទ្រឡើង។"
+
+msgid "saved!"
+msgstr "បានរក្សាទុក!"
+
+msgid "please_enter_a_password"
+msgstr "សូមបញ្ចូលពាក្យសម្ងាត់មួយ!"
+
+msgid "connection_closed"
+msgstr "ការតភ្ជាប់បានបិទ"
+
+msgid "listing_mode_set_to"
+msgstr "Listing របៀបកំណត់ឱ្យ"
+
+msgid "local_server_ip_resolved_using_external_ip"
+msgstr "ដោះស្រាយ IP របស់ម៉ាស៊ីនបម្រើមូលដ្ឋានដោយប្រើ IP ខាងក្រៅ"
+
+msgid "login_incorrect"
+msgstr "ការចូលមិនត្រឹមត្រូវ"
+
+msgid "keeping_connection_alive"
+msgstr "ការរក្សាការតភ្ជាប់នៅរស់"
+
+msgid "unable_to_write_data_connection_closed"
+msgstr "មិនអាចសរសេរទិន្នន័យដែលបានបិទការតភ្ជាប់"
+
+msgid "unable_to_read_data_connection_closed"
+msgstr "មិនអាចអានទិន្នន័យដែលបានបិទការតភ្ជាប់"
+
+msgid "error_reading_file"
+msgstr "កំហុសក្នុងការអានឯកសារ"
+
+msgid "error_writing_file"
+msgstr "កំហុសក្នុងការសរសេរឯកសារ"
+
+msgid "failed_to_change_directory_to"
+msgstr "បានបរាជ័យក្នុងការផ្លាស់ប្តូរថតទៅ"
+
+msgid "you_may_not_have_the_correct_permissions_to_access_this_directory"
+msgstr "អ្នកប្រហែលជាមិនមានសិទ្ធិត្រឹមត្រូវដើម្បីចូលដំណើរការថតនេះ"
+
+msgid "reverting_back_to_previous_directory"
+msgstr "ត្រលប់មកវិញដើម្បីថតមុន"
+
+msgid "activate"
+msgstr "ធ្វើឱ្យសកម្ម"
+
+msgid "payment"
+msgstr "ការទូទាត់"
+
+msgid "license_key_is_required"
+msgstr "គន្លឹះអាជ្ញាប័ណ្ណគឺត្រូវបានទាមទារ"
+
+msgid "license_activated!"
+msgstr "អាជ្ញាប័ណ្ណធ្វើឱ្យសកម្ម!"
+
+msgid "your_license_has_been_validated"
+msgstr "អាជ្ញាប័ណ្ណរបស់អ្នកត្រូវបានធ្វើឱ្យមានសុពលភាព។"
+
+msgid "thank_you!"
+msgstr "អរគុណ!"
+
+msgid "buy_now!"
+msgstr "ទិញ​ឥឡូវនេះ!"
+
+msgid "buy_now"
+msgstr "ទិញ​ឥឡូវនេះ"
+
+msgid "one_off_fee"
+msgstr "មួយបិទថ្លៃ"
+
+msgid "please_upgrade_to_enjoy_this_app_with_no_restrictions"
+msgstr "សូមធ្វើឱ្យប្រសើរឡើងដើម្បីរីករាយជាមួយកម្មវិធីនេះដោយមានការរឹតបន្តឹងទេ"
+
+msgid "please_enter_your_license_key_below"
+msgstr "សូមបញ្ចូលកូនសោអាជ្ញាប័ណ្ណរបស់អ្នកនៅខាងក្រោម"
+
+msgid "or"
+msgstr "ឬ"
+
+msgid "loading..."
+msgstr "កំពុងផ្ទុក ..."
+
+msgid "clear_accounts"
+msgstr "ជម្រះការគណនី"
+
+msgid "clear_ssh_keys"
+msgstr "ជម្រះការគ្រាប់ចុច SSH"
+
+msgid "deletes_all_saved_ssh_keys"
+msgstr "លុបសោបានផ្ទៀងផ្ទាត់ SSH ដែលបានរក្សាទុកទាំងអស់"
+
+msgid "clear_app_settings"
+msgstr "ការច្បាស់លាស់ការកំណត់កម្មវិធី"
+
+msgid "deletes_all_app_specific_settings"
+msgstr "លុបកម្មវិធីទាំងអស់ការកំណត់ជាក់លាក់"
+
+msgid "clear_recent_connections"
+msgstr "ជម្រះការតភ្ជាប់ថ្មី"
+
+msgid "deletes_all_recent_connections"
+msgstr "លុបការតភ្ជាប់ថ្មីទាំងអស់"
+
+msgid "import_type"
+msgstr "ប្រភេទនាំចូល"
+
+msgid "please_select"
+msgstr "សូមជ្រើសរើស"
+
+msgid "import_file"
+msgstr "នាំចូលឯកសារ"
+
+msgid "choose_file"
+msgstr "ជ្រើសរើស​ឯកសារ"
+
+msgid "delete_accounts"
+msgstr "លុបគណនី"
+
+msgid "deletes_all_existing_accounts"
+msgstr "លុបគណនីដែលមានស្រាប់ទាំងអស់"
+
+msgid "import_now"
+msgstr "នាំចូលឥឡូវ"
+
+msgid "none"
+msgstr "គ្មាន"
+
+msgid "please_restart_sftp_client_app_for_the_changes_to_take_effect"
+msgstr "សូមចាប់ផ្ដើមកម្មវិធីម៉ាស៊ីនភ្ញៀវ sFTP សម្រាប់ការផ្លាស់ប្តូរមានប្រសិទ្ធិភាព។"
+
+msgid "already_bought_the_app"
+msgstr "ទិញកម្មវិធីនេះរួចទៅហើយ?"
+
+msgid "choose"
+msgstr "ជ្រើស"
+
+msgid "deleted!"
+msgstr "លុប!"
+
+msgid "use_syncronised_browsing"
+msgstr "ប្រើការរុករក syncronised"
+
+msgid "remote_directory"
+msgstr "ថតពីចម្ងាយ"
+
+msgid "rsa_key_only!"
+msgstr "គន្លឹះសាលាភូមិន្ទរដ្ឋបាលតែប៉ុណ្ណោះ!"
+
+msgid "no_key_selected"
+msgstr "គ្មានកូនសោដែលបានជ្រើស។"
+
+msgid "ssh_key_file"
+msgstr "ការ SSH ឯកសារសោ"
+
+msgid "no_dir_selected"
+msgstr "មិនមានថតដែលបានជ្រើសរើស។"
+
+msgid "keep_blank_for_current_password"
+msgstr "រក្សាទទេសម្រាប់ពាក្យសម្ងាត់បច្ចុប្បន្ន។"
+
+msgid "logon_type"
+msgstr "ចូលប្រភេទ"
+
+msgid "normal"
+msgstr "ធម្មតា"
+
+msgid "ask_for_password"
+msgstr "ស្នើសុំពាក្យសម្ងាត់"
+
+msgid "anonymous"
+msgstr "អនាមិក"
+
+msgid "account_type"
+msgstr "ប្រភេទ​គណនី"
+
+msgid "ftp_normal_connection"
+msgstr "FTP (ការតភ្ជាប់ធម្មតា)"
+
+msgid "sftp_secure_connection"
+msgstr "SFTP (ការតភ្ជាប់សុវត្ថិភាព)"
+
+msgid "ssh_secure_connection"
+msgstr "SSH (ការតភ្ជាប់សុវត្ថិភាព)"
+
+msgid "folder"
+msgstr "ថត"
+
+msgid "advanced"
+msgstr "កម្រិតខ្ពស់"
+
+msgid "folder_name"
+msgstr "ឈ្មោះថត"
+
+msgid "parent"
+msgstr "មាតាបិតា"
+
+msgid "new_ftp_site"
+msgstr "តំបន់បណ្តាញ FTP ដែលថ្មី"
+
+msgid "new_folder"
+msgstr "ប្រអប់​ឯកសារ​ថ្មី"
+
+msgid "clean_now"
+msgstr "លាងសមាតឥឡូវ"
+
+msgid "host"
+msgstr "ម៉ាស៊ីន"
+
+msgid "no_accounts_added..."
+msgstr "គ្មានគណនីបន្ថែម ..."
+
+msgid "unknown"
+msgstr "មិន​ស្គាល់"
+
+msgid "file_saved!"
+msgstr "ឯកសាររក្សាទុក!"
+
+msgid "uploading_file!"
+msgstr "ការផ្ទុកឯកសារឡើង!"
+
+msgid "save_failed!"
+msgstr "រក្សាទុកបានបរាជ័យ!"
+
+msgid "search"
+msgstr "ស្វែងរក"
+
+msgid "find"
+msgstr "សែ្វងរក"
+
+msgid "replace"
+msgstr "ជំនួស"
+
+msgid "scroll_past_end"
+msgstr "រមូរបញ្ចប់អតីតកាល"
+
+msgid "show_annotations"
+msgstr "បង្ហាញចំណារពន្យល់"
+
+msgid "show_gutter"
+msgstr "បង្ហាញប្រឡាយ"
+
+msgid "show_invisibles"
+msgstr "បង្ហាញមើលមិនឃើញ"
+
+msgid "show_print_margin"
+msgstr "បង្ហាញរឹមបោះពុម្ព"
+
+msgid "highlight_active_line"
+msgstr "បន្លិចបន្ទាត់សកម្ម"
+
+msgid "word_wrap"
+msgstr "រុំពាក្យ"
+
+msgid "split_code"
+msgstr "ការបំបែកកូដ"
+
+msgid "preferences"
+msgstr "ចំណង់ចំណូលចិត្ត"
+
+msgid "close_all_tabs"
+msgstr "បិទផ្ទាំងទាំងអស់"
+
+msgid "close_current_tab"
+msgstr "បិទផ្ទាំងបច្ចុប្បន្ន"
+
+msgid "auto_save_file_when_i_type"
+msgstr "រក្សាទុកឯកសារដោយស្វ័យប្រវត្តិនៅពេលដែលខ្ញុំវាយ"
+
+msgid "auto_save"
+msgstr "រក្សាទុកដោយស្វ័យប្រវត្តិ"
+
+msgid "quick_save"
+msgstr "រក្សាទុករហ័ស"
+
+msgid "documentation"
+msgstr "ឯកសារ"
+
+msgid "themes"
+msgstr "ស្បែក"
+
+msgid "keyboard_shortcuts"
+msgstr "ផ្លូវកាត់ក្ដារចុច"
+
+msgid "coming_soon"
+msgstr "ការមកមិនយូរប៉ុន្មាន"
+
+msgid "empty"
+msgstr "ទទេ"
