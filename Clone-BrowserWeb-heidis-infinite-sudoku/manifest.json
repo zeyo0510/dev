@@ -1,0 +1,22 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "app.html"
+      }
+   },
+   "content_security_policy": "script-src 'self' https://jsonlib.appspot.com; object-src 'self'",
+   "description": "Sudoku for puzzle lovers. Billions of accurately rated puzzles, gentle hints, save files, colors, notes, touch, keyboard shortcuts.",
+   "icons": {
+      "128": "sudoku-icon-128.png",
+      "16": "sudoku-icon-16.png",
+      "96": "sudoku-icon-96.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8+OLHfhG73su4X5/uxQuqhxiO6hxIzxh4e7on9gjlG8XBO2XRfJ48wyCwhHcRry+WaXfqpnh3KvmPy7J/FfpdmQHdh4cYXwV69kf3cNEMlYXGis4Lc3id1KlIb5NRNWRDi5peiUuDSzz4CpwS8pm8lQhCLKQSxUoqa8Zkm+LSnwIDAQAB",
+   "manifest_version": 2,
+   "name": "Heidi's Infinite Sudoku",
+   "offline_enabled": true,
+   "permissions": [  ],
+   "short_name": "Sudoku",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.0.67"
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<title>Heidi's Infinite Sudoku</title>
+<link rel=stylesheet href=sudoku-ui.css>
+<script src=jquery-2.1.1.js></script>
+<script src=jquery.ba-bbq.js></script>
+<script src=jsonlib.js></script>
+<script src=seedrandom.js></script>
+<script src=sudoku.js></script>
+<script src=sudoku-hint.js></script>
+<script src=sudoku-ui.js></script>
+<script src=english.js></script>
+<body>
+<table style="width:100%;height:100%;"><tr><td align=center>
+<center style="display:table-cell;vertical-align:middle;">
+<div class=puzzlename id=grade>&nbsp;</div>
+<table class=timescore><tr>
+<td style=text-align:left>
+<span class=progress>Time</span>
+<span class=finished>Finished in</span> <span class=timer>0</span></td>
+<td style=text-align:right>
+<span class=hinttext>Hints <span class=hints>0</span></span></td>
+</tr></table>
+<table><tr>
+<td style=text-align:center id=leftlayout>
+<p>
+<input type=button value="Color" id=colorbutton
+   title="Show colors.  Ctrl to clear colors."
+</td>
+<td>
+<center id=centerlayout>
+<input type=button value="File" id=filebutton
+   title="Load or save.  Ctrl to load a 17-hint Sudoku."
+><input type=button value="Clear" id=clearbutton
+   title="Reset puzzle.  Ctrl for empty puzzle."
+><input type=button value="Check" id=checkbutton
+   title="Check for mistakes.  Ctrl to show mistake."
+><input type=button value="&laquo; Prev" id=prevbutton
+   title="Previous puzzle.  Ctrl to go back 10."
+><input type=button value="Next &raquo;" id=nextbutton
+   title="Next puzzle.  Ctrl to go forward 10."
+><input type=button value="Hint" id=hintbutton
+   title="Show a hint.  Ctrl for an explicit hint."
+><input type=button value="Marks" id=markbutton
+   title="Auto pencilmarks.  Ctrl to clear marks."
+><input type=button value="Timer" id=timerbutton
+   title="Show timer.  Ctrl to reveal solution."
+>
+</center>
+</td>
+<td id=rightlayout>
+</td>
+</tr>
+</table>
+<div class=sudoku-popup id=victory>You Win!</div>
+<div class=sudoku-popup id=ok>ok so far</div>
+<div class=sudoku-popup id=errors>mistake</div>
+<div class=sudoku-popup id=nohint>no hint</div>
+<div class=sudoku-popup id=file><div class=save-outerbox>
+<div class=save-closebutton></div>
+<center>Saved Games</center>
+<div class=save-listbox><ul><li>
+<input type=text value="Saved Game" id=savename>
+<input type=button value="Save Current Game" id=savecurrent>
+<input type=button value="Save New Copy" disabled id=savecopy>
+</li></ul></div>
+<div class=save-link>
+<a id=shortenurl href="http://goo.gl/">save as url</a>
+<input id=shortenedurl>
+</div>
+<div style="position:relative;text-align:right">
+<input type=button value="Select All" id=selectall
+><input type=button value="Delete Selected" id=deleteselected
+><input type=button value="Load Selected" id=loadselected
+></div></div></div>
+<p align=center style="margin:15px 0 0 0;font: 10pt Open Sans">
+<a href="about.html"
+>About Heidi's Infinite Sudoku</a>
+&emsp;
+<a href="https://chrome.google.com/webstore/detail/heidis-infinite-sudoku/ccbhekjfmokgloklnjnidfhlaofegeno/reviews"
+>Love it? Rate this app.</a>
+</p>
+</td></tr>
+</table>
