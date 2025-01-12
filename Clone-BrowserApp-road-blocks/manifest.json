@@ -1,0 +1,22 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "Connect the map in this road building puzzle game.",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwVQNKl2/4wcJnlp35tPGFPheYt5x3R72rzQ4Y2DWHZjg7U1kTAciy/6co/iiXL1ULrbwhf0tBrIyIQqkccEhVcoqMaWcD6fcFlRbszh/fE5rAIsNuNKh8f8WED+SfMh9gXZg2D0cgGr9Pq3dMBIn2KMsAWbAjOs+sCjE5lTyAmPuf6Jfef4eGdCWL3d0twnBLSFs00cZhefewVJmncxoItEYJwudlg/lp8XXCK1KGEGIE+XEMkvp0oPvUDpLd1ec9rb5RLGKArEVJAt55M+95Dmc/2OlkRBfiknUSzvx23xscjA8ov2NrCkiqxy0Sr35kCXcblkp2uQvPG4T1SkJjwIDAQAB",
+   "manifest_version": 2,
+   "name": "Road Blocks",
+   "offline_enabled": true,
+   "permissions": [ "fullscreen", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.0"
+}
