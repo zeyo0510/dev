@@ -1,0 +1,59 @@
+﻿.tree-view {
+    list-style:none;
+   
+    margin: 0;
+    padding:10px;
+    color:#ffffff;
+   font-size:12px;
+  display:inline-block;
+}
+  
+    .tree-view .tree-view-item {
+  cursor: default;
+  width:104%;
+  height:18px;
+  display:inline-block;
+
+    }
+    .tree-view ul {
+    display:none;
+      list-style:none;
+     padding-left: 20px;
+      
+    }
+
+.treeview-item-arrow {
+float:left;
+width:12px;
+height:12px;
+   margin-top:2px;
+}
+.treeview-item-arrow-image {
+  
+    background:url('res/arrow.png') no-repeat center center;
+}
+.treeview-item-image {
+float:left;
+width:16px;
+height:16px;
+margin-left:7px;
+display:none;
+background-repeat:no-repeat;
+background-position:center center;
+ background-size:contain;
+}
+.treeview-item-title {
+    float:left;
+    margin-left:4px;
+    padding: 0px 4px 2px 4px;
+    white-space:pre;
+}
+.tree-view .selected {
+background-color:#35618D;
+}
+.treeview-item-edit {
+    background-color: #fff;
+    color: #000;
+    outline:none;
+
+}

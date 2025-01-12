@@ -1,0 +1,54 @@
+﻿.tabview-cnt {
+  color:#ffffff;
+   font-size:12px;
+ position: relative;
+   overflow:hidden;
+  
+ 
+ 
+}
+.tabview-cnt .tabview-header {
+   border-bottom: 1px solid #C47F3A;
+    overflow: hidden;
+
+}
+ .tabview-cnt   .tabview-header .tabview-tab {
+    float:left;
+    padding:5px 10px 5px 5px;
+   background-color:#323232;
+ cursor:default;
+   color:#c1c1bf;
+    }
+ .tabview-cnt   .tabview-header .activeTab {
+background-color: #C47F3A;
+    border-bottom:none;
+    color:#fff;
+
+    }
+.tabview-cnt        .tabview-header .tabview-tab span {
+        float:left;
+        }
+.tabview-cnt        .tabview-header .tabview-tab .tab-close {
+        width:14px;
+        height:14px;
+        float:right;
+      background:url('res/close.png') center center no-repeat;
+        margin-left:10px;
+        visibility:hidden;
+        }
+
+.tabview-cnt 
+
+.tab-cnt {
+
+ display:none;
+ overflow:hidden;
+ background-color:#1e1e1e;
+
+ 
+}
+
+.tabview-cnt .tab-hover{
+    background-color:#3e3e40;
+}
+

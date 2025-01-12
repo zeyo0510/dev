@@ -1,0 +1,29 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
+      }
+   },
+   "author": "Taron Mehrabyan",
+   "description": "Development environment for Chrome OS and Chrome Borwser.",
+   "icons": {
+      "128": "logo-128.png",
+      "16": "logo-16.png",
+      "256": "logo-256.png",
+      "32": "logo-32.png",
+      "64": "logo-64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3EDfIdMK82yHC+cV5CzzI4rsFuTyZDWpzh5KZiSdRamyZbzFBuWVxY2o49Kqb1v+ddMdrpf7wAxQAQyUyQ0yMjbJc89uz3u+liTxI6TQkgYystyLe73kP29bYGxm2xQg2VaDYzbbYa6Gufs/9XmsOQtGhJ2Wp5BFh+Layj0FiYAOFC8s3+X0jCaChvs42QDe2Swhb6hFcMw5vS9wnavu/cOV/WZxOMHW2zzYCtWgHenNAJRqf08dL3S7Vfaj2UODYstfYmHoxQGLr8yjXWpWnh9QwDTMgC4mXSEzOWB0t6UtXNl+/Ny2eGsHMyjJrRBIgPUYk0Zlx+1dSvaXNzITbwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "31",
+   "name": "Puresolid IDE",
+   "offline_enabled": true,
+   "permissions": [ "storage", "notifications", "unlimitedStorage", {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   }, "clipboardRead", "clipboardWrite", "http://localhost:37880/", "http://puresolid.net/", {
+      "socket": [ "tcp-connect", "udp-bind::", "tcp-listen::", "udp-send-to::" ]
+   } ],
+   "short_name": "Puresolid",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.6"
+}

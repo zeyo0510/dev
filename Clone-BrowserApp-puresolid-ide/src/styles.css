@@ -1,0 +1,205 @@
+﻿@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:url('/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src:url('/fonts/code/SourceCodePro-Regular.ttf') format('truetype');
+}
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",Arial,sans-serif;
+    background-color: #2d2d30;
+    overflow:hidden;
+    color:#f1f1f1;
+   
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    height:11px;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+    border-radius: 2px;
+      
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px #fcfcfc; 
+}
+#titlebar {
+    width: 100%;
+    height: 45px;
+    -webkit-app-region: drag;
+    color: #f1f1f1;
+    background: url('../../res/logo.png') no-repeat 10px center;
+    background-color: #252526;
+    border-bottom: 1px solid #3f3f3f;
+    background-size: 32px;
+}
+
+#title {
+   font-size: 20px;
+    margin-left: 50px;
+    width: 202px;
+    float: left;
+    padding-top: 8px;
+    font-weight:300;
+    cursor:default;
+}
+#loginLnk{
+    float:right;
+  color:#f1f1f1;
+  font-size:12px;
+margin: 12px;
+  text-decoration:none;
+}
+#loginLnk:hover{
+     text-decoration:underline;
+}
+#title-btns-cnt {
+
+height: 39px;
+float: right;
+-webkit-app-region: no-drag;
+    
+}
+#close{
+
+   background-image: url('/res/close.png') ;
+    
+}
+#min{
+
+   background-image: url('/res/min.png') ;
+    
+}
+#settings{
+
+   background-image: url('/res/settings.png') ;
+   background-size:18px 18px;
+   margin-right:10px;
+    
+}
+#max{
+     background-image: url('/res/restore.png') ;
+}
+#statusBar {
+}
+
+.ql-cnt {
+    width: 200px;
+    height: 21px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+  
+}
+
+#quick-launch {
+    width: 175px;
+    height: 21px;
+    float: left;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    padding-left: 5px;
+    -webkit-app-region: no-drag;
+    background-color: #333337;
+    color: #999999;
+    font-size: 12px;
+}
+
+.ql-cnt:hover {
+    background-color: #3f3f46;
+}
+
+    .ql-cnt:hover #quick-launch {
+        background-color: #3f3f46;
+        color: #ffffff;
+    }
+
+#quick-launch:hover {
+}
+
+.ql-search {
+    width: 20px;
+    height: 20px;
+    background-image: url('assest/search.png') ;
+     background-repeat: no-repeat;
+   background-position: center center;
+    float: right;
+}
+
+.title-btns {
+   
+    width: 33px;
+    height: 33px;
+    float: right;
+     background-repeat: no-repeat;
+   background-position: center center;
+    -webkit-app-region: no-drag;
+}
+    
+#close:hover, #max:hover, #min:hover, #settings:hover {
+    background-color: #3a3a3b;
+  
+}
+
+#statusBar {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(0,122,204);
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+    
+}
+
+#content {
+width:100%;
+
+  
+}
+#solution-explorer-cnt{
+    float:left;
+}
+#code-editor {
+    float:right;
+ 
+}
+
+#toolbox {
+ 
+  width:250px;
+}
+div {
+user-select:none;
+-webkit-user-select:none;
+
+ 
+}
+.newpejLabel {
+
+}

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Report</title>
+
+    <link href="src/views/window/window.css" rel="stylesheet" />
+    <link href="src/views/button/button.css" rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: url('/fonts/OpenSans-Light.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: url('/fonts/OpenSans-Bold.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Source Code Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/code/SourceCodePro-Regular.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans",Arial,sans-serif;
+            background-color: #2d2d30;
+            overflow: hidden;
+            color: #585858;
+        }
+
+        .new-project-label {
+            float: left;
+            margin-top: 3px;
+          
+        }
+
+        .new-project-text {
+            height: 10px;
+            padding: 0px;
+          
+            float: left;
+            border:1px solid #c8c8c8;
+       width: 408px;
+margin-left: 10px;
+            padding: 5px;
+          
+            outline: 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body style="margin:0;padding:0">
+    <div class="wnd normal-wnd " style=" display: block;">
+    <div class="wnd-header" style="-webkit-app-region: drag;"><div class="wnd-title">What's wrong?</div><div class="wnd-btn" id="close_btn" style="-webkit-app-region: no-drag;"></div></div>
+    <div class="wnd-cnt" style="height: 402px;background-color:#fcfcfc;">
+        <div class="layout" style="height: 320px;">
+            <textarea maxlength="5000" id="message_txt" style="margin-left: 8px;width: 501px;resize:none;margin-top: 9px;height: 280px;border:1px solid #c8c8c8;padding:10px; color: #585858;"></textarea>
+        </div>
+        <div class="layout" style="height: 27px; padding-left: 10px; padding-top: 5px;">
+        <div class="new-project-label newpejLabel" >Email (optional):</div>
+            <input type="text" class="new-project-text" id="email_txt" maxlength="100" /></div>
+        <div class="layout"><div class="layout" style="float: right; margin-right: 10px; margin-top: 15px;">
+            <div id="loader" style="width:24px;height:24px;float:left;margin-right: 6px;background:url('res/loader.GIF') no-repeat center center;margin-top: -2px;display:none; "></div>
+            <button class="button" style="margin-right: 6px;border-color:#a4a4a4;width: 105px;" id="send_btn">Send Feedback</button><button class="button" style="border-color:#a4a4a4" id="cancel_btn">Cancel</button></div></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="src/modules/report.js"></script>

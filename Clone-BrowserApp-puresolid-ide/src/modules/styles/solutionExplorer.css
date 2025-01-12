@@ -1,0 +1,47 @@
+﻿#solution-explorer {
+   
+  width:250px;
+}
+
+.se-tabview-cnt .tabview-header {
+   border-bottom: none; 
+   background-color:#252526;
+
+}
+
+.se-tabview-cnt
+ 
+ .tab-cnt {
+      background-color:#252526;
+      overflow:auto;
+}
+ .se-tabview-cnt   .tabview-header .tabview-tab {
+  
+         background-color:#252526;
+    padding:5px 10px 5px 5px;
+     color:#cccccc;
+     font-size:18px;
+     cursor:pointer;
+  
+    }
+  .se-tabview-cnt   .tabview-header .tabview-tab:last-child{
+      float:right;
+      margin-right:20px;
+  }
+  .se-tabview-cnt   .tabview-header .tabview-tab:first-child{
+         float:left;
+      margin-left:20px;
+  }
+  .se-tabview-cnt   .tabview-header .activeTab {
+     background-color:#252526;
+    border-bottom:none;
+    color:#1990e8;
+    }
+
+  .se-tabview-cnt       .tabview-header .tabview-tab .tab-close {
+       display:none;
+        }
+
+  .se-tabview-cnt .tab-hover{
+    background-color:red;
+}

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Puresolid</title>
+   
+    <link href="/src/styles.css" rel="stylesheet" />
+
+    <link href="/src/views/window/window.css" rel="stylesheet" />
+    <script src="/src/views/window/window.js"></script>
+
+    <link href="src/views/messageBox/messageBox.css" rel="stylesheet" />
+    <script src="src/views/messageBox/messageBox.js"></script>
+
+    <link href="/src/views/treeview/treeview.css" rel="stylesheet" />
+    <script src="/src/views/treeview/treeview-item.js"></script>
+    <script src="/src/views/treeview/treeview.js"></script>
+
+    <link href="/src/views/toolbar/toolbar.css" rel="stylesheet" />
+    <script src="/src/views/toolbar/toolbar-tem.js"></script>
+    <script src="/src/views/toolbar/toolbar.js"></script>
+
+    <link href="/src/views/tab-control/tab-control.css" rel="stylesheet" />
+    <script src="/src/views/tab-control/tab-item.js"></script>
+    <script src="/src/views/tab-control/tab-control.js"></script>
+
+    <link href="/src/views/listView/listView.css" rel="stylesheet" />
+    <script src="/src/views/listView/listViewItem.js"></script>
+    <script src="/src/views/listView/listView.js"></script>
+
+    <link href="/src/views/layout/layout.css" rel="stylesheet" />
+    <script src="/src/views/layout/layout.js"></script>
+
+    <link href="/src/views/contextmenu/contextmenu.css" rel="stylesheet" />
+    <script src="/src/views/contextmenu/contextmenu-Item.js"></script>
+    <script src="/src/views/contextmenu/contextmenu.js"></script>
+
+    <script src="/src/webserver/underscore.js"></script>
+    <script src="/src/webserver/webapp.js"></script>  
+    <script src="/src/webserver/buffer.js"></script>
+    <script src="/src/webserver/common.js"></script>
+    <script src="/src/webserver/connection.js"></script>
+    <script src="/src/webserver/handlers.js"></script>
+    <script src="/src/webserver/httplib.js"></script>
+    <script src="/src/webserver/mime.js"></script>
+    <script src="/src/webserver/request.js"></script>
+    <script src="/src/webserver/stream.js"></script>
+
+   
+    <script src="/src/filesystem/ImageViewer.js"></script>
+    <link href="/src/views/button/button.css" rel="stylesheet" />
+    <script src="/src/views/button/button.js"></script>
+
+    <script src="/src/templates/templates.js"></script>
+
+    <script src="/src/project/fileSystem.js"></script>
+    <script src="/src/project/project.js"></script>
+    <script src="src/filesystem/chromeFileSystem.js"></script>
+    <script src="/src/filesystem/HTML5FileSystem.js"></script>
+    <script src="/src/filesystem/mimeType.js"></script>
+
+    <link href="/lib/cm/styles/codemirror.css" rel="stylesheet" />
+    <script src="/lib/cm/codemirror.js"></script>
+
+    <link href="/lib/cm/styles/show-hint.css" rel="stylesheet" />
+    <script src="/lib/cm/addon/show-hint.js"></script>
+    <script src="/lib/cm/addon/javascript-hint.js"></script>
+    <script src="/lib/cm/addon/xml-hint.js"></script>
+    <script src="/lib/cm/addon/html-hint.js"></script>
+    <script src="lib/cm/addon/css-hint.js"></script>
+    <script src="/lib/cm/addon/closebrackets.js"></script>
+    <script src="/lib/cm/addon/matchbrackets.js"></script>
+    <script src="lib/cm/addon/formatting.js"></script>
+    <script src="/lib/cm/addon/active-line.js"></script>
+    <script src="lib/cm/addon/xml-fold.js"></script>
+    <script src="lib/cm/addon/closetag.js"></script>
+    <script src="lib/cm/addon/matchtags.js"></script>
+    <script src="/lib/cm/lang/css.js"></script>
+    <script src="/lib/cm/addon/clike.js"></script>
+    <script src="lib/cm/addon/php.js"></script>
+    <script src="/lib/cm/lang/htmlmixed.js"></script>
+    <script src="/lib/cm/lang/javascript.js"></script>
+    <script src="/lib/cm/lang/xml.js"></script>
+    <link href="lib/cm/styles/dialog.css" rel="stylesheet" />
+    <script src="lib/cm/addon/openDialog.js"></script>
+    <script src="lib/cm/addon/searchcursor.js"></script>
+    <script src="lib/cm/addon/search.js"></script>
+
+    <script src="/src/core/core.js"></script>
+
+    <link href="/src/modules/styles/codeDesigner.css" rel="stylesheet" />
+    <link href="/src/modules/styles/newProject.css" rel="stylesheet" />
+    <link href="src/modules/styles/settings.css" rel="stylesheet" />
+    <link href="/src/modules/styles/solutionExplorer.css" rel="stylesheet" />
+    <script src="/src/modules/toolbox.js"></script>
+    <script src="/src/modules/source-designer.js"></script>
+    <script src="/src/modules/solution-explorer.js"></script>
+    <script src="/src/modules/open-project.js"></script>
+    <script src="src/modules/report.js"></script>
+    <script src="/src/modules/new-project.js"></script>
+    <script src="/src/modules/new-file.js"></script>
+    <script src="/src/modules/settings.js"></script>
+   
+    <script src="/src/core/runtime.js"></script>
+    <script src="/src/app.js"></script>
+
+  
+
+</head>
+<body>
+    <div id="titlebar">
+        <div id="title">Puresolid<sup style="font-size:14px;"> alpha</sup></div>
+        <div id="title-btns-cnt">
+        <div id="close" class="title-btns" title="Close"></div>
+        <div id="max" class="title-btns" title="Maximize"></div>
+        <div id="min" class="title-btns" title="Minimize"></div>
+            <div id="settings" class="title-btns" title="Settings"></div>
+            </div>
+        <!--<div class="ql-cnt"><input id="quick-launch" type="text" value="Quick Launch (Ctrl+Q)"/><div class="ql-search"></div></div>-->
+        <!--<a href="#" id="loginLnk">Singn In</a>-->
+    </div>
+    <div id="menu-cnt" class="menu-cnt">
+
+    </div>
+    <div id="content">
+
+
+        <div id="code-editor">
+
+
+        </div>
+        <div id="solution-explorer-cnt">
+
+        </div>
+    </div>
+
+</body>
+</html>

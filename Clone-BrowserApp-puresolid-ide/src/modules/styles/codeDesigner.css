@@ -1,0 +1,17 @@
+﻿.source-text-area {
+   
+  height:800px;
+       background-color:#1e1e1e;
+    color:#fff;
+    border:0px;
+    outline :none;
+}
+.code_desc{
+    position:absolute;
+  color: rgba(9, 9, 9, 0.61);
+left: 35%;
+text-shadow: 1px 1px 1px rgba(65, 65, 65, 1);
+    font-style:italic;
+    top:45%;
+    font-size:32px;
+}

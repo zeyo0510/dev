@@ -1,0 +1,89 @@
+﻿
+
+/*Light Theme*/
+
+
+.CodeMirror {
+
+background-color: #FFFFFF;
+color:#000000;
+}
+
+.CodeMirror-activeline-background {
+background: #EFFBFF;
+border-top: 1px solid #A3BDFF;
+border-bottom: 1px solid #A3BDFF;
+}
+
+.CodeMirror-gutters {
+border-right: 1px solid #C4C4C4;
+background-color: #DFDFDF;
+
+}
+
+
+
+.CodeMirror-linenumber {
+color:#3B82CF
+}
+.cm-s-default .cm-keyword {color: #0063ff;}
+.cm-s-default .cm-atom {color:#1B73E2;}
+.cm-s-default .cm-number {color: #000000;}
+.cm-s-default .cm-def {color: #000000;}
+.cm-s-default .cm-variable {color: #000000;}
+.cm-s-default .cm-variable-2 {color: #000000;}
+.cm-s-default .cm-variable-3 {color: #000000;}
+.cm-s-default .cm-property   {color: #000000;}
+.cm-s-default .cm-operator   {color: #000000;}
+.cm-s-default .cm-comment    {color: #a50;}
+.cm-s-default .cm-string     {color: #22A300;}
+.cm-s-default .cm-string-2   {color: #f50;}
+.cm-s-default .cm-meta       {color: #777777;}
+.cm-s-default .cm-qualifier  {color: #a31515;}
+.cm-s-default .cm-builtin    {color: #a31515;}
+.cm-s-default .cm-bracket    {color: #997;}
+.cm-s-default .cm-tag        {color: #b75327;}
+.cm-s-default .cm-attribute  {color: #1E5ADA}
+.cm-s-default .cm-header     {color: blue;}
+.cm-s-default .cm-quote      {color: #090;}
+.cm-s-default .cm-hr         {color: #999;}
+.cm-s-default .cm-link       {color: #53B6E5;}
+
+.cm-negative                 {color: #d44;}
+.cm-positive                 {color: #292;}
+
+
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
+.CodeMirror-selected { background: #6fb2f6; }
+.CodeMirror-focused .CodeMirror-selected { background: #6fb2f6; }
+div.CodeMirror span.CodeMirror-matchingbracket {background-color:#d7d7d7;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
+
+
+.tabview-cnt .tabview-header .activeTab {
+    background-color: #2C96F8;
+}
+.tabview-cnt .tabview-header {
+    border-bottom: 1px solid #2C96F8;
+}
+
+.se-tabview-cnt .tabview-header .activeTab {
+    background-color: #252526;
+}
+.se-tabview-cnt .tabview-header {
+border-bottom: none;
+
+}
+
+ 
+::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+background: #C9C9C9;
+      
+} 
+::-webkit-scrollbar-thumb {
+  
+   box-shadow: inset 0 0 2px #FFFFFF;
+background: #2E2E2E;
+}

@@ -1,0 +1,32 @@
+﻿.new-project-label {
+    float:left;
+    margin-top:3px;
+    color:#fff;
+}
+.new-project-text {
+height:10px;
+padding:0px;
+border:0px;
+float:left;
+background-color:#4a4a4a;
+width:460px;
+margin-left:30px;
+padding:5px;
+color:#fff;
+outline:0;
+font-size:12px;
+}
+.new-project-text:focus{
+outline-color:#3399ff;
+outline-width:1px;
+outline-offset:0px;
+outline-style:solid;
+}
+.okCancelLayout {
+margin-top:30px;
+
+padding-right: 10px;
+float:right;
+
+}
+
