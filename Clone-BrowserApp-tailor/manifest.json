@@ -1,0 +1,16 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Code Editor for Chrome",
+   "icons": {
+      "128": "tailor.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBssj0UehsGNdOIt8qxYHcBU0rmD5d21oou98nbKdex8blF/R+FPA3s7HCiWymaoAj7buNPKMAOcHAtKxZKSy1JOg3K1pL6OGOaThv6F9ttHAp3xfjqtvS0IXlU7AjYrexfeCj6lhgiKBLkuUkTzaOjFafmek7QLY44uYiP4NtSQIDAQAB",
+   "name": "Tailor",
+   "permissions": [ "http://*/", "https://*/", "storage", "fileSystem", "fileSystem.write", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.1"
+}

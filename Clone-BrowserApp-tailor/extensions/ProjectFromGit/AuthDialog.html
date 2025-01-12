@@ -1,0 +1,30 @@
+<div class="git-auth-dialog modal">
+    <div class="modal-header">
+        <h1 class="dialog-title">Authentication required for "{{realm}}"</h1>
+    </div>
+    <div class="modal-body">
+        <!-- <div class="field-container">
+            <label>
+                Remote Git Url: 
+            </label>
+         </div> -->
+         <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="inputUsername">Username</label>
+            <div class="controls">
+              <input type="text" id="inputUsername" placeholder="" class="input-medium">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+              <input type="password" id="inputPassword" placeholder="" class="input-medium">
+            </div>
+          </div>
+         </form>
+    </div>
+    <div class="modal-footer">
+        <button class="dialog-button btn primary" data-button-id="ok">OK</button>
+        <button class="dialog-button btn git-cancel" data-button-id="cancel">Cancel</button>
+    </div>
+</div>
