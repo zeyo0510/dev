@@ -1,0 +1,28 @@
+{
+   "app": {
+      "launch": {
+         "local_path": "index.htm"
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_appdescription__",
+   "icons": {
+      "128": "res/images/png/fs128.png",
+      "16": "res/images/png/fs16.png",
+      "24": "res/images/png/fs24.png",
+      "256": "res/images/png/fs256.png",
+      "32": "res/images/png/fs32.png",
+      "48": "res/images/png/fs48.png",
+      "512": "res/images/png/fs512.png",
+      "64": "res/images/png/fs64.png",
+      "96": "res/images/png/fs96.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeo1HJfWtfmvzbpwSxGcCpzwW0UJeH7NuwG0AJ12rAdmcSmOKd79Laq3r/dNmQSO5kIb2MWOmzBg2Hj1TTf/eH38Yw8LA3pH4xdI4vbYvoDmyzM3z9SncwRphUVdmqzM9QtkWpnDvM4Zn3JW+fxVp7CWwo4JE/cFf3wgam6d7ZfwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appname__",
+   "offline_enabled": true,
+   "permissions": [ "notifications", "clipboardRead", "clipboardWrite", "contextMenus", "storage" ],
+   "short_name": "FastString",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.0.9"
+}
