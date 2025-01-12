@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LoopIt - Free</title>
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <script src="google-analytics-bundle.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <video id ="vidThumb" class="hidden" src=""></video>
+    <div id="newsletterOverlay" class="hidden">
+      <div id="newsletterPanel">
+        <div class="menu-head">New in version 0.5</div>
+        <hr>
+        <ul>
+        <li>On screen controls.</li>
+        <li>Seeking.</li>
+        <li>Disable loop.</li>
+        </p>
+        </ul>
+        <p>Thank you for using LoopIt - Free.</p>
+        <div class="note">Click outside to close this message.</div>
+      </div>
+    </div>
+    <div id="upgradeOverlay" class="hidden">
+      <div id="upgradePanel">
+        <div class="menu-head">LoopIt - Free</div>
+        <hr>
+        Hello! Thanks for trying out LoopIt - Free. </p>
+        You are using a free version of LoopIt. The free version limits your files to 15 per listing. If you require more and you'd like to control the zoom and playback speed please consider upgrading.</p>
+        <p><a id="upgradeNow" href="https://chrome.google.com/webstore/detail/loopit/ccpkbfgkcokjbnkegbeolhalebkfgogf?hl=en&gl=US" target="_blank">Upgrade Now</a></p>
+        <div class="note">Click outside to close this message.</div>
+      </div>
+    </div>
+    <div id="settingsOverlay" class="hidden">
+      <div id="settingsPanel">
+        <div id="settingsMenu">
+          <div id="menuBrand" class="menu-head">LoopIt</div>
+          <div id="settingsMenuItem" class="menu-item">Settings</div>
+          <div id="scMenuItem" class="menu-item menu-item-sel">Shortcuts</div>
+        </div>
+        <div id="settingsContent">
+          <div id="prefsMenu" class="hidden">
+            <div class="menu-head">Settings</div>
+            <hr>
+            <input type="checkbox" id="allowAnal" checked>
+            <span>Send anonymous usage data to help improve the app.</span><br>
+            <input type="button" id="applySettings" value="Apply">
+          </div>
+          <div id="kbsMenu" class="visible">
+            <div class="menu-head">Shortcuts</div>
+            <hr>
+            <table>
+              <tr><th>Action</th><th class="keyH">Key</th><th class="half"></th><th>Action</th><th class="keyH">Key</th></tr>
+              <tr><td>Settings</td><td class="key">S</td><td class="half"></td><td>Home</td><td class="key">H</td></tr>
+              <tr><td>Previous folder</td><td class="key">Backspace</td><td class="half"></td><td>Close video</td><td class="key">X</td></tr>
+              <tr><td>Enter fullscreen</td><td class="key">F</td><td class="half"></td><td>Exit fullscreen</td><td class="key">F or Esc</td></tr>
+              <tr><td>Play/pause</td><td class="key">Space</td><td class="half"></td><td>Mute/unmute</td><td class="key">M</td></tr>
+              <tr><td>Previous video</td><td class="key">Up arrow</td><td class="half"></td><td>Next video</td><td class="key">Down arrow</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="sideBar">
+        <div id="progressBar" class="invisible"></div>
+        <div id="galslist">
+        </div>
+      </div>
+      <div id="nav">
+        <div id="settingsButton" class="clickable" data-icon="E"></div>
+        <div id="addButton" class="clickable" data-icon="B"></div>
+        <div id="listThumbButton" class="clickable" data-icon="H">
+          <input type="checkbox" id="viewThumb" class="hiddenCheckbox">
+        </div>
+        <ul id="breadCrumbs">
+          <li id="homeButton"><span class="crumbLabel" data-icon="D"></span></li>
+        </ul>
+      </div>
+      <div id="player">
+        <div id="controlsNots" class="hidden" data-icon="K"></div>
+        <div id="contentDiv" class= "visible">
+          <video id="videl" src="" autoplay loop></video>
+        </div>
+        <div id="controls" class="controlsNV">
+          <div id="controlsLeft">
+            <div id="playPauseButton" class="clickable" data-icon="K"></div>
+            <span id="curTime"></span>
+          </div>
+          <div id="controlsRight">
+            <div id="muteButton" class="clickable" data-icon="N"></div>
+            <div id="fullscreenButton" class="clickable" data-icon="L"></div>
+            <div id="loopButton" class="clickable" data-icon="F">
+              <input type="checkbox" id="allowLoop" class="hiddenCheckbox" checked>
+            </div>
+          </div>
+          <div id="controlsCenter">
+            <input type="range" id="seekBar" step="any">
+            <!--<span id="videlDur">1:28</span>!-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "HTML5 video player.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjB53XTe3Il7CT1d0kvPEwMWXGw4u9CQzR2bu7O0b8WeAvYWH4nzjq0ncxmIz59LVFUOd0J8BdpKvGi1hWxZ44ekMcy3/jY3NFsuNAsdlYyeonb9yS+buJraHMHK2jo1tvtKkPis+/cIIoL6cZPHd+TUoKJCKbLvoTZUThYLLcg2CO+DTQXEircVeQ1Hhwf+sAKi6Xtp2Z6lKRjgsEpEgSWY1LIiKwfq8t6j73NijDCWWJW/vRy+1xRo2nVJAF+6A03ToAqzYdz6D0Z/eJARRjTgaSzrP9bCPxjAZIHvR6E/wXXx0wsMYQJTXXtcE0vbbq60y+LNa57FdF4N36mgu7wIDAQAB",
+   "manifest_version": 2,
+   "name": "LoopIt - Free",
+   "offline_enabled": true,
+   "permissions": [ {
+      "mediaGalleries": [ "read" ]
+   }, "fullscreen", "storage", "https://www.google-analytics.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.5.1"
+}
