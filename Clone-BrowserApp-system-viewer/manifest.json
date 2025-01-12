@@ -1,0 +1,21 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "main.js" ]
+      }
+   },
+   "description": "A useful tool to inspect system resources using Chrome's system APIs.",
+   "icons": {
+      "128": "wr_logo_128.png",
+      "16": "wr_logo_16.png",
+      "48": "wr_logo_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy6YCypRLw6GBhd4AqhcQyoMIBSdkX1qqfSGIAHO8WSL0+HjAqceRzMhlcns6YIfXIqGxNKV+JrWdM3wJKb6oKQxjPo6MCSJlwrGafsqezclCp6Fa+zPy05oMLYa4g4AdwD+Q2jxt37XrinobYyTDfC/esBP3O0SZQmC4k+54b5yOCNaURsYQl4q549W857QeCszNm7L42V3QUfL0fj4ivT4S6yJgeom+RqZNl7eAo/uELC9Ea0J8wS+x3n5TnZTAsdBA9CtGR605qkdpHNLtaWdDvMzjiECNNqfZgjKbAUn7ONJpWzrSlIKC8h0osFyLT5XPHXLqCMabzNf6Y30WxQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "24.0.0.0",
+   "name": "System Viewer",
+   "offline_enabled": true,
+   "permissions": [ "chrome://favicon/", "idle", "power", "storage", "system.cpu", "system.display", "system.memory", "system.storage", "system.cpu", "system.display", "system.network" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}
