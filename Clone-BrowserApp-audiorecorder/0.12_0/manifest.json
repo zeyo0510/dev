@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Record audio, and then save as a wav file. This is an (almost) exact replica of AudioRecorder: http://webaudiodemos.appspot.com/.",
+   "icons": {
+      "128": "mic-128.png",
+      "16": "mic-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAznj0/8tuWW973H39bApy4AfCqCgdAetB62JioCxucOitJDhojKjobOjEP6LWE3mJy2EB6IsINC70ISfOgPDBAtOpLiRYVGiK9wUvE1IjwyXGVbiuJ4w+VOCFuWNk/d0A0wO0qopUqWqDbTeLLI+EXqnvG4X8sPdZztBr5CSoMegSms8fc4YCLsoYZMwbroY8v1LOkXtmtOwg0jOkJFzMo+qG56evCubEM4rvJ8oPhO1tgNtQWQG4Ag9SI72uPiEMQCyUByBGv2zpRab+GHRo1yb8wSYgddHfi6ktrSPzL1FUfWbjUap+nNFEF721c6eZiesYsI+tefd7GAPVGFYgzwIDAQAB",
+   "manifest_version": 2,
+   "name": "AudioRecorder",
+   "offline_enabled": true,
+   "permissions": [ "audioCapture" ],
+   "short_name": "AudioRecorder",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.12"
+}
