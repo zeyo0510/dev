@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mutual</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=540">
+    <link href="dist/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="menu">
+        <div id="list">
+            <a id="howto" class="icon seki-help-circled"></a>
+            <h1>Mutual</h1>
+            <hr />
+            <div id="levels">
+            </div>
+        </div>
+    </div>
+    <div id="game">
+        <h2 id="game-name"></h2>
+        <div id="container">
+            <iframe id="game-iframe" src="game.html"></iframe>
+        </div>
+
+        <div id="nav">
+            <a id="menu-button" class="icon glow seki-home"></a>
+            <a id="reload-button" class="icon glow seki-arrows-ccw"></a>
+            <a id="undo-button" class="icon glow seki-ccw"></a>
+            <a id="hint-button" class="icon glow">
+                <span class="seki-light"></span>
+                <span class="hint-number-text">
+                  x
+                  <span id="hint-number"></span>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div id="feedback">
+        <a target="_blank" href="https://chrome.google.com/webstore/detail/mutual/okjiffbojjamcpfghohbgmacbjjgmndi/reviews">
+          Enjoy this game? Give us a 5-star.
+      </a>
+        <a id="feedback-close" class="close">x</a>
+    </div>
+    <div id="error">
+        Sorry, we cannot process your purchase at this moment. Please try again a little later.
+        <a id="error-close" class="close">x</a>
+    </div>
+
+    <script src="lib/buy.js"></script>
+    <script type="text/javascript" src="dist/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "lib/background.js" ]
+      }
+   },
+   "description": "Balance the territory of each block and make them live mutually. Simply but additive. ",
+   "icons": {
+      "128": "lib/logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoeRIwpQn0JPo6gYmBFbeF421H2QBmqAj7698yq0c/+5BdDic9VbixEatGoYFENtuAd1cVIiCJwBEpt0Tp+H66j2OWuj9oJ9OHS8o1yq2nWcfrzakuk3EdlUlhJo6Z9k++lv2cbmc5H5g2ATlqzxSUTBBHp46ceOw52gf8xgYdCfSiu24HX123/3mfwZsJwjOV056+/glmeP3G4Dt1FsxPKoSGeMAgXWsYC2IsrocTQVDL+LBxwjSCMkIlp1qCXJGElDblorHceBKVzS8411F0WsTSHKB4HIhSyMH9yJthyv4tY/c3g2uWnr5n82LDwFZ7PNhS/3dNGs/snD+qgsRuQIDAQAB",
+   "manifest_version": 2,
+   "name": "Mutual",
+   "permissions": [ "storage" ],
+   "sandbox": {
+      "pages": [ "game.html" ]
+   },
+   "short_name": "Mutual",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1.2"
+}
