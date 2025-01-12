@@ -1,0 +1,22 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "author": "Jørgen NYSTAD",
+   "description": "Convert images to stylized text in SVG format.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqQmwECHXL0KmQGKPrPP3BxPUx4rCNg52JKWsxvuV+mdSPqCd4M2d7EKcgQ/BJDv1gAjIze7KLWJ39v4unRdm0igcYNAErygphOxVEWOuHDKJgvstcj1+blqvC2Nf/aojs5bR6ADsDd4F00VR1IR9A1HCWWwR47v18u7k4TWFrVjjrWEEwv8ApItWwb3NqR8fzWnFbhXpxvL7FUWyYKpp0uqRL44A1w+eevMAICpdNVJ0XX64YAYSdBBp8/4E0/qMJwYHh38HJN87bOsQT7GGxFc93jVLBjqiOU+5F75qvtCdmpOpKA9bd8jN9uA3l9aUXl6/xapjhflL5C9SuYzT1wIDAQAB",
+   "manifest_version": 2,
+   "name": "Image to SVG Text Converter",
+   "permissions": [ "unlimitedStorage", "webview", {
+      "fileSystem": [ "write" ]
+   } ],
+   "short_name": "img2svg-txt",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
