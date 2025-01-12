@@ -1,0 +1,19 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Link all the nodes. It is not as easy as you would think.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh6hTQ5hj2FvxAGdPxc0dSV0RAt0+xFjaS9xrPt+L7+9ruJ/Qc8eJpuIHak7qH+AruOr2x6gsL7fVJVeB3hy3bWf9yqAFyJfzMTJ/4pLyT1+hLR/TJX6AyL0dZDggf/OSUj0LOZlNxDxWqIyOogKw3z+GcE1+5ycRIsh2FFpNAFmUOwOKlQ7u2ey1dyE+R5BgHMyxxwNN+/QyKn4VloRVQ1UUtz2yjhdyz18q1Ae9WuAKN1Um6Vd8lxwTKfux9uIXEMdwDytbcjkhPxIdrjSekqhEOcvAiiEsExsbPC3rCvIPNxCA93NY5Gi6pPkN7POo9WWluypHncPfofqYjal0RQIDAQAB",
+   "manifest_version": 2,
+   "name": "Link All",
+   "offline_enabled": true,
+   "permissions": [ "storage", "webview", "*://*.ad4game.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.0.0"
+}
