@@ -1,0 +1,23 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "What's in your computer? System provides a lot of technical infos about your computer.",
+   "icons": {
+      "128": "Icon-128.png",
+      "16": "Icon-16.png",
+      "48": "Icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmPFpclc45dXVAQVmWabtfnw3vPitTBW+RPKhwjaLOXTAIABqU1asoHSovazG8gjPXNqeh/Jn00Pyrt2DvVAgYhll3yTeM4KZtM2Z9RXGl+aVsk6SlOAbraKwwq03uKw2CbSmc0iZsHaBr0JCElegu8+ql65upRhBj3Mi/gKnpIxbqWJvT1spapkYJeI48AIWpZ/pwp4a0RLG2wLAbrM3ZjZEh8AViVCr0qqR8wLsYn77zr5OhwIy3/wy+YBz4grxI6+RClkiYcKwTj44s9Vl2ssANNgBxhPCaUjiEAD0mfny1rYIR3xfkPph+mXvdjP2eQmWLBYFLXznfTIJybeL/QIDAQAB",
+   "minimum_chrome_version": "33",
+   "name": "System",
+   "offline_enabled": true,
+   "permissions": [ "notifications", "geolocation", "idle", "app.window", "system.cpu", "system.memory", "system.storage", "system.display", {
+      "mediaGalleries": [ "read", "allAutoDetected" ]
+   }, "system.network", "storage", "http://maps.googleapis.com/maps/api/staticmap*", "http://maps.googleapis.com/maps/api/geocode/json*", "https://www.google-analytics.com/" ],
+   "short_name": "System",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.4"
+}

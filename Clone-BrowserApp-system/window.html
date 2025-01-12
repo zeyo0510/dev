@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <script src="google-analytics-bundle.js"></script>
+                <script src="jquery.min.js"></script>
+                <script src="main.js"></script>
+                <script src="filesize.min.js"></script>
+                <link rel="stylesheet" type="text/css" href="main.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+        <body>
+                <div id="navigation">
+                        <div id="logo">
+                                <img src="Icon-48.png">
+                                <br>
+                                System
+                                <br>
+                                Information
+                        </div>
+
+                        <ul>
+                                <li><a href="#" data-section="section-general">General</a></li>
+                                <li><a href="#" data-section="storage-information">Storage</a></li>
+                                <li><a href="#" data-section="display-information">Display</a></li>
+                                <li><a href="#" data-section="section-network">Network</a></li>
+                                <li><a href="#" data-section="media-galleries">Media galleries</a></li>
+                                <li><a href="#" data-section="current-location">Current location</a></li>
+                                <li><a href="#" data-section="section-app-settings">App settings</a></li>
+                        </ul>
+                </div>
+
+                <div id="content">
+                        <div class="section" id="section-general">
+                                <h1>General</h1>
+                                <div id="section-general-cpu">
+                                        <h2>CPU</h2>
+                                        <table>
+                                                <tr>
+                                                        <th width="25%">Architecture</th>
+                                                        <td id="cpu-architecture" width="75%"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th width="25%">Model Name</th>
+                                                        <td id="cpu-model-name" width="75%"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th width="25%">Number of Processors</th>
+                                                        <td id="cpu-number-of-processors" width="75%"></td>
+                                                </tr>
+                                        </table>
+                                </div>
+
+                                <br>
+
+                                <div id="section-general-memory">
+                                        <h2>Memory</h2>
+                                        <table>
+                                                <tr>
+                                                        <th width="25%">Total Capacity</th>
+                                                        <td id="memory-total-capacity" width="75%"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th width="25%">Used Capacity</th>
+                                                        <td id="memory-used-capacity" width="75%"></td>
+                                                </tr>
+                                                <tr>
+                                                        <th width="25%">Available Capacity</th>
+                                                        <td id="memory-available-capacity" width="75%"></td>
+                                                </tr>
+                                        </table>
+                                </div>
+
+                                <br>
+
+                                <div id="section-operation-system">
+                                        <h2>Operating System</h2>
+                                        <table>
+                                                <tr>
+                                                        <td></td>
+                                                </tr>
+                                        </table>
+                                </div>
+
+                                <br>
+
+                                <div id="section-online-offline">
+                                        <h2>Online/Offline</h2>
+                                        <table>
+                                                <tr>
+                                                        <td></td>
+                                                </tr>
+                                        </table>
+                                </div>
+
+                                <br>
+
+                                <div id="section-machines-idle-state">
+                                        <h2>Machine's idle state</h2>
+                                        <table>
+                                                <tr>
+                                                        <td></td>
+                                                </tr>
+                                        </table>
+                                </div>
+                        </div>
+
+                        <div class="section" id="storage-information">
+                                <h1>Storage</h1>
+                                <table>
+                                        <thead>
+                                                <tr>
+                                                        <th>ID</th>
+                                                        <th>Name</th>
+                                                        <th>Type</th>
+                                                        <th style="text-align:right;">Total Capacity</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                </table>
+                        </div>
+
+                        <div class="section" id="display-information">
+                                <h1>Display</h1>
+                                <div>Information of all attached display devices.</div>
+                                <br>
+                                <table>
+                                        <thead>
+                                                <tr>
+                                                        <th>ID</th>
+                                                        <th>Name</th>
+                                                        <th class="chrome-os-only">Mirroring Source ID</th>
+                                                        <th style="text-align:center;">Primary</th>
+                                                        <th style="text-align:center;">Internal</th>
+                                                        <th style="text-align:center;">Enabled</th>
+                                                        <th>DPI X × Y</th>
+                                                        <th class="chrome-os-only">Rotation</th>
+                                                        <th>Resolution</th>
+                                                        <th class="chrome-os-only">Overscan</th>
+                                                        <th>Work Area</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                </table>
+                        </div>
+
+                        <div class="section" id="section-network">
+                                <h1>Network</h1>
+                                <div>Information about local adapters on this system.</div>
+                                <br>
+                                <table>
+                                        <thead>
+                                                <tr>
+                                                        <th>Name</th>
+                                                        <th>IPv4/6 address</th>
+                                                        <th style="text-align:right;">Prefix length</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                </table>
+                        </div>
+
+                        <div class="section" id="media-galleries">
+                                <h1>Media galleries</h1>
+                                <table>
+                                        <thead>
+                                                <tr>
+                                                        <th>ID</th>
+                                                        <th>Name</th>
+                                                        <th style="text-align:center;">Media Device</th>
+                                                        <th style="text-align:center;">Removable</th>
+                                                        <th style="text-align:center;">Available</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                </table>
+                                <div id="no-media-galleries-found">No media galleries found.</div>
+                        </div>
+
+                        <div class="section" id="current-location">
+                                <h1>Current location</h1>
+                                <table>
+                                        <tr>
+                                                <th width="25%">Latitude</th>
+                                                <td id="current-location-latitude" width="75%"></td>
+                                        </tr>
+                                        <tr>
+                                                <th width="25%">Longitude</th>
+                                                <td id="current-location-longitude" width="75%"></td>
+                                        </tr>
+                                        <tr>
+                                                <th width="25%">Address</th>
+                                                <td id="current-location-address" width="75%"></td>
+                                        </tr>
+                                        <tr>
+                                                <td colspan="2"><br><img id="current-location-map"></td>
+                                        </tr>
+                                </table>
+                                <div id="current-location-status"></div>
+                        </div>
+
+                        <div class="section" id="section-app-settings">
+                                <h1>App settings</h1>
+                                <div id="app-settings-loading">Loading settings...</div>
+                                <div id="app-settings-loaded">
+                                        <label>
+                                                <input id="analytics" type="checkbox">
+                                                Send anonymous usage data.
+                                        </label>
+                                </div>
+                        </div>
+
+                </div>
+        </body>
+</html>
