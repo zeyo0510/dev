@@ -1,0 +1,24 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Build layer styles in the browser",
+   "icons": {
+      "128": "icons/128x128.png",
+      "16": "icons/16x16.png",
+      "256": "icons/256x256.png",
+      "32": "icons/32x32.png",
+      "64": "icons/64x64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCv0lRBEwxP3aRYqNgoqWGZ27EfMJUVp7sfAdRZko/4XtDhkpGTKVsnhOvnZYG5SzYqeR/a/cPaPfoMCMRceMXGHZys8U8mBV8O7WMqD0K2JCN+lXjkgQ1yyJ/1v3yrzHKRznAaIqWqyWBcXB9XKlKg363NgiHNPqN6Ncfkk9Y5jQIDAQAB",
+   "manifest_version": 2,
+   "name": "CSS - Shack",
+   "offline_enabled": true,
+   "permissions": [ {
+      "fileSystem": [ "write", "retainEntries", "directory" ]
+   }, "https://api.mixpanel.com/", "unlimitedStorage", "clipboardWrite", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.8.2"
+}
