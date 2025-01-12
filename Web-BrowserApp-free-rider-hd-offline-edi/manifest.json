@@ -1,0 +1,23 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "Draw and play Free Rider HD tracks offline!",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2927GlvcIjRxzyfMoK77rO06E/FXWXdZM6r8B85xPUzwfXrBEn4qdXSeCWhS/vdbsf94UO7H3DTPqoSK+0RcQmDEd99aUtv9ZLy0GTyx/j7QlDVMDFhQNU4Ms6IVC4yWFKWP8TCD96uPGz1HlfHSpsxvMd/K20zjkHqIG16FKlzEGWDExHiaVAldh3pVgeKbxW9Xzoem+6+/eUx74Ns0H4tJWvrcf5AluLnLbnPHptG1+18xXZnrFwO27f94ztReitd4xUwKsToDSeiMAsVZj9RM8AUBsdwn1x9ZrEnaQc91ThNac7MUs1/4BnfofqI7224IXqifwRa57wIapFclLQIDAQAB",
+   "manifest_version": 2,
+   "name": "Free Rider HD Offline Editor",
+   "offline_enabled": true,
+   "permissions": [ {
+      "fileSystem": [ "write" ]
+   }, "fullscreen" ],
+   "short_name": "FRHD Editor",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6"
+}
