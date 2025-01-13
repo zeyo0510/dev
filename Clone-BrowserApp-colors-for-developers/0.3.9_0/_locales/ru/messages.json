@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Convert color from and to RGB, HSL, Hex. Give pre-written code for some languages like CSS, C#, Unity and other..."
+   },
+   "appName": {
+      "message": "цветов для разработчиков (преобразователь и больше)"
+   },
+   "appShortName": {
+      "message": "цветов для разработчиков"
+   }
+}

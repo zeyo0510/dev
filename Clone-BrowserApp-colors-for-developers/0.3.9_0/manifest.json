@@ -1,0 +1,24 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "author": "Jonathan Defraiteur",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgXEzwGFY+8iclAebpvTSrGoYbjn9y7VaeqUtPdpCkcyoXtbWcLgKXzX3tuKPFCVLo+Evmlh9dMODfOHlIOhYkN26nnG/WJ59biLnnXfT6hvPrk2DR8VS4ek730xT9VDAfZ8Z9nm6+GgqImcpeZ/TCr4vCVmJXaasWQ9UzOvl9rS9P8WiWhyqNWyzbDcKeTyeasLFqVuxPV98KItD09PeFQT/aXNX4w1nE0YBvGChv037dZDyMlYqntE2uwsLEZAHt0+GNvzMQY28JVP2BIAfoafEov7f2AiSREjiuM5d7xzFEXdFgi1NvpahiqO79vSvqQ9hmotdY7l0KuDmDNf0dwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "offline_enabled": true,
+   "permissions": [ "https://www.google-analytics.com/", "storage", "fileSystem" ],
+   "short_name": "__MSG_appShortName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.9"
+}

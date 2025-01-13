@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Converti les couleurs depuis et vers le RVB, TSL, Hex. Donne du code pré-construit pour des langages comme CSS, C#, Unity et d'autres..."
+   },
+   "appName": {
+      "message": "Couleurs pour Développeurs (Convertisseur et plus...)"
+   },
+   "appShortName": {
+      "message": "Couleurs pour Développeurs"
+   }
+}

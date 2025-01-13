@@ -1,0 +1,204 @@
+<html>
+<head>
+	<title>Color Converter</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+
+	<script src="google-analytics-bundle.js"></script>
+</head>
+<body>
+	<!--header>
+		<h1><span style="color:#e91e63">C</span><span style="color:#ff5722">o</span><span style="color:#ffc107">l</span><span style="color:#8bc34a">o</span><span style="color:#03a9f4">r</span>Converter<i class="paper-plane-colored" data-icon="&#xf1d8;"></i></h1>
+	</header-->
+	<div id="data_zone">
+		<div class="wrap960">
+			<form class="color_data">
+				<div class="color_preview">
+					<div class="background checker"></div>
+					<div id="dynamic_color" style="background-color:rgba(128,128,128,255)"></div>
+				</div>
+				<!--h3>Auto</h3>
+				<div class="color_input auto-detect">
+					<label for="auto-detect">
+						<input id="auto-detect" name="auto-detect" type="text"/>
+					</label>
+				</div-->
+				<div class="format_choices">
+                    <a class="format rgba255">
+                        <div class="icon">
+                            <img src="img/format_rgb255.svg" alt=""/>
+                        </div>
+                        <div class="label">
+                            RGBA<sub>255</sub>
+                        </div>
+                    </a>
+                    <a class="format rgba1">
+                        <div class="icon">
+                            <img src="img/format_rgb1.svg" alt=""/>
+                        </div>
+                        <div class="label">
+                            RGBA<sub>1</sub>
+                        </div>
+                    </a>
+                    <a class="format hexadecimal active">
+                        <div class="icon">
+                            <img src="img/format_hex.svg" alt=""/>
+                        </div>
+                        <div class="label">
+                            HEX
+                        </div>
+                    </a>
+                    <a class="format cmyk100">
+                        <div class="icon">
+                            <img src="img/format_cmyk.svg" alt=""/>
+                        </div>
+                        <div class="label">
+                            CMYK
+                        </div>
+                    </a>
+                    <a class="format hsla100">
+                        <div class="icon">
+                            <img src="img/format_hsl.svg" alt=""/>
+                        </div>
+                        <div class="label">
+                            HSLA
+                        </div>
+                    </a>
+                </div>
+				<div class="color_input rgba255">
+					<label class="left"><input id="r255" name="r255" type="number" min="0" max="255" step="1" value="128" /></label><label><input id="g255" name="g255" type="number" min="0" max="255" step="1" value="128" /></label><label><input id="b255" name="b255" type="number" min="0" max="255" step="1" value="128" /></label><label class="right"><input id="a255" name="a255" type="number" min="0" max="255" step="1" value="255" /></label>
+				</div>
+				<div class="color_input rgba1">
+					<label class="left"><input id="r1" name="r1" type="number" min="0" step="0.1" value="0.5" /></label><label><input id="g1" name="g1" type="number" min="0" step="0.1" value="0.5" /></label><label><input id="b1" name="b1" type="number" min="0" step="0.1" value="0.5" /></label><label class="right"><input id="a1" name="a1" type="number" min="0" step="0.1" value="1" /></label>
+				</div>
+				<div class="color_input hexadecimal active">
+					<label for="hexa">
+						<span>#</span><input id="hexa" name="hexa" type="text" maxlength="8"/>
+					</label>
+				</div>
+				<div class="color_input cmyk100">
+					<label class="left"><input id="c100" name="c100" type="number" min="0" max="100" step="1" value="50" /><span>%</span></label><label><input id="m100" name="m100" type="number" min="0" max="100" step="1" value="50" /><span>%</span></label><label><input id="y100" name="y100" type="number" min="0" max="100" step="1" value="50" /><span>%</span></label><label class="right"><input id="k100" name="k100" type="number" min="0" max="100" step="1" value="50" /><span>%</span></label>
+				</div>
+				<div class="color_input hsla100">
+					<label class="left"><input id="h360" name="h360" type="number" min="-1" max="361" step="1" value="0" /><span>°</span></label><label><input id="s100" name="s100" type="number" min="0" max="100" step="1" value="50" /><span>%</span></label><label><input id="l100" name="l100" type="number" min="0" max="100" step="1" value="50" /><span>%</span></label><label class="right"><input id="a1_hsla" name="a1_hsla" type="number" min="0" max="1" step="0.001" value="0.5" /></label>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="quick_copy_zone">
+		<div class="wrap960">
+			<nav id="language_bar">
+				<!-- Here will be add the buttons to languages -->
+				<span id="custom_regex" class="regex">Custom (Beta)</span>
+			</nav>
+			<nav id="custom_toolbar" style="display:none">
+				<div>
+					<span class="custom_tool" data-value="@r1" >
+						<span class="tool-label">R[0;1]</span>
+						<span class="tool-value">@r1</span>
+					</span>
+					<span class="custom_tool" data-value="@g1" >
+						<span class="tool-label">G[0;1]</span>
+						<span class="tool-value">@g1</span>
+					</span>
+					<span class="custom_tool" data-value="@b1" >
+						<span class="tool-label">B[0;1]</span>
+						<span class="tool-value">@b1</span>
+					</span>
+					<span class="custom_tool" data-value="@a1" >
+						<span class="tool-label">A[0;1]</span>
+						<span class="tool-value">@a1</span>
+					</span>
+
+					<span class="custom_tool" data-value="@r255" >
+						<span class="tool-label">R[0;255]</span>
+						<span class="tool-value">@r255</span>
+					</span>
+					<span class="custom_tool" data-value="@g255" >
+						<span class="tool-label">G[0;255]</span>
+						<span class="tool-value">@g255</span>
+					</span>
+					<span class="custom_tool" data-value="@b255" >
+						<span class="tool-label">B[0;255]</span>
+						<span class="tool-value">@b255</span>
+					</span>
+					<span class="custom_tool" data-value="@a255" >
+						<span class="tool-label">A[0;255]</span>
+						<span class="tool-value">@a255</span>
+					</span>
+
+					<span class="custom_tool" data-value="" >
+						<span class="tool-label">etc...</span>
+						<span class="tool-value">@etc...</span>
+					</span>
+				</div>
+				<div>
+					<input id="custom-data-regex" placeholder="Here your RegEx">
+				</div>
+			</nav>
+			<p id="quick_copy"></p>
+		</div>
+	</div>
+
+	<div id="presets_zone">
+		<div class="wrap960">
+            <div id="presets_tabs">
+				<span class="presets_add_group"><i data-icon="&#xf055;"></i></span>
+            </div>
+            <div id="presets_groups">
+
+            </div>
+		</div>
+	</div>
+
+	<div id="preview_zone">
+		<div class="wrap960">
+            <div class="preview_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at <b>cum cumque</b> dolor dolores, eligendi ex harum iste minima minus officia, quibusdam quisquam, quod rem <b>repellendus</b> sunt suscipit <b>voluptatibus</b> voluptatum!
+            </div>
+            <div class="preview_background"><div class="pb_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at <b>cum cumque</b> dolor dolores, eligendi ex harum iste minima minus officia, quibusdam quisquam, quod rem <b>repellendus</b> sunt suscipit <b>voluptatibus</b> voluptatum!
+			</div></div>
+            <div class="preview_border">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at <b>cum cumque</b> dolor dolores, eligendi ex harum iste minima minus officia, quibusdam quisquam, quod rem <b>repellendus</b> sunt suscipit <b>voluptatibus</b> voluptatum!
+            </div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="wrap960">
+			<p id="thanks" >
+				Special thanks to <span class="pierre">Pierre</span> for his great article on <a href="http://www.la-photo-en-faits.com/2013/05/RVB-CMJN-TSL-conversion-definition.html#Conversion_couleurs" target="_blank" >la-photo-en-faits.com</a>,<br>
+				and to <a href="http://www.rapidtables.com/convert/color/index.htm" target="_blank" >rapidtables.com</a> for some complements.
+			</p>
+
+			<div id="copyrights">
+				<div class="part">
+					Lots of <span class="heart"><i data-icon="&#xf004;"></i></span> from Lille.
+				</div>
+				<div class="part">
+					Copyright © 2015 <strong>Jonathan Defraiteur</strong> as <strong>theBlueBisu</strong>.
+				</div>
+				<div class="part">
+					All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="rate-it">
+		<a href="https://chrome.google.com/webstore/detail/colors-for-developers/gchkodmdjkonohhibomiolgndijceoij/reviews" target="_blank">
+			<i data-icon="&#xf005;"></i>
+			<span> Do you like ?</span>
+		</a>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/json.js"></script>
+	<!--script src="js/jquery.caret.js"></script-->
+	<script src="js/converter.js"></script>
+	<script src="js/presets.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

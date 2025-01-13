@@ -1,0 +1,14 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Convert color from and to RGB, HSL, Hex. Give pre-written code for some languages like CSS, C#, Unity and other..."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Colors for Developers (Converter and more...)"
+   },
+   "appShortName": {
+      "description": "The Concise title of the application.",
+      "message": "Colors for Developers"
+   }
+}
