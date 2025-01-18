@@ -1,0 +1,21 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "It's an easy to use level and map editor for all type of games : Platform, Top View, Rpg Style , Tower Defense.",
+   "homepage_url": "http://www.tile2map.com",
+   "icons": {
+      "128": "icon-128.png",
+      "16": "icon-16.png",
+      "256": "icon-256.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo3VCZO6fTDWf+3sAKZW5IsL8i0o5m9D3w39X7uOmOKcrzGZTLPf2t/pm273KyHq3kILFfAMQ/g9llqMoAooiy0TkQmHM8baQ7Af03rkqvhuTSpEcnWkg5LuL7nucIoDQ7eOh9s2DRqq+DYtXy+Njt/ezrEbiU1BqbRr72CNZqASFDIS/FYyFpPaJyYRqkXfZyloqbumw4H6k18xoPYXxRBLlE9cAp+woltZPFr3Vb8N9t7T0jZH3ACmqKgICbM9pgCooAAxVg6QhmamhSoo5QUMhki3uk0dHkwnRfItX4u+A3ngrUyMMYN+/77zNUcb0pWQD94Oi9YAgeYA4Vf1yfQIDAQAB",
+   "manifest_version": 2,
+   "name": "Tile2Map",
+   "offline_enabled": true,
+   "permissions": [ "storage", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.7.3"
+}
