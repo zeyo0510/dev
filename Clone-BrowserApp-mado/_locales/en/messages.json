@@ -1,0 +1,374 @@
+{
+   "appDesc": {
+      "message": "Mado is a Markdown editor application. You can use it to take notes, write blog posts or edit documents."
+   },
+   "appName": {
+      "message": "Mado"
+   },
+   "helpBlockquotes0": {
+      "message": "Blockquotes"
+   },
+   "helpBlockquotesExample": {
+      "message": "\u003Cblockquote>Blockquotes only need &gt; to work. To separate two blockquotes, insert a blank line between them.\u003C/blockquote>"
+   },
+   "helpBlockquotesResult": {
+      "message": "> Blockquotes only need \u003Cspan class=\"help-code\">>\u003C/span> to work. \u003Cbr>\u003Cbr> \u003Cspan class=\"help-code\">> Two blockquotes without a break (a line that isn't a blockquote) are a single quote.\u003C/span>"
+   },
+   "helpBold0": {
+      "message": "Bold"
+   },
+   "helpBold1": {
+      "message": "Strong emphasis"
+   },
+   "helpBoldExample": {
+      "message": "\u003Cstrong>Bold\u003C/strong>"
+   },
+   "helpBoldItalic0": {
+      "message": "Bold italic"
+   },
+   "helpBoldItalic1": {
+      "message": "Combined emphasis"
+   },
+   "helpBoldItalicExample": {
+      "message": "\u003Cstrong>\u003Cem>Bold italic\u003C/em>\u003C/strong>"
+   },
+   "helpBoldItalicResult": {
+      "message": "\u003Cspan class=\"help-code\">**_ bold italic_**\u003C/span> or \u003Cspan class=\"help-code\">*__bold italic__*\u003C/span> or \u003Cspan class=\"help-code\">***this***\u003C/span> or \u003Cspan class=\"help-code\">___this___\u003C/span>"
+   },
+   "helpBoldResult": {
+      "message": "\u003Cspan class=\"help-code\">**bold**\u003C/span> or \u003Cspan class=\"help-code\">__bold__\u003C/span>"
+   },
+   "helpCode0": {
+      "message": "Blocks of code"
+   },
+   "helpCodeExample": {
+      "message": "\u003Ccode>Write your code between three back-ticks to make a block of code.\u003C/code>\u003Cbr>\u003Ccode>You can also write code by indenting your text with four spaces.\u003C/code>"
+   },
+   "helpCodeResult": {
+      "message": "\u003Cspan class=\"help-code\">```Text between three back-ticks is a block of code.```\u003Cbr>&nbsp;&nbsp;&nbsp;&nbsp;Text after four spaces is also a block of code.\u003C/span>"
+   },
+   "helpHeaders0": {
+      "message": "Headers"
+   },
+   "helpHeaders1": {
+      "message": "Titles"
+   },
+   "helpHeadersExample": {
+      "message": "Six sizes available, the size depends on the numbers of #.\u003Ch1 id=\"big-title-size-1-the-biggest-\">Big title (size 1, the biggest).\u003C/h1>\u003Ch4 id=\"a-less-impresive-title-size-4-on-6-br-\">A less impresive title (size 4 on 6).\u003C/h4>"
+   },
+   "helpHeadersResult": {
+      "message": "Six sizes available, the size depends on the numbers of #. \u003Cbr> #Big title (size 1, the biggest). \u003Cbr> ####A less impresive title (size 4 on 6)."
+   },
+   "helpHorizontaleRules0": {
+      "message": "Horizontal rules"
+   },
+   "helpHorizontaleRulesExample": {
+      "message": "\u003Chr>You can use Hyphens, asterisks or underscores.\u003Chr>"
+   },
+   "helpHorizontaleRulesResult": {
+      "message": "\u003Cspan class=\"help-code\">*** \u003Cbr>You can use Hyphens, asterisks or underscores.\u003Cbr> ---\u003C/span>"
+   },
+   "helpInlineHTML0": {
+      "message": "Inline HTML"
+   },
+   "helpInlineHTML1": {
+      "message": "HTML in Markdown"
+   },
+   "helpInlineHTMLExample": {
+      "message": "It \u003Cstrong>works\u003Cstrong>"
+   },
+   "helpInlineHTMLResult": {
+      "message": "\u003Cspan class=\"help-code\">It &lt;strong>works&lt;/strong>.\u003C/span>"
+   },
+   "helpInlineStyleImages0": {
+      "message": "Images (inline)"
+   },
+   "helpInlineStyleImages1": {
+      "message": "Pictures (inline)"
+   },
+   "helpInlineStyleImagesExample": {
+      "message": "\u003Cdiv class=\"example-image\">\u003C/div>"
+   },
+   "helpInlineStyleImagesResult": {
+      "message": "\u003Cspan class=\"help-code\">![alt text](path/to/image.jpg \"Title\")\u003C/span>"
+   },
+   "helpInlineStyleLinks0": {
+      "message": "Inline-style links"
+   },
+   "helpInlineStyleLinksExample": {
+      "message": "\u003Ca target=\"_blank\" href=\"https://github.com/ArmandGrillet/Mado\">Hypertext\u003C/a>"
+   },
+   "helpInlineStyleLinksResult": {
+      "message": "\u003Cspan class=\"help-code\">[Hypertext](https://github.com/ArmandGrillet/Mado)\u003C/span>\u003Cbr>(Can be used to create an anchor.)"
+   },
+   "helpItalic0": {
+      "message": "Italic"
+   },
+   "helpItalic1": {
+      "message": "Emphasis"
+   },
+   "helpItalicExample": {
+      "message": "\u003Cem>Italic\u003C/em>"
+   },
+   "helpItalicResult": {
+      "message": "\u003Cspan class=\"help-code\">*italic*\u003C/span> or \u003Cspan class=\"help-code\">_italic_\u003C/span>"
+   },
+   "helpLineBreaks0": {
+      "message": "Line breaks"
+   },
+   "helpLineBreaksExample": {
+      "message": "\u003Cp>To separate two paragraphs, press Enter twice.\u003C/p>\u003Cp>And you have a new paragraph!\u003C/p>"
+   },
+   "helpLineBreaksResult": {
+      "message": "To separate two paragraphs, press \u003Cspan class=\"help-code\">Enter\u003C/span> twice.\u003Cbr>\u003Cbr>And you have a new paragraph!"
+   },
+   "helpOrderedLists0": {
+      "message": "Ordered lists"
+   },
+   "helpOrderedListsExample": {
+      "message": "\u003Col>\u003Cli>First ordered list item\u003C/li>\u003Cli>Another item.\u003C/li>\u003C/ol>"
+   },
+   "helpOrderedListsResult": {
+      "message": "1. First ordered list item. \u003Cbr>2. Another item."
+   },
+   "helpQuestion0": {
+      "message": "Question"
+   },
+   "helpQuestionExample": {
+      "message": "Life's most persistent and urgent question is, &ldquo;What are you doing for others?&rdquo;."
+   },
+   "helpQuestionResult": {
+      "message": "Seriously?"
+   },
+   "helpReferenceStyleImages0": {
+      "message": "Images (reference-style)"
+   },
+   "helpReferenceStyleImages1": {
+      "message": "Pictures (reference-style)"
+   },
+   "helpReferenceStyleImagesExample": {
+      "message": "\u003Cdiv class=\"example-image\">\u003C/div>"
+   },
+   "helpReferenceStyleImagesResult": {
+      "message": "\u003Cspan class=\"help-code\">![alt text][image Id] \u003Cbr> [image Id]: path/to/image.jpg \"Title\"\u003C/span>"
+   },
+   "helpReferenceStyleLinks0": {
+      "message": "Reference-style links"
+   },
+   "helpReferenceStyleLinksExample": {
+      "message": "\u003Ca target=\"_blank\" href=\"https://github.com/ArmandGrillet/Mado\">Hypertext\u003C/a>"
+   },
+   "helpReferenceStyleLinksResult": {
+      "message": "\u003Cspan class=\"help-code\">[Hypertext][1]\u003Cbr>[1]: https://github.com/ArmandGrillet/Mado\u003C/span>"
+   },
+   "helpTables0": {
+      "message": "Tables"
+   },
+   "helpTables1": {
+      "message": "Arrays"
+   },
+   "helpTablesExample": {
+      "message": "\u003Ctable> \u003Cthead>\u003Ctr> \u003Cth>Tables\u003C/th> \u003Cth align=\"center\">are\u003C/th> \u003Cth align=\"right\">cool\u003C/th> \u003C/tr>\u003C/thead> \u003Ctbody> \u003Ctr> \u003Ctd>Col 3 is\u003C/td> \u003Ctd align=\"center\">right-aligned\u003C/td> \u003Ctd align=\"right\">$13\u003C/td> \u003C/tr> \u003Ctr> \u003Ctd>Col 2 is\u003C/td> \u003Ctd align=\"center\">centered\u003C/td> \u003Ctd align=\"right\">$37\u003C/td> \u003C/tr> \u003C/tbody> \u003C/table>"
+   },
+   "helpTablesResult": {
+      "message": "| Tables&nbsp; | are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | cool&nbsp;&nbsp;|\u003Cbr>| -------- |:----------------:| ------:|\u003Cbr>| Col 3 is | right-aligned | $13 &nbsp;&nbsp; |\u003Cbr>| Col 2 is | centered&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | $37 &nbsp;&nbsp; |"
+   },
+   "helpUnorderedLists0": {
+      "message": "Unordered lists"
+   },
+   "helpUnorderedListsExample": {
+      "message": "\u003Cul>\u003Cli>An item. \u003C/li>\u003Cli>A second item (you can also use + or -).\u003C/li>\u003C/ul>"
+   },
+   "helpUnorderedListsResult": {
+      "message": "* An item. \u003Cbr>* A second item (you can also use + or -)."
+   },
+   "htmlAbout": {
+      "message": "About Mado"
+   },
+   "htmlAltTextPlaceholder": {
+      "message": "Type an alt text"
+   },
+   "htmlCancel": {
+      "message": "Cancel"
+   },
+   "htmlChooseGalleries": {
+      "message": "Choose your galleries"
+   },
+   "htmlDoNotSave": {
+      "message": "No, don't save"
+   },
+   "htmlHelpPlaceholder": {
+      "message": "Type a syntax (e.g. ‘bold’)"
+   },
+   "htmlHypertextPlaceholder": {
+      "message": "Type a text (optional)"
+   },
+   "htmlImagesUrlPlaceholder": {
+      "message": "Type the image's URL"
+   },
+   "htmlMarkdownPlaceholder": {
+      "message": "Write here"
+   },
+   "htmlOk": {
+      "message": "Ok"
+   },
+   "htmlSaveAndExit": {
+      "message": "Save and exit"
+   },
+   "htmlSettings": {
+      "message": "Settings"
+   },
+   "htmlShortcuts": {
+      "message": "Shortcuts"
+   },
+   "htmlUnsavedChangesText": {
+      "message": "This document has unsaved changes. Do you want to save these changes before exiting?"
+   },
+   "htmlUnsavedChangesTitle": {
+      "message": "Unsaved changes"
+   },
+   "htmlUrlPlaceholder": {
+      "message": "Type the URL"
+   },
+   "moreAboutAvailableOnGitHub": {
+      "message": "is available on GitHub"
+   },
+   "moreAboutBy": {
+      "message": "by"
+   },
+   "moreAboutCreatedBy": {
+      "message": ", created by"
+   },
+   "moreAboutFonts": {
+      "message": "Fonts used in Mado:"
+   },
+   "moreAboutMITLicense": {
+      "message": "under a MIT license."
+   },
+   "moreAboutProjects": {
+      "message": "Remember Mado is here thanks to these projects:"
+   },
+   "moreAboutTitle": {
+      "message": "About Mado"
+   },
+   "moreAboutUsing": {
+      "message": "You are using Mado "
+   },
+   "moreSettingsResetButton": {
+      "message": "Reset Mado, close all the windows (even unsaved documents) and restart the app"
+   },
+   "moreSettingsResetTitle": {
+      "message": "Reset:"
+   },
+   "moreSettingsSyntaxMarkdown": {
+      "message": "Basic Markdown (without tables)"
+   },
+   "moreSettingsSyntaxTitle": {
+      "message": "Syntax:"
+   },
+   "moreShortcutsClassicTitle": {
+      "message": "Classic shortcuts"
+   },
+   "moreShortcutsClose": {
+      "message": "Close the window."
+   },
+   "moreShortcutsHelp": {
+      "message": "Open the quick help tool."
+   },
+   "moreShortcutsLink": {
+      "message": "Insert a link."
+   },
+   "moreShortcutsNew": {
+      "message": "Create a new document."
+   },
+   "moreShortcutsOpen": {
+      "message": "Open an existing document."
+   },
+   "moreShortcutsPrint": {
+      "message": "Print the document."
+   },
+   "moreShortcutsSave": {
+      "message": "Save the document."
+   },
+   "moreShortcutsSaveAs": {
+      "message": "Save the document as…"
+   },
+   "moreShortcutsSpecificTitle": {
+      "message": "Mado specific shortcuts"
+   },
+   "moreShortcutsSwitchLeft": {
+      "message": "Switch the workspace view to the left."
+   },
+   "moreShortcutsSwitchRight": {
+      "message": "Switch the workspace view to the right."
+   },
+   "msgCharacter": {
+      "message": "character"
+   },
+   "msgCharacters": {
+      "message": "characters"
+   },
+   "msgChooseAnImage": {
+      "message": "Choose an image"
+   },
+   "msgClearAll": {
+      "message": "Clear all"
+   },
+   "msgDocument": {
+      "message": "document"
+   },
+   "msgExport": {
+      "message": "Export"
+   },
+   "msgFirstLaunch": {
+      "message": "# Dear user,\n\nThanks for installing **Mado**! For your first launch, here is some information:\n\n* Mado handles .md, .markdown and .txt files, can save these files as .md (the official extension for Markdown files) and offers an export in .html.\n* You can click the number of words in the bottom-right corner to see the number of characters in your document (and *vice versa*). Click the eye icon next to it to change the style of the HTML view.\n* See the keyboard shortcuts (top-right button, “Shortcuts” section) to use Mado in depth.\n\nI hope you will enjoy Mado,\n\n**[Armand Grillet](http://armand.gr/)**\n\n***\n\nP.S. This message will not appear anymore. Click “New” in the navbar to start using Mado."
+   },
+   "msgNew": {
+      "message": "New"
+   },
+   "msgNoHelpFound": {
+      "message": "No help found."
+   },
+   "msgNoInternet": {
+      "message": "Internet not available"
+   },
+   "msgNoRecentDocument": {
+      "message": "No recent document."
+   },
+   "msgNoTextInEditor": {
+      "message": "See the result here"
+   },
+   "msgNotAnImage": {
+      "message": "This is not an image"
+   },
+   "msgNotFound": {
+      "message": "Not found"
+   },
+   "msgOneMoreCharacter": {
+      "message": "Add one more character"
+   },
+   "msgOpen": {
+      "message": "Open"
+   },
+   "msgPrint": {
+      "message": "Print"
+   },
+   "msgRecent": {
+      "message": "Recent"
+   },
+   "msgSave": {
+      "message": "Save"
+   },
+   "msgSaveAs": {
+      "message": "Save as"
+   },
+   "msgTwoMoreCharacters": {
+      "message": "Add two more characters"
+   },
+   "msgWord": {
+      "message": "word"
+   },
+   "msgWords": {
+      "message": "words"
+   }
+}

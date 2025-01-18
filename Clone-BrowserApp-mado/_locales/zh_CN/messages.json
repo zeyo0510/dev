@@ -1,0 +1,377 @@
+{
+   "appDesc": {
+      "message": "Mado 是一个 Markdown 编辑器。 你可以用它来记笔记，写博客或者写文档。"
+   },
+   "appName": {
+      "message": "Mado"
+   },
+   "helpBlockquotes0": {
+      "message": "区块引用"
+   },
+   "helpBlockquotesExample": {
+      "message": "\u003Cblockquote>引用只需要在行首加上 &gt; 。两层引用使用用两个 &gt; 就可以了\u003C/blockquote>"
+   },
+   "helpBlockquotesResult": {
+      "message": "> 引用只需要在行首加上 \u003Cspan class=\"help-code\">>\u003C/span> 。 \u003Cbr>\u003Cbr> \u003Cspan class=\"help-code\">> 两层引用。\u003C/span>"
+   },
+   "helpBold0": {
+      "message": "粗体"
+   },
+   "helpBold1": {
+      "message": "着重强调"
+   },
+   "helpBoldExample": {
+      "message": "\u003Cstrong>粗体\u003C/strong>"
+   },
+   "helpBoldItalic0": {
+      "message": "粗斜体"
+   },
+   "helpBoldItalic1": {
+      "message": "联合强调"
+   },
+   "helpBoldItalicExample": {
+      "message": "\u003Cstrong>\u003Cem>粗斜体\u003C/em>\u003C/strong>"
+   },
+   "helpBoldItalicResult": {
+      "message": "\u003Cspan class=\"help-code\">**_ 粗斜体 _**\u003C/span> or \u003Cspan class=\"help-code\">*__粗斜体__*\u003C/span> or \u003Cspan class=\"help-code\">***这里***\u003C/span> or \u003Cspan class=\"help-code\">___这里___\u003C/span>"
+   },
+   "helpBoldResult": {
+      "message": "\u003Cspan class=\"help-code\">**粗体**\u003C/span> or \u003Cspan class=\"help-code\">__粗体__\u003C/span>"
+   },
+   "helpCode0": {
+      "message": "代码区块"
+   },
+   "helpCodeExample": {
+      "message": "\u003Ccode>在一对3个反引号内写代码将生成代码块。\u003C/code>\u003Cbr>\u003Ccode>同样可以使用缩进来形成代码块（4个空格或者1个制表符）。\u003C/code>"
+   },
+   "helpCodeResult": {
+      "message": "\u003Cspan class=\"help-code\">```在一对3个反引号内写代码将生成代码块。```\u003Cbr>&nbsp;&nbsp;&nbsp;&nbsp;同样可以使用缩进来形成代码块（4个空格或者1个制表符）。\u003C/span>"
+   },
+   "helpHeaders0": {
+      "message": "标题"
+   },
+   "helpHeaders1": {
+      "message": "题目"
+   },
+   "helpHeadersExample": {
+      "message": "可以使用六种大小, 大小由 # 的个数决定。\u003Ch1 id=\"big-title-size-1-the-biggest-\"> 大标题 （一级标题，最大号标题）。\u003C/h1>\u003Ch4 id=\"a-less-impresive-title-size-4-on-6-br-\"> 小标题 （四级标题）。\u003C/h4>"
+   },
+   "helpHeadersResult": {
+      "message": "可以使用六种大小, 大小由 # 的个数决定。\u003Cbr> #大标题（一级标题，最大号标题）。\u003Cbr> ####小标题 （四级标题）。"
+   },
+   "helpHorizontaleRules0": {
+      "message": "水平分割线"
+   },
+   "helpHorizontaleRulesExample": {
+      "message": "\u003Chr> 你可以使用连字符`-`，星号`*`或下划线`_`。\u003Chr>"
+   },
+   "helpHorizontaleRulesResult": {
+      "message": "\u003Cspan class=\"help-code\">*** \u003Cbr> 你可以使用连字符`-`，星号`*`或下划线`_`。\u003Cbr> ---\u003C/span>"
+   },
+   "helpInlineHTML0": {
+      "message": "内嵌HTML"
+   },
+   "helpInlineHTML1": {
+      "message": "HTML 在 Markdown 中"
+   },
+   "helpInlineHTMLExample": {
+      "message": "如 \u003Cstrong>加粗\u003Cstrong>"
+   },
+   "helpInlineHTMLResult": {
+      "message": "\u003Cspan class=\"help-code\">如 &lt;strong>加粗&lt;/strong>.\u003C/span>"
+   },
+   "helpInlineStyleImages0": {
+      "message": "图片（行内）"
+   },
+   "helpInlineStyleImages1": {
+      "message": "相片（行内）"
+   },
+   "helpInlineStyleImagesExample": {
+      "message": "\u003Cdiv class=\"example-image\">\u003C/div>"
+   },
+   "helpInlineStyleImagesResult": {
+      "message": "\u003Cspan class=\"help-code\">![提示文字](path/to/image.jpg \"图片标题\")\u003C/span>"
+   },
+   "helpInlineStyleLinks0": {
+      "message": "行内式链接"
+   },
+   "helpInlineStyleLinksExample": {
+      "message": "\u003Ca target=\"_blank\" href=\"https://github.com/ArmandGrillet/Mado\">超链接\u003C/a>"
+   },
+   "helpInlineStyleLinksResult": {
+      "message": "\u003Cspan class=\"help-code\">[超文本](https://github.com/ArmandGrillet/Mado)\u003C/span>\u003Cbr>(可以用来创建一个链接)"
+   },
+   "helpItalic0": {
+      "message": "斜体"
+   },
+   "helpItalic1": {
+      "message": "强调"
+   },
+   "helpItalicExample": {
+      "message": "\u003Cem>斜体\u003C/em>"
+   },
+   "helpItalicResult": {
+      "message": "\u003Cspan class=\"help-code\">*斜体*\u003C/span> or \u003Cspan class=\"help-code\">_斜体_\u003C/span>"
+   },
+   "helpLineBreaks0": {
+      "message": "换行"
+   },
+   "helpLineBreaksExample": {
+      "message": "\u003Cp>按两次Enter来分隔两个段落。\u003C/p>\u003Cp>这就是新段落！\u003C/p>"
+   },
+   "helpLineBreaksResult": {
+      "message": "按两次 \u003Cspan class=\"help-code\">Enter\u003C/span> 来区分两个段落。\u003Cbr>\u003Cbr>这就是新段落！"
+   },
+   "helpOrderedLists0": {
+      "message": "有序列表"
+   },
+   "helpOrderedListsExample": {
+      "message": "\u003Col>\u003Cli>有序列表第一项\u003C/li>\u003Cli>其他项\u003C/li>\u003C/ol>"
+   },
+   "helpOrderedListsResult": {
+      "message": "1. 有序列表第一项. \u003Cbr>2. 其他项."
+   },
+   "helpQuestion0": {
+      "message": "问题"
+   },
+   "helpQuestionExample": {
+      "message": "生命中最持久的和紧迫的问题是，“你为别人做了什么？”"
+   },
+   "helpQuestionResult": {
+      "message": "真的?"
+   },
+   "helpReferenceStyleImages0": {
+      "message": "图片（参考式）"
+   },
+   "helpReferenceStyleImages1": {
+      "message": "相片（参考式）"
+   },
+   "helpReferenceStyleImagesExample": {
+      "message": "\u003Cdiv class=\"example-image\">\u003C/div>"
+   },
+   "helpReferenceStyleImagesResult": {
+      "message": "\u003Cspan class=\"help-code\">![提示文字][图片Id] \u003Cbr> [图片Id]: path/to/image.jpg \"图片标题\"\u003C/span>"
+   },
+   "helpReferenceStyleLinks0": {
+      "message": "参考式链接"
+   },
+   "helpReferenceStyleLinksExample": {
+      "message": "\u003Ca target=\"_blank\" href=\"https://github.com/ArmandGrillet/Mado\">超链接\u003C/a>"
+   },
+   "helpReferenceStyleLinksResult": {
+      "message": "\u003Cspan class=\"help-code\">[超链接][1]\u003Cbr>[1]: https://github.com/ArmandGrillet/Mado\u003C/span>"
+   },
+   "helpTables0": {
+      "message": "表格"
+   },
+   "helpTables1": {
+      "message": "数组"
+   },
+   "helpTablesExample": {
+      "message": "\u003Ctable> \u003Cthead>\u003Ctr> \u003Cth>表格\u003C/th> \u003Cth align=\"center\">很\u003C/th> \u003Cth align=\"right\">酷\u003C/th> \u003C/tr>\u003C/thead> \u003Ctbody> \u003Ctr> \u003Ctd>第3列是\u003C/td> \u003Ctd align=\"center\">右对齐\u003C/td> \u003Ctd align=\"right\">$13\u003C/td> \u003C/tr> \u003Ctr> \u003Ctd>第2列是\u003C/td> \u003Ctd align=\"center\">居中\u003C/td> \u003Ctd align=\"right\">$37\u003C/td> \u003C/tr> \u003C/tbody> \u003C/table>"
+   },
+   "helpTablesResult": {
+      "message": "| 表格&nbsp; | 很&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 酷&nbsp;&nbsp;|\u003Cbr>| -------- |:----------------:| ------:|\u003Cbr>| 第3列是 | 右对齐 | $13 &nbsp;&nbsp; |\u003Cbr>| 第2列是 | 居中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | $37 &nbsp;&nbsp; |"
+   },
+   "helpUnorderedLists0": {
+      "message": "无序列表"
+   },
+   "helpUnorderedListsExample": {
+      "message": "\u003Cul>\u003Cli>第一项。 \u003C/li>\u003Cli>第二项 （你也可以使用 + 或者 -）\u003C/li>\u003C/ul>"
+   },
+   "helpUnorderedListsResult": {
+      "message": "* 第一项。 \u003Cbr>* 第二项 （你也可以使用 + 或者 -）。"
+   },
+   "htmlAbout": {
+      "message": "关于Mado"
+   },
+   "htmlAltTextPlaceholder": {
+      "message": "输入提示文字"
+   },
+   "htmlCancel": {
+      "message": "取消 "
+   },
+   "htmlChooseGalleries": {
+      "message": "选择你的图片库"
+   },
+   "htmlDoNotSave": {
+      "message": "不保存"
+   },
+   "htmlHelpPlaceholder": {
+      "message": "输入一个语法 (e.g. '粗体')"
+   },
+   "htmlHypertextPlaceholder": {
+      "message": "输入文字（可选）"
+   },
+   "htmlImagesUrlPlaceholder": {
+      "message": "输入图片的URL"
+   },
+   "htmlMarkdownPlaceholder": {
+      "message": "在这里写"
+   },
+   "htmlOk": {
+      "message": "确定"
+   },
+   "htmlQA": {
+      "message": "Q&amp;A"
+   },
+   "htmlSaveAndExit": {
+      "message": "保存且退出"
+   },
+   "htmlSettings": {
+      "message": "设置"
+   },
+   "htmlShortcuts": {
+      "message": "快捷键"
+   },
+   "htmlUnsavedChangesText": {
+      "message": "本文档修改后未保存。是否在退出前保存？"
+   },
+   "htmlUnsavedChangesTitle": {
+      "message": "未保存修改"
+   },
+   "htmlUrlPlaceholder": {
+      "message": "输入URL"
+   },
+   "moreAboutAvailableOnGitHub": {
+      "message": "可以从 GitHub 上获得，"
+   },
+   "moreAboutBy": {
+      "message": "由"
+   },
+   "moreAboutCreatedBy": {
+      "message": "，作者是"
+   },
+   "moreAboutFonts": {
+      "message": "Mado 中使用的字体："
+   },
+   "moreAboutMITLicense": {
+      "message": "但需要在 MIT 授权条款下。"
+   },
+   "moreAboutProjects": {
+      "message": "Mado 在此感谢这些项目："
+   },
+   "moreAboutTitle": {
+      "message": "关于Mado"
+   },
+   "moreAboutUsing": {
+      "message": "您正在使用 Mado "
+   },
+   "moreSettingsResetButton": {
+      "message": "重置Mado，关闭所有窗口（包括没保存的文档）重启应用"
+   },
+   "moreSettingsResetTitle": {
+      "message": "重置："
+   },
+   "moreSettingsSyntaxMarkdown": {
+      "message": "基本的Markdown （不支持表）"
+   },
+   "moreSettingsSyntaxTitle": {
+      "message": "语法："
+   },
+   "moreShortcutsClassicTitle": {
+      "message": "经典快捷键"
+   },
+   "moreShortcutsClose": {
+      "message": "关闭窗口。"
+   },
+   "moreShortcutsHelp": {
+      "message": "打开快捷帮助工具。"
+   },
+   "moreShortcutsLink": {
+      "message": "添加一个链接"
+   },
+   "moreShortcutsNew": {
+      "message": "创建新文档。"
+   },
+   "moreShortcutsOpen": {
+      "message": "打开文档。"
+   },
+   "moreShortcutsPrint": {
+      "message": "打印文档。"
+   },
+   "moreShortcutsSave": {
+      "message": "保存文档。"
+   },
+   "moreShortcutsSaveAs": {
+      "message": "另存文档为..."
+   },
+   "moreShortcutsSpecificTitle": {
+      "message": "Mado 特有快捷键"
+   },
+   "moreShortcutsSwitchLeft": {
+      "message": "切换工作区到左边。"
+   },
+   "moreShortcutsSwitchRight": {
+      "message": "切换工作区到左边。"
+   },
+   "msgCharacter": {
+      "message": "字符"
+   },
+   "msgCharacters": {
+      "message": "字符数"
+   },
+   "msgChooseAnImage": {
+      "message": "选择一张图片"
+   },
+   "msgClearAll": {
+      "message": "全部清除"
+   },
+   "msgDocument": {
+      "message": "文档"
+   },
+   "msgExport": {
+      "message": "导出"
+   },
+   "msgFirstLaunch": {
+      "message": "# 尊敬的用户，\n\n感谢您安装 **Mado**。 在你第一次启动时，下面是一些信息：\n\n* Mado 可以处理 .md， .markdown 以及 .txt 文件， 能够保存这些文件为 .md （Markdown 文件的官方扩展名）和导出 .html。\n* 你可以点击右下角的字数查看你的文档有多少个字符（*反之亦然*）。 点击眼睛图标可以选择HTML的显示格式。\n* 查看快捷键（右上角按钮，“快捷键”选项）以便更熟练使用Mado。\n\n我希望你会喜欢Mado，\n\n**[Armand Grillet](http://armand.gr/)**\n\n***\n\nP.S. 这个信息不会再次出现。点击导航条上的“新建”开始使用Mado。"
+   },
+   "msgNew": {
+      "message": "新建 "
+   },
+   "msgNoHelpFound": {
+      "message": "找不到帮助。"
+   },
+   "msgNoInternet": {
+      "message": "网络不可用"
+   },
+   "msgNoRecentDocument": {
+      "message": "没有最近文档。"
+   },
+   "msgNoTextInEditor": {
+      "message": "这里显示结果"
+   },
+   "msgNotAnImage": {
+      "message": "这不是一张图片"
+   },
+   "msgNotFound": {
+      "message": "找不到"
+   },
+   "msgOneMoreCharacter": {
+      "message": "添加一个字符"
+   },
+   "msgOpen": {
+      "message": "打开"
+   },
+   "msgPrint": {
+      "message": "打印"
+   },
+   "msgRecent": {
+      "message": "最近"
+   },
+   "msgSave": {
+      "message": "保存"
+   },
+   "msgSaveAs": {
+      "message": "另存为"
+   },
+   "msgTwoMoreCharacters": {
+      "message": "添加两个字符"
+   },
+   "msgWord": {
+      "message": "字"
+   },
+   "msgWords": {
+      "message": "字数"
+   }
+}

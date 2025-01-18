@@ -1,0 +1,38 @@
+/* Copyright (c) 2016 Armand Grillet.
+See the license in the "About" section for further information. */
+ul li {
+	/* Positioning */
+	position: relative;
+
+	/* Box-model */
+	padding-left: 1.3em;
+}
+
+ul li:before {
+	/* Positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* Box-model */
+	display: block;
+	width: 1.3em;
+
+	/* Misc */
+	content: "\2022"; /* '\2022' is the escaped Unicode version of '&#149;' (bullet) */
+}
+
+.about-logo {
+	/* Positioning */
+	margin: 10px auto;
+
+	/* Box-model */
+	display: block;
+}
+
+/* License */
+.mit-license {
+	/* Typography */
+	font-size: 0.75em;
+	line-height: 1.35em;
+}

@@ -1,0 +1,425 @@
+{
+   "appDesc": {
+      "message": "Mado est un éditeur de Markdown. Vous pouvez l’utiliser pour prendre des notes, écrire des articles de blog ou éditer des documents."
+   },
+   "appName": {
+      "message": "Mado"
+   },
+   "helpBlockquotes0": {
+      "message": "Citations en bloc"
+   },
+   "helpBlockquotes1": {
+      "message": "Blockquotes"
+   },
+   "helpBlockquotesExample": {
+      "message": "\u003Cblockquote>Les citations en bloc nécessitent seulement un &gt; (signe supérieur) pour fonctionner. Sautez une ligne entre deux citations pour les séparer.\u003C/blockquote>"
+   },
+   "helpBlockquotesResult": {
+      "message": "> Les citations en bloc nécessitent seulement un \u003Cspan class=\"help-code\">>\u003C/span> (signe supérieur) pour fonctionner. \u003Cbr>\u003Cbr> \u003Cspan class=\"help-code\">> Deux lignes de citation sans séparation (une ligne qui n’est pas une citation) font une seule citation.\u003C/span>"
+   },
+   "helpBold0": {
+      "message": "Gras"
+   },
+   "helpBold1": {
+      "message": "Graisse forte"
+   },
+   "helpBold2": {
+      "message": "Bold"
+   },
+   "helpBoldExample": {
+      "message": "\u003Cstrong>Gras\u003C/strong>"
+   },
+   "helpBoldItalic0": {
+      "message": "Gras italique"
+   },
+   "helpBoldItalic1": {
+      "message": "Bold italic"
+   },
+   "helpBoldItalicExample": {
+      "message": "\u003Cstrong>\u003Cem>Gras italique\u003C/em>\u003C/strong>"
+   },
+   "helpBoldItalicResult": {
+      "message": "\u003Cspan class=\"help-code\">**_gras italique_**\u003C/span> ou \u003Cspan class=\"help-code\">*__gras italique__*\u003C/span> ou \u003Cspan class=\"help-code\">***ceci***\u003C/span> ou \u003Cspan class=\"help-code\">___cela___\u003C/span>"
+   },
+   "helpBoldResult": {
+      "message": "\u003Cspan class=\"help-code\">**gras**\u003C/span> ou \u003Cspan class=\"help-code\">__gras__\u003C/span>"
+   },
+   "helpCode0": {
+      "message": "Blocs de code"
+   },
+   "helpCode1": {
+      "message": "Blocks of code"
+   },
+   "helpCodeExample": {
+      "message": "\u003Ccode>Écrivez votre code entre entre trois accents graves pour faire un bloc de code.\u003C/code>\u003Cbr>\u003Ccode>Vous pouvez aussi écrire votre code en l’indentant avec quatre espaces.\u003C/code>"
+   },
+   "helpCodeResult": {
+      "message": "\u003Cspan class=\"help-code\">```Du texte entre trois accents graves est un bloc de code.```\u003Cbr>&nbsp;&nbsp;&nbsp;&nbsp;Du texte après quatre espaces est aussi un bloc de code.\u003C/span>"
+   },
+   "helpHeaders0": {
+      "message": "En-têtes"
+   },
+   "helpHeaders1": {
+      "message": "Entêtes"
+   },
+   "helpHeaders2": {
+      "message": "Titres"
+   },
+   "helpHeaders3": {
+      "message": "Headers"
+   },
+   "helpHeadersExample": {
+      "message": "Six tailles disponibles, la taille dépend du nombre de #.\u003Ch1 id=\"big-title-size-1-the-biggest-\">Grand titre (taille 1, la plus grande).\u003C/h1>\u003Ch4 id=\"a-less-impresive-title-size-4-on-6-br-\">Une taille moins importante (taille 4 sur 6).\u003C/h4>"
+   },
+   "helpHeadersResult": {
+      "message": "Six tailles disponibles, la taille dépend du nombre de #. \u003Cbr> #Grand titre (taille 1, la plus grande). \u003Cbr> ####Une taille moins importante (taille 4 sur 6)."
+   },
+   "helpHorizontaleRules0": {
+      "message": "Lignes horizontales"
+   },
+   "helpHorizontaleRules1": {
+      "message": "Traits de séparation"
+   },
+   "helpHorizontaleRules2": {
+      "message": "Horizontal rules"
+   },
+   "helpHorizontaleRulesExample": {
+      "message": "\u003Chr>Vous pouvez utiliser des traits d’union (tirets simples), des astérisques ou des tirets bas.\u003Chr>"
+   },
+   "helpHorizontaleRulesResult": {
+      "message": "\u003Cspan class=\"help-code\">*** \u003Cbr>Vous pouvez utiliser des traits d’union (tirets simples), des astérisques ou des tirets bas.\u003Cbr> ---\u003C/span>"
+   },
+   "helpInlineHTML0": {
+      "message": "HTML en ligne"
+   },
+   "helpInlineHTML1": {
+      "message": "HTML en Markdown"
+   },
+   "helpInlineHTML2": {
+      "message": "Inline HTML"
+   },
+   "helpInlineHTMLExample": {
+      "message": "Ça \u003Cstrong>marche\u003Cstrong>."
+   },
+   "helpInlineHTMLResult": {
+      "message": "\u003Cspan class=\"help-code\">Ça &lt;strong>marche&lt;/strong>.\u003C/span>"
+   },
+   "helpInlineStyleImages0": {
+      "message": "Images (en ligne)"
+   },
+   "helpInlineStyleImages1": {
+      "message": "Images (inline)"
+   },
+   "helpInlineStyleImagesExample": {
+      "message": "\u003Cdiv class=\"example-image\">\u003C/div>"
+   },
+   "helpInlineStyleImagesResult": {
+      "message": "\u003Cspan class=\"help-code\">![texte alternatif](chemin/vers/image.jpg \"Titre\")\u003C/span>"
+   },
+   "helpInlineStyleLinks0": {
+      "message": "Liens en ligne"
+   },
+   "helpInlineStyleLinks1": {
+      "message": "Inline-style links"
+   },
+   "helpInlineStyleLinksExample": {
+      "message": "\u003Ca target=\"_blank\" href=\"https://github.com/ArmandGrillet/Mado\">Hypertexte\u003C/a>"
+   },
+   "helpInlineStyleLinksResult": {
+      "message": "\u003Cspan class=\"help-code\">[Hypertexte](https://github.com/ArmandGrillet/Mado)\u003C/span>\u003Cbr>(Peut aussi être utilisé pour créer des ancres.)"
+   },
+   "helpItalic0": {
+      "message": "Italique"
+   },
+   "helpItalic1": {
+      "message": "Oblique"
+   },
+   "helpItalic2": {
+      "message": "Italic"
+   },
+   "helpItalicExample": {
+      "message": "\u003Cem>Italique\u003C/em>"
+   },
+   "helpItalicResult": {
+      "message": "\u003Cspan class=\"help-code\">*italique*\u003C/span> ou \u003Cspan class=\"help-code\">_italique_\u003C/span>"
+   },
+   "helpLineBreaks0": {
+      "message": "Retours à la ligne"
+   },
+   "helpLineBreaks1": {
+      "message": "Sauts de ligne"
+   },
+   "helpLineBreaks2": {
+      "message": "Line breaks"
+   },
+   "helpLineBreaksExample": {
+      "message": "\u003Cp>Pour séparer deux paragraphes, appuyez deux fois sur Entrée.\u003C/p>\u003Cp>Et voilà, un nouveau paragraphe !\u003C/p>"
+   },
+   "helpLineBreaksResult": {
+      "message": "Pour séparer deux paragraphes, appuyez deux fois sur \u003Cspan class=\"help-code\">Entrée\u003C/span>.\u003Cbr>\u003Cbr>Et voilà, un nouveau paragraphe !"
+   },
+   "helpOrderedLists0": {
+      "message": "Listes ordonnées"
+   },
+   "helpOrderedLists1": {
+      "message": "Listes numérotées"
+   },
+   "helpOrderedLists2": {
+      "message": "Ordered lists"
+   },
+   "helpOrderedListsExample": {
+      "message": "\u003Col>\u003Cli>Premier élément de liste ordonnée\u003C/li>\u003Cli>Un autre élément.\u003C/li>\u003C/ol>"
+   },
+   "helpOrderedListsResult": {
+      "message": "1. Premier élément de liste ordonnée. \u003Cbr>2. Un autre élément."
+   },
+   "helpQuestion0": {
+      "message": "Question"
+   },
+   "helpQuestionExample": {
+      "message": "La question la plus tenace et la plus pressante que la vie nous pose est : &laquo;&nbsp;Que faisons-nous pour les autres&nbsp;?&nbsp;&raquo;."
+   },
+   "helpQuestionResult": {
+      "message": "Sérieusement&nbsp;?"
+   },
+   "helpReferenceStyleImages0": {
+      "message": "Images (rérérencées)"
+   },
+   "helpReferenceStyleImages1": {
+      "message": "Images (reference-style)"
+   },
+   "helpReferenceStyleImagesExample": {
+      "message": "\u003Cdiv class=\"example-image\">\u003C/div>"
+   },
+   "helpReferenceStyleImagesResult": {
+      "message": "\u003Cspan class=\"help-code\">![texte alternatif][Id image] \u003Cbr> [Id image]: chemin/vers/image.jpg \"Titre\"\u003C/span>"
+   },
+   "helpReferenceStyleLinks0": {
+      "message": "Liens référencés"
+   },
+   "helpReferenceStyleLinks1": {
+      "message": "Reference-style links"
+   },
+   "helpReferenceStyleLinksExample": {
+      "message": "\u003Ca target=\"_blank\" href=\"https://github.com/ArmandGrillet/Mado\">Hypertexte\u003C/a>"
+   },
+   "helpReferenceStyleLinksResult": {
+      "message": "\u003Cspan class=\"help-code\">[Hypertexte][1]\u003Cbr>[1]: https://github.com/ArmandGrillet/Mado\u003C/span>"
+   },
+   "helpTables0": {
+      "message": "Tableaux"
+   },
+   "helpTables2": {
+      "message": "Tables"
+   },
+   "helpTablesExample": {
+      "message": "\u003Ctable> \u003Cthead>\u003Ctr> \u003Cth>Les tableaux\u003C/th> \u003Cth align=\"center\">sont\u003C/th> \u003Cth align=\"right\">cools\u003C/th> \u003C/tr>\u003C/thead> \u003Ctbody> \u003Ctr> \u003Ctd>La colonne 3 est\u003C/td> \u003Ctd align=\"center\">alignée à droite\u003C/td> \u003Ctd align=\"right\">$13\u003C/td> \u003C/tr> \u003Ctr> \u003Ctd>La colonne 2 est\u003C/td> \u003Ctd align=\"center\">centrée\u003C/td> \u003Ctd align=\"right\">$37\u003C/td> \u003C/tr> \u003C/tbody> \u003C/table>"
+   },
+   "helpTablesResult": {
+      "message": "| Les tableaux&nbsp; | sont&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | cools&nbsp;&nbsp;|\u003Cbr>| -------- |:----------------:| ------:|\u003Cbr>| La colonne 3 est | alignée à droite | $13 &nbsp;&nbsp; |\u003Cbr>| La colonne 2 est | centrée&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | $37 &nbsp;&nbsp; |"
+   },
+   "helpUnorderedLists0": {
+      "message": "Listes non ordonnées"
+   },
+   "helpUnorderedLists1": {
+      "message": "Listes à puces"
+   },
+   "helpUnorderedLists2": {
+      "message": "Unordered lists"
+   },
+   "helpUnorderedListsExample": {
+      "message": "\u003Cul>\u003Cli>Un élément. \u003C/li>\u003Cli>Un autre élément (vous pouvez aussi utiliser + ou -).\u003C/li>\u003C/ul>"
+   },
+   "helpUnorderedListsResult": {
+      "message": "* Un élément. \u003Cbr>* Un autre élément (vous pouvez aussi utiliser + ou -)."
+   },
+   "htmlAbout": {
+      "message": "À propos"
+   },
+   "htmlAltTextPlaceholder": {
+      "message": "Tapez un texte alternatif"
+   },
+   "htmlCancel": {
+      "message": "Annuler"
+   },
+   "htmlChooseGalleries": {
+      "message": "Choisir vos galeries"
+   },
+   "htmlDoNotSave": {
+      "message": "Ne pas sauvegarder"
+   },
+   "htmlHelpPlaceholder": {
+      "message": "Tapez un mot-clé (ex : « gras »)"
+   },
+   "htmlHypertextPlaceholder": {
+      "message": "Tapez un texte (optionnel)"
+   },
+   "htmlImagesUrlPlaceholder": {
+      "message": "Tapez l’URL de l’image"
+   },
+   "htmlMarkdownPlaceholder": {
+      "message": "Écrivez ici"
+   },
+   "htmlOk": {
+      "message": "Ok"
+   },
+   "htmlSaveAndExit": {
+      "message": "Sauvegarder et quitter"
+   },
+   "htmlSettings": {
+      "message": "Paramètres"
+   },
+   "htmlShortcuts": {
+      "message": "Raccourcis"
+   },
+   "htmlUnsavedChangesText": {
+      "message": "Les modifications de ce document n’ont pas été sauvegardées. Voulez-vous sauvegarder avant de quitter&nbsp;?"
+   },
+   "htmlUnsavedChangesTitle": {
+      "message": "Modifications non sauvegardées"
+   },
+   "htmlUrlPlaceholder": {
+      "message": "Tapez l’URL"
+   },
+   "moreAboutAvailableOnGitHub": {
+      "message": "est disponible sur GitHub"
+   },
+   "moreAboutBy": {
+      "message": "par"
+   },
+   "moreAboutCreatedBy": {
+      "message": ", créé par"
+   },
+   "moreAboutFonts": {
+      "message": "Polices utilisées dans Mado&nbsp;:"
+   },
+   "moreAboutMITLicense": {
+      "message": "sous licence MIT."
+   },
+   "moreAboutProjects": {
+      "message": "Mado existe grâce à ces projets&nbsp;:"
+   },
+   "moreAboutTitle": {
+      "message": "À propos de Mado"
+   },
+   "moreAboutUsing": {
+      "message": "Vous utilisez Mado "
+   },
+   "moreSettingsResetButton": {
+      "message": "Réinitialiser Mado et relancer l’application sans enregistrer les documents modifiés"
+   },
+   "moreSettingsResetTitle": {
+      "message": "Réinitialisation&nbsp:"
+   },
+   "moreSettingsSyntaxMarkdown": {
+      "message": "Markdown basique (sans tableaux)"
+   },
+   "moreSettingsSyntaxTitle": {
+      "message": "Syntaxe&nbsp;:"
+   },
+   "moreShortcutsClassicTitle": {
+      "message": "Raccourcis classiques"
+   },
+   "moreShortcutsClose": {
+      "message": "Fermer la fenêtre."
+   },
+   "moreShortcutsHelp": {
+      "message": "Ouvrir l’aide rapide."
+   },
+   "moreShortcutsLink": {
+      "message": "Insérer un lien."
+   },
+   "moreShortcutsNew": {
+      "message": "Créer un nouveau document."
+   },
+   "moreShortcutsOpen": {
+      "message": "Ouvrir un document existant."
+   },
+   "moreShortcutsPrint": {
+      "message": "Imprimer le document."
+   },
+   "moreShortcutsSave": {
+      "message": "Enregistrer le document."
+   },
+   "moreShortcutsSaveAs": {
+      "message": "Enregistrer le document sous…"
+   },
+   "moreShortcutsSpecificTitle": {
+      "message": "Raccourcis spéciaux de Mado"
+   },
+   "moreShortcutsSwitchLeft": {
+      "message": "Déplacer l’espace de travail vers la gauche."
+   },
+   "moreShortcutsSwitchRight": {
+      "message": "Déplacer l’espace de travail vers la droite."
+   },
+   "msgCharacter": {
+      "message": "caractère"
+   },
+   "msgCharacters": {
+      "message": "caractères"
+   },
+   "msgChooseAnImage": {
+      "message": "Choisir une image"
+   },
+   "msgClearAll": {
+      "message": "Effacer tout"
+   },
+   "msgDocument": {
+      "message": "document"
+   },
+   "msgExport": {
+      "message": "Exporter"
+   },
+   "msgFirstLaunch": {
+      "message": "# Cher utilisateur,\n\nMerci d’avoir installé **Mado**&nbsp;! Pour votre première visite, voici quelques informations:\n\n* Mado prend en charge les fichiers en format .md, .markdown et .txt, peut sauvegarder ces fichiers en .md (l’extension officielle des fichiers Markdown) et propose l’exportation en .html.\n* Vous pouvez cliquer sur le nombre de mots en bas à droite de la fenêtre pour afficher le nombre de caractères dans votre document (et *vice versa*). Cliquez sur l’&oelig;il juste à côté pour changer le style de votre vue HTML.\n* Découvrez les raccourcis clavier (bouton en haut à droite, section &laquo;&nbsp;Raccourcis&nbsp;&raquo;) pour utiliser Mado en profondeur.\n\nJ’espère que vous aimerez Mado,\n\n**[Armand Grillet](http://armand.gr/)**\n\n***\n\nP.S.&nbsp;: Ce message n’apparaitra plus. Cliquez sur &laquo;&nbsp;Nouveau&nbsp;&raquo; dans la barre principale pour commencer à utiliser Mado."
+   },
+   "msgNew": {
+      "message": "Nouveau"
+   },
+   "msgNoHelpFound": {
+      "message": "Aucune aide trouvée."
+   },
+   "msgNoInternet": {
+      "message": "Pas de connexion Internet"
+   },
+   "msgNoRecentDocument": {
+      "message": "Aucun document récent."
+   },
+   "msgNoTextInEditor": {
+      "message": "Regardez le résultat ici"
+   },
+   "msgNotAnImage": {
+      "message": "Ceci n’est pas une image"
+   },
+   "msgNotFound": {
+      "message": "Image introuvable"
+   },
+   "msgOneMoreCharacter": {
+      "message": "Encore un caractère&hellip;"
+   },
+   "msgOpen": {
+      "message": "Ouvrir"
+   },
+   "msgPrint": {
+      "message": "Imprimer"
+   },
+   "msgRecent": {
+      "message": "Récents"
+   },
+   "msgSave": {
+      "message": "Enregistrer"
+   },
+   "msgSaveAs": {
+      "message": "Enregistrer sous"
+   },
+   "msgTwoMoreCharacters": {
+      "message": "Encore deux caractères&hellip;"
+   },
+   "msgWord": {
+      "message": "mot"
+   },
+   "msgWords": {
+      "message": "mots"
+   }
+}

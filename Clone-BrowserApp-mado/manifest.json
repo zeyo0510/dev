@@ -1,0 +1,33 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "js/background.js" ]
+      }
+   },
+   "author": "Armand Grillet",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "file_handlers": {
+      "text": {
+         "extensions": [ "md" ]
+      }
+   },
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "256": "img/icon256.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoAA+6j/ZZ/HNEg4EZnt73ZbN3sHxxzujs8/ts3IPywZ7h1iuLzj74lqDL896Cc4M2yklVACxMguIcqRV9zQsfTK/Wa+Cd9ZSYSyFi9KvrKxBb2QctkF+Mk++CI8F/DuLDlnUiMoJByjiKfLjy9xRH7HaU9XkQ+0U0G65bW4a8fk+Yc2lEw0zSojzAdmnZQ7X8rhpOM5no0VXKGdMcP51+cqsmcmOD3ISMmqBaMD0/MTxCPyNpgeu6HCi0TuDQ9k3NlB8/Gasvhv7IJjh6+UjnTvVKtiXwwUhPftGNa0+kfK5T+gmZETaW/EsaTPCjK9MVNRgK8nKOLiBFkL5BkW4GQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "35",
+   "name": "__MSG_appName__",
+   "offline_enabled": true,
+   "permissions": [ "alwaysOnTopWindows", {
+      "fileSystem": [ "write", "retainEntries" ]
+   }, {
+      "mediaGalleries": [ "read" ]
+   }, "storage", "webview", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.5"
+}
