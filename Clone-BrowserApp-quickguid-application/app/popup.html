@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/styles/widgets.css">
+        <link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <script type="text/javascript" src="/scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="/scripts/options.js"></script>
+        <script type="text/javascript" src="/scripts/Base64.js"></script>
+        <script type="text/javascript" src="/scripts/guid.js"></script>
+    </head>
+    <body>
+        <div id="maincontainer">
+            <div id="quickguidlable">Quick GUID</div>
+            <div id="optionscontainer">
+                <div class="selectbox">
+                    <label>
+                        <span>Select GUID Type : </span>
+                        <select id="optGUIDType">
+                            <option value="1">MS GUID</option>
+                            <option value="2">Base64</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="divMSGUIDOptions">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="cbBraces" />
+                            <span>Wrap in curly braces.</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="cbUpperCase" />
+                            <span>Use UPPERCASE characters.</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="cbOmitHyphens" />
+                            <span>Omit hyphens.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div id="quickgenerator">
+                <div id="quickguid">&nbsp;</div>
+            </div>
+            <div id="divMainPageButtons">
+                <div id="appoptions" title="GUID Options"></div>
+                <div id="btnrefresh" title="Generate New GUID"></div>
+                <div id="btncopyguid" title="Copy to Clipboard"></div>
+            </div>
+            <div id="divOptionPageButtons">
+                <div id="btnOptionsBackToMain" title="GUID Main"></div>
+            </div>
+            <div id="appexit" title="Close"></div>
+        </div>
+    </body>
+</html>

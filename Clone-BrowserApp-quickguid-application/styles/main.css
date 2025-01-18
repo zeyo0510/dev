@@ -1,0 +1,227 @@
+html {
+    background-color: transparent;
+}
+
+body {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    white-space: nowrap;
+    font-family: 'Cuprum', verdana, sans-serif;
+    width: 450px;
+    color: #4f4f4f;
+}
+
+div#maincontainer {
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+div#quickguid {
+    background-color: #efefff;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 3px;
+    line-height: 35px;
+    border: 1px solid #afafbb;
+}
+
+div#quickguidlable {
+    padding: 0 5px 7px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-app-region: drag;
+    width: 124px;
+    margin: 0 auto;
+    clear: both;
+}
+
+div#appexit {
+    position: absolute;
+    z-index: 1000;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 5px;
+    background-image: url(/images/images.png);
+    background-position: right 16px;
+    cursor: pointer;
+}
+
+    div#appexit:hover {
+        background-image: url(/images/images.png);
+        background-position: left 16px;
+    }
+
+div#appoptions {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/images.png);
+    background-position: right 96px;
+    cursor: pointer;
+}
+
+    div#appoptions:hover {
+        background-image: url(/images/images.png);
+        background-position: left 96px;
+    }
+
+div#optionscontainer {
+    display: none;
+    padding: 0 10px;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cuprum'), local('Cuprum-Regular'), url(sp1_LTSOMWWV0K5VTuZzvQ.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Cuprum Italic'), local('Cuprum-Italic'), url(ZqGKlaN5npewtoCRUIPIrvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Cuprum Bold'), local('Cuprum-Bold'), url(SfDyn5tWOk7I1we45jpLKz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Cuprum Bold Italic'), local('Cuprum-BoldItalic'), url(qoCTdBYim27O_DVk90C7-YbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+div.checkbox {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+div.selectbox {
+    padding: .65em 0;
+}
+
+select {
+    font-weight: normal;
+    font-size: 14px;
+    height: 26px;
+    min-height: 1em;
+    padding-top: 3px;
+}
+
+label span {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+div#divMainPageButtons {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+    div#divMainPageButtons div#btnrefresh {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url(/images/images.png);
+        background-position: right 32px;
+        cursor: pointer;
+        margin-left: 16px;
+    }
+
+        div#divMainPageButtons div#btnrefresh:hover {
+            background-image: url(/images/images.png);
+            background-position: left 32px;
+        }
+
+    div#divMainPageButtons div#btncopyguid {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url(/images/images.png);
+        background-position: right 48px;
+        cursor: pointer;
+        margin-left: 3px;
+    }
+
+        div#divMainPageButtons div#btncopyguid:hover {
+            background-image: url(/images/images.png);
+            background-position: left 48px;
+        }
+
+    div#divMainPageButtons div#btnfacebook {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url(/images/images.png);
+        background-position: right 144px;
+        cursor: pointer;
+        margin-left: 16px;
+    }
+
+        div#divMainPageButtons div#btnfacebook:hover {
+            background-image: url(/images/images.png);
+            background-position: left 144px;
+        }
+
+    div#divMainPageButtons div#btntwitter {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url(/images/images.png);
+        background-position: right 128px;
+        cursor: pointer;
+        margin-left: 3px;
+    }
+
+        div#divMainPageButtons div#btntwitter:hover {
+            background-image: url(/images/images.png);
+            background-position: left 128px;
+        }
+
+    div#divMainPageButtons div#btngplus {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url(/images/images.png);
+        background-position: right 112px;
+        cursor: pointer;
+        margin-left: 3px;
+    }
+
+        div#divMainPageButtons div#btngplus:hover {
+            background-image: url(/images/images.png);
+            background-position: left 112px;
+        }
+
+div#divOptionPageButtons {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+}
+
+    div#divOptionPageButtons div#btnOptionsBackToMain {
+        float: left;
+        width: 16px;
+        height: 16px;
+        background-image: url(/images/images.png);
+        background-position: right 160px;
+        cursor: pointer;
+    }
+
+        div#divOptionPageButtons div#btnOptionsBackToMain:hover {
+            background-image: url(/images/images.png);
+            background-position: left 160px;
+        }
