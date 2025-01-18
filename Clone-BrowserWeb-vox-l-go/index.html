@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTTP Webserver</title>
+        <!-- build:css styles/app.css -->
+        <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <script src="index.js"></script>
+        <style>
+          input[type="file"]::-webkit-file-upload-button {
+            background-color: red;
+            color: white;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            background-color: #006DCC;
+            background-image: -moz-linear-gradient(top, #08C, #04C);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#04C));
+            background-image: -webkit-linear-gradient(top, #08C, #04C);
+            background-image: -o-linear-gradient(top, #08C, #04C);
+            background-image: linear-gradient(to bottom, #08C, #04C);
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+            border-color: #04C #04C #002A80;
+            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+            padding: 9px 14px;
+            font-size: 16px;
+            line-height: normal;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+          }
+          input[type="file"] {
+            margin-bottom: 20px;
+          }
+          input[type="file"][disabled]::-webkit-file-upload-button {
+            color: default;
+            background-color: #E6E6E6;
+            background-image: none;
+            opacity: 0.65;
+            filter: alpha(opacity=65);
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+          }
+
+          #logger {
+            border: solid 1px #c6c6c6;
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 5px #c6c6c6;
+            height: 100px;
+            overflow-y: auto;
+          }
+
+          select { 
+            display: block;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="hero-unit">
+        <h1>VoxLGo</h1>
+         <p>A free tool for teaching programming</p>
+
+         <h4>Step 0: Download latest Vox-L Go zip file to folder and unzip</h4>
+          <h5>(You only need to do this once.)</h5>
+         <a href="https://s3-us-west-1.amazonaws.com/voxel-engine/VoxLGo/Latest/VoxLGoInstallation.zip" download><button class="btn btn-primary btn-large">Click here to download</button></a>
+          <br/>
+          <br/>
+
+         <h4>Step 1: Point to your unzipped installation folder</h4>
+         <input type="file" webkitdirectory id="directory" style="height:auto;"/><br />
+
+         <h4>Step 2: Start the Vox-L Server</h4>
+         <button id="start" class="btn btn-primary btn-large" disabled>Start Vox-L Go Server</button>
+          <br/>
+          <br/>
+
+         <h4>Step 3: Open Vox-L Go in your browser</h4>
+         <a href="http://127.0.0.1:8080/main/voxlgo.html" target="_blank">
+            <button class="btn btn-primary btn-large">Join Vox-L Go Server</button>
+         </a>
+      </div>
+      <pre id="logger"></pre>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+-O VoxLGo -A0 -%! -w +ajax.googleapis.com/* +s3-us-west-1.amazonaws.com/* localhost:3001/voxlgo
+File generated automatically on Fri, 06 May 2016 14:41:57, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

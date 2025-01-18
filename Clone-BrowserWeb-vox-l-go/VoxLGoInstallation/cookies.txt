@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+localhost:3001	TRUE	/	FALSE	1999999999	ahoy_visitor	78e5d588-efe4-4065-83a0-f4aced609440
+localhost:3001	TRUE	/	FALSE	1999999999	ahoy_track	true
+localhost:3001	TRUE	/	FALSE	1999999999	_learntomod_session	BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTYxOTdhNjQ1ODYwYmMwNzBiNmI2ODg5Mjg4Mzc4ZWNhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTQyRWppL3pTcWozcVdtR1ROZ29WTFlHS0pIYVlkcnQvWW5MTU1vcDJjc2s9BjsARg%3D%3D--cf70361ae321a9096f72344030962737ab0ad0e4
+localhost:3001	TRUE	/	FALSE	1999999999	ahoy_visit	6c351f51-c050-4bfa-a3ef-c024571b4624
+
