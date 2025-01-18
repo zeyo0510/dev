@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+  <title>Super Clock</title>
+
+    <link rel="canonical" href="https://codepen.io/aurer/pen/BpYyYL">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #1c2528;
+  padding: 1em;
+  margin: 0;
+}
+svg {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+svg circle {
+  fill: none;
+  stroke: #2b3437;
+  stroke-width: 20;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+svg circle[data-ending] {
+  transition-duration: 0s;
+}
+svg circle.segments {
+  stroke: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity 1s;
+}
+svg text {
+  fill: #91afb6;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  opacity: 1;
+  transition: opacity 1s;
+}
+svg.hide-details text,
+svg.hide-details .segments {
+  opacity: 0;
+}
+.year.progress {
+  stroke: #395E66;
+}
+.year + text {
+  fill: #889ea3;
+}
+.month.progress {
+  stroke: #387D7A;
+}
+.month + text {
+  fill: #88b1af;
+}
+.week.progress {
+  stroke: #32936F;
+}
+.week + text {
+  fill: #84bea9;
+}
+.day.progress {
+  stroke: #26A96C;
+}
+.day + text {
+  fill: #7dcba7;
+}
+.hour.progress {
+  stroke: #12c777;
+}
+.hour + text {
+  fill: #71ddad;
+}
+.minute.progress {
+  stroke: #0be886;
+}
+.minute + text {
+  fill: #6df1b6;
+}
+@-webkit-keyframes second {
+  to {
+    transform: rotate(270deg);
+  }
+}
+@keyframes second {
+  to {
+    transform: rotate(270deg);
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <svg class="clock" viewbox="0 0 1000 1000">
+	<circle class="year" cx="500" cy="500" r="480" />
+	<text x="500" y="45">Year</text>
+
+		<circle class="month" cx="500" cy="500" r="425" />
+		<text x="500" y="100">Month</text>
+
+		<circle class="week" cx="500" cy="500" r="370" />
+		<text x="500" y="155">Week</text>
+
+		<circle class="day" cx="500" cy="500" r="315" />
+		<text x="500" y="210">Day</text>
+
+		<circle class="hour" cx="500" cy="500" r="260" />
+		<text x="500" y="265">Hour</text>
+
+		<circle class="minute" cx="500" cy="500" r="205" />
+		<text x="500" y="320">Minute</text>
+	</svg>
+  
+      <script id="rendered-js" >
+var App = {
+  progressElements: [],
+  segmentElements: [],
+
+  init: function () {
+    this.svg = document.querySelector('svg.clock');
+    this.setSize();
+    this.updateSize();
+    this.addProps();
+    this.setupCircles();
+    this.setupSegments();
+    this.setTimouts();
+    this.enableDisplayOptions();
+    this.updateMinute();
+    this.updateHour();
+    this.updateDay();
+    this.updateWeek();
+    this.updateMonth();
+    this.updateYear();
+  },
+
+  addProps: function () {
+    SVGElement.prototype.circumference = function () {
+      return this.getAttribute('r') * 2 * Math.PI;
+    };
+  },
+
+  setupCircles: function () {
+    var circles = App.svg.querySelectorAll('circle');
+    for (var i = 0; i < circles.length; i++) {
+      var circle = circles[i];
+      var className = circle.getAttribute('class');
+
+      // Add progress circle
+      var progress = circle.cloneNode(true);
+      progress.setAttribute('stroke-dasharray', circle.circumference());
+      progress.setAttribute('stroke-dashoffset', circle.circumference());
+      progress.setAttribute('class', className + ' progress');
+      App.progressElements[className] = App.svg.appendChild(progress);
+
+      // Add segments circle
+      var segment = circle.cloneNode(true);
+      segment.setAttribute('class', className + ' segments');
+      App.segmentElements[className] = App.svg.appendChild(segment);
+    };
+  },
+
+  setupSegments: function () {
+    function calculateSegments(element) {
+      var circle = App.segmentElements[element];
+      var date = new Date();
+      var segmentCounts = {
+        minute: 60,
+        hour: 60,
+        day: 24,
+        week: 7,
+        month: new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate(),
+        year: 12 };
+
+
+      return circle.getAttribute('r') * 2 * Math.PI / segmentCounts[element] - 1;
+    }
+
+    App.segmentElements.minute.setAttribute('stroke-dasharray', '1 ' + calculateSegments('minute'));
+    App.segmentElements.hour.setAttribute('stroke-dasharray', '1 ' + calculateSegments('hour'));
+    App.segmentElements.day.setAttribute('stroke-dasharray', '1 ' + calculateSegments('day'));
+    App.segmentElements.week.setAttribute('stroke-dasharray', '1 ' + calculateSegments('week'));
+    App.segmentElements.month.setAttribute('stroke-dasharray', '1 ' + calculateSegments('month'));
+    App.segmentElements.year.setAttribute('stroke-dasharray', '1 ' + calculateSegments('year'));
+  },
+
+  setSize: function () {
+    var y = window.innerHeight;
+    var x = window.innerwidth;
+    var max = x > y ? x : y;
+    App.svg.setAttribute('height', max - 20);
+    App.svg.setAttribute('width', max - 20);
+  },
+
+  updateSize: function () {
+    window.onresize = function () {
+      App.setSize();
+    };
+  },
+
+  enableDisplayOptions: function () {
+    var toggleDetails = function () {
+      App.svg.classList.toggle('hide-details');
+    };
+    setTimeout(toggleDetails, 2000);
+
+    document.body.onclick = toggleDetails;
+    document.body.ontouchend = toggleDetails;
+  },
+
+  updateMinute: function () {
+    var circle = App.progressElements.minute;
+    var second = new Date().getSeconds();
+    var pos = second / 60 * 100;
+    var offset = circle.circumference() - circle.circumference() / 100 * pos;
+    circle.setAttribute('stroke-dashoffset', offset);
+    if (pos == 0) {
+      circle.setAttribute('data-ending', true);
+    } else {
+      circle.removeAttribute('data-ending');
+    }
+  },
+
+  updateHour: function () {
+    var hour = App.progressElements.hour;
+    var now = new Date();
+    var minutesInHour = 60;
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    minute += second / 60;
+    var pos = minute / minutesInHour * 100;
+    hour.setAttribute('stroke-dasharray', hour.circumference());
+    hour.setAttribute('stroke-dashoffset', hour.circumference() - hour.circumference() / 100 * pos);
+  },
+
+  updateDay: function () {
+    var circle = App.progressElements.day;
+    var minutesInDay = 60 * 24;
+    var hour = new Date().getHours();
+    var minute = 60 * hour + new Date().getMinutes();
+    var pos = minute / minutesInDay * 100;
+    circle.setAttribute('stroke-dasharray', circle.circumference());
+    circle.setAttribute('stroke-dashoffset', circle.circumference() - circle.circumference() / 100 * pos);
+  },
+
+  updateWeek: function () {
+    var circle = App.progressElements.week;
+    var date = new Date();
+    var dayIndex = new Date().getDay();
+    var dayOfWeek = [6, 0, 1, 2, 3, 4, 5][dayIndex];
+    var hours = date.getHours();
+    var minutes = new Date().getMinutes() / 60;
+    var hourInWeek = (hours + minutes) / (7 * 24) * 100;
+    var pos = dayOfWeek / 7 * 100 + hourInWeek;
+    circle.setAttribute('stroke-dasharray', circle.circumference());
+    circle.setAttribute('stroke-dashoffset', circle.circumference() - circle.circumference() / 100 * pos);
+  },
+
+  updateMonth: function () {
+    var circle = App.progressElements.month;
+    var date = new Date();
+    var today = date.getDate() - 1;
+    var daysInMonth = new Date(date.getYear(), date.getMonth() + 1, 0).getDate();
+    var hours = date.getHours();
+    var hoursInDay = hours / 24;
+    var pos = (today + hoursInDay) / daysInMonth * 100;
+    circle.setAttribute('stroke-dasharray', circle.circumference());
+    circle.setAttribute('stroke-dashoffset', circle.circumference() - circle.circumference() / 100 * pos);
+  },
+
+  updateYear: function () {
+    var circle = App.progressElements.year;
+    var today = new Date();
+    var first = new Date(today.getFullYear(), 0, 1);
+    var dayOfTheYear = Math.round((today - first) / 1000 / 60 / 60 / 24 + .5, 0);
+    var pos = 100 / 365 * dayOfTheYear;
+    circle.setAttribute('stroke-dasharray', circle.circumference());
+    circle.setAttribute('stroke-dashoffset', circle.circumference() - circle.circumference() / 100 * pos);
+  },
+
+  setTimouts: function () {
+    var date = new Date();
+    var seconds = date.getSeconds();
+    var milliseconds = date.getMilliseconds();
+    var millisecondsUntilNextSecond = 1000 - milliseconds - 1000;
+    var secondsUntilNextMinute = (60 - seconds) * 1000 - millisecondsUntilNextSecond;
+
+    setTimeout(function () {
+      // Update every second
+      setInterval(App.updateMinute.bind(this), 1000);
+      setInterval(App.updateHour.bind(this), 1000);
+    }, millisecondsUntilNextSecond);
+
+
+    // Update every minute
+    setTimeout(function () {
+      setInterval(function () {
+        App.updateDay();
+        App.updateWeek();
+        App.updateMonth();
+        App.updateYear();
+      }, 60000);
+
+      App.updateDay();
+      App.updateWeek();
+      App.updateMonth();
+      App.updateYear();
+    }, secondsUntilNextMinute);
+  } };
+
+
+App.init();
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
