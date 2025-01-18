@@ -1,0 +1,948 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link href="assets/css/materialize.css" rel="stylesheet" />
+  <link href="assets/quill/quill.snow.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="load">
+    <span class="container">
+	    <div>W</div>
+	    <div>R</div>
+	    <div>I</div>
+	    <div>T</div>
+	    <div>E</div>
+	    <div>R</div>
+    </span>
+  </div>
+  <div class="body_container">
+    <div class="appnav"></div>
+    <div class="appnavaccent">
+      <div id="close" class="appnavicon">
+        <div class="line close-left"></div>
+        <div class="line close-right"></div>
+      </div>
+      <div id="maximize" class="appnavicon">
+        <div class="line maximize-top"></div>
+        <div class="line maximize-left"></div>
+        <div class="line maximize-bottom"></div>
+        <div class="line maximize-right"></div>
+      </div>
+      <div id="minimize" class="appnavicon">
+        <div class="line minimize-rectangle"></div>
+      </div>
+    </div>
+    <div class="shove"></div>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper">
+        <div data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i>
+
+        </div>
+        <div class="brand-logo">Writer - Untitled.wtr</div>
+        <a data-activates="dropdown1" class="small material-icons right dropdown-button">more_vert</a>
+        <a class="small material-icons right search-button">search</a>
+        <div class="search-bar">
+          <a class="small material-icons left back">arrow_back</a>
+          <div class="input-field">
+            <input type="text" id="input" class="right search-field validate" spellcheck="false"/>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a class="waves-effect waves-dark modal-trigger word-count" href="#word-count">Word Count</a>
+
+      </li>
+      <li><a class="waves-effect waves-dark modal-trigger details" href="#details">Details</a>
+
+      </li>
+      <li><a class="waves-effect waves-dark save-to-docx">Export to .docx</a>
+
+      </li>
+    </ul>
+    <div id="word-count" class="modal">
+      <div class="modal-content">
+        <h4>Word Count</h4>
+        <table>
+          <tbody>
+            <tr>
+              <td>Words</td>
+              <td class="words">0</td>
+            </tr>
+            <tr>
+              <td>Characters</td>
+              <td class="characters">0</td>
+            </tr>
+            <tr>
+              <td>Characters <span>excluding spaces</span>
+              </td>
+              <td class="characters-exc">0</td>
+            </tr>
+            <tr>
+              <td>Paragraphs</td>
+              <td class="paragraphs">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer"> <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+
+      </div>
+    </div>
+    <div id="details" class="modal">
+      <div class="modal-content">
+        <h4>Details</h4>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td class="doc-name">Untitled.wtr</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td class="doc-type">wtr</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td class="doc-size">0</td>
+            </tr>
+            <tr>
+              <td>Est. Reading Time</td>
+              <td class="doc-time">0 Min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer"> <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+
+      </div>
+    </div>
+    <ul id="slide-out" class="side-nav">
+      <div class="shove"></div>
+      <li>
+        <a href="#file" class="modal-trigger">
+          <div class="material-icons small left">insert_drive_file</div>File</a>
+      </li>
+      <li>
+        <a href="#edit" class="modal-trigger">
+          <div class="material-icons small left">mode_edit</div>Edit</a>
+      </li>
+      <li style="border-top-width: 1px; border-top-color: rgba(0,0,0,0.1); border-top-style: solid;">
+        <a class="modal-trigger settings" href="#modal3">
+          <div class="material-icons small left">settings</div>Settings</a>
+      </li>
+      <li>
+        <a class="modal-trigger" href="#modal4">
+          <div class="material-icons small left">favorite</div>Support</a>
+
+      </li>
+      <li>
+        <a class="modal-trigger" href="#osl">
+          <div class="material-icons small left">receipt</div>Licenses</a>
+      </li>
+      <li>
+        <a class="modal-trigger help" href="#help">
+          <div class="material-icons small left">help</div>Help</a>
+      </li>
+    </ul>
+    <div id="full-toolbar" class="toolbar ql-toolbar ql-snow grey lighten-4 z-depth-1">
+      <div class="ql-container-toolbar"> <span class="ql-format-group">
+            <select title="Font" class="ql-font">
+                <option class="arial-option" value="Arial">Arial</option>
+                <option class="calibri-option" value="Calibri">Calibri</option>
+                <option class="comic-sans-option" value="Comic Sans MS">Comic Sans</option>
+                <option class="courier-option" value="Courier">Courier</option>
+                <option class="georgia-option" value="Georgia" selected="">Georgia</option>
+                <option class="helvetica-option" value="Helvetica">Helvetica</option>
+                <option class="monospace-option" value="monospace">Monospace</option>
+                <option class="open-sans-option" value="Open Sans">Open Sans</option>
+                <option class="palatino-option" value="Palatino">Palatino</option>
+                <option class="roboto-option" value="Roboto">Roboto</option>
+                <option class="sans-serif-option" value="sans-serif">Sans Serif</option>
+                <option class="serif-option" value="serif">Serif</option>
+                <option class="times-option" value="Times New Roman">Times</option>
+                <option class="trebuchet-option" value="Trebuchet MS">Trebuchet</option>
+                <option class="verdana-option" value="Verdana">Verdana</option>
+            </select>
+            <div title="Heading" class="ql-headings">
+              Headings
+            </div>
+            <div class="heading-options">
+              <div class="heading-one">Heading 1</div>
+              <div class="heading-two">Heading 2</div>
+              <div class="heading-three">Heading 3</div>
+              <div class="heading-four">Heading 4</div>
+            </div>
+            <select title="Size" class="ql-size">
+                <option class="ten-option" value="10px">10</option>
+                <option class="twelve-option" value="12px">12</option>
+                <option class="sixteen-option" value="16px" selected="">16</option>
+                <option class="eighteen-option" value="18px">18</option>
+                <option class="twentyfour-option" value="24px">24</option>
+                <option class="thirtytwo-option" value="32px">32</option>
+                <option class="fourtyeight-option" value="48px">48</option>
+            </select>
+            </span>
+        <span class="ql-format-group">
+                <span title="Bold" class="ql-format-button ql-bold"></span>
+        <span class="ql-format-separator"></span>
+        <span title="Italic" class="ql-format-button ql-italic"></span>
+        <span class="ql-format-separator"></span>
+        <span title="Underline" class="ql-format-button ql-underline"></span>
+        <span class="ql-format-separator"></span>
+        <span title="Strikethrough" class="ql-format-button ql-strike"></span>
+        </span>
+        <span class="ql-format-group">
+            <select title="Text Color" class="ql-color">
+                <option value="rgb(0, 0, 0)" label="rgb(0, 0, 0)" selected=""></option>
+                <option value="rgb(230, 0, 0)" label="rgb(230, 0, 0)"></option>
+                <option value="rgb(255, 153, 0)" label="rgb(255, 153, 0)"></option>
+                <option value="rgb(255, 255, 0)" label="rgb(255, 255, 0)"></option>
+                <option value="rgb(0, 138, 0)" label="rgb(0, 138, 0)"></option>
+                <option value="rgb(0, 102, 204)" label="rgb(0, 102, 204)"></option>
+                <option value="rgb(153, 51, 255)" label="rgb(153, 51, 255)"></option>
+                <option value="rgb(255, 255, 255)" label="rgb(255, 255, 255)"></option>
+                <option value="rgb(250, 204, 204)" label="rgb(250, 204, 204)"></option>
+                <option value="rgb(255, 235, 204)" label="rgb(255, 235, 204)"></option>
+                <option value="rgb(255, 255, 204)" label="rgb(255, 255, 204)"></option>
+                <option value="rgb(204, 232, 204)" label="rgb(204, 232, 204)"></option>
+                <option value="rgb(204, 224, 245)" label="rgb(204, 224, 245)"></option>
+                <option value="rgb(235, 214, 255)" label="rgb(235, 214, 255)"></option>
+                <option value="rgb(187, 187, 187)" label="rgb(187, 187, 187)"></option>
+                <option value="rgb(240, 102, 102)" label="rgb(240, 102, 102)"></option>
+                <option value="rgb(255, 194, 102)" label="rgb(255, 194, 102)"></option>
+                <option value="rgb(255, 255, 102)" label="rgb(255, 255, 102)"></option>
+                <option value="rgb(102, 185, 102)" label="rgb(102, 185, 102)"></option>
+                <option value="rgb(102, 163, 224)" label="rgb(102, 163, 224)"></option>
+                <option value="rgb(194, 133, 255)" label="rgb(194, 133, 255)"></option>
+                <option value="rgb(136, 136, 136)" label="rgb(136, 136, 136)"></option>
+                <option value="rgb(161, 0, 0)" label="rgb(161, 0, 0)"></option>
+                <option value="rgb(178, 107, 0)" label="rgb(178, 107, 0)"></option>
+                <option value="rgb(178, 178, 0)" label="rgb(178, 178, 0)"></option>
+                <option value="rgb(0, 97, 0)" label="rgb(0, 97, 0)"></option>
+                <option value="rgb(0, 71, 178)" label="rgb(0, 71, 178)"></option>
+                <option value="rgb(107, 36, 178)" label="rgb(107, 36, 178)"></option>
+                <option value="rgb(68, 68, 68)" label="rgb(68, 68, 68)"></option>
+                <option value="rgb(92, 0, 0)" label="rgb(92, 0, 0)"></option>
+                <option value="rgb(102, 61, 0)" label="rgb(102, 61, 0)"></option>
+                <option value="rgb(102, 102, 0)" label="rgb(102, 102, 0)"></option>
+                <option value="rgb(0, 55, 0)" label="rgb(0, 55, 0)"></option>
+                <option value="rgb(0, 41, 102)" label="rgb(0, 41, 102)"></option>
+                <option value="rgb(61, 20, 102)" label="rgb(61, 20, 102)"></option>
+            </select>
+            <select title="Background Color" class="ql-background">
+                <option value="rgb(0, 0, 0)" label="rgb(0, 0, 0)"></option>
+                <option value="rgb(230, 0, 0)" label="rgb(230, 0, 0)"></option>
+                <option value="rgb(255, 153, 0)" label="rgb(255, 153, 0)"></option>
+                <option value="rgb(255, 255, 0)" label="rgb(255, 255, 0)"></option>
+                <option value="rgb(0, 138, 0)" label="rgb(0, 138, 0)"></option>
+                <option value="rgb(0, 102, 204)" label="rgb(0, 102, 204)"></option>
+                <option value="rgb(153, 51, 255)" label="rgb(153, 51, 255)"></option>
+                <option value="rgb(255, 255, 255)" label="rgb(255, 255, 255)" selected=""></option>
+                <option value="rgb(250, 204, 204)" label="rgb(250, 204, 204)"></option>
+                <option value="rgb(255, 235, 204)" label="rgb(255, 235, 204)"></option>
+                <option value="rgb(255, 255, 204)" label="rgb(255, 255, 204)"></option>
+                <option value="rgb(204, 232, 204)" label="rgb(204, 232, 204)"></option>
+                <option value="rgb(204, 224, 245)" label="rgb(204, 224, 245)"></option>
+                <option value="rgb(235, 214, 255)" label="rgb(235, 214, 255)"></option>
+                <option value="rgb(187, 187, 187)" label="rgb(187, 187, 187)"></option>
+                <option value="rgb(240, 102, 102)" label="rgb(240, 102, 102)"></option>
+                <option value="rgb(255, 194, 102)" label="rgb(255, 194, 102)"></option>
+                <option value="rgb(255, 255, 102)" label="rgb(255, 255, 102)"></option>
+                <option value="rgb(102, 185, 102)" label="rgb(102, 185, 102)"></option>
+                <option value="rgb(102, 163, 224)" label="rgb(102, 163, 224)"></option>
+                <option value="rgb(194, 133, 255)" label="rgb(194, 133, 255)"></option>
+                <option value="rgb(136, 136, 136)" label="rgb(136, 136, 136)"></option>
+                <option value="rgb(161, 0, 0)" label="rgb(161, 0, 0)"></option>
+                <option value="rgb(178, 107, 0)" label="rgb(178, 107, 0)"></option>
+                <option value="rgb(178, 178, 0)" label="rgb(178, 178, 0)"></option>
+                <option value="rgb(0, 97, 0)" label="rgb(0, 97, 0)"></option>
+                <option value="rgb(0, 71, 178)" label="rgb(0, 71, 178)"></option>
+                <option value="rgb(107, 36, 178)" label="rgb(107, 36, 178)"></option>
+                <option value="rgb(68, 68, 68)" label="rgb(68, 68, 68)"></option>
+                <option value="rgb(92, 0, 0)" label="rgb(92, 0, 0)"></option>
+                <option value="rgb(102, 61, 0)" label="rgb(102, 61, 0)"></option>
+                <option value="rgb(102, 102, 0)" label="rgb(102, 102, 0)"></option>
+                <option value="rgb(0, 55, 0)" label="rgb(0, 55, 0)"></option>
+                <option value="rgb(0, 41, 102)" label="rgb(0, 41, 102)"></option>
+                <option value="rgb(61, 20, 102)" label="rgb(61, 20, 102)"></option>
+            </select>
+            </span>
+        <span class="ql-format-group">
+     <span title="Line Spacing" class="ql-format-button ql-line-spacing"></span>
+        <select title="Text Alignment" class="ql-align">
+          <option value="left" label="Left" selected=""></option>
+          <option value="center" label="Center"></option>
+          <option value="right" label="Right"></option>
+          <option value="justify" label="Justify"></option>
+        </select>
+        <ul class="ql-line-spacing-list">
+          <li class="single-line">Single</li>
+          <li class="one-fifteen-line">1.15</li>
+          <li class='one-half-line'>1.5</li>
+          <li class='double-line'>Double</li>
+        </ul>
+        <span class="ql-format-separator"></span>
+        <span title="List" class="ql-format-button ql-list"></span>
+        <span class="ql-format-separator"></span>
+        <span title="Bullet" class="ql-format-button ql-bullet"></span>
+        </span> <span class="ql-format-group spellcheck-link">
+                <span title="Spell Check" class="ql-format-button ql-spellcheck"></span>
+        <span class="ql-format-separator"></span>
+
+        <span title="Link" class="ql-format-button ql-link"></span>
+        </span>
+      </div>
+    </div>
+    <div class="statistics z-depth-1 grey lighten-4">
+      <label for="words">Words</label>
+      <div id="words" class="words grey-text text-darken-4">0</div>
+      <label for="characters">Characters</label>
+      <div id="characters" class="characters grey-text text-darken-4">0</div>
+    </div>
+    <!-- POPUP DIALOGS -->
+    <!-- WELCOME PANEL -->
+    <div id="welcome" class="modal welcome bottom-sheet show">
+      <div class="modal-content">
+        <h4>Welcome to Writer</h4>
+
+      </div>
+      <div class="modal-footer"> <a href="#!" class="new modal-close waves-effect waves-ligh btn-flat modal-close left">New</a>
+        <a href="#!" class="open modal-close waves-effect waves-ligh btn-flat modal-close left">Open</a>
+        <a href="#templates" class="modal-close modal-trigger waves-effect waves-ligh btn-flat modal-close left">Templates</a>
+        <a class="resume waves-effect waves-ligh btn-flat modal-close lright red-text right" href="#">Resume</a>
+
+      </div>
+    </div>
+    <div id="help" class="modal modal-fixed-footer osl">
+      <div class="modal-content">
+        <h4>Help</h4>
+        <h6>Editor Keys</h6>
+        <div class="editor-keys">
+          <div>New
+            <div class="right grey-text">CTRL + N</div>
+          </div>
+          <div>Open
+            <div class="right grey-text">CTRL + O</div>
+          </div>
+          <div>Save
+            <div class="right grey-text">CTRL + S</div>
+          </div>
+          <div>Save As
+            <div class="right grey-text">CTRL + SHIFT + S</div>
+          </div>
+          <div>Print
+            <div class="right grey-text">CTRL + P</div>
+          </div>
+          <div>Search
+            <div class="right grey-text">CTRL + F</div>
+          </div>
+          <div>Coffee
+            <div class="right grey-text">CTRL + E</div>
+          </div>
+          <div>Format
+            <div class="right grey-text">CTRL + J</div>
+          </div>
+          <div>Fullscreen
+            <div class="right grey-text">F11</div>
+          </div>
+          <div>Nightmode
+            <div class="right grey-text">CTRL + M</div>
+          </div>
+          <div>Statistics
+            <div class="right grey-text">CTRL + G</div>
+          </div>
+          <div>Page
+            <div class="right grey-text">CTRL + T </div>
+          </div>
+          <div>Word Count
+            <div class="right grey-text">CTRL + W</div>
+          </div>
+          <div>Document Details
+            <div class="right grey-text">CTRL + D</div>
+          </div>
+          <div>Help
+            <div class="right grey-text">CTRL + H</div>
+          </div>
+        </div>
+        <h6>Format Keys</h6>
+        <div class="format-keys">
+          <div>Bold
+            <div class="right grey-text">CTRL + B</div>
+          </div>
+          <div>Italics
+            <div class="right grey-text">CTRL + I</div>
+          </div>
+          <div>Underline
+            <div class="right grey-text">CTRL + U</div>
+          </div>
+          <div>Cut
+            <div class="right grey-text">CTRL + X</div>
+          </div>
+          <div>Copy
+            <div class="right grey-text">CTRL + C</div>
+          </div>
+          <div>Paste
+            <div class="right grey-text">CTRL + V</div>
+          </div>
+          <div>Undo
+            <div class="right grey-text">CTRL + Z</div>
+          </div>
+          <div>Redo
+            <div class="right grey-text">CTRL + Y or CTRL + SHIFT + Z</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer"> <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat red-text">Close</a>
+
+      </div>
+    </div>
+    <!-- OPEN SOURCE LICENSES -->
+    <div id="osl" class="modal modal-fixed-footer osl">
+      <div class="modal-content">
+        <h4>Open Source Licenses</h4>
+
+        <h6>Materialize CSS</h6>
+
+        <p>The MIT License (MIT) Copyright (c) 2014-2015 Materialize Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        <h6>Quill JS</h6>
+
+        <p>Copyright (c) 2014, Jason Chen Copyright (c) 2013, salesforce.com All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+
+        <h6>to-markdown</h6>
+
+        <p>
+          Copyright 2011-2015 Dom Christie Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        </p>
+
+        <h6>html-docx-js</h6>
+
+        <p>
+          The MIT License (MIT) Copyright (c) 2014 Evidence Prime Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        </p>
+
+        <h6>marked</h6>
+
+        <p>
+          Copyright (c) 2011-2014, Christopher Jeffrey (https://github.com/chjj/) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        </p>
+
+        <h6>JQuery</h6>
+
+        <p>Copyright jQuery Foundation and other contributors, https://jquery.org/ This software consists of voluntary contributions made by many individuals. For exact contribution history, see the revision history available at https://github.com/jquery/jquery The following license applies to all parts of this software except as documented below: ==== Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. ==== All files located in the node_modules and external directories are externally maintained libraries used by this software which have their own licenses; we recommend you read them, as their terms may differ from the terms above.</p>
+      </div>
+      <div class="modal-footer"> <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat red-text">Close</a>
+
+      </div>
+    </div>
+    <!-- NEW FILE -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Create a new document?</h4>
+
+        <p>The contents of this document will be deleted.</p>
+      </div>
+      <div class="modal-footer"> <a href="#!" class="create modal-action modal-close waves-effect waves-red btn-flat red-text">Create</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+
+      </div>
+    </div>
+    <!-- OPEN FILE -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>Open a new document?</h4>
+
+        <p>Any unsaved progress will be lost.</p>
+      </div>
+      <div class="modal-footer"> <a href="#!" id="open" class="open_real modal-action modal-close waves-effect waves-red btn-flat red-text">Open</a>
+        <a href="#templates" class="modal-trigger open_temp modal-action modal-close waves-effect waves-red btn-flat red-text">Template</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+
+      </div>
+    </div>
+    <!-- PREFERENCES -->
+    <div id="modal3" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="coffee-toggle section">
+          <h6>Coffee</h6>
+
+          <div class="switch">
+            <label>Off
+              <input class="coffee-toggle-input" type="checkbox"> <span class="lever"></span> On</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="format-toggle section">
+          <h6>Format</h6>
+
+          <div class="switch">
+            <label>Off
+              <input class="format-toggle-input" type="checkbox" checked="checked"> <span class="lever"></span> On</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="full-toggle section">
+          <h6>Fullscreen</h6>
+
+          <div class="switch">
+            <label>Off
+              <input class="full-toggle-input" type="checkbox"> <span class="lever"></span> On</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="nightmode-toggle section">
+          <h6>Nightmode</h6>
+
+          <div class="switch">
+            <label>Off
+              <input type="checkbox" class="night-toggle-input"> <span class="lever"></span> On</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card-toggle section">
+          <h6>Page</h6>
+
+          <div class="switch">
+            <label>Off
+              <input class="card-toggle-input" type="checkbox" checked="checked"> <span class="lever"></span> On</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="statistics-toggle section">
+          <h6>Statistics</h6>
+
+          <div class="switch">
+            <label>Off
+              <input class="statistics-toggle-input" type="checkbox"> <span class="lever"></span> On</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="welcome-toggle section">
+          <h6>Welcome Menu</h6>
+
+          <div class="switch">
+            <label>Off
+              <input type="checkbox" class="welcome-toggle-input" checked="checked"> <span class="lever"></span> On</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <a class="modal-trigger" href="#default_file_type">
+          <div class="section">
+            <h6>Default File Type</h6>
+            <p>Choose the default file type you wish to save to</p>
+          </div>
+        </a>
+
+        <div class="divider"></div>
+        <a class="modal-trigger" href="#default_font">
+          <div class="section">
+            <h6>Default Font</h6>
+            <p>Choose the default font</p>
+          </div>
+        </a>
+
+        <div class="divider"></div>
+        <a class="modal-trigger" href="#default_font_size">
+          <div class="section">
+            <h6>Default Font Size</h6>
+            <p>Choose the default font size</p>
+          </div>
+        </a>
+
+        <div class="divider"></div>
+        <a class="modal-trigger" href="#theme_color">
+          <div class="section">
+            <h6>Theme Color</h6>
+            <p>Choose the color of your theme</p>
+          </div>
+        </a>
+
+        <div class="divider"></div>
+        <a class="modal-trigger" href="#accent_color">
+          <div class="section">
+            <h6>Accent Color</h6>
+            <p>Choose the accent color of your theme</p>
+          </div>
+        </a>
+
+        <div class="divider"></div>
+        <a class="modal-trigger" href="#margin_size">
+          <div class="section">
+            <h6>Margin Size</h6>
+            <p>Set the margin width of the editor</p>
+          </div>
+        </a>
+      </div>
+      <div class="modal-footer"> <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+
+      </div>
+    </div>
+    <div id="default_file_type" class="modal">
+      <div class="modal-content">
+        <h4>Default File Type</h4>
+
+        <div class="form">
+          <p>
+            <input class="with-gap" name="file" type="radio" id="wtr" checked="checked" />
+            <label for="wtr">Writer File (.wtr)</label>
+          </p>
+          <p>
+            <input class="with-gap" name="file" type="radio" id="md" />
+            <label for="md">Markdown (.md)</label>
+          </p>
+          <p>
+            <input class="with-gap" name="file" type="radio" id="html" />
+            <label for="html">HTML Document (.html)</label>
+          </p>
+          <p>
+            <input class="with-gap" name="file" type="radio" id="txt" />
+            <label for="txt">Text File (.txt)</label>
+          </p>
+        </div>
+      </div> <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+
+    </div>
+    <div id="margin_size" class="modal">
+      <div class="modal-content">
+        <h4>Margin Size</h4>
+        <p>
+          <input class="with-gap" type="radio" name="margin" id="zero" />
+          <label for="zero">0%</label>
+        </p>
+        <p>
+          <input class="with-gap" type="radio" name="margin" id="five" />
+          <label for="five">5%</label>
+        </p>
+        <p>
+          <input class="with-gap" type="radio" name="margin" id="ten">
+          <label for="ten">10%</label>
+        </p>
+        <p>
+          <input class="with-gap" type="radio" name="margin" id="fifteen" />
+          <label for="fifteen">15%</label>
+        </p>
+        <p>
+          <input class="with-gap" type="radio" name="margin" id="twenty" />
+          <label for="twenty">20%</label>
+        </p>
+        <p>
+          <input class="with-gap" type="radio" name="margin" id="twenty-five" />
+          <label for="twenty-five">25%</label>
+        </p>
+      </div>
+      <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+      <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat reset-margin">Reset</a>
+    </div>
+    <div id="default_font_size" class="modal">
+      <div class="modal-content">
+        <h4>Default Font Size</h4>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="fontsize-ten" />
+          <label for="fontsize-ten">10</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="fontsize-twelve" />
+          <label for="fontsize-twelve">12</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="fontsize-sixteen" />
+          <label for="fontsize-sixteen">16</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="fontsize-eighteen" />
+          <label for="fontsize-eighteen">18</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="fontsize-twentyfour" />
+          <label for="fontsize-twentyfour">24</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="fontsize-thirtytwo" />
+          <label for="fontsize-thirtytwo">32</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group2" type="radio" id="fontsize-fourtyeight" />
+          <label for="fontsize-fourtyeight">48</label>
+        </p>
+        <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+        <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat reset-font-size">Reset</a>
+      </div>
+
+    </div>
+    <div id="default_font" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <h4>Default Font</h4>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="arial-font" />
+          <label for="arial-font">Arial</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="calibri-font" />
+          <label for="calibri-font">Calibri</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="comic-sans-font" />
+          <label for="comic-sans-font">Comic Sans</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="courier-font" />
+          <label for="courier-font">Courier</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="georgia-font" />
+          <label for="georgia-font">Georgia</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="helvetica-font" />
+          <label for="helvetica-font">Helvetica</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="monospace-font" />
+          <label for="monospace-font">Monospace</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="open-sans-font" />
+          <label for="open-sans-font">Open Sans</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="palatino-font" />
+          <label for="palatino-font">Palatino</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="roboto-font">
+          <label for="roboto-font">Roboto</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="sans-serif-font" />
+          <label for="sans-serif-font">Sans Serif</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="serif-font" />
+          <label for="serif-font">Serif</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="times-font" />
+          <label for="times-font">Times</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="trebuchet-font">
+          <label for="trebuchet-font">Trebuchet</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="verdana-font" />
+          <label for="verdana-font">Verdana</label>
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+        <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat reset-font">Reset</a>
+      </div>
+
+    </div>
+    <div id="theme_color" class="modal">
+      <div class="modal-content">
+        <h4>Theme Color</h4>
+
+        <div class="form">
+          <div class="red"></div>
+          <div class="pink"></div>
+          <div class="purple"></div>
+          <div class="deep-purple"></div>
+          <div class="indigo"></div>
+          <div class="blue"></div>
+          <div class="light-blue nav-dark"></div>
+          <div class="cyan nav-dark"></div>
+          <div class="cyan darken-4"></div>
+          <div class="teal"></div>
+          <div class="green nav-dark"></div>
+          <div class="light-green nav-dark"></div>
+          <div class="lime nav-dark"></div>
+          <div class="yellow nav-dark"></div>
+          <div class="amber nav-dark"></div>
+          <div class="orange nav-dark"></div>
+          <div class="deep-orange"></div>
+          <div class="brown"></div>
+          <div class="grey nav-dark"></div>
+          <div class="blue-grey"></div>
+          <div class="grey darken-4"></div>
+          <div class="black"></div>
+        </div>
+      </div>
+      <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+      <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat reset-theme">Reset</a>
+
+    </div>
+    <div id="accent_color" class="modal">
+      <div class="modal-content">
+        <h4>Accent Color</h4>
+
+        <div class="form">
+          <div class="red selected"></div>
+          <div class="pink"></div>
+          <div class="purple"></div>
+          <div class="deep-purple"></div>
+          <div class="indigo"></div>
+          <div class="blue"></div>
+          <div class="light-blue fab-dark"></div>
+          <div class="cyan fab-dark"></div>
+          <div class="cyan darken-4"></div>
+          <div class="teal"></div>
+          <div class="green fab-dark"></div>
+          <div class="light-green fab-dark"></div>
+          <div class="lime fab-dark"></div>
+          <div class="yellow fab-dark"></div>
+          <div class="amber fab-dark"></div>
+          <div class="orange fab-dark"></div>
+          <div class="deep-orange"></div>
+          <div class="brown"></div>
+          <div class="grey fab-dark"></div>
+          <div class="blue-grey"></div>
+          <div class="grey darken-4"></div>
+          <div class="black"></div>
+        </div>
+      </div>
+      <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat red-text">Okay</a>
+      <a href="#!" class="right modal-action modal-close waves-effect waves-red btn-flat reset-accent">Reset</a>
+
+    </div>
+    <!-- SUPPORT -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <h4>Support</h4>
+        <p><span>Version: 5.3</span>
+          <br></br><span>If you enjoy Writer, please rate and leave a review on the <a class="cyan-text text-darken-4 link" target="_blank" href="https://chrome.google.com/webstore/detail/writer/hlddiopdeghmcmdjjmpdegemnojihpib/reviews">chrome web store.</a></span>
+          <br></br><span>Design + Code by <a class="cyan-text text-darken-4 link" target="_blank" href="https://plus.google.com/u/0/+CarlosSantos-Web_Developer">Devplex</a></span>
+        </p>
+      </div> <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat red-text right">Okay</a>
+
+    </div>
+    <!-- SIDEBAR POPUPS -->
+    <div id="file" class="modal bottom-sheet sbpum">
+      <div class="modal-content sbpuec">
+        <h4>File</h4>
+        <a href="#!" class="waves-effect waves-light new modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">insert_drive_file</div>
+            <p class="sbpuet">New</p>
+          </div>
+        </a>
+        <a href="#!" class="waves-effect waves-light open modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">folder</div>
+            <p class="sbpuet">Open</p>
+          </div>
+        </a>
+        <a href="#!" id="save" class="waves-effect waves-light modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">save</div>
+            <p class="sbpuet">Save</p>
+          </div>
+        </a>
+        <a href="#!" class="waves-effect waves-light saveAs modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">file_download</div>
+            <p class="sbpuet">Save As</p>
+          </div>
+        </a>
+        <a href="#!" class="waves-effect waves-light print">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">print</div>
+            <p class="sbpuet">Print</p>
+          </div>
+        </a>
+
+      </div>
+      <div class="modal-footer"> <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+
+      </div>
+    </div>
+    <div id="edit" class="modal bottom-sheet sbpum">
+      <div class="modal-content sbpuec">
+        <h4>Edit</h4>
+        <a href="#!" id="undo" class="waves-effect waves-light modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">undo</div>
+            <p class="sbpuet">Undo</p>
+          </div>
+        </a>
+        <a href="#!" id="redo" class="waves-effect waves-light modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">redo</div>
+            <p class="sbpuet">Redo</p>
+          </div>
+        </a>
+        <a href="#!" id="cut" class="waves-effect waves-light modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">content_cut</div>
+            <p class="sbpuet">Cut</p>
+          </div>
+        </a>
+        <a href="#!" id="copy" class="waves-effect waves-light modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">content_copy</div>
+            <p class="sbpuet">Copy</p>
+          </div>
+        </a>
+
+      </div>
+      <div class="modal-footer"> <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+
+      </div>
+    </div>
+    <!-- TEMPLATES -->
+    <div id="templates" class="modal bottom-sheet sbpum">
+      <div class="modal-content sbpuec">
+        <h4>Templates</h4>
+        <a href="#!" class="essay modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">insert_drive_file</div>
+            <p class="sbpuet">Essay</p>
+          </div>
+        </a>
+        <a href="#!" class="memo modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">note_add</div>
+            <p class="sbpuet">Memo</p>
+          </div>
+        </a>
+        <a href="#!" class="letter modal-close">
+          <div class="sbpue">
+            <div class="material-icons sbpue-button">email</div>
+            <p class="sbpuet">Letter</p>
+          </div>
+        </a>
+
+      </div>
+      <div class="modal-footer"> <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+
+      </div>
+    </div>
+    <div id="editor"></div>
+    <div id="selector"></div>
+    <div id="file_selector"></div>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red right waves-effect waves-light modal-trigger" href="#modal1">
+        <i class="material-icons">add</i>
+      </a>
+
+    </div>
+  </div>
+  <div class="textarea_copy_print"></div>
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/to-markdown.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/quill/quill.min.js"></script>
+  <script src="assets/js/marked.js"></script>
+  <script src="assets/js/html-docx.js"></script>
+  <script src="assets/js/jquery.highlight.js"></script>
+  <script src="assets/js/caret.js"></script>
+  <script src="assets/js/analytics.js"></script>
+  <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
