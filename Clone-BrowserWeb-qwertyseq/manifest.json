@@ -1,0 +1,23 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "midi.svg",
+         "16": "midi.svg",
+         "32": "midi.svg",
+         "48": "midi.svg"
+      },
+      "default_title": "qwertySeq()"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvx8gOtSebdVQUx8jlhHFx4+Hg6ifvrXyvq8R/ozHuYVEvdEqTKAap1PvAm1h0Xs0E7b2UK6DgpwMsie1NpKCRWFjwO2FPvby83kP1SsAclBFLlvZdnfyQvv8wkiw8ET4C50tq/xQcgspAsfPlPpqj7lp93bgRMv+NK/uoXzzDrfm1UzRA08er4y36mVxWc2NAjxRdfuRsLQ0e+PNr4m1/k4tKlGl9EsjQiI6Lu+42H0DrwcB4IU9aFUtinZ7E9XdDLUq5hsW0uRZLsJNqOPDcvQd4jJ4Uz+V3KGijlc+x5mt1YMUhQdWsch0DTdg7X4e9AU9VJQNQzGCMfvc0Br0mwIDAQAB",
+   "manifest_version": 2,
+   "name": "qwertySeq()",
+   "permissions": [  ],
+   "short_name": "qwertySeq()",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1",
+   "version_name": "1.0.1 rc"
+}
