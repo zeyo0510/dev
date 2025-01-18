@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+  <title>Seven Segment</title>
+
+    <link rel="canonical" href="https://codepen.io/codebrainz/pen/JjvBXaB">
+  
+  
+  
+  
+<style>
+:root {
+  /* must be in 7-digit hex notation */
+  --clock-clr-bg: #333333;
+  --clock-clr-lit: #3ea99f;
+  --clock-level-dim: 0.1;
+  /* default, set automatically if --clock-clr-lit changes */
+  --clock-clr-dim: rgba(62, 169, 159, var(--clock-level-dim));
+  /* height of the clock, width computed automatically */
+  --clock-height: 300;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clock-clr-bg);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.color-choosers {
+  position: absolute;
+  display: flex;
+  justify-contents: center;
+  align-items: center;
+  gap: 1.5rem;
+  right: 0;
+  top: 0;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.color-choosers-form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#sliderLabel,
+#dimsliderLabel,
+#fgbtnLabel,
+#bgbtnLabel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column: 1 / 2;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#slider,
+#dimslider,
+#fgbtn,
+#bgbtn {
+  grid-column: 2 / 3;
+  width: 100%;
+}
+
+::-webkit-color-swatch,
+::-moz-color-swatch,
+::-moz-focus-inner {
+  border: 0;
+  border-radius: 0.1rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <!-- Preferences controls -->
+<div class="color-choosers">
+  <div class="color-choosers-form">
+    <label for="bgbtn" id="bgbtnLabel">BG Color</label>
+    <input type="color" id="bgbtn">
+    <label for="fgbtn" id="fgbtnLabel">Lit Color</label>
+    <input type="color" id="fgbtn">
+    <label for="dimslider" id="dimsliderLabel">Dim Level</label>
+    <input type="range" id="dimslider" min="0.0" max="0.5" step="0.025">
+    <label for="slider" id="sliderLabel">Height</label>
+    <input type="range" id="slider" min="25" max="500">
+  </div>
+</div>
+
+<!-- The clock itself -->
+<div id="clock1"></div>
+  
+      <script id="rendered-js" >
+const UPDATE_RATE_MS = 500;
+const COLOR_BG = "#333333";
+const COLOR_FG = "#3ea99f";
+const DIM_LEVEL = 0.1;
+const CLOCK_HEIGHT = 300;
+
+class ClockDigit {
+  static #DEFAULT_WIDTH = 192;
+  static #DEFAULT_HEIGHT = 320;
+  static #ASPECT_RATIO = ClockDigit.#DEFAULT_WIDTH / ClockDigit.#DEFAULT_HEIGHT;
+
+  static #SEGMENTS = {
+    0: ["a", "b", "c", "d", "e", "f"],
+    1: ["b", "c"],
+    2: ["a", "b", "d", "e", "g"],
+    3: ["a", "b", "c", "d", "g"],
+    4: ["b", "c", "f", "g"],
+    5: ["a", "c", "d", "f", "g"],
+    6: ["a", "c", "d", "e", "f", "g"],
+    7: ["a", "b", "c"],
+    8: ["a", "b", "c", "d", "e", "f", "g"],
+    9: ["a", "b", "c", "f", "g"]
+  };
+
+  #container = null;
+  #height = 0;
+  #width = 0;
+  #div = null;
+  #value = null;
+
+  constructor(
+    containerSelector,
+    id,
+    initialValue = null,
+    height = ClockDigit.#DEFAULT_HEIGHT
+  ) {
+    this.#height = height;
+    this.#width = height * ClockDigit.#ASPECT_RATIO;
+
+    this.#container = document.querySelector(containerSelector);
+    this.#value = initialValue;
+
+    this.#div = document.createElement("div");
+    this.#div.id = id;
+    this.#div.classList.add("clock-digit");
+    this.#div.innerHTML = this.#code;
+
+    this.#container.appendChild(this.#div);
+
+    this.#update();
+  }
+
+  set value(v) {
+    if ((v !== null) & (v < 0) || v > 9) {
+      throw Error(`value ${v} is out-of-range (null, 0-9)`);
+    }
+    this.#value = v;
+    this.#update();
+  }
+
+  get value() {
+    return this.#value;
+  }
+
+  set height(v) {
+    this.#height = v;
+    this.#width = this.#height * ClockDigit.#ASPECT_RATIO;
+    this.#div.innerHTML = this.#code;
+  }
+
+  get height() {
+    return this.#height;
+  }
+
+  get #code() {
+    return `
+      <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="${this.#width}" 
+          height="${this.#height}" 
+          viewBox="-1 -1 12 20" 
+          stroke="#FFF" 
+          stroke-width=".25">
+        <polygon id="a" points="1, 1  2, 0  8, 0  9, 1  8, 2  2, 2" />
+        <polygon id="b" points="9, 1 10, 2 10, 8  9, 9  8, 8  8, 2" />
+        <polygon id="c" points="9, 9 10,10 10,16  9,17  8,16  8,10" />
+        <polygon id="d" points="9,17  8,18  2,18  1,17  2,16  8,16" />
+        <polygon id="e" points="1,17  0,16  0,10  1, 9  2,10  2,16" />
+        <polygon id="f" points="1, 9  0, 8  0, 2  1, 1  2, 2  2, 8" />
+        <polygon id="g" points="1, 9  2, 8  8, 8  9, 9  8,10  2,10" />
+      </svg>
+    `;
+  }
+
+  #clear() {
+    this.#div.querySelector("#a").classList.remove("lit");
+    this.#div.querySelector("#b").classList.remove("lit");
+    this.#div.querySelector("#c").classList.remove("lit");
+    this.#div.querySelector("#d").classList.remove("lit");
+    this.#div.querySelector("#e").classList.remove("lit");
+    this.#div.querySelector("#f").classList.remove("lit");
+    this.#div.querySelector("#g").classList.remove("lit");
+  }
+
+  #update() {
+    this.#clear();
+    if (this.#value === null) return;
+    for (const seg of ClockDigit.#SEGMENTS[this.#value]) {
+      this.#div.querySelector(`#${seg}`).classList.add("lit");
+    }
+  }
+}
+
+class ClockSeparator {
+  static #DEFAULT_WIDTH = 64;
+  static #DEFAULT_HEIGHT = 320;
+  static #ASPECT_RATIO =
+    ClockSeparator.#DEFAULT_WIDTH / ClockSeparator.#DEFAULT_HEIGHT;
+
+  #container = null;
+  #height = 0;
+  #width = 0;
+  #div = null;
+  #value = null;
+
+  constructor(
+    containerSelector,
+    id,
+    initialValue = null,
+    height = ClockSeparator.#DEFAULT_HEIGHT
+  ) {
+    this.#height = height;
+    this.#width = height * ClockSeparator.#ASPECT_RATIO;
+
+    this.#container = document.querySelector(containerSelector);
+    this.#value = initialValue;
+
+    this.#div = document.createElement("div");
+    this.#div.id = id;
+    this.#div.classList.add("clock-separator");
+    this.#div.innerHTML = this.#code;
+
+    this.#container.appendChild(this.#div);
+
+    this.#update();
+  }
+
+  set value(v) {
+    if (v !== null && v !== ":" && v !== ".") {
+      throw new Error(`value ${v} is out-of-range (null, '.', ':')`);
+    }
+    this.#value = v;
+    this.#update();
+  }
+
+  get value() {
+    return this.#value;
+  }
+
+  set height(v) {
+    this.#height = v;
+    this.#width = this.#height * ClockSeparator.#ASPECT_RATIO;
+    this.#div.innerHTML = this.#code;
+  }
+
+  get #code() {
+    return `
+      <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="${this.#width}" 
+          height="${this.#height}" 
+          viewBox="-1 -1 4 20"
+          stroke="#FFF" 
+          stroke-width=".25">
+        <polygon id="d0" points="1,10  0,9  0,9  1, 8  2,9  2,9" />
+        <polygon id="d1" points="1,18  0,17  0,17  1, 16  2,17  2,17" />
+      </svg>
+    `;
+  }
+
+  #clear() {
+    this.#div.querySelector("#d0").classList.remove("lit");
+    this.#div.querySelector("#d1").classList.remove("lit");
+  }
+
+  #update() {
+    this.#clear();
+    if (this.#value === null) {
+      return;
+    } else if (this.#value === ":") {
+      this.#div.querySelector("#d0").classList.add("lit");
+      this.#div.querySelector("#d1").classList.add("lit");
+    } else if (this.#value === ".") {
+      this.#div.querySelector("#d1").classList.add("lit");
+    }
+  }
+}
+
+class Clock {
+  static #DEFAULT_HEIGHT = 320;
+
+  #container = null;
+  #height = 0;
+  #h0 = null;
+  #h1 = null;
+  #sep0 = null;
+  #m0 = null;
+  #m1 = null;
+  #sep1 = null;
+  #s0 = null;
+  #s1 = null;
+  #dt = null;
+
+  constructor(containerSelector, height = Clock.#DEFAULT_HEIGHT) {
+    this.#height = height;
+    this.#container = document.querySelector(containerSelector);
+    this.#container.classList.add("clock");
+
+    const style = document.createElement("style");
+    style.textContent = `
+      .clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .clock svg {
+        fill: var(--clock-clr-dim);
+        stroke: var(--clock-clr-bg);
+      }
+
+      .clock svg .lit {
+        fill: var(--clock-clr-lit);
+      }
+
+      .clock .clock-digit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .clock .clock-separator {
+        display: flex;
+        justify-centents: center;
+        align-items: center;
+      }
+
+      .clock .clock-separator svg {
+        stroke-width: 0;
+      }
+    `;
+    this.#container.appendChild(style);
+
+    this.#h0 = new ClockDigit(containerSelector, "clockHours0", null, height);
+    this.#h1 = new ClockDigit(containerSelector, "clockHours1", null, height);
+
+    this.#sep0 = new ClockSeparator(
+      containerSelector,
+      "clockSeparator0",
+      null,
+      height
+    );
+
+    this.#m0 = new ClockDigit(containerSelector, "clockMinutes0", null, height);
+    this.#m1 = new ClockDigit(containerSelector, "clockMinutes1", null, height);
+
+    this.#sep1 = new ClockSeparator(
+      containerSelector,
+      "clockSeparator1",
+      null,
+      height
+    );
+
+    this.#s0 = new ClockDigit(containerSelector, "clockSeconds0", null, height);
+    this.#s1 = new ClockDigit(containerSelector, "clockSeconds1", null, height);
+
+    this.#dt = new Date();
+  }
+
+  set value(v) {
+    this.#dt = v;
+    this.#update();
+  }
+
+  get value() {
+    return this.#dt;
+  }
+
+  set height(v) {
+    this.#height = v;
+    this.#h0.height = v;
+    this.#h1.height = v;
+    this.#sep0.height = v;
+    this.#m0.height = v;
+    this.#m1.height = v;
+    this.#sep1.height = v;
+    this.#s0.height = v;
+    this.#s1.height = v;
+  }
+
+  get height() {
+    return this.#height;
+  }
+
+  static #zeroPad(x, chr = "0", digits = 2) {
+    let v = "";
+    for (let i = 0; i < digits; i++) {
+      v += `${chr}`;
+    }
+    v += `${x}`;
+    v = v.substring(v.length - digits, v.length);
+    return v;
+  }
+
+  #update() {
+    const hh = Clock.#zeroPad(this.#dt.getHours());
+    this.#h0.value = parseInt(hh[0], 10);
+    this.#h1.value = parseInt(hh[1], 10);
+
+    this.#sep0.value = ":";
+
+    const mm = Clock.#zeroPad(this.#dt.getMinutes());
+    this.#m0.value = parseInt(mm[0], 10);
+    this.#m1.value = parseInt(mm[1], 10);
+
+    this.#sep1.value = ":";
+
+    const ss = Clock.#zeroPad(this.#dt.getSeconds());
+    this.#s0.value = parseInt(ss[0], 10);
+    this.#s1.value = parseInt(ss[1], 10);
+  }
+}
+
+class ClockPrefs {
+  #clock = null;
+  #callback = null;
+  #root = null;
+  #slider = null;
+  #dimSlider = null;
+  #bgButton = null;
+  #fgButton = null;
+
+  constructor(
+    clock,
+    callback,
+    sliderQuery,
+    dimSliderQuery,
+    bgButtonQuery,
+    fgButtonQuery
+  ) {
+    this.#clock = clock;
+    this.#callback = callback;
+
+    this.#root = document.querySelector(":root");
+    this.#slider = document.querySelector(sliderQuery);
+    this.#dimSlider = document.querySelector(dimSliderQuery);
+    this.#bgButton = document.querySelector(bgButtonQuery);
+    this.#fgButton = document.querySelector(fgButtonQuery);
+
+    this.#slider.value = this.#getValue("clock-height", CLOCK_HEIGHT);
+    this.#clock.height = this.#slider.value;
+    this.#setCssValue("clock-height", this.#slider.value);
+    this.#setStoredValue("clock-height", this.#slider.value);
+
+    this.#dimSlider.value = this.#getValue("clock-level-dim", DIM_LEVEL);
+    this.#setCssValue("clock-level-dim", this.#dimSlider.value);
+    this.#setStoredValue("clock-level-dim", this.#dimSlider.value);
+
+    this.#bgButton.value = this.#getValue("clock-clr-bg", COLOR_BG);
+    this.#setCssValue("clock-clr-bg", this.#bgButton.value);
+    this.#setStoredValue("clock-clr-bg", this.#bgButton.value);
+
+    this.#fgButton.value = this.#getValue("clock-clr-lit", COLOR_FG);
+    this.#setCssValue("clock-clr-lit", this.#fgButton.value);
+    this.#setStoredValue("clock-clr-lit", this.#fgButton.value);
+    const color = ClockPrefs.#parseColor(this.#fgButton.value);
+    this.#setCssValue(
+      "clock-clr-dim",
+      `rgba(${color.r},${color.g},${color.b},${this.#dimSlider.value})`
+    );
+
+    if (this.#callback) this.#callback(this);
+
+    this.#slider.addEventListener("input", (e) => {
+      this.#clock.height = e.target.value;
+      this.#setCssValue("clock-height", e.target.value);
+      this.#setStoredValue("clock-height", e.target.value);
+      if (this.#callback) this.#callback(this);
+    });
+
+    this.#dimSlider.addEventListener(
+      "input",
+      (e) => {
+        this.#setCssValue("clock-level-dim", e.target.value);
+        this.#setStoredValue("clock-level-dim", e.target.value);
+        const color = ClockPrefs.#parseColor(this.#fgButton.value);
+        this.#setCssValue(
+          "clock-clr-dim",
+          `rgba(${color.r},${color.g},${color.b},${e.target.value})`
+        );
+        if (this.#callback) this.#callback(this);
+      },
+      false
+    );
+
+    this.#bgButton.addEventListener(
+      "input",
+      (e) => {
+        this.#setCssValue("clock-clr-bg", e.target.value);
+        this.#setStoredValue("clock-clr-bg", e.target.value);
+        if (this.#callback) this.#callback(this);
+      },
+      false
+    );
+
+    this.#fgButton.addEventListener(
+      "input",
+      (e) => {
+        this.#setCssValue("clock-clr-lit", e.target.value);
+        const color = ClockPrefs.#parseColor(e.target.value);
+        this.#setCssValue(
+          "clock-clr-dim",
+          `rgba(${color.r},${color.g},${color.b},0.1)`
+        );
+        this.#setStoredValue("clock-clr-lit", e.target.value);
+        if (this.#callback) this.#callback(this);
+      },
+      false
+    );
+  }
+
+  #getValue(key, defaultValue) {
+    let v = this.#getStoredValue(key);
+    if (!v) {
+      v = this.#getCssValue(key);
+      if (!v) {
+        v = defaultValue;
+      }
+    }
+    return v;
+  }
+
+  #getCssValue(key) {
+    return getComputedStyle(this.#root).getPropertyValue(`--${key}`);
+  }
+
+  #setCssValue(key, value) {
+    this.#root.style.setProperty(`--${key}`, value);
+  }
+
+  #getStoredValue(key) {
+    return localStorage.getItem(key);
+  }
+
+  #setStoredValue(key, value) {
+    localStorage.setItem(key, value);
+  }
+
+  static #parseColor(clr) {
+    const c = clr.substring(1);
+    const r = parseInt(c[0] + c[1], 16);
+    const g = parseInt(c[2] + c[3], 16);
+    const b = parseInt(c[4] + c[5], 16);
+    return { r, g, b };
+  }
+}
+
+// Setup the clock
+const clock = new Clock("#clock1", CLOCK_HEIGHT);
+
+// Setup and run the clock
+const updateTime = () => (clock.value = new Date());
+setInterval(updateTime, UPDATE_RATE_MS);
+updateTime();
+
+// Setup the preferences
+const prefs = new ClockPrefs(
+  clock,
+  updateTime,
+  "#slider",
+  "#dimslider",
+  "#bgbtn",
+  "#fgbtn"
+);
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
