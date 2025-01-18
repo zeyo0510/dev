@@ -1,0 +1,39 @@
+FEATURES
+============================
+- Use your iPhone as your joypad; download the iOS app (currently under review for the App Store, please check back soon!)
+- Use your own custom keyboard button mappings; right click the screen once a game has started to pause and re-map
+- Try out some pre-loaded games, or add your own; RetroSuite EMU will remember the ones you've added
+- RetroSuite EMU auto-saves your game as you play, but you can also manually save and load in save states
+
+
+DEFAULT KEYBOARD CONTROLS
+============================
+- D-Pad: WASD
+
+- L: E
+- R: U
+
+- A: L
+- B: K
+- X: I
+- Y: J
+
+- Start: Enter
+- Select: Shift
+
+
+CREDITS
+============================
+Development Team:
+- Kyle James Corbelli: https://github.com/pacificLiving
+- Joseph Miller VI: https://github.com/joemillervi
+- Franklin Shieh: https://github.com/franklinshieh
+- Colin Whitmarsh: https://github.com/ColinWhitmarsh
+
+Special thanks to Matthew Justin Bauer for providing open source access to his Chrome App emulator: https://github.com/matthewbauer/gametime-player
+
+Credit goes to these awesome artists for the images used in the app:
+- Aaron Dunham: http://www.popsugar.com/tech/photo-gallery/25133607/image/25133662/SNES-Aaron-Dunham
+- Cheetashock: http://cheetashock.deviantart.com/art/SNES-Buttons-Wallpaper-566222660
+- Spencer Powell: https://dribbble.com/shots/2198369-Stuart-Sr
+- The-Desert-Tiger: http://the-desert-tiger.deviantart.com/art/Snes-Cartridge-Vector-385680392

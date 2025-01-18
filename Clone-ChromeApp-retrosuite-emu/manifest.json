@@ -1,0 +1,40 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "author": {
+      "name": "https://crowdemu.com/"
+   },
+   "description": "Play your favorite NES, SNES, Gameboy and Gameboy Advance ROMs; use your phone as your controller - or use custom keyboard mappings.",
+   "file_handlers": {
+      "gpemu": {
+         "extensions": [ "32x", "gb", "gba", "gbc", "gen", "md", "mgw", "nes", "sfc", "smc", "smd", "sms", "vec" ]
+      }
+   },
+   "icons": {
+      "128": "/frontEnd/img/icon/snes_128.png",
+      "16": "/frontEnd/img/icon/snes_16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhSVkm9S0XiRl+VDW/WLe2eJ8H341mgJCpFts9XN4AiZ418GgERaY4PNmJ/vF+FYFaYfR+8F2GLhSyACNM+zpUshJY75srYuW10c6dlZxfrosKkyuM26zEKf/3rs85Ert0j6zL8eSVIVXV/gx0C1esXi+O9YVSrBuqgURPe7olFBtRrcfDCRJjQCjSy4VfYieAmu8pMSbF36R4//77kpBQWFcG58sckGqHxQkWGuvhIXFZgl3JSY/b65uh97nKXKplv1q4jjH21rxiA0Kon0ZpbgNIRlbxv2EeBJOrbSDFaCQCnzJrPw8DW7U06ZeuW2/jJwT4kA9AIyai4vMEnAYOQIDAQAB",
+   "manifest_version": 2,
+   "name": "RetroSuite EMU",
+   "offline_enabled": true,
+   "permissions": [ "power", "system.network", {
+      "socket": [ "tcp-listen" ]
+   }, {
+      "fileSystem": [ "retainEntries", "directory", "write" ]
+   }, "pointerLock", "fullscreen", "identity", "storage", "unlimitedStorage" ],
+   "short_name": "RetroSuite",
+   "sockets": {
+      "tcp": {
+         "connect": "*"
+      },
+      "tcpServer": {
+         "listen": "*"
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.6"
+}
