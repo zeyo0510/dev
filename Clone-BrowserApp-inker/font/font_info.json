@@ -1,0 +1,282 @@
+[
+ {
+  "fontFamily": "Chewy",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Chewy.ttf"
+ },
+ {
+  "fontFamily": "Fredoka One",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/FredokaOne-Regular.ttf"
+ },
+ {
+  "fontFamily": "Fugaz One",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/FugazOne-Regular.ttf"
+ },
+ {
+  "fontFamily": "Gabriela",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Gabriela-Regular.ttf"
+ },
+ {
+  "fontFamily": "Great Vibes",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/GreatVibes-Regular.ttf"
+ },
+ {
+  "fontFamily": "Indie Flower",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/IndieFlower.ttf"
+ },
+ {
+  "fontFamily": "Luckiest Guy",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/LuckiestGuy.ttf"
+ },
+ {
+  "fontFamily": "Merriweather",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Merriweather-Regular.ttf"
+ },
+ {
+  "fontFamily": "Merriweather",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": false,
+  "url": "font/Merriweather-Bold.ttf"
+ },
+ {
+  "fontFamily": "Merriweather",
+  "isLight": true,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Merriweather-Light.ttf"
+ },
+ {
+  "fontFamily": "Merriweather",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": true,
+  "url": "font/Merriweather-Italic.ttf"
+ },
+ {
+  "fontFamily": "Merriweather",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": true,
+  "url": "font/Merriweather-BoldItalic.ttf"
+ },
+ {
+  "fontFamily": "Merriweather",
+  "isLight": true,
+  "isBold": false,
+  "isItalic": true,
+  "url": "font/Merriweather-LightItalic.ttf"
+ },
+ {
+  "fontFamily": "Modak",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Modak-Regular.ttf"
+ },
+ {
+  "fontFamily": "Oleo Script",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/OleoScript-Regular.ttf"
+ },
+ {
+  "fontFamily": "Oleo Script",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": false,
+  "url": "font/OleoScript-Bold.ttf"
+ },
+ {
+  "fontFamily": "Open Sans",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/OpenSans-Regular.ttf"
+ },
+ {
+  "fontFamily": "Open Sans",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": false,
+  "url": "font/OpenSans-Bold.ttf"
+ },
+ {
+  "fontFamily": "Open Sans",
+  "isLight": true,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/OpenSans-Light.ttf"
+ },
+ {
+  "fontFamily": "Open Sans",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": true,
+  "url": "font/OpenSans-Italic.ttf"
+ },
+ {
+  "fontFamily": "Open Sans",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": true,
+  "url": "font/OpenSans-BoldItalic.ttf"
+ },
+ {
+  "fontFamily": "Open Sans",
+  "isLight": true,
+  "isBold": false,
+  "isItalic": true,
+  "url": "font/OpenSans-LightItalic.ttf"
+ },
+ {
+  "fontFamily": "Pacifico",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Pacifico.ttf"
+ },
+ {
+  "fontFamily": "Pinyon Script",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/PinyonScript-Regular.ttf"
+ },
+ {
+  "fontFamily": "Poiret One",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/PoiretOne-Regular.ttf"
+ },
+ {
+  "fontFamily": "PT Sans",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/PT_Sans-Web-Regular.ttf"
+ },
+ {
+  "fontFamily": "PT Sans",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": false,
+  "url": "font/PT_Sans-Web-Bold.ttf"
+ },
+ {
+  "fontFamily": "PT Sans",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": true,
+  "url": "font/PT_Sans-Web-Italic.ttf"
+ },
+ {
+  "fontFamily": "PT Sans",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": true,
+  "url": "font/PT_Sans-Web-BoldItalic.ttf"
+ },
+ {
+  "fontFamily": "Roboto Slab",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/RobotoSlab-Regular.ttf"
+ },
+ {
+  "fontFamily": "Roboto Slab",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": false,
+  "url": "font/RobotoSlab-Bold.ttf"
+ },
+ {
+  "fontFamily": "Roboto Slab",
+  "isLight": true,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/RobotoSlab-Light.ttf"
+ },
+ {
+  "fontFamily": "Rubik Mono One",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/RubikMonoOne-Regular.ttf"
+ },
+ {
+  "fontFamily": "Russo One",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/RussoOne-Regular.ttf"
+ },
+ {
+  "fontFamily": "Sacramento",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Sacramento-Regular.ttf"
+ },
+ {
+  "fontFamily": "Ubuntu Mono",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/UbuntuMono-Regular.ttf"
+ },
+ {
+  "fontFamily": "Ubuntu Mono",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": false,
+  "url": "font/UbuntuMono-Bold.ttf"
+ },
+ {
+  "fontFamily": "Ubuntu Mono",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": true,
+  "url": "font/UbuntuMono-Italic.ttf"
+ },
+ {
+  "fontFamily": "Ubuntu Mono",
+  "isLight": false,
+  "isBold": true,
+  "isItalic": true,
+  "url": "font/UbuntuMono-BoldItalic.ttf"
+ },
+ {
+  "fontFamily": "Ultra",
+  "isLight": false,
+  "isBold": false,
+  "isItalic": false,
+  "url": "font/Ultra.ttf"
+ }
+]
