@@ -5,15 +5,15 @@ $files | ForEach-Object {
   $data = Get-Content -Path $file -Raw
   $json = $data | ConvertFrom-Json
   $json | ForEach-Object {
-    $name = $_.Name
-    $path = $_.Path
+    $name  = $_.Name
+    $value = $_.Value
     ##################################################
-    Write-Host "Installing font: $name($path)"
+    Write-Host "Installing Font: $name($value)"
     ##################################################
     Set-ItemProperty  -Path  "HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" `
                       -Name  $name                                                      `
                       -Type  "String"                                                   `
-                      -Value $path
+                      -Value $value
   }
 }
 ##################################################

@@ -5,15 +5,14 @@ $files | ForEach-Object {
   $data = Get-Content -Path $file -Raw
   $json = $data | ConvertFrom-Json
   $json | ForEach-Object {
-    $name        = $_.Name
-    $description = $_.Description
-    $value       = $_.Value
+    $name  = $_.Name
+    $value = $_.Value
     ##################################################
-    Write-Host "Set Hide Desktop Icon: $description = $value"
+    Write-Host "Set Environment: $name($value)"
     ##################################################
-    Set-ItemProperty  -Path  "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" `
-                      -Name  $name                                                                                     `
-                      -Type  "DWord"                                                                                   `
+    Set-ItemProperty  -Path  "HKCU:\Environment" `
+                      -Name  $name               `
+                      -Type  "ExpandString"      `
                       -Value $value
   }
 }
