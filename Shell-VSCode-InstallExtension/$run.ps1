@@ -3,8 +3,8 @@ $file = $file.FullName
 $data = Get-Content -Path $file -Raw
 $json = $data | ConvertFrom-Json
 $json | ForEach-Object {
-  $code  = $_.Code
-  $name  = $_.Name
+  $code = $_.Code
+  $name = $_.Name
   ##################################################
   Write-Host "Installing VSCode Extension: $name"
   ##################################################
