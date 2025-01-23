@@ -14,6 +14,28 @@ $json | ForEach-Object {
                     -Value $value
 }
 ##################################################
+Add-Type -TypeDefinition @"
+using System;
+using System.Runtime.InteropServices;
+
+public class NativeMethods
+{
+  [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+  public static extern IntPtr SendMessageTimeout
+  (
+        IntPtr  hWnd,
+        uint    Msg,
+        UIntPtr wParam,
+        string  lParam,
+        uint    fuFlags,
+        uint    uTimeout,
+    out IntPtr  lpdwResult
+  );
+}
+"@
+##################################################
+[void][NativeMethods]::SendMessageTimeout([IntPtr]0xFFFF, 0x001A, [UIntPtr]::Zero, "Environment", 0x0002, 500, [ref][IntPtr]::Zero)
+##################################################
 Write-Host "OK"
 ##################################################
 pause
