@@ -1,17 +1,14 @@
-$files = Get-ChildItem -Path . -Filter "*.json"
-##################################################
-$files | ForEach-Object {
-  $file = $_.FullName
-  $data = Get-Content -Path $file -Raw
-  $json = $data | ConvertFrom-Json
-  $json | ForEach-Object {
-    $code  = $_.Code
-    $name  = $_.Name
-    ##################################################
-    Write-Host "Installing VSCode Extension: $name"
-    ##################################################
-    code --install-extension $code --force
-  }
+$file = Get-ChildItem -Path . -Filter "${env:USERNAME}.json"
+$file = $file.FullName
+$data = Get-Content -Path $file -Raw
+$json = $data | ConvertFrom-Json
+$json | ForEach-Object {
+  $code  = $_.Code
+  $name  = $_.Name
+  ##################################################
+  Write-Host "Installing VSCode Extension: $name"
+  ##################################################
+  code --install-extension $code --force
 }
 ##################################################
 Write-Host "OK"

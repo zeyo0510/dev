@@ -1,4 +1,4 @@
-$files = Get-ChildItem -Path . -Filter "*.json"
+$files = Get-ChildItem -Path . -Filter "${env:USERNAME}\*.json"
 ##################################################
 $files | ForEach-Object {
   $file = $_.FullName
