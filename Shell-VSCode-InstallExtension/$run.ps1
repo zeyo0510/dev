@@ -1,6 +1,8 @@
-$file = Get-ChildItem -Path ${PSScriptRoot} -Filter "${env:USERNAME}.json"
+$SHELL_HOME = ${PSScriptRoot}
+##################################################
+$file = Get-ChildItem -Path "${SHELL_HOME}" -Filter "${env:USERNAME}.json"
 $file = $file.FullName
-$data = Get-Content -Path $file -Raw
+$data = Get-Content -Path "${file}" -Raw
 $json = $data | ConvertFrom-Json
 $json | ForEach-Object {
   $code = $_.Code
