@@ -1,4 +1,4 @@
-$files = Get-ChildItem -Path . -Filter "${env:USERNAME}\*.json"
+$files = Get-ChildItem -Path ${PSScriptRoot} -Filter "${env:USERNAME}\*.json"
 ##################################################
 $files | ForEach-Object {
   $file = $_.FullName
@@ -19,4 +19,4 @@ $files | ForEach-Object {
 ##################################################
 Write-Host "OK"
 ##################################################
-pause
+# pause

@@ -1,0 +1,82 @@
+{
+  "steps": {
+    "start": {
+      "meta": {
+        "ui": {
+          "x": 135,
+          "y": 165
+        }
+      },
+      "id": "start",
+      "name": "start",
+      "ref": "core/start",
+      "type": "start"
+    },
+    "end": {
+      "meta": {
+        "ui": {
+          "x": 480,
+          "y": 165
+        }
+      },
+      "id": "end",
+      "name": "end",
+      "ref": "core/end",
+      "type": "end"
+    },
+    "Set_Environment": {
+      "meta": {
+        "ui": {
+          "x": 240,
+          "y": 165
+        }
+      },
+      "id": "Set_Environment",
+      "name": "Set Environment",
+      "ref": "core/system/execute",
+      "output-schema": {
+        "type": "object",
+        "properties": {
+          "stdout": {
+            "type": "string",
+            "description": "data from stdout"
+          },
+          "stderror": {
+            "type": "string",
+            "description": "data from stderr"
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "exitCode": {
+                "type": "integer",
+                "description": "exit code of the child process"
+              },
+              "signal": {
+                "type": "string",
+                "description": "signal, if any that terminated the process. e.g SIGTERM"
+              }
+            }
+          }
+        }
+      },
+      "input-binding": {
+        "command": "\"PowerShell.exe\"",
+        "args": [
+          "\"-ExecutionPolicy Bypass -File D:\\Git\\dev\\Shell-Windows-SetEnvironment\\$run.ps1\""
+        ]
+      }
+    }
+  },
+  "transitions": [
+    {
+      "from": "start",
+      "to": "Set_Environment"
+    },
+    {
+      "from": "Set_Environment",
+      "to": "end"
+    }
+  ],
+  "meta": {}
+}
