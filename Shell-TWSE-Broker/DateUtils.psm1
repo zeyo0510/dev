@@ -1,5 +1,8 @@
 function Get-NowTimestamp {
-  $now         = Get-Date
+  $retValue = $null
+  ##################################################
+  $now = Get-Date
+  ##################################################
   $year        = $now.Year
   $year        = $year.ToString("0000")
   $month       = $now.Month
@@ -19,6 +22,7 @@ function Get-NowTimestamp {
   $end   = "$($year)-$($month)-$($day) $($hour):$($minute):$($second).$($millisecond)"
   ##################################################
   $retValue = New-TimeSpan -Start $start -End $end
+  $retValue = $retValue.TotalMilliseconds
   ##################################################
-  return $retValue.TotalMilliseconds
+  return $retValue
 }
