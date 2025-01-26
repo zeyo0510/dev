@@ -51,6 +51,9 @@
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MainForm.ToggleStatusBar.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.UpdateUI.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
