@@ -16,6 +16,6 @@ Import-Module ".\Broker.psm1"
 # Invoke-WebRequest -Uri "${list}" -OutFile ./list.json
 ##################################################
 $a = Get-Broker
-Write-Host "a: ${a}"
+$a > ./broker.json
 ##################################################
 pause

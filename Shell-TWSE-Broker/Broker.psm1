@@ -1,4 +1,4 @@
-Import-Module ".\DateUtils.psm1"
+Import-Module "..\Lib-PS\DateUtils.psm1"
 ##################################################
 function Get-Broker {
   param()
@@ -8,30 +8,81 @@ function Get-Broker {
   $API_BASE             = "https://www.twse.com.tw"
   $BROKER_SERVICE_AUDIT = "rwd/zh/brokerService/brokerServiceAudit"
   ##################################################
-  $timestamp = Get-NowTimestamp
-  $url       = "${API_BASE}/${BROKER_SERVICE_AUDIT}?showType=main&response=json&_=${timestamp}"
+
+
+
+
+
+  $step_1_session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
   ##################################################
-  $session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+
+
+
+
+
+  $step_2_timestamp = Get-NowTimestamp
+  $step_2_url       = "${API_BASE}/${BROKER_SERVICE_AUDIT}?showType=main&response=json&_=${step_2_timestamp}"
   ##################################################
-  $response = Invoke-WebRequest -UseBasicParsing     `
-                                -Uri "${url}"        `
-                                -WebSession $session `
-                                -Headers @{
-                                  # do nothing...
-                                }
-  $response = $response.Content | ConvertFrom-Json
+  $step2_content = Invoke-WebRequest  -UseBasicParsing            `
+                                      -Uri "${step_2_url}"        `
+                                      -WebSession $step_1_session `
+                                      -Headers @{
+                                        # do nothing...
+                                      }
   ##################################################
-  $fields = $response.fields
-  $data   = $response.data
+  $step2_json = $step2_content.Content | ConvertFrom-Json
+  ##################################################
+  $step_2_fields = $step2_json.fields
+  $step_2_data   = $step2_json.data
+  ##################################################
+  $retValue = Convert-TWSE -data $step_2_data -fields $step_2_fields
+
+
+
+
+
+
+  $retValue | ForEach-Object {
+    $step_3_stkNo     = $_["證券商代號"]
+    $step_3_timestamp = Get-NowTimestamp
+    $step_3_url       = "${API_BASE}/${BROKER_SERVICE_AUDIT}?showType=list&stkNo=${step_3_stkNo}&response=json&_=${step_3_timestamp}"
+    ##################################################
+    $step3_content = Invoke-WebRequest  -UseBasicParsing            `
+                                        -Uri "${step_3_url}"        `
+                                        -WebSession $step_1_session `
+                                        -Headers @{
+                                          # do nothing...
+                                        }
+    ##################################################
+    $step3_json = $step3_content.Content | ConvertFrom-Json
+    Write-Host "$step3_json"
+    ##################################################
+    $step_3_fields = $step3_json.fields
+    $step_3_data   = $step3_json.data
+    ##################################################
+    $retValue += Convert-TWSE -data $step_3_data -fields $step_3_fields
+  }
+
+
+  $retValue = $retValue | ConvertTo-Json
+  ##################################################
+  return $retValue
+}
+
+function Convert-TWSE {
+  param($data, $fields)
+  ##################################################
+  $retValue = @()
   ##################################################
   foreach ($entry in $data) {
-    $row = @{}
+    $tmp = @{}
+    ##################################################
     for ($i = 0; $i -lt $fields.Count; $i++) {
-      $row[$fields[$i]] = $entry[$i]
+      $tmp[$fields[$i]] = $entry[$i]
     }
-    $retValue += $row
+    ##################################################
+    $retValue += $tmp
   }
-  $retValue = $retValue | ConvertTo-Json
   ##################################################
   return $retValue
 }
