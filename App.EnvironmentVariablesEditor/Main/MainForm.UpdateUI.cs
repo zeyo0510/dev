@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Windows.Forms;
 /************************************************/
 namespace App.EnvironmentVariablesEditor.Main
 {
-  public partial class MainForm : Form
+  partial class MainForm
   {
-    public MainForm()
+    public void UpdateUI()
     {
-      this.InitializeComponent();
+      
     }
   }
 }
