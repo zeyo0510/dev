@@ -37,6 +37,13 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialogs\AdjuestDailog.cs" />
+    <Compile Include="Dialogs\AdjuestDailog.Designer.cs">
+      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AdjuestDailog.UpdateUI.cs">
+      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -52,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Main" />
+    <Folder Include="Dialogs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

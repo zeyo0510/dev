@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Main
+namespace App.EnvironmentVariablesEditor.Dialogs
 {
-  internal partial class MainForm : Form
+  internal partial class AdjuestDailog : Form
   {
-    public MainForm()
+    public AdjuestDailog()
     {
       this.InitializeComponent();
     }

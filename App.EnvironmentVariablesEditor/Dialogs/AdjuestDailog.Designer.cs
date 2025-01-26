@@ -2,9 +2,9 @@
 using System.ComponentModel;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Main
+namespace App.EnvironmentVariablesEditor.Dialogs
 {
-  partial class MainForm
+  partial class AdjuestDailog
   {
     private IContainer components = null;
     /************************************************/
@@ -33,13 +33,13 @@ namespace App.EnvironmentVariablesEditor.Main
         this.guiTimer.Enabled  = true;
         this.guiTimer.Interval = 100;
         /************************************************/
-        this.guiTimer.Tick += this.guiTimer_Tick;
+        this.guiTimer.Tick += guiTimer_Tick;
       }
-      // MainForm
+      // AdjuestDailog
       {
-        base.Name          = "MainForm";
+        base.Name          = "AdjuestDailog";
         base.AutoScaleMode = AutoScaleMode.Font;
-        base.Text          = "EnvironmentVariablesEditor";
+        base.Text          = "Adjuest";
       }
     }
   }
