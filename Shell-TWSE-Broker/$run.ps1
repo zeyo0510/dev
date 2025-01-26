@@ -1,3 +1,5 @@
+# $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+
 Import-Module ".\Broker.psm1"
 ##################################################
 # $timestamp = Get-NowTimestamp

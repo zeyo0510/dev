@@ -3,7 +3,7 @@ Import-Module ".\DateUtils.psm1"
 function Get-Broker {
   param()
   ##################################################
-  $retValue = $null
+  $retValue = @()
   ##################################################
   $API_BASE             = "https://www.twse.com.tw"
   $BROKER_SERVICE_AUDIT = "rwd/zh/brokerService/brokerServiceAudit"
@@ -17,8 +17,21 @@ function Get-Broker {
                                 -Uri "${url}"        `
                                 -WebSession $session `
                                 -Headers @{
-                                    # do nothing...
-                                } `
+                                  # do nothing...
+                                }
+  $response = $response.Content | ConvertFrom-Json
   ##################################################
-  return $response
+  $fields = $response.fields
+  $data   = $response.data
+  ##################################################
+  foreach ($entry in $data) {
+    $row = @{}
+    for ($i = 0; $i -lt $fields.Count; $i++) {
+      $row[$fields[$i]] = $entry[$i]
+    }
+    $retValue += $row
+  }
+  $retValue = $retValue | ConvertTo-Json
+  ##################################################
+  return $retValue
 }
