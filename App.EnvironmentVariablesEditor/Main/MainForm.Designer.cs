@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
+using App.EnvironmentVariablesEditor.Controls;
 /************************************************/
 namespace App.EnvironmentVariablesEditor.Main
 {
@@ -28,6 +29,7 @@ namespace App.EnvironmentVariablesEditor.Main
       /************************************************/
       this.guiTimer = new Timer(this.components);
       /************************************************/
+      this.EnvironmentVariablesListView1 = new EnvironmentVariablesListView();
       this.topMenuStrip                 = new MenuStrip();
       this.fileToolStripMenuItem        = new ToolStripMenuItem();
       this.importToolStripMenuItem      = new ToolStripMenuItem();
@@ -51,6 +53,11 @@ namespace App.EnvironmentVariablesEditor.Main
         this.guiTimer.Interval = 100;
         /************************************************/
         this.guiTimer.Tick += this.guiTimer_Tick;
+      }
+      // EnvironmentVariablesListView1
+      {
+        this.EnvironmentVariablesListView1.Name = "EnvironmentVariablesListView1";
+        this.EnvironmentVariablesListView1.Dock = DockStyle.Fill;
       }
       // topMenuStrip
       {
@@ -189,11 +196,13 @@ namespace App.EnvironmentVariablesEditor.Main
         base.AutoScaleMode = AutoScaleMode.Font;
         base.Text          = "EnvironmentVariablesEditor";
         /************************************************/
+        base.Controls.Add(this.EnvironmentVariablesListView1);
         base.Controls.Add(this.topMenuStrip);
         base.Controls.Add(this.bottomStatusStrip);
       }
     }
     /************************************************/
+    private EnvironmentVariablesListView EnvironmentVariablesListView1 = null;
     private MenuStrip            topMenuStrip                 = null;
     private ToolStripMenuItem    fileToolStripMenuItem        = null;
     private ToolStripMenuItem    importToolStripMenuItem      = null;

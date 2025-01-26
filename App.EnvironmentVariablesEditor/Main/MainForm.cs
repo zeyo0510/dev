@@ -20,12 +20,12 @@ namespace App.EnvironmentVariablesEditor.Main
       this.UpdateUI();
     }
     /************************************************/
-    void importToolStripMenuItem_Click(object sender, EventArgs e)
+    private void importToolStripMenuItem_Click(object sender, EventArgs e)
     {
       // TODO: do anything...
     }
     /************************************************/
-    void exportToolStripMenuItem_Click(object sender, EventArgs e)
+    private void exportToolStripMenuItem_Click(object sender, EventArgs e)
     {
       // TODO: do anything...
     }
