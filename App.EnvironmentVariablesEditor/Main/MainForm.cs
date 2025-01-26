@@ -14,5 +14,17 @@ namespace App.EnvironmentVariablesEditor.Main
     {
       this.UpdateUI();
     }
+    /************************************************/
+    private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+    {
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.CloseApp();
+      /************************************************/
+      this.UpdateUI();
+    }
   }
 }

@@ -33,7 +33,7 @@ namespace App.EnvironmentVariablesEditor.Dialogs
         this.guiTimer.Enabled  = true;
         this.guiTimer.Interval = 100;
         /************************************************/
-        this.guiTimer.Tick += guiTimer_Tick;
+        this.guiTimer.Tick += this.guiTimer_Tick;
       }
       // AdjuestDailog
       {

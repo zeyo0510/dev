@@ -44,6 +44,9 @@
     <Compile Include="Dialogs\AdjuestDailog.UpdateUI.cs">
       <DependentUpon>AdjuestDailog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MainForm.CloseApp.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
