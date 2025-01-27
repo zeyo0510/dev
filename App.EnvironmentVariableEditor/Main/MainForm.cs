@@ -29,6 +29,7 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void importToolStripMenuItem_Click(object sender, EventArgs e)
     {
+      App.EnvironmentVariableEditor.Core.EnvVar.Delete(@"DESKTOP-0Q53BRU\\Zeyo", "AAA");
       // TODO: do anything...
     }
     /************************************************/
@@ -81,6 +82,13 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void viewToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
     {
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.EnvVarListView1.ReloadEnvironmentVariable();
+      /************************************************/
       this.UpdateUI();
     }
     /************************************************/

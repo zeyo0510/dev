@@ -10,6 +10,8 @@ namespace App.EnvironmentVariableEditor.Controls
     {
       this.InitializeComponent();
       /************************************************/
+      base.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+      /************************************************/
       this.ReloadEnvironmentVariable();
     }
     /************************************************/

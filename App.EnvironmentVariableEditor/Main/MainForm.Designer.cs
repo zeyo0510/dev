@@ -43,6 +43,7 @@ namespace App.EnvironmentVariableEditor.Main
       this.pasteToolStripMenuItem       = new ToolStripMenuItem();
       this.deleteToolStripMenuItem      = new ToolStripMenuItem();
       this.viewToolStripMenuItem        = new ToolStripMenuItem();
+      this.refreshToolStripMenuItem     = new ToolStripMenuItem();
       this.statusbarToolStripMenuItem   = new ToolStripMenuItem();
       this.bottomStatusStrip            = new StatusStrip();
       this.messsageToolStripStatusLabel = new ToolStripStatusLabel();
@@ -164,9 +165,18 @@ namespace App.EnvironmentVariableEditor.Main
         this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
         this.viewToolStripMenuItem.Text = "View";
         /************************************************/
+        this.viewToolStripMenuItem.DropDownItems.Add(this.refreshToolStripMenuItem);
+        this.viewToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
         this.viewToolStripMenuItem.DropDownItems.Add(this.statusbarToolStripMenuItem);
         /************************************************/
         this.viewToolStripMenuItem.DropDownOpening += this.viewToolStripMenuItem_DropDownOpening;
+      }
+      // refreshToolStripMenuItem
+      {
+        this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+        this.refreshToolStripMenuItem.Text = "Refresh";
+        /************************************************/
+        this.refreshToolStripMenuItem.Click += this.refreshToolStripMenuItem_Click;
       }
       // statusbarToolStripMenuItem
       {
@@ -217,6 +227,7 @@ namespace App.EnvironmentVariableEditor.Main
     private ToolStripMenuItem    pasteToolStripMenuItem       = null;
     private ToolStripMenuItem    deleteToolStripMenuItem      = null;
     private ToolStripMenuItem    viewToolStripMenuItem        = null;
+    private ToolStripMenuItem    refreshToolStripMenuItem     = null;
     private ToolStripMenuItem    statusbarToolStripMenuItem   = null;
     private StatusStrip          bottomStatusStrip            = null;
     private ToolStripStatusLabel messsageToolStripStatusLabel = null;
