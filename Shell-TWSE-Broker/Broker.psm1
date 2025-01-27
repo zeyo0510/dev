@@ -43,6 +43,7 @@ function Get-Broker {
 
 
   $retValue | ForEach-Object {
+    Start-Sleep -Seconds 5
     $step_3_stkNo     = $_["證券商代號"]
     $step_3_timestamp = Get-NowTimestamp
     $step_3_url       = "${API_BASE}/${BROKER_SERVICE_AUDIT}?showType=list&stkNo=${step_3_stkNo}&response=json&_=${step_3_timestamp}"
@@ -55,7 +56,6 @@ function Get-Broker {
                                         }
     ##################################################
     $step3_json = $step3_content.Content | ConvertFrom-Json
-    Write-Host "$step3_json"
     ##################################################
     $step_3_fields = $step3_json.fields
     $step_3_data   = $step3_json.data
@@ -64,6 +64,8 @@ function Get-Broker {
   }
 
 
+
+  $retValue = $retValue | Sort-Object -Property "證券商代號"
   $retValue = $retValue | ConvertTo-Json
   ##################################################
   return $retValue
