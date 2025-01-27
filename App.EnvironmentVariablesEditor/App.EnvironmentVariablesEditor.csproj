@@ -38,11 +38,20 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\EnvironmentVariablesListView.cs" />
-    <Compile Include="Controls\EnvironmentVariablesListView.Designer.cs">
-      <DependentUpon>EnvironmentVariablesListView.cs</DependentUpon>
+    <Compile Include="Controls\EnvVarListView.cs" />
+    <Compile Include="Controls\EnvVarListView.Designer.cs">
+      <DependentUpon>EnvVarListView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Core\EnvironmentVariables.cs" />
+    <Compile Include="Core\EnvVar.cs" />
+    <Compile Include="Core\EnvVar.Delete.cs">
+      <DependentUpon>EnvVar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVar.Insert.cs">
+      <DependentUpon>EnvVar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVar.Update.cs">
+      <DependentUpon>EnvVar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\AdjuestDailog.AdjuestClientSize.cs">
       <DependentUpon>AdjuestDailog.cs</DependentUpon>
     </Compile>

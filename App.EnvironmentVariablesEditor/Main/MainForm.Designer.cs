@@ -29,7 +29,7 @@ namespace App.EnvironmentVariablesEditor.Main
       /************************************************/
       this.guiTimer = new Timer(this.components);
       /************************************************/
-      this.EnvironmentVariablesListView1 = new EnvironmentVariablesListView();
+      this.EnvVarListView1              = new EnvVarListView();
       this.topMenuStrip                 = new MenuStrip();
       this.fileToolStripMenuItem        = new ToolStripMenuItem();
       this.importToolStripMenuItem      = new ToolStripMenuItem();
@@ -54,10 +54,10 @@ namespace App.EnvironmentVariablesEditor.Main
         /************************************************/
         this.guiTimer.Tick += this.guiTimer_Tick;
       }
-      // EnvironmentVariablesListView1
+      // EnvVarListView1
       {
-        this.EnvironmentVariablesListView1.Name = "EnvironmentVariablesListView1";
-        this.EnvironmentVariablesListView1.Dock = DockStyle.Fill;
+        this.EnvVarListView1.Name = "EnvVarListView1";
+        this.EnvVarListView1.Dock = DockStyle.Fill;
       }
       // topMenuStrip
       {
@@ -197,13 +197,13 @@ namespace App.EnvironmentVariablesEditor.Main
         base.StartPosition = FormStartPosition.Manual;
         base.Text          = "EnvironmentVariablesEditor";
         /************************************************/
-        base.Controls.Add(this.EnvironmentVariablesListView1);
+        base.Controls.Add(this.EnvVarListView1);
         base.Controls.Add(this.topMenuStrip);
         base.Controls.Add(this.bottomStatusStrip);
       }
     }
     /************************************************/
-    private EnvironmentVariablesListView EnvironmentVariablesListView1 = null;
+    private EnvVarListView       EnvVarListView1              = null;
     private MenuStrip            topMenuStrip                 = null;
     private ToolStripMenuItem    fileToolStripMenuItem        = null;
     private ToolStripMenuItem    importToolStripMenuItem      = null;

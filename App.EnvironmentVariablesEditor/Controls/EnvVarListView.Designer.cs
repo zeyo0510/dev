@@ -4,7 +4,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.EnvironmentVariablesEditor.Controls
 {
-  partial class EnvironmentVariablesListView
+  partial class EnvVarListView
   {
     private IContainer components = null;
     /************************************************/
@@ -22,9 +22,9 @@ namespace App.EnvironmentVariablesEditor.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      // EnvironmentVariablesListView
+      // EnvVarListView
       {
-        base.Name          = "EnvironmentVariablesListView";
+        base.Name          = "EnvVarListView";
         base.CheckBoxes    = true;
         base.FullRowSelect = true;
         base.GridLines     = true;
@@ -32,10 +32,6 @@ namespace App.EnvironmentVariablesEditor.Controls
         /************************************************/
         base.Columns.Add("Variable");
         base.Columns.Add("Value");
-        
-        // TODO: test
-        base.Items.Add(new System.Windows.Forms.ListViewItem(new string[] { "A", "B" }));
-        base.Items.Add(new System.Windows.Forms.ListViewItem(new string[] { "A", "B" }));
       }
     }
   }

@@ -4,9 +4,9 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.EnvironmentVariablesEditor.Controls
 {
-  public partial class EnvironmentVariablesListView : ListView
+  public partial class EnvVarListView : ListView
   {
-    public EnvironmentVariablesListView()
+    public EnvVarListView()
     {
       this.InitializeComponent();
       /************************************************/
@@ -32,6 +32,16 @@ namespace App.EnvironmentVariablesEditor.Controls
         /************************************************/
         this.Items.Add(item);
         /************************************************/
+      }
+      /************************************************/
+      this.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+    }
+    /************************************************/
+    public void DeleteSelectedVariables()
+    {
+      foreach (ListViewItem entry in this.SelectedItems)
+      {
+        
       }
     }
   }

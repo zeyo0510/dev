@@ -2,9 +2,9 @@
 /************************************************/
 namespace App.EnvironmentVariablesEditor.Core
 {
-  public class EnvironmentVariables
+  public static partial class EnvVar
   {
-    public EnvironmentVariables()
+    static EnvVar()
     {
       
     }
