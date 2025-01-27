@@ -6,8 +6,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>App.EnvironmentVariablesEditor</RootNamespace>
-    <AssemblyName>App.EnvironmentVariablesEditor</AssemblyName>
+    <RootNamespace>App.EnvironmentVariableEditor</RootNamespace>
+    <AssemblyName>App.EnvironmentVariableEditor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <TargetFrameworkProfile />

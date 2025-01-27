@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Controls
+namespace App.EnvironmentVariableEditor.Controls
 {
   partial class EnvVarListView
   {

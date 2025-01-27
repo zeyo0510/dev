@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Main
+namespace App.EnvironmentVariableEditor.Main
 {
   partial class MainForm
   {

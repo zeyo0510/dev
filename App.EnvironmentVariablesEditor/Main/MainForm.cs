@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Main
+namespace App.EnvironmentVariableEditor.Main
 {
   internal partial class MainForm : Form
   {

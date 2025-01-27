@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using App.EnvironmentVariablesEditor.Main;
+using App.EnvironmentVariableEditor.Main;
 /************************************************/
-namespace App.EnvironmentVariablesEditor
+namespace App.EnvironmentVariableEditor
 {
   internal sealed class Program
   {

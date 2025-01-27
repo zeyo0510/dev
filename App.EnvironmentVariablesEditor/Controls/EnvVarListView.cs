@@ -2,7 +2,7 @@
 using System.Management;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Controls
+namespace App.EnvironmentVariableEditor.Controls
 {
   public partial class EnvVarListView : ListView
   {
@@ -10,10 +10,10 @@ namespace App.EnvironmentVariablesEditor.Controls
     {
       this.InitializeComponent();
       /************************************************/
-      this.ReloadEnvironmentVariables();
+      this.ReloadEnvironmentVariable();
     }
     /************************************************/
-    public void ReloadEnvironmentVariables()
+    public void ReloadEnvironmentVariable()
     {
       base.Items.Clear();
       /************************************************/

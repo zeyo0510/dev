@@ -1,6 +1,6 @@
 ﻿using System;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Core
+namespace App.EnvironmentVariableEditor.Core
 {
   public static partial class EnvVar
   {

@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("App.EnvironmentVariablesEditor")]
+[assembly: AssemblyTitle("App.EnvironmentVariableEditor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("App.EnvironmentVariablesEditor")]
+[assembly: AssemblyProduct("App.EnvironmentVariableEditor")]
 [assembly: AssemblyCopyright("Copyright 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

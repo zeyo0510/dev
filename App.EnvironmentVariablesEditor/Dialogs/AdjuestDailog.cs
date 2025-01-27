@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Dialogs
+namespace App.EnvironmentVariableEditor.Dialogs
 {
   internal partial class AdjuestDailog : Form
   {

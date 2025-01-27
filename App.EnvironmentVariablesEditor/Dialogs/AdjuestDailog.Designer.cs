@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Forms;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Dialogs
+namespace App.EnvironmentVariableEditor.Dialogs
 {
   partial class AdjuestDailog
   {

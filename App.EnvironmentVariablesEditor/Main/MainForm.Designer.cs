@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using App.EnvironmentVariablesEditor.Controls;
+using App.EnvironmentVariableEditor.Controls;
 /************************************************/
-namespace App.EnvironmentVariablesEditor.Main
+namespace App.EnvironmentVariableEditor.Main
 {
   partial class MainForm
   {
@@ -195,7 +195,7 @@ namespace App.EnvironmentVariablesEditor.Main
         base.Name          = "MainForm";
         base.AutoScaleMode = AutoScaleMode.Font;
         base.StartPosition = FormStartPosition.Manual;
-        base.Text          = "EnvironmentVariablesEditor";
+        base.Text          = "EnvironmentVariableEditor";
         /************************************************/
         base.Controls.Add(this.EnvVarListView1);
         base.Controls.Add(this.topMenuStrip);
