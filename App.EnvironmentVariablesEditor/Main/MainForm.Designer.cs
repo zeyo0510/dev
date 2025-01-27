@@ -194,6 +194,7 @@ namespace App.EnvironmentVariablesEditor.Main
       {
         base.Name          = "MainForm";
         base.AutoScaleMode = AutoScaleMode.Font;
+        base.StartPosition = FormStartPosition.Manual;
         base.Text          = "EnvironmentVariablesEditor";
         /************************************************/
         base.Controls.Add(this.EnvironmentVariablesListView1);

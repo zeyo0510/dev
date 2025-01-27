@@ -10,6 +10,13 @@ namespace App.EnvironmentVariablesEditor.Main
       this.InitializeComponent();
     }
     /************************************************/
+    protected override void OnLoad(EventArgs e)
+    {
+      this.AdjuestClientSize();
+      /************************************************/
+      base.OnLoad(e);
+    }
+    /************************************************/
     private void guiTimer_Tick(object sender, EventArgs e)
     {
       this.UpdateUI();
