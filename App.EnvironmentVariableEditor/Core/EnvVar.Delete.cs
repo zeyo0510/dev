@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Management;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Core
@@ -10,26 +9,23 @@ namespace App.EnvironmentVariableEditor.Core
     {
       bool retValue = false;
       /************************************************/
-      try
+      if (EnvVar.Query(user).Length <= 0)
       {
-        string statement = string.Format("SELECT * FROM Win32_Environment WHERE UserName = '{0}' AND Name = '{1}'", user, variable);
-        /************************************************/
-        ManagementObjectSearcher searcher = new ManagementObjectSearcher(statement);
-        /************************************************/
-        foreach (ManagementObject _ in searcher.Get())
-        {
-          _.Delete();
-          /************************************************/
-          retValue = true;
-        }
+        return retValue;
       }
-      catch (ManagementException ex)
+      /************************************************/
+      ManagementClass myClass = new ManagementClass("Win32_Environment");
+      /************************************************/
+      ManagementObjectCollection myObjectCollection = myClass.GetInstances();
+      /************************************************/
+      foreach (ManagementObject _ in myObjectCollection)
       {
-        Debug.WriteLine(string.Format("WMI Error: {0}", ex.Message));
-      }
-      catch (Exception ex)
-      {
-        Debug.WriteLine(string.Format("An error occurred: {0}", ex.Message));
+        if (_["UserName"].ToString() != user    ) continue;
+        if (_["Name"    ].ToString() != variable) continue;
+        /************************************************/
+        _.Delete();
+        /************************************************/
+        retValue = true;
       }
       /************************************************/
       return retValue;

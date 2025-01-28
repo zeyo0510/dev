@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Management;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Core
@@ -10,30 +9,23 @@ namespace App.EnvironmentVariableEditor.Core
     {
       bool retValue = false;
       /************************************************/
-      try
+      if (EnvVar.Query(user, variable).Length >= 1)
       {
-        ManagementClass environmentClass = new ManagementClass("Win32_Environment");
-        /************************************************/
-        ManagementObject newEnvVar = environmentClass.CreateInstance();
-        /************************************************/
-        if (newEnvVar != null)
-        {
-          newEnvVar["UserName"]      = user;
-          newEnvVar["Name"]          = variable;
-          newEnvVar["VariableValue"] = value;
-          /************************************************/
-          newEnvVar.Put();
-        }
-      }
-      catch (ManagementException ex)
-      {
-        Debug.WriteLine(string.Format("WMI Error: {0}", ex.Message));
-      }
-      catch (Exception ex)
-      {
-        Debug.WriteLine(string.Format("An error occurred: {0}", ex.Message));
+        return retValue;
       }
       /************************************************/
+      ManagementClass myClass = new ManagementClass("Win32_Environment");
+      /************************************************/
+      ManagementObject myObj = myClass.CreateInstance();
+      /************************************************/
+      myObj["UserName"     ] = user;
+      myObj["Name"         ] = variable;
+      myObj["VariableValue"] = value;
+      /************************************************/
+      myObj.Put();
+      /************************************************/
+      retValue = true;
+      /************************************************/  
       return retValue;
     }
   }

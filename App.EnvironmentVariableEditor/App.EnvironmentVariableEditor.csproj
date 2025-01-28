@@ -49,6 +49,9 @@
     <Compile Include="Core\EnvVar.Insert.cs">
       <DependentUpon>EnvVar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\EnvVar.Query.cs">
+      <DependentUpon>EnvVar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\EnvVar.Update.cs">
       <DependentUpon>EnvVar.cs</DependentUpon>
     </Compile>

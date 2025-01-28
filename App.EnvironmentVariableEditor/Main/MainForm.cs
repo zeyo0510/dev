@@ -32,7 +32,9 @@ namespace App.EnvironmentVariableEditor.Main
     private void importToolStripMenuItem_Click(object sender, EventArgs e)
     {
       s += "A";
-      App.EnvironmentVariableEditor.Core.EnvVar.Insert(@"DESKTOP-0Q53BRU\\Zeyo", "AAA", s);
+      System.Diagnostics.Debug.WriteLine(
+        App.EnvironmentVariableEditor.Core.EnvVar.Insert(@"DESKTOP-0Q53BRU\Zeyo", "AAA", s)
+       );
       // TODO: do anything...
     }
     /************************************************/
