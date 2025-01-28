@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Management;
 using System.Windows.Forms;
+using App.EnvironmentVariableEditor.Core;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Controls
 {
@@ -19,15 +21,11 @@ namespace App.EnvironmentVariableEditor.Controls
     {
       base.Items.Clear();
       /************************************************/
-      string query = "SELECT * FROM Win32_Environment";
-      /************************************************/
-      ManagementObjectSearcher searcher = new ManagementObjectSearcher(query);
-      /************************************************/
-      foreach (ManagementObject envVar in searcher.Get())
+      foreach (KeyValuePair<string, string> _ in EnvVar.Query())
       {
         string[] arr = new string[] {
-          envVar["Name"].ToString(),
-          envVar["VariableValue"].ToString(),
+          _.Key.ToString(),
+          _.Value.ToString(),
         };
         /************************************************/
         ListViewItem item = new ListViewItem(arr);

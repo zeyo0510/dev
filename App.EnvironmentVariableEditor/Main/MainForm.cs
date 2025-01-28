@@ -27,14 +27,8 @@ namespace App.EnvironmentVariableEditor.Main
       this.UpdateUI();
     }
     /************************************************/
-    string s = "A";
-    
     private void importToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      s += "A";
-      System.Diagnostics.Debug.WriteLine(
-        App.EnvironmentVariableEditor.Core.EnvVar.Insert(@"DESKTOP-0Q53BRU\Zeyo", "AAA", s)
-       );
       // TODO: do anything...
     }
     /************************************************/
