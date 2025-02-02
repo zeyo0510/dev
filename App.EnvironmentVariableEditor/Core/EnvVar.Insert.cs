@@ -5,11 +5,11 @@ namespace App.EnvironmentVariableEditor.Core
 {
   partial class EnvVar
   {
-    public static bool Insert(string user, string variable, string value)
+    public static bool Insert(string account, string variable, string value)
     {
       bool retValue = false;
       /************************************************/
-      if (EnvVar.Query(user, variable).Length >= 1)
+      if (EnvVar.Query(account, variable).Length >= 1)
       {
         return retValue;
       }
@@ -18,7 +18,7 @@ namespace App.EnvironmentVariableEditor.Core
       /************************************************/
       ManagementObject myObj = myClass.CreateInstance();
       /************************************************/
-      myObj["UserName"     ] = user;
+      myObj["UserName"     ] = account;
       myObj["Name"         ] = variable;
       myObj["VariableValue"] = value;
       /************************************************/

@@ -42,6 +42,13 @@
     <Compile Include="Controls\EnvVarListView.Designer.cs">
       <DependentUpon>EnvVarListView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\EnvVarTreeView.cs" />
+    <Compile Include="Controls\EnvVarTreeView.CurrentAccount.cs">
+      <DependentUpon>EnvVarTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EnvVarTreeView.Designer.cs">
+      <DependentUpon>EnvVarTreeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\EnvVar.cs" />
     <Compile Include="Core\EnvVar.Delete.cs">
       <DependentUpon>EnvVar.cs</DependentUpon>
@@ -55,6 +62,27 @@
     <Compile Include="Core\EnvVar.Update.cs">
       <DependentUpon>EnvVar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\EnvVar.Users.cs">
+      <DependentUpon>EnvVar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVarAccount.Name.cs">
+      <DependentUpon>EnvVarAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVarAccount.Type.cs">
+      <DependentUpon>EnvVarAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVarEntry.cs" />
+    <Compile Include="Core\EnvVarEntry.Account.cs">
+      <DependentUpon>EnvVarEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVarEntry.Value.cs">
+      <DependentUpon>EnvVarEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVarEntry.Variable.cs">
+      <DependentUpon>EnvVarEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EnvVarAccount.cs" />
+    <Compile Include="Core\EnvVarAccountType.cs" />
     <Compile Include="Dialogs\AdjuestDailog.AdjuestClientSize.cs">
       <DependentUpon>AdjuestDailog.cs</DependentUpon>
     </Compile>
@@ -65,6 +93,9 @@
     <Compile Include="Dialogs\AdjuestDailog.UpdateUI.cs">
       <DependentUpon>AdjuestDailog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MainForm.ImportData.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.AdjuestClientSize.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
@@ -73,6 +104,9 @@
     </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.ExportData.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.ToggleStatusBar.cs">

@@ -2,11 +2,11 @@
 /************************************************/
 namespace App.EnvironmentVariableEditor.Core
 {
-  public static partial class EnvVar
+  partial class EnvVarAccount
   {
-    static EnvVar()
+    public EnvVarAccountType Type
     {
-      // do nothing...
+      get; private set;
     }
   }
 }

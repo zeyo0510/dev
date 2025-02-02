@@ -4,10 +4,9 @@ namespace App.EnvironmentVariableEditor.Main
 {
   partial class MainForm
   {
-    // TODO: do anything...
-    public void UpdateUI()
+    public void ImportData()
     {
-      this.statusbarToolStripMenuItem.Checked = this.bottomStatusStrip.Visible;
+      // TODO: do anything...
     }
   }
 }

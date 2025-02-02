@@ -5,11 +5,11 @@ namespace App.EnvironmentVariableEditor.Core
 {
   partial class EnvVar
   {
-    public static bool Delete(string user, string variable)
+    public static bool Delete(string account, string variable)
     {
       bool retValue = false;
       /************************************************/
-      if (EnvVar.Query(user).Length <= 0)
+      if (EnvVar.Query(account, variable).Length <= 0)
       {
         return retValue;
       }
@@ -20,7 +20,7 @@ namespace App.EnvironmentVariableEditor.Core
       /************************************************/
       foreach (ManagementObject _ in myObjectCollection)
       {
-        if (_["UserName"].ToString() != user    ) continue;
+        if (_["UserName"].ToString() != account ) continue;
         if (_["Name"    ].ToString() != variable) continue;
         /************************************************/
         _.Delete();

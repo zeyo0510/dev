@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Management;
 using System.Windows.Forms;
 using App.EnvironmentVariableEditor.Core;
 /************************************************/
@@ -21,11 +19,11 @@ namespace App.EnvironmentVariableEditor.Controls
     {
       base.Items.Clear();
       /************************************************/
-      foreach (KeyValuePair<string, string> _ in EnvVar.Query())
+      foreach (EnvVarEntry _ in EnvVar.Query())
       {
         string[] arr = new string[] {
-          _.Key.ToString(),
-          _.Value.ToString(),
+          _.Variable,
+          _.Value,
         };
         /************************************************/
         ListViewItem item = new ListViewItem(arr);
@@ -36,13 +34,24 @@ namespace App.EnvironmentVariableEditor.Controls
       /************************************************/
       this.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
     }
-    /************************************************/
-    public void DeleteSelectedVariables()
+    public void ReloadEnvironmentVariable(string account)
     {
-      foreach (ListViewItem entry in this.SelectedItems)
+      base.Items.Clear();
+      /************************************************/
+      foreach (EnvVarEntry _ in EnvVar.Query(account))
       {
-        
+        string[] arr = new string[] {
+          _.Variable,
+          _.Value,
+        };
+        /************************************************/
+        ListViewItem item = new ListViewItem(arr);
+        /************************************************/
+        this.Items.Add(item);
+        /************************************************/
       }
+      /************************************************/
+      this.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
     }
   }
 }

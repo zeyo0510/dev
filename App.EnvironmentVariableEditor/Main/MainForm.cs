@@ -29,12 +29,16 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void importToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO: do anything...
+      this.ImportData();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void exportToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO: do anything...
+      this.ExportData();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -74,6 +78,16 @@ namespace App.EnvironmentVariableEditor.Main
       // TODO: do anything...
     }
     /************************************************/
+    private void insertToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      // TODO: do anything...
+    }
+    /************************************************/
+    private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      // TODO: do anything...
+    }
+    /************************************************/
     private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
     {
       // TODO: do anything...
@@ -86,6 +100,7 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: do anything...
       this.EnvVarListView1.ReloadEnvironmentVariable();
       /************************************************/
       this.UpdateUI();

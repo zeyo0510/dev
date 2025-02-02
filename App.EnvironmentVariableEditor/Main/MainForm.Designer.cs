@@ -22,6 +22,13 @@ namespace App.EnvironmentVariableEditor.Main
       }
       base.Dispose(disposing);
     }
+
+    void EnvVarTreeView1_AfterSelect(object sender, TreeViewEventArgs e)
+    {
+      EnvVarListView1.ReloadEnvironmentVariable(EnvVarTreeView1.CurrentAccount.Name);
+      
+    }
+
     /************************************************/
     private void InitializeComponent()
     {
@@ -29,6 +36,8 @@ namespace App.EnvironmentVariableEditor.Main
       /************************************************/
       this.guiTimer = new Timer(this.components);
       /************************************************/
+      this.SplitContainer1              = new SplitContainer();
+      this.EnvVarTreeView1              = new EnvVarTreeView();
       this.EnvVarListView1              = new EnvVarListView();
       this.topMenuStrip                 = new MenuStrip();
       this.fileToolStripMenuItem        = new ToolStripMenuItem();
@@ -41,6 +50,8 @@ namespace App.EnvironmentVariableEditor.Main
       this.cutToolStripMenuItem         = new ToolStripMenuItem();
       this.copyToolStripMenuItem        = new ToolStripMenuItem();
       this.pasteToolStripMenuItem       = new ToolStripMenuItem();
+      this.insertToolStripMenuItem      = new ToolStripMenuItem();
+      this.updateToolStripMenuItem      = new ToolStripMenuItem();
       this.deleteToolStripMenuItem      = new ToolStripMenuItem();
       this.viewToolStripMenuItem        = new ToolStripMenuItem();
       this.refreshToolStripMenuItem     = new ToolStripMenuItem();
@@ -54,6 +65,19 @@ namespace App.EnvironmentVariableEditor.Main
         this.guiTimer.Interval = 100;
         /************************************************/
         this.guiTimer.Tick += this.guiTimer_Tick;
+      }
+      // SplitContainer1
+      {
+        this.SplitContainer1.Name = "SplitContainer1";
+        this.SplitContainer1.Dock = DockStyle.Fill;
+        this.SplitContainer1.Panel1.Controls.Add(this.EnvVarTreeView1);
+        this.SplitContainer1.Panel2.Controls.Add(this.EnvVarListView1);
+      }
+      // EnvVarTreeView1
+      {
+        this.EnvVarTreeView1.Name = "EnvVarTreeView1";
+        this.EnvVarTreeView1.Dock = DockStyle.Fill;
+        this.EnvVarTreeView1.AfterSelect += EnvVarTreeView1_AfterSelect;
       }
       // EnvVarListView1
       {
@@ -114,6 +138,9 @@ namespace App.EnvironmentVariableEditor.Main
         this.editToolStripMenuItem.DropDownItems.Add(this.cutToolStripMenuItem);
         this.editToolStripMenuItem.DropDownItems.Add(this.copyToolStripMenuItem);
         this.editToolStripMenuItem.DropDownItems.Add(this.pasteToolStripMenuItem);
+        this.editToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
+        this.editToolStripMenuItem.DropDownItems.Add(this.insertToolStripMenuItem);
+        this.editToolStripMenuItem.DropDownItems.Add(this.updateToolStripMenuItem);
         this.editToolStripMenuItem.DropDownItems.Add(this.deleteToolStripMenuItem);
         /************************************************/
         this.editToolStripMenuItem.DropDownOpening += this.editToolStripMenuItem_DropDownOpening;
@@ -152,6 +179,20 @@ namespace App.EnvironmentVariableEditor.Main
         this.pasteToolStripMenuItem.Text = "Paste";
         /************************************************/
         this.pasteToolStripMenuItem.Click += this.pasteToolStripMenuItem_Click;
+      }
+      // insertToolStripMenuItem
+      {
+        this.insertToolStripMenuItem.Name = "insertToolStripMenuItem";
+        this.insertToolStripMenuItem.Text = "Insert";
+        /************************************************/
+        this.insertToolStripMenuItem.Click += this.insertToolStripMenuItem_Click;
+      }
+      // updateToolStripMenuItem
+      {
+        this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+        this.updateToolStripMenuItem.Text = "Update";
+        /************************************************/
+        this.updateToolStripMenuItem.Click += this.updateToolStripMenuItem_Click;
       }
       // deleteToolStripMenuItem
       {
@@ -207,12 +248,14 @@ namespace App.EnvironmentVariableEditor.Main
         base.StartPosition = FormStartPosition.Manual;
         base.Text          = "EnvironmentVariableEditor";
         /************************************************/
-        base.Controls.Add(this.EnvVarListView1);
+        base.Controls.Add(this.SplitContainer1);
         base.Controls.Add(this.topMenuStrip);
         base.Controls.Add(this.bottomStatusStrip);
       }
     }
     /************************************************/
+    private SplitContainer       SplitContainer1              = null;
+    private EnvVarTreeView       EnvVarTreeView1              = null;
     private EnvVarListView       EnvVarListView1              = null;
     private MenuStrip            topMenuStrip                 = null;
     private ToolStripMenuItem    fileToolStripMenuItem        = null;
@@ -225,6 +268,8 @@ namespace App.EnvironmentVariableEditor.Main
     private ToolStripMenuItem    cutToolStripMenuItem         = null;
     private ToolStripMenuItem    copyToolStripMenuItem        = null;
     private ToolStripMenuItem    pasteToolStripMenuItem       = null;
+    private ToolStripMenuItem    insertToolStripMenuItem      = null;
+    private ToolStripMenuItem    updateToolStripMenuItem      = null;
     private ToolStripMenuItem    deleteToolStripMenuItem      = null;
     private ToolStripMenuItem    viewToolStripMenuItem        = null;
     private ToolStripMenuItem    refreshToolStripMenuItem     = null;

@@ -6,9 +6,9 @@ namespace App.EnvironmentVariableEditor.Core
 {
   partial class EnvVar
   {
-    public static KeyValuePair<string, string>[] Query()
+    public static EnvVarEntry[] Query()
     {
-      List<KeyValuePair<string, string>> retValue = new List<KeyValuePair<string, string>>();
+      List<EnvVarEntry> retValue = new List<EnvVarEntry>();
       /************************************************/
       ManagementClass myClass = new ManagementClass("Win32_Environment");
       /************************************************/
@@ -16,59 +16,39 @@ namespace App.EnvironmentVariableEditor.Core
       /************************************************/
       foreach (ManagementObject _ in myObjectCollection)
       {
-        KeyValuePair<string, string> tmp = new KeyValuePair<string, string>(
-          _["Name"].ToString(),
+        retValue.Add(new EnvVarEntry(
+          _["UserName"     ].ToString(),
+          _["Name"         ].ToString(),
           _["VariableValue"].ToString()
-         );
-        /************************************************/
-        retValue.Add(tmp);
+        ));
       }
       /************************************************/
       return retValue.ToArray();
     }
     /************************************************/
-    public static KeyValuePair<string, string>[] Query(string user)
+    public static EnvVarEntry[] Query(string account)
     {
-      List<KeyValuePair<string, string>> retValue = new List<KeyValuePair<string, string>>();
+      List<EnvVarEntry> retValue = new List<EnvVarEntry>();
       /************************************************/
-      ManagementClass myClass = new ManagementClass("Win32_Environment");
-      /************************************************/
-      ManagementObjectCollection myObjectCollection = myClass.GetInstances();
-      /************************************************/
-      foreach (ManagementObject _ in myObjectCollection)
+      foreach (EnvVarEntry _ in EnvVar.Query())
       {
-        if (_["UserName"].ToString() != user) continue;
+        if (_.Account != account) continue;
         /************************************************/
-        KeyValuePair<string, string> tmp = new KeyValuePair<string, string>(
-          _["Name"].ToString(),
-          _["VariableValue"].ToString()
-         );
-        /************************************************/
-        retValue.Add(tmp);
+        retValue.Add(_);
       }
       /************************************************/
       return retValue.ToArray();
     }
     /************************************************/
-    public static KeyValuePair<string, string>[] Query(string user, string variable)
+    public static EnvVarEntry[] Query(string account, string variable)
     {
-      List<KeyValuePair<string, string>> retValue = new List<KeyValuePair<string, string>>();
+      List<EnvVarEntry> retValue = new List<EnvVarEntry>();
       /************************************************/
-      ManagementClass myClass = new ManagementClass("Win32_Environment");
-      /************************************************/
-      ManagementObjectCollection myObjectCollection = myClass.GetInstances();
-      /************************************************/
-      foreach (ManagementObject _ in myObjectCollection)
+      foreach (EnvVarEntry _ in EnvVar.Query(account))
       {
-        if (_["UserName"].ToString() != user    ) continue;
-        if (_["Name"    ].ToString() != variable) continue;
+        if (_.Variable != variable) continue;
         /************************************************/
-        KeyValuePair<string, string> tmp = new KeyValuePair<string, string>(
-          _["Name"].ToString(),
-          _["VariableValue"].ToString()
-         );
-        /************************************************/
-        retValue.Add(tmp);
+        retValue.Add(_);
       }
       /************************************************/
       return retValue.ToArray();
