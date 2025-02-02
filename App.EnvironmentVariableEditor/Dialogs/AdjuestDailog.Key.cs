@@ -4,9 +4,9 @@ namespace App.EnvironmentVariableEditor.Dialogs
 {
   partial class AdjuestDailog
   {
-    public void UpdateUI()
+    public string Key
     {
-      // TODO: do anything...
+      get; private set;
     }
   }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Windows.Forms;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Dialogs
 {
@@ -8,8 +7,8 @@ namespace App.EnvironmentVariableEditor.Dialogs
   {
     public void AdjuestClientSize()
     {
-      float w = Screen.PrimaryScreen.WorkingArea.Width  * 0.75f;
-      float h = Screen.PrimaryScreen.WorkingArea.Height * 0.75f;
+      float w = base.Owner.ClientSize.Width  * 0.75f;
+      float h = base.Owner.ClientSize.Height * 0.75f;
       /************************************************/
       base.ClientSize = Size.Round(new SizeF(w, h));
       /************************************************/

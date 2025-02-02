@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using App.EnvironmentVariableEditor.Dialogs;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Main
 {
@@ -22,6 +23,20 @@ namespace App.EnvironmentVariableEditor.Main
     private void guiTimer_Tick(object sender, EventArgs e)
     {
       this.UpdateUI();
+    }
+    /************************************************/
+    private void ListView1_DoubleClick(object sender, EventArgs e)
+    {
+      // TODO: do anything...
+      AdjuestDailog dialog = new AdjuestDailog("", "");
+      {
+        
+      }
+      /************************************************/
+      if (dialog.ShowDialog(this) != DialogResult.OK)
+      {
+        return;
+      }
     }
     /************************************************/
     private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)

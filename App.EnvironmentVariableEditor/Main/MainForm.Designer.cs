@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Main
@@ -21,6 +22,7 @@ namespace App.EnvironmentVariableEditor.Main
       }
       base.Dispose(disposing);
     }
+    /************************************************/
     private void InitializeComponent()
     {
       this.components = new Container();
@@ -67,11 +69,14 @@ namespace App.EnvironmentVariableEditor.Main
         /************************************************/
         this.ListView1.Columns.Add("Key");
         this.ListView1.Columns.Add("Value");
+        /************************************************/
+        this.ListView1.DoubleClick += this.ListView1_DoubleClick;
       }
       // topMenuStrip
       {
         this.topMenuStrip.Name       = "topMenuStrip";
         this.topMenuStrip.Dock       = DockStyle.Top;
+        this.topMenuStrip.Font       = new Font(FontFamily.GenericMonospace, 8f);
         this.topMenuStrip.RenderMode = ToolStripRenderMode.System;
         /************************************************/
         this.topMenuStrip.Items.Add(this.fileToolStripMenuItem);
@@ -231,6 +236,7 @@ namespace App.EnvironmentVariableEditor.Main
       {
         this.bottomStatusStrip.Name       = "bottomStatusStrip";
         this.bottomStatusStrip.Dock       = DockStyle.Bottom;
+        this.bottomStatusStrip.Font       = new Font(FontFamily.GenericMonospace, 8f);
         this.bottomStatusStrip.RenderMode = ToolStripRenderMode.System;
         /************************************************/
         this.bottomStatusStrip.Items.Add(this.messsageToolStripStatusLabel);
@@ -246,6 +252,7 @@ namespace App.EnvironmentVariableEditor.Main
       {
         base.Name          = "MainForm";
         base.AutoScaleMode = AutoScaleMode.Font;
+        base.Font          = new Font(FontFamily.GenericMonospace, 8f);
         base.StartPosition = FormStartPosition.Manual;
         base.Text          = "EnvironmentVariableEditor";
         /************************************************/

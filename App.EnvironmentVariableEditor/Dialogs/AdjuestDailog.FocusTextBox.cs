@@ -4,9 +4,10 @@ namespace App.EnvironmentVariableEditor.Dialogs
 {
   partial class AdjuestDailog
   {
-    public void UpdateUI()
+    public void FocusTextBox(string s)
     {
-      // TODO: do anything...
+      if (s == "key"  ) this.  keyTextBox.Focus();
+      if (s == "value") this.valueTextBox.Focus();
     }
   }
 }

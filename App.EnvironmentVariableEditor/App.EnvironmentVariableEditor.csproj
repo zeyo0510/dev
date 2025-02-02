@@ -45,7 +45,16 @@
     <Compile Include="Dialogs\AdjuestDailog.Designer.cs">
       <DependentUpon>AdjuestDailog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\AdjuestDailog.FocusTextBox.cs">
+      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AdjuestDailog.Key.cs">
+      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\AdjuestDailog.UpdateUI.cs">
+      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AdjuestDailog.Value.cs">
       <DependentUpon>AdjuestDailog.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.CurrentEnvironmentVariable.cs">
