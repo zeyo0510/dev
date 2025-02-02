@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using App.EnvironmentVariableEditor.Controls;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Main
 {
@@ -22,23 +21,13 @@ namespace App.EnvironmentVariableEditor.Main
       }
       base.Dispose(disposing);
     }
-
-    void EnvVarTreeView1_AfterSelect(object sender, TreeViewEventArgs e)
-    {
-      EnvVarListView1.ReloadEnvironmentVariable(EnvVarTreeView1.CurrentAccount.Name);
-      
-    }
-
-    /************************************************/
     private void InitializeComponent()
     {
       this.components = new Container();
       /************************************************/
       this.guiTimer = new Timer(this.components);
       /************************************************/
-      this.SplitContainer1              = new SplitContainer();
-      this.EnvVarTreeView1              = new EnvVarTreeView();
-      this.EnvVarListView1              = new EnvVarListView();
+      this.ListView1                    = new ListView();
       this.topMenuStrip                 = new MenuStrip();
       this.fileToolStripMenuItem        = new ToolStripMenuItem();
       this.importToolStripMenuItem      = new ToolStripMenuItem();
@@ -54,6 +43,8 @@ namespace App.EnvironmentVariableEditor.Main
       this.updateToolStripMenuItem      = new ToolStripMenuItem();
       this.deleteToolStripMenuItem      = new ToolStripMenuItem();
       this.viewToolStripMenuItem        = new ToolStripMenuItem();
+      this.userToolStripMenuItem        = new ToolStripMenuItem();
+      this.machineToolStripMenuItem     = new ToolStripMenuItem();
       this.refreshToolStripMenuItem     = new ToolStripMenuItem();
       this.statusbarToolStripMenuItem   = new ToolStripMenuItem();
       this.bottomStatusStrip            = new StatusStrip();
@@ -66,23 +57,16 @@ namespace App.EnvironmentVariableEditor.Main
         /************************************************/
         this.guiTimer.Tick += this.guiTimer_Tick;
       }
-      // SplitContainer1
-      {
-        this.SplitContainer1.Name = "SplitContainer1";
-        this.SplitContainer1.Dock = DockStyle.Fill;
-        this.SplitContainer1.Panel1.Controls.Add(this.EnvVarTreeView1);
-        this.SplitContainer1.Panel2.Controls.Add(this.EnvVarListView1);
-      }
-      // EnvVarTreeView1
-      {
-        this.EnvVarTreeView1.Name = "EnvVarTreeView1";
-        this.EnvVarTreeView1.Dock = DockStyle.Fill;
-        this.EnvVarTreeView1.AfterSelect += EnvVarTreeView1_AfterSelect;
-      }
       // EnvVarListView1
       {
-        this.EnvVarListView1.Name = "EnvVarListView1";
-        this.EnvVarListView1.Dock = DockStyle.Fill;
+        this.ListView1.Name          = "ListView1";
+        this.ListView1.Dock          = DockStyle.Fill;
+        this.ListView1.FullRowSelect = true;
+        this.ListView1.GridLines     = true;
+        this.ListView1.View          = View.Details;
+        /************************************************/
+        this.ListView1.Columns.Add("Key");
+        this.ListView1.Columns.Add("Value");
       }
       // topMenuStrip
       {
@@ -206,11 +190,28 @@ namespace App.EnvironmentVariableEditor.Main
         this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
         this.viewToolStripMenuItem.Text = "View";
         /************************************************/
+        this.viewToolStripMenuItem.DropDownItems.Add(this.userToolStripMenuItem);
+        this.viewToolStripMenuItem.DropDownItems.Add(this.machineToolStripMenuItem);
+        this.viewToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
         this.viewToolStripMenuItem.DropDownItems.Add(this.refreshToolStripMenuItem);
         this.viewToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
         this.viewToolStripMenuItem.DropDownItems.Add(this.statusbarToolStripMenuItem);
         /************************************************/
         this.viewToolStripMenuItem.DropDownOpening += this.viewToolStripMenuItem_DropDownOpening;
+      }
+      // userToolStripMenuItem
+      {
+        this.userToolStripMenuItem.Name = "userToolStripMenuItem";
+        this.userToolStripMenuItem.Text = "User";
+        /************************************************/
+        this.userToolStripMenuItem.Click += this.userToolStripMenuItem_Click;
+      }
+      //
+      {
+        this.machineToolStripMenuItem.Name = "machineToolStripMenuItem";
+        this.machineToolStripMenuItem.Text = "Machine";
+        /************************************************/
+        this.machineToolStripMenuItem.Click += this.machineToolStripMenuItem_Click;
       }
       // refreshToolStripMenuItem
       {
@@ -248,15 +249,13 @@ namespace App.EnvironmentVariableEditor.Main
         base.StartPosition = FormStartPosition.Manual;
         base.Text          = "EnvironmentVariableEditor";
         /************************************************/
-        base.Controls.Add(this.SplitContainer1);
+        base.Controls.Add(this.ListView1);
         base.Controls.Add(this.topMenuStrip);
         base.Controls.Add(this.bottomStatusStrip);
       }
     }
     /************************************************/
-    private SplitContainer       SplitContainer1              = null;
-    private EnvVarTreeView       EnvVarTreeView1              = null;
-    private EnvVarListView       EnvVarListView1              = null;
+    private ListView             ListView1                    = null;
     private MenuStrip            topMenuStrip                 = null;
     private ToolStripMenuItem    fileToolStripMenuItem        = null;
     private ToolStripMenuItem    importToolStripMenuItem      = null;
@@ -272,6 +271,8 @@ namespace App.EnvironmentVariableEditor.Main
     private ToolStripMenuItem    updateToolStripMenuItem      = null;
     private ToolStripMenuItem    deleteToolStripMenuItem      = null;
     private ToolStripMenuItem    viewToolStripMenuItem        = null;
+    private ToolStripMenuItem    userToolStripMenuItem        = null;
+    private ToolStripMenuItem    machineToolStripMenuItem     = null;
     private ToolStripMenuItem    refreshToolStripMenuItem     = null;
     private ToolStripMenuItem    statusbarToolStripMenuItem   = null;
     private StatusStrip          bottomStatusStrip            = null;

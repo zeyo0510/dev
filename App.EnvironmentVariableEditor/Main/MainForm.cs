@@ -8,6 +8,8 @@ namespace App.EnvironmentVariableEditor.Main
     public MainForm()
     {
       this.InitializeComponent();
+      /************************************************/
+      this.Reload();
     }
     /************************************************/
     protected override void OnLoad(EventArgs e)
@@ -98,10 +100,23 @@ namespace App.EnvironmentVariableEditor.Main
       this.UpdateUI();
     }
     /************************************************/
+    private void userToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.CurrentEnvironmentVariable = EnvironmentVariableTarget.User;
+      /************************************************/
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void machineToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.CurrentEnvironmentVariable = EnvironmentVariableTarget.Machine;
+      /************************************************/
+      this.UpdateUI();
+    }
+    /************************************************/
     private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO: do anything...
-      this.EnvVarListView1.ReloadEnvironmentVariable();
+      this.Reload();
       /************************************************/
       this.UpdateUI();
     }
