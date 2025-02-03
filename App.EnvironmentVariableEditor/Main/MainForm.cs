@@ -87,7 +87,9 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void copyToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO: do anything...
+      this.CopySelectedItem2Clipboard();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
