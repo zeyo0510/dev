@@ -7,12 +7,12 @@ $(function () {
     // copy the GUID to clipboard
     loadNewGUID();
 
-    $('#btncopyguid').on('click', function () {
-        copyTextToClipboard($("div#maincontainer div#quickguid").text());
+    $('#copy-button').on('click', function () {
+        copyTextToClipboard($("div#window-container div#quickguid").text());
     });
 
     // generate new GUID
-    $('#btnrefresh').on('click', function () {
+    $('#refresh-button').on('click', function () {
         loadNewGUID();
     });
 
@@ -25,14 +25,14 @@ $(function () {
                 resizeWindows();
             },
             complete: function () {
-                $('#optionscontainer').slideToggle({
+                $('#options-container').slideToggle({
                     duration: 'normal',
                     step: function (now, tween) {
                         resizeWindows();
                     },
                     complete: function () {
                         resizeWindows();
-                        $('#quickguidlable').html('Quick GUID Options');
+                        $('#title-label').html('Quick GUID Options');
                     }
                 });
             }
@@ -43,7 +43,7 @@ $(function () {
 
     // show main
     $('#btnOptionsBackToMain').on('click', function () {
-        $('#optionscontainer').slideToggle({
+        $('#options-container').slideToggle({
             duration: 'normal',
             step: function (now, tween) {
                 resizeWindows();
@@ -56,7 +56,7 @@ $(function () {
                     },
                     complete: function () {
                         resizeWindows();
-                        $('#quickguidlable').html('Quick GUID');
+                        $('#title-label').html('Quick GUID');
                     }
                 });
         loadNewGUID();
@@ -108,7 +108,7 @@ $(function () {
         }
     });
 
-    $('#appexit').on('click', function () {
+    $('#close-button').on('click', function () {
         window.close();
     });
     //$(document).bind('contextmenu', function (e) {
@@ -119,7 +119,7 @@ $(function () {
 })
 
 function resizeWindows() {
-    $height = $('div#maincontainer').outerHeight();
+    $height = $('div#window-container').outerHeight();
     var appWin = chrome.app.window.current();
     appWin.setBounds({ height: $height });
 }
@@ -140,7 +140,7 @@ if (!window.loadNewGUID) window.loadNewGUID = function () {
         data1 = $options.IsBracesOn ? withBraces : withoutBraces;
         data1 = ($options.OmitHyphens) ? data1.replace(/-/g, '') : data1;
         data1 = ($options.GUIDType == '2') ? Base64.convert(data1, false) : data1;
-        $('div#maincontainer div#quickguid').html(data1);
+        $('div#window-container div#quickguid').html(data1);
     });
 }
 

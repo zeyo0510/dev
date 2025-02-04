@@ -12,7 +12,7 @@ body {
     color: #4f4f4f;
 }
 
-div#maincontainer {
+div#window-container {
     padding: 5px;
     border: 1px solid gray;
 }
@@ -26,7 +26,7 @@ div#quickguid {
     border: 1px solid #afafbb;
 }
 
-div#quickguidlable {
+div#title-label {
     padding: 0 5px 7px;
     text-align: center;
     font-size: 16px;
@@ -37,7 +37,7 @@ div#quickguidlable {
     clear: both;
 }
 
-div#appexit {
+div#close-button {
     position: absolute;
     z-index: 1000;
     width: 16px;
@@ -49,10 +49,10 @@ div#appexit {
     cursor: pointer;
 }
 
-    div#appexit:hover {
-        background-image: url(/images/images.png);
-        background-position: left 16px;
-    }
+div#close-button:hover {
+    background-image: url(/images/images.png);
+    background-position: left 16px;
+}
 
 div#appoptions {
     float: left;
@@ -68,7 +68,7 @@ div#appoptions {
         background-position: left 96px;
     }
 
-div#optionscontainer {
+div#options-container {
     display: none;
     padding: 0 10px;
 }
@@ -130,7 +130,7 @@ div#divMainPageButtons {
     left: 5px;
 }
 
-    div#divMainPageButtons div#btnrefresh {
+    div#divMainPageButtons div#refresh-button {
         float: left;
         width: 16px;
         height: 16px;
@@ -140,12 +140,12 @@ div#divMainPageButtons {
         margin-left: 16px;
     }
 
-        div#divMainPageButtons div#btnrefresh:hover {
+        div#divMainPageButtons div#refresh-button:hover {
             background-image: url(/images/images.png);
             background-position: left 32px;
         }
 
-    div#divMainPageButtons div#btncopyguid {
+    div#divMainPageButtons div#copy-button {
         float: left;
         width: 16px;
         height: 16px;
@@ -155,7 +155,7 @@ div#divMainPageButtons {
         margin-left: 3px;
     }
 
-        div#divMainPageButtons div#btncopyguid:hover {
+        div#divMainPageButtons div#copy-button:hover {
             background-image: url(/images/images.png);
             background-position: left 48px;
         }
