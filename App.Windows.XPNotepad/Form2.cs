@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
+using App.Windows.XPNotepad.Main;
 
 namespace notepad
 {
     public partial class Form2 : Form
     {
-        Form1 mainform;
+        MainForm mainform;
         string mr, tt;
         static string fl = "";
 
@@ -33,7 +29,7 @@ namespace notepad
         private void Form2_Load(object sender, EventArgs e)
         {
             button1.Enabled = false;
-            mainform = (Form1)this.Owner;
+            mainform = (MainForm)this.Owner;
             if (mainform.cu != "")
                 textBox1.Text = mainform.cu;
         }

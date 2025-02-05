@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using App.Windows.XPNotepad.Main;
 
 namespace notepad
 {
     public partial class Form5 : Form
     {
-        Form1 mainform;
+        MainForm mainform;
         public int b = 0;
         
         public Form5()
@@ -72,7 +69,7 @@ namespace notepad
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            mainform = (Form1)this.Owner;
+            mainform = (MainForm)this.Owner;
             if (mainform.Text == "无标题 - 记事本")
             {
                 label2.Text = "无标题?";

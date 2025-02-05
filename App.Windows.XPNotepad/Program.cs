@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using App.Windows.XPNotepad.Main;
 
 namespace App.Windows.XPNotepad
 {
@@ -10,7 +11,7 @@ namespace App.Windows.XPNotepad
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new global::notepad.Form1());
+      Application.Run(new MainForm());
     }
   }
 }
