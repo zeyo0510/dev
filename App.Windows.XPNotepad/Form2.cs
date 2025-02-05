@@ -38,40 +38,40 @@ namespace notepad
         {
             try
             {
-                if (mainform.mtBox1.SelectedText == mainform.mtBox1.Text)
-                    mainform.mtBox1.Select(0, 0);
+                if (mainform.notepadTextBox.SelectedText == mainform.notepadTextBox.Text)
+                    mainform.notepadTextBox.Select(0, 0);
                 fl = textBox1.Text;
                 mainform.ffind = true;
                 mainform.tBox2 = textBox1.Text;
                 if (checkBox1.Checked)
                 {
-                    mr = mainform.mtBox1.Text;
+                    mr = mainform.notepadTextBox.Text;
                     tt = textBox1.Text;
                     mainform.f2checkbox = true;
                 }
                 else
                 {
-                    mr = mainform.mtBox1.Text.ToLower();
+                    mr = mainform.notepadTextBox.Text.ToLower();
                     tt = textBox1.Text.ToLower();
                     mainform.f2checkbox = false;
                 } 
                 if (radioButton1.Checked == true)
                 {
                     mainform.ffl = 0;
-                    if (mainform.mtBox1.SelectionStart >= 0)
+                    if (mainform.notepadTextBox.SelectionStart >= 0)
                     {
-                        mainform.mtBox1.Select(mr.LastIndexOf(tt, mainform.mtBox1.SelectionStart - 1), textBox1.Text.Length);
-                        mainform.mtBox1.ScrollToCaret();
+                        mainform.notepadTextBox.Select(mr.LastIndexOf(tt, mainform.notepadTextBox.SelectionStart - 1), textBox1.Text.Length);
+                        mainform.notepadTextBox.ScrollToCaret();
                     }
                     else MessageBox.Show(("找不到\"" + textBox1.Text + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 if (radioButton2.Checked == true)
                 {
                     mainform.ffl = 1;
-                    if (mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length) >= 0)
+                    if (mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length) >= 0)
                     {
-                        mainform.mtBox1.Select(mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length), textBox1.Text.Length);
-                        mainform.mtBox1.ScrollToCaret();//当屏幕显示不了时，实现滚动
+                        mainform.notepadTextBox.Select(mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length), textBox1.Text.Length);
+                        mainform.notepadTextBox.ScrollToCaret();//当屏幕显示不了时，实现滚动
                     }
                     else MessageBox.Show(("找不到\"" + textBox1.Text + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

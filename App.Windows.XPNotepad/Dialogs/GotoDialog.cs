@@ -40,8 +40,8 @@ namespace App.Windows.XPNotepad.Dialogs
       }
       else
       {
-        mainform.mtBox1.SelectionStart = SendMessage(mainform.mtBox1.Handle, EM_LINEINDEX, a - 1, 0);
-        mainform.mtBox1.ScrollToCaret();
+        mainform.notepadTextBox.SelectionStart = SendMessage(mainform.notepadTextBox.Handle, EM_LINEINDEX, a - 1, 0);
+        mainform.notepadTextBox.ScrollToCaret();
         Close();
       }
     }
@@ -51,7 +51,7 @@ namespace App.Windows.XPNotepad.Dialogs
       mainform = (MainForm)this.Owner;
       int a;
       a = mainform.start;
-      fl = SendMessage(mainform.mtBox1.Handle, EM_GETLINECOUNT, 0, 0);
+      fl = SendMessage(mainform.notepadTextBox.Handle, EM_GETLINECOUNT, 0, 0);
       textBox1.Text = a.ToString();
     }
   }

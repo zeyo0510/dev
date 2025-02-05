@@ -36,10 +36,10 @@ namespace notepad
                     {
                         b = 1;
                         StreamWriter save = new StreamWriter(mainform.saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-                        save.Write(mainform.mtBox1.Text);
+                        save.Write(mainform.notepadTextBox.Text);
                         save.Flush();
                         save.Close();
-                        mainform.ts = mainform.mtBox1.Text;
+                        mainform.ts = mainform.notepadTextBox.Text;
                         if (mainform.exe == 0)
                             mainform.Text = Path.GetFileName(mainform.saveFileDialog1.FileName) + " - 记事本";
                         else
@@ -51,10 +51,10 @@ namespace notepad
                 {
                     b = 1;
                     StreamWriter save = new StreamWriter(mainform.saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-                    save.Write(mainform.mtBox1.Text);
+                    save.Write(mainform.notepadTextBox.Text);
                     save.Flush();
                     save.Close();
-                    mainform.ts = mainform.mtBox1.Text;
+                    mainform.ts = mainform.notepadTextBox.Text;
                 }
             }
             catch { }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Drawing.Printing;
 using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPNotepad.Main
@@ -6,6 +7,8 @@ namespace App.Windows.XPNotepad.Main
   partial class MainForm
   {
     private IContainer components = null;
+    /************************************************/
+    private Timer guiTimer = null;
     /************************************************/
     protected override void Dispose(bool disposing)
     {
@@ -18,80 +21,51 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
+      this.components = new Container();
+      /************************************************/
+      this.guiTimer = new Timer(this.components);
+      /************************************************/
       this.openFileDialog1 = new OpenFileDialog();
       this.saveFileDialog1 = new SaveFileDialog();
       this.fontDialog1 = new FontDialog();
       this.printDialog1 = new PrintDialog();
       this.pageSetupDialog1 = new PageSetupDialog();
       this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-      this.mainMenu1 = new MainMenu(this.components);
-      this.menuItem1 = new MenuItem();
-      this.menuItem31 = new MenuItem();
-      this.menuItem32 = new MenuItem();
-      this.menuItem33 = new MenuItem();
-      this.menuItem34 = new MenuItem();
-      this.menuItem35 = new MenuItem();
-      this.menuItem36 = new MenuItem();
-      this.menuItem37 = new MenuItem();
-      this.menuItem38 = new MenuItem();
-      this.menuItem39 = new MenuItem();
-      this.menuItem8 = new MenuItem();
-      this.撤销UToolStripMenuItem = new MenuItem();
-      this.menuItem41 = new MenuItem();
-      this.剪切ToolStripMenuItem = new MenuItem();
-      this.复制zToolStripMenuItem = new MenuItem();
-      this.menuItem44 = new MenuItem();
-      this.删除ToolStripMenuItem = new MenuItem();
-      this.menuItem46 = new MenuItem();
-      this.查找ToolStripMenuItem = new MenuItem();
-      this.查找下一个ToolStripMenuItem = new MenuItem();
-      this.menuItem49 = new MenuItem();
-      this.menuItem50 = new MenuItem();
-      this.menuItem51 = new MenuItem();
-      this.menuItem52 = new MenuItem();
-      this.menuItem53 = new MenuItem();
-      this.menuItem20 = new MenuItem();
-      this.自动换行ToolStripMenuItem = new MenuItem();
-      this.menuItem55 = new MenuItem();
-      this.menuItem24 = new MenuItem();
-      this.状态栏SToolStripMenuItem = new MenuItem();
-      this.menuItem26 = new MenuItem();
-      this.menuItem57 = new MenuItem();
-      this.menuItem58 = new MenuItem();
-      this.menuItem59 = new MenuItem();
-      this.menuItem2 = new MenuItem();
-      this.menuItem3 = new MenuItem();
-      this.menuItem4 = new MenuItem();
-      this.menuItem5 = new MenuItem();
-      this.menuItem7 = new MenuItem();
-      this.menuItem6 = new MenuItem();
-      this.menuItem9 = new MenuItem();
-      this.menuItem28 = new MenuItem();
-      this.menuItem10 = new MenuItem();
-      this.menuItem11 = new MenuItem();
-      this.menuItem12 = new MenuItem();
-      this.menuItem13 = new MenuItem();
-      this.menuItem29 = new MenuItem();
-      this.menuItem14 = new MenuItem();
-      this.menuItem15 = new MenuItem();
-      this.menuItem16 = new MenuItem();
-      this.menuItem17 = new MenuItem();
-      this.menuItem30 = new MenuItem();
-      this.menuItem18 = new MenuItem();
-      this.menuItem19 = new MenuItem();
-      this.menuItem21 = new MenuItem();
-      this.menuItem22 = new MenuItem();
-      this.menuItem23 = new MenuItem();
-      this.menuItem25 = new MenuItem();
-      this.menuItem27 = new MenuItem();
-      this.mtBox1 = new TextBox();
-      this.timer1 = new Timer(this.components);
-      this.statusBar1 = new StatusBar();
+      this.topMainMenu = new MainMenu(this.components);
+      this.fileMenuItem = new MenuItem();
+      this.newMenuItem = new MenuItem();
+      this.openMenuItem = new MenuItem();
+      this.saveMenuItem = new MenuItem();
+      this.saveasMenuItem = new MenuItem();
+      this.pagesetupMenuItem = new MenuItem();
+      this.printMenuItem = new MenuItem();
+      this.exitMenuItem = new MenuItem();
+      this.editMenuItem = new MenuItem();
+      this.undoMenuItem = new MenuItem();
+      this.cutMenuItem = new MenuItem();
+      this.copyMenuItem = new MenuItem();
+      this.pasteMenuItem = new MenuItem();
+      this.deleteMenuItem = new MenuItem();
+      this.findMenuItem = new MenuItem();
+      this.findnextMenuItem = new MenuItem();
+      this.replaceMenuItem1 = new MenuItem();
+      this.gotoMenuItem1 = new MenuItem();
+      this.selectallMenuItem1 = new MenuItem();
+      this.timedateMenuItem1 = new MenuItem();
+      this.formatMenuItem = new MenuItem();
+      this.wordwrapMenuItem = new MenuItem();
+      this.fontMenuItem = new MenuItem();
+      this.viewMenuItem = new MenuItem();
+      this.statusbarMenuItem = new MenuItem();
+      this.helpMenuItem = new MenuItem();
+      this.helptopicsMenuItem = new MenuItem();
+      this.aboutMenuItem = new MenuItem();
+      this.notepadTextBox = new TextBox();
+      this.bottomStatusBar = new StatusBar();
       this.statusBarPanel1 = new StatusBarPanel();
-      this.statusBarPanel2 = new StatusBarPanel();
+      this.lncolStatusBarPanel = new StatusBarPanel();
       ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.lncolStatusBarPanel)).BeginInit();
       this.SuspendLayout();
       // 
       // fontDialog1
@@ -111,441 +85,266 @@ namespace App.Windows.XPNotepad.Main
       // 
       this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
       // 
-      // mainMenu1
+      // topMainMenu
       // 
-      this.mainMenu1.MenuItems.AddRange(new MenuItem[] {
-      this.menuItem1,
-      this.menuItem8,
-      this.menuItem20,
-      this.menuItem24,
-      this.menuItem26});
+      this.topMainMenu.MenuItems.AddRange(new MenuItem[] {
+      this.fileMenuItem,
+      this.editMenuItem,
+      this.formatMenuItem,
+      this.viewMenuItem,
+      this.helpMenuItem});
       // 
-      // menuItem1
+      // fileMenuItem
       // 
-      this.menuItem1.Index = 0;
-      this.menuItem1.MenuItems.AddRange(new MenuItem[] {
-      this.menuItem31,
-      this.menuItem32,
-      this.menuItem33,
-      this.menuItem34,
-      this.menuItem35,
-      this.menuItem36,
-      this.menuItem37,
-      this.menuItem38,
-      this.menuItem39});
-      this.menuItem1.Text = "文件(&F)";
+      this.fileMenuItem.Index = 0;
+      this.fileMenuItem.MenuItems.AddRange(new MenuItem[] {
+      this.newMenuItem,
+      this.openMenuItem,
+      this.saveMenuItem,
+      this.saveasMenuItem,
+      new MenuItem("-"),
+      this.pagesetupMenuItem,
+      this.printMenuItem,
+      new MenuItem("-"),
+      this.exitMenuItem});
+      this.fileMenuItem.Text = "文件(&F)";
       // 
-      // menuItem31
+      // newMenuItem
       // 
-      this.menuItem31.Index = 0;
-      this.menuItem31.Shortcut = Shortcut.CtrlN;
-      this.menuItem31.Text = "新建(&N)";
-      this.menuItem31.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
+      this.newMenuItem.Index = 0;
+      this.newMenuItem.Shortcut = Shortcut.CtrlN;
+      this.newMenuItem.Text = "新建(&N)";
+      this.newMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
       // 
-      // menuItem32
+      // openMenuItem
       // 
-      this.menuItem32.Index = 1;
-      this.menuItem32.Shortcut = Shortcut.CtrlO;
-      this.menuItem32.Text = "打开(&O)";
-      this.menuItem32.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
+      this.openMenuItem.Index = 1;
+      this.openMenuItem.Shortcut = Shortcut.CtrlO;
+      this.openMenuItem.Text = "打开(&O)";
+      this.openMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
       // 
-      // menuItem33
+      // saveMenuItem
       // 
-      this.menuItem33.Index = 2;
-      this.menuItem33.Shortcut = Shortcut.CtrlS;
-      this.menuItem33.Text = "保存(&S)";
-      this.menuItem33.Click += new System.EventHandler(this.保存ToolStripMenuItem_Click);
+      this.saveMenuItem.Index = 2;
+      this.saveMenuItem.Shortcut = Shortcut.CtrlS;
+      this.saveMenuItem.Text = "保存(&S)";
+      this.saveMenuItem.Click += new System.EventHandler(this.保存ToolStripMenuItem_Click);
       // 
-      // menuItem34
+      // saveasMenuItem
       // 
-      this.menuItem34.Index = 3;
-      this.menuItem34.Text = "另存为(&A)";
-      this.menuItem34.Click += new System.EventHandler(this.另存为AToolStripMenuItem_Click);
+      this.saveasMenuItem.Index = 3;
+      this.saveasMenuItem.Text = "另存为(&A)";
+      this.saveasMenuItem.Click += new System.EventHandler(this.另存为AToolStripMenuItem_Click);
       // 
-      // menuItem35
+      // pagesetupMenuItem
       // 
-      this.menuItem35.Index = 4;
-      this.menuItem35.Text = "-";
+      this.pagesetupMenuItem.Index = 5;
+      this.pagesetupMenuItem.Text = "页面设置(&U)";
+      this.pagesetupMenuItem.Click += new System.EventHandler(this.页面设置ToolStripMenuItem_Click);
       // 
-      // menuItem36
+      // printMenuItem
       // 
-      this.menuItem36.Index = 5;
-      this.menuItem36.Text = "页面设置(&U)";
-      this.menuItem36.Click += new System.EventHandler(this.页面设置ToolStripMenuItem_Click);
+      this.printMenuItem.Index = 6;
+      this.printMenuItem.Shortcut = Shortcut.CtrlP;
+      this.printMenuItem.Text = "打印(&P)";
+      this.printMenuItem.Click += new System.EventHandler(this.打印ToolStripMenuItem_Click);
       // 
-      // menuItem37
+      // exitMenuItem
       // 
-      this.menuItem37.Index = 6;
-      this.menuItem37.Shortcut = Shortcut.CtrlP;
-      this.menuItem37.Text = "打印(&P)";
-      this.menuItem37.Click += new System.EventHandler(this.打印ToolStripMenuItem_Click);
+      this.exitMenuItem.Index = 8;
+      this.exitMenuItem.Text = "退出(&X)";
+      this.exitMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
       // 
-      // menuItem38
+      // editMenuItem
       // 
-      this.menuItem38.Index = 7;
-      this.menuItem38.Text = "-";
+      this.editMenuItem.Index = 1;
+      this.editMenuItem.MenuItems.AddRange(new MenuItem[] {
+      this.undoMenuItem,
+      new MenuItem("-"),
+      this.cutMenuItem,
+      this.copyMenuItem,
+      this.pasteMenuItem,
+      this.deleteMenuItem,
+      new MenuItem("-"),
+      this.findMenuItem,
+      this.findnextMenuItem,
+      this.replaceMenuItem1,
+      this.gotoMenuItem1,
+      new MenuItem("-"),
+      this.selectallMenuItem1,
+      this.timedateMenuItem1});
+      this.editMenuItem.Text = "编辑(&E)";
       // 
-      // menuItem39
+      // undoMenuItem
       // 
-      this.menuItem39.Index = 8;
-      this.menuItem39.Text = "退出(&X)";
-      this.menuItem39.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+      this.undoMenuItem.Index = 0;
+      this.undoMenuItem.Shortcut = Shortcut.CtrlZ;
+      this.undoMenuItem.Text = "撤销(&U)";
+      this.undoMenuItem.Click += new System.EventHandler(this.撤销ToolStripMenuItem_Click);
       // 
-      // menuItem8
+      // cutMenuItem
       // 
-      this.menuItem8.Index = 1;
-      this.menuItem8.MenuItems.AddRange(new MenuItem[] {
-      this.撤销UToolStripMenuItem,
-      this.menuItem41,
-      this.剪切ToolStripMenuItem,
-      this.复制zToolStripMenuItem,
-      this.menuItem44,
-      this.删除ToolStripMenuItem,
-      this.menuItem46,
-      this.查找ToolStripMenuItem,
-      this.查找下一个ToolStripMenuItem,
-      this.menuItem49,
-      this.menuItem50,
-      this.menuItem51,
-      this.menuItem52,
-      this.menuItem53});
-      this.menuItem8.Text = "编辑(&E)";
+      this.cutMenuItem.Index = 2;
+      this.cutMenuItem.Shortcut = Shortcut.CtrlX;
+      this.cutMenuItem.Text = "剪切(&T)";
+      this.cutMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem1_Click);
       // 
-      // 撤销UToolStripMenuItem
+      // copyMenuItem
       // 
-      this.撤销UToolStripMenuItem.Index = 0;
-      this.撤销UToolStripMenuItem.Shortcut = Shortcut.CtrlZ;
-      this.撤销UToolStripMenuItem.Text = "撤销(&U)";
-      this.撤销UToolStripMenuItem.Click += new System.EventHandler(this.撤销ToolStripMenuItem_Click);
+      this.copyMenuItem.Index = 3;
+      this.copyMenuItem.Shortcut = Shortcut.CtrlC;
+      this.copyMenuItem.Text = "复制(&C)";
+      this.copyMenuItem.Click += new System.EventHandler(this.复制ToolStripMenuItem_Click);
       // 
-      // menuItem41
+      // pasteMenuItem
       // 
-      this.menuItem41.Index = 1;
-      this.menuItem41.Text = "-";
+      this.pasteMenuItem.Index = 4;
+      this.pasteMenuItem.Shortcut = Shortcut.CtrlP;
+      this.pasteMenuItem.Text = "粘贴(&P)";
+      this.pasteMenuItem.Click += new System.EventHandler(this.粘贴ToolStripMenuItem1_Click);
       // 
-      // 剪切ToolStripMenuItem
+      // deleteMenuItem
       // 
-      this.剪切ToolStripMenuItem.Index = 2;
-      this.剪切ToolStripMenuItem.Shortcut = Shortcut.CtrlX;
-      this.剪切ToolStripMenuItem.Text = "剪切(&T)";
-      this.剪切ToolStripMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem1_Click);
+      this.deleteMenuItem.Index = 5;
+      this.deleteMenuItem.Shortcut = Shortcut.Del;
+      this.deleteMenuItem.Text = "删除(&L)";
+      this.deleteMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem1_Click);
       // 
-      // 复制zToolStripMenuItem
+      // findMenuItem
       // 
-      this.复制zToolStripMenuItem.Index = 3;
-      this.复制zToolStripMenuItem.Shortcut = Shortcut.CtrlC;
-      this.复制zToolStripMenuItem.Text = "复制(&C)";
-      this.复制zToolStripMenuItem.Click += new System.EventHandler(this.复制ToolStripMenuItem_Click);
+      this.findMenuItem.Index = 7;
+      this.findMenuItem.Shortcut = Shortcut.CtrlF;
+      this.findMenuItem.Text = "查找(&F)";
+      this.findMenuItem.Click += new System.EventHandler(this.查找ToolStripMenuItem_Click);
       // 
-      // menuItem44
+      // findnextMenuItem
       // 
-      this.menuItem44.Index = 4;
-      this.menuItem44.Shortcut = Shortcut.CtrlP;
-      this.menuItem44.Text = "粘贴(&P)";
-      this.menuItem44.Click += new System.EventHandler(this.粘贴ToolStripMenuItem1_Click);
+      this.findnextMenuItem.Index = 8;
+      this.findnextMenuItem.Shortcut = Shortcut.F3;
+      this.findnextMenuItem.Text = "查找下一个(&N)";
+      this.findnextMenuItem.Click += new System.EventHandler(this.查找下一个ToolStripMenuItem_Click);
       // 
-      // 删除ToolStripMenuItem
+      // replaceMenuItem1
       // 
-      this.删除ToolStripMenuItem.Index = 5;
-      this.删除ToolStripMenuItem.Shortcut = Shortcut.Del;
-      this.删除ToolStripMenuItem.Text = "删除(&L)";
-      this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem1_Click);
+      this.replaceMenuItem1.Index = 9;
+      this.replaceMenuItem1.Shortcut = Shortcut.CtrlH;
+      this.replaceMenuItem1.Text = "替换 (&R)";
+      this.replaceMenuItem1.Click += new System.EventHandler(this.定位ToolStripMenuItem_Click);
       // 
-      // menuItem46
+      // gotoMenuItem1
       // 
-      this.menuItem46.Index = 6;
-      this.menuItem46.Text = "-";
+      this.gotoMenuItem1.Index = 10;
+      this.gotoMenuItem1.Shortcut = Shortcut.CtrlG;
+      this.gotoMenuItem1.Text = "转到(&G)";
+      this.gotoMenuItem1.Click += new System.EventHandler(this.转到ToolStripMenuItem_Click);
       // 
-      // 查找ToolStripMenuItem
+      // selectallMenuItem1
       // 
-      this.查找ToolStripMenuItem.Index = 7;
-      this.查找ToolStripMenuItem.Shortcut = Shortcut.CtrlF;
-      this.查找ToolStripMenuItem.Text = "查找(&F)";
-      this.查找ToolStripMenuItem.Click += new System.EventHandler(this.查找ToolStripMenuItem_Click);
+      this.selectallMenuItem1.Index = 12;
+      this.selectallMenuItem1.Shortcut = Shortcut.CtrlA;
+      this.selectallMenuItem1.Text = "全选(&A)";
+      this.selectallMenuItem1.Click += new System.EventHandler(this.全选ToolStripMenuItem2_Click);
       // 
-      // 查找下一个ToolStripMenuItem
+      // timedateMenuItem1
       // 
-      this.查找下一个ToolStripMenuItem.Index = 8;
-      this.查找下一个ToolStripMenuItem.Shortcut = Shortcut.F3;
-      this.查找下一个ToolStripMenuItem.Text = "查找下一个(&N)";
-      this.查找下一个ToolStripMenuItem.Click += new System.EventHandler(this.查找下一个ToolStripMenuItem_Click);
-      // 
-      // menuItem49
-      // 
-      this.menuItem49.Index = 9;
-      this.menuItem49.Shortcut = Shortcut.CtrlH;
-      this.menuItem49.Text = "替换 (&R)";
-      this.menuItem49.Click += new System.EventHandler(this.定位ToolStripMenuItem_Click);
-      // 
-      // menuItem50
-      // 
-      this.menuItem50.Index = 10;
-      this.menuItem50.Shortcut = Shortcut.CtrlG;
-      this.menuItem50.Text = "转到(&G)";
-      this.menuItem50.Click += new System.EventHandler(this.转到ToolStripMenuItem_Click);
-      // 
-      // menuItem51
-      // 
-      this.menuItem51.Index = 11;
-      this.menuItem51.Text = "-";
-      // 
-      // menuItem52
-      // 
-      this.menuItem52.Index = 12;
-      this.menuItem52.Shortcut = Shortcut.CtrlA;
-      this.menuItem52.Text = "全选(&A)";
-      this.menuItem52.Click += new System.EventHandler(this.全选ToolStripMenuItem2_Click);
-      // 
-      // menuItem53
-      // 
-      this.menuItem53.Index = 13;
-      this.menuItem53.Shortcut = Shortcut.F5;
-      this.menuItem53.Text = "时间/日期(&D)";
-      this.menuItem53.Click += new System.EventHandler(this.时间日期ToolStripMenuItem_Click);
+      this.timedateMenuItem1.Index = 13;
+      this.timedateMenuItem1.Shortcut = Shortcut.F5;
+      this.timedateMenuItem1.Text = "时间/日期(&D)";
+      this.timedateMenuItem1.Click += new System.EventHandler(this.时间日期ToolStripMenuItem_Click);
       // 
       // menuItem20
       // 
-      this.menuItem20.Index = 2;
-      this.menuItem20.MenuItems.AddRange(new MenuItem[] {
-      this.自动换行ToolStripMenuItem,
-      this.menuItem55});
-      this.menuItem20.Text = "格式(&O)";
-      // 
-      // 自动换行ToolStripMenuItem
-      // 
-      this.自动换行ToolStripMenuItem.Index = 0;
-      this.自动换行ToolStripMenuItem.Text = "自动换行(&W)";
-      this.自动换行ToolStripMenuItem.Click += new System.EventHandler(this.自动换行ToolStripMenuItem_Click);
-      // 
-      // menuItem55
-      // 
-      this.menuItem55.Index = 1;
-      this.menuItem55.Text = "字体(&F)...";
-      this.menuItem55.Click += new System.EventHandler(this.字体ToolStripMenuItem_Click);
-      // 
-      // menuItem24
-      // 
-      this.menuItem24.Index = 3;
-      this.menuItem24.MenuItems.AddRange(new MenuItem[] {
-      this.状态栏SToolStripMenuItem});
-      this.menuItem24.Text = "查看(&V)";
-      // 
-      // 状态栏SToolStripMenuItem
-      // 
-      this.状态栏SToolStripMenuItem.Index = 0;
-      this.状态栏SToolStripMenuItem.Text = "状态栏(&S)";
-      this.状态栏SToolStripMenuItem.Click += new System.EventHandler(this.状态栏SToolStripMenuItem_Click);
-      // 
-      // menuItem26
-      // 
-      this.menuItem26.Index = 4;
-      this.menuItem26.MenuItems.AddRange(new MenuItem[] {
-      this.menuItem57,
-      this.menuItem58,
-      this.menuItem59});
-      this.menuItem26.Text = "帮助(&H)";
-      // 
-      // menuItem57
-      // 
-      this.menuItem57.Index = 0;
-      this.menuItem57.Text = "查看帮助(&H)";
-      this.menuItem57.Click += new System.EventHandler(this.menuItem57_Click);
-      // 
-      // menuItem58
-      // 
-      this.menuItem58.Index = 1;
-      this.menuItem58.Text = "-";
-      // 
-      // menuItem59
-      // 
-      this.menuItem59.Index = 2;
-      this.menuItem59.Text = "关于记事本(&A)";
-      this.menuItem59.Click += new System.EventHandler(this.关于记事本ToolStripMenuItem_Click);
-      // 
-      // menuItem2
-      // 
-      this.menuItem2.Index = -1;
-      this.menuItem2.Shortcut = Shortcut.CtrlN;
-      this.menuItem2.Text = "新建(&N)";
-      // 
-      // menuItem3
-      // 
-      this.menuItem3.Index = -1;
-      this.menuItem3.Shortcut = Shortcut.CtrlO;
-      this.menuItem3.Text = "打开(&O)";
-      // 
-      // menuItem4
-      // 
-      this.menuItem4.Index = -1;
-      this.menuItem4.Shortcut = Shortcut.CtrlS;
-      this.menuItem4.Text = "保存(&S)";
-      // 
-      // menuItem5
-      // 
-      this.menuItem5.Index = -1;
-      this.menuItem5.Text = "另存为(&A)";
-      // 
-      // menuItem7
-      // 
-      this.menuItem7.Index = -1;
-      this.menuItem7.Text = "-";
-      // 
-      // menuItem6
-      // 
-      this.menuItem6.Index = -1;
-      this.menuItem6.Text = "退出(&X)";
-      // 
-      // menuItem9
-      // 
-      this.menuItem9.Enabled = false;
-      this.menuItem9.Index = -1;
-      this.menuItem9.Shortcut = Shortcut.CtrlZ;
-      this.menuItem9.Text = "撤消";
-      // 
-      // menuItem28
-      // 
-      this.menuItem28.Index = -1;
-      this.menuItem28.Text = "-";
-      // 
-      // menuItem10
-      // 
-      this.menuItem10.Enabled = false;
-      this.menuItem10.Index = -1;
-      this.menuItem10.Shortcut = Shortcut.CtrlX;
-      this.menuItem10.Text = "剪切(&T)";
-      // 
-      // menuItem11
-      // 
-      this.menuItem11.Enabled = false;
-      this.menuItem11.Index = -1;
-      this.menuItem11.Shortcut = Shortcut.CtrlC;
-      this.menuItem11.Text = "复制(&C)";
-      // 
-      // menuItem12
-      // 
-      this.menuItem12.Index = -1;
-      this.menuItem12.Shortcut = Shortcut.CtrlV;
-      this.menuItem12.Text = "粘贴(&P)";
-      // 
-      // menuItem13
-      // 
-      this.menuItem13.Enabled = false;
-      this.menuItem13.Index = -1;
-      this.menuItem13.Shortcut = Shortcut.Del;
-      this.menuItem13.Text = "删除(&L)";
-      // 
-      // menuItem29
-      // 
-      this.menuItem29.Index = -1;
-      this.menuItem29.Text = "-";
-      // 
-      // menuItem14
-      // 
-      this.menuItem14.Enabled = false;
-      this.menuItem14.Index = -1;
-      this.menuItem14.Shortcut = Shortcut.CtrlF;
-      this.menuItem14.Text = "查找(&F)";
-      // 
-      // menuItem15
-      // 
-      this.menuItem15.Enabled = false;
-      this.menuItem15.Index = -1;
-      this.menuItem15.Shortcut = Shortcut.F3;
-      this.menuItem15.Text = "查找下一个(&N)";
-      // 
-      // menuItem16
-      // 
-      this.menuItem16.Enabled = false;
-      this.menuItem16.Index = -1;
-      this.menuItem16.Text = "替换(&R)";
-      // 
-      // menuItem17
-      // 
-      this.menuItem17.Enabled = false;
-      this.menuItem17.Index = -1;
-      this.menuItem17.Text = "转到(&G)";
-      // 
-      // menuItem30
-      // 
-      this.menuItem30.Index = -1;
-      this.menuItem30.Text = "-";
-      // 
-      // menuItem18
-      // 
-      this.menuItem18.Index = -1;
-      this.menuItem18.Shortcut = Shortcut.CtrlA;
-      this.menuItem18.Text = "全选(&A)";
-      // 
-      // menuItem19
-      // 
-      this.menuItem19.Index = -1;
-      this.menuItem19.Text = "时间(&D)";
-      // 
-      // menuItem21
-      // 
-      this.menuItem21.Checked = true;
-      this.menuItem21.Index = -1;
-      this.menuItem21.Text = "自动换行(&W)";
-      // 
-      // menuItem22
-      // 
-      this.menuItem22.Index = -1;
-      this.menuItem22.Text = "字体(&F)";
-      // 
-      // menuItem23
-      // 
-      this.menuItem23.Index = -1;
-      this.menuItem23.Text = "颜色(&C)";
-      // 
-      // menuItem25
-      // 
-      this.menuItem25.Index = -1;
-      this.menuItem25.Text = "状态拦(&S)";
-      // 
-      // menuItem27
-      // 
-      this.menuItem27.Index = -1;
-      this.menuItem27.Text = "关于我们(&A)";
-      // 
-      // mtBox1
-      // 
-      this.mtBox1.AllowDrop = true;
-      this.mtBox1.Dock = DockStyle.Fill;
-      this.mtBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-      this.mtBox1.HideSelection = false;
-      this.mtBox1.ImeMode = ImeMode.On;
-      this.mtBox1.Location = new System.Drawing.Point(0, 0);
-      this.mtBox1.Multiline = true;
-      this.mtBox1.Name = "mtBox1";
-      this.mtBox1.ScrollBars = ScrollBars.Both;
-      this.mtBox1.Size = new System.Drawing.Size(584, 350);
-      this.mtBox1.TabIndex = 4;
-      this.mtBox1.WordWrap = false;
-      this.mtBox1.TextChanged += new System.EventHandler(this.mtBox1_TextChanged);
-      this.mtBox1.DragDrop += new DragEventHandler(this.mtBox1_DragDrop);
-      this.mtBox1.PreviewKeyDown += new PreviewKeyDownEventHandler(this.mtBox1_PreviewKeyDown);
-      this.mtBox1.Click += new System.EventHandler(this.mtBox1_Click);
-      this.mtBox1.DragEnter += new DragEventHandler(this.mtBox1_DragEnter);
-      // 
-      // timer1
-      // 
-      this.timer1.Enabled = true;
-      this.timer1.Interval = 1;
-      this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-      // 
-      // statusBar1
-      // 
-      this.statusBar1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-      this.statusBar1.Location = new System.Drawing.Point(0, 350);
-      this.statusBar1.Name = "statusBar1";
-      this.statusBar1.Panels.AddRange(new StatusBarPanel[] {
+      this.formatMenuItem.Index = 2;
+      this.formatMenuItem.MenuItems.AddRange(new MenuItem[] {
+      this.wordwrapMenuItem,
+      this.fontMenuItem});
+      this.formatMenuItem.Text = "格式(&O)";
+      // 
+      // wordwrapMenuItem
+      // 
+      this.wordwrapMenuItem.Index = 0;
+      this.wordwrapMenuItem.Text = "自动换行(&W)";
+      this.wordwrapMenuItem.Click += new System.EventHandler(this.自动换行ToolStripMenuItem_Click);
+      // 
+      // fontMenuItem
+      // 
+      this.fontMenuItem.Index = 1;
+      this.fontMenuItem.Text = "字体(&F)...";
+      this.fontMenuItem.Click += new System.EventHandler(this.字体ToolStripMenuItem_Click);
+      // 
+      // viewMenuItem
+      // 
+      this.viewMenuItem.Index = 3;
+      this.viewMenuItem.MenuItems.AddRange(new MenuItem[] {
+      this.statusbarMenuItem});
+      this.viewMenuItem.Text = "查看(&V)";
+      // 
+      // statusbarMenuItem
+      // 
+      this.statusbarMenuItem.Index = 0;
+      this.statusbarMenuItem.Text = "状态栏(&S)";
+      this.statusbarMenuItem.Click += new System.EventHandler(this.状态栏SToolStripMenuItem_Click);
+      // 
+      // helpMenuItem
+      // 
+      this.helpMenuItem.Index = 4;
+      this.helpMenuItem.MenuItems.AddRange(new MenuItem[] {
+      this.helptopicsMenuItem,
+      new MenuItem("-"),
+      this.aboutMenuItem});
+      this.helpMenuItem.Text = "帮助(&H)";
+      // 
+      // helptopicsMenuItem
+      // 
+      this.helptopicsMenuItem.Index = 0;
+      this.helptopicsMenuItem.Text = "查看帮助(&H)";
+      this.helptopicsMenuItem.Click += new System.EventHandler(this.menuItem57_Click);
+      // 
+      // aboutMenuItem
+      // 
+      this.aboutMenuItem.Index = 2;
+      this.aboutMenuItem.Text = "关于记事本(&A)";
+      this.aboutMenuItem.Click += new System.EventHandler(this.关于记事本ToolStripMenuItem_Click);
+      // 
+      // notepadTextBox
+      // 
+      this.notepadTextBox.AllowDrop = true;
+      this.notepadTextBox.Dock = DockStyle.Fill;
+      this.notepadTextBox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+      this.notepadTextBox.HideSelection = false;
+      this.notepadTextBox.ImeMode = ImeMode.On;
+      this.notepadTextBox.Location = new System.Drawing.Point(0, 0);
+      this.notepadTextBox.Multiline = true;
+      this.notepadTextBox.Name = "notepadTextBox";
+      this.notepadTextBox.ScrollBars = ScrollBars.Both;
+      this.notepadTextBox.Size = new System.Drawing.Size(584, 350);
+      this.notepadTextBox.TabIndex = 4;
+      this.notepadTextBox.WordWrap = false;
+      this.notepadTextBox.TextChanged += new System.EventHandler(this.mtBox1_TextChanged);
+      this.notepadTextBox.DragDrop += new DragEventHandler(this.mtBox1_DragDrop);
+      this.notepadTextBox.PreviewKeyDown += new PreviewKeyDownEventHandler(this.mtBox1_PreviewKeyDown);
+      this.notepadTextBox.Click += new System.EventHandler(this.mtBox1_Click);
+      this.notepadTextBox.DragEnter += new DragEventHandler(this.mtBox1_DragEnter);
+      // 
+      // guiTimer
+      // 
+      this.guiTimer.Enabled = true;
+      this.guiTimer.Interval = 1;
+      this.guiTimer.Tick += new System.EventHandler(this.timer1_Tick);
+      // 
+      // bottomStatusBar
+      // 
+      this.bottomStatusBar.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+      this.bottomStatusBar.Location = new System.Drawing.Point(0, 350);
+      this.bottomStatusBar.Name = "statusBar1";
+      this.bottomStatusBar.Panels.AddRange(new StatusBarPanel[] {
       this.statusBarPanel1,
-      this.statusBarPanel2});
-      this.statusBar1.RightToLeft = RightToLeft.No;
-      this.statusBar1.ShowPanels = true;
-      this.statusBar1.Size = new System.Drawing.Size(584, 22);
-      this.statusBar1.TabIndex = 6;
-      this.statusBar1.Resize += new System.EventHandler(this.statusBar1_Resize);
+      this.lncolStatusBarPanel});
+      this.bottomStatusBar.RightToLeft = RightToLeft.No;
+      this.bottomStatusBar.ShowPanels = true;
+      this.bottomStatusBar.Size = new System.Drawing.Size(584, 22);
+      this.bottomStatusBar.TabIndex = 6;
+      this.bottomStatusBar.Resize += new System.EventHandler(this.statusBar1_Resize);
       // 
       // statusBarPanel1
       // 
@@ -553,21 +352,21 @@ namespace App.Windows.XPNotepad.Main
       this.statusBarPanel1.Name = "statusBarPanel1";
       this.statusBarPanel1.Width = 440;
       // 
-      // statusBarPanel2
+      // lncolStatusBarPanel
       // 
-      this.statusBarPanel2.BorderStyle = StatusBarPanelBorderStyle.None;
-      this.statusBarPanel2.Name = "statusBarPanel2";
-      this.statusBarPanel2.Width = 150;
+      this.lncolStatusBarPanel.BorderStyle = StatusBarPanelBorderStyle.None;
+      this.lncolStatusBarPanel.Name = "lncolStatusBarPanel";
+      this.lncolStatusBarPanel.Width = 150;
       // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
       this.AutoScaleMode = AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(584, 372);
-      this.Controls.Add(this.mtBox1);
-      this.Controls.Add(this.statusBar1);
+      this.Controls.Add(this.notepadTextBox);
+      this.Controls.Add(this.bottomStatusBar);
       this.IsMdiContainer = true;
-      this.Menu = this.mainMenu1;
+      this.Menu = this.topMainMenu;
       this.Name = "Form1";
       this.StartPosition = FormStartPosition.CenterScreen;
       this.Text = "无标题 - 记事本";
@@ -575,81 +374,53 @@ namespace App.Windows.XPNotepad.Main
       this.Shown += new System.EventHandler(this.Form1_Shown);
       this.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
       ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.lncolStatusBarPanel)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
     }
     /************************************************/
+    private MainMenu topMainMenu = null;
+    private MenuItem fileMenuItem = null;
+    private MenuItem newMenuItem = null;
+    private MenuItem openMenuItem = null;
+    private MenuItem saveMenuItem = null;
+    private MenuItem saveasMenuItem = null;
+    private MenuItem pagesetupMenuItem = null;
+    private MenuItem printMenuItem = null;
+    private MenuItem exitMenuItem = null;
+    private MenuItem editMenuItem = null;
+    private MenuItem undoMenuItem = null;
+    private MenuItem cutMenuItem = null;
+    private MenuItem copyMenuItem = null;
+    private MenuItem pasteMenuItem = null;
+    private MenuItem deleteMenuItem = null;
+    private MenuItem findMenuItem = null;
+    private MenuItem findnextMenuItem = null;
+    private MenuItem replaceMenuItem1 = null;
+    private MenuItem gotoMenuItem1 = null;
+    private MenuItem selectallMenuItem1 = null;
+    private MenuItem timedateMenuItem1 = null;
+    private MenuItem formatMenuItem = null;
+    private MenuItem wordwrapMenuItem = null;
+    private MenuItem fontMenuItem = null;
+    private MenuItem viewMenuItem = null;
+    private MenuItem statusbarMenuItem = null;
+    private MenuItem helpMenuItem = null;
+    private MenuItem helptopicsMenuItem = null;
+    private MenuItem aboutMenuItem = null;
+    
+    public TextBox notepadTextBox = null;
+    
+    private StatusBar bottomStatusBar = null;
+    private StatusBarPanel statusBarPanel1;
+    private StatusBarPanel lncolStatusBarPanel = null;
+    
+    
     private FontDialog fontDialog1;
     public SaveFileDialog saveFileDialog1;
     public OpenFileDialog openFileDialog1;
     private PrintDialog printDialog1;
     private PageSetupDialog pageSetupDialog1;
-    private System.Drawing.Printing.PrintDocument printDocument1;
-    private MainMenu mainMenu1;
-    private MenuItem menuItem1;
-    private MenuItem menuItem8;
-    private MenuItem menuItem20;
-    private MenuItem menuItem24;
-    private MenuItem menuItem26;
-    private MenuItem menuItem2;
-    private MenuItem menuItem3;
-    private MenuItem menuItem4;
-    private MenuItem menuItem5;
-    private MenuItem menuItem7;
-    private MenuItem menuItem6;
-    private MenuItem menuItem9;
-    private MenuItem menuItem28;
-    private MenuItem menuItem10;
-    private MenuItem menuItem11;
-    private MenuItem menuItem12;
-    private MenuItem menuItem13;
-    private MenuItem menuItem29;
-    private MenuItem menuItem14;
-    private MenuItem menuItem15;
-    private MenuItem menuItem16;
-    private MenuItem menuItem17;
-    private MenuItem menuItem30;
-    private MenuItem menuItem18;
-    private MenuItem menuItem19;
-    private MenuItem menuItem21;
-    private MenuItem menuItem22;
-    private MenuItem menuItem23;
-    private MenuItem menuItem25;
-    private MenuItem menuItem27;
-    private MenuItem menuItem31;
-    private MenuItem menuItem32;
-    private MenuItem menuItem33;
-    private MenuItem menuItem34;
-    private MenuItem menuItem35;
-    private MenuItem menuItem36;
-    private MenuItem menuItem37;
-    private MenuItem menuItem38;
-    private MenuItem menuItem39;
-    private MenuItem 撤销UToolStripMenuItem;
-    private MenuItem menuItem41;
-    private MenuItem 剪切ToolStripMenuItem;
-    private MenuItem 复制zToolStripMenuItem;
-    private MenuItem menuItem44;
-    private MenuItem 删除ToolStripMenuItem;
-    private MenuItem menuItem46;
-    private MenuItem 查找ToolStripMenuItem;
-    private MenuItem 查找下一个ToolStripMenuItem;
-    private MenuItem menuItem49;
-    private MenuItem menuItem50;
-    private MenuItem menuItem51;
-    private MenuItem menuItem52;
-    private MenuItem menuItem53;
-    private MenuItem 自动换行ToolStripMenuItem;
-    private MenuItem menuItem55;
-    private MenuItem 状态栏SToolStripMenuItem;
-    private MenuItem menuItem57;
-    private MenuItem menuItem58;
-    private MenuItem menuItem59;
-    public TextBox mtBox1;
-    private Timer timer1;
-    private StatusBar statusBar1;
-    private StatusBarPanel statusBarPanel1;
-    private StatusBarPanel statusBarPanel2;
+    private PrintDocument printDocument1;
   }
 }

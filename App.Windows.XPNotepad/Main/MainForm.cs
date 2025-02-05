@@ -74,41 +74,41 @@ namespace App.Windows.XPNotepad.Main
 
     private void 撤销ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      mtBox1.Undo();
+      notepadTextBox.Undo();
     }
 
     private void 剪切ToolStripMenuItem1_Click(object sender, EventArgs e)
     {
-      mtBox1.Cut();
+      notepadTextBox.Cut();
     }
 
     private void 复制ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      mtBox1.Copy();
+      notepadTextBox.Copy();
     }
 
     private void 粘贴ToolStripMenuItem1_Click(object sender, EventArgs e)
     {
-      mtBox1.Paste();
-      mtBox1.Font = new Font("宋体", mtBox1.Font.Size);
+      notepadTextBox.Paste();
+      notepadTextBox.Font = new Font("宋体", notepadTextBox.Font.Size);
     }
 
     private void 删除ToolStripMenuItem1_Click(object sender, EventArgs e)
     {
-      if (mtBox1.SelectedText != "")
-        mtBox1.SelectedText = "";
+      if (notepadTextBox.SelectedText != "")
+        notepadTextBox.SelectedText = "";
     }
 
     private void 全选ToolStripMenuItem2_Click(object sender, EventArgs e)
     {
-      mtBox1.SelectAll();
+      notepadTextBox.SelectAll();
     }
 
     private void 新建ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      if (mtBox1.Text == "")
+      if (notepadTextBox.Text == "")
       {
-          mtBox1.Text = "";
+          notepadTextBox.Text = "";
           n = 0;
           this.Text = "无标题 - 记事本";
           ffind = false;
@@ -118,14 +118,14 @@ namespace App.Windows.XPNotepad.Main
       {
           try
           {
-              if (ts != mtBox1.Text)
+              if (ts != notepadTextBox.Text)
               {
                   Form5 f = new Form5();
                   f.Owner = this;
                   f.ShowDialog();
                   if (f.b == 2 || (f.b == 1 && this.Text != "无标题 - 记事本"))
                   {
-                      mtBox1.Text = "";
+                      notepadTextBox.Text = "";
                       n = 0;
                       ts = "";
                       this.Text = "无标题 - 记事本";
@@ -135,7 +135,7 @@ namespace App.Windows.XPNotepad.Main
               }
               else
               {
-                  mtBox1.Text = "";
+                  notepadTextBox.Text = "";
                   n = 0;
                   ts = "";
                   this.Text = "无标题 - 记事本";
@@ -152,7 +152,7 @@ namespace App.Windows.XPNotepad.Main
       try
       {
           FileExt();
-          if (ts != mtBox1.Text)
+          if (ts != notepadTextBox.Text)
           {
               Form5 f = new Form5();
               f.Owner = this;
@@ -177,11 +177,11 @@ namespace App.Windows.XPNotepad.Main
               saveFileDialog1.FileName = "*.txt";
               saveFileDialog1.ShowDialog();
               StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-              sw.Write(this.mtBox1.Text);
+              sw.Write(this.notepadTextBox.Text);
               sw.Flush();
               sw.Close();
               n = 1;
-              ts = mtBox1.Text;
+              ts = notepadTextBox.Text;
               if (exe == 0)
                   this.Text = Path.GetFileName(saveFileDialog1.FileName) + " - 记事本";
               else
@@ -190,13 +190,13 @@ namespace App.Windows.XPNotepad.Main
           else
           {
               StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-              sw.Write(this.mtBox1.Text);
+              sw.Write(this.notepadTextBox.Text);
               sw.Flush();
               sw.Close();
-              ts = mtBox1.Text;
+              ts = notepadTextBox.Text;
           }
       }
-      catch { mtBox1.SelectionStart = mtBox1.TextLength; }
+      catch { notepadTextBox.SelectionStart = notepadTextBox.TextLength; }
     }
 
     private void 另存为AToolStripMenuItem_Click(object sender, EventArgs e)
@@ -211,17 +211,17 @@ namespace App.Windows.XPNotepad.Main
           if (result == DialogResult.OK)
           {
               StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-              sw.Write(this.mtBox1.Text);
+              sw.Write(this.notepadTextBox.Text);
               sw.Flush();
               sw.Close();
-              ts = mtBox1.Text;
+              ts = notepadTextBox.Text;
               if (exe == 0)
                   this.Text = Path.GetFileName(saveFileDialog1.FileName) + " - 记事本";
               else
                   this.Text = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName) + " - 记事本";
           }
       }
-      catch { mtBox1.SelectionStart = mtBox1.TextLength; }
+      catch { notepadTextBox.SelectionStart = notepadTextBox.TextLength; }
     }
 
     private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -273,54 +273,54 @@ namespace App.Windows.XPNotepad.Main
 
     private void 时间日期ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      mtBox1.Paste(DateTime.Now.ToShortTimeString() + " " + DateTime.Now.ToShortDateString());
+      notepadTextBox.Paste(DateTime.Now.ToShortTimeString() + " " + DateTime.Now.ToShortDateString());
     }
 
     private void 状态栏SToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      if (状态栏SToolStripMenuItem.Checked == false)
+      if (statusbarMenuItem.Checked == false)
       {
-        状态栏SToolStripMenuItem.Checked = true;
-        statusBar1.Visible = true;
+        statusbarMenuItem.Checked = true;
+        bottomStatusBar.Visible = true;
       }
       else
       {
-        状态栏SToolStripMenuItem.Checked = false;
-        statusBar1.Visible = false;
+        statusbarMenuItem.Checked = false;
+        bottomStatusBar.Visible = false;
       }
     }
 
     private void 自动换行ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      if (自动换行ToolStripMenuItem.Checked == false)
+      if (wordwrapMenuItem.Checked == false)
       {
-          自动换行ToolStripMenuItem.Checked = true;
-          mtBox1.WordWrap = true;
-          menuItem50.Enabled = false;
+          wordwrapMenuItem.Checked = true;
+          notepadTextBox.WordWrap = true;
+          gotoMenuItem1.Enabled = false;
       }
       else
       {
-          自动换行ToolStripMenuItem.Checked = false;
-          mtBox1.WordWrap = false;
-          menuItem50.Enabled = true;
+          wordwrapMenuItem.Checked = false;
+          notepadTextBox.WordWrap = false;
+          gotoMenuItem1.Enabled = true;
       }
-      if (自动换行ToolStripMenuItem.Checked)
+      if (wordwrapMenuItem.Checked)
       {
-          状态栏SToolStripMenuItem.Enabled = false;
-          if (状态栏SToolStripMenuItem.Checked)
+          statusbarMenuItem.Enabled = false;
+          if (statusbarMenuItem.Checked)
               stc = 1;
           else stc = 0;
-          if (statusBar1.Visible)
+          if (bottomStatusBar.Visible)
               ss = 1;
           else ss = 0;
-          statusBar1.Visible = false;
-          状态栏SToolStripMenuItem.Checked = false;
+          bottomStatusBar.Visible = false;
+          statusbarMenuItem.Checked = false;
       }
       else
       {
-          状态栏SToolStripMenuItem.Enabled = true;
-          if (stc == 1) 状态栏SToolStripMenuItem.Checked = true;
-          if (ss == 1) statusBar1.Visible = true;
+          statusbarMenuItem.Enabled = true;
+          if (stc == 1) statusbarMenuItem.Checked = true;
+          if (ss == 1) bottomStatusBar.Visible = true;
       }
     }
 
@@ -332,25 +332,25 @@ namespace App.Windows.XPNotepad.Main
     private void mtBox1_TextChanged(object sender, EventArgs e)
     {
       GetPoint();
-      撤销UToolStripMenuItem.Enabled = true;
-      if (mtBox1.Text != "")
+      undoMenuItem.Enabled = true;
+      if (notepadTextBox.Text != "")
       {
-        查找ToolStripMenuItem.Enabled = true;
-        查找下一个ToolStripMenuItem.Enabled = true;
+        findMenuItem.Enabled = true;
+        findnextMenuItem.Enabled = true;
       }
       else
       {
-        查找ToolStripMenuItem.Enabled = false;
-        查找下一个ToolStripMenuItem.Enabled = false;
+        findMenuItem.Enabled = false;
+        findnextMenuItem.Enabled = false;
       }
     }
 
     private void Form1_FormClosing(object sender, FormClosingEventArgs e)
     {
-      if (mtBox1.Text == "") Dispose();
+      if (notepadTextBox.Text == "") Dispose();
       try
       {
-        if (ts != mtBox1.Text)
+        if (ts != notepadTextBox.Text)
         {
           Form5 f = new Form5();
           f.Owner = this;
@@ -382,28 +382,28 @@ namespace App.Windows.XPNotepad.Main
 
 
       if (fl) mtBox1_DragDrop(null, null);
-      lines = mtBox1.Lines.Length;
-      if (statusBar1.Visible == true)
-        状态栏SToolStripMenuItem.Checked = true;
-      if (mtBox1.Text == "")
+      lines = notepadTextBox.Lines.Length;
+      if (bottomStatusBar.Visible == true)
+        statusbarMenuItem.Checked = true;
+      if (notepadTextBox.Text == "")
       {
-        撤销UToolStripMenuItem.Enabled = false;
-        剪切ToolStripMenuItem.Enabled = false;
-        删除ToolStripMenuItem.Enabled = false;
-        复制zToolStripMenuItem.Enabled = false;
+        undoMenuItem.Enabled = false;
+        cutMenuItem.Enabled = false;
+        deleteMenuItem.Enabled = false;
+        copyMenuItem.Enabled = false;
 
-        查找ToolStripMenuItem.Enabled = false;
-        查找下一个ToolStripMenuItem.Enabled = false;
+        findMenuItem.Enabled = false;
+        findnextMenuItem.Enabled = false;
       }
     }
 
     private void 字体ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      int cur = mtBox1.SelectionStart;
+      int cur = notepadTextBox.SelectionStart;
       if (fontDialog1.ShowDialog() != DialogResult.Cancel)
-        mtBox1.Font = fontDialog1.Font;
-      mtBox1.Select(cur, 0);
-      mtBox1.SelectionStart = cur;
+        notepadTextBox.Font = fontDialog1.Font;
+      notepadTextBox.Select(cur, 0);
+      notepadTextBox.SelectionStart = cur;
     }
 
     private void 页面设置ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -453,24 +453,24 @@ namespace App.Windows.XPNotepad.Main
 
     private void GetPoint()
     {
-      Point cursorPos = GetCursorPos(this.mtBox1);
-      this.statusBarPanel2.Text = "    第 " + cursorPos.Y.ToString() + " 行 , " + "第 " + cursorPos.X.ToString() + " 列";
+      Point cursorPos = GetCursorPos(this.notepadTextBox);
+      this.lncolStatusBarPanel.Text = "    第 " + cursorPos.Y.ToString() + " 行 , " + "第 " + cursorPos.X.ToString() + " 列";
       start = cursorPos.Y;
     }
 
     private void timer1_Tick(object sender, EventArgs e)
     {
-      if (mtBox1.SelectedText != "")
+      if (notepadTextBox.SelectedText != "")
       {
-        剪切ToolStripMenuItem.Enabled = true;
-        删除ToolStripMenuItem.Enabled = true;
-        复制zToolStripMenuItem.Enabled = true;
+        cutMenuItem.Enabled = true;
+        deleteMenuItem.Enabled = true;
+        copyMenuItem.Enabled = true;
       }
       else
       {
-        剪切ToolStripMenuItem.Enabled = false;
-        删除ToolStripMenuItem.Enabled = false;
-        复制zToolStripMenuItem.Enabled = false;
+        cutMenuItem.Enabled = false;
+        deleteMenuItem.Enabled = false;
+        copyMenuItem.Enabled = false;
       }
     }
 
@@ -492,30 +492,30 @@ namespace App.Windows.XPNotepad.Main
             {
                 try
                 {
-                    if (mtBox1.SelectedText == mtBox1.Text)
-                        mtBox1.Select(0, 0);
-                    string tmtbox = mtBox1.Text;
+                    if (notepadTextBox.SelectedText == notepadTextBox.Text)
+                        notepadTextBox.Select(0, 0);
+                    string tmtbox = notepadTextBox.Text;
                     string ttbox = tBox2;
                     if (f2checkbox == false)
                     {
-                        tmtbox = mtBox1.Text.ToLower();
+                        tmtbox = notepadTextBox.Text.ToLower();
                         ttbox = ttbox.ToLower();
                     }
                     if (ffl == 0)
                     {
-                        if (mtBox1.SelectionStart >= 0)
+                        if (notepadTextBox.SelectionStart >= 0)
                         {
-                            mtBox1.Select(mtBox1.Text.LastIndexOf(ttbox, mtBox1.SelectionStart - 1), ttbox.Length);
-                            mtBox1.ScrollToCaret();
+                            notepadTextBox.Select(notepadTextBox.Text.LastIndexOf(ttbox, notepadTextBox.SelectionStart - 1), ttbox.Length);
+                            notepadTextBox.ScrollToCaret();
                         }
                         else MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else if (ffl == 1)
                     {
-                        if (mtBox1.Text.IndexOf(ttbox, mtBox1.SelectionStart + mtBox1.SelectedText.Length) >= 0)
+                        if (notepadTextBox.Text.IndexOf(ttbox, notepadTextBox.SelectionStart + notepadTextBox.SelectedText.Length) >= 0)
                         {
-                            mtBox1.Select(mtBox1.Text.IndexOf(ttbox, mtBox1.SelectionStart + mtBox1.SelectedText.Length), ttbox.Length);
-                            mtBox1.ScrollToCaret();
+                            notepadTextBox.Select(notepadTextBox.Text.IndexOf(ttbox, notepadTextBox.SelectionStart + notepadTextBox.SelectedText.Length), ttbox.Length);
+                            notepadTextBox.ScrollToCaret();
                         }
                         else MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -541,14 +541,14 @@ namespace App.Windows.XPNotepad.Main
         if (ft == "")
             openFileDialog1.FileName = ((System.Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
         else openFileDialog1.FileName = ft;
-        if (ts != mtBox1.Text)
+        if (ts != notepadTextBox.Text)
         {
           Form5 f = new Form5();
           f.Owner = this;
           f.ShowDialog();
           if (f.b == 1 || f.b == 2)
           {
-            mtBox1.Text = "";
+            notepadTextBox.Text = "";
             n = 0;
             drag();
           }
@@ -563,16 +563,16 @@ namespace App.Windows.XPNotepad.Main
       StreamReader open = new StreamReader(openFileDialog1.FileName, System.Text.Encoding.Default, true);
       open.Close();
       open = new StreamReader(openFileDialog1.FileName, System.Text.Encoding.Default, true);
-      mtBox1.Text = open.ReadToEnd();
+      notepadTextBox.Text = open.ReadToEnd();
       open.Close();
       if (exe == 0)
         this.Text = Path.GetFileName(openFileDialog1.FileName) + " - 记事本";
       else
         this.Text = Path.GetFileNameWithoutExtension(openFileDialog1.FileName) + " - 记事本";
-      ts = mtBox1.Text;
+      ts = notepadTextBox.Text;
       n = 1;
-      mtBox1.Font = new Font("宋体", mtBox1.Font.Size);
-      mtBox1.SelectionStart = 0;
+      notepadTextBox.Font = new Font("宋体", notepadTextBox.Font.Size);
+      notepadTextBox.SelectionStart = 0;
       saveFileDialog1.FileName = openFileDialog1.FileName;
     }
 
@@ -584,7 +584,7 @@ namespace App.Windows.XPNotepad.Main
         openFileDialog1.FileName = "*.txt";
       if (openFileDialog1.ShowDialog() == DialogResult.Yes) n = 1;
       StreamReader open = new StreamReader(openFileDialog1.FileName, System.Text.Encoding.Default, true);
-      mtBox1.Text = open.ReadToEnd();
+      notepadTextBox.Text = open.ReadToEnd();
       open.Close();
       strreader();
     }
@@ -592,18 +592,18 @@ namespace App.Windows.XPNotepad.Main
     public void drag()
     {
       StreamReader open = new StreamReader(openFileDialog1.FileName, System.Text.Encoding.Default, true);
-      mtBox1.Text = open.ReadToEnd();
+      notepadTextBox.Text = open.ReadToEnd();
       open.Close();
       strreader();
       ft = "";
-      mtBox1.SelectionStart = 0;
+      notepadTextBox.SelectionStart = 0;
     }
 
     private void statusBar1_Resize(object sender, EventArgs e)
     {
       try
       {
-        statusBarPanel1.Width = (int)Math.Round(statusBar1.Size.Width * 0.73);
+        statusBarPanel1.Width = (int)Math.Round(bottomStatusBar.Size.Width * 0.73);
       }
       catch { }
     }
@@ -620,7 +620,7 @@ namespace App.Windows.XPNotepad.Main
 
     private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
     {
-      e.Graphics.DrawString(mtBox1.Text, mtBox1.Font, Brushes.Black, e.PageBounds);
+      e.Graphics.DrawString(notepadTextBox.Text, notepadTextBox.Font, Brushes.Black, e.PageBounds);
     }
   }
 }

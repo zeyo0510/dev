@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using App.Windows.XPNotepad.Main;
-
+/************************************************/
 namespace App.Windows.XPNotepad
 {
   internal sealed class Program

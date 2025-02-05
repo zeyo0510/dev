@@ -56,27 +56,27 @@ namespace notepad
             {
                 mainform.ffind = true;
                 mainform.tBox2 = textBox1.Text;
-                if (mainform.mtBox1.SelectedText == mainform.mtBox1.Text)
-                    mainform.mtBox1.Select(0, 0);
+                if (mainform.notepadTextBox.SelectedText == mainform.notepadTextBox.Text)
+                    mainform.notepadTextBox.Select(0, 0);
                 fl = textBox1.Text;
                 fr = textBox2.Text;
                 if (checkBox1.Checked)
                 {
-                    mr = mainform.mtBox1.Text;
+                    mr = mainform.notepadTextBox.Text;
                     tt = textBox1.Text;
                     mainform.f2checkbox = true;
                 }
                 else
                 {
-                    mr = mainform.mtBox1.Text.ToLower();
+                    mr = mainform.notepadTextBox.Text.ToLower();
                     tt = textBox1.Text.ToLower();
                     mainform.f2checkbox = false;
                 }
                 mainform.ffl = 1;
-                if (mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length) >= 0)
+                if (mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length) >= 0)
                 {
-                    mainform.mtBox1.Select(mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length), textBox1.Text.Length);
-                    mainform.mtBox1.ScrollToCaret();//当屏幕显示不了时，实现滚动
+                    mainform.notepadTextBox.Select(mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length), textBox1.Text.Length);
+                    mainform.notepadTextBox.ScrollToCaret();//当屏幕显示不了时，实现滚动
                 }
                 else MessageBox.Show(("找不到\"" + textBox1.Text + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -89,29 +89,29 @@ namespace notepad
             {
                 mainform.ffind = true;
                 mainform.tBox2 = textBox1.Text;
-                if (mainform.mtBox1.SelectedText == mainform.mtBox1.Text)
-                    mainform.mtBox1.Select(0, 0);
+                if (mainform.notepadTextBox.SelectedText == mainform.notepadTextBox.Text)
+                    mainform.notepadTextBox.Select(0, 0);
                 fl = textBox1.Text;
                 fr = textBox2.Text;
                 if (checkBox1.Checked)
                 {
-                    mr = mainform.mtBox1.Text;
+                    mr = mainform.notepadTextBox.Text;
                     tt = textBox1.Text;
                     mainform.f2checkbox = true;
                 }
                 else
                 {
-                    mr = mainform.mtBox1.Text.ToLower();
+                    mr = mainform.notepadTextBox.Text.ToLower();
                     tt = textBox1.Text.ToLower();
                     mainform.f2checkbox = false;
                 }
-                if (mainform.mtBox1.SelectedText == tt)
-                    mainform.mtBox1.SelectedText = textBox2.Text;
+                if (mainform.notepadTextBox.SelectedText == tt)
+                    mainform.notepadTextBox.SelectedText = textBox2.Text;
                 mainform.ffl = 1;
-                if (mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length) >= 0)
+                if (mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length) >= 0)
                 {
-                    mainform.mtBox1.Select(mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length), textBox1.Text.Length);
-                    mainform.mtBox1.ScrollToCaret();//当屏幕显示不了时，实现滚动
+                    mainform.notepadTextBox.Select(mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length), textBox1.Text.Length);
+                    mainform.notepadTextBox.ScrollToCaret();//当屏幕显示不了时，实现滚动
                 }
                 else MessageBox.Show(("找不到\"" + textBox1.Text + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -124,42 +124,42 @@ namespace notepad
             {
                 mainform.ffind = true;
                 mainform.tBox2 = textBox1.Text;
-                mainform.mtBox1.SelectionStart = 0;
-                mainform.mtBox1.Select(0, 0);
+                mainform.notepadTextBox.SelectionStart = 0;
+                mainform.notepadTextBox.Select(0, 0);
                 fl = textBox1.Text;
                 fr = textBox2.Text;
                 if (checkBox1.Checked)
                 {
-                    mr = mainform.mtBox1.Text;
+                    mr = mainform.notepadTextBox.Text;
                     tt = textBox1.Text;
                     mainform.f2checkbox = true;
                 }
                 else
                 {
-                    mr = mainform.mtBox1.Text.ToLower();
+                    mr = mainform.notepadTextBox.Text.ToLower();
                     tt = textBox1.Text.ToLower();
                     mainform.f2checkbox = false;
                 }
-                mainform.mtBox1.SelectionStart = 0;
+                mainform.notepadTextBox.SelectionStart = 0;
                 mainform.ffl = 1;
-                while (mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length) >= 0)
+                while (mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length) >= 0)
                 {
-                    mainform.mtBox1.Select(mr.IndexOf(tt, mainform.mtBox1.SelectionStart + mainform.mtBox1.SelectedText.Length), textBox1.Text.Length);
-                    mainform.mtBox1.ScrollToCaret();//当屏幕显示不了时，实现滚动
-                    mainform.mtBox1.SelectedText = textBox2.Text;
+                    mainform.notepadTextBox.Select(mr.IndexOf(tt, mainform.notepadTextBox.SelectionStart + mainform.notepadTextBox.SelectedText.Length), textBox1.Text.Length);
+                    mainform.notepadTextBox.ScrollToCaret();//当屏幕显示不了时，实现滚动
+                    mainform.notepadTextBox.SelectedText = textBox2.Text;
                     if (checkBox1.Checked)
                     {
-                        mr = mainform.mtBox1.Text;
+                        mr = mainform.notepadTextBox.Text;
                         tt = textBox1.Text;
                     }
                     else
                     {
-                        mr = mainform.mtBox1.Text.ToLower();
+                        mr = mainform.notepadTextBox.Text.ToLower();
                         tt = textBox1.Text.ToLower();
                     }
-                    mainform.mtBox1.SelectionStart = 0;
+                    mainform.notepadTextBox.SelectionStart = 0;
                 }
-                mainform.mtBox1.SelectionStart = 0;
+                mainform.notepadTextBox.SelectionStart = 0;
             }
             catch { }
         }
