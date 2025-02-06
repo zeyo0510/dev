@@ -296,13 +296,13 @@ namespace App.Windows.XPNotepad.Main
       {
           wordwrapMenuItem.Checked = true;
           notepadTextBox.WordWrap = true;
-          gotoMenuItem1.Enabled = false;
+          gotoMenuItem.Enabled = false;
       }
       else
       {
           wordwrapMenuItem.Checked = false;
           notepadTextBox.WordWrap = false;
-          gotoMenuItem1.Enabled = true;
+          gotoMenuItem.Enabled = true;
       }
       if (wordwrapMenuItem.Checked)
       {
