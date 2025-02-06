@@ -32,32 +32,12 @@ namespace App.Windows.XPNotepad.Main
 
     Form2 f2;
     Form3 f3;
-
-    [DllImport("shell32.dll", EntryPoint = "ShellAbout")]
-    private static extern int ShellAbout(int hWndn, string szApp, string szOtherStuff, int hIcon);
-
-    [DllImport("User32.DLL")]
-    public static extern int SendMessage(IntPtr hWnd, uint Msg, int wParam, int iParam);
-
-    private const int EM_LINEFROMCHAR = 0xC9;
-    private const int EM_LINEINDEX = 0xBB;
-
-    private Point GetCursorPos(TextBox textBox)
-    {
-      Point cursorPos = new Point(0, 0);
-      int x, y;
-      y = SendMessage(textBox.Handle, EM_LINEFROMCHAR, textBox.SelectionStart, 0);
-      x = textBox.SelectionStart - SendMessage(textBox.Handle, EM_LINEINDEX, y, 0);
-      cursorPos.Y = ++y;
-      cursorPos.X = ++x;
-      return cursorPos;
-    }
-
+    /************************************************/
     public MainForm()
     {
       this.InitializeComponent();
     }
-    
+    /************************************************/
     public MainForm(string[] test) : this()
     {
       if (test.Length > 0)
@@ -66,45 +46,81 @@ namespace App.Windows.XPNotepad.Main
         ft = test[0];
       }
     }  
-
+    /************************************************/
     public MainForm(int a)
     {
       this.InitializeComponent();
     }
-
-    private void 撤销ToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void MainForm_Shown(object sender, EventArgs e)
     {
-      notepadTextBox.Undo();
+//            StringBuilder sb = new StringBuilder(128);
+//            GetWindowsDirectory(sb, sb.Capacity);
+//            string startname = sb.ToString() + "\\notepad.exe";
+//            IntPtr icon = new IntPtr(ExtractIcon(this.Handle.ToInt32(), startname, 0));
+//            this.Icon = Icon.FromHandle(icon);
     }
-
-    private void 剪切ToolStripMenuItem1_Click(object sender, EventArgs e)
+    /************************************************/
+    private void MainForm_Load(object sender, EventArgs e)
     {
-      notepadTextBox.Cut();
-    }
+      GetPoint();
 
-    private void 复制ToolStripMenuItem_Click(object sender, EventArgs e)
+
+      if (fl) notepadTextBox_DragDrop(null, null);
+      lines = notepadTextBox.Lines.Length;
+      if (bottomStatusBar.Visible == true)
+        statusbarMenuItem.Checked = true;
+      if (notepadTextBox.Text == "")
+      {
+        undoMenuItem.Enabled = false;
+        cutMenuItem.Enabled = false;
+        deleteMenuItem.Enabled = false;
+        copyMenuItem.Enabled = false;
+
+        findMenuItem.Enabled = false;
+        findnextMenuItem.Enabled = false;
+      }
+    }
+    /************************************************/
+    private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
     {
-      notepadTextBox.Copy();
+      if (notepadTextBox.Text == "") Dispose();
+      try
+      {
+        if (ts != notepadTextBox.Text)
+        {
+          Form5 f = new Form5();
+          f.Owner = this;
+          f.ShowDialog();
+          if (f.b == 2) Dispose();
+          else if (f.b == 3) e.Cancel = true;
+        }
+      }
+      catch { }
     }
-
-    private void 粘贴ToolStripMenuItem1_Click(object sender, EventArgs e)
-    {
-      notepadTextBox.Paste();
-      notepadTextBox.Font = new Font("宋体", notepadTextBox.Font.Size);
-    }
-
-    private void 删除ToolStripMenuItem1_Click(object sender, EventArgs e)
+    /************************************************/
+    private void guiTimer_Tick(object sender, EventArgs e)
     {
       if (notepadTextBox.SelectedText != "")
-        notepadTextBox.SelectedText = "";
+      {
+        cutMenuItem.Enabled = true;
+        deleteMenuItem.Enabled = true;
+        copyMenuItem.Enabled = true;
+      }
+      else
+      {
+        cutMenuItem.Enabled = false;
+        deleteMenuItem.Enabled = false;
+        copyMenuItem.Enabled = false;
+      }
     }
-
-    private void 全选ToolStripMenuItem2_Click(object sender, EventArgs e)
+    /************************************************/
+    private void fileMenuItem_Popup(object sender, EventArgs e)
     {
-      notepadTextBox.SelectAll();
+      this.UpdateUI();
     }
-
-    private void 新建ToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void newMenuItem_Click(object sender, EventArgs e)
     {
       if (notepadTextBox.Text == "")
       {
@@ -146,8 +162,8 @@ namespace App.Windows.XPNotepad.Main
           catch { }
       }
     }
-
-    private void 打开ToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void openMenuItem_Click(object sender, EventArgs e)
     {
       try
       {
@@ -164,8 +180,8 @@ namespace App.Windows.XPNotepad.Main
       }
       catch { }
     }
-
-    private void 保存ToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void saveMenuItem_Click(object sender, EventArgs e)
     {
       try
       {
@@ -198,8 +214,8 @@ namespace App.Windows.XPNotepad.Main
       }
       catch { notepadTextBox.SelectionStart = notepadTextBox.TextLength; }
     }
-
-    private void 另存为AToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void saveasMenuItem_Click(object sender, EventArgs e)
     {
       try
       {
@@ -223,13 +239,71 @@ namespace App.Windows.XPNotepad.Main
       }
       catch { notepadTextBox.SelectionStart = notepadTextBox.TextLength; }
     }
-
-    private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void pagesetupMenuItem_Click(object sender, EventArgs e)
+    {
+      try
+      {
+          this.pageSetupDialog1.Document = this.printDocument1;
+          if (this.pageSetupDialog1.ShowDialog() == DialogResult.OK)
+          {
+              this.printDocument1.Print();
+          }
+      }
+      catch { MessageBox.Show("您尚未安装打印机！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+    }
+    /************************************************/
+    private void printMenuItem_Click(object sender, EventArgs e)
+    {
+      try
+      {
+        if (printDialog1.ShowDialog() == DialogResult.OK)
+        {
+          this.printDialog1.Document = this.printDocument1;
+          this.printDocument1.Print();
+        }
+      }
+      catch { MessageBox.Show("您尚未安装打印机", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+    }
+    /************************************************/
+    private void exitMenuItem_Click(object sender, EventArgs e)
     {
       Close();
     }
-
-    private void 查找ToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void editMenuItem_Popup(object sender, EventArgs e)
+    {
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void undoMenuItem_Click(object sender, EventArgs e)
+    {
+      notepadTextBox.Undo();
+    }
+    /************************************************/
+    private void cutMenuItem_Click(object sender, EventArgs e)
+    {
+      notepadTextBox.Cut();
+    }
+    /************************************************/
+    private void copyMenuItem_Click(object sender, EventArgs e)
+    {
+      notepadTextBox.Copy();
+    }
+    /************************************************/
+    private void pasteMenuItem_Click(object sender, EventArgs e)
+    {
+      notepadTextBox.Paste();
+      notepadTextBox.Font = new Font("宋体", notepadTextBox.Font.Size);
+    }
+    /************************************************/
+    private void deleteMenuItem_Click(object sender, EventArgs e)
+    {
+      if (notepadTextBox.SelectedText != "")
+        notepadTextBox.SelectedText = "";
+    }
+    /************************************************/
+    private void findMenuItem_Click(object sender, EventArgs e)
     {
       try
       {
@@ -245,236 +319,8 @@ namespace App.Windows.XPNotepad.Main
       }
       catch { }
     }
-
-    private void 定位ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      try
-      {
-        if (replace == 0)
-        {
-          f3 = new Form3();
-          f3.Owner = this;
-          f3.Location = new Point(this.Location.X + 50, this.Location.Y + 120);
-          f3.Show();
-          replace = 1;
-        }
-        else f3.BringToFront();
-      }
-      catch { }
-    }
-
-    private void 转到ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      GotoDialog f4 = new GotoDialog();
-      f4.Owner = this;
-      f4.Location = new Point(this.Location.X + 15, this.Location.Y + 80);
-      f4.ShowDialog();
-    }
-
-    private void 时间日期ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      notepadTextBox.Paste(DateTime.Now.ToShortTimeString() + " " + DateTime.Now.ToShortDateString());
-    }
-
-    private void 状态栏SToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      if (statusbarMenuItem.Checked == false)
-      {
-        statusbarMenuItem.Checked = true;
-        bottomStatusBar.Visible = true;
-      }
-      else
-      {
-        statusbarMenuItem.Checked = false;
-        bottomStatusBar.Visible = false;
-      }
-    }
-
-    private void 自动换行ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      if (wordwrapMenuItem.Checked == false)
-      {
-          wordwrapMenuItem.Checked = true;
-          notepadTextBox.WordWrap = true;
-          gotoMenuItem.Enabled = false;
-      }
-      else
-      {
-          wordwrapMenuItem.Checked = false;
-          notepadTextBox.WordWrap = false;
-          gotoMenuItem.Enabled = true;
-      }
-      if (wordwrapMenuItem.Checked)
-      {
-          statusbarMenuItem.Enabled = false;
-          if (statusbarMenuItem.Checked)
-              stc = 1;
-          else stc = 0;
-          if (bottomStatusBar.Visible)
-              ss = 1;
-          else ss = 0;
-          bottomStatusBar.Visible = false;
-          statusbarMenuItem.Checked = false;
-      }
-      else
-      {
-          statusbarMenuItem.Enabled = true;
-          if (stc == 1) statusbarMenuItem.Checked = true;
-          if (ss == 1) bottomStatusBar.Visible = true;
-      }
-    }
-
-    private void 关于记事本ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      ShellAbout(this.Handle.ToInt32(), "记事本", "朱靥超 Visual Studio 2008 RTM 修正版", this.Icon.Handle.ToInt32());
-    }
-
-    private void mtBox1_TextChanged(object sender, EventArgs e)
-    {
-      GetPoint();
-      undoMenuItem.Enabled = true;
-      if (notepadTextBox.Text != "")
-      {
-        findMenuItem.Enabled = true;
-        findnextMenuItem.Enabled = true;
-      }
-      else
-      {
-        findMenuItem.Enabled = false;
-        findnextMenuItem.Enabled = false;
-      }
-    }
-
-    private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-    {
-      if (notepadTextBox.Text == "") Dispose();
-      try
-      {
-        if (ts != notepadTextBox.Text)
-        {
-          Form5 f = new Form5();
-          f.Owner = this;
-          f.ShowDialog();
-          if (f.b == 2) Dispose();
-          else if (f.b == 3) e.Cancel = true;
-        }
-      }
-      catch { }
-    }
-    [DllImport("shell32.dll")]
-    public static extern int ExtractIcon(int handle, string path, int index);
-
-    [DllImport("kernel32.dll")]
-    public static extern int GetWindowsDirectory(StringBuilder lpBuffer, int uSize);
-
-    private void Form1_Shown(object sender, EventArgs e)
-    {
-//            StringBuilder sb = new StringBuilder(128);
-//            GetWindowsDirectory(sb, sb.Capacity);
-//            string startname = sb.ToString() + "\\notepad.exe";
-//            IntPtr icon = new IntPtr(ExtractIcon(this.Handle.ToInt32(), startname, 0));
-//            this.Icon = Icon.FromHandle(icon);
-    }
-
-    private void Form1_Load(object sender, EventArgs e)
-    {
-      GetPoint();
-
-
-      if (fl) mtBox1_DragDrop(null, null);
-      lines = notepadTextBox.Lines.Length;
-      if (bottomStatusBar.Visible == true)
-        statusbarMenuItem.Checked = true;
-      if (notepadTextBox.Text == "")
-      {
-        undoMenuItem.Enabled = false;
-        cutMenuItem.Enabled = false;
-        deleteMenuItem.Enabled = false;
-        copyMenuItem.Enabled = false;
-
-        findMenuItem.Enabled = false;
-        findnextMenuItem.Enabled = false;
-      }
-    }
-
-    private void 字体ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      int cur = notepadTextBox.SelectionStart;
-      if (fontDialog1.ShowDialog() != DialogResult.Cancel)
-        notepadTextBox.Font = fontDialog1.Font;
-      notepadTextBox.Select(cur, 0);
-      notepadTextBox.SelectionStart = cur;
-    }
-
-    private void 页面设置ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      try
-      {
-          this.pageSetupDialog1.Document = this.printDocument1;
-          if (this.pageSetupDialog1.ShowDialog() == DialogResult.OK)
-          {
-              this.printDocument1.Print();
-          }
-      }
-      catch { MessageBox.Show("您尚未安装打印机！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information); }
-    }
-
-    private void 打印ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      try
-      {
-        if (printDialog1.ShowDialog() == DialogResult.OK)
-        {
-          this.printDialog1.Document = this.printDocument1;
-          this.printDocument1.Print();
-        }
-      }
-      catch { MessageBox.Show("您尚未安装打印机", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information); }
-    }
-
-    private void menuItem57_Click(object sender, EventArgs e)
-    {
-      if (sys == "Windows Vista")
-        Help.ShowHelp(this, "C:\\Windows\\winhlp32.exe");
-      else
-        Help.ShowHelp(this, "C:\\WINDOWS\\Help\\notepad.chm");
-    }
-
-    private void FileExt()
-    {
-      String regPath = @"Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced";
-      RegistryKey regKey = Registry.CurrentUser;
-      try
-      {
-          exe = (int)regKey.OpenSubKey(regPath, true).GetValue("HideFileExt");
-      }
-      catch { }
-    }
-
-    private void GetPoint()
-    {
-      Point cursorPos = GetCursorPos(this.notepadTextBox);
-      this.lncolStatusBarPanel.Text = "    第 " + cursorPos.Y.ToString() + " 行 , " + "第 " + cursorPos.X.ToString() + " 列";
-      start = cursorPos.Y;
-    }
-
-    private void timer1_Tick(object sender, EventArgs e)
-    {
-      if (notepadTextBox.SelectedText != "")
-      {
-        cutMenuItem.Enabled = true;
-        deleteMenuItem.Enabled = true;
-        copyMenuItem.Enabled = true;
-      }
-      else
-      {
-        cutMenuItem.Enabled = false;
-        deleteMenuItem.Enabled = false;
-        copyMenuItem.Enabled = false;
-      }
-    }
-
-    private void 查找下一个ToolStripMenuItem_Click(object sender, EventArgs e)
+    /************************************************/
+    private void findnextMenuItem_Click(object sender, EventArgs e)
     {
         try
         {
@@ -525,16 +371,152 @@ namespace App.Windows.XPNotepad.Main
         }
         catch { }
     }
-
-    private void mtBox1_DragEnter(object sender, DragEventArgs e)
+    /************************************************/
+    private void replaceMenuItem_Click(object sender, EventArgs e)
+    {
+      try
+      {
+        if (replace == 0)
+        {
+          f3 = new Form3();
+          f3.Owner = this;
+          f3.Location = new Point(this.Location.X + 50, this.Location.Y + 120);
+          f3.Show();
+          replace = 1;
+        }
+        else f3.BringToFront();
+      }
+      catch { }
+    }
+    /************************************************/
+    private void gotoMenuItem_Click(object sender, EventArgs e)
+    {
+      GotoDialog f4 = new GotoDialog();
+      f4.Owner = this;
+      f4.Location = new Point(this.Location.X + 15, this.Location.Y + 80);
+      f4.ShowDialog();
+    }
+    /************************************************/
+    private void selectallMenuItem_Click(object sender, EventArgs e)
+    {
+      notepadTextBox.SelectAll();
+    }
+    /************************************************/
+    private void timedateMenuItem_Click(object sender, EventArgs e)
+    {
+      notepadTextBox.Paste(DateTime.Now.ToShortTimeString() + " " + DateTime.Now.ToShortDateString());
+    }
+    /************************************************/
+    private void formatMenuItem_Popup(object sender, System.EventArgs e)
+    {
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void wordwrapMenuItem_Click(object sender, EventArgs e)
+    {
+      if (wordwrapMenuItem.Checked == false)
+      {
+          wordwrapMenuItem.Checked = true;
+          notepadTextBox.WordWrap = true;
+          gotoMenuItem.Enabled = false;
+      }
+      else
+      {
+          wordwrapMenuItem.Checked = false;
+          notepadTextBox.WordWrap = false;
+          gotoMenuItem.Enabled = true;
+      }
+      if (wordwrapMenuItem.Checked)
+      {
+          statusbarMenuItem.Enabled = false;
+          if (statusbarMenuItem.Checked)
+              stc = 1;
+          else stc = 0;
+          if (bottomStatusBar.Visible)
+              ss = 1;
+          else ss = 0;
+          bottomStatusBar.Visible = false;
+          statusbarMenuItem.Checked = false;
+      }
+      else
+      {
+          statusbarMenuItem.Enabled = true;
+          if (stc == 1) statusbarMenuItem.Checked = true;
+          if (ss == 1) bottomStatusBar.Visible = true;
+      }
+    }
+    /************************************************/
+    private void fontMenuItem_Click(object sender, EventArgs e)
+    {
+      int cur = notepadTextBox.SelectionStart;
+      if (fontDialog1.ShowDialog() != DialogResult.Cancel)
+        notepadTextBox.Font = fontDialog1.Font;
+      notepadTextBox.Select(cur, 0);
+      notepadTextBox.SelectionStart = cur;
+    }
+    /************************************************/
+    private void viewMenuItem_Popup(object sender, System.EventArgs e)
+    {
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void statusbarMenuItem_Click(object sender, EventArgs e)
+    {
+      if (statusbarMenuItem.Checked == false)
+      {
+        statusbarMenuItem.Checked = true;
+        bottomStatusBar.Visible = true;
+      }
+      else
+      {
+        statusbarMenuItem.Checked = false;
+        bottomStatusBar.Visible = false;
+      }
+    }
+    /************************************************/
+    private void helpMenuItem_Popup(object sender, System.EventArgs e)
+    {
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void helptopicsMenuItem_Click(object sender, EventArgs e)
+    {
+      if (sys == "Windows Vista")
+        Help.ShowHelp(this, "C:\\Windows\\winhlp32.exe");
+      else
+        Help.ShowHelp(this, "C:\\WINDOWS\\Help\\notepad.chm");
+    }
+    /************************************************/
+    private void aboutMenuItem_Click(object sender, EventArgs e)
+    {
+      ShellAbout(this.Handle.ToInt32(), "记事本", "朱靥超 Visual Studio 2008 RTM 修正版", this.Icon.Handle.ToInt32());
+    }
+    /************************************************/
+    private void notepadTextBox_TextChanged(object sender, EventArgs e)
+    {
+      GetPoint();
+      undoMenuItem.Enabled = true;
+      if (notepadTextBox.Text != "")
+      {
+        findMenuItem.Enabled = true;
+        findnextMenuItem.Enabled = true;
+      }
+      else
+      {
+        findMenuItem.Enabled = false;
+        findnextMenuItem.Enabled = false;
+      }
+    }
+    /************************************************/
+    private void notepadTextBox_DragEnter(object sender, DragEventArgs e)
     {
       if (e.Data.GetDataPresent(DataFormats.FileDrop))
       {
         e.Effect = DragDropEffects.All;
       }
     }
-
-    private void mtBox1_DragDrop(object sender, DragEventArgs e)
+    /************************************************/
+    private void notepadTextBox_DragDrop(object sender, DragEventArgs e)
     {
       try
       {
@@ -557,6 +539,80 @@ namespace App.Windows.XPNotepad.Main
       }
       catch { MessageBox.Show("拒绝访问。", "记事本", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
     }
+    /************************************************/
+    private void notepadTextBox_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+    {
+      GetPoint();
+    }
+    /************************************************/
+    private void notepadTextBox_Click(object sender, EventArgs e)
+    {
+      GetPoint();
+    }
+    /************************************************/
+    private void bottomStatusBar_Resize(object sender, EventArgs e)
+    {
+      try
+      {
+        statusBarPanel1.Width = (int)Math.Round(bottomStatusBar.Size.Width * 0.73);
+      }
+      catch { }
+    }
+    
+
+    
+    
+    
+    
+    
+    [DllImport("shell32.dll")]
+    public static extern int ExtractIcon(int handle, string path, int index);
+
+    [DllImport("kernel32.dll")]
+    public static extern int GetWindowsDirectory(StringBuilder lpBuffer, int uSize);
+    
+    [DllImport("shell32.dll", EntryPoint = "ShellAbout")]
+    private static extern int ShellAbout(int hWndn, string szApp, string szOtherStuff, int hIcon);
+
+    [DllImport("User32.DLL")]
+    public static extern int SendMessage(IntPtr hWnd, uint Msg, int wParam, int iParam);
+
+    private const int EM_LINEFROMCHAR = 0xC9;
+    private const int EM_LINEINDEX = 0xBB;
+
+    private Point GetCursorPos(TextBox textBox)
+    {
+      Point cursorPos = new Point(0, 0);
+      int x, y;
+      y = SendMessage(textBox.Handle, EM_LINEFROMCHAR, textBox.SelectionStart, 0);
+      x = textBox.SelectionStart - SendMessage(textBox.Handle, EM_LINEINDEX, y, 0);
+      cursorPos.Y = ++y;
+      cursorPos.X = ++x;
+      return cursorPos;
+    }
+
+
+
+
+
+    private void FileExt()
+    {
+      String regPath = @"Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced";
+      RegistryKey regKey = Registry.CurrentUser;
+      try
+      {
+          exe = (int)regKey.OpenSubKey(regPath, true).GetValue("HideFileExt");
+      }
+      catch { }
+    }
+
+    private void GetPoint()
+    {
+      Point cursorPos = GetCursorPos(this.notepadTextBox);
+      this.lncolStatusBarPanel.Text = "    第 " + cursorPos.Y.ToString() + " 行 , " + "第 " + cursorPos.X.ToString() + " 列";
+      start = cursorPos.Y;
+    }
+
 
     public void strreader()
     {
@@ -599,24 +655,9 @@ namespace App.Windows.XPNotepad.Main
       notepadTextBox.SelectionStart = 0;
     }
 
-    private void statusBar1_Resize(object sender, EventArgs e)
-    {
-      try
-      {
-        statusBarPanel1.Width = (int)Math.Round(bottomStatusBar.Size.Width * 0.73);
-      }
-      catch { }
-    }
 
-    private void mtBox1_Click(object sender, EventArgs e)
-    {
-      GetPoint();
-    }
 
-    private void mtBox1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-    {
-      GetPoint();
-    }
+
 
     private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
     {

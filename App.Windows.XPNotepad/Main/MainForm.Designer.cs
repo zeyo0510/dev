@@ -106,7 +106,7 @@ namespace App.Windows.XPNotepad.Main
         this.guiTimer.Enabled  = true;
         this.guiTimer.Interval = 100;
         /************************************************/
-        this.guiTimer.Tick += new System.EventHandler(this.timer1_Tick);
+        this.guiTimer.Tick += this.guiTimer_Tick;
       }
       // topMainMenu
       {
@@ -133,6 +133,8 @@ namespace App.Windows.XPNotepad.Main
         this.fileMenuItem.MenuItems.Add(this.printMenuItem);
         this.fileMenuItem.MenuItems.Add(new MenuItem("-"));
         this.fileMenuItem.MenuItems.Add(this.exitMenuItem);
+        /************************************************/
+        this.fileMenuItem.Popup += this.fileMenuItem_Popup;
       }
       // newMenuItem
       {
@@ -140,7 +142,7 @@ namespace App.Windows.XPNotepad.Main
         this.newMenuItem.Shortcut = Shortcut.CtrlN;
         this.newMenuItem.Text     = "&New";
         /************************************************/
-        this.newMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
+        this.newMenuItem.Click += this.newMenuItem_Click;
       }
       // openMenuItem
       {
@@ -148,7 +150,7 @@ namespace App.Windows.XPNotepad.Main
         this.openMenuItem.Shortcut = Shortcut.CtrlO;
         this.openMenuItem.Text     = "&Open...";
         /************************************************/
-        this.openMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
+        this.openMenuItem.Click += this.openMenuItem_Click;
       }
       // saveMenuItem
       {
@@ -156,7 +158,7 @@ namespace App.Windows.XPNotepad.Main
         this.saveMenuItem.Shortcut = Shortcut.CtrlS;
         this.saveMenuItem.Text     = "&Save";
         /************************************************/
-        this.saveMenuItem.Click += new System.EventHandler(this.保存ToolStripMenuItem_Click);
+        this.saveMenuItem.Click += this.saveMenuItem_Click;
       }
       // saveasMenuItem
       {
@@ -164,7 +166,7 @@ namespace App.Windows.XPNotepad.Main
         this.saveasMenuItem.Shortcut = Shortcut.None;
         this.saveasMenuItem.Text     = "Save &As...";
         /************************************************/
-        this.saveasMenuItem.Click += new System.EventHandler(this.另存为AToolStripMenuItem_Click);
+        this.saveasMenuItem.Click += this.saveasMenuItem_Click;
       }
       // pagesetupMenuItem
       {
@@ -172,7 +174,7 @@ namespace App.Windows.XPNotepad.Main
         this.pagesetupMenuItem.Shortcut = Shortcut.None;
         this.pagesetupMenuItem.Text     = "Page Set&up...";
         /************************************************/
-        this.pagesetupMenuItem.Click += new System.EventHandler(this.页面设置ToolStripMenuItem_Click);
+        this.pagesetupMenuItem.Click += this.pagesetupMenuItem_Click;
       }
       // printMenuItem
       {
@@ -180,7 +182,7 @@ namespace App.Windows.XPNotepad.Main
         this.printMenuItem.Shortcut = Shortcut.CtrlP;
         this.printMenuItem.Text     = "&Print...";
         /************************************************/
-        this.printMenuItem.Click += new System.EventHandler(this.打印ToolStripMenuItem_Click);
+        this.printMenuItem.Click += this.printMenuItem_Click;
       }
       // exitMenuItem
       {
@@ -188,7 +190,7 @@ namespace App.Windows.XPNotepad.Main
         this.exitMenuItem.Shortcut = Shortcut.None;
         this.exitMenuItem.Text     = "E&xit";
         /************************************************/
-        this.exitMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+        this.exitMenuItem.Click += this.exitMenuItem_Click;
       }
       // editMenuItem
       {
@@ -210,6 +212,8 @@ namespace App.Windows.XPNotepad.Main
         this.editMenuItem.MenuItems.Add(new MenuItem("-"));
         this.editMenuItem.MenuItems.Add(this.selectallMenuItem);
         this.editMenuItem.MenuItems.Add(this.timedateMenuItem);
+        /************************************************/
+        this.editMenuItem.Popup += editMenuItem_Popup;
       }
       // undoMenuItem
       {
@@ -217,7 +221,7 @@ namespace App.Windows.XPNotepad.Main
         this.undoMenuItem.Shortcut = Shortcut.CtrlZ;
         this.undoMenuItem.Text     = "&Undo";
         /************************************************/
-        this.undoMenuItem.Click += new System.EventHandler(this.撤销ToolStripMenuItem_Click);
+        this.undoMenuItem.Click += this.undoMenuItem_Click;
       }
       // cutMenuItem
       {
@@ -225,7 +229,7 @@ namespace App.Windows.XPNotepad.Main
         this.cutMenuItem.Shortcut = Shortcut.CtrlX;
         this.cutMenuItem.Text     = "Cut&t";
         /************************************************/
-        this.cutMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem1_Click);
+        this.cutMenuItem.Click += this.cutMenuItem_Click;
       }
       // copyMenuItem
       {
@@ -233,7 +237,7 @@ namespace App.Windows.XPNotepad.Main
         this.copyMenuItem.Shortcut = Shortcut.CtrlC;
         this.copyMenuItem.Text     = "&Copy";
         /************************************************/
-        this.copyMenuItem.Click += new System.EventHandler(this.复制ToolStripMenuItem_Click);
+        this.copyMenuItem.Click += this.copyMenuItem_Click;
       }
       // pasteMenuItem
       {
@@ -241,7 +245,7 @@ namespace App.Windows.XPNotepad.Main
         this.pasteMenuItem.Shortcut = Shortcut.CtrlP;
         this.pasteMenuItem.Text     = "&Psate";
         /************************************************/
-        this.pasteMenuItem.Click += new System.EventHandler(this.粘贴ToolStripMenuItem1_Click);
+        this.pasteMenuItem.Click += this.pasteMenuItem_Click;
       }
       // deleteMenuItem
       {
@@ -249,7 +253,7 @@ namespace App.Windows.XPNotepad.Main
         this.deleteMenuItem.Shortcut = Shortcut.Del;
         this.deleteMenuItem.Text     = "De&lete";
         /************************************************/
-        this.deleteMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem1_Click);
+        this.deleteMenuItem.Click += this.deleteMenuItem_Click;
       }
       // findMenuItem
       {
@@ -257,7 +261,7 @@ namespace App.Windows.XPNotepad.Main
         this.findMenuItem.Shortcut = Shortcut.CtrlF;
         this.findMenuItem.Text     = "&Find...";
         /************************************************/
-        this.findMenuItem.Click += new System.EventHandler(this.查找ToolStripMenuItem_Click);
+        this.findMenuItem.Click += this.findMenuItem_Click;
       }
       // findnextMenuItem
       {
@@ -265,7 +269,7 @@ namespace App.Windows.XPNotepad.Main
         this.findnextMenuItem.Shortcut = Shortcut.F3;
         this.findnextMenuItem.Text     = "Find &Next";
         /************************************************/
-        this.findnextMenuItem.Click += new System.EventHandler(this.查找下一个ToolStripMenuItem_Click);
+        this.findnextMenuItem.Click += this.findnextMenuItem_Click;
       }
       // replaceMenuItem
       {
@@ -273,7 +277,7 @@ namespace App.Windows.XPNotepad.Main
         this.replaceMenuItem.Shortcut = Shortcut.CtrlH;
         this.replaceMenuItem.Text     = "&Replace...";
         /************************************************/
-        this.replaceMenuItem.Click += new System.EventHandler(this.定位ToolStripMenuItem_Click);
+        this.replaceMenuItem.Click += this.replaceMenuItem_Click;
       }
       // gotoMenuItem
       {
@@ -281,7 +285,7 @@ namespace App.Windows.XPNotepad.Main
         this.gotoMenuItem.Shortcut = Shortcut.CtrlG;
         this.gotoMenuItem.Text     = "&Go To...";
         /************************************************/
-        this.gotoMenuItem.Click += new System.EventHandler(this.转到ToolStripMenuItem_Click);
+        this.gotoMenuItem.Click += this.gotoMenuItem_Click;
       }
       // selectallMenuItem
       {
@@ -289,7 +293,7 @@ namespace App.Windows.XPNotepad.Main
         this.selectallMenuItem.Shortcut = Shortcut.CtrlA;
         this.selectallMenuItem.Text     = "Select &All";
         /************************************************/
-        this.selectallMenuItem.Click += new System.EventHandler(this.全选ToolStripMenuItem2_Click);
+        this.selectallMenuItem.Click += this.selectallMenuItem_Click;
       }
       // timedateMenuItem
       {
@@ -297,7 +301,7 @@ namespace App.Windows.XPNotepad.Main
         this.timedateMenuItem.Shortcut = Shortcut.F5;
         this.timedateMenuItem.Text     = "Time/&Date";
         /************************************************/
-        this.timedateMenuItem.Click += new System.EventHandler(this.时间日期ToolStripMenuItem_Click);
+        this.timedateMenuItem.Click += this.timedateMenuItem_Click;
       }
       // formatMenuItem
       {
@@ -307,6 +311,8 @@ namespace App.Windows.XPNotepad.Main
         /************************************************/
         this.formatMenuItem.MenuItems.Add(this.wordwrapMenuItem);
         this.formatMenuItem.MenuItems.Add(this.fontMenuItem);
+        /************************************************/
+        this.formatMenuItem.Popup += formatMenuItem_Popup;
       }
       // wordwrapMenuItem
       {
@@ -314,7 +320,7 @@ namespace App.Windows.XPNotepad.Main
         this.wordwrapMenuItem.Shortcut = Shortcut.None;
         this.wordwrapMenuItem.Text     = "&Word Wrap";
         /************************************************/
-        this.wordwrapMenuItem.Click += new System.EventHandler(this.自动换行ToolStripMenuItem_Click);
+        this.wordwrapMenuItem.Click += this.wordwrapMenuItem_Click;
       }
       // fontMenuItem
       {
@@ -322,7 +328,7 @@ namespace App.Windows.XPNotepad.Main
         this.fontMenuItem.Shortcut = Shortcut.None;
         this.fontMenuItem.Text     = "&Font...";
         /************************************************/
-        this.fontMenuItem.Click += new System.EventHandler(this.字体ToolStripMenuItem_Click);
+        this.fontMenuItem.Click += this.fontMenuItem_Click;
       }
       // viewMenuItem
       {
@@ -331,6 +337,8 @@ namespace App.Windows.XPNotepad.Main
         this.viewMenuItem.Text     = "&View";
         /************************************************/
         this.viewMenuItem.MenuItems.Add(this.statusbarMenuItem);
+        /************************************************/
+        this.viewMenuItem.Popup += viewMenuItem_Popup;
       }
       // statusbarMenuItem
       {
@@ -338,7 +346,7 @@ namespace App.Windows.XPNotepad.Main
         this.statusbarMenuItem.Shortcut = Shortcut.None;
         this.statusbarMenuItem.Text     = "&Status Bar";
         /************************************************/
-        this.statusbarMenuItem.Click += new System.EventHandler(this.状态栏SToolStripMenuItem_Click);
+        this.statusbarMenuItem.Click += this.statusbarMenuItem_Click;
       }
       // helpMenuItem
       {
@@ -349,6 +357,8 @@ namespace App.Windows.XPNotepad.Main
         this.helpMenuItem.MenuItems.Add(this.helptopicsMenuItem);
         this.helpMenuItem.MenuItems.Add(new MenuItem("-"));
         this.helpMenuItem.MenuItems.Add(this.aboutMenuItem);
+        /************************************************/
+        this.helpMenuItem.Popup += helpMenuItem_Popup;
       }
       // helptopicsMenuItem
       {
@@ -356,7 +366,7 @@ namespace App.Windows.XPNotepad.Main
         this.helptopicsMenuItem.Shortcut = Shortcut.None;
         this.helptopicsMenuItem.Text     = "&Help Topics";
         /************************************************/
-        this.helptopicsMenuItem.Click += new System.EventHandler(this.menuItem57_Click);
+        this.helptopicsMenuItem.Click += this.helptopicsMenuItem_Click;
       }
       // aboutMenuItem
       {
@@ -364,7 +374,7 @@ namespace App.Windows.XPNotepad.Main
         this.aboutMenuItem.Shortcut = Shortcut.None;
         this.aboutMenuItem.Text     = "&About Notepad";
         /************************************************/
-        this.aboutMenuItem.Click += new System.EventHandler(this.关于记事本ToolStripMenuItem_Click);
+        this.aboutMenuItem.Click += this.aboutMenuItem_Click;
       }
       // notepadTextBox
       {
@@ -381,11 +391,11 @@ namespace App.Windows.XPNotepad.Main
         this.notepadTextBox.TabIndex      = 4;
         this.notepadTextBox.WordWrap      = false;
         /************************************************/
-        this.notepadTextBox.TextChanged    += new System.EventHandler(this.mtBox1_TextChanged);
-        this.notepadTextBox.DragDrop       += new DragEventHandler(this.mtBox1_DragDrop);
-        this.notepadTextBox.PreviewKeyDown += new PreviewKeyDownEventHandler(this.mtBox1_PreviewKeyDown);
-        this.notepadTextBox.Click          += new System.EventHandler(this.mtBox1_Click);
-        this.notepadTextBox.DragEnter      += new DragEventHandler(this.mtBox1_DragEnter);
+        this.notepadTextBox.TextChanged    += this.notepadTextBox_TextChanged;
+        this.notepadTextBox.DragDrop       += this.notepadTextBox_DragDrop;
+        this.notepadTextBox.PreviewKeyDown += this.notepadTextBox_PreviewKeyDown;
+        this.notepadTextBox.Click          += this.notepadTextBox_Click;
+        this.notepadTextBox.DragEnter     += this.notepadTextBox_DragEnter;
       }
       // bottomStatusBar
       {
@@ -400,7 +410,7 @@ namespace App.Windows.XPNotepad.Main
         this.bottomStatusBar.Panels.Add(this.statusBarPanel1);
         this.bottomStatusBar.Panels.Add(this.lncolStatusBarPanel);
         /************************************************/
-        this.bottomStatusBar.Resize += new System.EventHandler(this.statusBar1_Resize);
+        this.bottomStatusBar.Resize += this.bottomStatusBar_Resize;
       }
       // statusBarPanel1
       {
@@ -449,9 +459,9 @@ namespace App.Windows.XPNotepad.Main
         base.Controls.Add(this.notepadTextBox);
         base.Controls.Add(this.bottomStatusBar);
         /************************************************/
-        base.Load += new System.EventHandler(this.Form1_Load);
-        base.Shown += new System.EventHandler(this.Form1_Shown);
-        base.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
+        base.Load += this.MainForm_Load;
+        base.Shown += this.MainForm_Shown;
+        base.FormClosing += this.MainForm_FormClosing;
       }
       ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.lncolStatusBarPanel)).EndInit();
