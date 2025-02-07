@@ -42,9 +42,12 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     protected override void Dispose(bool disposing)
     {
-      if (disposing && (this.components != null))
+      if (disposing)
       {
-        this.components.Dispose();
+        if (this.components != null)
+        {
+          this.components.Dispose();
+        }
       }
       base.Dispose(disposing);
     }
@@ -87,10 +90,9 @@ namespace App.Windows.XPNotepad.Main
       /************************************************/
       this.openFileDialog1 = new OpenFileDialog();
       this.saveFileDialog1 = new SaveFileDialog();
-      this.fontDialog1 = new FontDialog();
       this.printDialog1 = new PrintDialog();
       this.pageSetupDialog1 = new PageSetupDialog();
-      this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+      this.printDocument1 = new PrintDocument();
       /************************************************/
       this.notepadTextBox      = new TextBox();
       this.bottomStatusBar     = new StatusBar();
@@ -424,13 +426,10 @@ namespace App.Windows.XPNotepad.Main
         this.lncolStatusBarPanel.BorderStyle = StatusBarPanelBorderStyle.None;
         this.lncolStatusBarPanel.Width       = 150;
       }
-
-
-      // 
-      // fontDialog1
-      // 
-      this.fontDialog1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-      this.fontDialog1.ShowEffects = false;
+      
+      
+      
+      
       // 
       // printDialog1
       // 
@@ -475,7 +474,6 @@ namespace App.Windows.XPNotepad.Main
     private StatusBarPanel lncolStatusBarPanel = null;
     
     
-    private FontDialog fontDialog1;
     public SaveFileDialog saveFileDialog1;
     public OpenFileDialog openFileDialog1;
     private PrintDialog printDialog1;

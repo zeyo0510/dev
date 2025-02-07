@@ -55,6 +55,9 @@
     <Compile Include="Dialogs\GotoDialog.Designer.cs">
       <DependentUpon>GotoDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\GotoDialog.UpdateUI.cs">
+      <DependentUpon>GotoDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs" />
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -71,6 +74,15 @@
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MainForm.Native.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.SetNotepadFont.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.ToggleStatusBar.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.UpdateUI.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
@@ -81,9 +93,6 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dialogs\GotoDialog.resx">
-      <DependentUpon>GotoDialog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>

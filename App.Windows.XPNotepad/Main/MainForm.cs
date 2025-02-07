@@ -47,11 +47,6 @@ namespace App.Windows.XPNotepad.Main
       }
     }  
     /************************************************/
-    public MainForm(int a)
-    {
-      this.InitializeComponent();
-    }
-    /************************************************/
     private void MainForm_Shown(object sender, EventArgs e)
     {
 //            StringBuilder sb = new StringBuilder(128);
@@ -101,18 +96,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void guiTimer_Tick(object sender, EventArgs e)
     {
-      if (notepadTextBox.SelectedText != "")
-      {
-        cutMenuItem.Enabled = true;
-        deleteMenuItem.Enabled = true;
-        copyMenuItem.Enabled = true;
-      }
-      else
-      {
-        cutMenuItem.Enabled = false;
-        deleteMenuItem.Enabled = false;
-        copyMenuItem.Enabled = false;
-      }
+      this.UpdateUI();
     }
     /************************************************/
     private void fileMenuItem_Popup(object sender, EventArgs e)
@@ -278,23 +262,22 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void undoMenuItem_Click(object sender, EventArgs e)
     {
-      notepadTextBox.Undo();
+      this.notepadTextBox.Undo();
     }
     /************************************************/
     private void cutMenuItem_Click(object sender, EventArgs e)
     {
-      notepadTextBox.Cut();
+      this.notepadTextBox.Cut();
     }
     /************************************************/
     private void copyMenuItem_Click(object sender, EventArgs e)
     {
-      notepadTextBox.Copy();
+      this.notepadTextBox.Copy();
     }
     /************************************************/
     private void pasteMenuItem_Click(object sender, EventArgs e)
     {
-      notepadTextBox.Paste();
-      notepadTextBox.Font = new Font("宋体", notepadTextBox.Font.Size);
+      this.notepadTextBox.Paste();
     }
     /************************************************/
     private void deleteMenuItem_Click(object sender, EventArgs e)
@@ -391,20 +374,25 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void gotoMenuItem_Click(object sender, EventArgs e)
     {
-      GotoDialog f4 = new GotoDialog();
-      f4.Owner = this;
-      f4.Location = new Point(this.Location.X + 15, this.Location.Y + 80);
-      f4.ShowDialog();
+      GotoDialog dialog = new GotoDialog();
+      {
+        dialog.Owner = this;
+        dialog.Location = new Point(this.Location.X + 15, this.Location.Y + 80);
+      }
+      dialog.ShowDialog();
     }
     /************************************************/
     private void selectallMenuItem_Click(object sender, EventArgs e)
     {
-      notepadTextBox.SelectAll();
+      this.notepadTextBox.SelectAll();
     }
     /************************************************/
     private void timedateMenuItem_Click(object sender, EventArgs e)
     {
-      notepadTextBox.Paste(DateTime.Now.ToShortTimeString() + " " + DateTime.Now.ToShortDateString());
+      string time = DateTime.Now.ToShortTimeString();
+      string date = DateTime.Now.ToShortDateString();
+      /************************************************/
+      this.notepadTextBox.Paste(time + " " + date);
     }
     /************************************************/
     private void formatMenuItem_Popup(object sender, System.EventArgs e)
@@ -448,11 +436,9 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void fontMenuItem_Click(object sender, EventArgs e)
     {
-      int cur = notepadTextBox.SelectionStart;
-      if (fontDialog1.ShowDialog() != DialogResult.Cancel)
-        notepadTextBox.Font = fontDialog1.Font;
-      notepadTextBox.Select(cur, 0);
-      notepadTextBox.SelectionStart = cur;
+      this.SetNotepadFont();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void viewMenuItem_Popup(object sender, System.EventArgs e)
@@ -462,16 +448,9 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void statusbarMenuItem_Click(object sender, EventArgs e)
     {
-      if (statusbarMenuItem.Checked == false)
-      {
-        statusbarMenuItem.Checked = true;
-        bottomStatusBar.Visible = true;
-      }
-      else
-      {
-        statusbarMenuItem.Checked = false;
-        bottomStatusBar.Visible = false;
-      }
+      this.ToggleStatusBar();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void helpMenuItem_Popup(object sender, System.EventArgs e)
@@ -489,7 +468,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void aboutMenuItem_Click(object sender, EventArgs e)
     {
-      ShellAbout(this.Handle.ToInt32(), "记事本", "朱靥超 Visual Studio 2008 RTM 修正版", this.Icon.Handle.ToInt32());
+      ShellAbout(base.Handle.ToInt32(), "Notepad", "", base.Icon.Handle.ToInt32());
     }
     /************************************************/
     private void notepadTextBox_TextChanged(object sender, EventArgs e)
@@ -565,20 +544,7 @@ namespace App.Windows.XPNotepad.Main
     
     
     
-    [DllImport("shell32.dll")]
-    public static extern int ExtractIcon(int handle, string path, int index);
 
-    [DllImport("kernel32.dll")]
-    public static extern int GetWindowsDirectory(StringBuilder lpBuffer, int uSize);
-    
-    [DllImport("shell32.dll", EntryPoint = "ShellAbout")]
-    private static extern int ShellAbout(int hWndn, string szApp, string szOtherStuff, int hIcon);
-
-    [DllImport("User32.DLL")]
-    public static extern int SendMessage(IntPtr hWnd, uint Msg, int wParam, int iParam);
-
-    private const int EM_LINEFROMCHAR = 0xC9;
-    private const int EM_LINEINDEX = 0xBB;
 
     private Point GetCursorPos(TextBox textBox)
     {

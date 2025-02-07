@@ -1,94 +1,112 @@
 ﻿using System.ComponentModel;
 using System.Windows.Forms;
-
+/************************************************/
 namespace App.Windows.XPNotepad.Dialogs
 {
   partial class GotoDialog
   {
     private IContainer components = null;
-
+    /************************************************/
+    private Timer guiTimer = null;
+    /************************************************/
     protected override void Dispose(bool disposing)
     {
-      if (disposing && (components != null))
+      if (disposing)
       {
-        components.Dispose();
+        if (this.components != null)
+        {
+          this.components.Dispose();
+        }
       }
       base.Dispose(disposing);
     }
-
+    /************************************************/
     private void InitializeComponent()
     {
-      this.label1 = new Label();
-      this.textBox1 = new TextBox();
-      this.button1 = new Button();
-      this.button2 = new Button();
-      this.SuspendLayout();
-      // 
-      // label1
-      // 
-      this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(9, 13);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(53, 12);
-      this.label1.TabIndex = 0;
-      this.label1.Text = "行数(L):";
-      // 
-      // textBox1
-      // 
-      this.textBox1.Location = new System.Drawing.Point(80, 13);
-      this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(90, 21);
-      this.textBox1.TabIndex = 1;
-      this.textBox1.Text = "1";
-      // 
-      // button1
-      // 
-      this.button1.Location = new System.Drawing.Point(11, 54);
-      this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(75, 23);
-      this.button1.TabIndex = 2;
-      this.button1.Text = "确定";
-      this.button1.UseVisualStyleBackColor = true;
-      this.button1.Click += new System.EventHandler(this.button1_Click);
-      // 
-      // button2
-      // 
-      this.button2.DialogResult = DialogResult.Cancel;
-      this.button2.Location = new System.Drawing.Point(118, 54);
-      this.button2.Name = "button2";
-      this.button2.Size = new System.Drawing.Size(75, 23);
-      this.button2.TabIndex = 3;
-      this.button2.Text = "取消";
-      this.button2.UseVisualStyleBackColor = true;
-      this.button2.Click += new System.EventHandler(this.button2_Click);
-      // 
-      // Form4
-      // 
-      this.AcceptButton = this.button1;
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-      this.AutoScaleMode = AutoScaleMode.Font;
-      this.CancelButton = this.button2;
-      this.ClientSize = new System.Drawing.Size(284, 87);
-      this.Controls.Add(this.button2);
-      this.Controls.Add(this.button1);
-      this.Controls.Add(this.textBox1);
-      this.Controls.Add(this.label1);
-      this.FormBorderStyle = FormBorderStyle.FixedDialog;
-      this.KeyPreview = true;
-      this.MaximizeBox = false;
-      this.MinimizeBox = false;
-      this.Name = "Form4";
-      this.ShowInTaskbar = false;
-      this.StartPosition = FormStartPosition.Manual;
-      this.Text = "转到下一行";
-      this.Load += new System.EventHandler(this.Form4_Load);
-      this.ResumeLayout(false);
-      this.PerformLayout();
+      this.components = new Container();
+      /************************************************/
+      this.guiTimer = new Timer(this.components);
+      /************************************************/
+      this.linenumberLabel   = new Label();
+      this.linenumberTextBox = new TextBox();
+      this.okButton          = new Button();
+      this.cancelButton      = new Button();
+      /************************************************/
+      // guiTimer
+      {
+        this.guiTimer.Enabled  = true;
+        this.guiTimer.Interval = 100;
+        /************************************************/
+        this.guiTimer.Tick += guiTimer_Tick;
+      }
+      // linenumberLabel
+      {
+        this.linenumberLabel.Name = "linenumberLabel";
+        this.linenumberLabel.AutoSize = true;
+        this.linenumberLabel.Location = new System.Drawing.Point(9, 13);
+        this.linenumberLabel.Size = new System.Drawing.Size(53, 12);
+        this.linenumberLabel.TabIndex = 0;
+        this.linenumberLabel.Text = "&Line Number:";
+      }
+      // linenumberTextBox
+      {
+        this.linenumberTextBox.Name = "linenumberTextBox";
+        this.linenumberTextBox.Location = new System.Drawing.Point(80, 13);
+        this.linenumberTextBox.Size = new System.Drawing.Size(90, 21);
+        this.linenumberTextBox.TabIndex = 1;
+        this.linenumberTextBox.Text = "1";
+      }
+      // okButton
+      {
+        this.okButton.Name = "okButton";
+        this.okButton.Location = new System.Drawing.Point(11, 54);
+        this.okButton.Size = new System.Drawing.Size(75, 23);
+        this.okButton.TabIndex = 2;
+        this.okButton.Text = "OK";
+        this.okButton.UseVisualStyleBackColor = true;
+        /************************************************/
+        this.okButton.Click += this.okButton_Click;
+      }
+      // cancelButton
+      {
+        this.cancelButton.Name = "button2";
+        this.cancelButton.DialogResult = DialogResult.Cancel;
+        this.cancelButton.Location = new System.Drawing.Point(118, 54);
+        this.cancelButton.Size = new System.Drawing.Size(75, 23);
+        this.cancelButton.TabIndex = 3;
+        this.cancelButton.Text = "Cancel";
+        this.cancelButton.UseVisualStyleBackColor = true;
+        /************************************************/
+        this.cancelButton.Click += this.cancelButton_Click;
+      }
+      // GotoDialog
+      {
+        this.Name = "GotoDialog";
+        this.AcceptButton = this.okButton;
+        this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+        this.AutoScaleMode = AutoScaleMode.Font;
+        this.CancelButton = this.cancelButton;
+        this.ClientSize = new System.Drawing.Size(284, 87);
+        this.FormBorderStyle = FormBorderStyle.FixedDialog;
+        this.KeyPreview = true;
+        this.MaximizeBox = false;
+        this.MinimizeBox = false;
+        this.ShowInTaskbar = false;
+        this.StartPosition = FormStartPosition.Manual;
+        this.Text = "Goto line";
+        /************************************************/
+        this.Controls.Add(this.cancelButton);
+        this.Controls.Add(this.okButton);
+        this.Controls.Add(this.linenumberTextBox);
+        this.Controls.Add(this.linenumberLabel);
+        /************************************************/
+        this.Load += this.GotoDialog_Load;
+      }
     }
-
-    private Label label1;
-    private TextBox textBox1;
-    private Button button1;
-    private Button button2;
+    /************************************************/
+    private Label   linenumberLabel   = null;
+    private TextBox linenumberTextBox = null;
+    private Button  okButton          = null;
+    private Button  cancelButton      = null;
   }
 }
