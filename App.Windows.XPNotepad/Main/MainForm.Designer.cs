@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Drawing.Printing;
 using System.Windows.Forms;
+using App.Windows.XPNotepad.Core;
 /************************************************/
 namespace App.Windows.XPNotepad.Main
 {
@@ -94,7 +95,7 @@ namespace App.Windows.XPNotepad.Main
       this.pageSetupDialog1 = new PageSetupDialog();
       this.printDocument1 = new PrintDocument();
       /************************************************/
-      this.notepadTextBox      = new TextBox();
+      this.notepadTextBox      = new NotepadTextBox();
       this.bottomStatusBar     = new StatusBar();
       this.statusBarPanel1     = new StatusBarPanel();
       this.lncolStatusBarPanel = new StatusBarPanel();
@@ -468,7 +469,7 @@ namespace App.Windows.XPNotepad.Main
       this.PerformLayout();
     }
     /************************************************/
-    public TextBox         notepadTextBox      = null;
+    public NotepadTextBox  notepadTextBox      = null;
     private StatusBar      bottomStatusBar     = null;
     private StatusBarPanel statusBarPanel1     = null;
     private StatusBarPanel lncolStatusBarPanel = null;

@@ -51,6 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\NotepadTextBox.cs" />
+    <Compile Include="Core\NotepadTextBox.Designer.cs">
+      <DependentUpon>NotepadTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\GotoDialog.cs" />
     <Compile Include="Dialogs\GotoDialog.Designer.cs">
       <DependentUpon>GotoDialog.cs</DependentUpon>
@@ -70,14 +74,26 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MainForm.CloseApp.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.InsertCurrentTimeDate.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.Native.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MainForm.SelectAllWord.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.SetNotepadFont.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.ShowAboutDialog.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.ToggleStatusBar.cs">
@@ -106,6 +122,7 @@
   <ItemGroup>
     <Folder Include="Main" />
     <Folder Include="Dialogs" />
+    <Folder Include="Core" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
-using System.Runtime.InteropServices;
-using System.Text;
 using System.Windows.Forms;
 using App.Windows.XPNotepad.Dialogs;
 using Microsoft.Win32;
@@ -60,7 +58,6 @@ namespace App.Windows.XPNotepad.Main
     {
       GetPoint();
 
-
       if (fl) notepadTextBox_DragDrop(null, null);
       lines = notepadTextBox.Lines.Length;
       if (bottomStatusBar.Visible == true)
@@ -90,8 +87,9 @@ namespace App.Windows.XPNotepad.Main
           if (f.b == 2) Dispose();
           else if (f.b == 3) e.Cancel = true;
         }
+      } catch {
+        
       }
-      catch { }
     }
     /************************************************/
     private void guiTimer_Tick(object sender, EventArgs e)
@@ -108,42 +106,39 @@ namespace App.Windows.XPNotepad.Main
     {
       if (notepadTextBox.Text == "")
       {
-          notepadTextBox.Text = "";
-          n = 0;
-          this.Text = "无标题 - 记事本";
-          ffind = false;
-          cu = "";
-      }
-      else
-      {
-          try
+        notepadTextBox.Text = "";
+        n = 0;
+        this.Text = "无标题 - 记事本";
+        ffind = false;
+        cu = "";
+      } else {
+        try
+        {
+          if (ts != notepadTextBox.Text)
           {
-              if (ts != notepadTextBox.Text)
-              {
-                  Form5 f = new Form5();
-                  f.Owner = this;
-                  f.ShowDialog();
-                  if (f.b == 2 || (f.b == 1 && this.Text != "无标题 - 记事本"))
-                  {
-                      notepadTextBox.Text = "";
-                      n = 0;
-                      ts = "";
-                      this.Text = "无标题 - 记事本";
-                      ffind = false;
-                      cu = "";
-                  }
-              }
-              else
-              {
-                  notepadTextBox.Text = "";
-                  n = 0;
-                  ts = "";
-                  this.Text = "无标题 - 记事本";
-                  ffind = false;
-                  cu = "";
-              }
+            Form5 f = new Form5();
+            f.Owner = this;
+            f.ShowDialog();
+            if (f.b == 2 || (f.b == 1 && this.Text != "无标题 - 记事本"))
+            {
+              notepadTextBox.Text = "";
+              n = 0;
+              ts = "";
+              this.Text = "无标题 - 记事本";
+              ffind = false;
+              cu = "";
+            }
+          } else {
+            notepadTextBox.Text = "";
+            n = 0;
+            ts = "";
+            this.Text = "无标题 - 记事本";
+            ffind = false;
+            cu = "";
           }
-          catch { }
+        } catch {
+          
+        }
       }
     }
     /************************************************/
@@ -151,90 +146,92 @@ namespace App.Windows.XPNotepad.Main
     {
       try
       {
-          FileExt();
-          if (ts != notepadTextBox.Text)
-          {
-              Form5 f = new Form5();
-              f.Owner = this;
-              f.ShowDialog();
-              if (f.b == 2 || f.b == 1)
-                  open();
-          }
-          else open();
+        FileExt();
+        if (ts != notepadTextBox.Text)
+        {
+          Form5 f = new Form5();
+          f.Owner = this;
+          f.ShowDialog();
+          if (f.b == 2 || f.b == 1)
+            open();
+        } else
+          open();
+      } catch {
+        
       }
-      catch { }
     }
     /************************************************/
     private void saveMenuItem_Click(object sender, EventArgs e)
     {
       try
       {
-          FileExt();
-          if (n == 0)
-          {
-              saveFileDialog1.Title = "保存";
-              saveFileDialog1.Filter = "文本文档(*.txt)|*.txt|所有文件(*.*)|*.*";
-              saveFileDialog1.FileName = "*.txt";
-              saveFileDialog1.ShowDialog();
-              StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-              sw.Write(this.notepadTextBox.Text);
-              sw.Flush();
-              sw.Close();
-              n = 1;
-              ts = notepadTextBox.Text;
-              if (exe == 0)
-                  this.Text = Path.GetFileName(saveFileDialog1.FileName) + " - 记事本";
-              else
-                  this.Text = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName) + " - 记事本";
-          }
+        FileExt();
+        if (n == 0)
+        {
+          saveFileDialog1.Title = "保存";
+          saveFileDialog1.Filter = "文本文档(*.txt)|*.txt|所有文件(*.*)|*.*";
+          saveFileDialog1.FileName = "*.txt";
+          saveFileDialog1.ShowDialog();
+          StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
+          sw.Write(this.notepadTextBox.Text);
+          sw.Flush();
+          sw.Close();
+          n = 1;
+          ts = notepadTextBox.Text;
+          if (exe == 0)
+            this.Text = Path.GetFileName(saveFileDialog1.FileName) + " - 记事本";
           else
-          {
-              StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-              sw.Write(this.notepadTextBox.Text);
-              sw.Flush();
-              sw.Close();
-              ts = notepadTextBox.Text;
-          }
+            this.Text = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName) + " - 记事本";
+        } else {
+          StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
+          sw.Write(this.notepadTextBox.Text);
+          sw.Flush();
+          sw.Close();
+          ts = notepadTextBox.Text;
+        }
+      } catch {
+        notepadTextBox.SelectionStart = notepadTextBox.TextLength;
       }
-      catch { notepadTextBox.SelectionStart = notepadTextBox.TextLength; }
     }
     /************************************************/
     private void saveasMenuItem_Click(object sender, EventArgs e)
     {
       try
       {
-          FileExt();
-          saveFileDialog1.Title = "另存为";
-          saveFileDialog1.Filter = "文本文档(*.txt)|*.txt|所有文件(*.*)|*.*";
-          saveFileDialog1.FileName = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName + ".txt");
-          DialogResult result = saveFileDialog1.ShowDialog();
-          if (result == DialogResult.OK)
-          {
-              StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
-              sw.Write(this.notepadTextBox.Text);
-              sw.Flush();
-              sw.Close();
-              ts = notepadTextBox.Text;
-              if (exe == 0)
-                  this.Text = Path.GetFileName(saveFileDialog1.FileName) + " - 记事本";
-              else
-                  this.Text = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName) + " - 记事本";
-          }
+        FileExt();
+        saveFileDialog1.Title = "另存为";
+        saveFileDialog1.Filter = "文本文档(*.txt)|*.txt|所有文件(*.*)|*.*";
+        saveFileDialog1.FileName = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName + ".txt");
+        DialogResult result = saveFileDialog1.ShowDialog();
+        if (result == DialogResult.OK)
+        {
+          StreamWriter sw = new StreamWriter(saveFileDialog1.FileName, false, System.Text.Encoding.Default);
+          sw.Write(this.notepadTextBox.Text);
+          sw.Flush();
+          sw.Close();
+          ts = notepadTextBox.Text;
+          if (exe == 0)
+            this.Text = Path.GetFileName(saveFileDialog1.FileName) + " - 记事本";
+          else
+            this.Text = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName) + " - 记事本";
+        }
+      } catch {
+        notepadTextBox.SelectionStart = notepadTextBox.TextLength;
       }
-      catch { notepadTextBox.SelectionStart = notepadTextBox.TextLength; }
     }
     /************************************************/
     private void pagesetupMenuItem_Click(object sender, EventArgs e)
     {
       try
       {
-          this.pageSetupDialog1.Document = this.printDocument1;
-          if (this.pageSetupDialog1.ShowDialog() == DialogResult.OK)
-          {
-              this.printDocument1.Print();
-          }
+        this.pageSetupDialog1.Document = this.printDocument1;
+        if (this.pageSetupDialog1.ShowDialog() == DialogResult.OK)
+        {
+          this.printDocument1.Print();
+        }
+      } catch {
+        MessageBox.Show("您尚未安装打印机！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
-      catch { MessageBox.Show("您尚未安装打印机！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information); }
     }
     /************************************************/
     private void printMenuItem_Click(object sender, EventArgs e)
@@ -246,13 +243,16 @@ namespace App.Windows.XPNotepad.Main
           this.printDialog1.Document = this.printDocument1;
           this.printDocument1.Print();
         }
+      } catch {
+        MessageBox.Show("您尚未安装打印机", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
-      catch { MessageBox.Show("您尚未安装打印机", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information); }
     }
     /************************************************/
     private void exitMenuItem_Click(object sender, EventArgs e)
     {
-      Close();
+      this.CloseApp();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void editMenuItem_Popup(object sender, EventArgs e)
@@ -297,62 +297,61 @@ namespace App.Windows.XPNotepad.Main
           f2.Location = new Point(this.Location.X + 50, this.Location.Y + 160);
           f2.Show();
           find = 1;
-        }
-        else f2.BringToFront();
+        } else
+          f2.BringToFront();
+      } catch {
+        
       }
-      catch { }
     }
     /************************************************/
     private void findnextMenuItem_Click(object sender, EventArgs e)
     {
-        try
-        {
-            if (ffind == false)
-                if (find == 0)
-                {
-                    f2 = new Form2();
-                    f2.Owner = this;
-                    f2.Location = new Point(this.Location.X + 50, this.Location.Y + 160);
-                    f2.Show();
-                    find = 1;
-                }
-                else f2.BringToFront();
-            else
+      try
+      {
+        if (ffind == false)
+          if (find == 0)
+          {
+            f2 = new Form2();
+            f2.Owner = this;
+            f2.Location = new Point(this.Location.X + 50, this.Location.Y + 160);
+            f2.Show();
+            find = 1;
+          } else f2.BringToFront();
+        else {
+          try
+          {
+            if (notepadTextBox.SelectedText == notepadTextBox.Text)
+              notepadTextBox.Select(0, 0);
+            string tmtbox = notepadTextBox.Text;
+            string ttbox = tBox2;
+            if (f2checkbox == false)
             {
-                try
-                {
-                    if (notepadTextBox.SelectedText == notepadTextBox.Text)
-                        notepadTextBox.Select(0, 0);
-                    string tmtbox = notepadTextBox.Text;
-                    string ttbox = tBox2;
-                    if (f2checkbox == false)
-                    {
-                        tmtbox = notepadTextBox.Text.ToLower();
-                        ttbox = ttbox.ToLower();
-                    }
-                    if (ffl == 0)
-                    {
-                        if (notepadTextBox.SelectionStart >= 0)
-                        {
-                            notepadTextBox.Select(notepadTextBox.Text.LastIndexOf(ttbox, notepadTextBox.SelectionStart - 1), ttbox.Length);
-                            notepadTextBox.ScrollToCaret();
-                        }
-                        else MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else if (ffl == 1)
-                    {
-                        if (notepadTextBox.Text.IndexOf(ttbox, notepadTextBox.SelectionStart + notepadTextBox.SelectedText.Length) >= 0)
-                        {
-                            notepadTextBox.Select(notepadTextBox.Text.IndexOf(ttbox, notepadTextBox.SelectionStart + notepadTextBox.SelectedText.Length), ttbox.Length);
-                            notepadTextBox.ScrollToCaret();
-                        }
-                        else MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-                catch { MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+              tmtbox = notepadTextBox.Text.ToLower();
+              ttbox = ttbox.ToLower();
             }
+            if (ffl == 0)
+            {
+              if (notepadTextBox.SelectionStart >= 0)
+              {
+                notepadTextBox.Select(notepadTextBox.Text.LastIndexOf(ttbox, notepadTextBox.SelectionStart - 1), ttbox.Length);
+                notepadTextBox.ScrollToCaret();
+              } else
+                MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } else if (ffl == 1) {
+              if (notepadTextBox.Text.IndexOf(ttbox, notepadTextBox.SelectionStart + notepadTextBox.SelectedText.Length) >= 0)
+              {
+                notepadTextBox.Select(notepadTextBox.Text.IndexOf(ttbox, notepadTextBox.SelectionStart + notepadTextBox.SelectedText.Length), ttbox.Length);
+                notepadTextBox.ScrollToCaret();
+              } else
+                MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+          } catch {
+            MessageBox.Show(("找不到\"" + tBox2 + "\""), "记事本", MessageBoxButtons.OK, MessageBoxIcon.Information);
+          }
         }
-        catch { }
+      } catch {
+        
+      }
     }
     /************************************************/
     private void replaceMenuItem_Click(object sender, EventArgs e)
@@ -368,8 +367,9 @@ namespace App.Windows.XPNotepad.Main
           replace = 1;
         }
         else f3.BringToFront();
+      } catch {
+        
       }
-      catch { }
     }
     /************************************************/
     private void gotoMenuItem_Click(object sender, EventArgs e)
@@ -384,18 +384,19 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void selectallMenuItem_Click(object sender, EventArgs e)
     {
-      this.notepadTextBox.SelectAll();
+      this.SelectAllWord();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void timedateMenuItem_Click(object sender, EventArgs e)
     {
-      string time = DateTime.Now.ToShortTimeString();
-      string date = DateTime.Now.ToShortDateString();
+      this.InsertCurrentTimeDate();
       /************************************************/
-      this.notepadTextBox.Paste(time + " " + date);
+      this.UpdateUI();
     }
     /************************************************/
-    private void formatMenuItem_Popup(object sender, System.EventArgs e)
+    private void formatMenuItem_Popup(object sender, EventArgs e)
     {
       this.UpdateUI();
     }
@@ -404,33 +405,30 @@ namespace App.Windows.XPNotepad.Main
     {
       if (wordwrapMenuItem.Checked == false)
       {
-          wordwrapMenuItem.Checked = true;
-          notepadTextBox.WordWrap = true;
-          gotoMenuItem.Enabled = false;
+        wordwrapMenuItem.Checked = true;
+        notepadTextBox.WordWrap = true;
+        gotoMenuItem.Enabled = false;
+      } else {
+        wordwrapMenuItem.Checked = false;
+        notepadTextBox.WordWrap = false;
+        gotoMenuItem.Enabled = true;
       }
-      else
-      {
-          wordwrapMenuItem.Checked = false;
-          notepadTextBox.WordWrap = false;
-          gotoMenuItem.Enabled = true;
-      }
+      /************************************************/
       if (wordwrapMenuItem.Checked)
       {
-          statusbarMenuItem.Enabled = false;
-          if (statusbarMenuItem.Checked)
-              stc = 1;
-          else stc = 0;
-          if (bottomStatusBar.Visible)
-              ss = 1;
-          else ss = 0;
-          bottomStatusBar.Visible = false;
-          statusbarMenuItem.Checked = false;
-      }
-      else
-      {
-          statusbarMenuItem.Enabled = true;
-          if (stc == 1) statusbarMenuItem.Checked = true;
-          if (ss == 1) bottomStatusBar.Visible = true;
+        statusbarMenuItem.Enabled = false;
+        if (statusbarMenuItem.Checked)
+          stc = 1;
+        else stc = 0;
+        if (bottomStatusBar.Visible)
+          ss = 1;
+        else ss = 0;
+        bottomStatusBar.Visible = false;
+        statusbarMenuItem.Checked = false;
+      } else {
+        statusbarMenuItem.Enabled = true;
+        if (stc == 1) statusbarMenuItem.Checked = true;
+        if (ss == 1) bottomStatusBar.Visible = true;
       }
     }
     /************************************************/
@@ -468,7 +466,9 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void aboutMenuItem_Click(object sender, EventArgs e)
     {
-      ShellAbout(base.Handle.ToInt32(), "Notepad", "", base.Icon.Handle.ToInt32());
+      this.ShowAboutDialog();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void notepadTextBox_TextChanged(object sender, EventArgs e)
