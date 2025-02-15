@@ -36,14 +36,11 @@ namespace App.EnvironmentVariableEditor.Main
       this.exportToolStripMenuItem      = new ToolStripMenuItem();
       this.exitToolStripMenuItem        = new ToolStripMenuItem();
       this.editToolStripMenuItem        = new ToolStripMenuItem();
-      this.undoToolStripMenuItem        = new ToolStripMenuItem();
-      this.redoToolStripMenuItem        = new ToolStripMenuItem();
-      this.cutToolStripMenuItem         = new ToolStripMenuItem();
       this.copyToolStripMenuItem        = new ToolStripMenuItem();
-      this.pasteToolStripMenuItem       = new ToolStripMenuItem();
       this.insertToolStripMenuItem      = new ToolStripMenuItem();
       this.updateToolStripMenuItem      = new ToolStripMenuItem();
       this.deleteToolStripMenuItem      = new ToolStripMenuItem();
+      this.selectallToolStripMenuItem   = new ToolStripMenuItem();
       this.viewToolStripMenuItem        = new ToolStripMenuItem();
       this.userToolStripMenuItem        = new ToolStripMenuItem();
       this.machineToolStripMenuItem     = new ToolStripMenuItem();
@@ -121,39 +118,15 @@ namespace App.EnvironmentVariableEditor.Main
         this.editToolStripMenuItem.Name = "editToolStripMenuItem";
         this.editToolStripMenuItem.Text = "Edit";
         /************************************************/
-        this.editToolStripMenuItem.DropDownItems.Add(this.undoToolStripMenuItem);
-        this.editToolStripMenuItem.DropDownItems.Add(this.redoToolStripMenuItem);
-        this.editToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
-        this.editToolStripMenuItem.DropDownItems.Add(this.cutToolStripMenuItem);
         this.editToolStripMenuItem.DropDownItems.Add(this.copyToolStripMenuItem);
-        this.editToolStripMenuItem.DropDownItems.Add(this.pasteToolStripMenuItem);
         this.editToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
         this.editToolStripMenuItem.DropDownItems.Add(this.insertToolStripMenuItem);
         this.editToolStripMenuItem.DropDownItems.Add(this.updateToolStripMenuItem);
         this.editToolStripMenuItem.DropDownItems.Add(this.deleteToolStripMenuItem);
+        this.editToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
+        this.editToolStripMenuItem.DropDownItems.Add(this.selectallToolStripMenuItem);
         /************************************************/
         this.editToolStripMenuItem.DropDownOpening += this.editToolStripMenuItem_DropDownOpening;
-      }
-      // undoToolStripMenuItem
-      {
-        this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-        this.undoToolStripMenuItem.Text = "Undo";
-        /************************************************/
-        this.undoToolStripMenuItem.Click += this.undoToolStripMenuItem_Click;
-      }
-      // redoToolStripMenuItem
-      {
-        this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-        this.redoToolStripMenuItem.Text = "Redo";
-        /************************************************/
-        this.redoToolStripMenuItem.Click += this.redoToolStripMenuItem_Click;
-      }
-      // cutToolStripMenuItem
-      {
-        this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-        this.cutToolStripMenuItem.Text = "Cut";
-        /************************************************/
-        this.cutToolStripMenuItem.Click += this.cutToolStripMenuItem_Click;
       }
       // copyToolStripMenuItem
       {
@@ -161,13 +134,6 @@ namespace App.EnvironmentVariableEditor.Main
         this.copyToolStripMenuItem.Text = "Copy";
         /************************************************/
         this.copyToolStripMenuItem.Click += this.copyToolStripMenuItem_Click;
-      }
-      // pasteToolStripMenuItem
-      {
-        this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-        this.pasteToolStripMenuItem.Text = "Paste";
-        /************************************************/
-        this.pasteToolStripMenuItem.Click += this.pasteToolStripMenuItem_Click;
       }
       // insertToolStripMenuItem
       {
@@ -189,6 +155,13 @@ namespace App.EnvironmentVariableEditor.Main
         this.deleteToolStripMenuItem.Text = "Delete";
         /************************************************/
         this.deleteToolStripMenuItem.Click += this.deleteToolStripMenuItem_Click;
+      }
+      // selectallToolStripMenuItem
+      {
+        this.selectallToolStripMenuItem.Name = "selectallToolStripMenuItem";
+        this.selectallToolStripMenuItem.Text = "Select All";
+        /************************************************/
+        this.selectallToolStripMenuItem.Click += this.selectallToolStripMenuItem_Click;
       }
       // viewToolStripMenuItem
       {
@@ -269,14 +242,11 @@ namespace App.EnvironmentVariableEditor.Main
     private ToolStripMenuItem    exportToolStripMenuItem      = null;
     private ToolStripMenuItem    exitToolStripMenuItem        = null;
     private ToolStripMenuItem    editToolStripMenuItem        = null;
-    private ToolStripMenuItem    undoToolStripMenuItem        = null;
-    private ToolStripMenuItem    redoToolStripMenuItem        = null;
-    private ToolStripMenuItem    cutToolStripMenuItem         = null;
     private ToolStripMenuItem    copyToolStripMenuItem        = null;
-    private ToolStripMenuItem    pasteToolStripMenuItem       = null;
     private ToolStripMenuItem    insertToolStripMenuItem      = null;
     private ToolStripMenuItem    updateToolStripMenuItem      = null;
     private ToolStripMenuItem    deleteToolStripMenuItem      = null;
+    private ToolStripMenuItem    selectallToolStripMenuItem   = null;
     private ToolStripMenuItem    viewToolStripMenuItem        = null;
     private ToolStripMenuItem    userToolStripMenuItem        = null;
     private ToolStripMenuItem    machineToolStripMenuItem     = null;

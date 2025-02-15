@@ -70,31 +70,11 @@ namespace App.EnvironmentVariableEditor.Main
       this.UpdateUI();
     }
     /************************************************/
-    private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      // TODO: do anything...
-    }
-    /************************************************/
-    private void redoToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      // TODO: do anything...
-    }
-    /************************************************/
-    private void cutToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      // TODO: do anything...
-    }
-    /************************************************/
     private void copyToolStripMenuItem_Click(object sender, EventArgs e)
     {
       this.CopySelectedItem2Clipboard();
       /************************************************/
       this.UpdateUI();
-    }
-    /************************************************/
-    private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-      // TODO: do anything...
     }
     /************************************************/
     private void insertToolStripMenuItem_Click(object sender, EventArgs e)
@@ -110,6 +90,13 @@ namespace App.EnvironmentVariableEditor.Main
     private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
     {
       // TODO: do anything...
+    }
+    /************************************************/
+    private void selectallToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.SelectAllItem();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void viewToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
