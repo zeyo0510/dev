@@ -18,7 +18,7 @@ namespace App.EnvironmentVariableEditor.Main
       {
         this.currentEnvironmentVariable = value;
         /************************************************/
-        this.Reload();
+        this.ReloadEnvVar();
       }
     }
   }

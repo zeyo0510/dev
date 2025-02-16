@@ -79,7 +79,7 @@
     <Compile Include="Main\MainForm.ExportData.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\MainForm.Reload.cs">
+    <Compile Include="Main\MainForm.ReloadEnvVar.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.SelectAllItem.cs">

@@ -10,7 +10,7 @@ namespace App.EnvironmentVariableEditor.Main
     {
       this.InitializeComponent();
       /************************************************/
-      this.Reload();
+      this.ReloadEnvVar();
     }
     /************************************************/
     protected override void OnLoad(EventArgs e)
@@ -120,7 +120,7 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      this.Reload();
+      this.ReloadEnvVar();
       /************************************************/
       this.UpdateUI();
     }
