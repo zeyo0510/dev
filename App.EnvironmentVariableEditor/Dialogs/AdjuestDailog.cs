@@ -37,7 +37,7 @@ namespace App.EnvironmentVariableEditor.Dialogs
     /************************************************/
     private void keyTextBox_TextChanged(object sender, EventArgs e)
     {
-      // TODO: do anything...
+//      this.Key = this.keyTextBox.Text;
     }
     /************************************************/
     private void valueLabel_Click(object sender, EventArgs e)
@@ -49,22 +49,14 @@ namespace App.EnvironmentVariableEditor.Dialogs
     /************************************************/
     private void valueTextBox_TextChanged(object sender, EventArgs e)
     {
-      // TODO: do anything...
-    }
-    /************************************************/
-    private void upButton_Click(object sender, EventArgs e)
-    {
-      // TODO: do anything...
-    }
-    /************************************************/
-    private void downButton_Click(object sender, EventArgs e)
-    {
-      // TODO: do anything...
+//      this.Value = this.valueTextBox.Text;
     }
     /************************************************/
     private void okButton_Click(object sender, EventArgs e)
     {
       // TODO: do anything...
+      string data = string.Format("Key: {0}, Value: {1}", this.Key, this.Value);
+      System.Diagnostics.Debug.WriteLine(data);
     }
     /************************************************/
     private void cancelButton_Click(object sender, EventArgs e)

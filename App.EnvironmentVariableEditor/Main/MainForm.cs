@@ -28,7 +28,10 @@ namespace App.EnvironmentVariableEditor.Main
     private void ListView1_DoubleClick(object sender, EventArgs e)
     {
       // TODO: do anything...
-      AdjuestDailog dialog = new AdjuestDailog("", "");
+      
+      ListViewItem item = ListView1.SelectedItems[0];
+      
+      AdjuestDailog dialog = new AdjuestDailog(item.SubItems[0].Text, item.SubItems[1].Text);
       {
         
       }
