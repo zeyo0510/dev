@@ -57,6 +57,10 @@
     <Compile Include="Dialogs\AdjuestDailog.Value.cs">
       <DependentUpon>AdjuestDailog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\AdjuestDailog.ManipulationMode.cs">
+      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ManipulationMode.cs" />
     <Compile Include="Main\MainForm.CopySelectedItem2Clipboard.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>

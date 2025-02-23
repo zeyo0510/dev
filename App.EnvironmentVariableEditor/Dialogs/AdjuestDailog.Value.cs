@@ -4,9 +4,25 @@ namespace App.EnvironmentVariableEditor.Dialogs
 {
   partial class AdjuestDailog
   {
+    private string value = "";
+    /************************************************/
     public string Value
     {
-      get; private set;
+      get
+      {
+        string retValue = this.value;
+        /************************************************/
+        return retValue;
+      }
+      set
+      {
+        if (this.value != value)
+        {
+          this.value = value;
+          /************************************************/
+          this.valueTextBox.Text = this.value;
+        }
+      }
     }
   }
 }

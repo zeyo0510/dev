@@ -33,7 +33,7 @@ namespace App.EnvironmentVariableEditor.Main
       
       AdjuestDailog dialog = new AdjuestDailog(item.SubItems[0].Text, item.SubItems[1].Text);
       {
-        
+        dialog.ManipulationMode = ManipulationMode.Update;
       }
       /************************************************/
       if (dialog.ShowDialog(this) != DialogResult.OK)
