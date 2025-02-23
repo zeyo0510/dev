@@ -2,7 +2,7 @@
 /************************************************/
 namespace App.EnvironmentVariableEditor.Dialogs
 {
-  partial class AdjuestDailog
+  partial class AdjuestDialog
   {
     private string key = "";
     /************************************************/

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Dialogs
 {
-  partial class AdjuestDailog
+  partial class AdjuestDialog
   {
     private IContainer components = null;
     /************************************************/
@@ -119,9 +119,9 @@ namespace App.EnvironmentVariableEditor.Dialogs
         /************************************************/
         this.okButton.Click += this.okButton_Click;
       }
-      // AdjuestDailog
+      // AdjuestDialog
       {
-        base.Name            = "AdjuestDailog";
+        base.Name            = "AdjuestDialog";
         base.AcceptButton    = this.okButton;
         base.AutoScaleMode   = AutoScaleMode.None;
         base.CancelButton    = this.cancelButton;

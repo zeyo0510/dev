@@ -38,27 +38,27 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dialogs\AdjuestDailog.AdjuestClientSize.cs">
-      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    <Compile Include="Dialogs\AdjuestDialog.AdjuestClientSize.cs">
+      <DependentUpon>AdjuestDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\AdjuestDailog.cs" />
-    <Compile Include="Dialogs\AdjuestDailog.Designer.cs">
-      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    <Compile Include="Dialogs\AdjuestDialog.cs" />
+    <Compile Include="Dialogs\AdjuestDialog.Designer.cs">
+      <DependentUpon>AdjuestDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\AdjuestDailog.FocusTextBox.cs">
-      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    <Compile Include="Dialogs\AdjuestDialog.FocusTextBox.cs">
+      <DependentUpon>AdjuestDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\AdjuestDailog.Key.cs">
-      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    <Compile Include="Dialogs\AdjuestDialog.Key.cs">
+      <DependentUpon>AdjuestDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\AdjuestDailog.UpdateUI.cs">
-      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    <Compile Include="Dialogs\AdjuestDialog.UpdateUI.cs">
+      <DependentUpon>AdjuestDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\AdjuestDailog.Value.cs">
-      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    <Compile Include="Dialogs\AdjuestDialog.Value.cs">
+      <DependentUpon>AdjuestDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\AdjuestDailog.ManipulationMode.cs">
-      <DependentUpon>AdjuestDailog.cs</DependentUpon>
+    <Compile Include="Dialogs\AdjuestDialog.ManipulationMode.cs">
+      <DependentUpon>AdjuestDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Dialogs\ManipulationMode.cs" />
     <Compile Include="Main\MainForm.CopySelectedItem2Clipboard.cs">

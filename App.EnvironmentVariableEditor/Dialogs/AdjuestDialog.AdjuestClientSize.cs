@@ -3,7 +3,7 @@ using System.Drawing;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Dialogs
 {
-  partial class AdjuestDailog
+  partial class AdjuestDialog
   {
     public void AdjuestClientSize()
     {

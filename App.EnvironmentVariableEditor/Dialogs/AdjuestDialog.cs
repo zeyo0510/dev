@@ -3,14 +3,14 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.EnvironmentVariableEditor.Dialogs
 {
-  internal partial class AdjuestDailog : Form
+  internal partial class AdjuestDialog : Form
   {
-    private AdjuestDailog()
+    private AdjuestDialog()
     {
       this.InitializeComponent();
     }
     /************************************************/
-    public AdjuestDailog(string key, string value) : this()
+    public AdjuestDialog(string key, string value) : this()
     {
       this.Key   = key;
       this.Value = value;

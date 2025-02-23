@@ -31,7 +31,7 @@ namespace App.EnvironmentVariableEditor.Main
       
       ListViewItem item = ListView1.SelectedItems[0];
       
-      AdjuestDailog dialog = new AdjuestDailog(item.SubItems[0].Text, item.SubItems[1].Text);
+      AdjuestDialog dialog = new AdjuestDialog(item.SubItems[0].Text, item.SubItems[1].Text);
       {
         dialog.ManipulationMode = ManipulationMode.Update;
       }
