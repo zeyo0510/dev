@@ -21,9 +21,9 @@ namespace App.EnvironmentVariableEditor.Main
       this.   insertToolStripMenuItem.Checked = false;
       this.   insertToolStripMenuItem.Enabled = true;
       this.   updateToolStripMenuItem.Checked = false;
-      this.   updateToolStripMenuItem.Enabled = true;
+      this.   updateToolStripMenuItem.Enabled = this.ListView1.SelectedItems.Count > 0;
       this.   deleteToolStripMenuItem.Checked = false;
-      this.   deleteToolStripMenuItem.Enabled = true;
+      this.   deleteToolStripMenuItem.Enabled = this.ListView1.SelectedItems.Count > 0;
       this.selectallToolStripMenuItem.Checked = false;
       this.selectallToolStripMenuItem.Enabled = true;
       this.     viewToolStripMenuItem.Checked = false;

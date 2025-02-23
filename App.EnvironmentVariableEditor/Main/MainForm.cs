@@ -27,19 +27,9 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void ListView1_DoubleClick(object sender, EventArgs e)
     {
-      // TODO: do anything...
-      
-      ListViewItem item = ListView1.SelectedItems[0];
-      
-      AdjuestDialog dialog = new AdjuestDialog(item.SubItems[0].Text, item.SubItems[1].Text);
-      {
-        dialog.ManipulationMode = ManipulationMode.Update;
-      }
+      this.ManipulationData(ManipulationMode.Update);
       /************************************************/
-      if (dialog.ShowDialog(this) != DialogResult.OK)
-      {
-        return;
-      }
+      this.UpdateUI();
     }
     /************************************************/
     private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
@@ -82,17 +72,23 @@ namespace App.EnvironmentVariableEditor.Main
     /************************************************/
     private void insertToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO: do anything...
+      this.ManipulationData(ManipulationMode.Insert);
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void updateToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO: do anything...
+      this.ManipulationData(ManipulationMode.Update);
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      // TODO: do anything...
+      this.ManipulationData(ManipulationMode.Delete);
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void selectallToolStripMenuItem_Click(object sender, EventArgs e)
