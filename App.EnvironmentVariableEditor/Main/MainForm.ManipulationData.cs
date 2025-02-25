@@ -9,8 +9,10 @@ namespace App.EnvironmentVariableEditor.Main
   {
     public void ManipulationData(ManipulationMode mode)
     {
-      string key   = "";
-      string value = "";
+      string old_key   = "";
+      string old_value = "";
+      string new_key   = "";
+      string new_value = "";
       /************************************************/
       ListViewItem item = ListView1.SelectedItems
     . Cast<ListViewItem>()
@@ -26,11 +28,11 @@ namespace App.EnvironmentVariableEditor.Main
       /************************************************/
       if (item != null)
       {
-        key   = item.SubItems[0].Text;
-        value = item.SubItems[1].Text;
+        old_key   = item.SubItems[0].Text;
+        old_value = item.SubItems[1].Text;
       }
       /************************************************/
-      AdjuestDialog dialog = new AdjuestDialog(key, value);
+      AdjuestDialog dialog = new AdjuestDialog(old_key, old_value);
       {
         dialog.ManipulationMode = mode;
       }
@@ -40,10 +42,24 @@ namespace App.EnvironmentVariableEditor.Main
         return;
       }
       /************************************************/
-      key   = dialog.Key;
-      value = dialog.Value;
+      new_key   = dialog.Key;
+      new_value = dialog.Value;
       /************************************************/
-      System.Diagnostics.Debug.WriteLine(string.Format("key: {0}, value: {1}", key, value));
+      if (mode == ManipulationMode.Insert)
+      {
+        Environment.SetEnvironmentVariable(new_key, new_value, this.CurrentEnvironmentVariable);
+      }
+      if (mode == ManipulationMode.Update)
+      {
+        Environment.SetEnvironmentVariable(old_key, ""       , this.CurrentEnvironmentVariable);
+        Environment.SetEnvironmentVariable(new_key, new_value, this.CurrentEnvironmentVariable);
+      }
+      if (mode == ManipulationMode.Delete)
+      {
+        Environment.SetEnvironmentVariable(old_key, "", this.CurrentEnvironmentVariable);
+      }
+      /************************************************/
+      this.ReloadEnvVar();
     }
   }
 }
