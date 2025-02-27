@@ -6,7 +6,7 @@ namespace App.Windows.DotnetFrameworkViewer.Main
 {
   partial class MainForm
   {
-    public void DeselectAllItem()
+    public void SelectNoneItem()
     {
       this.listview1.Items
     . Cast<ListViewItem>()

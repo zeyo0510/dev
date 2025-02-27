@@ -60,7 +60,7 @@ namespace App.Windows.DotnetFrameworkViewer.Main
     /************************************************/
     private void selectnoneToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      this.DeselectAllItem();
+      this.SelectNoneItem();
       /************************************************/
       this.UpdateUI();
     }
