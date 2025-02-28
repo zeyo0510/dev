@@ -13,6 +13,9 @@ window.onload = function() {
   if (localStorage.getItem('savedText')) {
     resultTextbox.value = localStorage.getItem('savedText');
   }
+  if (localStorage.getItem("dark-mode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
   /************************************************/
   if (!('webkitSpeechRecognition' in window)) {
     alert('此瀏覽器不支援 Web Speech API。請升級或使用 Chrome。');
@@ -89,5 +92,12 @@ window.onload = function() {
   /************************************************/
   darkModeBtn.onclick = function() {
     document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("dark-mode", "enabled");
+      console.log("A");
+    } else {
+      localStorage.setItem("dark-mode", "disabled");
+      console.log("B");
+    }
   };
 };
