@@ -1,21 +1,20 @@
-window.onload = function()
-{
+window.onload = function() {
   const toggleBtn      = document.getElementById('toggle-btn');
   const resultTextbox  = document.getElementById('result');
   const languageSelect = document.getElementById('language-select');
   const copyBtn        = document.getElementById('copy-btn');
   const clearBtn       = document.getElementById('clear-btn');
   const statusDiv      = document.getElementById('status');
+  const darkModeBtn    = document.getElementById('dark-mode-btn');
+  
   /************************************************/
   let isListening = false;
   /************************************************/
-  if (localStorage.getItem('savedText'))
-  {
+  if (localStorage.getItem('savedText')) {
     resultTextbox.value = localStorage.getItem('savedText');
   }
   /************************************************/
-  if (!('webkitSpeechRecognition' in window))
-  {
+  if (!('webkitSpeechRecognition' in window)) {
     alert('此瀏覽器不支援 Web Speech API。請升級或使用 Chrome。');
     return;
   }
@@ -49,15 +48,13 @@ window.onload = function()
     localStorage.setItem('savedText', resultTextbox.value);
   };
   /************************************************/
-  recognition.onerror = function(event)
-  {
+  recognition.onerror = function(event) {
     statusDiv.textContent = `狀態: 出錯 (${event.error})`;
     toggleBtn.textContent = '🎤 開始聆聽';
     isListening = false;
   };
   /************************************************/
-  recognition.onend = function()
-  {
+  recognition.onend = function() {
     statusDiv.textContent = '狀態: 聆聽結束';
     toggleBtn.textContent = '🎤 開始聆聽';
     isListening = false;
@@ -65,8 +62,7 @@ window.onload = function()
     localStorage.setItem('savedText', resultTextbox.value);
   };
   /************************************************/
-  toggleBtn.onclick = function()
-  {
+  toggleBtn.onclick = function() {
     if (isListening) {
       recognition.stop();
     } else {
@@ -75,22 +71,23 @@ window.onload = function()
     }
   };
   /************************************************/
-  copyBtn.onclick = function()
-  {
+  copyBtn.onclick = function() {
     resultTextbox.select();
     document.execCommand('copy');
     alert('文本已複製到剪貼板');
   };
   /************************************************/
-  clearBtn.onclick = function()
-  {
+  clearBtn.onclick = function() {
     resultTextbox.value = '';
     localStorage.removeItem('savedText');
     statusDiv.textContent = '狀態: 等待中...';
   };
   /************************************************/
-  resultTextbox.oninput = function()
-  {
-      localStorage.setItem('savedText', resultTextbox.value);
+  resultTextbox.oninput = function() {
+    localStorage.setItem('savedText', resultTextbox.value);
+  };
+  /************************************************/
+  darkModeBtn.onclick = function() {
+    document.body.classList.toggle('dark-mode');
   };
 };
