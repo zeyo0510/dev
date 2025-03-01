@@ -43,37 +43,56 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\LEDPanel.CharCount.cs">
+      <DependentUpon>LEDPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LEDPanel.cs" />
     <Compile Include="Controls\LEDPanel.Designer.cs">
+      <DependentUpon>LEDPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LEDPanel.LEDImages.cs">
+      <DependentUpon>LEDPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LEDPanel.Number.cs">
       <DependentUpon>LEDPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineControl.cs" />
     <Compile Include="Controls\MineControl.Designer.cs">
       <DependentUpon>MineControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MineControl.Mines.cs">
+      <DependentUpon>MineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineControlPaintEventArgs.ClipRectangle.cs">
+      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MineControlPaintEventArgs.cs" />
+    <Compile Include="Controls\MineControlPaintEventArgs.Graphics.cs">
+      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineControlPaintEventArgs.X.cs">
+      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineControlPaintEventArgs.Y.cs">
+      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MineException.cs" />
+    <Compile Include="Controls\MinePanel.CountSecond.cs">
+      <DependentUpon>MinePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MinePanel.cs" />
     <Compile Include="Controls\MinePanel.Designer.cs">
+      <DependentUpon>MinePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePanel.MineControlLocation.cs">
+      <DependentUpon>MinePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePanel.RemainMineCount.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ResetButton.cs" />
@@ -95,7 +114,9 @@
       <DependentUpon>Mines.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\Mines.cs" />
-    <Compile Include="Core\Mines.GameState.cs" />
+    <Compile Include="Core\Mines.GameState.cs">
+      <DependentUpon>Mines.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\Mines.Height.cs">
       <DependentUpon>Mines.cs</DependentUpon>
     </Compile>

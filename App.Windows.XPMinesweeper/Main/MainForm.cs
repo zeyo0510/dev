@@ -185,7 +185,7 @@ namespace App.Windows.XPMinesweeper.Main
 
       Stream stream = null;
       Type resourceType = this.GetType();
-      string resourceName = resourceType.Namespace + "." + fileName.Replace("\\", ".");
+      string resourceName = "App.Windows.XPMinesweeper.Resources." + fileName.Replace("\\", ".");
       System.Reflection.Assembly assembly = System.Reflection.Assembly.GetAssembly(resourceType);
       if (assembly == null)
         throw new MineException("拸楊蚾婥訧埭恅璃: " + resourceType.Namespace + ".dll");

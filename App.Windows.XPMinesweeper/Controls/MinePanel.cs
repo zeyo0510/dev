@@ -5,11 +5,14 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  public class MinePanel : Panel
+  public partial class MinePanel : Panel
   {
-    /// <summary>
-    /// Constructor
-    /// </summary>
+    private Color darkGray = Color.Gray;
+
+    private Pen lightPen,  darkGrayPen;
+
+    private ImageList ilLED;
+
     public MinePanel()
     {
       InitializeComponent();
@@ -23,73 +26,6 @@ namespace App.Windows.XPMinesweeper.Controls
       ChangeFace(1);
       ArrangeChildChildren();
     }
-
-    /// <summary> 
-    /// 燴垀衄淏婓妏蚚腔訧埭﹝
-    /// </summary>
-    protected override void Dispose( bool disposing )
-    {
-      if( disposing )
-      {
-        darkGrayPen.Dispose();
-        lightPen.Dispose();
-        rbReset.Dispose();
-        pnlLeft.Dispose();
-        pnlRight.Dispose();
-        ilLED.Dispose();
-        tmrCount.Dispose();
-      }
-      base.Dispose( disposing );
-    }
-
-    private Color darkGray = Color.Gray;
-
-    private Pen lightPen,  darkGrayPen;
-
-    private ResetButton rbReset;
-    private LEDPanel pnlLeft, pnlRight;
-    private ImageList ilLED;
-    private Timer tmrCount;
-
-    #region 郪璃扢數汜傖腔測鎢
-    /// <summary>
-    /// 扢數盓厥垀剒腔源楊 - 祥猁妏蚚測鎢晤憮党蜊
-    /// 森源楊腔囀﹝
-    /// </summary>
-    private void InitializeComponent()
-    {
-      Name = "minePanel";
-      darkGrayPen = new Pen(darkGray, 1);
-      lightPen = new Pen(Color.White, 1);
-      rbReset = new ResetButton();
-      rbReset.Name = "rbReset";
-      rbReset.Text = "";
-      rbReset.Parent = this;
-      rbReset.Click += new EventHandler(OnReset);
-
-      ilLED = new ImageList();
-      ilLED.ImageSize = new Size(13, 23);
-      string FileName = "0123456789-";
-      for (int i = 0; i < FileName.Length; i++)
-      {
-        ilLED.Images.Add(getBitmap(FileName[i] + ".png", false));
-      }
-
-      pnlLeft = new LEDPanel();
-      pnlLeft.Parent = this;
-      pnlLeft.Name = "pnlLeft";
-      pnlLeft.LEDImages = ilLED;
-      pnlRight = new LEDPanel();
-      pnlRight.Parent = this;
-      pnlRight.Name = "pnlRight";
-      pnlRight.LEDImages = ilLED;
-
-      tmrCount = new Timer();
-      tmrCount.Interval = 1000;
-      tmrCount.Tick += new EventHandler(tmrCount_Tick);
-      tmrCount.Stop();
-    }
-    #endregion
 
     private void tmrCount_Tick(object sender, EventArgs e)
     {
@@ -127,24 +63,9 @@ namespace App.Windows.XPMinesweeper.Controls
       drawFrame(g, new Rectangle(rect.Left + 9, rect.Top + 9 + 36 + 6, rect.Width - 9 - 6, rect.Height - 9 - 36 - 6 - 6), true);
     }
 
-    /// <summary>
-    /// 跦擂MineControl腔湮苤殿隙Window腔湮苤
-    /// </summary>
     public Size GetWindowClientSize(Size mineControlSize)
     {
       return new Size(mineControlSize.Width + 9 + 3 + 3 + 6, mineControlSize.Height + 9 + 2 + 36 + 2 + 6 + 3 + 4);
-    }
-
-    /// <summary>
-    /// 鳳MineControl腔弇离
-    /// </summary>
-    /// <returns></returns>
-    public Point MineControlLocation
-    {
-      get
-      {
-        return new Point(ClientRectangle.Left + 9 + 3, ClientRectangle.Top + 9 + 36 + 6 + 3);
-      }
     }
 
     private void drawFrame(Graphics g, Rectangle rect, bool frameWidthIsThree)
@@ -178,20 +99,6 @@ namespace App.Windows.XPMinesweeper.Controls
       #endregion
     }
 
-    public override string Text
-    {
-      get
-      {
-        return "";
-      }
-      set
-      {
-      }
-    }
-
-    /// <summary>
-    /// 植訧埭DLL笢腕剒猁腔訧埭
-    /// </summary>
     public Stream GetResource(string fileName)
     {
       if (fileName == null || fileName.Length == 0)
@@ -236,30 +143,6 @@ namespace App.Windows.XPMinesweeper.Controls
     {
       if (Reset != null)
         Reset(this, e);
-    }
-
-    public int RemainMineCount
-    {
-      get
-      {
-        return pnlLeft.Number;
-      }
-      set
-      {
-        pnlLeft.Number = value;
-      }
-    }
-
-    public int CountSecond
-    {
-      get
-      {
-        return pnlRight.Number;
-      }
-      set
-      {
-        pnlRight.Number = value;
-      }
     }
 
     public void StartTimer()

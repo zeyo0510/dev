@@ -4,8 +4,13 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  public class ResetButton: Button
+  public partial class ResetButton : Button
   {
+    private Color gray = Color.Silver;
+    private Color darkGray = Color.Gray;
+    private Pen lightPen,  darkGrayPen, grayPen;
+    private Brush grayBrush;
+    /************************************************/
     public ResetButton()
     {
       InitializeComponent();
@@ -15,36 +20,6 @@ namespace App.Windows.XPMinesweeper.Controls
       Width = 26;
       Height = 26;
     }
-
-    /// <summary> 
-    /// 燴垀衄淏婓妏蚚腔訧埭﹝
-    /// </summary>
-    protected override void Dispose( bool disposing )
-    {
-      if( disposing )
-      {
-        darkGrayPen.Dispose();
-        lightPen.Dispose();
-        grayPen.Dispose();
-        grayBrush.Dispose();
-      }
-      base.Dispose( disposing );
-    }
-
-    #region 郪璃扢數汜傖腔測鎢
-    /// <summary>
-    /// 扢數盓厥垀剒腔源楊 - 祥猁妏蚚測鎢晤憮党蜊
-    /// 森源楊腔囀﹝
-    /// </summary>
-    private void InitializeComponent()
-    {
-      Name = "resetButton";
-      darkGrayPen = new Pen(darkGray, 1);
-      lightPen = new Pen(Color.White, 1);
-      grayPen = new Pen(gray, 1);
-      grayBrush = new SolidBrush(gray);
-    }
-    #endregion
 
     protected override CreateParams CreateParams
     {
@@ -56,11 +31,6 @@ namespace App.Windows.XPMinesweeper.Controls
         return cp;
       }
     }
-
-    private Color gray = Color.Silver;
-    private Color darkGray = Color.Gray;
-    private Pen lightPen,  darkGrayPen, grayPen;
-    private Brush grayBrush;
 
     protected override void OnPaint(PaintEventArgs e)
     {

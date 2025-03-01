@@ -1,24 +1,21 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Zeyo
- * Date: 2025-03-01
- * Time: 16:22
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using App.Windows.XPMinesweeper.Core;
-
+/************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  public class MineControl : Control
+  public partial class MineControl : Control
   {
-    /// <summary>
-    /// Constructor
-    /// </summary>
+    private const int cellSize = 16;
+    private Color gray = Color.Silver;
+    private Color darkGray = Color.Gray;
+    private Brush grayBrush, darkGrayBrush, brush1, brush2, brush3, brush4, brush5, brush6, brush7, brush8, doubtBrush, redBrush;
+    private Pen lightPen,  darkGrayPen;
+    private Font font;
+    private Bitmap imgMarked, imgNotDiscovery, imgMarkedWrong;
+    /************************************************/
     public MineControl()
     {
       InitializeComponent();
@@ -29,73 +26,7 @@ namespace App.Windows.XPMinesweeper.Controls
       Width = cellSize * 9;
       Height = cellSize * 9;
     }
-
-    /// <summary> 
-    /// 燴垀衄淏婓妏蚚腔訧埭﹝
-    /// </summary>
-    protected override void Dispose( bool disposing )
-    {
-      if( disposing )
-      {
-        grayBrush.Dispose();
-        darkGrayBrush.Dispose();
-        darkGrayPen.Dispose();
-        lightPen.Dispose();
-        font.Dispose();
-        brush1.Dispose();
-        brush2.Dispose();
-        brush3.Dispose();
-        brush4.Dispose();
-        brush5.Dispose();
-        brush6.Dispose();
-        brush7.Dispose();
-        brush8.Dispose();
-        redBrush.Dispose();
-        doubtBrush.Dispose();
-        imgMarked.Dispose();
-        imgNotDiscovery.Dispose();
-        imgMarkedWrong.Dispose();
-      }
-      base.Dispose( disposing );
-    }
-
-    private const int cellSize = 16;
-    private Color gray = Color.Silver;
-    private Color darkGray = Color.Gray;
-    private Brush grayBrush, darkGrayBrush, brush1, brush2, brush3, brush4, brush5, brush6, brush7, brush8, doubtBrush, redBrush;
-    private Pen lightPen,  darkGrayPen;
-    private Font font;
-    private Bitmap imgMarked, imgNotDiscovery, imgMarkedWrong;
-
-    #region 郪璃扢數汜傖腔測鎢
-    /// <summary>
-    /// 扢數盓厥垀剒腔源楊 - 祥猁妏蚚測鎢晤憮党蜊
-    /// 森源楊腔囀﹝
-    /// </summary>
-    private void InitializeComponent()
-    {
-      this.Name = "mineControl";
-      grayBrush = new SolidBrush(gray);
-      darkGrayBrush = new SolidBrush(darkGray);
-      redBrush = new SolidBrush(Color.Red);
-      darkGrayPen = new Pen(darkGray, 1);
-      lightPen = new Pen(Color.White, 1);
-      font = new Font("Arial Black", 9, FontStyle.Regular);
-      brush1 = new SolidBrush(Color.Blue);
-      brush2 = new SolidBrush(Color.Green);
-      brush3 = new SolidBrush(Color.Red);
-      brush4 = new SolidBrush(Color.Navy);
-      brush5 = new SolidBrush(Color.Maroon);
-      brush6 = new SolidBrush(Color.Teal);
-      brush7 = new SolidBrush(Color.Black);
-      brush8 = new SolidBrush(Color.Gray);
-      doubtBrush = new SolidBrush(Color.Black);
-      imgMarked =  getBitmap("Marked.png");
-      imgNotDiscovery = getBitmap("NotDiscovery.png");
-      imgMarkedWrong = getBitmap("MarkedWrong.png");
-    }
-    #endregion
-
+    /************************************************/
     private Bitmap getBitmap(string fileName)
     {
       Image img =   Image.FromStream(GetResource(fileName));
@@ -105,26 +36,7 @@ namespace App.Windows.XPMinesweeper.Controls
       bmp.MakeTransparent(bmp.GetPixel(1, 1));
       return bmp;
     }
-
-    private Mines mines;
-
-    /// <summary>
-    /// Mines
-    /// </summary>
-    public Mines Mines
-    {
-      get
-      {
-        return mines;
-      }
-      set
-      {
-        mines = value;
-        if (mines != null)
-          mines.OnMineStatusChange += new MineStatusChangeEventHandler(mineStatusChange);
-      }
-    }
-
+    /************************************************/
     protected override void OnPaint(PaintEventArgs e)
     {
       if (mines == null)
@@ -144,7 +56,7 @@ namespace App.Windows.XPMinesweeper.Controls
         }
       }
     }
-
+    /************************************************/
     private Rectangle calcRect(Rectangle rect, int x, int y)
     {
       Rectangle result = new Rectangle(ClientRectangle.Left + x * cellSize, ClientRectangle.Top + y * cellSize, cellSize, cellSize);
@@ -282,17 +194,6 @@ namespace App.Windows.XPMinesweeper.Controls
           return brush8;
         default:
           return null;
-      }
-    }
-
-    public override string Text
-    {
-      get
-      {
-        return "";
-      }
-      set
-      {
       }
     }
 
