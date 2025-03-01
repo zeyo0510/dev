@@ -12,6 +12,11 @@ namespace App.Windows.XPMinesweeper.Dialogs
       this.InitializeComponent();
     }
     /************************************************/
+    private void okButton_Click(object sender, EventArgs e)
+    {
+      DialogResult = DialogResult.OK;
+    }
+    /************************************************/
     private static int strToInt(string text)
     {
       if (Regex.IsMatch(text, @"^-?\d+$"))
@@ -24,15 +29,15 @@ namespace App.Windows.XPMinesweeper.Dialogs
     {
       bool result;
       CustomDialog cg = new CustomDialog();
-      cg.tbHeight.Text = height.ToString();
-      cg.tbWidth.Text = width.ToString();
-      cg.tbMineCount.Text = mineCount.ToString();
+      cg.heightTextBox.Text = height.ToString();
+      cg.widthTextBox.Text = width.ToString();
+      cg.minesTextBox.Text = mineCount.ToString();
       cg.Location = location;
       if (cg.ShowDialog(parent) == DialogResult.OK)
       {
-        width = strToInt(cg.tbWidth.Text);
-        height = strToInt(cg.tbHeight.Text);
-        mineCount = strToInt(cg.tbMineCount.Text);
+        width = strToInt(cg.widthTextBox.Text);
+        height = strToInt(cg.heightTextBox.Text);
+        mineCount = strToInt(cg.minesTextBox.Text);
         result = true;
       }
       else
@@ -40,11 +45,6 @@ namespace App.Windows.XPMinesweeper.Dialogs
       cg.Dispose();
       cg = null;
       return result;
-    }
-    /************************************************/
-    private void btnOK_Click(object sender, System.EventArgs e)
-    {
-      DialogResult = DialogResult.OK;
     }
   }
 }

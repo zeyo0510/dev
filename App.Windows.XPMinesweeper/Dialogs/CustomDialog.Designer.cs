@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Dialogs
@@ -22,129 +23,123 @@ namespace App.Windows.XPMinesweeper.Dialogs
     /************************************************/
     private void InitializeComponent()
     {
-      this.lblHeight = new Label();
-      this.lblWidth = new Label();
-      this.lblMineCount = new Label();
-      this.tbHeight = new TextBox();
-      this.tbWidth = new TextBox();
-      this.tbMineCount = new TextBox();
-      this.btnOK = new Button();
-      this.btnCancel = new Button();
+      this.heightLabel   = new Label();
+      this.heightTextBox = new TextBox();
+      this.widthLabel    = new Label();
+      this.widthTextBox  = new TextBox();
+      this.minesLabel    = new Label();
+      this.minesTextBox  = new TextBox();
+      this.okButton      = new Button();
+      this.cancelButton  = new Button();
       /************************************************/
       this.SuspendLayout();
       /************************************************/
-      // 
-      // lblHeight
-      // 
-      this.lblHeight.AutoSize = true;
-      this.lblHeight.Location = new System.Drawing.Point(12, 24);
-      this.lblHeight.Name = "lblHeight";
-      this.lblHeight.Size = new System.Drawing.Size(54, 17);
-      this.lblHeight.TabIndex = 0;
-      this.lblHeight.Text = "詢僅(&H):";
-      // 
-      // lblWidth
-      // 
-      this.lblWidth.AutoSize = true;
-      this.lblWidth.Location = new System.Drawing.Point(12, 52);
-      this.lblWidth.Name = "lblWidth";
-      this.lblWidth.Size = new System.Drawing.Size(54, 17);
-      this.lblWidth.TabIndex = 1;
-      this.lblWidth.Text = "遵僅(&W):";
-      // 
-      // lblMineCount
-      // 
-      this.lblMineCount.AutoSize = true;
-      this.lblMineCount.Location = new System.Drawing.Point(12, 80);
-      this.lblMineCount.Name = "lblMineCount";
-      this.lblMineCount.Size = new System.Drawing.Size(54, 17);
-      this.lblMineCount.TabIndex = 2;
-      this.lblMineCount.Text = "濘杅(&M):";
-      // 
-      // tbHeight
-      // 
-      this.tbHeight.BorderStyle = BorderStyle.FixedSingle;
-      this.tbHeight.Location = new System.Drawing.Point(67, 20);
-      this.tbHeight.MaxLength = 5;
-      this.tbHeight.Name = "tbHeight";
-      this.tbHeight.Size = new System.Drawing.Size(40, 21);
-      this.tbHeight.TabIndex = 3;
-      this.tbHeight.Text = "";
-      // 
-      // tbWidth
-      // 
-      this.tbWidth.BorderStyle = BorderStyle.FixedSingle;
-      this.tbWidth.Location = new System.Drawing.Point(67, 48);
-      this.tbWidth.MaxLength = 5;
-      this.tbWidth.Name = "tbWidth";
-      this.tbWidth.Size = new System.Drawing.Size(40, 21);
-      this.tbWidth.TabIndex = 4;
-      this.tbWidth.Text = "";
-      // 
-      // tbMineCount
-      // 
-      this.tbMineCount.BorderStyle = BorderStyle.FixedSingle;
-      this.tbMineCount.Location = new System.Drawing.Point(67, 76);
-      this.tbMineCount.MaxLength = 5;
-      this.tbMineCount.Name = "tbMineCount";
-      this.tbMineCount.Size = new System.Drawing.Size(40, 21);
-      this.tbMineCount.TabIndex = 5;
-      this.tbMineCount.Text = "";
-      // 
-      // btnOK
-      // 
-      this.btnOK.FlatStyle = FlatStyle.Popup;
-      this.btnOK.Location = new System.Drawing.Point(124, 32);
-      this.btnOK.Name = "btnOK";
-      this.btnOK.Size = new System.Drawing.Size(48, 23);
-      this.btnOK.TabIndex = 6;
-      this.btnOK.Text = "隅";
-      this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-      // 
-      // btnCancel
-      // 
-      this.btnCancel.DialogResult = DialogResult.Cancel;
-      this.btnCancel.FlatStyle = FlatStyle.Popup;
-      this.btnCancel.Location = new System.Drawing.Point(124, 66);
-      this.btnCancel.Name = "btnCancel";
-      this.btnCancel.Size = new System.Drawing.Size(48, 23);
-      this.btnCancel.TabIndex = 7;
-      this.btnCancel.Text = "秏";
-      // 
-      // frmCustomGame
-      // 
-      this.AcceptButton = this.btnOK;
-      this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
-      this.CancelButton = this.btnCancel;
-      this.ClientSize = new System.Drawing.Size(192, 121);
-      this.Controls.Add(this.btnCancel);
-      this.Controls.Add(this.btnOK);
-      this.Controls.Add(this.tbMineCount);
-      this.Controls.Add(this.tbWidth);
-      this.Controls.Add(this.tbHeight);
-      this.Controls.Add(this.lblMineCount);
-      this.Controls.Add(this.lblWidth);
-      this.Controls.Add(this.lblHeight);
-      this.FormBorderStyle = FormBorderStyle.FixedDialog;
-      this.HelpButton = true;
-      this.MaximizeBox = false;
-      this.MinimizeBox = false;
-      this.Name = "frmCustomGame";
-      this.ShowInTaskbar = false;
-      this.SizeGripStyle = SizeGripStyle.Show;
-      this.StartPosition = FormStartPosition.Manual;
-      this.Text = "赻隅砱濘";
+      // heightLabel
+      {
+        this.heightLabel.Name = "heightLabel";
+        this.heightLabel.AutoSize = true;
+        this.heightLabel.Location = new Point(12, 24);
+        this.heightLabel.Size = new Size(54, 17);
+        this.heightLabel.Text = "&Height:";
+      }
+      // heightTextBox
+      {
+        this.heightTextBox.Name = "heightTextBox";
+        this.heightTextBox.BorderStyle = BorderStyle.FixedSingle;
+        this.heightTextBox.Location = new Point(67, 20);
+        this.heightTextBox.MaxLength = 5;
+        this.heightTextBox.Size = new Size(40, 21);
+        this.heightTextBox.Text = "";
+      }
+      // widthLabel
+      {
+        this.widthLabel.Name = "widthLabel";
+        this.widthLabel.AutoSize = true;
+        this.widthLabel.Location = new Point(12, 52);
+        this.widthLabel.Size = new Size(54, 17);
+        this.widthLabel.Text = "&Width:";
+      }
+      // widthTextBox
+      {
+        this.widthTextBox.Name = "widthTextBox";
+        this.widthTextBox.BorderStyle = BorderStyle.FixedSingle;
+        this.widthTextBox.Location = new Point(67, 48);
+        this.widthTextBox.MaxLength = 5;
+        this.widthTextBox.Size = new Size(40, 21);
+        this.widthTextBox.Text = "";
+      }
+      // minesLabel
+      {
+        this.minesLabel.Name = "minesLabel";
+        this.minesLabel.AutoSize = true;
+        this.minesLabel.Location = new Point(12, 80);
+        this.minesLabel.Size = new Size(54, 17);
+        this.minesLabel.Text = "&Mines:";
+      }
+      // minesTextBox
+      {
+        this.minesTextBox.Name = "minesTextBox";
+        this.minesTextBox.BorderStyle = BorderStyle.FixedSingle;
+        this.minesTextBox.Location = new Point(67, 76);
+        this.minesTextBox.MaxLength = 5;
+        this.minesTextBox.Size = new Size(40, 21);
+        this.minesTextBox.Text = "";
+      }
+      // okButton
+      {
+        this.okButton.Name = "okButton";
+        this.okButton.FlatStyle = FlatStyle.Popup;
+        this.okButton.Location = new Point(124, 32);
+        this.okButton.Size = new Size(48, 23);
+        this.okButton.Text = "OK";
+        /************************************************/
+        this.okButton.Click += this.okButton_Click;
+      }
+      // cancelButton
+      {
+        this.cancelButton.Name = "cancelButton";
+        this.cancelButton.DialogResult = DialogResult.Cancel;
+        this.cancelButton.FlatStyle = FlatStyle.Popup;
+        this.cancelButton.Location = new Point(124, 66);
+        this.cancelButton.Size = new Size(48, 23);
+        this.cancelButton.Text = "Cancel";
+      }
+      // CustomDialog
+      {
+        this.Name = "CustomDialog";
+        this.AcceptButton = this.okButton;
+        this.AutoScaleBaseSize = new Size(6, 14);
+        this.CancelButton = this.cancelButton;
+        this.ClientSize = new Size(192, 121);
+        this.FormBorderStyle = FormBorderStyle.FixedDialog;
+        this.HelpButton = true;
+        this.MaximizeBox = false;
+        this.MinimizeBox = false;
+        this.ShowInTaskbar = false;
+        this.SizeGripStyle = SizeGripStyle.Show;
+        this.StartPosition = FormStartPosition.Manual;
+        this.Text = "Custom Field";
+        /************************************************/
+        this.Controls.Add(this.cancelButton);
+        this.Controls.Add(this.okButton);
+        this.Controls.Add(this.minesTextBox);
+        this.Controls.Add(this.widthTextBox);
+        this.Controls.Add(this.heightTextBox);
+        this.Controls.Add(this.minesLabel);
+        this.Controls.Add(this.widthLabel);
+        this.Controls.Add(this.heightLabel);
+      }
       /************************************************/
       this.ResumeLayout(false);
     }
     /************************************************/
-    private Label lblHeight;
-    private Label lblWidth;
-    private Label lblMineCount;
-    internal TextBox tbHeight;
-    internal TextBox tbWidth;
-    internal TextBox tbMineCount;
-    private Button btnOK;
-    private Button btnCancel;
+    private  Label   heightLabel   = null;
+    internal TextBox heightTextBox = null;
+    private  Label   widthLabel    = null;
+    internal TextBox widthTextBox  = null;
+    private  Label   minesLabel    = null;
+    internal TextBox minesTextBox  = null;
+    private  Button  okButton      = null;
+    private  Button  cancelButton  = null;
   }
 }
