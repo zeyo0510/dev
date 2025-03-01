@@ -5,13 +5,13 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Dialogs
 {
-  public partial class frmCustomGame : Form
+  public partial class CustomDialog : Form
   {
-    public frmCustomGame()
+    public CustomDialog()
     {
       this.InitializeComponent();
     }
-
+    /************************************************/
     private static int strToInt(string text)
     {
       if (Regex.IsMatch(text, @"^-?\d+$"))
@@ -19,11 +19,11 @@ namespace App.Windows.XPMinesweeper.Dialogs
       else
         return 0;
     }
-
+    /************************************************/
     public static bool ShowSelf(IWin32Window parent, Point location, ref int width, ref int height, ref int mineCount)
     {
       bool result;
-      frmCustomGame cg = new frmCustomGame();
+      CustomDialog cg = new CustomDialog();
       cg.tbHeight.Text = height.ToString();
       cg.tbWidth.Text = width.ToString();
       cg.tbMineCount.Text = mineCount.ToString();
@@ -41,9 +41,7 @@ namespace App.Windows.XPMinesweeper.Dialogs
       cg = null;
       return result;
     }
-
-
-
+    /************************************************/
     private void btnOK_Click(object sender, System.EventArgs e)
     {
       DialogResult = DialogResult.OK;

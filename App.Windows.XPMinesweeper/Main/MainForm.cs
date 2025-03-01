@@ -3,6 +3,7 @@ using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using App.Windows.XPMinesweeper.Controls;
 using App.Windows.XPMinesweeper.Dialogs;
 using Minesweeper;
 /************************************************/
@@ -93,11 +94,11 @@ namespace App.Windows.XPMinesweeper.Main
       switch (m.Msg)
       {
         case WM_LBUTTONDOWN:
-          if (mcMine.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(frmCustomGame))
+          if (mcMine.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
             mpMine.ChangeFace(2);
           break;
         case WM_LBUTTONUP:
-          if (mcMine.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(frmCustomGame))
+          if (mcMine.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
             mpMine.ChangeFace(1);
           break;
       }
@@ -187,7 +188,7 @@ namespace App.Windows.XPMinesweeper.Main
       int height = mines.Height;
       int width = mines.Width;
       int mineCount = mines.Count;
-      if (frmCustomGame.ShowSelf(this, PointToScreen(mpMine.Location), ref width, ref height, ref mineCount))
+      if (CustomDialog.ShowSelf(this, PointToScreen(mpMine.Location), ref width, ref height, ref mineCount))
       {
         miNovice.Checked = false;
         miMaster.Checked = false;

@@ -62,8 +62,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\LEDPanel.cs" />
+    <Compile Include="Controls\LEDPanel.Designer.cs">
+      <DependentUpon>LEDPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MineControl.cs" />
+    <Compile Include="Controls\MineControl.Designer.cs">
+      <DependentUpon>MineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineControlPaintEventArgs.cs" />
+    <Compile Include="Controls\MineException.cs" />
     <Compile Include="Controls\MinePanel.cs" />
+    <Compile Include="Controls\MinePanel.Designer.cs">
+      <DependentUpon>MinePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ResetButton.cs" />
+    <Compile Include="Controls\ResetButton.Designer.cs">
+      <DependentUpon>ResetButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\Mine.cs" />
     <Compile Include="Dialogs\CustomDialog.cs" />
     <Compile Include="Dialogs\CustomDialog.Designer.cs">
@@ -77,12 +93,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controls\MineControl.resx">
-      <DependentUpon>MineControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\MinePanel.resx">
-      <DependentUpon>MinePanel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\CustomDialog.resx">
       <DependentUpon>CustomDialog.cs</DependentUpon>
     </EmbeddedResource>

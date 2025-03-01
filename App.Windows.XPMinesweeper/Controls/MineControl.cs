@@ -1,13 +1,19 @@
+ï»¿/*
+ * Created by SharpDevelop.
+ * User: Zeyo
+ * Date: 2025-03-01
+ * Time: 16:22
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
 using System;
 using System.Drawing;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
+using Minesweeper;
 
-namespace Minesweeper
+namespace App.Windows.XPMinesweeper.Controls
 {
-  /// <summary>
-  /// MineControl
-  /// </summary>
   public class MineControl : Control
   {
     /// <summary>
@@ -25,7 +31,7 @@ namespace Minesweeper
     }
 
     /// <summary> 
-    /// ÇåÀíËùÓĞÕıÔÚÊ¹ÓÃµÄ×ÊÔ´¡£
+    /// ï’ç‡´å€è¡„æ·å©“å¦èššè…”è¨§åŸ­ï¹
     /// </summary>
     protected override void Dispose( bool disposing )
     {
@@ -61,10 +67,10 @@ namespace Minesweeper
     private Font font;
     private Bitmap imgMarked, imgNotDiscovery, imgMarkedWrong;
 
-    #region ×é¼şÉè¼ÆÆ÷Éú³ÉµÄ´úÂë
+    #region éƒªç’ƒæ‰¢æ•¸ïœ‡æ±œå‚–è…”æ¸¬é¢
     /// <summary>
-    /// Éè¼ÆÆ÷Ö§³ÖËùĞèµÄ·½·¨ - ²»ÒªÊ¹ÓÃ´úÂë±à¼­Æ÷ĞŞ¸Ä
-    /// ´Ë·½·¨µÄÄÚÈİ¡£
+    /// æ‰¢æ•¸ïœ‡ç›“å¥å€å‰’è…”æºæ¥Š - ç¥¥çŒå¦èššæ¸¬é¢æ™¤æ†®ïœ‡å…šèœŠ
+    /// æ£®æºæ¥Šè…”å›€ï §ï¹
     /// </summary>
     private void InitializeComponent()
     {
@@ -453,7 +459,7 @@ namespace Minesweeper
     }
 
     /// <summary>
-    /// ´Ó×ÊÔ´DLLÖĞÈ¡µÃĞèÒªµÄ×ÊÔ´
+    /// æ¤è¨§åŸ­DLLç¬¢ïŸ«è…•å‰’çŒè…”è¨§åŸ­
     /// </summary>
     public Stream GetResource(string fileName)
     {
@@ -465,10 +471,10 @@ namespace Minesweeper
       string resourceName = "App.Windows.XPMinesweeper.Resources." + fileName.Replace("\\", ".");
       System.Reflection.Assembly assembly = System.Reflection.Assembly.GetAssembly(resourceType);
       if (assembly == null)
-        throw new MineException("ÎŞ·¨×°ÔØ×ÊÔ´ÎÄ¼ş: " + resourceType.Namespace + ".dll");
+        throw new MineException("æ‹¸æ¥Šèš¾å©¥è¨§åŸ­æ…ç’ƒ: " + resourceType.Namespace + ".dll");
       stream = System.Reflection.Assembly.GetAssembly(resourceType).GetManifestResourceStream(resourceName);
       if (stream == null)
-        throw new MineException("ÎŞ·¨È¡µÃ×ÊÔ´: " + fileName);
+        throw new MineException("æ‹¸æ¥ŠïŸ«è…•è¨§åŸ­: " + fileName);
       return stream;
     }
 
@@ -481,52 +487,4 @@ namespace Minesweeper
     }
 
   }
-
-  public class MineControlPaintEventArgs: EventArgs
-  {
-    private int m_X, m_Y;
-    private Rectangle clipRectangle;
-    private Graphics g;
-
-    public Graphics Graphics
-    {
-      get
-      {
-        return g;
-      }
-    }
-
-    public Rectangle ClipRectangle
-    {
-      get
-      {
-        return clipRectangle;
-      }
-    }
-
-    public int X
-    {
-      get
-      {
-        return m_X;
-      }
-    }
-
-    public int Y
-    {
-      get
-      {
-        return m_Y;
-      }
-    }
-
-    public MineControlPaintEventArgs(Graphics graphics, Rectangle clipRect, int x, int y)
-    {
-      m_X = x;
-      m_Y = y;
-      clipRectangle = clipRect;
-      g = graphics;
-    }
-  }
-
 }

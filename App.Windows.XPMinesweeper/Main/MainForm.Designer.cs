@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Windows.Forms;
+using App.Windows.XPMinesweeper.Controls;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Main
 {
@@ -45,8 +46,8 @@ namespace App.Windows.XPMinesweeper.Main
       this.miUsingHelp = new MenuItem();
       this.miS5 = new MenuItem();
       this.miAbout = new MenuItem();
-      this.mpMine = new Minesweeper.MinePanel();
-      this.mcMine = new Minesweeper.MineControl();
+      this.mpMine = new MinePanel();
+      this.mcMine = new MineControl();
       /************************************************/
       this.mpMine.SuspendLayout();
       this.SuspendLayout();
@@ -259,8 +260,8 @@ namespace App.Windows.XPMinesweeper.Main
     private MenuItem miSound;
     private MenuItem miHiscore;
     private MenuItem miExit;
-    private Minesweeper.MinePanel mpMine;
-    private Minesweeper.MineControl mcMine;
+    private MinePanel mpMine;
+    private MineControl mcMine;
     private MenuItem miNovice;
     private MenuItem miMaster;
   }

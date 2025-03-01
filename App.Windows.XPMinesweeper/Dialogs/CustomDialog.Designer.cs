@@ -4,7 +4,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Dialogs
 {
-  partial class frmCustomGame
+  partial class CustomDialog
   {
     private Container components = null;
     /************************************************/
@@ -30,7 +30,9 @@ namespace App.Windows.XPMinesweeper.Dialogs
       this.tbMineCount = new TextBox();
       this.btnOK = new Button();
       this.btnCancel = new Button();
+      /************************************************/
       this.SuspendLayout();
+      /************************************************/
       // 
       // lblHeight
       // 
@@ -132,6 +134,7 @@ namespace App.Windows.XPMinesweeper.Dialogs
       this.SizeGripStyle = SizeGripStyle.Show;
       this.StartPosition = FormStartPosition.Manual;
       this.Text = "赻隅砱濘";
+      /************************************************/
       this.ResumeLayout(false);
     }
     /************************************************/

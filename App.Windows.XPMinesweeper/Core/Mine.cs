@@ -1,4 +1,5 @@
 using System;
+using App.Windows.XPMinesweeper.Controls;
 
 namespace Minesweeper
 {
