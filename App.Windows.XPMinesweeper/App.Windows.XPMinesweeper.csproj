@@ -80,7 +80,34 @@
     <Compile Include="Controls\ResetButton.Designer.cs">
       <DependentUpon>ResetButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\GameState.cs" />
     <Compile Include="Core\Mine.cs" />
+    <Compile Include="Core\Mine.Doubt.cs">
+      <DependentUpon>Mine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Mine.Index.cs">
+      <DependentUpon>Mine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Mines.AllowMarkDoubt.cs">
+      <DependentUpon>Mines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Mines.Count.cs">
+      <DependentUpon>Mines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Mines.cs" />
+    <Compile Include="Core\Mines.GameState.cs" />
+    <Compile Include="Core\Mines.Height.cs">
+      <DependentUpon>Mines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Mines.Width.cs">
+      <DependentUpon>Mines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\MineStatus.cs" />
+    <Compile Include="Core\MineStatusChangeEventArgs.cs" />
+    <Compile Include="Core\MineStatusChangeEventArgs.Mine.cs">
+      <DependentUpon>MineStatusChangeEventArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\MineStatusChangeEventHandler.cs" />
     <Compile Include="Dialogs\CustomDialog.cs" />
     <Compile Include="Dialogs\CustomDialog.Designer.cs">
       <DependentUpon>CustomDialog.cs</DependentUpon>

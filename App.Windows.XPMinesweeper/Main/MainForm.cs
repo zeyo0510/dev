@@ -4,44 +4,110 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using App.Windows.XPMinesweeper.Controls;
+using App.Windows.XPMinesweeper.Core;
 using App.Windows.XPMinesweeper.Dialogs;
-using Minesweeper;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Main
 {
   internal partial class MainForm : Form, IMessageFilter
   {
+    private Mines mines = new Mines();
+    
     public MainForm()
     {
       this.InitializeComponent();
 
       mcMine.Mines = mines;
     }
-
-
-
-
-
-    private Mines mines = new Mines();
-
-    private void miExit_Click(object sender, System.EventArgs e)
-    {
-      Close();
-    }
-
-    private void frmMinesweeper_Load(object sender, System.EventArgs e)
+    /************************************************/
+    private void MainForm_Load(object sender, System.EventArgs e)
     {
       Application.AddMessageFilter(this);
       mpMine.Reset += new EventHandler(reset);
       mcMine.DigOrMark += new EventHandler(AfterDigOrMark);
       reset(this, e);
     }
-
-    private void miGameStart_Click(object sender, System.EventArgs e)
+    /************************************************/
+    private void newMenuItem_Click(object sender, System.EventArgs e)
     {
       reset(this, e);
     }
-
+    /************************************************/
+    private void beginnerMenuItem_Click(object sender, System.EventArgs e)
+    {
+      beginnerMenuItem.Checked = true;
+      intermediateMenuItem.Checked = false;
+      expertMenuItem.Checked = false;
+      customMenuItem.Checked = false;
+      mines.Clear(9, 9, 10);
+      reset(this, EventArgs.Empty);
+    }
+    /************************************************/
+    private void intermediateMenuItem_Click(object sender, System.EventArgs e)
+    {
+      beginnerMenuItem.Checked = false;
+      intermediateMenuItem.Checked = true;
+      expertMenuItem.Checked = false;
+      customMenuItem.Checked = false;
+      mines.Clear(16, 16, 40);
+      reset(this, EventArgs.Empty);
+    }
+    /************************************************/
+    private void expertMenuItem_Click(object sender, System.EventArgs e)
+    {
+      beginnerMenuItem.Checked = false;
+      intermediateMenuItem.Checked = false;
+      expertMenuItem.Checked = true;
+      customMenuItem.Checked = false;
+      mines.Clear(30, 16, 99);
+      reset(this, EventArgs.Empty);
+    }
+    /************************************************/
+    private void customMenuItem_Click(object sender, System.EventArgs e)
+    {
+      int height = mines.Height;
+      int width = mines.Width;
+      int mineCount = mines.Count;
+      if (CustomDialog.ShowSelf(this, PointToScreen(mpMine.Location), ref width, ref height, ref mineCount))
+      {
+        beginnerMenuItem.Checked = false;
+        intermediateMenuItem.Checked = false;
+        expertMenuItem.Checked = false;
+        customMenuItem.Checked = true;
+        mines.Clear(width, height, mineCount);
+        reset(this, EventArgs.Empty);
+      }
+    }
+    /************************************************/
+    private void marksMenuItem_Click(object sender, System.EventArgs e)
+    {
+      MenuItem mi = sender as MenuItem;
+      if (mi != null)
+      {
+        mi.Checked = !mi.Checked;
+        mines.AllowMarkDoubt = mi.Checked;
+      }
+    }
+    /************************************************/
+    private void exitMenuItem_Click(object sender, System.EventArgs e)
+    {
+      Close();
+    }
+    /************************************************/
+    private void aboutMenuItem_Click(object sender, System.EventArgs e)
+    {
+      Icon ico = new Icon(GetResource("Mine.ico"), 32, 32);
+      try
+      {
+        ShellAbout(Handle, Text, "by Icebird", ico.Handle);
+      }
+      finally
+      {
+        ico.Dispose();
+        ico = null;
+      }
+    }
+    /************************************************/
     private void reset(object sender, EventArgs e)
     {
       prevGameState = GameState.NotStarted;
@@ -55,7 +121,7 @@ namespace App.Windows.XPMinesweeper.Main
       mpMine.CountSecond = 0;
       mpMine.ChangeFace(1);
     }
-
+    
     private void frmMinesweeper_SizeChanged(object sender, System.EventArgs e)
     {
       mpMine.ArrangeChildChildren();
@@ -106,16 +172,6 @@ namespace App.Windows.XPMinesweeper.Main
     }
     #endregion
 
-    private void miMark_Click(object sender, System.EventArgs e)
-    {
-      MenuItem mi = sender as MenuItem;
-      if (mi != null)
-      {
-        mi.Checked = !mi.Checked;
-        mines.AllowMarkDoubt = mi.Checked;
-      }
-    }
-
     [DllImport("shell32.dll", EntryPoint="ShellAbout")]
     private static extern int ShellAbout(IntPtr hwnd, string szApp, string szOtherStuff, IntPtr hIcon);
 
@@ -137,66 +193,6 @@ namespace App.Windows.XPMinesweeper.Main
       if (stream == null)
         throw new MineException("拸楊腕訧埭: " + fileName);
       return stream;
-    }
-
-    private void miAbout_Click(object sender, System.EventArgs e)
-    {
-      Icon ico = new Icon(GetResource("Mine.ico"), 32, 32);
-      try
-      {
-        ShellAbout(Handle, Text, "by Icebird", ico.Handle);
-      }
-      finally
-      {
-        ico.Dispose();
-        ico = null;
-      }
-    }
-
-    private void miNovice_Click(object sender, System.EventArgs e)
-    {
-      miNovice.Checked = true;
-      miMaster.Checked = false;
-      miExpert.Checked = false;
-      miCustomGame.Checked = false;
-      mines.Clear(9, 9, 10);
-      reset(this, EventArgs.Empty);
-    }
-
-    private void miMaster_Click(object sender, System.EventArgs e)
-    {
-      miNovice.Checked = false;
-      miMaster.Checked = true;
-      miExpert.Checked = false;
-      miCustomGame.Checked = false;
-      mines.Clear(16, 16, 40);
-      reset(this, EventArgs.Empty);
-    }
-
-    private void miExpert_Click(object sender, System.EventArgs e)
-    {
-      miNovice.Checked = false;
-      miMaster.Checked = false;
-      miExpert.Checked = true;
-      miCustomGame.Checked = false;
-      mines.Clear(30, 16, 99);
-      reset(this, EventArgs.Empty);
-    }
-
-    private void miCustomGame_Click(object sender, System.EventArgs e)
-    {
-      int height = mines.Height;
-      int width = mines.Width;
-      int mineCount = mines.Count;
-      if (CustomDialog.ShowSelf(this, PointToScreen(mpMine.Location), ref width, ref height, ref mineCount))
-      {
-        miNovice.Checked = false;
-        miMaster.Checked = false;
-        miExpert.Checked = false;
-        miCustomGame.Checked = true;
-        mines.Clear(width, height, mineCount);
-        reset(this, EventArgs.Empty);
-      }
     }
   }
 }

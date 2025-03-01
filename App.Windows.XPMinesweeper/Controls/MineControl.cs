@@ -10,7 +10,7 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using Minesweeper;
+using App.Windows.XPMinesweeper.Core;
 
 namespace App.Windows.XPMinesweeper.Controls
 {
