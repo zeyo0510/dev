@@ -13,10 +13,9 @@ namespace App.Windows.XPMinesweeper.Controls
       if (disposing)
       {
         darkGrayPen.Dispose();
-        lightPen.Dispose();
-        rbReset.Dispose();
-        pnlLeft.Dispose();
-        pnlRight.Dispose();
+        resetMineButton.Dispose();
+        flagMineLED.Dispose();
+        durationMineLED.Dispose();
         ilLED.Dispose();
         tmrCount.Dispose();
       }
@@ -25,15 +24,7 @@ namespace App.Windows.XPMinesweeper.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      Name = "minePanel";
       darkGrayPen = new Pen(darkGray, 1);
-      lightPen = new Pen(Color.White, 1);
-      rbReset = new MineButton();
-      rbReset.Name = "rbReset";
-      rbReset.Text = "";
-      rbReset.Parent = this;
-      rbReset.Click += new EventHandler(OnReset);
-
       ilLED = new ImageList();
       ilLED.ImageSize = new Size(13, 23);
       string FileName = "0123456789-";
@@ -41,23 +32,46 @@ namespace App.Windows.XPMinesweeper.Controls
       {
         ilLED.Images.Add(getBitmap(FileName[i] + ".png", false));
       }
-
-      pnlLeft = new MineLED();
-      pnlLeft.Parent = this;
-      pnlLeft.Name = "pnlLeft";
-      pnlLeft.LEDImages = ilLED;
-      pnlRight = new MineLED();
-      pnlRight.Parent = this;
-      pnlRight.Name = "pnlRight";
-      pnlRight.LEDImages = ilLED;
-
+      /************************************************/
       tmrCount = new Timer();
-      tmrCount.Interval = 1000;
-      tmrCount.Tick += new EventHandler(tmrCount_Tick);
-      tmrCount.Stop();
+      /************************************************/
+      flagMineLED = new MineLED();
+      resetMineButton = new MineButton();
+      durationMineLED = new MineLED();
+      /************************************************/
+      // flagMineLED
+      {
+        flagMineLED.Name = "flagMineLED";
+        flagMineLED.Parent = this;
+        flagMineLED.LEDImages = ilLED;
+      }
+      // resetMineButton
+      {
+        resetMineButton.Name = "resetMineButton";
+        resetMineButton.Text = "";
+        resetMineButton.Parent = this;
+        resetMineButton.Click += new EventHandler(OnReset);
+      }
+      // durationMineLED
+      {
+        durationMineLED.Name = "durationMineLED";
+        durationMineLED.Parent = this;
+        durationMineLED.LEDImages = ilLED;
+      }
+      // MinePanel
+      {
+        base.Name = "MinePanel";
+      }
+      // tmrCount
+      {
+        tmrCount.Interval = 1000;
+        tmrCount.Tick += new EventHandler(tmrCount_Tick);
+        tmrCount.Stop();
+      }
     }
     /************************************************/
-    private MineButton rbReset;
-    private MineLED pnlLeft, pnlRight;
+    private MineLED flagMineLED = null;
+    private MineButton resetMineButton = null;
+    private MineLED durationMineLED = null;
   }
 }

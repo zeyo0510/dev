@@ -8,11 +8,11 @@ namespace App.Windows.XPMinesweeper.Controls
     {
       get
       {
-        return pnlLeft.Value;
+        return flagMineLED.Value;
       }
       set
       {
-        pnlLeft.Value = value;
+        flagMineLED.Value = value;
       }
     }
   }

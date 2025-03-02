@@ -9,13 +9,13 @@ namespace App.Windows.XPMinesweeper.Controls
   {
     private Color darkGray = Color.Gray;
 
-    private Pen lightPen,  darkGrayPen;
+    private Pen darkGrayPen;
 
     private ImageList ilLED;
 
     public MinePanel()
     {
-      InitializeComponent();
+      this.InitializeComponent();
 
       SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer |
         ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
@@ -29,7 +29,7 @@ namespace App.Windows.XPMinesweeper.Controls
 
     private void tmrCount_Tick(object sender, EventArgs e)
     {
-      pnlRight.Value = pnlRight.Value + 1;
+      durationMineLED.Value = durationMineLED.Value + 1;
     }
 
     private Bitmap getBitmap(string fileName, bool transparent)
@@ -67,23 +67,23 @@ namespace App.Windows.XPMinesweeper.Controls
 
     internal void ChangeFace(int faceID)
     {
-      if (rbReset.Image != null)
+      if (resetMineButton.Image != null)
       {
-        rbReset.Image.Dispose();
-        rbReset.Image = null;
+        resetMineButton.Image.Dispose();
+        resetMineButton.Image = null;
       }
-      rbReset.Image = getBitmap("Face" + faceID.ToString() + ".png", true);
+      resetMineButton.Image = getBitmap("Face" + faceID.ToString() + ".png", true);
     }
 
     public void ArrangeChildChildren()
     {
-      rbReset.Left = 3 + (ClientSize.Width - 3 - rbReset.Width) / 2;
-      rbReset.Top = 3 + (6 + 6 + 36 - rbReset.Height) / 2;
+      resetMineButton.Left = 3 + (ClientSize.Width - 3 - resetMineButton.Width) / 2;
+      resetMineButton.Top = 3 + (6 + 6 + 36 - resetMineButton.Height) / 2;
 
-      pnlLeft.Left = 3 + 6 + 7;
-      pnlLeft.Top = rbReset.Top;
-      pnlRight.Left = ClientSize.Width - 6 - 7 - pnlRight.Width;
-      pnlRight.Top = rbReset.Top;
+      flagMineLED.Left = 3 + 6 + 7;
+      flagMineLED.Top = resetMineButton.Top;
+      durationMineLED.Left = ClientSize.Width - 6 - 7 - durationMineLED.Width;
+      durationMineLED.Top = resetMineButton.Top;
     }
 
     public event EventHandler Reset;
