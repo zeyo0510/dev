@@ -54,11 +54,17 @@
     <Compile Include="Controls\MineButton.Painter.cs">
       <DependentUpon>MineButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MineControl.Painter.cs">
+      <DependentUpon>MineControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MineLED.cs" />
     <Compile Include="Controls\MineLED.Designer.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineLED.LEDImages.cs">
+      <DependentUpon>MineLED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineLED.Painter.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineLED.Value.cs">
@@ -93,6 +99,9 @@
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePanel.MineControlLocation.cs">
+      <DependentUpon>MinePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePanel.Painter.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePanel.RemainMineCount.cs">

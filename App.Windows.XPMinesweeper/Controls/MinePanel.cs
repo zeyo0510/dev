@@ -43,60 +43,9 @@ namespace App.Windows.XPMinesweeper.Controls
       return bmp;
     }
 
-    protected override void OnPaint(PaintEventArgs e)
-    {
-      Rectangle rect = ClientRectangle;
-      Graphics g = e.Graphics;
-
-      // Top Border
-      g.DrawLine(lightPen, rect.Left, rect.Top, rect.Right - 1, rect.Top);
-      g.DrawLine(lightPen, rect.Left, rect.Top + 1, rect.Right - 1, rect.Top + 1);
-      g.DrawLine(lightPen, rect.Left, rect.Top + 2, rect.Right - 1, rect.Top + 2);
-
-      //Left Border
-      g.DrawLine(lightPen, rect.Left, rect.Top, rect.Left, rect.Bottom - 1);
-      g.DrawLine(lightPen, rect.Left + 1, rect.Top, rect.Left + 1, rect.Bottom - 1);
-      g.DrawLine(lightPen, rect.Left + 2, rect.Top, rect.Left + 2, rect.Bottom - 1);
-
-      drawFrame(g, new Rectangle(rect.Left + 9, rect.Top + 9, rect.Width - 9 - 6, 36), false);
-
-      drawFrame(g, new Rectangle(rect.Left + 9, rect.Top + 9 + 36 + 6, rect.Width - 9 - 6, rect.Height - 9 - 36 - 6 - 6), true);
-    }
-
     public Size GetWindowClientSize(Size mineControlSize)
     {
       return new Size(mineControlSize.Width + 9 + 3 + 3 + 6, mineControlSize.Height + 9 + 2 + 36 + 2 + 6 + 3 + 4);
-    }
-
-    private void drawFrame(Graphics g, Rectangle rect, bool frameWidthIsThree)
-    {
-      #region Top Border
-      g.DrawLine(darkGrayPen, rect.Left, rect.Top, rect.Right - 1, rect.Top);
-      g.DrawLine(darkGrayPen, rect.Left, rect.Top + 1, rect.Right - 2, rect.Top + 1);
-      if (frameWidthIsThree)
-        g.DrawLine(darkGrayPen, rect.Left, rect.Top + 2, rect.Right - 3, rect.Top + 2);
-      #endregion
-
-      #region Bottom Border
-      g.DrawLine(lightPen, rect.Left + 1, rect.Bottom, rect.Right, rect.Bottom);
-      g.DrawLine(lightPen, rect.Left + 2, rect.Bottom - 1, rect.Right, rect.Bottom - 1);
-      if (frameWidthIsThree)
-        g.DrawLine(lightPen, rect.Left + 3, rect.Bottom - 2, rect.Right, rect.Bottom - 2);
-      #endregion
-
-      #region Left Border
-      g.DrawLine(darkGrayPen, rect.Left, rect.Top, rect.Left, rect.Bottom - 1);
-      g.DrawLine(darkGrayPen, rect.Left + 1, rect.Top, rect.Left + 1, rect.Bottom - 2);
-      if (frameWidthIsThree)
-        g.DrawLine(darkGrayPen, rect.Left + 2, rect.Top, rect.Left + 2, rect.Bottom - 3);
-      #endregion
-
-      #region Right Border
-      g.DrawLine(lightPen, rect.Right, rect.Top + 1, rect.Right, rect.Bottom);
-      g.DrawLine(lightPen, rect.Right - 1, rect.Top + 2, rect.Right - 1, rect.Bottom);
-      if (frameWidthIsThree)
-        g.DrawLine(lightPen, rect.Right - 2, rect.Top + 3, rect.Right - 2, rect.Bottom);
-      #endregion
     }
 
     public Stream GetResource(string fileName)
