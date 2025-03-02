@@ -48,6 +48,12 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\MineButton.Action.cs">
+      <DependentUpon>MineButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineButton.Painter.cs">
+      <DependentUpon>MineButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MineLED.cs" />
     <Compile Include="Controls\MineLED.Designer.cs">
       <DependentUpon>MineLED.cs</DependentUpon>

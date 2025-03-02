@@ -9,22 +9,17 @@ namespace App.Windows.XPMinesweeper.Controls
     {
       if (disposing)
       {
-        darkGrayPen.Dispose();
-        lightPen.Dispose();
-        grayPen.Dispose();
-        grayBrush.Dispose();
+        // do nothing...
       }
       base.Dispose(disposing);
     }
     /************************************************/
     private void InitializeComponent()
     {
-      this.darkGrayPen = new Pen(darkGray, 1);
-      this.lightPen    = new Pen(Color.White, 1);
-      this.grayPen     = new Pen(gray, 1);
-      this.grayBrush   = new SolidBrush(gray);
-      /************************************************/
-      base.Name = "resetButton";
+      base.Name        = "MineButton";
+      base.ClientSize  = new Size(24, 24);
+      base.MaximumSize = new Size(24, 24);
+      base.MinimumSize = new Size(24, 24);
     }
   }
 }
