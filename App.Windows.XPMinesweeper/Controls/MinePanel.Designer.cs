@@ -28,7 +28,7 @@ namespace App.Windows.XPMinesweeper.Controls
       Name = "minePanel";
       darkGrayPen = new Pen(darkGray, 1);
       lightPen = new Pen(Color.White, 1);
-      rbReset = new ResetButton();
+      rbReset = new MineButton();
       rbReset.Name = "rbReset";
       rbReset.Text = "";
       rbReset.Parent = this;
@@ -42,11 +42,11 @@ namespace App.Windows.XPMinesweeper.Controls
         ilLED.Images.Add(getBitmap(FileName[i] + ".png", false));
       }
 
-      pnlLeft = new LEDPanel();
+      pnlLeft = new MineLED();
       pnlLeft.Parent = this;
       pnlLeft.Name = "pnlLeft";
       pnlLeft.LEDImages = ilLED;
-      pnlRight = new LEDPanel();
+      pnlRight = new MineLED();
       pnlRight.Parent = this;
       pnlRight.Name = "pnlRight";
       pnlRight.LEDImages = ilLED;
@@ -57,7 +57,7 @@ namespace App.Windows.XPMinesweeper.Controls
       tmrCount.Stop();
     }
     /************************************************/
-    private ResetButton rbReset;
-    private LEDPanel pnlLeft, pnlRight;
+    private MineButton rbReset;
+    private MineLED pnlLeft, pnlRight;
   }
 }

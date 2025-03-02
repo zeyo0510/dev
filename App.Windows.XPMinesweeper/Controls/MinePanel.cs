@@ -29,7 +29,7 @@ namespace App.Windows.XPMinesweeper.Controls
 
     private void tmrCount_Tick(object sender, EventArgs e)
     {
-      pnlRight.Number = pnlRight.Number + 1;
+      pnlRight.Value = pnlRight.Value + 1;
     }
 
     private Bitmap getBitmap(string fileName, bool transparent)

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  partial class LEDPanel
+  partial class MineLED
   {
     private ImageList leds;
     /************************************************/

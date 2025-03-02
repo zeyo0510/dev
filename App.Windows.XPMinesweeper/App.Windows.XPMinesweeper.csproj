@@ -48,18 +48,15 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\LEDPanel.CharCount.cs">
-      <DependentUpon>LEDPanel.cs</DependentUpon>
+    <Compile Include="Controls\MineLED.cs" />
+    <Compile Include="Controls\MineLED.Designer.cs">
+      <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\LEDPanel.cs" />
-    <Compile Include="Controls\LEDPanel.Designer.cs">
-      <DependentUpon>LEDPanel.cs</DependentUpon>
+    <Compile Include="Controls\MineLED.LEDImages.cs">
+      <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\LEDPanel.LEDImages.cs">
-      <DependentUpon>LEDPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\LEDPanel.Number.cs">
-      <DependentUpon>LEDPanel.cs</DependentUpon>
+    <Compile Include="Controls\MineLED.Value.cs">
+      <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineControl.cs" />
     <Compile Include="Controls\MineControl.Designer.cs">
@@ -95,9 +92,9 @@
     <Compile Include="Controls\MinePanel.RemainMineCount.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ResetButton.cs" />
-    <Compile Include="Controls\ResetButton.Designer.cs">
-      <DependentUpon>ResetButton.cs</DependentUpon>
+    <Compile Include="Controls\MineButton.cs" />
+    <Compile Include="Controls\MineButton.Designer.cs">
+      <DependentUpon>MineButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\GameState.cs" />
     <Compile Include="Core\Mine.cs" />

@@ -4,14 +4,14 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  public partial class ResetButton : Button
+  public partial class MineButton : Button
   {
     private Color gray = Color.Silver;
     private Color darkGray = Color.Gray;
     private Pen lightPen,  darkGrayPen, grayPen;
     private Brush grayBrush;
     /************************************************/
-    public ResetButton()
+    public MineButton()
     {
       InitializeComponent();
 
