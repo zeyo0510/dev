@@ -7,10 +7,6 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   public partial class MinePanel : Panel
   {
-    private Color darkGray = Color.Gray;
-
-    private Pen darkGrayPen;
-
     private ImageList ilLED;
 
     public MinePanel()

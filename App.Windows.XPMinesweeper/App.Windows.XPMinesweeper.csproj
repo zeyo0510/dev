@@ -104,6 +104,9 @@
     <Compile Include="Controls\MinePanel.Painter.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MinePanel.Panel2.cs">
+      <DependentUpon>MinePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MinePanel.RemainMineCount.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>

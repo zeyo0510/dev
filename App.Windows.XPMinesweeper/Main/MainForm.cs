@@ -112,7 +112,6 @@ namespace App.Windows.XPMinesweeper.Main
     {
       prevGameState = GameState.NotStarted;
       mines.Clear();
-      mcMine.Location = mpMine.MineControlLocation;
       mcMine.AdjustSize();
       ClientSize = mpMine.GetWindowClientSize(mcMine.Size);
       mcMine.Refresh();

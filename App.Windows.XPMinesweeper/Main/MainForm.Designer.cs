@@ -188,24 +188,19 @@ namespace App.Windows.XPMinesweeper.Main
         this.aboutMenuItem.Click += this.aboutMenuItem_Click;
       }
       // mpMine
-      this.mpMine.BackColor = Color.Silver;
-      this.mpMine.Controls.Add(this.mcMine);
+      this.mpMine.Name = "mpMine";
       this.mpMine.CountSecond = 0;
       this.mpMine.Dock = DockStyle.Fill;
-      this.mpMine.Location = new Point(0, 0);
-      this.mpMine.Name = "mpMine";
       this.mpMine.RemainMineCount = 0;
-      this.mpMine.Size = new Size(322, 256);
-      this.mpMine.TabIndex = 1;
+      this.mpMine.Panel2.Controls.Add(this.mcMine);
       // mcMine
-      this.mcMine.BackColor = Color.Silver;
-      this.mcMine.Location = new Point(24, 72);
-      this.mcMine.Mines = null;
       this.mcMine.Name = "mcMine";
+      this.mcMine.BackColor = Color.Silver;
+      this.mcMine.Mines = null;
       this.mcMine.Size = new Size(272, 168);
-      this.mcMine.TabIndex = 4;
       // MainForm
-      this.AutoScaleBaseSize = new Size(6, 14);
+//      this.AutoScaleBaseSize = new Size(6, 14);
+      base.AutoScaleMode = AutoScaleMode.None;
       this.ClientSize = new Size(322, 256);
       this.Controls.Add(this.mpMine);
       this.FormBorderStyle = FormBorderStyle.FixedSingle;

@@ -12,7 +12,6 @@ namespace App.Windows.XPMinesweeper.Controls
     {
       if (disposing)
       {
-        darkGrayPen.Dispose();
         resetMineButton.Dispose();
         flagMineLED.Dispose();
         durationMineLED.Dispose();
@@ -24,7 +23,6 @@ namespace App.Windows.XPMinesweeper.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      darkGrayPen = new Pen(darkGray, 1);
       ilLED = new ImageList();
       ilLED.ImageSize = new Size(13, 23);
       string FileName = "0123456789-";
@@ -35,10 +33,24 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       tmrCount = new Timer();
       /************************************************/
+      this.panel1 = new Control();
+      this.panel2 = new Control();
       flagMineLED = new MineLED();
       resetMineButton = new MineButton();
       durationMineLED = new MineLED();
       /************************************************/
+      // panel1
+      {
+        this.panel1.Name     = "panel1";
+        this.panel1.Location = new Point(11, 11);
+        this.panel1.Size     = new Size(146, 033);
+      }
+      // panel2
+      {
+        this.panel2.Name     = "panel2";
+        this.panel2.Location = new Point(11, 54);
+        this.panel2.Size     = new Size(146, 146);
+      }
       // flagMineLED
       {
         flagMineLED.Name = "flagMineLED";
@@ -61,6 +73,8 @@ namespace App.Windows.XPMinesweeper.Controls
       // MinePanel
       {
         base.Name = "MinePanel";
+        base.Controls.Add(this.panel1);
+        base.Controls.Add(this.panel2);
       }
       // tmrCount
       {
@@ -70,6 +84,8 @@ namespace App.Windows.XPMinesweeper.Controls
       }
     }
     /************************************************/
+    private Control panel1 = null;
+    private Control panel2 = null;
     private MineLED flagMineLED = null;
     private MineButton resetMineButton = null;
     private MineLED durationMineLED = null;
