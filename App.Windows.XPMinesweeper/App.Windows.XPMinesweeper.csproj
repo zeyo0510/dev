@@ -91,24 +91,24 @@
       <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineException.cs" />
-    <Compile Include="Controls\MinePanel.CountSecond.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
+    <Compile Include="Controls\MinePlayer.CountSecond.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePanel.cs" />
-    <Compile Include="Controls\MinePanel.Designer.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
+    <Compile Include="Controls\MinePlayer.cs" />
+    <Compile Include="Controls\MinePlayer.Designer.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePanel.MineControlLocation.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
+    <Compile Include="Controls\MinePlayer.Painter.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePanel.Painter.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
+    <Compile Include="Controls\MinePlayer.Panel1.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePanel.Panel2.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
+    <Compile Include="Controls\MinePlayer.Panel2.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePanel.RemainMineCount.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
+    <Compile Include="Controls\MinePlayer.RemainMineCount.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineButton.cs" />
     <Compile Include="Controls\MineButton.Designer.cs">

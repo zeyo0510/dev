@@ -43,7 +43,7 @@ namespace App.Windows.XPMinesweeper.Main
       this.search4helponMenuItem = new MenuItem();
       this.usinghelpMenuItem     = new MenuItem();
       this.aboutMenuItem         = new MenuItem();
-      this.mpMine = new MinePanel();
+      this.mpMine = new MinePlayer();
       this.mcMine = new MineControl();
       /************************************************/
       this.mpMine.SuspendLayout();
@@ -205,7 +205,7 @@ namespace App.Windows.XPMinesweeper.Main
       this.Controls.Add(this.mpMine);
       this.FormBorderStyle = FormBorderStyle.FixedSingle;
       this.Icon = ((Icon)(resources.GetObject("$this.Icon")));
-      this.MaximizeBox = false;
+//      this.MaximizeBox = false;
       this.Menu = this.topMainMenu;
       this.Name = "MainForm";
       this.Text = "禸濘";
@@ -234,7 +234,7 @@ namespace App.Windows.XPMinesweeper.Main
     private MenuItem usinghelpMenuItem     = null;
     private MenuItem aboutMenuItem         = null;
     
-    private MinePanel mpMine;
+    private MinePlayer mpMine;
     private MineControl mcMine;
   }
 }

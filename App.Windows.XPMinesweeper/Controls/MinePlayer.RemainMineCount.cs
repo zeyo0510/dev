@@ -2,7 +2,7 @@
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  partial class MinePanel
+  partial class MinePlayer
   {
     public int RemainMineCount
     {

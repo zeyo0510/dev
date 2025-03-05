@@ -5,11 +5,11 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  public partial class MinePanel : Panel
+  public partial class MinePlayer : Control
   {
     private ImageList ilLED;
 
-    public MinePanel()
+    public MinePlayer()
     {
       this.InitializeComponent();
 
@@ -73,13 +73,13 @@ namespace App.Windows.XPMinesweeper.Controls
 
     public void ArrangeChildChildren()
     {
-      resetMineButton.Left = 3 + (ClientSize.Width - 3 - resetMineButton.Width) / 2;
-      resetMineButton.Top = 3 + (6 + 6 + 36 - resetMineButton.Height) / 2;
+      // resetMineButton.Left = 3 + (ClientSize.Width - 3 - resetMineButton.Width) / 2;
+      // resetMineButton.Top = 3 + (6 + 6 + 36 - resetMineButton.Height) / 2;
 
-      flagMineLED.Left = 3 + 6 + 7;
-      flagMineLED.Top = resetMineButton.Top;
-      durationMineLED.Left = ClientSize.Width - 6 - 7 - durationMineLED.Width;
-      durationMineLED.Top = resetMineButton.Top;
+      // flagMineLED.Left = 3 + 6 + 7;
+      // flagMineLED.Top = resetMineButton.Top;
+      // durationMineLED.Left = ClientSize.Width - 6 - 7 - durationMineLED.Width;
+      // durationMineLED.Top = resetMineButton.Top;
     }
 
     public event EventHandler Reset;

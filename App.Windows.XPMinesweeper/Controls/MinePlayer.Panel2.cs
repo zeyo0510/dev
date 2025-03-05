@@ -3,7 +3,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  partial class MinePanel
+  partial class MinePlayer
   {
     public Control Panel2
     {
