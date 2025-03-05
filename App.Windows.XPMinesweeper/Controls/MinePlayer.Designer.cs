@@ -33,28 +33,19 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       tmrCount = new Timer();
       /************************************************/
-      this.panel1 = new Control();
-      this.panel2 = new Control();
-      this.flagMineLED = new MineLED();
+      this.minePanel1      = new MinePanel();
+      this.flagMineLED     = new MineLED();
       this.resetMineButton = new MineButton();
       this.durationMineLED = new MineLED();
       /************************************************/
-      // panel1
+      // minePanel1
       {
-        this.panel1.Name     = "panel1";
-        this.panel1.Anchor   = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right;
-        this.panel1.Location = new Point(11, 11);
-        this.panel1.Size     = new Size(146, 033);
-        this.panel1.Controls.Add(this.flagMineLED);
-        this.panel1.Controls.Add(this.resetMineButton);
-        this.panel1.Controls.Add(this.durationMineLED);
-      }
-      // panel2
-      {
-        this.panel2.Name     = "panel2";
-        this.panel2.Anchor    = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
-        this.panel2.Location = new Point(11, 54);
-        this.panel2.Size     = new Size(146, 146);
+        this.minePanel1.Name = "minePanel1";
+        this.minePanel1.Dock = DockStyle.Fill;
+        /************************************************/
+        this.minePanel1.Panel1.Controls.Add(this.flagMineLED);
+        this.minePanel1.Panel1.Controls.Add(this.resetMineButton);
+        this.minePanel1.Panel1.Controls.Add(this.durationMineLED);
       }
       // flagMineLED
       {
@@ -84,8 +75,7 @@ namespace App.Windows.XPMinesweeper.Controls
         base.ClientSize  = new Size(167, 210);
         base.MinimumSize = new Size(167, 210);
         /************************************************/
-        base.Controls.Add(this.panel1);
-        base.Controls.Add(this.panel2);
+        base.Controls.Add(this.minePanel1);
       }
       // tmrCount
       {
@@ -95,9 +85,8 @@ namespace App.Windows.XPMinesweeper.Controls
       }
     }
     /************************************************/
-    private Control panel1 = null;
-    private Control panel2 = null;
-    private MineLED     flagMineLED    = null;
+    private MinePanel  minePanel1      = null;
+    private MineLED    flagMineLED     = null;
     private MineButton resetMineButton = null;
     private MineLED    durationMineLED = null;
   }

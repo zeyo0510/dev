@@ -209,7 +209,6 @@ namespace App.Windows.XPMinesweeper.Main
       this.Menu = this.topMainMenu;
       this.Name = "MainForm";
       this.Text = "禸濘";
-      this.SizeChanged += new System.EventHandler(this.frmMinesweeper_SizeChanged);
       this.Load += new System.EventHandler(this.MainForm_Load);
       /************************************************/
       this.mpMine.ResumeLayout(false);

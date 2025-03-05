@@ -120,11 +120,6 @@ namespace App.Windows.XPMinesweeper.Main
       mpMine.CountSecond = 0;
       mpMine.ChangeFace(1);
     }
-    
-    private void frmMinesweeper_SizeChanged(object sender, System.EventArgs e)
-    {
-      mpMine.ArrangeChildChildren();
-    }
 
     private GameState prevGameState = GameState.NotStarted;
 

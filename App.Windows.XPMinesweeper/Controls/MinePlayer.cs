@@ -5,7 +5,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
-  public partial class MinePlayer : Control
+  public partial class MinePlayer : UserControl
   {
     private ImageList ilLED;
 
@@ -20,7 +20,6 @@ namespace App.Windows.XPMinesweeper.Controls
       Width = 320;
       Height = 240;
       ChangeFace(1);
-      ArrangeChildChildren();
     }
 
     private void tmrCount_Tick(object sender, EventArgs e)
@@ -69,17 +68,6 @@ namespace App.Windows.XPMinesweeper.Controls
         resetMineButton.Image = null;
       }
       resetMineButton.Image = getBitmap("Face" + faceID.ToString() + ".png", true);
-    }
-
-    public void ArrangeChildChildren()
-    {
-      // resetMineButton.Left = 3 + (ClientSize.Width - 3 - resetMineButton.Width) / 2;
-      // resetMineButton.Top = 3 + (6 + 6 + 36 - resetMineButton.Height) / 2;
-
-      // flagMineLED.Left = 3 + 6 + 7;
-      // flagMineLED.Top = resetMineButton.Top;
-      // durationMineLED.Left = ClientSize.Width - 6 - 7 - durationMineLED.Width;
-      // durationMineLED.Top = resetMineButton.Top;
     }
 
     public event EventHandler Reset;
