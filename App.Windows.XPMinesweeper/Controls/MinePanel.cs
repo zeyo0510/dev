@@ -8,6 +8,13 @@ namespace App.Windows.XPMinesweeper.Controls
     public MinePanel()
     {
       this.InitializeComponent();
+      /************************************************/
+      base.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+    }
+    /************************************************/
+    private void guiTimer_Tick(object sender, EventArgs e)
+    {
+      this.UpdateUI();
     }
   }
 }

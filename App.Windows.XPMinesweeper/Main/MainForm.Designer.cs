@@ -190,7 +190,7 @@ namespace App.Windows.XPMinesweeper.Main
       // mpMine
       this.mpMine.Name = "mpMine";
       this.mpMine.CountSecond = 0;
-      this.mpMine.Dock = DockStyle.Fill;
+//      this.mpMine.Dock = DockStyle.Fill;
       this.mpMine.RemainMineCount = 0;
       this.mpMine.Panel2.Controls.Add(this.mcMine);
       // mcMine
