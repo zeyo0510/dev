@@ -25,7 +25,7 @@ namespace App.Windows.XPMinesweeper.Controls
           j = Convert.ToInt32(num[i]) - 48;
         }
         /************************************************/
-        this.leds.Draw(g, rect.Left + 13 * i, rect.Top, j);
+        g.DrawImage(img[num[i]], rect.Left + 13 * i, rect.Top);
       }
     }
   }

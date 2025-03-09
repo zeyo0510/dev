@@ -61,10 +61,10 @@
     <Compile Include="Controls\MineLED.Designer.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MineLED.LEDImages.cs">
+    <Compile Include="Controls\MineLED.Painter.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MineLED.Painter.cs">
+    <Compile Include="Controls\MineLED.Resources.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineLED.Value.cs">

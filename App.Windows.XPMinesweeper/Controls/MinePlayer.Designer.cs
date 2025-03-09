@@ -15,7 +15,6 @@ namespace App.Windows.XPMinesweeper.Controls
         resetMineButton.Dispose();
         flagMineLED.Dispose();
         durationMineLED.Dispose();
-        ilLED.Dispose();
         tmrCount.Dispose();
       }
       base.Dispose(disposing);
@@ -23,14 +22,6 @@ namespace App.Windows.XPMinesweeper.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      ilLED = new ImageList();
-      ilLED.ImageSize = new Size(13, 23);
-      string FileName = "0123456789-";
-      for (int i = 0; i < FileName.Length; i++)
-      {
-        ilLED.Images.Add(getBitmap(FileName[i] + ".png", false));
-      }
-      /************************************************/
       tmrCount = new Timer();
       /************************************************/
       this.minePanel1      = new MinePanel();
@@ -52,7 +43,6 @@ namespace App.Windows.XPMinesweeper.Controls
         this.flagMineLED.Name      = "flagMineLED";
         this.flagMineLED.Anchor    = AnchorStyles.Left | AnchorStyles.Top;
         this.flagMineLED.Location  = new Point(6, 5);
-        this.flagMineLED.LEDImages = ilLED;
       }
       // resetMineButton
       {
@@ -67,7 +57,6 @@ namespace App.Windows.XPMinesweeper.Controls
         this.durationMineLED.Name      = "durationMineLED";
         this.durationMineLED.Anchor    = AnchorStyles.Top | AnchorStyles.Right;
         this.durationMineLED.Location  = new Point(99, 5);
-        this.durationMineLED.LEDImages = ilLED;
       }
       // MinePanel
       {

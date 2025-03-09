@@ -7,8 +7,6 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   public partial class MinePlayer : UserControl
   {
-    private ImageList ilLED;
-
     public MinePlayer()
     {
       this.InitializeComponent();
