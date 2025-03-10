@@ -14,18 +14,24 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       Rectangle rect = base.ClientRectangle;
       /************************************************/
-      string num = this.value.ToString().PadLeft(3, '0').Replace("0-", "-0");
+      this.DrawForeground(g, rect);
+    }
+    /************************************************/
+    private void DrawForeground(Graphics g, Rectangle rect)
+    {
+      string num = "";
       /************************************************/
-      for (int i = 0; i < 3; i++)
+      if (this.value <  0) num = this.value.ToString("D2");
+      if (this.value >= 0) num = this.value.ToString("D3");
+      /************************************************/
+      for (int i = 0; i < num.Length; i++)
       {
-        int j;
-        if (num[i] == '-') {
-          j = 10;
-        } else {
-          j = Convert.ToInt32(num[i]) - 48;
-        }
+        Bitmap bmp = MineLED.bmp[num[i]];
         /************************************************/
-        g.DrawImage(img[num[i]], rect.Left + 13 * i, rect.Top);
+        int x = rect.Left + (i * 13);
+        int y = rect.Top  + (i * 00);
+        /************************************************/
+        g.DrawImage(bmp, x, y);
       }
     }
   }

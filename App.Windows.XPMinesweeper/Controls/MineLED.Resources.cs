@@ -8,24 +8,27 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   partial class MineLED
   {
-    private static Dictionary<char, Bitmap> img = null;
+    private static Dictionary<char, Bitmap> bmp = null;
     /************************************************/
     static MineLED()
     {
-      MineLED.img = new Dictionary<char, Bitmap>();
-      /************************************************/
-      MineLED.img['-'] = MineLED.DrawBitmap("      G".Replace(" ", ""));
-      MineLED.img[' '] = MineLED.DrawBitmap("       ".Replace(" ", ""));
-      MineLED.img['9'] = MineLED.DrawBitmap("ABCD FG".Replace(" ", ""));
-      MineLED.img['8'] = MineLED.DrawBitmap("ABCDEFG".Replace(" ", ""));
-      MineLED.img['7'] = MineLED.DrawBitmap("ABC    ".Replace(" ", ""));
-      MineLED.img['6'] = MineLED.DrawBitmap("A CDEFG".Replace(" ", ""));
-      MineLED.img['5'] = MineLED.DrawBitmap("A CD FG".Replace(" ", ""));
-      MineLED.img['4'] = MineLED.DrawBitmap(" BC  FG".Replace(" ", ""));
-      MineLED.img['3'] = MineLED.DrawBitmap("ABCD  G".Replace(" ", ""));
-      MineLED.img['2'] = MineLED.DrawBitmap("AB DE G".Replace(" ", ""));
-      MineLED.img['1'] = MineLED.DrawBitmap(" BC    ".Replace(" ", ""));
-      MineLED.img['0'] = MineLED.DrawBitmap("ABCDEF ".Replace(" ", ""));
+      if (MineLED.bmp == null)
+      {
+        MineLED.bmp = new Dictionary<char, Bitmap>();
+        /************************************************/
+        MineLED.bmp['-'] = MineLED.DrawBitmap("      G".Replace(" ", ""));
+        MineLED.bmp[' '] = MineLED.DrawBitmap("       ".Replace(" ", ""));
+        MineLED.bmp['9'] = MineLED.DrawBitmap("ABCD FG".Replace(" ", ""));
+        MineLED.bmp['8'] = MineLED.DrawBitmap("ABCDEFG".Replace(" ", ""));
+        MineLED.bmp['7'] = MineLED.DrawBitmap("ABC    ".Replace(" ", ""));
+        MineLED.bmp['6'] = MineLED.DrawBitmap("A CDEFG".Replace(" ", ""));
+        MineLED.bmp['5'] = MineLED.DrawBitmap("A CD FG".Replace(" ", ""));
+        MineLED.bmp['4'] = MineLED.DrawBitmap(" BC  FG".Replace(" ", ""));
+        MineLED.bmp['3'] = MineLED.DrawBitmap("ABCD  G".Replace(" ", ""));
+        MineLED.bmp['2'] = MineLED.DrawBitmap("AB DE G".Replace(" ", ""));
+        MineLED.bmp['1'] = MineLED.DrawBitmap(" BC    ".Replace(" ", ""));
+        MineLED.bmp['0'] = MineLED.DrawBitmap("ABCDEF ".Replace(" ", ""));
+      }
     }
     /************************************************/
     private static Bitmap DrawBitmap(string s)
