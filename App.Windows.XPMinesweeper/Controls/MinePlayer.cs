@@ -25,37 +25,9 @@ namespace App.Windows.XPMinesweeper.Controls
       durationMineLED.Value = durationMineLED.Value + 1;
     }
 
-    private Bitmap getBitmap(string fileName, bool transparent)
-    {
-      Image img =  Image.FromStream(GetResource(fileName));
-      Bitmap bmp = new Bitmap(img);
-      img.Dispose();
-      img = null;
-      if (transparent)
-        bmp.MakeTransparent(bmp.GetPixel(1, 1));
-      return bmp;
-    }
-
     public Size GetWindowClientSize(Size mineControlSize)
     {
       return new Size(mineControlSize.Width + 9 + 3 + 3 + 6, mineControlSize.Height + 9 + 2 + 36 + 2 + 6 + 3 + 4);
-    }
-
-    public Stream GetResource(string fileName)
-    {
-      if (fileName == null || fileName.Length == 0)
-        return null;
-
-      Stream stream = null;
-      Type resourceType = this.GetType();
-      string resourceName = "App.Windows.XPMinesweeper.Resources." + fileName.Replace("\\", ".");
-      System.Reflection.Assembly assembly = System.Reflection.Assembly.GetAssembly(resourceType);
-      if (assembly == null)
-        throw new MineException("拸楊蚾婥訧埭恅璃: " + resourceType.Namespace + ".dll");
-      stream = System.Reflection.Assembly.GetAssembly(resourceType).GetManifestResourceStream(resourceName);
-      if (stream == null)
-        throw new MineException("拸楊腕訧埭: " + fileName);
-      return stream;
     }
 
     internal void ChangeFace(int faceID)
@@ -65,7 +37,22 @@ namespace App.Windows.XPMinesweeper.Controls
         resetMineButton.Image.Dispose();
         resetMineButton.Image = null;
       }
-      resetMineButton.Image = getBitmap("Face" + faceID.ToString() + ".png", true);
+      if (faceID == 4)
+      {
+        resetMineButton.Image = MineButton.Bitmap1;
+      }
+      if (faceID == 3)
+      {
+        resetMineButton.Image = MineButton.Bitmap2;
+      }
+      if (faceID == 2)
+      {
+        resetMineButton.Image = MineButton.Bitmap3;
+      }
+      if (faceID == 1)
+      {
+        resetMineButton.Image = MineButton.Bitmap4;
+      }
     }
 
     public event EventHandler Reset;

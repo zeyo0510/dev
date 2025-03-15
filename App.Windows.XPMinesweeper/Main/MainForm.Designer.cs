@@ -137,9 +137,9 @@ namespace App.Windows.XPMinesweeper.Main
       }
       // besttimesMenuItem
       {
-        this.besttimesMenuItem.Name = "besttimesMenuItem";
+        this.besttimesMenuItem.Name     = "besttimesMenuItem";
         this.besttimesMenuItem.Shortcut = Shortcut.None;
-        this.besttimesMenuItem.Text = "Best &Times...";
+        this.besttimesMenuItem.Text     = "Best &Times...";
       }
       // exitMenuItem
       {
