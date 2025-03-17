@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
@@ -27,7 +26,10 @@ namespace App.Windows.XPMinesweeper.Controls
 
     public Size GetWindowClientSize(Size mineControlSize)
     {
-      return new Size(mineControlSize.Width + 9 + 3 + 3 + 6, mineControlSize.Height + 9 + 2 + 36 + 2 + 6 + 3 + 4);
+      base.ClientSize = new Size(mineControlSize.Width + 9 + 3 + 3 + 6, mineControlSize.Height + 9 + 2 + 36 + 2 + 6 + 3 + 4);
+
+      
+      return new Size(mineControlSize.Width + 180, mineControlSize.Height + 100);
     }
 
     internal void ChangeFace(int faceID)

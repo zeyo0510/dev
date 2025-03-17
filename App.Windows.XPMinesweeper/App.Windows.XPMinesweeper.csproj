@@ -110,11 +110,23 @@
     <Compile Include="Controls\MinePanel.UpdateUI.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MinePlayer.Beginner.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MinePlayer.CountSecond.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePlayer.cs" />
     <Compile Include="Controls\MinePlayer.Designer.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePlayer.Expert.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePlayer.Intermediate.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePlayer.Mines.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePlayer.Panel2.cs">
@@ -160,6 +172,9 @@
     <Compile Include="Dialogs\CustomDialog.cs" />
     <Compile Include="Dialogs\CustomDialog.Designer.cs">
       <DependentUpon>CustomDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.CloseApp.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="Main\MainForm.Designer.cs">

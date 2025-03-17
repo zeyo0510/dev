@@ -39,7 +39,7 @@ namespace App.Windows.XPMinesweeper.Main
       intermediateMenuItem.Checked = false;
       expertMenuItem.Checked = false;
       customMenuItem.Checked = false;
-      mines.Clear(9, 9, 10);
+      this.mpMine.Beginner();
       reset(this, EventArgs.Empty);
     }
     /************************************************/
@@ -49,7 +49,7 @@ namespace App.Windows.XPMinesweeper.Main
       intermediateMenuItem.Checked = true;
       expertMenuItem.Checked = false;
       customMenuItem.Checked = false;
-      mines.Clear(16, 16, 40);
+      this.mpMine.Intermediate();
       reset(this, EventArgs.Empty);
     }
     /************************************************/
@@ -59,7 +59,7 @@ namespace App.Windows.XPMinesweeper.Main
       intermediateMenuItem.Checked = false;
       expertMenuItem.Checked = true;
       customMenuItem.Checked = false;
-      mines.Clear(30, 16, 99);
+      this.mpMine.Expert();
       reset(this, EventArgs.Empty);
     }
     /************************************************/
@@ -91,7 +91,7 @@ namespace App.Windows.XPMinesweeper.Main
     /************************************************/
     private void exitMenuItem_Click(object sender, System.EventArgs e)
     {
-      Close();
+      this.CloseApp();
     }
     /************************************************/
     private void aboutMenuItem_Click(object sender, System.EventArgs e)

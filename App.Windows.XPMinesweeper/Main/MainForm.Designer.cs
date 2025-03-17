@@ -43,8 +43,8 @@ namespace App.Windows.XPMinesweeper.Main
       this.search4helponMenuItem = new MenuItem();
       this.usinghelpMenuItem     = new MenuItem();
       this.aboutMenuItem         = new MenuItem();
-      this.mpMine = new MinePlayer();
       this.mcMine = new MineControl();
+      this.mpMine = new MinePlayer();
       /************************************************/
       this.mpMine.SuspendLayout();
       this.SuspendLayout();
@@ -187,17 +187,18 @@ namespace App.Windows.XPMinesweeper.Main
         /************************************************/
         this.aboutMenuItem.Click += this.aboutMenuItem_Click;
       }
-      // mpMine
-      this.mpMine.Name = "mpMine";
-      this.mpMine.CountSecond = 0;
-//      this.mpMine.Dock = DockStyle.Fill;
-      this.mpMine.RemainMineCount = 0;
-      this.mpMine.Panel2.Controls.Add(this.mcMine);
       // mcMine
       this.mcMine.Name = "mcMine";
       this.mcMine.BackColor = Color.Silver;
       this.mcMine.Mines = null;
       this.mcMine.Size = new Size(272, 168);
+      // mpMine
+      this.mpMine.Name = "mpMine";
+      this.mpMine.CountSecond = 0;
+      this.mpMine.Mines = this.mines;
+//      this.mpMine.Dock = DockStyle.Fill;
+      this.mpMine.RemainMineCount = 0;
+      this.mpMine.Panel2.Controls.Add(this.mcMine);
       // MainForm
 //      this.AutoScaleBaseSize = new Size(6, 14);
       base.AutoScaleMode = AutoScaleMode.None;
@@ -208,7 +209,7 @@ namespace App.Windows.XPMinesweeper.Main
 //      this.MaximizeBox = false;
       this.Menu = this.topMainMenu;
       this.Name = "MainForm";
-      this.Text = "禸濘";
+      this.Text = "Minesweeper";
       this.Load += new System.EventHandler(this.MainForm_Load);
       /************************************************/
       this.mpMine.ResumeLayout(false);
@@ -233,7 +234,7 @@ namespace App.Windows.XPMinesweeper.Main
     private MenuItem usinghelpMenuItem     = null;
     private MenuItem aboutMenuItem         = null;
     
-    private MinePlayer mpMine;
     private MineControl mcMine;
+    private MinePlayer mpMine;
   }
 }
