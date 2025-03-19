@@ -14,7 +14,17 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       Rectangle rect = base.ClientRectangle;
       /************************************************/
+      this.DrawBackground(g, rect);
+      /************************************************/
       this.DrawForeground(g, rect);
+    }
+    /************************************************/
+    private void DrawBackground(Graphics g, Rectangle rect)
+    {
+      using (Brush brush = new SolidBrush(Color.Black))
+      {
+        g.FillRectangle(brush, rect);
+      }
     }
     /************************************************/
     private void DrawForeground(Graphics g, Rectangle rect)

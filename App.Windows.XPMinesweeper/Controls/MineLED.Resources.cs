@@ -67,14 +67,6 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       using (Graphics g = Graphics.FromImage(retValue))
       {
-        using (Brush brush = new SolidBrush(Color.Black))
-        {
-          g.FillRectangle(brush, 0, 0, w, h);
-        }
-      }
-      /************************************************/
-      using (Graphics g = Graphics.FromImage(retValue))
-      {
         using (Brush lightBrush = new SolidBrush(Color.Red))
         {
           using (Brush darkBrush = new SolidBrush(Color.Maroon))

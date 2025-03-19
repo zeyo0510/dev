@@ -8,6 +8,13 @@ namespace App.Windows.XPMinesweeper.Controls
     public MineLED()
     {
       this.InitializeComponent();
+      /************************************************/
+      base.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+    }
+    /************************************************/
+    private void guiTimer_Tick(object sender, EventArgs e)
+    {
+      this.UpdateUI();
     }
   }
 }

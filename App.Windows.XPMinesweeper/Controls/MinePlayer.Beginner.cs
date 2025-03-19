@@ -8,7 +8,7 @@ namespace App.Windows.XPMinesweeper.Controls
     {
       this.DifficultyLevel = DifficultyLevel.Beginner;
       /************************************************/
-      this.Mines.Clear(9, 9, 10);
+      this.New();
     }
   }
 }

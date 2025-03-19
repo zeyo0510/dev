@@ -50,7 +50,6 @@ namespace App.Windows.XPMinesweeper.Main
       this.usinghelpMenuItem     = new MenuItem();
       this.aboutMenuItem         = new MenuItem();
       this.minePlayer1  = new MinePlayer();
-      this.mineControl1 = new MineControl();
       /************************************************/
       this.minePlayer1.SuspendLayout();
       this.SuspendLayout();
@@ -200,19 +199,13 @@ namespace App.Windows.XPMinesweeper.Main
         /************************************************/
         this.aboutMenuItem.Click += this.aboutMenuItem_Click;
       }
-      // mineControl1
-      this.mineControl1.Name = "mcMine";
-      this.mineControl1.BackColor = Color.Silver;
-      this.mineControl1.Mines = null;
-      this.mineControl1.Size = new Size(272, 168);
       // minePlayer1
-      this.minePlayer1.Name = "mpMine";
-      this.minePlayer1.CountSecond = 0;
-      this.minePlayer1.Mines = this.mines;
-//      this.minePlayer1.Dock = DockStyle.Fill;
-      this.minePlayer1.RemainMineCount = 0;
-      this.minePlayer1.Panel2.Controls.Add(this.mineControl1);
-      this.minePlayer1.SizeChanged += minePlayer1_SizeChanged;
+      {
+        this.minePlayer1.Name = "mpMine";
+        this.minePlayer1.Mines = this.mines;
+        /************************************************/
+        this.minePlayer1.SizeChanged += this.minePlayer1_SizeChanged;
+      }
       // MainForm
 //      this.AutoScaleBaseSize = new Size(6, 14);
       base.AutoScaleMode = AutoScaleMode.None;
@@ -249,6 +242,5 @@ namespace App.Windows.XPMinesweeper.Main
     private MenuItem aboutMenuItem         = null;
     
     private MinePlayer minePlayer1 = null;
-    private MineControl mineControl1 = null;
   }
 }

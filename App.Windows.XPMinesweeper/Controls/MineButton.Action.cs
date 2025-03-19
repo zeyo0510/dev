@@ -5,7 +5,7 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   partial class MineButton
   {
-    private bool pressed;
+    private bool pressed = false;
     /************************************************/
     protected override void OnMouseDown(MouseEventArgs e)
     {

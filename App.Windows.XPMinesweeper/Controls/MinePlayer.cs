@@ -9,10 +9,11 @@ namespace App.Windows.XPMinesweeper.Controls
     public MinePlayer()
     {
       this.InitializeComponent();
-
+      /************************************************/
       SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer |
         ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
       SetStyle(ControlStyles.Selectable, false);
+      /************************************************/
       BackColor = Color.Silver;
       Width = 320;
       Height = 240;
@@ -23,12 +24,7 @@ namespace App.Windows.XPMinesweeper.Controls
     {
       durationMineLED.Value = durationMineLED.Value + 1;
     }
-
-    public void GetWindowClientSize(Size mineControlSize)
-    {
-      base.ClientSize = new Size(mineControlSize.Width + 9 + 3 + 3 + 6, mineControlSize.Height + 9 + 2 + 36 + 2 + 6 + 3 + 4);
-    }
-
+    
     internal void ChangeFace(int faceID)
     {
       if (resetMineButton.Image != null)

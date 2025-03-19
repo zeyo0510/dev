@@ -28,6 +28,7 @@ namespace App.Windows.XPMinesweeper.Controls
       this.flagMineLED     = new MineLED();
       this.resetMineButton = new MineButton();
       this.durationMineLED = new MineLED();
+      this.mineControl1    = new MineControl();
       /************************************************/
       // minePanel1
       {
@@ -37,6 +38,8 @@ namespace App.Windows.XPMinesweeper.Controls
         this.minePanel1.Panel1.Controls.Add(this.flagMineLED);
         this.minePanel1.Panel1.Controls.Add(this.resetMineButton);
         this.minePanel1.Panel1.Controls.Add(this.durationMineLED);
+        /************************************************/
+        this.minePanel1.Panel2.Controls.Add(this.mineControl1);
       }
       // flagMineLED
       {
@@ -58,6 +61,13 @@ namespace App.Windows.XPMinesweeper.Controls
         this.durationMineLED.Anchor    = AnchorStyles.Top | AnchorStyles.Right;
         this.durationMineLED.Location  = new Point(99, 5);
       }
+      // mineControl1
+      {
+        this.mineControl1.Name = "mineControl1";
+        this.mineControl1.BackColor = Color.Silver;
+        this.mineControl1.Mines = null;
+        this.mineControl1.Size = new Size(272, 168);
+      }
       // MinePanel
       {
         base.Name        = "MinePanel";
@@ -78,5 +88,6 @@ namespace App.Windows.XPMinesweeper.Controls
     private MineLED    flagMineLED     = null;
     private MineButton resetMineButton = null;
     private MineLED    durationMineLED = null;
+    private MineControl mineControl1 = null;
   }
 }

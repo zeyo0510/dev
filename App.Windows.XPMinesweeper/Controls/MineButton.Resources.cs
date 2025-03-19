@@ -108,7 +108,7 @@ namespace App.Windows.XPMinesweeper.Controls
         map.Append("   BYYYYYYYYYB   ");
         map.Append("    BBYYYYYBB    ");
         map.Append("      BBBBB      ");
-        }
+      }
       /************************************************/
       Bitmap retValue = new Bitmap(w, h);
       /************************************************/

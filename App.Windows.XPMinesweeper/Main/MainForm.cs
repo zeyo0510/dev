@@ -17,14 +17,14 @@ namespace App.Windows.XPMinesweeper.Main
     {
       this.InitializeComponent();
 
-      mineControl1.Mines = mines;
+      this.minePlayer1.MineControl.Mines = mines;
     }
     /************************************************/
     private void MainForm_Load(object sender, EventArgs e)
     {
       Application.AddMessageFilter(this);
       minePlayer1.Reset += new EventHandler(reset);
-      mineControl1.DigOrMark += new EventHandler(AfterDigOrMark);
+      this.minePlayer1.MineControl.DigOrMark += new EventHandler(AfterDigOrMark);
       reset(this, e);
     }
     /************************************************/
@@ -119,37 +119,35 @@ namespace App.Windows.XPMinesweeper.Main
     private void reset(object sender, EventArgs e)
     {
       prevGameState = GameState.NotStarted;
+      /************************************************/
       this.minePlayer1.New();
-      mineControl1.AdjustSize();
-      mineControl1.Refresh();
-      minePlayer1.StopTimer();
-      minePlayer1.RemainMineCount = mines.MineRemainCount;
-      minePlayer1.CountSecond = 0;
-      minePlayer1.ChangeFace(1);
-      minePlayer1.GetWindowClientSize(mineControl1.Size);
     }
     /************************************************/
     private GameState prevGameState = GameState.NotStarted;
 
     private void AfterDigOrMark(object sender, EventArgs e)
     {
-      if (mines.GameState != prevGameState)
+      if (this.mines.GameState != this.prevGameState)
       {
-        if (mines.GameState == GameState.Processing)
-          minePlayer1.StartTimer();
-
-        prevGameState = mines.GameState;
-
-        if (mines.GameState == GameState.Complete || mines.GameState == GameState.Fail)
+        if (this.mines.GameState == GameState.Processing)
         {
-          minePlayer1.StopTimer();
-          if (mines.GameState == GameState.Complete)
-            minePlayer1.ChangeFace(4);
-          else
-            minePlayer1.ChangeFace(3);
+          this.minePlayer1.StartTimer();
         }
+        if (this.mines.GameState == GameState.Complete)
+        {
+          this.minePlayer1.StopTimer();
+          this.minePlayer1.ChangeFace(4);
+        }
+        if (this.mines.GameState == GameState.Fail)
+        {
+          this.minePlayer1.StopTimer();
+          this.minePlayer1.ChangeFace(3);
+        }
+        /************************************************/
+        this.prevGameState = this.mines.GameState;
       }
-      minePlayer1.RemainMineCount = mines.MineRemainCount;
+      /************************************************/
+      this.minePlayer1.RemainMineCount = this.mines.MineRemainCount;
     }
 
     #region IMessageFilter 傖埜
@@ -162,11 +160,11 @@ namespace App.Windows.XPMinesweeper.Main
       switch (m.Msg)
       {
         case WM_LBUTTONDOWN:
-          if (mineControl1.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
+          if (this.minePlayer1.MineControl.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
             minePlayer1.ChangeFace(2);
           break;
         case WM_LBUTTONUP:
-          if (mineControl1.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
+          if (this.minePlayer1.MineControl.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
             minePlayer1.ChangeFace(1);
           break;
       }

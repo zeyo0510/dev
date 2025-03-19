@@ -4,9 +4,9 @@ namespace App.Windows.XPMinesweeper.Core
 {
   public partial class MineStatusChangeEventArgs: EventArgs
   {
-    public MineStatusChangeEventArgs(Mine m)
+    public MineStatusChangeEventArgs(Mine mine)
     {
-      this.Mine = m;
+      this.Mine = mine;
     }
   }
 }

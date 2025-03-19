@@ -69,8 +69,8 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       int offset = 0;
       /************************************************/
-      if ( pressed) offset = 1;
-      if (!pressed) offset = 0;
+      if ( this.pressed) offset = 1;
+      if (!this.pressed) offset = 0;
       /************************************************/
       g.DrawImage(base.Image, rect.Left + 4 + offset, rect.Top + 4 + offset);
     }

@@ -4,17 +4,17 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   partial class MinePlayer
   {
-    public int RemainMineCount
+    public int Duration
     {
       get
       {
-        int retValue = this.flagMineLED.Value;
+        int retValue = this.durationMineLED.Value;
         /************************************************/
         return retValue;
       }
-      set
+      private set
       {
-        this.flagMineLED.Value = value;
+        this.durationMineLED.Value = value;
       }
     }
   }

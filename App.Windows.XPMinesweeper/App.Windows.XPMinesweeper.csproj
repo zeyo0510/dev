@@ -58,6 +58,9 @@
     <Compile Include="Controls\MineButton.Resources.cs">
       <DependentUpon>MineButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MineButton.UpdateUI.cs">
+      <DependentUpon>MineButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MineControl.Painter.cs">
       <DependentUpon>MineControl.cs</DependentUpon>
     </Compile>
@@ -69,6 +72,9 @@
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineLED.Resources.cs">
+      <DependentUpon>MineLED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineLED.UpdateUI.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineLED.Value.cs">
@@ -114,7 +120,7 @@
     <Compile Include="Controls\MinePlayer.Beginner.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePlayer.CountSecond.cs">
+    <Compile Include="Controls\MinePlayer.Duration.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePlayer.cs" />
@@ -136,7 +142,7 @@
     <Compile Include="Controls\MinePlayer.Mines.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePlayer.Panel2.cs">
+    <Compile Include="Controls\MinePlayer.MineControl.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePlayer.RemainMineCount.cs">
