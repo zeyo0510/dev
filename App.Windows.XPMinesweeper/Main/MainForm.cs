@@ -17,84 +17,83 @@ namespace App.Windows.XPMinesweeper.Main
     {
       this.InitializeComponent();
 
-      mcMine.Mines = mines;
+      mineControl1.Mines = mines;
     }
     /************************************************/
-    private void MainForm_Load(object sender, System.EventArgs e)
+    private void MainForm_Load(object sender, EventArgs e)
     {
       Application.AddMessageFilter(this);
-      mpMine.Reset += new EventHandler(reset);
-      mcMine.DigOrMark += new EventHandler(AfterDigOrMark);
+      minePlayer1.Reset += new EventHandler(reset);
+      mineControl1.DigOrMark += new EventHandler(AfterDigOrMark);
       reset(this, e);
     }
     /************************************************/
-    private void newMenuItem_Click(object sender, System.EventArgs e)
+    private void guiTimer_Tick(object sender, EventArgs e)
+    {
+      this.UpdateUI();
+    }
+    /************************************************/
+    private void newMenuItem_Click(object sender, EventArgs e)
     {
       reset(this, e);
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
-    private void beginnerMenuItem_Click(object sender, System.EventArgs e)
+    private void beginnerMenuItem_Click(object sender, EventArgs e)
     {
-      beginnerMenuItem.Checked = true;
-      intermediateMenuItem.Checked = false;
-      expertMenuItem.Checked = false;
-      customMenuItem.Checked = false;
-      this.mpMine.Beginner();
+      this.minePlayer1.Beginner();
       reset(this, EventArgs.Empty);
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
-    private void intermediateMenuItem_Click(object sender, System.EventArgs e)
+    private void intermediateMenuItem_Click(object sender, EventArgs e)
     {
-      beginnerMenuItem.Checked = false;
-      intermediateMenuItem.Checked = true;
-      expertMenuItem.Checked = false;
-      customMenuItem.Checked = false;
-      this.mpMine.Intermediate();
+      this.minePlayer1.Intermediate();
       reset(this, EventArgs.Empty);
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
-    private void expertMenuItem_Click(object sender, System.EventArgs e)
+    private void expertMenuItem_Click(object sender, EventArgs e)
     {
-      beginnerMenuItem.Checked = false;
-      intermediateMenuItem.Checked = false;
-      expertMenuItem.Checked = true;
-      customMenuItem.Checked = false;
-      this.mpMine.Expert();
+      this.minePlayer1.Expert();
       reset(this, EventArgs.Empty);
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
-    private void customMenuItem_Click(object sender, System.EventArgs e)
+    private void customMenuItem_Click(object sender, EventArgs e)
     {
-      int height = mines.Height;
-      int width = mines.Width;
-      int mineCount = mines.Count;
-      if (CustomDialog.ShowSelf(this, PointToScreen(mpMine.Location), ref width, ref height, ref mineCount))
+      int width  = this.mines.Width;
+      int height = this.mines.Height;
+      int count  = this.mines.Count;
+      /************************************************/
+      if (CustomDialog.ShowSelf(this, PointToScreen(minePlayer1.Location), ref width, ref height, ref count))
       {
-        beginnerMenuItem.Checked = false;
-        intermediateMenuItem.Checked = false;
-        expertMenuItem.Checked = false;
-        customMenuItem.Checked = true;
-        mines.Clear(width, height, mineCount);
+        this.minePlayer1.Custom(width, height, count);
         reset(this, EventArgs.Empty);
+        /************************************************/
+        this.UpdateUI();
       }
     }
     /************************************************/
-    private void marksMenuItem_Click(object sender, System.EventArgs e)
+    private void marksMenuItem_Click(object sender, EventArgs e)
     {
-      MenuItem mi = sender as MenuItem;
-      if (mi != null)
-      {
-        mi.Checked = !mi.Checked;
-        mines.AllowMarkDoubt = mi.Checked;
-      }
+      this.mines.AllowMarkDoubt = !this.mines.AllowMarkDoubt;
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
-    private void exitMenuItem_Click(object sender, System.EventArgs e)
+    private void exitMenuItem_Click(object sender, EventArgs e)
     {
       this.CloseApp();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
-    private void aboutMenuItem_Click(object sender, System.EventArgs e)
+    private void aboutMenuItem_Click(object sender, EventArgs e)
     {
       Icon ico = new Icon(GetResource("Mine.ico"), 32, 32);
       try
@@ -108,19 +107,28 @@ namespace App.Windows.XPMinesweeper.Main
       }
     }
     /************************************************/
+    private void minePlayer1_SizeChanged(object sender, EventArgs e)
+    {
+      base.ClientSize = this.minePlayer1.Size;
+    }
+    
+    
+    
+    
+    /************************************************/
     private void reset(object sender, EventArgs e)
     {
       prevGameState = GameState.NotStarted;
-      mines.Clear();
-      mcMine.AdjustSize();
-      ClientSize = mpMine.GetWindowClientSize(mcMine.Size);
-      mcMine.Refresh();
-      mpMine.StopTimer();
-      mpMine.RemainMineCount = mines.MineRemainCount;
-      mpMine.CountSecond = 0;
-      mpMine.ChangeFace(1);
+      this.minePlayer1.New();
+      mineControl1.AdjustSize();
+      mineControl1.Refresh();
+      minePlayer1.StopTimer();
+      minePlayer1.RemainMineCount = mines.MineRemainCount;
+      minePlayer1.CountSecond = 0;
+      minePlayer1.ChangeFace(1);
+      minePlayer1.GetWindowClientSize(mineControl1.Size);
     }
-
+    /************************************************/
     private GameState prevGameState = GameState.NotStarted;
 
     private void AfterDigOrMark(object sender, EventArgs e)
@@ -128,20 +136,20 @@ namespace App.Windows.XPMinesweeper.Main
       if (mines.GameState != prevGameState)
       {
         if (mines.GameState == GameState.Processing)
-          mpMine.StartTimer();
+          minePlayer1.StartTimer();
 
         prevGameState = mines.GameState;
 
         if (mines.GameState == GameState.Complete || mines.GameState == GameState.Fail)
         {
-          mpMine.StopTimer();
+          minePlayer1.StopTimer();
           if (mines.GameState == GameState.Complete)
-            mpMine.ChangeFace(4);
+            minePlayer1.ChangeFace(4);
           else
-            mpMine.ChangeFace(3);
+            minePlayer1.ChangeFace(3);
         }
       }
-      mpMine.RemainMineCount = mines.MineRemainCount;
+      minePlayer1.RemainMineCount = mines.MineRemainCount;
     }
 
     #region IMessageFilter 傖埜
@@ -154,12 +162,12 @@ namespace App.Windows.XPMinesweeper.Main
       switch (m.Msg)
       {
         case WM_LBUTTONDOWN:
-          if (mcMine.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
-            mpMine.ChangeFace(2);
+          if (mineControl1.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
+            minePlayer1.ChangeFace(2);
           break;
         case WM_LBUTTONUP:
-          if (mcMine.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
-            mpMine.ChangeFace(1);
+          if (mineControl1.Enabled && ctrl.Name != "rbReset" && ctrl.FindForm().GetType() != typeof(CustomDialog))
+            minePlayer1.ChangeFace(1);
           break;
       }
       return false;

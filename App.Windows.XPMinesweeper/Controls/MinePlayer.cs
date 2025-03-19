@@ -24,12 +24,9 @@ namespace App.Windows.XPMinesweeper.Controls
       durationMineLED.Value = durationMineLED.Value + 1;
     }
 
-    public Size GetWindowClientSize(Size mineControlSize)
+    public void GetWindowClientSize(Size mineControlSize)
     {
       base.ClientSize = new Size(mineControlSize.Width + 9 + 3 + 3 + 6, mineControlSize.Height + 9 + 2 + 36 + 2 + 6 + 3 + 4);
-
-      
-      return new Size(mineControlSize.Width + 180, mineControlSize.Height + 100);
     }
 
     internal void ChangeFace(int faceID)

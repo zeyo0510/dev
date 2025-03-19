@@ -4,11 +4,11 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   partial class MinePlayer
   {
-    public void Intermediate()
+    public void Custom(int width, int hegiht, int count)
     {
-      this.DifficultyLevel = DifficultyLevel.Intermediate;
+      this.DifficultyLevel = DifficultyLevel.Cusrom;
       /************************************************/
-      this.mines.Clear(16, 16, 40);
+      this.Mines.Clear(width, hegiht, count);
     }
   }
 }

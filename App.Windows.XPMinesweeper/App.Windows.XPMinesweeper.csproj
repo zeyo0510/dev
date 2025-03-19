@@ -48,6 +48,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\DifficultyLevel.cs" />
     <Compile Include="Controls\MineButton.Action.cs">
       <DependentUpon>MineButton.cs</DependentUpon>
     </Compile>
@@ -117,7 +118,13 @@
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePlayer.cs" />
+    <Compile Include="Controls\MinePlayer.Custom.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MinePlayer.Designer.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePlayer.DifficultyLevel.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePlayer.Expert.cs">
@@ -138,6 +145,9 @@
     <Compile Include="Controls\MineButton.cs" />
     <Compile Include="Controls\MineButton.Designer.cs">
       <DependentUpon>MineButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MinePlayer.New.cs">
+      <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\GameState.cs" />
     <Compile Include="Core\Mine.cs" />
@@ -178,6 +188,9 @@
     </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.UpdateUI.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />

@@ -6,6 +6,8 @@ namespace App.Windows.XPMinesweeper.Controls
   {
     public void Expert()
     {
+      this.DifficultyLevel = DifficultyLevel.Expert;
+      /************************************************/
       this.Mines.Clear(30, 16, 99);
     }
   }

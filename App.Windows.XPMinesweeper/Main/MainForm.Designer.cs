@@ -8,7 +8,9 @@ namespace App.Windows.XPMinesweeper.Main
 {
   partial class MainForm
   {
-    private Container components = null;
+    private IContainer components = null;
+    /************************************************/
+    private Timer guiTimer = null;
     /************************************************/
     protected override void Dispose(bool disposing)
     {
@@ -25,6 +27,10 @@ namespace App.Windows.XPMinesweeper.Main
     private void InitializeComponent()
     {
       ResourceManager resources = new ResourceManager(typeof(MainForm));
+      /************************************************/
+      this.components = new Container();
+      /************************************************/
+      this.guiTimer = new Timer(this.components);
       /************************************************/
       this.topMainMenu           = new MainMenu();
       this.gameMenuItem          = new MenuItem();
@@ -43,12 +49,19 @@ namespace App.Windows.XPMinesweeper.Main
       this.search4helponMenuItem = new MenuItem();
       this.usinghelpMenuItem     = new MenuItem();
       this.aboutMenuItem         = new MenuItem();
-      this.mcMine = new MineControl();
-      this.mpMine = new MinePlayer();
+      this.minePlayer1  = new MinePlayer();
+      this.mineControl1 = new MineControl();
       /************************************************/
-      this.mpMine.SuspendLayout();
+      this.minePlayer1.SuspendLayout();
       this.SuspendLayout();
       /************************************************/
+      // guiTimer
+      {
+        this.guiTimer.Enabled  = true;
+        this.guiTimer.Interval = 100;
+        /************************************************/
+        this.guiTimer.Tick += this.guiTimer_Tick;
+      }
       // topMainMenu
       {
         this.topMainMenu.Name = "topMainMenu";
@@ -187,23 +200,24 @@ namespace App.Windows.XPMinesweeper.Main
         /************************************************/
         this.aboutMenuItem.Click += this.aboutMenuItem_Click;
       }
-      // mcMine
-      this.mcMine.Name = "mcMine";
-      this.mcMine.BackColor = Color.Silver;
-      this.mcMine.Mines = null;
-      this.mcMine.Size = new Size(272, 168);
-      // mpMine
-      this.mpMine.Name = "mpMine";
-      this.mpMine.CountSecond = 0;
-      this.mpMine.Mines = this.mines;
-//      this.mpMine.Dock = DockStyle.Fill;
-      this.mpMine.RemainMineCount = 0;
-      this.mpMine.Panel2.Controls.Add(this.mcMine);
+      // mineControl1
+      this.mineControl1.Name = "mcMine";
+      this.mineControl1.BackColor = Color.Silver;
+      this.mineControl1.Mines = null;
+      this.mineControl1.Size = new Size(272, 168);
+      // minePlayer1
+      this.minePlayer1.Name = "mpMine";
+      this.minePlayer1.CountSecond = 0;
+      this.minePlayer1.Mines = this.mines;
+//      this.minePlayer1.Dock = DockStyle.Fill;
+      this.minePlayer1.RemainMineCount = 0;
+      this.minePlayer1.Panel2.Controls.Add(this.mineControl1);
+      this.minePlayer1.SizeChanged += minePlayer1_SizeChanged;
       // MainForm
 //      this.AutoScaleBaseSize = new Size(6, 14);
       base.AutoScaleMode = AutoScaleMode.None;
       this.ClientSize = new Size(322, 256);
-      this.Controls.Add(this.mpMine);
+      this.Controls.Add(this.minePlayer1);
       this.FormBorderStyle = FormBorderStyle.FixedSingle;
       this.Icon = ((Icon)(resources.GetObject("$this.Icon")));
 //      this.MaximizeBox = false;
@@ -212,7 +226,7 @@ namespace App.Windows.XPMinesweeper.Main
       this.Text = "Minesweeper";
       this.Load += new System.EventHandler(this.MainForm_Load);
       /************************************************/
-      this.mpMine.ResumeLayout(false);
+      this.minePlayer1.ResumeLayout(false);
       this.ResumeLayout(false);
     }
     /************************************************/
@@ -234,7 +248,7 @@ namespace App.Windows.XPMinesweeper.Main
     private MenuItem usinghelpMenuItem     = null;
     private MenuItem aboutMenuItem         = null;
     
-    private MineControl mcMine;
-    private MinePlayer mpMine;
+    private MinePlayer minePlayer1 = null;
+    private MineControl mineControl1 = null;
   }
 }
