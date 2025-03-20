@@ -2,6 +2,7 @@
 /************************************************/
 namespace App.Windows.XPMinesweeper.Core
 {
+  // 本遊戲：狀態
   partial class Mines
   {
     private GameState gameState = GameState.NotStarted;
@@ -10,7 +11,7 @@ namespace App.Windows.XPMinesweeper.Core
     {
       get
       {
-        return gameState;
+        return this.gameState;
       }
     }
   }

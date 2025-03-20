@@ -10,11 +10,11 @@ namespace App.Windows.XPMinesweeper.Core
     {
       get
       {
-        return allowMarkDoubt;
+        return this.allowMarkDoubt;
       }
       set
       {
-        allowMarkDoubt = value;
+        this.allowMarkDoubt = value;
       }
     }
   }

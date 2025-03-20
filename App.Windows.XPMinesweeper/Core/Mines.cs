@@ -7,37 +7,43 @@ namespace App.Windows.XPMinesweeper.Core
   {
     internal MineStatus[,] MineArray;
     internal Mine[] mines;
-
+    /************************************************/
     public Mines()
     {
-      init();
+      this.init();
     }
-
+    /************************************************/
     private void init()
     {
-      MineArray = new MineStatus[Width, Height];
-      mines = new Mine[Width * Height];
+      this.MineArray = new MineStatus[this.Width, this.Height];
+      this.mines     = new Mine[this.Width * this.Height];
+      /************************************************/
+      for (int i = 0; i < this.Width; i++)
+      {
+        for (int j = 0; j < this.Height; j++)
+        {
+          this.MineArray[i, j] = MineStatus.NoMine;
+          /************************************************/
+          int index = (j * this.Width) + i;
+          /************************************************/
+          this.mines[index] = new Mine(index, this);
+        }
+      }
+      /************************************************/
       for (int i = 0; i < Width; i++)
       {
         for (int j = 0; j < Height; j++)
         {
-          MineArray[i, j] = MineStatus.NoMine;
           int index = j * Width + i;
-          mines[index] = new Mine(index, this);
+          /************************************************/
+          this.mines[index].Init();
         }
       }
-      for (int i = 0; i < Width; i++)
-      {
-        for (int j = 0; j < Height; j++)
-        {
-          int index = j * Width + i;
-          mines[index].Init();
-        }
-      }
-
-      gameState = GameState.Complete;
+      /************************************************/
+      this.gameState = GameState.Complete;
+      /************************************************/
       #region 呴儂票濘1 (虴薹詢)
-      int[] temp = new int[mines.Length];
+      int[] temp = new int[this.mines.Length];
       for (int i = 0; i < temp.Length; i++)
       {
         temp[i] = i;
@@ -47,7 +53,7 @@ namespace App.Windows.XPMinesweeper.Core
       for (int c = 0; c < Count; c++)
       {
         unchecked {
-          Random random = new Random(System.Environment.TickCount / (c + 1) + System.Environment.TickCount - d);
+          Random random = new Random(Environment.TickCount / (c + 1) + Environment.TickCount - d);
           d = random.Next(cc - c);
           e = temp[d];
           if (mines[e].MineStatus != MineStatus.HasMine)
@@ -59,57 +65,9 @@ namespace App.Windows.XPMinesweeper.Core
       }
       #endregion
 
-      #region 呴儂票濘2(虴薹腴)
-//      int c = 0;
-//      while (true)
-//      {
-//        Random random = new Random(System.Environment.TickCount / (c + 1) + System.Environment.TickCount - d);
-//        int d = random.Next(Width * Height);
-//        if (mines[d].MineStatus == MineStatus.NoMine)
-//        {
-//          mines[d].MineStatus = MineStatus.HasMine;
-//          c++;
-//        }
-//        if (c >= Count)
-//          break;
-//      }
-      #endregion
       gameState = GameState.NotStarted;
     }
 
-    /// <summary>
-    /// 笭陔扢离濘
-    /// </summary>
-    public void Clear()
-    {
-      init();
-    }
-
-    public void Clear(int width, int height, int count)
-    {
-      if (width > 30)
-        width = 30;
-      if (width < 9)
-        width = 9;
-      if (height > 24)
-        height = 24;
-      if (height < 9)
-        height = 9;
-      m_Width = width;
-      m_Height = height;
-
-      int tCount = width * height / 2;
-      if (count < 10)
-        count = 10;
-      if (count > tCount)
-        count = tCount;
-      m_Count = count;
-      init();
-    }
-
-    /// <summary>
-    /// 呁豻帤楷珋麼梓祩腔濘杅
-    /// </summary>
     public int MineRemainCount
     {
       get

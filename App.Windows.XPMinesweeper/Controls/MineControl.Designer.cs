@@ -32,7 +32,6 @@ namespace App.Windows.XPMinesweeper.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      this.Name = "mineControl";
       grayBrush = new SolidBrush(gray);
       darkGrayBrush = new SolidBrush(darkGray);
       redBrush = new SolidBrush(Color.Red);
@@ -51,6 +50,14 @@ namespace App.Windows.XPMinesweeper.Controls
       imgMarked =  getBitmap("Marked.png");
       imgNotDiscovery = getBitmap("NotDiscovery.png");
       imgMarkedWrong = getBitmap("MarkedWrong.png");
+      /************************************************/
+      // MineControl
+      {
+        base.Name = "MineControl";
+        base.BackColor = Color.Silver;
+        base.Width  = 16 * 9;
+        base.Height = 16 * 9;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
 /************************************************/
 namespace App.Windows.XPMinesweeper.Core
 {
+  // 本遊戲：寬度
   partial class Mines
   {
     private int m_Width = 9;
@@ -10,7 +11,7 @@ namespace App.Windows.XPMinesweeper.Core
     {
       get
       {
-        return m_Width;
+        return this.m_Width;
       }
     }
   }

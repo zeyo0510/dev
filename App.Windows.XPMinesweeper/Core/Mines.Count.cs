@@ -2,6 +2,7 @@
 /************************************************/
 namespace App.Windows.XPMinesweeper.Core
 {
+  // 本遊戲：地雷數
   partial class Mines
   {
     private int m_Count = 10;
@@ -10,7 +11,7 @@ namespace App.Windows.XPMinesweeper.Core
     {
       get
       {
-        return m_Count;
+        return this.m_Count;
       }
     }
   }

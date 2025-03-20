@@ -61,7 +61,13 @@
     <Compile Include="Controls\MineButton.UpdateUI.cs">
       <DependentUpon>MineButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MineControl.Action.cs">
+      <DependentUpon>MineControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MineControl.Painter.cs">
+      <DependentUpon>MineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MineControl.Resources.cs">
       <DependentUpon>MineControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineLED.cs" />
@@ -86,19 +92,6 @@
     </Compile>
     <Compile Include="Controls\MineControl.Mines.cs">
       <DependentUpon>MineControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineControlPaintEventArgs.ClipRectangle.cs">
-      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineControlPaintEventArgs.cs" />
-    <Compile Include="Controls\MineControlPaintEventArgs.Graphics.cs">
-      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineControlPaintEventArgs.X.cs">
-      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineControlPaintEventArgs.Y.cs">
-      <DependentUpon>MineControlPaintEventArgs.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineException.cs" />
     <Compile Include="Controls\MinePanel.cs" />
@@ -163,7 +156,16 @@
     <Compile Include="Core\Mine.Index.cs">
       <DependentUpon>Mine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\Mine.Mark.cs">
+      <DependentUpon>Mine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Mine.ValideIndex.cs">
+      <DependentUpon>Mine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\Mines.AllowMarkDoubt.cs">
+      <DependentUpon>Mines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Mines.Clear.cs">
       <DependentUpon>Mines.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\Mines.Count.cs">
@@ -188,6 +190,9 @@
     <Compile Include="Dialogs\CustomDialog.cs" />
     <Compile Include="Dialogs\CustomDialog.Designer.cs">
       <DependentUpon>CustomDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.AboutDialog.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.CloseApp.cs">
       <DependentUpon>MainForm.cs</DependentUpon>

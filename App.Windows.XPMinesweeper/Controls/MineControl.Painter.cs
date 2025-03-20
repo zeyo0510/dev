@@ -18,11 +18,13 @@ namespace App.Windows.XPMinesweeper.Controls
       if (mines.GameState == GameState.Processing || mines.GameState == GameState.NotStarted)
         Enabled = true;
 
-      for (int i = 0; i < mines.Width; i++)
+      for (int x = 0; x < this.mines.Width; x++)
       {
-        for (int j = 0; j < mines.Height; j++)
+        for (int y = 0; y < this.mines.Height; y++)
         {
-          MineCell_Paint(this, new MineControlPaintEventArgs(e.Graphics, calcRect(e.ClipRectangle, i, j), i, j));
+          Rectangle rect = this.calcRect(e.ClipRectangle, x, y);
+          /************************************************/
+          this.DrawMine(e.Graphics, rect, x, y);
         }
       }
     }
@@ -43,19 +45,18 @@ namespace App.Windows.XPMinesweeper.Controls
       }
     }
     /************************************************/
-    private void MineCell_Paint(object sender, MineControlPaintEventArgs e)
+    private void DrawMine(Graphics g, Rectangle rect, int x, int y)
     {
-      Rectangle rect = new Rectangle(e.ClipRectangle.Location, new Size(e.ClipRectangle.Size.Width - 1, e.ClipRectangle.Size.Height - 1));
-      Graphics g = e.Graphics;
-
+      rect = new Rectangle(rect.Location, new Size(rect.Size.Width - 1, rect.Size.Height - 1));
+      /************************************************/
       if (rect == Rectangle.Empty || !g.IsVisible(rect))
         return;
-
-      Mine mine = mines.mines[e.Y * mines.Width + e.X];
-      switch(mine.MineStatus)
+      /************************************************/
+      Mine mine = this.mines.mines[y * mines.Width + x];
+      /************************************************/
+      switch (mine.MineStatus)
       {
         case MineStatus.HasMine:
-        case MineStatus.NoMine:
           if (mine.MineStatus == MineStatus.HasMine && (mines.GameState != GameState.Processing && mines.GameState != GameState.NotStarted))
           {
             DrawFrame(g, rect);
@@ -64,8 +65,8 @@ namespace App.Windows.XPMinesweeper.Controls
           else
           {
             int offset = 0;
-            if ((compareMouseButton(mouseButton, MouseButtons.Left) &&  activeRect == e.ClipRectangle) ||
-              (compareMouseButton(mouseButton, mbLeftnRight) &&  Rectangle.Intersect(activeRect, getSmallerRect(e.ClipRectangle)) != Rectangle.Empty))
+            if ((compareMouseButton(mouseButton, MouseButtons.Left) &&  activeRect == rect) ||
+              (compareMouseButton(mouseButton, mbLeftnRight) &&  Rectangle.Intersect(activeRect, getSmallerRect(rect)) != Rectangle.Empty))
             {
               DrawFrame(g, rect);
               offset = 1;
@@ -76,11 +77,25 @@ namespace App.Windows.XPMinesweeper.Controls
               g.DrawString("?", font, doubtBrush, rect.Left + 2 + offset, rect.Top + offset);
           }
           break;
-        case MineStatus.MarkedRight:
+        case MineStatus.NoMine:
+          int offset2 = 0;
+          if ((compareMouseButton(mouseButton, MouseButtons.Left) &&  activeRect == rect) ||
+            (compareMouseButton(mouseButton, mbLeftnRight) &&  Rectangle.Intersect(activeRect, getSmallerRect(rect)) != Rectangle.Empty))
+          {
+            DrawFrame(g, rect);
+            offset2 = 1;
+          }
+          else
+            DrawButton(g, rect);
+          if (mine.Doubt)
+            g.DrawString("?", font, doubtBrush, rect.Left + 2 + offset2, rect.Top + offset2);
+          break;
+        case MineStatus.MarkedRight: // 標記旗幟，且有炸彈
           this.DrawButton(g, rect);  
           g.DrawImage(imgMarked, rect.Left + 2,  rect.Top + 2);
           break;
-        case MineStatus.MarkedWrong:
+        case MineStatus.MarkedWrong: // 標記旗幟，未有炸彈
+          // 判斷遊戲是否進行中。若進行中，則不應公開
           if (mines.GameState == GameState.Processing || mines.GameState == GameState.NotStarted)
           {
             DrawButton(g, rect);  
@@ -92,12 +107,12 @@ namespace App.Windows.XPMinesweeper.Controls
             g.DrawImage(imgMarkedWrong, rect.Left + 1,  rect.Top + 1);
           }
           break;
-        case MineStatus.Exploded:
-          g.FillRectangle(redBrush, e.ClipRectangle);
+        case MineStatus.Exploded: // 踩到地雷
+          g.FillRectangle(redBrush, rect);
           DrawFrame(g, rect);
           g.DrawImage(imgNotDiscovery, rect.Left + 1,  rect.Top + 1);
           break;
-        case MineStatus.Clear:
+        case MineStatus.Clear: // 地雷被清除
           DrawFrame(g, rect);
           int count = mine.MineCount;
           if  (count > 0)
@@ -108,31 +123,23 @@ namespace App.Windows.XPMinesweeper.Controls
     /************************************************/
     private void DrawFrame(Graphics g, Rectangle rect)
     {
-      g.DrawLine(darkGrayPen, rect.Left, rect.Top, rect.Left, rect.Bottom);
-      g.DrawLine(darkGrayPen, rect.Left, rect.Top, rect.Right, rect.Top);
+      g.DrawLine(darkGrayPen, rect.Left, rect.Top, rect.Left, rect.Bottom); // Left
+      g.DrawLine(darkGrayPen, rect.Left, rect.Top, rect.Right, rect.Top); // Top
     }
     /************************************************/
     private void DrawButton(Graphics g, Rectangle rect)
     {
-      #region Top Border
-      g.DrawLine(lightPen, rect.Left, rect.Top, rect.Right - 1, rect.Top);
-      g.DrawLine(lightPen, rect.Left, rect.Top + 1, rect.Right - 2, rect.Top + 1);
-      #endregion
+      g.DrawLine(lightPen, rect.Left, rect.Top + 0, rect.Right - 1, rect.Top + 0); // Top
+      g.DrawLine(lightPen, rect.Left, rect.Top + 1, rect.Right - 2, rect.Top + 1); // Top
 
-      #region Bottom Border
-      g.DrawLine(darkGrayPen, rect.Left + 1, rect.Bottom, rect.Right, rect.Bottom);
-      g.DrawLine(darkGrayPen, rect.Left + 2, rect.Bottom - 1, rect.Right, rect.Bottom - 1);
-      #endregion
+      g.DrawLine(darkGrayPen, rect.Left + 1, rect.Bottom - 0, rect.Right, rect.Bottom - 0); // Bottom
+      g.DrawLine(darkGrayPen, rect.Left + 2, rect.Bottom - 1, rect.Right, rect.Bottom - 1); // Bottom
 
-      #region Left Border
-      g.DrawLine(lightPen, rect.Left, rect.Top, rect.Left, rect.Bottom - 1);
-      g.DrawLine(lightPen, rect.Left + 1, rect.Top, rect.Left + 1, rect.Bottom - 2);
-      #endregion
+      g.DrawLine(lightPen, rect.Left + 0, rect.Top, rect.Left + 0, rect.Bottom - 1); // Left
+      g.DrawLine(lightPen, rect.Left + 1, rect.Top, rect.Left + 1, rect.Bottom - 2); // Left
 
-      #region Right Border
-      g.DrawLine(darkGrayPen, rect.Right, rect.Top + 1, rect.Right, rect.Bottom);
-      g.DrawLine(darkGrayPen, rect.Right - 1, rect.Top + 2, rect.Right - 1, rect.Bottom);
-      #endregion
+      g.DrawLine(darkGrayPen, rect.Right - 0, rect.Top + 1, rect.Right - 0, rect.Bottom); // Right
+      g.DrawLine(darkGrayPen, rect.Right - 1, rect.Top + 2, rect.Right - 1, rect.Bottom); // Right
     }
   }
 }

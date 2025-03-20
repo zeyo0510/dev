@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 using App.Windows.XPMinesweeper.Core;
 /************************************************/
@@ -19,22 +18,10 @@ namespace App.Windows.XPMinesweeper.Controls
     public MineControl()
     {
       this.InitializeComponent();
+      /************************************************/
       SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer |
         ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
       SetStyle(ControlStyles.Selectable, false);
-      BackColor = Color.Silver;
-      Width = cellSize * 9;
-      Height = cellSize * 9;
-    }
-    /************************************************/
-    private Bitmap getBitmap(string fileName)
-    {
-      Image img = Image.FromStream(GetResource(fileName));
-      Bitmap bmp = new Bitmap(img);
-      img.Dispose();
-      img = null;
-      bmp.MakeTransparent(bmp.GetPixel(1, 1));
-      return bmp;
     }
     /************************************************/
     private Rectangle calcRect(Rectangle rect, int x, int y)
@@ -111,89 +98,35 @@ namespace App.Windows.XPMinesweeper.Controls
       setCellState(mb, Rectangle.Empty);
     }
 
-    protected override void OnMouseEnter(EventArgs e)
-    {
-      base.OnMouseEnter (e);
-
-      setCellState(MouseButtons.None);
-    }
-
-    protected override void OnMouseLeave(EventArgs e)
-    {
-      base.OnMouseLeave (e);
-
-      setCellState(MouseButtons.None);
-    }
-
-    protected override void OnMouseMove(MouseEventArgs e)
-    {
-      base.OnMouseMove(e);
-
-      setCellState(mouseButton, getRect(e.X, e.Y));
-    }
-
-    protected override void OnMouseDown(MouseEventArgs e)
-    {
-      base.OnMouseDown (e);
-
-      Mine m = getMine(e.X, e.Y);
-      if (m == null)
-        return;
-
-      twoKeyDoubleClick = false;
-      setCellState(e.Button, getRect(e.X, e.Y));
-    }
-
-    protected override void OnMouseUp(MouseEventArgs e)
-    {
-      base.OnMouseUp (e);
-
-      Mine m = getMine(e.X, e.Y);
-      if (m == null || !Enabled)
-        return;
-
-      if (mouseButton != MouseButtons.None && (mines.GameState == GameState.Processing || mines.GameState == GameState.NotStarted))
-      {
-        if (compareMouseButton(mouseButton, mbLeftnRight))
-        {
-          m.QuickDig();
-          AfterDigOrMark(this, EventArgs.Empty);
-        }
-        else if (compareMouseButton(e.Button, MouseButtons.Left) && !twoKeyDoubleClick)
-        {
-          m.Dig(true);
-          AfterDigOrMark(this, EventArgs.Empty);
-        }
-        else if (compareMouseButton(e.Button, MouseButtons.Right) && !twoKeyDoubleClick)
-        {
-          m.Mark();
-          AfterDigOrMark(this, EventArgs.Empty);
-        }
-
-        if (mines.GameState != GameState.Processing && mines.GameState != GameState.NotStarted)
-        {
-          Enabled = false;
-          Refresh();
-        }
-      }
-
-      if (compareMouseButton(mouseButton, mbLeftnRight))
-        mouseButton = e.Button == MouseButtons.Left ? MouseButtons.Right : MouseButtons.Left;
-      else
-        mouseButton = MouseButtons.None;
-      setCellState(mouseButton, getRect(e.X, e.Y));
-    }
-
     private Rectangle getRect(int x, int y)
     {
-      Rectangle rect = calcRect(ClientRectangle, x / cellSize, y / cellSize);
+      x = x / cellSize;
+      y = y / cellSize;
+      /************************************************/
+      Rectangle rect = calcRect(base.ClientRectangle, x, y);
+      /************************************************/
       return rect;
     }
 
     private Mine getMine(int x, int y)
     {
-      if (x > cellSize * mines.Width || y > cellSize * mines.Height || x < 0 || y < 0)
+      if (x < 0)
+      {
         return null;
+      }
+      if (x > cellSize * mines.Width)
+      {
+        return null;
+      }
+      if (y < 0)
+      {
+        return null;
+      }
+      if (y > cellSize * mines.Height)
+      {
+        return null;
+      }
+      /************************************************/
       int i = y / cellSize * mines.Width + x / cellSize;
       if (i >= 0 && i < mines.mines.Length)
         return mines.mines[i];
@@ -220,26 +153,6 @@ namespace App.Windows.XPMinesweeper.Controls
         Width = cellSize * mines.Width;
         Height = cellSize * mines.Height;
       }
-    }
-
-    /// <summary>
-    /// 植訧埭DLL笢腕剒猁腔訧埭
-    /// </summary>
-    public Stream GetResource(string fileName)
-    {
-      if (fileName == null || fileName.Length == 0)
-        return null;
-
-      Stream stream = null;
-      Type resourceType = this.GetType();
-      string resourceName = "App.Windows.XPMinesweeper.Resources." + fileName.Replace("\\", ".");
-      System.Reflection.Assembly assembly = System.Reflection.Assembly.GetAssembly(resourceType);
-      if (assembly == null)
-        throw new MineException("拸楊蚾婥訧埭恅璃: " + resourceType.Namespace + ".dll");
-      stream = System.Reflection.Assembly.GetAssembly(resourceType).GetManifestResourceStream(resourceName);
-      if (stream == null)
-        throw new MineException("拸楊腕訧埭: " + fileName);
-      return stream;
     }
 
     public event EventHandler DigOrMark;

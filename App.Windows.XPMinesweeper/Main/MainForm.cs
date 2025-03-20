@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Drawing;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using App.Windows.XPMinesweeper.Controls;
 using App.Windows.XPMinesweeper.Core;
@@ -95,16 +93,9 @@ namespace App.Windows.XPMinesweeper.Main
     /************************************************/
     private void aboutMenuItem_Click(object sender, EventArgs e)
     {
-      Icon ico = new Icon(GetResource("Mine.ico"), 32, 32);
-      try
-      {
-        ShellAbout(Handle, Text, "by Icebird", ico.Handle);
-      }
-      finally
-      {
-        ico.Dispose();
-        ico = null;
-      }
+      this.AboutDialog();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void minePlayer1_SizeChanged(object sender, EventArgs e)
@@ -171,9 +162,6 @@ namespace App.Windows.XPMinesweeper.Main
       return false;
     }
     #endregion
-
-    [DllImport("shell32.dll", EntryPoint="ShellAbout")]
-    private static extern int ShellAbout(IntPtr hwnd, string szApp, string szOtherStuff, IntPtr hIcon);
 
     /// <summary>
     /// 植訧埭DLL笢腕剒猁腔訧埭

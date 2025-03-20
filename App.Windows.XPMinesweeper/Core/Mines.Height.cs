@@ -2,6 +2,7 @@
 /************************************************/
 namespace App.Windows.XPMinesweeper.Core
 {
+  // 本遊戲：高度
   partial class Mines
   {
     private int m_Height = 9;
@@ -10,7 +11,7 @@ namespace App.Windows.XPMinesweeper.Core
     {
       get
       {
-        return m_Height;
+        return this.m_Height;
       }
     }
   }
