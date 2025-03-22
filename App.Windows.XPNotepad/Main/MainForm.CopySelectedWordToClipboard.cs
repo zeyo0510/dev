@@ -4,9 +4,9 @@ namespace App.Windows.XPNotepad.Main
 {
   partial class MainForm
   {
-    public void ToggleStatusBar()
+    public void CopySelectedWordToClipboard()
     {
-      this.bottomStatusBar.Visible = !this.bottomStatusBar.Visible;
+      this.notepadTextBox.Copy();
     }
   }
 }

@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.XPNotepad.Main
 {
   partial class MainForm
   {
-    public void ToggleStatusBar()
+    public void ShowHelpTopics()
     {
-      this.bottomStatusBar.Visible = !this.bottomStatusBar.Visible;
+      Help.ShowHelp(this, "notepad.chm", HelpNavigator.Topic);
     }
   }
 }

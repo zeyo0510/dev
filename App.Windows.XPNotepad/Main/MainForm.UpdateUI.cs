@@ -7,18 +7,15 @@ namespace App.Windows.XPNotepad.Main
     public void UpdateUI()
     {
       // TODO: do anything...
-      if (notepadTextBox.SelectedText != "")
-      {
-        cutMenuItem.Enabled = true;
-        deleteMenuItem.Enabled = true;
-        copyMenuItem.Enabled = true;
-      }
-      else
-      {
-        cutMenuItem.Enabled = false;
-        deleteMenuItem.Enabled = false;
-        copyMenuItem.Enabled = false;
-      }
+      this.   cutMenuItem.Enabled = this.notepadTextBox.SelectedText != "";
+      this.  copyMenuItem.Enabled = this.notepadTextBox.SelectedText != "";
+      this.deleteMenuItem.Enabled = this.notepadTextBox.SelectedText != "";
+      this.  gotoMenuItem.Enabled = !this.notepadTextBox.WordWrap;
+      
+      this.wordwrapMenuItem.Checked = this.notepadTextBox.WordWrap;
+      
+      this.statusbarMenuItem.Checked = this.bottomStatusBar.Visible;
+      this.statusbarMenuItem.Enabled = !this.notepadTextBox.WordWrap;
     }
   }
 }

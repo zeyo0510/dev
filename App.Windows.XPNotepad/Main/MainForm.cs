@@ -11,7 +11,6 @@ namespace App.Windows.XPNotepad.Main
   public partial class MainForm : Form
   {
     public int n = 0;
-    int ss = 0, stc = 0;
     public int find = 0, replace = 0;
     public string ts = "";
     public int start;
@@ -36,15 +35,6 @@ namespace App.Windows.XPNotepad.Main
       this.InitializeComponent();
     }
     /************************************************/
-    public MainForm(string[] test) : this()
-    {
-      if (test.Length > 0)
-      {
-        fl = true;
-        ft = test[0];
-      }
-    }  
-    /************************************************/
     private void MainForm_Shown(object sender, EventArgs e)
     {
 //            StringBuilder sb = new StringBuilder(128);
@@ -56,6 +46,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void MainForm_Load(object sender, EventArgs e)
     {
+      // TODO: 待修改
       GetPoint();
 
       if (fl) notepadTextBox_DragDrop(null, null);
@@ -76,6 +67,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
     {
+      // TODO: 待修改
       if (notepadTextBox.Text == "") Dispose();
       try
       {
@@ -104,6 +96,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void newMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: 待修改
       if (notepadTextBox.Text == "")
       {
         notepadTextBox.Text = "";
@@ -144,6 +137,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void openMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: 待修改
       try
       {
         FileExt();
@@ -163,6 +157,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void saveMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: 待修改
       try
       {
         FileExt();
@@ -196,6 +191,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void saveasMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: 待修改
       try
       {
         FileExt();
@@ -222,6 +218,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void pagesetupMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: 待修改
       try
       {
         this.pageSetupDialog1.Document = this.printDocument1;
@@ -236,6 +233,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void printMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: 待修改
       try
       {
         if (printDialog1.ShowDialog() == DialogResult.OK)
@@ -262,17 +260,22 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void undoMenuItem_Click(object sender, EventArgs e)
     {
+      // TODO: 待修改
       this.notepadTextBox.Undo();
     }
     /************************************************/
     private void cutMenuItem_Click(object sender, EventArgs e)
     {
-      this.notepadTextBox.Cut();
+      this.CutSelectedWordToClipboard();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void copyMenuItem_Click(object sender, EventArgs e)
     {
-      this.notepadTextBox.Copy();
+      this.CopySelectedWordToClipboard();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void pasteMenuItem_Click(object sender, EventArgs e)
@@ -282,8 +285,7 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void deleteMenuItem_Click(object sender, EventArgs e)
     {
-      if (notepadTextBox.SelectedText != "")
-        notepadTextBox.SelectedText = "";
+      this.DeleteSelectedWord();
     }
     /************************************************/
     private void findMenuItem_Click(object sender, EventArgs e)
@@ -403,33 +405,9 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void wordwrapMenuItem_Click(object sender, EventArgs e)
     {
-      if (wordwrapMenuItem.Checked == false)
-      {
-        wordwrapMenuItem.Checked = true;
-        notepadTextBox.WordWrap = true;
-        gotoMenuItem.Enabled = false;
-      } else {
-        wordwrapMenuItem.Checked = false;
-        notepadTextBox.WordWrap = false;
-        gotoMenuItem.Enabled = true;
-      }
+      this.WordWrap();
       /************************************************/
-      if (wordwrapMenuItem.Checked)
-      {
-        statusbarMenuItem.Enabled = false;
-        if (statusbarMenuItem.Checked)
-          stc = 1;
-        else stc = 0;
-        if (bottomStatusBar.Visible)
-          ss = 1;
-        else ss = 0;
-        bottomStatusBar.Visible = false;
-        statusbarMenuItem.Checked = false;
-      } else {
-        statusbarMenuItem.Enabled = true;
-        if (stc == 1) statusbarMenuItem.Checked = true;
-        if (ss == 1) bottomStatusBar.Visible = true;
-      }
+      this.UpdateUI();
     }
     /************************************************/
     private void fontMenuItem_Click(object sender, EventArgs e)
@@ -458,10 +436,9 @@ namespace App.Windows.XPNotepad.Main
     /************************************************/
     private void helptopicsMenuItem_Click(object sender, EventArgs e)
     {
-      if (sys == "Windows Vista")
-        Help.ShowHelp(this, "C:\\Windows\\winhlp32.exe");
-      else
-        Help.ShowHelp(this, "C:\\WINDOWS\\Help\\notepad.chm");
+      this.ShowHelpTopics();
+      /************************************************/
+      this.UpdateUI();
     }
     /************************************************/
     private void aboutMenuItem_Click(object sender, EventArgs e)

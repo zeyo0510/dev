@@ -216,7 +216,7 @@ namespace App.Windows.XPNotepad.Main
         this.editMenuItem.MenuItems.Add(this.selectallMenuItem);
         this.editMenuItem.MenuItems.Add(this.timedateMenuItem);
         /************************************************/
-        this.editMenuItem.Popup += editMenuItem_Popup;
+        this.editMenuItem.Popup += this.editMenuItem_Popup;
       }
       // undoMenuItem
       {
@@ -230,7 +230,7 @@ namespace App.Windows.XPNotepad.Main
       {
         this.cutMenuItem.Name     = "cutMenuItem";
         this.cutMenuItem.Shortcut = Shortcut.CtrlX;
-        this.cutMenuItem.Text     = "Cut&t";
+        this.cutMenuItem.Text     = "Cu&t";
         /************************************************/
         this.cutMenuItem.Click += this.cutMenuItem_Click;
       }
@@ -315,7 +315,7 @@ namespace App.Windows.XPNotepad.Main
         this.formatMenuItem.MenuItems.Add(this.wordwrapMenuItem);
         this.formatMenuItem.MenuItems.Add(this.fontMenuItem);
         /************************************************/
-        this.formatMenuItem.Popup += formatMenuItem_Popup;
+        this.formatMenuItem.Popup += this.formatMenuItem_Popup;
       }
       // wordwrapMenuItem
       {
@@ -341,7 +341,7 @@ namespace App.Windows.XPNotepad.Main
         /************************************************/
         this.viewMenuItem.MenuItems.Add(this.statusbarMenuItem);
         /************************************************/
-        this.viewMenuItem.Popup += viewMenuItem_Popup;
+        this.viewMenuItem.Popup += this.viewMenuItem_Popup;
       }
       // statusbarMenuItem
       {
@@ -361,7 +361,7 @@ namespace App.Windows.XPNotepad.Main
         this.helpMenuItem.MenuItems.Add(new MenuItem("-"));
         this.helpMenuItem.MenuItems.Add(this.aboutMenuItem);
         /************************************************/
-        this.helpMenuItem.Popup += helpMenuItem_Popup;
+        this.helpMenuItem.Popup += this.helpMenuItem_Popup;
       }
       // helptopicsMenuItem
       {
@@ -387,28 +387,22 @@ namespace App.Windows.XPNotepad.Main
         this.notepadTextBox.Font          = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
         this.notepadTextBox.HideSelection = false;
         this.notepadTextBox.ImeMode       = ImeMode.On;
-        this.notepadTextBox.Location      = new System.Drawing.Point(0, 0);
         this.notepadTextBox.Multiline     = true;
         this.notepadTextBox.ScrollBars    = ScrollBars.Both;
-        this.notepadTextBox.Size          = new System.Drawing.Size(584, 350);
-        this.notepadTextBox.TabIndex      = 4;
         this.notepadTextBox.WordWrap      = false;
         /************************************************/
         this.notepadTextBox.TextChanged    += this.notepadTextBox_TextChanged;
         this.notepadTextBox.DragDrop       += this.notepadTextBox_DragDrop;
         this.notepadTextBox.PreviewKeyDown += this.notepadTextBox_PreviewKeyDown;
         this.notepadTextBox.Click          += this.notepadTextBox_Click;
-        this.notepadTextBox.DragEnter     += this.notepadTextBox_DragEnter;
+        this.notepadTextBox.DragEnter      += this.notepadTextBox_DragEnter;
       }
       // bottomStatusBar
       {
         this.bottomStatusBar.Name        = "statusBar1";
+        this.bottomStatusBar.Dock        = DockStyle.Bottom;
         this.bottomStatusBar.Font        = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-        this.bottomStatusBar.Location    = new System.Drawing.Point(0, 350);
-        this.bottomStatusBar.RightToLeft = RightToLeft.No;
         this.bottomStatusBar.ShowPanels  = true;
-        this.bottomStatusBar.Size        = new System.Drawing.Size(584, 22);
-        this.bottomStatusBar.TabIndex    = 6;
         /************************************************/
         this.bottomStatusBar.Panels.Add(this.statusBarPanel1);
         this.bottomStatusBar.Panels.Add(this.lncolStatusBarPanel);
