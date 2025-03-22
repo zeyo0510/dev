@@ -1,3 +1,4 @@
+using System.Windows.Forms;
 namespace FileBrowser {
   partial class Browser {
     /// <summary> 
@@ -24,17 +25,17 @@ namespace FileBrowser {
     /// </summary>
     private void InitializeComponent() {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Browser));
-      this.browseSplitter = new System.Windows.Forms.SplitContainer();
+      this.browseSplitter = new SplitContainer();
       this.folderView = new FileBrowser.BrowserTreeView();
       this.fileView = new FileBrowser.BrowserListView();
-      this.browseToolStrip = new System.Windows.Forms.ToolStripContainer();
-      this.navigationBar = new System.Windows.Forms.ToolStrip();
-      this.navBackButton = new System.Windows.Forms.ToolStripSplitButton();
-      this.navForwardButton = new System.Windows.Forms.ToolStripSplitButton();
-      this.navUpButton = new System.Windows.Forms.ToolStripButton();
-      this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-      this.navFoldersButton = new System.Windows.Forms.ToolStripButton();
-      this.navAddressLabel = new System.Windows.Forms.ToolStripLabel();
+      this.browseToolStrip = new ToolStripContainer();
+      this.navigationBar = new ToolStrip();
+      this.navBackButton = new ToolStripSplitButton();
+      this.navForwardButton = new ToolStripSplitButton();
+      this.navUpButton = new ToolStripButton();
+      this.toolStripSeparator1 = new ToolStripSeparator();
+      this.navFoldersButton = new ToolStripButton();
+      this.navAddressLabel = new ToolStripLabel();
       this.navAddressBox = new FileBrowser.BrowserComboBox();
       this.browseSplitter.Panel1.SuspendLayout();
       this.browseSplitter.Panel2.SuspendLayout();
@@ -47,8 +48,8 @@ namespace FileBrowser {
       // 
       // browseSplitter
       // 
-      this.browseSplitter.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.browseSplitter.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+      this.browseSplitter.Dock = DockStyle.Fill;
+      this.browseSplitter.FixedPanel = FixedPanel.Panel1;
       this.browseSplitter.Location = new System.Drawing.Point(0, 0);
       this.browseSplitter.Name = "browseSplitter";
       // 
@@ -63,13 +64,13 @@ namespace FileBrowser {
       this.browseSplitter.SplitterDistance = 162;
       this.browseSplitter.SplitterWidth = 3;
       this.browseSplitter.TabIndex = 0;
-      this.browseSplitter.MouseDown += new System.Windows.Forms.MouseEventHandler(this.splitter_MouseDown);
-      this.browseSplitter.MouseMove += new System.Windows.Forms.MouseEventHandler(this.splitter_MouseMove);
-      this.browseSplitter.MouseUp += new System.Windows.Forms.MouseEventHandler(this.splitter_MouseUp);
+      this.browseSplitter.MouseDown += new MouseEventHandler(this.splitter_MouseDown);
+      this.browseSplitter.MouseMove += new MouseEventHandler(this.splitter_MouseMove);
+      this.browseSplitter.MouseUp += new MouseEventHandler(this.splitter_MouseUp);
       // 
       // folderView
       // 
-      this.folderView.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.folderView.Dock = DockStyle.Fill;
       this.folderView.HideSelection = false;
       this.folderView.HotTracking = true;
       this.folderView.Location = new System.Drawing.Point(0, 0);
@@ -81,10 +82,10 @@ namespace FileBrowser {
       // 
       // fileView
       // 
-      this.fileView.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+      this.fileView.Alignment = ListViewAlignment.Left;
       this.fileView.AllowColumnReorder = true;
       this.fileView.ColumnHeaderContextMenu = null;
-      this.fileView.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.fileView.Dock = DockStyle.Fill;
       this.fileView.HideSelection = false;
       this.fileView.Location = new System.Drawing.Point(0, 0);
       this.fileView.Name = "fileView";
@@ -93,7 +94,7 @@ namespace FileBrowser {
       this.fileView.SuspendHeaderContextMenu = false;
       this.fileView.TabIndex = 0;
       this.fileView.UseCompatibleStateImageBehavior = false;
-      this.fileView.View = System.Windows.Forms.View.List;
+      this.fileView.View = View.List;
       // 
       // browseToolStrip
       // 
@@ -102,7 +103,7 @@ namespace FileBrowser {
       // 
       this.browseToolStrip.ContentPanel.Controls.Add(this.browseSplitter);
       this.browseToolStrip.ContentPanel.Size = new System.Drawing.Size(536, 408);
-      this.browseToolStrip.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.browseToolStrip.Dock = DockStyle.Fill;
       this.browseToolStrip.LeftToolStripPanelVisible = false;
       this.browseToolStrip.Location = new System.Drawing.Point(0, 0);
       this.browseToolStrip.Name = "browseToolStrip";
@@ -118,10 +119,10 @@ namespace FileBrowser {
       // navigationBar
       // 
       this.navigationBar.CanOverflow = false;
-      this.navigationBar.Dock = System.Windows.Forms.DockStyle.None;
-      this.navigationBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+      this.navigationBar.Dock = DockStyle.None;
+      this.navigationBar.GripStyle = ToolStripGripStyle.Hidden;
       this.navigationBar.ImageScalingSize = new System.Drawing.Size(24, 24);
-      this.navigationBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+      this.navigationBar.Items.AddRange(new ToolStripItem[] {
         this.navBackButton,
         this.navForwardButton,
         this.navUpButton,
@@ -130,7 +131,7 @@ namespace FileBrowser {
         this.navAddressLabel,
         this.navAddressBox
       });
-      this.navigationBar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+      this.navigationBar.LayoutStyle = ToolStripLayoutStyle.HorizontalStackWithOverflow;
       this.navigationBar.Location = new System.Drawing.Point(0, 0);
       this.navigationBar.Name = "navigationBar";
       this.navigationBar.Size = new System.Drawing.Size(536, 31);
@@ -140,39 +141,39 @@ namespace FileBrowser {
       // 
       // navBackButton
       // 
-      this.navBackButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+      this.navBackButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
       this.navBackButton.Enabled = false;
       this.navBackButton.Image = global::FileBrowser.Properties.Resources.BrowserBack;
       this.navBackButton.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.navBackButton.Name = "navBackButton";
       this.navBackButton.Size = new System.Drawing.Size(40, 28);
       this.navBackButton.Text = "Back";
-      this.navBackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+      this.navBackButton.TextImageRelation = TextImageRelation.ImageAboveText;
       this.navBackButton.ButtonClick += new System.EventHandler(this.navBackButton_ButtonClick);
-      this.navBackButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.navBackForwardButton_DropDownItemClicked);
+      this.navBackButton.DropDownItemClicked += new ToolStripItemClickedEventHandler(this.navBackForwardButton_DropDownItemClicked);
       // 
       // navForwardButton
       // 
-      this.navForwardButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+      this.navForwardButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
       this.navForwardButton.Enabled = false;
       this.navForwardButton.Image = global::FileBrowser.Properties.Resources.BrowserForward;
       this.navForwardButton.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.navForwardButton.Name = "navForwardButton";
       this.navForwardButton.Size = new System.Drawing.Size(40, 28);
       this.navForwardButton.Text = "Forward";
-      this.navForwardButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+      this.navForwardButton.TextImageRelation = TextImageRelation.ImageAboveText;
       this.navForwardButton.ButtonClick += new System.EventHandler(this.navForwardButton_ButtonClick);
-      this.navForwardButton.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.navBackForwardButton_DropDownItemClicked);
+      this.navForwardButton.DropDownItemClicked += new ToolStripItemClickedEventHandler(this.navBackForwardButton_DropDownItemClicked);
       // 
       // navUpButton
       // 
-      this.navUpButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+      this.navUpButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
       this.navUpButton.Image = ((System.Drawing.Image)(resources.GetObject("navUpButton.Image")));
       this.navUpButton.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.navUpButton.Name = "navUpButton";
       this.navUpButton.Size = new System.Drawing.Size(28, 28);
       this.navUpButton.Text = "Up";
-      this.navUpButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+      this.navUpButton.TextImageRelation = TextImageRelation.ImageAboveText;
       this.navUpButton.Click += new System.EventHandler(this.navUpButton_Click);
       // 
       // toolStripSeparator1
@@ -184,28 +185,28 @@ namespace FileBrowser {
       // 
       this.navFoldersButton.Checked = true;
       this.navFoldersButton.CheckOnClick = true;
-      this.navFoldersButton.CheckState = System.Windows.Forms.CheckState.Checked;
-      this.navFoldersButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+      this.navFoldersButton.CheckState = CheckState.Checked;
+      this.navFoldersButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
       this.navFoldersButton.Image = ((System.Drawing.Image)(resources.GetObject("navFoldersButton.Image")));
       this.navFoldersButton.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.navFoldersButton.Name = "navFoldersButton";
       this.navFoldersButton.Size = new System.Drawing.Size(28, 28);
       this.navFoldersButton.Text = "Folders";
-      this.navFoldersButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+      this.navFoldersButton.TextImageRelation = TextImageRelation.ImageAboveText;
       this.navFoldersButton.CheckedChanged += new System.EventHandler(this.navFoldersButton_CheckedChanged);
       // 
       // navAddressLabel
       // 
       this.navAddressLabel.MergeIndex = 0;
       this.navAddressLabel.Name = "navAddressLabel";
-      this.navAddressLabel.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+      this.navAddressLabel.Overflow = ToolStripItemOverflow.Never;
       this.navAddressLabel.Size = new System.Drawing.Size(46, 28);
       this.navAddressLabel.Text = "Address";
       // 
       // navAddressBox
       // 
-      this.navAddressBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-      this.navAddressBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
+      this.navAddressBox.AutoCompleteMode = AutoCompleteMode.Append;
+      this.navAddressBox.AutoCompleteSource = AutoCompleteSource.FileSystemDirectories;
       this.navAddressBox.AutoSize = false;
       this.navAddressBox.CurrentItem = null;
       this.navAddressBox.MaxDropDownItems = 14;
@@ -216,7 +217,7 @@ namespace FileBrowser {
       // Browser
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.AutoScaleMode = AutoScaleMode.Font;
       this.Controls.Add(this.browseToolStrip);
       this.Name = "Browser";
       this.Size = new System.Drawing.Size(536, 439);
@@ -235,15 +236,15 @@ namespace FileBrowser {
 
     #endregion
 
-    private System.Windows.Forms.ToolStripContainer browseToolStrip;
-    private System.Windows.Forms.ToolStrip navigationBar;
-    private System.Windows.Forms.ToolStripSplitButton navBackButton;
-    private System.Windows.Forms.ToolStripSplitButton navForwardButton;
-    private System.Windows.Forms.ToolStripButton navUpButton;
-    private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-    private System.Windows.Forms.ToolStripButton navFoldersButton;
-    private System.Windows.Forms.ToolStripLabel navAddressLabel;
-    private System.Windows.Forms.SplitContainer browseSplitter;
+    private ToolStripContainer browseToolStrip;
+    private ToolStrip navigationBar;
+    private ToolStripSplitButton navBackButton;
+    private ToolStripSplitButton navForwardButton;
+    private ToolStripButton navUpButton;
+    private ToolStripSeparator toolStripSeparator1;
+    private ToolStripButton navFoldersButton;
+    private ToolStripLabel navAddressLabel;
+    private SplitContainer browseSplitter;
     private BrowserComboBox navAddressBox;
     private BrowserTreeView folderView;
     private BrowserListView fileView;

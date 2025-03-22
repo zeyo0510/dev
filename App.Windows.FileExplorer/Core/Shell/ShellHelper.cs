@@ -17,10 +17,13 @@ namespace ShellDll
         /// <returns>The unsigned integer for the High Word</returns>
         public static uint HiWord(IntPtr ptr)
         {
+          unchecked
+          {
             if (((uint)ptr & 0x80000000) == 0x80000000)
                 return ((uint)ptr >> 16);
             else
                 return ((uint)ptr >> 16) & 0xffff;
+          }
         }
 
         /// <summary>
@@ -30,7 +33,10 @@ namespace ShellDll
         /// <returns>The unsigned integer for the Low Word</returns>
         public static uint LoWord(IntPtr ptr)
         {
+          unchecked
+          {
             return (uint)ptr & 0xffff;
+          }
         }
 
         #endregion

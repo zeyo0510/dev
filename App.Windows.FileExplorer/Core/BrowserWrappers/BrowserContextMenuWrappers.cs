@@ -48,7 +48,7 @@ namespace FileBrowser
         {
             this.br = br;
 
-            br.FolderView.MouseUp += new System.Windows.Forms.MouseEventHandler(FolderView_MouseUp);
+            br.FolderView.MouseUp += new MouseEventHandler(FolderView_MouseUp);
             br.FolderView.AfterLabelEdit += new NodeLabelEditEventHandler(FolderView_AfterLabelEdit);
             br.FolderView.BeforeLabelEdit += new NodeLabelEditEventHandler(FolderView_BeforeLabelEdit);
             br.FolderView.KeyDown += new KeyEventHandler(FolderView_KeyDown);

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{DF0CF7A8-B531-4771-84F6-583F9260C785}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>App.Windows.FileExplorer</RootNamespace>
+    <AssemblyName>App.Windows.FileExplorer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Browser.cs" />
+    <Compile Include="Controls\Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserContextMenuWrappers.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserDragWrappers.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserDropWrappers.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserPluginWrapper.cs" />
+    <Compile Include="Core\ContextMenuMouseHoverEventArgs.cs" />
+    <Compile Include="Controls\BrowserComboBox.cs" />
+    <Compile Include="Controls\BrowserListView.cs" />
+    <Compile Include="Controls\BrowserTreeView.cs" />
+    <Compile Include="Core\Resources.Designer.cs" />
+    <Compile Include="Core\SelectedFolderChangedEventArgs.cs" />
+    <Compile Include="Core\Shell\Interfaces\IContextMenu.cs" />
+    <Compile Include="Core\Shell\Interfaces\IDragSourceHelper.cs" />
+    <Compile Include="Core\Shell\Interfaces\IDropSource.cs" />
+    <Compile Include="Core\Shell\Interfaces\IDropTarget.cs" />
+    <Compile Include="Core\Shell\Interfaces\IDropTargetHelper.cs" />
+    <Compile Include="Core\Shell\Interfaces\IEnumIDList.cs" />
+    <Compile Include="Core\Shell\Interfaces\IEnumSTATSTG.cs" />
+    <Compile Include="Core\Shell\Interfaces\IQueryInfo.cs" />
+    <Compile Include="Core\Shell\Interfaces\IShellExtInit.cs" />
+    <Compile Include="Core\Shell\Interfaces\IShellFolder.cs" />
+    <Compile Include="Core\Shell\Interfaces\IStorage.cs" />
+    <Compile Include="Core\Shell\Interfaces\IStream.cs" />
+    <Compile Include="Core\Shell\PIDL.cs" />
+    <Compile Include="Core\Shell\ShellBrowser.cs" />
+    <Compile Include="Core\Shell\ShellBrowserUpdater.cs" />
+    <Compile Include="Core\Shell\ShellHelper.cs" />
+    <Compile Include="Core\Shell\ShellImageList.cs" />
+    <Compile Include="Core\Shell\ShellItem.cs" />
+    <Compile Include="Core\Shell\StreamStorage.cs" />
+    <Compile Include="Core\Shell\WinAPI.cs" />
+    <Compile Include="Core\SpecialFolders.cs" />
+    <Compile Include="Main\MainForm.cs" />
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core" />
+    <Folder Include="Core\BrowserWrappers" />
+    <Folder Include="Controls" />
+    <Folder Include="Main" />
+    <Folder Include="Images" />
+    <Folder Include="Core\Shell" />
+    <Folder Include="Core\Shell\Interfaces" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Browser.resx">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EmbeddedResource Include="Images\BrowseFolders.png" />
+    <EmbeddedResource Include="Images\BrowserBack.png" />
+    <EmbeddedResource Include="Images\BrowserForward.png" />
+    <EmbeddedResource Include="Images\BrowserUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Core\Resources.resx">
+      <DependentUpon>Resources.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
