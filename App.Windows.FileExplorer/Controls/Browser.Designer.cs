@@ -1,30 +1,28 @@
+﻿using System.ComponentModel;
 using System.Windows.Forms;
-namespace FileBrowser {
-  partial class Browser {
-    /// <summary> 
-    /// Required designer variable.
-    /// </summary>
-    private System.ComponentModel.IContainer components = null;
-
-    /// <summary> 
-    /// Clean up any resources being used.
-    /// </summary>
-    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-    protected override void Dispose(bool disposing) {
-      if (disposing && (components != null)) {
-        this.components.Dispose();
+/************************************************/
+namespace FileBrowser
+{
+  partial class Browser
+  {
+    private IContainer components = null;
+    /************************************************/
+    protected override void Dispose(bool disposing)
+    {
+      if (disposing)
+      {
+        if (components != null)
+        {
+          this.components.Dispose();
+        }
       }
       base.Dispose(disposing);
     }
-
-    #region Component Designer generated code
-
-    /// <summary> 
-    /// Required method for Designer support - do not modify 
-    /// the contents of this method with the code editor.
-    /// </summary>
-    private void InitializeComponent() {
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Browser));
+    /************************************************/
+    private void InitializeComponent()
+    {
+      ComponentResourceManager resources = new ComponentResourceManager(typeof(Browser));
+      /************************************************/
       this.browseSplitter = new SplitContainer();
       this.folderView = new FileBrowser.BrowserTreeView();
       this.fileView = new FileBrowser.BrowserListView();
@@ -37,6 +35,7 @@ namespace FileBrowser {
       this.navFoldersButton = new ToolStripButton();
       this.navAddressLabel = new ToolStripLabel();
       this.navAddressBox = new FileBrowser.BrowserComboBox();
+      /************************************************/
       this.browseSplitter.Panel1.SuspendLayout();
       this.browseSplitter.Panel2.SuspendLayout();
       this.browseSplitter.SuspendLayout();
@@ -45,6 +44,7 @@ namespace FileBrowser {
       this.browseToolStrip.SuspendLayout();
       this.navigationBar.SuspendLayout();
       this.SuspendLayout();
+      /************************************************/
       // 
       // browseSplitter
       // 
@@ -221,6 +221,7 @@ namespace FileBrowser {
       this.Controls.Add(this.browseToolStrip);
       this.Name = "Browser";
       this.Size = new System.Drawing.Size(536, 439);
+      /************************************************/
       this.browseSplitter.Panel1.ResumeLayout(false);
       this.browseSplitter.Panel2.ResumeLayout(false);
       this.browseSplitter.ResumeLayout(false);
@@ -233,9 +234,7 @@ namespace FileBrowser {
       this.navigationBar.PerformLayout();
       this.ResumeLayout(false);
     }
-
-    #endregion
-
+    /************************************************/
     private ToolStripContainer browseToolStrip;
     private ToolStrip navigationBar;
     private ToolStripSplitButton navBackButton;

@@ -51,9 +51,169 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Browser.AddNavBackForwardItem.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.Back.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ChangeNavBarItem.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ConvertPath.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.CreateNewFolder.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Browser.cs" />
+    <Compile Include="Controls\Browser.CurrentViewPlugin.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Browser.Designer.cs">
       <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ExtendTreeNode.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.FileView.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.FolderView.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.Forward.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.GetListViewItem.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitBaseItems.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitBrowser.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitContextMenu.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitDragDrop.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitFileView.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitFolderView.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitPlugins.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitStartUp.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.InitUpdate.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.IsExtended.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ListViewMode.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.NavAddressBox.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.NewItemCreated.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.PathExists.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.PluginWrapper.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ResetSpecialView.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.SelectedItem.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.SelectedNode.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.SelectionChange.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.SelectPath.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.SetNewPath.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ShellBrowser.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ShowFolders.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ShowFoldersButton.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.ShowNavigationBar.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.SplitterDistance.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.StartUpDirectory.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.StartUpDirectoryOther.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.Up.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Browser.UpdateLoop.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserComboBox.ComboEditWindow.cs" />
+    <Compile Include="Controls\BrowserComboBox.CurrentItem.cs">
+      <DependentUpon>BrowserComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserComboItem.cs" />
+    <Compile Include="Controls\BrowserListSorter.cs" />
+    <Compile Include="Controls\BrowserListView.ClearSelections.cs">
+      <DependentUpon>BrowserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserListView.ColumnHeaderContextMenu.cs">
+      <DependentUpon>BrowserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserListView.GetListItem.cs">
+      <DependentUpon>BrowserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserListView.SelectedOrder.cs">
+      <DependentUpon>BrowserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserListView.SetSorting.cs">
+      <DependentUpon>BrowserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserListView.SuspendHeaderContextMenu.cs">
+      <DependentUpon>BrowserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserListView.View.cs">
+      <DependentUpon>BrowserListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserTreeSorter.cs" />
+    <Compile Include="Controls\BrowserTreeView.GetTreeNode.cs">
+      <DependentUpon>BrowserTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserTreeView.IsParentNode.cs">
+      <DependentUpon>BrowserTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BrowserTreeView.SetSorting.cs">
+      <DependentUpon>BrowserTreeView.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\BrowserWrappers\BrowserContextMenuWrappers.cs" />
     <Compile Include="Core\BrowserWrappers\BrowserDragWrappers.cs" />
@@ -88,6 +248,9 @@
     <Compile Include="Core\SpecialFolders.cs" />
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainForm.UpdateUI.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />

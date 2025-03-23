@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 using FileBrowser;
@@ -16,11 +16,13 @@ namespace App.Windows.FileExplorer.Main
       SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
     }
     /************************************************/
-    private void fileBrowser_ContextMenuMouseHover(object sender, ContextMenuMouseHoverEventArgs e) {
+    private void fileBrowser_ContextMenuMouseHover(object sender, ContextMenuMouseHoverEventArgs e)
+    {
       this.messageToolStripStatusLabel.Text = e.ContextMenuItemInfo;
     }
     /************************************************/
-    private void fileBrowser_SelectedFolderChanged(object sender, SelectedFolderChangedEventArgs e) {
+    private void fileBrowser_SelectedFolderChanged(object sender, SelectedFolderChangedEventArgs e)
+    {
       Icon icon = ShellImageList.GetIcon(e.Node.ImageIndex, true);
       if (icon != null) {
         this.currentToolStripStatusLabel.Image = icon.ToBitmap();
