@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音樂播放器</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #dcdcdc;
+      font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .player-card {
+      width: 320px;
+      background-color: #f4f4f4;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover {
+      height: 250px;
+      background-image: url('https://i.imgur.com/Msfs5kU.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .info-section {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .song-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .artist {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .file-info {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .time-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 16px;
+      font-size: 12px;
+      color: #444;
+    }
+
+    .progress-track {
+      height: 5px;
+      background: #ccc;
+      margin: 4px 16px;
+      border-radius: 3px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: #111;
+      transition: width 0.1s;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .controls button {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #333;
+      transition: transform 0.2s;
+      outline: none;
+    }
+
+    .controls button:hover {
+      transform: scale(1.2);
+    }
+
+    .material-icons {
+      font-size: 24px;
+      color: #333;
+    }
+
+    /* Playlist styles */
+    .playlist-container {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f0f0f0;
+    }
+
+    .playlist-container.show {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .playlist-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .playlist-item:hover {
+      background-color: #e0e0e0;
+    }
+
+    .playlist-item.active {
+      background-color: #d0d0d0;
+      font-weight: bold;
+    }
+
+    .playlist-item-content {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .playlist-item-actions {
+      display: none;
+      margin-left: 10px;
+    }
+
+    .playlist-item:hover .playlist-item-actions {
+      display: flex;
+    }
+
+    .playlist-item-action {
+      background: none;
+      border: none;
+      color: #666;
+      cursor: pointer;
+      font-size: 18px;
+      margin-left: 5px;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .playlist-item-action:hover {
+      color: #333;
+    }
+
+    /* Hidden file input */
+    #file-input {
+      display: none;
+    }
+
+    .playlist-controls {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 15px;
+      background-color: #e0e0e0;
+      border-top: 1px solid #ddd;
+    }
+
+    .playlist-controls button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .playlist-controls button:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="player-card">
+    <div class="cover" id="album-cover"></div>
+    <div class="info-section">
+      <div class="song-title" id="song-title">載入歌曲...</div>
+      <div class="artist" id="artist">未知藝術家</div>
+      <div class="file-info" id="file-info"></div>
+    </div>
+    <div class="time-bar">
+      <span id="current-time">00:00</span>
+      <span id="total-time">00:00</span>
+    </div>
+    <div class="progress-track" id="progress-track">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div class="controls">
+      <button id="rewind-btn" title="快退10秒 (右鍵:上一首)">
+        <span class="material-icons">fast_rewind</span>
+      </button>
+      <button id="play-pause" title="播放/暫停">
+        <span class="material-icons" id="play-icon">play_arrow</span>
+        <span class="material-icons" id="pause-icon" style="display:none">pause</span>
+      </button>
+      <button id="forward-btn" title="快進10秒 (右鍵:下一首)">
+        <span class="material-icons">fast_forward</span>
+      </button>
+      <button id="mute-unmute" title="靜音">
+        <span class="material-icons" id="mute-icon" style="display:none">volume_off</span>
+        <span class="material-icons" id="unmute-icon">volume_up</span>
+      </button>
+      <button id="open-file" title="開啟音樂檔案 (將替換現有清單)">
+        <span class="material-icons">folder_open</span>
+      </button>
+      <button id="playlist-btn" title="播放清單">
+        <span class="material-icons">playlist_play</span>
+      </button>
+      <button id="shuffle" title="隨機播放">
+        <span class="material-icons" id="shuffle-icon">shuffle</span>
+      </button>
+      <button id="repeat" title="循環播放">
+        <span class="material-icons" id="repeat-icon">repeat</span>
+      </button>
+    </div>
+    <div class="playlist-container" id="playlist-container">
+      <!-- 播放清單項目將在這裡動態生成 -->
+      <div class="playlist-controls">
+        <button id="clear-playlist" title="清除播放清單">清除</button>
+        <button id="add-files" title="加入更多檔案">加入檔案</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="audio-player"></audio>
+  <input type="file" id="file-input" accept="audio/*" multiple />
+
+  <script>
+    // 播放器元素
+    const audioPlayer = document.getElementById('audio-player');
+    const fileInput = document.getElementById('file-input');
+    const fileInfo = document.getElementById('file-info');
+    const albumCover = document.getElementById('album-cover');
+    
+    // 控制元素
+    const playBtn = document.getElementById('play-pause');
+    const playIcon = document.getElementById('play-icon');
+    const pauseIcon = document.getElementById('pause-icon');
+    const muteBtn = document.getElementById('mute-unmute');
+    const muteIcon = document.getElementById('mute-icon');
+    const unmuteIcon = document.getElementById('unmute-icon');
+    const repeatBtn = document.getElementById('repeat');
+    const repeatIcon = document.getElementById('repeat-icon');
+    const shuffleBtn = document.getElementById('shuffle');
+    const shuffleIcon = document.getElementById('shuffle-icon');
+    const currentTimeText = document.getElementById('current-time');
+    const totalTimeText = document.getElementById('total-time');
+    const songTitle = document.getElementById('song-title');
+    const artist = document.getElementById('artist');
+    const playlistContainer = document.getElementById('playlist-container');
+    const playlistBtn = document.getElementById('playlist-btn');
+    const rewindBtn = document.getElementById('rewind-btn');
+    const forwardBtn = document.getElementById('forward-btn');
+    const openFileBtn = document.getElementById('open-file');
+    const progress = document.getElementById('progress-fill');
+    const progressTrack = document.getElementById('progress-track');
+    const clearPlaylistBtn = document.getElementById('clear-playlist');
+    const addFilesBtn = document.getElementById('add-files');
+    
+    // 播放器狀態
+    let isPlaying = false;
+    let isMuted = false;
+    let isShuffling = false;
+    let isRepeating = false;
+    let isLocalFile = false;
+    let updateInterval;
+    
+    // 播放清單
+    let playlist = [
+      {
+        title: "He lives in you",
+        artist: "Elton John, Hans Zimmer",
+        cover: "https://i.imgur.com/Msfs5kU.jpeg",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+        duration: 176,
+        isLocal: false
+      },
+      {
+        title: "範例歌曲 2",
+        artist: "藝術家 2",
+        cover: "https://i.imgur.com/example2.jpg",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+        duration: 210,
+        isLocal: false
+      },
+      {
+        title: "範例歌曲 3",
+        artist: "藝術家 3",
+        cover: "https://i.imgur.com/example3.jpg",
+        audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+        duration: 185,
+        isLocal: false
+      }
+    ];
+    
+    let currentTrackIndex = 0;
+
+    // 初始化播放器
+    function initPlayer() {
+      // 建立播放清單項目
+      renderPlaylist();
+      
+      // 載入第一首歌曲
+      loadTrack(currentTrackIndex);
+      
+      // 設定事件監聽器
+      setupEventListeners();
+    }
+
+    // 渲染播放清單
+    function renderPlaylist() {
+      // 先清空播放清單容器，但保留控制按鈕
+      const controls = playlistContainer.querySelector('.playlist-controls');
+      playlistContainer.innerHTML = '';
+      if (controls) {
+        playlistContainer.appendChild(controls);
+      }
+      
+      if (playlist.length === 0) {
+        const emptyMsg = document.createElement('div');
+        emptyMsg.className = 'playlist-item';
+        emptyMsg.textContent = '播放清單為空';
+        playlistContainer.insertBefore(emptyMsg, controls);
+        return;
+      }
+      
+      playlist.forEach((track, index) => {
+        const playlistItem = document.createElement('div');
+        playlistItem.className = 'playlist-item';
+        playlistItem.innerHTML = `
+          <div class="playlist-item-content">${track.title}${track.artist ? ' - ' + track.artist : ''}</div>
+          <div class="playlist-item-actions">
+            <button class="playlist-item-action" title="上移" onclick="moveTrackUp(event, ${index})">
+              <span class="material-icons">arrow_upward</span>
+            </button>
+            <button class="playlist-item-action" title="下移" onclick="moveTrackDown(event, ${index})">
+              <span class="material-icons">arrow_downward</span>
+            </button>
+            <button class="playlist-item-action" title="移除" onclick="removeTrack(event, ${index})">
+              <span class="material-icons">close</span>
+            </button>
+          </div>
+        `;
+        playlistItem.onclick = (e) => {
+          // 防止點擊操作按鈕時觸發播放
+          if (!e.target.classList.contains('playlist-item-action') && !e.target.classList.contains('material-icons')) {
+            playTrack(index);
+          }
+        };
+        playlistContainer.insertBefore(playlistItem, controls);
+      });
+      
+      // 更新當前播放項目的選中狀態
+      updateActivePlaylistItem();
+    }
+
+    // 更新當前播放項目的選中狀態
+    function updateActivePlaylistItem() {
+      document.querySelectorAll('.playlist-item').forEach((item, i) => {
+        item.classList.toggle('active', i === currentTrackIndex && !item.textContent.includes('播放清單為空'));
+      });
+    }
+
+    // 上移項目
+    function moveTrackUp(event, index) {
+      event.stopPropagation();
+      if (index <= 0) return;
+      
+      // 交換位置
+      [playlist[index], playlist[index - 1]] = [playlist[index - 1], playlist[index]];
+      
+      // 如果移動的是當前播放的曲目，更新索引
+      if (currentTrackIndex === index) {
+        currentTrackIndex--;
+      } else if (currentTrackIndex === index - 1) {
+        currentTrackIndex++;
+      }
+      
+      renderPlaylist();
+    }
+
+    // 下移項目
+    function moveTrackDown(event, index) {
+      event.stopPropagation();
+      if (index >= playlist.length - 1) return;
+      
+      // 交換位置
+      [playlist[index], playlist[index + 1]] = [playlist[index + 1], playlist[index]];
+      
+      // 如果移動的是當前播放的曲目，更新索引
+      if (currentTrackIndex === index) {
+        currentTrackIndex++;
+      } else if (currentTrackIndex === index + 1) {
+        currentTrackIndex--;
+      }
+      
+      renderPlaylist();
+    }
+
+    // 移除項目
+    function removeTrack(event, index) {
+      event.stopPropagation();
+      if (index < 0 || index >= playlist.length) return;
+      
+      // 如果移除的是當前播放的曲目
+      if (index === currentTrackIndex) {
+        // 如果是最後一首歌
+        if (playlist.length === 1) {
+          audioPlayer.src = '';
+          isPlaying = false;
+          playIcon.style.display = 'inline';
+          pauseIcon.style.display = 'none';
+          songTitle.textContent = '播放清單為空';
+          artist.textContent = '';
+          fileInfo.textContent = '';
+        } else {
+          // 如果不是最後一首，播放下一首或上一首
+          const newIndex = index === playlist.length - 1 ? index - 1 : index;
+          currentTrackIndex = newIndex;
+          loadTrack(newIndex);
+          if (isPlaying) {
+            audioPlayer.play().catch(e => console.log("播放錯誤:", e));
+          }
+        }
+      } else if (index < currentTrackIndex) {
+        // 如果移除的是當前播放曲目之前的曲目，調整當前索引
+        currentTrackIndex--;
+      }
+      
+      // 從播放清單中移除
+      playlist.splice(index, 1);
+      
+      renderPlaylist();
+    }
+
+    // 設定事件監聽器
+    function setupEventListeners() {
+      // 播放/暫停按鈕
+      playBtn.addEventListener('click', togglePlay);
+      
+      // 靜音按鈕
+      muteBtn.addEventListener('click', toggleMute);
+      
+      // 播放清單按鈕
+      playlistBtn.addEventListener('click', togglePlaylist);
+      
+      // 隨機播放按鈕
+      shuffleBtn.addEventListener('click', toggleShuffle);
+      
+      // 循環播放按鈕
+      repeatBtn.addEventListener('click', toggleRepeat);
+      
+      // 進度條點擊
+      progressTrack.addEventListener('click', seek);
+      
+      // 快退按鈕 - 左鍵快退10秒, 右鍵上一首
+      rewindBtn.addEventListener('click', (e) => rewind(e));
+      rewindBtn.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        rewind(e);
+      });
+      
+      // 快進按鈕 - 左鍵快進10秒, 右鍵下一首
+      forwardBtn.addEventListener('click', (e) => forward(e));
+      forwardBtn.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        forward(e);
+      });
+      
+      // 開啟檔案按鈕
+      openFileBtn.addEventListener('click', () => fileInput.click());
+      
+      // 檔案選擇事件
+      fileInput.addEventListener('change', (event) => {
+        const files = event.target.files;
+        if (files.length > 0) {
+          // 先清除播放清單
+          clearPlaylist();
+          // 然後處理選擇的檔案
+          handleFileSelect(event);
+        }
+      });
+      
+      // 清除播放清單按鈕
+      clearPlaylistBtn.addEventListener('click', clearPlaylist);
+      
+      // 加入檔案按鈕
+      addFilesBtn.addEventListener('click', () => fileInput.click());
+      
+      // 音頻事件
+      audioPlayer.addEventListener('ended', handleTrackEnd);
+      audioPlayer.addEventListener('timeupdate', updateProgress);
+      audioPlayer.addEventListener('loadedmetadata', updateDuration);
+    }
+
+    // 清除播放清單
+    function clearPlaylist() {
+      // 先暫存控制按鈕
+      const controls = playlistContainer.querySelector('.playlist-controls');
+      
+      // 清除播放清單數據
+      playlist = [];
+      currentTrackIndex = 0;
+      
+      // 清空播放清單容器
+      playlistContainer.innerHTML = '';
+      
+      // 重新加入控制按鈕
+      if (controls) {
+        playlistContainer.appendChild(controls);
+      }
+      
+      // 加入"播放清單為空"訊息
+      const emptyMsg = document.createElement('div');
+      emptyMsg.className = 'playlist-item';
+      emptyMsg.textContent = '播放清單為空';
+      playlistContainer.insertBefore(emptyMsg, controls);
+      
+      // 更新播放器狀態
+      songTitle.textContent = '播放清單已清空';
+      artist.textContent = '';
+      fileInfo.textContent = '';
+      audioPlayer.src = '';
+      isPlaying = false;
+      playIcon.style.display = 'inline';
+      pauseIcon.style.display = 'none';
+      clearInterval(updateInterval);
+    }
+
+    // 處理檔案選擇
+    function handleFileSelect(event) {
+      const files = event.target.files;
+      if (files.length > 0) {
+        // 將新檔案加入播放清單
+        Array.from(files).forEach(file => {
+          if (file.type.startsWith('audio/')) {
+            const fileURL = URL.createObjectURL(file);
+            playlist.push({
+              title: file.name.replace(/\.[^/.]+$/, ""),
+              artist: "本地檔案",
+              cover: "https://i.imgur.com/Msfs5kU.jpeg",
+              audio: fileURL,
+              duration: 0,
+              isLocal: true,
+              size: file.size
+            });
+          }
+        });
+        
+        // 重新渲染播放清單
+        renderPlaylist();
+        
+        // 載入並播放第一個新增的檔案
+        if (playlist.length > 0) {
+          currentTrackIndex = 0;
+          loadTrack(currentTrackIndex);
+          togglePlay();
+        }
+        
+        // 重置檔案輸入，允許再次選擇相同檔案
+        fileInput.value = '';
+      }
+    }
+
+    // 格式化檔案大小
+    function formatFileSize(bytes) {
+      if (bytes === 0) return '0 Bytes';
+      const k = 1024;
+      const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    }
+
+    // 載入歌曲
+    function loadTrack(index) {
+      if (index < 0 || index >= playlist.length) return;
+      
+      const track = playlist[index];
+      isLocalFile = track.isLocal || false;
+      
+      // 更新UI
+      songTitle.textContent = track.title;
+      artist.textContent = track.artist || "未知藝術家";
+      albumCover.style.backgroundImage = `url('${track.cover}')`;
+      totalTimeText.textContent = "00:00";
+      
+      // 如果是本地檔案，顯示檔案大小
+      if (track.isLocal && track.size) {
+        fileInfo.textContent = `檔案大小: ${formatFileSize(track.size)}`;
+      } else {
+        fileInfo.textContent = "";
+      }
+      
+      // 設定音頻來源
+      audioPlayer.src = track.audio;
+      
+      // 更新播放清單選中狀態
+      updateActivePlaylistItem();
+      
+      // 如果正在播放,繼續播放
+      if (isPlaying) {
+        audioPlayer.play().catch(e => console.log("自動播放被阻止:", e));
+      }
+    }
+
+    // 更新持續時間
+    function updateDuration() {
+      if (audioPlayer.duration !== Infinity) {
+        const currentTrack = playlist[currentTrackIndex];
+        if (currentTrack) {
+          currentTrack.duration = audioPlayer.duration;
+        }
+        totalTimeText.textContent = formatTime(audioPlayer.duration);
+      } else if (playlist[currentTrackIndex]) {
+        // 使用播放清單中的預設持續時間
+        totalTimeText.textContent = formatTime(playlist[currentTrackIndex].duration || 0);
+      }
+    }
+
+    // 播放指定歌曲
+    function playTrack(index) {
+      if (index < 0 || index >= playlist.length) return;
+      
+      currentTrackIndex = index;
+      loadTrack(index);
+      togglePlay();
+    }
+
+    // 格式化時間(秒轉MM:SS)
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return "00:00";
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
+
+    // 更新進度條
+    function updateProgress() {
+      const currentTime = audioPlayer.currentTime;
+      let duration = audioPlayer.duration;
+      
+      if (duration === Infinity || isNaN(duration)) {
+        duration = playlist[currentTrackIndex]?.duration || 0;
+      }
+      
+      const percent = duration > 0 ? (currentTime / duration) * 100 : 0;
+      progress.style.width = `${percent}%`;
+      currentTimeText.textContent = formatTime(currentTime);
+    }
+
+    // 切換播放/暫停
+    function togglePlay() {
+      if (audioPlayer.src === '') return;
+      
+      if (isPlaying) {
+        audioPlayer.pause();
+        clearInterval(updateInterval);
+        playIcon.style.display = 'inline';
+        pauseIcon.style.display = 'none';
+      } else {
+        audioPlayer.play().catch(e => console.log("播放錯誤:", e));
+        updateInterval = setInterval(updateProgress, 1000);
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'inline';
+      }
+      isPlaying = !isPlaying;
+    }
+
+    // 快退功能
+    function rewind(event) {
+      if (event?.button === 2) { // 右鍵點擊
+        playPreviousTrack();
+      } else { // 左鍵點擊
+        audioPlayer.currentTime = Math.max(0, audioPlayer.currentTime - 10);
+        updateProgress();
+      }
+    }
+
+    // 快進功能
+    function forward(event) {
+      if (event?.button === 2) { // 右鍵點擊
+        playNextTrack();
+      } else { // 左鍵點擊
+        const duration = audioPlayer.duration || (playlist[currentTrackIndex]?.duration || 0);
+        audioPlayer.currentTime = Math.min(duration, audioPlayer.currentTime + 10);
+        updateProgress();
+      }
+    }
+
+    // 播放上一首
+    function playPreviousTrack() {
+      if (playlist.length === 0) return;
+      
+      const prevIndex = isShuffling ? 
+        Math.floor(Math.random() * playlist.length) : 
+        (currentTrackIndex - 1 + playlist.length) % playlist.length;
+      playTrack(prevIndex);
+    }
+
+    // 播放下一首
+    function playNextTrack() {
+      if (playlist.length === 0) return;
+      
+      const nextIndex = isShuffling ?
+        Math.floor(Math.random() * playlist.length) :
+        (currentTrackIndex + 1) % playlist.length;
+      playTrack(nextIndex);
+    }
+
+    // 處理歌曲結束
+    function handleTrackEnd() {
+      if (playlist.length === 0) return;
+      
+      if (isRepeating) {
+        audioPlayer.currentTime = 0;
+        audioPlayer.play();
+      } else {
+        if (isShuffling) {
+          playNextTrack();
+        } else {
+          const nextIndex = (currentTrackIndex + 1) % playlist.length;
+          playTrack(nextIndex);
+        }
+      }
+    }
+
+    // 切換靜音
+    function toggleMute() {
+      audioPlayer.muted = !audioPlayer.muted;
+      isMuted = audioPlayer.muted;
+      muteIcon.style.display = isMuted ? 'inline' : 'none';
+      unmuteIcon.style.display = isMuted ? 'none' : 'inline';
+    }
+
+    // 切換播放清單顯示
+    function togglePlaylist() {
+      playlistContainer.classList.toggle('show');
+    }
+
+    // 切換隨機播放
+    function toggleShuffle() {
+      isShuffling = !isShuffling;
+      shuffleIcon.style.color = isShuffling ? 'blue' : '';
+    }
+
+    // 切換循環播放
+    function toggleRepeat() {
+      isRepeating = !isRepeating;
+      repeatIcon.style.color = isRepeating ? 'blue' : '';
+    }
+
+    // 跳轉到指定位置
+    function seek(event) {
+      const rect = progressTrack.getBoundingClientRect();
+      const offsetX = event.clientX - rect.left;
+      const percent = offsetX / rect.width;
+      const duration = audioPlayer.duration || (playlist[currentTrackIndex]?.duration || 0);
+      audioPlayer.currentTime = percent * duration;
+      updateProgress();
+    }
+
+    // 頁面載入時初始化播放器
+    window.addEventListener('load', initPlayer);
+  </script>
+
+</body>
+</html>
