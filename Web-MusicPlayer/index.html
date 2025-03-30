@@ -192,12 +192,20 @@
       background: none;
       border: none;
       cursor: pointer;
-      font-size: 12px;
-      color: #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+    }
+
+    .playlist-controls button .material-icons {
+      font-size: 18px;
     }
 
     .playlist-controls button:hover {
       color: #000;
+      background-color: #d0d0d0;
+      border-radius: 3px;
     }
 
     /* Favorite styles */
@@ -292,8 +300,12 @@
       </div>
       <!-- 播放清單項目將在這裡動態生成 -->
       <div class="playlist-controls">
-        <button id="clear-playlist" title="清除播放清單">清除</button>
-        <button id="add-files" title="加入更多檔案">加入檔案</button>
+        <button id="clear-playlist" title="清除播放清單">
+          <span class="material-icons">delete_sweep</span>
+        </button>
+        <button id="add-files" title="加入更多檔案">
+          <span class="material-icons">add</span>
+        </button>
       </div>
     </div>
   </div>
