@@ -87,6 +87,7 @@
       justify-content: space-around;
       align-items: center;
       padding: 12px 0;
+      position: relative;
     }
 
     .controls button {
@@ -106,6 +107,68 @@
     .material-icons {
       font-size: 24px;
       color: #333;
+    }
+
+    /* 音量控制條樣式 - 圍繞按鈕 */
+    .volume-control {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .volume-bar-container {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #f4f4f4;
+      padding: 15px 10px;
+      border-radius: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      display: none;
+      z-index: 10;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .volume-bar-container.show {
+      display: flex;
+    }
+
+    .volume-track {
+      height: 100px;
+      width: 6px;
+      background: #ccc;
+      border-radius: 3px;
+      position: relative;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    .volume-fill {
+      width: 100%;
+      background: #111;
+      position: absolute;
+      bottom: 0;
+      transition: height 0.1s;
+    }
+
+    .volume-handle {
+      width: 12px;
+      height: 12px;
+      background: #111;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .volume-value {
+      font-size: 12px;
+      color: #555;
+      margin-top: 5px;
     }
 
     /* Playlist styles */
@@ -210,7 +273,6 @@
 
     /* Favorite styles */
     .favorite-icon {
-      color: #ccc;
       margin-right: 8px;
       cursor: pointer;
       transition: color 0.2s;
@@ -272,10 +334,19 @@
       <button id="forward-btn" title="快進10秒 (右鍵:下一首)">
         <span class="material-icons">fast_forward</span>
       </button>
-      <button id="mute-unmute" title="靜音">
-        <span class="material-icons" id="mute-icon" style="display:none">volume_off</span>
-        <span class="material-icons" id="unmute-icon">volume_up</span>
-      </button>
+      <div class="volume-control">
+        <button id="mute-unmute" title="靜音">
+          <span class="material-icons" id="mute-icon" style="display:none">volume_off</span>
+          <span class="material-icons" id="unmute-icon">volume_up</span>
+        </button>
+        <div class="volume-bar-container" id="volume-bar-container">
+          <div class="volume-track" id="volume-track">
+            <div class="volume-fill" id="volume-fill"></div>
+            <div class="volume-handle" id="volume-handle"></div>
+          </div>
+          <div class="volume-value" id="volume-value">70%</div>
+        </div>
+      </div>
       <button id="open-file" title="開啟音樂檔案 (將替換現有清單)">
         <span class="material-icons">folder_open</span>
       </button>
@@ -350,6 +421,14 @@
     const filterAllBtn = document.getElementById('filter-all');
     const filterFavoritesBtn = document.getElementById('filter-favorites');
     
+    // 音量控制元素
+    const volumeControl = document.querySelector('.volume-control');
+    const volumeBarContainer = document.getElementById('volume-bar-container');
+    const volumeTrack = document.getElementById('volume-track');
+    const volumeFill = document.getElementById('volume-fill');
+    const volumeHandle = document.getElementById('volume-handle');
+    const volumeValue = document.getElementById('volume-value');
+    
     // 播放器狀態
     let isPlaying = false;
     let isMuted = false;
@@ -358,6 +437,9 @@
     let isLocalFile = false;
     let updateInterval;
     let currentFilter = 'all';
+    
+    // 音量控制狀態
+    let isDraggingVolume = false;
     
     // 播放清單
     let playlist = [
@@ -394,9 +476,22 @@
 
     // 初始化播放器
     function initPlayer() {
+      // 設置初始音量
+      audioPlayer.volume = 0.5;
+      updateVolumeBar();
+      
       renderPlaylist();
       loadTrack(currentTrackIndex);
       setupEventListeners();
+    }
+
+    // 更新音量條顯示
+    function updateVolumeBar() {
+      const volume = isMuted ? 0 : audioPlayer.volume;
+      const height = volume * 100;
+      volumeFill.style.height = `${height}%`;
+      volumeHandle.style.bottom = `${height}%`;
+      volumeValue.textContent = `${Math.round(height)}%`;
     }
 
     // 渲染播放清單
@@ -471,29 +566,6 @@
       });
     }
 
-    // 切換最愛狀態
-    function toggleFavorite(event, index) {
-      event.stopPropagation();
-      if (index < 0 || index >= playlist.length) return;
-      
-      playlist[index].isFavorite = !playlist[index].isFavorite;
-      
-      // 更新最愛按鈕狀態
-      if (index === currentTrackIndex) {
-        updateFavoriteButton();
-      }
-      
-      renderPlaylist();
-      
-      // 如果當前在最愛過濾模式且取消最愛後清單為空，自動切回全部模式
-      if (currentFilter === 'favorites' && playlist.filter(t => t.isFavorite).length === 0) {
-        currentFilter = 'all';
-        filterAllBtn.classList.add('active');
-        filterFavoritesBtn.classList.remove('active');
-        renderPlaylist();
-      }
-    }
-
     // 更新最愛按鈕狀態
     function updateFavoriteButton() {
       if (currentTrackIndex >= 0 && currentTrackIndex < playlist.length) {
@@ -506,68 +578,6 @@
       }
     }
 
-    // 上移項目
-    function moveTrackUp(event, index) {
-      event.stopPropagation();
-      if (index <= 0) return;
-      
-      [playlist[index], playlist[index - 1]] = [playlist[index - 1], playlist[index]];
-      
-      if (currentTrackIndex === index) {
-        currentTrackIndex--;
-      } else if (currentTrackIndex === index - 1) {
-        currentTrackIndex++;
-      }
-      
-      renderPlaylist();
-    }
-
-    // 下移項目
-    function moveTrackDown(event, index) {
-      event.stopPropagation();
-      if (index >= playlist.length - 1) return;
-      
-      [playlist[index], playlist[index + 1]] = [playlist[index + 1], playlist[index]];
-      
-      if (currentTrackIndex === index) {
-        currentTrackIndex++;
-      } else if (currentTrackIndex === index + 1) {
-        currentTrackIndex--;
-      }
-      
-      renderPlaylist();
-    }
-
-    // 移除項目
-    function removeTrack(event, index) {
-      event.stopPropagation();
-      if (index < 0 || index >= playlist.length) return;
-      
-      if (index === currentTrackIndex) {
-        if (playlist.length === 1) {
-          audioPlayer.src = '';
-          isPlaying = false;
-          playIcon.style.display = 'inline';
-          pauseIcon.style.display = 'none';
-          songTitle.textContent = '播放清單為空';
-          artist.textContent = '';
-          fileInfo.textContent = '';
-        } else {
-          const newIndex = index === playlist.length - 1 ? index - 1 : index;
-          currentTrackIndex = newIndex;
-          loadTrack(newIndex);
-          if (isPlaying) {
-            audioPlayer.play().catch(e => console.log("播放錯誤:", e));
-          }
-        }
-      } else if (index < currentTrackIndex) {
-        currentTrackIndex--;
-      }
-      
-      playlist.splice(index, 1);
-      renderPlaylist();
-    }
-
     // 設定事件監聽器
     function setupEventListeners() {
       playBtn.addEventListener('click', togglePlay);
@@ -577,6 +587,67 @@
       repeatBtn.addEventListener('click', toggleRepeat);
       progressTrack.addEventListener('click', seek);
       favoriteBtn.addEventListener('click', toggleCurrentFavorite);
+      
+      // 音量控制相關事件
+      muteBtn.addEventListener('mouseenter', () => {
+        volumeBarContainer.classList.add('show');
+      });
+      
+      volumeControl.addEventListener('mouseleave', () => {
+        if (!isDraggingVolume) {
+          volumeBarContainer.classList.remove('show');
+        }
+      });
+      
+      // 音量條點擊事件
+      volumeTrack.addEventListener('click', (e) => {
+        const rect = volumeTrack.getBoundingClientRect();
+        const height = rect.height;
+        const clickPosition = rect.bottom - e.clientY;
+        const volume = Math.min(1, Math.max(0, clickPosition / height));
+        
+        audioPlayer.volume = volume;
+        audioPlayer.muted = false;
+        isMuted = false;
+        muteIcon.style.display = 'none';
+        unmuteIcon.style.display = 'inline';
+        updateVolumeBar();
+      });
+      
+      // 音量拖動開始
+      volumeHandle.addEventListener('mousedown', (e) => {
+        isDraggingVolume = true;
+        e.preventDefault();
+        volumeBarContainer.classList.add('show');
+      });
+      
+      // 音量拖動
+      document.addEventListener('mousemove', (e) => {
+        if (isDraggingVolume) {
+          const rect = volumeTrack.getBoundingClientRect();
+          const height = rect.height;
+          let clickPosition = rect.bottom - e.clientY;
+          clickPosition = Math.max(0, Math.min(height, clickPosition));
+          const volume = clickPosition / height;
+          
+          audioPlayer.volume = volume;
+          audioPlayer.muted = false;
+          isMuted = false;
+          muteIcon.style.display = 'none';
+          unmuteIcon.style.display = 'inline';
+          updateVolumeBar();
+        }
+      });
+      
+      // 音量拖動結束
+      document.addEventListener('mouseup', () => {
+        if (isDraggingVolume) {
+          isDraggingVolume = false;
+          if (!volumeControl.matches(':hover')) {
+            volumeBarContainer.classList.remove('show');
+          }
+        }
+      });
       
       rewindBtn.addEventListener('click', (e) => rewind(e));
       rewindBtn.addEventListener('contextmenu', (e) => {
@@ -622,48 +693,7 @@
       });
     }
 
-    // 切換當前歌曲的最愛狀態
-    function toggleCurrentFavorite() {
-      if (currentTrackIndex >= 0 && currentTrackIndex < playlist.length) {
-        playlist[currentTrackIndex].isFavorite = !playlist[currentTrackIndex].isFavorite;
-        updateFavoriteButton();
-        renderPlaylist();
-      }
-    }
 
-    // 清除播放清單
-    function clearPlaylist() {
-      const filter = playlistContainer.querySelector('.playlist-filter');
-      const controls = playlistContainer.querySelector('.playlist-controls');
-      
-      playlist = [];
-      currentTrackIndex = 0;
-      
-      playlistContainer.innerHTML = '';
-      
-      if (filter) {
-        playlistContainer.appendChild(filter);
-      }
-      
-      if (controls) {
-        playlistContainer.appendChild(controls);
-      }
-      
-      const emptyMsg = document.createElement('div');
-      emptyMsg.className = 'playlist-item';
-      emptyMsg.textContent = '播放清單為空';
-      playlistContainer.insertBefore(emptyMsg, controls);
-      
-      songTitle.textContent = '播放清單已清空';
-      artist.textContent = '';
-      fileInfo.textContent = '';
-      audioPlayer.src = '';
-      isPlaying = false;
-      playIcon.style.display = 'inline';
-      pauseIcon.style.display = 'none';
-      clearInterval(updateInterval);
-      updateFavoriteButton();
-    }
 
     // 處理檔案選擇
     function handleFileSelect(event) {
@@ -836,15 +866,6 @@
       }
     }
 
-    // 播放指定歌曲
-    function playTrack(index) {
-      if (index < 0 || index >= playlist.length) return;
-      
-      currentTrackIndex = index;
-      loadTrack(index);
-      togglePlay();
-    }
-
     // 格式化時間(秒轉MM:SS)
     function formatTime(seconds) {
       if (isNaN(seconds)) return "00:00";
@@ -867,65 +888,6 @@
       currentTimeText.textContent = formatTime(currentTime);
     }
 
-    // 切換播放/暫停
-    function togglePlay() {
-      if (audioPlayer.src === '') return;
-      
-      if (isPlaying) {
-        audioPlayer.pause();
-        clearInterval(updateInterval);
-        playIcon.style.display = 'inline';
-        pauseIcon.style.display = 'none';
-      } else {
-        audioPlayer.play().catch(e => console.log("播放錯誤:", e));
-        updateInterval = setInterval(updateProgress, 1000);
-        playIcon.style.display = 'none';
-        pauseIcon.style.display = 'inline';
-      }
-      isPlaying = !isPlaying;
-    }
-
-    // 快退功能
-    function rewind(event) {
-      if (event?.button === 2) {
-        playPreviousTrack();
-      } else {
-        audioPlayer.currentTime = Math.max(0, audioPlayer.currentTime - 10);
-        updateProgress();
-      }
-    }
-
-    // 快進功能
-    function forward(event) {
-      if (event?.button === 2) {
-        playNextTrack();
-      } else {
-        const duration = audioPlayer.duration || (playlist[currentTrackIndex]?.duration || 0);
-        audioPlayer.currentTime = Math.min(duration, audioPlayer.currentTime + 10);
-        updateProgress();
-      }
-    }
-
-    // 播放上一首
-    function playPreviousTrack() {
-      if (playlist.length === 0) return;
-      
-      const prevIndex = isShuffling ? 
-        Math.floor(Math.random() * playlist.length) : 
-        (currentTrackIndex - 1 + playlist.length) % playlist.length;
-      playTrack(prevIndex);
-    }
-
-    // 播放下一首
-    function playNextTrack() {
-      if (playlist.length === 0) return;
-      
-      const nextIndex = isShuffling ?
-        Math.floor(Math.random() * playlist.length) :
-        (currentTrackIndex + 1) % playlist.length;
-      playTrack(nextIndex);
-    }
-
     // 處理歌曲結束
     function handleTrackEnd() {
       if (playlist.length === 0) return;
@@ -943,30 +905,16 @@
       }
     }
 
-    // 切換靜音
-    function toggleMute() {
-      audioPlayer.muted = !audioPlayer.muted;
-      isMuted = audioPlayer.muted;
-      muteIcon.style.display = isMuted ? 'inline' : 'none';
-      unmuteIcon.style.display = isMuted ? 'none' : 'inline';
-    }
 
-    // 切換播放清單顯示
-    function togglePlaylist() {
-      playlistContainer.classList.toggle('show');
-    }
 
-    // 切換隨機播放
-    function toggleShuffle() {
-      isShuffling = !isShuffling;
-      shuffleIcon.style.color = isShuffling ? 'blue' : '';
-    }
 
-    // 切換循環播放
-    function toggleRepeat() {
-      isRepeating = !isRepeating;
-      repeatIcon.style.color = isRepeating ? 'blue' : '';
-    }
+
+
+
+
+
+
+
 
     // 跳轉到指定位置
     function seek(event) {
@@ -977,6 +925,240 @@
       audioPlayer.currentTime = percent * duration;
       updateProgress();
     }
+    /************************************************/
+    // 快退功能
+    function rewind(event) {
+      if (event?.button === 2) {
+        playPreviousTrack();
+      } else {
+        audioPlayer.currentTime = Math.max(0, audioPlayer.currentTime - 10);
+        updateProgress();
+      }
+    }
+    /************************************************/
+    // 播放上一首
+    function playPreviousTrack() {
+      if (playlist.length === 0) return;
+      
+      const prevIndex = isShuffling ? 
+        Math.floor(Math.random() * playlist.length) : 
+        (currentTrackIndex - 1 + playlist.length) % playlist.length;
+      playTrack(prevIndex);
+    }
+    /************************************************/
+    // 切換播放/暫停
+    function togglePlay() {
+      if (audioPlayer.src === '') return;
+      
+      if (isPlaying) {
+        audioPlayer.pause();
+        clearInterval(updateInterval);
+        playIcon.style.display = 'inline';
+        pauseIcon.style.display = 'none';
+      } else {
+        audioPlayer.play().catch(e => console.log("播放錯誤:", e));
+        updateInterval = setInterval(updateProgress, 1000);
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'inline';
+      }
+      isPlaying = !isPlaying;
+    }
+    /************************************************/
+    // 快進功能
+    function forward(event) {
+      if (event?.button === 2) {
+        playNextTrack();
+      } else {
+        const duration = audioPlayer.duration || (playlist[currentTrackIndex]?.duration || 0);
+        audioPlayer.currentTime = Math.min(duration, audioPlayer.currentTime + 10);
+        updateProgress();
+      }
+    }
+    /************************************************/
+    // 播放下一首
+    function playNextTrack() {
+      if (playlist.length === 0) return;
+      
+      const nextIndex = isShuffling ?
+        Math.floor(Math.random() * playlist.length) :
+        (currentTrackIndex + 1) % playlist.length;
+      playTrack(nextIndex);
+    }
+    /************************************************/
+    // 切換靜音
+    function toggleMute() {
+      audioPlayer.muted = !audioPlayer.muted;
+      isMuted = audioPlayer.muted;
+      muteIcon.style.display = isMuted ? 'inline' : 'none';
+      unmuteIcon.style.display = isMuted ? 'none' : 'inline';
+      updateVolumeBar();
+    }
+    /************************************************/
+    // 切換播放清單顯示
+    function togglePlaylist() {
+      playlistContainer.classList.toggle('show');
+    }
+    /************************************************/
+    // 切換當前歌曲的最愛狀態
+    function toggleCurrentFavorite() {
+      if (currentTrackIndex <  0              ) return;
+      if (currentTrackIndex >= playlist.length) return;
+      /************************************************/
+      playlist[currentTrackIndex].isFavorite = !playlist[currentTrackIndex].isFavorite;
+      /************************************************/
+      updateFavoriteButton();
+      /************************************************/
+      renderPlaylist();
+    }
+    /************************************************/
+    // 切換隨機播放
+    function toggleShuffle() {
+      isShuffling = !isShuffling;
+      /************************************************/
+      updateUI();
+    }
+    /************************************************/
+    // 切換循環播放
+    function toggleRepeat() {
+      isRepeating = !isRepeating;
+      /************************************************/
+      updateUI();
+    }
+    /************************************************/
+    // 切換最愛狀態
+    function toggleFavorite(event, index) {
+      event.stopPropagation();
+      if (index < 0 || index >= playlist.length) return;
+      
+      playlist[index].isFavorite = !playlist[index].isFavorite;
+      
+      // 更新最愛按鈕狀態
+      if (index === currentTrackIndex) {
+        updateFavoriteButton();
+      }
+      
+      renderPlaylist();
+      
+      // 如果當前在最愛過濾模式且取消最愛後清單為空，自動切回全部模式
+      if (currentFilter === 'favorites' && playlist.filter(t => t.isFavorite).length === 0) {
+        currentFilter = 'all';
+        filterAllBtn.classList.add('active');
+        filterFavoritesBtn.classList.remove('active');
+        renderPlaylist();
+      }
+    }
+    /************************************************/
+    // 播放指定歌曲
+    function playTrack(index) {
+      if (index < 0 || index >= playlist.length) return;
+      
+      currentTrackIndex = index;
+      loadTrack(index);
+      togglePlay();
+    }
+    /************************************************/
+    // 上移項目
+    function moveTrackUp(event, index) {
+      event.stopPropagation();
+      if (index <= 0) return;
+      
+      [playlist[index], playlist[index - 1]] = [playlist[index - 1], playlist[index]];
+      
+      if (currentTrackIndex === index) {
+        currentTrackIndex--;
+      } else if (currentTrackIndex === index - 1) {
+        currentTrackIndex++;
+      }
+      
+      renderPlaylist();
+    }
+    /************************************************/
+    // 下移項目
+    function moveTrackDown(event, index) {
+      event.stopPropagation();
+      if (index >= playlist.length - 1) return;
+      
+      [playlist[index], playlist[index + 1]] = [playlist[index + 1], playlist[index]];
+      
+      if (currentTrackIndex === index) {
+        currentTrackIndex++;
+      } else if (currentTrackIndex === index + 1) {
+        currentTrackIndex--;
+      }
+      
+      renderPlaylist();
+    }
+    /************************************************/
+    // 移除項目
+    function removeTrack(event, index) {
+      event.stopPropagation();
+      if (index < 0 || index >= playlist.length) return;
+      
+      if (index === currentTrackIndex) {
+        if (playlist.length === 1) {
+          audioPlayer.src = '';
+          isPlaying = false;
+          playIcon.style.display = 'inline';
+          pauseIcon.style.display = 'none';
+          songTitle.textContent = '播放清單為空';
+          artist.textContent = '';
+          fileInfo.textContent = '';
+        } else {
+          const newIndex = index === playlist.length - 1 ? index - 1 : index;
+          currentTrackIndex = newIndex;
+          loadTrack(newIndex);
+          if (isPlaying) {
+            audioPlayer.play().catch(e => console.log("播放錯誤:", e));
+          }
+        }
+      } else if (index < currentTrackIndex) {
+        currentTrackIndex--;
+      }
+      
+      playlist.splice(index, 1);
+      renderPlaylist();
+    }
+    /************************************************/
+    // 清除播放清單
+    function clearPlaylist() {
+      const filter = playlistContainer.querySelector('.playlist-filter');
+      const controls = playlistContainer.querySelector('.playlist-controls');
+      
+      playlist = [];
+      currentTrackIndex = 0;
+      
+      playlistContainer.innerHTML = '';
+      
+      if (filter) {
+        playlistContainer.appendChild(filter);
+      }
+      
+      if (controls) {
+        playlistContainer.appendChild(controls);
+      }
+      
+      const emptyMsg = document.createElement('div');
+      emptyMsg.className = 'playlist-item';
+      emptyMsg.textContent = '播放清單為空';
+      playlistContainer.insertBefore(emptyMsg, controls);
+      
+      songTitle.textContent = '播放清單已清空';
+      artist.textContent = '';
+      fileInfo.textContent = '';
+      audioPlayer.src = '';
+      isPlaying = false;
+      playIcon.style.display = 'inline';
+      pauseIcon.style.display = 'none';
+      clearInterval(updateInterval);
+      updateFavoriteButton();
+    }
+    /************************************************/
+    function updateUI() {
+      shuffleIcon.style.color = isShuffling ? 'blue' : '';
+      repeatIcon.style.color = isRepeating ? 'blue' : '';
+    }
+
+
 
     // 頁面載入時初始化播放器
     window.addEventListener('load', initPlayer);
@@ -986,6 +1168,12 @@
     window.moveTrackDown = moveTrackDown;
     window.removeTrack = removeTrack;
     window.toggleFavorite = toggleFavorite;
+
+    setInterval(() => {
+      updateUI();
+    }, 300);
+
+
   </script>
 </body>
 </html>
