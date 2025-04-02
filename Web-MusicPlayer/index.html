@@ -330,9 +330,7 @@
       <button id="open-file" title="開啟音樂檔案 (將替換現有清單)">
         <span class="material-icons">folder_open</span>
       </button>
-      <button id="playlist-btn" title="播放清單">
-        <span class="material-icons">playlist_play</span>
-      </button>
+      <toggle-button id="playlist-btn" title="播放清單" onicon="playlist_play" officon="playlist_play" color="blue"></toggle-button>
       <toggle-button id="favorite-btn" title="加入最愛" onicon="favorite" officon="favorite_border" color="#ff4081"></toggle-button>
       <toggle-button id="shuffle" title="隨機播放" onicon="shuffle" officon="shuffle" color="blue"></toggle-button>
       <toggle-button id="repeat" title="循環播放" onicon="repeat" officon="repeat" color="blue"></toggle-button>
@@ -444,6 +442,9 @@
       audioPlayer.volume = 0.5;
       updateVolumeBar();
       
+      // 初始化 playlist 按鈕狀態
+      playlistBtn.isOn = false;
+      
       renderPlaylist();
       loadTrack(currentTrackIndex);
       setupEventListeners();
@@ -550,7 +551,8 @@
         updateVolumeBar();
       });
       
-      playlistBtn.addEventListener('click', togglePlaylist);
+      // 更新 playlist 按鈕事件監聽
+      playlistBtn.addEventListener('toggle', togglePlaylist);
       
       // 替換原來的 shuffle 和 repeat 按鈕事件監聽
       shuffle.addEventListener('toggle', (e) => {
@@ -945,6 +947,8 @@
     // 切換播放清單顯示
     function togglePlaylist() {
       playlistContainer.classList.toggle('show');
+      // 同步按鈕狀態
+      playlistBtn.isOn = playlistContainer.classList.contains('show');
     }
 
     // 切換當前歌曲的最愛狀態
