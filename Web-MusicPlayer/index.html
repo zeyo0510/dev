@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
   <script src="ToggleButton.js"></script>
+  <script src="TrackBar.js"></script>
   <style>
     body {
       margin: 0;
@@ -64,23 +65,6 @@
       padding: 0 16px;
       font-size: 12px;
       color: #444;
-    }
-
-    .progress-track {
-      height: 5px;
-      background: #ccc;
-      margin: 4px 16px;
-      border-radius: 3px;
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .progress-fill {
-      width: 0%;
-      height: 100%;
-      background: #111;
-      transition: width 0.1s;
     }
 
     .controls {
@@ -306,9 +290,7 @@
       <span id="current-time">00:00</span>
       <span id="total-time">00:00</span>
     </div>
-    <div class="progress-track" id="progress-track">
-      <div class="progress-fill" id="progress-fill"></div>
-    </div>
+    <track-bar id="progress-bar"></track-bar>
     <div class="controls">
       <button id="rewind-btn" title="快退10秒 (右鍵:上一首)">
         <span class="material-icons">fast_rewind</span>
@@ -375,8 +357,7 @@
     const rewindBtn = document.getElementById('rewind-btn');
     const forwardBtn = document.getElementById('forward-btn');
     const openFileBtn = document.getElementById('open-file');
-    const progress = document.getElementById('progress-fill');
-    const progressTrack = document.getElementById('progress-track');
+    const progressBar = document.getElementById('progress-bar');
     const clearPlaylistBtn = document.getElementById('clear-playlist');
     const addFilesBtn = document.getElementById('add-files');
     const favoriteBtn = document.getElementById('favorite-btn');
@@ -563,7 +544,10 @@
         isRepeating = e.detail;
       });
       
-      progressTrack.addEventListener('click', seek);
+      progressBar.addEventListener('change', (e) => {
+        audioPlayer.currentTime = e.detail.value;
+      });
+      
       favoriteBtn.addEventListener('toggle', toggleCurrentFavorite);
       
       // 音量控制相關事件
@@ -835,8 +819,10 @@
           currentTrack.duration = audioPlayer.duration;
         }
         totalTimeText.textContent = formatTime(audioPlayer.duration);
+        progressBar.max = audioPlayer.duration;
       } else if (playlist[currentTrackIndex]) {
         totalTimeText.textContent = formatTime(playlist[currentTrackIndex].duration || 0);
+        progressBar.max = playlist[currentTrackIndex].duration || 0;
       }
     }
 
@@ -857,8 +843,9 @@
         duration = playlist[currentTrackIndex]?.duration || 0;
       }
       
-      const percent = duration > 0 ? (currentTime / duration) * 100 : 0;
-      progress.style.width = `${percent}%`;
+      progressBar.max = duration;
+      progressBar.value = currentTime;
+      
       currentTimeText.textContent = formatTime(currentTime);
     }
 
@@ -877,16 +864,6 @@
           playTrack(nextIndex);
         }
       }
-    }
-
-    // 跳轉到指定位置
-    function seek(event) {
-      const rect = progressTrack.getBoundingClientRect();
-      const offsetX = event.clientX - rect.left;
-      const percent = offsetX / rect.width;
-      const duration = audioPlayer.duration || (playlist[currentTrackIndex]?.duration || 0);
-      audioPlayer.currentTime = percent * duration;
-      updateProgress();
     }
 
     // 快退功能
