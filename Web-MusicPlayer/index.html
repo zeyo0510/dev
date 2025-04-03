@@ -277,6 +277,26 @@
       background-color: #d0d0d0;
       font-weight: bold;
     }
+
+    /* 新增拖曳音量反饋樣式 */
+    .volume-drag-feedback {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .volume-drag-feedback.show {
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -301,7 +321,8 @@
         <span class="material-icons">fast_forward</span>
       </button>
       <div class="volume-control">
-        <toggle-button id="mute-unmute" title="靜音" onicon="volume_off" officon="volume_up" color="#333"></toggle-button>
+        <toggle-button id="mute-unmute" title="靜音/取消靜音 (拖曳調整音量)" onicon="volume_off" officon="volume_up" color="#333"></toggle-button>
+        <div class="volume-drag-feedback" id="volume-drag-feedback"></div>
         <div class="volume-bar-container" id="volume-bar-container">
           <div class="volume-track" id="volume-track">
             <div class="volume-fill" id="volume-fill"></div>
@@ -372,6 +393,7 @@
     const volumeFill = document.getElementById('volume-fill');
     const volumeHandle = document.getElementById('volume-handle');
     const volumeValue = document.getElementById('volume-value');
+    const volumeDragFeedback = document.getElementById('volume-drag-feedback');
     
     // 播放器狀態
     let isPlaying = false;
@@ -384,6 +406,9 @@
     
     // 音量控制狀態
     let isDraggingVolume = false;
+    let isDraggingMuteButton = false;
+    let startDragY = 0;
+    let startVolume = 0;
     
     // 播放清單
     let playlist = [
@@ -598,6 +623,25 @@
           muteBtn.isOn = false;
           updateVolumeBar();
         }
+        
+        if (isDraggingMuteButton) {
+          const deltaY = startDragY - e.clientY; // 向上為正，向下為負
+          const volumeChange = deltaY / 100; // 調整靈敏度
+          let newVolume = Math.max(0, Math.min(1, startVolume + volumeChange));
+          
+          audioPlayer.volume = newVolume;
+          audioPlayer.muted = false;
+          isMuted = false;
+          muteBtn.isOn = false;
+          updateVolumeBar();
+          
+          // 顯示拖曳反饋
+          volumeDragFeedback.textContent = `${Math.round(newVolume * 100)}%`;
+          volumeDragFeedback.classList.add('show');
+          
+          // 更新音量條顯示
+          volumeBarContainer.classList.add('show');
+        }
       });
       
       // 音量拖動結束
@@ -608,6 +652,23 @@
             volumeBarContainer.classList.remove('show');
           }
         }
+        
+        if (isDraggingMuteButton) {
+          isDraggingMuteButton = false;
+          volumeDragFeedback.classList.remove('show');
+          
+          if (!volumeControl.matches(':hover')) {
+            volumeBarContainer.classList.remove('show');
+          }
+        }
+      });
+      
+      // 為 mute-unmute 按鈕添加拖曳事件
+      muteBtn.addEventListener('mousedown', (e) => {
+        isDraggingMuteButton = true;
+        startDragY = e.clientY;
+        startVolume = audioPlayer.volume;
+        e.preventDefault();
       });
       
       rewindBtn.addEventListener('click', (e) => rewind(e));
