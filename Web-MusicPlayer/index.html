@@ -278,7 +278,6 @@
       font-weight: bold;
     }
 
-    /* 新增拖曳音量反饋樣式 */
     .volume-drag-feedback {
       position: absolute;
       top: -30px;
@@ -296,6 +295,51 @@
 
     .volume-drag-feedback.show {
       opacity: 1;
+    }
+
+    /* 新增音量可视化圆环样式 */
+    #mute-unmute {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    #mute-unmute::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(
+        #333 0%,
+        #333 calc(var(--volume-percent, 0%)),
+        #e0e0e0 calc(var(--volume-percent, 0%)),
+        #e0e0e0 100%
+      );
+      transform: rotate(-90deg);
+      z-index: 0;
+      transition: background 0.2s ease;
+    }
+
+    #mute-unmute toggle-button {
+      position: relative;
+      z-index: 1;
+      background: #f4f4f4;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s;
+    }
+
+    #mute-unmute:hover toggle-button {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -321,7 +365,9 @@
         <span class="material-icons">fast_forward</span>
       </button>
       <div class="volume-control">
-        <toggle-button id="mute-unmute" title="靜音/取消靜音 (拖曳調整音量)" onicon="volume_off" officon="volume_up" color="#333"></toggle-button>
+        <div id="mute-unmute">
+          <toggle-button title="靜音/取消靜音 (拖曳調整音量)" onicon="volume_off" officon="volume_up" color="#333"></toggle-button>
+        </div>
         <div class="volume-drag-feedback" id="volume-drag-feedback"></div>
         <div class="volume-bar-container" id="volume-bar-container">
           <div class="volume-track" id="volume-track">
@@ -367,7 +413,7 @@
     
     // 控制元素
     const playBtn = document.getElementById('play-pause');
-    const muteBtn = document.getElementById('mute-unmute');
+    const muteBtn = document.querySelector('#mute-unmute toggle-button');
     const repeat = document.getElementById('repeat');
     const shuffle = document.getElementById('shuffle');
     const currentTimeText = document.getElementById('current-time');
@@ -461,6 +507,13 @@
     function updateVolumeBar() {
       const volume = isMuted ? 0 : audioPlayer.volume;
       const height = volume * 100;
+      
+      // 更新环形进度
+      document.getElementById('mute-unmute').style.setProperty(
+        '--volume-percent', 
+        `${height}%`
+      );
+
       volumeFill.style.height = `${height}%`;
       volumeHandle.style.bottom = `${height}%`;
       volumeValue.textContent = `${Math.round(height)}%`;
