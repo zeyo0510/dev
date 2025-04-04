@@ -10,8 +10,6 @@ namespace App.Windows.MediaDerviceManager.Main
   {
     private IContainer components;
     /************************************************/
-    private AudioSessionManagerPanel pnlSessMgr;
-    /************************************************/
     protected override void Dispose(bool P_0)
     {
       if (P_0 && components != null)
@@ -142,6 +140,7 @@ namespace App.Windows.MediaDerviceManager.Main
       base.PerformLayout();
     }
     /************************************************/
+    private AudioSessionManagerPanel pnlSessMgr;
     private MenuStrip topMenuStrip = null;
     private ToolStripMenuItem fileToolStripMenuItem = null;
     private ToolStripMenuItem systemToolStripMenuItem = null;

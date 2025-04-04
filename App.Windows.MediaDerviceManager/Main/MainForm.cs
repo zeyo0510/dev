@@ -13,7 +13,6 @@ using System.Windows.Forms;
 using a;
 using AudioCore;
 using B;
-using CheVolume.Common;
 using CheVolume.Controls;
 using CheVolume.Properties;
 using Microsoft.Win32;
@@ -167,8 +166,6 @@ namespace App.Windows.MediaDerviceManager.Main
 
     public List<ProcessMapping> processList;
 
-    private XMLSettings xmlSettings1;
-
     private MMDeviceCollection mmDeviceCollection1;
 
     private string str1;
@@ -268,8 +265,6 @@ namespace App.Windows.MediaDerviceManager.Main
         dpiX = graphics.DpiX / 96f;
       }
       ImageHelper.SetImageSize(dpiX);
-      xmlSettings1 = new XMLSettings();
-      xmlSettings1.Load();
       MMNotificationClient mMNotificationClient = mmNotificationClient1;
       mMNotificationClient.DefaultChanged = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient.DefaultChanged, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged));
       MMNotificationClient mMNotificationClient2 = mmNotificationClient1;
@@ -450,25 +445,6 @@ namespace App.Windows.MediaDerviceManager.Main
       if (registryKey.OpenSubKey("Data", true) == null)
       {
         registryKey.CreateSubKey("Data");
-      }
-    }
-
-    private void Obj_Method1(object P_0, MouseEventArgs P_1)
-    {
-      if (P_1.Button == MouseButtons.Right)
-      {
-        string text = ((CheRadioButton)P_0).Tag.ToString();
-        Class4.mmDeviceEnumerator1.GetDeviceV2(text);
-      }
-    }
-
-    private void Obj_Method2(object P_0, EventArgs P_1)
-    {
-      CheRadioButton cheRadioButton = (CheRadioButton)P_0;
-      if (cheRadioButton.Checked)
-      {
-        str2 = cheRadioButton.Tag.ToString();
-        Class4.Method3(selecteddev.ID);
       }
     }
 

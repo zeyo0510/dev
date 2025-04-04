@@ -145,19 +145,11 @@
     <Compile Include="a\unknown6.cs" />
     <Compile Include="B\FlowLayoutPanel1.cs" />
     <Compile Include="B\IOpenControlPanel.cs" />
-    <Compile Include="CheVolume.Common\XMLSettings.cs" />
-    <Compile Include="CheVolume.Controls\CheButton.cs" />
     <Compile Include="CheVolume.Controls\CheCheckBox.cs" />
-    <Compile Include="CheVolume.Controls\CheRadioButton.cs" />
-    <Compile Include="CheVolume.Controls\CheToolStripLabel.cs" />
-    <Compile Include="CheVolume.Controls\CheToolStripProfessionalRender.cs" />
     <Compile Include="CheVolume.Controls\DeviceVolumeControl.cs" />
     <Compile Include="CheVolume.Controls\DeviceVolumeControl2.cs" />
-    <Compile Include="CheVolume.Controls\DeviceVolumeHandler.cs" />
-    <Compile Include="CheVolume.Controls\ImageButton.cs" />
     <Compile Include="CheVolume.Controls\LedBar.cs" />
     <Compile Include="CheVolume.Controls\LedBar2.cs" />
-    <Compile Include="CheVolume.Controls\LedBarV2.cs" />
     <Compile Include="CheVolume.Controls\SessionVolumeControl.cs" />
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="EConTech.Windows.MACUI\ColorHelper.cs" />
@@ -169,7 +161,6 @@
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MB.Controls.ColorSlider\ColorSlider.cs" />
     <Compile Include="MultiProcessIPC\CProcessHost.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -194,11 +185,9 @@
     <Folder Include="AudioCore.Interfaces" />
     <Folder Include="AudioCore2" />
     <Folder Include="B" />
-    <Folder Include="CheVolume.Common" />
     <Folder Include="CheVolume.Controls" />
     <Folder Include="Main" />
     <Folder Include="EConTech.Windows.MACUI" />
-    <Folder Include="MB.Controls.ColorSlider" />
     <Folder Include="MultiProcessIPC" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
