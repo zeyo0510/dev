@@ -129,7 +129,7 @@ namespace App.Windows.MediaDerviceManager.Main
     {
       public AudioSessionControl2 audioSessionControl21;
 
-      internal bool Equal(SessionVolumeControl P_0)
+      internal bool Equal(VSessionVolumeControl P_0)
       {
         return string.Compare(P_0.Tag.ToString().ToLower(), audioSessionControl21.SessionInstanceIdentifier.ToLower()) == 0;
       }
@@ -328,7 +328,7 @@ namespace App.Windows.MediaDerviceManager.Main
           flowLayoutPanel.Tag = mMDevice.ID;
           flowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
           audioSessionManagerPanel1.Controls.Add(flowLayoutPanel);
-          DeviceVolumeControl deviceVolumeControl = new DeviceVolumeControl(mMDevice);
+          VDeviceVolumeControl deviceVolumeControl = new VDeviceVolumeControl(mMDevice);
           deviceVolumeControl.BackColor = Color.FromArgb(242, 242, 242);
           deviceVolumeControl.Tag = mMDevice.ID;
           deviceVolumeControl.SetDefault(@default);
@@ -336,7 +336,7 @@ namespace App.Windows.MediaDerviceManager.Main
         }
         else
         {
-          Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(@default);
+          Enumerable.First(Enumerable.OfType<VDeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(@default);
         }
         int num;
         try
@@ -363,11 +363,11 @@ namespace App.Windows.MediaDerviceManager.Main
           {
             continue;
           }
-          List<SessionVolumeControl> list2 = Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(flowLayoutPanel.Controls));
-          SessionVolumeControl sessionVolumeControl = null;
+          List<VSessionVolumeControl> list2 = Enumerable.ToList(Enumerable.OfType<VSessionVolumeControl>(flowLayoutPanel.Controls));
+          VSessionVolumeControl sessionVolumeControl = null;
           if (list2.Count > 0)
           {
-            sessionVolumeControl = list2.Find(delegate(SessionVolumeControl P_0)
+            sessionVolumeControl = list2.Find(delegate(VSessionVolumeControl P_0)
             {
               return string.Compare(P_0.Tag.ToString().ToLower(), audioSessionControl21.SessionInstanceIdentifier.ToLower()) == 0;
             });
@@ -375,7 +375,7 @@ namespace App.Windows.MediaDerviceManager.Main
           AudioSessionState audioSessionState = audioSessionControl21.GetState();
           if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
           {
-            sessionVolumeControl = new SessionVolumeControl(audioSessionControl21, process);
+            sessionVolumeControl = new VSessionVolumeControl(audioSessionControl21, process);
             int value = int.Parse(Math.Ceiling(audioSessionControl21.SetVolume() * 100f).ToString());
             sessionVolumeControl.mmDeviceCollection1 = mmDeviceCollection1;
             sessionVolumeControl.mmDevice1 = mMDevice;
@@ -516,7 +516,7 @@ namespace App.Windows.MediaDerviceManager.Main
     {
       foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(audioSessionManagerPanel1.Controls)))
       {
-        foreach (SessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(item.Controls)))
+        foreach (VSessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<VSessionVolumeControl>(item.Controls)))
         {
           item2.OnStateChanged2(item2.audioSessionControl21.GetState());
         }

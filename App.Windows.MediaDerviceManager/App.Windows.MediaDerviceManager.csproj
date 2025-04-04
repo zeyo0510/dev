@@ -148,16 +148,22 @@
       <DependentUpon>AudioSessionManagerPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\CheCheckBox.cs" />
-    <Compile Include="Controls\DeviceVolumeControl.cs" />
-    <Compile Include="Controls\DeviceVolumeControl2.cs" />
+    <Compile Include="Controls\VDeviceVolumeControl.cs" />
+    <Compile Include="Controls\HDeviceVolumeControl.cs" />
     <Compile Include="Controls\HLedBar.Designer.cs">
       <DependentUpon>HLedBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\VDeviceVolumeControl.Designer.cs">
+      <DependentUpon>VDeviceVolumeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\VLedBar.cs" />
     <Compile Include="Controls\HLedBar.cs" />
-    <Compile Include="Controls\SessionVolumeControl.cs" />
+    <Compile Include="Controls\VSessionVolumeControl.cs" />
     <Compile Include="Controls\VLedBar.Designer.cs">
       <DependentUpon>VLedBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VSessionVolumeControl.Designer.cs">
+      <DependentUpon>VSessionVolumeControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="EConTech.Windows.MACUI\ColorHelper.cs" />

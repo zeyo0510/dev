@@ -24,7 +24,7 @@ namespace B
 		{
 			public AudioSessionControl2 obj1;
 
-			internal bool Equal(SessionVolumeControl P_0)
+			internal bool Equal(VSessionVolumeControl P_0)
 			{
 				return string.Compare(P_0.Tag.ToString().ToLower(), obj1.SessionInstanceIdentifier.ToLower()) == 0;
 			}
@@ -119,18 +119,18 @@ namespace B
 			{
 				return;
 			}
-			List<SessionVolumeControl> list = Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(base.Controls));
-			SessionVolumeControl sessionVolumeControl = null;
+			List<VSessionVolumeControl> list = Enumerable.ToList(Enumerable.OfType<VSessionVolumeControl>(base.Controls));
+			VSessionVolumeControl sessionVolumeControl = null;
 			if (list.Count > 0)
 			{
-				sessionVolumeControl = list.Find(delegate(SessionVolumeControl A_P_0)
+				sessionVolumeControl = list.Find(delegate(VSessionVolumeControl A_P_0)
 				{
 					return string.Compare(A_P_0.Tag.ToString().ToLower(), P_0.SessionInstanceIdentifier.ToLower()) == 0;
 				});
 			}
 			if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
 			{
-				sessionVolumeControl = new SessionVolumeControl(P_0, process);
+				sessionVolumeControl = new VSessionVolumeControl(P_0, process);
 				int value = int.Parse(Math.Ceiling(P_0.SetVolume() * 100f).ToString());
 				sessionVolumeControl.mmDeviceCollection1 = mmDeviceCollection1;
 				sessionVolumeControl.mmDevice1 = mmDevice1;

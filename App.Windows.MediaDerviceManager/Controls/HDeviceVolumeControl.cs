@@ -11,7 +11,7 @@ using EConTech.Windows.MACUI;
 
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  public class DeviceVolumeControl2 : UserControl
+  public class HDeviceVolumeControl : UserControl
   {
     private delegate void SYS_STRING_INVOKE(string A_0);
 
@@ -63,7 +63,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       return new Bitmap(P_0, P_1);
     }
 
-    public DeviceVolumeControl2(MMDevice P_0)
+    public HDeviceVolumeControl(MMDevice P_0)
     {
       InitializeComponent();
       mmDevice1 = P_0;
@@ -360,7 +360,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.Controls.Add(this.lblProcessName);
       base.Controls.Add(this.IconBox);
       base.Margin = new Padding(0);
-      base.Name = "DeviceVolumeControl2";
+      base.Name = "HDeviceVolumeControl";
       base.Size = new System.Drawing.Size(364, 81);
       base.Paint += new PaintEventHandler(_OnPaint);
       ((System.ComponentModel.ISupportInitialize)this.IconBox).EndInit();
