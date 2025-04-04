@@ -135,9 +135,7 @@
     <Compile Include="AudioCore\WaveFormatEncoding.cs" />
     <Compile Include="AudioCore\WaveFormatExtensible.cs" />
     <Compile Include="AudioCore\WaveFormatExtraData.cs" />
-    <Compile Include="a\AudioSessionManagerPanel.cs" />
     <Compile Include="a\Class4.cs" />
-    <Compile Include="a\Control1.cs" />
     <Compile Include="a\ImageHelper.cs" />
     <Compile Include="a\unknown3.cs" />
     <Compile Include="a\unknown4.cs" />
@@ -145,12 +143,22 @@
     <Compile Include="a\unknown6.cs" />
     <Compile Include="B\FlowLayoutPanel1.cs" />
     <Compile Include="B\IOpenControlPanel.cs" />
+    <Compile Include="Controls\AudioSessionManagerPanel.cs" />
+    <Compile Include="Controls\AudioSessionManagerPanel.Designer.cs">
+      <DependentUpon>AudioSessionManagerPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\CheCheckBox.cs" />
     <Compile Include="Controls\DeviceVolumeControl.cs" />
     <Compile Include="Controls\DeviceVolumeControl2.cs" />
+    <Compile Include="Controls\HLedBar.Designer.cs">
+      <DependentUpon>HLedBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\VLedBar.cs" />
     <Compile Include="Controls\HLedBar.cs" />
     <Compile Include="Controls\SessionVolumeControl.cs" />
+    <Compile Include="Controls\VLedBar.Designer.cs">
+      <DependentUpon>VLedBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="EConTech.Windows.MACUI\ColorHelper.cs" />
     <Compile Include="EConTech.Windows.MACUI\DrawMACStyleHelper.cs" />
@@ -161,7 +169,6 @@
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MultiProcessIPC\CProcessHost.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.cs" />
@@ -188,7 +195,6 @@
     <Folder Include="Controls" />
     <Folder Include="Main" />
     <Folder Include="EConTech.Windows.MACUI" />
-    <Folder Include="MultiProcessIPC" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

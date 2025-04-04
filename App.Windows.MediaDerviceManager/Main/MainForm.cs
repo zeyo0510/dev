@@ -11,9 +11,9 @@ using System.ServiceModel;
 using System.Threading;
 using System.Windows.Forms;
 using a;
+using App.Windows.MediaDerviceManager.Controls;
 using AudioCore;
 using B;
-using App.Windows.MediaDerviceManager.Controls;
 using CheVolume.Properties;
 using Microsoft.Win32;
 /************************************************/
@@ -258,8 +258,7 @@ namespace App.Windows.MediaDerviceManager.Main
       mmNotificationClient1 = new MMNotificationClient();
       Class4.mmDeviceEnumerator1.RegisterEndpointNotificationCallback(mmNotificationClient1);
       processList = new List<ProcessMapping>();
-      CreateRegistry();
-      InitializeComponent();
+      this.InitializeComponent();
       using (Graphics graphics = CreateGraphics())
       {
         dpiX = graphics.DpiX / 96f;
@@ -431,33 +430,6 @@ namespace App.Windows.MediaDerviceManager.Main
         {
           audioSessionManagerPanel1.Controls.Remove(item);
         }
-      }
-    }
-
-    private void CreateRegistry()
-    {
-      RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("Software", true);
-      if (registryKey.OpenSubKey("CheVolume", true) == null)
-      {
-        registryKey.CreateSubKey("CheVolume");
-      }
-      registryKey = registryKey.OpenSubKey("CheVolume", true);
-      if (registryKey.OpenSubKey("Data", true) == null)
-      {
-        registryKey.CreateSubKey("Data");
-      }
-    }
-
-    private bool HookedMutex(int P_0)
-    {
-      try
-      {
-        Mutex.OpenExisting(string.Format("MyHookedMutex.{0}", P_0));
-        return true;
-      }
-      catch (WaitHandleCannotBeOpenedException)
-      {
-        return false;
       }
     }
 

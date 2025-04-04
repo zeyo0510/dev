@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using a;
+using App.Windows.MediaDerviceManager.Controls;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Main
 {
@@ -27,7 +27,7 @@ namespace App.Windows.MediaDerviceManager.Main
       this.components = new Container();
       /************************************************/
       this.toolToolStripContainer1 = new ToolStripContainer();
-      this.audioSessionManagerPanel1 = new a.AudioSessionManagerPanel();
+      this.audioSessionManagerPanel1 = new AudioSessionManagerPanel();
       this.topMenuStrip = new MenuStrip();
       this.systemToolStripMenuItem = new ToolStripMenuItem();
       this.fileToolStripMenuItem = new ToolStripMenuItem();
