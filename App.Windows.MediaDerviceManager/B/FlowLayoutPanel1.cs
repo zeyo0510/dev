@@ -180,13 +180,13 @@ namespace B
 		private void InitializeComponent()
 		{
 			base.SuspendLayout();
-			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
 			this.BackColor = System.Drawing.Color.Transparent;
-			base.Margin = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			base.Padding = new System.Windows.Forms.Padding(2);
+			base.Margin = new Padding(10, 0, 0, 0);
+			base.Padding = new Padding(2);
 			base.WrapContents = false;
-			base.ControlAdded += new System.Windows.Forms.ControlEventHandler(_OnControlAdded);
-			base.Paint += new System.Windows.Forms.PaintEventHandler(_OnPaint);
+			base.ControlAdded += new ControlEventHandler(_OnControlAdded);
+			base.Paint += new PaintEventHandler(_OnPaint);
 			base.Resize += new System.EventHandler(_OnResize);
 			base.ResumeLayout(false);
 		}

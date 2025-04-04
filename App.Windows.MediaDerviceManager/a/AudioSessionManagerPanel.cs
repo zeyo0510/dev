@@ -74,7 +74,7 @@ namespace a
 		{
 			base.SuspendLayout();
 			this.AutoScroll = true;
-			base.Paint += new System.Windows.Forms.PaintEventHandler(_OnPaint);
+			base.Paint += new PaintEventHandler(_OnPaint);
 			base.ResumeLayout(false);
 		}
 	}
