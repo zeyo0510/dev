@@ -379,8 +379,8 @@ namespace App.Windows.MediaDerviceManager.Main
             int value = int.Parse(Math.Ceiling(audioSessionControl21.SetVolume() * 100f).ToString());
             sessionVolumeControl.mmDeviceCollection1 = mmDeviceCollection1;
             sessionVolumeControl.mmDevice1 = mMDevice;
-            sessionVolumeControl.btnMute.Checked = audioSessionControl21.GetMute();
-            sessionVolumeControl.macTrackBar1.Value = value;
+            sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.GetMute();
+            sessionVolumeControl.volumeMACTrackBar.Value = value;
             flowLayoutPanel.Controls.Add(sessionVolumeControl);
             if (process.Id == 0)
             {

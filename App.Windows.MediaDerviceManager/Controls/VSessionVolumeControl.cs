@@ -90,7 +90,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       get
       {
-        return macTrackBar1.Value;
+        return volumeMACTrackBar.Value;
       }
     }
 
@@ -223,7 +223,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       audioSessionControl21 = P_0;
       process1 = P_1;
       process1.Refresh();
-      lblPId.Text = process1.Id.ToString();
+      pidLabel.Text = process1.Id.ToString();
       timer1 = new Timer();
       timer1.Tick += timer1_Tick;
       timer1.Interval = 10;
@@ -233,16 +233,16 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.Margin = new Padding(0);
       string audioSetivceDLL = GetAudioSetivceDLL(process1);
       Icon icon = ExtractIcon(audioSetivceDLL, Application.ExecutablePath);
-      IconBox.Image = icon.ToBitmap();
+      iconPictureBox.Image = icon.ToBitmap();
       _DestroyIcon(icon.Handle);
-      lblProcessName.Text = ((process1.Id == 0) ? "System Sounds" : process1.MainWindowTitle);
+      nameLabel.Text = ((process1.Id == 0) ? "System Sounds" : process1.MainWindowTitle);
       str1 = process1.ProcessName;
       if (process1.Id == 0)
       {
         btnLock.Visible = false;
         btnTransfert.Visible = false;
         BtnShowProcess.Visible = false;
-        btnMute.Location = new Point(base.Size.Width / 2 - btnMute.Width / 2, btnMute.Location.Y);
+        muteCheCheckBox.Location = new Point(base.Size.Width / 2 - muteCheCheckBox.Width / 2, muteCheCheckBox.Location.Y);
       }
       OnStateChanged2(audioSessionControl21.GetState());
     }
@@ -327,7 +327,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       SetMute(P_1);
       SetVolumeText(Math.Ceiling(P_0 * 100f).ToString());
-      if (!macTrackBar1.bool1)
+      if (!volumeMACTrackBar.bool1)
       {
         SetTrackBar((decimal)Math.Ceiling(P_0 * 100f));
       }
@@ -370,11 +370,11 @@ namespace App.Windows.MediaDerviceManager.Controls
       if (Enumerable.Count(source) > 0)
       {
         float value = Enumerable.Max(source);
-        lBarLeft.SetValue(value);
+        leftVLedBar.SetValue(value);
       }
       else
       {
-        lBarLeft.SetValue(0f);
+        leftVLedBar.SetValue(0f);
       }
       if (num1++ < 100)
       {
@@ -385,7 +385,7 @@ namespace App.Windows.MediaDerviceManager.Controls
         process1.Refresh();
         try
         {
-          lblProcessName.Text = process1.MainWindowTitle;
+          nameLabel.Text = process1.MainWindowTitle;
         }
         catch (Exception)
         {
@@ -396,27 +396,27 @@ namespace App.Windows.MediaDerviceManager.Controls
 
     private void contextMenuStrip1_Closed(object P_0, ToolStripDropDownClosedEventArgs P_1)
     {
-      lblVolume.Focus();
+      volumeLabel.Focus();
     }
 
     private void btnMute_CheckedChanged(object P_0, EventArgs P_1)
     {
-      if (btnMute.Checked)
+      if (muteCheCheckBox.Checked)
       {
-        lBarLeft.IsMuted = true;
-        macTrackBar1.TrackerColor = Color.DarkGray;
-        btnMute.Image = Resources.muteon;
-        btnMute.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+        leftVLedBar.IsMuted = true;
+        volumeMACTrackBar.TrackerColor = Color.DarkGray;
+        muteCheCheckBox.Image = Resources.muteon;
+        muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
       }
       else
       {
-        lBarLeft.IsMuted = false;
-        macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-        btnMute.Image = Resources.mute;
-        btnMute.FlatAppearance.BorderColor = Color.DarkGray;
+        leftVLedBar.IsMuted = false;
+        volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
+        muteCheCheckBox.Image = Resources.mute;
+        muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
       }
-      audioSessionControl21.SetMute(btnMute.Checked);
-      lblVolume.Focus();
+      audioSessionControl21.SetMute(muteCheCheckBox.Checked);
+      volumeLabel.Focus();
     }
 
     private void lBarLeft_Load(object P_0, EventArgs P_1)
@@ -439,7 +439,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       else
       {
-        macTrackBar1.Value = (int)P_0;
+        volumeMACTrackBar.Value = (int)P_0;
       }
     }
 
@@ -458,9 +458,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         P_1 = default(decimal);
       }
-      if (macTrackBar1.bool1)
+      if (volumeMACTrackBar.bool1)
       {
-        macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
+        volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
         audioSessionControl21.SetMute(false);
         audioSessionControl21.SetVolume((int)P_1);
       }
@@ -481,7 +481,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       int count = mmDeviceCollection1.Count;
       ToolStripMenuItem toolStripMenuItem = new ToolStripMenuItem();
       toolStripMenuItem.Text = "Move '" + process1.ProcessName + "' to  : ";
-      toolStripMenuItem.Image = IconBox.Image;
+      toolStripMenuItem.Image = iconPictureBox.Image;
       toolStripMenuItem.ForeColor = Color.FromArgb(50, 50, 50);
       toolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
       contextMenuStrip1.Items.Add(toolStripMenuItem);
@@ -597,7 +597,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       else
       {
-        btnMute.Checked = P_0;
+        muteCheCheckBox.Checked = P_0;
       }
     }
 
@@ -609,7 +609,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       else
       {
-        lblVolume.Text = P_0;
+        volumeLabel.Text = P_0;
       }
     }
 
@@ -622,7 +622,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       else
       {
         process1.Refresh();
-        lblProcessName.Text = process1.MainWindowTitle;
+        nameLabel.Text = process1.MainWindowTitle;
       }
     }
 
@@ -632,9 +632,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         Invoke(new SYS_FLOAT_INVOKE(SetVolume), P_0);
       }
-      else if (!macTrackBar1.bool1)
+      else if (!volumeMACTrackBar.bool1)
       {
-        macTrackBar1.Value = int.Parse(Math.Ceiling(P_0 * 100f).ToString());
+        volumeMACTrackBar.Value = int.Parse(Math.Ceiling(P_0 * 100f).ToString());
       }
     }
 
@@ -679,13 +679,13 @@ namespace App.Windows.MediaDerviceManager.Controls
         if (IsAdvancedUser)
         {
           SetVisible(true);
-          lBarLeft.SetValue(0f);
+          leftVLedBar.SetValue(0f);
           timer1.Start();
         }
         else
         {
           SetVisible(false);
-          lBarLeft.SetValue(0f);
+          leftVLedBar.SetValue(0f);
           timer1.Stop();
         }
         break;
@@ -730,7 +730,7 @@ namespace App.Windows.MediaDerviceManager.Controls
         }
       }
       Settings.Default.Save();
-      lblVolume.Focus();
+      volumeLabel.Focus();
     }
 
     public Icon ExtractIcon(string P_0, string P_1)
@@ -810,7 +810,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (IsAdvancedUser)
       {
-        lblPId.Visible = !lblPId.Visible;
+        pidLabel.Visible = !pidLabel.Visible;
       }
     }
 
@@ -820,16 +820,16 @@ namespace App.Windows.MediaDerviceManager.Controls
 
     private void btnMute_MouseEnter(object P_0, EventArgs P_1)
     {
-      btnMute.Image = Resources.muteon;
-      btnMute.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+      muteCheCheckBox.Image = Resources.muteon;
+      muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
     }
 
     private void btnMute_MouseLeave(object P_0, EventArgs P_1)
     {
-      if (!btnMute.Checked)
+      if (!muteCheCheckBox.Checked)
       {
-        btnMute.FlatAppearance.BorderColor = Color.DarkGray;
-        btnMute.Image = Resources.mute;
+        muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
+        muteCheCheckBox.Image = Resources.mute;
       }
     }
 
