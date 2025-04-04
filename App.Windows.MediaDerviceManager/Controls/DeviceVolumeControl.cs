@@ -9,9 +9,9 @@ using AudioCore;
 using CheVolume.Properties;
 using EConTech.Windows.MACUI;
 
-namespace CheVolume.Controls
+namespace App.Windows.MediaDerviceManager.Controls
 {
-  public class DeviceVolumeControl2 : UserControl
+  public class DeviceVolumeControl : UserControl
   {
     private delegate void SYS_STRING_INVOKE(string A_0);
 
@@ -31,13 +31,19 @@ namespace CheVolume.Controls
 
     public PictureBox IconBox;
 
+    public VLedBar lBarLeft;
+
     public Label lblProcessName;
 
     public CheCheckBox btnMute;
 
     public MACTrackBar macTrackBar1;
 
+    public VLedBar lBarRight;
+
     private CheckBox chkSetDefault;
+
+    private Label lblVolume;
 
     private AudioEndpointVolume EndPointVolume
     {
@@ -63,7 +69,7 @@ namespace CheVolume.Controls
       return new Bitmap(P_0, P_1);
     }
 
-    public DeviceVolumeControl2(MMDevice P_0)
+    public DeviceVolumeControl(MMDevice P_0)
     {
       InitializeComponent();
       mmDevice1 = P_0;
@@ -73,10 +79,11 @@ namespace CheVolume.Controls
       timer1.Interval = 10;
       timer1.Start();
       base.Tag = mmDevice1.ID;
-      lblProcessName.Text = P_0.NameDesc;
+      lblProcessName.Text = P_0.FriendlyName;
       btnMute.Checked = EndPointVolume.Mute;
       macTrackBar1.Value = EndPointVolume.Volume;
       macTrackBar1.audioEndpointVolume1 = EndPointVolume;
+      lblVolume.Text = EndPointVolume.Volume.ToString();
       Icon icon = ImageHelper.Method1(mmDevice1.IconPath);
       if (icon.Height > 0)
       {
@@ -86,11 +93,15 @@ namespace CheVolume.Controls
       EndPointVolume.OnVolumeNotification += SetData;
     }
 
-    public void Method2(string P_0)
+    public void SetVolumeTextV2(string P_0)
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_STRING_INVOKE(Method2), P_0);
+        Invoke(new SYS_STRING_INVOKE(SetVolumeTextV2), P_0);
+      }
+      else
+      {
+        lblVolume.Text = P_0;
       }
     }
 
@@ -130,23 +141,11 @@ namespace CheVolume.Controls
       }
     }
 
-    public void SetDefaultV3(bool P_0)
-    {
-      if (base.InvokeRequired)
-      {
-        Invoke(new SYS_BOOL_INVOKE(SetDefaultV3), P_0);
-      }
-      else
-      {
-        chkSetDefault.Checked = P_0;
-      }
-    }
-
     private void SetData(AudioVolumeNotificationData P_0)
     {
       SetTrackBarV2(int.Parse(Math.Ceiling(P_0.MasterVolume * 100f).ToString()));
       SetMuteV2(P_0.Muted);
-      Method2(Math.Ceiling(P_0.MasterVolume * 100f).ToString());
+      SetVolumeTextV2(Math.Ceiling(P_0.MasterVolume * 100f).ToString());
     }
 
     private void timer1_Tick(object P_0, EventArgs P_1)
@@ -158,16 +157,21 @@ namespace CheVolume.Controls
       }
       catch (Exception)
       {
-        macTrackBar1.SetActualVolume(0f);
+        lBarLeft.SetValue(0f);
+        lBarRight.SetValue(0f);
       }
       if (Enumerable.Count(array) > 0)
       {
         if (Enumerable.Count(array) == 1)
         {
+          lBarLeft.SetValue(array[0]);
+          lBarRight.SetValue(array[0]);
           macTrackBar1.SetActualVolume(array[0]);
         }
         else
         {
+          lBarLeft.SetValue(array[0]);
+          lBarRight.SetValue(array[1]);
           macTrackBar1.SetActualVolume((array[0] + array[1]) / 2f);
         }
       }
@@ -182,20 +186,25 @@ namespace CheVolume.Controls
     {
       if (btnMute.Checked)
       {
+        lBarLeft.IsMuted = true;
+        lBarRight.IsMuted = true;
         macTrackBar1.TrackerColor = Color.Gray;
         btnMute.Image = Resources.muteon;
         btnMute.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
       }
       else
       {
+        lBarLeft.IsMuted = false;
+        lBarRight.IsMuted = false;
         macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
         btnMute.Image = Resources.mute;
         btnMute.FlatAppearance.BorderColor = Color.DarkGray;
       }
       EndPointVolume.Mute = btnMute.Checked;
+      lblVolume.Focus();
     }
 
-    private void Obj_Method2(object P_0, EventArgs P_1)
+    private void lBarLeft_Load(object P_0, EventArgs P_1)
     {
     }
 
@@ -203,11 +212,11 @@ namespace CheVolume.Controls
     {
     }
 
-    private void Obj_Method3(object P_0, EventArgs P_1)
+    private void Obj_Method2(object P_0, EventArgs P_1)
     {
     }
 
-    private void Method1(object P_0, decimal P_1)
+    private void macTrackBar1_OnValueChanged(object P_0, decimal P_1)
     {
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
       if (macTrackBar1.bool1)
@@ -215,6 +224,11 @@ namespace CheVolume.Controls
         macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
         EndPointVolume.Mute = false;
       }
+    }
+
+    public void SetDefault(bool P_0)
+    {
+      chkSetDefault.Checked = P_0;
     }
 
     private void btnMute_MouseUp(object P_0, MouseEventArgs P_1)
@@ -268,67 +282,24 @@ namespace CheVolume.Controls
     private void InitializeComponent()
     {
       this.lblProcessName = new Label();
+      this.btnMute = new App.Windows.MediaDerviceManager.Controls.CheCheckBox();
       this.IconBox = new PictureBox();
       this.chkSetDefault = new CheckBox();
+      this.lBarRight = new App.Windows.MediaDerviceManager.Controls.VLedBar();
       this.macTrackBar1 = new EConTech.Windows.MACUI.MACTrackBar();
-      this.btnMute = new CheVolume.Controls.CheCheckBox();
+      this.lBarLeft = new App.Windows.MediaDerviceManager.Controls.VLedBar();
+      this.lblVolume = new Label();
       ((System.ComponentModel.ISupportInitialize)this.IconBox).BeginInit();
       base.SuspendLayout();
-      this.lblProcessName.Font = new System.Drawing.Font("Verdana", 11f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+      this.lblProcessName.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
       this.lblProcessName.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-      this.lblProcessName.Location = new System.Drawing.Point(119, 4);
-      this.lblProcessName.Margin = new Padding(4, 0, 4, 0);
+      this.lblProcessName.Location = new System.Drawing.Point(3, 10);
       this.lblProcessName.Name = "lblProcessName";
-      this.lblProcessName.Size = new System.Drawing.Size(157, 59);
+      this.lblProcessName.Size = new System.Drawing.Size(122, 48);
       this.lblProcessName.TabIndex = 3;
       this.lblProcessName.Text = "Temp Text";
-      this.lblProcessName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.lblProcessName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.lblProcessName.Click += new System.EventHandler(lblProcessName_Click);
-      this.IconBox.BackColor = System.Drawing.Color.Transparent;
-      this.IconBox.Location = new System.Drawing.Point(71, 12);
-      this.IconBox.Margin = new Padding(0);
-      this.IconBox.Name = "IconBox";
-      this.IconBox.Size = new System.Drawing.Size(43, 39);
-      this.IconBox.TabIndex = 0;
-      this.IconBox.TabStop = false;
-      this.chkSetDefault.AutoSize = true;
-      this.chkSetDefault.Cursor = Cursors.Hand;
-      this.chkSetDefault.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-      this.chkSetDefault.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-      this.chkSetDefault.Location = new System.Drawing.Point(34, 23);
-      this.chkSetDefault.Margin = new Padding(4);
-      this.chkSetDefault.Name = "chkSetDefault";
-      this.chkSetDefault.Size = new System.Drawing.Size(18, 17);
-      this.chkSetDefault.TabIndex = 13;
-      this.chkSetDefault.UseVisualStyleBackColor = true;
-      this.chkSetDefault.CheckedChanged += new System.EventHandler(chkSetDefault_CheckedChanged);
-      this.chkSetDefault.MouseClick += new MouseEventHandler(chkSetDefault_MouseClick);
-      this.macTrackBar1.BackColor = System.Drawing.Color.Transparent;
-      this.macTrackBar1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-      this.macTrackBar1.Cursor = Cursors.Hand;
-      this.macTrackBar1.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-      this.macTrackBar1.ForeColor = System.Drawing.Color.FromArgb(123, 125, 123);
-      this.macTrackBar1.IndentHeight = 6;
-      this.macTrackBar1.LargeChange = 1;
-      this.macTrackBar1.Location = new System.Drawing.Point(13, 54);
-      this.macTrackBar1.Margin = new Padding(4);
-      this.macTrackBar1.Maximum = 100;
-      this.macTrackBar1.Minimum = 0;
-      this.macTrackBar1.Name = "macTrackBar1";
-      this.macTrackBar1.Size = new System.Drawing.Size(329, 28);
-      this.macTrackBar1.TabIndex = 10;
-      this.macTrackBar1.TextTickStyle = TickStyle.None;
-      this.macTrackBar1.TickColor = System.Drawing.Color.FromArgb(148, 146, 148);
-      this.macTrackBar1.TickFrequency = 10;
-      this.macTrackBar1.TickHeight = 4;
-      this.macTrackBar1.TickStyle = TickStyle.None;
-      this.macTrackBar1.TrackerColor = System.Drawing.Color.FromArgb(255, 110, 0);
-      this.macTrackBar1.TrackerSize = new System.Drawing.Size(16, 16);
-      this.macTrackBar1.TrackLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
-      this.macTrackBar1.TrackLineHeight = 3;
-      this.macTrackBar1.Value = 0;
-      this.macTrackBar1.VolumeLineColor = System.Drawing.SystemColors.Control;
-      this.macTrackBar1.ValueChanged += Method1;
       this.btnMute.Appearance = Appearance.Button;
       this.btnMute.AutoSize = true;
       this.btnMute.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
@@ -339,10 +310,9 @@ namespace CheVolume.Controls
       this.btnMute.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
       this.btnMute.FlatStyle = FlatStyle.Flat;
       this.btnMute.Image = CheVolume.Properties.Resources.mute;
-      this.btnMute.Location = new System.Drawing.Point(287, 12);
-      this.btnMute.Margin = new Padding(4);
+      this.btnMute.Location = new System.Drawing.Point(46, 400);
       this.btnMute.Name = "btnMute";
-      this.btnMute.Padding = new Padding(0, 0, 3, 2);
+      this.btnMute.Padding = new Padding(0, 0, 2, 2);
       this.btnMute.Size = new System.Drawing.Size(34, 34);
       this.btnMute.TabIndex = 7;
       this.btnMute.UseVisualStyleBackColor = false;
@@ -350,18 +320,91 @@ namespace CheVolume.Controls
       this.btnMute.MouseEnter += new System.EventHandler(btnMute_MouseEnter);
       this.btnMute.MouseLeave += new System.EventHandler(btnMute_MouseLeave);
       this.btnMute.MouseUp += new MouseEventHandler(btnMute_MouseUp);
-      base.AutoScaleDimensions = new System.Drawing.SizeF(8f, 16f);
+      this.IconBox.BackColor = System.Drawing.Color.Transparent;
+      this.IconBox.Location = new System.Drawing.Point(47, 58);
+      this.IconBox.Margin = new Padding(0);
+      this.IconBox.Name = "IconBox";
+      this.IconBox.Size = new System.Drawing.Size(32, 32);
+      this.IconBox.TabIndex = 0;
+      this.IconBox.TabStop = false;
+      this.chkSetDefault.AutoSize = true;
+      this.chkSetDefault.Cursor = Cursors.Hand;
+      this.chkSetDefault.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+      this.chkSetDefault.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+      this.chkSetDefault.Location = new System.Drawing.Point(13, 98);
+      this.chkSetDefault.Name = "chkSetDefault";
+      this.chkSetDefault.Size = new System.Drawing.Size(105, 16);
+      this.chkSetDefault.TabIndex = 13;
+      this.chkSetDefault.Text = "Set as Default";
+      this.chkSetDefault.UseVisualStyleBackColor = true;
+      this.chkSetDefault.CheckedChanged += new System.EventHandler(chkSetDefault_CheckedChanged);
+      this.chkSetDefault.MouseClick += new MouseEventHandler(chkSetDefault_MouseClick);
+      this.lBarRight.BackColor = System.Drawing.SystemColors.ScrollBar;
+      this.lBarRight.IsMuted = false;
+      this.lBarRight.Location = new System.Drawing.Point(108, 132);
+      this.lBarRight.Name = "lBarRight";
+      this.lBarRight.Size = new System.Drawing.Size(5, 225);
+      this.lBarRight.TabIndex = 12;
+      this.macTrackBar1.BackColor = System.Drawing.Color.Transparent;
+      this.macTrackBar1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+      this.macTrackBar1.Cursor = Cursors.Hand;
+      this.macTrackBar1.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
+      this.macTrackBar1.ForeColor = System.Drawing.Color.FromArgb(123, 125, 123);
+      this.macTrackBar1.IndentHeight = 6;
+      this.macTrackBar1.LargeChange = 1;
+      this.macTrackBar1.Location = new System.Drawing.Point(23, 121);
+      this.macTrackBar1.Maximum = 100;
+      this.macTrackBar1.Minimum = 0;
+      this.macTrackBar1.Name = "macTrackBar1";
+      this.macTrackBar1.Orientation = Orientation.Vertical;
+      this.macTrackBar1.Size = new System.Drawing.Size(79, 247);
+      this.macTrackBar1.TabIndex = 10;
+      this.macTrackBar1.TextTickStyle = TickStyle.Both;
+      this.macTrackBar1.TickColor = System.Drawing.Color.FromArgb(148, 146, 148);
+      this.macTrackBar1.TickFrequency = 10;
+      this.macTrackBar1.TickHeight = 4;
+      this.macTrackBar1.TickStyle = TickStyle.Both;
+      this.macTrackBar1.TrackerColor = System.Drawing.Color.FromArgb(255, 110, 0);
+      this.macTrackBar1.TrackerSize = new System.Drawing.Size(16, 16);
+      this.macTrackBar1.TrackLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
+      this.macTrackBar1.VolumeLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
+      this.macTrackBar1.TrackLineHeight = 3;
+      this.macTrackBar1.Value = 0;
+      this.macTrackBar1.ValueChanged += macTrackBar1_OnValueChanged;
+      this.lBarLeft.BackColor = System.Drawing.SystemColors.ScrollBar;
+      this.lBarLeft.IsMuted = false;
+      this.lBarLeft.Location = new System.Drawing.Point(13, 132);
+      this.lBarLeft.Name = "lBarLeft";
+      this.lBarLeft.Size = new System.Drawing.Size(5, 225);
+      this.lBarLeft.TabIndex = 1;
+      this.lBarLeft.Load += new System.EventHandler(lBarLeft_Load);
+      this.lblVolume.BackColor = System.Drawing.Color.Transparent;
+      this.lblVolume.BorderStyle = BorderStyle.FixedSingle;
+      this.lblVolume.Font = new System.Drawing.Font("Verdana", 8f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
+      this.lblVolume.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
+      this.lblVolume.Location = new System.Drawing.Point(44, 370);
+      this.lblVolume.Name = "lblVolume";
+      this.lblVolume.Size = new System.Drawing.Size(38, 19);
+      this.lblVolume.TabIndex = 11;
+      this.lblVolume.Text = "100";
+      this.lblVolume.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      this.lblVolume.UseCompatibleTextRendering = true;
+      this.lblVolume.UseMnemonic = false;
+      base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
       base.AutoScaleMode = AutoScaleMode.Font;
       base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
       this.BackColor = System.Drawing.Color.Transparent;
       base.Controls.Add(this.chkSetDefault);
+      base.Controls.Add(this.lBarRight);
+      base.Controls.Add(this.lblVolume);
       base.Controls.Add(this.macTrackBar1);
       base.Controls.Add(this.btnMute);
       base.Controls.Add(this.lblProcessName);
+      base.Controls.Add(this.lBarLeft);
       base.Controls.Add(this.IconBox);
       base.Margin = new Padding(0);
-      base.Name = "DeviceVolumeControl2";
-      base.Size = new System.Drawing.Size(364, 81);
+      base.Name = "DeviceVolumeControl";
+      base.Size = new System.Drawing.Size(128, 485);
       base.Paint += new PaintEventHandler(_OnPaint);
       ((System.ComponentModel.ISupportInitialize)this.IconBox).EndInit();
       base.ResumeLayout(false);

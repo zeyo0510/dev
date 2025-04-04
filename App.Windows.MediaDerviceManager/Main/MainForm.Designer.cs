@@ -1,8 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 using a;
-using CheVolume.Controls;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Main
 {
@@ -10,19 +10,24 @@ namespace App.Windows.MediaDerviceManager.Main
   {
     private IContainer components;
     /************************************************/
-    protected override void Dispose(bool P_0)
+    protected override void Dispose(bool disposing)
     {
-      if (P_0 && components != null)
+      if (disposing)
       {
-        components.Dispose();
+        if (this.components != null)
+        {
+          this.components.Dispose();
+        }
       }
-      base.Dispose(P_0);
+      base.Dispose(disposing);
     }
     /************************************************/
     private void InitializeComponent()
     {
       this.components = new Container();
       /************************************************/
+      this.toolToolStripContainer1 = new ToolStripContainer();
+      this.audioSessionManagerPanel1 = new a.AudioSessionManagerPanel();
       this.topMenuStrip = new MenuStrip();
       this.systemToolStripMenuItem = new ToolStripMenuItem();
       this.fileToolStripMenuItem = new ToolStripMenuItem();
@@ -31,12 +36,29 @@ namespace App.Windows.MediaDerviceManager.Main
       this.advancedToolStripMenuItem = new ToolStripMenuItem();
       this.windowToolStripMenuItem = new ToolStripMenuItem();
       this.pinToolStripMenuItem = new ToolStripMenuItem();
-      
-      
-      this.pnlSessMgr = new a.AudioSessionManagerPanel();
       /************************************************/
       base.SuspendLayout();
       /************************************************/
+      // toolToolStripContainer1
+      {
+        this.toolToolStripContainer1.Name = "toolToolStripContainer1";
+        this.toolToolStripContainer1.Dock = DockStyle.Fill;
+        /************************************************/
+        this.toolToolStripContainer1.ContentPanel.Controls.Add(this.audioSessionManagerPanel1);
+      }
+      // audioSessionManagerPanel1
+      {
+        this.audioSessionManagerPanel1.Name = "audioSessionManagerPanel1";
+        this.audioSessionManagerPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        this.audioSessionManagerPanel1.AutoScroll = true;
+        this.audioSessionManagerPanel1.AutoSize = true;
+        this.audioSessionManagerPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        this.audioSessionManagerPanel1.Location = new Point(5, 5);
+        this.audioSessionManagerPanel1.MinimumSize = new System.Drawing.Size(747, 625);
+        this.audioSessionManagerPanel1.PenColor = System.Drawing.Color.Empty;
+        this.audioSessionManagerPanel1.Thickness = 0;
+        this.audioSessionManagerPanel1.WrapContents = false;
+      }
       // topMenuStrip
       {
         this.topMenuStrip.Name = "topMenuStrip";
@@ -109,24 +131,12 @@ namespace App.Windows.MediaDerviceManager.Main
       
       
       
-      this.pnlSessMgr.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-      this.pnlSessMgr.AutoScroll = true;
-      this.pnlSessMgr.AutoSize = true;
-      this.pnlSessMgr.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-      this.pnlSessMgr.Location = new System.Drawing.Point(15, 142);
-      this.pnlSessMgr.Margin = new Padding(0, 0, 27, 0);
-      this.pnlSessMgr.MinimumSize = new System.Drawing.Size(747, 625);
-      this.pnlSessMgr.Name = "pnlSessMgr";
-      this.pnlSessMgr.PenColor = System.Drawing.Color.Empty;
-      this.pnlSessMgr.Size = new System.Drawing.Size(747, 625);
-      this.pnlSessMgr.TabIndex = 2;
-      this.pnlSessMgr.Thickness = 0;
-      this.pnlSessMgr.WrapContents = false;
+
       base.AutoScaleDimensions = new System.Drawing.SizeF(8f, 16f);
       base.AutoScaleMode = AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       base.ClientSize = new System.Drawing.Size(1045, 756);
-      base.Controls.Add(this.pnlSessMgr);
+      base.Controls.Add(this.toolToolStripContainer1);
       base.Controls.Add(this.topMenuStrip);
       this.DoubleBuffered = true;
       this.MaximumSize = new System.Drawing.Size(3994, 803);
@@ -140,7 +150,8 @@ namespace App.Windows.MediaDerviceManager.Main
       base.PerformLayout();
     }
     /************************************************/
-    private AudioSessionManagerPanel pnlSessMgr;
+    private ToolStripContainer toolToolStripContainer1 = null;
+    private AudioSessionManagerPanel audioSessionManagerPanel1 = null;
     private MenuStrip topMenuStrip = null;
     private ToolStripMenuItem fileToolStripMenuItem = null;
     private ToolStripMenuItem systemToolStripMenuItem = null;

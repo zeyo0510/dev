@@ -13,7 +13,7 @@ using System.Windows.Forms;
 using a;
 using AudioCore;
 using B;
-using CheVolume.Controls;
+using App.Windows.MediaDerviceManager.Controls;
 using CheVolume.Properties;
 using Microsoft.Win32;
 /************************************************/
@@ -144,7 +144,7 @@ namespace App.Windows.MediaDerviceManager.Main
 
       internal bool Equal(FlowLayoutPanel1 P_0)
       {
-        return P_0.Bounds.Contains(main1.pnlSessMgr.PointToClient(point1));
+        return P_0.Bounds.Contains(main1.audioSessionManagerPanel1.PointToClient(point1));
       }
     }
 
@@ -279,21 +279,21 @@ namespace App.Windows.MediaDerviceManager.Main
 
     private void AutoAdjSessionManagerPanel()
     {
-      AnchorStyles anchor = pnlSessMgr.Anchor;
-      pnlSessMgr.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-      pnlSessMgr.AutoSize = true;
-      pnlSessMgr.Size = new Size(0, 0);
-      pnlSessMgr.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+      AnchorStyles anchor = audioSessionManagerPanel1.Anchor;
+      audioSessionManagerPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+      audioSessionManagerPanel1.AutoSize = true;
+      audioSessionManagerPanel1.Size = new Size(0, 0);
+      audioSessionManagerPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
       base.Size = new Size(0, 0);
       AutoSize = true;
       base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-      Size size = pnlSessMgr.Size;
+      Size size = audioSessionManagerPanel1.Size;
       Size size2 = base.Size;
-      pnlSessMgr.AutoSize = false;
+      audioSessionManagerPanel1.AutoSize = false;
       AutoSize = false;
-      pnlSessMgr.Size = size;
+      audioSessionManagerPanel1.Size = size;
       base.Size = size2;
-      pnlSessMgr.Anchor = anchor;
+      audioSessionManagerPanel1.Anchor = anchor;
     }
 
     public void UpdateAudio()
@@ -313,7 +313,7 @@ namespace App.Windows.MediaDerviceManager.Main
       {
         MMDevice mMDevice = mmDeviceCollection1[i];
         string string1 = mMDevice.ID;
-        List<FlowLayoutPanel1> list = Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls));
+        List<FlowLayoutPanel1> list = Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(audioSessionManagerPanel1.Controls));
         bool @default = false;
         if (string1 == text)
         {
@@ -328,7 +328,7 @@ namespace App.Windows.MediaDerviceManager.Main
           flowLayoutPanel = new FlowLayoutPanel1(mMDevice);
           flowLayoutPanel.Tag = mMDevice.ID;
           flowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
-          pnlSessMgr.Controls.Add(flowLayoutPanel);
+          audioSessionManagerPanel1.Controls.Add(flowLayoutPanel);
           DeviceVolumeControl deviceVolumeControl = new DeviceVolumeControl(mMDevice);
           deviceVolumeControl.BackColor = Color.FromArgb(242, 242, 242);
           deviceVolumeControl.Tag = mMDevice.ID;
@@ -425,11 +425,11 @@ namespace App.Windows.MediaDerviceManager.Main
         BeginInvoke(new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceRemove), P_0);
         return;
       }
-      foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls)))
+      foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(audioSessionManagerPanel1.Controls)))
       {
         if (string.Compare(item.Tag.ToString(), P_0) == 0)
         {
-          pnlSessMgr.Controls.Remove(item);
+          audioSessionManagerPanel1.Controls.Remove(item);
         }
       }
     }
@@ -468,7 +468,7 @@ namespace App.Windows.MediaDerviceManager.Main
         Show();
         base.WindowState = FormWindowState.Normal;
         Activate();
-        if (pnlSessMgr.ClientSize.Width + pnlSessMgr.Margin.Left + pnlSessMgr.Margin.Right + pnlSessMgr.Location.X + 16 > base.Size.Width)
+        if (audioSessionManagerPanel1.ClientSize.Width + audioSessionManagerPanel1.Margin.Left + audioSessionManagerPanel1.Margin.Right + audioSessionManagerPanel1.Location.X + 16 > base.Size.Width)
         {
           AutoAdjSessionManagerPanel();
         }
@@ -542,7 +542,7 @@ namespace App.Windows.MediaDerviceManager.Main
 
     private void InvokeStateChanged()
     {
-      foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls)))
+      foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(audioSessionManagerPanel1.Controls)))
       {
         foreach (SessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(item.Controls)))
         {

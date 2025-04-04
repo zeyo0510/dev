@@ -145,12 +145,12 @@
     <Compile Include="a\unknown6.cs" />
     <Compile Include="B\FlowLayoutPanel1.cs" />
     <Compile Include="B\IOpenControlPanel.cs" />
-    <Compile Include="CheVolume.Controls\CheCheckBox.cs" />
-    <Compile Include="CheVolume.Controls\DeviceVolumeControl.cs" />
-    <Compile Include="CheVolume.Controls\DeviceVolumeControl2.cs" />
-    <Compile Include="CheVolume.Controls\LedBar.cs" />
-    <Compile Include="CheVolume.Controls\LedBar2.cs" />
-    <Compile Include="CheVolume.Controls\SessionVolumeControl.cs" />
+    <Compile Include="Controls\CheCheckBox.cs" />
+    <Compile Include="Controls\DeviceVolumeControl.cs" />
+    <Compile Include="Controls\DeviceVolumeControl2.cs" />
+    <Compile Include="Controls\VLedBar.cs" />
+    <Compile Include="Controls\HLedBar.cs" />
+    <Compile Include="Controls\SessionVolumeControl.cs" />
     <Compile Include="Main\MainForm.cs" />
     <Compile Include="EConTech.Windows.MACUI\ColorHelper.cs" />
     <Compile Include="EConTech.Windows.MACUI\DrawMACStyleHelper.cs" />
@@ -185,7 +185,7 @@
     <Folder Include="AudioCore.Interfaces" />
     <Folder Include="AudioCore2" />
     <Folder Include="B" />
-    <Folder Include="CheVolume.Controls" />
+    <Folder Include="Controls" />
     <Folder Include="Main" />
     <Folder Include="EConTech.Windows.MACUI" />
     <Folder Include="MultiProcessIPC" />

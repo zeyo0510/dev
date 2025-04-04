@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using a;
 using AudioCore;
 using AudioCore.Interfaces;
-using CheVolume.Controls;
+using App.Windows.MediaDerviceManager.Controls;
 using CheVolume.Properties;
 
 namespace B

@@ -14,7 +14,7 @@ using CheVolume.Properties;
 using EConTech.Windows.MACUI;
 using Microsoft.Win32;
 
-namespace CheVolume.Controls
+namespace App.Windows.MediaDerviceManager.Controls
 {
   public class SessionVolumeControl : UserControl, IAudioSessionEvents
   {
@@ -92,7 +92,7 @@ namespace CheVolume.Controls
 
     public PictureBox IconBox;
 
-    public LedBar lBarLeft;
+    public VLedBar lBarLeft;
 
     public Label lblProcessName;
 
@@ -898,11 +898,11 @@ namespace CheVolume.Controls
       this.lblPId = new Label();
       this.btnTransfert = new Button();
       this.IconBox = new PictureBox();
-      this.BtnShowProcess = new CheVolume.Controls.CheCheckBox();
-      this.btnLock = new CheVolume.Controls.CheCheckBox();
+      this.BtnShowProcess = new App.Windows.MediaDerviceManager.Controls.CheCheckBox();
+      this.btnLock = new App.Windows.MediaDerviceManager.Controls.CheCheckBox();
       this.macTrackBar1 = new EConTech.Windows.MACUI.MACTrackBar();
-      this.btnMute = new CheVolume.Controls.CheCheckBox();
-      this.lBarLeft = new CheVolume.Controls.LedBar();
+      this.btnMute = new App.Windows.MediaDerviceManager.Controls.CheCheckBox();
+      this.lBarLeft = new App.Windows.MediaDerviceManager.Controls.VLedBar();
       this.contextMenuStrip1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)this.IconBox).BeginInit();
       base.SuspendLayout();

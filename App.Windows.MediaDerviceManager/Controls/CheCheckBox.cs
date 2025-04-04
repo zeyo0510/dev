@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace CheVolume.Controls
+namespace App.Windows.MediaDerviceManager.Controls
 {
   public class CheCheckBox : CheckBox
   {
