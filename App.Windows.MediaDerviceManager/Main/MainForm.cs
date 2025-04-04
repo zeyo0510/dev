@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -12,9 +11,7 @@ using System.ServiceModel;
 using System.Threading;
 using System.Windows.Forms;
 using a;
-using App.Windows.MediaDerviceManager;
 using AudioCore;
-using AudioCore.Interfaces;
 using B;
 using CheVolume.Common;
 using CheVolume.Controls;
@@ -25,6 +22,49 @@ namespace App.Windows.MediaDerviceManager.Main
 {
   public partial class MainForm : Form
   {
+    private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+    {
+      // TODO: do anything...
+    }
+    /************************************************/
+    private void systemToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      Process.Start("control.exe", "mmsys.cpl,, 2");
+    }
+    /************************************************/
+    private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      Environment.Exit(0);
+    }
+    /************************************************/
+    private void viewToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+    {
+      // TODO: do anything...
+    }
+    /************************************************/
+    private void advancedToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      IsAdvancedUser = !IsAdvancedUser;
+      InvokeStateChanged();
+      if (!bool1)
+      {
+        AutoAdjSessionManagerPanel();
+      }
+    }
+    /************************************************/
+    private void windowToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+    {
+      // TODO: do anything...
+    }
+    /************************************************/
+    private void pinToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      base.TopMost = !base.TopMost;
+    }
+    
+    
+    
+    
     private enum Enum1
     {
       A = 1,
@@ -230,7 +270,6 @@ namespace App.Windows.MediaDerviceManager.Main
       ImageHelper.SetImageSize(dpiX);
       xmlSettings1 = new XMLSettings();
       xmlSettings1.Load();
-      cheCheckBox1.Checked = IsAdvancedUser;
       MMNotificationClient mMNotificationClient = mmNotificationClient1;
       mMNotificationClient.DefaultChanged = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient.DefaultChanged, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged));
       MMNotificationClient mMNotificationClient2 = mmNotificationClient1;
@@ -446,12 +485,6 @@ namespace App.Windows.MediaDerviceManager.Main
       }
     }
 
-    private void Obj_Method3(object P_0, KeyEventArgs P_1)
-    {
-      Keys keyCode = P_1.KeyCode;
-      int num = 13;
-    }
-
     public void ShowMe()
     {
       try
@@ -470,28 +503,10 @@ namespace App.Windows.MediaDerviceManager.Main
       }
     }
 
-    private void Obj_Method4(object P_0, MouseEventArgs P_1)
-    {
-      if (P_1.Button == MouseButtons.Right)
-      {
-        ShowMe();
-      }
-    }
-
     private void _OnFormClosing(object P_0, FormClosingEventArgs P_1)
     {
       P_1.Cancel = true;
       Hide();
-    }
-
-    private void Obj_Method5(object P_0, EventArgs P_1)
-    {
-      Environment.Exit(0);
-    }
-
-    private void systemButton_Click(object P_0, EventArgs P_1)
-    {
-      Process.Start("control.exe", "mmsys.cpl,, 2");
     }
 
     public bool CheckUpdate(unknown6 P_0)
@@ -549,24 +564,6 @@ namespace App.Windows.MediaDerviceManager.Main
       }
     }
 
-    private void cheCheckBox1_CheckedChanged(object P_0, EventArgs P_1)
-    {
-      if (cheCheckBox1.Checked)
-      {
-        cheCheckBox1.Image = Resources.AdvancedUserOn;
-      }
-      else
-      {
-        cheCheckBox1.Image = Resources.AdvancedUser;
-      }
-      IsAdvancedUser = cheCheckBox1.Checked;
-      InvokeStateChanged();
-      if (!bool1)
-      {
-        AutoAdjSessionManagerPanel();
-      }
-    }
-
     private void InvokeStateChanged()
     {
       foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls)))
@@ -576,24 +573,6 @@ namespace App.Windows.MediaDerviceManager.Main
           item2.OnStateChanged2(item2.audioSessionControl21.GetState());
         }
       }
-    }
-
-    private void cheCheckBox2_CheckedChanged(object P_0, EventArgs P_1)
-    {
-      if (cheCheckBox2.Checked)
-      {
-        cheCheckBox2.Image = Resources.PinnedOn;
-      }
-      else
-      {
-        cheCheckBox2.Image = Resources.Pinned;
-      }
-      base.TopMost = cheCheckBox2.Checked;
-    }
-
-    private void exitButton_Click(object P_0, EventArgs P_1)
-    {
-      Environment.Exit(0);
     }
 
     [CompilerGenerated]

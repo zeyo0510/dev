@@ -25,69 +25,92 @@ namespace App.Windows.MediaDerviceManager.Main
     {
       this.components = new Container();
       /************************************************/
-      this.systemButton = new Button();
-      this.cheCheckBox2 = new CheCheckBox();
-      this.cheCheckBox1 = new CheCheckBox();
+      this.topMenuStrip = new MenuStrip();
+      this.systemToolStripMenuItem = new ToolStripMenuItem();
+      this.fileToolStripMenuItem = new ToolStripMenuItem();
+      this.exitToolStripMenuItem = new ToolStripMenuItem();
+      this.viewToolStripMenuItem = new ToolStripMenuItem();
+      this.advancedToolStripMenuItem = new ToolStripMenuItem();
+      this.windowToolStripMenuItem = new ToolStripMenuItem();
+      this.pinToolStripMenuItem = new ToolStripMenuItem();
+      
+      
       this.pnlSessMgr = new a.AudioSessionManagerPanel();
-      this.toolTip1 = new ToolTip(this.components);
-      this.exitButton = new Button();
       /************************************************/
       base.SuspendLayout();
       /************************************************/
-      this.systemButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-      this.systemButton.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.systemButton.Cursor = Cursors.Hand;
-      this.systemButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.systemButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.systemButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.systemButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.systemButton.FlatStyle = FlatStyle.Flat;
-      this.systemButton.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-      this.systemButton.Image = CheVolume.Properties.Resources.options;
-      this.systemButton.Location = new System.Drawing.Point(923, 15);
-      this.systemButton.Margin = new Padding(4);
-      this.systemButton.Name = "systemButton";
-      this.systemButton.Padding = new Padding(0, 0, 3, 2);
-      this.systemButton.Size = new System.Drawing.Size(45, 42);
-      this.systemButton.TabIndex = 8;
-      this.systemButton.UseVisualStyleBackColor = false;
-      this.systemButton.Click += new System.EventHandler(systemButton_Click);
-      this.cheCheckBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-      this.cheCheckBox2.Appearance = Appearance.Button;
-      this.cheCheckBox2.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox2.Cursor = Cursors.Hand;
-      this.cheCheckBox2.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.cheCheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox2.FlatStyle = FlatStyle.Flat;
-      this.cheCheckBox2.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold);
-      this.cheCheckBox2.Image = CheVolume.Properties.Resources.Pinned;
-      this.cheCheckBox2.Location = new System.Drawing.Point(763, 15);
-      this.cheCheckBox2.Margin = new Padding(4);
-      this.cheCheckBox2.Name = "cheCheckBox2";
-      this.cheCheckBox2.Size = new System.Drawing.Size(45, 42);
-      this.cheCheckBox2.TabIndex = 15;
-      this.cheCheckBox2.UseVisualStyleBackColor = false;
-      this.cheCheckBox2.CheckedChanged += new System.EventHandler(cheCheckBox2_CheckedChanged);
-      this.cheCheckBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-      this.cheCheckBox1.Appearance = Appearance.Button;
-      this.cheCheckBox1.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox1.Cursor = Cursors.Hand;
-      this.cheCheckBox1.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.cheCheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.cheCheckBox1.FlatStyle = FlatStyle.Flat;
-      this.cheCheckBox1.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold);
-      this.cheCheckBox1.Image = CheVolume.Properties.Resources.AdvancedUser;
-      this.cheCheckBox1.Location = new System.Drawing.Point(816, 15);
-      this.cheCheckBox1.Margin = new Padding(4);
-      this.cheCheckBox1.Name = "cheCheckBox1";
-      this.cheCheckBox1.Size = new System.Drawing.Size(45, 42);
-      this.cheCheckBox1.TabIndex = 13;
-      this.cheCheckBox1.UseVisualStyleBackColor = false;
-      this.cheCheckBox1.CheckedChanged += new System.EventHandler(cheCheckBox1_CheckedChanged);
+      // topMenuStrip
+      {
+        this.topMenuStrip.Name = "topMenuStrip";
+        this.topMenuStrip.Dock = DockStyle.Top;
+        /************************************************/
+        this.topMenuStrip.Items.Add(this.fileToolStripMenuItem);
+        this.topMenuStrip.Items.Add(this.viewToolStripMenuItem);
+        this.topMenuStrip.Items.Add(this.windowToolStripMenuItem);
+      }
+      // fileToolStripMenuItem
+      {
+        this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+        this.fileToolStripMenuItem.Text = "File";
+        /************************************************/
+        this.fileToolStripMenuItem.DropDownItems.Add(this.systemToolStripMenuItem);
+        this.fileToolStripMenuItem.DropDownItems.Add(new ToolStripSeparator());
+        this.fileToolStripMenuItem.DropDownItems.Add(this.exitToolStripMenuItem);
+        /************************************************/
+        this.fileToolStripMenuItem.DropDownOpening += this.fileToolStripMenuItem_DropDownOpening;
+      }
+      // systemToolStripMenuItem
+      {
+        this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
+        this.systemToolStripMenuItem.Text = "System";
+        /************************************************/
+        this.systemToolStripMenuItem.Click += this.systemToolStripMenuItem_Click;
+      }
+      // exitToolStripMenuItem
+      {
+        this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+        this.exitToolStripMenuItem.Text = "Exit";
+        /************************************************/
+        this.exitToolStripMenuItem.Click += this.exitToolStripMenuItem_Click;
+      }
+      // viewToolStripMenuItem
+      {
+        this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+        this.viewToolStripMenuItem.Text = "View";
+        /************************************************/
+        this.viewToolStripMenuItem.DropDownItems.Add(this.advancedToolStripMenuItem);
+        /************************************************/
+        this.viewToolStripMenuItem.DropDownOpening += this.viewToolStripMenuItem_DropDownOpening;
+      }
+      // advancedToolStripMenuItem
+      {
+        this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
+        this.advancedToolStripMenuItem.Text ="Advanced";
+        /************************************************/
+        this.advancedToolStripMenuItem.Click += this.advancedToolStripMenuItem_Click;
+      }
+      // windowToolStripMenuItem
+      {
+        this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
+        this.windowToolStripMenuItem.Text = "Window";
+        /************************************************/
+        this.windowToolStripMenuItem.DropDownItems.Add(this.pinToolStripMenuItem);
+        /************************************************/
+        this.windowToolStripMenuItem.DropDownOpening += this.windowToolStripMenuItem_DropDownOpening;
+      }
+      // pinToolStripMenuItem
+      {
+        this.pinToolStripMenuItem.Name = "pinToolStripMenuItem";
+        this.pinToolStripMenuItem.Text = "Pin";
+        /************************************************/
+        this.pinToolStripMenuItem.Click += this.pinToolStripMenuItem_Click;
+      }
+      
+      
+      
+      
+      
+      
       this.pnlSessMgr.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
       this.pnlSessMgr.AutoScroll = true;
       this.pnlSessMgr.AutoSize = true;
@@ -101,35 +124,13 @@ namespace App.Windows.MediaDerviceManager.Main
       this.pnlSessMgr.TabIndex = 2;
       this.pnlSessMgr.Thickness = 0;
       this.pnlSessMgr.WrapContents = false;
-      this.exitButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-      this.exitButton.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.exitButton.Cursor = Cursors.Hand;
-      this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.exitButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.exitButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.exitButton.FlatStyle = FlatStyle.Flat;
-      this.exitButton.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-      this.exitButton.Image = CheVolume.Properties.Resources.close;
-      this.exitButton.Location = new System.Drawing.Point(976, 15);
-      this.exitButton.Margin = new Padding(4);
-      this.exitButton.Name = "exitButton";
-      this.exitButton.Padding = new Padding(0, 0, 3, 2);
-      this.exitButton.Size = new System.Drawing.Size(45, 42);
-      this.exitButton.TabIndex = 16;
-      this.exitButton.UseVisualStyleBackColor = false;
-      this.exitButton.Click += new System.EventHandler(exitButton_Click);
       base.AutoScaleDimensions = new System.Drawing.SizeF(8f, 16f);
       base.AutoScaleMode = AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       base.ClientSize = new System.Drawing.Size(1045, 756);
-      base.Controls.Add(this.exitButton);
-      base.Controls.Add(this.cheCheckBox2);
-      base.Controls.Add(this.cheCheckBox1);
-      base.Controls.Add(this.systemButton);
       base.Controls.Add(this.pnlSessMgr);
+      base.Controls.Add(this.topMenuStrip);
       this.DoubleBuffered = true;
-      base.Margin = new Padding(4);
       this.MaximumSize = new System.Drawing.Size(3994, 803);
       this.MinimumSize = new System.Drawing.Size(794, 803);
       base.Name = "Main";
@@ -141,10 +142,13 @@ namespace App.Windows.MediaDerviceManager.Main
       base.PerformLayout();
     }
     /************************************************/
-    private Button systemButton;
-    private CheCheckBox cheCheckBox1;
-    private CheCheckBox cheCheckBox2;
-    private ToolTip toolTip1;
-    private Button exitButton;
+    private MenuStrip topMenuStrip = null;
+    private ToolStripMenuItem fileToolStripMenuItem = null;
+    private ToolStripMenuItem systemToolStripMenuItem = null;
+    private ToolStripMenuItem exitToolStripMenuItem = null;
+    private ToolStripMenuItem viewToolStripMenuItem = null;
+    private ToolStripMenuItem advancedToolStripMenuItem = null;
+    private ToolStripMenuItem windowToolStripMenuItem = null;
+    private ToolStripMenuItem pinToolStripMenuItem = null;
   }
 }
