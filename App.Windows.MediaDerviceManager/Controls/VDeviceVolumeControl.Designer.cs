@@ -24,15 +24,18 @@ namespace App.Windows.MediaDerviceManager.Controls
     private void InitializeComponent()
     {
       this.nameLabel = new Label();
-      this.muteCheCheckBox = new App.Windows.MediaDerviceManager.Controls.CheCheckBox();
       this.iconPictureBox = new PictureBox();
       this.defaultCheckBox = new CheckBox();
-      this.rightVLedBar = new App.Windows.MediaDerviceManager.Controls.VLedBar();
-      this.volumeMACTrackBar = new EConTech.Windows.MACUI.MACTrackBar();
-      this.leftVLedBar = new App.Windows.MediaDerviceManager.Controls.VLedBar();
+      this.leftVLedBar = new VLedBar();
+      this.volumeMACTrackBar = new MACTrackBar();
+      this.rightVLedBar = new VLedBar();
       this.volumeLabel = new Label();
+      this.muteCheCheckBox = new CheCheckBox();
+      /************************************************/
       ((System.ComponentModel.ISupportInitialize)this.iconPictureBox).BeginInit();
       base.SuspendLayout();
+      /************************************************/
+      // nameLabel
       this.nameLabel.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
       this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
       this.nameLabel.Location = new System.Drawing.Point(3, 10);
@@ -42,25 +45,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.nameLabel.Text = "Temp Text";
       this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.nameLabel.Click += new System.EventHandler(lblProcessName_Click);
-      this.muteCheCheckBox.Appearance = Appearance.Button;
-      this.muteCheCheckBox.AutoSize = true;
-      this.muteCheCheckBox.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.Cursor = Cursors.Hand;
-      this.muteCheCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.muteCheCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatStyle = FlatStyle.Flat;
-      this.muteCheCheckBox.Image = CheVolume.Properties.Resources.mute;
-      this.muteCheCheckBox.Location = new System.Drawing.Point(46, 400);
-      this.muteCheCheckBox.Name = "btnMute";
-      this.muteCheCheckBox.Padding = new Padding(0, 0, 2, 2);
-      this.muteCheCheckBox.Size = new System.Drawing.Size(34, 34);
-      this.muteCheCheckBox.TabIndex = 7;
-      this.muteCheCheckBox.UseVisualStyleBackColor = false;
-      this.muteCheCheckBox.CheckedChanged += new System.EventHandler(btnMute_CheckedChanged);
-      this.muteCheCheckBox.MouseEnter += new System.EventHandler(btnMute_MouseEnter);
-      this.muteCheCheckBox.MouseLeave += new System.EventHandler(btnMute_MouseLeave);
+      // iconPictureBox
       this.iconPictureBox.BackColor = System.Drawing.Color.Transparent;
       this.iconPictureBox.Location = new System.Drawing.Point(47, 58);
       this.iconPictureBox.Margin = new Padding(0);
@@ -68,6 +53,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.iconPictureBox.Size = new System.Drawing.Size(32, 32);
       this.iconPictureBox.TabIndex = 0;
       this.iconPictureBox.TabStop = false;
+      // defaultCheckBox
       this.defaultCheckBox.AutoSize = true;
       this.defaultCheckBox.Cursor = Cursors.Hand;
       this.defaultCheckBox.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
@@ -79,12 +65,14 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.defaultCheckBox.Text = "Set as Default";
       this.defaultCheckBox.UseVisualStyleBackColor = true;
       this.defaultCheckBox.MouseClick += new MouseEventHandler(chkSetDefault_MouseClick);
-      this.rightVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.rightVLedBar.IsMuted = false;
-      this.rightVLedBar.Location = new System.Drawing.Point(108, 132);
-      this.rightVLedBar.Name = "rightVLedBar";
-      this.rightVLedBar.Size = new System.Drawing.Size(5, 225);
-      this.rightVLedBar.TabIndex = 12;
+      // leftVLedBar
+      this.leftVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
+      this.leftVLedBar.IsMuted = false;
+      this.leftVLedBar.Location = new System.Drawing.Point(13, 132);
+      this.leftVLedBar.Name = "leftVLedBar";
+      this.leftVLedBar.Size = new System.Drawing.Size(5, 225);
+      this.leftVLedBar.TabIndex = 1;
+      // volumeMACTrackBar
       this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
       this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
       this.volumeMACTrackBar.Cursor = Cursors.Hand;
@@ -111,12 +99,14 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.volumeMACTrackBar.TrackLineHeight = 3;
       this.volumeMACTrackBar.Value = 0;
       this.volumeMACTrackBar.ValueChanged += macTrackBar1_OnValueChanged;
-      this.leftVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.leftVLedBar.IsMuted = false;
-      this.leftVLedBar.Location = new System.Drawing.Point(13, 132);
-      this.leftVLedBar.Name = "leftVLedBar";
-      this.leftVLedBar.Size = new System.Drawing.Size(5, 225);
-      this.leftVLedBar.TabIndex = 1;
+      // rightVLedBar
+      this.rightVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
+      this.rightVLedBar.IsMuted = false;
+      this.rightVLedBar.Location = new System.Drawing.Point(108, 132);
+      this.rightVLedBar.Name = "rightVLedBar";
+      this.rightVLedBar.Size = new System.Drawing.Size(5, 225);
+      this.rightVLedBar.TabIndex = 12;
+      // volumeLabel
       this.volumeLabel.Name = "volumeLabel";
       this.volumeLabel.BackColor = System.Drawing.Color.Transparent;
       this.volumeLabel.BorderStyle = BorderStyle.FixedSingle;
@@ -129,6 +119,27 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.volumeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.volumeLabel.UseCompatibleTextRendering = true;
       this.volumeLabel.UseMnemonic = false;
+      // muteCheCheckBox
+      this.muteCheCheckBox.Appearance = Appearance.Button;
+      this.muteCheCheckBox.AutoSize = true;
+      this.muteCheCheckBox.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+      this.muteCheCheckBox.Cursor = Cursors.Hand;
+      this.muteCheCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+      this.muteCheCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+      this.muteCheCheckBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+      this.muteCheCheckBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+      this.muteCheCheckBox.FlatStyle = FlatStyle.Flat;
+      this.muteCheCheckBox.Image = CheVolume.Properties.Resources.mute;
+      this.muteCheCheckBox.Location = new System.Drawing.Point(46, 400);
+      this.muteCheCheckBox.Name = "btnMute";
+      this.muteCheCheckBox.Padding = new Padding(0, 0, 2, 2);
+      this.muteCheCheckBox.Size = new System.Drawing.Size(34, 34);
+      this.muteCheCheckBox.TabIndex = 7;
+      this.muteCheCheckBox.UseVisualStyleBackColor = false;
+      this.muteCheCheckBox.CheckedChanged += new System.EventHandler(btnMute_CheckedChanged);
+      this.muteCheCheckBox.MouseEnter += new System.EventHandler(btnMute_MouseEnter);
+      this.muteCheCheckBox.MouseLeave += new System.EventHandler(btnMute_MouseLeave);
+      // VDeviceVolumeControl
       base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
       base.AutoScaleMode = AutoScaleMode.Font;
       base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -144,7 +155,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.Margin = new Padding(0);
       base.Name = "VDeviceVolumeControl";
       base.Size = new System.Drawing.Size(128, 485);
-      base.Paint += new PaintEventHandler(_OnPaint);
+      /************************************************/
       ((System.ComponentModel.ISupportInitialize)this.iconPictureBox).EndInit();
       base.ResumeLayout(false);
       base.PerformLayout();

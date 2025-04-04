@@ -457,61 +457,6 @@ namespace App.Windows.MediaDerviceManager.Main
       Hide();
     }
 
-    public bool CheckUpdate(unknown6 P_0)
-    {
-      if (P_0.bool1 || P_0.str1.Length == 0 || P_0.ver1 == null)
-      {
-        MessageBox.Show(this, "Error while looking for the newest version", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-        return false;
-      }
-      Version version = Assembly.GetExecutingAssembly().GetName().Version;
-      if (version.CompareTo(P_0.ver1) >= 0)
-      {
-        MessageBox.Show(this, "No new version detected", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-        return false;
-      }
-      string text = string.Format("New version found!\nYour version: {0}.\nNewest version: {1}.", version, P_0.ver1);
-      return DialogResult.Yes == MessageBox.Show(this, text, "Check for updates", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-    }
-
-    public void RunUpdate(unknown4 P_0)
-    {
-      if (P_0.bool1)
-      {
-        MessageBox.Show(this, "Error while downloading the installer", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-        return;
-      }
-      if (DialogResult.Yes != MessageBox.Show(this, "Do you know to install the newest version?", "Check for updates", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
-      {
-        try
-        {
-          File.Delete(P_0.str1);
-          return;
-        }
-        catch
-        {
-          return;
-        }
-      }
-      try
-      {
-        Process.Start(P_0.str1);
-        Close();
-        Environment.Exit(0);
-      }
-      catch (Exception)
-      {
-        MessageBox.Show(this, "Error while running the installer.", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-        try
-        {
-          File.Delete(P_0.str1);
-        }
-        catch
-        {
-        }
-      }
-    }
-
     private void InvokeStateChanged()
     {
       foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(audioSessionManagerPanel1.Controls)))

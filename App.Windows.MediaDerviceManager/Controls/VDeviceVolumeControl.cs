@@ -211,10 +211,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
     }
 
-    private void _OnPaint(object P_0, PaintEventArgs P_1)
-    {
-    }
-
     private void btnMute_MouseEnter(object P_0, EventArgs P_1)
     {
       muteCheCheckBox.Image = Resources.muteon;

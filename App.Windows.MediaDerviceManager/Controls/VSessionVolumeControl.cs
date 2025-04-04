@@ -309,10 +309,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       audioSessionControl21.UnregisterAudioSessionNotification(P_0);
     }
 
-    private static void StaticMethod1(IAsyncResult P_0)
-    {
-    }
-
     public int OnDisplayNameChanged([MarshalAs(UnmanagedType.LPWStr)] string P_0, Guid P_1)
     {
       return 0;
@@ -419,18 +415,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       volumeLabel.Focus();
     }
 
-    private void lBarLeft_Load(object P_0, EventArgs P_1)
-    {
-    }
-
-    private void Obj_Method3(object P_0, ScrollEventArgs P_1)
-    {
-    }
-
-    private void Obj_Method2(object P_0, EventArgs P_1)
-    {
-    }
-
     private void SetTrackBar(decimal P_0)
     {
       if (base.InvokeRequired)
@@ -468,10 +452,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         SetTrackBar(P_1);
       }
-    }
-
-    private void Obj_Method1(object P_0, EventArgs P_1)
-    {
     }
 
     private void btnTransfert_Click2()
@@ -814,10 +794,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
     }
 
-    private void btnTransfert_MouseHover(object P_0, EventArgs P_1)
-    {
-    }
-
     private void btnMute_MouseEnter(object P_0, EventArgs P_1)
     {
       muteCheCheckBox.Image = Resources.muteon;
@@ -831,10 +807,6 @@ namespace App.Windows.MediaDerviceManager.Controls
         muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
         muteCheCheckBox.Image = Resources.mute;
       }
-    }
-
-    private void btnTransfert_MouseLeave(object P_0, EventArgs P_1)
-    {
     }
 
     private void btnTransfert_MouseEnter(object P_0, EventArgs P_1)

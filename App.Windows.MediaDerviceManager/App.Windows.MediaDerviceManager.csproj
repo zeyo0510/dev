@@ -137,10 +137,6 @@
     <Compile Include="AudioCore\WaveFormatExtraData.cs" />
     <Compile Include="a\Class4.cs" />
     <Compile Include="a\ImageHelper.cs" />
-    <Compile Include="a\unknown3.cs" />
-    <Compile Include="a\unknown4.cs" />
-    <Compile Include="a\unknown5.cs" />
-    <Compile Include="a\unknown6.cs" />
     <Compile Include="B\FlowLayoutPanel1.cs" />
     <Compile Include="B\IOpenControlPanel.cs" />
     <Compile Include="Controls\AudioSessionManagerPanel.cs" />
@@ -148,6 +144,9 @@
       <DependentUpon>AudioSessionManagerPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\CheCheckBox.cs" />
+    <Compile Include="Controls\HDeviceVolumeControl.Designer.cs">
+      <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\VDeviceVolumeControl.cs" />
     <Compile Include="Controls\HDeviceVolumeControl.cs" />
     <Compile Include="Controls\HLedBar.Designer.cs">
@@ -185,9 +184,6 @@
     <None Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CheVolume.Forms.LicensingForm.resx" />
-    <EmbeddedResource Include="CheVolume.Forms.NotifyForm.resx" />
-    <EmbeddedResource Include="CheVolume.Forms.QuickNotify.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <DependentUpon>Resources.cs</DependentUpon>
     </EmbeddedResource>
