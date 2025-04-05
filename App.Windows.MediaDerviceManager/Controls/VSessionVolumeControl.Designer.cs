@@ -28,7 +28,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.nameLabel = new Label();
       this.iconPictureBox = new PictureBox();
       this.pidLabel = new Label();
-      this.leftVLedBar = new VLedBar();
+      this.leftLedBar = new LedBar();
       this.volumeMACTrackBar = new MACTrackBar();
       this.volumeLabel = new Label();
       this.muteCheCheckBox = new CheCheckBox();
@@ -75,13 +75,13 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.pidLabel.Text = "label1";
       this.pidLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.pidLabel.Visible = false;
-      // leftVLedBar
-      this.leftVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.leftVLedBar.IsMuted = false;
-      this.leftVLedBar.Location = new System.Drawing.Point(22, 132);
-      this.leftVLedBar.Name = "leftVLedBar";
-      this.leftVLedBar.Size = new System.Drawing.Size(5, 225);
-      this.leftVLedBar.TabIndex = 1;
+      // leftLedBar
+      this.leftLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
+      this.leftLedBar.Color = true;
+      this.leftLedBar.Location = new System.Drawing.Point(22, 132);
+      this.leftLedBar.Name = "leftLedBar";
+      this.leftLedBar.Size = new System.Drawing.Size(5, 225);
+      this.leftLedBar.TabIndex = 1;
       // volumeMACTrackBar
       this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
       this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -233,7 +233,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.Controls.Add(this.volumeMACTrackBar);
       base.Controls.Add(this.muteCheCheckBox);
       base.Controls.Add(this.nameLabel);
-      base.Controls.Add(this.leftVLedBar);
+      base.Controls.Add(this.leftLedBar);
       base.Controls.Add(this.iconPictureBox);
       base.Margin = new Padding(0);
       base.Name = "VSessionVolumeControl";
@@ -249,7 +249,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     public Label nameLabel = null;
     public PictureBox iconPictureBox = null;
     private Label pidLabel = null;
-    public VLedBar leftVLedBar = null;
+    public LedBar leftLedBar = null;
     public MACTrackBar volumeMACTrackBar = null;
     private Label volumeLabel = null;
     public CheCheckBox muteCheCheckBox = null;

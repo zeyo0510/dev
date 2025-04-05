@@ -2,20 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 using System.ServiceModel;
-using System.Threading;
 using System.Windows.Forms;
 using a;
 using App.Windows.MediaDerviceManager.Controls;
 using AudioCore;
+using AudioCore.Interfaces;
 using B;
 using CheVolume.Properties;
-using Microsoft.Win32;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Main
 {
@@ -64,48 +60,7 @@ namespace App.Windows.MediaDerviceManager.Main
     
     
     
-    private enum Enum1
-    {
-      A = 1,
-      a,
-      B,
-      b,
-      C,
-      c,
-      D,
-      d,
-      E,
-      e,
-      F,
-      f,
-      G,
-      g,
-      H,
-      h,
-      I,
-      i,
-      J,
-      j,
-      K,
-      k,
-      L,
-      l,
-      M,
-      m,
-      N,
-      n,
-      O
-    }
-
-    private enum Enum2
-    {
-      A = 1,
-      a,
-      B
-    }
-
-    private delegate void B();
-
+    
     public struct ProcessMapping
     {
       public Process proc1;
@@ -113,52 +68,6 @@ namespace App.Windows.MediaDerviceManager.Main
       public string str1;
     }
 
-    [CompilerGenerated]
-    private sealed class Comapre1
-    {
-      public string string1;
-
-      internal bool Equal(FlowLayoutPanel1 P_0)
-      {
-        return string.Compare(P_0.Tag.ToString(), string1) == 0;
-      }
-    }
-
-    [CompilerGenerated]
-    private sealed class Compare2
-    {
-      public AudioSessionControl2 audioSessionControl21;
-
-      internal bool Equal(VSessionVolumeControl P_0)
-      {
-        return string.Compare(P_0.Tag.ToString().ToLower(), audioSessionControl21.SessionInstanceIdentifier.ToLower()) == 0;
-      }
-    }
-
-    [CompilerGenerated]
-    private sealed class Compare3
-    {
-      public MainForm main1;
-
-      public Point point1;
-
-      internal bool Equal(FlowLayoutPanel1 P_0)
-      {
-        return P_0.Bounds.Contains(main1.audioSessionManagerPanel1.PointToClient(point1));
-      }
-    }
-
-    public const int FIXED_161 = 161;
-
-    public const int FIXED_2 = 2;
-
-    public const int FIXED_5644 = 5644;
-
-    private const int FIXED_2_v2 = 2;
-
-    private const int FIXEDL_1073741824 = 1073741824;
-
-    private const int FIXED_S_1 = -1;
 
     public bool bool1 = true;
 
@@ -167,21 +76,9 @@ namespace App.Windows.MediaDerviceManager.Main
     public List<ProcessMapping> processList;
 
     private MMDeviceCollection mmDeviceCollection1;
-
-    private string str1;
-
-    private string[] str_arr1;
-
-    private string str2;
-
-    public NetNamedPipeBinding netNamedPipeBinding1;
-
-    public EndpointAddress endpointAddress1;
-
-    public ProcessStartInfo processStartInfo1;
-
     public MMNotificationClient mmNotificationClient1;
 
+    private string str2;
     internal static float dpiX;
 
     public List<int> PendingTransfers
@@ -246,12 +143,6 @@ namespace App.Windows.MediaDerviceManager.Main
       }
     }
 
-    [DllImport("user32.dll", EntryPoint = "SendMessage")]
-    public static extern int _SendMessage(IntPtr P_0, int P_1, int P_2, int P_3);
-
-    [DllImport("advapi32.dll", EntryPoint = "GetTokenInformation", SetLastError = true)]
-    private static extern bool _GetTokenInformation(IntPtr P_0, Enum1 P_1, IntPtr P_2, int P_3, out int P_4);
-
     public MainForm()
     {
       mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
@@ -264,13 +155,10 @@ namespace App.Windows.MediaDerviceManager.Main
         dpiX = graphics.DpiX / 96f;
       }
       ImageHelper.SetImageSize(dpiX);
-      MMNotificationClient mMNotificationClient = mmNotificationClient1;
-      mMNotificationClient.DefaultChanged = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient.DefaultChanged, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged));
-      MMNotificationClient mMNotificationClient2 = mmNotificationClient1;
-      mMNotificationClient2.DeviceAdded = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient2.DeviceAdded, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceAdded));
-      MMNotificationClient mMNotificationClient3 = mmNotificationClient1;
-      mMNotificationClient3.DeviceRemoved = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient3.DeviceRemoved, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceRemove));
-      MMNotificationClient mMNotificationClient4 = mmNotificationClient1;
+      mmNotificationClient1.DefaultChanged += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged);
+      mmNotificationClient1.DeviceAdded += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceAdded);
+      mmNotificationClient1.DeviceRemoved += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceRemove);
+      mmNotificationClient1.PropertyValueChanged += new MMNotificationClientPropertyValueDelegate(mmNotificationClient1_PropertyValueChanged);
       bool1 = false;
       UpdateAudio();
       AutoAdjSessionManagerPanel();
@@ -432,6 +320,11 @@ namespace App.Windows.MediaDerviceManager.Main
         }
       }
     }
+    
+    private void mmNotificationClient1_PropertyValueChanged(string P_0, PROPERTYKEY A_1)
+    {
+      // TODO: do anything...
+    }
 
     public void ShowMe()
     {
@@ -466,12 +359,6 @@ namespace App.Windows.MediaDerviceManager.Main
           item2.OnStateChanged2(item2.audioSessionControl21.GetState());
         }
       }
-    }
-
-    [CompilerGenerated]
-    private void SYS_Method1()
-    {
-      UpdateAudio();
     }
   }
 }

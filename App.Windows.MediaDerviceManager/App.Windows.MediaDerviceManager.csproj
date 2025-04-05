@@ -147,19 +147,28 @@
     <Compile Include="Controls\HDeviceVolumeControl.Designer.cs">
       <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\LayoutDirection.cs" />
     <Compile Include="Controls\VDeviceVolumeControl.cs" />
     <Compile Include="Controls\HDeviceVolumeControl.cs" />
-    <Compile Include="Controls\HLedBar.Designer.cs">
-      <DependentUpon>HLedBar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\VDeviceVolumeControl.Designer.cs">
       <DependentUpon>VDeviceVolumeControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\VLedBar.cs" />
-    <Compile Include="Controls\HLedBar.cs" />
+    <Compile Include="Controls\LedBar.Color.cs">
+      <DependentUpon>LedBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LedBar.cs" />
+    <Compile Include="Controls\LedBar.LayoutDirection.cs">
+      <DependentUpon>LedBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LedBar.UpdateUI.cs">
+      <DependentUpon>LedBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LedBar.Value.cs">
+      <DependentUpon>LedBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\VSessionVolumeControl.cs" />
-    <Compile Include="Controls\VLedBar.Designer.cs">
-      <DependentUpon>VLedBar.cs</DependentUpon>
+    <Compile Include="Controls\LedBar.Designer.cs">
+      <DependentUpon>LedBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\VSessionVolumeControl.Designer.cs">
       <DependentUpon>VSessionVolumeControl.cs</DependentUpon>

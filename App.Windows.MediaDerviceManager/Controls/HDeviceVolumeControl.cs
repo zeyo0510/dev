@@ -11,12 +11,6 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   public partial class HDeviceVolumeControl : UserControl
   {
-    private delegate void SYS_STRING_INVOKE(string A_0);
-
-    private delegate void SYS_BOOL_INVOKE(bool A_0);
-
-    private delegate void SYS_INT_INVOKE(int A_0);
-
     private Timer timer1;
 
     public MMDevice mmDevice1;
@@ -76,7 +70,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_STRING_INVOKE(Method2), P_0);
+        Invoke(new Action<string>(Method2), P_0);
       }
     }
 
@@ -84,7 +78,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_INT_INVOKE(SetTrackBarV2), P_0);
+        Invoke(new Action<int>(SetTrackBarV2), P_0);
       }
       else if (!volumeMACTrackBar.bool1)
       {
@@ -96,7 +90,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_BOOL_INVOKE(SetMuteV2), P_0);
+        Invoke(new Action<bool>(SetMuteV2), P_0);
       }
       else
       {
@@ -108,7 +102,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_BOOL_INVOKE(SetDefaultV2), P_0);
+        Invoke(new Action<bool>(SetDefaultV2), P_0);
       }
       else
       {
@@ -120,7 +114,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_BOOL_INVOKE(SetDefaultV3), P_0);
+        Invoke(new Action<bool>(SetDefaultV3), P_0);
       }
       else
       {

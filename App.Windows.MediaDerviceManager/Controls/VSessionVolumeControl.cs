@@ -50,19 +50,9 @@ namespace App.Windows.MediaDerviceManager.Controls
 
     private delegate void SYS_EMPTY_INVOKE_V2();
 
-    private delegate void SYS_DECIMAL_INVOKE(decimal A_0);
-
-    private delegate void SYS_STRING_INVOKE(string A_0);
-
-    private delegate void SYS_BOOL_INVOKE_V2(bool A_0);
-
     private delegate void OnStateChanged2_SYS(AudioSessionState A_0);
 
-    private delegate void SYS_FLOAT_INVOKE(float A_0);
-
     private delegate void RemoveSessionNotif_SYS();
-
-    private delegate void SYS_BOOL_INVOKE(bool A_0);
 
     private Timer timer1;
 
@@ -366,11 +356,11 @@ namespace App.Windows.MediaDerviceManager.Controls
       if (Enumerable.Count(source) > 0)
       {
         float value = Enumerable.Max(source);
-        leftVLedBar.SetValue(value);
+        leftLedBar.Value = value;
       }
       else
       {
-        leftVLedBar.SetValue(0f);
+        leftLedBar.Value = 0f;
       }
       if (num1++ < 100)
       {
@@ -399,14 +389,14 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (muteCheCheckBox.Checked)
       {
-        leftVLedBar.IsMuted = true;
+        leftLedBar.Color = false;
         volumeMACTrackBar.TrackerColor = Color.DarkGray;
         muteCheCheckBox.Image = Resources.muteon;
         muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
       }
       else
       {
-        leftVLedBar.IsMuted = false;
+        leftLedBar.Color = true;
         volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
         muteCheCheckBox.Image = Resources.mute;
         muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
@@ -419,7 +409,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_DECIMAL_INVOKE(SetTrackBar), P_0);
+        Invoke(new Action<decimal>(SetTrackBar), P_0);
       }
       else
       {
@@ -573,7 +563,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_BOOL_INVOKE_V2(SetMute), P_0);
+        Invoke(new Action<bool>(SetMute), P_0);
       }
       else
       {
@@ -585,7 +575,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_STRING_INVOKE(SetVolumeText), P_0);
+        Invoke(new Action<string>(SetVolumeText), P_0);
       }
       else
       {
@@ -597,7 +587,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_STRING_INVOKE(RefreshProcess), P_0);
+        Invoke(new Action<string>(RefreshProcess), P_0);
       }
       else
       {
@@ -610,7 +600,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_FLOAT_INVOKE(SetVolume), P_0);
+        Invoke(new Action<float>(SetVolume), P_0);
       }
       else if (!volumeMACTrackBar.bool1)
       {
@@ -633,7 +623,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_BOOL_INVOKE(SetVisible), P_0);
+        Invoke(new Action<bool>(SetVisible), P_0);
       }
       else
       {
@@ -659,13 +649,13 @@ namespace App.Windows.MediaDerviceManager.Controls
         if (IsAdvancedUser)
         {
           SetVisible(true);
-          leftVLedBar.SetValue(0f);
+          leftLedBar.Value = 0f;
           timer1.Start();
         }
         else
         {
           SetVisible(false);
-          leftVLedBar.SetValue(0f);
+          leftLedBar.Value = 0f;
           timer1.Stop();
         }
         break;

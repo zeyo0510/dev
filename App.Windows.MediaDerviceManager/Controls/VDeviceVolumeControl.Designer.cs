@@ -26,9 +26,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.nameLabel = new Label();
       this.iconPictureBox = new PictureBox();
       this.defaultCheckBox = new CheckBox();
-      this.leftVLedBar = new VLedBar();
+      this.leftLedBar = new LedBar();
       this.volumeMACTrackBar = new MACTrackBar();
-      this.rightVLedBar = new VLedBar();
+      this.rightLedBar = new LedBar();
       this.volumeLabel = new Label();
       this.muteCheCheckBox = new CheCheckBox();
       /************************************************/
@@ -65,13 +65,13 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.defaultCheckBox.Text = "Set as Default";
       this.defaultCheckBox.UseVisualStyleBackColor = true;
       this.defaultCheckBox.MouseClick += new MouseEventHandler(chkSetDefault_MouseClick);
-      // leftVLedBar
-      this.leftVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.leftVLedBar.IsMuted = false;
-      this.leftVLedBar.Location = new System.Drawing.Point(13, 132);
-      this.leftVLedBar.Name = "leftVLedBar";
-      this.leftVLedBar.Size = new System.Drawing.Size(5, 225);
-      this.leftVLedBar.TabIndex = 1;
+      // leftLedBar
+      this.leftLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
+      this.leftLedBar.Color = true;
+      this.leftLedBar.Location = new System.Drawing.Point(13, 132);
+      this.leftLedBar.Name = "leftLedBar";
+      this.leftLedBar.Size = new System.Drawing.Size(5, 225);
+      this.leftLedBar.TabIndex = 1;
       // volumeMACTrackBar
       this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
       this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -99,13 +99,13 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.volumeMACTrackBar.TrackLineHeight = 3;
       this.volumeMACTrackBar.Value = 0;
       this.volumeMACTrackBar.ValueChanged += macTrackBar1_OnValueChanged;
-      // rightVLedBar
-      this.rightVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.rightVLedBar.IsMuted = false;
-      this.rightVLedBar.Location = new System.Drawing.Point(108, 132);
-      this.rightVLedBar.Name = "rightVLedBar";
-      this.rightVLedBar.Size = new System.Drawing.Size(5, 225);
-      this.rightVLedBar.TabIndex = 12;
+      // rightLedBar
+      this.rightLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
+      this.rightLedBar.Color = true;
+      this.rightLedBar.Location = new System.Drawing.Point(108, 132);
+      this.rightLedBar.Name = "rightLedBar";
+      this.rightLedBar.Size = new System.Drawing.Size(5, 225);
+      this.rightLedBar.TabIndex = 12;
       // volumeLabel
       this.volumeLabel.Name = "volumeLabel";
       this.volumeLabel.BackColor = System.Drawing.Color.Transparent;
@@ -144,13 +144,13 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.AutoScaleMode = AutoScaleMode.Font;
       base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
       this.BackColor = System.Drawing.Color.Transparent;
+      base.Controls.Add(this.leftLedBar);
       base.Controls.Add(this.defaultCheckBox);
-      base.Controls.Add(this.rightVLedBar);
+      base.Controls.Add(this.rightLedBar);
       base.Controls.Add(this.volumeLabel);
       base.Controls.Add(this.volumeMACTrackBar);
       base.Controls.Add(this.muteCheCheckBox);
       base.Controls.Add(this.nameLabel);
-      base.Controls.Add(this.leftVLedBar);
       base.Controls.Add(this.iconPictureBox);
       base.Margin = new Padding(0);
       base.Name = "VDeviceVolumeControl";
@@ -164,9 +164,9 @@ namespace App.Windows.MediaDerviceManager.Controls
     public Label nameLabel = null;
     public PictureBox iconPictureBox = null;
     private CheckBox defaultCheckBox = null;
-    public VLedBar leftVLedBar = null;
+    public LedBar leftLedBar = null;
     public MACTrackBar volumeMACTrackBar = null;
-    public VLedBar rightVLedBar = null;
+    public LedBar rightLedBar = null;
     private Label volumeLabel = null;
     public CheCheckBox muteCheCheckBox = null;
   }

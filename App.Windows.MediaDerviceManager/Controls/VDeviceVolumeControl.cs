@@ -11,12 +11,6 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   public partial class VDeviceVolumeControl : UserControl
   {
-    private delegate void SYS_STRING_INVOKE(string A_0);
-
-    private delegate void SYS_BOOL_INVOKE(bool A_0);
-
-    private delegate void SYS_INT_INVOKE(int A_0);
-
     private Timer timer1;
 
     public MMDevice mmDevice1;
@@ -77,7 +71,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_STRING_INVOKE(SetVolumeTextV2), P_0);
+        Invoke(new Action<string>(SetVolumeTextV2), P_0);
       }
       else
       {
@@ -89,7 +83,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_INT_INVOKE(SetTrackBarV2), P_0);
+        Invoke(new Action<int>(SetTrackBarV2), P_0);
       }
       else if (!volumeMACTrackBar.bool1)
       {
@@ -101,7 +95,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_BOOL_INVOKE(SetMuteV2), P_0);
+        Invoke(new Action<bool>(SetMuteV2), P_0);
       }
       else
       {
@@ -113,7 +107,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (base.InvokeRequired)
       {
-        Invoke(new SYS_BOOL_INVOKE(SetDefaultV2), P_0);
+        Invoke(new Action<bool>(SetDefaultV2), P_0);
       }
       else
       {
@@ -137,21 +131,21 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       catch (Exception)
       {
-        leftVLedBar.SetValue(0f);
-        rightVLedBar.SetValue(0f);
+        leftLedBar.Value = 0f;
+        rightLedBar.Value = 0f;
       }
       if (Enumerable.Count(array) > 0)
       {
         if (Enumerable.Count(array) == 1)
         {
-          leftVLedBar.SetValue(array[0]);
-          rightVLedBar.SetValue(array[0]);
+          leftLedBar.Value = array[0];
+          rightLedBar.Value = array[0];
           volumeMACTrackBar.SetActualVolume(array[0]);
         }
         else
         {
-          leftVLedBar.SetValue(array[0]);
-          rightVLedBar.SetValue(array[1]);
+          leftLedBar.Value = array[0];
+          rightLedBar.Value = array[1];
           volumeMACTrackBar.SetActualVolume((array[0] + array[1]) / 2f);
         }
       }
@@ -166,16 +160,16 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (muteCheCheckBox.Checked)
       {
-        leftVLedBar.IsMuted = true;
-        rightVLedBar.IsMuted = true;
+        leftLedBar.Color = false;
+        rightLedBar.Color = false;
         volumeMACTrackBar.TrackerColor = Color.Gray;
         muteCheCheckBox.Image = Resources.muteon;
         muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
       }
       else
       {
-        leftVLedBar.IsMuted = false;
-        rightVLedBar.IsMuted = false;
+        leftLedBar.Color = true;
+        rightLedBar.Color = true;
         volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
         muteCheCheckBox.Image = Resources.mute;
         muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
