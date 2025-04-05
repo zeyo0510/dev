@@ -189,7 +189,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (defaultCheckBox.Checked)
       {
-        Class4.Method3(mmDevice1.ID);
+        Class4.SetDefaultEndpoint(mmDevice1.ID);
       }
       else
       {

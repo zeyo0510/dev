@@ -166,6 +166,9 @@
     <Compile Include="Controls\LedBar.Value.cs">
       <DependentUpon>LedBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\VDeviceVolumeControl.UpdateUI.cs">
+      <DependentUpon>VDeviceVolumeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\VSessionVolumeControl.cs" />
     <Compile Include="Controls\LedBar.Designer.cs">
       <DependentUpon>LedBar.cs</DependentUpon>

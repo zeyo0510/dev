@@ -4,7 +4,7 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   partial class LedBar
   {
-    private bool _Color = false;
+    private bool _Color = true;
     /************************************************/
     public bool Color
     {

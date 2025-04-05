@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 using EConTech.Windows.MACUI;
 /************************************************/
@@ -8,6 +9,8 @@ namespace App.Windows.MediaDerviceManager.Controls
   partial class VDeviceVolumeControl
   {
     private IContainer components = null;
+    /************************************************/
+    private Timer guiTimer = null;
     /************************************************/
     protected override void Dispose(bool disposing)
     {
@@ -23,56 +26,48 @@ namespace App.Windows.MediaDerviceManager.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      this.nameLabel = new Label();
-      this.iconPictureBox = new PictureBox();
-      this.defaultCheckBox = new CheckBox();
-      this.leftLedBar = new LedBar();
+      this.components = new Container();
+      /************************************************/
+      this.guiTimer = new Timer(this.components);
+      /************************************************/
+      this.nameLabel         = new Label();
+      this.iconPictureBox    = new PictureBox();
+      this.defaultCheckBox   = new CheckBox();
+      this.leftLedBar        = new LedBar();
       this.volumeMACTrackBar = new MACTrackBar();
-      this.rightLedBar = new LedBar();
-      this.volumeLabel = new Label();
-      this.muteCheCheckBox = new CheCheckBox();
+      this.rightLedBar       = new LedBar();
+      this.volumeLabel       = new Label();
+      this.muteCheckBox      = new CheckBox();
       /************************************************/
       ((System.ComponentModel.ISupportInitialize)this.iconPictureBox).BeginInit();
       base.SuspendLayout();
       /************************************************/
+      // guiTimer
+      this.guiTimer.Interval = 10;
+      this.guiTimer.Tick += this.guiTimer_Tick;
       // nameLabel
-      this.nameLabel.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-      this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-      this.nameLabel.Location = new System.Drawing.Point(3, 10);
-      this.nameLabel.Name = "nameLabel";
-      this.nameLabel.Size = new System.Drawing.Size(122, 48);
-      this.nameLabel.TabIndex = 3;
-      this.nameLabel.Text = "Temp Text";
-      this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      this.nameLabel.Click += new System.EventHandler(lblProcessName_Click);
+      this.nameLabel.Name      = "nameLabel";
+      this.nameLabel.Location  = new Point(3, 10);
+      this.nameLabel.Size      = new Size(122, 48);
+      this.nameLabel.Text      = "Temp Text";
+      this.nameLabel.TextAlign = ContentAlignment.MiddleCenter;
       // iconPictureBox
-      this.iconPictureBox.BackColor = System.Drawing.Color.Transparent;
-      this.iconPictureBox.Location = new System.Drawing.Point(47, 58);
-      this.iconPictureBox.Margin = new Padding(0);
-      this.iconPictureBox.Name = "iconPictureBox";
-      this.iconPictureBox.Size = new System.Drawing.Size(32, 32);
-      this.iconPictureBox.TabIndex = 0;
-      this.iconPictureBox.TabStop = false;
+      this.iconPictureBox.Name     = "iconPictureBox";
+      this.iconPictureBox.Location = new Point(47, 58);
+      this.iconPictureBox.Margin   = new Padding(0);
+      this.iconPictureBox.Size     = new Size(32, 32);
       // defaultCheckBox
+      this.defaultCheckBox.Name     = "defaultCheckBox";
       this.defaultCheckBox.AutoSize = true;
-      this.defaultCheckBox.Cursor = Cursors.Hand;
-      this.defaultCheckBox.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-      this.defaultCheckBox.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-      this.defaultCheckBox.Location = new System.Drawing.Point(13, 98);
-      this.defaultCheckBox.Name = "defaultCheckBox";
-      this.defaultCheckBox.Size = new System.Drawing.Size(105, 16);
-      this.defaultCheckBox.TabIndex = 13;
-      this.defaultCheckBox.Text = "Set as Default";
-      this.defaultCheckBox.UseVisualStyleBackColor = true;
-      this.defaultCheckBox.MouseClick += new MouseEventHandler(chkSetDefault_MouseClick);
+      this.defaultCheckBox.Location = new Point(13, 98);
+      this.defaultCheckBox.Size     = new Size(105, 16);
+      this.defaultCheckBox.Text     = "Set as Default";
+      this.defaultCheckBox.Click += this.defaultCheckBox_Click;
       // leftLedBar
-      this.leftLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.leftLedBar.Color = true;
-      this.leftLedBar.Location = new System.Drawing.Point(13, 132);
-      this.leftLedBar.Name = "leftLedBar";
-      this.leftLedBar.Size = new System.Drawing.Size(5, 225);
-      this.leftLedBar.TabIndex = 1;
+      this.leftLedBar.Name     = "leftLedBar";
+      this.leftLedBar.Location = new Point(13, 132);
       // volumeMACTrackBar
+      this.volumeMACTrackBar.Name = "volumeMACTrackBar";
       this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
       this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
       this.volumeMACTrackBar.Cursor = Cursors.Hand;
@@ -83,7 +78,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.volumeMACTrackBar.Location = new System.Drawing.Point(23, 121);
       this.volumeMACTrackBar.Maximum = 100;
       this.volumeMACTrackBar.Minimum = 0;
-      this.volumeMACTrackBar.Name = "macTrackBar1";
       this.volumeMACTrackBar.Orientation = Orientation.Vertical;
       this.volumeMACTrackBar.Size = new System.Drawing.Size(79, 247);
       this.volumeMACTrackBar.TabIndex = 10;
@@ -98,76 +92,52 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.volumeMACTrackBar.VolumeLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
       this.volumeMACTrackBar.TrackLineHeight = 3;
       this.volumeMACTrackBar.Value = 0;
-      this.volumeMACTrackBar.ValueChanged += macTrackBar1_OnValueChanged;
+      this.volumeMACTrackBar.ValueChanged += this.volumeMACTrackBar_OnValueChanged;
       // rightLedBar
-      this.rightLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.rightLedBar.Color = true;
-      this.rightLedBar.Location = new System.Drawing.Point(108, 132);
-      this.rightLedBar.Name = "rightLedBar";
-      this.rightLedBar.Size = new System.Drawing.Size(5, 225);
-      this.rightLedBar.TabIndex = 12;
+      this.rightLedBar.Name     = "rightLedBar";
+      this.rightLedBar.Location = new Point(108, 132);
       // volumeLabel
-      this.volumeLabel.Name = "volumeLabel";
-      this.volumeLabel.BackColor = System.Drawing.Color.Transparent;
+      this.volumeLabel.Name        = "volumeLabel";
       this.volumeLabel.BorderStyle = BorderStyle.FixedSingle;
-      this.volumeLabel.Font = new System.Drawing.Font("Verdana", 8f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-      this.volumeLabel.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-      this.volumeLabel.Location = new System.Drawing.Point(44, 370);
-      this.volumeLabel.Size = new System.Drawing.Size(38, 19);
-      this.volumeLabel.TabIndex = 11;
-      this.volumeLabel.Text = "100";
-      this.volumeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      this.volumeLabel.UseCompatibleTextRendering = true;
-      this.volumeLabel.UseMnemonic = false;
-      // muteCheCheckBox
-      this.muteCheCheckBox.Appearance = Appearance.Button;
-      this.muteCheCheckBox.AutoSize = true;
-      this.muteCheCheckBox.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.Cursor = Cursors.Hand;
-      this.muteCheCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.muteCheCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatStyle = FlatStyle.Flat;
-      this.muteCheCheckBox.Image = CheVolume.Properties.Resources.mute;
-      this.muteCheCheckBox.Location = new System.Drawing.Point(46, 400);
-      this.muteCheCheckBox.Name = "btnMute";
-      this.muteCheCheckBox.Padding = new Padding(0, 0, 2, 2);
-      this.muteCheCheckBox.Size = new System.Drawing.Size(34, 34);
-      this.muteCheCheckBox.TabIndex = 7;
-      this.muteCheCheckBox.UseVisualStyleBackColor = false;
-      this.muteCheCheckBox.CheckedChanged += new System.EventHandler(btnMute_CheckedChanged);
-      this.muteCheCheckBox.MouseEnter += new System.EventHandler(btnMute_MouseEnter);
-      this.muteCheCheckBox.MouseLeave += new System.EventHandler(btnMute_MouseLeave);
+      this.volumeLabel.Location    = new Point(44, 370);
+      this.volumeLabel.Size        = new Size(38, 19);
+      this.volumeLabel.Text        = "100";
+      this.volumeLabel.TextAlign   = ContentAlignment.MiddleCenter;
+      // muteCheckBox
+      this.muteCheckBox.Name     = "muteCheckBox";
+      this.muteCheckBox.AutoSize = true;
+      this.muteCheckBox.Location = new Point(46, 400);
+      this.muteCheckBox.Text     = "Mute";
+      this.muteCheckBox.Click += this.muteCheckBox_Click;
       // VDeviceVolumeControl
-      base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
-      base.AutoScaleMode = AutoScaleMode.Font;
-      base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-      this.BackColor = System.Drawing.Color.Transparent;
+      base.Name = "VDeviceVolumeControl";
+      base.AutoScaleDimensions = new SizeF(6f, 13f);
+      base.AutoScaleMode       = AutoScaleMode.Font;
+      base.AutoSizeMode        = AutoSizeMode.GrowAndShrink;
+      base.Margin              = new Padding(0);
+      base.Size                = new Size(128, 485);
+      this.Font                = new Font("Verdana", 10f, FontStyle.Bold, GraphicsUnit.World, 0);
       base.Controls.Add(this.leftLedBar);
       base.Controls.Add(this.defaultCheckBox);
       base.Controls.Add(this.rightLedBar);
       base.Controls.Add(this.volumeLabel);
       base.Controls.Add(this.volumeMACTrackBar);
-      base.Controls.Add(this.muteCheCheckBox);
+      base.Controls.Add(this.muteCheckBox);
       base.Controls.Add(this.nameLabel);
       base.Controls.Add(this.iconPictureBox);
-      base.Margin = new Padding(0);
-      base.Name = "VDeviceVolumeControl";
-      base.Size = new System.Drawing.Size(128, 485);
       /************************************************/
       ((System.ComponentModel.ISupportInitialize)this.iconPictureBox).EndInit();
       base.ResumeLayout(false);
       base.PerformLayout();
     }
     /************************************************/
-    public Label nameLabel = null;
-    public PictureBox iconPictureBox = null;
-    private CheckBox defaultCheckBox = null;
-    public LedBar leftLedBar = null;
-    public MACTrackBar volumeMACTrackBar = null;
-    public LedBar rightLedBar = null;
-    private Label volumeLabel = null;
-    public CheCheckBox muteCheCheckBox = null;
+    private Label       nameLabel         = null;
+    private PictureBox  iconPictureBox    = null;
+    private CheckBox    defaultCheckBox   = null;
+    private LedBar      leftLedBar        = null;
+    private MACTrackBar volumeMACTrackBar = null;
+    private LedBar      rightLedBar       = null;
+    private Label       volumeLabel       = null;
+    private CheckBox    muteCheckBox      = null;
   }
 }
