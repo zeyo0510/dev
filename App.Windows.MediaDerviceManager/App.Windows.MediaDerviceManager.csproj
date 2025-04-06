@@ -148,6 +148,22 @@
       <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\LayoutDirection.cs" />
+    <Compile Include="Controls\TrackBarEx.cs" />
+    <Compile Include="Controls\TrackBarEx.Direction.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackBarEx.Maximum.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackBarEx.Minimum.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackBarEx.Value.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackBarEx.ValueChanged.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\VDeviceVolumeControl.cs" />
     <Compile Include="Controls\HDeviceVolumeControl.cs" />
     <Compile Include="Controls\VDeviceVolumeControl.Designer.cs">

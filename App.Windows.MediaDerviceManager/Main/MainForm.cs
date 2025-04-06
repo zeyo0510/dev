@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.ServiceModel;
 using System.Windows.Forms;
 using a;
 using App.Windows.MediaDerviceManager.Controls;
@@ -17,6 +15,9 @@ namespace App.Windows.MediaDerviceManager.Main
 {
   public partial class MainForm : Form
   {
+    private MMDeviceCollection   _MMDeviceCollection1   = null;
+    private MMNotificationClient _MMNotificationClient1 = null;
+    
     private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
     {
       // TODO: do anything...
@@ -60,23 +61,11 @@ namespace App.Windows.MediaDerviceManager.Main
     
     
     
-    
-    public struct ProcessMapping
-    {
-      public Process proc1;
-
-      public string str1;
-    }
-
 
     public bool bool1 = true;
 
     private List<int> num_list1;
 
-    public List<ProcessMapping> processList;
-
-    private MMDeviceCollection mmDeviceCollection1;
-    public MMNotificationClient mmNotificationClient1;
 
     private string str2;
     internal static float dpiX;
@@ -145,20 +134,19 @@ namespace App.Windows.MediaDerviceManager.Main
 
     public MainForm()
     {
-      mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
-      mmNotificationClient1 = new MMNotificationClient();
-      Class4.mmDeviceEnumerator1.RegisterEndpointNotificationCallback(mmNotificationClient1);
-      processList = new List<ProcessMapping>();
+      _MMDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+      _MMNotificationClient1 = new MMNotificationClient();
+      Class4.mmDeviceEnumerator1.RegisterEndpointNotificationCallback(_MMNotificationClient1);
       this.InitializeComponent();
       using (Graphics graphics = CreateGraphics())
       {
         dpiX = graphics.DpiX / 96f;
       }
       ImageHelper.SetImageSize(dpiX);
-      mmNotificationClient1.DefaultChanged += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged);
-      mmNotificationClient1.DeviceAdded += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceAdded);
-      mmNotificationClient1.DeviceRemoved += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceRemove);
-      mmNotificationClient1.PropertyValueChanged += new MMNotificationClientPropertyValueDelegate(mmNotificationClient1_PropertyValueChanged);
+      _MMNotificationClient1.DefaultChanged += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged);
+      _MMNotificationClient1.DeviceAdded += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceAdded);
+      _MMNotificationClient1.DeviceRemoved += new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceRemove);
+      _MMNotificationClient1.PropertyValueChanged += new MMNotificationClientPropertyValueDelegate(mmNotificationClient1_PropertyValueChanged);
       bool1 = false;
       UpdateAudio();
       AutoAdjSessionManagerPanel();
@@ -194,11 +182,11 @@ namespace App.Windows.MediaDerviceManager.Main
         return;
       }
       string text = defaultdev.ID.ToString();
-      mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
-      int count = mmDeviceCollection1.Count;
+      _MMDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+      int count = _MMDeviceCollection1.Count;
       for (int i = 0; i < count; i++)
       {
-        MMDevice mMDevice = mmDeviceCollection1[i];
+        MMDevice mMDevice = _MMDeviceCollection1[i];
         string string1 = mMDevice.ID;
         List<FlowLayoutPanel1> list = Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(audioSessionManagerPanel1.Controls));
         bool @default = false;
@@ -265,7 +253,7 @@ namespace App.Windows.MediaDerviceManager.Main
           {
             sessionVolumeControl = new VSessionVolumeControl(audioSessionControl21, process);
             int value = int.Parse(Math.Ceiling(audioSessionControl21.SetVolume() * 100f).ToString());
-            sessionVolumeControl.mmDeviceCollection1 = mmDeviceCollection1;
+            sessionVolumeControl.mmDeviceCollection1 = _MMDeviceCollection1;
             sessionVolumeControl.mmDevice1 = mMDevice;
             sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.GetMute();
             sessionVolumeControl.volumeMACTrackBar.Value = value;
