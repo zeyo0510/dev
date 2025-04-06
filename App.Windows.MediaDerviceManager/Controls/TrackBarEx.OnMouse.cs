@@ -1,0 +1,54 @@
+﻿using System;
+using System.Windows.Forms;
+/************************************************/
+namespace App.Windows.MediaDerviceManager.Controls
+{
+  partial class TrackBarEx
+  {
+    private bool _dragging = false;
+    /************************************************/
+    protected override void OnMouseDown(MouseEventArgs e)
+    {
+      base.OnMouseDown(e);
+      /************************************************/
+      if (e.Button == MouseButtons.Left)
+      {
+        this._dragging = true;
+        /************************************************/
+        this.UpdateValueFromMousePosition(e.X, e.Y);
+      }
+    }
+    /************************************************/
+    protected override void OnMouseMove(MouseEventArgs e)
+    {
+      base.OnMouseMove(e);
+      /************************************************/
+      if (this._dragging)
+      {
+        this.UpdateValueFromMousePosition(e.X, e.Y);
+      }
+    }
+    /************************************************/
+    protected override void OnMouseUp(MouseEventArgs e)
+    {
+      base.OnMouseUp(e);
+      /************************************************/
+      this._dragging = false;
+    }
+    /************************************************/
+    private void UpdateValueFromMousePosition(int x, int y)
+    {
+      float percentage = 0f;
+      /************************************************/
+      if (this.Direction == LayoutDirection.LeftToRight) percentage = (float)x / this.Width;
+      if (this.Direction == LayoutDirection.RightToLeft) percentage = (float)(this.Width - x) / this.Width;
+      if (this.Direction == LayoutDirection.TopToBottom) percentage = (float)y / this.Height;
+      if (this.Direction == LayoutDirection.BottomToTop) percentage = (float)(this.Height - y) / this.Height;
+      /************************************************/
+      percentage = Math.Min(1, percentage);
+      percentage = Math.Max(0, percentage);
+      /************************************************/
+      this.Value = (int)(this._Min + percentage * (this._Max - this._Min));
+    }
+  }
+}

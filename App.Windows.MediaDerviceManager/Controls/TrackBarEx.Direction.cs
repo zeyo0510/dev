@@ -4,17 +4,23 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   partial class TrackBarEx
   {
-    private LayoutDirection _direction = LayoutDirection.LeftToRight;
+    private LayoutDirection _Direction = LayoutDirection.LeftToRight;
+    /************************************************/
     public LayoutDirection Direction
     {
-      get { return _direction; }
+      get
+      {
+        LayoutDirection retValue = this._Direction;
+        /************************************************/
+        return retValue;
+      }
       set
       {
-        if (_direction != value)
-        {
-          _direction = value;
-          this.Invalidate();
-        }
+        if (this._Direction == value) return;
+        /************************************************/
+        this._Direction = value;
+        /************************************************/
+        base.Invalidate();
       }
     }
   }

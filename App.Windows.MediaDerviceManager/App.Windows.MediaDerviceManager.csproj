@@ -158,6 +158,12 @@
     <Compile Include="Controls\TrackBarEx.Minimum.cs">
       <DependentUpon>TrackBarEx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\TrackBarEx.OnMouse.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TrackBarEx.OnPaint.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\TrackBarEx.Value.cs">
       <DependentUpon>TrackBarEx.cs</DependentUpon>
     </Compile>

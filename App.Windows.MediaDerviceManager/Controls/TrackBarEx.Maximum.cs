@@ -4,15 +4,30 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   partial class TrackBarEx
   {
-    private int _max = 100;
+    private int _Max = 100;
+    /************************************************/
     public int Maximum
     {
-      get { return _max; }
+      get
+      {
+        int retValue = this._Max;
+        /************************************************/
+        return retValue;
+      }
       set
       {
-        _max = value;
-        if (_value > _max) _value = _max;
-        this.Invalidate();
+        value = Math.Max(value, this.Minimum);
+        /************************************************/
+        if (value == this._Max) return;
+        /************************************************/
+        this._Max = value;
+        /************************************************/
+        if (this.Value > this._Max)
+        {
+          this.Value = this._Max;
+        }
+        /************************************************/
+        base.Invalidate();
       }
     }
   }

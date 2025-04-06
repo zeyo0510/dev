@@ -4,6 +4,6 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   partial class TrackBarEx
   {
-    public event EventHandler ValueChanged;
+    public event EventHandler ValueChanged = null;
   }
 }
