@@ -39,9 +39,9 @@ namespace App.Windows.XPMinesweeper.Controls
       // MineButton
       {
         base.Name        = "MineButton";
-        base.ClientSize  = new Size(24, 24);
-        base.MaximumSize = new Size(24, 24);
-        base.MinimumSize = new Size(24, 24);
+        base.ClientSize  = new Size(026, 026);
+        base.MaximumSize = new Size(026, 026);
+        base.MinimumSize = new Size(026, 026);
       }
     }
   }

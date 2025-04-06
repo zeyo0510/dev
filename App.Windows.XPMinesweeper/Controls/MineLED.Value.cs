@@ -4,13 +4,13 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   partial class MineLED
   {
-    private int value = 0;
+    private int _Value = 0;
     /************************************************/
     public int Value
     {
       get
       {
-        int retValue = this.value;
+        int retValue = this._Value;
         /************************************************/
         return retValue;
       }
@@ -22,9 +22,9 @@ namespace App.Windows.XPMinesweeper.Controls
         if (value > maxValue) value = maxValue;
         if (value < minValue) value = minValue;
         /************************************************/
-        if (this.value != value)
+        if (this._Value != value)
         {
-          this.value = value;
+          this._Value = value;
           /************************************************/
           base.Invalidate();
         }

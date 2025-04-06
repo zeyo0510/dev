@@ -33,10 +33,15 @@ namespace App.Windows.XPMinesweeper.Controls
         {
           for (int i = 0; i < 3; i++)
           {
-            g.DrawLine(lightPen, l + 0 + i, b - 1 - i, l + 0 + i, t + 0 + i); // Left
-            g.DrawLine(lightPen, l + 0 + i, t + 0 + i, r - 1 - i, t + 0 + i); // Top
-            g.DrawLine( darkPen, r - 0 - i, t + 1 + i, r - 0 - i, b - 0 - i); // Right
-            g.DrawLine( darkPen, r - 0 - i, b - 0 - i, l + 1 + i, b - 0 - i); // Bottom
+            g.DrawLine(lightPen, l + 0, b - 1, l + 0, t + 0); // Left
+            g.DrawLine(lightPen, l + 0, t + 0, r - 1, t + 0); // Top
+            g.DrawLine( darkPen, r - 0, t + 1, r - 0, b - 0); // Right
+            g.DrawLine( darkPen, r - 0, b - 0, l + 1, b - 0); // Bottom
+            /************************************************/
+            l++;
+            t++;
+            r--;
+            b--;
           }
         }
       }
@@ -55,10 +60,15 @@ namespace App.Windows.XPMinesweeper.Controls
         {
           for (int i = 0; i < 2; i++)
           {
-            g.DrawLine( darkPen, l - 1 - i, b + 0 + i, l - 1 - i, t - 1 - i); // Left
-            g.DrawLine( darkPen, l - 1 - i, t - 1 - i, r + 0 + i, t - 1 - i); // Top
-            g.DrawLine(lightPen, r + 1 + i, t - 0 - i, r + 1 + i, b + 1 + i); // Right
-            g.DrawLine(lightPen, r + 1 + i, b + 1 + i, l - 0 - i, b + 1 + i); // Bottom
+            g.DrawLine( darkPen, l - 1, b + 0, l - 1, t - 1); // Left
+            g.DrawLine( darkPen, l - 1, t - 1, r + 0, t - 1); // Top
+            g.DrawLine(lightPen, r + 1, t - 0, r + 1, b + 1); // Right
+            g.DrawLine(lightPen, r + 1, b + 1, l - 0, b + 1); // Bottom
+            /************************************************/
+            l++;
+            t++;
+            r--;
+            b--;
           }
         }
       }

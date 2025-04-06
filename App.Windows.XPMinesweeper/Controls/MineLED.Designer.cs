@@ -39,9 +39,9 @@ namespace App.Windows.XPMinesweeper.Controls
       // MineLED
       {
         base.Name        = "MineLED";
-        base.ClientSize  = new Size(039, 023);
-        base.MinimumSize = new Size(039, 023);
-        base.MaximumSize = new Size(039, 023);
+        base.ClientSize  = new Size(041, 025);
+        base.MinimumSize = new Size(041, 025);
+        base.MaximumSize = new Size(041, 025);
       }
     }
   }

@@ -49,10 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\DifficultyLevel.cs" />
-    <Compile Include="Controls\MineButton.Action.cs">
+    <Compile Include="Controls\MineButton.OnMouse.cs">
       <DependentUpon>MineButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MineButton.Painter.cs">
+    <Compile Include="Controls\MineButton.OnPaint.cs">
       <DependentUpon>MineButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineButton.Resources.cs">
@@ -64,7 +64,7 @@
     <Compile Include="Controls\MineControl.Action.cs">
       <DependentUpon>MineControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MineControl.Painter.cs">
+    <Compile Include="Controls\MineControl.OnPaint.cs">
       <DependentUpon>MineControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineControl.Resources.cs">
@@ -74,7 +74,7 @@
     <Compile Include="Controls\MineLED.Designer.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MineLED.Painter.cs">
+    <Compile Include="Controls\MineLED.OnPaint.cs">
       <DependentUpon>MineLED.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineLED.Resources.cs">
@@ -98,7 +98,7 @@
     <Compile Include="Controls\MinePanel.Designer.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MinePanel.Painter.cs">
+    <Compile Include="Controls\MinePanel.OnPaint.cs">
       <DependentUpon>MinePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MinePanel.Panel1.cs">

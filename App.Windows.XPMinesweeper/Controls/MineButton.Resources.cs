@@ -15,10 +15,10 @@ namespace App.Windows.XPMinesweeper.Controls
       {
         MineButton.bmp = new Dictionary<char, Bitmap>();
         /************************************************/
-        MineButton.bmp['1'] = MineButton.DrawBitmap("Face1");
-        MineButton.bmp['2'] = MineButton.DrawBitmap("Face2");
-        MineButton.bmp['3'] = MineButton.DrawBitmap("Face3");
-        MineButton.bmp['4'] = MineButton.DrawBitmap("Face4");
+        MineButton.bmp['1'] = MineButton.DrawBitmap("Bitmap1");
+        MineButton.bmp['2'] = MineButton.DrawBitmap("Bitmap2");
+        MineButton.bmp['3'] = MineButton.DrawBitmap("Bitmap3");
+        MineButton.bmp['4'] = MineButton.DrawBitmap("Bitmap4");
       }
     }
     /************************************************/
@@ -29,7 +29,7 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       StringBuilder map = new StringBuilder();
       /************************************************/
-      if (s == "Face1")
+      if (s == "Bitmap1")
       {
         map.Append("      BBBBB      ");
         map.Append("    BBYYYYYBB    ");
@@ -49,7 +49,7 @@ namespace App.Windows.XPMinesweeper.Controls
         map.Append("    BBYYYYYBB    ");
         map.Append("      BBBBB      ");
       }
-      if (s == "Face2")
+      if (s == "Bitmap2")
       {
         map.Append("      BBBBB      ");
         map.Append("    BBYYYYYBB    ");
@@ -69,7 +69,7 @@ namespace App.Windows.XPMinesweeper.Controls
         map.Append("    BBYYYYYBB    ");
         map.Append("      BBBBB      ");
       }
-      if (s == "Face3")
+      if (s == "Bitmap3")
       {
         map.Append("      BBBBB      ");
         map.Append("    BBYYYYYBB    ");
@@ -89,7 +89,7 @@ namespace App.Windows.XPMinesweeper.Controls
         map.Append("    BBYYYYYBB    ");
         map.Append("      BBBBB      ");
       }
-      if (s == "Face4")
+      if (s == "Bitmap4")
       {
         map.Append("      BBBBB      ");
         map.Append("    BBYYYYYBB    ");

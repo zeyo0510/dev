@@ -5,7 +5,7 @@ namespace App.Windows.XPMinesweeper.Controls
 {
   partial class MineButton
   {
-    private bool pressed = false;
+    private bool _pressed = false;
     /************************************************/
     protected override void OnMouseDown(MouseEventArgs e)
     {
@@ -13,7 +13,7 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       if (e.Button == MouseButtons.Left)
       {
-        this.pressed = true;
+        this._pressed = true;
         /************************************************/
         base.Invalidate();
       }
@@ -25,7 +25,7 @@ namespace App.Windows.XPMinesweeper.Controls
       /************************************************/
       if (e.Button == MouseButtons.Left)
       {
-        this.pressed = false;
+        this._pressed = false;
         /************************************************/
         base.Invalidate();
       }

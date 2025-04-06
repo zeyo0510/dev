@@ -43,14 +43,14 @@ namespace App.Windows.XPMinesweeper.Controls
       {
         this.panel1.Name     = "panel1";
         this.panel1.Anchor   = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right;
-        this.panel1.Location = new Point(11, 11);
+        this.panel1.Location = new Point(011, 011);
         this.panel1.Size     = new Size(146, 033);
       }
       // panel2
       {
         this.panel2.Name     = "panel2";
         this.panel2.Anchor   = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
-        this.panel2.Location = new Point(11, 54);
+        this.panel2.Location = new Point(011, 054);
         this.panel2.Size     = new Size(146, 146);
       }
       // MinePanel
