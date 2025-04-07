@@ -33,9 +33,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.nameLabel         = new Label();
       this.iconPictureBox    = new PictureBox();
       this.defaultCheckBox   = new CheckBox();
-      this.leftLedBar        = new LedBar();
+      this.leftVLedBar        = new VLedBar();
       this.volumeMACTrackBar = new MACTrackBar();
-      this.rightLedBar       = new LedBar();
+      this.rightVLedBar       = new VLedBar();
       this.volumeLabel       = new Label();
       this.muteCheckBox      = new CheckBox();
       /************************************************/
@@ -63,9 +63,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.defaultCheckBox.Size     = new Size(105, 16);
       this.defaultCheckBox.Text     = "Set as Default";
       this.defaultCheckBox.Click += this.defaultCheckBox_Click;
-      // leftLedBar
-      this.leftLedBar.Name     = "leftLedBar";
-      this.leftLedBar.Location = new Point(13, 132);
+      // leftVLedBar
+      this.leftVLedBar.Name     = "leftLedBar";
+      this.leftVLedBar.Location = new Point(13, 132);
       // volumeMACTrackBar
       this.volumeMACTrackBar.Name = "volumeMACTrackBar";
       this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
@@ -93,9 +93,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.volumeMACTrackBar.TrackLineHeight = 3;
       this.volumeMACTrackBar.Value = 0;
       this.volumeMACTrackBar.ValueChanged += this.volumeMACTrackBar_OnValueChanged;
-      // rightLedBar
-      this.rightLedBar.Name     = "rightLedBar";
-      this.rightLedBar.Location = new Point(108, 132);
+      // rightVLedBar
+      this.rightVLedBar.Name     = "rightVLedBar";
+      this.rightVLedBar.Location = new Point(108, 132);
       // volumeLabel
       this.volumeLabel.Name        = "volumeLabel";
       this.volumeLabel.BorderStyle = BorderStyle.FixedSingle;
@@ -117,9 +117,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.Margin              = new Padding(0);
       base.Size                = new Size(128, 485);
       this.Font                = new Font("Verdana", 10f, FontStyle.Bold, GraphicsUnit.World, 0);
-      base.Controls.Add(this.leftLedBar);
+      base.Controls.Add(this.leftVLedBar);
       base.Controls.Add(this.defaultCheckBox);
-      base.Controls.Add(this.rightLedBar);
+      base.Controls.Add(this.rightVLedBar);
       base.Controls.Add(this.volumeLabel);
       base.Controls.Add(this.volumeMACTrackBar);
       base.Controls.Add(this.muteCheckBox);
@@ -134,9 +134,9 @@ namespace App.Windows.MediaDerviceManager.Controls
     private Label       nameLabel         = null;
     private PictureBox  iconPictureBox    = null;
     private CheckBox    defaultCheckBox   = null;
-    private LedBar      leftLedBar        = null;
+    private VLedBar     leftVLedBar       = null;
     private MACTrackBar volumeMACTrackBar = null;
-    private LedBar      rightLedBar       = null;
+    private VLedBar     rightVLedBar      = null;
     private Label       volumeLabel       = null;
     private CheckBox    muteCheckBox      = null;
   }

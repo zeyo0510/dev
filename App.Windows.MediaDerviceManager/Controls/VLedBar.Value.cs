@@ -2,25 +2,27 @@
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class LedBar
+  partial class VLedBar
   {
-    private bool _Color = true;
+    private float _Value = 0;
     /************************************************/
-    public bool Color
+    public float Value
     {
       get
       {
-        bool retValue = this._Color;
+        float retValue = this._Value;
         /************************************************/
         return retValue;
       }
       set
       {
-        if (value != this._Color)
+        int num = (int)Math.Ceiling(value * 15f);
+        /************************************************/
+        if (this._Value != num)
         {
-          this._Color = value;
+          this._Value = num;
           /************************************************/
-          this.UpdateUI();
+          base.Invalidate();
         }
       }
     }

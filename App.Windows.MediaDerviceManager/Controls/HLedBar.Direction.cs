@@ -2,27 +2,25 @@
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class LedBar
+  partial class HLedBar
   {
-    private float _Value = 0;
+    private HDirection  _Direction = HDirection.LeftRight;
     /************************************************/
-    public float Value
+    public HDirection Direction
     {
       get
       {
-        float retValue = this._Value;
+        HDirection retValue = this._Direction;
         /************************************************/
         return retValue;
       }
       set
       {
-        int num = (int)Math.Ceiling(value * 15f);
-        /************************************************/
-        if (this._Value != num)
+        if (value != this._Direction)
         {
-          this._Value = num;
+          this._Direction = value;
           /************************************************/
-          this.UpdateUI();
+          base.Invalidate();
         }
       }
     }

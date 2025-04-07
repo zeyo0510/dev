@@ -35,6 +35,12 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       this._dragging = false;
     }
+    protected override void OnMouseWheel(MouseEventArgs e)
+    {
+      base.OnMouseWheel(e);
+      /************************************************/
+      this.Value += (e.Delta / 24);
+    }
     /************************************************/
     private void UpdateValueFromMousePosition(int x, int y)
     {

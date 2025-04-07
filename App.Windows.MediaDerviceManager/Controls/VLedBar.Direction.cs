@@ -2,25 +2,25 @@
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class LedBar
+  partial class VLedBar
   {
-    private LayoutDirection  _LayoutDirection = LayoutDirection.BottomToTop;
+    private VDirection  _Direction = VDirection.BottomTop;
     /************************************************/
-    public LayoutDirection LayoutDirection
+    public VDirection Direction
     {
       get
       {
-        LayoutDirection retValue = this._LayoutDirection;
+        VDirection retValue = this._Direction;
         /************************************************/
         return retValue;
       }
       set
       {
-        if (value != this._LayoutDirection)
+        if (value != this._Direction)
         {
-          this._LayoutDirection = value;
+          this._Direction = value;
           /************************************************/
-          this.UpdateUI();
+          base.Invalidate();
         }
       }
     }

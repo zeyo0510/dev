@@ -8,8 +8,8 @@ namespace App.Windows.MediaDerviceManager.Controls
     public TrackBarEx()
     {
       this.SetStyle(ControlStyles.DoubleBuffer |  ControlStyles.UserPaint |  ControlStyles.AllPaintingInWmPaint, true);
-      this.Height = 30;
-      this.Width = 150;
+      /************************************************/
+      this.InitializeComponent();
     }
   }
 }

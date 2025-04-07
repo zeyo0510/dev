@@ -143,9 +143,9 @@ namespace App.Windows.MediaDerviceManager.Main
       this.BackColor = System.Drawing.Color.White;
       base.ClientSize = new System.Drawing.Size(1045, 756);
 //      base.Controls.Add(this.HDeviceVolumeControl1);
-base.Controls.Add(new TrackBarEx() { Width = 250, Height = 250, Location = new Point(5, 5), Direction = LayoutDirection.RightToLeft } );
-//      base.Controls.Add(this.toolToolStripContainer1);
-//      base.Controls.Add(this.topMenuStrip);
+//base.Controls.Add(new TrackBarEx() { Width = 250, Height = 250, Location = new Point(5, 5), Direction = LayoutDirection.RightToLeft } );
+      base.Controls.Add(this.toolToolStripContainer1);
+      base.Controls.Add(this.topMenuStrip);
       this.DoubleBuffered = true;
       this.MaximumSize = new System.Drawing.Size(3994, 803);
       this.MinimumSize = new System.Drawing.Size(794, 803);

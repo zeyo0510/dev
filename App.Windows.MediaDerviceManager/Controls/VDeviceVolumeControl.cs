@@ -61,21 +61,21 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       catch (Exception)
       {
-        leftLedBar.Value = 0f;
-        rightLedBar.Value = 0f;
+        leftVLedBar.Value = 0f;
+        rightVLedBar.Value = 0f;
       }
       if (Enumerable.Count(array) > 0)
       {
         if (Enumerable.Count(array) == 1)
         {
-          leftLedBar.Value = array[0];
-          rightLedBar.Value = array[0];
+          leftVLedBar.Value = array[0];
+          rightVLedBar.Value = array[0];
           volumeMACTrackBar.SetActualVolume(array[0]);
         }
         else
         {
-          leftLedBar.Value = array[0];
-          rightLedBar.Value = array[1];
+          leftVLedBar.Value = array[0];
+          rightVLedBar.Value = array[1];
           volumeMACTrackBar.SetActualVolume((array[0] + array[1]) / 2f);
         }
       }

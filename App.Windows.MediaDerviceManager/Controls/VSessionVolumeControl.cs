@@ -356,11 +356,11 @@ namespace App.Windows.MediaDerviceManager.Controls
       if (Enumerable.Count(source) > 0)
       {
         float value = Enumerable.Max(source);
-        leftLedBar.Value = value;
+        leftVLedBar.Value = value;
       }
       else
       {
-        leftLedBar.Value = 0f;
+        leftVLedBar.Value = 0f;
       }
       if (num1++ < 100)
       {
@@ -389,14 +389,14 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (muteCheCheckBox.Checked)
       {
-        leftLedBar.Color = false;
+        leftVLedBar.Color = false;
         volumeMACTrackBar.TrackerColor = Color.DarkGray;
         muteCheCheckBox.Image = Resources.muteon;
         muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
       }
       else
       {
-        leftLedBar.Color = true;
+        leftVLedBar.Color = true;
         volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
         muteCheCheckBox.Image = Resources.mute;
         muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
@@ -649,13 +649,13 @@ namespace App.Windows.MediaDerviceManager.Controls
         if (IsAdvancedUser)
         {
           SetVisible(true);
-          leftLedBar.Value = 0f;
+          leftVLedBar.Value = 0f;
           timer1.Start();
         }
         else
         {
           SetVisible(false);
-          leftLedBar.Value = 0f;
+          leftVLedBar.Value = 0f;
           timer1.Stop();
         }
         break;
