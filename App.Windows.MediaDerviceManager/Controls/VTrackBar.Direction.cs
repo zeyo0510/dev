@@ -16,7 +16,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       set
       {
-        if (this._Direction == value) return;
+        if (value == this._Direction) return;
         /************************************************/
         this._Direction = value;
         /************************************************/

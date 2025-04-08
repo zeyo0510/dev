@@ -152,6 +152,9 @@
       <DependentUpon>HLedBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\HTrackBar.cs" />
+    <Compile Include="Controls\HTrackBar.UpdateUI.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\VTrackBar.cs" />
     <Compile Include="Controls\HTrackBar.Designer.cs">
       <DependentUpon>HTrackBar.cs</DependentUpon>
@@ -165,16 +168,16 @@
     <Compile Include="Controls\VTrackBar.Direction.cs">
       <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\HTrackBar.Maximum.cs">
+    <Compile Include="Controls\HTrackBar.MaxValue.cs">
       <DependentUpon>HTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\VTrackBar.Maximum.cs">
+    <Compile Include="Controls\VTrackBar.MaxValue.cs">
       <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\HTrackBar.Minimum.cs">
+    <Compile Include="Controls\HTrackBar.MinValue.cs">
       <DependentUpon>HTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\VTrackBar.Minimum.cs">
+    <Compile Include="Controls\VTrackBar.MinValue.cs">
       <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\HTrackBar.OnMouse.cs">
@@ -191,6 +194,9 @@
     </Compile>
     <Compile Include="Controls\HTrackBar.Value.cs">
       <DependentUpon>HTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VTrackBar.UpdateUI.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\VTrackBar.Value.cs">
       <DependentUpon>VTrackBar.cs</DependentUpon>

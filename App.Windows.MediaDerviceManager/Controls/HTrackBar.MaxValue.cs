@@ -4,28 +4,25 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   partial class HTrackBar
   {
-    private int _Min = 0;
+    private int _MaxValue = 100;
     /************************************************/
-    public int Minimum
+    public int MaxValue
     {
       get
       {
-        int retValue = this._Min;
+        int retValue = this._MaxValue;
         /************************************************/
         return retValue;
       }
       set
       {
-        value = Math.Min(value, this.Maximum);
+        value = Math.Max(value, this.MinValue);
         /************************************************/
-        if (value == this._Min) return;
+        if (value == this._MaxValue) return;
         /************************************************/
-        this._Min = value;
+        this._MaxValue = value;
         /************************************************/
-        if (this.Value < this._Min)
-        {
-          this.Value = this._Min;
-        }
+        if (this.Value > this._MaxValue) this.Value = this._MaxValue;
         /************************************************/
         base.Invalidate();
       }

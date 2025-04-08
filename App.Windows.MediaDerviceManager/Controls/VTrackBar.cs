@@ -7,9 +7,14 @@ namespace App.Windows.MediaDerviceManager.Controls
   {
     public VTrackBar()
     {
-      this.SetStyle(ControlStyles.DoubleBuffer |  ControlStyles.UserPaint |  ControlStyles.AllPaintingInWmPaint, true);
-      /************************************************/
       this.InitializeComponent();
+      /************************************************/
+      base.SetStyle(ControlStyles.DoubleBuffer, true);
+    }
+    /************************************************/
+    private void guiTimer_Tick(object sender, EventArgs e)
+    {
+      this.UpdateUI();
     }
   }
 }

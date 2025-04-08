@@ -34,7 +34,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       
       // 計算填充部分
-      float percentage = (float)(this.Value - this.Minimum) / (this.Maximum - this.Minimum);
+      float percentage = (float)(this.Value - this.MinValue) / (this.MaxValue - this.MinValue);
       int fillWidth = (int)(percentage * this.Width);
       
       Rectangle fillRect = reverse ? 

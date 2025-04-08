@@ -16,8 +16,8 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       set
       {
-        if (value < this.Minimum) value = this.Minimum;
-        if (value > this.Maximum) value = this.Maximum;
+        if (value < this.MinValue) value = this.MinValue;
+        if (value > this.MaxValue) value = this.MaxValue;
         /************************************************/
         if (this._Value == value) return;
         /************************************************/

@@ -35,24 +35,29 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       this._dragging = false;
     }
+    /************************************************/
     protected override void OnMouseWheel(MouseEventArgs e)
     {
       base.OnMouseWheel(e);
       /************************************************/
-      this.Value += (e.Delta / 24);
+      this.Value += e.Delta / 24;
+      /************************************************/
+      base.Invalidate();
     }
     /************************************************/
     private void UpdateValueFromMousePosition(int x, int y)
     {
       float percentage = 0f;
       /************************************************/
-      if (this.Direction == VDirection.TopBottom) percentage = (float)y / this.Height;
+      if (this.Direction == VDirection.TopBottom) percentage = (float)(              y) / this.Height;
       if (this.Direction == VDirection.BottomTop) percentage = (float)(this.Height - y) / this.Height;
       /************************************************/
       percentage = Math.Min(1, percentage);
       percentage = Math.Max(0, percentage);
       /************************************************/
-      this.Value = (int)(this._Min + percentage * (this._Max - this._Min));
+      this.Value = (int)(this.MinValue + percentage * (this.MaxValue - this.MinValue));
+      /************************************************/
+      base.Invalidate();
     }
   }
 }

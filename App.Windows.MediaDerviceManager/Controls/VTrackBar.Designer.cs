@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
-using System.Timers;
+using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
@@ -25,10 +25,22 @@ namespace App.Windows.MediaDerviceManager.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      // TrackBarEx
+      this.components = new Container();
+      /************************************************/
+      this.guiTimer = new Timer(this.components);
+      /************************************************/
       {
-        base.Name       = "TrackBarEx";
-        base.ClientSize = new Size(150, 030);
+        this.guiTimer.Enabled  = true;
+        this.guiTimer.Interval = 100;
+        /************************************************/
+        this.guiTimer.Tick += this.guiTimer_Tick;
+      }
+      // VTrackBar
+      {
+        base.Name        = "VTrackBar";
+        base.ClientSize  = new Size(030, 150);
+        base.MaximumSize = new Size(030, int.MaxValue);
+        base.MinimumSize = new Size(030, 150);
       }
     }
   }
