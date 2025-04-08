@@ -253,9 +253,9 @@ namespace App.Windows.MediaDerviceManager.Main
           {
             sessionVolumeControl = new VSessionVolumeControl(audioSessionControl21, process);
             int value = int.Parse(Math.Ceiling(audioSessionControl21.SetVolume() * 100f).ToString());
-            sessionVolumeControl.mmDeviceCollection1 = _MMDeviceCollection1;
-            sessionVolumeControl.mmDevice1 = mMDevice;
-            sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.GetMute();
+            sessionVolumeControl._MMDeviceCollection1 = _MMDeviceCollection1;
+            sessionVolumeControl._MMDevice1 = mMDevice;
+            sessionVolumeControl.muteCheckBox.Checked = audioSessionControl21.GetMute();
             sessionVolumeControl.volumeMACTrackBar.Value = value;
             flowLayoutPanel.Controls.Add(sessionVolumeControl);
             if (process.Id == 0)
@@ -344,7 +344,7 @@ namespace App.Windows.MediaDerviceManager.Main
       {
         foreach (VSessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<VSessionVolumeControl>(item.Controls)))
         {
-          item2.OnStateChanged2(item2.audioSessionControl21.GetState());
+          item2.OnStateChanged2(item2._AudioSessionControl1.GetState());
         }
       }
     }

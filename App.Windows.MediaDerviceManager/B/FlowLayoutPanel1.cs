@@ -132,9 +132,9 @@ namespace B
 			{
 				sessionVolumeControl = new VSessionVolumeControl(P_0, process);
 				int value = int.Parse(Math.Ceiling(P_0.SetVolume() * 100f).ToString());
-				sessionVolumeControl.mmDeviceCollection1 = mmDeviceCollection1;
-				sessionVolumeControl.mmDevice1 = mmDevice1;
-				sessionVolumeControl.muteCheCheckBox.Checked = P_0.GetMute();
+				sessionVolumeControl._MMDeviceCollection1 = mmDeviceCollection1;
+				sessionVolumeControl._MMDevice1 = mmDevice1;
+				sessionVolumeControl.muteCheckBox.Checked = P_0.GetMute();
 				sessionVolumeControl.volumeMACTrackBar.Value = value;
 				base.Controls.Add(sessionVolumeControl);
 			}

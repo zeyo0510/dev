@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 using EConTech.Windows.MACUI;
 /************************************************/
@@ -20,6 +21,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       base.Dispose(disposing);
     }
+
     /************************************************/
     private void InitializeComponent()
     {
@@ -31,10 +33,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.leftVLedBar = new VLedBar();
       this.volumeMACTrackBar = new MACTrackBar();
       this.volumeLabel = new Label();
-      this.muteCheCheckBox = new CheCheckBox();
-      this.BtnShowProcess = new CheCheckBox();
-      this.btnTransfert = new Button();
-      this.btnLock = new CheCheckBox();
+      this.muteCheckBox = new CheckBox();
       this.contextMenuStrip1 = new ContextMenuStrip(this.components);
       this.toolStripMenuItem1 = new ToolStripMenuItem();
       this.toolStripMenuItem2 = new ToolStripMenuItem();
@@ -46,42 +45,38 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.SuspendLayout();
       /************************************************/
       // nameLabel
+      this.nameLabel.Name = "nameLabel";
       this.nameLabel.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
       this.nameLabel.ForeColor = System.Drawing.Color.DimGray;
       this.nameLabel.Location = new System.Drawing.Point(2, 18);
       this.nameLabel.Margin = new Padding(0);
-      this.nameLabel.Name = "nameLabel";
       this.nameLabel.Size = new System.Drawing.Size(96, 60);
       this.nameLabel.TabIndex = 3;
       this.nameLabel.Text = "Temp Text";
       this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // iconPictureBox
+      this.iconPictureBox.Name = "iconPictureBox";
       this.iconPictureBox.BackColor = System.Drawing.Color.Transparent;
       this.iconPictureBox.Location = new System.Drawing.Point(33, 79);
       this.iconPictureBox.Margin = new Padding(0);
-      this.iconPictureBox.Name = "iconPictureBox";
       this.iconPictureBox.Padding = new Padding(1, 1, 0, 0);
       this.iconPictureBox.Size = new System.Drawing.Size(34, 34);
       this.iconPictureBox.TabIndex = 0;
       this.iconPictureBox.TabStop = false;
-      this.iconPictureBox.Click += new System.EventHandler(IconBox_Click);
+      this.iconPictureBox.MouseClick += iconPictureBox_MouseClick;
       // pidLabel
+      this.pidLabel.Name = "pidLabel";
       this.pidLabel.Font = new System.Drawing.Font("Verdana", 6.25f, System.Drawing.FontStyle.Bold);
       this.pidLabel.ForeColor = System.Drawing.Color.DimGray;
       this.pidLabel.Location = new System.Drawing.Point(2, 113);
-      this.pidLabel.Name = "pidLabel";
       this.pidLabel.Size = new System.Drawing.Size(96, 13);
       this.pidLabel.TabIndex = 16;
       this.pidLabel.Text = "label1";
       this.pidLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      this.pidLabel.Visible = false;
+      this.pidLabel.Visible = true;
       // leftVLedBar
-      this.leftVLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-      this.leftVLedBar.Color = true;
-      this.leftVLedBar.Location = new System.Drawing.Point(22, 132);
       this.leftVLedBar.Name = "leftVLedBar";
-      this.leftVLedBar.Size = new System.Drawing.Size(5, 225);
-      this.leftVLedBar.TabIndex = 1;
+      this.leftVLedBar.Location = new Point(22, 132);
       // volumeMACTrackBar
       this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
       this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -120,93 +115,18 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.volumeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       this.volumeLabel.UseCompatibleTextRendering = true;
       this.volumeLabel.UseMnemonic = false;
-      // muteCheCheckBox
-      this.muteCheCheckBox.Appearance = Appearance.Button;
-      this.muteCheCheckBox.AutoSize = true;
-      this.muteCheCheckBox.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.Cursor = Cursors.Hand;
-      this.muteCheCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.muteCheCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.muteCheCheckBox.FlatStyle = FlatStyle.Flat;
-      this.muteCheCheckBox.Image = CheVolume.Properties.Resources.mute;
-      this.muteCheCheckBox.Location = new System.Drawing.Point(13, 400);
-      this.muteCheCheckBox.Name = "muteCheCheckBox";
-      this.muteCheCheckBox.Padding = new Padding(0, 0, 2, 2);
-      this.muteCheCheckBox.Size = new System.Drawing.Size(34, 34);
-      this.muteCheCheckBox.TabIndex = 7;
-      this.muteCheCheckBox.UseVisualStyleBackColor = false;
-      this.muteCheCheckBox.CheckedChanged += new System.EventHandler(btnMute_CheckedChanged);
-      this.muteCheCheckBox.MouseEnter += new System.EventHandler(btnMute_MouseEnter);
-      this.muteCheCheckBox.MouseLeave += new System.EventHandler(btnMute_MouseLeave);
-      // BtnShowProcess
-      this.BtnShowProcess.Appearance = Appearance.Button;
-      this.BtnShowProcess.AutoSize = true;
-      this.BtnShowProcess.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.BtnShowProcess.Cursor = Cursors.Hand;
-      this.BtnShowProcess.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.BtnShowProcess.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.BtnShowProcess.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.BtnShowProcess.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.BtnShowProcess.FlatStyle = FlatStyle.Flat;
-      this.BtnShowProcess.Image = CheVolume.Properties.Resources.showwindow;
-      this.BtnShowProcess.Location = new System.Drawing.Point(53, 400);
-      this.BtnShowProcess.Name = "BtnShowProcess";
-      this.BtnShowProcess.Padding = new Padding(0, 0, 2, 2);
-      this.BtnShowProcess.Size = new System.Drawing.Size(34, 34);
-      this.BtnShowProcess.TabIndex = 15;
-      this.BtnShowProcess.UseVisualStyleBackColor = false;
-      this.BtnShowProcess.Click += new System.EventHandler(BtnShowProcess_Click);
-      this.BtnShowProcess.MouseEnter += new System.EventHandler(BtnShowProcess_MouseEnter);
-      this.BtnShowProcess.MouseLeave += new System.EventHandler(BtnShowProcess_MouseLeave);
-      this.BtnShowProcess.MouseHover += new System.EventHandler(BtnShowProcess_MouseHover);
-      // btnTransfert
-      this.btnTransfert.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.btnTransfert.BackgroundImage = CheVolume.Properties.Resources.CheV;
-      this.btnTransfert.BackgroundImageLayout = ImageLayout.Center;
-      this.btnTransfert.Cursor = Cursors.Hand;
-      this.btnTransfert.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.btnTransfert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.btnTransfert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.btnTransfert.FlatStyle = FlatStyle.Flat;
-      this.btnTransfert.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-      this.btnTransfert.Location = new System.Drawing.Point(33, 440);
-      this.btnTransfert.Name = "btnTransfert";
-      this.btnTransfert.Padding = new Padding(0, 0, 2, 2);
-      this.btnTransfert.Size = new System.Drawing.Size(34, 34);
-      this.btnTransfert.TabIndex = 14;
-      this.btnTransfert.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-      this.btnTransfert.UseVisualStyleBackColor = false;
-      this.btnTransfert.Click += new System.EventHandler(btnTransfert_Click);
-      this.btnTransfert.MouseEnter += new System.EventHandler(btnTransfert_MouseEnter);
-      // btnLock
-      this.btnLock.Appearance = Appearance.Button;
-      this.btnLock.AutoSize = true;
-      this.btnLock.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.btnLock.Cursor = Cursors.Hand;
-      this.btnLock.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-      this.btnLock.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.btnLock.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.btnLock.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-      this.btnLock.FlatStyle = FlatStyle.Flat;
-      this.btnLock.Image = CheVolume.Properties.Resources.lockoff;
-      this.btnLock.Location = new System.Drawing.Point(73, 440);
-      this.btnLock.Name = "btnLock";
-      this.btnLock.Padding = new Padding(0, 0, 2, 2);
-      this.btnLock.Size = new System.Drawing.Size(34, 34);
-      this.btnLock.TabIndex = 15;
-      this.btnLock.UseVisualStyleBackColor = false;
-      this.btnLock.Visible = false;
-      this.btnLock.CheckedChanged += new System.EventHandler(btnLock_CheckedChanged);
+      // muteCheckBox
+      this.muteCheckBox.Name     = "muteCheckBox";
+      this.muteCheckBox.AutoSize = true;
+      this.muteCheckBox.Location = new Point(13, 400);
+      this.muteCheckBox.Text     = "Mute";
+      this.muteCheckBox.CheckedChanged += this.muteCheckBox_CheckedChanged;
       // contextMenuStrip1
       this.contextMenuStrip1.Font = new System.Drawing.Font("Verdana", 11f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
       this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
       this.contextMenuStrip1.Items.AddRange(new ToolStripItem[4] { this.toolStripMenuItem1, this.toolStripMenuItem2, this.toolStripMenuItem3, this.toolStripMenuItem4 });
       this.contextMenuStrip1.Name = "contextMenuStrip1";
       this.contextMenuStrip1.RenderMode = ToolStripRenderMode.Professional;
-      this.contextMenuStrip1.Size = new System.Drawing.Size(204, 114);
-      this.contextMenuStrip1.Closed += new ToolStripDropDownClosedEventHandler(contextMenuStrip1_Closed);
       // toolStripMenuItem1
       this.toolStripMenuItem1.Name = "toolStripMenuItem1";
       this.toolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
@@ -225,19 +145,17 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.AutoScaleMode = AutoScaleMode.Font;
       base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
       this.BackColor = System.Drawing.Color.Transparent;
-      base.Controls.Add(this.pidLabel);
-      base.Controls.Add(this.BtnShowProcess);
-      base.Controls.Add(this.btnLock);
-      base.Controls.Add(this.btnTransfert);
-      base.Controls.Add(this.volumeLabel);
-      base.Controls.Add(this.volumeMACTrackBar);
-      base.Controls.Add(this.muteCheCheckBox);
-      base.Controls.Add(this.nameLabel);
-      base.Controls.Add(this.leftVLedBar);
-      base.Controls.Add(this.iconPictureBox);
+      this.Font                = new Font("Verdana", 10f, FontStyle.Bold, GraphicsUnit.World, 0);
       base.Margin = new Padding(0);
       base.Name = "VSessionVolumeControl";
       base.Size = new System.Drawing.Size(100, 485);
+      base.Controls.Add(this.pidLabel);
+      base.Controls.Add(this.volumeLabel);
+      base.Controls.Add(this.volumeMACTrackBar);
+      base.Controls.Add(this.muteCheckBox);
+      base.Controls.Add(this.nameLabel);
+      base.Controls.Add(this.leftVLedBar);
+      base.Controls.Add(this.iconPictureBox);
       base.Load += new System.EventHandler(_OnLoad);
       /************************************************/
       this.contextMenuStrip1.ResumeLayout(false);
@@ -246,16 +164,13 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.PerformLayout();
     }
     /************************************************/
-    public Label nameLabel = null;
-    public PictureBox iconPictureBox = null;
+    private Label nameLabel = null;
+    private PictureBox iconPictureBox = null;
     private Label pidLabel = null;
-    public VLedBar leftVLedBar = null;
+    private VLedBar leftVLedBar = null;
     public MACTrackBar volumeMACTrackBar = null;
     private Label volumeLabel = null;
-    public CheCheckBox muteCheCheckBox = null;
-    public CheCheckBox BtnShowProcess;
-    public Button btnTransfert;
-    public CheCheckBox btnLock;
+    public CheckBox muteCheckBox = null;
     private ContextMenuStrip contextMenuStrip1;
     private ToolStripMenuItem toolStripMenuItem1;
     private ToolStripMenuItem toolStripMenuItem2;
