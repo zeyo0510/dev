@@ -39,9 +39,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       // HTrackBar
       {
         base.Name        = "HTrackBar";
-        base.ClientSize  = new Size(150          , 030);
-        base.MaximumSize = new Size(this.MaxValue, 030);
-        base.MinimumSize = new Size(150          , 030);
+        base.ClientSize  = new Size(150 , 030);
+        base.MaximumSize = new Size(1500, 030);
+        base.MinimumSize = new Size(150 , 030);
       }
     }
   }

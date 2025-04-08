@@ -30,14 +30,14 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       this.guiTimer = new Timer(this.components);
       /************************************************/
-      this.nameLabel         = new Label();
-      this.iconPictureBox    = new PictureBox();
-      this.defaultCheckBox   = new CheckBox();
-      this.leftVLedBar        = new VLedBar();
-      this.volumeMACTrackBar = new MACTrackBar();
-      this.rightVLedBar       = new VLedBar();
-      this.volumeLabel       = new Label();
-      this.muteCheckBox      = new CheckBox();
+      this.nameLabel       = new Label();
+      this.iconPictureBox  = new PictureBox();
+      this.defaultCheckBox = new CheckBox();
+      this.leftVLedBar     = new VLedBar();
+      this.volumeVTrackBar = new VTrackBar();
+      this.rightVLedBar    = new VLedBar();
+      this.volumeLabel     = new Label();
+      this.muteCheckBox    = new CheckBox();
       /************************************************/
       ((System.ComponentModel.ISupportInitialize)this.iconPictureBox).BeginInit();
       base.SuspendLayout();
@@ -66,33 +66,12 @@ namespace App.Windows.MediaDerviceManager.Controls
       // leftVLedBar
       this.leftVLedBar.Name     = "leftLedBar";
       this.leftVLedBar.Location = new Point(13, 132);
-      // volumeMACTrackBar
-      this.volumeMACTrackBar.Name = "volumeMACTrackBar";
-      this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
-      this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-      this.volumeMACTrackBar.Cursor = Cursors.Hand;
-      this.volumeMACTrackBar.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-      this.volumeMACTrackBar.ForeColor = System.Drawing.Color.FromArgb(123, 125, 123);
-      this.volumeMACTrackBar.IndentHeight = 6;
-      this.volumeMACTrackBar.LargeChange = 1;
-      this.volumeMACTrackBar.Location = new System.Drawing.Point(23, 121);
-      this.volumeMACTrackBar.Maximum = 100;
-      this.volumeMACTrackBar.Minimum = 0;
-      this.volumeMACTrackBar.Orientation = Orientation.Vertical;
-      this.volumeMACTrackBar.Size = new System.Drawing.Size(79, 247);
-      this.volumeMACTrackBar.TabIndex = 10;
-      this.volumeMACTrackBar.TextTickStyle = TickStyle.Both;
-      this.volumeMACTrackBar.TickColor = System.Drawing.Color.FromArgb(148, 146, 148);
-      this.volumeMACTrackBar.TickFrequency = 10;
-      this.volumeMACTrackBar.TickHeight = 4;
-      this.volumeMACTrackBar.TickStyle = TickStyle.Both;
-      this.volumeMACTrackBar.TrackerColor = System.Drawing.Color.FromArgb(255, 110, 0);
-      this.volumeMACTrackBar.TrackerSize = new System.Drawing.Size(16, 16);
-      this.volumeMACTrackBar.TrackLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
-      this.volumeMACTrackBar.VolumeLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
-      this.volumeMACTrackBar.TrackLineHeight = 3;
-      this.volumeMACTrackBar.Value = 0;
-      this.volumeMACTrackBar.ValueChanged += this.volumeMACTrackBar_OnValueChanged;
+      // volumeVTrackBar
+      this.volumeVTrackBar.Name = "volumeVTrackBar";
+      this.volumeVTrackBar.Location = new Point(50, 132);
+      this.volumeVTrackBar.Size = new Size(030, 225);
+      this.volumeVTrackBar.Direction = VDirection.BottomTop;
+      this.volumeVTrackBar.ValueChanged += this.volumeVTrackBar_ValueChanged;
       // rightVLedBar
       this.rightVLedBar.Name     = "rightVLedBar";
       this.rightVLedBar.Location = new Point(108, 132);
@@ -121,7 +100,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.Controls.Add(this.defaultCheckBox);
       base.Controls.Add(this.rightVLedBar);
       base.Controls.Add(this.volumeLabel);
-      base.Controls.Add(this.volumeMACTrackBar);
+      base.Controls.Add(this.volumeVTrackBar);
       base.Controls.Add(this.muteCheckBox);
       base.Controls.Add(this.nameLabel);
       base.Controls.Add(this.iconPictureBox);
@@ -131,13 +110,13 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.PerformLayout();
     }
     /************************************************/
-    private Label       nameLabel         = null;
-    private PictureBox  iconPictureBox    = null;
-    private CheckBox    defaultCheckBox   = null;
-    private VLedBar     leftVLedBar       = null;
-    private MACTrackBar volumeMACTrackBar = null;
-    private VLedBar     rightVLedBar      = null;
-    private Label       volumeLabel       = null;
-    private CheckBox    muteCheckBox      = null;
+    private Label      nameLabel       = null;
+    private PictureBox iconPictureBox  = null;
+    private CheckBox   defaultCheckBox = null;
+    private VLedBar    leftVLedBar     = null;
+    private VTrackBar  volumeVTrackBar = null;
+    private VLedBar    rightVLedBar    = null;
+    private Label      volumeLabel     = null;
+    private CheckBox   muteCheckBox    = null;
   }
 }

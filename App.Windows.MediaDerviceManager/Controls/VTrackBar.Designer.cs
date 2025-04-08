@@ -39,7 +39,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         base.Name        = "VTrackBar";
         base.ClientSize  = new Size(030, 150);
-        base.MaximumSize = new Size(030, int.MaxValue);
+        base.MaximumSize = new Size(030, 1500);
         base.MinimumSize = new Size(030, 150);
       }
     }

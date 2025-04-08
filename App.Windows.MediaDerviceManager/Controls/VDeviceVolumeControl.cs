@@ -35,8 +35,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       base.Tag = _MMDevice1.ID;
       /************************************************/
-      volumeMACTrackBar.audioEndpointVolume1 = _AudioEndpointVolume1;
-      /************************************************/
       Icon icon = ImageHelper.Method1(_MMDevice1.IconPath);
       if (icon.Height > 0)
       {
@@ -70,17 +68,14 @@ namespace App.Windows.MediaDerviceManager.Controls
         {
           leftVLedBar.Value = array[0];
           rightVLedBar.Value = array[0];
-          volumeMACTrackBar.SetActualVolume(array[0]);
         }
         else
         {
           leftVLedBar.Value = array[0];
           rightVLedBar.Value = array[1];
-          volumeMACTrackBar.SetActualVolume((array[0] + array[1]) / 2f);
         }
       }
-      volumeMACTrackBar.Refresh();
-      
+      /************************************************/
       this.UpdateUI();
     }
     /************************************************/
@@ -96,14 +91,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
     }
     /************************************************/
-    private void volumeMACTrackBar_OnValueChanged(object sender, decimal n)
+    private void volumeVTrackBar_ValueChanged(object sender, EventArgs e)
     {
-      volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
-      if (volumeMACTrackBar.bool1)
-      {
-        volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
-        _AudioEndpointVolume1.Mute = false;
-      }
+      this._AudioEndpointVolume1.Volume = this.volumeVTrackBar.Value;
     }
     /************************************************/
     private void muteCheckBox_Click(object sender, EventArgs e)
