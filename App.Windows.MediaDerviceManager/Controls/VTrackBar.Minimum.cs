@@ -2,28 +2,30 @@
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class TrackBarEx
+  partial class VTrackBar
   {
-    private int _Value = 50;
+    private int _Min = 0;
     /************************************************/
-    public int Value
+    public int Minimum
     {
       get
       {
-        int retValue = this._Value;
+        int retValue = this._Min;
         /************************************************/
         return retValue;
       }
       set
       {
-        if (value < this.Minimum) value = this.Minimum;
-        if (value > this.Maximum) value = this.Maximum;
+        value = Math.Min(value, this.Maximum);
         /************************************************/
-        if (this._Value == value) return;
+        if (value == this._Min) return;
         /************************************************/
-        this._Value = value;
+        this._Min = value;
         /************************************************/
-        if (this.ValueChanged != null) this.ValueChanged(this, EventArgs.Empty);
+        if (this.Value < this._Min)
+        {
+          this.Value = this._Min;
+        }
         /************************************************/
         base.Invalidate();
       }

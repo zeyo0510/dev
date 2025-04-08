@@ -151,31 +151,55 @@
     <Compile Include="Controls\HLedBar.OnPaint.cs">
       <DependentUpon>HLedBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\LayoutDirection.cs" />
-    <Compile Include="Controls\TrackBarEx.cs" />
-    <Compile Include="Controls\TrackBarEx.Designer.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\HTrackBar.cs" />
+    <Compile Include="Controls\VTrackBar.cs" />
+    <Compile Include="Controls\HTrackBar.Designer.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrackBarEx.Direction.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\VTrackBar.Designer.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrackBarEx.Maximum.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\HTrackBar.Direction.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrackBarEx.Minimum.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\VTrackBar.Direction.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrackBarEx.OnMouse.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\HTrackBar.Maximum.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrackBarEx.OnPaint.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\VTrackBar.Maximum.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrackBarEx.Value.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\HTrackBar.Minimum.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TrackBarEx.ValueChanged.cs">
-      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    <Compile Include="Controls\VTrackBar.Minimum.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HTrackBar.OnMouse.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VTrackBar.OnMouse.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HTrackBar.OnPaint.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VTrackBar.OnPaint.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HTrackBar.Value.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VTrackBar.Value.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HTrackBar.ValueChanged.cs">
+      <DependentUpon>HTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VTrackBar.ValueChanged.cs">
+      <DependentUpon>VTrackBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\VDeviceVolumeControl.cs" />
     <Compile Include="Controls\HDeviceVolumeControl.cs" />

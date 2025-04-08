@@ -4,7 +4,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class TrackBarEx
+  partial class VTrackBar
   {
     protected override void OnPaint(PaintEventArgs e)
     {
@@ -12,10 +12,8 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       Graphics g = e.Graphics;
       /************************************************/
-      if (this.Direction == LayoutDirection.LeftToRight) this.DrawHorizontal(g, false);
-      if (this.Direction == LayoutDirection.RightToLeft) this.DrawHorizontal(g, true );
-      if (this.Direction == LayoutDirection.TopToBottom) this.DrawVertical  (g, false);
-      if (this.Direction == LayoutDirection.BottomToTop) this.DrawVertical  (g, true );
+      if (this.Direction == VDirection.TopBottom) this.DrawVertical  (g, false);
+      if (this.Direction == VDirection.BottomTop) this.DrawVertical  (g, true );
     }
     /************************************************/
     private void DrawHorizontal(Graphics g, bool reverse)

@@ -2,15 +2,15 @@
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class TrackBarEx
+  partial class VTrackBar
   {
-    private LayoutDirection _Direction = LayoutDirection.LeftToRight;
+    private VDirection _Direction = VDirection.TopBottom;
     /************************************************/
-    public LayoutDirection Direction
+    public VDirection Direction
     {
       get
       {
-        LayoutDirection retValue = this._Direction;
+        VDirection retValue = this._Direction;
         /************************************************/
         return retValue;
       }

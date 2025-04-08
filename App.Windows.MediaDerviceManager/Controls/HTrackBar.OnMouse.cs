@@ -3,7 +3,7 @@ using System.Windows.Forms;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class TrackBarEx
+  partial class HTrackBar
   {
     private bool _dragging = false;
     /************************************************/
@@ -46,10 +46,8 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       float percentage = 0f;
       /************************************************/
-      if (this.Direction == LayoutDirection.LeftToRight) percentage = (float)x / this.Width;
-      if (this.Direction == LayoutDirection.RightToLeft) percentage = (float)(this.Width - x) / this.Width;
-      if (this.Direction == LayoutDirection.TopToBottom) percentage = (float)y / this.Height;
-      if (this.Direction == LayoutDirection.BottomToTop) percentage = (float)(this.Height - y) / this.Height;
+      if (this.Direction == HDirection.LeftRight) percentage = (float)x / this.Width;
+      if (this.Direction == HDirection.RightLeft) percentage = (float)(this.Width - x) / this.Width;
       /************************************************/
       percentage = Math.Min(1, percentage);
       percentage = Math.Max(0, percentage);

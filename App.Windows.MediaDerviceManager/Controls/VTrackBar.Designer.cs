@@ -5,7 +5,7 @@ using System.Timers;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  partial class TrackBarEx
+  partial class VTrackBar
   {
     private IContainer components = null;
     /************************************************/

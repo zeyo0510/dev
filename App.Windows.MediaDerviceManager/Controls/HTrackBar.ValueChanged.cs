@@ -2,11 +2,8 @@
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  public enum LayoutDirection
+  partial class HTrackBar
   {
-    LeftToRight = 0,
-    TopToBottom = 1,
-    RightToLeft = 2,
-    BottomToTop = 3,
+    public event EventHandler ValueChanged = null;
   }
 }
