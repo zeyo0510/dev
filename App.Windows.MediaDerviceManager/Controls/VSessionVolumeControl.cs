@@ -1,5 +1,4 @@
 using System;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -182,6 +181,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         timer1.Interval = 10;
         timer1.Tick += timer1_Tick;
+        timer1.Start();
       }
       /************************************************/
       RegisterAudioSessionNotification(this);
@@ -271,12 +271,7 @@ namespace App.Windows.MediaDerviceManager.Controls
 
     public int OnSimpleVolumeChanged(float P_0, bool P_1, Guid P_2)
     {
-      SetMute(P_1);
-      SetVolumeText(Math.Ceiling(P_0 * 100f).ToString());
-      if (!volumeMACTrackBar.bool1)
-      {
-        SetTrackBar((decimal)Math.Ceiling(P_0 * 100f));
-      }
+      this.UpdateUI();
       return 0;
     }
 
@@ -322,10 +317,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         leftVLedBar.Value = 0f;
       }
-      if (num1++ < 100)
-      {
-        return;
-      }
+      
       if (process1 != null && process1.Id != 0)
       {
         process1.Refresh();
@@ -337,19 +329,8 @@ namespace App.Windows.MediaDerviceManager.Controls
         {
         }
       }
-      num1 = 0;
-    }
-
-    private void SetTrackBar(decimal P_0)
-    {
-      if (base.InvokeRequired)
-      {
-        Invoke(new Action<decimal>(SetTrackBar), P_0);
-      }
-      else
-      {
-        volumeMACTrackBar.Value = (int)P_0;
-      }
+      /************************************************/
+      this.UpdateUI();
     }
 
     private void BuildContextMenu()
@@ -459,30 +440,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       registryKey2.OpenSubKey("Data", true).SetValue(str1, P_1);
     }
 
-    public void SetMute(bool P_0)
-    {
-      if (base.InvokeRequired)
-      {
-        Invoke(new Action<bool>(SetMute), P_0);
-      }
-      else
-      {
-        muteCheckBox.Checked = P_0;
-      }
-    }
-
-    public void SetVolumeText(string P_0)
-    {
-      if (base.InvokeRequired)
-      {
-        Invoke(new Action<string>(SetVolumeText), P_0);
-      }
-      else
-      {
-        volumeLabel.Text = P_0;
-      }
-    }
-
     public void RefreshProcess(string P_0)
     {
       if (base.InvokeRequired)
@@ -493,18 +450,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         process1.Refresh();
         nameLabel.Text = process1.MainWindowTitle;
-      }
-    }
-
-    public void SetVolume(float P_0)
-    {
-      if (base.InvokeRequired)
-      {
-        Invoke(new Action<float>(SetVolume), P_0);
-      }
-      else if (!volumeMACTrackBar.bool1)
-      {
-        volumeMACTrackBar.Value = int.Parse(Math.Ceiling(P_0 * 100f).ToString());
       }
     }
 
@@ -531,44 +476,45 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
     }
 
-    public void OnStateChanged2(AudioSessionState P_0)
+    public void OnStateChanged2(AudioSessionState state)
     {
       if (base.InvokeRequired)
       {
-        Invoke(new Action<AudioSessionState>(OnStateChanged2), P_0);
+        Invoke(new Action<AudioSessionState>(OnStateChanged2), state);
         return;
       }
-      switch (P_0)
+      /************************************************/
+      switch (state)
       {
-      case AudioSessionState.AudioSessionStateActive:
-        SetVisible(true);
-        timer1.Start();
-        break;
-      case AudioSessionState.AudioSessionStateInactive:
-        if (IsAdvancedUser)
-        {
+        case AudioSessionState.AudioSessionStateActive:
           SetVisible(true);
-          leftVLedBar.Value = 0f;
-          timer1.Start();
-        }
-        else
-        {
+//          timer1.Start();
+          break;
+        case AudioSessionState.AudioSessionStateInactive:
+          if (IsAdvancedUser)
+          {
+            SetVisible(true);
+            leftVLedBar.Value = 0f;
+//            timer1.Start();
+          }
+          else
+          {
+            SetVisible(false);
+            leftVLedBar.Value = 0f;
+//            timer1.Stop();
+          }
+          break;
+        case AudioSessionState.AudioSessionStateExpired:
           SetVisible(false);
-          leftVLedBar.Value = 0f;
-          timer1.Stop();
-        }
-        break;
-      case AudioSessionState.AudioSessionStateExpired:
-        SetVisible(false);
-        try
-        {
-          base.Parent.Controls.Remove(this);
-        }
-        catch (Exception)
-        {
-        }
-        timer1.Stop();
-        break;
+          try
+          {
+            base.Parent.Controls.Remove(this);
+          }
+          catch (Exception)
+          {
+          }
+//          timer1.Stop();
+          break;
       }
     }
 
@@ -638,47 +584,14 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
     }
     /************************************************/
-    private void macTrackBar1_ValueChanged(object sender, decimal P_1)
+    private void volumeVTrackBar_ValueChanged(object sender, EventArgs e)
     {
-      if (!bool1)
-      {
-        bool1 = true;
-        return;
-      }
-      if (P_1 > 100m)
-      {
-        P_1 = 100m;
-      }
-      if (P_1 < 0m)
-      {
-        P_1 = default(decimal);
-      }
-      if (volumeMACTrackBar.bool1)
-      {
-        volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
-        _AudioSessionControl1.SetMute(false);
-        _AudioSessionControl1.SetVolume((int)P_1);
-      }
-      else
-      {
-        SetTrackBar(P_1);
-      }
+      this._AudioSessionControl1.SetVolume(this.volumeVTrackBar.Value);
     }
     /************************************************/
-    private void muteCheckBox_CheckedChanged(object sender, EventArgs e)
+    private void muteCheckBox_Click(object sender, EventArgs e)
     {
-      if (muteCheckBox.Checked)
-      {
-        leftVLedBar.Color = false;
-        volumeMACTrackBar.TrackerColor = Color.DarkGray;
-      }
-      else
-      {
-        leftVLedBar.Color = true;
-        volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
-      }
-      _AudioSessionControl1.SetMute(muteCheckBox.Checked);
-      volumeLabel.Focus();
+      _AudioSessionControl1.SetMute(!_AudioSessionControl1.GetMute());
     }
   }
 }

@@ -95,7 +95,7 @@ namespace AudioCore
 			return result;
 		}
 
-		public float SetVolume()
+		public float GetVolume()
 		{
 			float result;
 			Marshal.ThrowExceptionForHR(((ISimpleAudioVolume)_AudioSessionControl2_).GetMasterVolume(out result));

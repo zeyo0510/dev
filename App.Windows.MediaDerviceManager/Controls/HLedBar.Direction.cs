@@ -16,12 +16,11 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       set
       {
-        if (value != this._Direction)
-        {
-          this._Direction = value;
-          /************************************************/
-          base.Invalidate();
-        }
+        if (value == this._Direction) return;
+        /************************************************/
+        this._Direction = value;
+        /************************************************/
+        base.Invalidate();
       }
     }
   }

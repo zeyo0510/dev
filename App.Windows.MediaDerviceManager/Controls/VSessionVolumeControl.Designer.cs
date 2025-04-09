@@ -21,20 +21,19 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       base.Dispose(disposing);
     }
-
     /************************************************/
     private void InitializeComponent()
     {
       this.components = new Container();
       /************************************************/
-      this.nameLabel = new Label();
-      this.iconPictureBox = new PictureBox();
-      this.pidLabel = new Label();
-      this.leftVLedBar = new VLedBar();
-      this.volumeMACTrackBar = new MACTrackBar();
-      this.volumeLabel = new Label();
-      this.muteCheckBox = new CheckBox();
-      this.contextMenuStrip1 = new ContextMenuStrip(this.components);
+      this.nameLabel          = new Label();
+      this.iconPictureBox     = new PictureBox();
+      this.pidLabel           = new Label();
+      this.leftVLedBar        = new VLedBar();
+      this.volumeVTrackBar    = new VTrackBar();
+      this.volumeLabel        = new Label();
+      this.muteCheckBox       = new CheckBox();
+      this.contextMenuStrip1  = new ContextMenuStrip(this.components);
       this.toolStripMenuItem1 = new ToolStripMenuItem();
       this.toolStripMenuItem2 = new ToolStripMenuItem();
       this.toolStripMenuItem3 = new ToolStripMenuItem();
@@ -77,31 +76,12 @@ namespace App.Windows.MediaDerviceManager.Controls
       // leftVLedBar
       this.leftVLedBar.Name = "leftVLedBar";
       this.leftVLedBar.Location = new Point(22, 132);
-      // volumeMACTrackBar
-      this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
-      this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-      this.volumeMACTrackBar.Cursor = Cursors.Hand;
-      this.volumeMACTrackBar.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-      this.volumeMACTrackBar.ForeColor = System.Drawing.Color.FromArgb(123, 125, 123);
-      this.volumeMACTrackBar.IndentHeight = 6;
-      this.volumeMACTrackBar.LargeChange = 1;
-      this.volumeMACTrackBar.Location = new System.Drawing.Point(30, 121);
-      this.volumeMACTrackBar.Maximum = 100;
-      this.volumeMACTrackBar.Minimum = 0;
-      this.volumeMACTrackBar.Name = "volumeMACTrackBar";
-      this.volumeMACTrackBar.Orientation = Orientation.Vertical;
-      this.volumeMACTrackBar.Size = new System.Drawing.Size(58, 247);
-      this.volumeMACTrackBar.TabIndex = 10;
-      this.volumeMACTrackBar.TickColor = System.Drawing.Color.FromArgb(148, 146, 148);
-      this.volumeMACTrackBar.TickFrequency = 10;
-      this.volumeMACTrackBar.TickHeight = 4;
-      this.volumeMACTrackBar.TickStyle = TickStyle.Both;
-      this.volumeMACTrackBar.TrackerColor = System.Drawing.Color.FromArgb(255, 128, 0);
-      this.volumeMACTrackBar.TrackerSize = new System.Drawing.Size(16, 16);
-      this.volumeMACTrackBar.TrackLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
-      this.volumeMACTrackBar.TrackLineHeight = 3;
-      this.volumeMACTrackBar.Value = 0;
-      this.volumeMACTrackBar.ValueChanged += macTrackBar1_ValueChanged;
+      // volumeVTrackBar
+      this.volumeVTrackBar.Name = "volumeVTrackBar";
+      this.volumeVTrackBar.Location = new System.Drawing.Point(30, 132);
+      this.volumeVTrackBar.Size = new Size(030, 225);
+      this.volumeVTrackBar.Direction = VDirection.BottomTop;
+      this.volumeVTrackBar.ValueChanged += this.volumeVTrackBar_ValueChanged;
       // volumeLabel
       this.volumeLabel.BackColor = System.Drawing.Color.Transparent;
       this.volumeLabel.BorderStyle = BorderStyle.FixedSingle;
@@ -120,7 +100,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.muteCheckBox.AutoSize = true;
       this.muteCheckBox.Location = new Point(13, 400);
       this.muteCheckBox.Text     = "Mute";
-      this.muteCheckBox.CheckedChanged += this.muteCheckBox_CheckedChanged;
+      this.muteCheckBox.Click += muteCheckBox_Click;
       // contextMenuStrip1
       this.contextMenuStrip1.Font = new System.Drawing.Font("Verdana", 11f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
       this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
@@ -151,7 +131,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.Size = new System.Drawing.Size(100, 485);
       base.Controls.Add(this.pidLabel);
       base.Controls.Add(this.volumeLabel);
-      base.Controls.Add(this.volumeMACTrackBar);
+      base.Controls.Add(this.volumeVTrackBar);
       base.Controls.Add(this.muteCheckBox);
       base.Controls.Add(this.nameLabel);
       base.Controls.Add(this.leftVLedBar);
@@ -164,14 +144,14 @@ namespace App.Windows.MediaDerviceManager.Controls
       base.PerformLayout();
     }
     /************************************************/
-    private Label nameLabel = null;
-    private PictureBox iconPictureBox = null;
-    private Label pidLabel = null;
-    private VLedBar leftVLedBar = null;
-    public MACTrackBar volumeMACTrackBar = null;
-    private Label volumeLabel = null;
-    public CheckBox muteCheckBox = null;
-    private ContextMenuStrip contextMenuStrip1;
+    private Label             nameLabel         = null;
+    private PictureBox        iconPictureBox    = null;
+    private Label             pidLabel          = null;
+    private VLedBar           leftVLedBar       = null;
+    private VTrackBar         volumeVTrackBar   = null;
+    private Label             volumeLabel       = null;
+    private CheckBox          muteCheckBox      = null;
+    private ContextMenuStrip  contextMenuStrip1;
     private ToolStripMenuItem toolStripMenuItem1;
     private ToolStripMenuItem toolStripMenuItem2;
     private ToolStripMenuItem toolStripMenuItem3;

@@ -131,11 +131,9 @@ namespace B
 			if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
 			{
 				sessionVolumeControl = new VSessionVolumeControl(P_0, process);
-				int value = int.Parse(Math.Ceiling(P_0.SetVolume() * 100f).ToString());
+				int value = int.Parse(Math.Ceiling(P_0.GetVolume() * 100f).ToString());
 				sessionVolumeControl._MMDeviceCollection1 = mmDeviceCollection1;
 				sessionVolumeControl._MMDevice1 = mmDevice1;
-				sessionVolumeControl.muteCheckBox.Checked = P_0.GetMute();
-				sessionVolumeControl.volumeMACTrackBar.Value = value;
 				base.Controls.Add(sessionVolumeControl);
 			}
 		}

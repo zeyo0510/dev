@@ -16,12 +16,11 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       set
       {
-        if (value != this._Color)
-        {
-          this._Color = value;
-          /************************************************/
-          base.Invalidate();
-        }
+        if (value == this._Color) return;
+        /************************************************/
+        this._Color = value;
+        /************************************************/
+        base.Invalidate();
       }
     }
   }
