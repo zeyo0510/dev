@@ -33,8 +33,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       base.Tag = _MMDevice1.ID;
       /************************************************/
-      volumeMACTrackBar.audioEndpointVolume1 = _AudioEndpointVolume;
-      /************************************************/
       Icon icon = ImageHelper.Method1(_MMDevice1.IconPath);
       if (icon.Height > 0)
       {
@@ -50,7 +48,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.UpdateUI();
     }
     /************************************************/
-    private void timer1_Tick(object P_0, EventArgs P_1)
+    private void timer1_Tick(object sender, EventArgs e)
     {
       float[] array = new float[0];
       try
@@ -59,20 +57,22 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
       catch (Exception)
       {
-        volumeMACTrackBar.SetActualVolume(0f);
+        leftHLedBar.Value = 0f;
+        rightHLedBar.Value = 0f;
       }
       if (Enumerable.Count(array) > 0)
       {
         if (Enumerable.Count(array) == 1)
         {
-          volumeMACTrackBar.SetActualVolume(array[0]);
+          leftHLedBar.Value = array[0];
+          rightHLedBar.Value = array[0];
         }
         else
         {
-          volumeMACTrackBar.SetActualVolume((array[0] + array[1]) / 2f);
+          leftHLedBar.Value = array[0];
+          rightHLedBar.Value = array[1];
         }
       }
-      volumeMACTrackBar.Refresh();
       /************************************************/
       this.UpdateUI();
     }
@@ -94,14 +94,9 @@ namespace App.Windows.MediaDerviceManager.Controls
       this._AudioEndpointVolume.Mute = !this._AudioEndpointVolume.Mute;
     }
     /************************************************/
-    private void volumeMACTrackBar_ValueChanged(object sender, decimal n)
+    private void volumeHTrackBar_ValueChanged(object sender, EventArgs e)
     {
-      volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
-      if (volumeMACTrackBar.bool1)
-      {
-        volumeMACTrackBar.TrackerColor = Color.FromArgb(255, 128, 0);
-        _AudioEndpointVolume.Mute = false;
-      }
+      this._AudioEndpointVolume.Volume =  this.volumeHTrackBar.Value;
     }
   }
 }

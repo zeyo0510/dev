@@ -143,7 +143,6 @@
     <Compile Include="Controls\AudioSessionManagerPanel.Designer.cs">
       <DependentUpon>AudioSessionManagerPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\CheCheckBox.cs" />
     <Compile Include="Controls\HDeviceVolumeControl.Designer.cs">
       <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
     </Compile>
@@ -262,12 +261,6 @@
       <DependentUpon>VSessionVolumeControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\MainForm.cs" />
-    <Compile Include="EConTech.Windows.MACUI\ColorHelper.cs" />
-    <Compile Include="EConTech.Windows.MACUI\DrawMACStyleHelper.cs" />
-    <Compile Include="EConTech.Windows.MACUI\MACBorderStyle.cs" />
-    <Compile Include="EConTech.Windows.MACUI\MACTrackBar.cs" />
-    <Compile Include="EConTech.Windows.MACUI\MACTrackBarDesigner.cs" />
-    <Compile Include="EConTech.Windows.MACUI\ValueChangedHandler.cs" />
     <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
@@ -293,7 +286,6 @@
     <Folder Include="B" />
     <Folder Include="Controls" />
     <Folder Include="Main" />
-    <Folder Include="EConTech.Windows.MACUI" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

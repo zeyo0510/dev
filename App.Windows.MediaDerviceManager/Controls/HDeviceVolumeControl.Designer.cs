@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
-using EConTech.Windows.MACUI;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
@@ -32,8 +32,10 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.defaultCheckBox = new CheckBox();
       this.iconPictureBox = new PictureBox();
       this.nameLabel = new Label();
+      this.leftHLedBar = new HLedBar();
+      this.volumeHTrackBar = new HTrackBar();
+      this.rightHLedBar = new HLedBar();
       this.muteCheckBox = new CheckBox();
-      this.volumeMACTrackBar = new MACTrackBar();
       /************************************************/
       ((System.ComponentModel.ISupportInitialize)this.iconPictureBox).BeginInit();
       base.SuspendLayout();
@@ -44,72 +46,58 @@ namespace App.Windows.MediaDerviceManager.Controls
       // defaultCheckBox
       this.defaultCheckBox.Name = "defaultCheckBox";
       this.defaultCheckBox.AutoSize = true;
-      this.defaultCheckBox.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-      this.defaultCheckBox.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-      this.defaultCheckBox.Location = new System.Drawing.Point(34, 23);
-      this.defaultCheckBox.Size = new System.Drawing.Size(18, 17);
-      this.defaultCheckBox.MouseClick += new MouseEventHandler(defaultCheckBox_MouseClick);
+      this.defaultCheckBox.Font = new Font("Verdana", 10f, FontStyle.Bold, GraphicsUnit.World);
+      this.defaultCheckBox.ForeColor = Color.FromArgb(64, 64, 64);
+      this.defaultCheckBox.Location = new Point(34, 23);
+      this.defaultCheckBox.Size = new Size(18, 17);
+      this.defaultCheckBox.MouseClick += defaultCheckBox_MouseClick;
       // iconPictureBox
-      this.iconPictureBox.BackColor = System.Drawing.Color.Transparent;
-      this.iconPictureBox.Location = new System.Drawing.Point(71, 12);
-      this.iconPictureBox.Margin = new Padding(0);
       this.iconPictureBox.Name = "IconBox";
-      this.iconPictureBox.Size = new System.Drawing.Size(43, 39);
+      this.iconPictureBox.BackColor = Color.Transparent;
+      this.iconPictureBox.Location = new Point(71, 12);
+      this.iconPictureBox.Margin = new Padding(0);
+      this.iconPictureBox.Size = new Size(43, 39);
       // nameLabel
-      this.nameLabel.Font = new System.Drawing.Font("Verdana", 11f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-      this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(64, 64, 64);
-      this.nameLabel.Location = new System.Drawing.Point(119, 4);
       this.nameLabel.Name = "nameLabel";
-      this.nameLabel.Size = new System.Drawing.Size(157, 59);
+      this.nameLabel.Font = new Font("Verdana", 11f, FontStyle.Bold, GraphicsUnit.World);
+      this.nameLabel.ForeColor = Color.FromArgb(64, 64, 64);
+      this.nameLabel.Location = new Point(119, 4);
+      this.nameLabel.Size = new Size(157, 59);
       this.nameLabel.Text = "Temp Text";
-      this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+      this.nameLabel.TextAlign = ContentAlignment.MiddleLeft;
+      // leftHLedBar
+      this.leftHLedBar.Name = "leftHLedBar";
+      this.leftHLedBar.Location = new Point(15, 40);
+      // volumeHTrackBar
+      this.volumeHTrackBar.Name = "volumeHTrackBar";
+      this.volumeHTrackBar.Location = new Point(15, 45);
+      this.volumeHTrackBar.Size = new Size(225, 4);
+      this.volumeHTrackBar.ValueChanged += this.volumeHTrackBar_ValueChanged;
+      // rightHLedBar
+      this.rightHLedBar.Name = "rightHLedBar";
+      this.rightHLedBar.Location = new Point(15, 72);
       // muteCheckBox
       this.muteCheckBox.Name = "muteCheckBox";
       this.muteCheckBox.AutoSize = true;
-      this.muteCheckBox.Location = new System.Drawing.Point(287, 12);
-      this.muteCheckBox.Size = new System.Drawing.Size(34, 34);
+      this.muteCheckBox.Location = new Point(287, 12);
+      this.muteCheckBox.Size = new Size(34, 34);
       this.muteCheckBox.Text = "Mute";
-      this.muteCheckBox.Click += new System.EventHandler(muteCheckBox_Click);
-      // volumeMACTrackBar
-      this.volumeMACTrackBar.BackColor = System.Drawing.Color.Transparent;
-      this.volumeMACTrackBar.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-      this.volumeMACTrackBar.Cursor = Cursors.Hand;
-      this.volumeMACTrackBar.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-      this.volumeMACTrackBar.ForeColor = System.Drawing.Color.FromArgb(123, 125, 123);
-      this.volumeMACTrackBar.IndentHeight = 6;
-      this.volumeMACTrackBar.LargeChange = 1;
-      this.volumeMACTrackBar.Location = new System.Drawing.Point(13, 54);
-      this.volumeMACTrackBar.Margin = new Padding(4);
-      this.volumeMACTrackBar.Maximum = 100;
-      this.volumeMACTrackBar.Minimum = 0;
-      this.volumeMACTrackBar.Name = "macTrackBar1";
-      this.volumeMACTrackBar.Size = new System.Drawing.Size(329, 28);
-      this.volumeMACTrackBar.TabIndex = 10;
-      this.volumeMACTrackBar.TextTickStyle = TickStyle.None;
-      this.volumeMACTrackBar.TickColor = System.Drawing.Color.FromArgb(148, 146, 148);
-      this.volumeMACTrackBar.TickFrequency = 10;
-      this.volumeMACTrackBar.TickHeight = 4;
-      this.volumeMACTrackBar.TickStyle = TickStyle.None;
-      this.volumeMACTrackBar.TrackerColor = System.Drawing.Color.FromArgb(255, 110, 0);
-      this.volumeMACTrackBar.TrackerSize = new System.Drawing.Size(16, 16);
-      this.volumeMACTrackBar.TrackLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
-      this.volumeMACTrackBar.TrackLineHeight = 3;
-      this.volumeMACTrackBar.Value = 0;
-      this.volumeMACTrackBar.VolumeLineColor = System.Drawing.SystemColors.Control;
-      this.volumeMACTrackBar.ValueChanged += volumeMACTrackBar_ValueChanged;
+      this.muteCheckBox.Click += this.muteCheckBox_Click;
       // HDeviceVolumeControl
       base.Name = "HDeviceVolumeControl";
-      base.AutoScaleDimensions = new System.Drawing.SizeF(8f, 16f);
+      base.AutoScaleDimensions = new SizeF(8f, 16f);
       base.AutoScaleMode = AutoScaleMode.Font;
       base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-      this.BackColor = System.Drawing.Color.Transparent;
+      this.BackColor = Color.Transparent;
+      base.Controls.Add(this.leftHLedBar);
+      base.Controls.Add(this.rightHLedBar);
       base.Controls.Add(this.defaultCheckBox);
-      base.Controls.Add(this.volumeMACTrackBar);
+      base.Controls.Add(this.volumeHTrackBar);
       base.Controls.Add(this.muteCheckBox);
       base.Controls.Add(this.nameLabel);
       base.Controls.Add(this.iconPictureBox);
       base.Margin = new Padding(0);
-      base.Size = new System.Drawing.Size(364, 81);
+      base.Size = new Size(364, 100);
       /************************************************/
       ((System.ComponentModel.ISupportInitialize)this.iconPictureBox).EndInit();
       base.ResumeLayout(false);
@@ -119,7 +107,9 @@ namespace App.Windows.MediaDerviceManager.Controls
     private CheckBox defaultCheckBox = null;
     private PictureBox iconPictureBox = null;
     private Label nameLabel = null;
+    private HLedBar leftHLedBar = null;
+    private HTrackBar volumeHTrackBar = null;
+    private HLedBar rightHLedBar = null;
     private CheckBox muteCheckBox = null;
-    private MACTrackBar volumeMACTrackBar = null;
   }
 }
