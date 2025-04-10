@@ -53,19 +53,11 @@ namespace App.Windows.MediaDerviceManager.Controls
       Item2
     }
 
-    private Timer timer1;
-
     public Process process1;
 
     public string str1;
 
-    private int num2;
-
-    private bool bool1;
-
     private readonly Enum1 enum1;
-
-    private int num1;
 
     private EDataFlow Flow
     {
@@ -177,16 +169,15 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       pidLabel.Text = process1.Id.ToString();
       /************************************************/
-      timer1 = new Timer();
+      guiTimer = new Timer();
       {
-        timer1.Interval = 10;
-        timer1.Tick += timer1_Tick;
-        timer1.Start();
+        guiTimer.Interval = 10;
+        guiTimer.Tick += timer1_Tick;
+        guiTimer.Start();
       }
       /************************************************/
       RegisterAudioSessionNotification(this);
       base.Tag = _AudioSessionControl1.SessionInstanceIdentifier.ToString();
-      bool1 = false;
       base.Margin = new Padding(0);
       string audioSetivceDLL = GetAudioSetivceDLL(process1);
       Icon icon = ExtractIcon(audioSetivceDLL, Application.ExecutablePath);

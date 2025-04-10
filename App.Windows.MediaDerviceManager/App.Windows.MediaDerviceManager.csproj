@@ -147,6 +147,9 @@
     <Compile Include="Controls\HDeviceVolumeControl.Designer.cs">
       <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\HDeviceVolumeControl.UpdateUI.cs">
+      <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\HDirection.cs" />
     <Compile Include="Controls\HLedBar.OnPaint.cs">
       <DependentUpon>HLedBar.cs</DependentUpon>

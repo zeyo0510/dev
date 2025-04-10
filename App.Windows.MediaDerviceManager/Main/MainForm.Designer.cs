@@ -28,7 +28,7 @@ namespace App.Windows.MediaDerviceManager.Main
       /************************************************/
       this.toolToolStripContainer1 = new ToolStripContainer();
       this.audioSessionManagerPanel1 = new AudioSessionManagerPanel();
-//      this.HDeviceVolumeControl1 = new HDeviceVolumeControl(mmDeviceCollection1[0]);
+      this.HDeviceVolumeControl1 = new HDeviceVolumeControl(_MMDeviceCollection1[0]);
       this.topMenuStrip = new MenuStrip();
       this.systemToolStripMenuItem = new ToolStripMenuItem();
       this.fileToolStripMenuItem = new ToolStripMenuItem();
@@ -55,15 +55,15 @@ namespace App.Windows.MediaDerviceManager.Main
         this.audioSessionManagerPanel1.AutoSize = true;
         this.audioSessionManagerPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         this.audioSessionManagerPanel1.Location = new Point(5, 5);
-        this.audioSessionManagerPanel1.MinimumSize = new System.Drawing.Size(747, 625);
-        this.audioSessionManagerPanel1.PenColor = System.Drawing.Color.Empty;
+        this.audioSessionManagerPanel1.MinimumSize = new Size(747, 625);
+        this.audioSessionManagerPanel1.PenColor = Color.Empty;
         this.audioSessionManagerPanel1.Thickness = 0;
         this.audioSessionManagerPanel1.WrapContents = false;
       }
       // HDeviceVolumeControl1
       {
-//        this.HDeviceVolumeControl1.Name = "HDeviceVolumeControl1";
-//        this.HDeviceVolumeControl1.Location = new Point(500, 25);
+        this.HDeviceVolumeControl1.Name = "HDeviceVolumeControl1";
+        this.HDeviceVolumeControl1.Location = new Point(500, 25);
       }
       // topMenuStrip
       {
@@ -131,27 +131,23 @@ namespace App.Windows.MediaDerviceManager.Main
         /************************************************/
         this.pinToolStripMenuItem.Click += this.pinToolStripMenuItem_Click;
       }
-      
-      
-      
-      
-      
-      
-
-      base.AutoScaleDimensions = new System.Drawing.SizeF(8f, 16f);
-      base.AutoScaleMode = AutoScaleMode.Font;
-      this.BackColor = System.Drawing.Color.White;
-      base.ClientSize = new System.Drawing.Size(1045, 756);
-//      base.Controls.Add(this.HDeviceVolumeControl1);
-      base.Controls.Add(this.toolToolStripContainer1);
-      base.Controls.Add(this.topMenuStrip);
-      this.DoubleBuffered = true;
-      this.MaximumSize = new System.Drawing.Size(3994, 803);
-      this.MinimumSize = new System.Drawing.Size(794, 803);
-      base.Name = "Main";
-      base.SizeGripStyle = SizeGripStyle.Show;
-      this.Text = "Windows.MediaDerviceManager";
-      base.FormClosing += new FormClosingEventHandler(_OnFormClosing);
+      // MainForm
+      {
+        base.Name = "MainForm";
+        base.AutoScaleDimensions = new SizeF(8f, 16f);
+        base.AutoScaleMode = AutoScaleMode.Font;
+        this.BackColor = Color.White;
+        base.ClientSize = new Size(1045, 756);
+        base.Controls.Add(this.HDeviceVolumeControl1);
+        base.Controls.Add(this.toolToolStripContainer1);
+        base.Controls.Add(this.topMenuStrip);
+        this.DoubleBuffered = true;
+        this.MaximumSize = new Size(3994, 803);
+        this.MinimumSize = new Size(794, 803);
+        base.SizeGripStyle = SizeGripStyle.Show;
+        this.Text = "Windows.MediaDerviceManager";
+        base.FormClosing += new FormClosingEventHandler(_OnFormClosing);
+      }
       /************************************************/
       base.ResumeLayout(false);
       base.PerformLayout();
@@ -159,7 +155,7 @@ namespace App.Windows.MediaDerviceManager.Main
     /************************************************/
     private ToolStripContainer toolToolStripContainer1 = null;
     private AudioSessionManagerPanel audioSessionManagerPanel1 = null;
-//    private HDeviceVolumeControl HDeviceVolumeControl1 = null;
+    private HDeviceVolumeControl HDeviceVolumeControl1 = null;
     private MenuStrip topMenuStrip = null;
     private ToolStripMenuItem fileToolStripMenuItem = null;
     private ToolStripMenuItem systemToolStripMenuItem = null;
