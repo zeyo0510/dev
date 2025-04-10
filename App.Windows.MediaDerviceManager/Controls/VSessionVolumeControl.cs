@@ -189,7 +189,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       {
         muteCheckBox.Location = new Point(base.Size.Width / 2 - muteCheckBox.Width / 2, muteCheckBox.Location.Y);
       }
-      OnStateChanged2(_AudioSessionControl1.GetState());
+      OnStateChanged2(_AudioSessionControl1.State);
     }
     
     ~VSessionVolumeControl()
@@ -294,7 +294,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       float[] source = new float[1];
       try
       {
-        source = _AudioSessionControl1.GetChannelsPeakValues();
+        source = _AudioSessionControl1.ChannelsPeakValues;
       }
       catch (Exception)
       {
@@ -577,12 +577,12 @@ namespace App.Windows.MediaDerviceManager.Controls
     /************************************************/
     private void volumeVTrackBar_ValueChanged(object sender, EventArgs e)
     {
-      this._AudioSessionControl1.SetVolume(this.volumeVTrackBar.Value);
+      this._AudioSessionControl1.Volume = this.volumeVTrackBar.Value;
     }
     /************************************************/
     private void muteCheckBox_Click(object sender, EventArgs e)
     {
-      _AudioSessionControl1.SetMute(!_AudioSessionControl1.GetMute());
+      this._AudioSessionControl1.Mute = !this._AudioSessionControl1.Mute;
     }
   }
 }

@@ -27,7 +27,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       /************************************************/
       _MMDevice1           = device;
       _AudioEndpointVolume = _MMDevice1.AudioEndpointVolume;
-      _AudioEndpointVolume.OnVolumeNotification += _AudioEndpointVolume_OnVolumeNotification;
+      _AudioEndpointVolume.AudioEndpointVolumeNotification += _AudioEndpointVolume_OnVolumeNotification;
       /************************************************/
       guiTimer.Start();
       /************************************************/
@@ -43,7 +43,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.UpdateUI();
     }
     /************************************************/
-    private void _AudioEndpointVolume_OnVolumeNotification(AudioVolumeNotificationData P_0)
+    private void _AudioEndpointVolume_OnVolumeNotification(AudioVolumeNotificationDataEventArgs e)
     {
       this.UpdateUI();
     }

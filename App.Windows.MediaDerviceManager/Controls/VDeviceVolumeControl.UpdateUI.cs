@@ -12,6 +12,7 @@ namespace App.Windows.MediaDerviceManager.Controls
         base.Invoke(new Action(UpdateUI));
       }
       /************************************************/
+//      System.Diagnostics.Debug.WriteLine(this._AudioEndpointVolume1.ChannelCount);
       this.nameLabel.Text        = this._MMDevice1.FriendlyName;
       this.leftVLedBar.Color     = !this._AudioEndpointVolume1.Mute;
       this.volumeVTrackBar.Value = this._AudioEndpointVolume1.Volume;

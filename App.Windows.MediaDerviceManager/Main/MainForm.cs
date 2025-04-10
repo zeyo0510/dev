@@ -248,11 +248,10 @@ namespace App.Windows.MediaDerviceManager.Main
               return string.Compare(P_0.Tag.ToString().ToLower(), audioSessionControl21.SessionInstanceIdentifier.ToLower()) == 0;
             });
           }
-          AudioSessionState audioSessionState = audioSessionControl21.GetState();
+          AudioSessionState audioSessionState = audioSessionControl21.State;
           if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
           {
             sessionVolumeControl = new VSessionVolumeControl(audioSessionControl21, process);
-            int value = int.Parse(Math.Ceiling(audioSessionControl21.GetVolume() * 100f).ToString());
             sessionVolumeControl._MMDeviceCollection1 = _MMDeviceCollection1;
             sessionVolumeControl._MMDevice1 = mMDevice;
             flowLayoutPanel.Controls.Add(sessionVolumeControl);
@@ -342,7 +341,7 @@ namespace App.Windows.MediaDerviceManager.Main
       {
         foreach (VSessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<VSessionVolumeControl>(item.Controls)))
         {
-          item2.OnStateChanged2(item2._AudioSessionControl1.GetState());
+          item2.OnStateChanged2(item2._AudioSessionControl1.State);
         }
       }
     }

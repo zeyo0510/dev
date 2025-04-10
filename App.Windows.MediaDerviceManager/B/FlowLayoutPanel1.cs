@@ -114,7 +114,7 @@ namespace B
 			{
 				process = null;
 			}
-			AudioSessionState audioSessionState = P_0.GetState();
+			AudioSessionState audioSessionState = P_0.State;
 			if (process == null)
 			{
 				return;
@@ -131,7 +131,6 @@ namespace B
 			if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
 			{
 				sessionVolumeControl = new VSessionVolumeControl(P_0, process);
-				int value = int.Parse(Math.Ceiling(P_0.GetVolume() * 100f).ToString());
 				sessionVolumeControl._MMDeviceCollection1 = mmDeviceCollection1;
 				sessionVolumeControl._MMDevice1 = mmDevice1;
 				base.Controls.Add(sessionVolumeControl);

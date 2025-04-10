@@ -11,10 +11,11 @@ namespace App.Windows.MediaDerviceManager.Controls
         base.Invoke(new Action(UpdateUI));
       }
       /************************************************/
-      this.leftVLedBar.Color = !this._AudioSessionControl1.GetMute();
-      this.volumeVTrackBar.Value = int.Parse(Math.Ceiling(this._AudioSessionControl1.GetVolume() * 100f).ToString());
-      this.volumeLabel.Text = Math.Ceiling(this._AudioSessionControl1.GetVolume() * 100f).ToString();
-      this.muteCheckBox.Checked = this._AudioSessionControl1.GetMute();
+//      System.Diagnostics.Debug.WriteLine(_AudioSessionControl1.Method1());
+      this.leftVLedBar.Color = !this._AudioSessionControl1.Mute;
+      this.volumeVTrackBar.Value = this._AudioSessionControl1.Volume;
+      this.volumeLabel.Text = this._AudioSessionControl1.Volume.ToString();
+      this.muteCheckBox.Checked = this._AudioSessionControl1.Mute;
     }
   }
 }
