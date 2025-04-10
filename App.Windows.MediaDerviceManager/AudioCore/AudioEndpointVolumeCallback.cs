@@ -29,7 +29,7 @@ namespace AudioCore
       bool  muted        = _AUDIO_VOLUME_NOTIFICATION_DATA_.bMuted;
       float masterVolume = _AUDIO_VOLUME_NOTIFICATION_DATA_.fMasterVolume;
       /************************************************/
-      this._AudioEndpointVolume.OnAudioEndpointVolumeNotification(new AudioVolumeNotificationDataEventArgs(muted, masterVolume));
+      this._AudioEndpointVolume.OnNotify(new AudioVolumeNotificationDataEventArgs(muted, masterVolume));
       /************************************************/
       return 0;
     }

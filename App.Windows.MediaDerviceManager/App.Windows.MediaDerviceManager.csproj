@@ -111,18 +111,22 @@
     <Compile Include="AudioCore\AudioEndpointVolume.Mute.cs">
       <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
     </Compile>
-    <Compile Include="AudioCore\AudioEndpointVolume.OnAudioEndpointVolumeNotification.cs">
+    <Compile Include="AudioCore\AudioEndpointVolume.OnNotify.cs">
       <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
     </Compile>
     <Compile Include="AudioCore\AudioEndpointVolume.Volume.cs">
       <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
     </Compile>
     <Compile Include="AudioCore\AudioEndpointVolumeCallback.cs" />
-    <Compile Include="AudioCore\AudioSessionControl2.ChannelsPeakValues.cs" />
+    <Compile Include="AudioCore\AudioSessionControl2.ChannelsPeakValues.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
     <Compile Include="AudioCore\AudioSessionControl2.DisplayName.cs">
       <DependentUpon>AudioSessionControl2.cs</DependentUpon>
     </Compile>
-    <Compile Include="AudioCore\AudioSessionControl2.Dispose.cs" />
+    <Compile Include="AudioCore\AudioSessionControl2.Dispose.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
     <Compile Include="AudioCore\AudioSessionControl2.MeteringChannelCount.cs">
       <DependentUpon>AudioSessionControl2.cs</DependentUpon>
     </Compile>
@@ -130,6 +134,9 @@
       <DependentUpon>AudioSessionControl2.cs</DependentUpon>
     </Compile>
     <Compile Include="AudioCore\AudioSessionControl2.Mute.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioSessionControl2.OnAudioSessionEvents.cs">
       <DependentUpon>AudioSessionControl2.cs</DependentUpon>
     </Compile>
     <Compile Include="AudioCore\AudioSessionControl2.ProcessID.cs">

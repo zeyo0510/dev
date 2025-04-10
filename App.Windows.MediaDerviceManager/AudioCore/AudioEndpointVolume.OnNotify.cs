@@ -4,7 +4,7 @@ namespace AudioCore
 {
   partial class AudioEndpointVolume
   {
-    internal void OnAudioEndpointVolumeNotification(AudioVolumeNotificationDataEventArgs e)
+    internal void OnNotify(AudioVolumeNotificationDataEventArgs e)
     {
       if (this.AudioEndpointVolumeNotification == null) return;
       /************************************************/

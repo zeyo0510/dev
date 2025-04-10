@@ -6,9 +6,9 @@ namespace AudioCore
 {
   public partial class AudioSessionControl2
   {
-    private readonly IAudioSessionControl2  _IAudioSessionControl2  = null;
-    private readonly ISimpleAudioVolume     _ISimpleAudioVolume     = null;
-    private readonly IAudioMeterInformation _IAudioMeterInformation = null;
+    private IAudioSessionControl2  _IAudioSessionControl2  = null;
+    private ISimpleAudioVolume     _ISimpleAudioVolume     = null;
+    private IAudioMeterInformation _IAudioMeterInformation = null;
     /************************************************/
     internal AudioSessionControl2(IAudioSessionControl2 _)
     {
@@ -16,16 +16,13 @@ namespace AudioCore
       /************************************************/
       this._ISimpleAudioVolume     = (ISimpleAudioVolume)this._IAudioSessionControl2;
       this._IAudioMeterInformation = (IAudioMeterInformation)this._IAudioSessionControl2;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this._IAudioSessionControl2.RegisterAudioSessionNotification(this));
     }
-    
-    public void RegisterAudioSessionNotification(IAudioSessionEvents P_0)
+    /************************************************/
+    ~AudioSessionControl2()
     {
-      Marshal.ThrowExceptionForHR(_IAudioSessionControl2.RegisterAudioSessionNotification(P_0));
-    }
-
-    public void UnregisterAudioSessionNotification(IAudioSessionEvents P_0)
-    {
-      Marshal.ThrowExceptionForHR(_IAudioSessionControl2.UnregisterAudioSessionNotification(P_0));
+      this.Dispose();
     }
   }
 }

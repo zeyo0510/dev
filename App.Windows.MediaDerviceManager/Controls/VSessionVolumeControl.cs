@@ -14,7 +14,7 @@ using Microsoft.Win32;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Controls
 {
-  public partial class VSessionVolumeControl : UserControl, IAudioSessionEvents
+  public partial class VSessionVolumeControl : UserControl
   {
     public MMDeviceCollection                 _MMDeviceCollection1       = null;
     public MMDevice                           _MMDevice1                 = null;
@@ -163,6 +163,13 @@ namespace App.Windows.MediaDerviceManager.Controls
       this.InitializeComponent();
       /************************************************/
       this._AudioSessionControl1 = audioSessionControl;
+      this._AudioSessionControl1.DisplayNameChanged += OnDisplayNameChanged;
+      this._AudioSessionControl1.IconPathChanged += OnIconPathChanged;
+      this._AudioSessionControl1.SimpleVolumeChanged += OnSimpleVolumeChanged;
+      this._AudioSessionControl1.ChannelVolumeChanged += OnChannelVolumeChanged;
+      this._AudioSessionControl1.GroupingParamChanged += OnGroupingParamChanged;
+      this._AudioSessionControl1.StateChanged += OnStateChanged;
+      this._AudioSessionControl1.SessionDisconnected += OnSessionDisconnected;
       /************************************************/
       process1 = process;
       process1.Refresh();
@@ -176,7 +183,6 @@ namespace App.Windows.MediaDerviceManager.Controls
         guiTimer.Start();
       }
       /************************************************/
-      RegisterAudioSessionNotification(this);
       base.Tag = _AudioSessionControl1.SessionInstanceIdentifier.ToString();
       base.Margin = new Padding(0);
       string audioSetivceDLL = GetAudioSetivceDLL(process1);
@@ -218,7 +224,6 @@ namespace App.Windows.MediaDerviceManager.Controls
       try
       {
         base.Parent.Controls.Remove(this);
-        UnregisterAudioSessionNotification(this);
       }
       catch (Exception)
       {
@@ -240,53 +245,44 @@ namespace App.Windows.MediaDerviceManager.Controls
       }
     }
 
-    public void RegisterAudioSessionNotification(IAudioSessionEvents P_0)
+
+    public void OnDisplayNameChanged(object sender, EventArgs e)
     {
-      _AudioSessionControl1.RegisterAudioSessionNotification(P_0);
+//      System.Diagnostics.Debug.WriteLine("OnDisplayNameChanged");
     }
 
-    public void UnregisterAudioSessionNotification(IAudioSessionEvents P_0)
+    public void OnIconPathChanged(object sender, EventArgs e)
     {
-      _AudioSessionControl1.UnregisterAudioSessionNotification(P_0);
+//      System.Diagnostics.Debug.WriteLine("OnIconPathChanged");
     }
-
-    public int OnDisplayNameChanged([MarshalAs(UnmanagedType.LPWStr)] string P_0, Guid P_1)
+    
+    public void OnSimpleVolumeChanged(object sender, EventArgs e)
     {
-      return 0;
-    }
-
-    public int OnIconPathChanged(string P_0, Guid P_1)
-    {
-      return 0;
-    }
-
-    public int OnSimpleVolumeChanged(float P_0, bool P_1, Guid P_2)
-    {
+//      System.Diagnostics.Debug.WriteLine("OnSimpleVolumeChanged");
       this.UpdateUI();
-      return 0;
     }
 
-    public int OnChannelVolumeChanged(uint P_0, IntPtr P_1, uint P_2, Guid P_3)
+    public void OnChannelVolumeChanged(object sender, EventArgs e)
     {
-      return 0;
+//      System.Diagnostics.Debug.WriteLine("OnChannelVolumeChanged");
     }
 
-    public int OnGroupingParamChanged(Guid P_0, Guid P_1)
+    public void OnGroupingParamChanged(object sender, EventArgs e)
     {
-      return 0;
+//      System.Diagnostics.Debug.WriteLine("OnGroupingParamChanged");
     }
-
-    public int OnStateChanged(AudioSessionState P_0)
+    
+    public void OnStateChanged(object sender, EventArgs e)
     {
+//      System.Diagnostics.Debug.WriteLine("OnStateChanged");
       process1.Refresh();
-      OnStateChanged2(P_0);
-      return 0;
+//      OnStateChanged2(P_0);
     }
 
-    public int OnSessionDisconnected(AudioSessionDisconnectReason P_0)
+    public void OnSessionDisconnected(object sender, EventArgs e)
     {
+//      System.Diagnostics.Debug.WriteLine("OnSessionDisconnected");
       RemoveSessionNotif();
-      return 0;
     }
 
     private void timer1_Tick(object P_0, EventArgs P_1)
@@ -451,7 +447,6 @@ namespace App.Windows.MediaDerviceManager.Controls
         Invoke(new Action(RemoveSessionNotif));
         return;
       }
-      UnregisterAudioSessionNotification(this);
       base.Parent.Controls.Remove(this);
     }
 
