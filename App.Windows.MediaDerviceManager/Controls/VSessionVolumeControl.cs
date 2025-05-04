@@ -7,7 +7,6 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using a;
 using AudioCore;
-using AudioCore.Interfaces;
 using AudioCore2;
 using CheVolume.Properties;
 using Microsoft.Win32;
@@ -324,7 +323,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       this.contextMenuStrip1.Items.Clear();
       /************************************************/
-      this._MMDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+      this._MMDeviceCollection1 = AudioManager.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
       /************************************************/
       ToolStripMenuItem toolStripMenuItem1 = new ToolStripMenuItem();
       {

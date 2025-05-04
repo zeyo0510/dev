@@ -4,7 +4,7 @@ using AudioCore;
 
 namespace a
 {
-  internal static class Class4
+  internal static class AudioManager
   {
     internal static readonly List<string> list_a;
 
@@ -16,7 +16,7 @@ namespace a
 
     private static readonly PolicyConfigClient policyConfigClient_a;
 
-    static Class4()
+    static AudioManager()
     {
       list_a = new List<string>();
       dictionary_a = new Dictionary<int, string>();
@@ -46,7 +46,7 @@ namespace a
 
     internal static void SetDefaultEndpoint(int P_0)
     {
-      Class4.SetDefaultEndpoint(dictionary_a[P_0]);
+      AudioManager.SetDefaultEndpoint(dictionary_a[P_0]);
     }
 
     internal static void SetDefaultEndpoint(string deviceID)

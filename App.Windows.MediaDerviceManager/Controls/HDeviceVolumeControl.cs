@@ -81,7 +81,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       if (defaultCheckBox.Checked)
       {
-        Class4.SetDefaultEndpoint(_MMDevice1.ID);
+        AudioManager.SetDefaultEndpoint(_MMDevice1.ID);
       }
       else
       {

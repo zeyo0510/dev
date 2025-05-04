@@ -11,16 +11,9 @@ namespace App.Windows.MediaDerviceManager
 {
   internal static class Program
   {
-    public static string licenseKey = "AAADM-LCCKT-WTE4V-HL3UC-GXSNR";
-
-    public static DateTime StartupDateTime;
-
-    public static string licenseTemplateContent = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LicenseTemplate version=\"3\">\r\n  <LicenseKey encoding=\"BASE32X\" characterGroups=\"5\" charactersPerGroup=\"5\" groupSeparator=\"-\" header=\"\" footer=\"\">\r\n    <Signature size=\"109\">\r\n      <SignaturePublicKey>ABEdDQELqOVEU5BrPhNArRSSAHhRjsgrRHVA0MQDILfvYWlLegA=</SignaturePublicKey>\r\n      <SigningServiceUrl>http://www.chevolume.com/LicensingService/</SigningServiceUrl>\r\n      <SigningServiceTemplateId>1</SigningServiceTemplateId>\r\n    </Signature>\r\n  </LicenseKey>\r\n  <Properties>\r\n    <General>\r\n      <BuyNowUrl>http://www.chevolume.com/BuyNow.aspx</BuyNowUrl>\r\n      <CompanyName>CheVolume.com</CompanyName>\r\n      <ProductName>CheVolume</ProductName>\r\n    </General>\r\n    <Trial>\r\n      <TrialLicenseKey>AAADM-LCCKT-WTE4V-HL3UC-GXSNR</TrialLicenseKey>\r\n    </Trial>\r\n  </Properties>\r\n</LicenseTemplate>";
-
     [STAThread]
     private static void Main()
     {
-//      CheckReqFIle("Licensing.Net.dll");
       Application.ThreadException += App_ThreadException;
       Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
       AppDomain.CurrentDomain.UnhandledException += App_UnhandledException;

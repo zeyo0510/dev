@@ -1,12 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Windows.Forms;
 /************************************************/
-namespace App.Windows.MediaDerviceManager.Controls
+namespace B
 {
-  partial class AudioSessionManagerPanel
+  partial class AudioFlowLayoutPanel
   {
     private IContainer components = null;
-    /************************************************/
+        
     protected override void Dispose(bool disposing)
     {
       if (disposing)
@@ -21,9 +22,13 @@ namespace App.Windows.MediaDerviceManager.Controls
     /************************************************/
     private void InitializeComponent()
     {
-      // AudioSessionManagerPanel
-      base.Name = "AudioSessionManagerPanel";
-      base.AutoScroll = true;
+      // AudioFlowLayoutPanel
+      this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+      this.BackColor = System.Drawing.Color.Transparent;
+      base.Padding = new Padding(2);
+      base.WrapContents = false;
+      base.Paint += new PaintEventHandler(_OnPaint);
+      base.Resize += new System.EventHandler(_OnResize);
     }
   }
 }

@@ -198,13 +198,12 @@
     <Compile Include="AudioCore\WaveFormatEncoding.cs" />
     <Compile Include="AudioCore\WaveFormatExtensible.cs" />
     <Compile Include="AudioCore\WaveFormatExtraData.cs" />
-    <Compile Include="a\Class4.cs" />
+    <Compile Include="a\AudioManager.cs" />
     <Compile Include="a\ImageHelper.cs" />
-    <Compile Include="B\FlowLayoutPanel1.cs" />
     <Compile Include="B\IOpenControlPanel.cs" />
-    <Compile Include="Controls\AudioSessionManagerPanel.cs" />
-    <Compile Include="Controls\AudioSessionManagerPanel.Designer.cs">
-      <DependentUpon>AudioSessionManagerPanel.cs</DependentUpon>
+    <Compile Include="Controls\AudioFlowLayoutPanel.cs" />
+    <Compile Include="Controls\AudioFlowLayoutPanel.Designer.cs">
+      <DependentUpon>AudioFlowLayoutPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\HDeviceVolumeControl.Designer.cs">
       <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
