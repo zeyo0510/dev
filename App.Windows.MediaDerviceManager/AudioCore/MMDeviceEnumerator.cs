@@ -1,48 +1,48 @@
+using System;
 using System.Runtime.InteropServices;
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
   internal class MMDeviceEnumerator
   {
     private readonly IMMDeviceEnumerator _MMDeviceEnumerator_ = new MMDeviceEnumerator_() as IMMDeviceEnumerator;
-
-    public MMDeviceCollection EnumAudioEndpoints(EDataFlow P_0, EDeviceState P_1)
+    /************************************************/
+    public MMDeviceCollection EnumAudioEndpoints(EDataFlow dataflow, EDeviceState stateMask)
     {
-      IMMDeviceCollection iMMDeviceCollection;
-      Marshal.ThrowExceptionForHR(_MMDeviceEnumerator_.EnumAudioEndpoints(P_0, P_1, out iMMDeviceCollection));
-      return new MMDeviceCollection(iMMDeviceCollection);
+      IMMDeviceCollection retValue = null;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.EnumAudioEndpoints(dataflow, stateMask, out retValue));
+      /************************************************/
+      return new MMDeviceCollection(retValue);
     }
-
-    public MMDevice GetDefaultAudioEndpoint(EDataFlow P_0, ERole P_1)
+    /************************************************/
+    public MMDevice GetDefaultAudioEndpoint(EDataFlow dataflow, ERole role)
     {
-      IMMDevice iMMDevice;
-      Marshal.ThrowExceptionForHR(_MMDeviceEnumerator_.GetDefaultAudioEndpoint(P_0, P_1, out iMMDevice));
-      return new MMDevice(iMMDevice);
+      IMMDevice retValue = null;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.GetDefaultAudioEndpoint(dataflow, role, out retValue));
+      /************************************************/
+      return new MMDevice(retValue);
     }
-
-    public MMDevice GetDevice(string P_0)
+    /************************************************/
+    public MMDevice GetDevice(string id)
     {
-      IMMDevice iMMDevice;
-      Marshal.ThrowExceptionForHR(_MMDeviceEnumerator_.GetDevice(P_0, out iMMDevice));
-      return new MMDevice(iMMDevice);
+      IMMDevice retValue = null;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.GetDevice(id, out retValue));
+      /************************************************/
+      return new MMDevice(retValue);
     }
-
-    public void RegisterEndpointNotificationCallback(IMMNotificationClient P_0)
+    /************************************************/
+    public void RegisterEndpointNotificationCallback(IMMNotificationClient client)
     {
-      Marshal.ThrowExceptionForHR(_MMDeviceEnumerator_.RegisterEndpointNotificationCallback(P_0));
+      Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.RegisterEndpointNotificationCallback(client));
     }
-
-    public void UnregisterEndpointNotificationCallback(IMMNotificationClient P_0)
+    /************************************************/
+    public void UnregisterEndpointNotificationCallback(IMMNotificationClient client)
     {
-      Marshal.ThrowExceptionForHR(_MMDeviceEnumerator_.UnregisterEndpointNotificationCallback(P_0));
-    }
-
-    public MMDevice GetDeviceV2(string P_0)
-    {
-      IMMDevice iMMDevice;
-      Marshal.ThrowExceptionForHR(_MMDeviceEnumerator_.GetDevice(P_0, out iMMDevice));
-      return new MMDevice(iMMDevice);
+      Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.UnregisterEndpointNotificationCallback(client));
     }
   }
 }

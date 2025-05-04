@@ -183,8 +183,8 @@
     <Compile Include="AudioCore\MMDeviceEnumerator.cs" />
     <Compile Include="AudioCore\MMDeviceEnumerator_.cs" />
     <Compile Include="AudioCore\MMNotificationClient.cs" />
-    <Compile Include="AudioCore\MMNotificationClientDeviceDele.cs" />
-    <Compile Include="AudioCore\MMNotificationClientPropertyVa.cs" />
+    <Compile Include="AudioCore\MMNotificationClientDeviceDelegate.cs" />
+    <Compile Include="AudioCore\MMNotificationClientPropertyValueDelegate.cs" />
     <Compile Include="AudioCore\PKEY.cs" />
     <Compile Include="AudioCore\PolicyConfigClient.cs" />
     <Compile Include="AudioCore\PolicyConfigClient_.cs" />

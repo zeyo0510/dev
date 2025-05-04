@@ -25,7 +25,7 @@ namespace AudioCore
 
 		public int GetCount()
 		{
-			return audioSessionEnumerator1.GetCount();
+			return audioSessionEnumerator1.Count;
 		}
 
 		public void RegisterSessionNotification(IAudioSessionNotificationCollection P_0)

@@ -1,68 +1,66 @@
+using System;
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
-	public class MMNotificationClient : IMMNotificationClient
-	{
-		public MMNotificationClientDeviceDelegate DefaultChanged;
-
-		public MMNotificationClientDeviceDelegate DeviceAdded;
-
-		public MMNotificationClientDeviceDelegate DeviceRemoved;
-
-		public MMNotificationClientPropertyValueDelegate PropertyValueChanged;
-
-		public void OnDefaultDeviceChanged(EDataFlow P_0, ERole P_1, string P_2)
-		{
-			if (DefaultChanged != null)
-			{
-				DefaultChanged(P_2);
-			}
-		}
-
-		public void OnDeviceStateChanged(string P_0, EDeviceState P_1)
-		{
-			switch (P_1)
-			{
-			case EDeviceState.Disabled:
-			case EDeviceState.NotPresent:
-			case EDeviceState.Unplugged:
-				if (DeviceRemoved != null)
-				{
-					DeviceRemoved(P_0);
-				}
-				break;
-			case EDeviceState.Active:
-				if (DeviceAdded != null)
-				{
-					DeviceAdded(P_0);
-				}
-				break;
-			}
-		}
-
-		public void OnDeviceAdded(string P_0)
-		{
-			if (DeviceAdded != null)
-			{
-				DeviceAdded(P_0);
-			}
-		}
-
-		public void OnDeviceRemoved(string P_0)
-		{
-			if (DeviceRemoved != null)
-			{
-				DeviceRemoved(P_0);
-			}
-		}
-
-		public void OnPropertyValueChanged(string P_0, PROPERTYKEY P_1)
-		{
-			if (PropertyValueChanged != null)
-			{
-				PropertyValueChanged(P_0, P_1);
-			}
-		}
-	}
+  public class MMNotificationClient : IMMNotificationClient
+  {
+    public MMNotificationClientDeviceDelegate        DeviceAdded          = null;
+    public MMNotificationClientDeviceDelegate        DeviceRemoved        = null;
+    public MMNotificationClientDeviceDelegate        DefaultChanged       = null;
+    public MMNotificationClientPropertyValueDelegate PropertyValueChanged = null;
+    /************************************************/
+    public void OnDeviceStateChanged(string deviceID, EDeviceState newState)
+    {
+      switch (newState)
+      {
+        case EDeviceState.Disabled:
+        case EDeviceState.NotPresent:
+        case EDeviceState.Unplugged:
+          if (this.DeviceRemoved != null)
+          {
+            this.DeviceRemoved(deviceID);
+          }
+          break;
+        case EDeviceState.Active:
+          if (this.DeviceAdded != null)
+          {
+            this.DeviceAdded(deviceID);
+          }
+          break;
+      }
+    }
+    /************************************************/
+    public void OnDeviceAdded(string deviceID)
+    {
+      if (this.DeviceAdded != null)
+      {
+        this.DeviceAdded(deviceID);
+      }
+    }
+    /************************************************/
+    public void OnDeviceRemoved(string deviceID)
+    {
+      if (this.DeviceRemoved != null)
+      {
+        this.DeviceRemoved(deviceID);
+      }
+    }
+    /************************************************/
+    public void OnDefaultDeviceChanged(EDataFlow flow, ERole role, string defaultDeviceID)
+    {
+      if (this.DefaultChanged != null)
+      {
+        this.DefaultChanged(defaultDeviceID);
+      }
+    }
+    /************************************************/
+    public void OnPropertyValueChanged(string deviceID, PROPERTYKEY key)
+    {
+      if (this.PropertyValueChanged != null)
+      {
+        this.PropertyValueChanged(deviceID, key);
+      }
+    }
+  }
 }
