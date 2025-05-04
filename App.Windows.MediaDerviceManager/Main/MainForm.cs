@@ -60,7 +60,7 @@ namespace App.Windows.MediaDerviceManager.Main
     {
       get
       {
-        MMDevice retValue = AudioManager.mmDeviceEnumerator1.EnumerateAudioEndPoints(EDataFlow.eRender, ERole.eMultimedia);
+        MMDevice retValue = AudioManager.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia);
         /************************************************/
         return retValue;
       }
@@ -98,7 +98,7 @@ namespace App.Windows.MediaDerviceManager.Main
 
     public MainForm()
     {
-      _MMDeviceCollection1 = AudioManager.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+      _MMDeviceCollection1 = AudioManager.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
       _MMNotificationClient1 = new MMNotificationClient();
       AudioManager.mmDeviceEnumerator1.RegisterEndpointNotificationCallback(_MMNotificationClient1);
       this.InitializeComponent();
@@ -128,7 +128,7 @@ namespace App.Windows.MediaDerviceManager.Main
       /************************************************/
       string text = this.DefaultDevice.ID.ToString();
       /************************************************/
-      this._MMDeviceCollection1 = AudioManager.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+      this._MMDeviceCollection1 = AudioManager.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
       /************************************************/
       int count = _MMDeviceCollection1.Count;
       for (int i = 0; i < count; i++)

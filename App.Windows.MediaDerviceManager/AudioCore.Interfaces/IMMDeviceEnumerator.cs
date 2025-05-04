@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.InteropServices;
 
 namespace AudioCore.Interfaces
@@ -7,10 +8,10 @@ namespace AudioCore.Interfaces
   internal interface IMMDeviceEnumerator
   {
     [PreserveSig]
-    int GetDefaultAudioEndpoint([In][MarshalAs(UnmanagedType.I4)] EDataFlow P_0, [In][MarshalAs(UnmanagedType.U4)] EDeviceState P_1, [MarshalAs(UnmanagedType.Interface)] out IMMDeviceCollection P_2);
+    int EnumAudioEndpoints([In][MarshalAs(UnmanagedType.I4)] EDataFlow P_0, [In][MarshalAs(UnmanagedType.U4)] EDeviceState P_1, [MarshalAs(UnmanagedType.Interface)] out IMMDeviceCollection P_2);
 
     [PreserveSig]
-    int EnumAudioEndpoints([In][MarshalAs(UnmanagedType.I4)] EDataFlow P_0, [In][MarshalAs(UnmanagedType.I4)] ERole P_1, [MarshalAs(UnmanagedType.Interface)] out IMMDevice P_2);
+    int GetDefaultAudioEndpoint([In][MarshalAs(UnmanagedType.I4)] EDataFlow P_0, [In][MarshalAs(UnmanagedType.I4)] ERole P_1, [MarshalAs(UnmanagedType.Interface)] out IMMDevice P_2);
 
     [PreserveSig]
     int GetDevice([In][MarshalAs(UnmanagedType.LPWStr)] string P_0, [MarshalAs(UnmanagedType.Interface)] out IMMDevice P_1);
