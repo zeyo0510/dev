@@ -205,6 +205,9 @@
     <Compile Include="Controls\AudioFlowLayoutPanel.Designer.cs">
       <DependentUpon>AudioFlowLayoutPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\AudioFlowLayoutPanel.OnPaint.cs">
+      <DependentUpon>AudioFlowLayoutPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\HDeviceVolumeControl.Designer.cs">
       <DependentUpon>HDeviceVolumeControl.cs</DependentUpon>
     </Compile>

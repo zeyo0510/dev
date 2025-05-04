@@ -150,7 +150,7 @@ namespace App.Windows.MediaDerviceManager.Main
         /************************************************/
         if (flowLayoutPanel == null)
         {
-          flowLayoutPanel = new AudioFlowLayoutPanel(mmDevice);
+          flowLayoutPanel = new AudioFlowLayoutPanel();
           VDeviceVolumeControl deviceVolumeControl = new VDeviceVolumeControl(mmDevice);
           // flowLayoutPanel
           {
