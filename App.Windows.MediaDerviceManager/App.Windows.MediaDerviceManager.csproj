@@ -72,7 +72,7 @@
     <Compile Include="AudioCore.Interfaces\IAudioSessionEvents.cs" />
     <Compile Include="AudioCore.Interfaces\IAudioSessionManager2.cs" />
     <Compile Include="AudioCore.Interfaces\IAudioSessionNotification.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioSessionNotificationColle.cs" />
+    <Compile Include="AudioCore.Interfaces\IAudioSessionNotificationCollection.cs" />
     <Compile Include="AudioCore.Interfaces\IMMDevice.cs" />
     <Compile Include="AudioCore.Interfaces\IMMDeviceCollection.cs" />
     <Compile Include="AudioCore.Interfaces\IMMDeviceEnumerator.cs" />

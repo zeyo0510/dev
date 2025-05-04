@@ -2,10 +2,10 @@ using System;
 
 namespace AudioCore.Interfaces
 {
-	public struct PROPERTYKEY
-	{
-		public Guid fmtid;
+  public struct PROPERTYKEY
+  {
+    public Guid fmtid;
 
-		public int pid;
-	}
+    public int pid;
+  }
 }
