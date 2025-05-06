@@ -1,3 +1,5 @@
+// https://learn.microsoft.com/en-us/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2
+
 using System;
 using System.Runtime.InteropServices;
 

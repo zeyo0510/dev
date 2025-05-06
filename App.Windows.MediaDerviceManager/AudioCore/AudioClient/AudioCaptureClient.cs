@@ -31,14 +31,16 @@ namespace AudioCore
     /************************************************/
     public int GetNextPacketSize()
     {
-      int result;
-      Marshal.ThrowExceptionForHR(_AudioCaptureClient_.GetNextPacketSize(out result));
-      return result;
+      int retValue;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this._AudioCaptureClient_.GetNextPacketSize(out retValue));
+      /************************************************/
+      return retValue;
     }
     /************************************************/
     public void ReleaseBuffer(int P_0)
     {
-      Marshal.ThrowExceptionForHR(_AudioCaptureClient_.ReleaseBuffer(P_0));
+      Marshal.ThrowExceptionForHR(this._AudioCaptureClient_.ReleaseBuffer(P_0));
     }
     /************************************************/
     public void Dispose()

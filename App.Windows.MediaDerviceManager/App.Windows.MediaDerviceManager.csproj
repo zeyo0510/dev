@@ -56,30 +56,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioCore.Interfaces\AUDIO_VOLUME_NOTIFICATION_DATA.cs" />
     <Compile Include="AudioCore.Interfaces\Blob.cs" />
-    <Compile Include="AudioCore.Interfaces\CLSCTX.cs" />
-    <Compile Include="AudioCore.Interfaces\EStgmAccess.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioCaptureClient.cs" />
-    <Compile Include="AudioCore.Interfaces\004A_IAudioClient.cs" />
-    <Compile Include="AudioCore.Interfaces\004A_IAudioEndpointVolume.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioEndpointVolumeCallback.cs" />
     <Compile Include="AudioCore.Interfaces\IAudioPolicyConfigFactory.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioRenderClient.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioSessionControl.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioSessionControl2.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioSessionEvents.cs" />
-    <Compile Include="AudioCore.Interfaces\004A_IAudioSessionManager2.cs" />
-    <Compile Include="AudioCore.Interfaces\IAudioSessionNotification.cs" />
     <Compile Include="AudioCore.Interfaces\IAudioSessionNotificationCollection.cs" />
-    <Compile Include="AudioCore.Interfaces\003A_IMMDevice.cs" />
-    <Compile Include="AudioCore.Interfaces\IMMEndpoint.cs" />
     <Compile Include="AudioCore.Interfaces\IPolicyConfig.cs" />
     <Compile Include="AudioCore.Interfaces\IPolicyConfig2.cs" />
     <Compile Include="AudioCore.Interfaces\IPolicyConfig3.cs" />
     <Compile Include="AudioCore.Interfaces\IPolicyConfigVista.cs" />
-    <Compile Include="AudioCore.Interfaces\ISimpleAudioVolume.cs" />
-    <Compile Include="AudioCore.Interfaces\PROPERTYKEY.cs" />
     <Compile Include="AudioCore2\AudioPolicyConfigFactory.cs" />
     <Compile Include="AudioCore2\AudioPolicyConfigService.cs" />
     <Compile Include="AudioCore2\Combase.cs" />
@@ -88,125 +71,164 @@
     <Compile Include="AudioCore\000_MyAudioManager.MMDeviceEnumerator.cs">
       <DependentUpon>000_MyAudioManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="AudioCore\_IPropertyStore.cs" />
-    <Compile Include="AudioCore\_IAudioMeterInformation.cs" />
+    <Compile Include="AudioCore\AudioClient\AudioCaptureClient.cs" />
+    <Compile Include="AudioCore\AudioClient\AudioRenderClient.cs" />
+    <Compile Include="AudioCore\AudioClient\IAudioClient.cs">
+      <DependentUpon>AudioClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioClient\AudioClient.cs" />
+    <Compile Include="AudioCore\AudioClient\IAudioCaptureClient.cs">
+      <DependentUpon>AudioCaptureClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioClient\IAudioRenderClient.cs">
+      <DependentUpon>AudioRenderClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioClient\ISimpleAudioVolume.cs">
+      <DependentUpon>SimpleAudioVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioClient\SimpleAudioVolume.cs" />
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionEnumerator.cs" />
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionNotification.cs" />
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionManager2.cs">
+      <DependentUpon>AudioSessionManager2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.ChannelsPeakValues.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.cs" />
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.DisplayName.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.Dispose.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.IconPath.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.MeteringChannelCount.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.Mute.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.OnAudioSessionEvents.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.ProcessID.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.SessionIdentifier.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.SessionInstanceIdentifier.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.State.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.Volume.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\AudioSessionManager2.cs" />
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionControl.cs" />
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionControl2.cs">
+      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionEvents.cs" />
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionNotification.cs">
+      <DependentUpon>AudioSessionNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionEnumerator.cs">
+      <DependentUpon>AudioSessionEnumerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.AudioEndpointVolumeNotification.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.ChannelCount.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.cs" />
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.Dispose.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.MasterVolumeLevelScalar.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.Mute.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.OnNotify.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.Volume.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolumeCallback.cs" />
+    <Compile Include="AudioCore\EndpointVolume\AudioMeterInformation.cs" />
+    <Compile Include="AudioCore\EndpointVolume\AudioMeterInformationChannels.cs" />
+    <Compile Include="AudioCore\EndpointVolume\AudioVolumeNotificationDataEventArgs.cs" />
+    <Compile Include="AudioCore\EndpointVolume\AudioVolumeNotificationDataEventArgs.MasterVolume.cs">
+      <DependentUpon>AudioVolumeNotificationDataEventArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioVolumeNotificationDataEventArgs.Muted.cs">
+      <DependentUpon>AudioVolumeNotificationDataEventArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\AudioVolumeNotificationDataEventHandler.cs" />
+    <Compile Include="AudioCore\EndpointVolume\AUDIO_VOLUME_NOTIFICATION_DATA.cs" />
+    <Compile Include="AudioCore\EndpointVolume\IAudioMeterInformation.cs">
+      <DependentUpon>AudioMeterInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\IAudioEndpointVolume.cs">
+      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\Enum\AudioClientBufferFlags.cs" />
+    <Compile Include="AudioCore\Enum\AudioClientShareMode.cs" />
+    <Compile Include="AudioCore\Enum\AudioClientStreamFlags.cs" />
+    <Compile Include="AudioCore\Enum\AudioSessionDisconnectReason.cs" />
+    <Compile Include="AudioCore\Enum\AudioSessionState.cs" />
+    <Compile Include="AudioCore\Enum\CLSCTX.cs" />
+    <Compile Include="AudioCore\Enum\DataFlow.cs" />
+    <Compile Include="AudioCore\Enum\DeviceState.cs" />
+    <Compile Include="AudioCore\Enum\EDataFlow.cs" />
+    <Compile Include="AudioCore\Enum\EDeviceState.cs" />
+    <Compile Include="AudioCore\Enum\EndpointHardwareSupport.cs" />
+    <Compile Include="AudioCore\Enum\ERole.cs" />
+    <Compile Include="AudioCore\Enum\EStgmAccess.cs" />
+    <Compile Include="AudioCore\Enum\WaveFormatEncoding.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\003A_IMMDevice.cs">
+      <DependentUpon>AudioDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\MMDeviceAPI\AudioDevice.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\AudioDeviceCollection.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\IMMDeviceCollection.cs">
+      <DependentUpon>AudioDeviceCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\MMDeviceAPI\IMMDeviceEnumerator.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\IMMEndpoint.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\MMDeviceEnumerator_.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\MMNotificationClient.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\IMMNotificationClient.cs">
+      <DependentUpon>MMNotificationClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\MMDeviceAPI\MMNotificationClientDeviceDelegate.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\MMNotificationClientPropertyValueDelegate.cs" />
+    <Compile Include="AudioCore\MMEApi\WaveFormat.cs" />
+    <Compile Include="AudioCore\PropSys\PropertyStore.cs" />
+    <Compile Include="AudioCore\PropSys\_IPropertyStore.cs" />
+    <Compile Include="AudioCore\WTypes\PROPERTYKEY.cs" />
+    <Compile Include="AudioCore\_IAudioEndpointVolumeCallback.cs">
+      <DependentUpon>000_MyAudioManager.MMDeviceEnumerator.cs</DependentUpon>
+    </Compile>
     <Compile Include="AudioCore\Guids.cs" />
-    <Compile Include="AudioCore\_IAudioSessionEnumerator.cs" />
-    <Compile Include="AudioCore\_IMMDeviceEnumerator.cs" />
-    <Compile Include="AudioCore\_IMMNotificationClient.cs" />
-    <Compile Include="AudioCore\_IMMDeviceCollection.cs" />
     <Compile Include="AudioCore\AdpcmWaveFormat.cs" />
-    <Compile Include="AudioCore\AudioCaptureClient.cs" />
-    <Compile Include="AudioCore\AudioClient.cs">
-      <DependentUpon>002_AudioDevice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioClientBufferFlags.cs" />
-    <Compile Include="AudioCore\AudioClientShareMode.cs" />
-    <Compile Include="AudioCore\AudioClientStreamFlags.cs" />
-    <Compile Include="AudioCore\003_AudioEndpointVolume.AudioEndpointVolumeNotification.cs">
-      <DependentUpon>003_AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\003_AudioEndpointVolume.ChannelCount.cs">
-      <DependentUpon>003_AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\003_AudioEndpointVolume.cs" />
-    <Compile Include="AudioCore\003_AudioEndpointVolume.Dispose.cs">
-      <DependentUpon>003_AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\003_AudioEndpointVolume.MasterVolumeLevelScalar.cs">
-      <DependentUpon>003_AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\003_AudioEndpointVolume.Mute.cs">
-      <DependentUpon>003_AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\003_AudioEndpointVolume.OnNotify.cs">
-      <DependentUpon>003_AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\003_AudioEndpointVolume.Volume.cs">
-      <DependentUpon>003_AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioEndpointVolumeCallback.cs" />
-    <Compile Include="AudioCore\005_AudioSessionControl2.ChannelsPeakValues.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.DisplayName.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.Dispose.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.MeteringChannelCount.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.IconPath.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.Mute.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.OnAudioSessionEvents.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.ProcessID.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.SessionIdentifier.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.SessionInstanceIdentifier.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.State.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\005_AudioSessionControl2.Volume.cs">
-      <DependentUpon>005_AudioSessionControl2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioVolumeNotificationDataEventHandler.cs" />
     <Compile Include="AudioCore\AudioMediaSubtypes.cs" />
-    <Compile Include="AudioCore\002A_AudioMeterInformation.cs" />
-    <Compile Include="AudioCore\AudioMeterInformationChannels.cs" />
-    <Compile Include="AudioCore\AudioRenderClient.cs" />
-    <Compile Include="AudioCore\005_AudioSessionControl2.cs" />
-    <Compile Include="AudioCore\AudioSessionDisconnectReason.cs" />
-    <Compile Include="AudioCore\004_AudioSessionEnumerator.cs" />
-    <Compile Include="AudioCore\AudioSessionManager2.cs">
-      <DependentUpon>002_AudioDevice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioSessionNotification.cs" />
-    <Compile Include="AudioCore\AudioSessionState.cs" />
-    <Compile Include="AudioCore\AudioVolumeNotificationDataEventArgs.cs" />
-    <Compile Include="AudioCore\AudioVolumeNotificationDataEventArgs.MasterVolume.cs">
-      <DependentUpon>AudioVolumeNotificationDataEventArgs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioVolumeNotificationDataEventArgs.Muted.cs">
-      <DependentUpon>AudioVolumeNotificationDataEventArgs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\DataFlow.cs" />
-    <Compile Include="AudioCore\DeviceState.cs" />
-    <Compile Include="AudioCore\EDataFlow.cs" />
-    <Compile Include="AudioCore\EDeviceState.cs" />
-    <Compile Include="AudioCore\EndpointHardwareSupport.cs" />
-    <Compile Include="AudioCore\ERole.cs" />
-    <Compile Include="AudioCore\002_AudioDevice.cs" />
-    <Compile Include="AudioCore\001_AudioDeviceCollection.cs" />
-    <Compile Include="AudioCore\MMDeviceEnumerator_.cs" />
-    <Compile Include="AudioCore\MMNotificationClient.cs" />
-    <Compile Include="AudioCore\MMNotificationClientDeviceDelegate.cs" />
-    <Compile Include="AudioCore\MMNotificationClientPropertyValueDelegate.cs" />
     <Compile Include="AudioCore\PKEY.cs" />
     <Compile Include="AudioCore\PolicyConfigClient.cs" />
     <Compile Include="AudioCore\PolicyConfigClient_.cs" />
     <Compile Include="AudioCore\PropertyKey.cs" />
     <Compile Include="AudioCore\PropertyKeys.cs" />
-    <Compile Include="AudioCore\PropertyStore.cs">
-      <DependentUpon>002_AudioDevice.cs</DependentUpon>
-    </Compile>
     <Compile Include="AudioCore\PropertyStoreProperty.cs" />
     <Compile Include="AudioCore\PropVariant.cs" />
-    <Compile Include="AudioCore\SimpleAudioVolume.cs" />
-    <Compile Include="AudioCore\WaveFormat.cs" />
-    <Compile Include="AudioCore\WaveFormatEncoding.cs" />
     <Compile Include="AudioCore\WaveFormatExtensible.cs" />
     <Compile Include="AudioCore\WaveFormatExtraData.cs" />
     <Compile Include="a\AudioManager.cs" />
@@ -359,6 +381,14 @@
     <Folder Include="AudioCore" />
     <Folder Include="AudioCore.Interfaces" />
     <Folder Include="AudioCore2" />
+    <Folder Include="AudioCore\AudioPolicy" />
+    <Folder Include="AudioCore\MMDeviceAPI" />
+    <Folder Include="AudioCore\EndpointVolume" />
+    <Folder Include="AudioCore\AudioClient" />
+    <Folder Include="AudioCore\Enum" />
+    <Folder Include="AudioCore\MMEApi" />
+    <Folder Include="AudioCore\WTypes" />
+    <Folder Include="AudioCore\PropSys" />
     <Folder Include="B" />
     <Folder Include="Controls" />
     <Folder Include="Main" />

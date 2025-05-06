@@ -1,6 +1,8 @@
+// https://learn.microsoft.com/en-us/windows/win32/api/endpointvolume/nf-endpointvolume-iaudioendpointvolume-getchannelcount
+/************************************************/
 using System;
 using System.Runtime.InteropServices;
-
+/************************************************/
 namespace AudioCore.Interfaces
 {
   [Guid("5CDF2C82-841E-4546-9722-0CF74078229A")]

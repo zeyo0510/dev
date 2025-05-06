@@ -8,9 +8,9 @@ namespace AudioCore
   {
     private readonly AudioEndpointVolume _AudioEndpointVolume = null;
     /************************************************/
-    internal AudioEndpointVolumeCallback(AudioEndpointVolume _)
+    internal AudioEndpointVolumeCallback(AudioEndpointVolume obj)
     {
-      this._AudioEndpointVolume = _;
+      this._AudioEndpointVolume = obj;
     }
     /************************************************/
     [PreserveSig]

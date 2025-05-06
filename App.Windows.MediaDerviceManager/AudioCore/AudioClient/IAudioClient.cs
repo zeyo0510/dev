@@ -1,6 +1,8 @@
+// https://learn.microsoft.com/en-us/windows/win32/api/audioclient/nn-audioclient-iaudioclient
+/************************************************/
 using System;
 using System.Runtime.InteropServices;
-
+/************************************************/
 namespace AudioCore.Interfaces
 {
   [Guid("1CB9AD4C-DBFA-4c32-B178-C2F568A703B2")]

@@ -1,3 +1,5 @@
+// https://learn.microsoft.com/en-us/windows/win32/api/mmeapi/ns-mmeapi-waveformat
+
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
