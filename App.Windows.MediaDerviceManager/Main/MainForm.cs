@@ -8,14 +8,13 @@ using a;
 using App.Windows.MediaDerviceManager.Controls;
 using AudioCore;
 using AudioCore.Interfaces;
-using B;
 using CheVolume.Properties;
 /************************************************/
 namespace App.Windows.MediaDerviceManager.Main
 {
   public partial class MainForm : Form
   {
-    private MMDeviceCollection   _MMDeviceCollection1   = null;
+    private AudioDeviceCollection _MMDeviceCollection1   = null;
     private MMNotificationClient _MMNotificationClient1 = null;
     /************************************************/
     private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
@@ -56,11 +55,11 @@ namespace App.Windows.MediaDerviceManager.Main
     
     internal static float dpiX;
 
-    public MMDevice DefaultDevice
+    public AudioDevice DefaultDevice
     {
       get
       {
-        MMDevice retValue = AudioManager.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia);
+        AudioDevice retValue = AudioManager.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia);
         /************************************************/
         return retValue;
       }
@@ -133,7 +132,7 @@ namespace App.Windows.MediaDerviceManager.Main
       int count = _MMDeviceCollection1.Count;
       for (int i = 0; i < count; i++)
       {
-        MMDevice mmDevice = this._MMDeviceCollection1[i];
+        AudioDevice mmDevice = this._MMDeviceCollection1[i];
         string deviceID = mmDevice.ID;
         bool @default = false;
         if (deviceID == text)

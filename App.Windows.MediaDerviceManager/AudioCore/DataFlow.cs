@@ -1,9 +1,9 @@
 namespace AudioCore
 {
-	public enum DataFlow
-	{
-		Render,
-		Capture,
-		All
-	}
+  public enum DataFlow
+  {
+    Render,
+    Capture,
+    All
+  }
 }

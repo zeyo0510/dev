@@ -10,7 +10,7 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   public partial class VDeviceVolumeControl : UserControl
   {
-    private MMDevice              _MMDevice1             = null;
+    private AudioDevice              _MMDevice1             = null;
     private AudioEndpointVolume   _AudioEndpointVolume1  = null;
     private AudioMeterInformation _AudioMeterInformation = null;
     
@@ -22,7 +22,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       return new Bitmap(img, size);
     }
 
-    public VDeviceVolumeControl(MMDevice device)
+    public VDeviceVolumeControl(AudioDevice device)
     {
       this.InitializeComponent();
       /************************************************/
@@ -55,7 +55,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       float[] array = new float[0];
       try
       {
-        array = _MMDevice1.AudioMeterInformation.PeakValues.ToFloatArray;
+        array = _MMDevice1.AudioMeterInformation.AudioMeterInformationChannels.ToFloatArray;
       }
       catch (Exception)
       {

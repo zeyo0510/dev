@@ -1,38 +1,38 @@
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  internal class MMDeviceEnumerator
+  partial class MyAudioManager
   {
     private readonly IMMDeviceEnumerator _MMDeviceEnumerator_ = new MMDeviceEnumerator_() as IMMDeviceEnumerator;
     /************************************************/
-    public MMDeviceCollection EnumAudioEndpoints(EDataFlow dataflow, EDeviceState stateMask)
+    public AudioDeviceCollection EnumAudioEndpoints(EDataFlow dataflow, EDeviceState stateMask)
     {
       IMMDeviceCollection retValue = null;
       /************************************************/
       Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.EnumAudioEndpoints(dataflow, stateMask, out retValue));
       /************************************************/
-      return new MMDeviceCollection(retValue);
+      return new AudioDeviceCollection(retValue);
     }
     /************************************************/
-    public MMDevice GetDefaultAudioEndpoint(EDataFlow dataflow, ERole role)
+    public AudioDevice GetDefaultAudioEndpoint(EDataFlow dataflow, ERole role)
     {
       IMMDevice retValue = null;
       /************************************************/
       Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.GetDefaultAudioEndpoint(dataflow, role, out retValue));
       /************************************************/
-      return new MMDevice(retValue);
+      return new AudioDevice(retValue);
     }
     /************************************************/
-    public MMDevice GetDevice(string id)
+    public AudioDevice GetDevice(string id)
     {
       IMMDevice retValue = null;
       /************************************************/
       Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.GetDevice(id, out retValue));
       /************************************************/
-      return new MMDevice(retValue);
+      return new AudioDevice(retValue);
     }
     /************************************************/
     public void RegisterEndpointNotificationCallback(IMMNotificationClient client)

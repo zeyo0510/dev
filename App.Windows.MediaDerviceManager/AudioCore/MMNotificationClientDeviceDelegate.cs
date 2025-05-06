@@ -1,4 +1,4 @@
 namespace AudioCore
 {
-	public delegate void MMNotificationClientDeviceDelegate(string A_0);
+  public delegate void MMNotificationClientDeviceDelegate(string A_0);
 }

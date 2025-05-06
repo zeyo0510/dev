@@ -1,9 +1,11 @@
+// OK
 // https://learn.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator
 /************************************************/
 using System;
 using System.Runtime.InteropServices;
+using AudioCore.Interfaces;
 /************************************************/
-namespace AudioCore.Interfaces
+namespace AudioCore
 {
   [Guid("A95664D2-9614-4F35-A746-DE8DB63617E6")]
   [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]

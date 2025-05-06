@@ -15,8 +15,8 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   public partial class VSessionVolumeControl : UserControl
   {
-    public MMDeviceCollection                 _MMDeviceCollection1       = null;
-    public MMDevice                           _MMDevice1                 = null;
+    public AudioDeviceCollection              _MMDeviceCollection1       = null;
+    public AudioDevice                        _MMDevice1                 = null;
     public AudioSessionControl2               _AudioSessionControl1      = null;
     private readonly AudioPolicyConfigService _AudioPolicyConfigService1 = null;
     

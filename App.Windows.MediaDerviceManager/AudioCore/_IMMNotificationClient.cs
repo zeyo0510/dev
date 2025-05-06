@@ -1,9 +1,11 @@
+// OK
 // https://learn.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immnotificationclient
 /************************************************/
 using System;
 using System.Runtime.InteropServices;
+using AudioCore.Interfaces;
 /************************************************/
-namespace AudioCore.Interfaces
+namespace AudioCore
 {
   [Guid("7991EEC9-7E89-4D85-8390-6C703CEC60C0")]
   [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]

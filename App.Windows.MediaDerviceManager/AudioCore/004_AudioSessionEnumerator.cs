@@ -4,24 +4,24 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public class MMDeviceCollection
+  public class AudioSessionEnumerator
   {
-    private readonly IMMDeviceCollection _MMDeviceCollection_ = null;
+    private readonly IAudioSessionEnumerator _AudioSessionEnumerator_ = null;
     /************************************************/
-    internal MMDeviceCollection(IMMDeviceCollection obj)
+    internal AudioSessionEnumerator(IAudioSessionEnumerator obj)
     {
-      this._MMDeviceCollection_ = obj;
+      this._AudioSessionEnumerator_ = obj;
     }
     /************************************************/
-    public MMDevice this[int index]
+    public AudioSessionControl2 this[int index]
     {
       get
       {
-        IMMDevice retValue = null;
+        IAudioSessionControl2 retValue = null;
         /************************************************/
-        this._MMDeviceCollection_.Item((uint)index, out retValue);
+        Marshal.ThrowExceptionForHR(this._AudioSessionEnumerator_.GetSession(index, out retValue));
         /************************************************/
-        return new MMDevice(retValue);
+        return new AudioSessionControl2(retValue);
       }
     }
     /************************************************/
@@ -29,11 +29,11 @@ namespace AudioCore
     {
       get
       {
-        uint retValue;
+        int retVlaue;
         /************************************************/
-        Marshal.ThrowExceptionForHR(this._MMDeviceCollection_.GetCount(out retValue));
+        Marshal.ThrowExceptionForHR(this._AudioSessionEnumerator_.GetCount(out retVlaue));
         /************************************************/
-        return (int)retValue;
+        return retVlaue;
       }
     }
   }

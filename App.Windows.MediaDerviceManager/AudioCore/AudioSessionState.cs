@@ -1,9 +1,9 @@
 namespace AudioCore
 {
-	public enum AudioSessionState
-	{
-		AudioSessionStateInactive,
-		AudioSessionStateActive,
-		AudioSessionStateExpired
-	}
+  public enum AudioSessionState
+  {
+    AudioSessionStateInactive,
+    AudioSessionStateActive,
+    AudioSessionStateExpired
+  }
 }

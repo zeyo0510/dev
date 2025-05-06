@@ -10,7 +10,7 @@ namespace App.Windows.MediaDerviceManager.Controls
 {
   public partial class HDeviceVolumeControl : UserControl
   {
-    private MMDevice            _MMDevice1           = null;
+    private AudioDevice         _MMDevice1           = null;
     private AudioEndpointVolume _AudioEndpointVolume = null;
     
     [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "DestroyIcon")]
@@ -21,7 +21,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       return new Bitmap(P_0, P_1);
     }
 
-    public HDeviceVolumeControl(MMDevice device)
+    public HDeviceVolumeControl(AudioDevice device)
     {
       InitializeComponent();
       /************************************************/
@@ -53,7 +53,7 @@ namespace App.Windows.MediaDerviceManager.Controls
       float[] array = new float[0];
       try
       {
-        array = _MMDevice1.AudioMeterInformation.PeakValues.ToFloatArray;
+        array = _MMDevice1.AudioMeterInformation.AudioMeterInformationChannels.ToFloatArray;
       }
       catch (Exception)
       {
