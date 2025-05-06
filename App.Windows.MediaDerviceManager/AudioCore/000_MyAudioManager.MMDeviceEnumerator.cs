@@ -6,11 +6,11 @@ namespace AudioCore
 {
   partial class MyAudioManager
   {
-    private readonly IMMDeviceEnumerator _MMDeviceEnumerator_ = new MMDeviceEnumerator_() as IMMDeviceEnumerator;
+    private readonly IMMDeviceEnumerator _MMDeviceEnumerator_;
     /************************************************/
     public AudioDeviceCollection EnumAudioEndpoints(EDataFlow dataflow, EDeviceState stateMask)
     {
-      IMMDeviceCollection retValue = null;
+      IMMDeviceCollection retValue;
       /************************************************/
       Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.EnumAudioEndpoints(dataflow, stateMask, out retValue));
       /************************************************/
@@ -19,7 +19,7 @@ namespace AudioCore
     /************************************************/
     public AudioDevice GetDefaultAudioEndpoint(EDataFlow dataflow, ERole role)
     {
-      IMMDevice retValue = null;
+      IMMDevice retValue;
       /************************************************/
       Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.GetDefaultAudioEndpoint(dataflow, role, out retValue));
       /************************************************/
@@ -28,7 +28,7 @@ namespace AudioCore
     /************************************************/
     public AudioDevice GetDevice(string id)
     {
-      IMMDevice retValue = null;
+      IMMDevice retValue;
       /************************************************/
       Marshal.ThrowExceptionForHR(this._MMDeviceEnumerator_.GetDevice(id, out retValue));
       /************************************************/

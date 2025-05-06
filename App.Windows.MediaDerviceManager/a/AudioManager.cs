@@ -6,11 +6,12 @@ namespace a
 {
   internal static class AudioManager
   {
+    internal static readonly MyAudioManager _MMDeviceEnumerator_ = null;
+    
+    
     internal static readonly List<string> list_a;
 
     internal static int num_a;
-
-    internal static readonly MyAudioManager mmDeviceEnumerator1;
 
     private static readonly Dictionary<int, string> dictionary_a;
 
@@ -21,15 +22,15 @@ namespace a
       list_a = new List<string>();
       dictionary_a = new Dictionary<int, string>();
       policyConfigClient_a = new PolicyConfigClient();
-      mmDeviceEnumerator1 = new MyAudioManager();
+      _MMDeviceEnumerator_ = new MyAudioManager();
     }
 
     internal static void Method1(EDataFlow P_0)
     {
       list_a.Clear();
       dictionary_a.Clear();
-      AudioDeviceCollection defaultAudioEndpoint = mmDeviceEnumerator1.EnumAudioEndpoints(P_0, EDeviceState.Active);
-      string iD = mmDeviceEnumerator1.GetDefaultAudioEndpoint(P_0, ERole.eMultimedia).ID;
+      AudioDeviceCollection defaultAudioEndpoint = _MMDeviceEnumerator_.EnumAudioEndpoints(P_0, EDeviceState.Active);
+      string iD = _MMDeviceEnumerator_.GetDefaultAudioEndpoint(P_0, ERole.eMultimedia).ID;
       int count = defaultAudioEndpoint.Count;
       for (int i = 0; i < count; i++)
       {

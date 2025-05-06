@@ -1,49 +1,17 @@
 using System.IO;
 using System.Runtime.InteropServices;
-
+/************************************************/
 namespace AudioCore
 {
   [StructLayout(LayoutKind.Sequential, Pack = 2)]
   public class AdpcmWaveFormat : WaveFormat
   {
-    private short _SamplesPerBlock;
-
-    private short _NumCoefficients;
-
-    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 14)]
-    private short[] _Coefficients;
-
-    public int SamplesPerBlock
+    private AdpcmWaveFormat() : this(8000, 1)
     {
-      get
-      {
-        return _SamplesPerBlock;
-      }
+      // do nothing...
     }
-
-    public int NumCoefficients
-    {
-      get
-      {
-        return _NumCoefficients;
-      }
-    }
-
-    public short[] Coefficients
-    {
-      get
-      {
-        return _Coefficients;
-      }
-    }
-
-    private AdpcmWaveFormat()
-      : this(8000, 1)
-    {
-    }
-
-    public AdpcmWaveFormat(int P_0, int P_1)
-      : base(P_0, 0, P_1)
+    /************************************************/
+    public AdpcmWaveFormat(int P_0, int P_1) : base(P_0, 0, P_1)
     {
       waveFormatTag = WaveFormatEncoding.Adpcm;
       _ExtraSize = 32;
@@ -70,10 +38,39 @@ namespace AudioCore
         460, -208, 392, -232
       };
     }
-
+    /************************************************/
+    private short _SamplesPerBlock;
+    public int SamplesPerBlock
+    {
+      get
+      {
+        return _SamplesPerBlock;
+      }
+    }
+    /************************************************/
+    private short _NumCoefficients;
+    public int NumCoefficients
+    {
+      get
+      {
+        return _NumCoefficients;
+      }
+    }
+    /************************************************/
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 14)]
+    private short[] _Coefficients;
+    public short[] Coefficients
+    {
+      get
+      {
+        return _Coefficients;
+      }
+    }
+    /************************************************/
     public override void Serialize(BinaryWriter P_0)
     {
       base.Serialize(P_0);
+      /************************************************/
       P_0.Write(_SamplesPerBlock);
       P_0.Write(_NumCoefficients);
       short[] coefficients = _Coefficients;
@@ -82,7 +79,7 @@ namespace AudioCore
         P_0.Write(value);
       }
     }
-
+    /************************************************/
     public override string ToString()
     {
       return string.Format("Microsoft ADPCM {0} Hz {1} channels {2} bits per sample {3} samples per block", base.SampleRate, _Channels, _BitsPerSample, _SamplesPerBlock);

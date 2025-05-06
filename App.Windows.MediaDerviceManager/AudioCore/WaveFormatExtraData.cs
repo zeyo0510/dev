@@ -13,8 +13,7 @@ namespace AudioCore
     {
     }
 
-    public WaveFormatExtraData(BinaryReader P_0)
-      : base(P_0)
+    public WaveFormatExtraData(BinaryReader P_0) : base(P_0)
     {
       if (_ExtraSize > 0)
       {

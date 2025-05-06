@@ -68,9 +68,11 @@
     <Compile Include="AudioCore2\Combase.cs" />
     <Compile Include="AudioCore2\HRESULT.cs" />
     <Compile Include="AudioCore\000_MyAudioManager.cs" />
+    <Compile Include="AudioCore\000_MyAudioManager.AudioDeviceItems.cs" />
     <Compile Include="AudioCore\000_MyAudioManager.MMDeviceEnumerator.cs">
       <DependentUpon>000_MyAudioManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="AudioCore\001_AudioDeviceCollection.cs" />
     <Compile Include="AudioCore\AudioClient\AudioCaptureClient.cs" />
     <Compile Include="AudioCore\AudioClient\AudioRenderClient.cs" />
     <Compile Include="AudioCore\AudioClient\IAudioClient.cs">
@@ -195,21 +197,15 @@
     <Compile Include="AudioCore\Enum\ERole.cs" />
     <Compile Include="AudioCore\Enum\EStgmAccess.cs" />
     <Compile Include="AudioCore\Enum\WaveFormatEncoding.cs" />
-    <Compile Include="AudioCore\MMDeviceAPI\003A_IMMDevice.cs">
+    <Compile Include="AudioCore\MMDeviceAPI\IMMDevice.cs">
       <DependentUpon>AudioDevice.cs</DependentUpon>
     </Compile>
     <Compile Include="AudioCore\MMDeviceAPI\AudioDevice.cs" />
-    <Compile Include="AudioCore\MMDeviceAPI\AudioDeviceCollection.cs" />
-    <Compile Include="AudioCore\MMDeviceAPI\IMMDeviceCollection.cs">
-      <DependentUpon>AudioDeviceCollection.cs</DependentUpon>
-    </Compile>
+    <Compile Include="AudioCore\MMDeviceAPI\IMMDeviceCollection.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\IMMDeviceEnumerator.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\IMMEndpoint.cs" />
-    <Compile Include="AudioCore\MMDeviceAPI\MMDeviceEnumerator_.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\MMNotificationClient.cs" />
-    <Compile Include="AudioCore\MMDeviceAPI\IMMNotificationClient.cs">
-      <DependentUpon>MMNotificationClient.cs</DependentUpon>
-    </Compile>
+    <Compile Include="AudioCore\MMDeviceAPI\IMMNotificationClient.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\MMNotificationClientDeviceDelegate.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\MMNotificationClientPropertyValueDelegate.cs" />
     <Compile Include="AudioCore\MMEApi\WaveFormat.cs" />

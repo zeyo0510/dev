@@ -6,9 +6,11 @@ namespace AudioCore
   {
     public MyAudioManager()
     {
-      
+      Type type = Type.GetTypeFromCLSID(Guids.IID_MMDeviceEnumerator, true);
+      /************************************************/
+      this._MMDeviceEnumerator_ = (IMMDeviceEnumerator)Activator.CreateInstance(type);
     }
-    
+    /************************************************/
     ~MyAudioManager()
     {
       
