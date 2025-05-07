@@ -8,7 +8,7 @@ namespace AudioCore
   {
     private readonly IMMDeviceEnumerator _MMDeviceEnumerator_;
     /************************************************/
-    public AudioDeviceCollection EnumAudioEndpoints(EDataFlow dataflow, EDeviceState stateMask)
+    private AudioDeviceCollection EnumAudioEndpoints(EDataFlow dataflow, EDeviceState stateMask)
     {
       IMMDeviceCollection retValue;
       /************************************************/
@@ -17,7 +17,7 @@ namespace AudioCore
       return new AudioDeviceCollection(retValue);
     }
     /************************************************/
-    public AudioDevice GetDefaultAudioEndpoint(EDataFlow dataflow, ERole role)
+    private AudioDevice GetDefaultAudioEndpoint(EDataFlow dataflow, ERole role)
     {
       IMMDevice retValue;
       /************************************************/

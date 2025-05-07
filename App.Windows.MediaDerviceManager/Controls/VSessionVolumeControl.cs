@@ -323,7 +323,7 @@ namespace App.Windows.MediaDerviceManager.Controls
     {
       this.contextMenuStrip1.Items.Clear();
       /************************************************/
-      this._MMDeviceCollection1 = AudioManager._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+//      this._MMDeviceCollection1 = AudioManager._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
       /************************************************/
       ToolStripMenuItem toolStripMenuItem1 = new ToolStripMenuItem();
       {

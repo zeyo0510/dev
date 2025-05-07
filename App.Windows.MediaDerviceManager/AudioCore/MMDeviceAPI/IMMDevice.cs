@@ -1,4 +1,4 @@
-// https://learn.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-activate
+// https://learn.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdevice
 /************************************************/
 using System;
 using System.Runtime.InteropServices;

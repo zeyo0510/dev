@@ -14,7 +14,8 @@ namespace App.Windows.MediaDerviceManager.Main
 {
   public partial class MainForm : Form
   {
-    private AudioDeviceCollection _MMDeviceCollection1   = null;
+    private MyAudioManager MyAudioManager1 = null;
+//    private AudioDeviceCollection _MMDeviceCollection1   = null;
     private MMNotificationClient _MMNotificationClient1 = null;
     /************************************************/
     private void fileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
@@ -55,15 +56,6 @@ namespace App.Windows.MediaDerviceManager.Main
     
     internal static float dpiX;
 
-    public AudioDevice DefaultDevice
-    {
-      get
-      {
-        AudioDevice retValue = AudioManager._MMDeviceEnumerator_.GetDefaultAudioEndpoint(EDataFlow.eRender, ERole.eMultimedia);
-        /************************************************/
-        return retValue;
-      }
-    }
     /************************************************/
     public bool IsAdvancedUser
     {
@@ -97,7 +89,9 @@ namespace App.Windows.MediaDerviceManager.Main
 
     public MainForm()
     {
-      _MMDeviceCollection1 = AudioManager._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+      this.MyAudioManager1 = new MyAudioManager();
+      
+//      _MMDeviceCollection1 = AudioManager._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
       _MMNotificationClient1 = new MMNotificationClient();
       AudioManager._MMDeviceEnumerator_.RegisterEndpointNotificationCallback(_MMNotificationClient1);
       this.InitializeComponent();
@@ -125,15 +119,15 @@ namespace App.Windows.MediaDerviceManager.Main
         return;
       }
       /************************************************/
-      string text = this.DefaultDevice.ID.ToString();
+      string text = this.MyAudioManager1.DefaultAudioRenderDevice.ID.ToString();
       /************************************************/
-      this._MMDeviceCollection1 = AudioManager._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+//      this._MMDeviceCollection1 = AudioManager._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
       /************************************************/
-      int count = _MMDeviceCollection1.Count;
-      for (int i = 0; i < count; i++)
+//      int count = _MMDeviceCollection1.Count;
+      foreach (AudioDevice device in MyAudioManager1.AudioRenderDeviceItems)
       {
-        AudioDevice mmDevice = this._MMDeviceCollection1[i];
-        string deviceID = mmDevice.ID;
+//        AudioDevice mmDevice = this._MMDeviceCollection1[i];
+        string deviceID = device.ID;
         bool @default = false;
         if (deviceID == text)
         {
@@ -150,16 +144,16 @@ namespace App.Windows.MediaDerviceManager.Main
         if (flowLayoutPanel == null)
         {
           flowLayoutPanel = new AudioFlowLayoutPanel();
-          VDeviceVolumeControl deviceVolumeControl = new VDeviceVolumeControl(mmDevice);
+          VDeviceVolumeControl deviceVolumeControl = new VDeviceVolumeControl(device);
           // flowLayoutPanel
           {
-            flowLayoutPanel.Tag = mmDevice.ID;
+            flowLayoutPanel.Tag = device.ID;
             flowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
           }
           // deviceVolumeControl
           {
             deviceVolumeControl.BackColor = Color.FromArgb(242, 242, 242);
-            deviceVolumeControl.Tag = mmDevice.ID;
+            deviceVolumeControl.Tag = device.ID;
             deviceVolumeControl.SetDefault(@default);
           }
           flowLayoutPanel.Controls.Add(deviceVolumeControl);
@@ -172,7 +166,7 @@ namespace App.Windows.MediaDerviceManager.Main
         int num;
         try
         {
-          num = mmDevice.AudioSessionManager.GetCount();
+          num = device.AudioSessionManager.Count;
         }
         catch (Exception)
         {
@@ -181,7 +175,7 @@ namespace App.Windows.MediaDerviceManager.Main
         /************************************************/
         for (int j = 0; j < num; j++)
         {
-          AudioSessionControl2 audioSessionControl21 = mmDevice.AudioSessionManager.audioSessionEnumerator1[j];
+          AudioSessionControl2 audioSessionControl21 = device.AudioSessionManager.audioSessionEnumerator1[j];
           Process process;
           try
           {
@@ -210,8 +204,8 @@ namespace App.Windows.MediaDerviceManager.Main
           if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
           {
             sessionVolumeControl = new VSessionVolumeControl(audioSessionControl21, process);
-            sessionVolumeControl._MMDeviceCollection1 = _MMDeviceCollection1;
-            sessionVolumeControl._MMDevice1 = mmDevice;
+//            sessionVolumeControl._MMDeviceCollection1 = _MMDeviceCollection1;
+            sessionVolumeControl._MMDevice1 = device;
             flowLayoutPanel.Controls.Add(sessionVolumeControl);
             if (process.Id == 0)
             {
@@ -238,6 +232,7 @@ namespace App.Windows.MediaDerviceManager.Main
 
     private void mmNotificationClient1_DeviceAdded(string P_0)
     {
+      System.Diagnostics.Debug.WriteLine("DeviceAdded:" + P_0);
       if (base.InvokeRequired)
       {
         base.BeginInvoke(new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceAdded), P_0);

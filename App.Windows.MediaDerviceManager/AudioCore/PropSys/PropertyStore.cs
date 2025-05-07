@@ -1,12 +1,11 @@
 using System;
 using System.Runtime.InteropServices;
-using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
   public class PropertyStore
   {
-    private readonly IPropertyStore _PropertyStore_ = null;
+    private readonly IPropertyStore _PropertyStore_;
     /************************************************/
     internal PropertyStore(IPropertyStore obj)
     {
@@ -24,7 +23,9 @@ namespace AudioCore
           if (propertyKey.fmtid == P_0.fmtid && propertyKey.pid == P_0.pid)
           {
             PropVariant propVariant;
+            /************************************************/
             Marshal.ThrowExceptionForHR(_PropertyStore_.GetValue(ref propertyKey, out propVariant));
+            /************************************************/
             return new PropertyStoreProperty(propVariant);
           }
         }

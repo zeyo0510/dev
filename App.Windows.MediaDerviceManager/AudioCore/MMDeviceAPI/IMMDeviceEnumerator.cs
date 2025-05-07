@@ -1,4 +1,3 @@
-// OK
 // https://learn.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator
 /************************************************/
 using System;

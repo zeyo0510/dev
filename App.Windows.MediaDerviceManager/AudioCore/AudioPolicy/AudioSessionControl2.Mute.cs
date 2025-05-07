@@ -9,7 +9,7 @@ namespace AudioCore
     {
       get
       {
-        bool retValue = false;
+        bool retValue;
         /************************************************/
         Marshal.ThrowExceptionForHR(this._ISimpleAudioVolume.GetMute(out retValue));
         /************************************************/

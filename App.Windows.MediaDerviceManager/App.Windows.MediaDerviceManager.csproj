@@ -68,32 +68,55 @@
     <Compile Include="AudioCore2\Combase.cs" />
     <Compile Include="AudioCore2\HRESULT.cs" />
     <Compile Include="AudioCore\000_MyAudioManager.cs" />
-    <Compile Include="AudioCore\000_MyAudioManager.AudioDeviceItems.cs" />
+    <Compile Include="AudioCore\000_MyAudioManager.AudioRenderDeviceItems.cs">
+      <DependentUpon>000_MyAudioManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="AudioCore\000_MyAudioManager.MMDeviceEnumerator.cs">
       <DependentUpon>000_MyAudioManager.cs</DependentUpon>
     </Compile>
     <Compile Include="AudioCore\001_AudioDeviceCollection.cs" />
+    <Compile Include="AudioCore\002_AudioDevice.AudioClient.cs">
+      <DependentUpon>002_AudioDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\002_AudioDevice.AudioEndpointVolume.cs">
+      <DependentUpon>002_AudioDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\002_AudioDevice.AudioMeterInformation.cs">
+      <DependentUpon>002_AudioDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\002_AudioDevice.AudioSessionManager.cs">
+      <DependentUpon>002_AudioDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\002_AudioDevice.cs" />
+    <Compile Include="AudioCore\003B_AudioEndpointVolume.AudioEndpointVolumeNotification.cs">
+      <DependentUpon>003B_AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\003B_AudioEndpointVolume.cs" />
+    <Compile Include="AudioCore\003B_AudioEndpointVolume.Dispose.cs">
+      <DependentUpon>003B_AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\003B_AudioEndpointVolume.OnNotify.cs">
+      <DependentUpon>003B_AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\003B_AudioEndpointVolume.Volume.cs">
+      <DependentUpon>003B_AudioEndpointVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioCore\003D_AudioSessionManager2.cs" />
+    <Compile Include="AudioCore\004_AudioMeterInformationChannels.cs" />
+    <Compile Include="AudioCore\003A_AudioClient.cs" />
     <Compile Include="AudioCore\AudioClient\AudioCaptureClient.cs" />
     <Compile Include="AudioCore\AudioClient\AudioRenderClient.cs" />
-    <Compile Include="AudioCore\AudioClient\IAudioClient.cs">
-      <DependentUpon>AudioClient.cs</DependentUpon>
+    <Compile Include="AudioCore\AudioClient\IAudioClient.cs" />
+    <Compile Include="AudioCore\AudioClient\IAudioCaptureClient.cs" />
+    <Compile Include="AudioCore\AudioClient\IAudioRenderClient.cs" />
+    <Compile Include="AudioCore\AudioClient\ISimpleAudioVolume.cs" />
+    <Compile Include="AudioCore\000_MyAudioManager.DefaultAudioRenderDevice.cs">
+      <DependentUpon>000_MyAudioManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="AudioCore\AudioClient\AudioClient.cs" />
-    <Compile Include="AudioCore\AudioClient\IAudioCaptureClient.cs">
-      <DependentUpon>AudioCaptureClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioClient\IAudioRenderClient.cs">
-      <DependentUpon>AudioRenderClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioClient\ISimpleAudioVolume.cs">
-      <DependentUpon>SimpleAudioVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioClient\SimpleAudioVolume.cs" />
+    <Compile Include="AudioCore\003B_AudioEndpointVolumeCallback.cs" />
+    <Compile Include="AudioCore\003C_AudioMeterInformation.cs" />
     <Compile Include="AudioCore\AudioPolicy\AudioSessionEnumerator.cs" />
     <Compile Include="AudioCore\AudioPolicy\AudioSessionNotification.cs" />
-    <Compile Include="AudioCore\AudioPolicy\IAudioSessionManager2.cs">
-      <DependentUpon>AudioSessionManager2.cs</DependentUpon>
-    </Compile>
     <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.ChannelsPeakValues.cs">
       <DependentUpon>AudioSessionControl2.cs</DependentUpon>
     </Compile>
@@ -131,43 +154,12 @@
     <Compile Include="AudioCore\AudioPolicy\AudioSessionControl2.Volume.cs">
       <DependentUpon>AudioSessionControl2.cs</DependentUpon>
     </Compile>
-    <Compile Include="AudioCore\AudioPolicy\AudioSessionManager2.cs" />
     <Compile Include="AudioCore\AudioPolicy\IAudioSessionControl.cs" />
-    <Compile Include="AudioCore\AudioPolicy\IAudioSessionControl2.cs">
-      <DependentUpon>AudioSessionControl2.cs</DependentUpon>
-    </Compile>
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionControl2.cs" />
     <Compile Include="AudioCore\AudioPolicy\IAudioSessionEvents.cs" />
-    <Compile Include="AudioCore\AudioPolicy\IAudioSessionNotification.cs">
-      <DependentUpon>AudioSessionNotification.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\AudioPolicy\IAudioSessionEnumerator.cs">
-      <DependentUpon>AudioSessionEnumerator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.AudioEndpointVolumeNotification.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.ChannelCount.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.cs" />
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.Dispose.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.MasterVolumeLevelScalar.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.Mute.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.OnNotify.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolume.Volume.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\AudioEndpointVolumeCallback.cs" />
-    <Compile Include="AudioCore\EndpointVolume\AudioMeterInformation.cs" />
-    <Compile Include="AudioCore\EndpointVolume\AudioMeterInformationChannels.cs" />
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionManager2.cs" />
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionNotification.cs" />
+    <Compile Include="AudioCore\AudioPolicy\IAudioSessionEnumerator.cs" />
     <Compile Include="AudioCore\EndpointVolume\AudioVolumeNotificationDataEventArgs.cs" />
     <Compile Include="AudioCore\EndpointVolume\AudioVolumeNotificationDataEventArgs.MasterVolume.cs">
       <DependentUpon>AudioVolumeNotificationDataEventArgs.cs</DependentUpon>
@@ -177,12 +169,9 @@
     </Compile>
     <Compile Include="AudioCore\EndpointVolume\AudioVolumeNotificationDataEventHandler.cs" />
     <Compile Include="AudioCore\EndpointVolume\AUDIO_VOLUME_NOTIFICATION_DATA.cs" />
-    <Compile Include="AudioCore\EndpointVolume\IAudioMeterInformation.cs">
-      <DependentUpon>AudioMeterInformation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\EndpointVolume\IAudioEndpointVolume.cs">
-      <DependentUpon>AudioEndpointVolume.cs</DependentUpon>
-    </Compile>
+    <Compile Include="AudioCore\EndpointVolume\IAudioMeterInformation.cs" />
+    <Compile Include="AudioCore\EndpointVolume\IAudioEndpointVolume.cs" />
+    <Compile Include="AudioCore\EndpointVolume\IAudioEndpointVolumeCallback.cs" />
     <Compile Include="AudioCore\Enum\AudioClientBufferFlags.cs" />
     <Compile Include="AudioCore\Enum\AudioClientShareMode.cs" />
     <Compile Include="AudioCore\Enum\AudioClientStreamFlags.cs" />
@@ -197,10 +186,7 @@
     <Compile Include="AudioCore\Enum\ERole.cs" />
     <Compile Include="AudioCore\Enum\EStgmAccess.cs" />
     <Compile Include="AudioCore\Enum\WaveFormatEncoding.cs" />
-    <Compile Include="AudioCore\MMDeviceAPI\IMMDevice.cs">
-      <DependentUpon>AudioDevice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AudioCore\MMDeviceAPI\AudioDevice.cs" />
+    <Compile Include="AudioCore\MMDeviceAPI\IMMDevice.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\IMMDeviceCollection.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\IMMDeviceEnumerator.cs" />
     <Compile Include="AudioCore\MMDeviceAPI\IMMEndpoint.cs" />
@@ -211,22 +197,20 @@
     <Compile Include="AudioCore\MMEApi\WaveFormat.cs" />
     <Compile Include="AudioCore\PropSys\PropertyStore.cs" />
     <Compile Include="AudioCore\PropSys\_IPropertyStore.cs" />
+    <Compile Include="AudioCore\004_SimpleAudioVolume.cs" />
     <Compile Include="AudioCore\WTypes\PROPERTYKEY.cs" />
-    <Compile Include="AudioCore\_IAudioEndpointVolumeCallback.cs">
-      <DependentUpon>000_MyAudioManager.MMDeviceEnumerator.cs</DependentUpon>
-    </Compile>
     <Compile Include="AudioCore\Guids.cs" />
-    <Compile Include="AudioCore\AdpcmWaveFormat.cs" />
-    <Compile Include="AudioCore\AudioMediaSubtypes.cs" />
-    <Compile Include="AudioCore\PKEY.cs" />
-    <Compile Include="AudioCore\PolicyConfigClient.cs" />
-    <Compile Include="AudioCore\PolicyConfigClient_.cs" />
-    <Compile Include="AudioCore\PropertyKey.cs" />
-    <Compile Include="AudioCore\PropertyKeys.cs" />
-    <Compile Include="AudioCore\PropertyStoreProperty.cs" />
-    <Compile Include="AudioCore\PropVariant.cs" />
-    <Compile Include="AudioCore\WaveFormatExtensible.cs" />
-    <Compile Include="AudioCore\WaveFormatExtraData.cs" />
+    <Compile Include="AudioCore\_AdpcmWaveFormat.cs" />
+    <Compile Include="AudioCore\_AudioMediaSubtypes.cs" />
+    <Compile Include="AudioCore\_PKEY.cs" />
+    <Compile Include="AudioCore\_PolicyConfigClient.cs" />
+    <Compile Include="AudioCore\_PolicyConfigClient_.cs" />
+    <Compile Include="AudioCore\_PropertyKey.cs" />
+    <Compile Include="AudioCore\_PropertyKeys.cs" />
+    <Compile Include="AudioCore\_PropertyStoreProperty.cs" />
+    <Compile Include="AudioCore\_PropVariant.cs" />
+    <Compile Include="AudioCore\_WaveFormatExtensible.cs" />
+    <Compile Include="AudioCore\_WaveFormatExtraData.cs" />
     <Compile Include="a\AudioManager.cs" />
     <Compile Include="a\ImageHelper.cs" />
     <Compile Include="B\IOpenControlPanel.cs" />

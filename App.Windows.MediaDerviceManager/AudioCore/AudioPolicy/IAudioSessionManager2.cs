@@ -1,8 +1,8 @@
 // https://learn.microsoft.com/en-us/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2
-
+/************************************************/
 using System;
 using System.Runtime.InteropServices;
-
+/************************************************/
 namespace AudioCore.Interfaces
 {
   [Guid("77AA99A0-1BD6-484F-8BC7-2C654C9A9B6F")]
@@ -16,18 +16,18 @@ namespace AudioCore.Interfaces
     int GetSimpleAudioVolume(ref Guid P_0, uint P_1, out ISimpleAudioVolume P_2);
 
     [PreserveSig]
-    int GetSessionEnumerator(out IAudioSessionEnumerator P_0);
+    int GetSessionEnumerator(out IAudioSessionEnumerator SessionEnum);
 
     [PreserveSig]
-    int RegisterSessionNotification(IAudioSessionNotification P_0);
+    int RegisterSessionNotification(IAudioSessionNotification SessionNotification);
 
     [PreserveSig]
-    int UnregisterSessionNotification(IAudioSessionNotification P_0);
+    int UnregisterSessionNotification(IAudioSessionNotification duckNotification);
 
     [PreserveSig]
-    int RegisterDuckNotification(string P_0, IntPtr P_1);
+    int RegisterDuckNotification(string sessionID, IntPtr duckNotification);
 
     [PreserveSig]
-    int UnregisterDuckNotification(IntPtr P_0);
+    int UnregisterDuckNotification(IntPtr SessionNotification);
   }
 }

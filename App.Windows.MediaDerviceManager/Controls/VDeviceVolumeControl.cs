@@ -47,7 +47,13 @@ namespace App.Windows.MediaDerviceManager.Controls
     /************************************************/
     private void _AudioEndpointVolume1_OnVolumeNotification(AudioVolumeNotificationDataEventArgs e)
     {
-      this.UpdateUI();
+      if (base.InvokeRequired)
+      {
+        base.Invoke(new Action<AudioVolumeNotificationDataEventArgs>(_AudioEndpointVolume1_OnVolumeNotification));
+      } else  {
+        System.Diagnostics.Debug.WriteLine("AudioEndpointVolume: OnVolumeNotification");
+        this.UpdateUI();
+      }
     }
     /************************************************/
     private void guiTimer_Tick(object sender, EventArgs e)

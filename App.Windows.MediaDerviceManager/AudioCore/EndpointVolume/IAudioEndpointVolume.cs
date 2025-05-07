@@ -1,4 +1,4 @@
-// https://learn.microsoft.com/en-us/windows/win32/api/endpointvolume/nf-endpointvolume-iaudioendpointvolume-getchannelcount
+// https://learn.microsoft.com/en-us/windows/win32/api/endpointvolume/nn-endpointvolume-iaudioendpointvolume
 /************************************************/
 using System;
 using System.Runtime.InteropServices;
@@ -10,57 +10,57 @@ namespace AudioCore.Interfaces
   internal interface IAudioEndpointVolume
   {
     [PreserveSig]
-    int RegisterControlChangeNotify(IAudioEndpointVolumeCallback P_0);
-
+    int RegisterControlChangeNotify(IAudioEndpointVolumeCallback pNotify);
+    /************************************************/
     [PreserveSig]
-    int UnregisterControlChangeNotify(IAudioEndpointVolumeCallback P_0);
-
+    int UnregisterControlChangeNotify(IAudioEndpointVolumeCallback pNotify);
+    /************************************************/
     [PreserveSig]
-    int GetChannelCount(out int P_0);
-
+    int GetChannelCount(out int pnChannelCount);
+    /************************************************/
     [PreserveSig]
-    int SetMasterVolumeLevel(float P_0, Guid P_1);
-
+    int SetMasterVolumeLevel(float fLevelDB, Guid pguidEventContext);
+    /************************************************/
     [PreserveSig]
-    int SetMasterVolumeLevelScalar(float P_0, Guid P_1);
-
+    int SetMasterVolumeLevelScalar(float fLevel, Guid pguidEventContext);
+    /************************************************/
     [PreserveSig]
-    int GetMasterVolumeLevel(out float P_0);
-
+    int GetMasterVolumeLevel(out float pfLevelDB);
+    /************************************************/
     [PreserveSig]
-    int GetMasterVolumeLevelScalar(out float P_0);
-
+    int GetMasterVolumeLevelScalar(out float pfLevel);
+    /************************************************/
     [PreserveSig]
-    int SetChannelVolumeLevel(uint P_0, float P_1, Guid P_2);
-
+    int SetChannelVolumeLevel(uint nChannel, float fLevelDB, Guid pguidEventContext);
+    /************************************************/
     [PreserveSig]
-    int SetChannelVolumeLevelScalar(uint P_0, float P_1, Guid P_2);
-
+    int SetChannelVolumeLevelScalar(uint nChannel, float fLevel, Guid pguidEventContext);
+    /************************************************/
     [PreserveSig]
-    int GetChannelVolumeLevel(uint P_0, out float P_1);
-
+    int GetChannelVolumeLevel(uint nChannel, out float pfLevelDB);
+    /************************************************/
     [PreserveSig]
-    int GetChannelVolumeLevelScalar(uint P_0, out float P_1);
-
+    int GetChannelVolumeLevelScalar(uint nChannel, out float pfLevel);
+    /************************************************/
     [PreserveSig]
-    int SetMute([MarshalAs(UnmanagedType.Bool)] bool P_0, Guid P_1);
-
+    int SetMute([MarshalAs(UnmanagedType.Bool)] bool bMute, Guid pguidEventContext);
+    /************************************************/
     [PreserveSig]
-    int GetMute(out bool P_0);
-
+    int GetMute(out bool pbMute);
+    /************************************************/
     [PreserveSig]
-    int GetVolumeStepInfo(out uint P_0, out uint P_1);
-
+    int GetVolumeStepInfo(out uint pnStep, out uint pnStepCount);
+    /************************************************/
     [PreserveSig]
-    int VolumeStepUp(Guid P_0);
-
+    int VolumeStepUp(Guid pguidEventContext);
+    /************************************************/
     [PreserveSig]
-    int VolumeStepDown(Guid P_0);
-
+    int VolumeStepDown(Guid pguidEventContext);
+    /************************************************/
     [PreserveSig]
-    int QueryHardwareSupport(out uint P_0);
-
+    int QueryHardwareSupport(out uint pdwHardwareSupportMask);
+    /************************************************/
     [PreserveSig]
-    int GetVolumeRange(out float P_0, out float P_1, out float P_2);
+    int GetVolumeRange(out float pflVolumeMindB, out float pflVolumeMaxdB, out float pflVolumeIncrementdB);
   }
 }

@@ -6,7 +6,7 @@ namespace AudioCore
 {
   public class AudioDeviceCollection
   {
-    private readonly IMMDeviceCollection _MMDeviceCollection_ = null;
+    private readonly IMMDeviceCollection _MMDeviceCollection_;
     /************************************************/
     internal AudioDeviceCollection(IMMDeviceCollection obj)
     {
@@ -17,7 +17,7 @@ namespace AudioCore
     {
       get
       {
-        IMMDevice retValue = null;
+        IMMDevice retValue;
         /************************************************/
         Marshal.ThrowExceptionForHR(this._MMDeviceCollection_.Item((uint)index, out retValue));
         /************************************************/

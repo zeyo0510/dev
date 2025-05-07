@@ -6,7 +6,7 @@ namespace AudioCore
 {
   public class AudioRenderClient : IDisposable
   {
-    private IAudioRenderClient _AudioRenderClient_ = null;
+    private IAudioRenderClient _AudioRenderClient_;
     /************************************************/
     internal AudioRenderClient(IAudioRenderClient obj)
     {
