@@ -84,6 +84,24 @@
     <Compile Include="Controls\FileInfoCtrl.designer.cs">
       <DependentUpon>FileInfoCtrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\AddExcludeFileType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddExcludeFileType.Designer.cs">
+      <DependentUpon>AddExcludeFileType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddExcludeFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddExcludeFolder.Designer.cs">
+      <DependentUpon>AddExcludeFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddIncludeFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddIncludeFolder.Designer.cs">
+      <DependentUpon>AddIncludeFolder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\AnalyzeDialog.AnalyzeDisk.cs">
       <DependentUpon>AnalyzeDialog.cs</DependentUpon>
     </Compile>
@@ -162,24 +180,6 @@
     <Compile Include="Main\MainForm.ViewFileProperties.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Misc\AddExcludeFileType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Misc\AddExcludeFileType.Designer.cs">
-      <DependentUpon>AddExcludeFileType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Misc\AddExcludeFolder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Misc\AddExcludeFolder.Designer.cs">
-      <DependentUpon>AddExcludeFolder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Misc\AddIncludeFolder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Misc\AddIncludeFolder.Designer.cs">
-      <DependentUpon>AddIncludeFolder.cs</DependentUpon>
-    </Compile>
     <Compile Include="Misc\Permissions.cs" />
     <Compile Include="Misc\SysRestore.cs" />
     <Compile Include="Misc\Utils.cs" />
@@ -189,13 +189,13 @@
     <EmbeddedResource Include="Controls\FileInfoCtrl.resx">
       <DependentUpon>FileInfoCtrl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Misc\AddExcludeFileType.resx">
+    <EmbeddedResource Include="Dialogs\AddExcludeFileType.resx">
       <DependentUpon>AddExcludeFileType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Misc\AddExcludeFolder.resx">
+    <EmbeddedResource Include="Dialogs\AddExcludeFolder.resx">
       <DependentUpon>AddExcludeFolder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Misc\AddIncludeFolder.resx">
+    <EmbeddedResource Include="Dialogs\AddIncludeFolder.resx">
       <DependentUpon>AddIncludeFolder.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />

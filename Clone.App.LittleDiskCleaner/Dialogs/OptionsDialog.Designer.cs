@@ -106,721 +106,645 @@ namespace Little_Disk_Cleaner.Dialogs
       this.tabPageExcludeFolders.SuspendLayout();
       this.tabPageExcludeFiles.SuspendLayout();
       this.SuspendLayout();
-      // 
+      /************************************************/
       // tabControl1
-      // 
-      this.tabControl1.Controls.Add(this.drivesTabPage);
-      this.tabControl1.Controls.Add(this.tabPageRemoval);
-      this.tabControl1.Controls.Add(this.tabPageSearch);
-      this.tabControl1.Controls.Add(this.tabPageAdvanced);
-      this.tabControl1.Controls.Add(this.tabPageIncFolders);
-      this.tabControl1.Controls.Add(this.tabPageExcludeFolders);
-      this.tabControl1.Controls.Add(this.tabPageExcludeFiles);
-      this.tabControl1.Location = new System.Drawing.Point(12, 12);
-      this.tabControl1.Name = "tabControl1";
-      this.tabControl1.SelectedIndex = 0;
-      this.tabControl1.Size = new System.Drawing.Size(346, 238);
-      this.tabControl1.TabIndex = 0;
-      // 
+      {
+        this.tabControl1.Location = new System.Drawing.Point(12, 12);
+        this.tabControl1.Name = "tabControl1";
+        this.tabControl1.SelectedIndex = 0;
+        this.tabControl1.Size = new System.Drawing.Size(346, 238);
+        /************************************************/
+        this.tabControl1.Controls.Add(this.drivesTabPage);
+        this.tabControl1.Controls.Add(this.tabPageRemoval);
+        this.tabControl1.Controls.Add(this.tabPageSearch);
+        this.tabControl1.Controls.Add(this.tabPageAdvanced);
+        this.tabControl1.Controls.Add(this.tabPageIncFolders);
+        this.tabControl1.Controls.Add(this.tabPageExcludeFolders);
+        this.tabControl1.Controls.Add(this.tabPageExcludeFiles);
+      }
       // drivesTabPage
-      // 
-      this.drivesTabPage.Controls.Add(this.drivesListView);
-      this.drivesTabPage.Location = new System.Drawing.Point(4, 22);
-      this.drivesTabPage.Name = "drivesTabPage";
-      this.drivesTabPage.Size = new System.Drawing.Size(338, 212);
-      this.drivesTabPage.TabIndex = 6;
-      this.drivesTabPage.Text = "Drives";
-      this.drivesTabPage.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.drivesTabPage.Name = "drivesTabPage";
+        this.drivesTabPage.Location = new System.Drawing.Point(4, 22);
+        this.drivesTabPage.Size = new System.Drawing.Size(338, 212);
+        this.drivesTabPage.Text = "Drives";
+        /************************************************/
+        this.drivesTabPage.Controls.Add(this.drivesListView);
+      }
       // drivesListView
-      // 
-      this.drivesListView.CheckBoxes = true;
-      this.drivesListView.Columns.AddRange(new ColumnHeader[] {
-      this.columnHeader3,
-      this.columnHeader4,
-      this.columnHeader5,
-      this.columnHeader6});
-      this.drivesListView.Dock = DockStyle.Fill;
-      this.drivesListView.Location = new System.Drawing.Point(0, 0);
-      this.drivesListView.Name = "drivesListView";
-      this.drivesListView.Size = new System.Drawing.Size(338, 212);
-      this.drivesListView.TabIndex = 1;
-      this.drivesListView.UseCompatibleStateImageBehavior = false;
-      this.drivesListView.View = View.Details;
-      // 
+      {
+        this.drivesListView.CheckBoxes = true;
+        this.drivesListView.Dock = DockStyle.Fill;
+        this.drivesListView.Name = "drivesListView";
+        this.drivesListView.View = View.Details;
+        /************************************************/
+        this.drivesListView.Columns.Add(this.columnHeader3);
+        this.drivesListView.Columns.Add(this.columnHeader4);
+        this.drivesListView.Columns.Add(this.columnHeader5);
+        this.drivesListView.Columns.Add(this.columnHeader6);
+      }
       // columnHeader3
-      // 
-      this.columnHeader3.Text = "Drive";
-      // 
+      {
+        this.columnHeader3.Text = "Drive";
+      }
       // columnHeader4
-      // 
-      this.columnHeader4.Text = "Drive Format";
-      // 
+      {
+        this.columnHeader4.Text = "Drive Format";
+      }
       // columnHeader5
-      // 
-      this.columnHeader5.Text = "Capacity";
-      this.columnHeader5.Width = 81;
-      // 
+      {
+        this.columnHeader5.Text = "Capacity";
+        this.columnHeader5.Width = 81;
+      }
       // columnHeader6
-      // 
-      this.columnHeader6.Text = "Free Space";
-      this.columnHeader6.Width = 83;
-      // 
+      {
+        this.columnHeader6.Text = "Free Space";
+        this.columnHeader6.Width = 83;
+      }
       // tabPageRemoval
-      // 
-      this.tabPageRemoval.Controls.Add(this.groupBox2);
-      this.tabPageRemoval.Controls.Add(this.groupBox1);
-      this.tabPageRemoval.Location = new System.Drawing.Point(4, 22);
-      this.tabPageRemoval.Name = "tabPageRemoval";
-      this.tabPageRemoval.Padding = new Padding(3);
-      this.tabPageRemoval.Size = new System.Drawing.Size(338, 212);
-      this.tabPageRemoval.TabIndex = 3;
-      this.tabPageRemoval.Text = "Removal";
-      this.tabPageRemoval.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.tabPageRemoval.Location = new System.Drawing.Point(4, 22);
+        this.tabPageRemoval.Name = "tabPageRemoval";
+        this.tabPageRemoval.Padding = new Padding(3);
+        this.tabPageRemoval.Size = new System.Drawing.Size(338, 212);
+        this.tabPageRemoval.Text = "Removal";
+        /************************************************/
+        this.tabPageRemoval.Controls.Add(this.groupBox2);
+        this.tabPageRemoval.Controls.Add(this.groupBox1);
+      }
       // groupBox2
-      // 
-      this.groupBox2.Controls.Add(this.label1);
-      this.groupBox2.Controls.Add(this.checkBoxAutoSysRestore);
-      this.groupBox2.Location = new System.Drawing.Point(6, 131);
-      this.groupBox2.Name = "groupBox2";
-      this.groupBox2.Size = new System.Drawing.Size(326, 75);
-      this.groupBox2.TabIndex = 8;
-      this.groupBox2.TabStop = false;
-      this.groupBox2.Text = "System Restore";
-      // 
+      {
+        this.groupBox2.Name = "groupBox2";
+        this.groupBox2.Location = new System.Drawing.Point(6, 131);
+        this.groupBox2.Size = new System.Drawing.Size(326, 75);
+        this.groupBox2.TabStop = false;
+        this.groupBox2.Text = "System Restore";
+        /************************************************/
+        this.groupBox2.Controls.Add(this.label1);
+        this.groupBox2.Controls.Add(this.checkBoxAutoSysRestore);
+      }
       // label1
-      // 
-      this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(6, 39);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(298, 26);
-      this.label1.TabIndex = 1;
-      this.label1.Text = "This will backup essential system files in order to prevent your \r\ncomputer from " +
-          "crashing. ";
-      // 
+      {
+        this.label1.Name = "label1";
+        this.label1.AutoSize = true;
+        this.label1.Location = new System.Drawing.Point(6, 39);
+        this.label1.Size = new System.Drawing.Size(298, 26);
+        this.label1.Text = "This will backup essential system files in order to prevent your \r\ncomputer from crashing.";
+      }
       // checkBoxAutoSysRestore
-      // 
-      this.checkBoxAutoSysRestore.AutoSize = true;
-      this.checkBoxAutoSysRestore.Location = new System.Drawing.Point(6, 19);
-      this.checkBoxAutoSysRestore.Name = "checkBoxAutoSysRestore";
-      this.checkBoxAutoSysRestore.Size = new System.Drawing.Size(263, 17);
-      this.checkBoxAutoSysRestore.TabIndex = 0;
-      this.checkBoxAutoSysRestore.Text = "Create restore points automatically (recommended)";
-      this.checkBoxAutoSysRestore.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxAutoSysRestore.Name = "checkBoxAutoSysRestore";
+        this.checkBoxAutoSysRestore.AutoSize = true;
+        this.checkBoxAutoSysRestore.Location = new System.Drawing.Point(6, 19);
+        this.checkBoxAutoSysRestore.Size = new System.Drawing.Size(263, 17);
+        this.checkBoxAutoSysRestore.Text = "Create restore points automatically (recommended)";
+      }
       // groupBox1
-      // 
-      this.groupBox1.Controls.Add(this.radioButtonRecycle);
-      this.groupBox1.Controls.Add(this.buttonBrowse);
-      this.groupBox1.Controls.Add(this.textBoxMoveFolder);
-      this.groupBox1.Controls.Add(this.radioButtonRemove);
-      this.groupBox1.Controls.Add(this.radioButtonMove);
-      this.groupBox1.Location = new System.Drawing.Point(6, 6);
-      this.groupBox1.Name = "groupBox1";
-      this.groupBox1.Size = new System.Drawing.Size(326, 119);
-      this.groupBox1.TabIndex = 7;
-      this.groupBox1.TabStop = false;
-      this.groupBox1.Text = "Select the mode of removing files from the disk";
-      // 
+      {
+        this.groupBox1.Name = "groupBox1";
+        this.groupBox1.Location = new System.Drawing.Point(6, 6);
+        this.groupBox1.Size = new System.Drawing.Size(326, 119);
+        this.groupBox1.TabStop = false;
+        this.groupBox1.Text = "Select the mode of removing files from the disk";
+        /************************************************/
+        this.groupBox1.Controls.Add(this.radioButtonRecycle);
+        this.groupBox1.Controls.Add(this.buttonBrowse);
+        this.groupBox1.Controls.Add(this.textBoxMoveFolder);
+        this.groupBox1.Controls.Add(this.radioButtonRemove);
+        this.groupBox1.Controls.Add(this.radioButtonMove);
+      }
       // radioButtonRecycle
-      // 
-      this.radioButtonRecycle.AutoSize = true;
-      this.radioButtonRecycle.Location = new System.Drawing.Point(6, 42);
-      this.radioButtonRecycle.Name = "radioButtonRecycle";
-      this.radioButtonRecycle.Size = new System.Drawing.Size(160, 17);
-      this.radioButtonRecycle.TabIndex = 2;
-      this.radioButtonRecycle.TabStop = true;
-      this.radioButtonRecycle.Text = "Send junk files to recycle bin";
-      this.radioButtonRecycle.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.radioButtonRecycle.Name = "radioButtonRecycle";
+        this.radioButtonRecycle.AutoSize = true;
+        this.radioButtonRecycle.Location = new System.Drawing.Point(6, 42);
+        this.radioButtonRecycle.Size = new System.Drawing.Size(160, 17);
+        this.radioButtonRecycle.TabStop = true;
+        this.radioButtonRecycle.Text = "Send junk files to recycle bin";
+      }
       // buttonBrowse
-      // 
-      this.buttonBrowse.Location = new System.Drawing.Point(290, 88);
-      this.buttonBrowse.Name = "buttonBrowse";
-      this.buttonBrowse.Size = new System.Drawing.Size(30, 23);
-      this.buttonBrowse.TabIndex = 6;
-      this.buttonBrowse.Text = "...";
-      this.buttonBrowse.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.buttonBrowse.Name = "buttonBrowse";
+        this.buttonBrowse.Location = new System.Drawing.Point(290, 88);
+        this.buttonBrowse.Size = new System.Drawing.Size(30, 23);
+        this.buttonBrowse.Text = "...";
+      }
       // textBoxMoveFolder
-      // 
-      this.textBoxMoveFolder.Location = new System.Drawing.Point(6, 88);
-      this.textBoxMoveFolder.Name = "textBoxMoveFolder";
-      this.textBoxMoveFolder.ReadOnly = true;
-      this.textBoxMoveFolder.Size = new System.Drawing.Size(278, 20);
-      this.textBoxMoveFolder.TabIndex = 5;
-      // 
+      {
+        this.textBoxMoveFolder.Name = "textBoxMoveFolder";
+        this.textBoxMoveFolder.Location = new System.Drawing.Point(6, 88);
+        this.textBoxMoveFolder.ReadOnly = true;
+        this.textBoxMoveFolder.Size = new System.Drawing.Size(278, 20);
+      }
       // radioButtonRemove
-      // 
-      this.radioButtonRemove.AutoSize = true;
-      this.radioButtonRemove.Location = new System.Drawing.Point(6, 19);
-      this.radioButtonRemove.Name = "radioButtonRemove";
-      this.radioButtonRemove.Size = new System.Drawing.Size(276, 17);
-      this.radioButtonRemove.TabIndex = 3;
-      this.radioButtonRemove.TabStop = true;
-      this.radioButtonRemove.Text = "Remove the junk files from hard drive (recommended)";
-      this.radioButtonRemove.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.radioButtonRemove.Name = "radioButtonRemove";
+        this.radioButtonRemove.AutoSize = true;
+        this.radioButtonRemove.Location = new System.Drawing.Point(6, 19);
+        this.radioButtonRemove.Size = new System.Drawing.Size(276, 17);
+        this.radioButtonRemove.TabStop = true;
+        this.radioButtonRemove.Text = "Remove the junk files from hard drive (recommended)";
+      }
       // radioButtonMove
-      // 
-      this.radioButtonMove.AutoSize = true;
-      this.radioButtonMove.Location = new System.Drawing.Point(6, 65);
-      this.radioButtonMove.Name = "radioButtonMove";
-      this.radioButtonMove.Size = new System.Drawing.Size(177, 17);
-      this.radioButtonMove.TabIndex = 4;
-      this.radioButtonMove.TabStop = true;
-      this.radioButtonMove.Text = "Move files to the specified folder";
-      this.radioButtonMove.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.radioButtonMove.Name = "radioButtonMove";
+        this.radioButtonMove.AutoSize = true;
+        this.radioButtonMove.Location = new System.Drawing.Point(6, 65);
+        this.radioButtonMove.Size = new System.Drawing.Size(177, 17);
+        this.radioButtonMove.TabStop = true;
+        this.radioButtonMove.Text = "Move files to the specified folder";
+      }
       // tabPageSearch
-      // 
-      this.tabPageSearch.Controls.Add(this.groupBox8);
-      this.tabPageSearch.Controls.Add(this.groupBox7);
-      this.tabPageSearch.Controls.Add(this.groupBox6);
-      this.tabPageSearch.Location = new System.Drawing.Point(4, 22);
-      this.tabPageSearch.Name = "tabPageSearch";
-      this.tabPageSearch.Padding = new Padding(3);
-      this.tabPageSearch.Size = new System.Drawing.Size(338, 212);
-      this.tabPageSearch.TabIndex = 4;
-      this.tabPageSearch.Text = "Searching";
-      this.tabPageSearch.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.tabPageSearch.Name = "tabPageSearch";
+        this.tabPageSearch.Location = new System.Drawing.Point(4, 22);
+        this.tabPageSearch.Padding = new Padding(3);
+        this.tabPageSearch.Size = new System.Drawing.Size(338, 212);
+        this.tabPageSearch.Text = "Searching";
+        /************************************************/
+        this.tabPageSearch.Controls.Add(this.groupBox8);
+        this.tabPageSearch.Controls.Add(this.groupBox7);
+        this.tabPageSearch.Controls.Add(this.groupBox6);
+      }
       // groupBox8
-      // 
-      this.groupBox8.Controls.Add(this.checkBoxAutoClean);
-      this.groupBox8.Location = new System.Drawing.Point(6, 149);
-      this.groupBox8.Name = "groupBox8";
-      this.groupBox8.Size = new System.Drawing.Size(326, 41);
-      this.groupBox8.TabIndex = 2;
-      this.groupBox8.TabStop = false;
-      this.groupBox8.Text = "Power Users";
-      // 
+      {
+        this.groupBox8.Name = "groupBox8";
+        this.groupBox8.Location = new System.Drawing.Point(6, 149);
+        this.groupBox8.Size = new System.Drawing.Size(326, 41);
+        this.groupBox8.TabStop = false;
+        this.groupBox8.Text = "Power Users";
+        /************************************************/
+        this.groupBox8.Controls.Add(this.checkBoxAutoClean);
+      }
       // checkBoxAutoClean
-      // 
-      this.checkBoxAutoClean.AutoSize = true;
-      this.checkBoxAutoClean.Location = new System.Drawing.Point(6, 19);
-      this.checkBoxAutoClean.Name = "checkBoxAutoClean";
-      this.checkBoxAutoClean.Size = new System.Drawing.Size(311, 17);
-      this.checkBoxAutoClean.TabIndex = 0;
-      this.checkBoxAutoClean.Text = "Automatically remove files after scanning (not recommended)";
-      this.checkBoxAutoClean.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxAutoClean.Name = "checkBoxAutoClean";
+        this.checkBoxAutoClean.AutoSize = true;
+        this.checkBoxAutoClean.Location = new System.Drawing.Point(6, 19);
+        this.checkBoxAutoClean.Size = new System.Drawing.Size(311, 17);
+        this.checkBoxAutoClean.Text = "Automatically remove files after scanning (not recommended)";
+      }
       // groupBox7
-      // 
-      this.groupBox7.Controls.Add(this.radioButtonFilterAgg);
-      this.groupBox7.Controls.Add(this.radioButtonFilterMed);
-      this.groupBox7.Controls.Add(this.radioButtonFilterSafe);
-      this.groupBox7.Controls.Add(this.label2);
-      this.groupBox7.Controls.Add(this.textBoxSearchFilters);
-      this.groupBox7.Location = new System.Drawing.Point(6, 78);
-      this.groupBox7.Name = "groupBox7";
-      this.groupBox7.Size = new System.Drawing.Size(326, 65);
-      this.groupBox7.TabIndex = 1;
-      this.groupBox7.TabStop = false;
-      this.groupBox7.Text = "Search Filters";
-      // 
+      {
+        this.groupBox7.Name = "groupBox7";
+        this.groupBox7.Location = new System.Drawing.Point(6, 78);
+        this.groupBox7.Size = new System.Drawing.Size(326, 65);
+        this.groupBox7.TabStop = false;
+        this.groupBox7.Text = "Search Filters";
+        /************************************************/
+        this.groupBox7.Controls.Add(this.radioButtonFilterAgg);
+        this.groupBox7.Controls.Add(this.radioButtonFilterMed);
+        this.groupBox7.Controls.Add(this.radioButtonFilterSafe);
+        this.groupBox7.Controls.Add(this.label2);
+        this.groupBox7.Controls.Add(this.textBoxSearchFilters);
+      }
       // radioButtonFilterAgg
-      // 
-      this.radioButtonFilterAgg.AutoSize = true;
-      this.radioButtonFilterAgg.Location = new System.Drawing.Point(153, 40);
-      this.radioButtonFilterAgg.Name = "radioButtonFilterAgg";
-      this.radioButtonFilterAgg.Size = new System.Drawing.Size(77, 17);
-      this.radioButtonFilterAgg.TabIndex = 12;
-      this.radioButtonFilterAgg.TabStop = true;
-      this.radioButtonFilterAgg.Text = "Aggressive";
-      this.radioButtonFilterAgg.UseVisualStyleBackColor = true;
-      this.radioButtonFilterAgg.CheckedChanged += new System.EventHandler(this.FilterRadioChanged);
-      // 
+      {
+        this.radioButtonFilterAgg.Name = "radioButtonFilterAgg";
+        this.radioButtonFilterAgg.AutoSize = true;
+        this.radioButtonFilterAgg.Location = new System.Drawing.Point(153, 40);
+        this.radioButtonFilterAgg.Size = new System.Drawing.Size(77, 17);
+        this.radioButtonFilterAgg.TabStop = true;
+        this.radioButtonFilterAgg.Text = "Aggressive";
+        /************************************************/
+        this.radioButtonFilterAgg.CheckedChanged += new System.EventHandler(this.FilterRadioChanged);
+      }
       // radioButtonFilterMed
-      // 
-      this.radioButtonFilterMed.AutoSize = true;
-      this.radioButtonFilterMed.Location = new System.Drawing.Point(94, 40);
-      this.radioButtonFilterMed.Name = "radioButtonFilterMed";
-      this.radioButtonFilterMed.Size = new System.Drawing.Size(62, 17);
-      this.radioButtonFilterMed.TabIndex = 11;
-      this.radioButtonFilterMed.TabStop = true;
-      this.radioButtonFilterMed.Text = "Medium";
-      this.radioButtonFilterMed.UseVisualStyleBackColor = true;
-      this.radioButtonFilterMed.CheckedChanged += new System.EventHandler(this.FilterRadioChanged);
-      // 
+      {
+        this.radioButtonFilterMed.Name = "radioButtonFilterMed";
+        this.radioButtonFilterMed.AutoSize = true;
+        this.radioButtonFilterMed.Location = new System.Drawing.Point(94, 40);
+        this.radioButtonFilterMed.Size = new System.Drawing.Size(62, 17);
+        this.radioButtonFilterMed.TabStop = true;
+        this.radioButtonFilterMed.Text = "Medium";
+        /************************************************/
+        this.radioButtonFilterMed.CheckedChanged += new System.EventHandler(this.FilterRadioChanged);
+      }
       // radioButtonFilterSafe
-      // 
-      this.radioButtonFilterSafe.AutoSize = true;
-      this.radioButtonFilterSafe.Location = new System.Drawing.Point(49, 40);
-      this.radioButtonFilterSafe.Name = "radioButtonFilterSafe";
-      this.radioButtonFilterSafe.Size = new System.Drawing.Size(47, 17);
-      this.radioButtonFilterSafe.TabIndex = 10;
-      this.radioButtonFilterSafe.TabStop = true;
-      this.radioButtonFilterSafe.Text = "Safe";
-      this.radioButtonFilterSafe.UseVisualStyleBackColor = true;
-      this.radioButtonFilterSafe.CheckedChanged += new System.EventHandler(this.FilterRadioChanged);
-      // 
+      {
+        this.radioButtonFilterSafe.Name = "radioButtonFilterSafe";
+        this.radioButtonFilterSafe.AutoSize = true;
+        this.radioButtonFilterSafe.Location = new System.Drawing.Point(49, 40);
+        this.radioButtonFilterSafe.Size = new System.Drawing.Size(47, 17);
+        this.radioButtonFilterSafe.TabStop = true;
+        this.radioButtonFilterSafe.Text = "Safe";
+        /************************************************/
+        this.radioButtonFilterSafe.CheckedChanged += new System.EventHandler(this.FilterRadioChanged);
+      }
       // label2
-      // 
-      this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(6, 42);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(37, 13);
-      this.label2.TabIndex = 9;
-      this.label2.Text = "Mode:";
-      // 
+      {
+        this.label2.Name = "label2";
+        this.label2.AutoSize = true;
+        this.label2.Location = new System.Drawing.Point(6, 42);
+        this.label2.Size = new System.Drawing.Size(37, 13);
+        this.label2.Text = "Mode:";
+      }
       // textBoxSearchFilters
-      // 
-      this.textBoxSearchFilters.Location = new System.Drawing.Point(6, 19);
-      this.textBoxSearchFilters.Name = "textBoxSearchFilters";
-      this.textBoxSearchFilters.Size = new System.Drawing.Size(314, 20);
-      this.textBoxSearchFilters.TabIndex = 8;
-      // 
+      {
+        this.textBoxSearchFilters.Name = "textBoxSearchFilters";
+        this.textBoxSearchFilters.Location = new System.Drawing.Point(6, 19);
+        this.textBoxSearchFilters.Size = new System.Drawing.Size(314, 20);
+      }
       // groupBox6
-      // 
-      this.groupBox6.Controls.Add(this.checkBoxZeroLength);
-      this.groupBox6.Controls.Add(this.checkBoxWriteProtected);
-      this.groupBox6.Location = new System.Drawing.Point(6, 6);
-      this.groupBox6.Name = "groupBox6";
-      this.groupBox6.Size = new System.Drawing.Size(326, 66);
-      this.groupBox6.TabIndex = 0;
-      this.groupBox6.TabStop = false;
-      this.groupBox6.Text = "Search Options";
-      // 
+      {
+        this.groupBox6.Name = "groupBox6";
+        this.groupBox6.Location = new System.Drawing.Point(6, 6);
+        this.groupBox6.Size = new System.Drawing.Size(326, 66);
+        this.groupBox6.TabStop = false;
+        this.groupBox6.Text = "Search Options";
+        /************************************************/
+        this.groupBox6.Controls.Add(this.checkBoxZeroLength);
+        this.groupBox6.Controls.Add(this.checkBoxWriteProtected);
+      }
       // checkBoxZeroLength
-      // 
-      this.checkBoxZeroLength.AutoSize = true;
-      this.checkBoxZeroLength.Location = new System.Drawing.Point(6, 42);
-      this.checkBoxZeroLength.Name = "checkBoxZeroLength";
-      this.checkBoxZeroLength.Size = new System.Drawing.Size(215, 17);
-      this.checkBoxZeroLength.TabIndex = 1;
-      this.checkBoxZeroLength.Text = "Assume zero length files as junk (slower)";
-      this.checkBoxZeroLength.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxZeroLength.Name = "checkBoxZeroLength";
+        this.checkBoxZeroLength.AutoSize = true;
+        this.checkBoxZeroLength.Location = new System.Drawing.Point(6, 42);
+        this.checkBoxZeroLength.Size = new System.Drawing.Size(215, 17);
+        this.checkBoxZeroLength.Text = "Assume zero length files as junk (slower)";
+      }
       // checkBoxWriteProtected
-      // 
-      this.checkBoxWriteProtected.AutoSize = true;
-      this.checkBoxWriteProtected.Location = new System.Drawing.Point(6, 19);
-      this.checkBoxWriteProtected.Name = "checkBoxWriteProtected";
-      this.checkBoxWriteProtected.Size = new System.Drawing.Size(278, 17);
-      this.checkBoxWriteProtected.TabIndex = 0;
-      this.checkBoxWriteProtected.Text = "Ignore write protected and files in use (recommended)";
-      this.checkBoxWriteProtected.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxWriteProtected.Name = "checkBoxWriteProtected";
+        this.checkBoxWriteProtected.AutoSize = true;
+        this.checkBoxWriteProtected.Location = new System.Drawing.Point(6, 19);
+        this.checkBoxWriteProtected.Size = new System.Drawing.Size(278, 17);
+        this.checkBoxWriteProtected.Text = "Ignore write protected and files in use (recommended)";
+      }
       // tabPageAdvanced
-      // 
-      this.tabPageAdvanced.Controls.Add(this.groupBox5);
-      this.tabPageAdvanced.Controls.Add(this.groupBox4);
-      this.tabPageAdvanced.Controls.Add(this.groupBox3);
-      this.tabPageAdvanced.Location = new System.Drawing.Point(4, 22);
-      this.tabPageAdvanced.Name = "tabPageAdvanced";
-      this.tabPageAdvanced.Padding = new Padding(3);
-      this.tabPageAdvanced.Size = new System.Drawing.Size(338, 212);
-      this.tabPageAdvanced.TabIndex = 0;
-      this.tabPageAdvanced.Text = "Advanced";
-      this.tabPageAdvanced.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.tabPageAdvanced.Name = "tabPageAdvanced";
+        this.tabPageAdvanced.Location = new System.Drawing.Point(4, 22);
+        this.tabPageAdvanced.Padding = new Padding(3);
+        this.tabPageAdvanced.Size = new System.Drawing.Size(338, 212);
+        this.tabPageAdvanced.Text = "Advanced";
+        /************************************************/
+        this.tabPageAdvanced.Controls.Add(this.groupBox5);
+        this.tabPageAdvanced.Controls.Add(this.groupBox4);
+        this.tabPageAdvanced.Controls.Add(this.groupBox3);
+      }
       // groupBox5
-      // 
-      this.groupBox5.Controls.Add(this.label6);
-      this.groupBox5.Controls.Add(this.numericUpDownSizeAtMost);
-      this.groupBox5.Controls.Add(this.label7);
-      this.groupBox5.Controls.Add(this.label5);
-      this.groupBox5.Controls.Add(this.numericUpDownSizeAtLeast);
-      this.groupBox5.Controls.Add(this.label4);
-      this.groupBox5.Controls.Add(this.checkBoxSize);
-      this.groupBox5.Location = new System.Drawing.Point(6, 126);
-      this.groupBox5.Name = "groupBox5";
-      this.groupBox5.Size = new System.Drawing.Size(326, 42);
-      this.groupBox5.TabIndex = 6;
-      this.groupBox5.TabStop = false;
-      this.groupBox5.Text = "Size";
-      // 
+      {
+        this.groupBox5.Name = "groupBox5";
+        this.groupBox5.Location = new System.Drawing.Point(6, 126);
+        this.groupBox5.Size = new System.Drawing.Size(326, 42);
+        this.groupBox5.TabStop = false;
+        this.groupBox5.Text = "Size";
+        /************************************************/
+        this.groupBox5.Controls.Add(this.label6);
+        this.groupBox5.Controls.Add(this.numericUpDownSizeAtMost);
+        this.groupBox5.Controls.Add(this.label7);
+        this.groupBox5.Controls.Add(this.label5);
+        this.groupBox5.Controls.Add(this.numericUpDownSizeAtLeast);
+        this.groupBox5.Controls.Add(this.label4);
+        this.groupBox5.Controls.Add(this.checkBoxSize);
+      }
       // label6
-      // 
-      this.label6.AutoSize = true;
-      this.label6.Location = new System.Drawing.Point(299, 20);
-      this.label6.Name = "label6";
-      this.label6.Size = new System.Drawing.Size(21, 13);
-      this.label6.TabIndex = 6;
-      this.label6.Text = "KB";
-      // 
+      {
+        this.label6.Name = "label6";
+        this.label6.AutoSize = true;
+        this.label6.Location = new System.Drawing.Point(299, 20);
+        this.label6.Size = new System.Drawing.Size(21, 13);
+        this.label6.Text = "KB";
+      }
       // numericUpDownSizeAtMost
-      // 
-      this.numericUpDownSizeAtMost.Location = new System.Drawing.Point(250, 16);
-      this.numericUpDownSizeAtMost.Name = "numericUpDownSizeAtMost";
-      this.numericUpDownSizeAtMost.Size = new System.Drawing.Size(48, 20);
-      this.numericUpDownSizeAtMost.TabIndex = 5;
-      // 
+      {
+        this.numericUpDownSizeAtMost.Name = "numericUpDownSizeAtMost";
+        this.numericUpDownSizeAtMost.Location = new System.Drawing.Point(250, 16);
+        this.numericUpDownSizeAtMost.Size = new System.Drawing.Size(48, 20);
+      }
       // label7
-      // 
-      this.label7.AutoSize = true;
-      this.label7.Location = new System.Drawing.Point(204, 20);
-      this.label7.Name = "label7";
-      this.label7.Size = new System.Drawing.Size(45, 13);
-      this.label7.TabIndex = 4;
-      this.label7.Text = "At most:";
-      // 
+      {
+        this.label7.Name = "label7";
+        this.label7.AutoSize = true;
+        this.label7.Location = new System.Drawing.Point(204, 20);
+        this.label7.Size = new System.Drawing.Size(45, 13);
+        this.label7.Text = "At most:";
+      }
       // label5
-      // 
-      this.label5.AutoSize = true;
-      this.label5.Location = new System.Drawing.Point(149, 20);
-      this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(21, 13);
-      this.label5.TabIndex = 3;
-      this.label5.Text = "KB";
-      // 
+      {
+        this.label5.Name = "label5";
+        this.label5.AutoSize = true;
+        this.label5.Location = new System.Drawing.Point(149, 20);
+        this.label5.Size = new System.Drawing.Size(21, 13);
+        this.label5.Text = "KB";
+      }
       // numericUpDownSizeAtLeast
-      // 
-      this.numericUpDownSizeAtLeast.Location = new System.Drawing.Point(100, 16);
-      this.numericUpDownSizeAtLeast.Name = "numericUpDownSizeAtLeast";
-      this.numericUpDownSizeAtLeast.Size = new System.Drawing.Size(48, 20);
-      this.numericUpDownSizeAtLeast.TabIndex = 2;
-      // 
+      {
+        this.numericUpDownSizeAtLeast.Name = "numericUpDownSizeAtLeast";
+        this.numericUpDownSizeAtLeast.Location = new System.Drawing.Point(100, 16);
+        this.numericUpDownSizeAtLeast.Size = new System.Drawing.Size(48, 20);
+      }
       // label4
-      // 
-      this.label4.AutoSize = true;
-      this.label4.Location = new System.Drawing.Point(54, 20);
-      this.label4.Name = "label4";
-      this.label4.Size = new System.Drawing.Size(45, 13);
-      this.label4.TabIndex = 1;
-      this.label4.Text = "At least:";
-      // 
+      {
+        this.label4.Name = "label4";
+        this.label4.AutoSize = true;
+        this.label4.Location = new System.Drawing.Point(54, 20);
+        this.label4.Size = new System.Drawing.Size(45, 13);
+        this.label4.Text = "At least:";
+      }
       // checkBoxSize
-      // 
-      this.checkBoxSize.AutoSize = true;
-      this.checkBoxSize.Location = new System.Drawing.Point(6, 19);
-      this.checkBoxSize.Name = "checkBoxSize";
-      this.checkBoxSize.Size = new System.Drawing.Size(49, 17);
-      this.checkBoxSize.TabIndex = 0;
-      this.checkBoxSize.Text = "Size:";
-      this.checkBoxSize.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxSize.Name = "checkBoxSize";
+        this.checkBoxSize.AutoSize = true;
+        this.checkBoxSize.Location = new System.Drawing.Point(6, 19);
+        this.checkBoxSize.Size = new System.Drawing.Size(49, 17);
+        this.checkBoxSize.Text = "Size:";
+      }
       // groupBox4
-      // 
-      this.groupBox4.Controls.Add(this.dateTimePickerBefore);
-      this.groupBox4.Controls.Add(this.checkBoxFindBefore);
-      this.groupBox4.Controls.Add(this.checkBoxFindAfter);
-      this.groupBox4.Controls.Add(this.dateTimePickerAfter);
-      this.groupBox4.Controls.Add(this.radioButtonFindAccessed);
-      this.groupBox4.Controls.Add(this.radioButtonFindModified);
-      this.groupBox4.Controls.Add(this.radioButtonFindCreated);
-      this.groupBox4.Location = new System.Drawing.Point(6, 53);
-      this.groupBox4.Name = "groupBox4";
-      this.groupBox4.Size = new System.Drawing.Size(326, 67);
-      this.groupBox4.TabIndex = 5;
-      this.groupBox4.TabStop = false;
-      this.groupBox4.Text = "Find Files";
-      // 
+      {
+        this.groupBox4.Name = "groupBox4";
+        this.groupBox4.Location = new System.Drawing.Point(6, 53);
+        this.groupBox4.Size = new System.Drawing.Size(326, 67);
+        this.groupBox4.TabStop = false;
+        this.groupBox4.Text = "Find Files";
+        /************************************************/
+        this.groupBox4.Controls.Add(this.dateTimePickerBefore);
+        this.groupBox4.Controls.Add(this.checkBoxFindBefore);
+        this.groupBox4.Controls.Add(this.checkBoxFindAfter);
+        this.groupBox4.Controls.Add(this.dateTimePickerAfter);
+        this.groupBox4.Controls.Add(this.radioButtonFindAccessed);
+        this.groupBox4.Controls.Add(this.radioButtonFindModified);
+        this.groupBox4.Controls.Add(this.radioButtonFindCreated);
+      }
       // dateTimePickerBefore
-      // 
-      this.dateTimePickerBefore.Checked = false;
-      this.dateTimePickerBefore.Format = DateTimePickerFormat.Short;
-      this.dateTimePickerBefore.Location = new System.Drawing.Point(235, 38);
-      this.dateTimePickerBefore.Name = "dateTimePickerBefore";
-      this.dateTimePickerBefore.ShowUpDown = true;
-      this.dateTimePickerBefore.Size = new System.Drawing.Size(85, 20);
-      this.dateTimePickerBefore.TabIndex = 7;
-      // 
+      {
+        this.dateTimePickerBefore.Name = "dateTimePickerBefore";
+        this.dateTimePickerBefore.Checked = false;
+        this.dateTimePickerBefore.Format = DateTimePickerFormat.Short;
+        this.dateTimePickerBefore.Location = new System.Drawing.Point(235, 38);
+        this.dateTimePickerBefore.ShowUpDown = true;
+        this.dateTimePickerBefore.Size = new System.Drawing.Size(85, 20);
+      }
       // checkBoxFindBefore
-      // 
-      this.checkBoxFindBefore.AutoSize = true;
-      this.checkBoxFindBefore.Location = new System.Drawing.Point(181, 42);
-      this.checkBoxFindBefore.Name = "checkBoxFindBefore";
-      this.checkBoxFindBefore.Size = new System.Drawing.Size(57, 17);
-      this.checkBoxFindBefore.TabIndex = 6;
-      this.checkBoxFindBefore.Text = "Before";
-      this.checkBoxFindBefore.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxFindBefore.Name = "checkBoxFindBefore";
+        this.checkBoxFindBefore.AutoSize = true;
+        this.checkBoxFindBefore.Location = new System.Drawing.Point(181, 42);
+        this.checkBoxFindBefore.Size = new System.Drawing.Size(57, 17);
+        this.checkBoxFindBefore.Text = "Before";
+      }
       // checkBoxFindAfter
-      // 
-      this.checkBoxFindAfter.AutoSize = true;
-      this.checkBoxFindAfter.Location = new System.Drawing.Point(6, 41);
-      this.checkBoxFindAfter.Name = "checkBoxFindAfter";
-      this.checkBoxFindAfter.Size = new System.Drawing.Size(48, 17);
-      this.checkBoxFindAfter.TabIndex = 5;
-      this.checkBoxFindAfter.Text = "After";
-      this.checkBoxFindAfter.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxFindAfter.Name = "checkBoxFindAfter";
+        this.checkBoxFindAfter.AutoSize = true;
+        this.checkBoxFindAfter.Location = new System.Drawing.Point(6, 41);
+        this.checkBoxFindAfter.Size = new System.Drawing.Size(48, 17);
+        this.checkBoxFindAfter.Text = "After";
+      }
       // dateTimePickerAfter
-      // 
-      this.dateTimePickerAfter.Checked = false;
-      this.dateTimePickerAfter.Format = DateTimePickerFormat.Short;
-      this.dateTimePickerAfter.Location = new System.Drawing.Point(54, 39);
-      this.dateTimePickerAfter.Name = "dateTimePickerAfter";
-      this.dateTimePickerAfter.ShowUpDown = true;
-      this.dateTimePickerAfter.Size = new System.Drawing.Size(85, 20);
-      this.dateTimePickerAfter.TabIndex = 4;
-      // 
+      {
+        this.dateTimePickerAfter.Name = "dateTimePickerAfter";
+        this.dateTimePickerAfter.Checked = false;
+        this.dateTimePickerAfter.Format = DateTimePickerFormat.Short;
+        this.dateTimePickerAfter.Location = new System.Drawing.Point(54, 39);
+        this.dateTimePickerAfter.ShowUpDown = true;
+        this.dateTimePickerAfter.Size = new System.Drawing.Size(85, 20);
+      }
       // radioButtonFindAccessed
-      // 
-      this.radioButtonFindAccessed.AutoSize = true;
-      this.radioButtonFindAccessed.Location = new System.Drawing.Point(145, 19);
-      this.radioButtonFindAccessed.Name = "radioButtonFindAccessed";
-      this.radioButtonFindAccessed.Size = new System.Drawing.Size(72, 17);
-      this.radioButtonFindAccessed.TabIndex = 2;
-      this.radioButtonFindAccessed.TabStop = true;
-      this.radioButtonFindAccessed.Text = "Accessed";
-      this.radioButtonFindAccessed.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.radioButtonFindAccessed.Name = "radioButtonFindAccessed";
+        this.radioButtonFindAccessed.AutoSize = true;
+        this.radioButtonFindAccessed.Location = new System.Drawing.Point(145, 19);
+        this.radioButtonFindAccessed.Size = new System.Drawing.Size(72, 17);
+        this.radioButtonFindAccessed.TabStop = true;
+        this.radioButtonFindAccessed.Text = "Accessed";
+      }
       // radioButtonFindModified
-      // 
-      this.radioButtonFindModified.AutoSize = true;
-      this.radioButtonFindModified.Location = new System.Drawing.Point(74, 19);
-      this.radioButtonFindModified.Name = "radioButtonFindModified";
-      this.radioButtonFindModified.Size = new System.Drawing.Size(65, 17);
-      this.radioButtonFindModified.TabIndex = 1;
-      this.radioButtonFindModified.TabStop = true;
-      this.radioButtonFindModified.Text = "Modified";
-      this.radioButtonFindModified.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.radioButtonFindModified.Name = "radioButtonFindModified";
+        this.radioButtonFindModified.AutoSize = true;
+        this.radioButtonFindModified.Location = new System.Drawing.Point(74, 19);
+        this.radioButtonFindModified.Size = new System.Drawing.Size(65, 17);
+        this.radioButtonFindModified.TabStop = true;
+        this.radioButtonFindModified.Text = "Modified";
+      }
       // radioButtonFindCreated
-      // 
-      this.radioButtonFindCreated.AutoSize = true;
-      this.radioButtonFindCreated.Location = new System.Drawing.Point(6, 19);
-      this.radioButtonFindCreated.Name = "radioButtonFindCreated";
-      this.radioButtonFindCreated.Size = new System.Drawing.Size(62, 17);
-      this.radioButtonFindCreated.TabIndex = 0;
-      this.radioButtonFindCreated.TabStop = true;
-      this.radioButtonFindCreated.Text = "Created";
-      this.radioButtonFindCreated.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.radioButtonFindCreated.Name = "radioButtonFindCreated";
+        this.radioButtonFindCreated.AutoSize = true;
+        this.radioButtonFindCreated.Location = new System.Drawing.Point(6, 19);
+        this.radioButtonFindCreated.Size = new System.Drawing.Size(62, 17);
+        this.radioButtonFindCreated.TabStop = true;
+        this.radioButtonFindCreated.Text = "Created";
+      }
       // groupBox3
-      // 
-      this.groupBox3.Controls.Add(this.checkBoxSystem);
-      this.groupBox3.Controls.Add(this.checkBoxArchive);
-      this.groupBox3.Controls.Add(this.checkBoxReadOnly);
-      this.groupBox3.Controls.Add(this.checkBoxHidden);
-      this.groupBox3.Location = new System.Drawing.Point(6, 3);
-      this.groupBox3.Name = "groupBox3";
-      this.groupBox3.Size = new System.Drawing.Size(326, 44);
-      this.groupBox3.TabIndex = 4;
-      this.groupBox3.TabStop = false;
-      this.groupBox3.Text = "Attributes";
-      // 
+      {
+        this.groupBox3.Name = "groupBox3";
+        this.groupBox3.Location = new System.Drawing.Point(6, 3);
+        this.groupBox3.Size = new System.Drawing.Size(326, 44);
+        this.groupBox3.TabStop = false;
+        this.groupBox3.Text = "Attributes";
+        /************************************************/
+        this.groupBox3.Controls.Add(this.checkBoxSystem);
+        this.groupBox3.Controls.Add(this.checkBoxArchive);
+        this.groupBox3.Controls.Add(this.checkBoxReadOnly);
+        this.groupBox3.Controls.Add(this.checkBoxHidden);
+      }
       // checkBoxSystem
-      // 
-      this.checkBoxSystem.AutoSize = true;
-      this.checkBoxSystem.Location = new System.Drawing.Point(219, 19);
-      this.checkBoxSystem.Name = "checkBoxSystem";
-      this.checkBoxSystem.Size = new System.Drawing.Size(60, 17);
-      this.checkBoxSystem.TabIndex = 3;
-      this.checkBoxSystem.Text = "System";
-      this.checkBoxSystem.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxSystem.Name = "checkBoxSystem";
+        this.checkBoxSystem.AutoSize = true;
+        this.checkBoxSystem.Location = new System.Drawing.Point(219, 19);
+        this.checkBoxSystem.Size = new System.Drawing.Size(60, 17);
+        this.checkBoxSystem.Text = "System";
+      }
       // checkBoxArchive
-      // 
-      this.checkBoxArchive.AutoSize = true;
-      this.checkBoxArchive.Location = new System.Drawing.Point(154, 19);
-      this.checkBoxArchive.Name = "checkBoxArchive";
-      this.checkBoxArchive.Size = new System.Drawing.Size(62, 17);
-      this.checkBoxArchive.TabIndex = 2;
-      this.checkBoxArchive.Text = "Archive";
-      this.checkBoxArchive.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxArchive.Name = "checkBoxArchive";
+        this.checkBoxArchive.AutoSize = true;
+        this.checkBoxArchive.Location = new System.Drawing.Point(154, 19);
+        this.checkBoxArchive.Size = new System.Drawing.Size(62, 17);
+        this.checkBoxArchive.Text = "Archive";
+      }
       // checkBoxReadOnly
-      // 
-      this.checkBoxReadOnly.AutoSize = true;
-      this.checkBoxReadOnly.Location = new System.Drawing.Point(72, 19);
-      this.checkBoxReadOnly.Name = "checkBoxReadOnly";
-      this.checkBoxReadOnly.Size = new System.Drawing.Size(76, 17);
-      this.checkBoxReadOnly.TabIndex = 1;
-      this.checkBoxReadOnly.Text = "Read Only";
-      this.checkBoxReadOnly.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxReadOnly.Name = "checkBoxReadOnly";
+        this.checkBoxReadOnly.AutoSize = true;
+        this.checkBoxReadOnly.Location = new System.Drawing.Point(72, 19);
+        this.checkBoxReadOnly.Size = new System.Drawing.Size(76, 17);
+        this.checkBoxReadOnly.Text = "Read Only";
+      }
       // checkBoxHidden
-      // 
-      this.checkBoxHidden.AutoSize = true;
-      this.checkBoxHidden.Location = new System.Drawing.Point(6, 19);
-      this.checkBoxHidden.Name = "checkBoxHidden";
-      this.checkBoxHidden.Size = new System.Drawing.Size(60, 17);
-      this.checkBoxHidden.TabIndex = 0;
-      this.checkBoxHidden.Text = "Hidden";
-      this.checkBoxHidden.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.checkBoxHidden.Name = "checkBoxHidden";
+        this.checkBoxHidden.AutoSize = true;
+        this.checkBoxHidden.Location = new System.Drawing.Point(6, 19);
+        this.checkBoxHidden.Size = new System.Drawing.Size(60, 17);
+        this.checkBoxHidden.Text = "Hidden";
+      }
       // tabPageIncFolders
-      // 
-      this.tabPageIncFolders.Controls.Add(this.buttonIncFoldersAdd);
-      this.tabPageIncFolders.Controls.Add(this.buttonIncFoldersRemove);
-      this.tabPageIncFolders.Controls.Add(this.listViewIncFolders);
-      this.tabPageIncFolders.Location = new System.Drawing.Point(4, 22);
-      this.tabPageIncFolders.Name = "tabPageIncFolders";
-      this.tabPageIncFolders.Size = new System.Drawing.Size(338, 212);
-      this.tabPageIncFolders.TabIndex = 7;
-      this.tabPageIncFolders.Text = "Included Folders";
-      this.tabPageIncFolders.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.tabPageIncFolders.Name = "tabPageIncFolders";
+        this.tabPageIncFolders.Location = new System.Drawing.Point(4, 22);
+        this.tabPageIncFolders.Size = new System.Drawing.Size(338, 212);
+        this.tabPageIncFolders.Text = "Included Folders";
+        /************************************************/
+        this.tabPageIncFolders.Controls.Add(this.buttonIncFoldersAdd);
+        this.tabPageIncFolders.Controls.Add(this.buttonIncFoldersRemove);
+        this.tabPageIncFolders.Controls.Add(this.listViewIncFolders);
+      }
       // buttonIncFoldersAdd
-      // 
-      this.buttonIncFoldersAdd.Location = new System.Drawing.Point(233, 186);
-      this.buttonIncFoldersAdd.Name = "buttonIncFoldersAdd";
-      this.buttonIncFoldersAdd.Size = new System.Drawing.Size(37, 23);
-      this.buttonIncFoldersAdd.TabIndex = 2;
-      this.buttonIncFoldersAdd.Text = "Add";
-      this.buttonIncFoldersAdd.UseVisualStyleBackColor = true;
-      this.buttonIncFoldersAdd.Click += new System.EventHandler(this.buttonIncFoldersAdd_Click);
-      // 
+      {
+        this.buttonIncFoldersAdd.Name = "buttonIncFoldersAdd";
+        this.buttonIncFoldersAdd.Location = new System.Drawing.Point(233, 186);
+        this.buttonIncFoldersAdd.Size = new System.Drawing.Size(37, 23);
+        this.buttonIncFoldersAdd.Text = "Add";
+        /************************************************/
+        this.buttonIncFoldersAdd.Click += new System.EventHandler(this.buttonIncFoldersAdd_Click);
+      }
       // buttonIncFoldersRemove
-      // 
-      this.buttonIncFoldersRemove.Location = new System.Drawing.Point(276, 186);
-      this.buttonIncFoldersRemove.Name = "buttonIncFoldersRemove";
-      this.buttonIncFoldersRemove.Size = new System.Drawing.Size(59, 23);
-      this.buttonIncFoldersRemove.TabIndex = 1;
-      this.buttonIncFoldersRemove.Text = "Remove";
-      this.buttonIncFoldersRemove.UseVisualStyleBackColor = true;
-      this.buttonIncFoldersRemove.Click += new System.EventHandler(this.buttonIncFoldersRemove_Click);
-      // 
+      {
+        this.buttonIncFoldersRemove.Name = "buttonIncFoldersRemove";
+        this.buttonIncFoldersRemove.Location = new System.Drawing.Point(276, 186);
+        this.buttonIncFoldersRemove.Size = new System.Drawing.Size(59, 23);
+        this.buttonIncFoldersRemove.Text = "Remove";
+        /************************************************/
+        this.buttonIncFoldersRemove.Click += new System.EventHandler(this.buttonIncFoldersRemove_Click);
+      }
       // listViewIncFolders
-      // 
-      this.listViewIncFolders.Columns.AddRange(new ColumnHeader[] {
-      this.columnHeader7});
-      this.listViewIncFolders.LabelEdit = true;
-      this.listViewIncFolders.Location = new System.Drawing.Point(3, 3);
-      this.listViewIncFolders.Name = "listViewIncFolders";
-      this.listViewIncFolders.Size = new System.Drawing.Size(332, 177);
-      this.listViewIncFolders.TabIndex = 0;
-      this.listViewIncFolders.UseCompatibleStateImageBehavior = false;
-      this.listViewIncFolders.View = View.Details;
-      // 
+      {
+        this.listViewIncFolders.Name = "listViewIncFolders";
+        this.listViewIncFolders.LabelEdit = true;
+        this.listViewIncFolders.Location = new System.Drawing.Point(3, 3);
+        this.listViewIncFolders.Size = new System.Drawing.Size(332, 177);
+        this.listViewIncFolders.View = View.Details;
+        /************************************************/
+        this.listViewIncFolders.Columns.Add(this.columnHeader7);
+      }
       // columnHeader7
-      // 
-      this.columnHeader7.Text = "List of folders to include";
-      this.columnHeader7.Width = 129;
-      // 
+      {
+        this.columnHeader7.Text = "List of folders to include";
+        this.columnHeader7.Width = 129;
+      }
       // tabPageExcludeFolders
-      // 
-      this.tabPageExcludeFolders.Controls.Add(this.buttonFoldersAdd);
-      this.tabPageExcludeFolders.Controls.Add(this.buttonFoldersRemove);
-      this.tabPageExcludeFolders.Controls.Add(this.listViewExcludeFolders);
-      this.tabPageExcludeFolders.Location = new System.Drawing.Point(4, 22);
-      this.tabPageExcludeFolders.Name = "tabPageExcludeFolders";
-      this.tabPageExcludeFolders.Size = new System.Drawing.Size(338, 212);
-      this.tabPageExcludeFolders.TabIndex = 2;
-      this.tabPageExcludeFolders.Text = "Excluded Folders";
-      this.tabPageExcludeFolders.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.tabPageExcludeFolders.Name = "tabPageExcludeFolders";
+        this.tabPageExcludeFolders.Location = new System.Drawing.Point(4, 22);
+        this.tabPageExcludeFolders.Size = new System.Drawing.Size(338, 212);
+        this.tabPageExcludeFolders.Text = "Excluded Folders";
+        /************************************************/
+        this.tabPageExcludeFolders.Controls.Add(this.buttonFoldersAdd);
+        this.tabPageExcludeFolders.Controls.Add(this.buttonFoldersRemove);
+        this.tabPageExcludeFolders.Controls.Add(this.listViewExcludeFolders);
+      }
       // buttonFoldersAdd
-      // 
-      this.buttonFoldersAdd.Location = new System.Drawing.Point(234, 186);
-      this.buttonFoldersAdd.Name = "buttonFoldersAdd";
-      this.buttonFoldersAdd.Size = new System.Drawing.Size(38, 23);
-      this.buttonFoldersAdd.TabIndex = 2;
-      this.buttonFoldersAdd.Text = "Add";
-      this.buttonFoldersAdd.UseVisualStyleBackColor = true;
-      this.buttonFoldersAdd.Click += new System.EventHandler(this.buttonFoldersAdd_Click);
-      // 
+      {
+        this.buttonFoldersAdd.Name = "buttonFoldersAdd";
+        this.buttonFoldersAdd.Location = new System.Drawing.Point(234, 186);
+        this.buttonFoldersAdd.Size = new System.Drawing.Size(38, 23);
+        this.buttonFoldersAdd.Text = "Add";
+        /************************************************/
+        this.buttonFoldersAdd.Click += new System.EventHandler(this.buttonFoldersAdd_Click);
+      }
       // buttonFoldersRemove
-      // 
-      this.buttonFoldersRemove.Location = new System.Drawing.Point(278, 186);
-      this.buttonFoldersRemove.Name = "buttonFoldersRemove";
-      this.buttonFoldersRemove.Size = new System.Drawing.Size(57, 23);
-      this.buttonFoldersRemove.TabIndex = 1;
-      this.buttonFoldersRemove.Text = "Remove";
-      this.buttonFoldersRemove.UseVisualStyleBackColor = true;
-      this.buttonFoldersRemove.Click += new System.EventHandler(this.buttonFoldersRemove_Click);
-      // 
+      {
+        this.buttonFoldersRemove.Name = "buttonFoldersRemove";
+        this.buttonFoldersRemove.Location = new System.Drawing.Point(278, 186);
+        this.buttonFoldersRemove.Size = new System.Drawing.Size(57, 23);
+        this.buttonFoldersRemove.Text = "Remove";
+        /************************************************/
+        this.buttonFoldersRemove.Click += new System.EventHandler(this.buttonFoldersRemove_Click);
+      }
       // listViewExcludeFolders
-      // 
-      this.listViewExcludeFolders.Columns.AddRange(new ColumnHeader[] {
-      this.columnHeader1});
-      this.listViewExcludeFolders.LabelEdit = true;
-      this.listViewExcludeFolders.Location = new System.Drawing.Point(3, 3);
-      this.listViewExcludeFolders.MultiSelect = false;
-      this.listViewExcludeFolders.Name = "listViewExcludeFolders";
-      this.listViewExcludeFolders.Size = new System.Drawing.Size(332, 177);
-      this.listViewExcludeFolders.TabIndex = 0;
-      this.listViewExcludeFolders.UseCompatibleStateImageBehavior = false;
-      this.listViewExcludeFolders.View = View.Details;
-      // 
+      {
+        this.listViewExcludeFolders.Name = "listViewExcludeFolders";
+        this.listViewExcludeFolders.LabelEdit = true;
+        this.listViewExcludeFolders.Location = new System.Drawing.Point(3, 3);
+        this.listViewExcludeFolders.MultiSelect = false;
+        this.listViewExcludeFolders.Size = new System.Drawing.Size(332, 177);
+        this.listViewExcludeFolders.View = View.Details;
+        this.listViewExcludeFolders.Columns.AddRange(new ColumnHeader[] {
+        this.columnHeader1});
+      }
       // columnHeader1
-      // 
-      this.columnHeader1.Text = "List of folders to exclude";
-      this.columnHeader1.Width = 133;
-      // 
+      {
+        this.columnHeader1.Text = "List of folders to exclude";
+        this.columnHeader1.Width = 133;
+      }
       // tabPageExcludeFiles
-      // 
-      this.tabPageExcludeFiles.Controls.Add(this.buttonFilesAdd);
-      this.tabPageExcludeFiles.Controls.Add(this.buttonFilesRemove);
-      this.tabPageExcludeFiles.Controls.Add(this.listViewFiles);
-      this.tabPageExcludeFiles.Location = new System.Drawing.Point(4, 22);
-      this.tabPageExcludeFiles.Name = "tabPageExcludeFiles";
-      this.tabPageExcludeFiles.Size = new System.Drawing.Size(338, 212);
-      this.tabPageExcludeFiles.TabIndex = 5;
-      this.tabPageExcludeFiles.Text = "Excluded Files";
-      this.tabPageExcludeFiles.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.tabPageExcludeFiles.Name = "tabPageExcludeFiles";
+        this.tabPageExcludeFiles.Location = new System.Drawing.Point(4, 22);
+        this.tabPageExcludeFiles.Size = new System.Drawing.Size(338, 212);
+        this.tabPageExcludeFiles.Text = "Excluded Files";
+        /************************************************/
+        this.tabPageExcludeFiles.Controls.Add(this.buttonFilesAdd);
+        this.tabPageExcludeFiles.Controls.Add(this.buttonFilesRemove);
+        this.tabPageExcludeFiles.Controls.Add(this.listViewFiles);
+      }
       // buttonFilesAdd
-      // 
-      this.buttonFilesAdd.Location = new System.Drawing.Point(234, 186);
-      this.buttonFilesAdd.Name = "buttonFilesAdd";
-      this.buttonFilesAdd.Size = new System.Drawing.Size(38, 23);
-      this.buttonFilesAdd.TabIndex = 2;
-      this.buttonFilesAdd.Text = "Add";
-      this.buttonFilesAdd.UseVisualStyleBackColor = true;
-      this.buttonFilesAdd.Click += new System.EventHandler(this.buttonFilesAdd_Click);
-      // 
+      {
+        this.buttonFilesAdd.Name = "buttonFilesAdd";
+        this.buttonFilesAdd.Location = new System.Drawing.Point(234, 186);
+        this.buttonFilesAdd.Size = new System.Drawing.Size(38, 23);
+        this.buttonFilesAdd.Text = "Add";
+        /************************************************/
+        this.buttonFilesAdd.Click += new System.EventHandler(this.buttonFilesAdd_Click);
+      }
       // buttonFilesRemove
-      // 
-      this.buttonFilesRemove.Location = new System.Drawing.Point(278, 186);
-      this.buttonFilesRemove.Name = "buttonFilesRemove";
-      this.buttonFilesRemove.Size = new System.Drawing.Size(57, 23);
-      this.buttonFilesRemove.TabIndex = 1;
-      this.buttonFilesRemove.Text = "Remove";
-      this.buttonFilesRemove.UseVisualStyleBackColor = true;
-      this.buttonFilesRemove.Click += new System.EventHandler(this.buttonFilesRemove_Click);
-      // 
+      {
+        this.buttonFilesRemove.Name = "buttonFilesRemove";
+        this.buttonFilesRemove.Location = new System.Drawing.Point(278, 186);
+        this.buttonFilesRemove.Size = new System.Drawing.Size(57, 23);
+        this.buttonFilesRemove.Text = "Remove";
+        /************************************************/
+        this.buttonFilesRemove.Click += new System.EventHandler(this.buttonFilesRemove_Click);
+      }
       // listViewFiles
-      // 
-      this.listViewFiles.Columns.AddRange(new ColumnHeader[] {
-      this.columnHeader2});
-      this.listViewFiles.LabelEdit = true;
-      this.listViewFiles.Location = new System.Drawing.Point(3, 3);
-      this.listViewFiles.MultiSelect = false;
-      this.listViewFiles.Name = "listViewFiles";
-      this.listViewFiles.Size = new System.Drawing.Size(332, 177);
-      this.listViewFiles.TabIndex = 0;
-      this.listViewFiles.UseCompatibleStateImageBehavior = false;
-      this.listViewFiles.View = View.Details;
-      // 
+      {
+        this.listViewFiles.Name = "listViewFiles";
+        this.listViewFiles.LabelEdit = true;
+        this.listViewFiles.Location = new System.Drawing.Point(3, 3);
+        this.listViewFiles.MultiSelect = false;
+        this.listViewFiles.Size = new System.Drawing.Size(332, 177);
+        this.listViewFiles.View = View.Details;
+        this.listViewFiles.Columns.Add(this.columnHeader2);
+      }
       // columnHeader2
-      // 
-      this.columnHeader2.Text = "List of files to exclude";
-      this.columnHeader2.Width = 120;
-      // 
+      {
+        this.columnHeader2.Text = "List of files to exclude";
+        this.columnHeader2.Width = 120;
+      }
       // buttonCancel
-      // 
-      this.buttonCancel.DialogResult = DialogResult.Cancel;
-      this.buttonCancel.Location = new System.Drawing.Point(307, 256);
-      this.buttonCancel.Name = "buttonCancel";
-      this.buttonCancel.Size = new System.Drawing.Size(51, 23);
-      this.buttonCancel.TabIndex = 1;
-      this.buttonCancel.Text = "Cancel";
-      this.buttonCancel.UseVisualStyleBackColor = true;
-      // 
+      {
+        this.buttonCancel.Name = "buttonCancel";
+        this.buttonCancel.DialogResult = DialogResult.Cancel;
+        this.buttonCancel.Location = new System.Drawing.Point(307, 256);
+        this.buttonCancel.Size = new System.Drawing.Size(51, 23);
+        this.buttonCancel.Text = "Cancel";
+      }
       // buttonOk
-      // 
-      this.buttonOk.Location = new System.Drawing.Point(263, 256);
-      this.buttonOk.Name = "buttonOk";
-      this.buttonOk.Size = new System.Drawing.Size(38, 23);
-      this.buttonOk.TabIndex = 2;
-      this.buttonOk.Text = "OK";
-      this.buttonOk.UseVisualStyleBackColor = true;
-      this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
-      // 
+      {
+        this.buttonOk.Name = "buttonOk";
+        this.buttonOk.Location = new System.Drawing.Point(263, 256);
+        this.buttonOk.Size = new System.Drawing.Size(38, 23);
+        this.buttonOk.Text = "OK";
+        /************************************************/
+        this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
+      }
       // Options
-      // 
-      this.AcceptButton = this.buttonOk;
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-      this.AutoScaleMode = AutoScaleMode.Font;
-      this.CancelButton = this.buttonCancel;
-      this.ClientSize = new System.Drawing.Size(370, 284);
-      this.Controls.Add(this.buttonOk);
-      this.Controls.Add(this.buttonCancel);
-      this.Controls.Add(this.tabControl1);
-      this.FormBorderStyle = FormBorderStyle.FixedDialog;
-      this.MaximizeBox = false;
-      this.MinimizeBox = false;
-      this.Name = "Options";
-      this.ShowIcon = false;
-      this.ShowInTaskbar = false;
-      this.Text = "Little Disk Cleaner - Options";
-      this.Load += new System.EventHandler(this.Options_Load);
+      {
+        this.AcceptButton = this.buttonOk;
+        this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+        this.AutoScaleMode = AutoScaleMode.Font;
+        this.CancelButton = this.buttonCancel;
+        this.ClientSize = new System.Drawing.Size(370, 284);
+        this.Controls.Add(this.buttonOk);
+        this.Controls.Add(this.buttonCancel);
+        this.Controls.Add(this.tabControl1);
+        this.FormBorderStyle = FormBorderStyle.FixedDialog;
+        this.MaximizeBox = false;
+        this.MinimizeBox = false;
+        this.Name = "Options";
+        this.ShowIcon = false;
+        this.ShowInTaskbar = false;
+        this.Text = "Little Disk Cleaner - Options";
+        /************************************************/
+        this.Load += new System.EventHandler(this.Options_Load);
+      }
+      /************************************************/
       this.tabControl1.ResumeLayout(false);
       this.drivesTabPage.ResumeLayout(false);
       this.tabPageRemoval.ResumeLayout(false);
