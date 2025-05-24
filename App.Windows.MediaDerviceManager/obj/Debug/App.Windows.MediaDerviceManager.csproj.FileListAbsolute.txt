@@ -1,8 +1,0 @@
-D:\Git\dev\App.Windows.MediaDerviceManager\obj\Debug\App.Windows.MediaDerviceManager.csprojResolveAssemblyReference.cache
-D:\Git\dev\App.Windows.MediaDerviceManager\obj\Debug\CheVolume.Properties.Resources.resources
-D:\Git\dev\App.Windows.MediaDerviceManager\obj\Debug\App.Windows.MediaDerviceManager.csproj.GenerateResource.Cache
-D:\Git\dev\App.Windows.MediaDerviceManager\bin\Debug\App.Windows.MediaDerviceManager.exe.config
-D:\Git\dev\App.Windows.MediaDerviceManager\bin\Debug\App.Windows.MediaDerviceManager.exe
-D:\Git\dev\App.Windows.MediaDerviceManager\bin\Debug\App.Windows.MediaDerviceManager.pdb
-D:\Git\dev\App.Windows.MediaDerviceManager\obj\Debug\App.Windows.MediaDerviceManager.exe
-D:\Git\dev\App.Windows.MediaDerviceManager\obj\Debug\App.Windows.MediaDerviceManager.pdb
