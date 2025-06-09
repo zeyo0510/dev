@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Defective Pixel Check</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+  body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+
+    overflow: hidden;
+    user-select: none;
+  }
+  
+  #test-area {
+    /* size*/
+    width: 100vw;
+    height: 100vh;
+    /* transition */
+    transition: background-color 0.5s;
+  }
+  
+  #controls {
+    /* cursor */
+    cursor: move;
+
+    /* background */
+    background-color: rgba(255, 255, 255, 0.8);
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    /* appearance */
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 8px;
+
+    /* layout */
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 25px;
+    max-width: 25%;
+    min-width: 25%;
+    width: 100%;
+  }
+  
+  .control-group {
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* appearance */
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  </style>
+</head>
+<body>
+  <div id="test-area"></div>
+  <div id="controls">
+    <div id="colors-group" class="control-group">
+      <segment-selector id="segment-selector"></segment-selector>
+    </div>
+    <div id="player-group" class="control-group">
+      <icon-button id="play-button"       title="Auto Play"      data-icon-name="play_circle" data-playing="false"></icon-button>
+      <icon-button id="previous-button"   title="Previous Color" data-icon-name="skip_previous"></icon-button>
+      <icon-button id="next-button"       title="Next Color"     data-icon-name="skip_next"></icon-button>
+      <icon-button id="fullscreen-button" title="Fullscreen"     data-icon-name="fullscreen"></icon-button>
+    </div>
+  </div>
+  <script src="./segment-color.js"></script>
+  <script src="./segment-selector.js"></script>
+  <script src="./icon-button.js"></script>
+  <script>
+    let testArea         = undefined;
+    let controls         = undefined;
+    let colorsGroup      = undefined;
+    let segmentSelector  = undefined;
+    let playerGroup      = undefined;
+    let playButton       = undefined;
+    let previousButton   = undefined;
+    let nextButton       = undefined;
+    let fullscreenButton = undefined;
+
+    // 拖曳控制面板
+    let isDragging = false;
+    let offsetX, offsetY;
+      
+    //////////////////////////////////////////////////
+    // init
+    //////////////////////////////////////////////////
+    function init() {
+      testArea         = document.getElementById('test-area');
+      controls         = document.getElementById('controls');
+      colorsGroup      = document.getElementById('colors-group');
+      segmentSelector  = document.getElementById('segment-selector');
+      playerGroup      = document.getElementById('player-group');
+      playButton       = document.getElementById('play-button');
+      previousButton   = document.getElementById('previous-button');
+      nextButton       = document.getElementById('next-button');
+      fullscreenButton = document.getElementById('fullscreen-button');
+      //////////////////////////////////////////////////
+      document.addEventListener('keydown', (e) => {
+        if (e.code === 'ArrowLeft' ) { previousColor();    }
+        if (e.code === 'ArrowRight') { nextColor();        }
+        if (e.code === 'KeyF'      ) { toggleFullscreen(); }
+        if (e.code === 'Space'     ) { playColor();        }
+      });
+      // colorPalette
+      segmentSelector.colors = [
+        { name: 'Red'  , hex: '#ff0000' },
+        { name: 'Green', hex: '#00ff00' },
+        { name: 'Blue' , hex: '#0000ff' },
+        { name: 'White', hex: '#ffffff' },
+        { name: 'Black', hex: '#000000' },
+      ];
+      segmentSelector.addEventListener('color-selected', (e) => {
+        console.log(`color-selected: ${e.detail.index}`);
+        changeColor();
+      });
+      segmentSelector.addEventListener('color-swapped', (e) => {
+        console.log(`color-swapped: ${e.detail.fromIndex} -> ${e.detail.toIndex}`);
+        changeColor();
+      });
+      // playButton
+      playButton.addEventListener('click', (e) => {
+        playColor();
+      });
+      // previousButton
+      previousButton.addEventListener('click', (e) => {
+        previousColor();
+      });
+      // nextButton
+      nextButton.addEventListener('click', (e) => {
+        nextColor();
+      });
+      // fullscreenButton
+      fullscreenButton.addEventListener('click', (e) => {
+        toggleFullscreen();
+      });
+
+      controls.addEventListener('mousedown', (e) => {
+        console.log(e.target);
+        if (e.target === controls || e.target.id === 'player-group') {
+          isDragging = true;
+          offsetX = e.clientX - controls.getBoundingClientRect().left;
+          offsetY = e.clientY - controls.getBoundingClientRect().top;
+        }
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+          const x = e.clientX - offsetX;
+          const y = e.clientY - offsetY;
+          /************************************************/
+          const maxX = window.innerWidth  - controls.offsetWidth;
+          const maxY = window.innerHeight - controls.offsetHeight;
+          /************************************************/
+          const boundedX = Math.max(0, Math.min(x, maxX));
+          const boundedY = Math.max(0, Math.min(y, maxY));
+          /************************************************/
+          controls.style.left   = `${boundedX}px`;
+          controls.style.top    = `${boundedY}px`;
+          controls.style.right  = 'auto';
+          controls.style.bottom = 'auto';
+        }
+      });
+
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+        /************************************************/
+      });
+
+      // initial setup
+      changeColor();
+    }
+    
+    function changeColor() {
+      testArea.style.backgroundColor = segmentSelector.currentColor;
+      /************************************************/
+      updateControlsColor(segmentSelector.currentColor);
+    }
+    
+    function playColor() {
+      if (playButton.getAttribute('data-playing') === 'true') {
+        playButton.setAttribute('data-playing', 'false');
+        /************************************************/
+        return;
+      }
+      /************************************************/
+      playButton.setAttribute('data-playing', 'true');
+    }
+
+    function previousColor() {
+      segmentSelector.previousColor();
+    }
+
+    function nextColor() {
+      segmentSelector.nextColor();
+    }
+    
+    function toggleFullscreen() {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+        return;
+      }
+      /************************************************/
+      document.documentElement.requestFullscreen()
+    . catch((err) => {
+        console.error(`full screen error: ${err.message}`);
+      });
+    }
+
+    //////////////////////////////////////////////////
+    // Common Function
+    //////////////////////////////////////////////////
+
+    function isColorDark(hexColor) {
+      let retValue = false;
+      /************************************************/
+      const r = parseInt(hexColor.substr(1, 2), 16);
+      const g = parseInt(hexColor.substr(3, 2), 16);
+      const b = parseInt(hexColor.substr(5, 2), 16);
+      /************************************************/
+      const brightness = ( (r * 299) + (g * 587) + (b * 114) ) / 1000;
+      /************************************************/
+      retValue = brightness < 128;
+      /************************************************/
+      return retValue;
+    }
+
+    //////////////////////////////////////////////////
+    // Update Function
+    //////////////////////////////////////////////////
+
+    function updateUI() {
+      if (playButton.getAttribute('data-playing') === 'false') playButton.iconName = 'play_circle';
+      if (playButton.getAttribute('data-playing') === 'true' ) playButton.iconName = 'stop_circle';
+    }
+
+    function updateControlsColor(hexColor) {
+      const isDark = isColorDark(hexColor);
+      /************************************************/
+      if ( isDark) controls.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+      if (!isDark) controls.style.backgroundColor = 'rgba(  0,   0,   0, 0.5)';
+    }
+
+    //////////////////////////////////////////////////
+    // Timer
+    //////////////////////////////////////////////////
+
+    setInterval(() => {
+      updateUI();
+    }, 100);
+
+    setInterval(() => {
+      if (playButton.getAttribute('data-playing') === 'true') {
+        nextColor();
+      }
+    }, 2000);
+
+    init();
+  </script>
+</body>
+</html>

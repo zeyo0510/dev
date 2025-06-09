@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Playground</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --dark-color: #1a1a2e;
+            --light-color: #f8f9fa;
+            --success-color: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .playground-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .run-btn {
+            background-color: var(--success-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        
+        .run-btn:hover {
+            background-color: #218838;
+        }
+        
+        .editor-tabs {
+            display: flex;
+            background-color: #e9ecef;
+            flex-shrink: 0;
+        }
+        
+        .editor-tab {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-right: 1px solid #ddd;
+            background-color: #e9ecef;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        
+        .editor-tab.active {
+            background-color: white;
+            font-weight: bold;
+        }
+        
+        .editor-tab:hover:not(.active) {
+            background-color: #dee2e6;
+        }
+        
+        .tab-content-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .tab-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            overflow: auto;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .CodeMirror {
+            height: 100% !important;
+            font-size: 14px;
+        }
+        
+        .preview-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: white;
+        }
+        
+        .footer {
+            padding: 10px;
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .editor-tab {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="playground-container">
+        <header class="header">
+            <div class="logo">Code Playground</div>
+            <button id="runButton" class="run-btn">
+                <i class="fas fa-play"></i> Run
+            </button>
+        </header>
+        
+        <div class="editor-tabs">
+            <div class="editor-tab active" data-target="html-content">HTML</div>
+            <div class="editor-tab" data-target="css-content">CSS</div>
+            <div class="editor-tab" data-target="js-content">JavaScript</div>
+            <div class="editor-tab" data-target="preview-content">Preview</div>
+        </div>
+        
+        <div class="tab-content-container">
+            <div id="html-content" class="tab-content active">
+                <textarea id="html-editor" class="code-editor">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a code playground.&lt;/p&gt;
+    &lt;button id="demoBtn"&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+            </div>
+            
+            <div id="css-content" class="tab-content">
+                <textarea id="css-editor" class="code-editor">body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4a6fa5;
+}
+
+#demoBtn {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#demoBtn:hover {
+    background-color: #166088;
+}</textarea>
+            </div>
+            
+            <div id="js-content" class="tab-content">
+                <textarea id="js-editor" class="code-editor">document.getElementById('demoBtn').addEventListener('click', function() {
+    alert('Button clicked!');
+});</textarea>
+            </div>
+            
+            <div id="preview-content" class="tab-content">
+                <iframe id="preview-frame" class="preview-frame"></iframe>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            Code Playground &copy; 2023 | HTML, CSS, JavaScript Live Editor
+        </footer>
+    </div>
+
+    <!-- CodeMirror resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/xml/xml.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize CodeMirror editors
+            const htmlEditor = CodeMirror.fromTextArea(document.getElementById('html-editor'), {
+                mode: 'htmlmixed',
+                theme: 'dracula',
+                lineNumbers: true,
+                autoCloseTags: true,
+                indentUnit: 4
+            });
+            
+            const cssEditor = CodeMirror.fromTextArea(document.getElementById('css-editor'), {
+                mode: 'css',
+                theme: 'dracula',
+                lineNumbers: true,
+                indentUnit: 4
+            });
+            
+            const jsEditor = CodeMirror.fromTextArea(document.getElementById('js-editor'), {
+                mode: 'javascript',
+                theme: 'dracula',
+                lineNumbers: true,
+                indentUnit: 4
+            });
+            
+            // Tab switching functionality
+            const tabs = document.querySelectorAll('.editor-tab');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const target = this.getAttribute('data-target');
+                    
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Switch content
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    document.getElementById(target).classList.add('active');
+                    
+                    // Refresh CodeMirror when switching to editors
+                    if (target === 'html-content') htmlEditor.refresh();
+                    if (target === 'css-content') cssEditor.refresh();
+                    if (target === 'js-content') jsEditor.refresh();
+                });
+            });
+            
+            // Run button functionality
+            const runButton = document.getElementById('runButton');
+            const previewFrame = document.getElementById('preview-frame');
+            
+            function runCode() {
+                const htmlCode = htmlEditor.getValue();
+                const cssCode = cssEditor.getValue();
+                const jsCode = jsEditor.getValue();
+                
+                const fullCode = `
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <style>${cssCode}</style>
+                    </head>
+                    <body>
+                        ${htmlCode}
+                        <script>${jsCode}<\/script>
+                    </body>
+                    </html>
+                `;
+                
+                const previewDocument = previewFrame.contentDocument || previewFrame.contentWindow.document;
+                previewDocument.open();
+                previewDocument.write(fullCode);
+                previewDocument.close();
+                
+                // Switch to preview tab after running
+                document.querySelector('[data-target="preview-content"]').click();
+            }
+            
+            runButton.addEventListener('click', runCode);
+            
+            // Run code on initial load
+            runCode();
+            
+            // Auto-run on change with debounce
+            let debounceTimer;
+            function debounceRun() {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(runCode, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
