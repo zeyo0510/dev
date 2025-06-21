@@ -1,0 +1,472 @@
+#header
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 22px;
+}
+
+#navigation
+{
+  position           : absolute;
+  top                : 0px;
+  right              : auto;
+  bottom             : auto;
+  left               : 0px;
+  margin-top         : 0px;
+  margin-right       : 0px;
+  margin-bottom      : 0px;
+  margin-left        : 0px;
+  border             : 0px 0px 0px 0px;
+  padding-top        : 0px;
+  padding-right      : 0px;
+  padding-bottom     : 0px;
+  padding-left       : 0px;
+  width              : 100%;
+  height             : 100%;
+  -webkit-app-region : drag;
+}
+
+.dark #navigation
+{
+  background-color : #202225;
+}
+
+.light #navigation
+{
+  background-color : #e3e5e8;
+}
+
+#logo
+{
+  position              : absolute;
+  top                   : 6px;
+  right                 : auto;
+  bottom                : auto;
+  left                  : 10px;
+  margin-top            : 0px;
+  margin-right          : 0px;
+  margin-bottom         : 0px;
+  margin-left           : 0px;
+  border                : 0px 0px 0px 0px;
+  padding-top           : 0px;
+  padding-right         : 0px;
+  padding-bottom        : 0px;
+  padding-left          : 0px;
+  width                 : 60px;
+  height                : 10px;
+  -webkit-app-region    : no-drag;
+}
+
+.dark #logo
+{
+  background-Image      : url(/images/logo.svg);
+  background-Repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-x : 0px;
+  background-size       : auto auto;
+}
+
+.light #logo
+{
+  background-Image      : url(/images/logo.svg);
+  background-Repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-y : -10px;
+  background-Size       : auto auto;
+}
+
+#minimize
+{
+  position              : absolute;
+  top                   : 0px;
+  right                 : auto;
+  bottom                : auto;
+  left                  : calc(100% - 28px - 28px - 28px);
+  margin-top            : 0px;
+  margin-right          : 0px;
+  margin-bottom         : 0px;
+  margin-left           : 0px;
+  border                : 0px 0px 0px 0px;
+  padding-top           : 0px;
+  padding-right         : 0px;
+  padding-bottom        : 0px;
+  padding-left          : 0px;
+  width                 : 28px;
+  height                : 100%;
+  -webkit-app-region    : no-drag;
+}
+
+.dark #minimize
+{
+  background-color      : transparent;
+  background-image      : url(/images/minimize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-y : 0px;
+  background-size       : auto auto;
+}
+
+.dark #minimize:hover
+{
+  background-color      : #282b2e;
+  background-image      : url(/images/minimize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : -28px;
+  background-position-y : 0px;
+  background-size       : auto auto;
+}
+
+.light #minimize
+{
+  background-color      : transparent;
+  background-image      : url(/images/minimize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-y : -22px;
+  background-size       : auto auto;
+}
+
+.light #minimize:hover
+{
+  background-color      : #dadde0;
+  background-image      : url(/images/minimize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : -28px;
+  background-position-y : -22px;
+  background-size       : auto auto;
+}
+
+#maximize
+{
+  position              : absolute;
+  top                   : 0px;
+  right                 : auto;
+  bottom                : auto;
+  left                  : calc(100% - 28px - 28px);
+  margin-top            : 0px;
+  margin-right          : 0px;
+  margin-bottom         : 0px;
+  margin-left           : 0px;
+  border                : 0px 0px 0px 0px;
+  padding-top           : 0px;
+  padding-right         : 0px;
+  padding-bottom        : 0px;
+  padding-left          : 0px;
+  width                 : 28px;
+  height                : 100%;
+  -webkit-app-region    : no-drag;
+}
+
+.dark #maximize
+{
+  background-color      : transparent;
+  background-image      : url(/images/maximize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-y : 0px;
+  background-size       : auto auto;
+}
+
+.dark #maximize:hover
+{
+  background-color      : #282b2e;
+  background-image      : url(/images/maximize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : -28px;
+  background-position-y : 0px;
+  background-size       : auto auto;
+}
+
+.light #maximize
+{
+  background-color      : transparent;
+  background-image      : url(/images/maximize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-y : -22px;
+  background-size       : auto auto;
+}
+
+.light #maximize:hover
+{
+  background-color      : #dadde0;
+  background-image      : url(/images/maximize.svg);
+  background-repeat     : no-repeat;
+  background-position-x : -28px;
+  background-position-y : -22px;
+  background-size       : auto auto;
+}
+
+#close
+{
+  position              : absolute;
+  top                   : 0px;
+  right                 : auto;
+  bottom                : auto;
+  left                  : calc(100% - 28px);
+  margin-top            : 0px;
+  margin-right          : 0px;
+  margin-bottom         : 0px;
+  margin-left           : 0px;
+  border                : 0px 0px 0px 0px;
+  padding-top           : 0px;
+  padding-right         : 0px;
+  padding-bottom        : 0px;
+  padding-left          : 0px;
+  width                 : 28px;
+  height                : 100%;
+  -webkit-app-region    : no-drag;
+}
+
+.dark #close
+{
+  background-color      : transparent;
+  background-image      : url(/images/close.svg);
+  background-repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-y : 0px;
+  background-size       : auto auto;
+}
+
+.dark #close:hover
+{
+  background-color      : #f04747;
+  background-image      : url(/images/close.svg);
+  background-repeat     : no-repeat;
+  background-position-x : -28px;
+  background-position-y : 0px;
+  background-size       : auto auto;
+}
+
+.light #close
+{
+  background-color      : transparent;
+  background-image      : url(/images/close.svg);
+  background-repeat     : no-repeat;
+  background-position-x : 0px;
+  background-position-y : -22px;
+  background-size       : auto auto;
+}
+
+.light #close:hover
+{
+  background-color      : #f04747;
+  background-image      : url(/images/close.svg);
+  background-repeat     : no-repeat;
+  background-position-x : -28px;
+  background-position-y : -22px;
+  background-size       : auto auto;
+}
+
+#main
+{
+  position       : absolute;
+  top            : 22px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : calc(100% - 22px);
+}
+
+#horizontal
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 100%;
+}
+
+#left
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 0px;
+  height         : 100%;
+}
+
+#vertical
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 100%;
+}
+
+#top
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 0px;
+}
+
+#panel
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 100%;
+}
+
+#entity
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 100%;
+}
+
+#bottom
+{
+  position       : absolute;
+  top            : 100%;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 0px;
+}
+
+#right
+{
+  position       : absolute;
+  top            : 0px;
+  right          : auto;
+  bottom         : auto;
+  left           : 100%;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 0px;
+  height         : 100%;
+}
+
+#footer
+{
+  position       : absolute;
+  top            : 100%;
+  right          : auto;
+  bottom         : auto;
+  left           : 0px;
+  margin-top     : 0px;
+  margin-right   : 0px;
+  margin-bottom  : 0px;
+  margin-left    : 0px;
+  border         : 0px 0px 0px 0px;
+  padding-top    : 0px;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+  padding-left   : 0px;
+  width          : 100%;
+  height         : 0px;
+}

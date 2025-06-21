@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Browser-DiscordLaunch",
+  "short_name": "DiscordLaunch",
+  "description": "A portable application",
+  "icons": {
+    "256": "app.png"
+  },
+  "version": "2024.09.03",
+  "app": {
+    "background": {
+      "scripts": [
+        "Settings.js",
+        "Window.js",
+        "DiscordWindow.js",
+        "background.js"
+      ]
+    }
+  },
+  "permissions": [
+    "alwaysOnTopWindows",
+    "audioCapture",
+    "browser",
+    "fullscreen",
+    "notifications",
+    "storage",
+    "videoCapture",
+    "webview"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://discord.com/*"
+    ]
+  }
+}

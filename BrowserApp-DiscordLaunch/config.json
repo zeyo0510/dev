@@ -1,0 +1,25 @@
+{
+  "application":
+  {
+    "id"         : "",
+    "name"       : "",
+    "desciption" : "",
+    "icons"      : "",
+    "version"    : ""
+  },
+  "window":
+  {
+    "id"             : "discordapp",
+    "url"            : "pages/index.html",
+    "theme"          : "light",
+    "darkSidebar"    : false,
+    "useSystemTheme" : 1
+  },
+  "webview":
+  {
+    "partition"   : "part1",
+    "origin"      : "https://discord.com",
+    "all"         : "*",
+    "application" : "app"
+  }
+}
