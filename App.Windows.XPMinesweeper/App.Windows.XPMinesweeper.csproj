@@ -43,6 +43,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="JC.Lib.CS">
+      <HintPath>..\..\JC\JC.Lib.CS\bin\Debug\JC.Lib.CS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -94,22 +97,6 @@
       <DependentUpon>MineControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\MineException.cs" />
-    <Compile Include="Controls\MinePanel.cs" />
-    <Compile Include="Controls\MinePanel.Designer.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MinePanel.OnPaint.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MinePanel.Panel1.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MinePanel.Panel2.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MinePanel.UpdateUI.cs">
-      <DependentUpon>MinePanel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\MinePlayer.Beginner.cs">
       <DependentUpon>MinePlayer.cs</DependentUpon>
     </Compile>

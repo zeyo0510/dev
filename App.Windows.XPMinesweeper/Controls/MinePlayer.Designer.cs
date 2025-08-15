@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using JC.Lib.CS.Controls;
 /************************************************/
 namespace App.Windows.XPMinesweeper.Controls
 {
