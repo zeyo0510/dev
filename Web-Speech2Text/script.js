@@ -1,4 +1,4 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
   const toggleBtn      = document.getElementById('toggle-btn');
   const resultTextbox  = document.getElementById('result');
   const languageSelect = document.getElementById('language-select');
@@ -100,4 +100,4 @@ window.onload = function() {
       console.log("B");
     }
   };
-};
+});
