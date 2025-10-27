@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OG Card 產生器</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background: #f3f4f6;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    h1 { margin: 0; }
+    .input-group {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      max-width: 600px;
+    }
+    input {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background: #0ea5a5;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .card {
+      width: 100%;
+      max-width: 800px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: none;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 1200/630;
+      object-fit: cover;
+      background: #e5e7eb;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .desc {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .url {
+      font-size: 13px;
+      color: #6b7280;
+      word-break: break-all;
+    }
+    .error {
+      color: #dc2626;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>OG Card 產生器</h1>
+  <div class="input-group">
+    <input id="urlInput" type="url" placeholder="請輸入網址 (例如 https://example.com)" />
+    <button id="fetchBtn">產生卡片</button>
+  </div>
+  <div id="errorMsg" class="error"></div>
+
+  <div id="card" class="card">
+    <img id="ogImage" src="" alt="OG Image" />
+    <div class="card-body">
+      <div class="title" id="ogTitle"></div>
+      <div class="desc" id="ogDesc"></div>
+      <div class="url" id="ogUrl"></div>
+    </div>
+  </div>
+
+  <script>
+    const fetchBtn = document.getElementById("fetchBtn");
+    const input = document.getElementById("urlInput");
+    const errorMsg = document.getElementById("errorMsg");
+    const card = document.getElementById("card");
+
+    async function fetchOG(url) {
+      try {
+        errorMsg.textContent = "";
+        fetchBtn.disabled = true;
+        fetchBtn.textContent = "抓取中...";
+
+        // 透過 AllOrigins API 代理，避免 CORS 問題
+        const proxy = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+        const res = await fetch(proxy);
+        if (!res.ok) throw new Error("無法連線目標網站");
+
+        const data = await res.json();
+        const html = data.contents;
+
+        // 抓取所有 og meta
+        const matches = [...html.matchAll(/<meta\s+(?:property|name)="(og:[^"]+)"\s+content="([^"]+)"/gi)];
+
+        // 建立 og 資料物件
+        const og = {};
+        for (const m of matches) og[m[1].toLowerCase()] = m[2];
+
+        // 補預設值
+        og["og:title"]       = og["og:title"]       || "(未找到 og:title)";
+        og["og:description"] = og["og:description"] || "(未找到 og:description)";
+        og["og:image"]       = og["og:image"]       || "https://via.placeholder.com/1200x630.png?text=No+OG+Image";
+        og["og:url"]         = og["og:url"]         || url;
+
+        // 顯示卡片
+        document.getElementById("ogTitle").textContent = og["og:title"];
+        document.getElementById("ogDesc").textContent  = og["og:description"];
+        document.getElementById("ogImage").src         = og["og:image"];
+        document.getElementById("ogUrl").textContent   = og["og:url"];
+
+        card.style.display = "flex";
+      } catch (err) {
+        console.error(err);
+        errorMsg.textContent = "❌ 抓取失敗：" + err.message;
+        card.style.display = "none";
+      } finally {
+        fetchBtn.disabled = false;
+        fetchBtn.textContent = "產生卡片";
+      }
+    }
+
+    fetchBtn.addEventListener("click", () => {
+      const url = input.value.trim();
+      if (!url) {
+        errorMsg.textContent = "請輸入有效網址。";
+        return;
+      }
+      fetchOG(url);
+    });
+  </script>
+</body>
+</html>
