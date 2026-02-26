@@ -73,22 +73,6 @@
     <Compile Include="Controls\MineControl.Resources.cs">
       <DependentUpon>MineControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MineLED.cs" />
-    <Compile Include="Controls\MineLED.Designer.cs">
-      <DependentUpon>MineLED.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineLED.OnPaint.cs">
-      <DependentUpon>MineLED.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineLED.Resources.cs">
-      <DependentUpon>MineLED.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineLED.UpdateUI.cs">
-      <DependentUpon>MineLED.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MineLED.Value.cs">
-      <DependentUpon>MineLED.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\MineControl.cs" />
     <Compile Include="Controls\MineControl.Designer.cs">
       <DependentUpon>MineControl.cs</DependentUpon>

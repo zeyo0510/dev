@@ -26,9 +26,9 @@ namespace App.Windows.XPMinesweeper.Controls
       tmrCount = new Timer();
       /************************************************/
       this.minePanel1      = new MinePanel();
-      this.flagMineLED     = new MineLED();
+      this.flagMineLED     = new MineNumeric();
       this.resetMineButton = new MineButton();
-      this.durationMineLED = new MineLED();
+      this.durationMineLED = new MineNumeric();
       this.mineControl1    = new MineControl();
       /************************************************/
       // minePanel1
@@ -86,9 +86,9 @@ namespace App.Windows.XPMinesweeper.Controls
     }
     /************************************************/
     private MinePanel  minePanel1      = null;
-    private MineLED    flagMineLED     = null;
+    private MineNumeric flagMineLED     = null;
     private MineButton resetMineButton = null;
-    private MineLED    durationMineLED = null;
+    private MineNumeric durationMineLED = null;
     private MineControl mineControl1 = null;
   }
 }
