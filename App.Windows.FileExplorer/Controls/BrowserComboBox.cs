@@ -88,23 +88,23 @@ namespace FileBrowser
     /************************************************/
     private void ComboBox_DropDown(object sender, EventArgs e)
     {
-        int width = 0;
-        Graphics gfx = ComboBox.CreateGraphics();
-        foreach (BrowserComboItem item in Items) {
-            int itemWidth =
-                gfx.MeasureString(item.Text, Font).ToSize().Width +
-                item.Image.Width +
-                indentWidth * item.Indent +
-                (Items.Count > MaxDropDownItems ? SystemInformation.VerticalScrollBarWidth : 0);
+      int width = 0;
+      Graphics gfx = ComboBox.CreateGraphics();
+      foreach (BrowserComboItem item in Items) {
+          int itemWidth =
+              gfx.MeasureString(item.Text, Font).ToSize().Width +
+              item.Image.Width +
+              indentWidth * item.Indent +
+              (Items.Count > MaxDropDownItems ? SystemInformation.VerticalScrollBarWidth : 0);
 
-            if (itemWidth > width)
-                width = itemWidth;
-        }
+          if (itemWidth > width)
+              width = itemWidth;
+      }
 
-        if (width > this.Width)
-            ComboBox.DropDownWidth = width;
-        else
-            ComboBox.DropDownWidth = this.Width;
+      if (width > this.Width)
+        ComboBox.DropDownWidth = width;
+      else
+        ComboBox.DropDownWidth = this.Width;
     }
   }
 }

@@ -8,12 +8,6 @@ namespace FileBrowser
 {
   internal partial class BrowserListView : ListView
   {
-    private ArrayList selectedOrder;
-    /************************************************/
-    private ContextMenu columnHeaderContextMenu;
-    /************************************************/
-    private bool suspendHeaderContextMenu;
-    /************************************************/
     private int columnHeight = 0;
     /************************************************/
     private BrowserListSorter sorter;
@@ -51,7 +45,8 @@ namespace FileBrowser
       columnHeight = e.Bounds.Height;
     }
     /************************************************/
-    protected override void OnItemSelectionChanged(ListViewItemSelectionChangedEventArgs e) {
+    protected override void OnItemSelectionChanged(ListViewItemSelectionChangedEventArgs e)
+    {
       if (e.IsSelected)
         selectedOrder.Insert(0, e.Item);
       else

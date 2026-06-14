@@ -215,15 +215,137 @@
     <Compile Include="Controls\BrowserTreeView.SetSorting.cs">
       <DependentUpon>BrowserTreeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Core\BrowserWrappers\BrowserContextMenuWrappers.cs" />
-    <Compile Include="Core\BrowserWrappers\BrowserDragWrappers.cs" />
-    <Compile Include="Core\BrowserWrappers\BrowserDropWrappers.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.Dispose.cs">
+      <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.DragEnd.cs">
+      <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.DragStart.cs">
+      <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.GiveFeedback.cs">
+      <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.ItemDrag.cs">
+      <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.QueryContinueDrag.cs">
+      <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.ReleaseCom.cs">
+      <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.Dispose.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.DisposeDropWrapper.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.DragDrop.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.DragEnter.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.DragLeave.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.DragOver.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.Drop.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.ParentDragItem.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.ReleaseCom.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVDropWrapper.ResetDrop.cs">
+      <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVContextMenuWrapper.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.Dispose.cs">
+      <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.DragEnd.cs">
+      <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.DragStart.cs">
+      <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.GiveFeedback.cs">
+      <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.ItemDrag.cs">
+      <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.QueryContinueDrag.cs">
+      <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.ReleaseCom.cs">
+      <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserLVContextMenuWrapper.cs" />
     <Compile Include="Core\BrowserWrappers\BrowserPluginWrapper.cs" />
-    <Compile Include="Core\ContextMenuMouseHoverEventArgs.cs" />
     <Compile Include="Controls\BrowserComboBox.cs" />
     <Compile Include="Controls\BrowserListView.cs" />
     <Compile Include="Controls\BrowserTreeView.cs" />
-    <Compile Include="Core\Resources.Designer.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.Dispose.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.DisposeDropWrapper.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.DragDrop.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.DragEnter.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.DragLeave.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.DragOver.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.Drop.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.ParentDragItem.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.ReleaseCom.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVDropWrapper.ResetDrop.cs">
+      <DependentUpon>BrowserTVDropWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\ContextMenuHelper.cs" />
+    <Compile Include="Core\BrowserWrappers\ContextMenuHelper.GetCommandString.cs">
+      <DependentUpon>ContextMenuHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\ContextMenuHelper.GetIContextMenu.cs">
+      <DependentUpon>ContextMenuHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\ContextMenuHelper.GetNewContextMenu.cs">
+      <DependentUpon>ContextMenuHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\ContextMenuHelper.InvokeCommand.cs">
+      <DependentUpon>ContextMenuHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\ContextMenuHelper.ProcessKeyCommands.cs">
+      <DependentUpon>ContextMenuHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\DragEnterEventArgs.cs" />
+    <Compile Include="Core\BrowserWrappers\DropEventArgs.cs" />
+    <Compile Include="Core\ContextMenuMouseHoverEventArgs.cs" />
     <Compile Include="Core\SelectedFolderChangedEventArgs.cs" />
     <Compile Include="Core\Shell\Interfaces\IContextMenu.cs" />
     <Compile Include="Core\Shell\Interfaces\IDragSourceHelper.cs" />
@@ -255,6 +377,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core" />
@@ -269,16 +392,14 @@
     <EmbeddedResource Include="Controls\Browser.resx">
       <DependentUpon>Browser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <DependentUpon>Resources.Designer.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <EmbeddedResource Include="Images\BrowseFolders.png" />
     <EmbeddedResource Include="Images\BrowserBack.png" />
     <EmbeddedResource Include="Images\BrowserForward.png" />
     <EmbeddedResource Include="Images\BrowserUp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Core\Resources.resx">
-      <DependentUpon>Resources.Designer.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

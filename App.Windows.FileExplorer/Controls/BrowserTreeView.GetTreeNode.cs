@@ -11,7 +11,8 @@ namespace FileBrowser
     {
       ArrayList pathList = new ArrayList();
         
-      while (shellItem.ParentItem != null) {
+      while (shellItem.ParentItem != null)
+      {
         pathList.Add(shellItem);
         shellItem = shellItem.ParentItem;
       }
@@ -20,17 +21,21 @@ namespace FileBrowser
       pathList.Reverse();
 
       treeNode = Nodes[0];
-      for (int i = 1; i < pathList.Count; i++) {
+      for (int i = 1; i < pathList.Count; i++)
+      {
         bool found = false;
-        foreach (TreeNode node in treeNode.Nodes) {
-          if (node.Tag != null && node.Tag.Equals(pathList[i])) {
+        foreach (TreeNode node in treeNode.Nodes)
+        {
+          if (node.Tag != null && node.Tag.Equals(pathList[i]))
+          {
             treeNode = node;
             found = true;
             break;
           }
         }
 
-        if (!found) {
+        if (!found)
+        {
           treeNode = null;
           return false;
         }

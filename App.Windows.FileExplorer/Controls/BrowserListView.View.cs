@@ -15,10 +15,15 @@ namespace FileBrowser
       {
         base.View = value;
 
-        if (value == View.Details) {
+        if (value == View.Details)
+        {
           foreach (ColumnHeader col in Columns)
+          {
             if (col.Width == 0)
+            {
               col.Width = 120;
+            }
+          }
         }
       }
     }

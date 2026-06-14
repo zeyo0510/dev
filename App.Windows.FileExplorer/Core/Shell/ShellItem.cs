@@ -1,243 +1,373 @@
 using System;
-using System.Windows.Forms;
 using System.Collections;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading;
 
 namespace ShellDll
 {
-    public sealed class ShellItem : IEnumerable, IDisposable, IComparable
+  public sealed class ShellItem : IEnumerable, IDisposable, IComparable
+  {
+    private ShellBrowser browser;
+
+    private ShellItem parentItem;
+    private IShellFolder shellFolder;
+    private IntPtr shellFolderPtr;
+    private ShellItemCollection subFiles, subFolders;
+
+    private PIDL pidlRel;
+
+    private short sortFlag;
+    private int imageIndex, selectedImageIndex;
+
+    private bool isFolder, isLink, isShared, isFileSystem,
+                 isHidden, hasSubfolder, isBrowsable, isDisk, filesExpanded,
+                 foldersExpanded, canRename, updateShellFolder, canRead;
+    
+    private string text, path, type;
+
+    private bool disposed = false;
+
+    internal ShellItem(ShellBrowser browser, IntPtr pidl, IntPtr shellFolderPtr)
     {
-        #region Fields
+        this.browser = browser;
 
-        private ShellBrowser browser;
+        this.shellFolderPtr = shellFolderPtr;
+        this.shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
+        subFiles = new ShellItemCollection(this);
+        subFolders = new ShellItemCollection(this);
 
-        private ShellItem parentItem;
-        private IShellFolder shellFolder;
-        private IntPtr shellFolderPtr;
-        private ShellItemCollection subFiles, subFolders;
+        pidlRel = new PIDL(pidl, false);
 
-        private PIDL pidlRel;
+        text = "Desktop";
+        path = "Desktop";
 
-        private short sortFlag;
-        private int imageIndex, selectedImageIndex;
+        SetAttributesDesktop(this);
 
-        private bool isFolder, isLink, isShared, isFileSystem,
-                     isHidden, hasSubfolder, isBrowsable, isDisk, filesExpanded,
-                     foldersExpanded, canRename, updateShellFolder, canRead;
+        WinAPI.SHFILEINFO info = new WinAPI.SHFILEINFO();
+        WinAPI.SHGetFileInfo(pidlRel.Ptr, 0, ref info, WinAPI.cbFileInfo, WinAPI.SHGFI.PIDL | WinAPI.SHGFI.TYPENAME | WinAPI.SHGFI.SYSICONINDEX);
+
+        type = info.szTypeName;
+
+        ShellImageList.SetIconIndex(this, info.iIcon, false);
+        ShellImageList.SetIconIndex(this, info.iIcon, true);
+
+        sortFlag = 1;
+    }
+
+    internal ShellItem(ShellBrowser browser, ShellItem parentItem, IntPtr pidl, IntPtr shellFolderPtr)
+    {
+        this.browser = browser;
+
+        this.parentItem = parentItem;
+        this.shellFolderPtr = shellFolderPtr;
+        this.shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
+        subFiles = new ShellItemCollection(this);
+        subFolders = new ShellItemCollection(this);
+
+        pidlRel = new PIDL(pidl, false);
+
+        SetText(this);
+        SetPath(this);
+        SetAttributesFolder(this);
+        SetInfo(this);
+
+        sortFlag = MakeSortFlag(this);
+    }
+
+    internal ShellItem(ShellBrowser browser, ShellItem parentItem, IntPtr pidl)
+    {
+        this.browser = browser;
+
+        this.parentItem = parentItem;
+
+        pidlRel = new PIDL(pidl, false);
+
+        SetText(this);
+        SetPath(this);
+        SetAttributesFile(this);
+        SetInfo(this);                        
+
+        sortFlag = MakeSortFlag(this);
+    }
+
+    ~ShellItem()
+    {
+        ((IDisposable)this).Dispose();
+    }
+
+    private static void SetText(ShellItem item)
+    {
+        IntPtr strr = Marshal.AllocCoTaskMem(WinAPI.MAX_PATH * 2 + 4);
+        Marshal.WriteInt32(strr, 0, 0);
+        StringBuilder buf = new StringBuilder(WinAPI.MAX_PATH);
+
+        if (item.ParentItem.ShellFolder.GetDisplayNameOf(item.PIDLRel.Ptr, WinAPI.SHGNO.INFOLDER, strr) == WinAPI.S_OK)
+        {
+            WinAPI.StrRetToBuf(strr, item.PIDLRel.Ptr, buf, WinAPI.MAX_PATH);
+            item.text = buf.ToString();
+        }
+
+        Marshal.FreeCoTaskMem(strr);
+    }
+
+    private static void SetPath(ShellItem item)
+    {
+        IntPtr strr = Marshal.AllocCoTaskMem(WinAPI.MAX_PATH * 2 + 4);
+        Marshal.WriteInt32(strr, 0, 0);
+        StringBuilder buf = new StringBuilder(WinAPI.MAX_PATH);
+
+        if (item.ParentItem.ShellFolder.GetDisplayNameOf(item.PIDLRel.Ptr, WinAPI.SHGNO.FORADDRESSBAR | WinAPI.SHGNO.FORPARSING, strr) == WinAPI.S_OK)
+        {
+            WinAPI.StrRetToBuf(strr, item.PIDLRel.Ptr, buf, WinAPI.MAX_PATH);
+            item.path = buf.ToString();
+        }
+
+        Marshal.FreeCoTaskMem(strr);
+    }
+
+    private static void SetInfo(ShellItem item)
+    {
+        PIDL pidlFull = item.PIDLFull;
+
+        WinAPI.SHFILEINFO info = new WinAPI.SHFILEINFO();
+        WinAPI.SHGetFileInfo(pidlFull.Ptr, 0, ref info, WinAPI.cbFileInfo, WinAPI.SHGFI.PIDL | WinAPI.SHGFI.TYPENAME | WinAPI.SHGFI.SYSICONINDEX);
+
+        pidlFull.Free();
+
+        ShellImageList.SetIconIndex(item, info.iIcon, false);
+        ShellImageList.SetIconIndex(item, info.iIcon, true);
+
+        item.type = info.szTypeName;
+    }
+
+    private static void SetAttributesDesktop(ShellItem item)
+    {
+        item.isFolder = true;
+        item.isLink = false;
+        item.isShared = false;
+        item.isFileSystem = true;
+        item.isHidden = false;
+        item.hasSubfolder = true;
+        item.isBrowsable = true;
+        item.canRename = false;
+        item.canRead = true;
+    }
+
+    private static void SetAttributesFolder(ShellItem item)
+    {
+        // file/folder attributes
+        WinAPI.SFGAO attribs = 
+            WinAPI.SFGAO.SHARE |
+            WinAPI.SFGAO.FILESYSTEM |
+            WinAPI.SFGAO.HIDDEN |
+            WinAPI.SFGAO.HASSUBFOLDER |
+            WinAPI.SFGAO.BROWSABLE |
+            WinAPI.SFGAO.CANRENAME | 
+            WinAPI.SFGAO.STORAGE;
+        item.ParentItem.ShellFolder.GetAttributesOf(
+            1, new IntPtr[] { item.PIDLRel.Ptr }, ref attribs);
         
-        private string text, path, type;
+        item.isFolder = true;
+        item.isLink = false;
+        item.isShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
+        item.isFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
+        item.isHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
+        item.hasSubfolder = (attribs & WinAPI.SFGAO.HASSUBFOLDER) != 0;
+        item.isBrowsable = (attribs & WinAPI.SFGAO.BROWSABLE) != 0;
+        item.canRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
+        item.canRead = (attribs & WinAPI.SFGAO.STORAGE) != 0;
 
-        private bool disposed = false;
+        item.isDisk = (item.path.Length == 3 && item.path.EndsWith(":\\"));
+    }
 
-        #endregion
+    private static void SetAttributesFile(ShellItem item)
+    {
+        // file/folder attributes
+        WinAPI.SFGAO attribs =
+            WinAPI.SFGAO.LINK |
+            WinAPI.SFGAO.SHARE | 
+            WinAPI.SFGAO.FILESYSTEM |
+            WinAPI.SFGAO.HIDDEN |
+            WinAPI.SFGAO.CANRENAME |
+            WinAPI.SFGAO.STREAM;
+        item.ParentItem.ShellFolder.GetAttributesOf(
+            1, new IntPtr[] { item.PIDLRel.Ptr }, ref attribs);
 
-        #region Constructors
+        item.isFolder = false;
+        item.isLink = (attribs & WinAPI.SFGAO.LINK) != 0;
+        item.isShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
+        item.isFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
+        item.isHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
+        item.hasSubfolder = false;
+        item.isBrowsable = false;
+        item.canRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
+        item.canRead = (attribs & WinAPI.SFGAO.STREAM) != 0;
 
-        internal ShellItem(ShellBrowser browser, IntPtr pidl, IntPtr shellFolderPtr)
+        item.isDisk = false;
+    }        
+
+    internal bool Expand(bool expandFiles, bool expandFolders, IntPtr winHandle)
+    {
+        if (((expandFiles && !filesExpanded) || !expandFiles) &&
+            ((expandFolders && !foldersExpanded) || !expandFolders) &&
+            (expandFiles || expandFolders) && ShellFolder != null && !disposed)
         {
-            this.browser = browser;
+            IntPtr fileEnumPtr = IntPtr.Zero, folderEnumPtr = IntPtr.Zero;
+            IEnumIDList fileEnum = null, folderEnum = null;
+            IntPtr pidlSubItem;
+            int celtFetched;
 
-            this.shellFolderPtr = shellFolderPtr;
-            this.shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
-            subFiles = new ShellItemCollection(this);
-            subFolders = new ShellItemCollection(this);
+            WinAPI.SHCONTF fileFlag =
+                    WinAPI.SHCONTF.NONFOLDERS |
+                    WinAPI.SHCONTF.INCLUDEHIDDEN;
 
-            pidlRel = new PIDL(pidl, false);
+            WinAPI.SHCONTF folderFlag =
+                    WinAPI.SHCONTF.FOLDERS |
+                    WinAPI.SHCONTF.INCLUDEHIDDEN;
 
-            text = "Desktop";
-            path = "Desktop";
-
-            SetAttributesDesktop(this);
-
-            WinAPI.SHFILEINFO info = new WinAPI.SHFILEINFO();
-            WinAPI.SHGetFileInfo(pidlRel.Ptr, 0, ref info, WinAPI.cbFileInfo,
-                WinAPI.SHGFI.PIDL | WinAPI.SHGFI.TYPENAME | WinAPI.SHGFI.SYSICONINDEX);
-
-            type = info.szTypeName;
-
-            ShellImageList.SetIconIndex(this, info.iIcon, false);
-            ShellImageList.SetIconIndex(this, info.iIcon, true);
-
-            sortFlag = 1;
-        }
-
-        internal ShellItem(ShellBrowser browser, ShellItem parentItem, IntPtr pidl, IntPtr shellFolderPtr)
-        {
-            this.browser = browser;
-
-            this.parentItem = parentItem;
-            this.shellFolderPtr = shellFolderPtr;
-            this.shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
-            subFiles = new ShellItemCollection(this);
-            subFolders = new ShellItemCollection(this);
-
-            pidlRel = new PIDL(pidl, false);
-
-            SetText(this);
-            SetPath(this);
-            SetAttributesFolder(this);
-            SetInfo(this);                       
-
-            sortFlag = MakeSortFlag(this);
-        }
-
-        internal ShellItem(ShellBrowser browser, ShellItem parentItem, IntPtr pidl)
-        {
-            this.browser = browser;
-
-            this.parentItem = parentItem;
-
-            pidlRel = new PIDL(pidl, false);
-
-            SetText(this);
-            SetPath(this);
-            SetAttributesFile(this);
-            SetInfo(this);                        
-
-            sortFlag = MakeSortFlag(this);
-        }
-
-        ~ShellItem()
-        {
-            ((IDisposable)this).Dispose();
-        }
-
-        #endregion
-
-        #region Init Methods
-
-        private static void SetText(ShellItem item)
-        {
-            IntPtr strr = Marshal.AllocCoTaskMem(WinAPI.MAX_PATH * 2 + 4);
-            Marshal.WriteInt32(strr, 0, 0);
-            StringBuilder buf = new StringBuilder(WinAPI.MAX_PATH);
-
-            if (item.ParentItem.ShellFolder.GetDisplayNameOf(
-                            item.PIDLRel.Ptr,
-                            WinAPI.SHGNO.INFOLDER,
-                            strr) == WinAPI.S_OK)
+            try
             {
-                WinAPI.StrRetToBuf(strr, item.PIDLRel.Ptr, buf, WinAPI.MAX_PATH);
-                item.text = buf.ToString();
+                if (expandFiles)
+                {
+                    if (this.Equals(browser.DesktopItem) || parentItem.Equals(browser.DesktopItem))
+                    {
+                        if (ShellFolder.EnumObjects(
+                                winHandle,
+                                fileFlag,
+                                out fileEnumPtr) == WinAPI.S_OK)
+                        {
+                            fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
+                            WinAPI.SFGAO attribs = WinAPI.SFGAO.FOLDER;
+                            while (fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
+                            {
+                                ShellFolder.GetAttributesOf(1, new IntPtr[] { pidlSubItem }, ref attribs);
+
+                                if ((attribs & WinAPI.SFGAO.FOLDER) == 0)
+                                {
+                                    ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
+
+                                    if (!subFolders.Contains(newItem.Text))
+                                        subFiles.Add(newItem);
+                                }
+                                else
+                                    Marshal.FreeCoTaskMem(pidlSubItem);
+                            }
+
+                            subFiles.Sort();
+                            filesExpanded = true;
+                        }
+                    }
+                    else
+                    {
+                        if (ShellFolder.EnumObjects(
+                                winHandle,
+                                fileFlag,
+                                out fileEnumPtr) == WinAPI.S_OK)
+                        {
+                            fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
+                            while (fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
+                            {
+                                ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
+                                subFiles.Add(newItem);
+                            }
+
+                            subFiles.Sort();
+                            filesExpanded = true;
+                        }
+                    }
+                }
+
+                if (expandFolders)
+                {
+                    if (ShellFolder.EnumObjects(
+                                winHandle,
+                                folderFlag,
+                                out folderEnumPtr) == WinAPI.S_OK)
+                    {
+                        folderEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(folderEnumPtr, typeof(IEnumIDList));
+                        while (folderEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
+                        {
+                            IntPtr shellFolderPtr;
+                            if (ShellFolder.BindToObject(
+                                        pidlSubItem,
+                                        IntPtr.Zero,
+                                        ref WinAPI.IID_IShellFolder,
+                                        out shellFolderPtr) == WinAPI.S_OK)
+                            {
+                                ShellItem newItem = new ShellItem(
+                                    browser,
+                                    this,
+                                    pidlSubItem,
+                                    shellFolderPtr);
+                                subFolders.Add(newItem);
+                            }
+                        }
+
+                        subFolders.Sort();
+                        foldersExpanded = true;
+                    }
+                }
+
             }
-
-            Marshal.FreeCoTaskMem(strr);
-        }
-
-        private static void SetPath(ShellItem item)
-        {
-            IntPtr strr = Marshal.AllocCoTaskMem(WinAPI.MAX_PATH * 2 + 4);
-            Marshal.WriteInt32(strr, 0, 0);
-            StringBuilder buf = new StringBuilder(WinAPI.MAX_PATH);
-
-            if (item.ParentItem.ShellFolder.GetDisplayNameOf(
-                            item.PIDLRel.Ptr,
-                            WinAPI.SHGNO.FORADDRESSBAR | WinAPI.SHGNO.FORPARSING,
-                            strr) == WinAPI.S_OK)
+            catch (Exception) { }
+            finally
             {
-                WinAPI.StrRetToBuf(strr, item.PIDLRel.Ptr, buf, WinAPI.MAX_PATH);
-                item.path = buf.ToString();
+                if (folderEnum != null)
+                {
+                    Marshal.ReleaseComObject(folderEnum);
+                    Marshal.Release(folderEnumPtr);
+                }
+
+                if (fileEnum != null)
+                {
+                    Marshal.ReleaseComObject(fileEnum);
+                    Marshal.Release(fileEnumPtr);
+                }
             }
-
-            Marshal.FreeCoTaskMem(strr);
         }
 
-        private static void SetInfo(ShellItem item)
+        return ((expandFiles == filesExpanded || !expandFiles) && (expandFolders == foldersExpanded || !expandFolders));
+    }
+
+    internal void Clear(bool clearFiles, bool clearFolders)
+    {
+        if (((clearFiles && filesExpanded) || !clearFiles) &&
+            ((clearFolders && foldersExpanded) || !clearFolders) &&
+            (clearFiles || clearFolders) && ShellFolder != null && !disposed)
         {
-            PIDL pidlFull = item.PIDLFull;
-
-            WinAPI.SHFILEINFO info = new WinAPI.SHFILEINFO();
-            WinAPI.SHGetFileInfo(pidlFull.Ptr, 0, ref info, WinAPI.cbFileInfo,
-                WinAPI.SHGFI.PIDL | WinAPI.SHGFI.TYPENAME | WinAPI.SHGFI.SYSICONINDEX);
-
-            pidlFull.Free();
-
-            ShellImageList.SetIconIndex(item, info.iIcon, false);
-            ShellImageList.SetIconIndex(item, info.iIcon, true);
-
-            item.type = info.szTypeName;
-        }
-
-        private static void SetAttributesDesktop(ShellItem item)
-        {
-            item.isFolder = true;
-            item.isLink = false;
-            item.isShared = false;
-            item.isFileSystem = true;
-            item.isHidden = false;
-            item.hasSubfolder = true;
-            item.isBrowsable = true;
-            item.canRename = false;
-            item.canRead = true;
-        }
-
-        private static void SetAttributesFolder(ShellItem item)
-        {
-            // file/folder attributes
-            WinAPI.SFGAO attribs = 
-                WinAPI.SFGAO.SHARE |
-                WinAPI.SFGAO.FILESYSTEM |
-                WinAPI.SFGAO.HIDDEN |
-                WinAPI.SFGAO.HASSUBFOLDER |
-                WinAPI.SFGAO.BROWSABLE |
-                WinAPI.SFGAO.CANRENAME | 
-                WinAPI.SFGAO.STORAGE;
-            item.ParentItem.ShellFolder.GetAttributesOf(
-                1, new IntPtr[] { item.PIDLRel.Ptr }, ref attribs);
-            
-            item.isFolder = true;
-            item.isLink = false;
-            item.isShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
-            item.isFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
-            item.isHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
-            item.hasSubfolder = (attribs & WinAPI.SFGAO.HASSUBFOLDER) != 0;
-            item.isBrowsable = (attribs & WinAPI.SFGAO.BROWSABLE) != 0;
-            item.canRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
-            item.canRead = (attribs & WinAPI.SFGAO.STORAGE) != 0;
-
-            item.isDisk = (item.path.Length == 3 && item.path.EndsWith(":\\"));
-        }
-
-        private static void SetAttributesFile(ShellItem item)
-        {
-            // file/folder attributes
-            WinAPI.SFGAO attribs =
-                WinAPI.SFGAO.LINK |
-                WinAPI.SFGAO.SHARE | 
-                WinAPI.SFGAO.FILESYSTEM |
-                WinAPI.SFGAO.HIDDEN |
-                WinAPI.SFGAO.CANRENAME |
-                WinAPI.SFGAO.STREAM;
-            item.ParentItem.ShellFolder.GetAttributesOf(
-                1, new IntPtr[] { item.PIDLRel.Ptr }, ref attribs);
-
-            item.isFolder = false;
-            item.isLink = (attribs & WinAPI.SFGAO.LINK) != 0;
-            item.isShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
-            item.isFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
-            item.isHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
-            item.hasSubfolder = false;
-            item.isBrowsable = false;
-            item.canRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
-            item.canRead = (attribs & WinAPI.SFGAO.STREAM) != 0;
-
-            item.isDisk = false;
-        }        
-
-        #endregion
-
-        #region Browse Methods
-
-        internal bool Expand(bool expandFiles, bool expandFolders, IntPtr winHandle)
-        {
-            if (((expandFiles && !filesExpanded) || !expandFiles) &&
-                ((expandFolders && !foldersExpanded) || !expandFolders) &&
-                (expandFiles || expandFolders) && ShellFolder != null && !disposed)
+            lock (browser)
             {
-                #region Fields
+                try
+                {
+                    if (clearFiles)
+                    {
+                        foreach (IDisposable item in subFiles)
+                            item.Dispose();
 
+                        subFiles.Clear();
+                        filesExpanded = false;
+                    }
+
+                    if (clearFolders)
+                    {
+                        foreach (IDisposable item in subFolders)
+                            item.Dispose();
+
+                        subFolders.Clear();
+                        foldersExpanded = false;
+                    }
+                }
+                catch (Exception) { }
+            }
+        }
+    }
+
+    internal void Update(bool updateFiles, bool updateFolders)
+    {
+        if (browser.UpdateCondition.ContinueUpdate && (updateFiles || updateFolders) && ShellFolder != null && !disposed)
+        {
+            lock (browser)
+            {
                 IntPtr fileEnumPtr = IntPtr.Zero, folderEnumPtr = IntPtr.Zero;
                 IEnumIDList fileEnum = null, folderEnum = null;
                 IntPtr pidlSubItem;
@@ -251,104 +381,236 @@ namespace ShellDll
                         WinAPI.SHCONTF.FOLDERS |
                         WinAPI.SHCONTF.INCLUDEHIDDEN;
 
-                #endregion
+                bool[] fileExists;
+                fileExists = new bool[subFiles.Count];
+
+                bool[] folderExists;
+                folderExists = new bool[subFolders.Count];
+
+                int index;
 
                 try
                 {
-                    #region Add Files
-
-                    if (expandFiles)
+                    if (browser.UpdateCondition.ContinueUpdate && updateFiles)
                     {
+                        ShellItemCollection add = new ShellItemCollection(this);
+                        ShellItemCollection remove = new ShellItemCollection(this);
+
+                        bool fileEnumCompleted = false;
+
                         if (this.Equals(browser.DesktopItem) || parentItem.Equals(browser.DesktopItem))
                         {
                             if (ShellFolder.EnumObjects(
-                                    winHandle,
+                                    IntPtr.Zero,
                                     fileFlag,
                                     out fileEnumPtr) == WinAPI.S_OK)
                             {
                                 fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
                                 WinAPI.SFGAO attribs = WinAPI.SFGAO.FOLDER;
-                                while (fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
+                                while (browser.UpdateCondition.ContinueUpdate &&
+                                       fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
                                 {
                                     ShellFolder.GetAttributesOf(1, new IntPtr[] { pidlSubItem }, ref attribs);
 
                                     if ((attribs & WinAPI.SFGAO.FOLDER) == 0)
                                     {
-                                        ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
+                                        if ((index = subFiles.IndexOf(pidlSubItem)) == -1)
+                                        {
+                                            ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
 
-                                        if (!subFolders.Contains(newItem.Text))
-                                            subFiles.Add(newItem);
+                                            if (!subFolders.Contains(newItem.Text))
+                                            {
+                                                add.Add(newItem);
+                                            }
+                                        }
+                                        else if (index < fileExists.Length)
+                                        {
+                                            fileExists[index] = true;
+                                            Marshal.FreeCoTaskMem(pidlSubItem);
+                                        }
                                     }
                                     else
                                         Marshal.FreeCoTaskMem(pidlSubItem);
                                 }
 
-                                subFiles.Sort();
-                                filesExpanded = true;
+                                fileEnumCompleted = true;
                             }
+                                
                         }
                         else
                         {
                             if (ShellFolder.EnumObjects(
-                                    winHandle,
+                                    IntPtr.Zero,
                                     fileFlag,
                                     out fileEnumPtr) == WinAPI.S_OK)
                             {
                                 fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
-                                while (fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
+                                while (browser.UpdateCondition.ContinueUpdate &&
+                                       fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
                                 {
-                                    ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
-                                    subFiles.Add(newItem);
+                                    if ((index = subFiles.IndexOf(pidlSubItem)) == -1)
+                                    {
+                                        add.Add(new ShellItem(browser, this, pidlSubItem));
+                                    }
+                                    else if (index < fileExists.Length)
+                                    {
+                                        fileExists[index] = true;
+                                        Marshal.FreeCoTaskMem(pidlSubItem);
+                                    }
                                 }
 
-                                subFiles.Sort();
-                                filesExpanded = true;
+                                fileEnumCompleted = true;
                             }
+                        }
+
+                        for (int i = 0; fileEnumCompleted && browser.UpdateCondition.ContinueUpdate && i < fileExists.Length; i++)
+                        {
+                            if (!fileExists[i] && subFiles[i] != null)
+                            {
+                                remove.Add(subFiles[i]);
+                            }
+                        }
+
+                        if (fileEnumCompleted && browser.UpdateCondition.ContinueUpdate)
+                        {
+                            int newIndex;
+                            foreach (ShellItem oldItem in remove)
+                            {
+                                if ((newIndex = add.IndexOf(oldItem.Text)) > -1)
+                                {
+                                    ShellItem newItem = add[newIndex];
+                                    add.Remove(newItem);
+
+                                    oldItem.pidlRel.Free();
+                                    oldItem.pidlRel = new PIDL(newItem.pidlRel.Ptr, true);
+
+                                    oldItem.shellFolder = newItem.shellFolder;
+                                    oldItem.shellFolderPtr = newItem.shellFolderPtr;
+
+                                    ((IDisposable)newItem).Dispose();
+
+                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
+                                }
+                                else
+                                {
+                                    subFiles.Remove(oldItem);
+                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
+                                    ((IDisposable)oldItem).Dispose();
+                                }
+                            }
+
+                            foreach (ShellItem newItem in add)
+                            {
+                                subFiles.Add(newItem);
+                                browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
+                            }
+
+                            subFiles.Capacity = subFiles.Count;
+                            subFiles.Sort();
+
+                            filesExpanded = true;
                         }
                     }
 
-                    #endregion
-
-                    #region Add Folders
-
-                    if (expandFolders)
+                    if (browser.UpdateCondition.ContinueUpdate && updateFolders)
                     {
+                        ShellItemCollection add = new ShellItemCollection(this);
+                        ShellItemCollection remove = new ShellItemCollection(this);
+
+                        bool folderEnumCompleted = false;
+
                         if (ShellFolder.EnumObjects(
-                                    winHandle,
+                                    IntPtr.Zero,
                                     folderFlag,
                                     out folderEnumPtr) == WinAPI.S_OK)
                         {
                             folderEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(folderEnumPtr, typeof(IEnumIDList));
-                            while (folderEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
+                            while (browser.UpdateCondition.ContinueUpdate &&
+                                   folderEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
                             {
-                                IntPtr shellFolderPtr;
-                                if (ShellFolder.BindToObject(
-                                            pidlSubItem,
-                                            IntPtr.Zero,
-                                            ref WinAPI.IID_IShellFolder,
-                                            out shellFolderPtr) == WinAPI.S_OK)
+                                if ((index = subFolders.IndexOf(pidlSubItem)) == -1)
                                 {
-                                    ShellItem newItem = new ShellItem(
-                                        browser,
-                                        this,
-                                        pidlSubItem,
-                                        shellFolderPtr);
-                                    subFolders.Add(newItem);
+                                    IntPtr shellFolderPtr;
+                                    if (ShellFolder.BindToObject(
+                                                pidlSubItem,
+                                                IntPtr.Zero,
+                                                ref WinAPI.IID_IShellFolder,
+                                                out shellFolderPtr) == WinAPI.S_OK)
+                                    {
+                                        add.Add(new ShellItem(
+                                            browser,
+                                            this,
+                                            pidlSubItem,
+                                            shellFolderPtr));
+                                    }
+                                }
+                                else if (index < folderExists.Length)
+                                {
+                                    folderExists[index] = true;
+                                    Marshal.FreeCoTaskMem(pidlSubItem);
                                 }
                             }
 
+                            folderEnumCompleted = true;
+                        }
+
+                        for (int i = 0; folderEnumCompleted && browser.UpdateCondition.ContinueUpdate && i < folderExists.Length; i++)
+                        {
+                            if (!folderExists[i] && subFolders[i] != null)
+                            {
+                                remove.Add(subFolders[i]);
+                            }
+                        }
+
+                        if (folderEnumCompleted && browser.UpdateCondition.ContinueUpdate)
+                        {
+                            int newIndex;
+                            foreach (ShellItem oldItem in remove)
+                            {
+                                if ((newIndex = add.IndexOf(oldItem.Text)) > -1)
+                                {
+                                    ShellItem newItem = add[newIndex];
+                                    add.Remove(newItem);
+
+                                    oldItem.pidlRel.Free();
+                                    oldItem.pidlRel = new PIDL(newItem.pidlRel, true);
+
+                                    Marshal.ReleaseComObject(oldItem.shellFolder);
+                                    Marshal.Release(oldItem.shellFolderPtr);
+
+                                    oldItem.shellFolder = newItem.shellFolder;
+                                    oldItem.shellFolderPtr = newItem.shellFolderPtr;
+
+                                    newItem.shellFolder = null;
+                                    newItem.shellFolderPtr = IntPtr.Zero;
+                                    ((IDisposable)newItem).Dispose();
+
+                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
+                                }
+                                else
+                                {
+                                    subFolders.Remove(oldItem);
+                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
+                                    ((IDisposable)oldItem).Dispose();
+                                }
+                            }
+
+                            foreach (ShellItem newItem in add)
+                            {
+                                subFolders.Add(newItem);
+
+                                browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
+                            }
+
+                            subFolders.Capacity = subFolders.Count;
                             subFolders.Sort();
                             foldersExpanded = true;
                         }
                     }
-
-                    #endregion
                 }
                 catch (Exception) { }
                 finally
                 {
-                    #region Free
-
                     if (folderEnum != null)
                     {
                         Marshal.ReleaseComObject(folderEnum);
@@ -358,1106 +620,691 @@ namespace ShellDll
                     if (fileEnum != null)
                     {
                         Marshal.ReleaseComObject(fileEnum);
-                        Marshal.Release(fileEnumPtr);
-                    }
 
-                    #endregion
-                }
-            }
-
-            return ((expandFiles == filesExpanded || !expandFiles) && (expandFolders == foldersExpanded || !expandFolders));
-        }
-
-        internal void Clear(bool clearFiles, bool clearFolders)
-        {
-            if (((clearFiles && filesExpanded) || !clearFiles) &&
-                ((clearFolders && foldersExpanded) || !clearFolders) &&
-                (clearFiles || clearFolders) && ShellFolder != null && !disposed)
-            {
-                lock (browser)
-                {
-                    try
-                    {
-                        #region Reset Files
-
-                        if (clearFiles)
-                        {
-                            foreach (IDisposable item in subFiles)
-                                item.Dispose();
-
-                            subFiles.Clear();
-                            filesExpanded = false;
-                        }
-
-                        #endregion
-
-                        #region Reset Folders
-
-                        if (clearFolders)
-                        {
-                            foreach (IDisposable item in subFolders)
-                                item.Dispose();
-
-                            subFolders.Clear();
-                            foldersExpanded = false;
-                        }
-
-                        #endregion
-                    }
-                    catch (Exception) { }
-                }
-            }
-        }
-
-        #region Updates
-
-        internal void Update(bool updateFiles, bool updateFolders)
-        {
-            if (browser.UpdateCondition.ContinueUpdate && (updateFiles || updateFolders) && ShellFolder != null && !disposed)
-            {
-                lock (browser)
-                {
-                    #region Fields
-
-                    IntPtr fileEnumPtr = IntPtr.Zero, folderEnumPtr = IntPtr.Zero;
-                    IEnumIDList fileEnum = null, folderEnum = null;
-                    IntPtr pidlSubItem;
-                    int celtFetched;
-
-                    WinAPI.SHCONTF fileFlag =
-                            WinAPI.SHCONTF.NONFOLDERS |
-                            WinAPI.SHCONTF.INCLUDEHIDDEN;
-
-                    WinAPI.SHCONTF folderFlag =
-                            WinAPI.SHCONTF.FOLDERS |
-                            WinAPI.SHCONTF.INCLUDEHIDDEN;
-
-                    bool[] fileExists;
-                    fileExists = new bool[subFiles.Count];
-
-                    bool[] folderExists;
-                    folderExists = new bool[subFolders.Count];
-
-                    int index;
-
-                    #endregion
-
-                    try
-                    {
-                        #region Update Files
-
-                        if (browser.UpdateCondition.ContinueUpdate && updateFiles)
-                        {
-                            ShellItemCollection add = new ShellItemCollection(this);
-                            ShellItemCollection remove = new ShellItemCollection(this);
-
-                            bool fileEnumCompleted = false;
-
-                            #region Add Files
-
-                            if (this.Equals(browser.DesktopItem) || parentItem.Equals(browser.DesktopItem))
-                            {
-                                if (ShellFolder.EnumObjects(
-                                        IntPtr.Zero,
-                                        fileFlag,
-                                        out fileEnumPtr) == WinAPI.S_OK)
-                                {
-                                    fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
-                                    WinAPI.SFGAO attribs = WinAPI.SFGAO.FOLDER;
-                                    while (browser.UpdateCondition.ContinueUpdate &&
-                                           fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
-                                    {
-                                        ShellFolder.GetAttributesOf(1, new IntPtr[] { pidlSubItem }, ref attribs);
-
-                                        if ((attribs & WinAPI.SFGAO.FOLDER) == 0)
-                                        {
-                                            if ((index = subFiles.IndexOf(pidlSubItem)) == -1)
-                                            {
-                                                ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
-
-                                                if (!subFolders.Contains(newItem.Text))
-                                                {
-                                                    add.Add(newItem);
-                                                }
-                                            }
-                                            else if (index < fileExists.Length)
-                                            {
-                                                fileExists[index] = true;
-                                                Marshal.FreeCoTaskMem(pidlSubItem);
-                                            }
-                                        }
-                                        else
-                                            Marshal.FreeCoTaskMem(pidlSubItem);
-                                    }
-
-                                    fileEnumCompleted = true;
-                                }
-                                    
-                            }
-                            else
-                            {
-                                if (ShellFolder.EnumObjects(
-                                        IntPtr.Zero,
-                                        fileFlag,
-                                        out fileEnumPtr) == WinAPI.S_OK)
-                                {
-                                    fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
-                                    while (browser.UpdateCondition.ContinueUpdate &&
-                                           fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
-                                    {
-                                        if ((index = subFiles.IndexOf(pidlSubItem)) == -1)
-                                        {
-                                            add.Add(new ShellItem(browser, this, pidlSubItem));
-                                        }
-                                        else if (index < fileExists.Length)
-                                        {
-                                            fileExists[index] = true;
-                                            Marshal.FreeCoTaskMem(pidlSubItem);
-                                        }
-                                    }
-
-                                    fileEnumCompleted = true;
-                                }
-                            }
-
-                            #endregion
-
-                            #region Remove Files
-
-                            for (int i = 0; fileEnumCompleted && browser.UpdateCondition.ContinueUpdate && i < fileExists.Length; i++)
-                            {
-                                if (!fileExists[i] && subFiles[i] != null)
-                                {
-                                    remove.Add(subFiles[i]);
-                                }
-                            }
-
-                            #endregion
-
-                            #region Do Events
-
-                            if (fileEnumCompleted && browser.UpdateCondition.ContinueUpdate)
-                            {
-                                int newIndex;
-                                foreach (ShellItem oldItem in remove)
-                                {
-                                    if ((newIndex = add.IndexOf(oldItem.Text)) > -1)
-                                    {
-                                        ShellItem newItem = add[newIndex];
-                                        add.Remove(newItem);
-
-                                        oldItem.pidlRel.Free();
-                                        oldItem.pidlRel = new PIDL(newItem.pidlRel.Ptr, true);
-
-                                        oldItem.shellFolder = newItem.shellFolder;
-                                        oldItem.shellFolderPtr = newItem.shellFolderPtr;
-
-                                        ((IDisposable)newItem).Dispose();
-
-                                        browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
-                                    }
-                                    else
-                                    {
-                                        subFiles.Remove(oldItem);
-                                        browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
-                                        ((IDisposable)oldItem).Dispose();
-                                    }
-                                }
-
-                                foreach (ShellItem newItem in add)
-                                {
-                                    subFiles.Add(newItem);
-                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
-                                }
-
-                                subFiles.Capacity = subFiles.Count;
-                                subFiles.Sort();
-
-                                filesExpanded = true;
-                            }
-
-                            #endregion
-                        }
-
-                        #endregion
-
-                        #region Update Folders
-
-                        if (browser.UpdateCondition.ContinueUpdate && updateFolders)
-                        {
-                            ShellItemCollection add = new ShellItemCollection(this);
-                            ShellItemCollection remove = new ShellItemCollection(this);
-
-                            bool folderEnumCompleted = false;
-
-                            #region Add Folders
-
-                            if (ShellFolder.EnumObjects(
-                                        IntPtr.Zero,
-                                        folderFlag,
-                                        out folderEnumPtr) == WinAPI.S_OK)
-                            {
-                                folderEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(folderEnumPtr, typeof(IEnumIDList));
-                                while (browser.UpdateCondition.ContinueUpdate &&
-                                       folderEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
-                                {
-                                    if ((index = subFolders.IndexOf(pidlSubItem)) == -1)
-                                    {
-                                        IntPtr shellFolderPtr;
-                                        if (ShellFolder.BindToObject(
-                                                    pidlSubItem,
-                                                    IntPtr.Zero,
-                                                    ref WinAPI.IID_IShellFolder,
-                                                    out shellFolderPtr) == WinAPI.S_OK)
-                                        {
-                                            add.Add(new ShellItem(
-                                                browser,
-                                                this,
-                                                pidlSubItem,
-                                                shellFolderPtr));
-                                        }
-                                    }
-                                    else if (index < folderExists.Length)
-                                    {
-                                        folderExists[index] = true;
-                                        Marshal.FreeCoTaskMem(pidlSubItem);
-                                    }
-                                }
-
-                                folderEnumCompleted = true;
-                            }
-
-                            #endregion
-
-                            #region Remove Folders
-
-                            for (int i = 0; folderEnumCompleted && browser.UpdateCondition.ContinueUpdate && i < folderExists.Length; i++)
-                            {
-                                if (!folderExists[i] && subFolders[i] != null)
-                                {
-                                    remove.Add(subFolders[i]);
-                                }
-                            }
-
-                            #endregion
-
-                            #region Do Events
-
-                            if (folderEnumCompleted && browser.UpdateCondition.ContinueUpdate)
-                            {
-                                int newIndex;
-                                foreach (ShellItem oldItem in remove)
-                                {
-                                    if ((newIndex = add.IndexOf(oldItem.Text)) > -1)
-                                    {
-                                        ShellItem newItem = add[newIndex];
-                                        add.Remove(newItem);
-
-                                        oldItem.pidlRel.Free();
-                                        oldItem.pidlRel = new PIDL(newItem.pidlRel, true);
-
-                                        Marshal.ReleaseComObject(oldItem.shellFolder);
-                                        Marshal.Release(oldItem.shellFolderPtr);
-
-                                        oldItem.shellFolder = newItem.shellFolder;
-                                        oldItem.shellFolderPtr = newItem.shellFolderPtr;
-
-                                        newItem.shellFolder = null;
-                                        newItem.shellFolderPtr = IntPtr.Zero;
-                                        ((IDisposable)newItem).Dispose();
-
-                                        browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
-                                    }
-                                    else
-                                    {
-                                        subFolders.Remove(oldItem);
-                                        browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
-                                        ((IDisposable)oldItem).Dispose();
-                                    }
-                                }
-
-                                foreach (ShellItem newItem in add)
-                                {
-                                    subFolders.Add(newItem);
-
-                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
-                                }
-
-                                subFolders.Capacity = subFolders.Count;
-                                subFolders.Sort();
-                                foldersExpanded = true;
-                            }
-
-                            #endregion
-                        }
-
-                        #endregion
-                    }
-                    catch (Exception) { }
-                    finally
-                    {
-                        #region Free
-
-                        if (folderEnum != null)
-                        {
-                            Marshal.ReleaseComObject(folderEnum);
-                            Marshal.Release(folderEnumPtr);
-                        }
-
-                        if (fileEnum != null)
-                        {
-                            Marshal.ReleaseComObject(fileEnum);
-
-                            if (!(type == browser.SystemFolderName && string.Compare(text, "Control Panel", true) == 0))
-                                Marshal.Release(fileEnumPtr);
-                        }
-
-                        #endregion
+                        if (!(type == browser.SystemFolderName && string.Compare(text, "Control Panel", true) == 0))
+                            Marshal.Release(fileEnumPtr);
                     }
                 }
             }
         }
+    }
 
-        internal void AddItem(ShellItem item)
+    internal void AddItem(ShellItem item)
+    {
+        browser.UpdateCondition.ContinueUpdate = false;
+        lock (browser)
         {
-            browser.UpdateCondition.ContinueUpdate = false;
-            lock (browser)
+            try
             {
-                try
-                {
-                    if (item.IsFolder)
-                        SubFolders.Add(item);
-                    else
-                        SubFiles.Add(item);
+                if (item.IsFolder)
+                    SubFolders.Add(item);
+                else
+                    SubFiles.Add(item);
 
-                    Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, item, ShellItemUpdateType.Created));
-                }
-                catch (Exception) { }
+                Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, item, ShellItemUpdateType.Created));
             }
+            catch (Exception) { }
         }
+    }
 
-        internal void Update(IntPtr newPidlFull, ShellItemUpdateType changeType)
+    internal void Update(IntPtr newPidlFull, ShellItemUpdateType changeType)
+    {
+        browser.UpdateCondition.ContinueUpdate = false;
+
+        lock (browser)
         {
-            browser.UpdateCondition.ContinueUpdate = false;
-
-            lock (browser)
+            if (newPidlFull != IntPtr.Zero)
             {
-                #region Change Pidl and ShellFolder
+                IntPtr tempPidl = PIDL.ILClone(PIDL.ILFindLastID(newPidlFull)), newPidlRel, newShellFolderPtr;
+                WinAPI.SHGetRealIDL(ParentItem.ShellFolder, tempPidl, out newPidlRel);
 
-                if (newPidlFull != IntPtr.Zero)
-                {
-                    IntPtr tempPidl = PIDL.ILClone(PIDL.ILFindLastID(newPidlFull)), newPidlRel, newShellFolderPtr;
-                    WinAPI.SHGetRealIDL(ParentItem.ShellFolder, tempPidl, out newPidlRel);
-
-                    if (IsFolder && ParentItem.ShellFolder.BindToObject(
-                                        newPidlRel,
-                                        IntPtr.Zero,
-                                        ref WinAPI.IID_IShellFolder,
-                                        out newShellFolderPtr) == WinAPI.S_OK)
-                    {
-                        Marshal.ReleaseComObject(shellFolder);
-                        Marshal.Release(shellFolderPtr);
-                        pidlRel.Free();
-
-                        shellFolderPtr = newShellFolderPtr;
-                        shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
-                        pidlRel = new PIDL(newPidlRel, false);
-
-                        foreach (ShellItem child in SubFolders)
-                            UpdateShellFolders(child);
-                    }
-                    else
-                    {
-                        pidlRel.Free();
-                        pidlRel = new PIDL(newPidlRel, false);
-                    }
-
-                    Marshal.FreeCoTaskMem(tempPidl);
-                    Marshal.FreeCoTaskMem(newPidlFull);
-                }
-
-                #endregion
-
-                #region Make Other Changes
-
-                switch (changeType)
-                {
-                    case ShellItemUpdateType.Renamed:
-                        SetText(this);
-                        SetPath(this);
-                        break;
-
-                    case ShellItemUpdateType.Updated:
-                        if (IsFolder)
-                            SetAttributesFolder(this);
-                        else
-                            SetAttributesFile(this);
-                        break;
-
-                    case ShellItemUpdateType.MediaChange:
-                        SetInfo(this);
-                        Clear(true, true);
-                        break;
-
-                    case ShellItemUpdateType.IconChange:
-                        SetInfo(this);
-                        break;
-                }
-
-                #endregion
-            }
-
-            Browser.OnShellItemUpdate(ParentItem, new ShellItemUpdateEventArgs(this, this, changeType));
-        }
-
-        internal void RemoveItem(ShellItem item)
-        {
-            browser.UpdateCondition.ContinueUpdate = false;
-
-            lock (browser)
-            {
-                try
-                {
-                    if (item.IsFolder)
-                        SubFolders.Remove(item);
-                    else
-                        SubFiles.Remove(item);
-
-                    Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(item, null, ShellItemUpdateType.Deleted));
-                    ((IDisposable)item).Dispose();
-                }
-                catch (Exception) { }
-            }
-        }
-
-        #endregion
-
-        #endregion
-
-        #region Static Methods
-
-        public static string GetRealPath(ShellItem item)
-        {
-            if (item.Equals(item.browser.DesktopItem))
-            {
-                return "::{450d8fba-ad25-11d0-98a8-0800361b1103}";
-            }
-            else if (item.Type == item.Browser.SystemFolderName)
-            {
-                IntPtr strr = Marshal.AllocCoTaskMem(WinAPI.MAX_PATH * 2 + 4);
-                Marshal.WriteInt32(strr, 0, 0);
-                StringBuilder buf = new StringBuilder(WinAPI.MAX_PATH);
-
-                if (item.ParentItem.ShellFolder.GetDisplayNameOf(
-                                item.PIDLRel.Ptr,
-                                WinAPI.SHGNO.FORPARSING,
-                                strr) == WinAPI.S_OK)
-                {
-                    WinAPI.StrRetToBuf(strr, item.PIDLRel.Ptr, buf, WinAPI.MAX_PATH);
-                }
-
-                Marshal.FreeCoTaskMem(strr);
-
-                return buf.ToString();
-            }
-            else
-                return item.Path;
-        }
-
-        public static void UpdateShellFolders(ShellItem item)
-        {
-            item.UpdateShellFolder = true;
-
-            foreach (ShellItem child in item.SubFolders)
-                ShellItem.UpdateShellFolders(child);
-        }
-
-        #endregion
-
-        #region Properties
-
-        internal ShellBrowser Browser { get { return browser; } }
-
-        internal ShellItem ParentItem { get { return parentItem; } }
-        internal ShellItemCollection SubFiles { get { return subFiles; } }
-        internal ShellItemCollection SubFolders { get { return subFolders; } }
-
-        internal IShellFolder ShellFolder
-        {
-            get
-            {
-                if (updateShellFolder)
+                if (IsFolder && ParentItem.ShellFolder.BindToObject(
+                                    newPidlRel,
+                                    IntPtr.Zero,
+                                    ref WinAPI.IID_IShellFolder,
+                                    out newShellFolderPtr) == WinAPI.S_OK)
                 {
                     Marshal.ReleaseComObject(shellFolder);
                     Marshal.Release(shellFolderPtr);
+                    pidlRel.Free();
 
-                    if (ParentItem.ShellFolder.BindToObject(
-                                pidlRel.Ptr,
-                                IntPtr.Zero,
-                                ref WinAPI.IID_IShellFolder,
-                                out shellFolderPtr) == WinAPI.S_OK)
-                    {
-                        shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
-                    }
+                    shellFolderPtr = newShellFolderPtr;
+                    shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
+                    pidlRel = new PIDL(newPidlRel, false);
 
-                    updateShellFolder = false;
+                    foreach (ShellItem child in SubFolders)
+                        UpdateShellFolders(child);
+                }
+                else
+                {
+                    pidlRel.Free();
+                    pidlRel = new PIDL(newPidlRel, false);
                 }
 
-                return shellFolder;
-            }
-        }
-
-        internal int ImageIndex
-        {
-            get { return imageIndex; }
-            set { imageIndex = value; }
-        }
-        internal int SelectedImageIndex
-        {
-            get { return selectedImageIndex; }
-            set { selectedImageIndex = value; }
-        }
-
-        internal PIDL PIDLRel { get { return pidlRel; } }
-        internal PIDL PIDLFull
-        {
-            get
-            {
-                PIDL pidlFull = new PIDL(pidlRel.Ptr, true);
-                ShellItem current = ParentItem;
-                while (current != null)
-                {
-                    pidlFull.Insert(current.PIDLRel.Ptr);
-                    current = current.ParentItem;
-                }
-                return pidlFull;
-            }
-        }
-
-        public string Text { get { return text; } }
-        public string Path { get { return path; } }
-
-        public string Type { get { return type; } }
-        internal short SortFlag { get { return sortFlag; } }
-
-        public bool FilesExpanded { get { return filesExpanded; } }
-        public bool FoldersExpanded { get { return foldersExpanded; } }
-
-        public bool IsSystemFolder { get { return type == browser.SystemFolderName; } }
-
-        public bool IsHidden { get { return isHidden; } }
-        public bool IsFolder { get { return isFolder; } }
-        public bool IsLink { get { return isLink; } }
-        public bool IsShared { get { return isShared; } }
-        public bool IsFileSystem { get { return isFileSystem; } }
-        public bool IsBrowsable { get { return isBrowsable; } }
-        public bool HasSubfolder { get { return hasSubfolder; } }
-        public bool IsDisk { get { return isDisk; } }
-        public bool CanRename { get { return canRename; } }
-        public bool CanRead { get { return canRead; } }
-
-        internal bool UpdateShellFolder
-        {
-            get { return updateShellFolder; }
-            set { updateShellFolder = value; }
-        }
-
-        #endregion
-
-        #region IEnumerable Members
-
-        public System.Collections.IEnumerator GetEnumerator()
-        {
-            return new ShellItemEnumerator(this);
-        }
-
-        #endregion
-
-        #region IDisposable
-
-        void IDisposable.Dispose()
-        {
-            if (!disposed)
-            {
-                DisposeShellItem();
-                GC.SuppressFinalize(this);
-            }
-        }
-
-        private void DisposeShellItem()
-        {
-            disposed = true;
-
-            if (ShellFolder != null)
-            {
-                Marshal.ReleaseComObject(ShellFolder);
-                shellFolder = null;
+                Marshal.FreeCoTaskMem(tempPidl);
+                Marshal.FreeCoTaskMem(newPidlFull);
             }
 
-            if (shellFolderPtr != IntPtr.Zero)
+            switch (changeType)
             {
-                try
-                {
-                    Marshal.Release(shellFolderPtr);
-                }
-                catch (Exception) { }
-                finally
-                {
-                    shellFolderPtr = IntPtr.Zero;
-                }
-            }
+                case ShellItemUpdateType.Renamed:
+                    SetText(this);
+                    SetPath(this);
+                    break;
 
-            PIDLRel.Free();
-        }
-
-        #endregion
-
-        #region IComparable
-
-        private static short MakeSortFlag(ShellItem item)
-        {
-            if (item.IsFolder)
-            {
-                if (item.IsDisk)
-                    return 1;
-                if (item.Text == item.browser.MyDocumentsName &&
-                    item.Type == item.Browser.SystemFolderName)
-                    return 2;
-                else if (item.Text == item.browser.MyComputerName)
-                    return 3;
-                else if (item.Type == item.Browser.SystemFolderName)
-                {
-                    if (!item.IsBrowsable)
-                        return 4;
+                case ShellItemUpdateType.Updated:
+                    if (IsFolder)
+                        SetAttributesFolder(this);
                     else
-                        return 5;
+                        SetAttributesFile(this);
+                    break;
+
+                case ShellItemUpdateType.MediaChange:
+                    SetInfo(this);
+                    Clear(true, true);
+                    break;
+
+                case ShellItemUpdateType.IconChange:
+                    SetInfo(this);
+                    break;
+            }
+        }
+
+        Browser.OnShellItemUpdate(ParentItem, new ShellItemUpdateEventArgs(this, this, changeType));
+    }
+
+    internal void RemoveItem(ShellItem item)
+    {
+        browser.UpdateCondition.ContinueUpdate = false;
+
+        lock (browser)
+        {
+            try
+            {
+                if (item.IsFolder)
+                    SubFolders.Remove(item);
+                else
+                    SubFiles.Remove(item);
+
+                Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(item, null, ShellItemUpdateType.Deleted));
+                ((IDisposable)item).Dispose();
+            }
+            catch (Exception) { }
+        }
+    }
+
+    public static string GetRealPath(ShellItem item)
+    {
+        if (item.Equals(item.browser.DesktopItem))
+        {
+            return "::{450d8fba-ad25-11d0-98a8-0800361b1103}";
+        }
+        else if (item.Type == item.Browser.SystemFolderName)
+        {
+            IntPtr strr = Marshal.AllocCoTaskMem(WinAPI.MAX_PATH * 2 + 4);
+            Marshal.WriteInt32(strr, 0, 0);
+            StringBuilder buf = new StringBuilder(WinAPI.MAX_PATH);
+
+            if (item.ParentItem.ShellFolder.GetDisplayNameOf(
+                            item.PIDLRel.Ptr,
+                            WinAPI.SHGNO.FORPARSING,
+                            strr) == WinAPI.S_OK)
+            {
+                WinAPI.StrRetToBuf(strr, item.PIDLRel.Ptr, buf, WinAPI.MAX_PATH);
+            }
+
+            Marshal.FreeCoTaskMem(strr);
+
+            return buf.ToString();
+        }
+        else
+            return item.Path;
+    }
+
+    public static void UpdateShellFolders(ShellItem item)
+    {
+        item.UpdateShellFolder = true;
+
+        foreach (ShellItem child in item.SubFolders)
+            ShellItem.UpdateShellFolders(child);
+    }
+
+    internal ShellBrowser Browser { get { return browser; } }
+
+    internal ShellItem ParentItem { get { return parentItem; } }
+    internal ShellItemCollection SubFiles { get { return subFiles; } }
+    internal ShellItemCollection SubFolders { get { return subFolders; } }
+
+    internal IShellFolder ShellFolder
+    {
+        get
+        {
+            if (updateShellFolder)
+            {
+                Marshal.ReleaseComObject(shellFolder);
+                Marshal.Release(shellFolderPtr);
+
+                if (ParentItem.ShellFolder.BindToObject(
+                            pidlRel.Ptr,
+                            IntPtr.Zero,
+                            ref WinAPI.IID_IShellFolder,
+                            out shellFolderPtr) == WinAPI.S_OK)
+                {
+                    shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
                 }
-                else if (item.IsFolder && !item.IsBrowsable)
-                    return 6;
-                else
-                    return 7;
+
+                updateShellFolder = false;
             }
+
+            return shellFolder;
+        }
+    }
+
+    internal int ImageIndex
+    {
+        get { return imageIndex; }
+        set { imageIndex = value; }
+    }
+    internal int SelectedImageIndex
+    {
+        get { return selectedImageIndex; }
+        set { selectedImageIndex = value; }
+    }
+
+    internal PIDL PIDLRel { get { return pidlRel; } }
+    internal PIDL PIDLFull
+    {
+        get
+        {
+            PIDL pidlFull = new PIDL(pidlRel.Ptr, true);
+            ShellItem current = ParentItem;
+            while (current != null)
+            {
+                pidlFull.Insert(current.PIDLRel.Ptr);
+                current = current.ParentItem;
+            }
+            return pidlFull;
+        }
+    }
+
+    public string Text { get { return text; } }
+    public string Path { get { return path; } }
+
+    public string Type { get { return type; } }
+    internal short SortFlag { get { return sortFlag; } }
+
+    public bool FilesExpanded { get { return filesExpanded; } }
+    public bool FoldersExpanded { get { return foldersExpanded; } }
+
+    public bool IsSystemFolder { get { return type == browser.SystemFolderName; } }
+
+    public bool IsHidden { get { return isHidden; } }
+    public bool IsFolder { get { return isFolder; } }
+    public bool IsLink { get { return isLink; } }
+    public bool IsShared { get { return isShared; } }
+    public bool IsFileSystem { get { return isFileSystem; } }
+    public bool IsBrowsable { get { return isBrowsable; } }
+    public bool HasSubfolder { get { return hasSubfolder; } }
+    public bool IsDisk { get { return isDisk; } }
+    public bool CanRename { get { return canRename; } }
+    public bool CanRead { get { return canRead; } }
+
+    internal bool UpdateShellFolder
+    {
+        get { return updateShellFolder; }
+        set { updateShellFolder = value; }
+    }
+
+    public System.Collections.IEnumerator GetEnumerator()
+    {
+        return new ShellItemEnumerator(this);
+    }
+
+    void IDisposable.Dispose()
+    {
+        if (!disposed)
+        {
+            DisposeShellItem();
+            GC.SuppressFinalize(this);
+        }
+    }
+
+    private void DisposeShellItem()
+    {
+        disposed = true;
+
+        if (ShellFolder != null)
+        {
+            Marshal.ReleaseComObject(ShellFolder);
+            shellFolder = null;
+        }
+
+        if (shellFolderPtr != IntPtr.Zero)
+        {
+            try
+            {
+                Marshal.Release(shellFolderPtr);
+            }
+            catch (Exception) { }
+            finally
+            {
+                shellFolderPtr = IntPtr.Zero;
+            }
+        }
+
+        PIDLRel.Free();
+    }
+
+    private static short MakeSortFlag(ShellItem item)
+    {
+        if (item.IsFolder)
+        {
+            if (item.IsDisk)
+                return 1;
+            if (item.Text == item.browser.MyDocumentsName &&
+                item.Type == item.Browser.SystemFolderName)
+                return 2;
+            else if (item.Text == item.browser.MyComputerName)
+                return 3;
+            else if (item.Type == item.Browser.SystemFolderName)
+            {
+                if (!item.IsBrowsable)
+                    return 4;
+                else
+                    return 5;
+            }
+            else if (item.IsFolder && !item.IsBrowsable)
+                return 6;
             else
-                return 8;
+                return 7;
         }
+        else
+            return 8;
+    }
 
-        public int CompareTo(object obj)
+    public int CompareTo(object obj)
+    {
+        ShellItem other = (ShellItem)obj;
+
+        if (SortFlag != other.SortFlag)
+            return ((SortFlag > other.SortFlag) ? 1 : -1);
+        else if (IsDisk)
+            return string.Compare(Path, other.Path);
+        else
+            return string.Compare(Text, other.Text);
+    }
+
+    internal bool Contains(ShellItem value)
+    {
+        return (SubFolders.Contains(value) || SubFiles.Contains(value));
+    }
+
+    internal bool Contains(string name)
+    {
+        return (SubFolders.Contains(name) || SubFiles.Contains(name));
+    }
+
+    internal bool Contains(IntPtr pidl)
+    {
+        return (SubFolders.Contains(pidl) || SubFiles.Contains(pidl));
+    }
+
+    internal int IndexOf(ShellItem value)
+    {
+        int index;
+        index = SubFolders.IndexOf(value);
+
+        if (index > -1)
+            return index;
+
+        index = SubFiles.IndexOf(value);
+
+        if (index > -1)
+            return SubFolders.Count + index;
+
+        return -1;
+    }
+
+    internal int IndexOf(string name)
+    {
+        int index;
+        index = SubFolders.IndexOf(name);
+
+        if (index > -1)
+            return index;
+
+        index = SubFiles.IndexOf(name);
+
+        if (index > -1)
+            return SubFolders.Count + index;
+
+        return -1;
+    }
+
+    internal int IndexOf(IntPtr pidl)
+    {
+        int index;
+        index = SubFolders.IndexOf(pidl);
+
+        if (index > -1)
+            return index;
+
+        index = SubFiles.IndexOf(pidl);
+
+        if (index > -1)
+            return SubFolders.Count + index;
+
+        return -1;
+    }
+
+    internal ShellItem this[int index]
+    {
+        get
         {
-            ShellItem other = (ShellItem)obj;
-
-            if (SortFlag != other.SortFlag)
-                return ((SortFlag > other.SortFlag) ? 1 : -1);
-            else if (IsDisk)
-                return string.Compare(Path, other.Path);
+            if (index >= 0 && index < SubFolders.Count)
+                return SubFolders[index];
+            else if (index >= 0 && index - SubFolders.Count < SubFiles.Count)
+                return SubFiles[index - SubFolders.Count];
             else
-                return string.Compare(Text, other.Text);
+                throw new IndexOutOfRangeException();
         }
-
-        #endregion
-        
-        #region IList Members
-
-        internal bool Contains(ShellItem value)
+        set
         {
-            return (SubFolders.Contains(value) || SubFiles.Contains(value));
-        }
-
-        internal bool Contains(string name)
-        {
-            return (SubFolders.Contains(name) || SubFiles.Contains(name));
-        }
-
-        internal bool Contains(IntPtr pidl)
-        {
-            return (SubFolders.Contains(pidl) || SubFiles.Contains(pidl));
-        }
-
-        internal int IndexOf(ShellItem value)
-        {
-            int index;
-            index = SubFolders.IndexOf(value);
-
-            if (index > -1)
-                return index;
-
-            index = SubFiles.IndexOf(value);
-
-            if (index > -1)
-                return SubFolders.Count + index;
-
-            return -1;
-        }
-
-        internal int IndexOf(string name)
-        {
-            int index;
-            index = SubFolders.IndexOf(name);
-
-            if (index > -1)
-                return index;
-
-            index = SubFiles.IndexOf(name);
-
-            if (index > -1)
-                return SubFolders.Count + index;
-
-            return -1;
-        }
-
-        internal int IndexOf(IntPtr pidl)
-        {
-            int index;
-            index = SubFolders.IndexOf(pidl);
-
-            if (index > -1)
-                return index;
-
-            index = SubFiles.IndexOf(pidl);
-
-            if (index > -1)
-                return SubFolders.Count + index;
-
-            return -1;
-        }
-
-        internal ShellItem this[int index]
-        {
-            get
-            {
-                if (index >= 0 && index < SubFolders.Count)
-                    return SubFolders[index];
-                else if (index >= 0 && index - SubFolders.Count < SubFiles.Count)
-                    return SubFiles[index - SubFolders.Count];
-                else
-                    throw new IndexOutOfRangeException();
-            }
-            set
-            {
-                if (index >= 0 && index < SubFolders.Count)
-                    SubFolders[index] = value;
-                else if (index >= 0 && index - SubFolders.Count < SubFiles.Count)
-                    SubFiles[index - SubFolders.Count] = value;
-                else
-                    throw new IndexOutOfRangeException();
-            }
-        }
-
-        internal ShellItem this[string name]
-        {
-            get
-            {
-                ShellItem temp = SubFolders[name];
-
-                if (temp != null)
-                    return temp;
-                else
-                    return SubFiles[name];
-            }
-            set
-            {
-                ShellItem temp = SubFolders[name];
-
-                if (temp != null)
-                    SubFolders[name] = value;
-                else
-                    SubFiles[name] = value;
-            }
-        }
-
-        internal ShellItem this[IntPtr pidl]
-        {
-            get
-            {
-                ShellItem temp = SubFolders[pidl];
-
-                if (temp != null)
-                    return temp;
-                else
-                    return SubFiles[pidl];
-            }
-            set
-            {
-                ShellItem temp = SubFolders[pidl];
-
-                if (temp != null)
-                    SubFolders[pidl] = value;
-                else
-                    SubFiles[pidl] = value;
-            }
-        }
-
-        internal int Count
-        {
-            get { return SubFolders.Count + SubFiles.Count; }
-        }
-
-        #endregion        
-        
-        public override string ToString()
-        {
-            return text;
+            if (index >= 0 && index < SubFolders.Count)
+                SubFolders[index] = value;
+            else if (index >= 0 && index - SubFolders.Count < SubFiles.Count)
+                SubFiles[index - SubFolders.Count] = value;
+            else
+                throw new IndexOutOfRangeException();
         }
     }
 
-    #region ShellItem Utility Classes
-
-    #region Update Helpers
-
-    internal class ShellItemUpdateCondition
+    internal ShellItem this[string name]
     {
-        private bool continueUpdate;
-
-        public ShellItemUpdateCondition()
+        get
         {
-            continueUpdate = true;
+            ShellItem temp = SubFolders[name];
+
+            if (temp != null)
+                return temp;
+            else
+                return SubFiles[name];
         }
-
-        public bool ContinueUpdate
+        set
         {
-            get { return continueUpdate; }
-            set { continueUpdate = value; }
+            ShellItem temp = SubFolders[name];
+
+            if (temp != null)
+                SubFolders[name] = value;
+            else
+                SubFiles[name] = value;
         }
     }
 
-    #endregion
-
-    #region Item Enumeration
-
-    public class ShellItemEnumerator : IEnumerator
+    internal ShellItem this[IntPtr pidl]
     {
-        private ShellItem parent;
-        private int index;
-
-        public ShellItemEnumerator(ShellItem parent)
+        get
         {
-            this.parent = parent;
-            index = -1;
+            ShellItem temp = SubFolders[pidl];
+
+            if (temp != null)
+                return temp;
+            else
+                return SubFiles[pidl];
         }
-
-        #region IEnumerator Members
-
-        public object Current
+        set
         {
-            get
-            {
-                return parent[index];
-            }
-        }
+            ShellItem temp = SubFolders[pidl];
 
-        public bool MoveNext()
-        {
-            index++;
-            return (index < parent.Count);
+            if (temp != null)
+                SubFolders[pidl] = value;
+            else
+                SubFiles[pidl] = value;
         }
-
-        public void Reset()
-        {
-            index = -1;
-        }
-
-        #endregion
     }
 
-    internal class ShellItemCollection : IEnumerable
+    internal int Count
     {
-        private ArrayList items;
-        private ShellItem shellItem;
+        get { return SubFolders.Count + SubFiles.Count; }
+    }
 
-        public ShellItemCollection(ShellItem shellItem)
+    public override string ToString()
+    {
+        return text;
+    }
+  }
+
+  internal class ShellItemUpdateCondition
+  {
+    private bool continueUpdate;
+
+    public ShellItemUpdateCondition()
+    {
+        continueUpdate = true;
+    }
+
+    public bool ContinueUpdate
+    {
+        get { return continueUpdate; }
+        set { continueUpdate = value; }
+    }
+  }
+
+  public class ShellItemEnumerator : IEnumerator
+  {
+    private ShellItem parent;
+    private int index;
+
+    public ShellItemEnumerator(ShellItem parent)
+    {
+        this.parent = parent;
+        index = -1;
+    }
+
+    public object Current
+    {
+        get
         {
-            this.shellItem = shellItem;
-            items = new ArrayList();
+            return parent[index];
+        }
+    }
+
+    public bool MoveNext()
+    {
+        index++;
+        return (index < parent.Count);
+    }
+
+    public void Reset()
+    {
+        index = -1;
+    }
+  }
+
+  internal class ShellItemCollection : IEnumerable
+  {
+    private ArrayList items;
+    private ShellItem shellItem;
+
+    public ShellItemCollection(ShellItem shellItem)
+    {
+        this.shellItem = shellItem;
+        items = new ArrayList();
+    }
+
+    public ShellItem ShellItem { get { return shellItem; } }
+
+    public int Count
+    {
+        get { return items.Count; }
+    }
+
+    public void Sort()
+    {
+        items.Sort();
+    }
+
+    internal int Capacity
+    {
+        get { return items.Capacity; }
+        set { items.Capacity = value; }
+    }
+
+    internal int Add(ShellItem value)
+    {
+        return items.Add(value);
+    }
+
+    internal void Clear()
+    {
+        items.Clear();
+    }
+
+    public bool Contains(ShellItem value)
+    {
+        return items.Contains(value);
+    }
+
+    public bool Contains(string name)
+    {
+        foreach (ShellItem item in this)
+        {
+            if (string.Compare(item.Text, name, true) == 0)
+                return true;
         }
 
-        public ShellItem ShellItem { get { return shellItem; } }
+        return false;
+    }
 
-        #region ArrayList Members
-
-        public int Count
+    public bool Contains(IntPtr pidl)
+    {
+        foreach (ShellItem item in this)
         {
-            get { return items.Count; }
+            if (item.PIDLRel.Equals(pidl))
+                return true;
         }
 
-        public void Sort()
+        return false;
+    }
+
+    public int IndexOf(ShellItem value)
+    {
+        return items.IndexOf(value);
+    }
+
+    public int IndexOf(string name)
+    {
+        for (int i = 0; i < items.Count; i++)
         {
-            items.Sort();
+            if (string.Compare(this[i].Text, name, true) == 0)
+                return i;
         }
 
-        internal int Capacity
+        return -1;
+    }
+
+    public int IndexOf(IntPtr pidl)
+    {
+        for (int i = 0; i < items.Count; i++)
         {
-            get { return items.Capacity; }
-            set { items.Capacity = value; }
+            if (this[i].PIDLRel.Equals(pidl))
+                return i;
         }
 
-        #endregion
+        return -1;
+    }
 
-        #region IList Members
+    internal void Insert(int index, ShellItem value)
+    {
+        items.Insert(index, value);
+    }
 
-        internal int Add(ShellItem value)
+    public bool IsFixedSize
+    {
+        get { return items.IsFixedSize; }
+    }
+
+    public bool IsReadOnly
+    {
+        get { return items.IsReadOnly; }
+    }
+
+    internal void Remove(ShellItem value)
+    {
+        items.Remove(value);
+    }
+
+    internal void Remove(string name)
+    {
+        int index;
+
+        if ((index = IndexOf(name)) > -1)
+            RemoveAt(index);
+    }
+
+    internal void RemoveAt(int index)
+    {
+        items.RemoveAt(index);
+    }
+
+    public ShellItem this[int index]
+    {
+        get
         {
-            return items.Add(value);
-        }
-
-        internal void Clear()
-        {
-            items.Clear();
-        }
-
-        public bool Contains(ShellItem value)
-        {
-            return items.Contains(value);
-        }
-
-        public bool Contains(string name)
-        {
-            foreach (ShellItem item in this)
+            try
             {
-                if (string.Compare(item.Text, name, true) == 0)
-                    return true;
+                return (ShellItem)items[index];
             }
-
-            return false;
-        }
-
-        public bool Contains(IntPtr pidl)
-        {
-            foreach (ShellItem item in this)
+            catch (ArgumentOutOfRangeException) 
             {
-                if (item.PIDLRel.Equals(pidl))
-                    return true;
+                return null;
             }
-
-            return false;
         }
-
-        public int IndexOf(ShellItem value)
+        set
         {
-            return items.IndexOf(value);
+            items[index] = value;
         }
+    }
 
-        public int IndexOf(string name)
-        {
-            for (int i = 0; i < items.Count; i++)
-            {
-                if (string.Compare(this[i].Text, name, true) == 0)
-                    return i;
-            }
-
-            return -1;
-        }
-
-        public int IndexOf(IntPtr pidl)
-        {
-            for (int i = 0; i < items.Count; i++)
-            {
-                if (this[i].PIDLRel.Equals(pidl))
-                    return i;
-            }
-
-            return -1;
-        }
-
-        internal void Insert(int index, ShellItem value)
-        {
-            items.Insert(index, value);
-        }
-
-        public bool IsFixedSize
-        {
-            get { return items.IsFixedSize; }
-        }
-
-        public bool IsReadOnly
-        {
-            get { return items.IsReadOnly; }
-        }
-
-        internal void Remove(ShellItem value)
-        {
-            items.Remove(value);
-        }
-
-        internal void Remove(string name)
+    public ShellItem this[string name]
+    {
+        get
         {
             int index;
-
             if ((index = IndexOf(name)) > -1)
-                RemoveAt(index);
+                return (ShellItem)items[index];
+            else
+                return null;
         }
-
-        internal void RemoveAt(int index)
+        set
         {
-            items.RemoveAt(index);
-        }
-
-        public ShellItem this[int index]
-        {
-            get
-            {
-                try
-                {
-                    return (ShellItem)items[index];
-                }
-                catch (ArgumentOutOfRangeException) 
-                {
-                    return null;
-                }
-            }
-            set
-            {
+            int index;
+            if ((index = IndexOf(name)) > -1)
                 items[index] = value;
-            }
         }
-
-        public ShellItem this[string name]
-        {
-            get
-            {
-                int index;
-                if ((index = IndexOf(name)) > -1)
-                    return (ShellItem)items[index];
-                else
-                    return null;
-            }
-            set
-            {
-                int index;
-                if ((index = IndexOf(name)) > -1)
-                    items[index] = value;
-            }
-        }
-
-        public ShellItem this[IntPtr pidl]
-        {
-            get
-            {
-                int index;
-                if ((index = IndexOf(pidl)) > -1)
-                    return (ShellItem)items[index];
-                else
-                    return null;
-            }
-            set
-            {
-                int index;
-                if ((index = IndexOf(pidl)) > -1)
-                    items[index] = value;
-            }
-        }
-
-        #endregion
-
-        #region IEnumerable Members
-
-        public IEnumerator GetEnumerator()
-        {
-            return items.GetEnumerator();
-        }
-
-        #endregion
     }
 
-    #endregion
+    public ShellItem this[IntPtr pidl]
+    {
+        get
+        {
+            int index;
+            if ((index = IndexOf(pidl)) > -1)
+                return (ShellItem)items[index];
+            else
+                return null;
+        }
+        set
+        {
+            int index;
+            if ((index = IndexOf(pidl)) > -1)
+                items[index] = value;
+        }
+    }
 
-    #endregion
+    public IEnumerator GetEnumerator()
+    {
+        return items.GetEnumerator();
+    }
+  }
 }

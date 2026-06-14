@@ -6,11 +6,14 @@ namespace FileBrowser
 {
   partial class BrowserListView
   {
-    public bool GetListItem(ShellItem shellItem, out ListViewItem listItem) {
+    public bool GetListItem(ShellItem shellItem, out ListViewItem listItem)
+    {
       listItem = null;
 
-      foreach (ListViewItem item in Items) {
-        if (shellItem.Equals(item.Tag)) {
+      foreach (ListViewItem item in Items)
+      {
+        if (shellItem.Equals(item.Tag))
+        {
           listItem = item;
           return true;
         }

@@ -574,10 +574,6 @@ namespace FileBrowser
 
     #region Drag/Drop
 
-    /// <summary>
-    /// When an item is being dragged from the browser this method will set the dragStartControl to the
-    /// Control from which it is being dragged. And the drop wrappers will also be informed.
-    /// </summary>
     void DragWrapper_DragStart(object sender, DragEnterEventArgs e)
     {
         dragStartControl = e.DragStartControl;
@@ -592,19 +588,13 @@ namespace FileBrowser
         lvDropWrapper.ParentDragItem = null;
     }
 
-    /// <summary>
-    /// When an item is being dropped on the browser while holding the right mouse button, the context
-    /// menu should not be showed. This method will take care of that problem.
-    /// </summary>
     void DropWrapper_Drop(object sender, DropEventArgs e)
     {
-        if (Control.Equals(dragStartControl, e.DragStartControl) && (e.MouseButtons & WinAPI.MK.RBUTTON) != 0)
-        {
-            if (Control.Equals(dragStartControl, folderView))
-                tvContextWrapper.SuspendContextMenu = true;
-            else if (Control.Equals(dragStartControl, fileView))
-                lvContextWrapper.SuspendContextMenu = true;
-        }
+      if (Control.Equals(dragStartControl, e.DragStartControl) && (e.MouseButtons & WinAPI.MK.RBUTTON) != 0)
+      {
+          if (Control.Equals(dragStartControl, folderView)) tvContextWrapper.SuspendContextMenu = true;
+          else if (Control.Equals(dragStartControl, fileView)) lvContextWrapper.SuspendContextMenu = true;
+      }
 
         dragStartControl = null;
     }

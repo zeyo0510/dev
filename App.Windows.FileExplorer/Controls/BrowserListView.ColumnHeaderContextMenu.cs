@@ -6,10 +6,19 @@ namespace FileBrowser
 {
   partial class BrowserListView
   {
+    private ContextMenu columnHeaderContextMenu;
+    /************************************************/
     [Browsable(true)]
-    public ContextMenu ColumnHeaderContextMenu {
-      get { return columnHeaderContextMenu; }
-      set { columnHeaderContextMenu = value; }
+    public ContextMenu ColumnHeaderContextMenu
+    {
+      get
+      {
+        return columnHeaderContextMenu;
+      }
+      set
+      {
+        columnHeaderContextMenu = value;
+      }
     }
   }
 }

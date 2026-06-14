@@ -6,9 +6,11 @@ namespace FileBrowser
 {
   partial class BrowserTreeView
   {
-    public bool IsParentNode(TreeNode parent, TreeNode child) {
+    public bool IsParentNode(TreeNode parent, TreeNode child)
+    {
       TreeNode current = child;
-      while (current.Parent != null) {
+      while (current.Parent != null)
+      {
         if (current.Parent.Equals(parent))
           return true;
 
@@ -17,12 +19,15 @@ namespace FileBrowser
       return false;
     }
     /************************************************/
-    public bool IsParentNode(TreeNode parent, TreeNode child, out TreeNode[] path) {
+    public bool IsParentNode(TreeNode parent, TreeNode child, out TreeNode[] path)
+    {
       ArrayList pathList = new ArrayList();
       TreeNode current = child;
-      while (current.Parent != null) {
+      while (current.Parent != null)
+      {
         pathList.Add(current);
-        if (current.Parent.Equals(parent)) {
+        if (current.Parent.Equals(parent))
+        {
           pathList.Add(parent);
           pathList.Reverse();
           path = (TreeNode[])pathList.ToArray(typeof(TreeNode));
