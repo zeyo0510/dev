@@ -5,11 +5,13 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    internal void ResetSpecialView() {
+    internal void ResetSpecialView()
+    {
       if (fileView.Alignment != ListViewAlignment.Top)
+      {
         fileView.Alignment = ListViewAlignment.Top;
-
-      currentViewPlugin = null;
+      }
+      CurrentViewPlugin = null;
     }
   }
 }

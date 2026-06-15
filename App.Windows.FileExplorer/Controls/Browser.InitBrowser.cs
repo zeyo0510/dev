@@ -7,7 +7,8 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    private void InitBrowser() {
+    private void InitBrowser()
+    {
       updateInvoker = new UpdateInvoker(ShellItemUpdateInvoke);
       provider = new StreamStorageProvider(FileAccess.Read);
 

@@ -4,8 +4,10 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    private void InitDragDrop() {
-      if (AllowDrop) {
+    private void InitDragDrop()
+    {
+      if (AllowDrop)
+      {
         tvDropWrapper = new BrowserTVDropWrapper(this);
         lvDropWrapper = new BrowserLVDropWrapper(this);
 

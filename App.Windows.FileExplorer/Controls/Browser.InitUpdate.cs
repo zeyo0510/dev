@@ -6,7 +6,8 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    private void InitUpdate() {
+    private void InitUpdate()
+    {
       updateThread = new Thread(new ThreadStart(UpdateLoop));
       updateThread.IsBackground = true;
       updating = true;

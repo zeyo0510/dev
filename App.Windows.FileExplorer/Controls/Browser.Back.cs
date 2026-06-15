@@ -6,8 +6,10 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    public bool Back() {
-      if (navBackButton.DropDownItems.Count > 0) {
+    public bool Back()
+    {
+      if (navBackButton.DropDownItems.Count > 0)
+      {
         AddNavBackForwardItem(this.navForwardButton, selectedItem);
       
         ToolStripItem item = this.navBackButton.DropDownItems[0];

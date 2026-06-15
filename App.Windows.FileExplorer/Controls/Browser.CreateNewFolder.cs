@@ -7,8 +7,10 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    public bool CreateNewFolder() {
-      if (selectedItem.IsFileSystem) {
+    public bool CreateNewFolder()
+    {
+      if (selectedItem.IsFileSystem)
+      {
         IntPtr newMenuPtr;
         IContextMenu newMenu;
 

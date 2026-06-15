@@ -5,7 +5,8 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    private void InitFolderView() {
+    private void InitFolderView()
+    {
       folderView.BeforeExpand += new TreeViewCancelEventHandler(folderView_BeforeExpand);
       folderView.BeforeSelect += new TreeViewCancelEventHandler(folderView_BeforeSelect);
       folderView.AfterSelect += new TreeViewEventHandler(folderView_AfterSelect);

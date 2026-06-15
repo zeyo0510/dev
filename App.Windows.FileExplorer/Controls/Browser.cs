@@ -63,8 +63,6 @@ namespace FileBrowser
     private ArrayList invisibleColumns;
     private StreamStorageProvider provider;
 
-    private IViewPlugin currentViewPlugin;
-
     private int maxBackForward = 10;
     private bool suspendNavBackAdd, handleCreated;
 
@@ -121,7 +119,8 @@ namespace FileBrowser
       }
     }
 
-    private void navigationBar_Resize(object sender, EventArgs e) {
+    private void navigationBar_Resize(object sender, EventArgs e)
+    {
       int newSize = navigationBar.Width - navAddressLabel.Bounds.Right - 15;
   
       if (newSize > 0)
@@ -130,15 +129,18 @@ namespace FileBrowser
       navAddressBox.SelectionLength = 0;
     }
     
-    private void navBackButton_ButtonClick(object sender, EventArgs e) {
+    private void navBackButton_ButtonClick(object sender, EventArgs e)
+    {
       this.Back();
     }
     
-    private void navForwardButton_ButtonClick(object sender, EventArgs e) {
+    private void navForwardButton_ButtonClick(object sender, EventArgs e)
+    {
       this.Forward();
     }
     
-    private void navBackForwardButton_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e) {
+    private void navBackForwardButton_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+    {
       ToolStripSplitButton button = sender as ToolStripSplitButton;
 
       if (sender.Equals(navBackButton)) {
@@ -177,15 +179,18 @@ namespace FileBrowser
       SelectPath((ShellItem)e.ClickedItem.Tag, false);
     }
     
-    private void navUpButton_Click(object sender, EventArgs e) {
+    private void navUpButton_Click(object sender, EventArgs e)
+    {
       this.Up();
     }
     
-    private void navFoldersButton_CheckedChanged(object sender, EventArgs e) {
+    private void navFoldersButton_CheckedChanged(object sender, EventArgs e)
+    {
       this.browseSplitter.Panel1Collapsed = !this.browseSplitter.Panel1Collapsed;
     }
     
-    private void navAddressBox_SelectedIndexChanged(object sender, EventArgs e) {
+    private void navAddressBox_SelectedIndexChanged(object sender, EventArgs e)
+    {
       if (navAddressBox.SelectedIndex > -1) {
         ShellItem item = ((BrowserComboItem)navAddressBox.Items[navAddressBox.SelectedIndex]).ShellItem;
   
@@ -215,14 +220,16 @@ namespace FileBrowser
       }
     }
     
-    private void navAddressBox_KeyDown(object sender, KeyEventArgs e) {
+    private void navAddressBox_KeyDown(object sender, KeyEventArgs e)
+    {
       if (e.KeyCode == Keys.Enter) {
         if (SelectPath(this.navAddressBox.Text, false) == null)
           e.Handled = true;
       }
     }
     
-    private void splitter_MouseDown(object sender, MouseEventArgs e) {
+    private void splitter_MouseDown(object sender, MouseEventArgs e)
+    {
       /* This disables the normal move behavior */
       ((SplitContainer)sender).IsSplitterFixed = true;
     }

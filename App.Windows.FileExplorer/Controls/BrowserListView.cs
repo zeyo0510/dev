@@ -55,7 +55,7 @@ namespace FileBrowser
     }
     /************************************************/
     protected override void WndProc(ref Message m) {
-      if (this.View == View.Details && columnHeaderContextMenu != null && (int)m.Msg == (int)WinAPI.WM.CONTEXTMENU) {
+      if (this.View == View.Details && ColumnHeaderContextMenu != null && (int)m.Msg == (int)WinAPI.WM.CONTEXTMENU) {
         if (suspendHeaderContextMenu)
           suspendHeaderContextMenu = false;
         else {
@@ -64,7 +64,7 @@ namespace FileBrowser
           Point clientPoint = PointToClient(new Point(x, y));
           
           if (clientPoint.Y <= columnHeight)
-            columnHeaderContextMenu.Show(this, clientPoint);
+            ColumnHeaderContextMenu.Show(this, clientPoint);
         }
 
         return;

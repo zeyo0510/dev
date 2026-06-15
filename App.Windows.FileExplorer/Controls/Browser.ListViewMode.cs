@@ -7,12 +7,18 @@ namespace FileBrowser
   partial class Browser
   {
     [Browsable(false)]
-    public View ListViewMode {
-      get { return fileView.View; }
-      set {
-        if (currentViewPlugin != null && value != View.SmallIcon)
+    public View ListViewMode
+    {
+      get
+      {
+        return fileView.View;
+      }
+      set
+      {
+        if (CurrentViewPlugin != null && value != View.SmallIcon)
+        {
           ResetSpecialView();
-
+        }
         fileView.View = value;
       }
     }

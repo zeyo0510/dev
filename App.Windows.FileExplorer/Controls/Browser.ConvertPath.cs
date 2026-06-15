@@ -5,7 +5,8 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    private string ConvertPath(string path) {
+    private string ConvertPath(string path)
+    {
       if (string.IsNullOrEmpty(path))
         return path;
 

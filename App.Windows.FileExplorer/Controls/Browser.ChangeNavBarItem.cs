@@ -6,7 +6,8 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    private void ChangeNavBarItem(SelectedFolderChangedEventArgs e) {
+    private void ChangeNavBarItem(SelectedFolderChangedEventArgs e)
+    {
       if (!navAddressBox.CurrentItem.ShellItem.Equals(e.Item)) {
         int currentIndex = navAddressBox.Items.IndexOf(navAddressBox.CurrentItem);
         BrowserComboItem currentItem = navAddressBox.CurrentItem;

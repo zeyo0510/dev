@@ -6,7 +6,8 @@ namespace FileBrowser
 {
   partial class Browser
   {
-    private void InitBaseItems() {
+    private void InitBaseItems()
+    {
       if (ShellBrowser == null)
         ShellBrowser = new ShellBrowser();
 
