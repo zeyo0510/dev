@@ -2,6 +2,8 @@
 /************************************************/
 namespace ShellDll
 {
+  internal delegate void ShellItemUpdateEventHandler(object sender, ShellItemUpdateEventArgs e);
+/************************************************/  
   internal class ShellItemUpdateEventArgs : EventArgs
   {
     public ShellItemUpdateEventArgs(ShellItem oldItem, ShellItem newItem, ShellItemUpdateType type)

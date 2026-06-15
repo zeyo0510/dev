@@ -6,20 +6,16 @@ namespace ShellDll
   internal class ShellItemCollection : IEnumerable
   {
     private ArrayList items;
-    private ShellItem shellItem;
     /************************************************/
     public ShellItemCollection(ShellItem shellItem)
     {
-        this.shellItem = shellItem;
+        this.ShellItem = shellItem;
         items = new ArrayList();
     }
     /************************************************/
     public ShellItem ShellItem
     {
-      get
-      {
-        return shellItem;
-      }
+      get; private set;
     }
     /************************************************/
     public int Count

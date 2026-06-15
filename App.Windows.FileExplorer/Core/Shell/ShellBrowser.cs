@@ -1,6 +1,4 @@
 using System;
-using System.Text;
-using System.Runtime.InteropServices;
 using System.Collections;
 using System.ComponentModel;
 
@@ -13,8 +11,8 @@ namespace ShellDll
     public ShellBrowser()
     {
       InitVars();
-      browsers = new ArrayList();
-      updateCondition = new ShellItemUpdateCondition();
+      this.Browsers = new ArrayList();
+      UpdateCondition = new ShellItemUpdateCondition();
       updater = new ShellBrowserUpdater(this);
     }
   }

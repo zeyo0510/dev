@@ -1,19 +1,14 @@
 ﻿using System;
-
+/************************************************/
 namespace ShellDll
 {
-  internal delegate void ShellItemUpdateEventHandler(object sender, ShellItemUpdateEventArgs e);
-  
   partial class ShellBrowser
   {
-    internal event ShellItemUpdateEventHandler ShellItemUpdate;
-    
+    internal event ShellItemUpdateEventHandler ShellItemUpdate = null;
+    /************************************************/
     internal void OnShellItemUpdate(object sender, ShellItemUpdateEventArgs e)
     {
-        if (ShellItemUpdate != null)
-        {
-            ShellItemUpdate(sender, e);
-        }
+      if (this.ShellItemUpdate != null) this.ShellItemUpdate(sender, e);
     }
   }
 }

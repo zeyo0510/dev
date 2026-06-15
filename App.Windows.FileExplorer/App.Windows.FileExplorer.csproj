@@ -412,9 +412,7 @@
     <Compile Include="Core\Shell\ShellBrowser.UpdateCondition.cs">
       <DependentUpon>ShellBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Core\Shell\ShellBrowserUpdater.cs">
-      <DependentUpon>ShellBrowser.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Core\Shell\ShellBrowserUpdater.cs" />
     <Compile Include="Core\Shell\ShellHelper.cs" />
     <Compile Include="Core\Shell\ShellImageList.cs" />
     <Compile Include="Core\Shell\ShellItem.cs" />
