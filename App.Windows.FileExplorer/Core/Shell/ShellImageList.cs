@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System.Collections;
 using System.Drawing;
 using System.Runtime.InteropServices;
-
+/************************************************/
 namespace ShellDll
 {
   public static class ShellImageList

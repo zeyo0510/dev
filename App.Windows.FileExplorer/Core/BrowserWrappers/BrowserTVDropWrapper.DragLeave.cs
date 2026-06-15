@@ -7,19 +7,19 @@ namespace FileBrowser
   {
     public int DragLeave()
     {
-        ResetDrop();
-        if (dropTarget != null)
-        {
-            dropTarget.DragLeave();
+      ResetDrop();
+      if (dropTarget != null)
+      {
+          dropTarget.DragLeave();
 
-            ReleaseCom();
-            dropDataObject = IntPtr.Zero;
-        }
+          ReleaseCom();
+          dropDataObject = IntPtr.Zero;
+      }
 
-        if (dropHelper != null)
-            dropHelper.DragLeave();
+      if (dropHelper != null)
+          dropHelper.DragLeave();
 
-        return WinAPI.S_OK;
+      return WinAPI.S_OK;
     }
   }
 }

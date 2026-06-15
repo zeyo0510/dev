@@ -13,9 +13,9 @@ namespace FileBrowser
         }
 
         if (lastSelectedNode != null)
-            br.FolderView.SelectedNode = lastSelectedNode;
+            browser.FolderView.SelectedNode = lastSelectedNode;
 
-        br.SelectionChange = true;
+        browser.SelectionChange = true;
     }
   }
 }

@@ -4,14 +4,16 @@ namespace FileBrowser
 {
   internal partial class BrowserTVDragWrapper : IDisposable
   {
+    private bool disposed = false;
+    /************************************************/
     public void Dispose()
     {
-      if (!disposed)
+      if (!this.disposed)
       {
         ReleaseCom();
         GC.SuppressFinalize(this);
 
-        disposed = true;
+        this.disposed = true;
       }
     }
   }

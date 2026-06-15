@@ -8,7 +8,7 @@ namespace FileBrowser
   {
     public int DragDrop(IntPtr pDataObj, WinAPI.MK grfKeyState, WinAPI.POINT pt, ref DragDropEffects pdwEffect)
     {
-        OnDrop(new DropEventArgs(mouseButtons, br.FolderView));
+        OnDrop(new DropEventArgs(mouseButtons, browser.FolderView));
 
         if (!((mouseButtons & WinAPI.MK.RBUTTON) != 0 ||
               grfKeyState == WinAPI.MK.CONTROL || 

@@ -6,7 +6,7 @@ namespace FileBrowser
 {
   internal partial class BrowserTVDropWrapper : ShellDll.IDropTarget
   {
-    private Browser br;
+    private Browser browser;
 
     private IntPtr treeViewHandle;
 
@@ -25,18 +25,15 @@ namespace FileBrowser
 
     private WinAPI.MK mouseButtons;
 
-
-    public event DropEventHandler Drop;
-
-    public BrowserTVDropWrapper(Browser br)
+    public BrowserTVDropWrapper(Browser browser)
     {
-        this.br = br;
+        this.browser = browser;
 
-        treeViewHandle = br.FolderView.Handle;
+        treeViewHandle = browser.FolderView.Handle;
         WinAPI.RegisterDragDrop(treeViewHandle, this);
 
-        br.FolderView.HandleCreated += new EventHandler(FolderView_HandleCreated);
-        br.FolderView.HandleDestroyed += new EventHandler(FolderView_HandleDestroyed);
+        browser.FolderView.HandleCreated += new EventHandler(FolderView_HandleCreated);
+        browser.FolderView.HandleDestroyed += new EventHandler(FolderView_HandleDestroyed);
 
         ShellHelper.GetIDropTargetHelper(out dropHelperPtr, out dropHelper);
     }
@@ -48,13 +45,13 @@ namespace FileBrowser
 
     void FolderView_HandleCreated(object sender, EventArgs e)
     {
-        treeViewHandle = br.FolderView.Handle;
+        treeViewHandle = browser.FolderView.Handle;
         WinAPI.RegisterDragDrop(treeViewHandle, this);
     }
 
     void FolderView_HandleDestroyed(object sender, EventArgs e)
     {
-        WinAPI.RevokeDragDrop(br.FolderView.Handle);
+        WinAPI.RevokeDragDrop(browser.FolderView.Handle);
     }
   }
 }

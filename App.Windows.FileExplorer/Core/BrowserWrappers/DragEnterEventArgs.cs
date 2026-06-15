@@ -1,35 +1,27 @@
 ﻿using System;
 using ShellDll;
 using System.Windows.Forms;
-
+/************************************************/
 namespace FileBrowser
 {
   internal delegate void DragEnterEventHandler(object sender, DragEnterEventArgs e);
-
+  /************************************************/
   internal class DragEnterEventArgs : EventArgs
   {
     public DragEnterEventArgs(ShellItem parent, Control dragStartControl)
     {
-      this.parent = parent;
-      this.dragStartControl = dragStartControl;
+      this.Parent           = parent;
+      this.DragStartControl = dragStartControl;
     }
-
-    private ShellItem parent;
+    /************************************************/
     public ShellItem Parent
     {
-      get
-      {
-        return parent;
-      }
+      get; private set;
     }
-
-    private Control dragStartControl;
+    /************************************************/
     public Control DragStartControl
     {
-      get
-      {
-        return dragStartControl;
-      }
+      get; private set;
     }
   }
 }

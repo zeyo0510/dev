@@ -215,6 +215,18 @@
     <Compile Include="Controls\BrowserTreeView.SetSorting.cs">
       <DependentUpon>BrowserTreeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVContextMenuWrapper.CreateFolderMenu.cs">
+      <DependentUpon>BrowserLVContextMenuWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVContextMenuWrapper.CreateNormalMenu.cs">
+      <DependentUpon>BrowserLVContextMenuWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVContextMenuWrapper.SuspendContextMenu.cs">
+      <DependentUpon>BrowserLVContextMenuWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserLVContextMenuWrapper.WndProc.cs">
+      <DependentUpon>BrowserLVContextMenuWrapper.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.cs" />
     <Compile Include="Core\BrowserWrappers\BrowserLVDragWrapper.Dispose.cs">
       <DependentUpon>BrowserLVDragWrapper.cs</DependentUpon>
@@ -269,6 +281,12 @@
       <DependentUpon>BrowserLVDropWrapper.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\BrowserWrappers\BrowserTVContextMenuWrapper.cs" />
+    <Compile Include="Core\BrowserWrappers\BrowserTVContextMenuWrapper.SuspendContextMenu.cs">
+      <DependentUpon>BrowserTVContextMenuWrapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\BrowserWrappers\BrowserTVContextMenuWrapper.WndProc.cs">
+      <DependentUpon>BrowserTVContextMenuWrapper.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.cs" />
     <Compile Include="Core\BrowserWrappers\BrowserTVDragWrapper.Dispose.cs">
       <DependentUpon>BrowserTVDragWrapper.cs</DependentUpon>
@@ -360,11 +378,51 @@
     <Compile Include="Core\Shell\Interfaces\IStorage.cs" />
     <Compile Include="Core\Shell\Interfaces\IStream.cs" />
     <Compile Include="Core\Shell\PIDL.cs" />
+    <Compile Include="Core\Shell\ShellBrowser.Browsers.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\Shell\ShellBrowser.cs" />
-    <Compile Include="Core\Shell\ShellBrowserUpdater.cs" />
+    <Compile Include="Core\Shell\ShellBrowser.DesktopItem.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.GetPath.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.GetShellItem.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.InitVars.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.MyComputerName.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.MyDocumentsName.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.MyDocumentsPath.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.ShellItemUpdate.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.SystemFolderName.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowser.UpdateCondition.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Shell\ShellBrowserUpdater.cs">
+      <DependentUpon>ShellBrowser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\Shell\ShellHelper.cs" />
     <Compile Include="Core\Shell\ShellImageList.cs" />
     <Compile Include="Core\Shell\ShellItem.cs" />
+    <Compile Include="Core\Shell\ShellItemCollection.cs" />
+    <Compile Include="Core\Shell\ShellItemEnumerator.cs" />
+    <Compile Include="Core\Shell\ShellItemUpdateCondition.cs" />
+    <Compile Include="Core\Shell\ShellItemUpdateEventArgs.cs" />
+    <Compile Include="Core\Shell\ShellItemUpdateType.cs" />
     <Compile Include="Core\Shell\StreamStorage.cs" />
     <Compile Include="Core\Shell\WinAPI.cs" />
     <Compile Include="Core\SpecialFolders.cs" />

@@ -6,18 +6,16 @@ namespace FileBrowser
 {
   internal partial class BrowserTVDragWrapper : IDropSource
   {
-    private Browser br;
+    private Browser browser;
 
     private IntPtr dataObjectPtr;
 
     private MouseButtons startButton;
 
-    private bool disposed = false;
-
-    public BrowserTVDragWrapper(Browser br)
+    public BrowserTVDragWrapper(Browser browser)
     {
-      this.br = br;
-      br.FolderView.ItemDrag += new ItemDragEventHandler(ItemDrag);
+      this.browser = browser;
+      browser.FolderView.ItemDrag += new ItemDragEventHandler(ItemDrag);
     }
 
     ~BrowserTVDragWrapper()

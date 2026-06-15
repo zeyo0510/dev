@@ -1,12 +1,14 @@
 ﻿using System;
-
+/************************************************/
 namespace FileBrowser
 {
   partial class BrowserTVDropWrapper
   {
+    public event DropEventHandler Drop = null;
+    /************************************************/
     private void OnDrop(DropEventArgs e)
     {
-      if (Drop != null) Drop(this, e);
+      if (this.Drop != null) this.Drop(this, e);
     }
   }
 }

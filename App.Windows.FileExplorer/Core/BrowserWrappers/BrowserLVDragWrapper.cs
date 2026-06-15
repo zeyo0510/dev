@@ -1,7 +1,7 @@
 ﻿using System;
 using ShellDll;
 using System.Windows.Forms;
-
+/************************************************/
 namespace FileBrowser
 {
   internal partial class BrowserLVDragWrapper : IDropSource
@@ -17,7 +17,7 @@ namespace FileBrowser
       this.br = br;
       br.FileView.ItemDrag += new ItemDragEventHandler(ItemDrag);
     }
-
+    /************************************************/
     ~BrowserLVDragWrapper()
     {
       ((IDisposable)this).Dispose();

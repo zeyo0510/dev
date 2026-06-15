@@ -8,12 +8,12 @@ namespace FileBrowser
     
     public void Dispose()
     {
-      if (!disposed)
+      if (!this.disposed)
       {
         ReleaseCom();
         GC.SuppressFinalize(this);
 
-        disposed = true;
+        this.disposed = true;
       }
     }
   }

@@ -17,7 +17,7 @@ namespace FileBrowser
       if (dataObjectPtr != IntPtr.Zero)
       {
         DragDropEffects effects;
-        OnDragStart(new DragEnterEventArgs((item.ParentItem != null ? item.ParentItem : item), br.FolderView));
+        OnDragStart(new DragEnterEventArgs((item.ParentItem != null ? item.ParentItem : item), browser.FolderView));
         WinAPI.DoDragDrop(dataObjectPtr, this, DragDropEffects.Copy | DragDropEffects.Link | DragDropEffects.Move, out effects);
         OnDragEnd(new EventArgs());
       }
