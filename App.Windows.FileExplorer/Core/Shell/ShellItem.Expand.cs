@@ -7,8 +7,8 @@ namespace ShellDll
   {
     internal bool Expand(bool expandFiles, bool expandFolders, IntPtr winHandle)
     {
-        if (((expandFiles && !filesExpanded) || !expandFiles) &&
-            ((expandFolders && !foldersExpanded) || !expandFolders) &&
+        if (((expandFiles && !FilesExpanded) || !expandFiles) &&
+            ((expandFolders && !FoldersExpanded) || !expandFolders) &&
             (expandFiles || expandFolders) && ShellFolder != null && !disposed)
         {
             IntPtr fileEnumPtr = IntPtr.Zero, folderEnumPtr = IntPtr.Zero;
@@ -28,7 +28,7 @@ namespace ShellDll
             {
                 if (expandFiles)
                 {
-                    if (this.Equals(browser.DesktopItem) || parentItem.Equals(browser.DesktopItem))
+                    if (this.Equals(Browser.DesktopItem) || ParentItem.Equals(Browser.DesktopItem))
                     {
                         if (ShellFolder.EnumObjects(
                                 winHandle,
@@ -43,17 +43,17 @@ namespace ShellDll
 
                                 if ((attribs & WinAPI.SFGAO.FOLDER) == 0)
                                 {
-                                    ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
+                                    ShellItem newItem = new ShellItem(Browser, this, pidlSubItem);
 
-                                    if (!subFolders.Contains(newItem.Text))
-                                        subFiles.Add(newItem);
+                                    if (!SubFolders.Contains(newItem.Text))
+                                        SubFiles.Add(newItem);
                                 }
                                 else
                                     Marshal.FreeCoTaskMem(pidlSubItem);
                             }
 
-                            subFiles.Sort();
-                            filesExpanded = true;
+                            SubFiles.Sort();
+                            FilesExpanded = true;
                         }
                     }
                     else
@@ -66,12 +66,12 @@ namespace ShellDll
                             fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
                             while (fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
                             {
-                                ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
-                                subFiles.Add(newItem);
+                                ShellItem newItem = new ShellItem(Browser, this, pidlSubItem);
+                                SubFiles.Add(newItem);
                             }
 
-                            subFiles.Sort();
-                            filesExpanded = true;
+                            SubFiles.Sort();
+                            FilesExpanded = true;
                         }
                     }
                 }
@@ -94,16 +94,16 @@ namespace ShellDll
                                         out shellFolderPtr) == WinAPI.S_OK)
                             {
                                 ShellItem newItem = new ShellItem(
-                                    browser,
+                                    Browser,
                                     this,
                                     pidlSubItem,
                                     shellFolderPtr);
-                                subFolders.Add(newItem);
+                                SubFolders.Add(newItem);
                             }
                         }
 
-                        subFolders.Sort();
-                        foldersExpanded = true;
+                        SubFolders.Sort();
+                        FoldersExpanded = true;
                     }
                 }
 
@@ -125,7 +125,7 @@ namespace ShellDll
             }
         }
 
-        return ((expandFiles == filesExpanded || !expandFiles) && (expandFolders == foldersExpanded || !expandFolders));
+        return ((expandFiles == FilesExpanded || !expandFiles) && (expandFolders == FoldersExpanded || !expandFolders));
     }
   
   }

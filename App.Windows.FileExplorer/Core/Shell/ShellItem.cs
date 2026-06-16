@@ -1,99 +1,81 @@
 using System;
 using System.Collections;
 using System.Runtime.InteropServices;
-using System.Text;
 
 namespace ShellDll
 {
   public sealed partial class ShellItem : IEnumerable
   {
-    private ShellBrowser browser;
-
-    private ShellItem parentItem;
     private IShellFolder shellFolder;
     private IntPtr shellFolderPtr;
-    private ShellItemCollection subFiles, subFolders;
-
-    private PIDL pidlRel;
-
-    private short sortFlag;
-    private int imageIndex, selectedImageIndex;
-
-    private bool isFolder, isLink, isShared, isFileSystem,
-                 isHidden, hasSubfolder, isBrowsable, isDisk, filesExpanded,
-                 foldersExpanded, canRename, updateShellFolder, canRead;
-    
-    private string text, path, type;
-
-    private bool disposed = false;
 
     internal ShellItem(ShellBrowser browser, IntPtr pidl, IntPtr shellFolderPtr)
     {
-        this.browser = browser;
+        this.Browser = browser;
 
         this.shellFolderPtr = shellFolderPtr;
         this.shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
-        subFiles = new ShellItemCollection(this);
-        subFolders = new ShellItemCollection(this);
+        SubFiles = new ShellItemCollection(this);
+        SubFolders = new ShellItemCollection(this);
 
-        pidlRel = new PIDL(pidl, false);
+        PIDLRel = new PIDL(pidl, false);
 
-        text = "Desktop";
-        path = "Desktop";
+        this.Text = "Desktop";
+        this.Path = "Desktop";
 
         SetAttributesDesktop(this);
 
         WinAPI.SHFILEINFO info = new WinAPI.SHFILEINFO();
-        WinAPI.SHGetFileInfo(pidlRel.Ptr, 0, ref info, WinAPI.cbFileInfo, WinAPI.SHGFI.PIDL | WinAPI.SHGFI.TYPENAME | WinAPI.SHGFI.SYSICONINDEX);
+        WinAPI.SHGetFileInfo(PIDLRel.Ptr, 0, ref info, WinAPI.cbFileInfo, WinAPI.SHGFI.PIDL | WinAPI.SHGFI.TYPENAME | WinAPI.SHGFI.SYSICONINDEX);
 
-        type = info.szTypeName;
+        Type = info.szTypeName;
 
         ShellImageList.SetIconIndex(this, info.iIcon, false);
         ShellImageList.SetIconIndex(this, info.iIcon, true);
 
-        sortFlag = 1;
+        SortFlag = 1;
     }
 
     internal ShellItem(ShellBrowser browser, ShellItem parentItem, IntPtr pidl, IntPtr shellFolderPtr)
     {
-        this.browser = browser;
+        this.Browser = browser;
 
-        this.parentItem = parentItem;
+        this.ParentItem = parentItem;
         this.shellFolderPtr = shellFolderPtr;
         this.shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
-        subFiles = new ShellItemCollection(this);
-        subFolders = new ShellItemCollection(this);
+        SubFiles = new ShellItemCollection(this);
+        SubFolders = new ShellItemCollection(this);
 
-        pidlRel = new PIDL(pidl, false);
+        PIDLRel = new PIDL(pidl, false);
 
         SetText(this);
         SetPath(this);
         SetAttributesFolder(this);
         SetInfo(this);
 
-        sortFlag = MakeSortFlag(this);
+        SortFlag = MakeSortFlag(this);
     }
 
     internal ShellItem(ShellBrowser browser, ShellItem parentItem, IntPtr pidl)
     {
-        this.browser = browser;
+        this.Browser = browser;
 
-        this.parentItem = parentItem;
+        this.ParentItem = parentItem;
 
-        pidlRel = new PIDL(pidl, false);
+        PIDLRel = new PIDL(pidl, false);
 
         SetText(this);
         SetPath(this);
         SetAttributesFile(this);
         SetInfo(this);
 
-        sortFlag = MakeSortFlag(this);
+        SortFlag = MakeSortFlag(this);
     }
 
     ~ShellItem()
     {
-        ((IDisposable)this).Dispose();
-    }   
+      ((IDisposable)this).Dispose();
+    }
 
     public System.Collections.IEnumerator GetEnumerator()
     {

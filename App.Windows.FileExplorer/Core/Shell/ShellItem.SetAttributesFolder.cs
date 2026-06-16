@@ -18,17 +18,17 @@ namespace ShellDll
         item.ParentItem.ShellFolder.GetAttributesOf(
             1, new IntPtr[] { item.PIDLRel.Ptr }, ref attribs);
         
-        item.isFolder = true;
-        item.isLink = false;
-        item.isShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
-        item.isFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
-        item.isHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
-        item.hasSubfolder = (attribs & WinAPI.SFGAO.HASSUBFOLDER) != 0;
-        item.isBrowsable = (attribs & WinAPI.SFGAO.BROWSABLE) != 0;
-        item.canRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
-        item.canRead = (attribs & WinAPI.SFGAO.STORAGE) != 0;
+        item.IsFolder = true;
+        item.IsLink = false;
+        item.IsShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
+        item.IsFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
+        item.IsHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
+        item.HasSubfolder = (attribs & WinAPI.SFGAO.HASSUBFOLDER) != 0;
+        item.IsBrowsable = (attribs & WinAPI.SFGAO.BROWSABLE) != 0;
+        item.CanRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
+        item.CanRead = (attribs & WinAPI.SFGAO.STORAGE) != 0;
 
-        item.isDisk = (item.path.Length == 3 && item.path.EndsWith(":\\"));
+        item.IsDisk = (item.Path.Length == 3 && item.Path.EndsWith(":\\"));
     }
   }
 }

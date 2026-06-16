@@ -15,7 +15,7 @@ namespace ShellDll
         if (item.ParentItem.ShellFolder.GetDisplayNameOf(item.PIDLRel.Ptr, WinAPI.SHGNO.INFOLDER, strr) == WinAPI.S_OK)
         {
             WinAPI.StrRetToBuf(strr, item.PIDLRel.Ptr, buf, WinAPI.MAX_PATH);
-            item.text = buf.ToString();
+            item.Text = buf.ToString();
         }
 
         Marshal.FreeCoTaskMem(strr);

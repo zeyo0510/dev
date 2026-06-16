@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Text;
-
+/************************************************/
 namespace ShellDll
 {
   partial class ShellItem
   {
-    public bool IsFileSystem { get { return isFileSystem; } }
+    public bool IsFileSystem
+    {
+      get; private set;
+    }
   }
 }

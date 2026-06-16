@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using System.Text;
 
 namespace ShellDll
 {
@@ -10,13 +9,13 @@ namespace ShellDll
     {
         get
         {
-            if (updateShellFolder)
+            if (UpdateShellFolder)
             {
                 Marshal.ReleaseComObject(shellFolder);
                 Marshal.Release(shellFolderPtr);
 
                 if (ParentItem.ShellFolder.BindToObject(
-                            pidlRel.Ptr,
+                            PIDLRel.Ptr,
                             IntPtr.Zero,
                             ref WinAPI.IID_IShellFolder,
                             out shellFolderPtr) == WinAPI.S_OK)
@@ -24,7 +23,7 @@ namespace ShellDll
                     shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
                 }
 
-                updateShellFolder = false;
+                UpdateShellFolder = false;
             }
 
             return shellFolder;

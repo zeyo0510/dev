@@ -7,9 +7,9 @@ namespace ShellDll
   {
     internal void Update(bool updateFiles, bool updateFolders)
     {
-        if (browser.UpdateCondition.ContinueUpdate && (updateFiles || updateFolders) && ShellFolder != null && !disposed)
+        if (Browser.UpdateCondition.ContinueUpdate && (updateFiles || updateFolders) && ShellFolder != null && !disposed)
         {
-            lock (browser)
+            lock (Browser)
             {
                 IntPtr fileEnumPtr = IntPtr.Zero, folderEnumPtr = IntPtr.Zero;
                 IEnumIDList fileEnum = null, folderEnum = null;
@@ -25,23 +25,23 @@ namespace ShellDll
                         WinAPI.SHCONTF.INCLUDEHIDDEN;
 
                 bool[] fileExists;
-                fileExists = new bool[subFiles.Count];
+                fileExists = new bool[SubFiles.Count];
 
                 bool[] folderExists;
-                folderExists = new bool[subFolders.Count];
+                folderExists = new bool[SubFolders.Count];
 
                 int index;
 
                 try
                 {
-                    if (browser.UpdateCondition.ContinueUpdate && updateFiles)
+                    if (Browser.UpdateCondition.ContinueUpdate && updateFiles)
                     {
                         ShellItemCollection add = new ShellItemCollection(this);
                         ShellItemCollection remove = new ShellItemCollection(this);
 
                         bool fileEnumCompleted = false;
 
-                        if (this.Equals(browser.DesktopItem) || parentItem.Equals(browser.DesktopItem))
+                        if (this.Equals(Browser.DesktopItem) || ParentItem.Equals(Browser.DesktopItem))
                         {
                             if (ShellFolder.EnumObjects(
                                     IntPtr.Zero,
@@ -50,18 +50,18 @@ namespace ShellDll
                             {
                                 fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
                                 WinAPI.SFGAO attribs = WinAPI.SFGAO.FOLDER;
-                                while (browser.UpdateCondition.ContinueUpdate &&
+                                while (Browser.UpdateCondition.ContinueUpdate &&
                                        fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
                                 {
                                     ShellFolder.GetAttributesOf(1, new IntPtr[] { pidlSubItem }, ref attribs);
 
                                     if ((attribs & WinAPI.SFGAO.FOLDER) == 0)
                                     {
-                                        if ((index = subFiles.IndexOf(pidlSubItem)) == -1)
+                                        if ((index = SubFiles.IndexOf(pidlSubItem)) == -1)
                                         {
-                                            ShellItem newItem = new ShellItem(browser, this, pidlSubItem);
+                                            ShellItem newItem = new ShellItem(Browser, this, pidlSubItem);
 
-                                            if (!subFolders.Contains(newItem.Text))
+                                            if (!SubFolders.Contains(newItem.Text))
                                             {
                                                 add.Add(newItem);
                                             }
@@ -88,12 +88,12 @@ namespace ShellDll
                                     out fileEnumPtr) == WinAPI.S_OK)
                             {
                                 fileEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(fileEnumPtr, typeof(IEnumIDList));
-                                while (browser.UpdateCondition.ContinueUpdate &&
+                                while (Browser.UpdateCondition.ContinueUpdate &&
                                        fileEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
                                 {
-                                    if ((index = subFiles.IndexOf(pidlSubItem)) == -1)
+                                    if ((index = SubFiles.IndexOf(pidlSubItem)) == -1)
                                     {
-                                        add.Add(new ShellItem(browser, this, pidlSubItem));
+                                        add.Add(new ShellItem(Browser, this, pidlSubItem));
                                     }
                                     else if (index < fileExists.Length)
                                     {
@@ -106,15 +106,15 @@ namespace ShellDll
                             }
                         }
 
-                        for (int i = 0; fileEnumCompleted && browser.UpdateCondition.ContinueUpdate && i < fileExists.Length; i++)
+                        for (int i = 0; fileEnumCompleted && Browser.UpdateCondition.ContinueUpdate && i < fileExists.Length; i++)
                         {
-                            if (!fileExists[i] && subFiles[i] != null)
+                            if (!fileExists[i] && SubFiles[i] != null)
                             {
-                                remove.Add(subFiles[i]);
+                                remove.Add(SubFiles[i]);
                             }
                         }
 
-                        if (fileEnumCompleted && browser.UpdateCondition.ContinueUpdate)
+                        if (fileEnumCompleted && Browser.UpdateCondition.ContinueUpdate)
                         {
                             int newIndex;
                             foreach (ShellItem oldItem in remove)
@@ -124,38 +124,38 @@ namespace ShellDll
                                     ShellItem newItem = add[newIndex];
                                     add.Remove(newItem);
 
-                                    oldItem.pidlRel.Free();
-                                    oldItem.pidlRel = new PIDL(newItem.pidlRel.Ptr, true);
+                                    oldItem.PIDLRel.Free();
+                                    oldItem.PIDLRel = new PIDL(newItem.PIDLRel.Ptr, true);
 
                                     oldItem.shellFolder = newItem.shellFolder;
                                     oldItem.shellFolderPtr = newItem.shellFolderPtr;
 
                                     ((IDisposable)newItem).Dispose();
 
-                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
+                                    Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
                                 }
                                 else
                                 {
-                                    subFiles.Remove(oldItem);
-                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
+                                    SubFiles.Remove(oldItem);
+                                    Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
                                     ((IDisposable)oldItem).Dispose();
                                 }
                             }
 
                             foreach (ShellItem newItem in add)
                             {
-                                subFiles.Add(newItem);
-                                browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
+                                SubFiles.Add(newItem);
+                                Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
                             }
 
-                            subFiles.Capacity = subFiles.Count;
-                            subFiles.Sort();
+                            SubFiles.Capacity = SubFiles.Count;
+                            SubFiles.Sort();
 
-                            filesExpanded = true;
+                            FilesExpanded = true;
                         }
                     }
 
-                    if (browser.UpdateCondition.ContinueUpdate && updateFolders)
+                    if (Browser.UpdateCondition.ContinueUpdate && updateFolders)
                     {
                         ShellItemCollection add = new ShellItemCollection(this);
                         ShellItemCollection remove = new ShellItemCollection(this);
@@ -168,10 +168,10 @@ namespace ShellDll
                                     out folderEnumPtr) == WinAPI.S_OK)
                         {
                             folderEnum = (IEnumIDList)Marshal.GetTypedObjectForIUnknown(folderEnumPtr, typeof(IEnumIDList));
-                            while (browser.UpdateCondition.ContinueUpdate &&
+                            while (Browser.UpdateCondition.ContinueUpdate &&
                                    folderEnum.Next(1, out pidlSubItem, out celtFetched) == WinAPI.S_OK && celtFetched == 1)
                             {
-                                if ((index = subFolders.IndexOf(pidlSubItem)) == -1)
+                                if ((index = SubFolders.IndexOf(pidlSubItem)) == -1)
                                 {
                                     IntPtr shellFolderPtr;
                                     if (ShellFolder.BindToObject(
@@ -181,7 +181,7 @@ namespace ShellDll
                                                 out shellFolderPtr) == WinAPI.S_OK)
                                     {
                                         add.Add(new ShellItem(
-                                            browser,
+                                            Browser,
                                             this,
                                             pidlSubItem,
                                             shellFolderPtr));
@@ -197,15 +197,15 @@ namespace ShellDll
                             folderEnumCompleted = true;
                         }
 
-                        for (int i = 0; folderEnumCompleted && browser.UpdateCondition.ContinueUpdate && i < folderExists.Length; i++)
+                        for (int i = 0; folderEnumCompleted && Browser.UpdateCondition.ContinueUpdate && i < folderExists.Length; i++)
                         {
-                            if (!folderExists[i] && subFolders[i] != null)
+                            if (!folderExists[i] && SubFolders[i] != null)
                             {
-                                remove.Add(subFolders[i]);
+                                remove.Add(SubFolders[i]);
                             }
                         }
 
-                        if (folderEnumCompleted && browser.UpdateCondition.ContinueUpdate)
+                        if (folderEnumCompleted && Browser.UpdateCondition.ContinueUpdate)
                         {
                             int newIndex;
                             foreach (ShellItem oldItem in remove)
@@ -215,8 +215,8 @@ namespace ShellDll
                                     ShellItem newItem = add[newIndex];
                                     add.Remove(newItem);
 
-                                    oldItem.pidlRel.Free();
-                                    oldItem.pidlRel = new PIDL(newItem.pidlRel, true);
+                                    oldItem.PIDLRel.Free();
+                                    oldItem.PIDLRel = new PIDL(newItem.PIDLRel, true);
 
                                     Marshal.ReleaseComObject(oldItem.shellFolder);
                                     Marshal.Release(oldItem.shellFolderPtr);
@@ -228,26 +228,26 @@ namespace ShellDll
                                     newItem.shellFolderPtr = IntPtr.Zero;
                                     ((IDisposable)newItem).Dispose();
 
-                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
+                                    Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, oldItem, ShellItemUpdateType.Updated));
                                 }
                                 else
                                 {
-                                    subFolders.Remove(oldItem);
-                                    browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
+                                    SubFolders.Remove(oldItem);
+                                    Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(oldItem, null, ShellItemUpdateType.Deleted));
                                     ((IDisposable)oldItem).Dispose();
                                 }
                             }
 
                             foreach (ShellItem newItem in add)
                             {
-                                subFolders.Add(newItem);
+                                SubFolders.Add(newItem);
 
-                                browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
+                                Browser.OnShellItemUpdate(this, new ShellItemUpdateEventArgs(null, newItem, ShellItemUpdateType.Created));
                             }
 
-                            subFolders.Capacity = subFolders.Count;
-                            subFolders.Sort();
-                            foldersExpanded = true;
+                            SubFolders.Capacity = SubFolders.Count;
+                            SubFolders.Sort();
+                            FoldersExpanded = true;
                         }
                     }
                 }
@@ -264,7 +264,7 @@ namespace ShellDll
                     {
                         Marshal.ReleaseComObject(fileEnum);
 
-                        if (!(type == browser.SystemFolderName && string.Compare(text, "Control Panel", true) == 0))
+                        if (!(Type == Browser.SystemFolderName && string.Compare(Text, "Control Panel", true) == 0))
                             Marshal.Release(fileEnumPtr);
                     }
                 }
@@ -274,9 +274,9 @@ namespace ShellDll
   
     internal void Update(IntPtr newPidlFull, ShellItemUpdateType changeType)
     {
-        browser.UpdateCondition.ContinueUpdate = false;
+        Browser.UpdateCondition.ContinueUpdate = false;
 
-        lock (browser)
+        lock (Browser)
         {
             if (newPidlFull != IntPtr.Zero)
             {
@@ -291,19 +291,19 @@ namespace ShellDll
                 {
                     Marshal.ReleaseComObject(shellFolder);
                     Marshal.Release(shellFolderPtr);
-                    pidlRel.Free();
+                    PIDLRel.Free();
 
                     shellFolderPtr = newShellFolderPtr;
                     shellFolder = (IShellFolder)Marshal.GetTypedObjectForIUnknown(shellFolderPtr, typeof(IShellFolder));
-                    pidlRel = new PIDL(newPidlRel, false);
+                    PIDLRel = new PIDL(newPidlRel, false);
 
                     foreach (ShellItem child in SubFolders)
                         UpdateShellFolders(child);
                 }
                 else
                 {
-                    pidlRel.Free();
-                    pidlRel = new PIDL(newPidlRel, false);
+                    PIDLRel.Free();
+                    PIDLRel = new PIDL(newPidlRel, false);
                 }
 
                 Marshal.FreeCoTaskMem(tempPidl);

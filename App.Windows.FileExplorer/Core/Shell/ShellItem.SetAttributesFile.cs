@@ -17,17 +17,17 @@ namespace ShellDll
         item.ParentItem.ShellFolder.GetAttributesOf(
             1, new IntPtr[] { item.PIDLRel.Ptr }, ref attribs);
 
-        item.isFolder = false;
-        item.isLink = (attribs & WinAPI.SFGAO.LINK) != 0;
-        item.isShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
-        item.isFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
-        item.isHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
-        item.hasSubfolder = false;
-        item.isBrowsable = false;
-        item.canRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
-        item.canRead = (attribs & WinAPI.SFGAO.STREAM) != 0;
+        item.IsFolder = false;
+        item.IsLink = (attribs & WinAPI.SFGAO.LINK) != 0;
+        item.IsShared = (attribs & WinAPI.SFGAO.SHARE) != 0;
+        item.IsFileSystem = (attribs & WinAPI.SFGAO.FILESYSTEM) != 0;
+        item.IsHidden = (attribs & WinAPI.SFGAO.HIDDEN) != 0;
+        item.HasSubfolder = false;
+        item.IsBrowsable = false;
+        item.CanRename = (attribs & WinAPI.SFGAO.CANRENAME) != 0;
+        item.CanRead = (attribs & WinAPI.SFGAO.STREAM) != 0;
 
-        item.isDisk = false;
+        item.IsDisk = false;
     }     
   }
 }

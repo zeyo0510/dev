@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Text;
 
 namespace ShellDll
 {
@@ -10,7 +8,7 @@ namespace ShellDll
     {
         get
         {
-            PIDL pidlFull = new PIDL(pidlRel.Ptr, true);
+            PIDL pidlFull = new PIDL(PIDLRel.Ptr, true);
             ShellItem current = ParentItem;
             while (current != null)
             {

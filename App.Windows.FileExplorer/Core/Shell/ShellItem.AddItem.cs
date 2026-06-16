@@ -6,8 +6,8 @@ namespace ShellDll
   {
     internal void AddItem(ShellItem item)
     {
-        browser.UpdateCondition.ContinueUpdate = false;
-        lock (browser)
+        Browser.UpdateCondition.ContinueUpdate = false;
+        lock (Browser)
         {
             try
             {

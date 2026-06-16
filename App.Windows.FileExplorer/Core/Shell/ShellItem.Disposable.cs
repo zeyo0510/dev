@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using System.Text;
 
 namespace ShellDll
 {
   partial class ShellItem : IDisposable
   {
+    private bool disposed = false;
+    
     void IDisposable.Dispose()
     {
         if (!disposed)

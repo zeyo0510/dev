@@ -6,35 +6,42 @@ namespace ShellDll
   {
     internal void Clear(bool clearFiles, bool clearFolders)
     {
-        if (((clearFiles && filesExpanded) || !clearFiles) &&
-            ((clearFolders && foldersExpanded) || !clearFolders) &&
-            (clearFiles || clearFolders) && ShellFolder != null && !disposed)
+      if (((clearFiles && FilesExpanded) || !clearFiles) &&
+          ((clearFolders && FoldersExpanded) || !clearFolders) &&
+          (clearFiles || clearFolders) && ShellFolder != null && !disposed)
+      {
+        lock (Browser)
         {
-            lock (browser)
+          try
+          {
+            if (clearFiles)
             {
-                try
-                {
-                    if (clearFiles)
-                    {
-                        foreach (IDisposable item in subFiles)
-                            item.Dispose();
+              foreach (IDisposable item in SubFiles)
+              {
+                item.Dispose();
+              }
 
-                        subFiles.Clear();
-                        filesExpanded = false;
-                    }
-
-                    if (clearFolders)
-                    {
-                        foreach (IDisposable item in subFolders)
-                            item.Dispose();
-
-                        subFolders.Clear();
-                        foldersExpanded = false;
-                    }
-                }
-                catch (Exception) { }
+              SubFiles.Clear();
+              FilesExpanded = false;
             }
+
+            if (clearFolders)
+            {
+              foreach (IDisposable item in SubFolders)
+              {
+                item.Dispose();
+              }
+
+              SubFolders.Clear();
+              FoldersExpanded = false;
+            }
+          }
+          catch (Exception)
+          {
+            // do nothing...
+          }
         }
+      }
     }
   }
 }

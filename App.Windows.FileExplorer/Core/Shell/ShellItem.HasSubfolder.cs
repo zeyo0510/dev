@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Text;
-
+/************************************************/
 namespace ShellDll
 {
   partial class ShellItem
   {
-    public bool HasSubfolder { get { return hasSubfolder; } }
+    public bool HasSubfolder
+    {
+      get; private set;
+    }
   }
 }

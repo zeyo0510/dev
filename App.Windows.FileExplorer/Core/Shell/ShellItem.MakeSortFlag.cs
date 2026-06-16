@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Text;
 
 namespace ShellDll
 {
@@ -12,10 +10,10 @@ namespace ShellDll
         {
             if (item.IsDisk)
                 return 1;
-            if (item.Text == item.browser.MyDocumentsName &&
+            if (item.Text == item.Browser.MyDocumentsName &&
                 item.Type == item.Browser.SystemFolderName)
                 return 2;
-            else if (item.Text == item.browser.MyComputerName)
+            else if (item.Text == item.Browser.MyComputerName)
                 return 3;
             else if (item.Type == item.Browser.SystemFolderName)
             {

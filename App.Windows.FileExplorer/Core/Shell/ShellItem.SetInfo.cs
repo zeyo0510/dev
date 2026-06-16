@@ -16,7 +16,7 @@ namespace ShellDll
         ShellImageList.SetIconIndex(item, info.iIcon, false);
         ShellImageList.SetIconIndex(item, info.iIcon, true);
 
-        item.type = info.szTypeName;
+        item.Type = info.szTypeName;
     }
   }
 }
