@@ -15,11 +15,11 @@ public class CheCheckBox : CheckBox
     base.ResumeLayout(false);
   }
 
-  private void _OnMouseLeave(object P_0, EventArgs P_1)
+  private void _OnMouseLeave(object sender, EventArgs e)
   {
   }
 
-  private void _OnMouseEnter(object P_0, EventArgs P_1)
+  private void _OnMouseEnter(object sender, EventArgs e)
   {
   }
 }
