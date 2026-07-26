@@ -1,11 +1,14 @@
 using EConTech.Windows.MACUI;
 using System.ComponentModel;
+using WinForm = System.Windows.Forms;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
 partial class DeviceVolumeControl
 {
   private IContainer components;
+  /************************************************/
+  private WinForm::Timer timer1;
   /************************************************/
   protected override void Dispose(bool disposing)
   {
@@ -126,12 +129,12 @@ partial class DeviceVolumeControl
     this.muteCheckBox.MouseLeave += new System.EventHandler(muteCheckBox_MouseLeave);
     this.muteCheckBox.MouseUp += new System.Windows.Forms.MouseEventHandler(muteCheckBox_MouseUp);
     // DeviceVolumeControl
+    base.Name = "DeviceVolumeControl";
     base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
     base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
     base.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
     this.BackColor = System.Drawing.Color.Transparent;
     base.Margin = new System.Windows.Forms.Padding(0);
-    base.Name = "DeviceVolumeControl";
     base.Size = new System.Drawing.Size(128, 485);
     base.Controls.Add(this.defaultCheckBox);
     base.Controls.Add(this.rightLedBar);

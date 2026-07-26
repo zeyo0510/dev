@@ -1,10 +1,10 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using WinForm = System.Windows.Forms;
 using a;
 using AudioCore;
 using CheVolume.Properties;
 using EConTech.Windows.MACUI;
+using WinForm = System.Windows.Forms;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
@@ -15,8 +15,6 @@ public partial class DeviceVolumeControl : UserControl
   private delegate void SYS_BOOL_INVOKE(bool A_0);
 
   private delegate void SYS_INT_INVOKE(int A_0);
-
-  private WinForm::Timer timer1;
 
   public MMDevice mmDevice1;
 

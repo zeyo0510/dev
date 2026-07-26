@@ -1,18 +1,13 @@
-using System;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Management;
-using System.Runtime.InteropServices;
-using System.Windows.Forms;
 using a;
 using AudioCore;
 using AudioCore.Interfaces;
 using AudioCore2;
 using CheVolume.Properties;
-using EConTech.Windows.MACUI;
 using Microsoft.Win32;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Management;
+using System.Runtime.InteropServices;
 using WinForm = System.Windows.Forms;
 /************************************************/
 namespace CheVolume.Controls;
@@ -67,8 +62,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private delegate void SYS_BOOL_INVOKE(bool A_0);
 
-  private WinForm::Timer timer1;
-
   public AudioSessionControl2 audioSessionControl21;
 
   public MMDevice mmDevice1;
@@ -78,8 +71,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
   public Process process1;
 
   public string str1;
-
-  private int num2;
 
   private bool bool1;
 
@@ -227,7 +218,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     audioSessionControl21 = P_0;
     process1 = P_1;
     process1.Refresh();
-    lblPId.Text = process1.Id.ToString();
+    pidLabel.Text = process1.Id.ToString();
     timer1 = new WinForm::Timer();
     timer1.Tick += timer1_Tick;
     timer1.Interval = 10;
@@ -237,22 +228,17 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     base.Margin = new Padding(0);
     string audioSetivceDLL = GetAudioSetivceDLL(process1);
     Icon icon = ExtractIcon(audioSetivceDLL, Application.ExecutablePath);
-    IconBox.Image = icon.ToBitmap();
+    sessionPictureBox.Image = icon.ToBitmap();
     _DestroyIcon(icon.Handle);
-    lblProcessName.Text = ((process1.Id == 0) ? "System Sounds" : process1.MainWindowTitle);
+    nameLabel.Text = ((process1.Id == 0) ? "System Sounds" : process1.MainWindowTitle);
     str1 = process1.ProcessName;
     if (process1.Id == 0)
     {
-      btnLock.Visible = false;
-      btnTransfert.Visible = false;
-      BtnShowProcess.Visible = false;
-      btnMute.Location = new Point(base.Size.Width / 2 - btnMute.Width / 2, btnMute.Location.Y);
+      transfertButton.Visible = false;
+      showprocCheCheckBox.Visible = false;
+      muteCheCheckBox.Location = new Point(base.Size.Width / 2 - muteCheCheckBox.Width / 2, muteCheCheckBox.Location.Y);
     }
     OnStateChanged2(audioSessionControl21.GetState());
-  }
-
-  private void Method1()
-  {
   }
 
   private void process1_Exited(object sender, EventArgs e)
@@ -374,11 +360,11 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (Enumerable.Count(source) > 0)
     {
       float value = Enumerable.Max(source);
-      lBarLeft.SetValue(value);
+      leftLedBar.SetValue(value);
     }
     else
     {
-      lBarLeft.SetValue(0f);
+      leftLedBar.SetValue(0f);
     }
     if (num1++ < 100)
     {
@@ -389,7 +375,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       process1.Refresh();
       try
       {
-        lblProcessName.Text = process1.MainWindowTitle;
+        nameLabel.Text = process1.MainWindowTitle;
       }
       catch (Exception)
       {
@@ -400,27 +386,27 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private void contextMenuStrip1_Closed(object sender, ToolStripDropDownClosedEventArgs e)
   {
-    lblVolume.Focus();
+    volumeLabel.Focus();
   }
 
-  private void btnMute_CheckedChanged(object sender, EventArgs e)
+  private void muteCheCheckBox_CheckedChanged(object sender, EventArgs e)
   {
-    if (btnMute.Checked)
+    if (muteCheCheckBox.Checked)
     {
-      lBarLeft.IsMuted = true;
+      leftLedBar.IsMuted = true;
       macTrackBar1.TrackerColor = Color.DarkGray;
-      btnMute.Image = Resources.muteon;
-      btnMute.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+      muteCheCheckBox.Image = Resources.muteon;
+      muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
     }
     else
     {
-      lBarLeft.IsMuted = false;
+      leftLedBar.IsMuted = false;
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      btnMute.Image = Resources.mute;
-      btnMute.FlatAppearance.BorderColor = Color.DarkGray;
+      muteCheCheckBox.Image = Resources.mute;
+      muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
     }
-    audioSessionControl21.SetMute(btnMute.Checked);
-    lblVolume.Focus();
+    audioSessionControl21.SetMute(muteCheCheckBox.Checked);
+    volumeLabel.Focus();
   }
 
   private void SetTrackBar(decimal P_0)
@@ -462,14 +448,14 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
   }
 
-  private void btnTransfert_Click2()
+  private void transfertButton_Click2()
   {
     contextMenuStrip1.Items.Clear();
     mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
     int count = mmDeviceCollection1.Count;
     ToolStripMenuItem toolStripMenuItem = new ToolStripMenuItem();
     toolStripMenuItem.Text = "Move '" + process1.ProcessName + "' to  : ";
-    toolStripMenuItem.Image = IconBox.Image;
+    toolStripMenuItem.Image = sessionPictureBox.Image;
     toolStripMenuItem.ForeColor = Color.FromArgb(50, 50, 50);
     toolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
     contextMenuStrip1.Items.Add(toolStripMenuItem);
@@ -548,7 +534,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
     int count = mmDeviceCollection1.Count;
     audioPolicyConfigService1.SetDefaultEndPoint(null, process1.Id);
-    Method1();
   }
 
   public void toolStripMenuItem2_Click(object P_0, EventArgs P_1)
@@ -558,7 +543,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     string text2 = obj.Tag.ToString();
     CreateRegistry(text, text2);
     audioPolicyConfigService1.SetDefaultEndPoint(text2, process1.Id);
-    Method1();
   }
 
   private void CreateRegistry(string P_0, string P_1)
@@ -570,11 +554,11 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     registryKey2.OpenSubKey("Data", true).SetValue(str1, P_1);
   }
 
-  private void btnTransfert_Click(object sender, EventArgs e)
+  private void transfertButton_Click(object sender, EventArgs e)
   {
-    btnTransfert_Click2();
-    btnTransfert.PointToScreen(new Point(btnTransfert.Left, btnTransfert.Bottom));
-    contextMenuStrip1.Show(btnTransfert, new Point(-contextMenuStrip1.Size.Width / 2 + btnTransfert.Width / 2, -contextMenuStrip1.Size.Height - 5));
+    transfertButton_Click2();
+    transfertButton.PointToScreen(new Point(transfertButton.Left, transfertButton.Bottom));
+    contextMenuStrip1.Show(transfertButton, new Point(-contextMenuStrip1.Size.Width / 2 + transfertButton.Width / 2, -contextMenuStrip1.Size.Height - 5));
   }
 
   public void SetMute(bool newValue)
@@ -585,7 +569,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
     else
     {
-      btnMute.Checked = newValue;
+      muteCheCheckBox.Checked = newValue;
     }
   }
 
@@ -597,7 +581,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
     else
     {
-      lblVolume.Text = newValue;
+      volumeLabel.Text = newValue;
     }
   }
 
@@ -610,7 +594,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     else
     {
       process1.Refresh();
-      lblProcessName.Text = process1.MainWindowTitle;
+      nameLabel.Text = process1.MainWindowTitle;
     }
   }
 
@@ -645,7 +629,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
     else
     {
-      Method1();
       base.Visible = newValue;
     }
   }
@@ -667,13 +650,13 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       if (IsAdvancedUser)
       {
         SetVisible(true);
-        lBarLeft.SetValue(0f);
+        leftLedBar.SetValue(0f);
         timer1.Start();
       }
       else
       {
         SetVisible(false);
-        lBarLeft.SetValue(0f);
+        leftLedBar.SetValue(0f);
         timer1.Stop();
       }
       break;
@@ -689,36 +672,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       timer1.Stop();
       break;
     }
-  }
-
-  private void btnLock_CheckedChanged(object sender, EventArgs e)
-  {
-    if (btnLock.Checked)
-    {
-      btnLock.Image = Resources._lock;
-      btnLock.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-      btnTransfert.BackgroundImage = Resources._lock;
-      btnTransfert.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-      btnTransfert.Enabled = false;
-      if (!process1.HasExited && !Enumerable.Contains(Settings.Default["ListOfProcessesLocked"].ToString().Split('\\'), process1.ProcessName + "|"))
-      {
-        Settings.Default["ListOfProcessesLocked"] = string.Concat(Settings.Default["ListOfProcessesLocked"].ToString(), "\\" + process1.ProcessName + "|");
-      }
-    }
-    else
-    {
-      btnLock.Image = Resources.lockoff;
-      btnLock.FlatAppearance.BorderColor = Color.DarkGray;
-      btnTransfert.BackgroundImage = Resources.transfert;
-      btnTransfert.Enabled = true;
-      btnTransfert.FlatAppearance.BorderColor = Color.DarkGray;
-      if (!process1.HasExited && !Enumerable.Contains(Settings.Default["ListOfProcessesLocked"].ToString().Split('\\'), process1.ProcessName))
-      {
-        Settings.Default["ListOfProcessesLocked"] = Settings.Default["ListOfProcessesLocked"].ToString().Replace("\\" + process1.ProcessName + "|", "");
-      }
-    }
-    Settings.Default.Save();
-    lblVolume.Focus();
   }
 
   public Icon ExtractIcon(string P_0, string P_1)
@@ -765,23 +718,23 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     return Application.ExecutablePath;
   }
 
-  private void BtnShowProcess_MouseHover(object sender, EventArgs e)
+  private void showprocCheCheckBox_MouseHover(object sender, EventArgs e)
   {
   }
 
-  private void BtnShowProcess_MouseLeave(object sender, EventArgs e)
+  private void showprocCheCheckBox_MouseLeave(object sender, EventArgs e)
   {
-    BtnShowProcess.Image = Resources.showwindow;
-    BtnShowProcess.FlatAppearance.BorderColor = Color.DarkGray;
+    showprocCheCheckBox.Image = Resources.showwindow;
+    showprocCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
   }
 
-  private void BtnShowProcess_MouseEnter(object sender, EventArgs e)
+  private void showprocCheCheckBox_MouseEnter(object sender, EventArgs e)
   {
-    BtnShowProcess.Image = Resources.showwindowover;
-    BtnShowProcess.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+    showprocCheCheckBox.Image = Resources.showwindowover;
+    showprocCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
   }
 
-  private void BtnShowProcess_Click(object sender, EventArgs e)
+  private void showprocCheCheckBox_Click(object sender, EventArgs e)
   {
     if (GetWindowPlacement(process1.MainWindowHandle).SHOWCMD == Enum2.Item3)
     {
@@ -794,39 +747,39 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     _SetForegroundWindow(process1.MainWindowHandle);
   }
 
-  private void IconBox_Click(object sender, EventArgs e)
+  private void sessionPictureBox_Click(object sender, EventArgs e)
   {
     if (IsAdvancedUser)
     {
-      lblPId.Visible = !lblPId.Visible;
+      pidLabel.Visible = !pidLabel.Visible;
     }
   }
 
-  private void btnTransfert_MouseHover(object sender, EventArgs e)
+  private void transfertButton_MouseHover(object sender, EventArgs e)
   {
   }
 
-  private void btnMute_MouseEnter(object sender, EventArgs e)
+  private void muteCheCheckBox_MouseEnter(object sender, EventArgs e)
   {
-    btnMute.Image = Resources.muteon;
-    btnMute.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+    muteCheCheckBox.Image = Resources.muteon;
+    muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
   }
 
-  private void btnMute_MouseLeave(object sender, EventArgs e)
+  private void muteCheCheckBox_MouseLeave(object sender, EventArgs e)
   {
-    if (!btnMute.Checked)
+    if (!muteCheCheckBox.Checked)
     {
-      btnMute.FlatAppearance.BorderColor = Color.DarkGray;
-      btnMute.Image = Resources.mute;
+      muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
+      muteCheCheckBox.Image = Resources.mute;
     }
   }
 
-  private void btnTransfert_MouseLeave(object sender, EventArgs e)
+  private void transfertButton_MouseLeave(object sender, EventArgs e)
   {
   }
 
-  private void btnTransfert_MouseEnter(object sender, EventArgs e)
+  private void transfertButton_MouseEnter(object sender, EventArgs e)
   {
-    btnTransfert.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+    transfertButton.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
   }
 }
