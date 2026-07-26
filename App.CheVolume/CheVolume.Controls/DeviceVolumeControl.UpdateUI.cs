@@ -6,17 +6,23 @@ partial class DeviceVolumeControl
 {
   public void UpdateUI()
   {
-    this.nameLabel.Text = this._MM_DEVICE_.FriendlyName;
-    this.devicePictureBox.Image = this.ProcessIcon(this._MM_DEVICE_.IconPath);
-    this.leftLedBar.Enabled = !this.EndPointVolume.Mute;
-    // this.leftLedBar.Value
-    this.rightLedBar.Enabled = !this.EndPointVolume.Mute;
-    // this.rightLedBar.Value
-    this.muteCheckBox.Checked = this.EndPointVolume.Mute;
-    this.volumeLabel.Text = this.EndPointVolume.Volume.ToString();
-
-    this.macTrackBar1.Value = this.EndPointVolume.Volume;
-    this.macTrackBar1.TrackerColor = this.EndPointVolume.Mute ? Color.Gray : Color.FromArgb(255, 128, 0);
+    // nameLabel
+    this.nameLabel.Text = this.MMDevice.FriendlyName;
+    // devicePictureBox
+    this.devicePictureBox.Image = this.ProcessIcon(this.MMDevice.IconPath);
+    // leftLedBar
+    this.leftLedBar.Enabled = !this.Mute;
+    this.leftLedBar.Value = this.ProcessLeftChannel(this.MeterInformation.PeakValues.ToFloatArray);
+    // macTrackBar1
+    // this.macTrackBar1.Value = this.Volume;
+    this.macTrackBar1.TrackerColor = this.Mute ? Color.Gray : Color.FromArgb(255, 128, 0);
+    // rightLedBar
+    this.rightLedBar.Enabled = !this.Mute;
+    this.rightLedBar.Value = this.ProcessRightChannel(this.MeterInformation.PeakValues.ToFloatArray);
+    // muteCheckBox
+    this.muteCheckBox.Checked = this.Mute;
+    // volumeLabel
+    this.volumeLabel.Text = this.Volume.ToString();
   }
   /************************************************/
   private Image ProcessIcon(string s)
@@ -25,10 +31,34 @@ partial class DeviceVolumeControl
     /************************************************/
     (string path, int resourceID) = s.ParseResourceString();
     /************************************************/
-    using (Icon icon = path.GetResourceIcon(resourceID, true))
+    using (Icon? icon = path.GetResourceIcon(resourceID, true))
     {
       retValue = icon?.ToBitmap();
     }
+    /************************************************/
+    return retValue;
+  }
+  /************************************************/
+  private int ProcessLeftChannel(float[] peaks)
+  {
+    int retValue = 0;
+    /************************************************/
+    float volume = peaks
+    . First();
+    /****************************************************/
+    retValue  = (int)Math.Ceiling(volume * this.leftLedBar.MaximumValue);
+    /************************************************/
+    return retValue;
+  }
+  /************************************************/
+  private int ProcessRightChannel(float[] peaks)
+  {
+    int retValue = 0;
+    /************************************************/
+    float volume = peaks
+    . Last();
+    /****************************************************/
+    retValue  = (int)Math.Ceiling(volume * this.leftLedBar.MaximumValue);
     /************************************************/
     return retValue;
   }

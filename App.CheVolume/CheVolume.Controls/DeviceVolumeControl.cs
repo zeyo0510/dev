@@ -1,48 +1,19 @@
 using a;
 using AudioCore;
-using CheVolume.Properties;
-using JC.CS.Lib.Extensions;
-using System.Runtime.InteropServices;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
 public partial class DeviceVolumeControl : UserControl
 {
-  private delegate void SYS_STRING_INVOKE(string A_0);
-
-  private delegate void SYS_BOOL_INVOKE(bool A_0);
-
-  private delegate void SYS_INT_INVOKE(int A_0);
-
-  public MMDevice _MM_DEVICE_;
-
-  private int VolumeValue
-  {
-    get
-    {
-      return macTrackBar1.Value;
-    }
-  }
-
-  [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "DestroyIcon")]
-  private static extern bool _DestroyIcon(IntPtr P_0);
-
-  public static Image ResizeImage(Image P_0, Size P_1)
-  {
-    return new Bitmap(P_0, P_1);
-  }
-
-  public DeviceVolumeControl(MMDevice P_0)
+  public DeviceVolumeControl(MMDevice _MM_DEVICE_)
   {
     this.InitializeComponent();
     /****************************************************/
-    this._MM_DEVICE_ = P_0;
+    this.MMDevice = _MM_DEVICE_;
     /****************************************************/
-    timer1.Tick += timer1_Tick;
-    timer1.Interval = 10;
-    timer1.Start();
+    this.guiTimer.Start();
     /****************************************************/
-    base.Tag = this._MM_DEVICE_.ID;
+    base.Tag = this.MMDevice.ID;
     /****************************************************/
     this.macTrackBar1.audioEndpointVolume1 = this.EndPointVolume;
     /****************************************************/
@@ -55,21 +26,21 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_STRING_INVOKE(SetVolumeTextV2), newValue);
+      BeginInvoke(new Action<string>(SetVolumeTextV2), newValue);
+      return;
     }
-    else
-    {
-      volumeLabel.Text = newValue;
-    }
+    volumeLabel.Text = newValue;
   }
 
   public void SetTrackBarV2(int newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_INT_INVOKE(SetTrackBarV2), newValue);
+      BeginInvoke(new Action<int>(SetTrackBarV2), newValue);
+      return;
     }
-    else if (!macTrackBar1.bool1)
+
+    if (!macTrackBar1.bool1)
     {
       macTrackBar1.Value = newValue;
     }
@@ -79,24 +50,22 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE(SetMuteV2), newValue);
+      BeginInvoke(new Action<bool>(SetMuteV2), newValue);
+      return;
     }
-    else
-    {
-      muteCheckBox.Checked = newValue;
-    }
+
+    muteCheckBox.Checked = newValue;
   }
 
   public void SetDefaultV2(bool newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE(SetDefaultV2), newValue);
+      BeginInvoke(new Action<bool>(SetDefaultV2), newValue);
+      return;
     }
-    else
-    {
-      defaultCheckBox.Checked = newValue;
-    }
+
+    defaultCheckBox.Checked = newValue;
   }
 
   private void SetData(AudioVolumeNotificationData data)
@@ -111,34 +80,23 @@ public partial class DeviceVolumeControl : UserControl
     defaultCheckBox.Checked = newValue;
   }
 
-  private void timer1_Tick(object sender, EventArgs e)
+  private void guiTimer_Tick(object sender, EventArgs e)
   {
-    float[] array = new float[0];
-    try
-    {
-      array = this._MM_DEVICE_.AudioMeterInformation.PeakValues.ToFloatArray;
-    }
-    catch (Exception)
-    {
-      this.leftLedBar.Value = 0;
-      this.rightLedBar.Value = 0;
-    }
+    float[] array = this.MeterInformation.PeakValues.ToFloatArray;
     /****************************************************/
     if (Enumerable.Count(array) > 0)
     {
       if (Enumerable.Count(array) == 1)
       {
-        this.leftLedBar.Value = (int)Math.Ceiling(array[0] * 15f);
-        this.rightLedBar.Value = (int)Math.Ceiling(array[0] * 15f);
         this.macTrackBar1.SetActualVolume(array[0]);
       }
       else
       {
-        this.leftLedBar.Value = (int)Math.Ceiling(array[0] * 15f);
-        this.rightLedBar.Value = (int)Math.Ceiling(array[1] * 15f);
         this.macTrackBar1.SetActualVolume((array[0] + array[1]) / 2f);
       }
     }
+    /****************************************************/
+    this.UpdateUI();
     /****************************************************/
     this.macTrackBar1.Refresh();
   }
@@ -151,7 +109,7 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (defaultCheckBox.Checked)
     {
-      Class4.Method3(_MM_DEVICE_.ID);
+      Class4.Method3(this.MMDevice.ID);
     }
     else
     {
@@ -161,17 +119,17 @@ public partial class DeviceVolumeControl : UserControl
 
   private void macTrackBar1_OnValueChanged(object sender, decimal e)
   {
-    if (macTrackBar1.bool1)
+    if (macTrackBar1.bool1) // down?
     {
-      this.EndPointVolume.Mute = false;
+      this.Mute = false;
     }
     /****************************************************/
     this.UpdateUI();
   }
 
-  private void muteCheckBox_CheckedChanged(object sender, EventArgs e)
+  private void muteCheckBox_Click(object sender, EventArgs e)
   {
-    this.EndPointVolume.Mute = this.muteCheckBox.Checked;
+    this.Mute = !this.Mute;
     /****************************************************/
     this.UpdateUI();
   }

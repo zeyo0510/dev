@@ -125,23 +125,10 @@ partial class SessionVolumeControl
     this.volumeLabel.UseMnemonic = false;
     // muteCheCheckBox
     this.muteCheCheckBox.Name = "muteCheCheckBox";
-    this.muteCheCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
     this.muteCheCheckBox.AutoSize = true;
-    this.muteCheCheckBox.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-    this.muteCheCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-    this.muteCheCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheCheckBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheCheckBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.muteCheCheckBox.Image = CheVolume.Properties.Resources.mute;
     this.muteCheCheckBox.Location = new System.Drawing.Point(13, 400);
-    this.muteCheCheckBox.Padding = new System.Windows.Forms.Padding(0, 0, 2, 2);
-    this.muteCheCheckBox.Size = new System.Drawing.Size(34, 34);
-    this.muteCheCheckBox.UseVisualStyleBackColor = false;
+    this.muteCheCheckBox.Text = "Mute";
     this.muteCheCheckBox.CheckedChanged += new System.EventHandler(muteCheCheckBox_CheckedChanged);
-    this.muteCheCheckBox.MouseEnter += new System.EventHandler(muteCheCheckBox_MouseEnter);
-    this.muteCheCheckBox.MouseLeave += new System.EventHandler(muteCheCheckBox_MouseLeave);
     // showprocCheCheckBox
     this.showprocCheCheckBox.Name = "showprocCheCheckBox";
     this.showprocCheCheckBox.Appearance = System.Windows.Forms.Appearance.Button;

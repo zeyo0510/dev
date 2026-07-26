@@ -219,9 +219,11 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     process1 = P_1;
     process1.Refresh();
     pidLabel.Text = process1.Id.ToString();
+    /************************************************/
     timer1 = new WinForm::Timer();
     timer1.Tick += timer1_Tick;
     timer1.Interval = 10;
+    /************************************************/
     RegisterAudioSessionNotification(this);
     base.Tag = audioSessionControl21.SessionInstanceIdentifier.ToString();
     bool1 = false;
@@ -735,43 +737,15 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
   }
 
-  private void transfertButton_MouseHover(object sender, EventArgs e)
-  {
-  }
-
   private void muteCheCheckBox_CheckedChanged(object sender, EventArgs e)
   {
-    if (muteCheCheckBox.Checked)
-    {
-      macTrackBar1.TrackerColor = Color.DarkGray;
-      muteCheCheckBox.Image = Resources.muteon;
-      muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-    }
-    else
-    {
-      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      muteCheCheckBox.Image = Resources.mute;
-      muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
-    }
-    /************************************************/
     this.audioSessionControl21.SetMute(this.muteCheCheckBox.Checked);
     /************************************************/
     this.UpdateUI();
   }
 
-  private void muteCheCheckBox_MouseEnter(object sender, EventArgs e)
+  private void transfertButton_MouseHover(object sender, EventArgs e)
   {
-    muteCheCheckBox.Image = Resources.muteon;
-    muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-  }
-
-  private void muteCheCheckBox_MouseLeave(object sender, EventArgs e)
-  {
-    if (!muteCheCheckBox.Checked)
-    {
-      muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
-      muteCheCheckBox.Image = Resources.mute;
-    }
   }
 
   private void transfertButton_MouseLeave(object sender, EventArgs e)

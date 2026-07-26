@@ -10,7 +10,7 @@ partial class DeviceVolumeControl
 {
   private ComModel::IContainer components = null;
   /************************************************/
-  private WinForm::Timer timer1;
+  private WinForm::Timer guiTimer = null;
   /************************************************/
   protected override void Dispose(bool disposing)
   {
@@ -35,8 +35,11 @@ partial class DeviceVolumeControl
     this.leftLedBar       = new();
     this.volumeLabel      = new();
     /************************************************/
-    this.timer1 = new(this.components);
+    this.guiTimer = new(this.components);
     /************************************************/
+    // guiTimer
+    this.guiTimer.Interval = 10;
+    this.guiTimer.Tick += this.guiTimer_Tick;
     // nameLabel
     this.nameLabel.Name = "nameLabel";
     this.nameLabel.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
@@ -121,7 +124,7 @@ partial class DeviceVolumeControl
     this.muteCheckBox.AutoSize = true;
     this.muteCheckBox.Location = new System.Drawing.Point(46, 400);
     this.muteCheckBox.Text = "Mute";
-    this.muteCheckBox.CheckedChanged += new System.EventHandler(muteCheckBox_CheckedChanged);
+    this.muteCheckBox.Click += this.muteCheckBox_Click;
     // DeviceVolumeControl
     base.Name = "DeviceVolumeControl";
     base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);

@@ -4,11 +4,8 @@ namespace CheVolume.Controls;
 /************************************************/
 partial class DeviceVolumeControl
 {
-  private AudioEndpointVolume EndPointVolume
+  public MMDevice MMDevice
   {
-    get
-    {
-      return this.MMDevice.AudioEndpointVolume;
-    }
+    get; private set;
   }
 }
