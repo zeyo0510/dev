@@ -11,6 +11,7 @@ namespace CheVolume.Controls
 
 		private RadioButton radioButton1;
 
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public Image Icon
 		{
 			get
@@ -23,6 +24,7 @@ namespace CheVolume.Controls
 			}
 		}
 
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public new string Text
 		{
 			get

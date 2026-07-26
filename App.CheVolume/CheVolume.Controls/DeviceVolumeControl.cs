@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Windows.Forms;
+using WinForm = System.Windows.Forms;
 using a;
 using AudioCore;
 using CheVolume.Properties;
@@ -19,7 +19,7 @@ namespace CheVolume.Controls
 
 		private delegate void SYS_INT_INVOKE(int A_0);
 
-		private Timer timer1;
+		private WinForm::Timer timer1;
 
 		public MMDevice mmDevice1;
 
@@ -74,7 +74,7 @@ namespace CheVolume.Controls
 			InitializeComponent();
 			mmDevice1 = P_0;
 			bool1 = false;
-			timer1 = new Timer();
+			timer1 = new WinForm::Timer();
 			timer1.Tick += timer1_Tick;
 			timer1.Interval = 10;
 			timer1.Start();

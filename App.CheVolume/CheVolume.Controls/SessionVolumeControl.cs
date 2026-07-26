@@ -13,6 +13,7 @@ using AudioCore2;
 using CheVolume.Properties;
 using EConTech.Windows.MACUI;
 using Microsoft.Win32;
+using WinForm = System.Windows.Forms;
 
 namespace CheVolume.Controls
 {
@@ -66,7 +67,7 @@ namespace CheVolume.Controls
 
 		private delegate void SYS_BOOL_INVOKE(bool A_0);
 
-		private Timer timer1;
+		private WinForm::Timer timer1;
 
 		public AudioSessionControl2 audioSessionControl21;
 
@@ -180,6 +181,7 @@ namespace CheVolume.Controls
 			}
 		}
 
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public bool IsAdvancedUser
 		{
 			get
@@ -258,7 +260,7 @@ namespace CheVolume.Controls
 			process1 = P_1;
 			process1.Refresh();
 			lblPId.Text = process1.Id.ToString();
-			timer1 = new Timer();
+			timer1 = new WinForm::Timer();
 			timer1.Tick += timer1_Tick;
 			timer1.Interval = 10;
 			RegisterAudioSessionNotification(this);

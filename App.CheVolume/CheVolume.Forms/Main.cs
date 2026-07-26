@@ -208,6 +208,7 @@ namespace CheVolume.Forms
 			}
 		}
 
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public bool IsAdvancedUser
 		{
 			get
@@ -300,7 +301,7 @@ namespace CheVolume.Forms
 		{
 			if (base.InvokeRequired)
 			{
-				Invoke((MethodInvoker)delegate
+				Invoke(delegate
 				{
 					UpdateAudio();
 				});
@@ -759,7 +760,7 @@ namespace CheVolume.Forms
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheVolume.Forms.Main));
+			// System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheVolume.Forms.Main));
 			this.lblTitle = new System.Windows.Forms.Label();
 			this.btnEnterLicence = new System.Windows.Forms.Button();
 			this.btnBuy = new System.Windows.Forms.Button();
@@ -967,7 +968,7 @@ namespace CheVolume.Forms
 			base.Controls.Add(this.pictureBox1);
 			base.Controls.Add(this.pnlSessMgr);
 			this.DoubleBuffered = true;
-			base.Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			// base.Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			base.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximumSize = new System.Drawing.Size(3994, 803);
 			this.MinimumSize = new System.Drawing.Size(794, 803);

@@ -89,6 +89,7 @@ namespace EConTech.Windows.MACUI
 
 		[Description("Gets or sets the height and width of the control.")]
 		[Category("Layout")]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public new Size Size
 		{
 			get
@@ -199,6 +200,7 @@ namespace EConTech.Windows.MACUI
 
 		[Category("Appearance")]
 		[Description("Gets or sets the tick's color of the control.")]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public Color TickColor
 		{
 			get
@@ -321,6 +323,7 @@ namespace EConTech.Windows.MACUI
 
 		[Category("Appearance")]
 		[Description("Gets or sets the tracker's size.")]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public Size TrackerSize
 		{
 			get
@@ -389,6 +392,7 @@ namespace EConTech.Windows.MACUI
 
 		[Description("Gets or set tracker's color.")]
 		[Category("Appearance")]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public Color TrackerColor
 		{
 			get
@@ -407,6 +411,7 @@ namespace EConTech.Windows.MACUI
 
 		[Description("The current value for the MACTrackBar, in the range specified by the Minimum and Maximum properties.")]
 		[Category("Behavior")]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public int Value
 		{
 			get
@@ -437,7 +442,8 @@ namespace EConTech.Windows.MACUI
 
 		[Description("The lower bound of the range this MACTrackBar is working with.")]
 		[Category("Behavior")]
-		public int Minimum
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+    public int Minimum
 		{
 			get
 			{
@@ -460,6 +466,7 @@ namespace EConTech.Windows.MACUI
 
 		[Description("The uppper bound of the range this MACTrackBar is working with.")]
 		[Category("Behavior")]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public int Maximum
 		{
 			get
@@ -538,7 +545,8 @@ namespace EConTech.Windows.MACUI
 
 		[Category("Appearance")]
 		[Description("Gets or sets the border color of the control.")]
-		public Color BorderColor
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+    public Color BorderColor
 		{
 			get
 			{
@@ -556,7 +564,8 @@ namespace EConTech.Windows.MACUI
 
 		[Category("Appearance")]
 		[Description("Gets or sets the color of the track line.")]
-		public Color TrackLineColor
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+    public Color TrackLineColor
 		{
 			get
 			{
@@ -574,7 +583,8 @@ namespace EConTech.Windows.MACUI
 
 		[Category("Appearance")]
 		[Description("Gets or sets the color of the Volume line.")]
-		public Color VolumeLineColor
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+    public Color VolumeLineColor
 		{
 			get
 			{

@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -7,6 +8,7 @@ namespace a
 	{
 		private Image _Image;
 
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public Image Image
 		{
 			get

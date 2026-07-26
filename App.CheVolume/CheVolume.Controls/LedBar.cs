@@ -47,6 +47,7 @@ namespace CheVolume.Controls
 
 		private Label led11;
 
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public bool IsMuted
 		{
 			[CompilerGenerated]
