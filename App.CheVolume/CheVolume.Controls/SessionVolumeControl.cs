@@ -409,42 +409,42 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     volumeLabel.Focus();
   }
 
-  private void SetTrackBar(decimal P_0)
+  private void SetTrackBar(decimal newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_DECIMAL_INVOKE(SetTrackBar), P_0);
+      Invoke(new SYS_DECIMAL_INVOKE(SetTrackBar), newValue);
     }
     else
     {
-      macTrackBar1.Value = (int)P_0;
+      macTrackBar1.Value = (int)newValue;
     }
   }
 
-  private void macTrackBar1_ValueChanged(object P_0, decimal P_1)
+  private void macTrackBar1_ValueChanged(object sender, decimal newValue)
   {
     if (!bool1)
     {
       bool1 = true;
       return;
     }
-    if (P_1 > 100m)
+    if (newValue > 100m)
     {
-      P_1 = 100m;
+      newValue = 100m;
     }
-    if (P_1 < 0m)
+    if (newValue < 0m)
     {
-      P_1 = default(decimal);
+      newValue = default(decimal);
     }
     if (macTrackBar1.bool1)
     {
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
       audioSessionControl21.SetMute(false);
-      audioSessionControl21.SetVolume((int)P_1);
+      audioSessionControl21.SetVolume((int)newValue);
     }
     else
     {
-      SetTrackBar(P_1);
+      SetTrackBar(newValue);
     }
   }
 

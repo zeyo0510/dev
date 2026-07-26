@@ -150,6 +150,37 @@ public partial class DeviceVolumeControl : UserControl
     macTrackBar1.Refresh();
   }
 
+  public void SetDefault(bool newValue)
+  {
+    defaultCheckBox.Checked = newValue;
+  }
+
+  private void defaultCheckBox_CheckedChanged(object sender, EventArgs e)
+  {
+  }
+
+  private void defaultCheckBox_MouseClick(object sender, MouseEventArgs e)
+  {
+    if (defaultCheckBox.Checked)
+    {
+      Class4.Method3(mmDevice1.ID);
+    }
+    else
+    {
+      defaultCheckBox.Checked = true;
+    }
+  }
+
+  private void macTrackBar1_OnValueChanged(object sender, decimal e)
+  {
+    macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
+    if (macTrackBar1.bool1)
+    {
+      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
+      EndPointVolume.Mute = false;
+    }
+  }
+
   private void muteCheckBox_CheckedChanged(object sender, EventArgs e)
   {
     if (muteCheckBox.Checked)
@@ -172,41 +203,6 @@ public partial class DeviceVolumeControl : UserControl
     volumeLabel.Focus();
   }
 
-  private void macTrackBar1_OnValueChanged(object sender, decimal e)
-  {
-    macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-    if (macTrackBar1.bool1)
-    {
-      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      EndPointVolume.Mute = false;
-    }
-  }
-
-  public void SetDefault(bool newValue)
-  {
-    defaultCheckBox.Checked = newValue;
-  }
-
-  private void muteCheckBox_MouseUp(object sender, MouseEventArgs e)
-  {
-  }
-
-  private void defaultCheckBox_CheckedChanged(object sender, EventArgs e)
-  {
-  }
-
-  private void defaultCheckBox_MouseClick(object sender, MouseEventArgs e)
-  {
-    if (defaultCheckBox.Checked)
-    {
-      Class4.Method3(mmDevice1.ID);
-    }
-    else
-    {
-      defaultCheckBox.Checked = true;
-    }
-  }
-
   private void muteCheckBox_MouseEnter(object sender, EventArgs e)
   {
     muteCheckBox.Image = Resources.muteon;
@@ -220,5 +216,9 @@ public partial class DeviceVolumeControl : UserControl
       muteCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
       muteCheckBox.Image = Resources.mute;
     }
+  }
+
+  private void muteCheckBox_MouseUp(object sender, MouseEventArgs e)
+  {
   }
 }
