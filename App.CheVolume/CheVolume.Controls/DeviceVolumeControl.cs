@@ -15,8 +15,6 @@ public partial class DeviceVolumeControl : UserControl
     /****************************************************/
     base.Tag = this.MMDevice.ID;
     /****************************************************/
-    this.macTrackBar1.audioEndpointVolume1 = this.EndPointVolume;
-    /****************************************************/
     this.UpdateUI();
     /****************************************************/
     this.EndPointVolume.OnVolumeNotification += SetData;
@@ -40,10 +38,7 @@ public partial class DeviceVolumeControl : UserControl
       return;
     }
 
-    if (!macTrackBar1.bool1)
-    {
-      macTrackBar1.Value = newValue;
-    }
+    this.volumeVTrackBar.Value = newValue;
   }
 
   public void SetMuteV2(bool newValue)
@@ -82,23 +77,7 @@ public partial class DeviceVolumeControl : UserControl
 
   private void guiTimer_Tick(object sender, EventArgs e)
   {
-    float[] array = this.MeterInformation.PeakValues.ToFloatArray;
-    /****************************************************/
-    if (Enumerable.Count(array) > 0)
-    {
-      if (Enumerable.Count(array) == 1)
-      {
-        this.macTrackBar1.SetActualVolume(array[0]);
-      }
-      else
-      {
-        this.macTrackBar1.SetActualVolume((array[0] + array[1]) / 2f);
-      }
-    }
-    /****************************************************/
     this.UpdateUI();
-    /****************************************************/
-    this.macTrackBar1.Refresh();
   }
 
   private void defaultCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -117,12 +96,9 @@ public partial class DeviceVolumeControl : UserControl
     }
   }
 
-  private void macTrackBar1_OnValueChanged(object sender, decimal e)
+  private void volumeVTrackBar_ValueChanged(object sender, EventArgs e)
   {
-    if (macTrackBar1.bool1) // down?
-    {
-      this.Mute = false;
-    }
+    this.Volume =  this.volumeVTrackBar.Value;
     /****************************************************/
     this.UpdateUI();
   }

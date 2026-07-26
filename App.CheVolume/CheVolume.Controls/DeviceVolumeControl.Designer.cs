@@ -31,7 +31,7 @@ partial class DeviceVolumeControl
     this.muteCheckBox     = new();
     this.defaultCheckBox  = new();
     this.rightLedBar      = new();
-    this.macTrackBar1     = new();
+    this.volumeVTrackBar  = new();
     this.leftLedBar       = new();
     this.volumeLabel      = new();
     /************************************************/
@@ -74,32 +74,11 @@ partial class DeviceVolumeControl
     this.leftLedBar.Enabled = true;
     this.leftLedBar.Location = new System.Drawing.Point(13, 132);
     this.leftLedBar.Size = new System.Drawing.Size(5, 225);
-    // macTrackBar1
-    this.macTrackBar1.Name = "macTrackBar1";
-    this.macTrackBar1.BackColor = System.Drawing.Color.Transparent;
-    this.macTrackBar1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-    this.macTrackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-    this.macTrackBar1.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
-    this.macTrackBar1.ForeColor = System.Drawing.Color.FromArgb(123, 125, 123);
-    this.macTrackBar1.IndentHeight = 6;
-    this.macTrackBar1.LargeChange = 1;
-    this.macTrackBar1.Location = new System.Drawing.Point(23, 121);
-    this.macTrackBar1.Maximum = 100;
-    this.macTrackBar1.Minimum = 0;
-    this.macTrackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-    this.macTrackBar1.Size = new System.Drawing.Size(79, 247);
-    this.macTrackBar1.TextTickStyle = System.Windows.Forms.TickStyle.Both;
-    this.macTrackBar1.TickColor = System.Drawing.Color.FromArgb(148, 146, 148);
-    this.macTrackBar1.TickFrequency = 10;
-    this.macTrackBar1.TickHeight = 4;
-    this.macTrackBar1.TickStyle = System.Windows.Forms.TickStyle.Both;
-    this.macTrackBar1.TrackerColor = System.Drawing.Color.FromArgb(255, 110, 0);
-    this.macTrackBar1.TrackerSize = new System.Drawing.Size(16, 16);
-    this.macTrackBar1.TrackLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
-    this.macTrackBar1.VolumeLineColor = System.Drawing.Color.FromArgb(90, 93, 90);
-    this.macTrackBar1.TrackLineHeight = 3;
-    this.macTrackBar1.Value = 0;
-    this.macTrackBar1.ValueChanged += macTrackBar1_OnValueChanged;
+    // volumeVTrackBar
+    this.volumeVTrackBar.Name = "volumeVTrackBar";
+    this.volumeVTrackBar.Location = new System.Drawing.Point(50, 121);
+    this.volumeVTrackBar.Size = new System.Drawing.Size(79, 247);
+    this.volumeVTrackBar.ValueChanged += this.volumeVTrackBar_ValueChanged;
     // rightLedBar
     this.rightLedBar.Name = "rightLedBar";
     this.rightLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -136,7 +115,7 @@ partial class DeviceVolumeControl
     base.Controls.Add(this.defaultCheckBox);
     base.Controls.Add(this.rightLedBar);
     base.Controls.Add(this.volumeLabel);
-    base.Controls.Add(this.macTrackBar1);
+    base.Controls.Add(this.volumeVTrackBar);
     base.Controls.Add(this.muteCheckBox);
     base.Controls.Add(this.nameLabel);
     base.Controls.Add(this.leftLedBar);
@@ -147,7 +126,7 @@ partial class DeviceVolumeControl
   public PictureBox devicePictureBox;
   private CheckBox defaultCheckBox;
   public VLevelMeter leftLedBar;
-  public MACTrackBar macTrackBar1;
+  private VTrackBar volumeVTrackBar;
   public VLevelMeter rightLedBar;
   private Label volumeLabel;
   public CheckBox muteCheckBox;

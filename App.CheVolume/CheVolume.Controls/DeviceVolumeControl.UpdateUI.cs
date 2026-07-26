@@ -13,9 +13,8 @@ partial class DeviceVolumeControl
     // leftLedBar
     this.leftLedBar.Enabled = !this.Mute;
     this.leftLedBar.Value = this.ProcessLeftChannel(this.MeterInformation.PeakValues.ToFloatArray);
-    // macTrackBar1
-    // this.macTrackBar1.Value = this.Volume;
-    this.macTrackBar1.TrackerColor = this.Mute ? Color.Gray : Color.FromArgb(255, 128, 0);
+    // volumeVTrackBar
+    this.volumeVTrackBar.Value = this.Volume;
     // rightLedBar
     this.rightLedBar.Enabled = !this.Mute;
     this.rightLedBar.Value = this.ProcessRightChannel(this.MeterInformation.PeakValues.ToFloatArray);
