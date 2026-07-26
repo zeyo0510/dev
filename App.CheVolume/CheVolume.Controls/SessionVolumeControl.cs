@@ -360,11 +360,11 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (Enumerable.Count(source) > 0)
     {
       float value = Enumerable.Max(source);
-      leftLedBar.SetValue(value);
+      this.leftLedBar.Value = (int)Math.Ceiling(value * 15f);
     }
     else
     {
-      leftLedBar.SetValue(0f);
+      this.leftLedBar.Value = 0;
     }
     if (num1++ < 100)
     {
@@ -386,26 +386,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private void contextMenuStrip1_Closed(object sender, ToolStripDropDownClosedEventArgs e)
   {
-    volumeLabel.Focus();
-  }
-
-  private void muteCheCheckBox_CheckedChanged(object sender, EventArgs e)
-  {
-    if (muteCheCheckBox.Checked)
-    {
-      leftLedBar.IsMuted = true;
-      macTrackBar1.TrackerColor = Color.DarkGray;
-      muteCheCheckBox.Image = Resources.muteon;
-      muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-    }
-    else
-    {
-      leftLedBar.IsMuted = false;
-      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      muteCheCheckBox.Image = Resources.mute;
-      muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
-    }
-    audioSessionControl21.SetMute(muteCheCheckBox.Checked);
     volumeLabel.Focus();
   }
 
@@ -650,13 +630,13 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       if (IsAdvancedUser)
       {
         SetVisible(true);
-        leftLedBar.SetValue(0f);
+        leftLedBar.Value = 0;
         timer1.Start();
       }
       else
       {
         SetVisible(false);
-        leftLedBar.SetValue(0f);
+        this.leftLedBar.Value = 0;
         timer1.Stop();
       }
       break;
@@ -757,6 +737,26 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private void transfertButton_MouseHover(object sender, EventArgs e)
   {
+  }
+
+  private void muteCheCheckBox_CheckedChanged(object sender, EventArgs e)
+  {
+    if (muteCheCheckBox.Checked)
+    {
+      macTrackBar1.TrackerColor = Color.DarkGray;
+      muteCheCheckBox.Image = Resources.muteon;
+      muteCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+    }
+    else
+    {
+      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
+      muteCheCheckBox.Image = Resources.mute;
+      muteCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
+    }
+    /************************************************/
+    this.audioSessionControl21.SetMute(this.muteCheCheckBox.Checked);
+    /************************************************/
+    this.UpdateUI();
   }
 
   private void muteCheCheckBox_MouseEnter(object sender, EventArgs e)

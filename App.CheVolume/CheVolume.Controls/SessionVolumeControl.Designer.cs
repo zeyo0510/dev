@@ -4,6 +4,7 @@ using AudioCore.Interfaces;
 using AudioCore2;
 using CheVolume.Properties;
 using EConTech.Windows.MACUI;
+using JC.CS.Lib.Controls;
 using Microsoft.Win32;
 using System;
 using System.ComponentModel;
@@ -14,12 +15,13 @@ using System.Management;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using WinForm = System.Windows.Forms;
+using ComModel = System.ComponentModel;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
 partial class SessionVolumeControl
 {
-  private IContainer components;
+  private ComModel::IContainer components;
   /************************************************/
   private WinForm::Timer timer1;
   /************************************************/
@@ -35,21 +37,22 @@ partial class SessionVolumeControl
   /************************************************/
   private void InitializeComponent()
   {
-    this.components = new System.ComponentModel.Container();
-    this.nameLabel = new System.Windows.Forms.Label();
-    this.volumeLabel = new System.Windows.Forms.Label();
-    this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-    this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-    this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-    this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-    this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-    this.pidLabel = new System.Windows.Forms.Label();
-    this.transfertButton = new System.Windows.Forms.Button();
-    this.sessionPictureBox = new System.Windows.Forms.PictureBox();
-    this.showprocCheCheckBox = new CheVolume.Controls.CheCheckBox();
-    this.macTrackBar1 = new EConTech.Windows.MACUI.MACTrackBar();
-    this.muteCheCheckBox = new CheVolume.Controls.CheCheckBox();
-    this.leftLedBar = new CheVolume.Controls.LedBar();
+    this.components = new ComModel::Container();
+    /************************************************/
+    this.nameLabel           = new();
+    this.volumeLabel         = new();
+    this.contextMenuStrip1   = new();
+    this.toolStripMenuItem1  = new();
+    this.toolStripMenuItem2  = new();
+    this.toolStripMenuItem3  = new();
+    this.toolStripMenuItem4  = new();
+    this.pidLabel            = new();
+    this.transfertButton     = new();
+    this.sessionPictureBox   = new();
+    this.showprocCheCheckBox = new();
+    this.macTrackBar1        = new();
+    this.muteCheCheckBox     = new();
+    this.leftLedBar          = new();
     /************************************************/
     // nameLabel
     this.nameLabel.Name = "nameLabel";
@@ -81,7 +84,7 @@ partial class SessionVolumeControl
     // leftLedBar
     this.leftLedBar.Name = "leftLedBar";
     this.leftLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-    this.leftLedBar.IsMuted = false;
+    this.leftLedBar.Enabled = true;
     this.leftLedBar.Location = new System.Drawing.Point(22, 132);
     this.leftLedBar.Size = new System.Drawing.Size(5, 225);
     // macTrackBar1
@@ -226,11 +229,11 @@ partial class SessionVolumeControl
   public Label nameLabel;
   public PictureBox sessionPictureBox;
   private Label pidLabel;
-  public LedBar leftLedBar;
+  public VLevelMeter leftLedBar;
   public MACTrackBar macTrackBar1;
   private Label volumeLabel;
-  public CheCheckBox muteCheCheckBox;
-  public CheCheckBox showprocCheCheckBox;
+  public CheckBox muteCheCheckBox;
+  public CheckBox showprocCheCheckBox;
   public Button transfertButton;
   private ContextMenuStrip contextMenuStrip1;
   private ToolStripMenuItem toolStripMenuItem1;
