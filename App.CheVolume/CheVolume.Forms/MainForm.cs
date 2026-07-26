@@ -99,7 +99,7 @@ public partial class MainForm : Form
     }
   }
 
-  public MMDevice defaultdev
+  public MMDevice DefaultDevice
   {
     get
     {
@@ -107,13 +107,13 @@ public partial class MainForm : Form
     }
   }
 
-  public MMDevice selecteddev
+  public MMDevice SelectedDevice
   {
     get
     {
       if (str2 == null)
       {
-        return defaultdev;
+        return DefaultDevice;
       }
       return Class4.mmDeviceEnumerator1.GetDeviceV2(str2);
     }
@@ -165,7 +165,6 @@ public partial class MainForm : Form
     ImageHelper.SetImageSize(dpiX);
     xmlSettings1 = new XMLSettings();
     xmlSettings1.Load();
-    advuserCheckBox.Checked = IsAdvancedUser;
     MMNotificationClient mMNotificationClient = mmNotificationClient1;
     mMNotificationClient.DefaultChanged = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient.DefaultChanged, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged));
     MMNotificationClient mMNotificationClient2 = mmNotificationClient1;
@@ -208,7 +207,7 @@ public partial class MainForm : Form
       });
       return;
     }
-    string text = defaultdev.ID.ToString();
+    string text = DefaultDevice.ID.ToString();
     mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
     int count = mmDeviceCollection1.Count;
     for (int i = 0; i < count; i++)
@@ -373,30 +372,12 @@ public partial class MainForm : Form
   {
   }
 
-  private void topmostCheckBox_CheckedChanged(object P_0, EventArgs P_1)
+  private void advancedToolStripMenuItem_Click(object sender, EventArgs e)
   {
-    if (topmostCheckBox.Checked)
-    {
-      topmostCheckBox.Image = Resources.PinnedOn;
-    }
-    else
-    {
-      topmostCheckBox.Image = Resources.Pinned;
-    }
-    base.TopMost = topmostCheckBox.Checked;
-  }
+    this.advancedToolStripMenuItem.Checked = !this.advancedToolStripMenuItem.Checked;
 
-  private void advuserCheckBox_CheckedChanged(object P_0, EventArgs P_1)
-  {
-    if (advuserCheckBox.Checked)
-    {
-      advuserCheckBox.Image = Resources.AdvancedUserOn;
-    }
-    else
-    {
-      advuserCheckBox.Image = Resources.AdvancedUser;
-    }
-    IsAdvancedUser = advuserCheckBox.Checked;
+    IsAdvancedUser = this.advancedToolStripMenuItem.Checked;
+
     InvokeStateChanged();
     if (!bool1)
     {
@@ -404,12 +385,12 @@ public partial class MainForm : Form
     }
   }
 
-  private void settingButton_Click(object P_0, EventArgs P_1)
+  private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
   {
     Process.Start("control.exe", "mmsys.cpl,, 2");
   }
 
-  private void closeButton_Click(object P_0, EventArgs P_1)
+  private void exitToolStripMenuItem_Click(object sender, EventArgs e)
   {
     Environment.Exit(0);
   }
