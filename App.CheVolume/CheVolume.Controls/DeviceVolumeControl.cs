@@ -1,10 +1,8 @@
-using System.ComponentModel;
-using System.Runtime.InteropServices;
 using a;
 using AudioCore;
 using CheVolume.Properties;
-using EConTech.Windows.MACUI;
-using WinForm = System.Windows.Forms;
+using JC.CS.Lib.Extensions;
+using System.Runtime.InteropServices;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
@@ -16,15 +14,7 @@ public partial class DeviceVolumeControl : UserControl
 
   private delegate void SYS_INT_INVOKE(int A_0);
 
-  public MMDevice mmDevice1;
-
-  private AudioEndpointVolume EndPointVolume
-  {
-    get
-    {
-      return mmDevice1.AudioEndpointVolume;
-    }
-  }
+  public MMDevice _MM_DEVICE_;
 
   private int VolumeValue
   {
@@ -44,25 +34,29 @@ public partial class DeviceVolumeControl : UserControl
 
   public DeviceVolumeControl(MMDevice P_0)
   {
-    InitializeComponent();
-    mmDevice1 = P_0;
-    timer1 = new WinForm::Timer();
+    this.InitializeComponent();
+    /****************************************************/
+    this._MM_DEVICE_ = P_0;
+    /****************************************************/
     timer1.Tick += timer1_Tick;
     timer1.Interval = 10;
     timer1.Start();
-    base.Tag = mmDevice1.ID;
-    nameLabel.Text = P_0.FriendlyName;
-    muteCheckBox.Checked = EndPointVolume.Mute;
-    macTrackBar1.Value = EndPointVolume.Volume;
-    macTrackBar1.audioEndpointVolume1 = EndPointVolume;
-    volumeLabel.Text = EndPointVolume.Volume.ToString();
-    Icon icon = ImageHelper.Method1(mmDevice1.IconPath);
-    if (icon.Height > 0)
+    /****************************************************/
+    base.Tag = this._MM_DEVICE_.ID;
+    /****************************************************/
+    this.nameLabel.Text = P_0.FriendlyName;
+    this.muteCheckBox.Checked = this.EndPointVolume.Mute;
+    this.macTrackBar1.Value = this.EndPointVolume.Volume;
+    this.macTrackBar1.audioEndpointVolume1 = this.EndPointVolume;
+    this.volumeLabel.Text = this.EndPointVolume.Volume.ToString();
+    /****************************************************/
+    (string path, int resourceID) = this._MM_DEVICE_.IconPath.ParseResourceString();
+    using (Icon icon = path.GetResourceIcon(resourceID, true))
     {
-      this.devicePictureBox.Image = ResizeImage(icon.ToBitmap(), new Size(32, 32));
+      this.devicePictureBox.Image = icon?.ToBitmap();
     }
-    _DestroyIcon(icon.Handle);
-    EndPointVolume.OnVolumeNotification += SetData;
+    /****************************************************/
+    this.EndPointVolume.OnVolumeNotification += SetData;
   }
 
   public void SetVolumeTextV2(string newValue)
@@ -120,39 +114,41 @@ public partial class DeviceVolumeControl : UserControl
     SetVolumeTextV2(Math.Ceiling(P_0.MasterVolume * 100f).ToString());
   }
 
+  public void SetDefault(bool newValue)
+  {
+    defaultCheckBox.Checked = newValue;
+  }
+
   private void timer1_Tick(object sender, EventArgs e)
   {
     float[] array = new float[0];
     try
     {
-      array = mmDevice1.AudioMeterInformation.PeakValues.ToFloatArray;
+      array = this._MM_DEVICE_.AudioMeterInformation.PeakValues.ToFloatArray;
     }
     catch (Exception)
     {
       leftLedBar.SetValue(0f);
       rightLedBar.SetValue(0f);
     }
+    /****************************************************/
     if (Enumerable.Count(array) > 0)
     {
       if (Enumerable.Count(array) == 1)
       {
-        leftLedBar.SetValue(array[0]);
-        rightLedBar.SetValue(array[0]);
-        macTrackBar1.SetActualVolume(array[0]);
+        this.leftLedBar.SetValue(array[0]);
+        this.rightLedBar.SetValue(array[0]);
+        this.macTrackBar1.SetActualVolume(array[0]);
       }
       else
       {
-        leftLedBar.SetValue(array[0]);
-        rightLedBar.SetValue(array[1]);
-        macTrackBar1.SetActualVolume((array[0] + array[1]) / 2f);
+        this.leftLedBar.SetValue(array[0]);
+        this.rightLedBar.SetValue(array[1]);
+        this.macTrackBar1.SetActualVolume((array[0] + array[1]) / 2f);
       }
     }
-    macTrackBar1.Refresh();
-  }
-
-  public void SetDefault(bool newValue)
-  {
-    defaultCheckBox.Checked = newValue;
+    /****************************************************/
+    this.macTrackBar1.Refresh();
   }
 
   private void defaultCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -163,7 +159,7 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (defaultCheckBox.Checked)
     {
-      Class4.Method3(mmDevice1.ID);
+      Class4.Method3(_MM_DEVICE_.ID);
     }
     else
     {
@@ -216,9 +212,5 @@ public partial class DeviceVolumeControl : UserControl
       muteCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
       muteCheckBox.Image = Resources.mute;
     }
-  }
-
-  private void muteCheckBox_MouseUp(object sender, MouseEventArgs e)
-  {
   }
 }

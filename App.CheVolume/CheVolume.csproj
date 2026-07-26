@@ -13,4 +13,8 @@
     <PackageReference Include="System.ServiceModel.NetNamedPipe" Version="10.0.652802" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\JC.CS.Lib\JC.CS.Lib.csproj" />
+  </ItemGroup>
+
 </Project>

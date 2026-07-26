@@ -1,12 +1,13 @@
 using EConTech.Windows.MACUI;
 using System.ComponentModel;
+using ComModel = System.ComponentModel;
 using WinForm = System.Windows.Forms;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
 partial class DeviceVolumeControl
 {
-  private IContainer components;
+  private ComModel::IContainer components = null;
   /************************************************/
   private WinForm::Timer timer1;
   /************************************************/
@@ -22,14 +23,18 @@ partial class DeviceVolumeControl
   /************************************************/
   private void InitializeComponent()
   {
+    this.components = new ComModel::Container();
+    /************************************************/
     this.devicePictureBox = new();
     this.nameLabel        = new();
-    this.muteCheckBox  = new();
+    this.muteCheckBox     = new();
     this.defaultCheckBox  = new();
     this.rightLedBar      = new();
     this.macTrackBar1     = new();
     this.leftLedBar       = new();
     this.volumeLabel      = new();
+    /************************************************/
+    this.timer1 = new(this.components);
     /************************************************/
     // nameLabel
     this.nameLabel.Name = "nameLabel";
@@ -127,7 +132,6 @@ partial class DeviceVolumeControl
     this.muteCheckBox.CheckedChanged += new System.EventHandler(muteCheckBox_CheckedChanged);
     this.muteCheckBox.MouseEnter += new System.EventHandler(muteCheckBox_MouseEnter);
     this.muteCheckBox.MouseLeave += new System.EventHandler(muteCheckBox_MouseLeave);
-    this.muteCheckBox.MouseUp += new System.Windows.Forms.MouseEventHandler(muteCheckBox_MouseUp);
     // DeviceVolumeControl
     base.Name = "DeviceVolumeControl";
     base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
