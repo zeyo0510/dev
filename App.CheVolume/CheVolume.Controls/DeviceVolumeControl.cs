@@ -44,17 +44,9 @@ public partial class DeviceVolumeControl : UserControl
     /****************************************************/
     base.Tag = this._MM_DEVICE_.ID;
     /****************************************************/
-    this.nameLabel.Text = P_0.FriendlyName;
-    this.muteCheckBox.Checked = this.EndPointVolume.Mute;
-    this.macTrackBar1.Value = this.EndPointVolume.Volume;
     this.macTrackBar1.audioEndpointVolume1 = this.EndPointVolume;
-    this.volumeLabel.Text = this.EndPointVolume.Volume.ToString();
     /****************************************************/
-    (string path, int resourceID) = this._MM_DEVICE_.IconPath.ParseResourceString();
-    using (Icon icon = path.GetResourceIcon(resourceID, true))
-    {
-      this.devicePictureBox.Image = icon?.ToBitmap();
-    }
+    this.UpdateUI();
     /****************************************************/
     this.EndPointVolume.OnVolumeNotification += SetData;
   }
@@ -107,11 +99,11 @@ public partial class DeviceVolumeControl : UserControl
     }
   }
 
-  private void SetData(AudioVolumeNotificationData P_0)
+  private void SetData(AudioVolumeNotificationData data)
   {
-    SetTrackBarV2(int.Parse(Math.Ceiling(P_0.MasterVolume * 100f).ToString()));
-    SetMuteV2(P_0.Muted);
-    SetVolumeTextV2(Math.Ceiling(P_0.MasterVolume * 100f).ToString());
+    SetTrackBarV2(int.Parse(Math.Ceiling(data.MasterVolume * 100f).ToString()));
+    SetMuteV2(data.Muted);
+    SetVolumeTextV2(Math.Ceiling(data.MasterVolume * 100f).ToString());
   }
 
   public void SetDefault(bool newValue)
@@ -169,48 +161,18 @@ public partial class DeviceVolumeControl : UserControl
 
   private void macTrackBar1_OnValueChanged(object sender, decimal e)
   {
-    macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
     if (macTrackBar1.bool1)
     {
-      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      EndPointVolume.Mute = false;
+      this.EndPointVolume.Mute = false;
     }
+    /****************************************************/
+    this.UpdateUI();
   }
 
   private void muteCheckBox_CheckedChanged(object sender, EventArgs e)
   {
-    if (muteCheckBox.Checked)
-    {
-      this.leftLedBar.Enabled = false;
-      this.rightLedBar.Enabled = false;
-      macTrackBar1.TrackerColor = Color.Gray;
-      muteCheckBox.Image = Resources.muteon;
-      muteCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-    }
-    else
-    {
-      this.leftLedBar.Enabled = true;
-      this.rightLedBar.Enabled = true;
-      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      muteCheckBox.Image = Resources.mute;
-      muteCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
-    }
-    EndPointVolume.Mute = muteCheckBox.Checked;
-    volumeLabel.Focus();
-  }
-
-  private void muteCheckBox_MouseEnter(object sender, EventArgs e)
-  {
-    muteCheckBox.Image = Resources.muteon;
-    muteCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-  }
-
-  private void muteCheckBox_MouseLeave(object sender, EventArgs e)
-  {
-    if (!muteCheckBox.Checked)
-    {
-      muteCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
-      muteCheckBox.Image = Resources.mute;
-    }
+    this.EndPointVolume.Mute = this.muteCheckBox.Checked;
+    /****************************************************/
+    this.UpdateUI();
   }
 }

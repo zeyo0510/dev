@@ -118,23 +118,10 @@ partial class DeviceVolumeControl
     this.volumeLabel.UseMnemonic = false;
     // muteCheckBox
     this.muteCheckBox.Name = "muteCheckBox";
-    this.muteCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
     this.muteCheckBox.AutoSize = true;
-    this.muteCheckBox.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
-    this.muteCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-    this.muteCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheckBox.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheckBox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.muteCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.muteCheckBox.Image = CheVolume.Properties.Resources.mute;
     this.muteCheckBox.Location = new System.Drawing.Point(46, 400);
-    this.muteCheckBox.Padding = new System.Windows.Forms.Padding(0, 0, 2, 2);
-    this.muteCheckBox.Size = new System.Drawing.Size(34, 34);
-    this.muteCheckBox.UseVisualStyleBackColor = false;
+    this.muteCheckBox.Text = "Mute";
     this.muteCheckBox.CheckedChanged += new System.EventHandler(muteCheckBox_CheckedChanged);
-    this.muteCheckBox.MouseEnter += new System.EventHandler(muteCheckBox_MouseEnter);
-    this.muteCheckBox.MouseLeave += new System.EventHandler(muteCheckBox_MouseLeave);
     // DeviceVolumeControl
     base.Name = "DeviceVolumeControl";
     base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
