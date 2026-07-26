@@ -73,9 +73,6 @@ namespace B
 			}
 		}
 
-		[DllImport("user32.dll", EntryPoint = "SendMessage")]
-		public static extern int _SendMessage(IntPtr P_0, int P_1, int P_2, int P_3);
-
 		public FlowLayoutPanel1(MMDevice P_0)
 		{
 			InitializeComponent();
