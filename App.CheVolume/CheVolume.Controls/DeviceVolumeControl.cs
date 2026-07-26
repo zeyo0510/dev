@@ -53,65 +53,65 @@ public partial class DeviceVolumeControl : UserControl
     timer1.Interval = 10;
     timer1.Start();
     base.Tag = mmDevice1.ID;
-    lblProcessName.Text = P_0.FriendlyName;
-    btnMute.Checked = EndPointVolume.Mute;
+    nameLabel.Text = P_0.FriendlyName;
+    muteCheckBox.Checked = EndPointVolume.Mute;
     macTrackBar1.Value = EndPointVolume.Volume;
     macTrackBar1.audioEndpointVolume1 = EndPointVolume;
-    lblVolume.Text = EndPointVolume.Volume.ToString();
+    volumeLabel.Text = EndPointVolume.Volume.ToString();
     Icon icon = ImageHelper.Method1(mmDevice1.IconPath);
     if (icon.Height > 0)
     {
-      IconBox.Image = ResizeImage(icon.ToBitmap(), new Size(32, 32));
+      this.devicePictureBox.Image = ResizeImage(icon.ToBitmap(), new Size(32, 32));
     }
     _DestroyIcon(icon.Handle);
     EndPointVolume.OnVolumeNotification += SetData;
   }
 
-  public void SetVolumeTextV2(string P_0)
+  public void SetVolumeTextV2(string newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_STRING_INVOKE(SetVolumeTextV2), P_0);
+      Invoke(new SYS_STRING_INVOKE(SetVolumeTextV2), newValue);
     }
     else
     {
-      lblVolume.Text = P_0;
+      volumeLabel.Text = newValue;
     }
   }
 
-  public void SetTrackBarV2(int P_0)
+  public void SetTrackBarV2(int newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_INT_INVOKE(SetTrackBarV2), P_0);
+      Invoke(new SYS_INT_INVOKE(SetTrackBarV2), newValue);
     }
     else if (!macTrackBar1.bool1)
     {
-      macTrackBar1.Value = P_0;
+      macTrackBar1.Value = newValue;
     }
   }
 
-  public void SetMuteV2(bool P_0)
+  public void SetMuteV2(bool newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE(SetMuteV2), P_0);
+      Invoke(new SYS_BOOL_INVOKE(SetMuteV2), newValue);
     }
     else
     {
-      btnMute.Checked = P_0;
+      muteCheckBox.Checked = newValue;
     }
   }
 
-  public void SetDefaultV2(bool P_0)
+  public void SetDefaultV2(bool newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE(SetDefaultV2), P_0);
+      Invoke(new SYS_BOOL_INVOKE(SetDefaultV2), newValue);
     }
     else
     {
-      chkSetDefault.Checked = P_0;
+      defaultCheckBox.Checked = newValue;
     }
   }
 
@@ -131,55 +131,47 @@ public partial class DeviceVolumeControl : UserControl
     }
     catch (Exception)
     {
-      lBarLeft.SetValue(0f);
-      lBarRight.SetValue(0f);
+      leftLedBar.SetValue(0f);
+      rightLedBar.SetValue(0f);
     }
     if (Enumerable.Count(array) > 0)
     {
       if (Enumerable.Count(array) == 1)
       {
-        lBarLeft.SetValue(array[0]);
-        lBarRight.SetValue(array[0]);
+        leftLedBar.SetValue(array[0]);
+        rightLedBar.SetValue(array[0]);
         macTrackBar1.SetActualVolume(array[0]);
       }
       else
       {
-        lBarLeft.SetValue(array[0]);
-        lBarRight.SetValue(array[1]);
+        leftLedBar.SetValue(array[0]);
+        rightLedBar.SetValue(array[1]);
         macTrackBar1.SetActualVolume((array[0] + array[1]) / 2f);
       }
     }
     macTrackBar1.Refresh();
   }
 
-  private void lblProcessName_Click(object sender, EventArgs e)
+  private void muteCheckBox_CheckedChanged(object sender, EventArgs e)
   {
-  }
-
-  private void btnMute_CheckedChanged(object sender, EventArgs e)
-  {
-    if (btnMute.Checked)
+    if (muteCheckBox.Checked)
     {
-      lBarLeft.IsMuted = true;
-      lBarRight.IsMuted = true;
+      leftLedBar.IsMuted = true;
+      rightLedBar.IsMuted = true;
       macTrackBar1.TrackerColor = Color.Gray;
-      btnMute.Image = Resources.muteon;
-      btnMute.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+      muteCheckBox.Image = Resources.muteon;
+      muteCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
     }
     else
     {
-      lBarLeft.IsMuted = false;
-      lBarRight.IsMuted = false;
+      leftLedBar.IsMuted = false;
+      rightLedBar.IsMuted = false;
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      btnMute.Image = Resources.mute;
-      btnMute.FlatAppearance.BorderColor = Color.DarkGray;
+      muteCheckBox.Image = Resources.mute;
+      muteCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
     }
-    EndPointVolume.Mute = btnMute.Checked;
-    lblVolume.Focus();
-  }
-
-  private void lBarLeft_Load(object sender, EventArgs e)
-  {
+    EndPointVolume.Mute = muteCheckBox.Checked;
+    volumeLabel.Focus();
   }
 
   private void macTrackBar1_OnValueChanged(object sender, decimal e)
@@ -194,41 +186,41 @@ public partial class DeviceVolumeControl : UserControl
 
   public void SetDefault(bool newValue)
   {
-    chkSetDefault.Checked = newValue;
+    defaultCheckBox.Checked = newValue;
   }
 
-  private void btnMute_MouseUp(object sender, MouseEventArgs e)
+  private void muteCheckBox_MouseUp(object sender, MouseEventArgs e)
   {
   }
 
-  private void chkSetDefault_CheckedChanged(object sender, EventArgs e)
+  private void defaultCheckBox_CheckedChanged(object sender, EventArgs e)
   {
   }
 
-  private void chkSetDefault_MouseClick(object sender, MouseEventArgs e)
+  private void defaultCheckBox_MouseClick(object sender, MouseEventArgs e)
   {
-    if (chkSetDefault.Checked)
+    if (defaultCheckBox.Checked)
     {
       Class4.Method3(mmDevice1.ID);
     }
     else
     {
-      chkSetDefault.Checked = true;
+      defaultCheckBox.Checked = true;
     }
   }
 
-  private void btnMute_MouseEnter(object sender, EventArgs e)
+  private void muteCheckBox_MouseEnter(object sender, EventArgs e)
   {
-    btnMute.Image = Resources.muteon;
-    btnMute.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
+    muteCheckBox.Image = Resources.muteon;
+    muteCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
   }
 
-  private void btnMute_MouseLeave(object sender, EventArgs e)
+  private void muteCheckBox_MouseLeave(object sender, EventArgs e)
   {
-    if (!btnMute.Checked)
+    if (!muteCheckBox.Checked)
     {
-      btnMute.FlatAppearance.BorderColor = Color.DarkGray;
-      btnMute.Image = Resources.mute;
+      muteCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
+      muteCheckBox.Image = Resources.mute;
     }
   }
 }

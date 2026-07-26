@@ -49,9 +49,6 @@ partial class SessionVolumeControl
     this.macTrackBar1 = new EConTech.Windows.MACUI.MACTrackBar();
     this.btnMute = new CheVolume.Controls.CheCheckBox();
     this.lBarLeft = new CheVolume.Controls.LedBar();
-    this.contextMenuStrip1.SuspendLayout();
-    ((System.ComponentModel.ISupportInitialize)this.IconBox).BeginInit();
-    base.SuspendLayout();
     /************************************************/
     // lblProcessName
     this.lblProcessName.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, 0);
@@ -249,11 +246,6 @@ partial class SessionVolumeControl
     base.Name = "SessionVolumeControl";
     base.Size = new System.Drawing.Size(100, 485);
     base.Load += new System.EventHandler(_OnLoad);
-    /************************************************/
-    this.contextMenuStrip1.ResumeLayout(false);
-    ((System.ComponentModel.ISupportInitialize)this.IconBox).EndInit();
-    base.ResumeLayout(false);
-    base.PerformLayout();
   }
   /************************************************/
   public PictureBox IconBox;

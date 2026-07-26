@@ -577,35 +577,35 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     contextMenuStrip1.Show(btnTransfert, new Point(-contextMenuStrip1.Size.Width / 2 + btnTransfert.Width / 2, -contextMenuStrip1.Size.Height - 5));
   }
 
-  public void SetMute(bool P_0)
+  public void SetMute(bool newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE_V2(SetMute), P_0);
+      Invoke(new SYS_BOOL_INVOKE_V2(SetMute), newValue);
     }
     else
     {
-      btnMute.Checked = P_0;
+      btnMute.Checked = newValue;
     }
   }
 
-  public void SetVolumeText(string P_0)
+  public void SetVolumeText(string newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_STRING_INVOKE(SetVolumeText), P_0);
+      Invoke(new SYS_STRING_INVOKE(SetVolumeText), newValue);
     }
     else
     {
-      lblVolume.Text = P_0;
+      lblVolume.Text = newValue;
     }
   }
 
-  public void RefreshProcess(string P_0)
+  public void RefreshProcess(string newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_STRING_INVOKE(RefreshProcess), P_0);
+      Invoke(new SYS_STRING_INVOKE(RefreshProcess), newValue);
     }
     else
     {
@@ -614,15 +614,15 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
   }
 
-  public void SetVolume(float P_0)
+  public void SetVolume(float newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_FLOAT_INVOKE(SetVolume), P_0);
+      Invoke(new SYS_FLOAT_INVOKE(SetVolume), newValue);
     }
     else if (!macTrackBar1.bool1)
     {
-      macTrackBar1.Value = int.Parse(Math.Ceiling(P_0 * 100f).ToString());
+      macTrackBar1.Value = int.Parse(Math.Ceiling(newValue * 100f).ToString());
     }
   }
 
@@ -637,27 +637,27 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     base.Parent.Controls.Remove(this);
   }
 
-  private void SetVisible(bool P_0)
+  private void SetVisible(bool newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE(SetVisible), P_0);
+      Invoke(new SYS_BOOL_INVOKE(SetVisible), newValue);
     }
     else
     {
       Method1();
-      base.Visible = P_0;
+      base.Visible = newValue;
     }
   }
 
-  public void OnStateChanged2(AudioSessionState P_0)
+  public void OnStateChanged2(AudioSessionState newValue)
   {
     if (base.InvokeRequired)
     {
-      Invoke(new OnStateChanged2_SYS(OnStateChanged2), P_0);
+      Invoke(new OnStateChanged2_SYS(OnStateChanged2), newValue);
       return;
     }
-    switch (P_0)
+    switch (newValue)
     {
     case AudioSessionState.AudioSessionStateActive:
       SetVisible(true);
