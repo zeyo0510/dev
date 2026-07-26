@@ -150,15 +150,11 @@ public class MainForm : Form
 
   private AudioSessionManagerPanel pnlSessMgr;
 
-  private Button button3;
-
-  private Button btnUpdate;
+  private Button settingButton;
 
   private CheCheckBox advuserCheckBox;
 
   private CheCheckBox topmostCheckBox;
-
-  private ToolTip toolTip1;
 
   private Button closeButton;
 
@@ -230,10 +226,6 @@ public class MainForm : Form
 
   [DllImport("advapi32.dll", EntryPoint = "GetTokenInformation", SetLastError = true)]
   private static extern bool _GetTokenInformation(IntPtr P_0, Enum1 P_1, IntPtr P_2, int P_3, out int P_4);
-
-  private void Method1()
-  {
-  }
 
   public MainForm()
   {
@@ -380,10 +372,6 @@ public class MainForm : Form
     InvokeStateChanged();
   }
 
-  private static void Method3(IAsyncResult P_0)
-  {
-  }
-
   private void mmNotificationClient1_PropertyValueChanged(string P_0, PROPERTYKEY P_1)
   {
   }
@@ -440,10 +428,6 @@ public class MainForm : Form
     {
       registryKey.CreateSubKey("Data");
     }
-  }
-
-  private void Method2()
-  {
   }
 
   private void Obj_Method1(object P_0, MouseEventArgs P_1)
@@ -521,84 +505,9 @@ public class MainForm : Form
     Environment.Exit(0);
   }
 
-  private void button3_Click(object P_0, EventArgs P_1)
+  private void settingButton_Click(object P_0, EventArgs P_1)
   {
     Process.Start("control.exe", "mmsys.cpl,, 2");
-  }
-
-  public bool CheckUpdate(unknown6 P_0)
-  {
-    if (P_0.bool1 || P_0.str1.Length == 0 || P_0.ver1 == null)
-    {
-      MessageBox.Show(this, "Error while looking for the newest version", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-      return false;
-    }
-    Version version = Assembly.GetExecutingAssembly().GetName().Version;
-    if (version.CompareTo(P_0.ver1) >= 0)
-    {
-      MessageBox.Show(this, "No new version detected", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-      return false;
-    }
-    string text = string.Format("New version found!\nYour version: {0}.\nNewest version: {1}.", version, P_0.ver1);
-    return DialogResult.Yes == MessageBox.Show(this, text, "Check for updates", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-  }
-
-  public void RunUpdate(unknown4 P_0)
-  {
-    if (P_0.bool1)
-    {
-      MessageBox.Show(this, "Error while downloading the installer", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-      return;
-    }
-    if (DialogResult.Yes != MessageBox.Show(this, "Do you know to install the newest version?", "Check for updates", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
-    {
-      try
-      {
-        File.Delete(P_0.str1);
-        return;
-      }
-      catch
-      {
-        return;
-      }
-    }
-    try
-    {
-      Process.Start(P_0.str1);
-      Close();
-      Environment.Exit(0);
-    }
-    catch (Exception)
-    {
-      MessageBox.Show(this, "Error while running the installer.", "Check for updates", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-      try
-      {
-        File.Delete(P_0.str1);
-      }
-      catch
-      {
-      }
-    }
-  }
-
-  private void Obj_Method7(object P_0, ControlEventArgs P_1)
-  {
-  }
-
-  private void Obj_Method8(object P_0, UICuesEventArgs P_1)
-  {
-  }
-
-  private void _OnMouseMove(object P_0, MouseEventArgs P_1)
-  {
-  }
-
-  private void Obj_Method11(object P_0, EventArgs P_1)
-  {
-  }
-
-  private void Obj_Method14(object P_0, EventArgs P_1)
-  {
   }
 
   private void advuserCheckBox_CheckedChanged(object P_0, EventArgs P_1)
@@ -656,18 +565,6 @@ public class MainForm : Form
     base.TopMost = topmostCheckBox.Checked;
   }
 
-  private void Obj_Method12(object P_0, MouseEventArgs P_1)
-  {
-  }
-
-  private void Obj_Method9(object P_0, CancelEventArgs P_1)
-  {
-  }
-
-  private void toolTip1_Popup(object P_0, PopupEventArgs P_1)
-  {
-  }
-
   private void closeButton_Click(object P_0, EventArgs P_1)
   {
     Environment.Exit(0);
@@ -686,51 +583,31 @@ public class MainForm : Form
   {
     this.components = new System.ComponentModel.Container();
     // System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheVolume.Forms.Main));
-    this.btnUpdate = new System.Windows.Forms.Button();
-    this.button3 = new System.Windows.Forms.Button();
+    this.settingButton = new System.Windows.Forms.Button();
     this.topmostCheckBox = new CheVolume.Controls.CheCheckBox();
     this.advuserCheckBox = new CheVolume.Controls.CheCheckBox();
     this.pnlSessMgr = new a.AudioSessionManagerPanel();
-    this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
     this.closeButton = new System.Windows.Forms.Button();
     base.SuspendLayout();
-    // btnUpdate
-    this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-    this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-    this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-    this.btnUpdate.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.btnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.btnUpdate.Font = new System.Drawing.Font("Verdana", 8.25f, System.Drawing.FontStyle.Bold);
-    this.btnUpdate.Image = CheVolume.Properties.Resources.CheckUpdate;
-    this.btnUpdate.Location = new System.Drawing.Point(870, 15);
-    this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-    this.btnUpdate.Name = "btnUpdate";
-    this.btnUpdate.Padding = new System.Windows.Forms.Padding(0, 0, 3, 2);
-    this.btnUpdate.Size = new System.Drawing.Size(45, 42);
-    this.btnUpdate.TabIndex = 9;
-    this.btnUpdate.UseVisualStyleBackColor = false;
-    // button3
-    this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-    this.button3.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-    this.button3.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-    this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
-    this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.button3.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-    this.button3.Image = CheVolume.Properties.Resources.options;
-    this.button3.Location = new System.Drawing.Point(923, 15);
-    this.button3.Margin = new System.Windows.Forms.Padding(4);
-    this.button3.Name = "button3";
-    this.button3.Padding = new System.Windows.Forms.Padding(0, 0, 3, 2);
-    this.button3.Size = new System.Drawing.Size(45, 42);
-    this.button3.TabIndex = 8;
-    this.button3.UseVisualStyleBackColor = false;
-    this.button3.Click += new System.EventHandler(button3_Click);
+    // settingButton
+    this.settingButton.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+    this.settingButton.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+    this.settingButton.Cursor = System.Windows.Forms.Cursors.Hand;
+    this.settingButton.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+    this.settingButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+    this.settingButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+    this.settingButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(225, 225, 225);
+    this.settingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+    this.settingButton.Font = new System.Drawing.Font("Verdana", 10f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+    this.settingButton.Image = CheVolume.Properties.Resources.options;
+    this.settingButton.Location = new System.Drawing.Point(923, 15);
+    this.settingButton.Margin = new System.Windows.Forms.Padding(4);
+    this.settingButton.Name = "settingButton";
+    this.settingButton.Padding = new System.Windows.Forms.Padding(0, 0, 3, 2);
+    this.settingButton.Size = new System.Drawing.Size(45, 42);
+    this.settingButton.TabIndex = 8;
+    this.settingButton.UseVisualStyleBackColor = false;
+    this.settingButton.Click += new System.EventHandler(settingButton_Click);
     // topmostCheckBox
     this.topmostCheckBox.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
     this.topmostCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
@@ -785,7 +662,6 @@ public class MainForm : Form
     this.pnlSessMgr.WrapContents = false;
     this.pnlSessMgr.SizeChanged += new System.EventHandler(pnlSessMgr_SizeChanged);
     this.pnlSessMgr.ControlAdded += new System.Windows.Forms.ControlEventHandler(pnlSessMgr_ControlAdded);
-    this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(toolTip1_Popup);
     // closeButton
     this.closeButton.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
     this.closeButton.BackColor = System.Drawing.Color.FromArgb(225, 225, 225);
@@ -812,8 +688,7 @@ public class MainForm : Form
     base.Controls.Add(this.closeButton);
     base.Controls.Add(this.topmostCheckBox);
     base.Controls.Add(this.advuserCheckBox);
-    base.Controls.Add(this.btnUpdate);
-    base.Controls.Add(this.button3);
+    base.Controls.Add(this.settingButton);
     base.Controls.Add(this.pnlSessMgr);
     this.DoubleBuffered = true;
     // base.Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
@@ -825,7 +700,6 @@ public class MainForm : Form
     this.Text = "CheVolume";
     base.FormClosing += new System.Windows.Forms.FormClosingEventHandler(_OnFormClosing);
     base.ResizeEnd += new System.EventHandler(_OnResizeEnd);
-    base.MouseMove += new System.Windows.Forms.MouseEventHandler(_OnMouseMove);
     base.ResumeLayout(false);
     base.PerformLayout();
   }
