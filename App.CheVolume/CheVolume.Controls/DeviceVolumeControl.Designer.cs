@@ -1,4 +1,5 @@
 using EConTech.Windows.MACUI;
+using JC.CS.Lib.Controls;
 using System.ComponentModel;
 using ComModel = System.ComponentModel;
 using WinForm = System.Windows.Forms;
@@ -66,7 +67,8 @@ partial class DeviceVolumeControl
     // leftLedBar
     this.leftLedBar.Name = "leftLedBar";
     this.leftLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-    this.leftLedBar.IsMuted = false;
+    // this.leftLedBar.IsMuted = false;
+    this.leftLedBar.Enabled = true;
     this.leftLedBar.Location = new System.Drawing.Point(13, 132);
     this.leftLedBar.Size = new System.Drawing.Size(5, 225);
     // macTrackBar1
@@ -98,7 +100,8 @@ partial class DeviceVolumeControl
     // rightLedBar
     this.rightLedBar.Name = "rightLedBar";
     this.rightLedBar.BackColor = System.Drawing.SystemColors.ScrollBar;
-    this.rightLedBar.IsMuted = false;
+    // this.rightLedBar.IsMuted = false;
+    this.rightLedBar.Enabled = true;
     this.rightLedBar.Location = new System.Drawing.Point(108, 132);
     this.rightLedBar.Size = new System.Drawing.Size(5, 225);
     // volumeLabel
@@ -153,9 +156,9 @@ partial class DeviceVolumeControl
   public Label nameLabel;
   public PictureBox devicePictureBox;
   private CheckBox defaultCheckBox;
-  public LedBar leftLedBar;
+  public VLevelMeter leftLedBar;
   public MACTrackBar macTrackBar1;
-  public LedBar rightLedBar;
+  public VLevelMeter rightLedBar;
   private Label volumeLabel;
   public CheckBox muteCheckBox;
 }

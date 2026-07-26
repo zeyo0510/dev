@@ -128,22 +128,22 @@ public partial class DeviceVolumeControl : UserControl
     }
     catch (Exception)
     {
-      leftLedBar.SetValue(0f);
-      rightLedBar.SetValue(0f);
+      this.leftLedBar.Value = 0;
+      this.rightLedBar.Value = 0;
     }
     /****************************************************/
     if (Enumerable.Count(array) > 0)
     {
       if (Enumerable.Count(array) == 1)
       {
-        this.leftLedBar.SetValue(array[0]);
-        this.rightLedBar.SetValue(array[0]);
+        this.leftLedBar.Value = (int)Math.Ceiling(array[0] * 15f);
+        this.rightLedBar.Value = (int)Math.Ceiling(array[0] * 15f);
         this.macTrackBar1.SetActualVolume(array[0]);
       }
       else
       {
-        this.leftLedBar.SetValue(array[0]);
-        this.rightLedBar.SetValue(array[1]);
+        this.leftLedBar.Value = (int)Math.Ceiling(array[0] * 15f);
+        this.rightLedBar.Value = (int)Math.Ceiling(array[1] * 15f);
         this.macTrackBar1.SetActualVolume((array[0] + array[1]) / 2f);
       }
     }
@@ -181,16 +181,16 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (muteCheckBox.Checked)
     {
-      leftLedBar.IsMuted = true;
-      rightLedBar.IsMuted = true;
+      this.leftLedBar.Enabled = false;
+      this.rightLedBar.Enabled = false;
       macTrackBar1.TrackerColor = Color.Gray;
       muteCheckBox.Image = Resources.muteon;
       muteCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
     }
     else
     {
-      leftLedBar.IsMuted = false;
-      rightLedBar.IsMuted = false;
+      this.leftLedBar.Enabled = true;
+      this.rightLedBar.Enabled = true;
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
       muteCheckBox.Image = Resources.mute;
       muteCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
