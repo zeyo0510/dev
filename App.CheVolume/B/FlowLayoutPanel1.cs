@@ -73,11 +73,11 @@ namespace B
 			}
 		}
 
-		public FlowLayoutPanel1(MMDevice P_0)
+		public FlowLayoutPanel1(MMDevice _MM_DEVICE_)
 		{
 			InitializeComponent();
 			mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
-			mmDevice1 = P_0;
+			mmDevice1 = _MM_DEVICE_;
 			audioSessionManager21 = mmDevice1.AudioSessionManager;
 			audioSessionManager21.RegisterSessionNotification(this);
 			base.Size = new Size(0, 0);
@@ -95,23 +95,23 @@ namespace B
 			return 0;
 		}
 
-		private void Add(AudioSessionControl2 P_0)
+		private void Add(AudioSessionControl2 _SESSION_CONTROL_)
 		{
 			if (base.InvokeRequired)
 			{
-				BeginInvoke(new SYS_Invoke_FlowLayoutPanel(Add), P_0);
+				BeginInvoke(new SYS_Invoke_FlowLayoutPanel(Add), _SESSION_CONTROL_);
 				return;
 			}
 			Process process = null;
 			try
 			{
-				process = Process.GetProcessById((int)P_0.ProcessID);
+				process = Process.GetProcessById((int)_SESSION_CONTROL_.ProcessID);
 			}
 			catch (Exception)
 			{
 				process = null;
 			}
-			AudioSessionState audioSessionState = P_0.GetState();
+			AudioSessionState audioSessionState = _SESSION_CONTROL_.GetState();
 			if (process == null)
 			{
 				return;
@@ -122,16 +122,16 @@ namespace B
 			{
 				sessionVolumeControl = list.Find(delegate(SessionVolumeControl A_P_0)
 				{
-					return string.Compare(A_P_0.Tag.ToString().ToLower(), P_0.SessionInstanceIdentifier.ToLower()) == 0;
+					return string.Compare(A_P_0.Tag.ToString().ToLower(), _SESSION_CONTROL_.SessionInstanceIdentifier.ToLower()) == 0;
 				});
 			}
 			if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
 			{
-				sessionVolumeControl = new SessionVolumeControl(P_0, process);
-				int value = int.Parse(Math.Ceiling(P_0.SetVolume() * 100f).ToString());
-				sessionVolumeControl.mmDeviceCollection1 = mmDeviceCollection1;
-				sessionVolumeControl.mmDevice1 = mmDevice1;
-				sessionVolumeControl.muteCheCheckBox.Checked = P_0.GetMute();
+				sessionVolumeControl = new SessionVolumeControl(_SESSION_CONTROL_, process);
+				int value = int.Parse(Math.Ceiling(_SESSION_CONTROL_.SetVolume() * 100f).ToString());
+				sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
+				sessionVolumeControl.MMDevice = mmDevice1;
+				sessionVolumeControl.muteCheCheckBox.Checked = _SESSION_CONTROL_.GetMute();
 				sessionVolumeControl.macTrackBar1.Value = value;
 				base.Controls.Add(sessionVolumeControl);
 			}

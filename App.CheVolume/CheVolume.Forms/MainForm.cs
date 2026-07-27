@@ -279,8 +279,8 @@ public partial class MainForm : Form
         {
           sessionVolumeControl = new SessionVolumeControl(audioSessionControl21, process);
           int value = int.Parse(Math.Ceiling(audioSessionControl21.SetVolume() * 100f).ToString());
-          sessionVolumeControl.mmDeviceCollection1 = mmDeviceCollection1;
-          sessionVolumeControl.mmDevice1 = mMDevice;
+          sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
+          sessionVolumeControl.MMDevice = mMDevice;
           sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.GetMute();
           sessionVolumeControl.macTrackBar1.Value = value;
           flowLayoutPanel.Controls.Add(sessionVolumeControl);
@@ -358,7 +358,7 @@ public partial class MainForm : Form
     {
       foreach (SessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(item.Controls)))
       {
-        item2.OnStateChanged2(item2.audioSessionControl21.GetState());
+        item2.OnStateChanged2(item2.SessionControl.GetState());
       }
     }
   }

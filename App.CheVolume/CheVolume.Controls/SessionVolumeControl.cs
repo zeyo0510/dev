@@ -62,12 +62,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private delegate void SYS_BOOL_INVOKE(bool A_0);
 
-  public AudioSessionControl2 audioSessionControl21;
-
-  public MMDevice mmDevice1;
-
-  public MMDeviceCollection mmDeviceCollection1;
-
   public Process process1;
 
   public string str1;
@@ -79,14 +73,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
   private readonly Enum1 enum1;
 
   private int num1;
-
-  private int VolumeValue
-  {
-    get
-    {
-      return macTrackBar1.Value;
-    }
-  }
 
   public string[] ListOfProcessesLocked
   {
@@ -211,27 +197,32 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     return false;
   }
 
-  public SessionVolumeControl(AudioSessionControl2 P_0, Process P_1)
+  public SessionVolumeControl(AudioSessionControl2 _SESSION_CONTROL_, Process P_1)
   {
+    this.SessionControl = _SESSION_CONTROL_;
+    /************************************************/
     audioPolicyConfigService1 = new AudioPolicyConfigService(Flow);
-    InitializeComponent();
-    audioSessionControl21 = P_0;
+    /************************************************/
+    this.InitializeComponent();
+    /************************************************/
     process1 = P_1;
     process1.Refresh();
     pidLabel.Text = process1.Id.ToString();
     /************************************************/
-    timer1 = new WinForm::Timer();
-    timer1.Tick += timer1_Tick;
-    timer1.Interval = 10;
+    guiTimer = new WinForm::Timer();
+    guiTimer.Tick += guiTimer_Tick;
+    guiTimer.Interval = 10;
     /************************************************/
     RegisterAudioSessionNotification(this);
-    base.Tag = audioSessionControl21.SessionInstanceIdentifier.ToString();
+    base.Tag = this.SessionControl.SessionInstanceIdentifier.ToString();
     bool1 = false;
     base.Margin = new Padding(0);
     string audioSetivceDLL = GetAudioSetivceDLL(process1);
+    /************************************************/
     Icon icon = ExtractIcon(audioSetivceDLL, Application.ExecutablePath);
     sessionPictureBox.Image = icon.ToBitmap();
     _DestroyIcon(icon.Handle);
+    /************************************************/
     nameLabel.Text = ((process1.Id == 0) ? "System Sounds" : process1.MainWindowTitle);
     str1 = process1.ProcessName;
     if (process1.Id == 0)
@@ -240,7 +231,18 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       showprocCheCheckBox.Visible = false;
       muteCheCheckBox.Location = new Point(base.Size.Width / 2 - muteCheCheckBox.Width / 2, muteCheCheckBox.Location.Y);
     }
-    OnStateChanged2(audioSessionControl21.GetState());
+    OnStateChanged2(SessionControl.GetState());
+  }
+
+  ~SessionVolumeControl()
+  {
+    try
+    {
+      RemoveSessionNotif();
+    }
+    catch (Exception)
+    {
+    }
   }
 
   private void process1_Exited(object sender, EventArgs e)
@@ -265,17 +267,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
   }
 
-  ~SessionVolumeControl()
-  {
-    try
-    {
-      RemoveSessionNotif();
-    }
-    catch (Exception)
-    {
-    }
-  }
-
   private void _OnLoad(object sender, EventArgs e)
   {
     if (process1.Id != 0)
@@ -293,12 +284,12 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   public void RegisterAudioSessionNotification(IAudioSessionEvents P_0)
   {
-    audioSessionControl21.RegisterAudioSessionNotification(P_0);
+    SessionControl.RegisterAudioSessionNotification(P_0);
   }
 
   public void UnregisterAudioSessionNotification(IAudioSessionEvents P_0)
   {
-    audioSessionControl21.UnregisterAudioSessionNotification(P_0);
+    SessionControl.UnregisterAudioSessionNotification(P_0);
   }
 
   private static void StaticMethod1(IAsyncResult P_0)
@@ -349,12 +340,12 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     return 0;
   }
 
-  private void timer1_Tick(object sender, EventArgs e)
+  private void guiTimer_Tick(object sender, EventArgs e)
   {
     float[] source = new float[1];
     try
     {
-      source = audioSessionControl21.GetChannelsPeakValues();
+      source = SessionControl.GetChannelsPeakValues();
     }
     catch (Exception)
     {
@@ -385,12 +376,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
     num1 = 0;
   }
-
-  private void contextMenuStrip1_Closed(object sender, ToolStripDropDownClosedEventArgs e)
-  {
-    volumeLabel.Focus();
-  }
-
   private void SetTrackBar(decimal newValue)
   {
     if (base.InvokeRequired)
@@ -421,77 +406,13 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (macTrackBar1.bool1)
     {
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      audioSessionControl21.SetMute(false);
-      audioSessionControl21.SetVolume((int)newValue);
+      SessionControl.SetMute(false);
+      SessionControl.SetVolume((int)newValue);
     }
     else
     {
       SetTrackBar(newValue);
     }
-  }
-
-  private void transfertButton_Click2()
-  {
-    contextMenuStrip1.Items.Clear();
-    mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
-    int count = mmDeviceCollection1.Count;
-    ToolStripMenuItem toolStripMenuItem = new ToolStripMenuItem();
-    toolStripMenuItem.Text = "Move '" + process1.ProcessName + "' to  : ";
-    toolStripMenuItem.Image = sessionPictureBox.Image;
-    toolStripMenuItem.ForeColor = Color.FromArgb(50, 50, 50);
-    toolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
-    contextMenuStrip1.Items.Add(toolStripMenuItem);
-    contextMenuStrip1.Items.Add(new ToolStripSeparator());
-    int num = toolStripMenuItem.Width;
-    for (int i = 0; i < count; i++)
-    {
-      ToolStripMenuItem toolStripMenuItem2 = new ToolStripMenuItem();
-      toolStripMenuItem2.Text = mmDeviceCollection1[i].FriendlyName ?? "";
-      Icon icon = ImageHelper.Method1(mmDeviceCollection1[i].IconPath);
-      if (icon.Height > 0)
-      {
-        toolStripMenuItem2.Image = icon.ToBitmap();
-      }
-      _DestroyIcon(icon.Handle);
-      toolStripMenuItem2.Tag = mmDeviceCollection1[i].ID;
-      toolStripMenuItem2.ForeColor = Color.FromArgb(50, 50, 50);
-      toolStripMenuItem2.MouseEnter += toolStripMenuItem_MouseEnter;
-      toolStripMenuItem2.Click += toolStripMenuItem2_Click;
-      toolStripMenuItem2.MouseEnter += toolStripMenuItem_MouseEnter;
-      toolStripMenuItem2.MouseLeave += toolStripMenuItem_MouseLeave;
-      contextMenuStrip1.Items.Add(toolStripMenuItem2);
-      contextMenuStrip1.Refresh();
-    }
-    ToolStripSeparator toolStripSeparator = new ToolStripSeparator();
-    contextMenuStrip1.Items.Add(toolStripSeparator);
-    try
-    {
-      if (Enumerable.Contains(InjectedProcesses, process1.ProcessName))
-      {
-        ToolStripMenuItem toolStripMenuItem3 = new ToolStripMenuItem();
-        toolStripMenuItem3.Text = "Return to Default";
-        toolStripMenuItem3.Tag = base.Tag.ToString();
-        toolStripMenuItem3.Click += toolStripMenuItem3_Click;
-        toolStripMenuItem3.MouseEnter += toolStripMenuItem_MouseEnter;
-        toolStripMenuItem3.MouseLeave += toolStripMenuItem_MouseLeave;
-        toolStripMenuItem3.Image = Resources.CheV;
-        toolStripMenuItem3.ForeColor = Color.FromArgb(50, 50, 50);
-        contextMenuStrip1.Items.Add(toolStripMenuItem3);
-        if (toolStripMenuItem3.Width > num)
-        {
-          num = toolStripMenuItem3.Width;
-        }
-      }
-      else
-      {
-        toolStripSeparator.Margin = new Padding(0, 0, 5, 5);
-      }
-    }
-    catch (Exception)
-    {
-    }
-    int left = contextMenuStrip1.Width / 2 - toolStripMenuItem.Width + contextMenuStrip1.Items.Count * 2 - 1;
-    toolStripMenuItem.Margin = new Padding(left, 5, 0, 5);
   }
 
   private void toolStripMenuItem_MouseLeave(object sender, EventArgs e)
@@ -514,13 +435,13 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
       registryKey.DeleteValue(str1);
     }
-    int count = mmDeviceCollection1.Count;
+    int count = MMDeviceCollection.Count;
     audioPolicyConfigService1.SetDefaultEndPoint(null, process1.Id);
   }
 
-  public void toolStripMenuItem2_Click(object P_0, EventArgs P_1)
+  public void toolStripMenuItem2_Click(object sender, EventArgs e)
   {
-    ToolStripMenuItem obj = (ToolStripMenuItem)P_0;
+    ToolStripMenuItem obj = (ToolStripMenuItem)sender;
     string text = process1.Id.ToString();
     string text2 = obj.Tag.ToString();
     CreateRegistry(text, text2);
@@ -538,9 +459,89 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private void transfertButton_Click(object sender, EventArgs e)
   {
-    transfertButton_Click2();
-    transfertButton.PointToScreen(new Point(transfertButton.Left, transfertButton.Bottom));
-    contextMenuStrip1.Show(transfertButton, new Point(-contextMenuStrip1.Size.Width / 2 + transfertButton.Width / 2, -contextMenuStrip1.Size.Height - 5));
+    this.contextMenuStrip1.Items.Clear();
+    /************************************************/
+    ToolStripMenuItem toolStripMenuItem = new();
+    {
+      toolStripMenuItem.Text = "Move '" + process1.ProcessName + "' to  : ";
+      toolStripMenuItem.Image = sessionPictureBox.Image;
+      toolStripMenuItem.ForeColor = Color.FromArgb(50, 50, 50);
+      toolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
+    }
+
+    int width = toolStripMenuItem.Width;
+    /************************************************/
+    this.contextMenuStrip1.Items.Add(toolStripMenuItem);
+
+
+
+
+
+    this.contextMenuStrip1.Items.Add(new ToolStripSeparator());
+
+
+
+
+
+    this.MMDeviceCollection = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+    /************************************************/
+    int count = this.MMDeviceCollection.Count;
+    /************************************************/
+    for (int i = 0; i < count; i++)
+    {
+      ToolStripMenuItem toolStripMenuItem2 = new();
+      {
+        toolStripMenuItem2.Text = MMDeviceCollection[i].FriendlyName ?? "";
+      }
+      Icon icon = ImageHelper.Method1(MMDeviceCollection[i].IconPath);
+      if (icon.Height > 0)
+      {
+        toolStripMenuItem2.Image = icon.ToBitmap();
+        _DestroyIcon(icon.Handle);
+        toolStripMenuItem2.Tag = MMDeviceCollection[i].ID;
+        toolStripMenuItem2.ForeColor = Color.FromArgb(50, 50, 50);
+        toolStripMenuItem2.MouseEnter += toolStripMenuItem_MouseEnter;
+        toolStripMenuItem2.Click += toolStripMenuItem2_Click;
+        toolStripMenuItem2.MouseEnter += toolStripMenuItem_MouseEnter;
+        toolStripMenuItem2.MouseLeave += toolStripMenuItem_MouseLeave;
+      }
+      contextMenuStrip1.Items.Add(toolStripMenuItem2);
+      contextMenuStrip1.Refresh();
+    }
+    
+    ToolStripSeparator toolStripSeparator = new();
+    contextMenuStrip1.Items.Add(toolStripSeparator);
+
+    try
+    {
+      if (Enumerable.Contains(InjectedProcesses, process1.ProcessName))
+      {
+        ToolStripMenuItem toolStripMenuItem3 = new ToolStripMenuItem();
+        {
+          toolStripMenuItem3.Text = "Return to Default";
+          toolStripMenuItem3.Tag = base.Tag.ToString();
+          toolStripMenuItem3.Click += toolStripMenuItem3_Click;
+          toolStripMenuItem3.MouseEnter += toolStripMenuItem_MouseEnter;
+          toolStripMenuItem3.MouseLeave += toolStripMenuItem_MouseLeave;
+          toolStripMenuItem3.Image = Resources.CheV;
+          toolStripMenuItem3.ForeColor = Color.FromArgb(50, 50, 50);
+        }
+        contextMenuStrip1.Items.Add(toolStripMenuItem3);
+        if (toolStripMenuItem3.Width > width)
+        {
+          width = toolStripMenuItem3.Width;
+        }
+      }
+      else
+      {
+        toolStripSeparator.Margin = new Padding(0, 0, 5, 5);
+      }
+    }
+    catch (Exception)
+    {
+    }
+
+    this.contextMenuStrip1.Show(transfertButton, new Point(-contextMenuStrip1.Size.Width / 2 + transfertButton.Width / 2, -contextMenuStrip1.Size.Height - 5));
   }
 
   public void SetMute(bool newValue)
@@ -626,20 +627,20 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
     case AudioSessionState.AudioSessionStateActive:
       SetVisible(true);
-      timer1.Start();
+      guiTimer.Start();
       break;
     case AudioSessionState.AudioSessionStateInactive:
       if (IsAdvancedUser)
       {
         SetVisible(true);
         leftLedBar.Value = 0;
-        timer1.Start();
+        guiTimer.Start();
       }
       else
       {
         SetVisible(false);
         this.leftLedBar.Value = 0;
-        timer1.Stop();
+        guiTimer.Stop();
       }
       break;
     case AudioSessionState.AudioSessionStateExpired:
@@ -651,7 +652,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       catch (Exception)
       {
       }
-      timer1.Stop();
+      guiTimer.Stop();
       break;
     }
   }
@@ -739,7 +740,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private void muteCheCheckBox_CheckedChanged(object sender, EventArgs e)
   {
-    this.audioSessionControl21.SetMute(this.muteCheCheckBox.Checked);
+    this.SessionControl.SetMute(this.muteCheCheckBox.Checked);
     /************************************************/
     this.UpdateUI();
   }

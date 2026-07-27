@@ -21,9 +21,9 @@ namespace CheVolume.Controls;
 /************************************************/
 partial class SessionVolumeControl
 {
-  private ComModel::IContainer components;
+  private ComModel::IContainer components = null;
   /************************************************/
-  private WinForm::Timer timer1;
+  private WinForm::Timer guiTimer = null;
   /************************************************/
   protected override void Dispose(bool disposing)
   {
@@ -42,10 +42,6 @@ partial class SessionVolumeControl
     this.nameLabel           = new();
     this.volumeLabel         = new();
     this.contextMenuStrip1   = new();
-    this.toolStripMenuItem1  = new();
-    this.toolStripMenuItem2  = new();
-    this.toolStripMenuItem3  = new();
-    this.toolStripMenuItem4  = new();
     this.pidLabel            = new();
     this.transfertButton     = new();
     this.sessionPictureBox   = new();
@@ -170,29 +166,10 @@ partial class SessionVolumeControl
     this.transfertButton.MouseLeave += new System.EventHandler(transfertButton_MouseLeave);
     this.transfertButton.MouseHover += new System.EventHandler(transfertButton_MouseHover);
     // contextMenuStrip1
+    this.contextMenuStrip1.Name = "contextMenuStrip1";
     this.contextMenuStrip1.Font = new System.Drawing.Font("Verdana", 11f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
     this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-    this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[4] { this.toolStripMenuItem1, this.toolStripMenuItem2, this.toolStripMenuItem3, this.toolStripMenuItem4 });
-    this.contextMenuStrip1.Name = "contextMenuStrip1";
     this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-    this.contextMenuStrip1.Size = new System.Drawing.Size(204, 114);
-    this.contextMenuStrip1.Closed += new System.Windows.Forms.ToolStripDropDownClosedEventHandler(contextMenuStrip1_Closed);
-    // toolStripMenuItem1
-    this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-    this.toolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
-    this.toolStripMenuItem1.Text = "toolStripMenuItem1";
-    // toolStripMenuItem2
-    this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-    this.toolStripMenuItem2.Size = new System.Drawing.Size(203, 22);
-    this.toolStripMenuItem2.Text = "toolStripMenuItem2";
-    // toolStripMenuItem3
-    this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-    this.toolStripMenuItem3.Size = new System.Drawing.Size(203, 22);
-    this.toolStripMenuItem3.Text = "toolStripMenuItem3";
-    // toolStripMenuItem4
-    this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-    this.toolStripMenuItem4.Size = new System.Drawing.Size(203, 22);
-    this.toolStripMenuItem4.Text = "toolStripMenuItem4";
     // SessionVolumeControl
     base.Name = "SessionVolumeControl";
     base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
@@ -223,8 +200,4 @@ partial class SessionVolumeControl
   public CheckBox showprocCheCheckBox;
   public Button transfertButton;
   private ContextMenuStrip contextMenuStrip1;
-  private ToolStripMenuItem toolStripMenuItem1;
-  private ToolStripMenuItem toolStripMenuItem2;
-  private ToolStripMenuItem toolStripMenuItem3;
-  private ToolStripMenuItem toolStripMenuItem4;
 }

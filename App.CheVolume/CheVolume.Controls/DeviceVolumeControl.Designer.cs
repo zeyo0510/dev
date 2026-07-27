@@ -143,12 +143,12 @@ partial class DeviceVolumeControl
     }
   }
   /************************************************/
-  public Label nameLabel;
-  public PictureBox devicePictureBox;
-  private CheckBox defaultCheckBox;
-  public VLevelMeter leftLedBar;
-  private VTrackBar volumeVTrackBar;
-  public VLevelMeter rightLedBar;
-  private Label volumeLabel;
-  public CheckBox muteCheckBox;
+  private Label nameLabel = null;
+  private PictureBox devicePictureBox = null;
+  private CheckBox defaultCheckBox = null;
+  private VLevelMeter leftLedBar = null;
+  private VTrackBar volumeVTrackBar = null;
+  private VLevelMeter rightLedBar = null;
+  private Label volumeLabel = null;
+  private CheckBox muteCheckBox = null;
 }
