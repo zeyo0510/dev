@@ -7,9 +7,9 @@ partial class DeviceVolumeControl
   public void UpdateUI()
   {
     // nameLabel
-    this.nameLabel.Text = this.MMDevice.FriendlyName;
+    // this.nameLabel.Text = this.MMDevice.FriendlyName;
     // devicePictureBox
-    this.devicePictureBox.Image = this.ProcessIcon(this.MMDevice.IconPath);
+    // this.devicePictureBox.Image = this.ProcessIcon(this.MMDevice.IconPath);
     // leftLedBar
     this.leftLedBar.Enabled = !this.Mute;
     this.leftLedBar.Value = this.ProcessLeftChannel(this.MeterInformation.PeakValues.ToFloatArray);

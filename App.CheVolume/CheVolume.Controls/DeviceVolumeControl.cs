@@ -7,11 +7,9 @@ public partial class DeviceVolumeControl : UserControl
 {
   public DeviceVolumeControl(MMDevice _MM_DEVICE_)
   {
-    this.InitializeComponent();
-    /****************************************************/
     this.MMDevice = _MM_DEVICE_;
     /****************************************************/
-    this.guiTimer.Start();
+    this.InitializeComponent();
     /****************************************************/
     base.Tag = this.MMDevice.ID;
     /****************************************************/
@@ -20,54 +18,33 @@ public partial class DeviceVolumeControl : UserControl
     this.EndPointVolume.OnVolumeNotification += SetData;
   }
 
-  public void SetVolumeTextV2(string newValue)
+  public void SetVolume(int newValue)
   {
     if (base.InvokeRequired)
     {
-      BeginInvoke(new Action<string>(SetVolumeTextV2), newValue);
+      BeginInvoke(new Action<int>(SetVolume), newValue);
       return;
     }
-    volumeLabel.Text = newValue;
+
+    // this.volumeVTrackBar.Value = newValue;
+    // this.volumeLabel.Text = newValue.ToString();
   }
 
-  public void SetTrackBarV2(int newValue)
+  public void SetMute(bool newValue)
   {
     if (base.InvokeRequired)
     {
-      BeginInvoke(new Action<int>(SetTrackBarV2), newValue);
+      BeginInvoke(new Action<bool>(SetMute), newValue);
       return;
     }
 
-    this.volumeVTrackBar.Value = newValue;
-  }
-
-  public void SetMuteV2(bool newValue)
-  {
-    if (base.InvokeRequired)
-    {
-      BeginInvoke(new Action<bool>(SetMuteV2), newValue);
-      return;
-    }
-
-    muteCheckBox.Checked = newValue;
-  }
-
-  public void SetDefaultV2(bool newValue)
-  {
-    if (base.InvokeRequired)
-    {
-      BeginInvoke(new Action<bool>(SetDefaultV2), newValue);
-      return;
-    }
-
-    defaultCheckBox.Checked = newValue;
+    // muteCheckBox.Checked = newValue;
   }
 
   private void SetData(AudioVolumeNotificationData data)
   {
-    SetTrackBarV2(int.Parse(Math.Ceiling(data.MasterVolume * 100f).ToString()));
-    SetMuteV2(data.Muted);
-    SetVolumeTextV2(Math.Ceiling(data.MasterVolume * 100f).ToString());
+    SetVolume(int.Parse(Math.Ceiling(data.MasterVolume * 100f).ToString()));
+    SetMute(data.Muted);
   }
 
   public void SetDefault(bool newValue)
@@ -78,10 +55,6 @@ public partial class DeviceVolumeControl : UserControl
   private void guiTimer_Tick(object sender, EventArgs e)
   {
     this.UpdateUI();
-  }
-
-  private void defaultCheckBox_CheckedChanged(object sender, EventArgs e)
-  {
   }
 
   private void defaultCheckBox_MouseClick(object sender, MouseEventArgs e)
