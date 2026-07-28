@@ -111,7 +111,7 @@ namespace B
 			{
 				process = null;
 			}
-			AudioSessionState audioSessionState = _SESSION_CONTROL_.GetState();
+			AudioSessionState audioSessionState = _SESSION_CONTROL_.State;
 			if (process == null)
 			{
 				return;

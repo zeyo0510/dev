@@ -231,7 +231,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       showprocCheCheckBox.Visible = false;
       muteCheCheckBox.Location = new Point(base.Size.Width / 2 - muteCheCheckBox.Width / 2, muteCheCheckBox.Location.Y);
     }
-    OnStateChanged2(SessionControl.GetState());
+    OnStateChanged2(SessionControl.State);
   }
 
   ~SessionVolumeControl()
@@ -345,7 +345,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     float[] source = new float[1];
     try
     {
-      source = SessionControl.GetChannelsPeakValues();
+      source = SessionControl.ChannelsPeakValues;
     }
     catch (Exception)
     {

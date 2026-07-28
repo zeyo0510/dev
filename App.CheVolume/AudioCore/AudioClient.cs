@@ -14,14 +14,18 @@ namespace AudioCore
 
     private AudioCaptureClient _AudioCaptureClient_;
 
+    internal AudioClient(IAudioClient _AUDIO_CLIENT_)
+    {
+      _AudioClient_ = _AUDIO_CLIENT_;
+    }
+
     public WaveFormat MixFormat
     {
       get
       {
         if (_MixFormat == null)
         {
-          IntPtr intPtr;
-          Marshal.ThrowExceptionForHR(_AudioClient_.GetMixFormat(out intPtr));
+          Marshal.ThrowExceptionForHR(_AudioClient_.GetMixFormat(out nint intPtr));
           WaveFormat waveFormat = WaveFormat.MarshalFromPtr(intPtr);
           Marshal.FreeCoTaskMem(intPtr);
           _MixFormat = waveFormat;
@@ -35,9 +39,9 @@ namespace AudioCore
     {
       get
       {
-        uint result;
-        Marshal.ThrowExceptionForHR(_AudioClient_.GetBufferSize(out result));
-        return (int)result;
+        Marshal.ThrowExceptionForHR(_AudioClient_.GetBufferSize(out uint retValue));
+				/************************************************/
+        return (int)retValue;
       }
     }
 
@@ -53,9 +57,9 @@ namespace AudioCore
     {
       get
       {
-        int result;
-        Marshal.ThrowExceptionForHR(_AudioClient_.GetCurrentPadding(out result));
-        return result;
+        Marshal.ThrowExceptionForHR(_AudioClient_.GetCurrentPadding(out int retValue));
+				/************************************************/
+        return retValue;
       }
     }
 
@@ -63,10 +67,9 @@ namespace AudioCore
     {
       get
       {
-        long result;
-        long num;
-        Marshal.ThrowExceptionForHR(_AudioClient_.GetDevicePeriod(out result, out num));
-        return result;
+        Marshal.ThrowExceptionForHR(_AudioClient_.GetDevicePeriod(out long retValue, out long num));
+				/************************************************/
+        return retValue;
       }
     }
 
@@ -74,10 +77,9 @@ namespace AudioCore
     {
       get
       {
-        long num;
-        long result;
-        Marshal.ThrowExceptionForHR(_AudioClient_.GetDevicePeriod(out num, out result));
-        return result;
+        Marshal.ThrowExceptionForHR(_AudioClient_.GetDevicePeriod(out long num, out long retValue));
+				/************************************************/
+        return retValue;
       }
     }
 
@@ -87,11 +89,11 @@ namespace AudioCore
       {
         if (_AudioRenderClient_ == null)
         {
-          Guid guid = new Guid("F294ACFC-3146-4483-A7BF-ADDCA7C260E2");
-          object obj;
-          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out obj));
+          Guid guid = new("F294ACFC-3146-4483-A7BF-ADDCA7C260E2");
+          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out object obj));
           _AudioRenderClient_ = new AudioRenderClient((IAudioRenderClient)obj);
         }
+				/************************************************/
         return _AudioRenderClient_;
       }
     }
@@ -102,30 +104,25 @@ namespace AudioCore
       {
         if (_AudioCaptureClient_ == null)
         {
-          Guid guid = new Guid("c8adbd64-e71e-48a0-a4de-185c395cd317");
-          object obj;
-          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out obj));
+          Guid guid = new("c8adbd64-e71e-48a0-a4de-185c395cd317");
+          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out object obj));
           _AudioCaptureClient_ = new AudioCaptureClient((IAudioCaptureClient)obj);
         }
+				/************************************************/
         return _AudioCaptureClient_;
       }
-    }
-
-    internal AudioClient(IAudioClient P_0)
-    {
-      _AudioClient_ = P_0;
     }
 
     public void Initialize(AudioClientShareMode P_0, AudioClientStreamFlags P_1, long P_2, long P_3, WaveFormat P_4, Guid P_5)
     {
       Marshal.ThrowExceptionForHR(_AudioClient_.Initialize(P_0, P_1, P_2, P_3, P_4, ref P_5));
+			/************************************************/
       _MixFormat = null;
     }
 
     public bool IsFormatSupported(AudioClientShareMode P_0, WaveFormat P_1)
     {
-      WaveFormatExtensible waveFormatExtensible;
-      return IsFormatSupported(P_0, P_1, out waveFormatExtensible);
+      return IsFormatSupported(P_0, P_1, out WaveFormatExtensible waveFormatExtensible);
     }
 
     public bool IsFormatSupported(AudioClientShareMode P_0, WaveFormat P_1, out WaveFormatExtensible P_2)

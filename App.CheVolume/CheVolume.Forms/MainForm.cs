@@ -274,7 +274,7 @@ public partial class MainForm : Form
             return string.Compare(P_0.Tag.ToString().ToLower(), audioSessionControl21.SessionInstanceIdentifier.ToLower()) == 0;
           });
         }
-        AudioSessionState audioSessionState = audioSessionControl21.GetState();
+        AudioSessionState audioSessionState = audioSessionControl21.State;
         if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
         {
           sessionVolumeControl = new SessionVolumeControl(audioSessionControl21, process);
@@ -358,7 +358,7 @@ public partial class MainForm : Form
     {
       foreach (SessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(item.Controls)))
       {
-        item2.OnStateChanged2(item2.SessionControl.GetState());
+        item2.OnStateChanged2(item2.SessionControl.State);
       }
     }
   }
