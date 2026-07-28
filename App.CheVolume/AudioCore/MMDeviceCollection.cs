@@ -1,35 +1,36 @@
 using System.Runtime.InteropServices;
+/************************************************/
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
-	public class MMDeviceCollection
-	{
-		private readonly IMMDeviceCollection _MMDeviceCollection_;
-
-		public int Count
-		{
-			get
-			{
-				uint result;
-				Marshal.ThrowExceptionForHR(_MMDeviceCollection_.GetCount(out result));
-				return (int)result;
-			}
-		}
-
-		public MMDevice this[int P_0]
-		{
-			get
-			{
-				IMMDevice iMMDevice;
-				_MMDeviceCollection_.Item((uint)P_0, out iMMDevice);
-				return new MMDevice(iMMDevice);
-			}
-		}
-
-		internal MMDeviceCollection(IMMDeviceCollection P_0)
-		{
-			_MMDeviceCollection_ = P_0;
-		}
-	}
+  public class MMDeviceCollection
+  {
+    private readonly IMMDeviceCollection _MMDeviceCollection_;
+    /************************************************/
+    internal MMDeviceCollection(IMMDeviceCollection _MM_DEVICE_COLLECTION_)
+    {
+      this._MMDeviceCollection_ = _MM_DEVICE_COLLECTION_;
+    }
+    /************************************************/
+    public MMDevice this[int index]
+    {
+      get
+      {
+        this._MMDeviceCollection_.Item((uint)index, out IMMDevice retValue);
+        /************************************************/
+        return new MMDevice(retValue);
+      }
+    }
+    /************************************************/
+    public int Count
+    {
+      get
+      {
+        Marshal.ThrowExceptionForHR(this._MMDeviceCollection_.GetCount(out uint retValue));
+        /************************************************/
+        return (int)retValue;
+      }
+    }
+  }
 }

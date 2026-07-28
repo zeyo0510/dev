@@ -1,20 +1,25 @@
-using System;
 using System.Runtime.InteropServices;
+/************************************************/
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
   public class AudioSessionControl2
   {
-    private readonly IAudioSessionControl2 _AudioSessionControl2_;
-
+    private readonly IAudioSessionControl2 _AudioSessionControl_;
+    /************************************************/
+    internal AudioSessionControl2(IAudioSessionControl2 _AUDIO_SESSION_CONTROL_)
+    {
+      this._AudioSessionControl_ = _AUDIO_SESSION_CONTROL_;
+    }
+    /************************************************/
     public uint ProcessID
     {
       get
       {
-        uint result;
-        Marshal.ThrowExceptionForHR(_AudioSessionControl2_.GetProcessId(out result));
-        return result;
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetProcessId(out uint retValue));
+        /************************************************/
+        return retValue;
       }
     }
 
@@ -22,8 +27,7 @@ namespace AudioCore
     {
       get
       {
-        IntPtr ptr;
-        Marshal.ThrowExceptionForHR(_AudioSessionControl2_.GetDisplayName(out ptr));
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetDisplayName(out nint ptr));
         string result = Marshal.PtrToStringAuto(ptr);
         Marshal.FreeCoTaskMem(ptr);
         return result;
@@ -34,8 +38,7 @@ namespace AudioCore
     {
       get
       {
-        IntPtr ptr;
-        Marshal.ThrowExceptionForHR(_AudioSessionControl2_.GetIconPath(out ptr));
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetIconPath(out nint ptr));
         string result = Marshal.PtrToStringAuto(ptr);
         Marshal.FreeCoTaskMem(ptr);
         return result;
@@ -46,8 +49,7 @@ namespace AudioCore
     {
       get
       {
-        IntPtr ptr;
-        Marshal.ThrowExceptionForHR(_AudioSessionControl2_.GetSessionIdentifier(out ptr));
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetSessionIdentifier(out nint ptr));
         string result = Marshal.PtrToStringAuto(ptr);
         Marshal.FreeCoTaskMem(ptr);
         return result;
@@ -58,75 +60,73 @@ namespace AudioCore
     {
       get
       {
-        IntPtr ptr;
-        Marshal.ThrowExceptionForHR(_AudioSessionControl2_.GetSessionInstanceIdentifier(out ptr));
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetSessionInstanceIdentifier(out nint ptr));
         string result = Marshal.PtrToStringAuto(ptr);
         Marshal.FreeCoTaskMem(ptr);
         return result;
       }
     }
 
-    internal AudioSessionControl2(IAudioSessionControl2 P_0)
+    public void RegisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
     {
-      _AudioSessionControl2_ = P_0;
+      Marshal.ThrowExceptionForHR(this._AudioSessionControl_.RegisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
     }
 
-    public void RegisterAudioSessionNotification(IAudioSessionEvents P_0)
+    public void UnregisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
     {
-      Marshal.ThrowExceptionForHR(_AudioSessionControl2_.RegisterAudioSessionNotification(P_0));
-    }
-
-    public void UnregisterAudioSessionNotification(IAudioSessionEvents P_0)
-    {
-      Marshal.ThrowExceptionForHR(_AudioSessionControl2_.UnregisterAudioSessionNotification(P_0));
+      Marshal.ThrowExceptionForHR(this._AudioSessionControl_.UnregisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
     }
 
     public AudioSessionState GetState()
     {
-      AudioSessionState result;
-      Marshal.ThrowExceptionForHR(_AudioSessionControl2_.GetState(out result));
-      return result;
+      Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetState(out AudioSessionState retValue));
+      /************************************************/
+      return retValue;
     }
 
     public int GetCount()
     {
-      int result;
-      Marshal.ThrowExceptionForHR(((IAudioMeterInformation)_AudioSessionControl2_).GetMeteringChannelCount(out result));
-      return result;
+      Marshal.ThrowExceptionForHR(((IAudioMeterInformation)this._AudioSessionControl_).GetMeteringChannelCount(out int retValue));
+      /************************************************/
+      return retValue;
     }
 
-    public float SetVolume()
+    public float Volume
     {
-      float result;
-      Marshal.ThrowExceptionForHR(((ISimpleAudioVolume)_AudioSessionControl2_).GetMasterVolume(out result));
-      return result;
-    }
-
-    public void SetVolume(int P_0)
-    {
-      ISimpleAudioVolume obj = (ISimpleAudioVolume)_AudioSessionControl2_;
-      Guid empty = Guid.Empty;
-      float num = (float)P_0 / 100f;
-      Marshal.ThrowExceptionForHR(obj.SetMasterVolume(num, ref empty));
+      get
+      {
+        Marshal.ThrowExceptionForHR(((ISimpleAudioVolume)this._AudioSessionControl_).GetMasterVolume(out float retValue));
+        /************************************************/
+        retValue *= 100f;
+        /************************************************/
+        return retValue;
+      }
+      set
+      {
+        ISimpleAudioVolume obj = (ISimpleAudioVolume)this._AudioSessionControl_;
+        Guid empty = Guid.Empty;
+        float num = (float)value / 100f;
+        Marshal.ThrowExceptionForHR(obj.SetMasterVolume(num, ref empty));
+      }
     }
 
     public bool Mute
     {
       get
       {
-        bool result;
-        Marshal.ThrowExceptionForHR((_AudioSessionControl2_ as ISimpleAudioVolume).GetMute(out result));
-        return result;
+        Marshal.ThrowExceptionForHR((_AudioSessionControl_ as ISimpleAudioVolume).GetMute(out bool retValue));
+        /************************************************/
+        return retValue;
       }
       set
       {
-        Marshal.ThrowExceptionForHR((_AudioSessionControl2_ as ISimpleAudioVolume).SetMute(value, Guid.Empty));
+        Marshal.ThrowExceptionForHR((_AudioSessionControl_ as ISimpleAudioVolume).SetMute(value, Guid.Empty));
       }
     }
 
     public float[] GetChannelsPeakValues()
     {
-      IAudioMeterInformation obj = (IAudioMeterInformation)_AudioSessionControl2_;
+      IAudioMeterInformation obj = (IAudioMeterInformation)_AudioSessionControl_;
       float[] array = new float[GetCount()];
       GCHandle gCHandle = GCHandle.Alloc(array, GCHandleType.Pinned);
       Marshal.ThrowExceptionForHR(obj.GetChannelsPeakValues(array.Length, gCHandle.AddrOfPinnedObject()));
@@ -136,7 +136,7 @@ namespace AudioCore
 
     public float Method1()
     {
-      IAudioMeterInformation obj = (IAudioMeterInformation)_AudioSessionControl2_;
+      IAudioMeterInformation obj = (IAudioMeterInformation)_AudioSessionControl_;
       float result;
       obj.GetPeakValue(out result);
       int num;

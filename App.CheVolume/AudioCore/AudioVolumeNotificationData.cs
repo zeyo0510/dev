@@ -1,15 +1,15 @@
 namespace AudioCore
 {
-	public class AudioVolumeNotificationData
-	{
-		public readonly bool Muted;
+  public class AudioVolumeNotificationData
+  {
+    public readonly bool Muted;
 
-		public readonly float MasterVolume;
+    public readonly float MasterVolume;
 
-		public AudioVolumeNotificationData(bool P_0, float P_1)
-		{
-			Muted = P_0;
-			MasterVolume = P_1;
-		}
-	}
+    public AudioVolumeNotificationData(bool muted, float masterVolume)
+    {
+      this.Muted = muted;
+      this.MasterVolume = masterVolume;
+    }
+  }
 }

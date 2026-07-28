@@ -407,7 +407,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
       SessionControl.Mute = false;
-      SessionControl.SetVolume((int)newValue);
+      SessionControl.Volume = (int)newValue;
     }
     else
     {

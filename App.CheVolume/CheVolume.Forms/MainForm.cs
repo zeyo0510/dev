@@ -251,7 +251,7 @@ public partial class MainForm : Form
       }
       for (int j = 0; j < num; j++)
       {
-        AudioSessionControl2 audioSessionControl21 = mMDevice.AudioSessionManager.audioSessionEnumerator1[j];
+        AudioSessionControl2 audioSessionControl21 = mMDevice.AudioSessionManager._AudioSessionEnumerator_[j];
         Process process;
         try
         {
@@ -278,7 +278,7 @@ public partial class MainForm : Form
         if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
         {
           sessionVolumeControl = new SessionVolumeControl(audioSessionControl21, process);
-          int value = int.Parse(Math.Ceiling(audioSessionControl21.SetVolume() * 100f).ToString());
+          int value = int.Parse(Math.Ceiling(audioSessionControl21.Volume).ToString());
           sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
           sessionVolumeControl.MMDevice = mMDevice;
           sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.Mute;

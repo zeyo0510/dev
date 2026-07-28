@@ -29,10 +29,10 @@ namespace AudioCore.Interfaces
 		int SetGroupingParam(Guid P_0, Guid P_1);
 
 		[PreserveSig]
-		int RegisterAudioSessionNotification(IAudioSessionEvents P_0);
+		int RegisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_);
 
 		[PreserveSig]
-		int UnregisterAudioSessionNotification(IAudioSessionEvents P_0);
+		int UnregisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_);
 
 		[PreserveSig]
 		int GetSessionIdentifier(out IntPtr P_0);

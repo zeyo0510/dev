@@ -5,47 +5,46 @@ using AudioCore.Interfaces;
 
 namespace AudioCore
 {
-	public class AudioSessionManager2
-	{
-		public readonly AudioSessionEnumerator audioSessionEnumerator1;
+  public class AudioSessionManager2
+  {
+    public readonly AudioSessionEnumerator _AudioSessionEnumerator_;
 
-		private readonly IAudioSessionManager2 _AudioSessionManager2_;
+    private readonly IAudioSessionManager2 _AudioSessionManager_;
 
-		private AudioSessionManager2 audioSessionManager21;
+    private AudioSessionManager2 audioSessionManager21;
 
-		private Dictionary<IAudioSessionNotificationCollection, AudioSessionNotification> audioSessionNotificationCollection1 = new Dictionary<IAudioSessionNotificationCollection, AudioSessionNotification>();
+    private Dictionary<IAudioSessionNotificationCollection, AudioSessionNotification> audioSessionNotificationCollection1 = new Dictionary<IAudioSessionNotificationCollection, AudioSessionNotification>();
 
-		internal AudioSessionManager2(IAudioSessionManager2 P_0)
-		{
-			_AudioSessionManager2_ = P_0;
-			IAudioSessionEnumerator audioSessionEnumerator;
-			Marshal.ThrowExceptionForHR(_AudioSessionManager2_.GetSessionEnumerator(out audioSessionEnumerator));
-			audioSessionEnumerator1 = new AudioSessionEnumerator(audioSessionEnumerator);
-		}
+    internal AudioSessionManager2(IAudioSessionManager2 _AUDIO_SESSION_MANAGER_)
+    {
+      this._AudioSessionManager_ = _AUDIO_SESSION_MANAGER_;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(_AudioSessionManager_.GetSessionEnumerator(out IAudioSessionEnumerator audioSessionEnumerator));
+      _AudioSessionEnumerator_ = new AudioSessionEnumerator(audioSessionEnumerator);
+    }
 
-		public int GetCount()
-		{
-			return audioSessionEnumerator1.GetCount();
-		}
+    public int GetCount()
+    {
+      return this._AudioSessionEnumerator_.Count;
+    }
 
-		public void RegisterSessionNotification(IAudioSessionNotificationCollection P_0)
-		{
-			AudioSessionNotification audioSessionNotification = new AudioSessionNotification(P_0);
-			audioSessionNotificationCollection1.Add(P_0, audioSessionNotification);
-			_AudioSessionManager2_.RegisterSessionNotification(audioSessionNotification);
-		}
+    public void RegisterSessionNotification(IAudioSessionNotificationCollection _AUDIO_SESSION_NOTIFICATION_COLLECTION_)
+    {
+      AudioSessionNotification audioSessionNotification = new(_AUDIO_SESSION_NOTIFICATION_COLLECTION_);
+      audioSessionNotificationCollection1.Add(_AUDIO_SESSION_NOTIFICATION_COLLECTION_, audioSessionNotification);
+      this._AudioSessionManager_.RegisterSessionNotification(audioSessionNotification);
+    }
 
-		public void UnregisterSessionNotification(IAudioSessionNotificationCollection P_0)
-		{
-			_AudioSessionManager2_.UnregisterSessionNotification(audioSessionNotificationCollection1[P_0]);
-			audioSessionNotificationCollection1.Remove(P_0);
-		}
+    public void UnregisterSessionNotification(IAudioSessionNotificationCollection _AUDIO_SESSION_NOTIFICATION_COLLECTION_)
+    {
+      this._AudioSessionManager_.UnregisterSessionNotification(audioSessionNotificationCollection1[_AUDIO_SESSION_NOTIFICATION_COLLECTION_]);
+      audioSessionNotificationCollection1.Remove(_AUDIO_SESSION_NOTIFICATION_COLLECTION_);
+    }
 
-		public SimpleAudioVolume GetSimpleAudioVolume(Guid P_0)
-		{
-			ISimpleAudioVolume simpleAudioVolume;
-			_AudioSessionManager2_.GetSimpleAudioVolume(ref P_0, 0u, out simpleAudioVolume);
-			return new SimpleAudioVolume(simpleAudioVolume);
-		}
-	}
+    public SimpleAudioVolume GetSimpleAudioVolume(Guid P_0)
+    {
+      _AudioSessionManager_.GetSimpleAudioVolume(ref P_0, 0u, out ISimpleAudioVolume simpleAudioVolume);
+      return new SimpleAudioVolume(simpleAudioVolume);
+    }
+  }
 }
