@@ -1,49 +1,50 @@
 using System.Runtime.InteropServices;
+/************************************************/
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
-	public class AudioMeterInformationChannels
-	{
-		private IAudioMeterInformation _AudioMeterInformation_;
-
-		public int Count
-		{
-			get
-			{
-				int result;
-				Marshal.ThrowExceptionForHR(_AudioMeterInformation_.GetMeteringChannelCount(out result));
-				return result;
-			}
-		}
-
-		public float[] ToFloatArray
-		{
-			get
-			{
-				float[] array = new float[Count];
-				GCHandle gCHandle = GCHandle.Alloc(array, GCHandleType.Pinned);
-				Marshal.ThrowExceptionForHR(_AudioMeterInformation_.GetChannelsPeakValues(array.Length, gCHandle.AddrOfPinnedObject()));
-				gCHandle.Free();
-				return array;
-			}
-		}
-
-		public float this[int P_0]
-		{
-			get
-			{
-				float[] array = new float[Count];
-				GCHandle gCHandle = GCHandle.Alloc(array, GCHandleType.Pinned);
-				Marshal.ThrowExceptionForHR(_AudioMeterInformation_.GetChannelsPeakValues(array.Length, gCHandle.AddrOfPinnedObject()));
-				gCHandle.Free();
-				return array[P_0];
-			}
-		}
-
-		internal AudioMeterInformationChannels(IAudioMeterInformation P_0)
-		{
-			_AudioMeterInformation_ = P_0;
-		}
-	}
+  public class AudioMeterInformationChannels
+  {
+    private IAudioMeterInformation _AudioMeterInformation_;
+    /************************************************/
+    internal AudioMeterInformationChannels(IAudioMeterInformation _AUDIO_METER_INFORMATION_)
+    {
+      this._AudioMeterInformation_ = _AUDIO_METER_INFORMATION_;
+    }
+    /************************************************/
+    public float this[int index]
+    {
+      get
+      {
+        float[] array = new float[Count];
+        GCHandle gCHandle = GCHandle.Alloc(array, GCHandleType.Pinned);
+        Marshal.ThrowExceptionForHR(_AudioMeterInformation_.GetChannelsPeakValues(array.Length, gCHandle.AddrOfPinnedObject()));
+        gCHandle.Free();
+        return array[index];
+      }
+    }
+    /************************************************/
+    public int Count
+    {
+      get
+      {
+        Marshal.ThrowExceptionForHR(_AudioMeterInformation_.GetMeteringChannelCount(out int retValue));
+        /************************************************/
+        return retValue;
+      }
+    }
+		/************************************************/
+    public float[] ToFloatArray
+    {
+      get
+      {
+        float[] array = new float[Count];
+        GCHandle gCHandle = GCHandle.Alloc(array, GCHandleType.Pinned);
+        Marshal.ThrowExceptionForHR(_AudioMeterInformation_.GetChannelsPeakValues(array.Length, gCHandle.AddrOfPinnedObject()));
+        gCHandle.Free();
+        return array;
+      }
+    }
+  }
 }
