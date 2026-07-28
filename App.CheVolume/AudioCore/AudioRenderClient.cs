@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+/************************************************/
 using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
@@ -6,17 +7,16 @@ namespace AudioCore
   public class AudioRenderClient : IDisposable
   {
     private IAudioRenderClient _AudioRenderClient_;
-
+    /************************************************/
     internal AudioRenderClient(IAudioRenderClient _)
     {
       this._AudioRenderClient_ = _;
     }
-
+    /************************************************/
     public IntPtr GetBuffer(int value)
     {
-      IntPtr result;
-      Marshal.ThrowExceptionForHR(_AudioRenderClient_.GetBuffer(value, out result));
-      return result;
+      Marshal.ThrowExceptionForHR(_AudioRenderClient_.GetBuffer(value, out nint retValue));
+      return retValue;
     }
 
     public void ReleaseBuffer(int P_0, AudioClientBufferFlags P_1)

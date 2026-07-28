@@ -1,7 +1,7 @@
-using System;
 using System.Runtime.InteropServices;
+/************************************************/
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
   public class MMDevice
@@ -10,9 +10,9 @@ namespace AudioCore
 
     private PropertyStore propertyStore1;
 
-    private AudioMeterInformation audioMeterInformation1;
+    private AudioMeterInformation _AudioMeterInformation_;
 
-    private AudioEndpointVolume audioEndpointVolume1;
+    private AudioEndpointVolume _AudioEndpointVolume_;
 
     private static Guid IID_IAudioMeterInformation = new Guid("C02216F6-8C67-4B5B-9D00-D008E73E0064");
 
@@ -21,6 +21,11 @@ namespace AudioCore
     private static Guid IID_IAudioClient = new Guid("1CB9AD4C-DBFA-4c32-B178-C2F568A703B2");
 
     private static Guid IID_IAudioSessionManager2 = new Guid("77AA99A0-1BD6-484F-8BC7-2C654C9A9B6F");
+
+    internal MMDevice(IMMDevice _MM_DEVICE_)
+    {
+      this._MMDevice_ = _MM_DEVICE_;
+    }
 
     public AudioClient AudioClient
     {
@@ -42,11 +47,11 @@ namespace AudioCore
     {
       get
       {
-        if (audioMeterInformation1 == null)
+        if (_AudioMeterInformation_ == null)
         {
           GetAudioMeterInformation();
         }
-        return audioMeterInformation1;
+        return _AudioMeterInformation_;
       }
     }
 
@@ -54,11 +59,11 @@ namespace AudioCore
     {
       get
       {
-        if (audioEndpointVolume1 == null)
+        if (_AudioEndpointVolume_ == null)
         {
           GetAudioEndpointVolume();
         }
-        return audioEndpointVolume1;
+        return _AudioEndpointVolume_;
       }
     }
 
@@ -126,9 +131,9 @@ namespace AudioCore
     {
       get
       {
-        string result;
-        Marshal.ThrowExceptionForHR(_MMDevice_.GetId(out result));
-        return result;
+        Marshal.ThrowExceptionForHR(_MMDevice_.GetId(out string retValue));
+        /************************************************/
+        return retValue;
       }
     }
 
@@ -136,9 +141,9 @@ namespace AudioCore
     {
       get
       {
-        DataFlow result;
-        (_MMDevice_ as IMMEndpoint).GetDataFlow(out result);
-        return result;
+        (_MMDevice_ as IMMEndpoint).GetDataFlow(out DataFlow retValue);
+        /************************************************/
+        return retValue;
       }
     }
 
@@ -146,9 +151,9 @@ namespace AudioCore
     {
       get
       {
-        DeviceState result;
-        Marshal.ThrowExceptionForHR(_MMDevice_.GetState(out result));
-        return result;
+        Marshal.ThrowExceptionForHR(_MMDevice_.GetState(out DeviceState retValue));
+        /************************************************/
+        return retValue;
       }
     }
 
@@ -177,35 +182,27 @@ namespace AudioCore
 
     private AudioClient GetAudioClient()
     {
-      object obj;
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioClient, CLSCTX.ALL, IntPtr.Zero, out obj));
+      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioClient, CLSCTX.ALL, IntPtr.Zero, out object obj));
+      
       return new AudioClient(obj as IAudioClient);
     }
 
     private void GetAudioMeterInformation()
     {
-      object obj;
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out obj));
-      audioMeterInformation1 = new AudioMeterInformation(obj as IAudioMeterInformation);
+      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out object obj));
+      _AudioMeterInformation_ = new AudioMeterInformation(obj as IAudioMeterInformation);
     }
 
     private AudioSessionManager2 GetAudioSessionManager()
     {
-      object obj;
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioSessionManager2, CLSCTX.ALL, IntPtr.Zero, out obj));
+      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioSessionManager2, CLSCTX.ALL, IntPtr.Zero, out object obj));
       return new AudioSessionManager2(obj as IAudioSessionManager2);
     }
 
     private void GetAudioEndpointVolume()
     {
-      object obj;
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out obj));
-      audioEndpointVolume1 = new AudioEndpointVolume(obj as IAudioEndpointVolume);
-    }
-
-    internal MMDevice(IMMDevice P_0)
-    {
-      _MMDevice_ = P_0;
+      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object obj));
+      _AudioEndpointVolume_ = new AudioEndpointVolume(obj as IAudioEndpointVolume);
     }
 
     public override string ToString()
