@@ -1,8 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
+/************************************************/
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
   public class AudioSessionManager2
@@ -19,31 +18,39 @@ namespace AudioCore
     {
       this._AudioSessionManager_ = _AUDIO_SESSION_MANAGER_;
       /************************************************/
-      Marshal.ThrowExceptionForHR(_AudioSessionManager_.GetSessionEnumerator(out IAudioSessionEnumerator audioSessionEnumerator));
+      Marshal.ThrowExceptionForHR(this._AudioSessionManager_.GetSessionEnumerator(out IAudioSessionEnumerator audioSessionEnumerator));
+      /************************************************/
       _AudioSessionEnumerator_ = new AudioSessionEnumerator(audioSessionEnumerator);
     }
 
-    public int GetCount()
+    public int Count
     {
-      return this._AudioSessionEnumerator_.Count;
+      get
+      {
+        return this._AudioSessionEnumerator_.Count;
+      }
     }
 
     public void RegisterSessionNotification(IAudioSessionNotificationCollection _AUDIO_SESSION_NOTIFICATION_COLLECTION_)
     {
       AudioSessionNotification audioSessionNotification = new(_AUDIO_SESSION_NOTIFICATION_COLLECTION_);
+      /************************************************/
       audioSessionNotificationCollection1.Add(_AUDIO_SESSION_NOTIFICATION_COLLECTION_, audioSessionNotification);
+      /************************************************/
       this._AudioSessionManager_.RegisterSessionNotification(audioSessionNotification);
     }
 
     public void UnregisterSessionNotification(IAudioSessionNotificationCollection _AUDIO_SESSION_NOTIFICATION_COLLECTION_)
     {
       this._AudioSessionManager_.UnregisterSessionNotification(audioSessionNotificationCollection1[_AUDIO_SESSION_NOTIFICATION_COLLECTION_]);
+      /************************************************/
       audioSessionNotificationCollection1.Remove(_AUDIO_SESSION_NOTIFICATION_COLLECTION_);
     }
 
     public SimpleAudioVolume GetSimpleAudioVolume(Guid P_0)
     {
       _AudioSessionManager_.GetSimpleAudioVolume(ref P_0, 0u, out ISimpleAudioVolume simpleAudioVolume);
+      /************************************************/
       return new SimpleAudioVolume(simpleAudioVolume);
     }
   }

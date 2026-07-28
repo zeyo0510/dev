@@ -4,9 +4,10 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public class MMDevice
+  public partial class MMDevice
   {
     private readonly IMMDevice _MMDevice_;
+    private readonly IMMEndpoint _MMEndpoint_;
 
     private PropertyStore propertyStore1;
 
@@ -25,46 +26,7 @@ namespace AudioCore
     internal MMDevice(IMMDevice _MM_DEVICE_)
     {
       this._MMDevice_ = _MM_DEVICE_;
-    }
-
-    public AudioClient AudioClient
-    {
-      get
-      {
-        return GetAudioClient();
-      }
-    }
-
-    public AudioSessionManager2 AudioSessionManager
-    {
-      get
-      {
-        return GetAudioSessionManager();
-      }
-    }
-
-    public AudioMeterInformation AudioMeterInformation
-    {
-      get
-      {
-        if (_AudioMeterInformation_ == null)
-        {
-          GetAudioMeterInformation();
-        }
-        return _AudioMeterInformation_;
-      }
-    }
-
-    public AudioEndpointVolume AudioEndpointVolume
-    {
-      get
-      {
-        if (_AudioEndpointVolume_ == null)
-        {
-          GetAudioEndpointVolume();
-        }
-        return _AudioEndpointVolume_;
-      }
+      this._MMEndpoint_ = (IMMEndpoint)this._MMDevice_;
     }
 
     public PropertyStore Properties
@@ -127,26 +89,6 @@ namespace AudioCore
       }
     }
 
-    public string ID
-    {
-      get
-      {
-        Marshal.ThrowExceptionForHR(_MMDevice_.GetId(out string retValue));
-        /************************************************/
-        return retValue;
-      }
-    }
-
-    public DataFlow DataFlow
-    {
-      get
-      {
-        (_MMDevice_ as IMMEndpoint).GetDataFlow(out DataFlow retValue);
-        /************************************************/
-        return retValue;
-      }
-    }
-
     public DeviceState State
     {
       get
@@ -178,31 +120,6 @@ namespace AudioCore
       IPropertyStore propertyStore;
       Marshal.ThrowExceptionForHR(_MMDevice_.OpenPropertyStore(EStgmAccess.STGM_READ, out propertyStore));
       return new PropertyStore(propertyStore);
-    }
-
-    private AudioClient GetAudioClient()
-    {
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioClient, CLSCTX.ALL, IntPtr.Zero, out object obj));
-      
-      return new AudioClient(obj as IAudioClient);
-    }
-
-    private void GetAudioMeterInformation()
-    {
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out object obj));
-      _AudioMeterInformation_ = new AudioMeterInformation(obj as IAudioMeterInformation);
-    }
-
-    private AudioSessionManager2 GetAudioSessionManager()
-    {
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioSessionManager2, CLSCTX.ALL, IntPtr.Zero, out object obj));
-      return new AudioSessionManager2(obj as IAudioSessionManager2);
-    }
-
-    private void GetAudioEndpointVolume()
-    {
-      Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object obj));
-      _AudioEndpointVolume_ = new AudioEndpointVolume(obj as IAudioEndpointVolume);
     }
 
     public override string ToString()

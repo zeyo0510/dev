@@ -115,7 +115,7 @@ public partial class MainForm : Form
       {
         return DefaultDevice;
       }
-      return Class4.mmDeviceEnumerator1.GetDeviceV2(str2);
+      return Class4.mmDeviceEnumerator1.GetDevice(str2);
     }
   }
 
@@ -243,7 +243,7 @@ public partial class MainForm : Form
       int num;
       try
       {
-        num = mMDevice.AudioSessionManager.GetCount();
+        num = mMDevice.AudioSessionManager.Count;
       }
       catch (Exception)
       {

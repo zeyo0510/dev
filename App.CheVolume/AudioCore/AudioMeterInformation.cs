@@ -4,7 +4,7 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public class AudioMeterInformation
+  public partial class AudioMeterInformation
   {
     private IAudioMeterInformation _AudioMeterInformation_;
 
@@ -22,29 +22,11 @@ namespace AudioCore
       this._AudioMeterInformationChannels_ = new AudioMeterInformationChannels(_AudioMeterInformation_);
     }
 
-    public AudioMeterInformationChannels PeakValues
-    {
-      get
-      {
-        return this._AudioMeterInformationChannels_;
-      }
-    }
-
     public EndpointHardwareSupport HardwareSupport
     {
       get
       {
         return this._HardwareSupport;
-      }
-    }
-
-    public float MasterPeakValue
-    {
-      get
-      {
-        Marshal.ThrowExceptionForHR(_AudioMeterInformation_.GetPeakValue(out float retValue));
-        /************************************************/
-        return retValue;
       }
     }
   }
