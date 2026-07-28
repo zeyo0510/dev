@@ -281,7 +281,7 @@ public partial class MainForm : Form
           int value = int.Parse(Math.Ceiling(audioSessionControl21.SetVolume() * 100f).ToString());
           sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
           sessionVolumeControl.MMDevice = mMDevice;
-          sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.GetMute();
+          sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.Mute;
           sessionVolumeControl.macTrackBar1.Value = value;
           flowLayoutPanel.Controls.Add(sessionVolumeControl);
           if (process.Id == 0)

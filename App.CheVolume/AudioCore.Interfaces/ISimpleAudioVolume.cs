@@ -14,7 +14,7 @@ namespace AudioCore.Interfaces
 		int GetMasterVolume(out float P_0);
 
 		[PreserveSig]
-		int SetMute(bool P_0, ref Guid P_1);
+		int SetMute(bool P_0, Guid P_1);
 
 		[PreserveSig]
 		int GetMute(out bool P_0);

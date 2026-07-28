@@ -406,7 +406,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (macTrackBar1.bool1)
     {
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      SessionControl.SetMute(false);
+      SessionControl.Mute = false;
       SessionControl.SetVolume((int)newValue);
     }
     else
@@ -468,10 +468,8 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       toolStripMenuItem.ForeColor = Color.FromArgb(50, 50, 50);
       toolStripMenuItem.TextImageRelation = TextImageRelation.ImageAboveText;
     }
-
-    int width = toolStripMenuItem.Width;
-    /************************************************/
     this.contextMenuStrip1.Items.Add(toolStripMenuItem);
+    /************************************************/
 
 
 
@@ -491,7 +489,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
       ToolStripMenuItem toolStripMenuItem2 = new();
       {
-        toolStripMenuItem2.Text = MMDeviceCollection[i].FriendlyName ?? "";
+        toolStripMenuItem2.Text = this.MMDeviceCollection[i].FriendlyName ?? "";
       }
       Icon icon = ImageHelper.Method1(MMDeviceCollection[i].IconPath);
       if (icon.Height > 0)
@@ -516,7 +514,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
       if (Enumerable.Contains(InjectedProcesses, process1.ProcessName))
       {
-        ToolStripMenuItem toolStripMenuItem3 = new ToolStripMenuItem();
+        ToolStripMenuItem toolStripMenuItem3 = new();
         {
           toolStripMenuItem3.Text = "Return to Default";
           toolStripMenuItem3.Tag = base.Tag.ToString();
@@ -527,10 +525,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
           toolStripMenuItem3.ForeColor = Color.FromArgb(50, 50, 50);
         }
         contextMenuStrip1.Items.Add(toolStripMenuItem3);
-        if (toolStripMenuItem3.Width > width)
-        {
-          width = toolStripMenuItem3.Width;
-        }
       }
       else
       {
@@ -740,7 +734,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private void muteCheCheckBox_CheckedChanged(object sender, EventArgs e)
   {
-    this.SessionControl.SetMute(this.muteCheCheckBox.Checked);
+    this.SessionControl.Mute = this.muteCheCheckBox.Checked;
     /************************************************/
     this.UpdateUI();
   }

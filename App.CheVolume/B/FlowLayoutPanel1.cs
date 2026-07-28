@@ -131,7 +131,7 @@ namespace B
 				int value = int.Parse(Math.Ceiling(_SESSION_CONTROL_.SetVolume() * 100f).ToString());
 				sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
 				sessionVolumeControl.MMDevice = mmDevice1;
-				sessionVolumeControl.muteCheCheckBox.Checked = _SESSION_CONTROL_.GetMute();
+				sessionVolumeControl.muteCheCheckBox.Checked = _SESSION_CONTROL_.Mute;
 				sessionVolumeControl.macTrackBar1.Value = value;
 				base.Controls.Add(sessionVolumeControl);
 			}
