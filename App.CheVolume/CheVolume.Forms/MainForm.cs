@@ -152,7 +152,7 @@ public partial class MainForm : Form
 
   public MainForm()
   {
-    mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+    mmDeviceCollection1 = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
     mmNotificationClient1 = new MMNotificationClient();
     Class4.mmDeviceEnumerator1.RegisterEndpointNotificationCallback(mmNotificationClient1);
     processList = new List<ProcessMapping>();
@@ -208,7 +208,7 @@ public partial class MainForm : Form
       return;
     }
     string text = DefaultDevice.ID.ToString();
-    mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+    mmDeviceCollection1 = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
     int count = mmDeviceCollection1.Count;
     for (int i = 0; i < count; i++)
     {

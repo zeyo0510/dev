@@ -481,7 +481,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
 
 
-    this.MMDeviceCollection = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+    this.MMDeviceCollection = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
     /************************************************/
     int count = this.MMDeviceCollection.Count;
     /************************************************/

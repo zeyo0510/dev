@@ -76,7 +76,7 @@ namespace B
 		public FlowLayoutPanel1(MMDevice _MM_DEVICE_)
 		{
 			InitializeComponent();
-			mmDeviceCollection1 = Class4.mmDeviceEnumerator1.GetDefaultAudioEndpoint(EDataFlow.eRender, EDeviceState.Active);
+			mmDeviceCollection1 = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
 			mmDevice1 = _MM_DEVICE_;
 			audioSessionManager21 = mmDevice1.AudioSessionManager;
 			audioSessionManager21.RegisterSessionNotification(this);

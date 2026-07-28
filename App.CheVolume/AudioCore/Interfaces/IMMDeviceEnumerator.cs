@@ -9,18 +9,33 @@ namespace AudioCore.Interfaces
   internal interface IMMDeviceEnumerator
   {
     [PreserveSig]
-    int GetDefaultAudioEndpoint([In][MarshalAs(UnmanagedType.I4)] EDataFlow P_0, [In][MarshalAs(UnmanagedType.U4)] EDeviceState P_1, [MarshalAs(UnmanagedType.Interface)] out IMMDeviceCollection P_2);
-
+    int EnumAudioEndpoints(
+      [In][MarshalAs(UnmanagedType.I4)] EDataFlow _DATA_FLOW_,
+      [In][MarshalAs(UnmanagedType.U4)] EDeviceState _DW_STATE_MASK_,
+      [MarshalAs(UnmanagedType.Interface)] out IMMDeviceCollection _PP_DEVICES_
+    );
+    /************************************************/
     [PreserveSig]
-    int EnumAudioEndpoints([In][MarshalAs(UnmanagedType.I4)] EDataFlow P_0, [In][MarshalAs(UnmanagedType.I4)] ERole P_1, [MarshalAs(UnmanagedType.Interface)] out IMMDevice P_2);
-
+    int GetDefaultAudioEndpoint(
+      [In][MarshalAs(UnmanagedType.I4)] EDataFlow _DATA_FLOW_,
+      [In][MarshalAs(UnmanagedType.I4)] ERole _ROLE_,
+      [MarshalAs(UnmanagedType.Interface)] out IMMDevice _PP_ENDPOINT_
+    );
+    /************************************************/
     [PreserveSig]
-    int GetDevice([In][MarshalAs(UnmanagedType.LPWStr)] string P_0, [MarshalAs(UnmanagedType.Interface)] out IMMDevice P_1);
-
+    int GetDevice(
+      [In][MarshalAs(UnmanagedType.LPWStr)] string _PWSTR_ID_,
+      [MarshalAs(UnmanagedType.Interface)] out IMMDevice _PP_DEVICE_
+    );
+    /************************************************/
     [PreserveSig]
-    int RegisterEndpointNotificationCallback([In][MarshalAs(UnmanagedType.Interface)] IMMNotificationClient P_0);
-
+    int RegisterEndpointNotificationCallback(
+      [In][MarshalAs(UnmanagedType.Interface)] IMMNotificationClient _P_CLIENT_
+    );
+    /************************************************/
     [PreserveSig]
-    int UnregisterEndpointNotificationCallback([In][MarshalAs(UnmanagedType.Interface)] IMMNotificationClient P_0);
+    int UnregisterEndpointNotificationCallback(
+      [In][MarshalAs(UnmanagedType.Interface)] IMMNotificationClient _P_CLIENT_
+    );
   }
 }
