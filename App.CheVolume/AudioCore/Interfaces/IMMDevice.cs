@@ -1,3 +1,5 @@
+// https://learn.microsoft.com/en-us/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdevice
+/************************************************/
 using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore.Interfaces
@@ -7,13 +9,25 @@ namespace AudioCore.Interfaces
   [ComVisible(true)]
   public interface IMMDevice
   {
-    int Activate(ref Guid P_0, CLSCTX P_1, IntPtr P_2, [MarshalAs(UnmanagedType.IUnknown)] out object P_3);
-
+    int Activate(
+      ref Guid _I_ID_,
+      CLSCTX _DW_CLS_CTX_,
+      IntPtr _P_ACTIVATION_PARAMS_,
+      [MarshalAs(UnmanagedType.IUnknown)] out object _PP_INTERFACE_
+    );
+    /************************************************/
     [PreserveSig]
-    int OpenPropertyStore(EStgmAccess P_0, out IPropertyStore P_1);
-
-    int GetId([MarshalAs(UnmanagedType.LPWStr)] out string P_0);
-
-    int GetState(out DeviceState P_0);
+    int OpenPropertyStore(
+      EStgmAccess _STGM_ACCESS_,
+      out IPropertyStore _PP_PROPERTIES_
+    );
+    /************************************************/
+    int GetId(
+      [MarshalAs(UnmanagedType.LPWStr)] out string _PPSTR_ID_
+    );
+    /************************************************/
+    int GetState(
+      out DeviceState _PDW_STATE_
+    );
   }
 }

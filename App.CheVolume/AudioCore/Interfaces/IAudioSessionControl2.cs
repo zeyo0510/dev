@@ -1,52 +1,82 @@
-using System;
+// https://learn.microsoft.com/en-us/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2
+/************************************************/
 using System.Runtime.InteropServices;
-
+/************************************************/
 namespace AudioCore.Interfaces
 {
-	[Guid("bfb7ff88-7239-4fc9-8fa2-07c950be9c6d")]
-	[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-	internal interface IAudioSessionControl2
-	{
-		[PreserveSig]
-		int GetState(out AudioSessionState P_0);
-
-		[PreserveSig]
-		int GetDisplayName(out IntPtr P_0);
-
-		[PreserveSig]
-		int SetDisplayName(string P_0, Guid P_1);
-
-		[PreserveSig]
-		int GetIconPath(out IntPtr P_0);
-
-		[PreserveSig]
-		int SetIconPath(string P_0, Guid P_1);
-
-		[PreserveSig]
-		int GetGroupingParam(out Guid P_0);
-
-		[PreserveSig]
-		int SetGroupingParam(Guid P_0, Guid P_1);
-
-		[PreserveSig]
-		int RegisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_);
-
-		[PreserveSig]
-		int UnregisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_);
-
-		[PreserveSig]
-		int GetSessionIdentifier(out IntPtr P_0);
-
-		[PreserveSig]
-		int GetSessionInstanceIdentifier(out IntPtr P_0);
-
-		[PreserveSig]
-		int GetProcessId(out uint P_0);
-
-		[PreserveSig]
-		int IsSystemSoundsSession();
-
-		[PreserveSig]
-		int SetDuckingPreference(bool P_0);
-	}
+  [Guid("bfb7ff88-7239-4fc9-8fa2-07c950be9c6d")]
+  [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+  internal interface IAudioSessionControl2
+  {
+    [PreserveSig]
+    int GetState(
+      out AudioSessionState _P_RET_VAL_
+    );
+    /************************************************/
+    [PreserveSig]
+    int GetDisplayName(
+      out IntPtr _P_RET_VAL_
+    );
+    /************************************************/
+    [PreserveSig]
+    int SetDisplayName(
+      string _VALUE_,
+      Guid _EVENT_CONTEXT_
+    );
+    /************************************************/
+    [PreserveSig]
+    int GetIconPath(
+      out IntPtr _P_RET_VAL_
+    );
+    /************************************************/
+    [PreserveSig]
+    int SetIconPath(
+      string _VALUE_,
+      Guid _EVENT_CONTEXT_
+    );
+    /************************************************/
+    [PreserveSig]
+    int GetGroupingParam(
+      out Guid _P_RET_VAL_
+    );
+    /************************************************/
+    [PreserveSig]
+    int SetGroupingParam(
+      Guid _OVERRIDE_,
+      Guid _EVENT_CONTEXT_
+    );
+    /************************************************/
+    [PreserveSig]
+    int RegisterAudioSessionNotification(
+      IAudioSessionEvents _NEW_NOTIFICATIONS_
+    );
+    /************************************************/
+    [PreserveSig]
+    int UnregisterAudioSessionNotification(
+      IAudioSessionEvents _NEW_NOTIFICATIONS_
+    );
+    /************************************************/
+    [PreserveSig]
+    int GetSessionIdentifier(
+      out IntPtr _P_RET_VAL_
+    );
+    /************************************************/
+    [PreserveSig]
+    int GetSessionInstanceIdentifier(
+      out IntPtr _P_RET_VAL_
+    );
+    /************************************************/
+    [PreserveSig]
+    int GetProcessId(
+      out uint _P_RET_VAL_
+    );
+    /************************************************/
+    [PreserveSig]
+    int IsSystemSoundsSession();
+    /************************************************/
+    [PreserveSig]
+    int SetDuckingPreference(
+      bool _OPT_OUT_
+    );
+  }
 }

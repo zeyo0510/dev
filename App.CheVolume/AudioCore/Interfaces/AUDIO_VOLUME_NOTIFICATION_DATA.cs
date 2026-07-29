@@ -1,5 +1,5 @@
-using System;
-
+// https://learn.microsoft.com/en-us/windows/win32/api/endpointvolume/ns-endpointvolume-audio_volume_notification_data
+/************************************************/
 namespace AudioCore.Interfaces
 {
 	internal struct AUDIO_VOLUME_NOTIFICATION_DATA
