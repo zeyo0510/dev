@@ -1,3 +1,5 @@
+// https://learn.microsoft.com/en-us/windows/win32/coreaudio/audclnt-streamflags-xxx-constants
+/************************************************/
 namespace AudioCore
 {
   [Flags]
