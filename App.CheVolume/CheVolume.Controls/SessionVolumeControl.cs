@@ -310,7 +310,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
   {
     SetMute(P_1);
     SetVolumeText(Math.Ceiling(P_0 * 100f).ToString());
-    if (!macTrackBar1.bool1)
+    if (!macTrackBar1.Dragging)
     {
       SetTrackBar((decimal)Math.Ceiling(P_0 * 100f));
     }
@@ -403,7 +403,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
       newValue = default(decimal);
     }
-    if (macTrackBar1.bool1)
+    if (macTrackBar1.Dragging)
     {
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
       SessionControl.Mute = false;
@@ -581,7 +581,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
       Invoke(new SYS_FLOAT_INVOKE(SetVolume), newValue);
     }
-    else if (!macTrackBar1.bool1)
+    else if (!macTrackBar1.Dragging)
     {
       macTrackBar1.Value = int.Parse(Math.Ceiling(newValue * 100f).ToString());
     }

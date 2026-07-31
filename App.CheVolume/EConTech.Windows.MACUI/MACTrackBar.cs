@@ -71,7 +71,7 @@ namespace EConTech.Windows.MACUI
 		[CompilerGenerated]
 		private EventHandler Scroll;
 
-		public bool bool1;
+		public bool Dragging;
 
 		public AudioEndpointVolume audioEndpointVolume1;
 
@@ -1150,7 +1150,7 @@ namespace EConTech.Windows.MACUI
 
 		private void _OnMouseDown(object P_0, MouseEventArgs P_1)
 		{
-			bool1 = true;
+			Dragging = true;
 			int num = 50;
 			PointF pt = new PointF(P_1.X, P_1.Y);
 			if (_trackerRect.Contains(pt))
@@ -1192,12 +1192,12 @@ namespace EConTech.Windows.MACUI
 
 		private void Method1(object P_0, MouseEventArgs P_1)
 		{
-			bool1 = false;
+			Dragging = false;
 		}
 
 		private void _OnMouseUp(object P_0, MouseEventArgs P_1)
 		{
-			bool1 = false;
+			Dragging = false;
 			leftButtonDown = false;
 			base.Capture = false;
 			if (Value > 100)
@@ -1216,12 +1216,12 @@ namespace EConTech.Windows.MACUI
 
 		private void _OnMouseLeave(object P_0, EventArgs P_1)
 		{
-			bool1 = false;
+			Dragging = false;
 		}
 
 		private void _OnMouseMove(object P_0, MouseEventArgs P_1)
 		{
-			bool1 = true;
+			Dragging = true;
 			if (Value > 100)
 			{
 				Value = 100;
