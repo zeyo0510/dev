@@ -1,5 +1,5 @@
-using System;
-
+// https://github.com/naudio/NAudio/blob/main/src/NAudio.Wasapi/CoreAudioApi/PropertyKeys.cs
+/************************************************/
 namespace AudioCore
 {
 	public static class PropertyKeys

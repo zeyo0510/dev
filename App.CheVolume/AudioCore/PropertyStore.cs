@@ -1,6 +1,9 @@
+// https://github.com/naudio/NAudio/blob/main/src/NAudio.Wasapi/CoreAudioApi/PropertyStore.cs
+/************************************************/
 using System.Runtime.InteropServices;
+/************************************************/
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
 	public class PropertyStore
@@ -11,9 +14,8 @@ namespace AudioCore
 		{
 			get
 			{
-				int result;
-				Marshal.ThrowExceptionForHR(_PropertyStore_.GetCount(out result));
-				return result;
+        Marshal.ThrowExceptionForHR(_PropertyStore_.GetCount(out int result));
+        return result;
 			}
 		}
 
@@ -26,9 +28,8 @@ namespace AudioCore
 					PropertyKey propertyKey = Get(i);
 					if (propertyKey.fmtid == P_0.fmtid && propertyKey.pid == P_0.pid)
 					{
-						PropVariant propVariant;
-						Marshal.ThrowExceptionForHR(_PropertyStore_.GetValue(ref propertyKey, out propVariant));
-						return new PropertyStoreProperty(propVariant);
+            Marshal.ThrowExceptionForHR(_PropertyStore_.GetValue(ref propertyKey, out PropVariant propVariant));
+            return new PropertyStoreProperty(propVariant);
 					}
 				}
 				return null;
@@ -50,9 +51,8 @@ namespace AudioCore
 
 		public PropertyKey Get(int P_0)
 		{
-			PropertyKey result;
-			Marshal.ThrowExceptionForHR(_PropertyStore_.GetAt(P_0, out result));
-			return result;
+      Marshal.ThrowExceptionForHR(_PropertyStore_.GetAt(P_0, out PropertyKey result));
+      return result;
 		}
 
 		internal PropertyStore(IPropertyStore P_0)

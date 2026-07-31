@@ -1,8 +1,9 @@
-using System;
+// https://github.com/naudio/NAudio/blob/main/src/NAudio.Wasapi/CoreAudioApi/PropVariant.cs
+/************************************************/
 using System.Runtime.InteropServices;
-using System.Runtime.InteropServices.ComTypes;
+/************************************************/
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
 	[StructLayout(LayoutKind.Explicit)]

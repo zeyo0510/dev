@@ -1,3 +1,5 @@
+// https://learn.microsoft.com/en-us/windows/win32/api/audioclient/ne-audioclient-_audclnt_bufferflags
+/************************************************/
 namespace AudioCore
 {
   [Flags]

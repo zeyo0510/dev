@@ -18,11 +18,13 @@ namespace AudioCore
       get
       {
         Marshal.ThrowExceptionForHR(this._SimpleAudioVolume_.GetMasterVolume(out float retValue));
+        /************************************************/
         return retValue;
       }
       set
       {
         Guid empty = Guid.Empty;
+        /************************************************/
         Marshal.ThrowExceptionForHR(this._SimpleAudioVolume_.SetMasterVolume(value, ref empty));
       }
     }
@@ -32,6 +34,7 @@ namespace AudioCore
       get
       {
         Marshal.ThrowExceptionForHR(this._SimpleAudioVolume_.GetMute(out bool retValue));
+        /************************************************/
         return retValue;
       }
       set
