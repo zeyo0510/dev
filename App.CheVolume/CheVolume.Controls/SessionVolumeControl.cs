@@ -14,30 +14,6 @@ namespace CheVolume.Controls;
 /************************************************/
 public partial class SessionVolumeControl : UserControl
 {
-  [Serializable]
-  internal struct WINDOWPLACEMENT
-  {
-    public int LENGTH;
-
-    public int FLAGS;
-
-    public Enum2 SHOWCMD;
-
-    public Point MIN_POS;
-
-    public Point MAX_POS;
-
-    public Rectangle NormalPosition;
-  }
-
-  internal enum Enum2
-  {
-    Item1,
-    Item2,
-    Item3,
-    Item4
-  }
-
   public enum Enum1
   {
     Item1,
@@ -51,8 +27,6 @@ public partial class SessionVolumeControl : UserControl
   private bool dragging;
 
   private readonly AudioPolicyConfigService audioPolicyConfigService1;
-
-  private readonly Enum1 enum1;
 
   private int num1;
 
@@ -68,6 +42,7 @@ public partial class SessionVolumeControl : UserControl
     }
   }
 
+  private readonly Enum1 enum1;
   private EDataFlow Flow
   {
     get
@@ -137,43 +112,11 @@ public partial class SessionVolumeControl : UserControl
       Settings.Default.Save();
     }
   }
-
-  [DllImport("user32.dll", EntryPoint = "GetWindowPlacement", SetLastError = true)]
-  [return: MarshalAs(UnmanagedType.Bool)]
-  internal static extern bool _GetWindowPlacement(IntPtr P_0, ref WINDOWPLACEMENT P_1);
-
-  private static WINDOWPLACEMENT GetWindowPlacement(IntPtr P_0)
-  {
-    WINDOWPLACEMENT wINDOWPLACEMENT = default(WINDOWPLACEMENT);
-    wINDOWPLACEMENT.LENGTH = Marshal.SizeOf(wINDOWPLACEMENT);
-    _GetWindowPlacement(P_0, ref wINDOWPLACEMENT);
-    return wINDOWPLACEMENT;
-  }
-
-  [DllImport("user32.dll", EntryPoint = "SetForegroundWindow")]
-  private static extern bool _SetForegroundWindow(IntPtr P_0);
-
-  [DllImport("user32.dll", EntryPoint = "ShowWindowAsync")]
-  public static extern bool _ShowWindowAsync(HandleRef P_0, int P_1);
-
   [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "DestroyIcon")]
   private static extern bool _DestroyIcon(IntPtr P_0);
 
   [DllImport("Shell32", EntryPoint = "ExtractIconEx")]
   public static extern int _ExtractIconEx(string P_0, int P_1, out IntPtr P_2, out IntPtr P_3, int P_4);
-
-  private bool ProcessExists(Process P_0)
-  {
-    if (!P_0.HasExited)
-    {
-      if (Enumerable.Contains(ListOfProcessesLocked, P_0.ProcessName))
-      {
-        return true;
-      }
-      return false;
-    }
-    return false;
-  }
 
   public SessionVolumeControl(AudioSessionControl2 _SESSION_CONTROL_, Process P_1)
   {
@@ -613,15 +556,7 @@ public partial class SessionVolumeControl : UserControl
 
   private void showprocCheCheckBox_Click(object sender, EventArgs e)
   {
-    if (GetWindowPlacement(process1.MainWindowHandle).SHOWCMD == Enum2.Item3)
-    {
-      _ShowWindowAsync(new HandleRef(null, process1.MainWindowHandle), 10);
-    }
-    else
-    {
-      _ShowWindowAsync(new HandleRef(null, process1.MainWindowHandle), 5);
-    }
-    _SetForegroundWindow(process1.MainWindowHandle);
+    ShowProcess(this.process1);
   }
 
   private void muteCheckBox_CheckedChanged(object sender, EventArgs e)
