@@ -44,27 +44,9 @@ public partial class SessionVolumeControl : UserControl
     Item2
   }
 
-  private delegate void RemoveSessioNotif2_SYS();
-
-  private delegate void SYS_EMPTY_INVOKE_V2();
-
-  private delegate void SYS_DECIMAL_INVOKE(decimal A_0);
-
-  private delegate void SYS_STRING_INVOKE(string A_0);
-
-  private delegate void SYS_BOOL_INVOKE_V2(bool A_0);
-
-  private delegate void OnStateChanged2_SYS(AudioSessionState A_0);
-
-  private delegate void SYS_FLOAT_INVOKE(float A_0);
-
-  private delegate void RemoveSessionNotif_SYS();
-
-  private delegate void SYS_BOOL_INVOKE(bool A_0);
-
   public Process process1;
 
-  public string str1;
+  public string procName;
 
   private bool dragging;
 
@@ -177,10 +159,6 @@ public partial class SessionVolumeControl : UserControl
   [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "DestroyIcon")]
   private static extern bool _DestroyIcon(IntPtr P_0);
 
-  [DllImport("kernel32.dll", EntryPoint = "IsWow64Process", SetLastError = true)]
-  [return: MarshalAs(UnmanagedType.Bool)]
-  internal static extern bool _IsWow64Process([In] IntPtr P_0, out bool P_1);
-
   [DllImport("Shell32", EntryPoint = "ExtractIconEx")]
   public static extern int _ExtractIconEx(string P_0, int P_1, out IntPtr P_2, out IntPtr P_3, int P_4);
 
@@ -224,7 +202,7 @@ public partial class SessionVolumeControl : UserControl
     _DestroyIcon(icon.Handle);
     /************************************************/
     nameLabel.Text = ((process1.Id == 0) ? "System Sounds" : process1.MainWindowTitle);
-    str1 = process1.ProcessName;
+    procName = process1.ProcessName;
     if (process1.Id == 0)
     {
       transfertButton.Visible = false;
@@ -254,7 +232,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new RemoveSessioNotif2_SYS(RemoveSessioNotif2));
+      BeginInvoke(new Action(RemoveSessioNotif2));
       return;
     }
     try
@@ -322,7 +300,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_DECIMAL_INVOKE(SetTrackBar), newValue);
+      BeginInvoke(new Action<decimal>(SetTrackBar), newValue);
     }
     else
     {
@@ -373,9 +351,9 @@ public partial class SessionVolumeControl : UserControl
     RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("Software", true);
     registryKey = registryKey.OpenSubKey("CheVolume", true);
     registryKey = registryKey.OpenSubKey("Data", true);
-    if (registryKey.GetValue(str1) != null)
+    if (registryKey.GetValue(procName) != null)
     {
-      registryKey.DeleteValue(str1);
+      registryKey.DeleteValue(procName);
     }
     int count = MMDeviceCollection.Count;
     audioPolicyConfigService1.SetDefaultEndPoint(null, process1.Id);
@@ -396,7 +374,7 @@ public partial class SessionVolumeControl : UserControl
     registryKey.CreateSubKey("CheVolume");
     RegistryKey registryKey2 = registryKey.OpenSubKey("CheVolume", true);
     registryKey2.CreateSubKey("Data");
-    registryKey2.OpenSubKey("Data", true).SetValue(str1, P_1);
+    registryKey2.OpenSubKey("Data", true).SetValue(procName, P_1);
   }
 
   private void transfertButton_Click(object sender, EventArgs e)
@@ -479,7 +457,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE_V2(SetMute), newValue);
+      BeginInvoke(new Action<bool>(SetMute), newValue);
       return;
     }
     /************************************************/
@@ -490,7 +468,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_STRING_INVOKE(SetVolumeText), newValue);
+      BeginInvoke(new Action<string>(SetVolumeText), newValue);
       return;
     }
     /************************************************/
@@ -501,7 +479,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_STRING_INVOKE(RefreshProcess), newValue);
+      BeginInvoke(new Action<string>(RefreshProcess), newValue);
       return;
     }
     /************************************************/
@@ -513,7 +491,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_FLOAT_INVOKE(SetVolume), newValue);
+      BeginInvoke(new Action<float>(SetVolume), newValue);
       return;
     }
     /************************************************/
@@ -527,7 +505,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new RemoveSessionNotif_SYS(RemoveSessionNotif));
+      BeginInvoke(new Action(RemoveSessionNotif));
       return;
     }
     /************************************************/
@@ -539,7 +517,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new SYS_BOOL_INVOKE(SetVisible), newValue);
+      BeginInvoke(new Action<bool>(SetVisible), newValue);
       return;
     }
     /************************************************/
@@ -550,7 +528,7 @@ public partial class SessionVolumeControl : UserControl
   {
     if (base.InvokeRequired)
     {
-      Invoke(new OnStateChanged2_SYS(OnStateChanged2), newValue);
+      BeginInvoke(new Action<AudioSessionState>(OnStateChanged2), newValue);
       return;
     }
     /************************************************/
