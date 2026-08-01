@@ -43,11 +43,15 @@ public partial class SessionVolumeControl : IAudioSessionEvents
   /************************************************/
   public int OnGroupingParamChanged(Guid groupingParam, Guid context)
   {
+    Console.WriteLine($"OnGroupingParamChanged : {groupingParam}");
+    /************************************************/
     return 0;
   }
   /************************************************/
   public int OnStateChanged(AudioSessionState state)
   {
+    Console.WriteLine($"OnStateChanged : {state}");
+    /************************************************/
     this.process1.Refresh();
     /************************************************/
     OnStateChanged2(state);
@@ -57,6 +61,8 @@ public partial class SessionVolumeControl : IAudioSessionEvents
   /************************************************/
   public int OnSessionDisconnected(AudioSessionDisconnectReason disconnectReason)
   {
+    Console.WriteLine($"OnSessionDisconnected : {disconnectReason}");
+    /************************************************/
     RemoveSessionNotif();
     /************************************************/
     return 0;
