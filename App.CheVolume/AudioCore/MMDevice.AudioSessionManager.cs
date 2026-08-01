@@ -12,7 +12,7 @@ namespace AudioCore
       {
         Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioSessionManager2, CLSCTX.ALL, IntPtr.Zero, out object retValue));
         /************************************************/
-        return new AudioSessionManager2(retValue as IAudioSessionManager2);
+        return new(retValue as IAudioSessionManager2);
       }
     }
   }

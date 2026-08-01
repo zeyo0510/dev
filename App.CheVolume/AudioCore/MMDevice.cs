@@ -11,10 +11,6 @@ namespace AudioCore
 
     private PropertyStore propertyStore1;
 
-    private AudioMeterInformation _AudioMeterInformation_;
-
-    private AudioEndpointVolume _AudioEndpointVolume_;
-
     private static Guid IID_IAudioMeterInformation = new Guid("C02216F6-8C67-4B5B-9D00-D008E73E0064");
 
     private static Guid IID_IAudioEndpointVolume = new Guid("5CDF2C82-841E-4546-9722-0CF74078229A");

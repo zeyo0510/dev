@@ -63,7 +63,7 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (defaultCheckBox.Checked)
     {
-      Class4.Method3(this.MMDevice.ID);
+      Class4.SetDefault(this.MMDevice.ID);
     }
     else
     {

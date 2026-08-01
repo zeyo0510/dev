@@ -12,7 +12,7 @@ namespace AudioCore
       {
         Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioClient, CLSCTX.ALL, IntPtr.Zero, out object retValue));
         /************************************************/
-        return new AudioClient(retValue as IAudioClient);
+        return new(retValue as IAudioClient);
       }
     }
   }

@@ -6,6 +6,8 @@ namespace AudioCore
 {
   partial class MMDevice
   {
+    private AudioMeterInformation _AudioMeterInformation_;
+    /************************************************/
     public AudioMeterInformation AudioMeterInformation
     {
       get
@@ -14,7 +16,7 @@ namespace AudioCore
         {
           Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out object retValue));
           /************************************************/
-          this._AudioMeterInformation_ = new AudioMeterInformation(retValue as IAudioMeterInformation);
+          this._AudioMeterInformation_ = new(retValue as IAudioMeterInformation);
         }
         /************************************************/
         return this._AudioMeterInformation_;

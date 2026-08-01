@@ -1,5 +1,3 @@
-using JC.CS.Lib.Extensions;
-/************************************************/
 namespace CheVolume.Controls;
 /************************************************/
 partial class SessionVolumeControl
