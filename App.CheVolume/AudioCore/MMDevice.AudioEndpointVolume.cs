@@ -8,6 +8,8 @@ namespace AudioCore
   {
     private AudioEndpointVolume _AudioEndpointVolume_;
     /************************************************/
+    private static Guid IID_IAudioEndpointVolume = new("5CDF2C82-841E-4546-9722-0CF74078229A");
+    /************************************************/
     public AudioEndpointVolume AudioEndpointVolume
     {
       get

@@ -8,6 +8,8 @@ namespace AudioCore
   {
     private AudioMeterInformation _AudioMeterInformation_;
     /************************************************/
+    private static Guid IID_IAudioMeterInformation = new("C02216F6-8C67-4B5B-9D00-D008E73E0064");
+    /************************************************/
     public AudioMeterInformation AudioMeterInformation
     {
       get
