@@ -18,6 +18,12 @@ public partial class DeviceVolumeControl : UserControl
     this.EndPointVolume.OnVolumeNotification += SetData;
   }
 
+  private void SetData(AudioVolumeNotificationData data)
+  {
+    SetVolume(int.Parse(Math.Ceiling(data.MasterVolume * 100f).ToString()));
+    SetMute(data.Muted);
+  }
+
   public void SetVolume(int newValue)
   {
     if (base.InvokeRequired)
@@ -41,23 +47,19 @@ public partial class DeviceVolumeControl : UserControl
     // muteCheckBox.Checked = newValue;
   }
 
-  private void SetData(AudioVolumeNotificationData data)
-  {
-    SetVolume(int.Parse(Math.Ceiling(data.MasterVolume * 100f).ToString()));
-    SetMute(data.Muted);
-  }
-
   public void SetDefault(bool newValue)
   {
     defaultCheckBox.Checked = newValue;
   }
+
+  // object event...
 
   private void guiTimer_Tick(object sender, EventArgs e)
   {
     this.UpdateUI();
   }
 
-  private void defaultCheckBox_MouseClick(object sender, MouseEventArgs e)
+  private void defaultCheckBox_Click(object sender, EventArgs e)
   {
     if (defaultCheckBox.Checked)
     {

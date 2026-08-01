@@ -73,7 +73,8 @@ public partial class MainForm : Form
 
   private XMLSettings xmlSettings1;
 
-  private MMDeviceCollection mmDeviceCollection1;
+  private MMDeviceCollection _MMDeviceCollection_;
+  private MMNotificationClient _MMNotificationClient_;
 
   private string str2;
 
@@ -83,7 +84,6 @@ public partial class MainForm : Form
 
   public ProcessStartInfo processStartInfo1;
 
-  public MMNotificationClient mmNotificationClient1;
 
   internal static float dpiX;
 
@@ -152,9 +152,11 @@ public partial class MainForm : Form
 
   public MainForm()
   {
-    mmDeviceCollection1 = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
-    mmNotificationClient1 = new MMNotificationClient();
-    Class4.mmDeviceEnumerator1.RegisterEndpointNotificationCallback(mmNotificationClient1);
+    this._MMDeviceCollection_ = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+    /************************************************/
+    this._MMNotificationClient_ = new MMNotificationClient();
+    /************************************************/
+    Class4.mmDeviceEnumerator1.RegisterEndpointNotificationCallback(_MMNotificationClient_);
     processList = new List<ProcessMapping>();
     CreateRegistry();
     InitializeComponent();
@@ -165,14 +167,16 @@ public partial class MainForm : Form
     ImageHelper.SetImageSize(dpiX);
     xmlSettings1 = new XMLSettings();
     xmlSettings1.Load();
-    MMNotificationClient mMNotificationClient = mmNotificationClient1;
-    mMNotificationClient.DefaultChanged = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient.DefaultChanged, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged));
-    MMNotificationClient mMNotificationClient2 = mmNotificationClient1;
-    mMNotificationClient2.DeviceAdded = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient2.DeviceAdded, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceAdded));
-    MMNotificationClient mMNotificationClient3 = mmNotificationClient1;
-    mMNotificationClient3.DeviceRemoved = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient3.DeviceRemoved, new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceRemove));
-    MMNotificationClient mMNotificationClient4 = mmNotificationClient1;
-    mMNotificationClient4.PropertyValueChanged = (MMNotificationClientPropertyValueDelegate)Delegate.Combine(mMNotificationClient4.PropertyValueChanged, new MMNotificationClientPropertyValueDelegate(mmNotificationClient1_PropertyValueChanged));
+    /************************************************/
+    MMNotificationClient mMNotificationClient = _MMNotificationClient_;
+    mMNotificationClient.DefaultChanged = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient.DefaultChanged, new MMNotificationClientDeviceDelegate(_MMNotificationClient__DefaultChanged));
+    MMNotificationClient mMNotificationClient2 = _MMNotificationClient_;
+    mMNotificationClient2.DeviceAdded = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient2.DeviceAdded, new MMNotificationClientDeviceDelegate(_MMNotificationClient__DeviceAdded));
+    MMNotificationClient mMNotificationClient3 = _MMNotificationClient_;
+    mMNotificationClient3.DeviceRemoved = (MMNotificationClientDeviceDelegate)Delegate.Combine(mMNotificationClient3.DeviceRemoved, new MMNotificationClientDeviceDelegate(_MMNotificationClient__DeviceRemove));
+    MMNotificationClient mMNotificationClient4 = _MMNotificationClient_;
+    mMNotificationClient4.PropertyValueChanged = (MMNotificationClientPropertyValueDelegate)Delegate.Combine(mMNotificationClient4.PropertyValueChanged, new MMNotificationClientPropertyValueDelegate(_MMNotificationClient__PropertyValueChanged));
+    /************************************************/
     bool1 = false;
     UpdateAudio();
     AutoAdjSessionManagerPanel();
@@ -201,49 +205,52 @@ public partial class MainForm : Form
   {
     if (base.InvokeRequired)
     {
-      Invoke(delegate
-      {
-        UpdateAudio();
-      });
+      Invoke(UpdateAudio);
       return;
     }
-    string text = DefaultDevice.ID.ToString();
-    mmDeviceCollection1 = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
-    int count = mmDeviceCollection1.Count;
+    /************************************************/
+    string defaultDeviceID = this.DefaultDevice.ID.ToString();
+    /************************************************/
+    this._MMDeviceCollection_ = Class4.mmDeviceEnumerator1.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+    /************************************************/
+    int count = _MMDeviceCollection_.Count;
+    /************************************************/
     for (int i = 0; i < count; i++)
     {
-      MMDevice mMDevice = mmDeviceCollection1[i];
-      string string1 = mMDevice.ID;
+      MMDevice _MM_DEVICE_ = _MMDeviceCollection_[i];
+      /************************************************/
+      string deviceID = _MM_DEVICE_.ID;
+      /************************************************/
       List<FlowLayoutPanel1> list = Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls));
-      bool @default = false;
-      if (string1 == text)
+      bool isDefault = false;
+      if (deviceID == defaultDeviceID)
       {
-        @default = true;
+        isDefault = true;
       }
       FlowLayoutPanel1 flowLayoutPanel = list.Find(delegate(FlowLayoutPanel1 P_0)
       {
-        return string.Compare(P_0.Tag.ToString(), string1) == 0;
+        return string.Compare(P_0.Tag.ToString(), deviceID) == 0;
       });
       if (flowLayoutPanel == null)
       {
-        flowLayoutPanel = new FlowLayoutPanel1(mMDevice);
-        flowLayoutPanel.Tag = mMDevice.ID;
+        flowLayoutPanel = new FlowLayoutPanel1(_MM_DEVICE_);
+        flowLayoutPanel.Tag = _MM_DEVICE_.ID;
         flowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
         pnlSessMgr.Controls.Add(flowLayoutPanel);
-        DeviceVolumeControl deviceVolumeControl = new DeviceVolumeControl(mMDevice);
+        DeviceVolumeControl deviceVolumeControl = new DeviceVolumeControl(_MM_DEVICE_);
         deviceVolumeControl.BackColor = Color.FromArgb(242, 242, 242);
-        deviceVolumeControl.Tag = mMDevice.ID;
-        deviceVolumeControl.SetDefault(@default);
+        deviceVolumeControl.Tag = _MM_DEVICE_.ID;
+        deviceVolumeControl.SetDefault(isDefault);
         flowLayoutPanel.Controls.Add(deviceVolumeControl);
       }
       else
       {
-        Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(@default);
+        Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(isDefault);
       }
       int num;
       try
       {
-        num = mMDevice.AudioSessionManager.Count;
+        num = _MM_DEVICE_.AudioSessionManager.Count;
       }
       catch (Exception)
       {
@@ -251,11 +258,11 @@ public partial class MainForm : Form
       }
       for (int j = 0; j < num; j++)
       {
-        AudioSessionControl2 audioSessionControl21 = mMDevice.AudioSessionManager._AudioSessionEnumerator_[j];
+        AudioSessionControl2 _AUDIO_SESSION_CONTROL_ = _MM_DEVICE_.AudioSessionManager._AudioSessionEnumerator_[j];
         Process process;
         try
         {
-          process = Process.GetProcessById((int)audioSessionControl21.ProcessID);
+          process = Process.GetProcessById((int)_AUDIO_SESSION_CONTROL_.ProcessID);
         }
         catch (Exception)
         {
@@ -271,17 +278,17 @@ public partial class MainForm : Form
         {
           sessionVolumeControl = list2.Find(delegate(SessionVolumeControl P_0)
           {
-            return string.Compare(P_0.Tag.ToString().ToLower(), audioSessionControl21.SessionInstanceIdentifier.ToLower()) == 0;
+            return string.Compare(P_0.Tag.ToString().ToLower(), _AUDIO_SESSION_CONTROL_.SessionInstanceIdentifier.ToLower()) == 0;
           });
         }
-        AudioSessionState audioSessionState = audioSessionControl21.State;
+        AudioSessionState audioSessionState = _AUDIO_SESSION_CONTROL_.State;
         if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
         {
-          sessionVolumeControl = new SessionVolumeControl(audioSessionControl21, process);
-          int value = int.Parse(Math.Ceiling(audioSessionControl21.Volume).ToString());
-          sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
-          sessionVolumeControl.MMDevice = mMDevice;
-          sessionVolumeControl.muteCheCheckBox.Checked = audioSessionControl21.Mute;
+          sessionVolumeControl = new SessionVolumeControl(_AUDIO_SESSION_CONTROL_, process);
+          int value = int.Parse(Math.Ceiling(_AUDIO_SESSION_CONTROL_.Volume).ToString());
+          sessionVolumeControl.MMDeviceCollection = _MMDeviceCollection_;
+          sessionVolumeControl.MMDevice = _MM_DEVICE_;
+          sessionVolumeControl.muteCheckBox.Checked = _AUDIO_SESSION_CONTROL_.Mute;
           sessionVolumeControl.macTrackBar1.Value = value;
           flowLayoutPanel.Controls.Add(sessionVolumeControl);
           if (process.Id == 0)
@@ -291,18 +298,19 @@ public partial class MainForm : Form
         }
       }
     }
-    InvokeStateChanged();
+    /************************************************/
+    this.InvokeStateChanged();
   }
 
-  private void mmNotificationClient1_PropertyValueChanged(string P_0, PROPERTYKEY P_1)
+  private void _MMNotificationClient__PropertyValueChanged(string P_0, PROPERTYKEY P_1)
   {
   }
 
-  private void mmNotificationClient1_DefaultChanged(string P_0)
+  private void _MMNotificationClient__DefaultChanged(string P_0)
   {
     if (base.InvokeRequired)
     {
-      BeginInvoke(new MMNotificationClientDeviceDelegate(mmNotificationClient1_DefaultChanged), P_0);
+      BeginInvoke(new MMNotificationClientDeviceDelegate(_MMNotificationClient__DefaultChanged), P_0);
     }
     else
     {
@@ -310,11 +318,11 @@ public partial class MainForm : Form
     }
   }
 
-  private void mmNotificationClient1_DeviceAdded(string P_0)
+  private void _MMNotificationClient__DeviceAdded(string P_0)
   {
     if (base.InvokeRequired)
     {
-      BeginInvoke(new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceAdded), P_0);
+      BeginInvoke(new MMNotificationClientDeviceDelegate(_MMNotificationClient__DeviceAdded), P_0);
     }
     else
     {
@@ -322,11 +330,11 @@ public partial class MainForm : Form
     }
   }
 
-  private void mmNotificationClient1_DeviceRemove(string P_0)
+  private void _MMNotificationClient__DeviceRemove(string P_0)
   {
     if (base.InvokeRequired)
     {
-      BeginInvoke(new MMNotificationClientDeviceDelegate(mmNotificationClient1_DeviceRemove), P_0);
+      BeginInvoke(new MMNotificationClientDeviceDelegate(_MMNotificationClient__DeviceRemove), P_0);
       return;
     }
     foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls)))
@@ -361,15 +369,6 @@ public partial class MainForm : Form
         item2.OnStateChanged2(item2.SessionControl.State);
       }
     }
-  }
-
-  private void pnlSessMgr_SizeChanged(object P_0, EventArgs P_1)
-  {
-  }
-
-
-  private void pnlSessMgr_ControlAdded(object P_0, ControlEventArgs P_1)
-  {
   }
 
   private void advancedToolStripMenuItem_Click(object sender, EventArgs e)

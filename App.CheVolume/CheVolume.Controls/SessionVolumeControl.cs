@@ -12,7 +12,7 @@ using WinForm = System.Windows.Forms;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
-public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
+public partial class SessionVolumeControl : UserControl
 {
   [Serializable]
   internal struct WINDOWPLACEMENT
@@ -66,7 +66,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   public string str1;
 
-  private bool bool1;
+  private bool dragging;
 
   private readonly AudioPolicyConfigService audioPolicyConfigService1;
 
@@ -213,9 +213,9 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     guiTimer.Tick += guiTimer_Tick;
     guiTimer.Interval = 10;
     /************************************************/
-    RegisterAudioSessionNotification(this);
+    this.SessionControl.RegisterAudioSessionNotification(this);
     base.Tag = this.SessionControl.SessionInstanceIdentifier.ToString();
-    bool1 = false;
+    dragging = false;
     base.Margin = new Padding(0);
     string audioSetivceDLL = GetAudioSetivceDLL(process1);
     /************************************************/
@@ -229,7 +229,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     {
       transfertButton.Visible = false;
       showprocCheCheckBox.Visible = false;
-      muteCheCheckBox.Location = new Point(base.Size.Width / 2 - muteCheCheckBox.Width / 2, muteCheCheckBox.Location.Y);
+      muteCheckBox.Location = new Point(base.Size.Width / 2 - muteCheckBox.Width / 2, muteCheckBox.Location.Y);
     }
     OnStateChanged2(SessionControl.State);
   }
@@ -260,7 +260,7 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     try
     {
       base.Parent.Controls.Remove(this);
-      UnregisterAudioSessionNotification(this);
+      this.SessionControl.UnregisterAudioSessionNotification(this);
     }
     catch (Exception)
     {
@@ -280,64 +280,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       {
       }
     }
-  }
-
-  public void RegisterAudioSessionNotification(IAudioSessionEvents P_0)
-  {
-    SessionControl.RegisterAudioSessionNotification(P_0);
-  }
-
-  public void UnregisterAudioSessionNotification(IAudioSessionEvents P_0)
-  {
-    SessionControl.UnregisterAudioSessionNotification(P_0);
-  }
-
-  private static void StaticMethod1(IAsyncResult P_0)
-  {
-  }
-
-  public int OnDisplayNameChanged([MarshalAs(UnmanagedType.LPWStr)] string P_0, Guid P_1)
-  {
-    return 0;
-  }
-
-  public int OnIconPathChanged(string P_0, Guid P_1)
-  {
-    return 0;
-  }
-
-  public int OnSimpleVolumeChanged(float P_0, bool P_1, Guid P_2)
-  {
-    SetMute(P_1);
-    SetVolumeText(Math.Ceiling(P_0 * 100f).ToString());
-    if (!macTrackBar1.Dragging)
-    {
-      SetTrackBar((decimal)Math.Ceiling(P_0 * 100f));
-    }
-    return 0;
-  }
-
-  public int OnChannelVolumeChanged(uint P_0, IntPtr P_1, uint P_2, Guid P_3)
-  {
-    return 0;
-  }
-
-  public int OnGroupingParamChanged(Guid P_0, Guid P_1)
-  {
-    return 0;
-  }
-
-  public int OnStateChanged(AudioSessionState P_0)
-  {
-    process1.Refresh();
-    OnStateChanged2(P_0);
-    return 0;
-  }
-
-  public int OnSessionDisconnected(AudioSessionDisconnectReason P_0)
-  {
-    RemoveSessionNotif();
-    return 0;
   }
 
   private void guiTimer_Tick(object sender, EventArgs e)
@@ -390,9 +332,9 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
 
   private void macTrackBar1_ValueChanged(object sender, decimal newValue)
   {
-    if (!bool1)
+    if (!dragging)
     {
-      bool1 = true;
+      dragging = true;
       return;
     }
     if (newValue > 100m)
@@ -406,8 +348,8 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (macTrackBar1.Dragging)
     {
       macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      SessionControl.Mute = false;
-      SessionControl.Volume = (int)newValue;
+      this.Mute = false;
+      this.Volume = (int)newValue;
     }
     else
     {
@@ -470,11 +412,6 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
     this.contextMenuStrip1.Items.Add(toolStripMenuItem);
     /************************************************/
-
-
-
-
-
     this.contextMenuStrip1.Items.Add(new ToolStripSeparator());
 
 
@@ -543,11 +480,10 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (base.InvokeRequired)
     {
       Invoke(new SYS_BOOL_INVOKE_V2(SetMute), newValue);
+      return;
     }
-    else
-    {
-      muteCheCheckBox.Checked = newValue;
-    }
+    /************************************************/
+    muteCheckBox.Checked = newValue;
   }
 
   public void SetVolumeText(string newValue)
@@ -555,11 +491,10 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (base.InvokeRequired)
     {
       Invoke(new SYS_STRING_INVOKE(SetVolumeText), newValue);
+      return;
     }
-    else
-    {
-      volumeLabel.Text = newValue;
-    }
+    /************************************************/
+    volumeLabel.Text = newValue;
   }
 
   public void RefreshProcess(string newValue)
@@ -567,12 +502,11 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (base.InvokeRequired)
     {
       Invoke(new SYS_STRING_INVOKE(RefreshProcess), newValue);
+      return;
     }
-    else
-    {
-      process1.Refresh();
-      nameLabel.Text = process1.MainWindowTitle;
-    }
+    /************************************************/
+    process1.Refresh();
+    nameLabel.Text = process1.MainWindowTitle;
   }
 
   public void SetVolume(float newValue)
@@ -580,8 +514,10 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (base.InvokeRequired)
     {
       Invoke(new SYS_FLOAT_INVOKE(SetVolume), newValue);
+      return;
     }
-    else if (!macTrackBar1.Dragging)
+    /************************************************/
+    if (!macTrackBar1.Dragging)
     {
       macTrackBar1.Value = int.Parse(Math.Ceiling(newValue * 100f).ToString());
     }
@@ -594,7 +530,8 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       Invoke(new RemoveSessionNotif_SYS(RemoveSessionNotif));
       return;
     }
-    UnregisterAudioSessionNotification(this);
+    /************************************************/
+    this.SessionControl.UnregisterAudioSessionNotification(this);
     base.Parent.Controls.Remove(this);
   }
 
@@ -603,11 +540,10 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     if (base.InvokeRequired)
     {
       Invoke(new SYS_BOOL_INVOKE(SetVisible), newValue);
+      return;
     }
-    else
-    {
-      base.Visible = newValue;
-    }
+    /************************************************/
+    base.Visible = newValue;
   }
 
   public void OnStateChanged2(AudioSessionState newValue)
@@ -617,37 +553,38 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       Invoke(new OnStateChanged2_SYS(OnStateChanged2), newValue);
       return;
     }
+    /************************************************/
     switch (newValue)
     {
-    case AudioSessionState.AudioSessionStateActive:
-      SetVisible(true);
-      guiTimer.Start();
-      break;
-    case AudioSessionState.AudioSessionStateInactive:
-      if (IsAdvancedUser)
-      {
+      case AudioSessionState.AudioSessionStateActive:
         SetVisible(true);
-        leftLedBar.Value = 0;
         guiTimer.Start();
-      }
-      else
-      {
+        break;
+      case AudioSessionState.AudioSessionStateInactive:
+        if (IsAdvancedUser)
+        {
+          SetVisible(true);
+          leftLedBar.Value = 0;
+          guiTimer.Start();
+        }
+        else
+        {
+          SetVisible(false);
+          this.leftLedBar.Value = 0;
+          guiTimer.Stop();
+        }
+        break;
+      case AudioSessionState.AudioSessionStateExpired:
         SetVisible(false);
-        this.leftLedBar.Value = 0;
+        try
+        {
+          base.Parent.Controls.Remove(this);
+        }
+        catch (Exception)
+        {
+        }
         guiTimer.Stop();
-      }
-      break;
-    case AudioSessionState.AudioSessionStateExpired:
-      SetVisible(false);
-      try
-      {
-        base.Parent.Controls.Remove(this);
-      }
-      catch (Exception)
-      {
-      }
-      guiTimer.Stop();
-      break;
+        break;
     }
   }
 
@@ -670,15 +607,13 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     }
   }
 
-  private string GetAudioSetivceDLL(Process P_0)
+  private string GetAudioSetivceDLL(Process p)
   {
-    if (P_0.Id == 0)
-    {
-      return Environment.SystemDirectory + "\\audiosrv.dll";
-    }
+    if (p.Id == 0) return Environment.SystemDirectory + "\\audiosrv.dll";
+    /************************************************/
     try
     {
-      return P_0.MainModule.FileName;
+      return p.MainModule.FileName;
     }
     catch
     {
@@ -686,30 +621,17 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
       {
         object obj2 = item["ProcessID"];
         object obj3 = item["ExecutablePath"];
-        if (obj3 != null && obj2.ToString() == P_0.Id.ToString())
+        if (obj3 != null && obj2.ToString() == p.Id.ToString())
         {
           return obj3.ToString();
         }
       }
     }
+    /************************************************/
     return Application.ExecutablePath;
   }
 
-  private void showprocCheCheckBox_MouseHover(object sender, EventArgs e)
-  {
-  }
-
-  private void showprocCheCheckBox_MouseLeave(object sender, EventArgs e)
-  {
-    showprocCheCheckBox.Image = Resources.showwindow;
-    showprocCheCheckBox.FlatAppearance.BorderColor = Color.DarkGray;
-  }
-
-  private void showprocCheCheckBox_MouseEnter(object sender, EventArgs e)
-  {
-    showprocCheCheckBox.Image = Resources.showwindowover;
-    showprocCheCheckBox.FlatAppearance.BorderColor = Color.FromArgb(255, 151, 0);
-  }
+  // object event...
 
   private void showprocCheCheckBox_Click(object sender, EventArgs e)
   {
@@ -724,27 +646,11 @@ public partial class SessionVolumeControl : UserControl, IAudioSessionEvents
     _SetForegroundWindow(process1.MainWindowHandle);
   }
 
-  private void sessionPictureBox_Click(object sender, EventArgs e)
+  private void muteCheckBox_CheckedChanged(object sender, EventArgs e)
   {
-    if (IsAdvancedUser)
-    {
-      pidLabel.Visible = !pidLabel.Visible;
-    }
-  }
-
-  private void muteCheCheckBox_CheckedChanged(object sender, EventArgs e)
-  {
-    this.SessionControl.Mute = this.muteCheCheckBox.Checked;
+    this.Mute = this.muteCheckBox.Checked;
     /************************************************/
     this.UpdateUI();
-  }
-
-  private void transfertButton_MouseHover(object sender, EventArgs e)
-  {
-  }
-
-  private void transfertButton_MouseLeave(object sender, EventArgs e)
-  {
   }
 
   private void transfertButton_MouseEnter(object sender, EventArgs e)

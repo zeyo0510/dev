@@ -6,8 +6,8 @@ partial class SessionVolumeControl
 {
   public void UpdateUI()
   {
-    this.leftLedBar.Enabled = !this.SessionControl.Mute;
+    this.leftLedBar.Enabled = !this.Mute;
 
-    macTrackBar1.TrackerColor = muteCheCheckBox.Checked ? Color.DarkGray : Color.FromArgb(255, 128, 0);
+    macTrackBar1.TrackerColor = this.muteCheckBox.Checked ? Color.DarkGray : Color.FromArgb(255, 128, 0);
   }
 }

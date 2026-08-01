@@ -65,8 +65,6 @@ partial class MainForm : Form
     this.pnlSessMgr.TabIndex = 2;
     this.pnlSessMgr.Thickness = 0;
     this.pnlSessMgr.WrapContents = false;
-    this.pnlSessMgr.SizeChanged += new System.EventHandler(pnlSessMgr_SizeChanged);
-    this.pnlSessMgr.ControlAdded += new System.Windows.Forms.ControlEventHandler(pnlSessMgr_ControlAdded);
     // MainForm
     base.AutoScaleDimensions = new System.Drawing.SizeF(8f, 16f);
     base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

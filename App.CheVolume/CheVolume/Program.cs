@@ -19,7 +19,6 @@ internal static class Program
 //			CheckReqFIle("Licensing.Net.dll");
 		Application.ThreadException += App_ThreadException;
 		Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
-		AppDomain.CurrentDomain.UnhandledException += App_UnhandledException;
 		Application.EnableVisualStyles();
 		Application.SetCompatibleTextRenderingDefault(false);
 		Application.Run(new MainForm());
@@ -33,13 +32,6 @@ internal static class Program
 		{
 			Environment.Exit(0);
 		}
-	}
-
-	private static void App_UnhandledException(object P_0, UnhandledExceptionEventArgs P_1)
-	{
-		ReportErrorToOfficial(P_1.ExceptionObject as Exception);
-		MessageBox.Show(((Exception)P_1.ExceptionObject).InnerException.ToString());
-		Environment.Exit(0);
 	}
 
 	private static void App_ThreadException(object P_0, ThreadExceptionEventArgs P_1)

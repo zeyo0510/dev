@@ -47,9 +47,9 @@ namespace AudioCore
       audioSessionNotificationCollection1.Remove(_AUDIO_SESSION_NOTIFICATION_COLLECTION_);
     }
 
-    public SimpleAudioVolume GetSimpleAudioVolume(Guid P_0)
+    public SimpleAudioVolume GetSimpleAudioVolume(Guid guid)
     {
-      _AudioSessionManager_.GetSimpleAudioVolume(ref P_0, 0u, out ISimpleAudioVolume simpleAudioVolume);
+      _AudioSessionManager_.GetSimpleAudioVolume(ref guid, 0u, out ISimpleAudioVolume simpleAudioVolume);
       /************************************************/
       return new SimpleAudioVolume(simpleAudioVolume);
     }

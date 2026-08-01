@@ -1,8 +1,5 @@
-using System;
 using System.ComponentModel;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows.Forms;
 
 namespace a
 {
@@ -53,14 +50,6 @@ namespace a
 			InitializeComponent();
 		}
 
-		private void _OnPaint(object P_0, PaintEventArgs P_1)
-		{
-		}
-
-		private void Method1(object P_0, EventArgs P_1)
-		{
-		}
-
 		protected override void Dispose(bool P_0)
 		{
 			if (P_0 && components != null)
@@ -74,7 +63,6 @@ namespace a
 		{
 			base.SuspendLayout();
 			this.AutoScroll = true;
-			base.Paint += new System.Windows.Forms.PaintEventHandler(_OnPaint);
 			base.ResumeLayout(false);
 		}
 	}
