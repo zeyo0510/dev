@@ -4,7 +4,7 @@ namespace AudioCore
 {
   public class MMNotificationClient : IMMNotificationClient
   {
-    public MMNotificationClientDeviceDelegate DefaultChanged;
+    public MMNotificationClientDeviceDelegate DefaultChanged = null;
 
     public MMNotificationClientDeviceDelegate DeviceAdded;
 
@@ -12,7 +12,7 @@ namespace AudioCore
 
     public MMNotificationClientPropertyValueDelegate PropertyValueChanged;
 
-    public void OnDefaultDeviceChanged(EDataFlow P_0, ERole P_1, string P_2)
+    public void OnDefaultDeviceChanged(EDataFlow dataFlow, ERole role, string P_2)
     {
       DefaultChanged?.Invoke(P_2);
     }

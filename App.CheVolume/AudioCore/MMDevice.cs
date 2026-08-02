@@ -9,11 +9,12 @@ namespace AudioCore
     private readonly IMMDevice _MMDevice_;
     private readonly IMMEndpoint _MMEndpoint_;
 
-    private PropertyStore propertyStore1;
+    private PropertyStore _PropertyStore_;
 
     internal MMDevice(IMMDevice _MM_DEVICE_)
     {
       this._MMDevice_ = _MM_DEVICE_;
+      /************************************************/
       this._MMEndpoint_ = (IMMEndpoint)this._MMDevice_;
     }
 
@@ -21,11 +22,9 @@ namespace AudioCore
     {
       get
       {
-        if (propertyStore1 == null)
-        {
-          propertyStore1 = GetPropertyInformation();
-        }
-        return propertyStore1;
+        this._PropertyStore_ ??= GetPropertyInformation();
+        /************************************************/
+        return this._PropertyStore_;
       }
     }
 
@@ -33,14 +32,13 @@ namespace AudioCore
     {
       get
       {
-        if (propertyStore1 == null)
+        this._PropertyStore_ ??= GetPropertyInformation();
+        /************************************************/
+        if (this._PropertyStore_.Contains(PKEY.PKEY_Device_FriendlyName))
         {
-          propertyStore1 = GetPropertyInformation();
+          return (string)this._PropertyStore_[PKEY.PKEY_Device_FriendlyName].PropVariant.GetValue();
         }
-        if (propertyStore1.Contains(PKEY.PKEY_Device_FriendlyName))
-        {
-          return (string)propertyStore1[PKEY.PKEY_Device_FriendlyName].PropVariant.GetValue();
-        }
+        /************************************************/
         return "Unknown";
       }
     }
@@ -49,14 +47,13 @@ namespace AudioCore
     {
       get
       {
-        if (propertyStore1 == null)
+        this._PropertyStore_ ??= GetPropertyInformation();
+        /************************************************/
+        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_Device_DeviceDesc))
         {
-          propertyStore1 = GetPropertyInformation();
+          return (string)this._PropertyStore_[PropertyKeys.PKEY_Device_DeviceDesc].PropVariant.GetValue();
         }
-        if (propertyStore1.Contains(PropertyKeys.PKEY_Device_DeviceDesc))
-        {
-          return (string)propertyStore1[PropertyKeys.PKEY_Device_DeviceDesc].PropVariant.GetValue();
-        }
+        /************************************************/
         return "Unknown";
       }
     }
@@ -65,13 +62,11 @@ namespace AudioCore
     {
       get
       {
-        if (propertyStore1 == null)
+        this._PropertyStore_ ??= GetPropertyInformation();
+        /************************************************/
+        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_DeviceInterface_FriendlyName))
         {
-          propertyStore1 = GetPropertyInformation();
-        }
-        if (propertyStore1.Contains(PropertyKeys.PKEY_DeviceInterface_FriendlyName))
-        {
-          return (string)propertyStore1[PropertyKeys.PKEY_DeviceInterface_FriendlyName].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PropertyKeys.PKEY_DeviceInterface_FriendlyName].PropVariant.GetValue();
         }
         return "Unknown";
       }
@@ -91,23 +86,22 @@ namespace AudioCore
     {
       get
       {
-        if (propertyStore1 == null)
+        this._PropertyStore_ ??= GetPropertyInformation();
+        /************************************************/
+        if (this._PropertyStore_.Contains(PKEY.PKEY_DeviceClass_IconPath))
         {
-          propertyStore1 = GetPropertyInformation();
+          return (string)this._PropertyStore_[PKEY.PKEY_DeviceClass_IconPath].PropVariant.GetValue();
         }
-        if (propertyStore1.Contains(PKEY.PKEY_DeviceClass_IconPath))
-        {
-          return (string)propertyStore1[PKEY.PKEY_DeviceClass_IconPath].PropVariant.GetValue();
-        }
+        /************************************************/
         return "Unknown";
       }
     }
 
     private PropertyStore GetPropertyInformation()
     {
-      IPropertyStore propertyStore;
-      Marshal.ThrowExceptionForHR(_MMDevice_.OpenPropertyStore(EStgmAccess.STGM_READ, out propertyStore));
-      return new PropertyStore(propertyStore);
+      Marshal.ThrowExceptionForHR(this._MMDevice_.OpenPropertyStore(EStgmAccess.STGM_READ, out IPropertyStore retValue));
+      /************************************************/
+      return new PropertyStore(retValue);
     }
 
     public override string ToString()

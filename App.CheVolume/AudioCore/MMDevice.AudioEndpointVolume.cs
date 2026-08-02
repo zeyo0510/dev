@@ -6,7 +6,6 @@ namespace AudioCore
 {
   partial class MMDevice
   {
-    private AudioEndpointVolume _AudioEndpointVolume_;
     /************************************************/
     private static Guid IID_IAudioEndpointVolume = new("5CDF2C82-841E-4546-9722-0CF74078229A");
     /************************************************/
@@ -14,14 +13,14 @@ namespace AudioCore
     {
       get
       {
-        if (this._AudioEndpointVolume_ == null)
+        if (field == null)
         {
           Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object retValue));
           /************************************************/
-          this._AudioEndpointVolume_ = new(retValue as IAudioEndpointVolume);
+          field = new((IAudioEndpointVolume)retValue);
         }
         /************************************************/
-        return this._AudioEndpointVolume_;
+        return field;
       }
     }
   }
