@@ -2,16 +2,16 @@
 /************************************************/
 namespace AudioCore.Interfaces
 {
-	internal struct AUDIO_VOLUME_NOTIFICATION_DATA
-	{
-		public Guid guidEventContext;
+  internal struct AUDIO_VOLUME_NOTIFICATION_DATA
+  {
+    public Guid guidEventContext;
 
-		public bool bMuted;
+    public bool bMuted;
 
-		public float fMasterVolume;
+    public float fMasterVolume;
 
-		public uint nChannels;
+    public uint nChannels;
 
-		public float ChannelVolume;
-	}
+    public float ChannelVolume;
+  }
 }

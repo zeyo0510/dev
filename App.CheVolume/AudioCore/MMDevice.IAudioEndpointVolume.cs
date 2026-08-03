@@ -7,7 +7,7 @@ namespace AudioCore
   partial class MMDevice
   {
     /************************************************/
-    // private static Guid IID_IAudioEndpointVolume = new("5CDF2C82-841E-4546-9722-0CF74078229A");
+    private static Guid IID_IAudioEndpointVolume = new("5CDF2C82-841E-4546-9722-0CF74078229A");
     /************************************************/
     public IAudioEndpointVolume _AudioEndpointVolume_
     {

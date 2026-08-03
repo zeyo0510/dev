@@ -16,9 +16,9 @@ namespace AudioCore
       }
       set
       {
-        value = (int)Math.Ceiling(value / 100f);
+        // value = (int)Math.Ceiling(value / 100f);
         /************************************************/
-        Marshal.ThrowExceptionForHR(this._AudioEndpointVolume_.SetMasterVolumeLevelScalar(value, Guid.Empty));
+        Marshal.ThrowExceptionForHR(this._AudioEndpointVolume_.SetMasterVolumeLevelScalar(value / 100f, Guid.Empty));
       }
     }
   }

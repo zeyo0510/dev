@@ -8,6 +8,7 @@ public partial class DeviceVolumeControl : UserControl
   public DeviceVolumeControl(MMDevice _MM_DEVICE_)
   {
     this.MMDevice = _MM_DEVICE_;
+    this.MMDevice.NotifyChanged += MMDevice_NotifyChanged;
     /****************************************************/
     this.InitializeComponent();
     /****************************************************/
@@ -15,7 +16,12 @@ public partial class DeviceVolumeControl : UserControl
     /****************************************************/
     this.UpdateUI();
     /****************************************************/
-    this.EndPointVolume.OnVolumeNotification += SetData;
+    // this.EndPointVolume.OnVolumeNotification += SetData;
+  }
+
+  private void MMDevice_NotifyChanged(object? sender, EventArgs e)
+  {
+    Console.WriteLine("MMDevice_NotifyChanged");
   }
 
   private void SetData(AudioVolumeNotificationData data)

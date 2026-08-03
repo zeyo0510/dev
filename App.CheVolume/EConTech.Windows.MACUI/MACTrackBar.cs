@@ -73,8 +73,6 @@ namespace EConTech.Windows.MACUI
 
 		public bool Dragging;
 
-		public AudioEndpointVolume audioEndpointVolume1;
-
 		public float ActualVolume
 		{
 			get
@@ -1208,10 +1206,6 @@ namespace EConTech.Windows.MACUI
 			{
 				Value = 0;
 			}
-			if (audioEndpointVolume1 != null)
-			{
-				audioEndpointVolume1.Volume = Value;
-			}
 		}
 
 		private void _OnMouseLeave(object P_0, EventArgs P_1)
@@ -1229,10 +1223,6 @@ namespace EConTech.Windows.MACUI
 			else if (Value < 0)
 			{
 				Value = 0;
-			}
-			if (audioEndpointVolume1 != null)
-			{
-				audioEndpointVolume1.Volume = Value;
 			}
 			int num = 0;
 			PointF pointF = new PointF(P_1.X, P_1.Y);

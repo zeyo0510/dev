@@ -4,7 +4,7 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public partial class MMDevice
+  public partial class MMDevice : IDisposable
   {
     private readonly IMMDevice _MMDevice_;
     private readonly IMMEndpoint _MMEndpoint_;
@@ -16,6 +16,13 @@ namespace AudioCore
       this._MMDevice_ = _MM_DEVICE_;
       /************************************************/
       this._MMEndpoint_ = (IMMEndpoint)this._MMDevice_;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this._AudioEndpointVolume_.RegisterControlChangeNotify(this));
+    }
+    
+    ~MMDevice()
+    {
+      this.Dispose();
     }
 
     public PropertyStore Properties
