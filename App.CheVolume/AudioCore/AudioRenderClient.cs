@@ -19,9 +19,9 @@ namespace AudioCore
       return retValue;
     }
 
-    public void ReleaseBuffer(int P_0, AudioClientBufferFlags P_1)
+    public void ReleaseBuffer(int P_0, AudioClientBufferFlags flags)
     {
-      Marshal.ThrowExceptionForHR(_AudioRenderClient_.ReleaseBuffer(P_0, P_1));
+      Marshal.ThrowExceptionForHR(_AudioRenderClient_.ReleaseBuffer(P_0, flags));
     }
 
     public void Dispose()

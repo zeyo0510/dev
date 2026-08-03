@@ -2,6 +2,8 @@ using System.Runtime.InteropServices;
 /************************************************/
 using AudioCore.Interfaces;
 /************************************************/
+using JC.CS.Lib.CoreAudio;
+/************************************************/
 namespace AudioCore
 {
   public class AudioSessionManager2
@@ -9,8 +11,6 @@ namespace AudioCore
     public readonly AudioSessionEnumerator _AudioSessionEnumerator_;
 
     private readonly IAudioSessionManager2 _AudioSessionManager_;
-
-    private AudioSessionManager2 audioSessionManager21;
 
     private Dictionary<IAudioSessionNotificationCollection, AudioSessionNotification> audioSessionNotificationCollection1 = new Dictionary<IAudioSessionNotificationCollection, AudioSessionNotification>();
 

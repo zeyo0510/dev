@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 /************************************************/
-using AudioCore.Interfaces;
+using JC.CS.Lib.CoreAudio;
 /************************************************/
 namespace AudioCore
 {
