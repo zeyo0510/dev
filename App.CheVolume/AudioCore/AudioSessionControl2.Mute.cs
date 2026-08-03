@@ -8,13 +8,17 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(_SimpleAudioVolume_.GetMute(out bool retValue));
+        Console.WriteLine("SimpleAudioVolume :: GetMute");
+        /************************************************/
+        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.GetMute(out bool retValue));
         /************************************************/
         return retValue;
       }
       set
       {
-        Marshal.ThrowExceptionForHR(_SimpleAudioVolume_.SetMute(value, Guid.Empty));
+        Console.WriteLine("SimpleAudioVolume :: SetMute");
+        /************************************************/
+        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.SetMute(value, Guid.Empty));
       }
     }
   }

@@ -9,11 +9,11 @@ public partial class DeviceVolumeControl
   {
     get
     {
-      return this.EndPointVolume.Mute;
+      return this.MMDevice.Mute;
     }
     set
     {
-      this.EndPointVolume.Mute = value;
+      this.MMDevice.Mute = value;
     }
   }
 }

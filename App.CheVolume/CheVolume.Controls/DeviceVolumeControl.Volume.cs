@@ -9,11 +9,11 @@ public partial class DeviceVolumeControl
   {
     get
     {
-      return this.EndPointVolume.Volume;
+      return this.MMDevice.Volume;
     }
     set
     {
-      this.EndPointVolume.Volume = value;
+      this.MMDevice.Volume = value;
     }
   }
 }

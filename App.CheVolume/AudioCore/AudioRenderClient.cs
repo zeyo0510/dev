@@ -16,6 +16,7 @@ namespace AudioCore
     public IntPtr GetBuffer(int value)
     {
       Marshal.ThrowExceptionForHR(_AudioRenderClient_.GetBuffer(value, out nint retValue));
+      /************************************************/
       return retValue;
     }
 
@@ -29,7 +30,9 @@ namespace AudioCore
       if (_AudioRenderClient_ != null)
       {
         Marshal.ReleaseComObject(_AudioRenderClient_);
+        /************************************************/
         _AudioRenderClient_ = null;
+        /************************************************/
         GC.SuppressFinalize(this);
       }
     }

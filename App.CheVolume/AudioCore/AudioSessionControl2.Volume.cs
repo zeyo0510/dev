@@ -8,15 +8,19 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._SimpleAudioVolume_.GetMasterVolume(out float retValue));
+        Console.WriteLine("SimpleAudioVolume :: GetMasterVolume");
+        /************************************************/
+        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.GetMasterVolume(out float retValue));
         /************************************************/
         return retValue * 100f;
       }
       set
       {
+        Console.WriteLine("SimpleAudioVolume :: SetMasterVolume");
+        /************************************************/
         Guid empty = Guid.Empty;
         /************************************************/
-        Marshal.ThrowExceptionForHR(this._SimpleAudioVolume_.SetMasterVolume(value / 100f, ref empty));
+        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.SetMasterVolume(value / 100f, ref empty));
       }
     }
   }
