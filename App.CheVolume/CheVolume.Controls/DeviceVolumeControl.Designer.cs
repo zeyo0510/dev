@@ -52,7 +52,7 @@ partial class DeviceVolumeControl
       this.nameLabel.Font      = new("Verdana", 10f, FontStyle.Bold, GraphicsUnit.World, 0);
       this.nameLabel.Location  = new(3, 10);
       this.nameLabel.Size      = new(122, 48);
-      this.nameLabel.Text      = this.MMDevice.FriendlyName;
+      this.nameLabel.Text      = this.AudioDevice.FriendlyName;
       this.nameLabel.TextAlign = ContentAlignment.MiddleCenter;
     }
     // devicePictureBox
@@ -63,7 +63,7 @@ partial class DeviceVolumeControl
       this.devicePictureBox.Margin    = new(0);
       this.devicePictureBox.Size      = new(32, 32);
       this.devicePictureBox.TabStop   = false;
-      this.devicePictureBox.Image     = this.ProcessIcon(this.MMDevice.IconPath);
+      this.devicePictureBox.Image     = this.ProcessIcon(this.AudioDevice.IconPath);
     }
     // defaultCheckBox
     {

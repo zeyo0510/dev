@@ -1,6 +1,6 @@
 namespace AudioCore
 {
-  partial class MMDevice
+  partial class AudioDevice
   {
     private bool lastNute = false;
     /************************************************/

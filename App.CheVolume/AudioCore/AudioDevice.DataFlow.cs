@@ -1,6 +1,6 @@
 namespace AudioCore
 {
-  partial class MMDevice
+  partial class AudioDevice
   {
     public DataFlow DataFlow
     {

@@ -8,7 +8,7 @@ partial class DeviceVolumeControl
   {
     get
     {
-      return this.MMDevice.AudioMeterInformation;
+      return this.AudioDevice.AudioMeterInformation;
     }
   }
 }

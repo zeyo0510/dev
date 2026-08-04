@@ -5,16 +5,16 @@ namespace CheVolume.Controls;
 /************************************************/
 public partial class DeviceVolumeControl : UserControl
 {
-  public DeviceVolumeControl(MMDevice _MM_DEVICE_)
+  public DeviceVolumeControl(AudioDevice _MM_DEVICE_)
   {
-    this.MMDevice = _MM_DEVICE_;
-    this.MMDevice.VolumeChanged += MMDevice_VolumeChanged;
-    this.MMDevice.MuteChanged += MMDevice_MuteChanged;
-    Console.WriteLine(this.MMDevice.DataFlow);
+    this.AudioDevice = _MM_DEVICE_;
+    this.AudioDevice.VolumeChanged += MMDevice_VolumeChanged;
+    this.AudioDevice.MuteChanged += MMDevice_MuteChanged;
+    Console.WriteLine(this.AudioDevice.DataFlow);
     /****************************************************/
     this.InitializeComponent();
     /****************************************************/
-    base.Tag = this.MMDevice.ID;
+    base.Tag = this.AudioDevice.ID;
     /****************************************************/
     this.UpdateUI();
   }
@@ -74,7 +74,7 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (defaultCheckBox.Checked)
     {
-      Class4.SetDefault(this.MMDevice.ID);
+      Class4.SetDefault(this.AudioDevice.ID);
     }
     else
     {

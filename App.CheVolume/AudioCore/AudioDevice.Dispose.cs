@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  public partial class MMDevice : IDisposable
+  public partial class AudioDevice : IDisposable
   {
     public void Dispose()
     {

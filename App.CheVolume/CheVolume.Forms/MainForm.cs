@@ -51,7 +51,7 @@ public partial class MainForm : Form
     }
   }
 
-  public MMDevice DefaultDevice
+  public AudioDevice DefaultDevice
   {
     get
     {
@@ -59,7 +59,7 @@ public partial class MainForm : Form
     }
   }
 
-  public MMDevice SelectedDevice
+  public AudioDevice SelectedDevice
   {
     get
     {
@@ -163,7 +163,7 @@ public partial class MainForm : Form
     /************************************************/
     for (int i = 0; i < _MMDeviceCollection_.Count; i++)
     {
-      MMDevice _MM_DEVICE_ = _MMDeviceCollection_[i];
+      AudioDevice _MM_DEVICE_ = _MMDeviceCollection_[i];
       /************************************************/
       bool isDefault = _MM_DEVICE_.ID == this.DefaultDevice.ID;
       /************************************************/
@@ -237,7 +237,7 @@ public partial class MainForm : Form
           sessionVolumeControl = new(_AUDIO_SESSION_CONTROL_, process);
           {
             sessionVolumeControl.MMDeviceCollection = _MMDeviceCollection_;
-            sessionVolumeControl.MMDevice = _MM_DEVICE_;
+            sessionVolumeControl.AudioDevice = _MM_DEVICE_;
             sessionVolumeControl.muteCheckBox.Checked = _AUDIO_SESSION_CONTROL_.Mute;
             sessionVolumeControl.macTrackBar1.Value = int.Parse(Math.Ceiling(_AUDIO_SESSION_CONTROL_.Volume).ToString());;
           }

@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  partial class MMDevice
+  partial class AudioDevice
   {
     public string ID
     {

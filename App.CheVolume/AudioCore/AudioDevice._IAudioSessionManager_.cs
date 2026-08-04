@@ -4,7 +4,7 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  partial class MMDevice
+  partial class AudioDevice
   {
     private static Guid IID_IAudioSessionManager2 = new("77AA99A0-1BD6-484F-8BC7-2C654C9A9B6F");
     /************************************************/

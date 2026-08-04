@@ -42,7 +42,7 @@ namespace B
 
 		private MMDeviceCollection mmDeviceCollection1;
 
-		public MMDevice mmDevice1;
+		public AudioDevice mmDevice1;
 
 		private AudioSessionManager2 audioSessionManager21;
 
@@ -73,7 +73,7 @@ namespace B
 			}
 		}
 
-		public FlowLayoutPanel1(MMDevice _MM_DEVICE_)
+		public FlowLayoutPanel1(AudioDevice _MM_DEVICE_)
 		{
 			InitializeComponent();
 			mmDeviceCollection1 = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
@@ -130,7 +130,7 @@ namespace B
 				sessionVolumeControl = new SessionVolumeControl(_SESSION_CONTROL_, process);
 				int value = int.Parse(Math.Ceiling(_SESSION_CONTROL_.Volume).ToString());
 				sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
-				sessionVolumeControl.MMDevice = mmDevice1;
+				sessionVolumeControl.AudioDevice = mmDevice1;
 				sessionVolumeControl.muteCheckBox.Checked = _SESSION_CONTROL_.Mute;
 				sessionVolumeControl.macTrackBar1.Value = value;
 				base.Controls.Add(sessionVolumeControl);

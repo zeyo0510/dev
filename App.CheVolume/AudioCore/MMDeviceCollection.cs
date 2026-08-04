@@ -13,13 +13,13 @@ namespace AudioCore
       this._MMDeviceCollection_ = _MM_DEVICE_COLLECTION_;
     }
     /************************************************/
-    public MMDevice this[int index]
+    public AudioDevice this[int index]
     {
       get
       {
         this._MMDeviceCollection_.Item((uint)index, out IMMDevice retValue);
         /************************************************/
-        return new MMDevice(retValue);
+        return new AudioDevice(retValue);
       }
     }
     /************************************************/

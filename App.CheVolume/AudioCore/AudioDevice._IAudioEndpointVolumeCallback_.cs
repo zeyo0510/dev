@@ -6,7 +6,7 @@ using JC.CS.Lib.Extensions;
 /************************************************/
 namespace AudioCore
 {
-  public partial class MMDevice : IAudioEndpointVolumeCallback
+  public partial class AudioDevice : IAudioEndpointVolumeCallback
   {
     public int OnNotify(nint nodify)
     {

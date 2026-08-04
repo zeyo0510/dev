@@ -2,7 +2,7 @@ using JC.CS.Lib.CoreAudio;
 /************************************************/
 namespace AudioCore
 {
-  partial class MMDevice
+  partial class AudioDevice
   {
     public IMMEndpoint IMMEndpoint
     {

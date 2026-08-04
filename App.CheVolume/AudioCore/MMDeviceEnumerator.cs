@@ -15,18 +15,18 @@ namespace AudioCore
       return new MMDeviceCollection(retValue);
     }
     /************************************************/
-    public MMDevice EnumerateAudioEndPoints(DataFlow dataFlow, ERole role)
+    public AudioDevice EnumerateAudioEndPoints(DataFlow dataFlow, ERole role)
     {
       Marshal.ThrowExceptionForHR(obj.GetDefaultAudioEndpoint(dataFlow, role, out IMMDevice retValue));
       /************************************************/
-      return new MMDevice(retValue);
+      return new AudioDevice(retValue);
     }
     /************************************************/
-    public MMDevice GetDevice(string deviceID)
+    public AudioDevice GetDevice(string deviceID)
     {
       Marshal.ThrowExceptionForHR(obj.GetDevice(deviceID, out IMMDevice retValue));
       /************************************************/
-      return new MMDevice(retValue);
+      return new AudioDevice(retValue);
     }
     /************************************************/
     public void RegisterEndpointNotificationCallback(IMMNotificationClient _MM_NOTIFICATION_CLIENT_)

@@ -4,20 +4,20 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  partial class MMDevice
+  partial class AudioDevice
   {
     /************************************************/
-    private static Guid IID_IAudioMeterInformation = new("C02216F6-8C67-4B5B-9D00-D008E73E0064");
+    private static Guid IID_IAudioEndpointVolume = new("5CDF2C82-841E-4546-9722-0CF74078229A");
     /************************************************/
-    public AudioMeterInformation AudioMeterInformation
+    public IAudioEndpointVolume AudioEndpointVolume
     {
       get
       {
         if (field == null)
         {
-          Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out object retValue));
+          Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object retValue));
           /************************************************/
-          field = new((IAudioMeterInformation)retValue);
+          field = (IAudioEndpointVolume)retValue;
         }
         /************************************************/
         return field;

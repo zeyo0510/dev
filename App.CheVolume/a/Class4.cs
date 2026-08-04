@@ -33,7 +33,7 @@ namespace a
       int count = defaultAudioEndpoint.Count;
       for (int i = 0; i < count; i++)
       {
-        MMDevice mMDevice = defaultAudioEndpoint[i];
+        AudioDevice mMDevice = defaultAudioEndpoint[i];
         string iD2 = mMDevice.ID;
         list_a.Add(mMDevice.FriendlyName);
         dictionary_a.Add(i, iD2);
