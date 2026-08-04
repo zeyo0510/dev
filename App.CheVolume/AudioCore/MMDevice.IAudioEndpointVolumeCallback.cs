@@ -1,6 +1,8 @@
 using System.Runtime.InteropServices;
 /************************************************/
 using AudioCore.Interfaces;
+using JC.CS.Lib.CoreAudio;
+using JC.CS.Lib.Extensions;
 /************************************************/
 namespace AudioCore
 {
@@ -20,7 +22,18 @@ namespace AudioCore
 			/************************************************/
       AudioVolumeNotificationData audioVolumeNotificationData = new(data.bMuted, data.fMasterVolume);
 			/************************************************/
-      this.OnNotifyChanged();
+      int volume = (int)Math.Ceiling(data.fMasterVolume * 100f);
+      /************************************************/
+      if (volume.IsNotEqualTo(this.lastVolume))
+      {
+        this.OnVolumeChanged();
+      }
+      /************************************************/
+      bool mute = data.bMuted;
+      if (mute != this.lastNute)
+      {
+        this.OnMuteChanged();
+      }
       /************************************************/
       return 0;
     }

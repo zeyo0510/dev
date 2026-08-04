@@ -6,9 +6,9 @@ namespace AudioCore
     {
       get
       {
-        this._MMEndpoint_.GetDataFlow(out DataFlow retValue);
+        this.IMMEndpoint.GetDataFlow(out int retValue);
         /************************************************/
-        return retValue;
+        return (DataFlow)retValue;
       }
     }
   }

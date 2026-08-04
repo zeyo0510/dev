@@ -2,15 +2,15 @@ namespace AudioCore
 {
   partial class MMDevice
   {
-    private int lastVolume = 0;
+    private bool lastNute = false;
     /************************************************/
-    public event EventHandler<EventArgs>? VolumeChanged = null;
+    public event EventHandler<EventArgs>? MuteChanged = null;
     /************************************************/
-    protected virtual void OnVolumeChanged()
+    protected virtual void OnMuteChanged()
     {
-      this.lastVolume = this.Volume;
+      this.lastNute = this.Mute;
       /************************************************/
-      this.VolumeChanged?.Invoke(this, EventArgs.Empty);
+      this.MuteChanged?.Invoke(this, EventArgs.Empty);
     }
   }
 }

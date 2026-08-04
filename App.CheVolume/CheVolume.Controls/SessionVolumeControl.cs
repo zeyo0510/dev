@@ -43,15 +43,15 @@ public partial class SessionVolumeControl : UserControl
   }
 
   private readonly Enum1 enum1;
-  private EDataFlow Flow
+  private DataFlow Flow
   {
     get
     {
       if (enum1 != 0)
       {
-        return EDataFlow.eCapture;
+        return DataFlow.Capture;
       }
-      return EDataFlow.eRender;
+      return DataFlow.Render;
     }
   }
 
@@ -339,7 +339,7 @@ public partial class SessionVolumeControl : UserControl
 
 
 
-    this.MMDeviceCollection = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+    this.MMDeviceCollection = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
     int count = this.MMDeviceCollection.Count;
     /************************************************/

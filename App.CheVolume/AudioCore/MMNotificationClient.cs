@@ -12,7 +12,7 @@ namespace AudioCore
 
     public MMNotificationClientPropertyValueDelegate PropertyValueChanged;
 
-    public void OnDefaultDeviceChanged(EDataFlow dataFlow, ERole role, string P_2)
+    public void OnDefaultDeviceChanged(DataFlow dataFlow, ERole role, string P_2)
     {
       DefaultChanged?.Invoke(P_2);
     }

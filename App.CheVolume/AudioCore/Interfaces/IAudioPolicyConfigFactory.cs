@@ -47,10 +47,10 @@ namespace AudioCore.Interfaces
 		int __incomplete__remove_ChatContextChanged();
 
 		[PreserveSig]
-		HRESULT SetPersistedDefaultAudioEndpoint(uint P_0, EDataFlow P_1, ERole P_2, IntPtr P_3);
+		HRESULT SetPersistedDefaultAudioEndpoint(uint P_0, DataFlow P_1, ERole P_2, IntPtr P_3);
 
 		[PreserveSig]
-		HRESULT GetPersistedDefaultAudioEndpoint(uint P_0, EDataFlow P_1, ERole P_2, [MarshalAs(UnmanagedType.HString)] out string P_3);
+		HRESULT GetPersistedDefaultAudioEndpoint(uint P_0, DataFlow P_1, ERole P_2, [MarshalAs(UnmanagedType.HString)] out string P_3);
 
 		[PreserveSig]
 		HRESULT ClearAllPersistedApplicationDefaultEndpoints();

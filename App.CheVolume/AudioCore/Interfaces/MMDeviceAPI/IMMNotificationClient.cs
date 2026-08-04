@@ -26,7 +26,7 @@ namespace AudioCore.Interfaces
     /************************************************/
     [PreserveSig]
     void OnDefaultDeviceChanged(
-      [MarshalAs(UnmanagedType.I4)] EDataFlow _FLOW_,
+      [MarshalAs(UnmanagedType.I4)] DataFlow _FLOW_,
       [MarshalAs(UnmanagedType.I4)] ERole _ROLE_,
       [MarshalAs(UnmanagedType.LPWStr)] string _PWSTR_DEFAULT_DEVICE_ID_
     );

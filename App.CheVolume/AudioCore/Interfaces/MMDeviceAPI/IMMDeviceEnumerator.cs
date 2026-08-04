@@ -10,14 +10,14 @@ namespace AudioCore.Interfaces
   {
     [PreserveSig]
     int EnumAudioEndpoints(
-      [In][MarshalAs(UnmanagedType.I4)] EDataFlow _DATA_FLOW_,
+      [In][MarshalAs(UnmanagedType.I4)] DataFlow _DATA_FLOW_,
       [In][MarshalAs(UnmanagedType.U4)] EDeviceState _DW_STATE_MASK_,
       [MarshalAs(UnmanagedType.Interface)] out IMMDeviceCollection _PP_DEVICES_
     );
     /************************************************/
     [PreserveSig]
     int GetDefaultAudioEndpoint(
-      [In][MarshalAs(UnmanagedType.I4)] EDataFlow _DATA_FLOW_,
+      [In][MarshalAs(UnmanagedType.I4)] DataFlow _DATA_FLOW_,
       [In][MarshalAs(UnmanagedType.I4)] ERole _ROLE_,
       [MarshalAs(UnmanagedType.Interface)] out IMMDevice _PP_ENDPOINT_
     );

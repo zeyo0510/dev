@@ -9,9 +9,9 @@ namespace AudioCore
       get
       {
         Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetIconPath(out nint ptr));
-        string result = Marshal.PtrToStringAuto(ptr);
+        string retValue = Marshal.PtrToStringAuto(ptr);
         Marshal.FreeCoTaskMem(ptr);
-        return result;
+        return retValue;
       }
     }
   }

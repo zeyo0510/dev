@@ -6,7 +6,7 @@ namespace AudioCore
   {
     public void Dispose()
     {
-      Marshal.ThrowExceptionForHR(this._AudioEndpointVolume_.UnregisterControlChangeNotify(this));
+      Marshal.ThrowExceptionForHR(this.AudioEndpointVolume.UnregisterControlChangeNotify(this));
     }
   }
 }

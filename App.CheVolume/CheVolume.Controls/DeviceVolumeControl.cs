@@ -8,20 +8,25 @@ public partial class DeviceVolumeControl : UserControl
   public DeviceVolumeControl(MMDevice _MM_DEVICE_)
   {
     this.MMDevice = _MM_DEVICE_;
-    this.MMDevice.NotifyChanged += MMDevice_NotifyChanged;
+    this.MMDevice.VolumeChanged += MMDevice_VolumeChanged;
+    this.MMDevice.MuteChanged += MMDevice_MuteChanged;
+    Console.WriteLine(this.MMDevice.DataFlow);
     /****************************************************/
     this.InitializeComponent();
     /****************************************************/
     base.Tag = this.MMDevice.ID;
     /****************************************************/
     this.UpdateUI();
-    /****************************************************/
-    // this.EndPointVolume.OnVolumeNotification += SetData;
   }
 
-  private void MMDevice_NotifyChanged(object? sender, EventArgs e)
+  private void MMDevice_VolumeChanged(object? sender, EventArgs e)
   {
-    Console.WriteLine("MMDevice_NotifyChanged");
+    Console.WriteLine("MMDevice_VolumeChanged");
+  }
+
+  private void MMDevice_MuteChanged(object? sender, EventArgs e)
+  {
+    Console.WriteLine("MMDevice_MuteChanged");
   }
 
   private void SetData(AudioVolumeNotificationData data)

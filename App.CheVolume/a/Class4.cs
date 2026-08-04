@@ -24,7 +24,7 @@ namespace a
       _MMDeviceEnumerator_ = new MMDeviceEnumerator();
     }
 
-    internal static void Method1(EDataFlow dataFlow)
+    internal static void Method1(DataFlow dataFlow)
     {
       list_a.Clear();
       dictionary_a.Clear();

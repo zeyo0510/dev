@@ -8,13 +8,13 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioEndpointVolume_.GetMute(out bool retValue));
+        Marshal.ThrowExceptionForHR(this.AudioEndpointVolume.GetMute(out bool retValue));
         /************************************************/
         return retValue;
       }
       set
       {
-        Marshal.ThrowExceptionForHR(this._AudioEndpointVolume_.SetMute(value, Guid.Empty));
+        Marshal.ThrowExceptionForHR(this.AudioEndpointVolume.SetMute(value, Guid.Empty));
       }
     }
   }

@@ -55,7 +55,7 @@ public partial class MainForm : Form
   {
     get
     {
-      return Class4._MMDeviceEnumerator_.EnumerateAudioEndPoints(EDataFlow.eRender, ERole.eMultimedia);
+      return Class4._MMDeviceEnumerator_.EnumerateAudioEndPoints(DataFlow.Render, ERole.eMultimedia);
     }
   }
 
@@ -104,7 +104,7 @@ public partial class MainForm : Form
 
   public MainForm()
   {
-    this._MMDeviceCollection_ = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+    this._MMDeviceCollection_ = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
     this._MMNotificationClient_ = new();
     /************************************************/
@@ -159,7 +159,7 @@ public partial class MainForm : Form
     /************************************************/
     string defaultDeviceID = this.DefaultDevice.ID;
     /************************************************/
-    this._MMDeviceCollection_ = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(EDataFlow.eRender, EDeviceState.Active);
+    this._MMDeviceCollection_ = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
     for (int i = 0; i < _MMDeviceCollection_.Count; i++)
     {

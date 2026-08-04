@@ -1,13 +1,13 @@
 using System.Runtime.InteropServices;
 /************************************************/
 using AudioCore.Interfaces;
+using JC.CS.Lib.CoreAudio;
 /************************************************/
 namespace AudioCore
 {
   public partial class MMDevice : IDisposable
   {
     private readonly IMMDevice _MMDevice_;
-    private readonly IMMEndpoint _MMEndpoint_;
 
     private PropertyStore _PropertyStore_;
 
@@ -15,11 +15,12 @@ namespace AudioCore
     {
       this._MMDevice_ = _MM_DEVICE_;
       /************************************************/
-      this._MMEndpoint_ = (IMMEndpoint)this._MMDevice_;
+      this.lastVolume = this.Volume;
+      this.lastNute = this.Mute;
       /************************************************/
-      Marshal.ThrowExceptionForHR(this._AudioEndpointVolume_.RegisterControlChangeNotify(this));
+      Marshal.ThrowExceptionForHR(this.AudioEndpointVolume.RegisterControlChangeNotify(this));
     }
-    
+    /************************************************/
     ~MMDevice()
     {
       this.Dispose();

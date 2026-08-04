@@ -14,9 +14,9 @@ namespace AudioCore2
 
 		private IAudioPolicyConfigFactory _sharedPolicyConfig;
 
-		private EDataFlow _flow;
+		private DataFlow _flow;
 
-		public AudioPolicyConfigService(EDataFlow P_0)
+		public AudioPolicyConfigService(DataFlow P_0)
 		{
 			_flow = P_0;
 		}
@@ -31,7 +31,7 @@ namespace AudioCore2
 
 		private string GenerateDeviceId(string P_0)
 		{
-			return "\\\\?\\SWD#MMDEVAPI#" + P_0 + ((_flow == EDataFlow.eRender) ? "#{e6327cad-dcec-4949-ae8a-991e976a79d2}" : "#{2eef81be-33fa-4800-9670-1cd474972c3f}");
+			return "\\\\?\\SWD#MMDEVAPI#" + P_0 + ((_flow == DataFlow.Render) ? "#{e6327cad-dcec-4949-ae8a-991e976a79d2}" : "#{2eef81be-33fa-4800-9670-1cd474972c3f}");
 		}
 
 		private string UnpackDeviceId(string P_0)
