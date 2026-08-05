@@ -1,17 +1,14 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using AudioCore.Interfaces;
-
+/************************************************/
 namespace AudioCore
 {
-  public class MMDeviceCollection : IEnumerable<AudioDevice>
+  public class AudioDeviceCollection : IEnumerable<AudioDevice>
   {
     private readonly IMMDeviceCollection _MMDeviceCollection_;
-
     /************************************************/
-    internal MMDeviceCollection(IMMDeviceCollection _MM_DEVICE_COLLECTION_)
+    internal AudioDeviceCollection(IMMDeviceCollection _MM_DEVICE_COLLECTION_)
     {
       this._MMDeviceCollection_ = _MM_DEVICE_COLLECTION_;
     }
@@ -25,7 +22,6 @@ namespace AudioCore
         return new AudioDevice(retValue);
       }
     }
-
     /************************************************/
     public int Count
     {
@@ -36,7 +32,6 @@ namespace AudioCore
         return (int)retValue;
       }
     }
-
     /************************************************/
     public IEnumerator<AudioDevice> GetEnumerator()
     {
@@ -45,11 +40,10 @@ namespace AudioCore
         yield return this[i];
       }
     }
-
     /************************************************/
     IEnumerator IEnumerable.GetEnumerator()
     {
-      return GetEnumerator();
+      return this.GetEnumerator();
     }
   }
 }

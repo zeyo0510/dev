@@ -6,7 +6,7 @@ namespace CheVolume.Controls;
 partial class SessionVolumeControl
 {
   [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-  public MMDeviceCollection MMDeviceCollection
+  public AudioDeviceCollection MMDeviceCollection
   {
     get; set;
   }

@@ -40,7 +40,7 @@ namespace B
 
 		private int controlFixedY = 10;
 
-		private MMDeviceCollection mmDeviceCollection1;
+		private AudioDeviceCollection mmDeviceCollection1;
 
 		public AudioDevice mmDevice1;
 

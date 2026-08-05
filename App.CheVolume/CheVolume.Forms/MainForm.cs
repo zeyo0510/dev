@@ -26,7 +26,7 @@ public partial class MainForm : Form
 
   public List<ProcessMapping> processList;
 
-  private MMDeviceCollection _MMDeviceCollection_;
+  private AudioDeviceCollection _MMDeviceCollection_;
   private MMNotificationClient _MMNotificationClient_;
 
   private string deviceID;

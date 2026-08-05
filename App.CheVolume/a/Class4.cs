@@ -28,7 +28,7 @@ namespace a
     {
       list_a.Clear();
       dictionary_a.Clear();
-      MMDeviceCollection defaultAudioEndpoint = _MMDeviceEnumerator_.EnumAudioEndpoints(dataFlow, EDeviceState.Active);
+      AudioDeviceCollection defaultAudioEndpoint = _MMDeviceEnumerator_.EnumAudioEndpoints(dataFlow, EDeviceState.Active);
       string iD = _MMDeviceEnumerator_.EnumerateAudioEndPoints(dataFlow, ERole.eMultimedia).ID;
       int count = defaultAudioEndpoint.Count;
       for (int i = 0; i < count; i++)
