@@ -10,7 +10,7 @@ namespace AudioCore
       {
         if (field == null)
         {
-          field = (IMMEndpoint)this._MMDevice_;
+          field = (IMMEndpoint)this.MMDevice;
         }
         /************************************************/
         return field;

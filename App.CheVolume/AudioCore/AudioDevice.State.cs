@@ -4,11 +4,11 @@ namespace AudioCore
 {
   partial class AudioDevice
   {
-    public string ID
+    public DeviceState State
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.MMDevice.GetId(out string retValue));
+        Marshal.ThrowExceptionForHR(this.MMDevice.GetState(out DeviceState retValue));
         /************************************************/
         return retValue;
       }

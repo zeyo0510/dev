@@ -36,14 +36,34 @@ namespace AudioCore
 
     public static readonly Guid[] AudioSubTypes = new Guid[12]
     {
-      MEDIASUBTYPE_PCM, MEDIASUBTYPE_PCMAudioObsolete, MEDIASUBTYPE_MPEG1Packet, MEDIASUBTYPE_MPEG1Payload, MEDIASUBTYPE_MPEG2_AUDIO, MEDIASUBTYPE_DVD_LPCM_AUDIO, MEDIASUBTYPE_DRM_Audio, MEDIASUBTYPE_IEEE_FLOAT, MEDIASUBTYPE_DOLBY_AC3, MEDIASUBTYPE_DOLBY_AC3_SPDIF,
-      MEDIASUBTYPE_RAW_SPORT, MEDIASUBTYPE_SPDIF_TAG_241h
+      MEDIASUBTYPE_PCM,
+      MEDIASUBTYPE_PCMAudioObsolete,
+      MEDIASUBTYPE_MPEG1Packet,
+      MEDIASUBTYPE_MPEG1Payload,
+      MEDIASUBTYPE_MPEG2_AUDIO,
+      MEDIASUBTYPE_DVD_LPCM_AUDIO,
+      MEDIASUBTYPE_DRM_Audio,
+      MEDIASUBTYPE_IEEE_FLOAT,
+      MEDIASUBTYPE_DOLBY_AC3,
+      MEDIASUBTYPE_DOLBY_AC3_SPDIF,
+      MEDIASUBTYPE_RAW_SPORT,
+      MEDIASUBTYPE_SPDIF_TAG_241h
     };
 
     public static readonly string[] AudioSubTypeNames = new string[12]
     {
-      "PCM", "PCM Obsolete", "MPEG1Packet", "MPEG1Payload", "MPEG2_AUDIO", "DVD_LPCM_AUDIO", "DRM_Audio", "IEEE_FLOAT", "DOLBY_AC3", "DOLBY_AC3_SPDIF",
-      "RAW_SPORT", "SPDIF_TAG_241h"
+      "PCM",
+      "PCM Obsolete",
+      "MPEG1Packet",
+      "MPEG1Payload",
+      "MPEG2_AUDIO",
+      "DVD_LPCM_AUDIO",
+      "DRM_Audio",
+      "IEEE_FLOAT",
+      "DOLBY_AC3",
+      "DOLBY_AC3_SPDIF",
+      "RAW_SPORT",
+      "SPDIF_TAG_241h"
     };
 
     public static string GetAudioSubtypeName(Guid P_0)

@@ -10,7 +10,6 @@ public partial class DeviceVolumeControl : UserControl
     this.AudioDevice = _MM_DEVICE_;
     this.AudioDevice.VolumeChanged += MMDevice_VolumeChanged;
     this.AudioDevice.MuteChanged += MMDevice_MuteChanged;
-    Console.WriteLine(this.AudioDevice.DataFlow);
     /****************************************************/
     this.InitializeComponent();
     /****************************************************/

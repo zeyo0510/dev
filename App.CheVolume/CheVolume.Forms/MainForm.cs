@@ -4,6 +4,7 @@ using AudioCore.Interfaces;
 using B;
 using CheVolume.Controls;
 using CheVolume.Properties;
+using Microsoft.VisualBasic.Devices;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.ServiceModel;
@@ -161,31 +162,29 @@ public partial class MainForm : Form
     /************************************************/
     this._MMDeviceCollection_ = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
-    for (int i = 0; i < _MMDeviceCollection_.Count; i++)
+    foreach (AudioDevice device in this._MMDeviceCollection_)
     {
-      AudioDevice _MM_DEVICE_ = _MMDeviceCollection_[i];
-      /************************************************/
-      bool isDefault = _MM_DEVICE_.ID == this.DefaultDevice.ID;
+      bool isDefault = device.ID == this.DefaultDevice.ID;
       /************************************************/
       List<FlowLayoutPanel1> list = Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls));
       FlowLayoutPanel1 flowLayoutPanel = list.Find(delegate(FlowLayoutPanel1 P_0)
       {
-        return string.Compare(P_0.Tag.ToString(), _MM_DEVICE_.ID) == 0;
+        return string.Compare(P_0.Tag.ToString(), device.ID) == 0;
       });
       /************************************************/
       if (flowLayoutPanel == null)
       {
-        flowLayoutPanel = new FlowLayoutPanel1(_MM_DEVICE_);
+        flowLayoutPanel = new FlowLayoutPanel1(device);
         {
-          flowLayoutPanel.Tag = _MM_DEVICE_.ID;
+          flowLayoutPanel.Tag = device.ID;
           flowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
         }
         pnlSessMgr.Controls.Add(flowLayoutPanel);
         /************************************************/
-        DeviceVolumeControl deviceVolumeControl = new(_MM_DEVICE_);
+        DeviceVolumeControl deviceVolumeControl = new(device);
         {
           deviceVolumeControl.BackColor = Color.FromArgb(242, 242, 242);
-          deviceVolumeControl.Tag = _MM_DEVICE_.ID;
+          deviceVolumeControl.Tag = device.ID;
           deviceVolumeControl.SetDefault(isDefault);
         }
         flowLayoutPanel.Controls.Add(deviceVolumeControl);
@@ -198,7 +197,7 @@ public partial class MainForm : Form
       int count;
       try
       {
-        count = _MM_DEVICE_.AudioSessionManager.Count;
+        count = device.AudioSessionManager.Count;
       }
       catch (Exception)
       {
@@ -207,7 +206,7 @@ public partial class MainForm : Form
 
       for (int j = 0; j < count; j++)
       {
-        AudioSessionControl2 _AUDIO_SESSION_CONTROL_ = _MM_DEVICE_.AudioSessionManager._AudioSessionEnumerator_[j];
+        AudioSessionControl2 _AUDIO_SESSION_CONTROL_ = device.AudioSessionManager._AudioSessionEnumerator_[j];
         Process process;
         try
         {
@@ -237,7 +236,7 @@ public partial class MainForm : Form
           sessionVolumeControl = new(_AUDIO_SESSION_CONTROL_, process);
           {
             sessionVolumeControl.MMDeviceCollection = _MMDeviceCollection_;
-            sessionVolumeControl.AudioDevice = _MM_DEVICE_;
+            sessionVolumeControl.AudioDevice = device;
             sessionVolumeControl.muteCheckBox.Checked = _AUDIO_SESSION_CONTROL_.Mute;
             sessionVolumeControl.macTrackBar1.Value = int.Parse(Math.Ceiling(_AUDIO_SESSION_CONTROL_.Volume).ToString());;
           }

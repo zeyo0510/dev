@@ -1,8 +1,8 @@
 using a;
 using AudioCore;
-using AudioCore.Interfaces;
 using AudioCore2;
 using CheVolume.Properties;
+using Microsoft.VisualBasic.Devices;
 using Microsoft.Win32;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -341,28 +341,26 @@ public partial class SessionVolumeControl : UserControl
 
     this.MMDeviceCollection = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
-    int count = this.MMDeviceCollection.Count;
-    /************************************************/
-    for (int i = 0; i < count; i++)
+    foreach (AudioDevice device in this.MMDeviceCollection)
     {
-      ToolStripMenuItem toolStripMenuItem2 = new();
+      ToolStripMenuItem item = new();
       {
-        toolStripMenuItem2.Text = this.MMDeviceCollection[i].FriendlyName ?? "";
+        item.Text = device.FriendlyName ?? "";
       }
-      Icon icon = ImageHelper.Method1(MMDeviceCollection[i].IconPath);
+      Icon icon = ImageHelper.Method1(device.IconPath);
       if (icon.Height > 0)
       {
-        toolStripMenuItem2.Image = icon.ToBitmap();
+        item.Image = icon.ToBitmap();
         _DestroyIcon(icon.Handle);
-        toolStripMenuItem2.Tag = MMDeviceCollection[i].ID;
-        toolStripMenuItem2.ForeColor = Color.FromArgb(50, 50, 50);
-        toolStripMenuItem2.MouseEnter += toolStripMenuItem_MouseEnter;
-        toolStripMenuItem2.Click += toolStripMenuItem2_Click;
-        toolStripMenuItem2.MouseEnter += toolStripMenuItem_MouseEnter;
-        toolStripMenuItem2.MouseLeave += toolStripMenuItem_MouseLeave;
+        item.Tag = device.ID;
+        item.ForeColor = Color.FromArgb(50, 50, 50);
+        item.MouseEnter += toolStripMenuItem_MouseEnter;
+        item.Click += toolStripMenuItem2_Click;
+        item.MouseEnter += toolStripMenuItem_MouseEnter;
+        item.MouseLeave += toolStripMenuItem_MouseLeave;
       }
-      contextMenuStrip1.Items.Add(toolStripMenuItem2);
-      contextMenuStrip1.Refresh();
+      this.contextMenuStrip1.Items.Add(item);
+      this.contextMenuStrip1.Refresh();
     }
     
     ToolStripSeparator toolStripSeparator = new();

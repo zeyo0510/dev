@@ -6,13 +6,11 @@ namespace AudioCore
 {
   public partial class AudioDevice
   {
-    private readonly IMMDevice _MMDevice_;
-
     private PropertyStore _PropertyStore_;
 
     internal AudioDevice(IMMDevice _MM_DEVICE_)
     {
-      this._MMDevice_ = _MM_DEVICE_;
+      this.MMDevice = _MM_DEVICE_;
       /************************************************/
       this.lastVolume = this.Volume;
       this.lastNute = this.Mute;
@@ -41,9 +39,9 @@ namespace AudioCore
       {
         this._PropertyStore_ ??= GetPropertyInformation();
         /************************************************/
-        if (this._PropertyStore_.Contains(PKEY.PKEY_Device_FriendlyName))
+        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_Device_FriendlyName))
         {
-          return (string)this._PropertyStore_[PKEY.PKEY_Device_FriendlyName].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PropertyKeys.PKEY_Device_FriendlyName].PropVariant.GetValue();
         }
         /************************************************/
         return "Unknown";
@@ -79,25 +77,15 @@ namespace AudioCore
       }
     }
 
-    public DeviceState State
-    {
-      get
-      {
-        Marshal.ThrowExceptionForHR(_MMDevice_.GetState(out DeviceState retValue));
-        /************************************************/
-        return retValue;
-      }
-    }
-
     public string IconPath
     {
       get
       {
         this._PropertyStore_ ??= GetPropertyInformation();
         /************************************************/
-        if (this._PropertyStore_.Contains(PKEY.PKEY_DeviceClass_IconPath))
+        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_DeviceClass_IconPath))
         {
-          return (string)this._PropertyStore_[PKEY.PKEY_DeviceClass_IconPath].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PropertyKeys.PKEY_DeviceClass_IconPath].PropVariant.GetValue();
         }
         /************************************************/
         return "Unknown";
@@ -106,7 +94,7 @@ namespace AudioCore
 
     private PropertyStore GetPropertyInformation()
     {
-      Marshal.ThrowExceptionForHR(this._MMDevice_.OpenPropertyStore(EStgmAccess.STGM_READ, out IPropertyStore retValue));
+      Marshal.ThrowExceptionForHR(this.MMDevice.OpenPropertyStore(EStgmAccess.STGM_READ, out IPropertyStore retValue));
       /************************************************/
       return new PropertyStore(retValue);
     }

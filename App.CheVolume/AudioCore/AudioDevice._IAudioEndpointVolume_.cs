@@ -15,7 +15,7 @@ namespace AudioCore
       {
         if (field == null)
         {
-          Marshal.ThrowExceptionForHR(_MMDevice_.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object retValue));
+          Marshal.ThrowExceptionForHR(this.MMDevice.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object retValue));
           /************************************************/
           field = (IAudioEndpointVolume)retValue;
         }
