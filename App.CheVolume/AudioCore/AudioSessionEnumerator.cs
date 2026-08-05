@@ -1,10 +1,11 @@
+using System.Collections;
 using System.Runtime.InteropServices;
 /************************************************/
 using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public partial class AudioSessionEnumerator
+  public partial class AudioSessionEnumerator: IEnumerable<AudioSessionControl2>
   {
     private readonly IAudioSessionEnumerator _AudioSessionEnumerator_;
     /************************************************/
@@ -21,6 +22,19 @@ namespace AudioCore
         /************************************************/
         return new AudioSessionControl2(retValue);
       }
+    }
+    /************************************************/
+    public IEnumerator<AudioSessionControl2> GetEnumerator()
+    {
+      for (int i = 0; i < this.Count; i++)
+      {
+        yield return this[i];
+      }
+    }
+    /************************************************/
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+      return this.GetEnumerator();
     }
   }
 }

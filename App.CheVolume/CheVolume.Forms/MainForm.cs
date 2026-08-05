@@ -194,23 +194,13 @@ public partial class MainForm : Form
         Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(isDefault);
       }
 
-      int count;
-      try
+      
+      foreach (AudioSessionControl2 session in device.AudioSessions)
       {
-        count = device.AudioSessionManager.Count;
-      }
-      catch (Exception)
-      {
-        count = 0;
-      }
-
-      for (int j = 0; j < count; j++)
-      {
-        AudioSessionControl2 _AUDIO_SESSION_CONTROL_ = device.AudioSessionManager._AudioSessionEnumerator_[j];
         Process process;
         try
         {
-          process = Process.GetProcessById((int)_AUDIO_SESSION_CONTROL_.ProcessID);
+          process = Process.GetProcessById((int)session.ProcessID);
         }
         catch (Exception)
         {
@@ -226,19 +216,19 @@ public partial class MainForm : Form
         {
           sessionVolumeControl = list2.Find(delegate(SessionVolumeControl P_0)
           {
-            return string.Compare(P_0.Tag.ToString().ToLower(), _AUDIO_SESSION_CONTROL_.SessionInstanceIdentifier.ToLower()) == 0;
+            return string.Compare(P_0.Tag.ToString().ToLower(), session.SessionInstanceIdentifier.ToLower()) == 0;
           });
         }
 
-        AudioSessionState state = _AUDIO_SESSION_CONTROL_.State;
+        AudioSessionState state = session.State;
         if (sessionVolumeControl == null && state != AudioSessionState.AudioSessionStateExpired)
         {
-          sessionVolumeControl = new(_AUDIO_SESSION_CONTROL_, process);
+          sessionVolumeControl = new(session, process);
           {
             sessionVolumeControl.MMDeviceCollection = _MMDeviceCollection_;
             sessionVolumeControl.AudioDevice = device;
-            sessionVolumeControl.muteCheckBox.Checked = _AUDIO_SESSION_CONTROL_.Mute;
-            sessionVolumeControl.macTrackBar1.Value = int.Parse(Math.Ceiling(_AUDIO_SESSION_CONTROL_.Volume).ToString());;
+            sessionVolumeControl.muteCheckBox.Checked = session.Mute;
+            sessionVolumeControl.macTrackBar1.Value = int.Parse(Math.Ceiling(session.Volume).ToString());;
           }
           flowLayoutPanel.Controls.Add(sessionVolumeControl);
           if (process.Id == 0)
