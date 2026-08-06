@@ -19,7 +19,7 @@ namespace AudioCore
       Marshal.ThrowExceptionForHR(_AudioMeterInformation_.QueryHardwareSupport(out int hardwareSupport));
       _HardwareSupport = (EndpointHardwareSupport)hardwareSupport;
       /************************************************/
-      this._AudioMeterInformationChannels_ = new AudioMeterInformationChannels(_AudioMeterInformation_);
+      this._AudioMeterInformationChannels_ = new(_AudioMeterInformation_);
     }
 
     public EndpointHardwareSupport HardwareSupport

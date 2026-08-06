@@ -23,14 +23,6 @@ namespace AudioCore
       _AudioSessionEnumerator_ = new AudioSessionCollection(audioSessionEnumerator);
     }
 
-    public int Count
-    {
-      get
-      {
-        return this._AudioSessionEnumerator_.Count;
-      }
-    }
-
     public void RegisterSessionNotification(IAudioSessionNotificationCollection _AUDIO_SESSION_NOTIFICATION_COLLECTION_)
     {
       AudioSessionNotification audioSessionNotification = new(_AUDIO_SESSION_NOTIFICATION_COLLECTION_);
