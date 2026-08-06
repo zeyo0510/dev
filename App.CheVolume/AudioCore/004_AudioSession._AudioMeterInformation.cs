@@ -1,14 +1,14 @@
-using System.Runtime.InteropServices;
+using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
   partial class AudioSession
   {
-    public int Count
+    private IAudioMeterInformation AudioMeterInformation
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioMeterInformation_.GetMeteringChannelCount(out int retValue));
+        IAudioMeterInformation retValue = (IAudioMeterInformation)this._AudioSessionControl_;
         /************************************************/
         return retValue;
       }

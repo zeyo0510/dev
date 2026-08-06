@@ -4,17 +4,13 @@ namespace AudioCore
 {
   partial class AudioSession
   {
-    public bool Mute
+    public int Count
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.GetMute(out bool retValue));
+        Marshal.ThrowExceptionForHR(this.AudioMeterInformation.GetMeteringChannelCount(out int retValue));
         /************************************************/
         return retValue;
-      }
-      set
-      {
-        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.SetMute(value, Guid.Empty));
       }
     }
   }

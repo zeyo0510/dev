@@ -39,7 +39,9 @@ namespace AudioCore
       }
       set
       {
-        Marshal.ThrowExceptionForHR(this._SimpleAudioVolume_.SetMute(value, Guid.Empty));
+        Guid empty = Guid.Empty;
+        /************************************************/
+        Marshal.ThrowExceptionForHR(this._SimpleAudioVolume_.SetMute(value, ref empty));
       }
     }
   }

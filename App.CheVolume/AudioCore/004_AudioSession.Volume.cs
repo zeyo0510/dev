@@ -4,13 +4,16 @@ namespace AudioCore
 {
   partial class AudioSession
   {
-    public float Volume
+    public int Volume
     {
       get
       {
         Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.GetMasterVolume(out float retValue));
         /************************************************/
-        return retValue * 100f;
+        retValue = (int)Math.Ceiling(retValue * 100f);
+        /************************************************/
+        return (int)retValue;
+
       }
       set
       {

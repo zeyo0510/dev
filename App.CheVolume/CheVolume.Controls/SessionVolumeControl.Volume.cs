@@ -5,7 +5,7 @@ namespace CheVolume.Controls;
 partial class SessionVolumeControl
 {
   [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-  public float Volume
+  public int Volume
   {
     get
     {
