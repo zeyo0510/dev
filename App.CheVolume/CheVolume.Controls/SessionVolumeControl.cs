@@ -118,7 +118,7 @@ public partial class SessionVolumeControl : UserControl
   [DllImport("Shell32", EntryPoint = "ExtractIconEx")]
   public static extern int _ExtractIconEx(string P_0, int P_1, out IntPtr P_2, out IntPtr P_3, int P_4);
 
-  public SessionVolumeControl(AudioSessionControl2 _SESSION_CONTROL_, Process P_1)
+  public SessionVolumeControl(AudioSession _SESSION_CONTROL_, Process P_1)
   {
     this.SessionControl = _SESSION_CONTROL_;
     /************************************************/

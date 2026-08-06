@@ -17,12 +17,12 @@ namespace B
 {
 	public class FlowLayoutPanel1 : FlowLayoutPanel, IAudioSessionNotificationCollection
 	{
-		private delegate void SYS_Invoke_FlowLayoutPanel(AudioSessionControl2 A_0);
+		private delegate void SYS_Invoke_FlowLayoutPanel(AudioSession A_0);
 
 		[CompilerGenerated]
 		private sealed class SYS_Comapre_SessionVolumeControl
 		{
-			public AudioSessionControl2 obj1;
+			public AudioSession obj1;
 
 			internal bool Equal(SessionVolumeControl P_0)
 			{
@@ -90,12 +90,12 @@ namespace B
 			audioSessionManager21.UnregisterSessionNotification(this);
 		}
 
-		public int AlwaysZero(AudioSessionControl2 P_0)
+		public int AlwaysZero(AudioSession P_0)
 		{
 			return 0;
 		}
 
-		private void Add(AudioSessionControl2 _SESSION_CONTROL_)
+		private void Add(AudioSession _SESSION_CONTROL_)
 		{
 			if (base.InvokeRequired)
 			{

@@ -2,13 +2,13 @@ using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioSessionControl2
+  partial class AudioSession
   {
-    public string SessionInstanceIdentifier
+    public string DisplayName
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetSessionInstanceIdentifier(out nint ptr));
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetDisplayName(out nint ptr));
         string retValue = Marshal.PtrToStringAuto(ptr);
         Marshal.FreeCoTaskMem(ptr);
         return retValue;

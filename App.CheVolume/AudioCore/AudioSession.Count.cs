@@ -1,14 +1,14 @@
-using JC.CS.Lib.CoreAudio;
+using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioSessionControl2
+  partial class AudioSession
   {
-    private ISimpleAudioVolume SimpleAudioVolume
+    public int Count
     {
       get
       {
-        ISimpleAudioVolume retValue = (ISimpleAudioVolume)this._AudioSessionControl_;
+        Marshal.ThrowExceptionForHR(this._AudioMeterInformation_.GetMeteringChannelCount(out int retValue));
         /************************************************/
         return retValue;
       }

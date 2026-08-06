@@ -4,12 +4,12 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public partial class AudioSessionControl2
+  public partial class AudioSession
   {
     private readonly IAudioSessionControl2 _AudioSessionControl_;
     private readonly IAudioMeterInformation _AudioMeterInformation_;
     /************************************************/
-    internal AudioSessionControl2(IAudioSessionControl2 _AUDIO_SESSION_CONTROL_)
+    internal AudioSession(IAudioSessionControl2 _AUDIO_SESSION_CONTROL_)
     {
       this._AudioSessionControl_   = _AUDIO_SESSION_CONTROL_;
       this._AudioMeterInformation_ = (IAudioMeterInformation)this._AudioSessionControl_;

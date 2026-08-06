@@ -13,7 +13,7 @@ namespace AudioCore
     /************************************************/
     public int OnSessionCreated(IAudioSessionControl _AUDIO_SESSION_CONTROL_)
     {
-      return _AudioSessionNotificationCollection_.AlwaysZero(new AudioSessionControl2((IAudioSessionControl2)_AUDIO_SESSION_CONTROL_));
+      return _AudioSessionNotificationCollection_.AlwaysZero(new AudioSession((IAudioSessionControl2)_AUDIO_SESSION_CONTROL_));
     }
   }
 }

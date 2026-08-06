@@ -195,7 +195,7 @@ public partial class MainForm : Form
       }
 
       
-      foreach (AudioSessionControl2 session in device.AudioSessions)
+      foreach (AudioSession session in device.AudioSessions)
       {
         Process process;
         try

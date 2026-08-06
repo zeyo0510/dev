@@ -5,7 +5,7 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public partial class AudioSessionEnumerator: IEnumerable<AudioSessionControl2>
+  public partial class AudioSessionEnumerator: IEnumerable<AudioSession>
   {
     private readonly IAudioSessionEnumerator _AudioSessionEnumerator_;
     /************************************************/
@@ -14,17 +14,17 @@ namespace AudioCore
       this._AudioSessionEnumerator_ = _AUDIO_SESSION_ENUMERATOR_;
     }
     /************************************************/
-    public AudioSessionControl2 this[int index]
+    public AudioSession this[int index]
     {
       get
       {
         Marshal.ThrowExceptionForHR(this._AudioSessionEnumerator_.GetSession(index, out IAudioSessionControl2 retValue));
         /************************************************/
-        return new AudioSessionControl2(retValue);
+        return new AudioSession(retValue);
       }
     }
     /************************************************/
-    public IEnumerator<AudioSessionControl2> GetEnumerator()
+    public IEnumerator<AudioSession> GetEnumerator()
     {
       for (int i = 0; i < this.Count; i++)
       {

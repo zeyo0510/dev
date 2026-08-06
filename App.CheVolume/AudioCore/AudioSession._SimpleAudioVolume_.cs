@@ -1,14 +1,14 @@
-using System.Runtime.InteropServices;
+using JC.CS.Lib.CoreAudio;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioSessionControl2
+  partial class AudioSession
   {
-    public uint ProcessID
+    private ISimpleAudioVolume SimpleAudioVolume
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetProcessId(out uint retValue));
+        ISimpleAudioVolume retValue = (ISimpleAudioVolume)this._AudioSessionControl_;
         /************************************************/
         return retValue;
       }

@@ -2,13 +2,13 @@ using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioSessionControl2
+  partial class AudioSession
   {
-    public int Count
+    public uint ProcessID
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioMeterInformation_.GetMeteringChannelCount(out int retValue));
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetProcessId(out uint retValue));
         /************************************************/
         return retValue;
       }

@@ -2,7 +2,7 @@ using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioSessionControl2
+  partial class AudioSession
   {
     public string SessionIdentifier
     {
