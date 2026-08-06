@@ -8,9 +8,8 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetSessionInstanceIdentifier(out nint ptr));
-        string retValue = Marshal.PtrToStringAuto(ptr);
-        Marshal.FreeCoTaskMem(ptr);
+        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetSessionInstanceIdentifier(out string retValue));
+        /************************************************/
         return retValue;
       }
     }

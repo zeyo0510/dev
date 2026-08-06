@@ -15,7 +15,7 @@ namespace AudioCore.Interfaces
     /************************************************/
     [PreserveSig]
     int GetDisplayName(
-      out IntPtr _P_RET_VAL_
+      [MarshalAs(UnmanagedType.LPWStr)] out string _P_RET_VAL_
     );
     /************************************************/
     [PreserveSig]
@@ -26,7 +26,7 @@ namespace AudioCore.Interfaces
     /************************************************/
     [PreserveSig]
     int GetIconPath(
-      out IntPtr _P_RET_VAL_
+      [MarshalAs(UnmanagedType.LPWStr)] out string _P_RET_VAL_
     );
     /************************************************/
     [PreserveSig]
@@ -58,12 +58,12 @@ namespace AudioCore.Interfaces
     /************************************************/
     [PreserveSig]
     int GetSessionIdentifier(
-      out IntPtr _P_RET_VAL_
+      [MarshalAs(UnmanagedType.LPWStr)] out string _P_RET_VAL_
     );
     /************************************************/
     [PreserveSig]
     int GetSessionInstanceIdentifier(
-      out IntPtr _P_RET_VAL_
+      [MarshalAs(UnmanagedType.LPWStr)] out string _P_RET_VAL_
     );
     /************************************************/
     [PreserveSig]
