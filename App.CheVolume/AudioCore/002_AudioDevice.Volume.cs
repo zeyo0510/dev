@@ -8,7 +8,7 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.AudioEndpointVolume.GetMasterVolumeLevelScalar(out float retValue));
+        Marshal.ThrowExceptionForHR(this.IAudioEndpointVolume.GetMasterVolumeLevelScalar(out float retValue));
         /************************************************/
         retValue = (int)Math.Ceiling(retValue * 100f);
         /************************************************/
@@ -16,7 +16,7 @@ namespace AudioCore
       }
       set
       {
-        Marshal.ThrowExceptionForHR(this.AudioEndpointVolume.SetMasterVolumeLevelScalar(value / 100f, Guid.Empty));
+        Marshal.ThrowExceptionForHR(this.IAudioEndpointVolume.SetMasterVolumeLevelScalar(value / 100f, Guid.Empty));
       }
     }
   }

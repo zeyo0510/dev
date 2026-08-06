@@ -8,7 +8,7 @@ namespace AudioCore
 {
   public class AudioSessionManager2
   {
-    public readonly AudioSessionEnumerator _AudioSessionEnumerator_;
+    public readonly AudioSessionCollection _AudioSessionEnumerator_;
 
     private readonly IAudioSessionManager2 _AudioSessionManager_;
 
@@ -20,7 +20,7 @@ namespace AudioCore
       /************************************************/
       Marshal.ThrowExceptionForHR(this._AudioSessionManager_.GetSessionEnumerator(out IAudioSessionEnumerator audioSessionEnumerator));
       /************************************************/
-      _AudioSessionEnumerator_ = new AudioSessionEnumerator(audioSessionEnumerator);
+      _AudioSessionEnumerator_ = new AudioSessionCollection(audioSessionEnumerator);
     }
 
     public int Count

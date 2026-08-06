@@ -15,7 +15,7 @@ namespace AudioCore
       {
         if (field == null)
         {
-          Marshal.ThrowExceptionForHR(this.MMDevice.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out object retValue));
+          Marshal.ThrowExceptionForHR(this.IMMDevice.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out object retValue));
           /************************************************/
           field = new((IAudioMeterInformation)retValue);
         }

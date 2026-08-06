@@ -4,13 +4,13 @@ namespace AudioCore
 {
   partial class AudioDevice
   {
-    public IMMEndpoint IMMEndpoint
+    private IMMEndpoint IMMEndpoint
     {
       get
       {
         if (field == null)
         {
-          field = (IMMEndpoint)this.MMDevice;
+          field = (IMMEndpoint)this.IMMDevice;
         }
         /************************************************/
         return field;

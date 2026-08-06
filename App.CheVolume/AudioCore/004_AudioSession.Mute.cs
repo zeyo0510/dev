@@ -8,7 +8,7 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.GetMute(out bool retValue));
+        Marshal.ThrowExceptionForHR(this.ISimpleAudioVolume.GetMute(out bool retValue));
         /************************************************/
         return retValue;
       }
@@ -16,7 +16,7 @@ namespace AudioCore
       {
         Guid empty = Guid.Empty;
         /************************************************/
-        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.SetMute(value, ref empty));
+        Marshal.ThrowExceptionForHR(this.ISimpleAudioVolume.SetMute(value, ref empty));
       }
     }
   }

@@ -2,9 +2,9 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioDevice
+  partial class AudioDeviceCollection
   {
-    private IMMDevice IMMDevice
+    private IMMDeviceCollection IMMDeviceCollection
     {
       get; set;
     }

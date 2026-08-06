@@ -1,14 +1,14 @@
-using AudioCore.Interfaces;
+using JC.CS.Lib.CoreAudio;
 /************************************************/
 namespace AudioCore
 {
   partial class AudioSession
   {
-    private IAudioMeterInformation AudioMeterInformation
+    private ISimpleAudioVolume ISimpleAudioVolume
     {
       get
       {
-        IAudioMeterInformation retValue = (IAudioMeterInformation)this._AudioSessionControl_;
+        ISimpleAudioVolume retValue = (ISimpleAudioVolume)this.IAudioSessionControl;
         /************************************************/
         return retValue;
       }

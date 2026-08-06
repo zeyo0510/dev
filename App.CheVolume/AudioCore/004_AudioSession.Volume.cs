@@ -8,7 +8,7 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.GetMasterVolume(out float retValue));
+        Marshal.ThrowExceptionForHR(this.ISimpleAudioVolume.GetMasterVolume(out float retValue));
         /************************************************/
         retValue = (int)Math.Ceiling(retValue * 100f);
         /************************************************/
@@ -19,7 +19,7 @@ namespace AudioCore
       {
         Guid empty = Guid.Empty;
         /************************************************/
-        Marshal.ThrowExceptionForHR(this.SimpleAudioVolume.SetMasterVolume(value / 100f, ref empty));
+        Marshal.ThrowExceptionForHR(this.ISimpleAudioVolume.SetMasterVolume(value / 100f, ref empty));
       }
     }
   }

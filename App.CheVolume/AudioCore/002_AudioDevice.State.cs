@@ -8,7 +8,7 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.MMDevice.GetState(out DeviceState retValue));
+        Marshal.ThrowExceptionForHR(this.IMMDevice.GetState(out DeviceState retValue));
         /************************************************/
         return retValue;
       }

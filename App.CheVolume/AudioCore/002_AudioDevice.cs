@@ -10,12 +10,12 @@ namespace AudioCore
 
     internal AudioDevice(IMMDevice _MM_DEVICE_)
     {
-      this.MMDevice = _MM_DEVICE_;
+      this.IMMDevice = _MM_DEVICE_;
       /************************************************/
       this.lastVolume = this.Volume;
       this.lastNute = this.Mute;
       /************************************************/
-      Marshal.ThrowExceptionForHR(this.AudioEndpointVolume.RegisterControlChangeNotify(this));
+      Marshal.ThrowExceptionForHR(this.IAudioEndpointVolume.RegisterControlChangeNotify(this));
     }
     /************************************************/
     ~AudioDevice()
@@ -94,7 +94,7 @@ namespace AudioCore
 
     private PropertyStore GetPropertyInformation()
     {
-      Marshal.ThrowExceptionForHR(this.MMDevice.OpenPropertyStore(EStgmAccess.STGM_READ, out IPropertyStore retValue));
+      Marshal.ThrowExceptionForHR(this.IMMDevice.OpenPropertyStore(EStgmAccess.STGM_READ, out IPropertyStore retValue));
       /************************************************/
       return new PropertyStore(retValue);
     }

@@ -6,21 +6,19 @@ namespace AudioCore
 {
   public partial class AudioSession
   {
-    private readonly IAudioSessionControl2 _AudioSessionControl_;
-    /************************************************/
     internal AudioSession(IAudioSessionControl2 _AUDIO_SESSION_CONTROL_)
     {
-      this._AudioSessionControl_   = _AUDIO_SESSION_CONTROL_;
+      this.IAudioSessionControl = _AUDIO_SESSION_CONTROL_;
     }
     /************************************************/
     public void RegisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
     {
-      Marshal.ThrowExceptionForHR(this._AudioSessionControl_.RegisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
+      Marshal.ThrowExceptionForHR(this.IAudioSessionControl.RegisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
     }
 
     public void UnregisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
     {
-      Marshal.ThrowExceptionForHR(this._AudioSessionControl_.UnregisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
+      Marshal.ThrowExceptionForHR(this.IAudioSessionControl.UnregisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
     }
   }
 }

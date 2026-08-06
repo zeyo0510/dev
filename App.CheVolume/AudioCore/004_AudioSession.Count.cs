@@ -8,7 +8,7 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.AudioMeterInformation.GetMeteringChannelCount(out int retValue));
+        Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetMeteringChannelCount(out int retValue));
         /************************************************/
         return retValue;
       }

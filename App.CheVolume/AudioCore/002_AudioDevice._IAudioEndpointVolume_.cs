@@ -9,13 +9,13 @@ namespace AudioCore
     /************************************************/
     private static Guid IID_IAudioEndpointVolume = new("5CDF2C82-841E-4546-9722-0CF74078229A");
     /************************************************/
-    public IAudioEndpointVolume AudioEndpointVolume
+    public IAudioEndpointVolume IAudioEndpointVolume
     {
       get
       {
         if (field == null)
         {
-          Marshal.ThrowExceptionForHR(this.MMDevice.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object retValue));
+          Marshal.ThrowExceptionForHR(this.IMMDevice.Activate(ref IID_IAudioEndpointVolume, CLSCTX.ALL, IntPtr.Zero, out object retValue));
           /************************************************/
           field = (IAudioEndpointVolume)retValue;
         }

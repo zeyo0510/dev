@@ -2,15 +2,15 @@ using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioSessionEnumerator
+  partial class AudioDeviceCollection
   {
     public int Count
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioSessionEnumerator_.GetCount(out int retValue));
+        Marshal.ThrowExceptionForHR(this.IMMDeviceCollection.GetCount(out uint retValue));
         /************************************************/
-        return retValue;
+        return (int)retValue;
       }
     }
   }

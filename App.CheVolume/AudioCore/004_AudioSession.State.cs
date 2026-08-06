@@ -8,7 +8,7 @@ namespace AudioCore
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioSessionControl_.GetState(out AudioSessionState retValue));
+        Marshal.ThrowExceptionForHR(this.IAudioSessionControl.GetState(out AudioSessionState retValue));
         /************************************************/
         return retValue;
       }

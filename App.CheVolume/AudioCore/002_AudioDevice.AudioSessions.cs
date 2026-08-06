@@ -2,7 +2,7 @@ namespace AudioCore
 {
   partial class AudioDevice
   {
-    public AudioSessionEnumerator AudioSessions
+    public AudioSessionCollection AudioSessions
     {
       get
       {
