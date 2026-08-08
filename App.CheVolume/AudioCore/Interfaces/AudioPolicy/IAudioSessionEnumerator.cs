@@ -6,7 +6,7 @@ namespace AudioCore.Interfaces
 {
   [Guid("E2F5BB11-0570-40CA-ACDD-3AA01277DEE8")]
   [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-  internal interface IAudioSessionEnumerator
+  public interface IAudioSessionEnumerator
   {
     int GetCount(
 			out int _SESSION_COUNT_

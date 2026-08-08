@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices;
-/************************************************/
 using AudioCore.Interfaces;
 /************************************************/
 using JC.CS.Lib.CoreAudio;
@@ -17,10 +15,6 @@ namespace AudioCore
     internal AudioSessionManager2(IAudioSessionManager2 _AUDIO_SESSION_MANAGER_)
     {
       this._AudioSessionManager_ = _AUDIO_SESSION_MANAGER_;
-      /************************************************/
-      Marshal.ThrowExceptionForHR(this._AudioSessionManager_.GetSessionEnumerator(out IAudioSessionEnumerator audioSessionEnumerator));
-      /************************************************/
-      _AudioSessionEnumerator_ = new AudioSessionCollection(audioSessionEnumerator);
     }
 
     public void RegisterSessionNotification(IAudioSessionNotificationCollection _AUDIO_SESSION_NOTIFICATION_COLLECTION_)

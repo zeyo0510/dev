@@ -121,7 +121,6 @@ public partial class SessionVolumeControl : UserControl
   public SessionVolumeControl(AudioSession _SESSION_CONTROL_, Process P_1)
   {
     this.SessionControl = _SESSION_CONTROL_;
-    Console.WriteLine("~~~" + this.SessionControl.SessionInstanceIdentifier);
     /************************************************/
     audioPolicyConfigService1 = new AudioPolicyConfigService(Flow);
     /************************************************/

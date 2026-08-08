@@ -1,3 +1,7 @@
+using System.Runtime.InteropServices;
+/************************************************/
+using AudioCore.Interfaces;
+/************************************************/
 namespace AudioCore
 {
   partial class AudioDevice
@@ -6,7 +10,9 @@ namespace AudioCore
     {
       get
       {
-        return this.AudioSessionManager._AudioSessionEnumerator_;
+        Marshal.ThrowExceptionForHR(this.IAudioSessionManager.GetSessionEnumerator(out IAudioSessionEnumerator retValue));
+        /************************************************/
+        return new AudioSessionCollection(retValue);
       }
     }
   }

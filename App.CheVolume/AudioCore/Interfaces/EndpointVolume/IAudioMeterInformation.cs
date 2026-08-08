@@ -21,7 +21,7 @@ namespace AudioCore.Interfaces
     [PreserveSig]
     int GetChannelsPeakValues(
       int _U32_CHANNEL_COUNT_,
-      [In] IntPtr _AF_PEAK_VALUES_
+      nint _AF_PEAK_VALUES_
     );
     /************************************************/
     [PreserveSig]

@@ -6,7 +6,7 @@ namespace AudioCore.Interfaces
 {
   [Guid("bfb7ff88-7239-4fc9-8fa2-07c950be9c6d")]
   [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-  internal interface IAudioSessionControl2
+  public interface IAudioSessionControl2
   {
     [PreserveSig]
     int GetState(
