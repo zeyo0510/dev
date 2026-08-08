@@ -9,7 +9,7 @@ namespace AudioCore
     /************************************************/
     private static Guid IID_IAudioMeterInformation = new("C02216F6-8C67-4B5B-9D00-D008E73E0064");
     /************************************************/
-    public AudioMeterInformation AudioMeterInformation
+    public IAudioMeterInformation IAudioMeterInformation
     {
       get
       {
@@ -17,7 +17,7 @@ namespace AudioCore
         {
           Marshal.ThrowExceptionForHR(this.IMMDevice.Activate(ref IID_IAudioMeterInformation, CLSCTX.ALL, IntPtr.Zero, out object retValue));
           /************************************************/
-          field = new((IAudioMeterInformation)retValue);
+          field = (IAudioMeterInformation)retValue;
         }
         /************************************************/
         return field;

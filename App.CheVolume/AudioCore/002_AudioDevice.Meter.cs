@@ -2,13 +2,13 @@ using System.Runtime.InteropServices;
 /************************************************/
 namespace AudioCore
 {
-  partial class AudioMeterInformation
+  partial class AudioDevice
   {
-    public float MasterPeakValue
+    public float Meter
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this._AudioMeterInformation_.GetPeakValue(out float retValue));
+        Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetPeakValue(out float retValue));
         /************************************************/
         return retValue;
       }

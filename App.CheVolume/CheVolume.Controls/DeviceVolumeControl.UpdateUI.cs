@@ -12,12 +12,12 @@ partial class DeviceVolumeControl
     // this.devicePictureBox.Image = this.ProcessIcon(this.MMDevice.IconPath);
     // leftLedBar
     this.leftLedBar.Enabled = !this.Mute;
-    this.leftLedBar.Value = this.ProcessLeftChannel(this.MeterInformation.PeakValues.ToFloatArray);
+    this.leftLedBar.Value = this.ProcessLeftChannel(this.AudioDevice.ChannelMeters);
     // volumeVTrackBar
     this.volumeVTrackBar.Value = this.Volume;
     // rightLedBar
     this.rightLedBar.Enabled = !this.Mute;
-    this.rightLedBar.Value = this.ProcessRightChannel(this.MeterInformation.PeakValues.ToFloatArray);
+    this.rightLedBar.Value = this.ProcessRightChannel(this.AudioDevice.ChannelMeters);
     // muteCheckBox
     this.muteCheckBox.Checked = this.Mute;
     // volumeLabel

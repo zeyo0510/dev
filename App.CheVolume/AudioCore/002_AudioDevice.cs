@@ -13,7 +13,12 @@ namespace AudioCore
       this.IMMDevice = _MM_DEVICE_;
       /************************************************/
       this.lastVolume = this.Volume;
-      this.lastNute = this.Mute;
+      this.lastMute = this.Mute;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.QueryHardwareSupport(out int retValue));
+      this.IsHardwareVolumeSupported = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_VOLUME_) != 0; // TODO: Gary
+      this.IsHardwareMuteSupported   = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_MUTE_  ) != 0; // TODO: Gary
+      this.IsHardwareMeterSupported  = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_METER_ ) != 0; // TODO: Gary
       /************************************************/
       Marshal.ThrowExceptionForHR(this.IAudioEndpointVolume.RegisterControlChangeNotify(this));
     }

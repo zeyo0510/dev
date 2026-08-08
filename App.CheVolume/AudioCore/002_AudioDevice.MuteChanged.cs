@@ -2,13 +2,13 @@ namespace AudioCore
 {
   partial class AudioDevice
   {
-    private bool lastNute = false;
+    private bool lastMute = false;
     /************************************************/
     public event EventHandler<EventArgs>? MuteChanged = null;
     /************************************************/
     protected virtual void OnMuteChanged()
     {
-      this.lastNute = this.Mute;
+      this.lastMute = this.Mute;
       /************************************************/
       this.MuteChanged?.Invoke(this, EventArgs.Empty);
     }

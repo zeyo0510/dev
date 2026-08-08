@@ -30,7 +30,7 @@ namespace AudioCore
       }
       /************************************************/
       bool mute = data.bMuted;
-      if (mute != this.lastNute)
+      if (mute != this.lastMute)
       {
         this.OnMuteChanged();
       }
