@@ -209,7 +209,7 @@ public partial class SessionVolumeControl : UserControl
     float[] source = new float[1];
     try
     {
-      source = SessionControl.ChannelsPeakValues;
+      source = SessionControl.ChannelMeters;
     }
     catch (Exception)
     {

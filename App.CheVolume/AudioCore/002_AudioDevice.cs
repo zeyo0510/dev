@@ -1,3 +1,5 @@
+// TODO: JC TEST
+
 using System.Runtime.InteropServices;
 /************************************************/
 using AudioCore.Interfaces;
@@ -16,9 +18,9 @@ namespace AudioCore
       this.lastMute = this.Mute;
       /************************************************/
       Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.QueryHardwareSupport(out int retValue));
-      this.IsHardwareVolumeSupported = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_VOLUME_) != 0; // TODO: Gary
-      this.IsHardwareMuteSupported   = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_MUTE_  ) != 0; // TODO: Gary
-      this.IsHardwareMeterSupported  = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_METER_ ) != 0; // TODO: Gary
+      this.IsHardwareVolumeSupported = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_VOLUME_) != 0;
+      this.IsHardwareMuteSupported   = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_MUTE_  ) != 0;
+      this.IsHardwareMeterSupported  = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_METER_ ) != 0;
       /************************************************/
       Marshal.ThrowExceptionForHR(this.IAudioEndpointVolume.RegisterControlChangeNotify(this));
     }

@@ -4,6 +4,7 @@ namespace AudioCore
 {
   partial class AudioDevice
   {
+    // TODO: JC TEST
     public float[] ChannelMeters
     {
       get

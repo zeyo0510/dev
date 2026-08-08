@@ -11,11 +11,12 @@ namespace AudioCore
       this.IAudioSessionControl = _AUDIO_SESSION_CONTROL_;
     }
     /************************************************/
+    // TODO: JC TEST
     public void RegisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
     {
       Marshal.ThrowExceptionForHR(this.IAudioSessionControl.RegisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
     }
-
+    // TODO: JC TEST
     public void UnregisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
     {
       Marshal.ThrowExceptionForHR(this.IAudioSessionControl.UnregisterAudioSessionNotification(_NEW_NOTIFICATIONS_));

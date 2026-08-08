@@ -4,11 +4,14 @@ namespace AudioCore
 {
   partial class AudioSession
   {
-    public float[] ChannelsPeakValues
+    // TODO: JC TEST
+    public float[] ChannelMeters
     {
       get
       {
-        float[] array = new float[this.Count];
+        Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetMeteringChannelCount(out int retValue));
+
+        float[] array = new float[retValue];
         GCHandle gCHandle = GCHandle.Alloc(array, GCHandleType.Pinned);
         Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetChannelsPeakValues(array.Length, gCHandle.AddrOfPinnedObject()));
         gCHandle.Free();
