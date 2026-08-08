@@ -205,23 +205,7 @@ public partial class SessionVolumeControl : UserControl
 
   private void guiTimer_Tick(object sender, EventArgs e)
   {
-    float[] source = new float[1];
-    try
-    {
-      source = SessionControl.ChannelMeters;
-    }
-    catch (Exception)
-    {
-    }
-    if (Enumerable.Count(source) > 0)
-    {
-      float value = Enumerable.Max(source);
-      this.leftLedBar.Value = (int)Math.Ceiling(value * 15f);
-    }
-    else
-    {
-      this.leftLedBar.Value = 0;
-    }
+    this.leftLedBar.Value = (int)Math.Ceiling(this.SessionControl.Meter * 15f);
     if (num1++ < 100)
     {
       return;

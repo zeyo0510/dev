@@ -4,7 +4,6 @@ using AudioCore.Interfaces;
 using B;
 using CheVolume.Controls;
 using CheVolume.Properties;
-using Microsoft.VisualBasic.Devices;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.ServiceModel;
@@ -121,9 +120,9 @@ public partial class MainForm : Form
     }
     ImageHelper.SetImageSize(dpiX);
     /************************************************/
-    _MMNotificationClient_.DefaultChanged = (MMNotificationClientDeviceDelegate)Delegate.Combine(_MMNotificationClient_.DefaultChanged, new MMNotificationClientDeviceDelegate(_MMNotificationClient_DefaultChanged));
-    _MMNotificationClient_.DeviceAdded = (MMNotificationClientDeviceDelegate)Delegate.Combine(_MMNotificationClient_.DeviceAdded, new MMNotificationClientDeviceDelegate(_MMNotificationClient_DeviceAdded));
-    _MMNotificationClient_.DeviceRemoved = (MMNotificationClientDeviceDelegate)Delegate.Combine(_MMNotificationClient_.DeviceRemoved, new MMNotificationClientDeviceDelegate(_MMNotificationClient_DeviceRemove));
+    _MMNotificationClient_.DefaultChanged       = (MMNotificationClientDeviceDelegate)Delegate.Combine(_MMNotificationClient_.DefaultChanged, new MMNotificationClientDeviceDelegate(_MMNotificationClient_DefaultChanged));
+    _MMNotificationClient_.DeviceAdded          = (MMNotificationClientDeviceDelegate)Delegate.Combine(_MMNotificationClient_.DeviceAdded, new MMNotificationClientDeviceDelegate(_MMNotificationClient_DeviceAdded));
+    _MMNotificationClient_.DeviceRemoved        = (MMNotificationClientDeviceDelegate)Delegate.Combine(_MMNotificationClient_.DeviceRemoved, new MMNotificationClientDeviceDelegate(_MMNotificationClient_DeviceRemove));
     _MMNotificationClient_.PropertyValueChanged = (MMNotificationClientPropertyValueDelegate)Delegate.Combine(_MMNotificationClient_.PropertyValueChanged, new MMNotificationClientPropertyValueDelegate(_MMNotificationClient_PropertyValueChanged));
     /************************************************/
     bool1 = false;

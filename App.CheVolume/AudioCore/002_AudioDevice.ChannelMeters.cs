@@ -4,18 +4,21 @@ namespace AudioCore
 {
   partial class AudioDevice
   {
-    // TODO: JC TEST
     public float[] ChannelMeters
     {
       get
       {
-        Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetMeteringChannelCount(out int retValue));
-
-        float[] array = new float[retValue];
-        GCHandle gCHandle = GCHandle.Alloc(array, GCHandleType.Pinned);
-        Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetChannelsPeakValues(array.Length, gCHandle.AddrOfPinnedObject()));
-        gCHandle.Free();
-        return array;
+        Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetMeteringChannelCount(out int count));
+        /************************************************/
+        float[] retValue = new float[count];
+        /************************************************/
+        GCHandle gcHandle = GCHandle.Alloc(retValue, GCHandleType.Pinned);
+        /************************************************/
+        Marshal.ThrowExceptionForHR(this.IAudioMeterInformation.GetChannelsPeakValues(retValue.Length, gcHandle.AddrOfPinnedObject()));
+        /************************************************/
+        gcHandle.Free();
+        /************************************************/
+        return retValue;
       }
     }
   }
