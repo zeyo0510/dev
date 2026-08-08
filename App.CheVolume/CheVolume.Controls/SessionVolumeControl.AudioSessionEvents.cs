@@ -1,70 +1,59 @@
 using AudioCore;
-using AudioCore.Interfaces;
-using System.Runtime.InteropServices;
 /************************************************/
 namespace CheVolume.Controls;
 /************************************************/
-public partial class SessionVolumeControl : IAudioSessionEvents
+public partial class SessionVolumeControl
 {
-  public int OnDisplayNameChanged([MarshalAs(UnmanagedType.LPWStr)] string displayName, Guid context)
+  public void AudioSession_DisplayNameChanged(object sender, string displayName)
   {
     Console.WriteLine($"OnDisplayNameChanged : {displayName}");
-    /************************************************/
-    return 0;
   }
   /************************************************/
-  public int OnIconPathChanged(string iconPath, Guid context)
+  public void AudioSession_IconPathChanged(object sender, string iconPath)
   {
     Console.WriteLine($"OnIconPathChanged : {iconPath}");
-    /************************************************/
-    return 0;
   }
   /************************************************/
-  public int OnSimpleVolumeChanged(float volume, bool mute, Guid context)
+  public void AudioSession_VolumeChanged(object sender, EventArgs e)
   {
-    Console.WriteLine($"OnSimpleVolumeChanged : {volume}, {mute}");
+    Console.WriteLine($"AudioSession_VolumeChanged");
     /************************************************/
-    this.SetMute(mute);
-    this.SetVolumeText(Math.Ceiling(volume * 100f).ToString());
+    this.SetVolumeText(this.Volume.ToString());
     if (!macTrackBar1.Dragging)
     {
-      this.SetTrackBar((decimal)Math.Ceiling(volume * 100f));
+      this.SetTrackBar(this.Volume);
     }
-    /************************************************/
-    return 0;
   }
-  /************************************************/
-  public int OnChannelVolumeChanged(uint P_0, IntPtr P_1, uint P_2, Guid context)
+  public void AudioSession_MuteChanged(object sender, EventArgs e)
   {
-    Console.WriteLine($"OnChannelVolumeChanged : {P_0}");
+    Console.WriteLine($"AudioSession_MuteChanged");
     /************************************************/
-    return 0;
+    this.SetMute(this.Mute);
   }
   /************************************************/
-  public int OnGroupingParamChanged(Guid groupingParam, Guid context)
+  public void AudioSession_ChannelVolumeChanged(object sender, EventArgs e)
   {
-    Console.WriteLine($"OnGroupingParamChanged : {groupingParam}");
-    /************************************************/
-    return 0;
+    Console.WriteLine($"OnChannelVolumeChanged");
   }
   /************************************************/
-  public int OnStateChanged(AudioSessionState state)
+  public void AudioSession_GroupingParamChanged(object sender, Guid guid)
+  {
+    Console.WriteLine($"OnGroupingParamChanged");
+  }
+  /************************************************/
+  public void AudioSession_StateChanged(object sender, AudioSessionState state)
   {
     Console.WriteLine($"OnStateChanged : {state}");
     /************************************************/
     this.process1.Refresh();
     /************************************************/
     OnStateChanged2(state);
-    /************************************************/
-    return 0;
   }
   /************************************************/
-  public int OnSessionDisconnected(AudioSessionDisconnectReason disconnectReason)
+  public void AudioSession_SessionDisconnected(object sender, AudioSessionDisconnectReason disconnectReason)
   {
     Console.WriteLine($"OnSessionDisconnected : {disconnectReason}");
     /************************************************/
     RemoveSessionNotif();
-    /************************************************/
-    return 0;
   }
 }

@@ -2,7 +2,6 @@ using a;
 using AudioCore;
 using AudioCore2;
 using CheVolume.Properties;
-using Microsoft.VisualBasic.Devices;
 using Microsoft.Win32;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -120,7 +119,15 @@ public partial class SessionVolumeControl : UserControl
 
   public SessionVolumeControl(AudioSession _SESSION_CONTROL_, Process P_1)
   {
-    this.SessionControl = _SESSION_CONTROL_;
+    this.AudioSession = _SESSION_CONTROL_;
+    this.AudioSession.ChannelVolumeChanged += this.AudioSession_ChannelVolumeChanged;
+    this.AudioSession.GroupingParamChanged += this.AudioSession_GroupingParamChanged;
+    this.AudioSession.StateChanged += this.AudioSession_StateChanged;
+    this.AudioSession.SessionDisconnected += this.AudioSession_SessionDisconnected;
+    this.AudioSession.IconPathChanged += this.AudioSession_IconPathChanged;
+    this.AudioSession.DisplayNameChanged += this.AudioSession_DisplayNameChanged;
+    this.AudioSession.VolumeChanged += this.AudioSession_VolumeChanged;
+    this.AudioSession.MuteChanged += this.AudioSession_MuteChanged;
     /************************************************/
     audioPolicyConfigService1 = new AudioPolicyConfigService(Flow);
     /************************************************/
@@ -134,8 +141,7 @@ public partial class SessionVolumeControl : UserControl
     guiTimer.Tick += guiTimer_Tick;
     guiTimer.Interval = 10;
     /************************************************/
-    this.SessionControl.RegisterAudioSessionNotification(this);
-    base.Tag = this.SessionControl.SessionInstanceIdentifier.ToString();
+    base.Tag = this.AudioSession.SessionInstanceIdentifier.ToString();
     dragging = false;
     base.Margin = new Padding(0);
     string audioSetivceDLL = GetAudioSetivceDLL(process1);
@@ -152,7 +158,7 @@ public partial class SessionVolumeControl : UserControl
       showprocCheCheckBox.Visible = false;
       muteCheckBox.Location = new Point(base.Size.Width / 2 - muteCheckBox.Width / 2, muteCheckBox.Location.Y);
     }
-    OnStateChanged2(SessionControl.State);
+    OnStateChanged2(AudioSession.State);
   }
 
   ~SessionVolumeControl()
@@ -181,7 +187,7 @@ public partial class SessionVolumeControl : UserControl
     try
     {
       base.Parent.Controls.Remove(this);
-      this.SessionControl.UnregisterAudioSessionNotification(this);
+      // this.SessionControl.UnregisterAudioSessionNotification(this);
     }
     catch (Exception)
     {
@@ -205,7 +211,7 @@ public partial class SessionVolumeControl : UserControl
 
   private void guiTimer_Tick(object sender, EventArgs e)
   {
-    this.leftLedBar.Value = (int)Math.Ceiling(this.SessionControl.Meter * 15f);
+    this.leftLedBar.Value = (int)Math.Ceiling(this.AudioSession.Meter * 15f);
     if (num1++ < 100)
     {
       return;
@@ -434,7 +440,7 @@ public partial class SessionVolumeControl : UserControl
       return;
     }
     /************************************************/
-    this.SessionControl.UnregisterAudioSessionNotification(this);
+    // this.SessionControl.UnregisterAudioSessionNotification(this);
     base.Parent.Controls.Remove(this);
   }
 

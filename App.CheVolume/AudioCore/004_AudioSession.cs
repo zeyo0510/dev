@@ -9,17 +9,16 @@ namespace AudioCore
     internal AudioSession(IAudioSessionControl2 _AUDIO_SESSION_CONTROL_)
     {
       this.IAudioSessionControl = _AUDIO_SESSION_CONTROL_;
+      /************************************************/
+      this.lastVolume = this.Volume;
+      this.lastMute = this.Mute;
+      /************************************************/
+      Marshal.ThrowExceptionForHR(this.IAudioSessionControl.RegisterAudioSessionNotification(this));
     }
     /************************************************/
-    // TODO: JC TEST
-    public void RegisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
+    ~AudioSession()
     {
-      Marshal.ThrowExceptionForHR(this.IAudioSessionControl.RegisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
-    }
-    // TODO: JC TEST
-    public void UnregisterAudioSessionNotification(IAudioSessionEvents _NEW_NOTIFICATIONS_)
-    {
-      Marshal.ThrowExceptionForHR(this.IAudioSessionControl.UnregisterAudioSessionNotification(_NEW_NOTIFICATIONS_));
+      Marshal.ThrowExceptionForHR(this.IAudioSessionControl.UnregisterAudioSessionNotification(this));
     }
   }
 }

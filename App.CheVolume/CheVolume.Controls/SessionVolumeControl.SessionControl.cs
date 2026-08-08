@@ -4,7 +4,7 @@ namespace CheVolume.Controls;
 /************************************************/
 partial class SessionVolumeControl
 {
-  public AudioSession SessionControl
+  public AudioSession AudioSession
   {
     get; private set;
   }

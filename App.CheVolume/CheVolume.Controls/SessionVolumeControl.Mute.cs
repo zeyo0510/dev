@@ -9,11 +9,11 @@ partial class SessionVolumeControl
   {
     get
     {
-      return this.SessionControl.Mute;
+      return this.AudioSession.Mute;
     }
     set
     {
-      this.SessionControl.Mute = value;
+      this.AudioSession.Mute = value;
     }
   }
 }

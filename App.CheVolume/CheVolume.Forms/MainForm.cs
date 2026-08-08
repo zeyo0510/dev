@@ -290,7 +290,7 @@ public partial class MainForm : Form
     {
       foreach (SessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(item.Controls)))
       {
-        item2.OnStateChanged2(item2.SessionControl.State);
+        item2.OnStateChanged2(item2.AudioSession.State);
       }
     }
   }
