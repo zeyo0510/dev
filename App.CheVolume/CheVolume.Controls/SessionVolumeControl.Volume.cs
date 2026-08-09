@@ -14,6 +14,8 @@ partial class SessionVolumeControl
     set
     {
       this.AudioSession.Volume = value;
+      /************************************************/
+      this.UpdateUI();
     }
   }
 }

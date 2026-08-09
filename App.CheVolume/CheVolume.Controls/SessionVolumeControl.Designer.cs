@@ -45,7 +45,7 @@ partial class SessionVolumeControl
     this.sessionPictureBox   = new();
     this.pidLabel            = new();
     this.leftLedBar          = new();
-    this.macTrackBar1        = new();
+    this.volumeVTrackBar     = new();
     this.volumeLabel         = new();
     this.muteCheckBox        = new();
     this.showprocCheCheckBox = new();
@@ -91,32 +91,13 @@ partial class SessionVolumeControl
       this.leftLedBar.Location  =  new(22, 132);
       this.leftLedBar.Size      =  new(5, 225);
     }
-    // macTrackBar1
+    // volumeVTrackBar
     {
-      this.macTrackBar1.Name            = "macTrackBar1";
-      this.macTrackBar1.BackColor       = Color.Transparent;
-      this.macTrackBar1.BorderColor     = SystemColors.ActiveBorder;
-      this.macTrackBar1.Cursor          = Cursors.Hand;
-      this.macTrackBar1.Font            = new("Verdana", 8.25f, FontStyle.Bold, GraphicsUnit.World, 0);
-      this.macTrackBar1.ForeColor       = Color.FromArgb(123, 125, 123);
-      this.macTrackBar1.IndentHeight    = 6;
-      this.macTrackBar1.LargeChange     = 1;
-      this.macTrackBar1.Location        = new(30, 121);
-      this.macTrackBar1.Maximum         = 100;
-      this.macTrackBar1.Minimum         = 0;
-      this.macTrackBar1.Orientation     = Orientation.Vertical;
-      this.macTrackBar1.Size            = new(58, 247);
-      this.macTrackBar1.TickColor       = Color.FromArgb(148, 146, 148);
-      this.macTrackBar1.TickFrequency   = 10;
-      this.macTrackBar1.TickHeight      = 4;
-      this.macTrackBar1.TickStyle       = TickStyle.Both;
-      this.macTrackBar1.TrackerColor    = Color.FromArgb(255, 128, 0);
-      this.macTrackBar1.TrackerSize     = new(16, 16);
-      this.macTrackBar1.TrackLineColor  = Color.FromArgb(90, 93, 90);
-      this.macTrackBar1.TrackLineHeight = 3;
-      this.macTrackBar1.Value           = 0;
+      this.volumeVTrackBar.Name     = "volumeVTrackBar";
+      this.volumeVTrackBar.Location        = new(30, 121);
+      this.volumeVTrackBar.Size            = new(58, 247);
       /************************************************/
-      this.macTrackBar1.ValueChanged += macTrackBar1_ValueChanged;
+      this.volumeVTrackBar.ValueChanged += this.volumeVTrackBar_ValueChanged;
     }
     // volumeLabel
     {
@@ -193,7 +174,7 @@ partial class SessionVolumeControl
       base.Controls.Add(this.showprocCheCheckBox);
       base.Controls.Add(this.transfertButton);
       base.Controls.Add(this.volumeLabel);
-      base.Controls.Add(this.macTrackBar1);
+      base.Controls.Add(this.volumeVTrackBar);
       base.Controls.Add(this.muteCheckBox);
       base.Controls.Add(this.nameLabel);
       base.Controls.Add(this.leftLedBar);
@@ -207,7 +188,6 @@ partial class SessionVolumeControl
   public PictureBox sessionPictureBox;
   private Label pidLabel;
   public VLevelMeter leftLedBar;
-  public MACTrackBar macTrackBar1;
   public VTrackBar volumeVTrackBar;
   private Label volumeLabel;
   public CheckBox muteCheckBox;

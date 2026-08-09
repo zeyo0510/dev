@@ -96,7 +96,7 @@ namespace B
         sessionVolumeControl.AudioDeviceCollection = mmDeviceCollection1;
         sessionVolumeControl.AudioDevice = this.AudioDevice;
         sessionVolumeControl.muteCheckBox.Checked = _SESSION_CONTROL_.Mute;
-        sessionVolumeControl.macTrackBar1.Value = _SESSION_CONTROL_.Volume;
+        sessionVolumeControl.volumeVTrackBar.Value = _SESSION_CONTROL_.Volume;
         base.Controls.Add(sessionVolumeControl);
       }
     }

@@ -227,7 +227,7 @@ public partial class MainForm : Form
             sessionVolumeControl.AudioDeviceCollection = _MMDeviceCollection_;
             sessionVolumeControl.AudioDevice = device;
             sessionVolumeControl.muteCheckBox.Checked = session.Mute;
-            sessionVolumeControl.macTrackBar1.Value = session.Volume;
+            sessionVolumeControl.volumeVTrackBar.Value = session.Volume;
           }
           flowLayoutPanel.Controls.Add(sessionVolumeControl);
           if (process.Id == 0)

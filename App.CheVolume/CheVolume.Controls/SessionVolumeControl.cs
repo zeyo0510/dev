@@ -237,36 +237,36 @@ public partial class SessionVolumeControl : UserControl
     }
     else
     {
-      macTrackBar1.Value = (int)newValue;
+      this.volumeVTrackBar.Value = (int)newValue;
     }
   }
 
-  private void macTrackBar1_ValueChanged(object sender, decimal newValue)
-  {
-    if (!dragging)
-    {
-      dragging = true;
-      return;
-    }
-    if (newValue > 100m)
-    {
-      newValue = 100m;
-    }
-    if (newValue < 0m)
-    {
-      newValue = default(decimal);
-    }
-    if (macTrackBar1.Dragging)
-    {
-      macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-      this.Mute = false;
-      this.Volume = (int)newValue;
-    }
-    else
-    {
-      SetTrackBar(newValue);
-    }
-  }
+  // private void macTrackBar1_ValueChanged(object sender, decimal newValue)
+  // {
+  //   if (!dragging)
+  //   {
+  //     dragging = true;
+  //     return;
+  //   }
+  //   if (newValue > 100m)
+  //   {
+  //     newValue = 100m;
+  //   }
+  //   if (newValue < 0m)
+  //   {
+  //     newValue = default(decimal);
+  //   }
+  //   if (macTrackBar1.Dragging)
+  //   {
+  //     macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
+  //     this.Mute = false;
+  //     this.Volume = (int)newValue;
+  //   }
+  //   else
+  //   {
+  //     SetTrackBar(newValue);
+  //   }
+  // }
 
   private void toolStripMenuItem_MouseLeave(object sender, EventArgs e)
   {
@@ -425,11 +425,6 @@ public partial class SessionVolumeControl : UserControl
       BeginInvoke(new Action<float>(SetVolume), newValue);
       return;
     }
-    /************************************************/
-    if (!macTrackBar1.Dragging)
-    {
-      macTrackBar1.Value = int.Parse(Math.Ceiling(newValue * 100f).ToString());
-    }
   }
 
   public void RemoveSessionNotif()
@@ -583,10 +578,7 @@ public partial class SessionVolumeControl : UserControl
     Console.WriteLine($"AudioSession_VolumeChanged");
     /************************************************/
     this.SetVolumeText(this.Volume.ToString());
-    if (!macTrackBar1.Dragging)
-    {
-      this.SetTrackBar(this.Volume);
-    }
+    this.UpdateUI();
   }
   public void AudioSession_MuteChanged(object sender, EventArgs e)
   {
@@ -619,5 +611,12 @@ public partial class SessionVolumeControl : UserControl
     Console.WriteLine($"OnSessionDisconnected : {disconnectReason}");
     /************************************************/
     RemoveSessionNotif();
+  }
+
+  private void volumeVTrackBar_ValueChanged(object sender, EventArgs e)
+  {
+    this.Volume =  this.volumeVTrackBar.Value;
+    /****************************************************/
+    this.UpdateUI();
   }
 }

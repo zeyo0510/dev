@@ -4,8 +4,16 @@ partial class SessionVolumeControl
 {
   public void UpdateUI()
   {
+    if (base.InvokeRequired)
+    {
+      this.BeginInvoke(new Action(this.UpdateUI));
+      return;
+    }
+    /************************************************/
     this.leftLedBar.Enabled = !this.Mute;
-
-    macTrackBar1.TrackerColor = this.muteCheckBox.Checked ? Color.DarkGray : Color.FromArgb(255, 128, 0);
+    // volumeVTrackBar
+    this.volumeVTrackBar.Value = this.Volume;
+    // volumeLabel
+    this.volumeLabel.Text = this.Volume.ToString();
   }
 }
