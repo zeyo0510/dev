@@ -1,16 +1,14 @@
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using a;
 using AudioCore;
-using AudioCore.Interfaces;
 using CheVolume.Controls;
 using CheVolume.Properties;
 
 namespace B
 {
-  public class FlowLayoutPanel1 : FlowLayoutPanel, IAudioSessionNotificationCollection
+  public class FlowLayoutPanel1 : FlowLayoutPanel
   {
     public Point point1 = Point.Empty;
 
@@ -21,8 +19,6 @@ namespace B
     private AudioDeviceCollection mmDeviceCollection1;
 
     public AudioDevice AudioDevice;
-
-    private AudioSessionManager2 audioSessionManager;
 
     private IContainer components;
 
@@ -59,23 +55,9 @@ namespace B
       /************************************************/
 			this.AudioDevice = device;
       /************************************************/
-      audioSessionManager = this.AudioDevice.AudioSessionManager;
-      audioSessionManager.RegisterSessionNotification(this);
-      /************************************************/
 			base.Size = new Size(0, 0);
       AutoSizeMode = AutoSizeMode.GrowAndShrink;
       AutoSize = true;
-    }
-
-    ~FlowLayoutPanel1()
-    {
-      audioSessionManager.UnregisterSessionNotification(this);
-    }
-
-    public int OnSessionCreated(AudioSession session)
-    {
-      Console.WriteLine("OnSessionCreated");
-      return 0;
     }
 
     private void Add(AudioSession _SESSION_CONTROL_)
@@ -111,7 +93,7 @@ namespace B
       if (sessionVolumeControl == null && audioSessionState != AudioSessionState.AudioSessionStateExpired)
       {
         sessionVolumeControl = new SessionVolumeControl(_SESSION_CONTROL_, process);
-        sessionVolumeControl.MMDeviceCollection = mmDeviceCollection1;
+        sessionVolumeControl.AudioDeviceCollection = mmDeviceCollection1;
         sessionVolumeControl.AudioDevice = this.AudioDevice;
         sessionVolumeControl.muteCheckBox.Checked = _SESSION_CONTROL_.Mute;
         sessionVolumeControl.macTrackBar1.Value = _SESSION_CONTROL_.Volume;

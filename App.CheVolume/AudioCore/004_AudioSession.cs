@@ -18,7 +18,7 @@ namespace AudioCore
     /************************************************/
     ~AudioSession()
     {
-      Marshal.ThrowExceptionForHR(this.IAudioSessionControl.UnregisterAudioSessionNotification(this));
+      this.Dispose();
     }
   }
 }

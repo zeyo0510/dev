@@ -8,8 +8,9 @@ public partial class DeviceVolumeControl : UserControl
   public DeviceVolumeControl(AudioDevice _MM_DEVICE_)
   {
     this.AudioDevice = _MM_DEVICE_;
-    this.AudioDevice.VolumeChanged += MMDevice_VolumeChanged;
-    this.AudioDevice.MuteChanged += MMDevice_MuteChanged;
+    this.AudioDevice.VolumeChanged += this.AudioDevice_VolumeChanged;
+    this.AudioDevice.MuteChanged += this.AudioDevice_MuteChanged;
+    this.AudioDevice.SessionCreated += this.AudioDevice_SessionCreated;
     /****************************************************/
     this.InitializeComponent();
     /****************************************************/
@@ -17,17 +18,22 @@ public partial class DeviceVolumeControl : UserControl
     /****************************************************/
     this.UpdateUI();
   }
-
-  private void MMDevice_VolumeChanged(object? sender, EventArgs e)
+  /****************************************************/
+  private void AudioDevice_VolumeChanged(object? sender, EventArgs e)
   {
-    Console.WriteLine("MMDevice_VolumeChanged");
+    Console.WriteLine("AudioDevice_VolumeChanged");
   }
-
-  private void MMDevice_MuteChanged(object? sender, EventArgs e)
+  /****************************************************/
+  private void AudioDevice_MuteChanged(object? sender, EventArgs e)
   {
-    Console.WriteLine("MMDevice_MuteChanged");
+    Console.WriteLine("AudioDevice_MuteChanged");
   }
-
+  /****************************************************/
+  private void AudioDevice_SessionCreated(object? sender, AudioSession e)
+  {
+    Console.WriteLine("AudioDevice_SessionCreated");
+  }
+  /****************************************************/
   private void SetData(AudioVolumeNotificationData data)
   {
     SetVolume(int.Parse(Math.Ceiling(data.MasterVolume * 100f).ToString()));

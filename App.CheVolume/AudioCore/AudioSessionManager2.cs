@@ -1,7 +1,5 @@
 using AudioCore.Interfaces;
 /************************************************/
-using JC.CS.Lib.CoreAudio;
-/************************************************/
 namespace AudioCore
 {
   public class AudioSessionManager2

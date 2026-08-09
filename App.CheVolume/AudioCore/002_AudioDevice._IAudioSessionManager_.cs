@@ -17,13 +17,5 @@ namespace AudioCore
         return (IAudioSessionManager2)retValue;
       }
     }
-    /************************************************/
-    public AudioSessionManager2 AudioSessionManager
-    {
-      get
-      {
-        return new(this.IAudioSessionManager);
-      }
-    }
   }
 }

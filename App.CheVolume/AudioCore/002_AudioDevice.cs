@@ -23,6 +23,7 @@ namespace AudioCore
       this.IsHardwareMeterSupported  = (retValue & EndpointHardwareSupport._ENDPOINT_HARDWARE_SUPPORT_METER_ ) != 0;
       /************************************************/
       Marshal.ThrowExceptionForHR(this.IAudioEndpointVolume.RegisterControlChangeNotify(this));
+      Marshal.ThrowExceptionForHR(this.IAudioSessionManager.RegisterSessionNotification(this));
     }
     /************************************************/
     ~AudioDevice()

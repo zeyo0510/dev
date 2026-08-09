@@ -7,6 +7,7 @@ namespace AudioCore
     public void Dispose()
     {
       Marshal.ThrowExceptionForHR(this.IAudioEndpointVolume.UnregisterControlChangeNotify(this));
+      Marshal.ThrowExceptionForHR(this.IAudioSessionManager.UnregisterSessionNotification(this));
     }
   }
 }

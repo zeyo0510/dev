@@ -224,7 +224,7 @@ public partial class MainForm : Form
         {
           sessionVolumeControl = new(session, process);
           {
-            sessionVolumeControl.MMDeviceCollection = _MMDeviceCollection_;
+            sessionVolumeControl.AudioDeviceCollection = _MMDeviceCollection_;
             sessionVolumeControl.AudioDevice = device;
             sessionVolumeControl.muteCheckBox.Checked = session.Mute;
             sessionVolumeControl.macTrackBar1.Value = session.Volume;
