@@ -12,44 +12,16 @@ namespace CheVolume.Forms;
 /************************************************/
 public partial class MainForm : Form
 {
-  public struct ProcessMapping
-  {
-    public Process proc1;
-
-    public string str1;
-  }
-
   public bool bool1 = true;
 
   private List<int> num_list1;
 
-  public List<ProcessMapping> processList;
-
-  private AudioDeviceCollection _MMDeviceCollection_;
+  private AudioDeviceCollection AudioDeviceCollection;
   private MMNotificationClient _MMNotificationClient_;
 
   private string deviceID;
 
-  public NetNamedPipeBinding netNamedPipeBinding1;
-
-  public EndpointAddress endpointAddress1;
-
-  public ProcessStartInfo processStartInfo1;
-
-
   internal static float dpiX;
-
-  public List<int> PendingTransfers
-  {
-    get
-    {
-      if (num_list1 == null)
-      {
-        num_list1 = new List<int>();
-      }
-      return num_list1;
-    }
-  }
 
   public AudioDevice DefaultDevice
   {
@@ -104,13 +76,11 @@ public partial class MainForm : Form
 
   public MainForm()
   {
-    this._MMDeviceCollection_ = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
+    this.AudioDeviceCollection = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
     this._MMNotificationClient_ = new();
     /************************************************/
     Class4._MMDeviceEnumerator_.RegisterEndpointNotificationCallback(_MMNotificationClient_);
-    /************************************************/
-    processList = [];
     /************************************************/
     this.InitializeComponent();
     /************************************************/
@@ -159,9 +129,9 @@ public partial class MainForm : Form
     /************************************************/
     string defaultDeviceID = this.DefaultDevice.ID;
     /************************************************/
-    this._MMDeviceCollection_ = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
+    this.AudioDeviceCollection = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
-    foreach (AudioDevice device in this._MMDeviceCollection_)
+    foreach (AudioDevice device in this.AudioDeviceCollection)
     {
       bool isDefault = device.ID == this.DefaultDevice.ID;
       /************************************************/
@@ -192,7 +162,6 @@ public partial class MainForm : Form
       {
         Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(isDefault);
       }
-
       
       foreach (AudioSession session in device.AudioSessions)
       {
@@ -224,7 +193,7 @@ public partial class MainForm : Form
         {
           sessionVolumeControl = new(session, process);
           {
-            sessionVolumeControl.AudioDeviceCollection = _MMDeviceCollection_;
+            sessionVolumeControl.AudioDeviceCollection = this.AudioDeviceCollection;
             sessionVolumeControl.AudioDevice = device;
             sessionVolumeControl.muteCheckBox.Checked = session.Mute;
             sessionVolumeControl.volumeVTrackBar.Value = session.Volume;

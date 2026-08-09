@@ -34,35 +34,6 @@ public partial class DeviceVolumeControl : UserControl
     Console.WriteLine("AudioDevice_SessionCreated");
   }
   /****************************************************/
-  private void SetData(AudioVolumeNotificationData data)
-  {
-    SetVolume(int.Parse(Math.Ceiling(data.MasterVolume * 100f).ToString()));
-    SetMute(data.Muted);
-  }
-
-  public void SetVolume(int newValue)
-  {
-    if (base.InvokeRequired)
-    {
-      BeginInvoke(new Action<int>(SetVolume), newValue);
-      return;
-    }
-
-    // this.volumeVTrackBar.Value = newValue;
-    // this.volumeLabel.Text = newValue.ToString();
-  }
-
-  public void SetMute(bool newValue)
-  {
-    if (base.InvokeRequired)
-    {
-      BeginInvoke(new Action<bool>(SetMute), newValue);
-      return;
-    }
-
-    // muteCheckBox.Checked = newValue;
-  }
-
   public void SetDefault(bool newValue)
   {
     defaultCheckBox.Checked = newValue;

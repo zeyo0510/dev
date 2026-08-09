@@ -22,8 +22,6 @@ namespace AudioCore
       //   array[i] = (float)Marshal.PtrToStructure(ptr, typeof(float));
       // }
 			/************************************************/
-      AudioVolumeNotificationData audioVolumeNotificationData = new(data.bMuted, data.fMasterVolume);
-			/************************************************/
       int volume = (int)Math.Ceiling(data.fMasterVolume * 100f);
       /************************************************/
       if (volume.IsNotEqualTo(this.lastVolume))
