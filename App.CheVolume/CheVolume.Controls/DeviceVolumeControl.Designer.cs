@@ -129,6 +129,7 @@ partial class DeviceVolumeControl
       this.BackColor           = Color.Transparent;
       base.Margin              = new(0);
       base.Size                = new(128, 485);
+      /************************************************/
       base.Controls.Add(this.defaultCheckBox);
       base.Controls.Add(this.rightLedBar);
       base.Controls.Add(this.volumeLabel);

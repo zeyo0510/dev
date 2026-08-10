@@ -1,10 +1,8 @@
-using System;
-using System.Collections.Generic;
 using AudioCore;
 
 namespace a
 {
-  internal static class Class4
+  internal static class Audio
   {
     internal static readonly List<string> list_a;
 
@@ -16,7 +14,7 @@ namespace a
 
     private static readonly PolicyConfigClient policyConfigClient_a;
 
-    static Class4()
+    static Audio()
     {
       list_a = new List<string>();
       dictionary_a = new Dictionary<int, string>();
@@ -29,7 +27,7 @@ namespace a
       list_a.Clear();
       dictionary_a.Clear();
       AudioDeviceCollection defaultAudioEndpoint = _MMDeviceEnumerator_.EnumAudioEndpoints(dataFlow, EDeviceState.Active);
-      string iD = _MMDeviceEnumerator_.EnumerateAudioEndPoints(dataFlow, ERole.eMultimedia).ID;
+      string id = _MMDeviceEnumerator_.EnumerateAudioEndPoints(dataFlow, ERole.eMultimedia).ID;
       int count = defaultAudioEndpoint.Count;
       for (int i = 0; i < count; i++)
       {
@@ -37,26 +35,27 @@ namespace a
         string iD2 = mMDevice.ID;
         list_a.Add(mMDevice.FriendlyName);
         dictionary_a.Add(i, iD2);
-        if (iD2 == iD)
+        if (iD2 == id)
         {
           num_a = i;
         }
       }
     }
 
-    internal static void Method2(int index)
+    internal static void SetDefault(int index)
     {
       SetDefault(dictionary_a[index]);
     }
 
-    internal static void SetDefault(string P_0)
+    internal static void SetDefault(string s)
     {
       try
       {
-        policyConfigClient_a.SetDefaultEndpoint(P_0, ERole.eMultimedia);
+        policyConfigClient_a.SetDefaultEndpoint(s, ERole.eMultimedia);
       }
       catch (Exception)
       {
+        
       }
     }
   }

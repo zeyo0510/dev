@@ -14,8 +14,6 @@ public partial class MainForm : Form
 {
   public bool bool1 = true;
 
-  private List<int> num_list1;
-
   private AudioDeviceCollection AudioDeviceCollection;
   private MMNotificationClient _MMNotificationClient_;
 
@@ -27,7 +25,7 @@ public partial class MainForm : Form
   {
     get
     {
-      return Class4._MMDeviceEnumerator_.EnumerateAudioEndPoints(DataFlow.Render, ERole.eMultimedia);
+      return Audio._MMDeviceEnumerator_.EnumerateAudioEndPoints(DataFlow.Render, ERole.eMultimedia);
     }
   }
 
@@ -39,7 +37,7 @@ public partial class MainForm : Form
       {
         return DefaultDevice;
       }
-      return Class4._MMDeviceEnumerator_.GetDevice(deviceID);
+      return Audio._MMDeviceEnumerator_.GetDevice(deviceID);
     }
   }
 
@@ -76,11 +74,11 @@ public partial class MainForm : Form
 
   public MainForm()
   {
-    this.AudioDeviceCollection = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
+    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
     this._MMNotificationClient_ = new();
     /************************************************/
-    Class4._MMDeviceEnumerator_.RegisterEndpointNotificationCallback(_MMNotificationClient_);
+    Audio._MMDeviceEnumerator_.RegisterEndpointNotificationCallback(_MMNotificationClient_);
     /************************************************/
     this.InitializeComponent();
     /************************************************/
@@ -102,21 +100,21 @@ public partial class MainForm : Form
 
   private void AutoAdjSessionManagerPanel()
   {
-    AnchorStyles anchor = pnlSessMgr.Anchor;
-    pnlSessMgr.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-    pnlSessMgr.AutoSize = true;
-    pnlSessMgr.Size = new Size(0, 0);
-    pnlSessMgr.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+    AnchorStyles anchor = flowLayoutPanel1.Anchor;
+    flowLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+    flowLayoutPanel1.AutoSize = true;
+    flowLayoutPanel1.Size = new Size(0, 0);
+    flowLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
     base.Size = new Size(0, 0);
-    AutoSize = true;
+    base.AutoSize = true;
     base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-    Size size = pnlSessMgr.Size;
+    Size size = flowLayoutPanel1.Size;
     Size size2 = base.Size;
-    pnlSessMgr.AutoSize = false;
+    flowLayoutPanel1.AutoSize = false;
     AutoSize = false;
-    pnlSessMgr.Size = size;
+    flowLayoutPanel1.Size = size;
     base.Size = size2;
-    pnlSessMgr.Anchor = anchor;
+    flowLayoutPanel1.Anchor = anchor;
   }
 
   public void UpdateAudio()
@@ -129,13 +127,13 @@ public partial class MainForm : Form
     /************************************************/
     string defaultDeviceID = this.DefaultDevice.ID;
     /************************************************/
-    this.AudioDeviceCollection = Class4._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
+    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
     /************************************************/
     foreach (AudioDevice device in this.AudioDeviceCollection)
     {
       bool isDefault = device.ID == this.DefaultDevice.ID;
       /************************************************/
-      List<FlowLayoutPanel1> list = Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls));
+      List<FlowLayoutPanel1> list = [.. this.flowLayoutPanel1.Controls.OfType<FlowLayoutPanel1>()];
       FlowLayoutPanel1 flowLayoutPanel = list.Find(delegate(FlowLayoutPanel1 P_0)
       {
         return string.Compare(P_0.Tag.ToString(), device.ID) == 0;
@@ -148,7 +146,7 @@ public partial class MainForm : Form
           flowLayoutPanel.Tag = device.ID;
           flowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
         }
-        pnlSessMgr.Controls.Add(flowLayoutPanel);
+        flowLayoutPanel1.Controls.Add(flowLayoutPanel);
         /************************************************/
         DeviceVolumeControl deviceVolumeControl = new(device);
         {
@@ -160,7 +158,8 @@ public partial class MainForm : Form
       }
       else
       {
-        Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(isDefault);
+        // Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(isDefault);
+        flowLayoutPanel.Controls.OfType<DeviceVolumeControl>().First().SetDefault(isDefault);
       }
       
       foreach (AudioSession session in device.AudioSessions)
@@ -178,13 +177,14 @@ public partial class MainForm : Form
         {
           continue;
         }
-        List<SessionVolumeControl> list2 = Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(flowLayoutPanel.Controls));
+
+        List<SessionVolumeControl> list2 = [.. flowLayoutPanel.Controls.OfType<SessionVolumeControl>()];
         SessionVolumeControl sessionVolumeControl = null;
         if (list2.Count > 0)
         {
-          sessionVolumeControl = list2.Find(delegate(SessionVolumeControl P_0)
+          sessionVolumeControl = list2.Find(delegate(SessionVolumeControl obj)
           {
-            return string.Compare(P_0.Tag.ToString().ToLower(), session.SessionInstanceIdentifier.ToLower()) == 0;
+            return string.Compare(obj.Tag.ToString().ToLower(), session.SessionInstanceIdentifier.ToLower()) == 0;
           });
         }
 
@@ -244,20 +244,20 @@ public partial class MainForm : Form
       return;
     }
     /************************************************/
-    foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls)))
+    foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(flowLayoutPanel1.Controls)))
     {
       if (string.Compare(item.Tag.ToString(), P_0) == 0)
       {
-        pnlSessMgr.Controls.Remove(item);
+        flowLayoutPanel1.Controls.Remove(item);
       }
     }
   }
 
   private void InvokeStateChanged()
   {
-    foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(pnlSessMgr.Controls)))
+    foreach (FlowLayoutPanel1 item in flowLayoutPanel1.Controls.OfType<FlowLayoutPanel1>().ToList())
     {
-      foreach (SessionVolumeControl item2 in Enumerable.ToList(Enumerable.OfType<SessionVolumeControl>(item.Controls)))
+      foreach (SessionVolumeControl item2 in item.Controls.OfType<SessionVolumeControl>().ToList())
       {
         item2.OnStateChanged2(item2.AudioSession.State);
       }

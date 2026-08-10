@@ -50,7 +50,7 @@ public partial class DeviceVolumeControl : UserControl
   {
     if (defaultCheckBox.Checked)
     {
-      Class4.SetDefault(this.AudioDevice.ID);
+      Audio.SetDefault(this.AudioDevice.ID);
     }
     else
     {
