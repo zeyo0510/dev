@@ -71,6 +71,10 @@ partial class MainForm : Form
       this.flowLayoutPanel1.Dock         = DockStyle.Fill;
       this.flowLayoutPanel1.AutoScroll   = true;
       this.flowLayoutPanel1.AutoSize     = true;
+      this.flowLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+      this.flowLayoutPanel1.BackColor    = Color.Transparent;
+      this.flowLayoutPanel1.Margin       = new(5);
+      this.flowLayoutPanel1.Padding      = new(2);
       this.flowLayoutPanel1.WrapContents = false;
     }
     // MainForm

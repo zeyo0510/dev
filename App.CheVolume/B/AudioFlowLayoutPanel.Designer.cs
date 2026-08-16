@@ -3,7 +3,7 @@ using AudioCore;
 /************************************************/
 namespace B
 {
-  partial class FlowLayoutPanel1
+  partial class AudioFlowLayoutPanel
   {
     private IContainer components = null;
     /************************************************/
@@ -19,9 +19,9 @@ namespace B
     /************************************************/
     private void InitializeComponent()
     {
-      // FlowLayoutPanel1
+      // AudioFlowLayoutPanel
       {
-        base.Name         = "FlowLayoutPanel1";
+        base.Name         = "AudioFlowLayoutPanel";
         base.AutoSize     = true;
         base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         base.BackColor    = Color.Transparent;

@@ -140,15 +140,15 @@ public partial class MainForm : Form
     {
       bool isDefault = device.ID == this.DefaultDevice.ID;
       /************************************************/
-      FlowLayoutPanel1? deviceFlowLayoutPanel = this.flowLayoutPanel1.Controls
-      . OfType<FlowLayoutPanel1>()
+      AudioFlowLayoutPanel? deviceFlowLayoutPanel = this.flowLayoutPanel1.Controls
+      . OfType<AudioFlowLayoutPanel>()
       . FirstOrDefault(x => {
           return string.Equals(x.Tag?.ToString(), device.ID, StringComparison.OrdinalIgnoreCase);
         });
       /************************************************/
       if (deviceFlowLayoutPanel == null)
       {
-        deviceFlowLayoutPanel = new FlowLayoutPanel1(device);
+        deviceFlowLayoutPanel = new AudioFlowLayoutPanel();
         {
           deviceFlowLayoutPanel.Tag = device.ID;
           deviceFlowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
@@ -165,14 +165,17 @@ public partial class MainForm : Form
       }
       else
       {
-        deviceFlowLayoutPanel.Controls.OfType<DeviceVolumeControl>().First().SetDefault(isDefault);
+        deviceFlowLayoutPanel.Controls
+        . OfType<DeviceVolumeControl>()
+        . First()
+        . SetDefault(isDefault);
       }
 
       this.BuildSession(deviceFlowLayoutPanel, device);
     }
   }
 
-  private void BuildSession(FlowLayoutPanel1 deviceFlowLayoutPanel, AudioDevice device)
+  private void BuildSession(AudioFlowLayoutPanel deviceFlowLayoutPanel, AudioDevice device)
   {
       foreach (AudioSession session in device.AudioSessions)
       {
@@ -248,7 +251,7 @@ public partial class MainForm : Form
       return;
     }
     /************************************************/
-    foreach (FlowLayoutPanel1 item in Enumerable.ToList(Enumerable.OfType<FlowLayoutPanel1>(flowLayoutPanel1.Controls)))
+    foreach (AudioFlowLayoutPanel item in Enumerable.ToList(Enumerable.OfType<AudioFlowLayoutPanel>(flowLayoutPanel1.Controls)))
     {
       if (string.Compare(item.Tag.ToString(), P_0) == 0)
       {
@@ -259,7 +262,7 @@ public partial class MainForm : Form
 
   private void InvokeStateChanged()
   {
-    foreach (FlowLayoutPanel1 item in flowLayoutPanel1.Controls.OfType<FlowLayoutPanel1>().ToList())
+    foreach (AudioFlowLayoutPanel item in flowLayoutPanel1.Controls.OfType<AudioFlowLayoutPanel>().ToList())
     {
       foreach (SessionVolumeControl item2 in item.Controls.OfType<SessionVolumeControl>().ToList())
       {

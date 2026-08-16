@@ -1,6 +1,6 @@
 namespace B
 {
-  partial class FlowLayoutPanel1
+  partial class AudioFlowLayoutPanel
   {
     protected override void OnPaint(PaintEventArgs e)
     {
