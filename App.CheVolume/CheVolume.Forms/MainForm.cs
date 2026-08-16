@@ -134,19 +134,19 @@ public partial class MainForm : Form
       bool isDefault = device.ID == this.DefaultDevice.ID;
       /************************************************/
       List<FlowLayoutPanel1> list = [.. this.flowLayoutPanel1.Controls.OfType<FlowLayoutPanel1>()];
-      FlowLayoutPanel1 flowLayoutPanel = list.Find(delegate(FlowLayoutPanel1 P_0)
+      FlowLayoutPanel1 deviceFlowLayoutPanel = list.Find(delegate(FlowLayoutPanel1 P_0)
       {
         return string.Compare(P_0.Tag.ToString(), device.ID) == 0;
       });
       /************************************************/
-      if (flowLayoutPanel == null)
+      if (deviceFlowLayoutPanel == null)
       {
-        flowLayoutPanel = new FlowLayoutPanel1(device);
+        deviceFlowLayoutPanel = new FlowLayoutPanel1(device);
         {
-          flowLayoutPanel.Tag = device.ID;
-          flowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
+          deviceFlowLayoutPanel.Tag = device.ID;
+          deviceFlowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
         }
-        flowLayoutPanel1.Controls.Add(flowLayoutPanel);
+        flowLayoutPanel1.Controls.Add(deviceFlowLayoutPanel);
         /************************************************/
         DeviceVolumeControl deviceVolumeControl = new(device);
         {
@@ -154,12 +154,11 @@ public partial class MainForm : Form
           deviceVolumeControl.Tag = device.ID;
           deviceVolumeControl.SetDefault(isDefault);
         }
-        flowLayoutPanel.Controls.Add(deviceVolumeControl);
+        deviceFlowLayoutPanel.Controls.Add(deviceVolumeControl);
       }
       else
       {
-        // Enumerable.First(Enumerable.OfType<DeviceVolumeControl>(flowLayoutPanel.Controls)).SetDefault(isDefault);
-        flowLayoutPanel.Controls.OfType<DeviceVolumeControl>().First().SetDefault(isDefault);
+        deviceFlowLayoutPanel.Controls.OfType<DeviceVolumeControl>().First().SetDefault(isDefault);
       }
       
       foreach (AudioSession session in device.AudioSessions)
@@ -178,18 +177,13 @@ public partial class MainForm : Form
           continue;
         }
 
-        List<SessionVolumeControl> list2 = [.. flowLayoutPanel.Controls.OfType<SessionVolumeControl>()];
-        SessionVolumeControl sessionVolumeControl = null;
-        if (list2.Count > 0)
-        {
-          sessionVolumeControl = list2.Find(delegate(SessionVolumeControl obj)
-          {
-            return string.Compare(obj.Tag.ToString().ToLower(), session.SessionInstanceIdentifier.ToLower()) == 0;
+        SessionVolumeControl? sessionVolumeControl = deviceFlowLayoutPanel.Controls
+        . OfType<SessionVolumeControl>()
+        . FirstOrDefault(x => {
+            return string.Equals(x.Tag?.ToString(), session.SessionInstanceIdentifier, StringComparison.OrdinalIgnoreCase);
           });
-        }
 
-        AudioSessionState state = session.State;
-        if (sessionVolumeControl == null && state != AudioSessionState.AudioSessionStateExpired)
+        if (sessionVolumeControl == null && session.State != AudioSessionState.AudioSessionStateExpired)
         {
           sessionVolumeControl = new(session, process);
           {
@@ -198,10 +192,10 @@ public partial class MainForm : Form
             sessionVolumeControl.muteCheckBox.Checked = session.Mute;
             sessionVolumeControl.volumeVTrackBar.Value = session.Volume;
           }
-          flowLayoutPanel.Controls.Add(sessionVolumeControl);
+          deviceFlowLayoutPanel.Controls.Add(sessionVolumeControl);
           if (process.Id == 0)
           {
-            flowLayoutPanel.Controls.SetChildIndex(sessionVolumeControl, 1);
+            deviceFlowLayoutPanel.Controls.SetChildIndex(sessionVolumeControl, 1);
           }
         }
       }
