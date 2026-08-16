@@ -125,6 +125,13 @@ public partial class MainForm : Form
       return;
     }
     /************************************************/
+    this.BuildDevice();
+    /************************************************/
+    this.InvokeStateChanged();
+  }
+
+  private void BuildDevice()
+  {
     string defaultDeviceID = this.DefaultDevice.ID;
     /************************************************/
     this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
@@ -133,11 +140,11 @@ public partial class MainForm : Form
     {
       bool isDefault = device.ID == this.DefaultDevice.ID;
       /************************************************/
-      List<FlowLayoutPanel1> list = [.. this.flowLayoutPanel1.Controls.OfType<FlowLayoutPanel1>()];
-      FlowLayoutPanel1 deviceFlowLayoutPanel = list.Find(delegate(FlowLayoutPanel1 P_0)
-      {
-        return string.Compare(P_0.Tag.ToString(), device.ID) == 0;
-      });
+      FlowLayoutPanel1? deviceFlowLayoutPanel = this.flowLayoutPanel1.Controls
+      . OfType<FlowLayoutPanel1>()
+      . FirstOrDefault(x => {
+          return string.Equals(x.Tag?.ToString(), device.ID, StringComparison.OrdinalIgnoreCase);
+        });
       /************************************************/
       if (deviceFlowLayoutPanel == null)
       {
@@ -160,7 +167,13 @@ public partial class MainForm : Form
       {
         deviceFlowLayoutPanel.Controls.OfType<DeviceVolumeControl>().First().SetDefault(isDefault);
       }
-      
+
+      this.BuildSession(deviceFlowLayoutPanel, device);
+    }
+  }
+
+  private void BuildSession(FlowLayoutPanel1 deviceFlowLayoutPanel, AudioDevice device)
+  {
       foreach (AudioSession session in device.AudioSessions)
       {
         Process process;
@@ -199,9 +212,6 @@ public partial class MainForm : Form
           }
         }
       }
-    }
-    /************************************************/
-    this.InvokeStateChanged();
   }
 
   private void _MMNotificationClient_PropertyValueChanged(string P_0, PROPERTYKEY P_1)
