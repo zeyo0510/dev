@@ -47,9 +47,9 @@ namespace AudioCore
       {
         this._PropertyStore_ ??= GetPropertyInformation();
         /************************************************/
-        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_Device_FriendlyName))
+        if (this._PropertyStore_.Contains(PKEY.PKEY_Device_FriendlyName))
         {
-          return (string)this._PropertyStore_[PropertyKeys.PKEY_Device_FriendlyName].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_Device_FriendlyName].PropVariant.GetValue();
         }
         /************************************************/
         return "Unknown";
@@ -62,9 +62,9 @@ namespace AudioCore
       {
         this._PropertyStore_ ??= GetPropertyInformation();
         /************************************************/
-        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_Device_DeviceDesc))
+        if (this._PropertyStore_.Contains(PKEY.PKEY_Device_DeviceDesc))
         {
-          return (string)this._PropertyStore_[PropertyKeys.PKEY_Device_DeviceDesc].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_Device_DeviceDesc].PropVariant.GetValue();
         }
         /************************************************/
         return "Unknown";
@@ -77,9 +77,9 @@ namespace AudioCore
       {
         this._PropertyStore_ ??= GetPropertyInformation();
         /************************************************/
-        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_DeviceInterface_FriendlyName))
+        if (this._PropertyStore_.Contains(PKEY.PKEY_DeviceInterface_FriendlyName))
         {
-          return (string)this._PropertyStore_[PropertyKeys.PKEY_DeviceInterface_FriendlyName].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_DeviceInterface_FriendlyName].PropVariant.GetValue();
         }
         return "Unknown";
       }
@@ -91,9 +91,9 @@ namespace AudioCore
       {
         this._PropertyStore_ ??= GetPropertyInformation();
         /************************************************/
-        if (this._PropertyStore_.Contains(PropertyKeys.PKEY_DeviceClass_IconPath))
+        if (this._PropertyStore_.Contains(PKEY.PKEY_DeviceClass_IconPath))
         {
-          return (string)this._PropertyStore_[PropertyKeys.PKEY_DeviceClass_IconPath].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_DeviceClass_IconPath].PropVariant.GetValue();
         }
         /************************************************/
         return "Unknown";

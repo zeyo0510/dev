@@ -2,7 +2,7 @@
 /************************************************/
 namespace AudioCore
 {
-  public static class PropertyKeys
+  public static class PKEY
   {
     public static readonly PropertyKey PKEY_AudioEndpoint_FormFactor = new(new Guid("1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E"), 0);
 
