@@ -17,16 +17,16 @@ namespace AudioCore
       DefaultChanged?.Invoke(P_2);
     }
 
-    public void OnDeviceStateChanged(string P_0, EDeviceState P_1)
+    public void OnDeviceStateChanged(string P_0, DeviceState state)
     {
-      switch (P_1)
+      switch (state)
       {
-        case EDeviceState.Disabled:
-        case EDeviceState.NotPresent:
-        case EDeviceState.Unplugged:
+        case DeviceState.Disabled:
+        case DeviceState.NotPresent:
+        case DeviceState.Unplugged:
             DeviceRemoved?.Invoke(P_0);
             break;
-        case EDeviceState.Active:
+        case DeviceState.Active:
             DeviceAdded?.Invoke(P_0);
             break;
       }

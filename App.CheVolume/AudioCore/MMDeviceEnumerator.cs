@@ -8,7 +8,7 @@ namespace AudioCore
   {
     private readonly IMMDeviceEnumerator obj = (IMMDeviceEnumerator)new MMDeviceEnumeratorComObject();
     /************************************************/
-    public AudioDeviceCollection EnumAudioEndpoints(DataFlow dataFlow, EDeviceState state)
+    public AudioDeviceCollection EnumAudioEndpoints(DataFlow dataFlow, DeviceState state)
     {
       Marshal.ThrowExceptionForHR(obj.EnumAudioEndpoints(dataFlow, state, out IMMDeviceCollection retValue));
       /************************************************/

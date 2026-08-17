@@ -126,7 +126,7 @@ partial class DeviceVolumeControl
       base.AutoScaleDimensions = new(6f, 13f);
       base.AutoScaleMode       = AutoScaleMode.Font;
       base.AutoSizeMode        = AutoSizeMode.GrowAndShrink;
-      this.BackColor           = Color.Transparent;
+      base.BackColor           = Color.FromArgb(242, 242, 242);
       base.Margin              = new(0);
       base.Size                = new(128, 485);
       /************************************************/

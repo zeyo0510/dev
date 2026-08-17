@@ -11,7 +11,7 @@ namespace AudioCore.Interfaces
     [PreserveSig]
     void OnDeviceStateChanged(
       [MarshalAs(UnmanagedType.LPWStr)] string _PWSTR_DEVICE_ID_,
-      [MarshalAs(UnmanagedType.U4)] EDeviceState _DW_NEW_STATE_
+      [MarshalAs(UnmanagedType.U4)] DeviceState _DW_NEW_STATE_
     );
     /************************************************/
     [PreserveSig]

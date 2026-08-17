@@ -11,7 +11,7 @@ namespace AudioCore.Interfaces
     [PreserveSig]
     int EnumAudioEndpoints(
       [In][MarshalAs(UnmanagedType.I4)] DataFlow _DATA_FLOW_,
-      [In][MarshalAs(UnmanagedType.U4)] EDeviceState _DW_STATE_MASK_,
+      [In][MarshalAs(UnmanagedType.U4)] DeviceState _DW_STATE_MASK_,
       [MarshalAs(UnmanagedType.Interface)] out IMMDeviceCollection _PP_DEVICES_
     );
     /************************************************/

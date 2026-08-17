@@ -329,7 +329,7 @@ public partial class SessionVolumeControl : UserControl
 
 
 
-    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
+    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
     /************************************************/
     foreach (AudioDevice device in this.AudioDeviceCollection)
     {

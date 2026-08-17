@@ -24,9 +24,10 @@ partial class AudioFlowLayoutPanel
       base.Name         = "AudioFlowLayoutPanel";
       base.AutoSize     = true;
       base.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-      base.BackColor    = Color.Transparent;
-      base.Margin       = new(5);
+      base.BackColor    = Color.FromArgb(252, 252, 252);
+      // base.Margin       = new(5);
       base.Padding      = new(2);
+      base.Tag          = this.AudioDevice.ID;
       base.WrapContents = false;
     }
   }

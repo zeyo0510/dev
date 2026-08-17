@@ -72,7 +72,7 @@ public partial class MainForm : Form
 
   public MainForm()
   {
-    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
+    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
     /************************************************/
     this._MMNotificationClient_ = new();
     /************************************************/
@@ -132,87 +132,33 @@ public partial class MainForm : Form
   {
     string defaultDeviceID = this.DefaultDevice.ID;
     /************************************************/
-    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, EDeviceState.Active);
+    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
     /************************************************/
     foreach (AudioDevice device in this.AudioDeviceCollection)
     {
       bool isDefault = device.ID == this.DefaultDevice.ID;
       /************************************************/
-      AudioFlowLayoutPanel? deviceFlowLayoutPanel = this.flowLayoutPanel1.Controls
+      AudioFlowLayoutPanel? audioFlowLayoutPanel = this.flowLayoutPanel1.Controls
       . OfType<AudioFlowLayoutPanel>()
       . FirstOrDefault(x => {
           return string.Equals(x.Tag?.ToString(), device.ID, StringComparison.OrdinalIgnoreCase);
         });
       /************************************************/
-      if (deviceFlowLayoutPanel == null)
+      if (audioFlowLayoutPanel == null)
       {
-        deviceFlowLayoutPanel = new AudioFlowLayoutPanel();
-        {
-          deviceFlowLayoutPanel.Tag = device.ID;
-          deviceFlowLayoutPanel.BackColor = Color.FromArgb(252, 252, 252);
-        }
-        flowLayoutPanel1.Controls.Add(deviceFlowLayoutPanel);
-        /************************************************/
-        DeviceVolumeControl deviceVolumeControl = new(device);
-        {
-          deviceVolumeControl.BackColor = Color.FromArgb(242, 242, 242);
-          deviceVolumeControl.Tag = device.ID;
-          deviceVolumeControl.SetDefault(isDefault);
-        }
-        deviceFlowLayoutPanel.Controls.Add(deviceVolumeControl);
+        audioFlowLayoutPanel = new AudioFlowLayoutPanel(this.AudioDeviceCollection, device);
+        this.flowLayoutPanel1.Controls.Add(audioFlowLayoutPanel);
       }
       else
       {
-        deviceFlowLayoutPanel.Controls
+        audioFlowLayoutPanel.Controls
         . OfType<DeviceVolumeControl>()
         . First()
         . SetDefault(isDefault);
       }
-
-      this.BuildSession(deviceFlowLayoutPanel, device);
+      /************************************************/
+      audioFlowLayoutPanel.BuildSessions();
     }
-  }
-
-  private void BuildSession(AudioFlowLayoutPanel deviceFlowLayoutPanel, AudioDevice device)
-  {
-      foreach (AudioSession session in device.AudioSessions)
-      {
-        Process process;
-        try
-        {
-          process = Process.GetProcessById((int)session.ProcessID);
-        }
-        catch (Exception)
-        {
-          process = null;
-        }
-        if (process == null)
-        {
-          continue;
-        }
-
-        SessionVolumeControl? sessionVolumeControl = deviceFlowLayoutPanel.Controls
-        . OfType<SessionVolumeControl>()
-        . FirstOrDefault(x => {
-            return string.Equals(x.Tag?.ToString(), session.SessionInstanceIdentifier, StringComparison.OrdinalIgnoreCase);
-          });
-
-        if (sessionVolumeControl == null && session.State != AudioSessionState.AudioSessionStateExpired)
-        {
-          sessionVolumeControl = new(session, process);
-          {
-            sessionVolumeControl.AudioDeviceCollection = this.AudioDeviceCollection;
-            sessionVolumeControl.AudioDevice = device;
-            sessionVolumeControl.muteCheckBox.Checked = session.Mute;
-            sessionVolumeControl.volumeVTrackBar.Value = session.Volume;
-          }
-          deviceFlowLayoutPanel.Controls.Add(sessionVolumeControl);
-          if (process.Id == 0)
-          {
-            deviceFlowLayoutPanel.Controls.SetChildIndex(sessionVolumeControl, 1);
-          }
-        }
-      }
   }
 
   private void _MMNotificationClient_PropertyValueChanged(string P_0, PROPERTYKEY P_1)
