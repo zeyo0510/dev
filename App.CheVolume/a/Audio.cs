@@ -1,61 +1,157 @@
+using System.Runtime.InteropServices;
 using AudioCore;
-
+using AudioCore.Interfaces;
+/************************************************/
 namespace a
 {
   internal static class Audio
   {
-    internal static readonly List<string> list_a;
-
-    internal static int num_a;
-
-    internal static readonly MMDeviceEnumerator _MMDeviceEnumerator_;
-
-    private static readonly Dictionary<int, string> dictionary_a;
-
-    private static readonly PolicyConfigClient policyConfigClient_a;
-
+    private static readonly PolicyConfigClient? policyConfigClient1 = null;
+    /************************************************/
     static Audio()
     {
-      list_a = new List<string>();
-      dictionary_a = new Dictionary<int, string>();
-      policyConfigClient_a = new PolicyConfigClient();
-      _MMDeviceEnumerator_ = new MMDeviceEnumerator();
+      // do nothing....
     }
-
-    internal static void Method1(DataFlow dataFlow)
+    /************************************************/
+    public static AudioDevice DefaultRenderDevice
     {
-      list_a.Clear();
-      dictionary_a.Clear();
-      AudioDeviceCollection defaultAudioEndpoint = _MMDeviceEnumerator_.EnumAudioEndpoints(dataFlow, DeviceState.Active);
-      string id = _MMDeviceEnumerator_.EnumerateAudioEndPoints(dataFlow, ERole.eMultimedia).ID;
-      int count = defaultAudioEndpoint.Count;
-      for (int i = 0; i < count; i++)
+      get
       {
-        AudioDevice mMDevice = defaultAudioEndpoint[i];
-        string iD2 = mMDevice.ID;
-        list_a.Add(mMDevice.FriendlyName);
-        dictionary_a.Add(i, iD2);
-        if (iD2 == id)
-        {
-          num_a = i;
-        }
+        return Audio.EnumerateAudioEndPoints(DataFlow.Render, ERole.eMultimedia);
       }
     }
-
-    internal static void SetDefault(int index)
-    {
-      SetDefault(dictionary_a[index]);
-    }
-
+    /************************************************/
     internal static void SetDefault(string s)
     {
-      try
+      policyConfigClient1?.SetDefaultEndpoint(s, ERole.eMultimedia);
+    }
+    /************************************************/
+    private static readonly IMMDeviceEnumerator obj = (IMMDeviceEnumerator)new MMDeviceEnumeratorComObject();
+    /************************************************/
+    private static AudioDeviceCollection EnumAudioEndpoints(DataFlow dataFlow, DeviceState state)
+    {
+      Marshal.ThrowExceptionForHR(obj.EnumAudioEndpoints(dataFlow, state, out IMMDeviceCollection retValue));
+      /************************************************/
+      return new AudioDeviceCollection(retValue);
+    }
+    /************************************************/
+    public static AudioDevice EnumerateAudioEndPoints(DataFlow dataFlow, ERole role)
+    {
+      Marshal.ThrowExceptionForHR(obj.GetDefaultAudioEndpoint(dataFlow, role, out IMMDevice retValue));
+      /************************************************/
+      return new AudioDevice(retValue);
+    }
+    /************************************************/
+    public static AudioDevice GetDevice(string deviceID)
+    {
+      Marshal.ThrowExceptionForHR(obj.GetDevice(deviceID, out IMMDevice retValue));
+      /************************************************/
+      return new AudioDevice(retValue);
+    }
+    /************************************************/
+    public static void RegisterEndpointNotificationCallback(IMMNotificationClient _MM_NOTIFICATION_CLIENT_)
+    {
+      Marshal.ThrowExceptionForHR(obj.RegisterEndpointNotificationCallback(_MM_NOTIFICATION_CLIENT_));
+    }
+    /************************************************/
+    public static void UnregisterEndpointNotificationCallback(IMMNotificationClient _MM_NOTIFICATION_CLIENT_)
+    {
+      Marshal.ThrowExceptionForHR(obj.UnregisterEndpointNotificationCallback(_MM_NOTIFICATION_CLIENT_));
+    }
+    /************************************************/
+    public static AudioDeviceCollection ActiveRenderDevices
+    {
+      get
       {
-        policyConfigClient_a.SetDefaultEndpoint(s, ERole.eMultimedia);
+        return Audio.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
       }
-      catch (Exception)
+    }
+    /************************************************/
+    public static AudioDeviceCollection DisabledRenderDevices
+    {
+      get
       {
-        
+        return Audio.EnumAudioEndpoints(DataFlow.Render, DeviceState.Disabled);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection NotPresentRenderDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.Render, DeviceState.NotPresent);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection UnpluggedRenderDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.Render, DeviceState.Unplugged);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection ActiveCaptureDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.Capture, DeviceState.Active);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection DisabledCaptureDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.Capture, DeviceState.Disabled);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection NotPresentCaptureDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.Capture, DeviceState.NotPresent);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection UnpluggedCaptureDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.Capture, DeviceState.Unplugged);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection ActiveAllDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.All, DeviceState.Active);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection DisabledAllDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.All, DeviceState.Disabled);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection NotPresentAllDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.All, DeviceState.NotPresent);
+      }
+    }
+    /************************************************/
+    public static AudioDeviceCollection UnpluggedAllDevices
+    {
+      get
+      {
+        return Audio.EnumAudioEndpoints(DataFlow.All, DeviceState.Unplugged);
       }
     }
   }

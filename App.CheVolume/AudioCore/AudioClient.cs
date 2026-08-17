@@ -40,7 +40,7 @@ namespace AudioCore
       get
       {
         Marshal.ThrowExceptionForHR(_AudioClient_.GetBufferSize(out uint retValue));
-				/************************************************/
+        /************************************************/
         return (int)retValue;
       }
     }
@@ -58,7 +58,7 @@ namespace AudioCore
       get
       {
         Marshal.ThrowExceptionForHR(_AudioClient_.GetCurrentPadding(out int retValue));
-				/************************************************/
+        /************************************************/
         return retValue;
       }
     }
@@ -68,7 +68,7 @@ namespace AudioCore
       get
       {
         Marshal.ThrowExceptionForHR(_AudioClient_.GetDevicePeriod(out long retValue, out long num));
-				/************************************************/
+        /************************************************/
         return retValue;
       }
     }
@@ -78,7 +78,7 @@ namespace AudioCore
       get
       {
         Marshal.ThrowExceptionForHR(_AudioClient_.GetDevicePeriod(out long num, out long retValue));
-				/************************************************/
+        /************************************************/
         return retValue;
       }
     }
@@ -87,14 +87,16 @@ namespace AudioCore
     {
       get
       {
-        if (_AudioRenderClient_ == null)
+        if (this._AudioRenderClient_ == null)
         {
           Guid guid = new("F294ACFC-3146-4483-A7BF-ADDCA7C260E2");
-          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out object obj));
-          _AudioRenderClient_ = new AudioRenderClient((IAudioRenderClient)obj);
+          /************************************************/
+          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out object retValue));
+          /************************************************/
+          this._AudioRenderClient_ = new AudioRenderClient((IAudioRenderClient)retValue);
         }
-				/************************************************/
-        return _AudioRenderClient_;
+        /************************************************/
+        return this._AudioRenderClient_;
       }
     }
 
@@ -102,32 +104,35 @@ namespace AudioCore
     {
       get
       {
-        if (_AudioCaptureClient_ == null)
+        if (this._AudioCaptureClient_ == null)
         {
           Guid guid = new("c8adbd64-e71e-48a0-a4de-185c395cd317");
-          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out object obj));
-          _AudioCaptureClient_ = new AudioCaptureClient((IAudioCaptureClient)obj);
+          /************************************************/
+          Marshal.ThrowExceptionForHR(_AudioClient_.GetService(ref guid, out object retValue));
+          /************************************************/
+          this._AudioCaptureClient_ = new AudioCaptureClient((IAudioCaptureClient)retValue);
         }
-				/************************************************/
-        return _AudioCaptureClient_;
+        /************************************************/
+        return this._AudioCaptureClient_;
       }
     }
 
     public void Initialize(AudioClientShareMode P_0, AudioClientStreamFlags P_1, long P_2, long P_3, WaveFormat P_4, Guid P_5)
     {
       Marshal.ThrowExceptionForHR(_AudioClient_.Initialize(P_0, P_1, P_2, P_3, P_4, ref P_5));
-			/************************************************/
+      /************************************************/
       _MixFormat = null;
     }
 
-    public bool IsFormatSupported(AudioClientShareMode P_0, WaveFormat P_1)
+    public bool IsFormatSupported(AudioClientShareMode shareMode, WaveFormat format)
     {
-      return IsFormatSupported(P_0, P_1, out WaveFormatExtensible waveFormatExtensible);
+      return IsFormatSupported(shareMode, format, out WaveFormatExtensible waveFormatExtensible);
     }
 
-    public bool IsFormatSupported(AudioClientShareMode P_0, WaveFormat P_1, out WaveFormatExtensible P_2)
+    public bool IsFormatSupported(AudioClientShareMode shareMode, WaveFormat format, out WaveFormatExtensible extensible)
     {
-      int num = _AudioClient_.IsFormatSupported(P_0, P_1, out P_2);
+      int num = _AudioClient_.IsFormatSupported(shareMode, format, out extensible);
+      /************************************************/
       switch (num)
       {
       case 0:

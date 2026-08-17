@@ -11,6 +11,7 @@ namespace AudioCore
     public PropertyKey(Guid formatId, int propertyId)
     {
       fmtid = formatId;
+      /************************************************/
       pid = propertyId;
     }
   }

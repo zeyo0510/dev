@@ -9,25 +9,27 @@ namespace AudioCore
   {
     [MarshalAs(UnmanagedType.ByValArray, SizeConst = 100)]
     private byte[] extraData = new byte[100];
-
+    /************************************************/
     private WaveFormatExtraData()
     {
+      // do nothing...
     }
-
+    /************************************************/
     public WaveFormatExtraData(BinaryReader reader) : base(reader)
     {
-      if (_ExtraSize > 0)
+      if (this._ExtraSize > 0)
       {
-        reader.Read(extraData, 0, _ExtraSize);
+        reader.Read(extraData, 0, this._ExtraSize);
       }
     }
-
+    /************************************************/
     public override void Serialize(BinaryWriter writer)
     {
       base.Serialize(writer);
-      if (_ExtraSize > 0)
+      /************************************************/
+      if (this._ExtraSize > 0)
       {
-        writer.Write(extraData, 0, _ExtraSize);
+        writer.Write(this.extraData, 0, this._ExtraSize);
       }
     }
   }

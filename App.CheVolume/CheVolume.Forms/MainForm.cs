@@ -15,29 +15,7 @@ public partial class MainForm : Form
   private AudioDeviceCollection AudioDeviceCollection;
   private MMNotificationClient _MMNotificationClient_;
 
-  private string deviceID;
-
   internal static float dpiX;
-
-  public AudioDevice DefaultDevice
-  {
-    get
-    {
-      return Audio._MMDeviceEnumerator_.EnumerateAudioEndPoints(DataFlow.Render, ERole.eMultimedia);
-    }
-  }
-
-  public AudioDevice SelectedDevice
-  {
-    get
-    {
-      if (deviceID == null)
-      {
-        return DefaultDevice;
-      }
-      return Audio._MMDeviceEnumerator_.GetDevice(deviceID);
-    }
-  }
 
   [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
   public bool IsAdvancedUser
@@ -72,11 +50,11 @@ public partial class MainForm : Form
 
   public MainForm()
   {
-    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
+    this.AudioDeviceCollection = Audio.ActiveRenderDevices;
     /************************************************/
     this._MMNotificationClient_ = new();
     /************************************************/
-    Audio._MMDeviceEnumerator_.RegisterEndpointNotificationCallback(_MMNotificationClient_);
+    Audio.RegisterEndpointNotificationCallback(_MMNotificationClient_);
     /************************************************/
     this.InitializeComponent();
     /************************************************/
@@ -130,13 +108,11 @@ public partial class MainForm : Form
 
   private void BuildDevice()
   {
-    string defaultDeviceID = this.DefaultDevice.ID;
-    /************************************************/
-    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
+    this.AudioDeviceCollection = Audio.ActiveRenderDevices;
     /************************************************/
     foreach (AudioDevice device in this.AudioDeviceCollection)
     {
-      bool isDefault = device.ID == this.DefaultDevice.ID;
+      bool isDefault = device.ID == Audio.DefaultRenderDevice.ID;
       /************************************************/
       AudioFlowLayoutPanel? audioFlowLayoutPanel = this.flowLayoutPanel1.Controls
       . OfType<AudioFlowLayoutPanel>()

@@ -23,6 +23,6 @@ partial class AudioFlowLayoutPanel
       base.Controls.Add(deviceVolumeControl);
     }
     /************************************************/
-    deviceVolumeControl?.SetDefault(Audio._MMDeviceEnumerator_.EnumerateAudioEndPoints(DataFlow.Render, ERole.eMultimedia).ID.Equals(this.AudioDevice.ID));
+    deviceVolumeControl?.SetDefault(Audio.EnumerateAudioEndPoints(DataFlow.Render, ERole.eMultimedia).ID.Equals(this.AudioDevice.ID));
   }
 }

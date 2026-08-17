@@ -9,19 +9,20 @@ namespace AudioCore
   public class PropertyStore
   {
     private readonly IPropertyStore _PropertyStore_;
-
+    /************************************************/
     internal PropertyStore(IPropertyStore stroe)
     {
       _PropertyStore_ = stroe;
     }
-
+    /************************************************/
     public PropertyStoreProperty this[PropertyKey key]
     {
       get
       {
-        for (int i = 0; i < Count; i++)
+        for (int i = 0; i < this.Count; i++)
         {
           PropertyKey propertyKey = Get(i);
+          /************************************************/
           if (propertyKey.fmtid == key.fmtid && propertyKey.pid == key.pid)
           {
             Marshal.ThrowExceptionForHR(_PropertyStore_.GetValue(ref propertyKey, out PropVariant propVariant));
@@ -29,10 +30,11 @@ namespace AudioCore
             return new PropertyStoreProperty(propVariant);
           }
         }
+        /************************************************/
         return null;
       }
     }
-
+    /************************************************/
     public int Count
     {
       get
@@ -42,7 +44,7 @@ namespace AudioCore
         return retValue;
       }
     }
-
+    /************************************************/
     public bool Contains(PropertyKey key)
     {
       for (int i = 0; i < Count; i++)
@@ -57,7 +59,7 @@ namespace AudioCore
       /************************************************/
       return false;
     }
-
+    /************************************************/
     public PropertyKey Get(int index)
     {
       Marshal.ThrowExceptionForHR(_PropertyStore_.GetAt(index, out PropertyKey retValue));

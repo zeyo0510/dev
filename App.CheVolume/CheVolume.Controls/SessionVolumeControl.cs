@@ -23,23 +23,9 @@ public partial class SessionVolumeControl : UserControl
 
   public string procName;
 
-  private bool dragging;
-
   private readonly AudioPolicyConfigService audioPolicyConfigService1;
 
   private int num1;
-
-  public string[] ListOfProcessesLocked
-  {
-    get
-    {
-      if (Settings.Default["ListOfProcessesLocked"] == null)
-      {
-        Settings.Default["ListOfProcessesLocked"] = "";
-      }
-      return Settings.Default["ListOfProcessesLocked"].ToString().Replace("|", "").Split('\\');
-    }
-  }
 
   private readonly Enum1 enum1;
   private DataFlow Flow
@@ -60,25 +46,6 @@ public partial class SessionVolumeControl : UserControl
     {
       return Registry.CurrentUser.OpenSubKey("Software", true).OpenSubKey("CheVolume", true).OpenSubKey("Data", true)
         .GetValueNames();
-    }
-  }
-
-  public bool IsProcessInjected
-  {
-    get
-    {
-      try
-      {
-        if (Enumerable.Contains(InjectedProcesses, process1.ProcessName))
-        {
-          return true;
-        }
-        return false;
-      }
-      catch (Exception)
-      {
-        return false;
-      }
     }
   }
 
@@ -142,7 +109,6 @@ public partial class SessionVolumeControl : UserControl
     guiTimer.Interval = 10;
     /************************************************/
     base.Tag = this.AudioSession.SessionInstanceIdentifier.ToString();
-    dragging = false;
     base.Margin = new Padding(0);
     string audioSetivceDLL = GetAudioSetivceDLL(process1);
     /************************************************/
@@ -187,7 +153,6 @@ public partial class SessionVolumeControl : UserControl
     try
     {
       base.Parent.Controls.Remove(this);
-      // this.SessionControl.UnregisterAudioSessionNotification(this);
     }
     catch (Exception)
     {
@@ -240,33 +205,6 @@ public partial class SessionVolumeControl : UserControl
       this.volumeVTrackBar.Value = (int)newValue;
     }
   }
-
-  // private void macTrackBar1_ValueChanged(object sender, decimal newValue)
-  // {
-  //   if (!dragging)
-  //   {
-  //     dragging = true;
-  //     return;
-  //   }
-  //   if (newValue > 100m)
-  //   {
-  //     newValue = 100m;
-  //   }
-  //   if (newValue < 0m)
-  //   {
-  //     newValue = default(decimal);
-  //   }
-  //   if (macTrackBar1.Dragging)
-  //   {
-  //     macTrackBar1.TrackerColor = Color.FromArgb(255, 128, 0);
-  //     this.Mute = false;
-  //     this.Volume = (int)newValue;
-  //   }
-  //   else
-  //   {
-  //     SetTrackBar(newValue);
-  //   }
-  // }
 
   private void toolStripMenuItem_MouseLeave(object sender, EventArgs e)
   {
@@ -329,7 +267,7 @@ public partial class SessionVolumeControl : UserControl
 
 
 
-    this.AudioDeviceCollection = Audio._MMDeviceEnumerator_.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
+    this.AudioDeviceCollection = Audio.ActiveRenderDevices;
     /************************************************/
     foreach (AudioDevice device in this.AudioDeviceCollection)
     {

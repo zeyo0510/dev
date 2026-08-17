@@ -7,44 +7,12 @@ namespace AudioCore
   [StructLayout(LayoutKind.Sequential, Pack = 2)]
   public class AdpcmWaveFormat : WaveFormat
   {
-    private short _SamplesPerBlock;
-
-    private short _NumCoefficients;
-
-    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 14)]
-    private short[] _Coefficients;
-
-    public int SamplesPerBlock
+    private AdpcmWaveFormat() : this(8000, 1)
     {
-      get
-      {
-        return _SamplesPerBlock;
-      }
+      
     }
 
-    public int NumCoefficients
-    {
-      get
-      {
-        return _NumCoefficients;
-      }
-    }
-
-    public short[] Coefficients
-    {
-      get
-      {
-        return _Coefficients;
-      }
-    }
-
-    private AdpcmWaveFormat()
-      : this(8000, 1)
-    {
-    }
-
-    public AdpcmWaveFormat(int P_0, int P_1)
-      : base(P_0, 0, P_1)
+    public AdpcmWaveFormat(int P_0, int P_1) : base(P_0, 0, P_1)
     {
       waveFormatTag = WaveFormatEncoding.Adpcm;
       _ExtraSize = 32;
@@ -70,6 +38,35 @@ namespace AudioCore
         256, 0, 512, -256, 0, 0, 192, 64, 240, 0,
         460, -208, 392, -232
       };
+    }
+
+
+    private short _SamplesPerBlock;
+    public int SamplesPerBlock
+    {
+      get
+      {
+        return _SamplesPerBlock;
+      }
+    }
+
+    private short _NumCoefficients;
+    public int NumCoefficients
+    {
+      get
+      {
+        return _NumCoefficients;
+      }
+    }
+
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 14)]
+    private short[] _Coefficients;
+    public short[] Coefficients
+    {
+      get
+      {
+        return _Coefficients;
+      }
     }
 
     public override void Serialize(BinaryWriter P_0)
