@@ -15,7 +15,7 @@ namespace AudioCore
       _PropertyStore_ = stroe;
     }
     /************************************************/
-    public PropertyStoreProperty this[PropertyKey key]
+    public PropVariant? this[PropertyKey key]
     {
       get
       {
@@ -27,7 +27,7 @@ namespace AudioCore
           {
             Marshal.ThrowExceptionForHR(_PropertyStore_.GetValue(ref propertyKey, out PropVariant propVariant));
             /************************************************/
-            return new PropertyStoreProperty(propVariant);
+            return propVariant;
           }
         }
         /************************************************/
@@ -49,7 +49,7 @@ namespace AudioCore
     {
       for (int i = 0; i < Count; i++)
       {
-        PropertyKey propertyKey = Get(i);
+        PropertyKey propertyKey = this.Get(i);
         /************************************************/
         if (propertyKey.fmtid == key.fmtid && propertyKey.pid == key.pid)
         {

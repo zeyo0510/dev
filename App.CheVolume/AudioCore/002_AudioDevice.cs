@@ -31,16 +31,6 @@ namespace AudioCore
       this.Dispose();
     }
 
-    public PropertyStore Properties
-    {
-      get
-      {
-        this._PropertyStore_ ??= GetPropertyInformation();
-        /************************************************/
-        return this._PropertyStore_;
-      }
-    }
-
     public string FriendlyName
     {
       get
@@ -49,7 +39,7 @@ namespace AudioCore
         /************************************************/
         if (this._PropertyStore_.Contains(PKEY.PKEY_Device_FriendlyName))
         {
-          return (string)this._PropertyStore_[PKEY.PKEY_Device_FriendlyName].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_Device_FriendlyName]?.GetValue();
         }
         /************************************************/
         return "Unknown";
@@ -64,7 +54,7 @@ namespace AudioCore
         /************************************************/
         if (this._PropertyStore_.Contains(PKEY.PKEY_Device_DeviceDesc))
         {
-          return (string)this._PropertyStore_[PKEY.PKEY_Device_DeviceDesc].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_Device_DeviceDesc]?.GetValue();
         }
         /************************************************/
         return "Unknown";
@@ -79,7 +69,7 @@ namespace AudioCore
         /************************************************/
         if (this._PropertyStore_.Contains(PKEY.PKEY_DeviceInterface_FriendlyName))
         {
-          return (string)this._PropertyStore_[PKEY.PKEY_DeviceInterface_FriendlyName].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_DeviceInterface_FriendlyName]?.GetValue();
         }
         return "Unknown";
       }
@@ -93,7 +83,7 @@ namespace AudioCore
         /************************************************/
         if (this._PropertyStore_.Contains(PKEY.PKEY_DeviceClass_IconPath))
         {
-          return (string)this._PropertyStore_[PKEY.PKEY_DeviceClass_IconPath].PropVariant.GetValue();
+          return (string)this._PropertyStore_[PKEY.PKEY_DeviceClass_IconPath]?.GetValue();
         }
         /************************************************/
         return "Unknown";

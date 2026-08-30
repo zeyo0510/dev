@@ -4,7 +4,7 @@ using AudioCore.Interfaces;
 /************************************************/
 namespace AudioCore
 {
-  public partial class AudioDevice : IAudioSessionNotification
+  partial class AudioDevice : IAudioSessionNotification
   {
     public event EventHandler<AudioSession>? SessionCreated = null;
     public int OnSessionCreated([In] IAudioSessionControl _NEW_SESSION_)
